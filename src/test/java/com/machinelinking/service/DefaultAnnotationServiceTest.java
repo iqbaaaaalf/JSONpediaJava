@@ -1,5 +1,6 @@
 package com.machinelinking.service;
 
+import com.machinelinking.WikiEnricherFactory;
 import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
@@ -20,10 +21,23 @@ import java.net.URLEncoder;
 public class DefaultAnnotationServiceTest extends ServiceTestBase {
 
     @Test
+    public void testFlags() throws IOException, URISyntaxException {
+        final JsonNode node = performQuery("flags");
+        Assert.assertEquals(WikiEnricherFactory.Flag.values().length, node.get("flags").size());
+    }
+
+    @Test
     public void testAnnotate() throws IOException, URISyntaxException {
+        final JsonNode node = performQuery(
+                "resource/" + URLEncoder.encode("http://en.wikipedia.org/wiki/Albert_Einstein", "UTF8")
+        );
+        Assert.assertEquals(2, node.size());
+    }
+
+    private JsonNode performQuery(String path) throws URISyntaxException, IOException {
         final URI uri = UriBuilder.fromResource(DefaultAnnotationService.class)
                 .uri(new URI(String.format("http://%s", HOST))).port(PORT)
-                .path("resource/" + URLEncoder.encode("http://en.wikipedia.org/wiki/Albert_Einstein", "UTF8")).build();
+                .path(path).build();
         final InputStream is = uri.toURL().openStream();
         final BufferedReader br = new BufferedReader( new InputStreamReader(is) );
         final StringBuilder content = new StringBuilder();
@@ -31,8 +45,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
         while((line = br.readLine()) != null) {
             content.append(line);
         }
-        final JsonNode node = JSONUtils.parseJSON(content.toString());
-        Assert.assertEquals(2, node.size());
+        return JSONUtils.parseJSON(content.toString());
     }
 
 }

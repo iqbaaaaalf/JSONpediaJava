@@ -25,10 +25,10 @@ public class WikiEnricherTest {
         final WikiEnricher enricher = WikiEnricherFactory
                 .getInstance()
                 .createFullyConfiguredInstance(
-                        WikiEnricherFactory.ONLINE_FLAG,
-                        WikiEnricherFactory.VALIDATE_FLAG,
-                        WikiEnricherFactory.EXTRACTORS_FLAG,
-                        WikiEnricherFactory.SPLITTERS_FLAG
+                        WikiEnricherFactory.Flag.External,
+                        WikiEnricherFactory.Flag.Validate,
+                        WikiEnricherFactory.Flag.Extractors,
+                        WikiEnricherFactory.Flag.Splitters
                 );
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final JSONSerializer serializer = new JSONSerializer(baos);

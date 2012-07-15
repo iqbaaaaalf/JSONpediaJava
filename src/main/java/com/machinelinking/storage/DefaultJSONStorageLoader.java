@@ -32,13 +32,13 @@ public class DefaultJSONStorageLoader implements JSONStorageLoader {
 
     private final WikiEnricherFactory wikiEnricherFactory;
 
-    private final String[] flags;
+    private final WikiEnricherFactory.Flag[] flags;
 
     private final JSONStorage storage;
 
     private BufferedWikiPageHandler bufferedHandler;
 
-    public DefaultJSONStorageLoader(WikiEnricherFactory factory, String[] flags, JSONStorage storage) {
+    public DefaultJSONStorageLoader(WikiEnricherFactory factory, WikiEnricherFactory.Flag[] flags, JSONStorage storage) {
         this.wikiEnricherFactory = factory;
         this.flags               = flags;
         this.storage             = storage;

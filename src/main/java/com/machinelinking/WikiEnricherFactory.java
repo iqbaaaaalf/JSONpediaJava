@@ -18,10 +18,34 @@ import java.util.Set;
  */
 public class WikiEnricherFactory {
 
-    public static String ONLINE_FLAG     = "online";
-    public static String VALIDATE_FLAG   = "validate";
-    public static String EXTRACTORS_FLAG = "extractors";
-    public static String SPLITTERS_FLAG  = "splitters";
+    public enum Flag {
+        External {
+            @Override
+            public String description() {
+                return "Lookup external service enrichment.";
+            }
+        },
+        Validate {
+            @Override
+            public String description() {
+                return "Validate parser content";
+            }
+        },
+        Extractors {
+            @Override
+            public String description() {
+                return "Apply Extractors on content";
+            }
+        },
+        Splitters {
+            @Override
+            public String description() {
+                return "Apply Splitters on content";
+            }
+        };
+
+        public abstract String description();
+    }
 
     private static WikiEnricherFactory instance;
 
@@ -32,29 +56,29 @@ public class WikiEnricherFactory {
 
     private WikiEnricherFactory() {}
 
-    public WikiEnricher createFullyConfiguredInstance(String... flags) {
-        final Set<String> flagsSet = new HashSet<>(Arrays.asList(flags));
+    public WikiEnricher createFullyConfiguredInstance(Flag... flags) {
+        final Set<Flag> flagsSet = new HashSet<>(Arrays.asList(flags));
         final WikiEnricher enricher = new WikiEnricher();
 
         // Extractors.
-        if(flagsSet.contains(EXTRACTORS_FLAG)) {
+        if(flagsSet.contains(Flag.Extractors)) {
             enricher.addExtractor(new IssueExtractor());
             enricher.addExtractor(new SectionExtractor());
             enricher.addExtractor(new LinkExtractor());
             enricher.addExtractor(new ReferenceExtractor());
-            if (flagsSet.contains(ONLINE_FLAG)) {
+            if (flagsSet.contains(Flag.External)) {
                 enricher.addExtractor(new TemplateMappingExtractor());
                 enricher.addExtractor(new FreebaseExtractor());
             }
         }
 
         // Splitters.
-        if (flagsSet.contains(SPLITTERS_FLAG)) {
+        if (flagsSet.contains(Flag.Splitters)) {
             enricher.addSplitter(new InfoboxSplitter());
             enricher.addSplitter(new TableSplitter());
         }
 
-        enricher.setValidate( flagsSet.contains(VALIDATE_FLAG) );
+        enricher.setValidate( flagsSet.contains(Flag.Validate) );
 
         return enricher;
     }

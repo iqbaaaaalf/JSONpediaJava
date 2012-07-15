@@ -20,11 +20,20 @@ import java.net.URL;
 @Path("/annotate")
 public class DefaultAnnotationService implements AnnotationService {
 
+    private final WikiEnricher wikiEnricher = new WikiEnricher();
+    private final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+    @Path("/flags/")
+    @GET
+    @Produces({MediaType.APPLICATION_JSON})
+    @Override
+    public FlagSet flags() {
+        return DefaultFlagList.getInstance();
+    }
+
     @Path("/resource/{resource}")
     @GET
-    @Produces({
-            MediaType.APPLICATION_JSON
-    })
+    @Produces({MediaType.APPLICATION_JSON})
     @Override
     public String annotate(@PathParam("resource")String resource) {
         final URL resourceURL;
@@ -36,12 +45,11 @@ public class DefaultAnnotationService implements AnnotationService {
                     murle
             );
         }
-        // TODO: Optimize object usage.
+
         final DocumentSource documentSource = new DocumentSource(resourceURL);
-        final WikiEnricher wikiEnricher = new WikiEnricher();
-        final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final JSONSerializer jsonSerializer;
         try {
+            baos.reset();
             jsonSerializer = new JSONSerializer(baos);
         } catch (IOException ioe) {
             throw new RuntimeException("Error while initializing serializer.", ioe);

@@ -30,7 +30,7 @@ public class ServiceTestBase {
 
     @Before
     public void setUp() throws IOException {
-        System.out.println("Starting grizzly...");
+        System.out.println("Starting Grizzly Server...");
         ResourceConfig rc = new PackagesResourceConfig(ServiceTestBase.class.getPackage().getName());
         httpServer = GrizzlyServerFactory.createHttpServer(BASE_URI, rc);
 

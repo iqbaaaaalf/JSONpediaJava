@@ -19,10 +19,10 @@ import java.util.zip.GZIPInputStream;
  */
 public class DefaultJSONStorageLoaderTest {
 
-    private static final String[] FLAGS = {
-            WikiEnricherFactory.EXTRACTORS_FLAG,
-            WikiEnricherFactory.SPLITTERS_FLAG,
-            WikiEnricherFactory.VALIDATE_FLAG
+    private static final WikiEnricherFactory.Flag[] FLAGS = {
+            WikiEnricherFactory.Flag.Extractors,
+            WikiEnricherFactory.Flag.Splitters,
+            WikiEnricherFactory.Flag.Validate
     };
 
     private static final String FILE_PREFIX = "file://";

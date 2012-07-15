@@ -3,10 +3,10 @@ package com.machinelinking.service;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public interface AnnotationService {
 
-    FlagSet flags();
+public interface FlagSet {
 
-    String annotate(String resource);
+    Flag[] getFlags();
+
 
 }
