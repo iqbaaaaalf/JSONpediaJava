@@ -7,6 +7,6 @@ public interface AnnotationService {
 
     FlagSet flags();
 
-    String annotate(String resource);
+    String annotate(String resource, String flags);
 
 }

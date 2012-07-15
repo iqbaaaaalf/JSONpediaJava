@@ -25,7 +25,7 @@ public class WikiEnricherTest {
         final WikiEnricher enricher = WikiEnricherFactory
                 .getInstance()
                 .createFullyConfiguredInstance(
-                        WikiEnricherFactory.Flag.External,
+                        WikiEnricherFactory.Flag.Offline,
                         WikiEnricherFactory.Flag.Validate,
                         WikiEnricherFactory.Flag.Extractors,
                         WikiEnricherFactory.Flag.Splitters

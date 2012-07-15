@@ -19,10 +19,10 @@ import java.util.Set;
 public class WikiEnricherFactory {
 
     public enum Flag {
-        External {
+        Offline {
             @Override
             public String description() {
-                return "Lookup external service enrichment.";
+                return "Prevent lookup external service enrichment.";
             }
         },
         Validate {
@@ -66,7 +66,7 @@ public class WikiEnricherFactory {
             enricher.addExtractor(new SectionExtractor());
             enricher.addExtractor(new LinkExtractor());
             enricher.addExtractor(new ReferenceExtractor());
-            if (flagsSet.contains(Flag.External)) {
+            if (flagsSet.contains(Flag.Offline)) {
                 enricher.addExtractor(new TemplateMappingExtractor());
                 enricher.addExtractor(new FreebaseExtractor());
             }

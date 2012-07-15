@@ -1,6 +1,7 @@
 package com.machinelinking.service;
 
 import com.machinelinking.WikiEnricher;
+import com.machinelinking.WikiEnricherFactory;
 import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.serializer.JSONSerializer;
 
@@ -8,11 +9,14 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
@@ -20,7 +24,8 @@ import java.net.URL;
 @Path("/annotate")
 public class DefaultAnnotationService implements AnnotationService {
 
-    private final WikiEnricher wikiEnricher = new WikiEnricher();
+    public static final String FLAG_SEPARATOR = ",";
+
     private final ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
     @Path("/flags/")
@@ -35,7 +40,7 @@ public class DefaultAnnotationService implements AnnotationService {
     @GET
     @Produces({MediaType.APPLICATION_JSON})
     @Override
-    public String annotate(@PathParam("resource")String resource) {
+    public String annotate(@PathParam("resource")String resource, @QueryParam("flags")String flags) {
         final URL resourceURL;
         try {
             resourceURL = new URL(resource);
@@ -46,6 +51,8 @@ public class DefaultAnnotationService implements AnnotationService {
             );
         }
 
+        final WikiEnricher wikiEnricher = WikiEnricherFactory.getInstance()
+            .createFullyConfiguredInstance( toFlag(flags) );
         final DocumentSource documentSource = new DocumentSource(resourceURL);
         final JSONSerializer jsonSerializer;
         try {
@@ -60,6 +67,20 @@ public class DefaultAnnotationService implements AnnotationService {
             throw new RuntimeException("Error while serializing resource", e);
         }
         return baos.toString();
+    }
+
+    private WikiEnricherFactory.Flag[] toFlag(String flagsStr) {
+        if(flagsStr == null) return new WikiEnricherFactory.Flag[0];
+        final String[] flagNames = flagsStr.split(FLAG_SEPARATOR);
+        final Set<WikiEnricherFactory.Flag> flags = new HashSet<>();
+        for(String flagName : flagNames) {
+            try {
+                flags.add(WikiEnricherFactory.Flag.valueOf(flagName));
+            } catch (Exception e) {
+                throw new RuntimeException(String.format("Error while resolving flag [%s]", flagName));
+            }
+        }
+        return flags.toArray( new WikiEnricherFactory.Flag[flags.size()] );
     }
 
 }
