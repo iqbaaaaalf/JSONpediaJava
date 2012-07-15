@@ -19,8 +19,8 @@ public class TemplateMappingTest {
         final String json = JSONUtils.serializeToJSON(mapping);
         System.out.println( json );
         Assert.assertEquals(
-                "{\"type\":\"mapping\",\"name\":\"TemplateMapping\\n\",\"mapping\":{\"MeltingPt\":\"meltingPoint\",\"melting point C\":\"meltingPoint\",\"boiling point C\":\"boilingPoint\",\"InChI\":\"inchi\",\"Density\":\"density\",\"melting point K\":\"meltingPoint\",\"boiling point K\":\"boilingPoint\",\"PubChem\":\"pubchem\",\"melting point F\":\"meltingPoint\",\"boiling point F\":\"boilingPoint\",\"Name\":\"foaf:name\",\"ImageFile\":\"foaf:thumbnail\",\"IUPACName\":\"iupacName\",\"BoilingPt\":\"boilingPoint\",\"CASNo\":\"casNumber\"},\"issues\":null}",
-                json
+                JSONUtils.parseJSON("{\"type\":\"mapping\",\"name\":\"TemplateMapping\\n\",\"mapping\":{\"MeltingPt\":\"meltingPoint\",\"melting point C\":\"meltingPoint\",\"boiling point C\":\"boilingPoint\",\"InChI\":\"inchi\",\"Density\":\"density\",\"melting point K\":\"meltingPoint\",\"boiling point K\":\"boilingPoint\",\"PubChem\":\"pubchem\",\"melting point F\":\"meltingPoint\",\"boiling point F\":\"boilingPoint\",\"Name\":\"foaf:name\",\"ImageFile\":\"foaf:thumbnail\",\"IUPACName\":\"iupacName\",\"BoilingPt\":\"boilingPoint\",\"CASNo\":\"casNumber\"},\"issues\":null}"),
+                JSONUtils.parseJSON(json)
         );
     }
 
