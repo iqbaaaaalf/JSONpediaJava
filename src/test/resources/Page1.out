@@ -1,0 +1,2721 @@
+Begin Document
+Begin Template: Redirect
+k: Einstein
+End Template: Redirect
+Begin Template: Good article
+End Template: Good article
+Begin Template: pp-semi-indef
+End Template: pp-semi-indef
+Begin Template: pp-move-indef
+End Template: pp-move-indef
+Begin Template: Infobox scientist
+
+k: name        
+Text: 'Albert Einstein
+'
+k: image       
+Text: 'Einstein 1921 portrait2.jpg
+'
+k: caption     
+Text: 'Albert Einstein in 1921
+'
+k: birth_date  
+Begin Template: Birth date
+k: df
+Text: 'yes'
+k: 1879
+k: 3
+k: 14
+End Template: Birth date
+Text: '
+'
+k: birth_place 
+Reference: Ulm ''
+Text: ', '
+Reference: Kingdom of Württemberg ''
+Text: ', '
+Reference: German Empire ''
+Text: '
+'
+k: death_date  
+Begin Template: Death date and age
+k: df
+Text: 'yes'
+k: 1955
+k: 4
+k: 18
+k: 1879
+k: 3
+k: 14
+End Template: Death date and age
+Text: '
+'
+k: death_place 
+Reference: Princeton, New Jersey 'Princeton'
+Text: ', New Jersey, United States
+'
+k: spouse      
+Reference: Mileva Marić ''
+Text: '&nbsp;(1903–1919)<br>'
+Begin Template: nowrap
+k: [[Elsa Löwenthal]], née Einstein, (1919–1936)
+End Template: nowrap
+Text: '
+'
+k: residence   
+Text: 'Germany, Italy, Switzerland, Austria, Belgium, United Kingdom, United States
+'
+k: citizenship 
+Begin Template: Plainlist
+Begin List
+Reference: Kingdom of Württemberg 'Württemberg/Germany'
+Text: ' (1879–1896)
+* '
+Reference: Statelessness 'Stateless'
+Text: ' (1896–1901)
+* '
+Reference: Switzerland ''
+Text: ' (1901–1955)
+* '
+Reference: Austria–Hungary 'Austria'
+Text: ' (1911–1912)
+* '
+Reference: German Empire 'Germany'
+Text: ' (1914–1933)
+* United States (1940–1955)
+'
+End List
+End Template: Plainlist
+Text: '
+'
+k: ethnicity  
+Text: 'Jewish
+'
+k: fields     
+Reference: Physics ''
+Text: '
+'
+k: workplaces 
+Begin Template: Plainlist
+Begin List
+Text: 'Swiss '
+Reference: Patent Office ''
+Text: ' ('
+Reference: Bern ''
+Text: ')
+* '
+Reference: University of Zurich ''
+Text: '
+* '
+Reference: Charles University in Prague ''
+Text: '
+* '
+Reference: ETH Zurich ''
+Text: '
+* '
+Reference: Prussian Academy of Sciences ''
+Text: '
+* '
+Reference: Kaiser Wilhelm Institute ''
+Text: '
+* '
+Reference: Leiden University 'University of Leiden'
+Text: '
+* '
+Reference: Institute for Advanced Study ''
+Text: '
+'
+End List
+End Template: Plainlist
+Text: '
+'
+k: alma_mater 
+Begin Template: Plainlist
+Begin List
+Reference: ETH Zurich ''
+Text: '
+* '
+Reference: University of Zurich ''
+Text: '
+'
+End List
+End Template: Plainlist
+Text: '
+'
+k: doctoral_advisor  
+Reference: Alfred Kleiner ''
+Text: '
+'
+k: academic_advisors 
+Reference: Heinrich Friedrich Weber ''
+Text: '
+'
+k: notable_students  
+Begin Template: Plainlist
+Begin List
+Reference: Ernst G. Straus ''
+Text: '
+* '
+Reference: Nathan Rosen ''
+Text: '
+* '
+Reference: Leo Szilard ''
+Text: '
+* '
+Reference: Raziuddin Siddiqui ''
+Text: '<ref>'
+Begin Template: cite web
+k: url
+Text: 'http://www.ias.ac.in/currsci/apr25/articles32.htm '
+k: title
+Text: 'Mohammad Raziuddin Siddiqui '
+k: publisher
+Text: 'Ias.ac.in '
+k: date
+Text: '2 January 1998 '
+k: archiveurl
+Text: 'http://web.archive.org/web/20040601194117/http://www.ias.ac.in/currsci/apr25/articles32.htm'
+k: archivedate
+Text: '1 June 2004'
+k: accessdate
+Text: '3 April 2011'
+End Template: cite web
+Text: ' </ref>
+'
+End List
+End Template: Plainlist
+Text: '
+'
+k: known_for 
+Begin Template: Plainlist
+Begin List
+Reference: General relativity ''
+Text: ' and '
+Reference: special relativity ''
+Text: '
+* '
+Reference: Photoelectric effect ''
+Text: '
+* '
+Reference: Mass-energy equivalence ''
+Text: '
+* '
+Reference: Brownian motion 'Theory of Brownian Motion'
+Text: '
+* '
+Reference: Einstein field equations ''
+Text: '
+* '
+Reference: Bose–Einstein statistics ''
+Text: '
+* '
+Reference: Classical unified field theories 'Unified Field Theory'
+Text: '
+* '
+Reference: EPR paradox ''
+Text: '
+'
+End List
+End Template: Plainlist
+Text: '
+'
+k: awards 
+Begin Template: Plainlist
+Begin List
+Reference: Nobel Prize in Physics ''
+Text: ' (1921)
+* '
+Reference: Matteucci Medal ''
+Text: ' (1921)
+* '
+Reference: Copley Medal ''
+Text: ' (1925)
+* '
+Reference: Max Planck Medal ''
+Text: ' (1929)
+* '
+Reference: Time 100: The Most Important People of the Century '''Time'' Person of the Century'
+Text: ' (1999)
+'
+End List
+End Template: Plainlist
+Text: '
+'
+k: signature 
+Text: 'Albert Einstein signature 1934.svg
+'
+End Template: Infobox scientist
+
+Begin Template: IPAc-en
+k: icon
+k: ˈ
+k: æ
+k: l
+k: b
+k: ər
+k: t
+k: _
+k: ˈ
+k: aɪ
+k: n
+k: s
+k: t
+k: aɪ
+k: n
+End Template: IPAc-en
+Begin Template: IPA-de
+k: ˈalbɐt ˈaɪnʃtaɪn
+k: lang
+k: Albert_Einstein_german.ogg
+End Template: IPA-de
+Reference: MOS:BIO ''
+Reference: theoretical physics 'theoretical physicist'
+Reference: general relativity ''
+Reference: physics ''
+Reference: modern physics ''
+Begin Template: Citation
+
+k: title
+Text: 'Poincaré's Philosophy. From Conventionalism to Phenomenology
+'
+k: first1
+Text: 'Élie
+'
+k: last1
+Text: 'Zahar
+'
+k: publisher
+Text: 'Carus Publishing Company
+'
+k: year
+Text: '2001
+'
+k: isbn
+Text: '0-8126-9435-X
+'
+k: page
+Text: '41
+'
+k: url
+Text: 'http://books.google.com/?id=jJl2JAqvoSAC'
+End Template: Citation
+
+Link: http://books.google.com/books?id=jJl2JAqvoSAC&pg=PA41 'Chapter 2, p. 41'
+Begin Template: cite doi
+k: 10.1098/rsbm.1955.0005
+End Template: cite doi
+Reference: mass–energy equivalence ''
+Begin Template: nowrap
+k: 1
+Text: '''E'' = ''mc''<sup>2</sup>'
+End Template: nowrap
+Reference: List of Nobel laureates in Physics '1921'
+Reference: Nobel Prize in Physics ''
+Reference: photoelectric effect ''
+Begin Template: cite web 
+k: url
+Text: 'http://nobelprize.org/nobel_prizes/physics/laureates/1921/ '
+k: title
+Text: 'The Nobel Prize in Physics 1921 '
+k: accessdate
+Text: '6 March 2007 '
+k: publisher
+Reference: Nobel Foundation ''
+k: archiveurl
+Text: 'http://www.webcitation.org/5bLXMl1V0 '
+k: archivedate
+Text: '5 October 2008'
+End Template: cite web 
+Reference: Introduction to quantum mechanics 'quantum theory'
+Reference: Newtonian mechanics ''
+Reference: classical mechanics ''
+Reference: electromagnetic field ''
+Reference: special theory of relativity ''
+Reference: gravitational fields ''
+Reference: general theory of relativity ''
+Reference: statistical mechanics ''
+Reference: quantum mechanics 'quantum theory'
+Reference: particle 'particle theory'
+Reference: Brownian motion 'motion of molecules'
+Reference: photon ''
+Reference: universe ''
+Link: http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf '"Scientific Background on the Nobel Prize in Physics 2011. The accelerating universe." (page 2)'
+Reference: Adolf Hitler ''
+Reference: Prussian Academy of Sciences 'Berlin Academy of Sciences'
+Begin Template: cite web 
+k: url
+Text: 'http://www.einstein-website.de/z_information/variousthings.html '
+k: title
+Text: 'Various things about Albert Einstein '
+k: last
+Text: 'Hans-Josef '
+k: first
+Text: 'Küpper '
+k: year
+Text: '2000 '
+k: publisher
+Text: 'einstein-website.de '
+k: accessdate
+Text: '18 July 2009'
+End Template: cite web 
+Reference: Franklin D. Roosevelt ''
+Reference: Manhattan Project ''
+Reference: nuclear fission ''
+Reference: Bertrand Russell ''
+Reference: Russell–Einstein Manifesto ''
+Reference: Institute for Advanced Study ''
+Reference: Princeton, New Jersey ''
+Reference: List of scientific publications by Albert Einstein 'more than 300 scientific papers'
+Begin Template: Citation 
+k: author
+Text: 'Paul Arthur Schilpp, editor '
+k: year
+Text: '1951 '
+k: title
+Text: 'Albert Einstein: Philosopher-Scientist, Volume II '
+k: publisher
+Text: 'Harper and Brothers Publishers (Harper Torchbook edition) '
+k: location
+Text: 'New York '
+k: pages
+Text: '730–746'
+End Template: Citation 
+Reference: Sigmund Freud ''
+Reference: The Evolution of Physics ''
+Reference: Leopold Infeld ''
+Reference: genius ''
+Link: http://wordnetweb.princeton.edu/perl/webwn?s=Einstein 'WordNet for Einstein'
+Section [0] Biography
+Section [1] Early life and education
+Reference: File:Albert Einstein at the age of three (1882).jpg 'alt=A young boy with short hair and a round face, wearing a white collar and large bow, with vest, coat, skirt and high boots. He is leaning against an ornate chair.|thumb||upright|Einstein at the age of three in 1882'
+Reference: File:Albert Einstein as a child.jpg 'alt=Studio photo of a boy seated in a relaxed posture and wearing a suit, posed in front of a backdrop of scenery.|thumb||upright|Albert Einstein in 1893 (age 14)'
+Reference: File:Einstein-matura.jpg 'alt=Einstein's matriculation certificate at the age of 17. The heading reads "The Education Committee of the Canton of Aargau." His scores were German 5, French 3, Italian 5, History 6, Geography 4, Algebra 6, Geometry 6, Descriptive Geometry 6, Physics 6, Chemistry 5, Natural History 5, Art Drawing 4, Technical Drawing 4. The scores are 6 = excellent, 5 = good, 4 = sufficient, 3 = poor, 2 = very poor, 1 = unusable.|thumb|upright|Einstein's matriculation certificate at the age of 17, showing his final grades from the Aargau Kantonsschule (on a scale of 1-6).'
+Reference: Ulm ''
+Reference: Kingdom of Württemberg ''
+Begin Template: cite web 
+k: url
+Text: 'http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html '
+k: title
+Text: 'Albert Einstein&nbsp;– Biography '
+k: accessdate
+Text: '7 March 2007 '
+k: publisher
+Reference: Nobel Foundation ''
+End Template: cite web 
+Reference: Hermann Einstein ''
+Reference: Einstein family#Pauline Koch 'Pauline Einstein (née Koch)'
+Reference: Munich ''
+Reference: direct current ''
+Reference: Catholic school 'Catholic elementary school'
+Reference: Luitpold Gymnasium ''
+Begin Template: Citation 
+k: author
+Text: 'John J. Stachel '
+k: title
+Text: 'Einstein from "B" to "Z" '
+k: url
+Text: 'http://books.google.com/books?id=OAsQ_hFjhrAC&pg=PA59 '
+k: accessdate
+Text: '20 February 2011 '
+k: year
+Text: '2002 '
+k: publisher
+Text: 'Springer '
+k: isbn
+Text: '9780817641436 '
+k: pages
+Text: '59–61'
+End Template: Citation 
+Link: http://www.albert-einstein.org/.index11.html ''
+Begin Template: Citation 
+k: first
+Text: 'P. A. '
+k: last
+Text: 'Schilpp (Ed.) '
+k: title
+Text: 'Albert Einstein&nbsp;– Autobiographical Notes '
+k: pages
+Text: '8–9 '
+k: publisher
+Reference: Open Court Publishing Company ''
+Text: ' '
+k: year
+Text: '1979'
+End Template: Citation 
+Reference: Max Talmey ''
+Reference: Poland ''
+Reference: Critique of Pure Reason ''
+Reference: Euclid's Elements ''
+Link: http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf 'HarvardChem-Einstein-PDF'
+Begin Template: #tag:ref
+k: "Albert's intellectual growth was strongly fostered at home. His mother, a talented pianist, ensured the children's musical education. His father regularly read Schiller and Heine aloud to the family. Uncle Jakob challenged Albert with mathematical problems, which he solved with 'a deep feeling of happiness'." More significant were the weekly visits of Max Talmud from 1889 through 1894 during which time he introduced the boy to popular scientific texts that brought to an end a short-lived religious phase, convincing him that 'a lot in the Bible stories could not be true'. A textbook of plane geometry that he quickly worked through led on to an avid self-study of mathematics, several years ahead of the school curriculum.
+
+<ref>[http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf Einstein as a Student], pp. 3–5.</ref>
+k: group
+Text: 'fn'
+End Template: #tag:ref
+Reference: War of Currents ''
+Reference: alternating current ''
+Reference: Milan ''
+Reference: Pavia ''
+Reference: electrical engineering ''
+Reference: rote learning ''
+Reference: Aether theories 'Ether'
+Begin Template: Citation 
+k: last 
+Text: 'Mehra '
+k: first
+Text: 'Jagdish '
+k: contribution
+Text: 'Albert Einstein's first paper '
+k: title
+Text: 'The Golden Age of Physics '
+k: publisher
+Text: 'World Scientific '
+k: year
+Text: '2001 '
+k: url
+Text: 'http://www.worldscibooks.com/phy_etextbook/4454/4454_chap1.pdf '
+k: format
+Text: 'PDF '
+k: accessdate
+Text: '4 March 2007 '
+k: isbn
+Text: '9810249853'
+End Template: Citation 
+Reference: Zurich ''
+Reference: ETH 'Eidgenössische Polytechnische Schule'
+Reference: Aarau ''
+Reference: Maja Einstein 'Maja'
+Begin Template: Harvtxt
+k: Highfield
+k: Carter
+k: 1993
+k: pp
+Text: '21,31,56–57'
+End Template: Harvtxt
+Reference: German citizenship 'citizenship in the German Kingdom of Württemberg'
+Reference: Conscription in Germany 'military service'
+Reference: Matura ''
+Reference: Olsberg, Switzerland ''
+Reference: Mileva Marić ''
+Begin Template: Citation
+
+k: url
+Text: 'http://philosci40.unibe.ch/lehre/winter99/einstein/Walker_Stachel.pdf
+'
+k: title
+Text: 'Did Einstein Espouse his Spouse's Ideas?
+'
+k: author
+Text: 'Walker, Evan Harris
+'
+k: format
+Text: 'PDF
+'
+k: date
+Text: 'February 1989
+'
+k: publisher
+Text: 'Physics Today
+'
+k: accessdate
+Text: '31 March 2011
+'
+k: postscript
+Text: '.'
+End Template: Citation
+
+Link: http://philoscience.unibe.ch/lehre/winter99/einstein/Stachel1966.pdf 'philoscience.unibe.ch'
+Link: https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf ''
+Section [1] Marriages and children
+Begin Template: main
+k: Einstein family
+End Template: main
+Reference: Mileva Marić ''
+Reference: Lieserl Einstein 'Lieserl'
+Reference: Novi Sad ''
+Reference: Hans Albert Einstein ''
+Reference: Bern ''
+Reference: Eduard Einstein 'Eduard'
+Reference: cousin marriage 'married'
+Reference: Elsa Einstein 'Elsa Löwenthal'
+Begin Template: Harvnb
+k: Highfield
+k: Carter
+k: 1993
+k: p
+Text: '216'
+End Template: Harvnb
+Section [1] Patent office
+Reference: File:Einstein-with-habicht-and-solovine.jpg 'thumb|left|alt=Three young men in suits with high white collars and bow ties, sitting.|Left to right: Conrad Habicht, [[Maurice Solovine'
+Reference: File:einsteinhaus4.jpg 'alt=Attached stone dwelling with drapery visible in the windows. It is over a first story restaurant.|thumb|right|upright|[[Einsteinhaus|Einstein's home'
+Reference: Swiss Federal Institute of Intellectual Property 'Federal Office for Intellectual Property'
+Reference: patent examiner 'examiner'
+Begin Template: Citation
+k: title
+Text: 'Swiss Federal Institute of Intellectual Property '
+k: url
+Text: 'http://www.ipi.ch/E/institut/i1.shtm'
+k: accessdate
+Text: '16 October 2006 '
+End Template: Citation
+Begin Template: Citation 
+k: title
+Text: 'FAQ about Einstein and the Institute'
+k: url
+Text: 'http://www.ipi.ch/E/institut/i1094.shtm'
+End Template: Citation 
+Reference: patent application ''
+Reference: thought experiment ''
+Reference: Olympia Academy 'The Olympia Academy'
+Reference: Henri Poincaré ''
+Reference: Ernst Mach ''
+Reference: David Hume ''
+Section [1] Academic career
+Reference: File:Albert Einstein (Nobel).png 'thumb|left|Einstein's official 1921 portrait after receiving the Nobel Prize in Physics.'
+Reference: List of scientific publications by Albert Einstein#Journal articles '"Folgerungen aus den Kapillarität Erscheinungen"'
+Reference: Annalen der Physik ''
+Begin Template: Citation
+
+k: last 
+Text: 'Galison
+'
+k: first 
+Text: 'Peter
+'
+k: authorlink 
+Text: 'Peter Galison
+'
+k: title 
+Text: 'Einstein's Clocks, Poincaré's Maps: Empires of Time
+'
+k: publisher
+Text: 'W.W. Norton
+'
+k: location 
+Text: 'New York
+'
+k: year 
+Text: '2003
+'
+k: isbn 
+Text: '0393020010 '
+End Template: Citation
+
+Reference: Alfred Kleiner ''
+Reference: Wikt:pro forma 'pro-forma'
+Reference: University of Zurich ''
+Begin Template: harv
+k: Einstein
+k: 1905b
+End Template: harv
+Begin Template: cite web
+k: url
+Text: 'http://e-collection.library.ethz.ch/eserv/eth:30378/eth-30378-01.pdf '
+k: title
+Text: 'Eine Neue Bestimmung der Moleküldimensionen '
+k: publisher
+Text: 'ETH Zürich '
+k: year
+Text: '1905 '
+k: accessdate
+Text: '26 September 2011'
+End Template: cite web
+Reference: annus mirabilis ''
+Reference: Annus Mirabilis papers 'four groundbreaking papers'
+Reference: University of Bern ''
+Reference: Docent#Germany and Switzerland 'docent'
+Begin Template: cite web
+k: url
+Text: 'http://www.uzh.ch/about/portrait/history.html '
+k: title
+Text: 'Universität Zürich: Geschichte '
+k: publisher
+Text: 'Uzh.ch '
+k: date
+Text: '2 December 2010 '
+k: accessdate
+Text: '3 April 2011'
+End Template: cite web
+Reference: Charles University in Prague 'Karl-Ferdinand University in Prague'
+Reference: Kaiser Wilhelm Society 'Kaiser Wilhelm Institute for Physics'
+Reference: Kaiser Wilhelm Institute for Physics ''
+Reference: Humboldt University of Berlin ''
+Reference: Prussian Academy of Sciences ''
+Reference: German Physical Society ''
+Begin Template: Citation
+
+k: title
+Text: 'Albert Einstein: a biography
+'
+k: first1
+Text: 'Alice
+'
+k: last1
+Text: 'Calaprice
+'
+k: first2
+Text: 'Trevor
+'
+k: last2
+Text: 'Lipscombe
+'
+k: publisher
+Text: 'Greenwood Publishing Group
+'
+k: year
+Text: '2005
+'
+k: isbn
+Text: '0-313-33080-8
+'
+k: page
+Text: 'xix
+'
+k: url
+Text: 'http://books.google.com/?id=5eWh2O_3OAQC'
+End Template: Citation
+
+Link: http://books.google.com/books?id=5eWh2O_3OAQC&pg=PR19 'Timeline, p. xix'
+Reference: Arthur Stanley Eddington 'Arthur Eddington'
+Reference: solar eclipse of 29 May 1919 ''
+Reference: The Times ''
+Begin Template: Citation
+k: last 
+Text: 'Andrzej '
+k: first 
+Text: 'Stasiak '
+k: year 
+Text: '2003 '
+k: title 
+Text: 'Myths in science '
+k: journal
+Text: 'EMBO reports '
+k: volume 
+Text: '4 '
+k: issue 
+Text: '3 '
+k: page 
+Text: '236'
+k: doi 
+Text: '10.1038/sj.embor.embor779 '
+k: url 
+Text: 'http://www.nature.com/embor/journal/v4/n3/full/embor779.html '
+k: accessdate 
+Text: '31 March 2007'
+End Template: Citation
+Reference: Nobel Prize in Physics ''
+Reference: Copley Medal ''
+Reference: Royal Society ''
+Section [1] Travels abroad
+Reference: John Francis Hylan 'the Mayor'
+Reference: Viscount Haldane ''
+Reference: Singapore ''
+Reference: Ceylon ''
+Reference: Tokyo Imperial Palace 'Imperial Palace'
+Begin Template: rp
+k: 307
+End Template: rp
+Begin Template: rp
+k: 308
+End Template: rp
+Reference: British Mandate for Palestine 'Palestine'
+Reference: Sir Herbert Samuel ''
+Begin Template: Block quote
+k: I consider this the greatest day of my life. Before, I have always found something to regret in the Jewish soul, and that is the forgetfulness of its own people. Today, I have been made happy by the sight of the Jewish people learning to recognize themselves and to make themselves recognized as a force in the world.<ref name
+Text: 'Isaacson/>'
+Begin Template: rp
+k: 308
+End Template: rp
+Text: '.'
+End Template: Block quote
+Section [1] Love of music
+Reference: Leon Botstein ''
+Reference: File:Einstein - violin - 1939.jpg 'thumb|Playing violin at home in Princeton, 1939'
+Reference: Mozart ''
+Reference: Aarau ''
+Reference: Beethoven ''
+Reference: violin sonata ''
+Reference: chamber music ''
+Reference: Max Planck ''
+Reference: Juilliard Quartet ''
+Section [1] Emigration
+Reference: File:Einstein-cartoon1.jpg 'thumb|left|Cartoon of Einstein, who has shed his "Pacifism" wings, standing next to a pillar labeled "World Peace." He is rolling up his sleeves and holding a sword labeled "Preparedness" (circa 1933).'
+Reference: Nazi Germany 'Nazis'
+Reference: Adolf Hitler ''
+Begin Template: cite web 
+k: url
+Text: 'http://www.ias.edu/people/einstein/in-brief '
+k: title
+Text: 'In Brief '
+k: publisher
+Text: 'Institute for Advanced Study '
+k: accessdate
+Text: '4 March 2010'
+End Template: cite web 
+Reference: Nazi book burnings ''
+Reference: Joseph Goebbels ''
+Reference: California Institute of Technology ''
+Reference: Institute for Advanced Study ''
+Reference: Princeton, New Jersey 'Princeton'
+Begin Template: cite web
+  
+k: title 
+Text: 'In Brief (Albert Einstein)
+  '
+k: work
+Text: 'The Center for History of Physics
+  '
+k: publisher
+Text: 'American Institute of Physics
+  '
+k: year 
+Text: '2005
+  '
+k: url 
+Text: 'http://www.ias.edu/people/einstein/in-brief
+  '
+k: accessdate 
+Text: '2 November 2010'
+End Template: cite web
+  
+Reference: John von Neumann ''
+Reference: Kurt Gödel ''
+Reference: Bruria Kaufman ''
+Reference: unified field theory ''
+Reference: quantum physics ''
+Reference: theoretical physics ''
+Section [2] World War II and the Manhattan Project
+Reference: Leó Szilárd ''
+Begin Template: cite news 
+k: url 
+Text: 'http://www.telegraph.co.uk/finance/comment/7970619/Obama-could-kill-fossil-fuels-overnight-with-a-nuclear-dash-for-thorium.html '
+k: location
+Text: 'London '
+k: work
+Text: 'The Daily Telegraph  '
+k: title
+Text: 'Obama could kill fossil fuels overnight with a nuclear dash for thorium '
+k: first
+Text: 'Ambrose '
+k: last
+Text: 'Evans-Pritchard '
+k: date
+Text: '29 August 2010'
+End Template: cite news 
+Reference: Edward Teller ''
+Reference: Eugene Wigner ''
+Reference: German nuclear energy project 'race to build an atomic bomb'
+Begin Template: rp
+k: 630
+End Template: rp
+Reference: Einstein–Szilárd letter 'a letter'
+Reference: Franklin D. Roosevelt ''
+Link: http://books.google.com/books?id=3PN-NEfl_U0C&pg=PA218&dq=Einstein+Roosevelt&num=30&cd=4#v=onepage&q=Letter%20from%20Einstein%20Roosevelt&f=false '''Nuclear Weapons and Nonproliferation: a Reference Handbook'''
+Reference: Manhattan Project ''
+Text: 'and'
+Begin Template: rp
+k: 110
+End Template: rp
+Reference: Linus Pauling ''
+Section [2] U.S. citizenship
+Reference: File:Citizen-Einstein.jpg 'thumb|right|Accepting U.S. citizenship, 1940'
+Reference: meritocracy ''
+Begin Template: rp
+k: 432
+End Template: rp
+Reference: National Association for the Advancement of Colored People ''
+Reference: African-American Civil Rights Movement (1896–1954) 'civil rights'
+Reference: W. E. B. Du Bois ''
+Link: http://books.google.com/books?id=4d79VQdOfFUC&pg=PR10&dq=Einstein+on+Race+and+Racism+america's+worst+disease#v=onepage&q&f=false 'Einstein on Race and Racism'
+Link: http://press.princeton.edu/titles/7921.html 'The new quotable Einstein'
+Link: http://books.google.com/books?id=dLhVn-McDDgC&pg=PA226&dq=racism+americas+worst+disease+1946#v=onepage&q&f=false 'Odyssey in Climate Modeling, Global Warming, and Advising Five Presidents'
+Reference: File:Albert Einstein at Princeton.jpg 'thumb|Einstein at his home in Princeton, 1949'
+Reference: Chaim Weizmann ''
+Reference: David Ben-Gurion ''
+Reference: President of Israel ''
+Begin Template: Cite news 
+k: url
+Text: 'http://www.time.com/time/magazine/article/0,9171,817454,00.html '
+k: title
+Text: 'ISRAEL: Einstein Declines '
+k: work
+Text: 'Time magazine '
+k: date
+Text: '1 December 1952 '
+k: accessdate
+Text: '31 March 2010'
+End Template: Cite news 
+Reference: Abba Eban ''
+Begin Template: rp
+k: 522
+End Template: rp
+Begin Template: rp
+k: 522
+End Template: rp
+Begin Template: cite web 
+k: url
+Text: 'http://www.princetonhistory.org/museum_alberteinstein.cfm '
+k: title
+Text: 'Einstein in Princeton / Scientist, Humanitarian, Cultural Icon '
+k: publisher
+Text: 'Historical Society of Princeton '
+k: accessdate
+Text: '31 March 2010'
+End Template: cite web 
+Section [1] Death
+Reference: File:Death headline.jpg 'thumb|The ''[[New York World-Telegram'
+Reference: abdominal aortic aneurysm ''
+Reference: Nissen fundoplication 'Dr. Rudolph Nissen'
+Begin Template: Citation 
+k: url
+Text: 'http://www.medscape.com/viewarticle/436253 '
+k: title
+Text: 'The Case of the Scientist with a Pulsating Mass '
+k: date
+Text: '14 June 2002 '
+k: accessdate
+Text: '11 June 2007'
+End Template: Citation 
+Begin Template: Citation 
+k: last
+Text: 'Albert Einstein Archives '
+k: contribution
+Text: 'Draft of projected Telecast Israel Independence Day, April 1955 (last statement ever written) '
+k: title
+Text: 'Einstein Archives Online '
+k: date
+Text: 'April 1955 '
+k: contribution-url
+Text: 'http://www.alberteinstein.info/db/ViewImage.do?DocumentID=20078&Page=1 '
+k: url
+Text: 'http://www.alberteinstein.info/ '
+k: accessdate
+Text: '14 March 2007 '
+End Template: Citation 
+Begin Template: Citation 
+k: year
+Text: '1995 '
+k: month
+Text: 'November '
+k: author
+Text: 'Cohen, J.R.; Graver, L.M. '
+k: title
+Text: 'The ruptured abdominal aortic aneurysm of Albert Einstein '
+k: volume 
+Text: '170 '
+k: issue
+Text: '5 '
+k: pages 
+Text: '455–8 '
+k: journal
+Text: 'Surgery, Gynecology & Obstetrics '
+k: pmid
+Text: '2183375 '
+k: ref
+Text: 'harv '
+k: postscript
+Text: '.
+'
+End Template: Citation 
+Reference: Princeton Hospital ''
+Reference: Thomas Stoltz Harvey ''
+Reference: Albert Einstein's brain 'Einstein's brain'
+Reference: neuroscience ''
+Begin Template: Citation 
+k: url
+Text: 'http://www.npr.org/templates/story/story.php?storyId=4602913 '
+k: title
+Text: 'The Long, Strange Journey of Einstein's Brain '
+k: accessdate
+Text: '3 October 2007 '
+k: publisher
+Reference: National Public Radio ''
+End Template: Citation 
+Begin Template: Citation 
+k: last 
+Text: 'O'Connor '
+k: first 
+Text: 'J.J. '
+k: last2 
+Text: 'Robertson '
+k: first2 
+Text: 'E.F. '
+k: chapter
+Text: 'Albert Einstein '
+k: title
+Text: 'The MacTutor History of Mathematics archive '
+k: publisher
+Text: 'School of Mathematics and Statistics, University of St. Andrews '
+k: year
+Text: '1997 '
+k: chapter-url
+Text: 'http://www-history.mcs.st-andrews.ac.uk/Biographies/Einstein.html '
+End Template: Citation 
+Begin Template: Citation 
+k: title
+Text: 'Dr. Albert Einstein Dies in Sleep at 76. World Mourns Loss of Great Scientist'
+k: quote
+Text: 'Princeton, New Jersey, 18 April 1955. Dr. Albert Einstein, one of the great thinkers of the ages, died in his sleep here early today. '
+k: work
+Text: 'New York Times '
+k: date
+Text: '19 April 1955 '
+End Template: Citation 
+Reference: Robert Oppenheimer ''
+Link: http://books.google.com/books?id=zGzcV40b3IkC&pg=PA97&dq=E%3D+Einstein's+German+by+Fritz+Stern#v=onepage&q&f=false '"Einstein's Germany"'
+Section [0] Scientific career
+Reference: File:Einstein patentoffice.jpg 'alt=Head and shoulders shot of a young, moustached man with dark, curly hair wearing a plaid suit and vest, striped shirt, and a dark tie.|thumb|upright|Albert Einstein in 1904'
+Reference: Image:Photoelectric effect.svg 'thumb|upright|The photoelectric effect. Incoming photons on the left strike a metal plate (bottom), and eject electrons, depicted as flying off to the right.'
+Reference: Einstein refrigerator ''
+Link: http://www.lorentz.leidenuniv.nl/history/Einstein_archive/ 'Einstein archive at the Instituut-Lorentz'
+Section [1] 1905 - Annus Mirabilis papers
+Begin Template: Main
+k: Annus Mirabilis papers
+k: Photoelectric effect
+k: Special theory of relativity
+k: Mass–energy equivalence
+End Template: Main
+Reference: Annus mirabilis 'Annus Mirabilis'
+Reference: photoelectric effect ''
+Reference: quantum mechanics 'quantum theory'
+Reference: Brownian motion ''
+Reference: special theory of relativity ''
+Reference: E=mc2 'E = mc<sup>2</sup>'
+Reference: Annalen der Physik ''
+Reference: History of physics#Modern physics 'modern physics'
+Reference: space ''
+Reference: matter ''
+Begin Table
+Text: ' class=wikitable
+'
+Header Cell (1, 1)
+Text: 'Title <small>(translated)</small> '
+Header Cell (1, 2)
+Text: 'Area of focus '
+Header Cell (1, 3)
+Text: 'Received '
+Header Cell (1, 4)
+Text: 'Published '
+Header Cell (1, 5)
+Text: 'Significance
+'
+Body Cell (2, 2)
+Text: '''On a Heuristic Viewpoint Concerning the Production and Transformation of Light'' '
+Body Cell (2, 3)
+Reference: Photoelectric effect ''
+Text: ' '
+Body Cell (2, 4)
+Text: '18 March '
+Body Cell (2, 5)
+Text: '9 June '
+Body Cell (2, 6)
+Text: 'Resolved an unsolved puzzle by suggesting that energy is exchanged only in discrete amounts ('
+Reference: quantum 'quanta'
+Text: ').<ref>'
+Begin Template: cite book 
+k: title
+Text: 'Lectures on quantum mechanics '
+k: first1
+Text: 'Ashok '
+k: last1
+Text: 'Das '
+k: publisher
+Text: 'Hindustan Book Agency '
+k: year
+Text: '2003 '
+k: isbn
+Text: '8-185-93141-0 '
+k: page
+Text: '59 '
+k: url
+Text: 'http://books.google.com/books?id=KmwsAAAAYAAJ'
+End Template: cite book 
+Text: '</ref> This idea was pivotal to the early development of quantum theory.<ref>'
+Begin Template: cite book 
+k: title
+Text: 'Seven ideas that shook the universe '
+k: edition
+Text: '2nd '
+k: first1
+Text: 'Nathan '
+k: last1
+Text: 'Spielberg '
+k: first2
+Text: 'Bryon D. '
+k: last2
+Text: 'Anderson '
+k: publisher
+Text: 'John Wiley & Sons '
+k: year
+Text: '1995 '
+k: isbn
+Text: '0-471-30606-1 '
+k: page
+Text: '263 '
+k: url
+Text: 'http://books.google.com/books?id=_pbuAAAAMAAJ'
+End Template: cite book 
+Text: '</ref>
+'
+Body Cell (3, 2)
+Text: '''On the Motion of Small Particles Suspended in a Stationary Liquid, as Required by the Molecular Kinetic Theory of Heat'' '
+Body Cell (3, 3)
+Reference: Brownian motion ''
+Text: ' '
+Body Cell (3, 4)
+Text: '11 May '
+Body Cell (3, 5)
+Text: '18 July '
+Body Cell (3, 6)
+Text: 'Explained empirical evidence for the '
+Reference: atom 'atomic theory'
+Text: ', supporting the application of '
+Reference: statistical physics ''
+Text: '.
+'
+Body Cell (4, 2)
+Text: '''On the Electrodynamics of Moving Bodies'' '
+Body Cell (4, 3)
+Reference: Special relativity ''
+Text: ' '
+Body Cell (4, 4)
+Text: '30 June '
+Body Cell (4, 5)
+Text: '26 Sept '
+Body Cell (4, 6)
+Text: 'Reconciled Maxwell's equations for electricity and magnetism with the laws of mechanics by introducing major changes to mechanics close to the speed of light, resulting from analysis based on empirical evidence that the speed of light is independent of the motion of the observer.<ref>'
+Begin Template: cite book
+
+k: title
+Text: 'The quantum beat: principles and applications of atomic clocks '
+k: edition
+Text: '2nd  '
+k: first1
+Text: 'Fouad G. '
+k: last1
+Text: 'Major '
+k: publisher
+Text: 'Springer  '
+k: year
+Text: '2007 '
+k: isbn
+Text: '0-387-69533-8 '
+k: page
+Text: '142 '
+k: url
+Text: 'http://books.google.com/books?id=tmdr6Wx_2PYC'
+End Template: cite book
+
+Text: '</ref>  Discredited the concept of an "'
+Reference: luminiferous ether ''
+Text: '."<ref>'
+Begin Template: cite book 
+k: title
+Text: 'Foundations of physics '
+k: first1
+Text: 'Robert Bruce '
+k: last1
+Text: 'Lindsay '
+k: first2
+Text: 'Henry '
+k: last2
+Text: 'Margenau '
+k: publisher
+Text: 'Ox Bow Press '
+k: year
+Text: '1981 '
+k: isbn
+Text: '0-918-02417-X '
+k: page
+Text: '330 '
+k: url
+Text: 'http://books.google.com/books?id=dwZltQAACAAJ'
+End Template: cite book 
+Text: '</ref>
+'
+Body Cell (5, 2)
+Text: '''Does the Inertia of a Body Depend Upon Its Energy Content?'' '
+Body Cell (5, 3)
+Reference: Mass–energy equivalence 'Matter–energy equivalence'
+Text: ' '
+Body Cell (5, 4)
+Text: '27 Sept '
+Body Cell (5, 5)
+Text: '21 Nov '
+Body Cell (5, 6)
+Text: 'Equivalence of matter and energy, '
+Begin Template: nowrap
+k: 1
+Text: '''E'' = ''mc''<sup>2</sup>'
+End Template: nowrap
+Text: ' (and by implication, the ability of gravity to "bend" light), the existence of "'
+Reference: rest energy ''
+Text: '", and the basis of nuclear energy.
+'
+End Table
+Section [1] Thermodynamic fluctuations and statistical physics
+Begin Template: Main
+k: Statistical mechanics
+k: thermal fluctuations
+k: statistical physics
+End Template: Main
+Begin Template: cite web
+k: author
+Text: 'Hans-Josef Kuepper '
+k: url
+Text: 'http://www.einstein-website.de/z_physics/wisspub-e.html '
+k: title
+Text: 'List of Scientific Publications of Albert Einstein '
+k: publisher
+Text: 'Einstein-website.de '
+k: accessdate
+Text: '3 April 2011'
+End Template: cite web
+Reference: capillary attraction ''
+Reference: atom ''
+Reference: Brownian motion ''
+Section [1] General principles
+Reference: principle of relativity ''
+Reference: Hermann Minkowski ''
+Reference: principle of equivalence ''
+Reference: adiabatic invariant 'adiabatic invariance'
+Section [1] Theory of relativity and <math>E =mc ^2</math>
+Begin Template: Main
+k: History of special relativity
+End Template: Main
+Reference: Maxwell's equations ''
+Reference: speed of light ''
+Reference: special theory of relativity ''
+Reference: Spacetime 'time-space frame'
+Reference: Time dilation 'slow down'
+Reference: Length contraction 'contract'
+Reference: luminiferous aether ''
+Begin Template: harv
+k: Einstein
+k: 1905d
+End Template: harv
+Reference: mass–energy equivalence ''
+Begin Template: Citation
+k: last 
+Text: 'Stachel'
+k: first 
+Text: 'John J.'
+k: title 
+Text: 'Einstein from "B" to "Z"
+  '
+k: publisher
+Text: 'Springer-Verlag New York, LLC'
+k: series 
+Text: 'Einstein Studies, Vol. 9
+  '
+k: date 
+Text: 'December 2001
+  '
+k: location 
+Text: 'Center for Einstein Studies, Boston University
+  '
+k: pages 
+Text: 'vi, 15, 90, 131, 215
+  '
+k: url 
+Text: 'http://books.google.com/?id=OAsQ_hFjhrAC&pg=PA215&dq=mass%E2%80%93energy+equivalence#
+  '
+k: isbn 
+Text: '978-0-8176-4143-6'
+End Template: Citation
+Begin Template: Citation 
+k: last 
+Text: 'Pais '
+k: first 
+Text: 'Abraham '
+k: author-link 
+Text: 'Abraham Pais '
+k: year 
+Text: '1982 '
+k: title 
+Text: 'Subtle is the Lord. The Science and the Life of Albert Einstein '
+k: publisher
+Text: 'Oxford University Press '
+k: pages 
+Text: '382–386 '
+k: isbn 
+Text: '019853907X '
+End Template: Citation 
+Section [1] Photons and energy quanta
+Begin Template: Main
+k: Photon
+k: Quantum
+End Template: Main
+Begin Template: Citation 
+k: last 
+Text: 'Einstein '
+k: first 
+Text: 'Albert '
+k: title 
+Text: 'Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt '
+k: journal
+Text: 'Annalen der Physik '
+k: volume 
+Text: '17 '
+k: pages 
+Text: '132–148 '
+k: year 
+Text: '1905 '
+k: url 
+Text: 'http://www.zbp.univie.ac.at/dokumente/einstein1.pdf '
+k: accessdate 
+Text: '27 June 2009 '
+k: bibcode 
+Text: '1905AnP...322..132E '
+k: doi 
+Text: '10.1002/andp.19053220607 '
+k: issue 
+Text: '6 '
+End Template: Citation 
+Reference: quantum 'quanta'
+Reference: Robert Millikan ''
+Reference: photoelectric effect ''
+Reference: Compton scattering ''
+Reference: photon ''
+Reference: Planck's constant ''
+Begin Template: harv
+k: Einstein
+k: 1905a
+End Template: harv
+Section [1] Quantized atomic vibrations
+Begin Template: Main
+k: Einstein solid
+End Template: Main
+Reference: Peter Debye ''
+Link: http://www.osti.gov/accomplishments/nuggets/einstein/solidcolda.html 'Celebrating Einstein "Solid Cold". U.S. DOE.'
+Reference: Office of Scientific and Technical Information ''
+Section [1] Adiabatic principle and action-angle variables
+Begin Template: Main
+k: Old quantum theory
+End Template: Main
+Reference: Ernest Rutherford ''
+Reference: periodic table of the elements ''
+Reference: Wilhelm Wien ''
+Reference: adiabatic invariant 'adiabatic invariance'
+Reference: blackbody radiation 'blackbody curves'
+Reference: Wien's displacement law 'simple shifting process'
+Reference: Arnold Sommerfeld ''
+Reference: action-angle variables 'action variable'
+Begin Template: citation needed
+k: date
+Text: 'December 2010'
+End Template: citation needed
+Section [1] Wave–particle duality
+Reference: File:Einstein 1911 Solvay.jpg 'alt=Upper body shot of man in suit, high white collar and bow tie.|thumb|upright|Einstein at the [[Solvay Conference'
+Begin Template: Main
+k: Wave–particle duality
+End Template: Main
+Reference: privatdozent ''
+Reference: University of Bern ''
+Begin Template: Citation
+k: last 
+Text: 'Pais '
+k: first 
+Text: 'Abraham '
+k: author-link 
+Text: 'Abraham Pais '
+k: year 
+Text: '1982 '
+k: title 
+Text: 'Subtle is the Lord. The Science and the Life of Albert Einstein '
+k: publisher
+Text: 'Oxford University Press '
+k: isbn 
+Text: '019853907X '
+k: page 
+Text: '522 '
+End Template: Citation
+Reference: s:The Development of Our Views on the Composition and Essence of Radiation 'The Development of Our Views on the Composition and Essence of Radiation'
+Reference: quantization (physics) 'quantization'
+Reference: momentum 'momenta'
+Reference: point particle 'point-like particles'
+Reference: Gilbert N. Lewis ''
+Reference: wave–particle duality ''
+Reference: quantum mechanics ''
+Section [1] Theory of critical opalescence
+Begin Template: Main
+k: Critical opalescence
+End Template: Main
+Reference: Raleigh scattering ''
+Link: http://www.pbs.org/wgbh/nova/einstein/genius/ 'Einstein's Big Idea'
+Reference: Public Broadcasting Service ''
+Section [1] Zero-point energy
+Begin Template: Main
+k: Zero-point energy
+End Template: Main
+Begin Template: frac
+k: 1
+k: 2
+End Template: frac
+Reference: Otto Stern ''
+Section [1] General relativity and the Equivalence Principle
+Begin Template: Main
+k: History of general relativity
+End Template: Main
+Begin Template: See also
+k: Principle of equivalence
+k: Theory of relativity
+k: Einstein field equations
+End Template: See also
+Reference: Image:1919 eclipse positive.jpg 'alt=Black circle covering the sun, rays visible around it, in a dark sky.|thumb|upright|[[Arthur Stanley Eddington|Eddington'
+Reference: solar eclipse ''
+Reference: theory of gravitation ''
+Reference: general relativity ''
+Reference: astrophysics ''
+Reference: black holes ''
+Reference: general relativity ''
+Reference: special relativity ''
+Link: http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-lecture.html 'Nobel lecture'
+Reference: special relativity ''
+Reference: free fall ''
+Reference: Equivalence principle ''
+Reference: gravitational time dilation ''
+Reference: Gravitational lensing 'deflection of light'
+Section [1] Hole argument and Entwurf theory
+Begin Template: Main
+k: Hole argument
+End Template: Main
+Reference: gauge invariance ''
+Section [1] Cosmology
+Begin Template: Main
+k: Cosmology
+End Template: Main
+Reference: cosmological constant ''
+Reference: Einstein static universe 'eternal static sphere'
+Begin Template: Harv
+k: Einstein
+k: 1917a
+End Template: Harv
+Reference: File:Albert Einstein photo 1920.jpg 'alt=Einstein, sitting at a table, looks up from the papers he is reading and into the camera.|thumb|upright|Einstein in his office at the [[University of Berlin'
+Reference: Mach's principle ''
+Reference: frame dragging ''
+Reference: Gravitomagnetism 'gravitomagnetic fields'
+Section [1] Modern quantum theory
+Begin Template: Main
+k: Schrödinger equation
+End Template: Main
+Reference: stimulated emission ''
+Reference: maser ''
+Reference: laser ''
+Begin Template: Harv
+k: Einstein
+k: 1917b
+End Template: Harv
+Reference: Louis de Broglie ''
+Reference: Matter wave 'de Broglie waves'
+Reference: Hamilton–Jacobi equation ''
+Section [1] Bose–Einstein statistics
+Begin Template: Main
+k: Bose–Einstein condensation
+End Template: Main
+Reference: statistical mechanics 'statistical'
+Reference: Satyendra Nath Bose ''
+Reference: Zeitschrift für Physik ''
+Reference: Bose–Einstein condensate ''
+Begin Template: Harv
+k: Einstein
+k: 1924
+End Template: Harv
+Reference: Eric Allin Cornell ''
+Reference: Carl Wieman ''
+Reference: ultracold atom 'ultra-cooling'
+Reference: National Institute of Standards and Technology 'NIST'
+Reference: JILA ''
+Reference: University of Colorado at Boulder ''
+Begin Template: Citation
+k: url
+Text: 'http://www.nist.gov/public_affairs/releases/n01-04.htm'
+k: title
+Text: 'Cornell and Wieman Share 2001 Nobel Prize in Physics'
+k: date
+Text: '9 October 2001'
+k: accessdate
+Text: '11 June 2007'
+End Template: Citation
+Reference: Bose–Einstein statistics ''
+Reference: boson ''
+Section [1] Energy momentum pseudotensor
+Begin Template: Main
+k: Stress-energy-momentum pseudotensor
+End Template: Main
+Reference: Noether's theorem ''
+Reference: Lagrangian ''
+Reference: Translational symmetry 'translation invariance'
+Reference: general covariance ''
+Reference: gauge symmetry ''
+Reference: Lev Landau ''
+Reference: Evgeny Lifshitz ''
+Reference: Erwin Schrödinger ''
+Section [1] Unified field theory
+Begin Template: Main
+k: Classical unified field theories
+End Template: Main
+Reference: unified field theory ''
+Reference: Scientific American ''
+Begin Template: Harv
+k: Einstein
+k: 1950
+End Template: Harv
+Reference: strong nuclear force 'strong'
+Reference: weak nuclear force ''
+Reference: theory of everything ''
+Reference: string theory ''
+Section [1] Wormholes
+Begin Template: Main
+k: Wormhole
+End Template: Main
+Reference: wormhole ''
+Reference: Schwarzschild black hole ''
+Section [1] Einstein–Cartan theory
+Begin Template: Main
+k: Einstein–Cartan theory
+End Template: Main
+Reference: Torsion tensor 'torsion'
+Section [1] Equations of motion
+Begin Template: Main
+k: Einstein–Infeld–Hoffmann equations
+End Template: Main
+Reference: Einstein equations ''
+Reference: geodesic equation ''
+Reference: Roy Kerr ''
+Section [1] Other investigations
+Begin Template: main
+k: Einstein's unsuccessful investigations
+End Template: main
+Reference: force ''
+Reference: superconductivity ''
+Reference: gravitational waves ''
+Reference: Einstein's unsuccessful investigations 'main article'
+Section [1] Collaboration with other scientists
+Reference: File:Solvay conference 1927.jpg '230px|thumb|The 1927 [[Solvay Conference'
+Reference: Leopold Infeld ''
+Reference: Nathan Rosen ''
+Reference: Peter Bergmann ''
+Section [2] Einstein–de Haas experiment
+Begin Template: Main
+k: Einstein–de Haas effect
+End Template: Main
+Reference: torsion pendulum ''
+Section [2] Schrödinger gas model
+Reference: Bose–Einstein condensate 'Bose–Einstein gas'
+Reference: second quantization ''
+Reference: thermodynamics 'thermodynamic'
+Reference: Quantum chaos 'semiclassical'
+Reference: ideal gas ''
+Begin Template: Citation 
+k: last
+Text: 'Moore '
+k: first
+Text: 'Walter '
+k: year
+Text: '1989 '
+k: title
+Text: 'Schrödinger: Life and Thought '
+k: location
+Text: 'Cambridge '
+k: publisher
+Text: 'Cambridge University Press '
+k: isbn
+Text: '0-521-43767-9'
+End Template: Citation 
+Section [2] Einstein refrigerator
+Begin Template: Main
+k: Einstein refrigerator
+End Template: Main
+Reference: Leó Szilárd ''
+Reference: Einstein refrigerator ''
+Reference: absorption refrigerator ''
+Link: http://gtalumni.org/Publications/magazine/sum98/einsrefr.html 'Einstein's refrigerator'
+Reference: Leó Szilárd ''
+Reference: chain reaction ''
+Begin Template: US patent
+k: 1781541
+End Template: US patent
+Reference: Electrolux ''
+Begin Template: Citation 
+k: last 
+Text: 'Alok '
+k: first 
+Text: 'Jha '
+k: title 
+Text: 'Einstein fridge design can help global cooling '
+k: work
+Text: 'The Guardian '
+k: location
+Text: 'UK '
+k: date 
+Text: '21 September 2008 '
+k: url 
+Text: 'http://www.guardian.co.uk/science/2008/sep/21/scienceofclimatechange.climatechange '
+k: accessdate 
+Text: '22 February 2011'
+End Template: Citation 
+Section [1] Bohr versus Einstein
+Begin Template: Main
+k: Bohr–Einstein debates
+End Template: Main
+Reference: File:Niels Bohr Albert Einstein by Ehrenfest.jpg 'alt=Two men sitting, looking relaxed. A dark-haired Bohr is talking while Einstein looks sceptical.|thumb|Einstein and [[Niels Bohr'
+Reference: quantum mechanics ''
+Reference: Niels Bohr ''
+Reference: philosophy of science ''
+Begin Template: cite web 
+k: url 
+Text: 'http://www.marxists.org/reference/subject/philosophy/works/dk/bohr.htm '
+k: title 
+Text: 'Discussions with Einstein on Epistemological Problems in Atomic Physics '
+k: accessdate 
+Text: '30 August 2010 '
+k: last 
+Text: 'Bohr N '
+k: work
+Text: 'The Value of Knowledge: A Miniature Library of Philosophy '
+k: publisher
+Reference: Marxists Internet Archive ''
+End Template: cite web 
+Begin Template: Harv
+k: Einstein
+k: 1969
+End Template: Harv
+Begin Template: Harv
+k: Einstein
+k: 1935
+End Template: Harv
+Section [1] Einstein–Podolsky–Rosen paradox
+Begin Template: Main
+k: EPR paradox
+End Template: Main
+Reference: local realism ''
+Reference: Aspect experiment ''
+Reference: Bell's theorem ''
+Section [0] Political and religious views
+Begin Template: Main
+k: Albert Einstein's political views
+k: Albert Einstein's religious views
+End Template: Main
+Reference: File:Einsteinwiezmann.PNG 'alt=Casual group shot of four men and two women standing on a brick pavement.|thumb|Albert Einstein, seen here with his wife [[Elsa Einstein'
+Reference: President of Israel ''
+Reference: Chaim Weizmann ''
+Reference: Vera Weizmann 'Dr. Vera Weizmann'
+Reference: Menahem Ussishkin ''
+Reference: New York City ''
+Reference: Albert Einstein's political views 'see main article'
+Reference: Judaism ''
+Reference: Spinoza's god ''
+Reference: personal god ''
+Section [0] Non-scientific legacy
+Reference: The Hebrew University ''
+Begin Template: cite web
+k: url
+Text: 'http://query.nytimes.com/gst/fullpage.html?res=9A0DEFD9153FF931A25754C0A960948260 '
+k: title
+Text: 'Obituary '
+k: work
+Text: 'New York Times '
+k: date
+Text: '12 July 1986 '
+k: accessdate
+Text: '3 April 2011'
+End Template: cite web
+Reference: BBC ''
+Begin Template: Citation 
+k: title 
+Text: 'Letters Reveal Einstein Love Life '
+k: journal
+Reference: BBC News ''
+Text: ' '
+k: publisher
+Text: 'BBC  '
+k: url 
+Text: 'http://news.bbc.co.uk/2/hi/science/nature/5168002.stm '
+k: accessdate 
+Text: '14 March 2007 '
+k: date
+Text: '11 July 2006'
+End Template: Citation 
+Reference: personality rights 'image'
+Reference: Corbis ''
+Reference: The Roger Richman Agency ''
+Begin Template: Citation
+k: url
+Text: 'http://einstein.biz/'
+k: title
+Text: 'Einstein'
+k: publisher
+Text: 'Corbis Rights Representation'
+k: accessdate
+Text: '8 August 2008'
+End Template: Citation
+Section [0] In popular culture
+Begin Template: Main
+k: Albert Einstein in popular culture
+End Template: Main
+Link: http://www.newyorker.com/search/query?queryType=nonparsed&query=Einstein+&bylquery=Maloney&month1=01&day1=14&year1=1939&month2=01&day2=14&year2=1939&page=&sort=&submit.x=10&submit.y=5 'Disguise'
+Link: http://www.cindymctee.com/einsteins_dream.html ''
+Reference: Cindy McTee ''
+Reference: mad scientist ''
+Reference: absent-minded professor ''
+Begin Template: Citation
+k: last 
+Text: 'Golden '
+k: first 
+Text: 'Frederic '
+k: title 
+Text: 'Person of the Century: Albert Einstein'
+k: magazine 
+Text: 'Time '
+k: date 
+Text: '3 January 2000 '
+k: url 
+Text: 'http://www.time.com/time/time100/poc/magazine/albert_einstein5a.html '
+k: accessdate 
+Text: '25 February 2006 '
+End Template: Citation
+Section [0] Awards and honors
+Begin Template: main
+k: Einstein's awards and honors
+End Template: main
+Reference: Nobel Prize in Physics ''
+Section [0] Publications
+Reference: List of scientific publications by Albert Einstein ''
+Begin Template: refbegin
+k: colwidth
+Text: '30em'
+End Template: refbegin
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: year 
+Text: '1901
+'
+k: title 
+Text: 'Folgerungen aus den Capillaritätserscheinungen (Conclusions Drawn from the Phenomena of Capillarity)
+'
+k: periodical 
+Text: 'Annalen der Physik
+'
+k: volume 
+Text: '4
+'
+k: page 
+Text: '513
+'
+k: doi 
+Text: '10.1002/andp.19013090306
+'
+k: bibcode 
+Text: '1901AnP...309..513E
+'
+k: issue 
+Text: '3 '
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: year 
+Text: '1905a
+'
+k: title 
+Text: 'Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt (On a Heuristic Viewpoint Concerning the Production and Transformation of Light)
+'
+k: journal
+Text: 'Annalen der Physik
+'
+k: volume 
+Text: '17
+'
+k: pages 
+Text: '132–148
+'
+k: doi 
+Text: '10.1002/andp.19053220607
+'
+k: url 
+Text: 'http://www.physik.uni-augsburg.de/annalen/history/einstein-papers/1905_17_132-148.pdf
+'
+k: bibcode 
+Text: '1905AnP...322..132E
+'
+k: issue 
+Text: '6 '
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein'
+k: first
+Text: 'Albert'
+k: year
+Text: '1905b
+'
+k: title 
+Text: 'A new determination of molecular dimensions
+'
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: year 
+Text: '1905c
+'
+k: title 
+Text: 'On the Motion&nbsp;– Required by the Molecular Kinetic Theory of Heat&nbsp;– of Small Particles Suspended in a Stationary Liquid
+'
+k: journal
+Text: 'Annalen der Physik
+'
+k: volume 
+Text: '17
+'
+k: pages 
+Text: '549–560
+'
+k: bibcode 
+Text: '1905AnP...322..549E '
+k: doi 
+Text: '10.1002/andp.19053220806
+'
+k: issue 
+Text: '8 '
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: year 
+Text: '1905d
+'
+k: title 
+Text: 'On the Electrodynamics of Moving Bodies
+'
+k: journal
+Text: 'Annalen der Physik
+'
+k: volume 
+Text: '17
+'
+k: pages 
+Text: '891–921
+'
+k: bibcode 
+Text: '1905AnP...322..891E '
+k: doi 
+Text: '10.1002/andp.19053221004
+'
+k: issue 
+Text: '10 '
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein'
+k: first
+Text: 'Albert
+'
+k: year
+Text: '1905e
+'
+k: title 
+Text: 'Does the Inertia of a Body Depend Upon Its Energy Content?
+'
+k: journal
+Text: 'Annalen der Physik'
+k: volume
+Text: '18'
+k: pages
+Text: '639–641
+'
+k: bibcode 
+Text: '1905AnP...323..639E '
+k: doi 
+Text: '10.1002/andp.19053231314
+'
+k: issue 
+Text: '13 '
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: title 
+Text: 'Die Feldgleichungen der Gravitation (The Field Equations of Gravitation)
+'
+k: journal
+Text: 'Königlich Preussische Akademie der Wissenschaften
+'
+k: pages 
+Text: '844–847
+'
+k: year 
+Text: '1915
+'
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: title 
+Text: 'Kosmologische Betrachtungen zur allgemeinen Relativitätstheorie (Cosmological Considerations in the General Theory of Relativity)
+'
+k: journal
+Text: 'Königlich Preussische Akademie der Wissenschaften
+'
+k: year 
+Text: '1917a
+'
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: title 
+Text: 'Zur Quantentheorie der Strahlung (On the Quantum Mechanics of Radiation)
+'
+k: journal
+Text: 'Physikalische Zeitschrift
+'
+k: volume 
+Text: '18
+'
+k: pages 
+Text: '121–128
+'
+k: year 
+Text: '1917b
+'
+k: bibcode 
+Text: '1917PhyZ...18..121E '
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: date 
+Text: '11 July 1923
+'
+k: contribution 
+Text: 'Fundamental Ideas and Problems of the Theory of Relativity
+'
+k: title 
+Text: 'Nobel Lectures, Physics 1901–1921
+'
+k: publisher
+Text: 'Elsevier Publishing Company
+'
+k: place 
+Text: 'Amsterdam
+'
+k: url 
+Text: 'http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-lecture.pdf
+'
+k: accessdate 
+Text: '25 March 2007
+'
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: title 
+Text: 'Quantentheorie des einatomigen idealen Gases (Quantum theory of monatomic ideal gases)
+'
+k: journal
+Text: 'Sitzungsberichte der Preussichen Akademie der Wissenschaften Physikalisch-Mathematische Klasse
+'
+k: pages 
+Text: '261–267
+'
+k: year 
+Text: '1924
+'
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: title 
+Text: 'Die Ursache der Mäanderbildung der Flussläufe und des sogenannten Baerschen Gesetzes
+'
+k: journal
+Text: 'Die Naturwissenschaften
+'
+k: pages 
+Text: '223–224
+'
+k: year 
+Text: '1926
+'
+k: doi 
+Text: '10.1007/BF01510300
+'
+k: volume 
+Text: '14
+'
+k: bibcode 
+Text: '1926NW.....14..223E
+'
+k: issue 
+Text: '11 '
+End Template: Citation
+
+Reference: Baer's law ''
+Reference: meander ''
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: last2 
+Text: 'Podolsky
+'
+k: first2 
+Text: 'Boris
+'
+k: last3 
+Text: 'Rosen
+'
+k: first3 
+Text: 'Nathan
+'
+k: title 
+Text: 'Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?
+'
+k: journal
+Text: 'Physical Review
+'
+k: issue 
+Text: '10
+'
+k: volume 
+Text: '47
+'
+k: pages 
+Text: '777–780
+'
+k: date 
+Text: '15 May 1935
+'
+k: doi 
+Text: '10.1103/PhysRev.47.777
+'
+k: ref 
+Begin Template: harvid
+k: Einstein
+k: 1935
+End Template: harvid
+Text: '
+'
+k: bibcode 
+Text: '1935PhRv...47..777E '
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: title 
+Text: 'On Science and Religion
+'
+k: journal
+Text: 'Nature
+'
+k: volume 
+Text: '146
+'
+k: year 
+Text: '1940
+'
+k: doi 
+Text: '10.1038/146605a0
+'
+k: page 
+Text: '605
+'
+k: isbn 
+Text: '0707304539
+'
+k: publisher
+Text: 'Scottish Academic
+'
+k: location 
+Text: 'Edinburgh
+'
+k: bibcode 
+Text: '1940Natur.146..605E
+'
+k: issue 
+Text: '3706 '
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert ''et&nbsp;al.''
+'
+k: title 
+Text: 'To the editors
+'
+k: newspaper
+Text: 'New York Times
+'
+k: date 
+Text: '4 December 1948
+'
+k: url 
+Text: 'http://phys4.harvard.edu/~wilson/NYTimes1948.html
+'
+k: isbn 
+Text: '0735403597
+'
+k: publisher
+Text: 'AIP, American Inst. of Physics
+'
+k: location 
+Text: 'Melville, NY
+'
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: title 
+Text: 'Why Socialism?
+'
+k: magazine 
+Text: 'Monthly Review
+'
+k: date 
+Text: 'May 1949
+'
+k: url 
+Text: 'http://www.monthlyreview.org/598einst.htm
+'
+k: accessdate 
+Text: '16 January 2006
+'
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: title 
+Text: 'On the Generalized Theory of Gravitation
+'
+k: journal
+Text: 'Scientific American
+'
+k: volume 
+Text: 'CLXXXII
+'
+k: issue 
+Text: '4
+'
+k: pages 
+Text: '13–17
+'
+k: year 
+Text: '1950
+'
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: title 
+Text: 'Ideas and Opinions
+'
+k: place 
+Text: 'New York
+'
+k: publisher
+Text: 'Random House
+'
+k: year 
+Text: '1954
+'
+k: isbn 
+Text: '0-517-00393-7
+'
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: title 
+Text: 'Albert Einstein, Hedwig und Max Born: Briefwechsel 1916–1955
+'
+k: publisher
+Text: 'Nymphenburger Verlagshandlung
+'
+k: year 
+Text: '1969
+'
+k: location 
+Text: 'Munich
+'
+k: language 
+Text: 'German
+'
+k: isbn 
+Text: '388682005X
+'
+End Template: Citation
+
+Begin Template: Citation
+
+k: last 
+Text: 'Einstein
+'
+k: first 
+Text: 'Albert
+'
+k: edition 
+Text: 'Centennial
+'
+k: title 
+Text: 'Autobiographical Notes
+'
+k: year 
+Text: '1979
+'
+k: place 
+Text: 'Chicago
+'
+k: publisher
+Text: 'Open Court
+'
+k: isbn 
+Text: '0-875-48352-6
+'
+k: others 
+Text: 'Paul Arthur Schilpp
+'
+End Template: Citation
+
+Begin Template: Citation
+
+k: author
+Reference: John Stachel 'Stachel, John'
+Text: ', Martin J. Klein, a.&nbsp;J. Kox, Michel Janssen, R. Schulmann, Diana Komos Buchwald and others (Eds.)
+'
+k: year 
+Text: '1987–2006
+'
+k: title 
+Text: 'The Collected Papers of Albert Einstein, Vol. 1–10
+'
+k: publisher
+Reference: Princeton University Press ''
+Text: '
+'
+k: url
+Text: 'http://press.princeton.edu/einstein/writings.html#papers
+'
+End Template: Citation
+
+Link: http://www.einstein.caltech.edu/index.html 'Einstein Papers Project'
+Reference: Princeton University Press ''
+Link: http://press.princeton.edu/einstein/ 'Einstein Page'
+Begin Template: refend
+End Template: refend
+Section [0] See also
+Begin Template: Portal
+k: Biography
+k: Physics
+k: Science
+End Template: Portal
+Begin Template: Wikipedia books
+End Template: Wikipedia books
+Begin Template: div col
+k: colwidth
+Text: '20em'
+End Template: div col
+Reference: The Einstein Theory of Relativity ''
+Reference: German inventors and discoverers ''
+Reference: Heinrich Burkhardt ''
+Reference: Hermann Einstein ''
+Reference: Historical Museum of Bern ''
+Reference: History of gravitational theory ''
+Reference: Introduction to special relativity ''
+Reference: List of coupled cousins ''
+Reference: Relativity priority dispute ''
+Reference: Sticky bead argument ''
+Reference: Summation convention ''
+Reference: List of Jewish Nobel laureates ''
+Begin Template: div col end
+End Template: div col end
+Begin Template: clear
+End Template: clear
+Section [0] Notes
+Section [0] References
+Begin Template: Reflist
+k: colwidth
+Text: '30em'
+End Template: Reflist
+Section [0] Further reading
+Begin Template: refbegin
+End Template: refbegin
+Begin Template: cite book 
+k: last1
+Text: 'Highfield '
+k: first1
+Text: 'Roger '
+k: last2
+Text: 'Carter '
+k: first2
+Text: 'Paul '
+k: year
+Text: '1993 '
+k: title
+Text: 'The Private Lives of Albert Einstein '
+k: location
+Text: 'London '
+k: publisher
+Text: 'Faber and Faber '
+k: isbn
+Text: '978-0571167449 '
+k: ref
+Text: 'harv'
+End Template: cite book 
+Link: http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover 'The complete idiot's guide to understanding Einstein'
+Reference: Abraham Pais 'Pais, Abraham'
+Reference: J. Robert Oppenheimer 'Oppenheimer'
+Reference: J. Robert Oppenheimer 'Oppenheimer'
+Link: http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false 'On Albert Einstein by Robert Oppenheimer'
+Begin Template: refend
+End Template: refend
+Section [0] External links
+Begin Template: Sister project links
+k: Albert Einstein
+k: s
+Text: 'Author:Albert Einstein'
+End Template: Sister project links
+Link: http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en 'Einstein's Scholar Google profile'
+Reference: wikilivres:Albert Einstein 'Works by Albert Einstein'
+Begin Template: Citation
+k: year
+Text: '1997 '
+k: month
+Text: 'April '
+k: publisher
+Text: 'School of Mathematics and Statistics, University of St Andrews, Scotland '
+k: title 
+Text: 'The MacTutor History of Mathematics archive '
+k: url
+Text: 'http://www-history.mcs.st-andrews.ac.uk/Biographies/Einstein.html '
+k: accessdate 
+Text: '14 June 2009'
+End Template: Citation
+Link: http://www.monthlyreview.org/598einstein.php 'Why Socialism?'
+Reference: Monthly Review ''
+Link: http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren 'Einstein's Personal Correspondence: Religion, Politics, The Holocaust, and Philosophy'
+Link: http://vault.fbi.gov/Albert%20Einstein 'FBI file on Albert Einstein'
+Link: http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html 'Nobelprize.org Biography:Albert Einstein'
+Link: http://www.life.com/image/first/in-gallery/41492/the-einstein-you-never-knew 'The Einstein You Never Knew'
+Reference: Life magazine ''
+Link: http://www.history.com/topics/albert-einstein 'Albert Einstein'
+Link: http://www.pbs.org/wgbh/aso/databank/entries/bpeins.html 'Science Odyssey People And Discoveries'
+Link: http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstein-oppenheimer-feynman-physics-in-the-20th-century-spring-2006/ 'MIT OpenCourseWare STS.042J/8.225J: Einstein, Oppenheimer, Feynman: Physics in the 20th century'
+Begin Template: GoogleScholar
+k: qc6CJjYAAAAJ
+End Template: GoogleScholar
+Link: http://www.alberteinstein.info 'Albert Einstein Archives Online (80,000+ Documents)'
+Link: http://www.msnbc.msn.com/id/46785542/ns/technology_and_science-science/ 'MSNBC - 03/19/2012'
+Begin Template: Copley Medallists 1901-1950
+End Template: Copley Medallists 1901-1950
+Begin Template: Nobel Prize in Physics Laureates 1901–1925
+End Template: Nobel Prize in Physics Laureates 1901–1925
+Begin Template: philosophy of science
+End Template: philosophy of science
+Begin Template: Einstein family
+k: state
+Text: 'collapsed'
+End Template: Einstein family
+Begin Template: Use dmy dates
+k: date
+Text: 'October 2011'
+End Template: Use dmy dates
+Begin Template: Normdaten
+k: PND
+Text: '118529579'
+k: LCCN
+Text: 'n/79/22889'
+k: VIAF
+Text: '75121530'
+End Template: Normdaten
+Begin Template: Persondata
+
+k: NAME 
+Text: 'Einstein, Albert
+'
+k: ALTERNATIVE NAMES 
+k: SHORT DESCRIPTION 
+Reference: Physicist ''
+Text: '
+'
+k: DATE OF BIRTH 
+Text: '1879-03-14 <!-- ISO format (YYYY-MM-DD) -->
+'
+k: PLACE OF BIRTH 
+Reference: Ulm ''
+Text: ', '
+Reference: Baden-Württemberg ''
+Text: ', '
+Reference: German Empire ''
+Text: '
+'
+k: DATE OF DEATH 
+Text: '1955-04-18 <!-- ISO format (YYYY-MM-DD) -->
+'
+k: PLACE OF DEATH 
+Reference: Princeton, New Jersey ''
+Text: ', '
+Reference: USA ''
+Text: '
+'
+End Template: Persondata
+
+Begin Template: DEFAULTSORT:Einstein, Albert
+End Template: DEFAULTSORT:Einstein, Albert
+Reference: Category:1879 births ''
+Reference: Category:1955 deaths ''
+Reference: Category:19th-century American people ''
+Reference: Category:19th-century German people ''
+Reference: Category:19th-century Jews ''
+Reference: Category:19th-century Swiss people ''
+Reference: Category:20th-century American people ''
+Reference: Category:20th-century German people ''
+Reference: Category:20th-century Swiss people ''
+Reference: Category:Academics of Charles University in Prague ''
+Reference: Category:Albert Einstein ' '
+Reference: Category:American humanitarians ''
+Reference: Category:American inventors ''
+Reference: Category:American pacifists ''
+Reference: Category:American people of Swiss-Jewish descent ''
+Reference: Category:American people of German-Jewish descent ''
+Reference: Category:American physicists ''
+Reference: Category:Cosmologists ''
+Reference: Category:Deaths from abdominal aortic aneurysm ''
+Reference: Category:Deists ''
+Reference: Category:Einstein family ''
+Reference: Category:ETH Zurich alumni ''
+Reference: Category:ETH Zurich faculty ''
+Reference: Category:Fellows of the Leopoldina ''
+Reference: Category:Foreign Members of the Royal Society ''
+Reference: Category:German humanitarians ''
+Reference: Category:German emigrants to Switzerland ''
+Reference: Category:German inventors ''
+Reference: Category:German Jews who emigrated to the United States to escape Nazism ''
+Reference: Category:German-language philosophers ''
+Reference: Category:German Nobel laureates ''
+Reference: Category:German pacifists ''
+Reference: Category:German philosophers ''
+Reference: Category:German physicists ''
+Reference: Category:Institute for Advanced Study faculty ''
+Reference: Category:Jewish agnostics ''
+Reference: Category:Jewish American scientists ''
+Reference: Category:Jewish American writers ''
+Reference: Category:Jewish inventors ''
+Reference: Category:Jewish pacifists ''
+Reference: Category:Jewish philosophers ''
+Reference: Category:Jewish physicists ''
+Reference: Category:Leiden University faculty ''
+Reference: Category:Members of the Prussian Academy of Sciences ''
+Reference: Category:Naturalized citizens of the United States ''
+Reference: Category:Nobel laureates in Physics ''
+Reference: Category:Patent examiners ''
+Reference: Category:People associated with the University of Zurich ''
+Reference: Category:People from the Kingdom of Württemberg ''
+Reference: Category:People from Ulm ''
+Reference: Category:Recipients of the Gold Medal of the Royal Astronomical Society ''
+Reference: Category:Recipients of the Pour le Mérite (civil class) ''
+Reference: Category:Stateless persons ''
+Reference: Category:Swiss emigrants to the United States ''
+Reference: Category:Swiss humanitarians ''
+Reference: Category:Swiss inventors ''
+Reference: Category:Swiss Jews ''
+Reference: Category:Swiss Nobel laureates ''
+Reference: Category:Swiss pacifists ''
+Reference: Category:Swiss philosophers ''
+Reference: Category:Swiss physicists ''
+Reference: Category:University of Zurich alumni ''
+Reference: Category:University of Zurich faculty ''
+Reference: Category:Theoretical physicists ''
+Begin Template: Link GA
+k: de
+End Template: Link GA
+Begin Template: Link GA
+k: no
+End Template: Link GA
+Begin Template: Link FA
+k: als
+End Template: Link FA
+Begin Template: Link FA
+k: an
+End Template: Link FA
+Begin Template: Link FA
+k: fi
+End Template: Link FA
+Begin Template: Link FA
+k: he
+End Template: Link FA
+Begin Template: Link FA
+k: hr
+End Template: Link FA
+Begin Template: Link FA
+k: ru
+End Template: Link FA
+Begin Template: Link FA
+k: sr
+End Template: Link FA
+Begin Template: Link FA
+k: ur
+End Template: Link FA
+Reference: af:Albert Einstein ''
+Reference: als:Albert Einstein ''
+Reference: am:አልበርት አይንስታይን ''
+Reference: ang:Albert Einstein ''
+Reference: ar:ألبرت أينشتاين ''
+Reference: an:Albert Einstein ''
+Reference: as:এলবাৰ্ট আইনষ্টাইন ''
+Reference: ast:Albert Einstein ''
+Reference: ay:Albert Einstein ''
+Reference: az:Albert Eynşteyn ''
+Reference: bm:Albert Einstein ''
+Reference: bn:আলবার্ট আইনস্টাইন ''
+Reference: zh-min-nan:Albert Einstein ''
+Reference: map-bms:Albert Einstein ''
+Reference: be:Альберт Эйнштэйн ''
+Reference: be-x-old:Альбэрт Айнштайн ''
+Reference: bcl:Albert Einstein ''
+Reference: bg:Алберт Айнщайн ''
+Reference: bs:Albert Einstein ''
+Reference: br:Albert Einstein ''
+Reference: ca:Albert Einstein ''
+Reference: cv:Эйнштейн Альберт ''
+Reference: cs:Albert Einstein ''
+Reference: cbk-zam:Albert Einstein ''
+Reference: co:Albert Einstein ''
+Reference: cy:Albert Einstein ''
+Reference: da:Albert Einstein ''
+Reference: de:Albert Einstein ''
+Reference: nv:Hastiin Albert Einstein ''
+Reference: et:Albert Einstein ''
+Reference: el:Άλμπερτ Αϊνστάιν ''
+Reference: es:Albert Einstein ''
+Reference: eo:Albert Einstein ''
+Reference: ext:Albert Einstein ''
+Reference: eu:Albert Einstein ''
+Reference: fa:آلبرت اینشتین ''
+Reference: hif:Albert Einstein ''
+Reference: fr:Albert Einstein ''
+Reference: fy:Albert Einstein ''
+Reference: ga:Albert Einstein ''
+Reference: gd:Albert Einstein ''
+Reference: gl:Albert Einstein ''
+Reference: gan:愛因斯坦 ''
+Reference: gu:આલ્બર્ટ આઇન્સ્ટાઇન ''
+Reference: ko:알베르트 아인슈타인 ''
+Reference: haw:Albert Einstein ''
+Reference: hy:Ալբերտ Այնշտայն ''
+Reference: hi:ऐल्बर्ट आइनस्टाइन ''
+Reference: hr:Albert Einstein ''
+Reference: io:Albert Einstein ''
+Reference: ig:Albert Einstein ''
+Reference: ilo:Albert Einstein ''
+Reference: bpy:আলবার্ট আইনস্টাইন ''
+Reference: id:Albert Einstein ''
+Reference: ia:Albert Einstein ''
+Reference: os:Эйнштейн, Альберт ''
+Reference: is:Albert Einstein ''
+Reference: it:Albert Einstein ''
+Reference: he:אלברט איינשטיין ''
+Reference: jv:Albert Einstein ''
+Reference: kn:ಅಲ್ಬರ್ಟ್ ಐನ್‍ಸ್ಟೈನ್ ''
+Reference: pam:Albert Einstein ''
+Reference: ka:ალბერტ აინშტაინი ''
+Reference: kk:Альберт Эйнштейн ''
+Reference: sw:Albert Einstein ''
+Reference: ht:Albert Einstein ''
+Reference: ku:Albert Einstein ''
+Reference: ky:Эйнштейн, Алберт ''
+Reference: lad:Albert Einstein ''
+Reference: la:Albertus Einstein ''
+Reference: lv:Alberts Einšteins ''
+Reference: lb:Albert Einstein ''
+Reference: lt:Albert Einstein ''
+Reference: lij:Albert Einstein ''
+Reference: jbo:albert. ainctain ''
+Reference: lmo:Albert Einstein ''
+Reference: hu:Albert Einstein ''
+Reference: mk:Алберт Ајнштајн ''
+Reference: mg:Albert Einstein ''
+Reference: ml:ആൽബർട്ട് ഐൻസ്റ്റൈൻ ''
+Reference: mr:अल्बर्ट आइनस्टाइन ''
+Reference: arz:البرت اينشتاين ''
+Reference: mzn:آلبرت اینشتین ''
+Reference: ms:Albert Einstein ''
+Reference: mwl:Albert Einstein ''
+Reference: mn:Альберт Эйнштейн ''
+Reference: my:အဲလ်ဘတ် အိုင်းစတိုင်း ''
+Reference: nah:Albert Einstein ''
+Reference: nl:Albert Einstein ''
+Reference: nds-nl:Albert Einstein ''
+Reference: ne:अल्बर्ट आइन्स्टाइन ''
+Reference: ja:アルベルト・アインシュタイン ''
+Reference: no:Albert Einstein ''
+Reference: nn:Albert Einstein ''
+Reference: nov:Albert Einstein ''
+Reference: oc:Albert Einstein ''
+Reference: or:ଆଲବର୍ଟ ଆଇନଷ୍ଟାଇନ ''
+Reference: uz:Albert Einstein ''
+Reference: pa:ਐਲਬਰਟ ਆਈਨਸਟਾਈਨ ''
+Reference: pag:Albert Einstein ''
+Reference: pnb:ایلبرٹ آئینسٹائن ''
+Reference: ps:آلبرټ آينشټاين ''
+Reference: km:អាល់បឺត អែងស្តែង ''
+Reference: pcd:Albert Einstein ''
+Reference: pms:Albert Einstein ''
+Reference: tpi:Albert Einstein ''
+Reference: nds:Albert Einstein ''
+Reference: pl:Albert Einstein ''
+Reference: pt:Albert Einstein ''
+Reference: kaa:Albert Einstein ''
+Reference: ksh:Albert Einstein ''
+Reference: ro:Albert Einstein ''
+Reference: qu:Albert Einstein ''
+Reference: rue:Алберт Айнштайн ''
+Reference: ru:Эйнштейн, Альберт ''
+Reference: sah:Альберт Эйнштейн ''
+Reference: se:Albert Einstein ''
+Reference: sc:Albert Einstein ''
+Reference: sco:Albert Einstein ''
+Reference: sq:Albert Einstein ''
+Reference: scn:Albert Einstein ''
+Reference: si:ඇල්බට්‍ අයින්ස්ටයින් ''
+Reference: simple:Albert Einstein ''
+Reference: sk:Albert Einstein ''
+Reference: sl:Albert Einstein ''
+Reference: szl:Albert Einstein ''
+Reference: so:Albert Einstein ''
+Reference: ckb:ئاڵبێرت ئاینیشتاین ''
+Reference: sr:Алберт Ајнштајн ''
+Reference: sh:Albert Einstein ''
+Reference: su:Albert Einstein ''
+Reference: fi:Albert Einstein ''
+Reference: sv:Albert Einstein ''
+Reference: tl:Albert Einstein ''
+Reference: ta:ஆல்பர்ட் ஐன்ஸ்டைன் ''
+Reference: tt:Albert Einstein ''
+Reference: te:ఆల్బర్ట్ ఐన్‌స్టీన్ ''
+Reference: th:อัลเบิร์ต ไอน์สไตน์ ''
+Reference: tr:Albert Einstein ''
+Reference: uk:Альберт Ейнштейн ''
+Reference: ur:البرٹ آئنسٹائن ''
+Reference: ug:ئالبېرىت ئېينىشتېين ''
+Reference: za:Albert Einstein ''
+Reference: vec:Albert Einstein ''
+Reference: vep:Einštein Al'bert ''
+Reference: vi:Albert Einstein ''
+Reference: vo:Albert Einstein ''
+Reference: fiu-vro:Einsteini Albert ''
+Reference: wa:Albert Einstein ''
+Reference: war:Albert Einstein ''
+Reference: wo:Albert Einstein ''
+Reference: yi:אלבערט איינשטיין ''
+Reference: yo:Albert Einstein ''
+Reference: zh-yue:愛因斯坦 ''
+Reference: diq:Albert Einstein ''
+Reference: bat-smg:Alberts Einšteins ''
+Reference: zh:阿尔伯特·爱因斯坦 ''
+End Document

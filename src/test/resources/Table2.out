@@ -1,0 +1,186 @@
+Begin Document
+Begin Table
+Text: ' align="center" style="clear:both; margin:0em; border:1px solid #E9E9E9"
+'
+Header Cell (0, 0)
+Text: 'style="background-color:#C1D4FE; font-size:95%; border:1px solid #aaaaaa; padding: 0 5px 0 5px;" '
+Body Cell (0, 2)
+Text: ''''Huxley-Arnold Family Tree (partial)'''
+'
+Body Cell (1, 2)
+Text: 'style="font-size:80%;line-height:110%" '
+Body Cell (1, 3)
+Begin Template: chart/start
+k: summary
+Text: 'Partial Huxley-Arnold family tree.'
+End Template: chart/start
+Text: '
+'
+Begin Template: chart 
+k: ThA 
+k: y
+k: MaP 
+k: GH 
+k: GH
+Text: 'George Huxley'
+k: ThA
+Reference: Thomas Arnold ''
+Text: ' 1795–1842'
+k: MaP
+Text: 'Mary Penrose 1791–1873'
+End Template: chart 
+Text: '
+'
+Begin Template: chart 
+k: ,
+k: -
+k: ^
+k: -
+k: .
+k: !
+End Template: chart 
+Text: '
+'
+Begin Template: chart 
+k: MA 
+k: TA 
+k: THH 
+k: y
+k: AH 
+k: THH
+Reference: Thomas Henry Huxley ''
+Text: ' 1825–1895'
+k: AH
+Text: 'Ann Heathorn 1825–1915'
+k: TA
+Reference: Tom Arnold (literary scholar) 'Tom Arnold'
+Text: ' 1823–1900'
+k: MA
+Reference: Matthew Arnold ''
+Text: ' 1822–1888'
+End Template: chart 
+Text: '
+'
+Begin Template: chart 
+k: ,
+k: -
+k: ^
+k: -
+k: .
+k: ,
+k: -
+k: -
+k: -
+k: -
+k: -
+k: -
+k: ^
+k: .
+End Template: chart 
+Text: '
+'
+Begin Template: chart 
+k: MAW 
+k: JA 
+k: y
+k: LH 
+k: y
+k: RB 
+k: JOH 
+k: FW
+Text: 'Frederick Waller'
+k: JOH
+Text: 'Jessie Huxley 1856–1927'
+k: LH
+Reference: Leonard Huxley (writer) 'Leonard Huxley'
+Text: ' 1860–1933'
+k: JA
+Text: 'Julia Arnold 1862–1908'
+k: RB
+Text: 'Rosalind Bruce 1890–1994'
+k: MAW
+Reference: Mary Augusta Ward ''
+Text: ' 1851–1920'
+End Template: chart 
+Text: '
+'
+Begin Template: chart 
+k: ,
+k: -
+k: -
+k: -
+k: v
+k: -
+k: -
+k: -
+k: -
+k: -
+k: -
+k: ^
+k: .
+k: `
+k: -
+k: -
+k: -
+k: -
+k: v
+k: -
+k: -
+k: -
+k: .
+End Template: chart 
+Text: '
+'
+Begin Template: chart 
+k: TH 
+k: JH 
+k: MN 
+k: y
+k: AH 
+k: ~
+k: LA 
+k: DBH 
+k: AFH 
+k: ~
+k: RP 
+k: JH
+Reference: Julian Huxley ''
+Text: ' 1887–1975'
+k: AH
+Text: 'Aldous Huxley 1894–1963'
+k: DBH
+Text: 'David Bruce Huxley 1915–1992'
+k: AFH
+Reference: Andrew Huxley ''
+Text: ' <br>  1917–2012'
+k: RP
+Text: 'Richenda Pease 1925–2003'
+k: TH
+Text: 'Trevelyan Huxley 1891–1914'
+k: LA
+Reference: Laura Archera ''
+Text: ' 1911–2007'
+k: MN
+Text: 'Maria Nys 1899–1955'
+End Template: chart 
+Text: '
+'
+Begin Template: chart 
+k: !
+End Template: chart 
+Text: '
+'
+Begin Template: chart 
+k: MH 
+k: MH
+Reference: Matthew Huxley ''
+Text: ' 1920–2005'
+End Template: chart 
+Text: '
+'
+Begin Template: chart/end
+End Template: chart/end
+Text: '
+'
+End Table
+End Document

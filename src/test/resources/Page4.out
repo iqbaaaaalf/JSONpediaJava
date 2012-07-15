@@ -1,0 +1,3497 @@
+Begin Document
+Begin Template: About
+k: the American president
+End Template: About
+Begin Template: Use mdy dates
+k: date
+Text: 'October 2011'
+End Template: Use mdy dates
+Begin Template: pp-protected
+k: small
+Text: 'yes'
+End Template: pp-protected
+Begin Template: pp-move-indef
+End Template: pp-move-indef
+Begin Template: Infobox officeholder
+
+k: name          
+Text: 'Abraham Lincoln
+'
+k: image         
+Text: 'Abraham Lincoln November 1863.jpg
+'
+k: alt           
+Text: 'Iconic black and white photograph of Lincoln showing his head and shoulders.
+'
+k: caption       
+Text: 'Abraham Lincoln at age 54, 1863
+'
+k: office        
+Reference: List of Presidents of the United States '16th'
+Text: ' '
+Reference: President of the United States ''
+Text: '
+'
+k: vicepresident 
+Reference: Hannibal Hamlin ''
+Text: '<br>'
+Reference: Andrew Johnson ''
+Text: '
+'
+k: term_start    
+Text: 'March 4, 1861
+'
+k: term_end      
+Text: 'April 15, 1865
+'
+k: predecessor   
+Reference: James Buchanan ''
+Text: '
+'
+k: successor     
+Reference: Andrew Johnson ''
+Text: '
+'
+k: state2        
+Reference: Illinois ''
+Text: '
+'
+k: district2     
+Reference: Illinois' 7th congressional district '7th'
+Text: '
+'
+k: term_start2   
+Text: 'March 4, 1847
+'
+k: term_end2     
+Text: 'March 3, 1849
+'
+k: predecessor2  
+Reference: John Henry (representative) 'John Henry'
+Text: '
+'
+k: successor2    
+Reference: Thomas L. Harris 'Thomas Harris'
+Text: '
+'
+k: state_house3 
+Text: 'Illinois
+'
+k: birth_date    
+Begin Template: birth date
+k: 1809
+k: 2
+k: 12
+End Template: birth date
+Text: '
+'
+k: birth_place   
+Reference: Hodgenville, Kentucky ''
+Text: ', U.S.
+'
+k: death_date    
+Begin Template: death date and age
+k: 1865
+k: 4
+k: 15
+k: 1809
+k: 2
+k: 12
+End Template: death date and age
+Text: '
+'
+k: death_place   
+Reference: Petersen House (Washington, D.C.) 'Petersen House'
+Text: ', '
+Reference: Washington, D.C. ''
+Text: ', U.S.
+'
+k: party         
+Reference: Republican Party (United States) 'Republican'
+Text: ' <small>(1854–1865)</small><br>'
+Reference: National Union Party (United States) 'National Union'
+Text: ' <small>(1864–1865)</small>
+'
+k: otherparty    
+Reference: Whig Party (United States) 'Whig'
+Text: ' <small>(Before 1854)</small>
+'
+k: spouse        
+Reference: Mary Todd Lincoln 'Mary Todd'
+Text: '
+'
+k: children      
+Reference: Robert Todd Lincoln 'Robert'
+Text: '<br>'
+Reference: Edward Baker Lincoln 'Edward'
+Text: '<br>'
+Reference: William Wallace Lincoln 'William'
+Text: '<br>'
+Reference: Tad Lincoln 'Tad'
+Text: '
+'
+k: profession    
+Text: 'Lawyer
+'
+k: religion      
+Text: ''''
+Reference: Abraham Lincoln and religion 'See article'
+Text: '''
+'
+k: signature     
+Text: 'Abraham Lincoln 1862 signature.svg
+'
+k: signature_alt 
+Text: 'Cursive signature in ink
+'
+k: branch        
+Text: 'Illinois Militia
+'
+k: serviceyears  
+Text: '1832
+'
+k: battles       
+Reference: Black Hawk War ''
+Text: '
+'
+End Template: Infobox officeholder
+
+Begin Template: IPAc-en
+k: audio
+Text: 'Lincoln.ogg'
+k: ˈ
+k: eɪ
+k: b
+k: r
+k: ə
+k: h
+k: æ
+k: m
+k: _
+k: ˈ
+k: l
+k: I
+k: ŋ
+k: k
+k: ən
+End Template: IPAc-en
+Reference: List of Presidents of the United States '16th President of the United States'
+Reference: Assassination of Abraham Lincoln 'his assassination in April 1865'
+Reference: American Civil War ''
+Reference: Whig Party (United States) 'Whig Party'
+Reference: Illinois House of Representatives 'Illinois state legislator'
+Reference: United States House of Representatives ''
+Reference: United States Senate ''
+Reference: History of the Republican Party (United States) 'new Republican Party'
+Reference: slavery in the United States ''
+Reference: United States presidential election, 1860 'elected president in 1860'
+Reference: Southern United States 'southern slave states'
+Reference: Secession in the United States 'secession'
+Reference: Fort Sumter ''
+Reference: Confederate States of America 'Confederacy'
+Reference: Trent Affair '''Trent'' affair'
+Reference: abolitionism 'abolition'
+Reference: Emancipation Proclamation ''
+Reference: Thirteenth Amendment to the United States Constitution 'Thirteenth Amendment'
+Reference: Ulysses S. Grant ''
+Reference: Union (American Civil War) 'Union'
+Reference: Border states (American Civil War) 'border slave states'
+Reference: Richmond, Virginia 'Richmond'
+Reference: War Democrats ''
+Reference: United States presidential election, 1864 '1864 presidential election'
+Reference: Radical Republicans ''
+Reference: Copperheads (politics) 'Copperheads'
+Reference: Gettysburg Address ''
+Reference: Republicanism in the United States 'republicanism'
+Reference: Reconstruction Era of the United States 'Reconstruction'
+Reference: Robert E. Lee ''
+Reference: Assassination of Abraham Lincoln 'assassinated'
+Reference: John Wilkes Booth ''
+Reference: Funeral and burial of Abraham Lincoln 'mourning'
+Reference: Historical rankings of Presidents of the United States#Scholar survey results 'ranked'
+Link: http://history-world.org/pres.pdf '"Ranking Our Presidents"'
+Link: http://www.gallup.com/poll/146183/Americans-Say-Reagan-Greatest-President.aspx '"Americans Say Reagan Is the Greatest President"'
+Section [0] Family and childhood
+Section [1] Early life
+Begin Template: Main
+k: Early life and career of Abraham Lincoln
+End Template: Main
+Reference: Thomas Lincoln ''
+Reference: Nancy Lincoln ''
+Reference: Sinking Spring Farm ''
+Reference: Hardin County, Kentucky 'Hardin County'
+Reference: LaRue County, Kentucky 'LaRue County'
+Reference: Abraham Lincoln (captain) 'Abraham'
+Reference: Jefferson County, Kentucky 'Jefferson County'
+Reference: Mineral County, West Virginia 'Mineral County'
+Reference: Separate Baptists ''
+Begin Template: convert
+k: 600
+k: acre
+k: ha
+k: adj
+Text: 'on'
+End Template: convert
+Reference: title (property) 'property titles'
+Reference: File:Young Lincoln By Charles Keck.JPG 'thumb|left|The young Lincoln in sculpture at Senn Park, Chicago|alt=A statue of young Lincoln sitting on a stump, holding a book open on his lap'
+Reference: Perry County, Indiana 'Perry County'
+Reference: milk sickness ''
+Reference: Sarah Lincoln Grigsby 'Sarah'
+Reference: Sarah Bush Lincoln 'Sarah Bush Johnston'
+Reference: Macon County, Illinois 'Macon County'
+Reference: Lincoln Log Cabin State Historic Site 'new homestead'
+Reference: Coles County, Illinois 'Coles County'
+Reference: Sangamon River ''
+Reference: New Salem, Menard County, Illinois 'New Salem'
+Reference: Sangamon County, Illinois 'Sangamon County'
+Reference: Denton Offutt ''
+Reference: flatboat ''
+Section [1] Marriage and children
+Begin Template: Further2
+k: [[Lincoln family tree]]
+k: [[Medical and mental health of Abraham Lincoln]]
+k: [[Sexuality of Abraham Lincoln]]
+End Template: Further2
+Begin Template: multiple image
+   
+k: direction 
+Text: 'horizontal
+   '
+k: width     
+k: footer    
+k: width1    
+Text: '166
+   '
+k: image1    
+Text: 'A&TLincoln.jpg
+   '
+k: alt1      
+Text: 'A seated Lincoln holding a book as his young son looks at it
+   '
+k: caption1  
+Text: '1864 photo of President Lincoln with youngest son, Tad
+   '
+k: width2    
+Text: '150
+   '
+k: image2    
+Text: 'Mary Todd Lincoln 1846-1847 restored cropped.png
+   '
+k: alt2      
+Text: 'Black and white photo of Mary Todd Lincoln's shoulders and head
+   '
+k: caption2  
+Text: 'Mary Todd Lincoln, wife of Abraham Lincoln, age 28
+  '
+End Template: multiple image
+   
+Reference: Ann Rutledge ''
+Reference: typhoid fever ''
+Reference: Mary Todd Lincoln 'Mary Todd'
+Reference: Lexington, Kentucky 'Lexington'
+Reference: Springfield, Illinois 'Springfield'
+Reference: Robert Todd Lincoln ''
+Reference: Edward Baker Lincoln ''
+Reference: tuberculosis ''
+Reference: William Wallace Lincoln '"Willie" Lincoln'
+Reference: Tad Lincoln 'Thomas "Tad" Lincoln'
+Reference: melancholy ''
+Begin Template: cite web
+k: url
+Text: 'http://www.theatlantic.com/doc/200510/lincolns-clinical-depression'
+k: title
+Text: 'Lincoln's Great Depression'
+k: first
+Text: 'Joshua Wolf'
+k: last
+Text: 'Shenk'
+k: month
+Text: 'October'
+k: year
+Text: '2005'
+k: work
+Text: 'The Atlantic'
+k: publisher
+Text: 'The Atlantic Monthly Group'
+k: archiveurl
+Text: 'http://www.webcitation.org/62a4fProj '
+k: archivedate
+Text: 'October 20, 2011'
+k: deadurl
+End Template: cite web
+Section [0] Early career and militia service
+Begin Template: Main
+k: Early life and career of Abraham Lincoln
+k: Abraham Lincoln in the Black Hawk War
+End Template: Main
+Reference: Lincoln's New Salem 'New Salem'
+Reference: Illinois General Assembly ''
+Begin Template: page needed
+k: date
+Text: 'September 2011'
+End Template: page needed
+Reference: File:Abe Lincoln young.jpg 'thumb|left|150px|upright|alt=Thin man looking to the right wearing a bow tie.|A sketch of candidate Abraham Lincoln'
+Reference: Black Hawk War ''
+Begin Template: convert
+k: 6
+k: ft
+k: 4
+k: in
+k: cm
+k: 0
+End Template: convert
+Reference: William Blackstone 'Blackstone'
+Reference: Commentaries on the Laws of England ''
+Reference: Whig Party (United States) 'Whig'
+Reference: Admission to the bar in the United States 'Admitted to the bar'
+Reference: John T. Stuart ''
+Reference: Stephen T. Logan ''
+Reference: William Herndon (lawyer) 'William Herndon'
+Reference: Illinois House of Representatives ''
+Reference: abolitionism ''
+Reference: Henry Clay ''
+Reference: American Colonization Society ''
+Reference: Liberia ''
+Begin Template: -
+End Template: -
+Section [0] Congressman Lincoln
+Reference: Whig Party (United States) 'Whig'
+Reference: internal improvements ''
+Reference: Joshua R. Giddings ''
+Reference: Mexican–American War ''
+Reference: James K. Polk 'President Polk'
+Reference: Wilmot Proviso ''
+Reference: Spot Resolutions ''
+Begin Template: cite web
+k: url
+Text: 'http://www.archives.gov/education/lessons/lincoln-resolutions/'
+k: title
+Text: 'Lincoln's Spot Resolutions'
+k: publisher
+Text: 'National Archives'
+k: archiveurl
+Text: 'http://www.webcitation.org/62a5gtE9P
+'
+k: archivedate
+Text: 'October 20, 2011'
+k: deadurl
+End Template: cite web
+Reference: Zachary Taylor ''
+Reference: United States presidential election, 1848 '1848 presidential election'
+Reference: General Land Office ''
+Reference: Oregon Territory ''
+Section [0] Prairie lawyer
+Reference: File:Abelincoln1846.jpeg 'thumb|right|upright|alt=Middle aged clean shaven Lincoln from the hips up.|Lincoln in his late 30s – photo taken by one of Lincoln's law students around 1846'
+Reference: Supreme Court of the United States ''
+Reference: Abraham Lincoln's patent 'a patent for a flotation device'
+Begin Template: cite web
+k: url
+Text: 'http://americanhistory.si.edu/collections/object.cfm?key=35&objkey=19'
+k: title
+Text: 'Abraham Lincoln's Patent Model: Improvement for Buoying Vessels Over Shoals'
+k: publisher
+Text: 'Smithsonian Institution'
+k: archiveurl
+Text: 'http://www.webcitation.org/62a7AMeAa'
+k: archivedate
+Text: 'October 20, 2011'
+k: deadurl
+End Template: cite web
+Reference: Alton Railroad 'Alton & Sangamon Railroad'
+Reference: Supreme Court of Illinois 'Illinois Supreme Court'
+Reference: Illinois Central Railroad ''
+Reference: William "Duff" Armstrong ''
+Reference: judicial notice ''
+Reference: Farmers' Almanac ''
+Section [0] Republican politics 1854–1860
+Section [1] Slavery and a "House Divided"
+Begin Template: see
+k: Slave and free states 
+k: Abraham Lincoln and slavery
+End Template: see
+Begin Template: cite web
+k: title
+Text: 'The Peculiar Instution'
+k: url
+Text: 'http://publications.newberry.org/lincoln/exhibits/show/alwayshatedslavery/peculiarinstitution'
+k: publisher
+Text: 'Newberry Library and Chicago History Museum'
+k: archiveurl
+Text: 'http://www.webcitation.org/62dB0ccYV'
+k: archivedate
+Text: 'October 22, 2011'
+k: accessdate
+Text: 'January 5, 2012'
+End Template: cite web
+Begin Template: cite web
+k: title
+Text: 'Lincoln Speaks Out'
+k: url
+Text: 'http://publications.newberry.org/lincoln/exhibits/show/alwayshatedslavery/speaksout'
+k: publisher
+Text: 'Newberry Library and Chicago History Museum'
+k: archiveurl
+Text: 'http://www.webcitation.org/62dBlWFGi'
+k: archivedate
+Text: 'October 22, 2011'
+k: accessdate
+Text: 'January 5, 2012'
+End Template: cite web
+Reference: Kansas–Nebraska Act ''
+Reference: Missouri Compromise ''
+Reference: Stephen A. Douglas ''
+Reference: Popular sovereignty in the United States#Emergence of the term “popular sovereignty” and its pejorative connotation 'popular sovereignty'
+Reference: Republicanism in the United States 'republicanism principles'
+Reference: Image:DredScott.jpg '|alt=Painting|thumb|180px|Portrait of [[Dred Scott'
+Reference: Abraham Lincoln Peoria speech 'Peoria Speech'
+Begin Template: full
+End Template: full
+Reference: Lyman Trumbull ''
+Reference: Joel Aldrich Matteson ''
+Begin Template: cite quote
+k: date
+Text: 'March 2012'
+End Template: cite quote
+Reference: 1856 Republican National Convention ''
+Reference: James Buchanan ''
+Reference: Lecompton Constitution ''
+Reference: slave state ''
+Reference: Dred Scott v. Sandford ''
+Reference: Roger B. Taney ''
+Reference: Lincoln's House Divided Speech 'House Divided Speech'
+Begin Template: bible
+k: Mark 3:25
+End Template: bible
+Section [1] Lincoln–Douglas debates and Cooper Union speech
+Reference: File:Abraham Lincoln by Alexander Helser, 1860-crop.jpg 'thumb|left|upright|A. Helser photographed Lincoln in 1860.|alt=Head shot of older, clean shaven Lincoln'
+Reference: Lincoln–Douglas debates of 1858 ''
+Reference: The Slave Power ''
+Reference: Republicanism in the United States 'republicanism'
+Reference: all men are created equal ''
+Reference: Freeport Doctrine ''
+Reference: popular sovereignty ''
+Reference: Cooper Union speech 'speech at Cooper Union'
+Reference: Noah Brooks ''
+Reference: William H. Seward ''
+Reference: Salmon P. Chase ''
+Section [1] 1860 Presidential nomination and campaign
+Begin Template: Main
+k: Electoral history of Abraham Lincoln
+k: United States presidential election, 1860
+End Template: Main
+Reference: File:The Rail Candidate.jpg 'thumb|alt=Lincoln being carried by two men on a long board.|"The Rail Candidate"—Lincoln's 1860 candidacy is depicted as held up by the slavery issue—a slave on the left and party organization on the right.'
+Reference: Decatur, Illinois 'Decatur'
+Reference: Norman B. Judd 'Norman Judd'
+Reference: Leonard Swett ''
+Reference: 1860 Republican National Convention 'Republican National Convention'
+Reference: Hannibal Hamlin ''
+Reference: Herschel Vespasian Johnson ''
+Reference: 1860 Democratic National Convention 'Democratic convention'
+Reference: John C. Breckinridge ''
+Section [0] Presidency
+Begin Template: see also
+k: Presidency of Abraham Lincoln
+End Template: see also
+Section [1] 1860 election and secession
+Begin Template: Main
+k: United States presidential election, 1860
+k: Baltimore Plot
+End Template: Main
+Begin Template: multiple image
+   
+k: align     
+Text: 'left
+   '
+k: direction 
+Text: 'horizontal
+   '
+k: width     
+k: footer    
+k: width1    
+Text: '272
+   '
+k: image1    
+Text: 'ElectoralCollege1860.svg
+   '
+k: alt1      
+Text: 'Map of the U.S. showing Lincoln winning the North-east and West, Breckinridge winning the South, Douglas winning Missouri, and Bell winning Virginia, West Virginia, and Kentucky.
+   '
+k: caption1  
+Text: 'In 1860, northern and western '
+Reference: Electoral College (United States) 'electoral'
+Text: ' votes (shown in red) put Lincoln into the White House.
+   '
+k: width2    
+Text: '148
+   '
+k: image2    
+Text: 'Abraham lincoln inauguration 1861.jpg
+   '
+k: alt2      
+Text: 'A large crowd in front of a large building with many pillars.
+   '
+k: caption2  
+Text: '1861 inaugural at '
+Reference: U.S. Capitol Building 'Capitol'
+Text: '. The rotunda still under construction
+'
+End Template: multiple image
+   
+Reference: John Bell (Tennessee politician) 'John Bell'
+Reference: Constitutional Union Party (United States) 'Constitutional Union Party'
+Reference: United States Electoral College 'electoral college'
+Reference: Electoral fusion 'fusion tickets'
+Reference: Confederate States of America ''
+Reference: Jefferson Davis ''
+Reference: Crittenden Compromise ''
+Reference: Missouri Compromise ''
+Reference: Corwin Amendment ''
+Reference: Baltimore Plot 'evaded possible assassins'
+Reference: Allan Pinkerton ''
+Reference: Lincoln's first inaugural address 'inaugural address'
+Begin Template: quote
+k: Apprehension seems to exist among the people of the Southern States that by the accession of a Republican Administration their property and their peace and personal security are to be endangered. There has never been any reasonable cause for such apprehension. Indeed, the most ample evidence to the contrary has all the while existed and been open to their inspection. It is found in nearly all the published speeches of him who now addresses you. I do but quote from one of those speeches when I declare that "I have no purpose, directly or indirectly, to interfere with the institution of slavery in the States where it exists. I believe I have no lawful right to do so, and I have no inclination to do so."
+k: [[Lincoln's first inaugural address
+k: First inaugural address]], 4 March 1861<ref>Sandburg (2002), p. 212.</ref>
+End Template: quote
+Reference: Peace Conference of 1861 ''
+Section [1] War begins
+Begin Template: Main
+k: American Civil War
+End Template: Main
+Reference: File:Major Robert Anderson.jpg 'alt=portrait|thumb|170px|Major Anderson, Ft. Sumter commander'
+Reference: Robert Anderson (Civil War) 'Major Robert Anderson'
+Reference: Battle of Fort Sumter 'Fort Sumter'
+Reference: Allan Nevins ''
+Reference: William Tecumseh Sherman ''
+Reference: Richmond, Virginia 'Richmond'
+Reference: Baltimore riot of 1861 'attacked Union troops'
+Reference: George William Brown ''
+Reference: Habeas corpus in the United States#Suspension during the Civil War 'habeas corpus'
+Reference: John Merryman ''
+Reference: Roger B. Taney ''
+Reference: Copperheads ''
+Section [1] Assuming command for the Union in the war
+Reference: Battle of Fort Sumter 'Fort Sumter'
+Reference: commander-in-chief ''
+Reference: File:RunningtheMachine-LincAdmin.jpg 'thumb|left|300px|alt=A group of men sitting at a table as another man creates money on a wooden machine.|"Running the 'Machine'&nbsp;": An 1864 political cartoon takes a swing at Lincoln's administration—featuring William Fessenden, Edwin Stanton, William Seward, Gideon Welles, Lincoln and others.'
+Reference: Confiscation Act of 1861 'Confiscation Act'
+Reference: John C. Frémont ''
+Reference: Department of the West ''
+Reference: Trent Affair ''
+Reference: Charles Sumner ''
+Reference: Henry Halleck ''
+Reference: Simon Cameron ''
+Reference: Edwin Stanton ''
+Begin Template: Page needed
+k: date
+Text: 'October 2011'
+End Template: Page needed
+Reference: Henry Wager Halleck 'Henry Halleck'
+Reference: Antoine-Henri Jomini 'Jomini'
+Section [1] General McClellan
+Reference: First Battle of Bull Run ''
+Reference: Winfield Scott ''
+Reference: George B. McClellan ''
+Reference: File:Lincoln and McClellan 1862-10-03.jpg 'alt=Photograph of Lincoln and McClellan sitting at a table in a field tent|thumb|275px|Lincoln and McClellan after the Battle of Antietam'
+Reference: Henry Wager Halleck ''
+Reference: John Pope (military officer) 'John Pope'
+Reference: Army of Virginia ''
+Reference: Second Battle of Bull Run ''
+Reference: Battle of Hampton Roads ''
+Reference: Robert E. Lee ''
+Reference: Battle of Antietam ''
+Reference: Don Carlos Buell ''
+Reference: William Rosecrans ''
+Reference: Ambrose Burnside ''
+Reference: Rappahannock River ''
+Reference: Battle of Fredericksburg 'Fredericksburg'
+Reference: Joseph Hooker ''
+Reference: United States House of Representatives elections, 1862 'mid-term elections'
+Reference: Conscription 'the military draft law'
+Reference: Battle of Chancellorsville ''
+Reference: George Meade ''
+Reference: Gettysburg Campaign ''
+Section [1] Emancipation Proclamation
+Begin Template: Main
+k: Abraham Lincoln and slavery
+k: Emancipation Proclamation
+End Template: Main
+Reference: File:Emancipation proclamation.jpg 'thumb|300px|left|Lincoln presents the first draft of the Emancipation Proclamation to his cabinet. Painted by [[Francis Bicknell Carpenter'
+Reference: compensated emancipation ''
+Reference: Founding Fathers of the United States 'Founding Fathers'
+Begin Template: cite web
+k: url
+Text: 'http://www.nationalreview.com/books/owens200403251139.asp'
+k: title
+Text: 'The Liberator'
+k: first
+Text: 'Thomas Owens'
+k: last
+Text: 'Mackubin'
+k: date
+Text: 'March 25, 2004'
+k: work
+Text: 'National Review'
+k: publisher
+Text: 'National Review'
+k: archiveurl
+Text: 'http://www.webcitation.org/62a7fJ9hj'
+k: archivedate
+Text: 'October 20, 2011'
+k: deadurl
+End Template: cite web
+Reference: John C. Frémont ''
+Reference: David Hunter ''
+Reference: Confiscation Acts 'Confiscation Act'
+Reference: Horace Greeley ''
+Begin Template: quote
+k: My paramount object in this struggle is to save the Union, and is not either to save or to destroy slavery. If I could save the Union without freeing any slave I would do it, and if I could save it by freeing all the slaves I would do it; and if I could save it by freeing some and leaving others alone I would also do that. What I do about slavery, and the colored race, I do because I believe it helps to save the Union; and what I forbear, I forbear because I do not believe it would help to save the Union. . . . [¶] I have here stated my purpose according to my view of official duty; and I intend no modification of my oft-expressed personal wish that all men everywhere could be free.<ref>Roy P. Basler, ed. ''The collected works of Abraham Lincoln'' (Rutgers U.P., 1953) vol 5 p. 388</ref> 
+End Template: quote
+Reference: Abraham Lincoln on slavery#Colonization 'colonies'
+Reference: War Governors' Conference ''
+Reference: Frederick Douglass ''
+Section [1] Gettysburg Address
+Begin Template: Main
+k: Gettysburg Address
+End Template: Main
+Reference: Battle of Gettysburg ''
+Reference: New York City draft riots ''
+Reference: Gettysburg National Cemetery 'Soldiers' National Cemetery'
+Section [1] General Grant
+Reference: File:The Peacemakers 1868.jpg '|alt=Painting of four men conferring in a ship's cabin, entitled "The Peacemakers".|thumb|300px|President Lincoln (center right) with, from left, Generals Sherman, Grant and Admiral Porter – 1868 painting of events aboard the ''[[River Queen (steamboat)|River Queen'
+Reference: Ulysses S. Grant ''
+Reference: Battle of Shiloh ''
+Reference: Vicksburg campaign ''
+Begin Template: full
+End Template: full
+Reference: Overland Campaign ''
+Reference: attrition warfare 'war of attrition'
+Reference: Battle of the Wilderness ''
+Reference: Battle of Cold Harbor 'Cold Harbor'
+Reference: William Tecumseh Sherman ''
+Begin Template: cite web
+k: url
+Text: 'http://www.whitehousehistory.org/whha_about/whitehouse_collection/whitehouse_collection-art-06.html'
+k: title
+Text: 'The Peacemakers'
+k: publisher
+Text: 'The White House Historical Association'
+k: archiveurl
+Text: 'http://www.webcitation.org/62a8J9jOa'
+k: archivedate
+Text: 'October 20, 2011'
+k: deadurl
+End Template: cite web
+Reference: Philip Sheridan ''
+Reference: Shenandoah Valley ''
+Reference: Sherman's March to the Sea ''
+Begin Template: convert
+k: 60
+k: mi
+k: km
+k: adj
+Text: 'on'
+End Template: convert
+Reference: Jubal Anderson Early ''
+Reference: Battle of Fort Stevens 'raid on Washington, D.C.'
+Reference: Oliver Wendell Holmes, Jr. 'Oliver Wendell Holmes'
+Reference: Alexander H. Stephens 'Stephens'
+Reference: Hampton Roads ''
+Reference: Battle of Five Forks ''
+Reference: freedmen ''
+Reference: Appomattox Court House 'Appomattox'
+Section [1] 1864 re-election
+Begin Template: Main
+k: Electoral history of Abraham Lincoln
+k: United States presidential election, 1864
+End Template: Main
+Reference: War Democrats ''
+Reference: Edwin M. Stanton ''
+Reference: Andrew Johnson ''
+Reference: Andrew Johnson ''
+Reference: National Union Party (United States) 'Union Party'
+Begin Template: quote
+k: This morning, as for some days past, it seems exceedingly probable that this Administration will not be re-elected. Then it will be my duty to so co-operate with the President elect, as to save the Union between the election and the inauguration; as he will have secured his election on such ground that he cannot possibly save it afterward.<ref>Basler (1953), p. 514.{{full
+End Template: quote
+Begin Template: multiple image
+   
+k: align     
+Text: 'left
+   '
+k: direction 
+Text: 'horizontal
+   '
+k: width     
+k: footer    
+k: width1    
+Text: '272
+   '
+k: image1    
+Text: '1864 Electoral Map.png
+   '
+k: alt1      
+Text: '=Map of the U.S. showing Lincoln winning all the Union states except for Kentucky, New Jersey, and Delaware. The Southern states are not included.
+   '
+k: caption1  
+Text: 'An '
+Reference: Electoral College (United States) 'electoral'
+Text: ' landslide (in red) for Lincoln in the 1864 election, southern states (brown) and territories (light brown) not in play
+   '
+k: width2    
+Text: '180
+   '
+k: image2    
+Text: 'Abraham_Lincoln_giving_his_second_Inaugural_Address_(4_March_1865).jpg
+   '
+k: alt2      
+Text: 'A large crowd in front of a large building with many pillars.
+   '
+k: caption2  
+Text: 'Lincoln's second inaugural address in 1865 at the almost completed Capitol building
+'
+End Template: multiple image
+   
+Reference: Copperheads (politics) 'Peace wing'
+Reference: David Farragut 'David Farragut's'
+Reference: Lincoln's second inaugural address 'second inaugural address'
+Begin Template: quote
+k: Fondly do we hope—fervently do we pray—that this mighty scourge of war may speedily pass away. Yet, if God wills that it continue, until all the wealth piled by the bond-man's 250 years of unrequited toil shall be sunk, and until every drop of blood drawn with the lash, shall be paid by another drawn with the sword, as was said 3,000 years ago, so still it must be said, "the judgments of the Lord, are true and righteous altogether". With malice toward none; with charity for all; with firmness in the right, as God gives us to see the right, let us strive on to finish the work we are in; to bind up the nation's wounds; to care for him who shall have borne the battle, and for his widow, and his orphan—to do all which may achieve and cherish a just and lasting peace, among ourselves, and with all nations.<ref>Abraham Lincoln, ''Abraham Lincoln: Selected Speeches and Writings'' (Library of America edition, 2009) p 450</ref>
+End Template: quote
+Section [1] Reconstruction
+Begin Template: Main
+k: Reconstruction Era of the United States
+End Template: Main
+Reference: Thaddeus Stevens ''
+Reference: Benjamin Wade ''
+Reference: Ten percent plan 'Amnesty Proclamation'
+Reference: File:Lincoln and Johnsond.jpg '|alt=Cartoon of Lincoln and Johnson attempting to stitch up the broken Union|thumb|260px|A political cartoon of Andrew Johnson and Abraham Lincoln, 1865, entitled "The Rail Splitter At Work Repairing the Union." The caption reads (Johnson): ''Take it quietly Uncle Abe and I will draw it closer than ever.'' (Lincoln): ''A few more stitches Andy and the good old Union will be mended.'''
+Reference: Andrew Johnson ''
+Reference: Frederick Steele ''
+Reference: Nathaniel P. Banks ''
+Reference: Wade-Davis Bill ''
+Reference: Salmon P. Chase ''
+Begin Template: full
+End Template: full
+Reference: Thirteenth Amendment to the United States Constitution 'Thirteenth Amendment'
+Begin Template: cite web
+k: title
+Text: 'Primary Documents in American History: 13th Amendment to the U.S. Constitution'
+k: url
+Text: 'http://www.loc.gov/rr/program/bib/ourdocs/13thamendment.html'
+k: publisher
+Text: 'Library of Congress'
+k: archiveurl
+Text: 'http://www.webcitation.org/62a9BIwNw'
+k: archivedate
+Text: 'October 20, 2011'
+k: deadurl
+End Template: cite web
+Reference: freedmen ''
+Reference: Freedman's Bureau ''
+Section [1] Redefining the republic and republicanism
+Reference: File:Lincoln-Warren-1865-03-06.jpeg 'thumb|upright|left|alt=An older tired looking Lincoln with a beard.|The last high-quality photograph of Lincoln was taken March 1865.'
+Begin Template: cite web
+k: url
+Text: 'http://www.whitehouse.gov/the-press-office/2011/04/12/presidential-proclamation-civil-war-sesquicentennial'
+k: title
+Text: 'Presidential Proclamation-Civil War Sesquicentennial'
+k: publisher
+Text: 'The White House'
+k: date
+Text: 'April 12, 2011'
+k: quote
+Text: '...a new meaning was conferred on our country's name...'
+k: archiveurl
+Text: 'http://www.webcitation.org/62aAPoA6B'
+k: archivedate
+Text: 'October 20, 2011'
+k: deadurl
+End Template: cite web
+Reference: Republicanism in the United States 'republican values'
+Reference: Lincoln's first inaugural address 'First Inaugural Address'
+Begin Template: Clear
+End Template: Clear
+Section [1] Other enactments
+Reference: Homestead Act ''
+Reference: Morrill Land-Grant Colleges Act ''
+Reference: Pacific Railway Acts ''
+Reference: First Transcontinental Railroad ''
+Begin Template: Lincoln cabinet sidebar
+End Template: Lincoln cabinet sidebar
+Reference: Template:Lincoln cabinet sidebar ''
+Reference: Morrill Tariff ''
+Reference: Revenue Act of 1861 ''
+Reference: Revenue Act of 1862 ''
+Reference: National Banking Act ''
+Reference: United States Department of Agriculture 'Department of Agriculture'
+Reference: Dakota War of 1862 'Sioux Uprising'
+Reference: Sioux#Santee (Isáŋyathi or Eastern Dakota) 'Santee Dakota'
+Reference: Thanksgiving (United States) 'Thanksgiving holiday'
+Reference: James Madison ''
+Reference: Yosemite National Park ''
+Begin Template: full
+End Template: full
+Section [1] Supreme Court appointments
+Reference: Noah Haynes Swayne ''
+Reference: Samuel Freeman Miller ''
+Reference: David Davis (Supreme Court justice) 'David Davis'
+Reference: Stephen Johnson Field ''
+Reference: Salmon P. Chase ''
+Section [1] States admitted to the Union
+Begin Template: clear
+End Template: clear
+Section [0] Assassination
+Begin Template: main
+k: Assassination of Abraham Lincoln
+k: Funeral and burial of Abraham Lincoln
+End Template: main
+Reference: John Wilkes Booth ''
+Reference: File:The Assassination of President Lincoln - Currier and Ives 2.png 'thumb|left||alt=A drawing of Lincoln being shot by Booth while sitting in a theater booth.|Shown in the presidential booth of Ford's Theatre, from left to right, are Henry Rathbone, Clara Harris, Mary Todd Lincoln, Abraham Lincoln, and his assassin John Wilkes Booth.'
+Reference: Ford's Theatre ''
+Reference: Andrew Johnson ''
+Reference: William H. Seward ''
+Reference: Ward Hill Lamon ''
+Reference: Our American Cousin ''
+Reference: Henry Rathbone ''
+Begin Template: cite web
+k: url
+Text: 'http://www.smithsonianmag.com/history-archaeology/Lincolns-Missing-Bodyguard.html'
+k: title
+Text: 'Lincoln's Missing Bodyguard'
+k: first
+Text: 'Paul'
+k: last
+Text: 'Martin'
+k: date
+Text: 'April 8, 2010'
+k: work
+Text: 'Smithsonian Magazine'
+k: publisher
+Text: 'Smithsonian Institution'
+k: archiveurl
+Text: 'http://www.webcitation.org/62aAqLOzq'
+k: archivedate
+Text: 'October 20, 2011'
+k: deadurl
+End Template: cite web
+Begin Template: convert
+k: 30
+k: mi
+k: km
+End Template: convert
+Reference: Boston Corbett ''
+Reference: Charles Leale ''
+Reference: Petersen House ''
+Reference: Phineas Densmore Gurley ''
+Section [0] Religious and philosophical beliefs
+Begin Template: See
+k: Abraham Lincoln and religion
+End Template: See
+Reference: File:AbrahamLincolnOilPainting1869Restored.jpg 'thumb|160px|alt=A painting of Lincoln sitting with his hand on his chin and his elbow on his leg.|Lincoln: painting by [[George Peter Alexander Healy'
+Section [0] Historical reputation
+Reference: Historical rankings of Presidents of the United States 'surveys of scholars ranking Presidents'
+Reference: File:Lincoln Museum Exterior.jpg '|alt=Exterior photograph of museum|thumb|left|The [[Abraham Lincoln Presidential Library and Museum'
+Reference: New Deal ''
+Reference: Cold War ''
+Reference: Conservatism in the United States 'political conservatives'
+Reference: Mel Bradford ''
+Reference: Jacksonian Democracy 'agrarian Democrats'
+Reference: Lerone Bennett, Jr. 'Lerone Bennett'
+Reference: American Colonization Society 'sending freed slaves'
+Reference: negative capability ''
+Section [0] Memorials
+Begin Template: See
+k: Cultural depictions of Abraham Lincoln
+End Template: See
+Reference: File:Aerial view of Lincoln Memorial - east side EDIT.jpeg 'thumb|alt=An aerial photo a large white building with big pillars.|Lincoln Memorial in Washington, D.C.'
+Reference: Lincoln, Nebraska 'capital'
+Reference: District of Columbia City Hall 'City Hall'
+Begin Template: cite web
+k: title
+Text: 'Renovation and Expansion of the Historic DC Courthouse'
+k: url
+Text: 'http://www.dcappeals.gov/dccourts/appeals/pdf/appeals_renovation_expansion.pdf'
+k: format
+Text: 'PDF'
+k: publisher
+Text: 'DC Court of Appeals'
+k: archiveurl
+Text: 'http://www.webcitation.org/62dfFdX74'
+k: archivedate
+Text: 'October 23, 2011'
+k: deadurl
+End Template: cite web
+Reference: Lincoln Memorial ''
+Reference: Mount Rushmore ''
+Begin Template: cite web
+k: title
+Text: 'Mount Rushmore National Memorial'
+k: url
+Text: 'http://www.nps.gov/moru/historyculture/index.htm'
+k: publisher
+Text: 'U.S. National Park Service'
+k: archiveurl
+Text: 'http://www.webcitation.org/62dfUtolh'
+k: archivedate
+Text: 'October 23, 2011'
+k: deadurl
+End Template: cite web
+Reference: Abraham Lincoln Birthplace National Historical Park 'Birthplace'
+Begin Template: cite web
+k: url
+Text: 'http://www.nps.gov/abli/index.htm'
+k: title
+Text: 'Abraham Lincoln Birthplace National Historic Site'
+k: publisher
+Text: 'U.S. National Park Service'
+k: archiveurl
+Text: 'http://www.webcitation.org/62dfhlRLE'
+k: archivedate
+Text: 'October 23, 2011'
+k: deadurl
+End Template: cite web
+Reference: Lincoln Boyhood National Memorial 'Boyhood'
+Begin Template: cite web
+k: url
+Text: 'http://www.nps.gov/libo/index.htm'
+k: title
+Text: 'Lincoln Boyhood National Memorial'
+k: publisher
+Text: 'U.S. National Park Service'
+k: archiveurl
+Text: 'http://www.webcitation.org/62fLOWRqX'
+k: archivedate
+Text: 'October 24, 2011'
+k: deadurl
+End Template: cite web
+Reference: Lincoln's New Salem ''
+Begin Template: cite web
+k: title
+Text: 'Lincoln's New Salem'
+k: url
+Text: 'http://www.illinoishistory.gov/hs/new_salem.htm'
+k: publisher
+Text: 'Illinois Historic Preservation Agency'
+k: archiveurl
+Text: 'http://www.webcitation.org/62fLY6Gyu'
+k: archivedate
+Text: 'October 24, 2011'
+k: deadurl
+End Template: cite web
+Reference: Lincoln Home National Historic Site 'Lincoln Home'
+Begin Template: cite web
+k: url
+Text: 'http://www.nps.gov/liho/planyourvisit/index.htm'
+k: title
+Text: 'Lincoln Home National Historic Site'
+k: publisher
+Text: 'U.S. National Park Service'
+k: archiveurl
+Text: 'http://www.webcitation.org/62fLhitWd'
+k: archivedate
+Text: 'October 24, 2011'
+k: deadurl
+End Template: cite web
+Reference: Ford's Theatre ''
+Reference: Petersen House ''
+Reference: Abraham Lincoln Presidential Library and Museum 'Library and Museum'
+Begin Template: cite web
+k: url
+Text: 'http://www.alplm.com/'
+k: title
+Text: 'The Abraham Lincoln Presidential Library and Museum'
+k: publisher
+Text: 'Abraham Lincoln Presidential Library and Museum'
+k: archiveurl
+Text: 'http://www.webcitation.org/62i1pRLLD'
+k: archivedate
+Text: 'October 25, 2011'
+k: deadurl
+End Template: cite web
+Begin Template: cite web
+k: url
+Text: 'http://www.fordstheatre.org/home/about-fords'
+k: title
+Text: 'About Ford's '
+k: publisher
+Text: 'Ford's Theatre'
+k: archiveurl
+Text: 'http://www.webcitation.org/62i1ux7Sk'
+k: archivedate
+Text: 'October 25, 2011'
+k: deadurl
+End Template: cite web
+Reference: Lincoln Tomb ''
+Begin Template: cite web
+k: url
+Text: 'http://www.illinoishistory.gov/hs/lincoln_tomb.htm'
+k: title
+Text: 'Lincoln Tomb'
+k: publisher
+Text: 'Illinois Historic Preservation Agency'
+k: archiveurl
+Text: 'http://www.webcitation.org/62i23WFGo'
+k: archivedate
+Text: 'October 25, 2011'
+k: deadurl
+End Template: cite web
+Begin Template: cite news
+k: last
+Text: 'Healey'
+k: first
+Text: 'Matthew'
+k: title
+Text: 'Lincoln Stamps Bring Neary $2&nbsp;Million at a New York Auction'
+k: url
+Text: 'http://www.nytimes.com/2009/04/20/arts/design/20lincoln.html?adxnnl=1&adxnnlx=1309323210-SHbsvaNW+FeQ/LsMHYd2HA'
+k: work
+Text: 'New York Times'
+k: archiveurl
+Text: 'http://www.webcitation.org/62jmWGFib'
+k: archivedate
+Text: 'October 26, 2011
+'
+k: deadurl
+End Template: cite news
+Reference: :File:Abraham Lincoln Airmail 1960 Issue-25c.jpg 'U.S. airmail stamp'
+Reference: #Cummings 'Cummings'
+Reference: United States five-dollar bill 'five-dollar bill'
+Reference: Lincoln cent ''
+Begin Template: cite news
+k: first
+Text: 'Thomas'
+k: last
+Text: 'Vinciguerra'
+k: title
+Text: 'Now if Only We Could Mint Lincoln Himself'
+k: url
+Text: 'http://www.nytimes.com/2009/02/08/weekinreview/08vinciguerra.html'
+k: work
+Text: 'The New York Times
+'
+k: page
+Text: 'WK4'
+k: date
+Text: 'February 7, 2009'
+k: archiveurl
+Text: 'http://www.webcitation.org/62jmhWehf'
+k: archivedate
+Text: 'October 26, 2011'
+k: deadurl
+End Template: cite news
+Reference: Edinburgh ''
+Reference: Scotland ''
+Reference: George Edwin Bissell ''
+Reference: Standing Lincoln 'Lincoln standing'
+Reference: Westminster Abbey ''
+Reference: London ''
+Reference: Presidents Day (United States) 'Presidents Day'
+Reference: Abraham Lincoln Association ''
+Reference: Abraham Lincoln Bicentennial Commission 'Bicentennial Commission'
+Begin Template: cite news
+k: first
+Text: 'James R.'
+k: last
+Text: 'Carroll'
+k: title
+Text: 'Let the Lincoln Bicentennial Celebrations Begin'
+k: url
+Text: 'http://www.courier-journal.com/article/20090112/NEWS01/901120364'
+k: work
+Text: 'The Courier-Journal'
+k: date
+Text: 'January 12, 2009'
+k: archiveurl
+Text: 'http://www.webcitation.org/62jn5TYV5'
+k: archivedate
+Text: 'October 26, 2011'
+k: deadurl
+End Template: cite news
+Section [0] References
+Begin Template: Reflist
+k: colwidth
+Text: '20em'
+End Template: Reflist
+Section [0] Bibliography
+Begin Template: Main
+k: Bibliography of Abraham Lincoln
+End Template: Main
+Section [1] Cited in footnotes
+Begin Template: Refbegin
+k: 2
+End Template: Refbegin
+Begin Template: cite journal
+k: last
+Text: 'Adams'
+k: first
+Text: 'Charles F.'
+k: year
+Text: '1912'
+k: month
+Text: 'April'
+k: title
+Text: 'The Trent Affair'
+k: journal
+Text: 'The American Historical Review'
+k: volume
+Text: '17'
+k: issue
+Text: '3'
+k: pages
+Text: '540–562'
+k: publisher
+Text: 'The University of Chicago Press'
+k: jstor
+Text: '1834388'
+k: doi
+Text: '10.2307/1834388'
+End Template: cite journal
+Begin Template: cite book
+k: isbn
+k: oclc
+Text: '1178496'
+k: title
+Text: 'Halleck: Lincoln's Chief of Staff'
+k: url
+k: authorlink
+Text: 'Stephen E. Ambrose'
+k: last
+Text: 'Ambrose'
+k: first
+Text: 'Stephen E.'
+k: publisher
+Text: 'Louisiana State University Press'
+k: year
+Text: '1962'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Baker'
+k: last
+Text: 'Baker'
+k: first
+Text: 'Jean H.'
+k: title
+Text: 'Mary Todd Lincoln: A Biography '
+k: publisher
+Text: 'W. W. Norton & Company '
+k: year
+Text: '1989 '
+k: isbn
+Text: '9780393305869'
+End Template: Cite book
+Begin Template: cite book
+k: isbn
+k: oclc
+Text: '518824'
+k: title
+Text: 'Abraham Lincoln: His Speeches and Writings'
+k: editor1-link
+Text: 'Roy Basler'
+k: editor1-first
+Text: 'Roy Prentice'
+k: editor1-last
+Text: 'Basler'
+k: publisher
+Text: 'World Publishing'
+k: year
+Text: '1946'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Belz'
+k: last
+Text: 'Belz'
+k: first
+Text: 'Herman'
+k: title
+Text: 'Abraham Lincoln, Constitutionalism, and Equal Rights in the Civil War Era'
+k: publisher
+Text: 'Fordham University Press'
+k: year
+Text: '1998'
+k: isbn
+Text: '9780823217694'
+End Template: Cite book
+Begin Template: cite encyclopedia
+k: last
+Text: 'Belz'
+k: first
+Text: 'Herman'
+k: editor1-first
+Text: 'Bruce'
+k: editor1-last
+Text: 'Frohnen'
+k: editor2-first
+Text: 'Jeremy'
+k: editor2-last
+Text: 'Beer'
+k: editor3-first
+Text: 'Jeffrey O.'
+k: editor3-last
+Text: 'Nelson'
+k: encyclopedia
+Text: 'American Conservatism: An Encyclopedia
+'
+k: title
+Text: 'Lincoln, Abraham'
+k: year
+Text: '2006'
+k: publisher
+Text: 'ISI Books'
+k: isbn
+Text: '9781932236439'
+k: quote
+k: ref
+End Template: cite encyclopedia
+Begin Template: cite journal
+k: last
+Text: 'Bennett Jr'
+k: first
+Text: 'Lerone'
+k: authorlink
+Text: 'Lerone Bennett, Jr.
+'
+k: year
+Text: '1968'
+k: month
+Text: 'February'
+k: title
+Text: 'Was Abe Lincoln a White Supremacist?'
+k: journal
+Text: 'Ebony'
+k: volume
+Text: '23'
+k: issue
+Text: '4'
+k: publisher
+Text: 'Johnson Publishing'
+k: issn
+Text: '0012-9011'
+k: url
+Text: 'http://books.google.com/?id=H84DAAAAMBAJ&pg=PA35#v=onepage&q&f=false'
+End Template: cite journal
+Begin Template: Cite book 
+k: ref
+Text: 'Blue '
+k: last
+Text: 'Blue '
+k: first
+Text: 'Frederick J. '
+k: title
+Text: 'Salmon P. Chase: a life in politics '
+k: publisher
+Text: 'The Kent State University Press '
+k: year
+Text: '1987 '
+k: isbn
+Text: '0873383400'
+End Template: Cite book 
+Begin Template: Cite book
+k: ref
+Text: 'Boritt1997'
+k: last
+Text: 'Boritt'
+k: first
+Text: 'Gabor S. '
+k: title
+Text: 'Why the Civil War Came'
+k: year
+Text: '1997'
+k: publisher
+Text: 'Oxford University Press'
+k: isbn
+Text: '9780195113761'
+End Template: Cite book
+Begin Template: cite book
+k: isbn
+Text: '0252064453'
+k: oclc
+k: title
+Text: 'Lincoln and the Economics of the American Dream'
+k: url
+k: authorlink
+Text: 'Gabor Boritt'
+k: ref
+Text: 'Boritt1994'
+k: last
+Text: 'Boritt'
+k: first
+Text: 'Gabor'
+k: publisher
+Text: 'University of Illinois Press'
+k: year
+Text: '1994'
+k: origyear
+Text: '1978'
+End Template: cite book
+Begin Template: Cite book 
+k: ref
+Text: 'Bulla '
+k: last
+Text: 'Bulla '
+k: first
+Text: 'David W. '
+k: coauthors
+Text: 'Gregory A. Borchard '
+k: title
+Text: 'Journalism in the Civil War Era '
+k: year
+Text: '2010 '
+k: publisher
+Text: 'Peter Lang Publishing Inc.'
+k: isbn
+Text: '1433107228'
+End Template: Cite book 
+Begin Template: cite journal
+k: last
+Text: 'Carwardine'
+k: first
+Text: 'Richard J.'
+k: authorlink
+Text: 'Richard Carwardine'
+k: year
+Text: '1997'
+k: month
+Text: 'Winter'
+k: title
+Text: 'Lincoln, Evangelical Religion, and American Political Culture in the Era of the Civil War'
+k: journal
+Text: 'Journal of the Abraham Lincoln Association'
+k: volume
+Text: '18'
+k: issue
+Text: '1'
+k: pages
+Text: '27–55
+'
+k: publisher
+Text: 'Abraham Lincoln Association'
+k: issn
+k: oclc
+k: url
+Text: 'http://www.historycooperative.org/journals/jala/18.1/carwardine.html
+'
+k: archiveurl
+Text: 'http://web.archive.org/web/20091124091750/http://www.historycooperative.org/journals/jala/18.1/carwardine.html
+'
+k: archivedate
+Text: '2009-11-24'
+End Template: cite journal
+Begin Template: Cite book
+k: ref
+Text: 'Carwardine '
+k: first
+Text: 'Richard '
+k: last
+Text: 'Carwardine '
+k: title
+Text: 'Lincoln '
+k: publisher
+Text: 'Pearson Education Ltd '
+k: year
+Text: '2003 '
+k: isbn
+Text: '9780582032798 '
+End Template: Cite book
+Begin Template: cite book
+k: isbn
+Text: '9780691091730'
+k: oclc
+k: title
+Text: 'The War Was You and Me: Civilians in The American Civil War'
+k: last
+Text: 'Cashin'
+k: first
+Text: 'Joan E.'
+k: publisher
+Text: 'Princeton University Press'
+k: year
+Text: '2002'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Chesebrough '
+k: last
+Text: 'Chesebrough '
+k: first
+Text: 'David B. '
+k: title
+Text: 'No Sorrow Like Our Sorrow '
+k: publisher
+Text: 'Kent State University Press '
+k: year
+Text: '1994 '
+k: isbn
+Text: '9780873384919'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Cox '
+k: last
+Text: 'Cox '
+k: first
+Text: 'Hank H. '
+k: title
+Text: 'Lincoln And The Sioux Uprising of 1862 '
+k: publisher
+Text: 'Cumberland House Publisher '
+k: year
+Text: '2005 '
+k: isbn
+Text: '9781581824575'
+End Template: Cite book
+Begin Template: Cite book 
+k: ref
+Text: 'Cummings '
+k: last
+Text: 'Cummings '
+k: first
+Text: 'William W. '
+k: coauthors
+Text: 'James B. Hatcher '
+k: title
+Text: 'Scott Specialized Catalogue of United States Stamps '
+k: year
+Text: '1982'
+k: publisher
+Text: 'Scott Publishing Company'
+k: isbn
+Text: '0894870424'
+End Template: Cite book 
+Begin Template: Cite book
+k: ref
+Text: 'Dennis'
+k: title
+Text: 'Red, White, and Blue Letter Days: an American Calendar'
+k: last
+Text: 'Dennis'
+k: first
+Text: 'Matthew'
+k: publisher
+Text: 'Cornell University Press '
+k: year
+Text: '2002'
+k: isbn
+Text: '9780801472688'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Diggins '
+k: title
+Text: 'The Lost Soul of American Politics: Virtue, Self-Interest, and the Foundations of Liberalism '
+k: last
+Text: 'Diggins '
+k: first
+Text: 'John P. '
+k: publisher
+Text: 'University of Chicago Press '
+k: year
+Text: '1986 '
+k: isbn
+Text: '0226148777'
+End Template: Cite book
+Begin Template: cite book
+k: isbn
+Text: '9780875803593'
+k: oclc
+k: title
+Text: 'Lincoln Emancipated: The President and the Politics of Race'
+k: last
+Text: 'Dirck'
+k: first
+Text: 'Brian R.'
+k: publisher
+Text: 'Northern Illinois University Press'
+k: year
+Text: '2007'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Dirck '
+k: last
+Text: 'Dirck '
+k: first
+Text: 'Brian '
+k: title
+Text: 'Lincoln the Lawyer '
+k: publisher
+Text: 'University of Illinois Press '
+k: year
+Text: '2008 '
+k: isbn
+Text: '9780252076145'
+End Template: Cite book
+Begin Template: cite book
+k: ref
+Text: 'Donald1948'
+k: isbn
+k: title
+Text: 'Lincoln's Herndon'
+k: authorlink
+Text: 'David Herbert Donald'
+k: first
+Text: 'David Herbert '
+k: last
+Text: 'Donald'
+k: publisher
+Text: 'A. A. Knopf'
+k: year
+Text: '1948'
+k: oclc
+Text: '186314258'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Donald '
+k: first
+Text: 'David Herbert '
+k: last
+Text: 'Donald '
+k: title
+Text: 'Lincoln '
+k: publisher
+Text: 'Simon and Schuster '
+k: year
+Text: '1996 '
+k: origyear
+Text: '1995 '
+k: isbn
+Text: '9780684825359 '
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Donald2 '
+k: first
+Text: 'David Herbert '
+k: last
+Text: 'Donald '
+k: title
+Text: 'Lincoln Reconsidered '
+k: year
+Text: '2001 '
+k: publisher
+Text: 'Knopf Doubleday Publishing Group '
+k: isbn
+Text: '9780375725326'
+End Template: Cite book
+Begin Template: Cite book
+k: authorlink
+Text: 'Frederick Douglass'
+k: ref
+Text: 'Douglass '
+k: first
+Text: 'Frederick '
+k: last
+Text: 'Douglass '
+k: title
+Text: 'The Life and Times of Frederick Douglass '
+k: year
+Text: '2008 '
+k: publisher
+Text: 'Cosimo Classics '
+k: isbn
+Text: '1605203998'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Edgar '
+k: first
+Text: 'Walter B. '
+k: last
+Text: 'Edgar '
+k: title
+Text: 'South Carolina: A History '
+k: year
+Text: '1998 '
+k: publisher
+Text: 'University of South Carolina Press '
+k: isbn
+Text: '9781570032554'
+End Template: Cite book
+Begin Template: cite journal
+k: last
+Text: 'Fish'
+k: first
+Text: 'Carl Russell'
+k: authorlink
+Text: 'Carl Russell Fish
+'
+k: year
+Text: '1902'
+k: month
+Text: 'October'
+k: title
+Text: 'Lincoln and the Patronage'
+k: journal
+Text: 'American Historical Review'
+k: volume
+Text: '8'
+k: issue
+Text: '1'
+k: pages
+Text: '53–69'
+k: publisher
+Text: 'American Historical Association'
+k: issn
+k: oclc
+k: jstor
+Text: '1832574'
+k: doi
+Text: '10.2307/1832574'
+End Template: cite journal
+Begin Template: Cite book
+k: ref
+Text: 'Foner'
+k: authorlink
+Text: 'Eric Foner'
+k: last
+Text: 'Foner'
+k: first
+Text: 'Eric '
+k: title
+Text: 'Free Soil, Free Labor, Free Men: The Ideology of the Republican Party before the Civil War '
+k: year
+Text: '1995 '
+k: origyear
+Text: '1970 '
+k: isbn
+Text: '9780195094978'
+k: publisher
+Text: 'Oxford University Press'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Foner2 '
+k: last
+Text: 'Foner '
+k: first
+Text: 'Eric '
+k: title
+Reference: The Fiery Trial: Abraham Lincoln and American Slavery ''
+Text: ' '
+k: publisher
+Text: 'W.W. Norton '
+k: year
+Text: '2010 '
+k: isbn
+Text: '9780393066180'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Goodwin '
+k: first
+Text: 'Doris Kearns '
+k: last
+Text: 'Goodwin '
+k: authorlink
+Text: 'Doris Kearns Goodwin '
+k: title
+Text: 'Team of Rivals: The Political Genius of Abraham Lincoln '
+k: isbn
+Text: '0684824906 '
+k: year
+Text: '2005 '
+k: publisher
+Text: 'Simon & Schuster'
+End Template: Cite book
+Begin Template: cite book
+k: isbn
+Text: '9780253345677'
+k: oclc
+k: title
+Text: 'The Darkest Dawn: Lincoln, Booth, and the Great American Tragedy'
+k: last
+Text: 'Goodrich'
+k: first
+Text: 'Thomas'
+k: publisher
+Text: 'Indiana University Press'
+k: year
+Text: '2005'
+End Template: cite book
+Begin Template: cite book
+k: oclc
+Text: '428674'
+k: title
+Text: 'The Enduring Lincoln: Lincoln Sesquicentennial Lectures at the University of Illinois'
+k: chapter
+Text: 'Abraham Lincoln: Conservative Statesman'
+k: last
+Text: 'Graebner'
+k: first
+Text: 'Norman'
+k: publisher
+Text: 'University of Illinois Press
+'
+k: year
+Text: '1959'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Grimsley '
+k: title
+Text: 'The Collapse of the Confederacy '
+k: last
+Text: 'Grimsley '
+k: first
+Text: 'Mark '
+k: publisher
+Text: 'University of Nebraska Press '
+k: year
+Text: '2001 '
+k: isbn
+Text: '0803221703'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Guelzo1999'
+k: authorlink
+Text: 'Allen C. Guelzo'
+k: last
+Text: 'Guelzo '
+k: first
+Text: 'Allen C.'
+k: title
+Text: 'Abraham Lincoln: Redeemer President '
+k: isbn
+Text: '0802838723 '
+k: year
+Text: '1999'
+k: publisher
+Text: 'W.B. Eerdmans Publishing'
+End Template: Cite book
+Begin Template: cite book
+k: ref
+Text: 'Guelzo2004'
+k: isbn
+Text: '9780743221825'
+k: oclc
+k: title
+Text: 'Lincoln's Emancipation Proclamation: The End of Slavery in America'
+k: last
+Text: 'Guelzo'
+k: first
+Text: 'Allen C.'
+k: publisher
+Text: 'Simon & Schuster'
+k: year
+Text: '2004'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Guelzo2009 '
+k: last
+Text: 'Guelzo '
+k: first
+Text: 'Allen C. '
+k: title
+Text: 'Lincoln: A Very Short Introduction '
+k: publisher
+Text: 'Oxford University Press '
+k: year
+Text: '2009 '
+k: isbn
+Text: '0195367804'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Handy '
+k: first
+Text: 'James S. '
+k: last
+Text: 'Handy '
+k: title
+Text: 'Book Review: Abraham Lincoln, the Lawyer-Statesman '
+k: publisher
+Text: 'Northwestern University Law Publication Association '
+k: year
+Text: '1917 '
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Harrison1935'
+k: oclc
+Text: '3512772'
+k: last
+Text: 'Harrison'
+k: first
+Text: 'J. Houston '
+k: title
+Text: 'Settlers by the Long Grey Trail'
+k: year
+Text: '1935'
+k: publisher
+Text: 'J.K. Reubush'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Harrison2000 '
+k: last
+Text: 'Harrison '
+k: first
+Text: 'Lowell Hayes '
+k: title
+Text: 'Lincoln of Kentucky '
+k: publisher
+Text: 'University Press of Kentucky '
+k: year
+Text: '2000
+'
+k: isbn
+Text: '0813121566'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Harris '
+k: last
+Text: 'Harris '
+k: first
+Text: 'William C. '
+k: title
+Text: 'Lincoln's Rise to the Presidency '
+k: isbn
+Text: '9780700615209 '
+k: publisher
+Text: 'University Press of Kansas '
+k: year
+Text: '2007 '
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Havers '
+k: last
+Text: 'Havers '
+k: first
+Text: 'Grant N. '
+k: title
+Text: 'Lincoln and the Politics of Christian Love '
+k: isbn
+Text: '0826218571 '
+k: publisher
+Text: 'University of Missouri Press '
+k: year
+Text: '2009 '
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Heidler2 '
+k: title
+Text: 'Encyclopedia of the American Civil War: A Political, Social, and Military History '
+k: editors
+Text: 'Heidler, David S.; Jeanne T. Heidler '
+k: year
+Text: '2000 '
+k: publisher
+Text: 'W. W. Norton & Company, Inc '
+k: isbn
+Text: '9780393047585 '
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Heidler '
+k: last
+Text: 'Heidler'
+k: first
+Text: 'David Stephen'
+k: title
+Text: 'The Mexican War'
+k: year
+Text: '2006'
+k: publisher
+Text: 'Greenwood Publishing Group'
+k: isbn
+Text: '9780313327926'
+End Template: Cite book
+Begin Template: cite journal
+k: last
+Text: 'Hofstadter'
+k: first
+Text: 'Richard'
+k: authorlink
+Text: 'Richard Hofstadter
+'
+k: year
+Text: '1938'
+k: month
+Text: 'October'
+k: title
+Text: 'The Tariff Issue on the Eve of the Civil War'
+k: journal
+Text: 'American Historical Review'
+k: volume
+Text: '44'
+k: issue
+Text: '1'
+k: pages
+Text: '50–55'
+k: publisher
+Text: 'American Historical Association'
+k: oclc
+k: jstor
+Text: '1840850'
+k: doi
+Text: '10.2307/1840850'
+End Template: cite journal
+Begin Template: Cite book
+k: ref
+Text: 'Holzer '
+k: first
+Text: 'Harold '
+k: last
+Text: 'Holzer '
+k: title
+Text: 'Lincoln at Cooper Union: The Speech That Made Abraham Lincoln President '
+k: year
+Text: '2004 '
+k: publisher
+Text: 'Simon & Schuster '
+k: isbn
+Text: '9780743299640 '
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Jaffa'
+k: first
+Text: 'Harry V.'
+k: last
+Text: 'Jaffa'
+k: title
+Text: 'A New Birth of Freedom: Abraham Lincoln and the Coming of the Civil War'
+k: year
+Text: '2000'
+k: isbn
+Text: '0847699528'
+k: publisher
+Text: 'Rowman & Littlefield'
+End Template: Cite book
+Begin Template: cite book
+k: isbn
+Text: '9780198040064'
+k: oclc
+k: title
+Text: 'To Make Our World Anew: Volume I: A History of African Americans to 1880'
+k: authorlink
+Text: 'Robin Kelley'
+k: last
+Text: 'Kelley'
+k: first
+Text: 'Robin D. G.'
+k: coauthors
+Text: 'Lewis, Earl'
+k: publisher
+Text: 'Oxford University Press'
+k: year
+Text: '2005'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Lamb '
+k: editors
+Text: 'Lamb, Brian; Susan Swain '
+k: title
+Text: 'Abraham Lincoln: Great American Historians on Our Sixteenth President '
+k: publisher
+Text: 'PublicAffairs '
+k: year
+Text: '2008 '
+k: isbn
+Text: '9781586486761 '
+End Template: Cite book
+Begin Template: cite journal
+k: last
+Text: 'Lupton'
+k: first
+Text: 'John A.'
+k: year
+Text: '2006'
+k: month
+Text: 'September–October'
+k: title
+Text: 'Abraham Lincoln and the Corwin Amendment'
+k: journal
+Text: 'Illinois Heritage'
+k: volume
+Text: '9'
+k: issue
+Text: '5'
+k: page
+Text: '34'
+k: publisher
+Text: 'The Illinois State Historical Society'
+k: issn
+k: oclc
+k: url
+Text: 'http://www.lib.niu.edu/2006/ih060934.html'
+End Template: cite journal
+Begin Template: Cite book
+k: authorlink
+Text: 'Reinhard H. Luthin'
+k: ref
+Text: 'Luthin '
+k: first
+Text: 'Reinhard H. '
+k: last
+Text: 'Luthin '
+k: title
+Text: 'The First Lincoln Campaign '
+k: isbn
+Text: '9780844612928 '
+k: year
+Text: '1944 '
+k: publisher
+Text: 'Harvard University Press '
+End Template: Cite book
+Begin Template: cite journal
+k: last
+Text: 'Luthin'
+k: first
+Text: 'Reinhard H.
+'
+k: year
+Text: '1994'
+k: month
+Text: 'July'
+k: title
+Text: 'Abraham Lincoln and the Tariff'
+k: journal
+Text: 'American Historical Review'
+k: volume
+Text: '49'
+k: issue
+Text: '4'
+k: pages
+Text: '609–629'
+k: publisher
+Text: 'American Historical Association'
+k: oclc
+k: jstor
+Text: '1850218'
+k: doi
+Text: '10.2307/1850218'
+End Template: cite journal
+Begin Template: Cite book
+k: ref
+Text: 'Mansch '
+k: last
+Text: 'Mansch '
+k: first
+Text: 'Larry D. '
+k: title
+Text: 'Abraham Lincoln, President-Elect: The Four Critical Months from Election to Inauguration '
+k: publisher
+Text: 'McFarland '
+k: year
+Text: '2005 '
+k: isbn
+Text: '078642026X'
+End Template: Cite book
+Begin Template: Cite book
+k: authorlink
+Text: 'George McGovern'
+k: ref
+Text: 'McGovern '
+k: last
+Text: 'McGovern '
+k: first
+Text: 'George S. '
+k: title
+Text: 'Abraham Lincoln '
+k: publisher
+Text: 'Macmillan '
+k: year
+Text: '2008 '
+k: isbn
+Text: '9780805083453'
+End Template: Cite book
+Begin Template: cite book
+k: ref
+Text: 'McPherson1992'
+k: last
+Text: 'McPherson'
+k: first
+Text: 'James M.'
+k: authorlink
+Text: 'James M. McPherson'
+k: title
+Text: 'Abraham Lincoln and the Second American Revolution'
+k: year
+Text: '1992'
+k: publisher
+Text: 'Oxford University Press'
+k: isbn
+Text: '9780195076066'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'McPherson2 '
+k: title
+Text: 'Battle Cry of Freedom: the Civil War Era '
+k: last
+Text: 'McPherson '
+k: first
+Text: 'James M. '
+k: year
+Text: '1993 '
+k: publisher
+Text: 'Oxford University Press '
+k: isbn
+Text: '9780195168952'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'McPherson5 '
+k: last
+Text: 'McPherson '
+k: first
+Text: 'James M. '
+k: title
+Text: 'Abraham Lincoln '
+k: year
+Text: '2009 '
+k: publisher
+Text: 'Oxford University Press '
+k: isbn
+Text: '9780195374520'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Miller '
+k: first
+Text: 'William Lee '
+k: last
+Text: 'Miller '
+k: title
+Text: 'Lincoln's Virtues: An Ethical Biography '
+k: year
+Text: '2002 '
+k: isbn
+Text: '0-375-40158-X '
+k: publisher
+Text: 'Alfred A. Knopf '
+End Template: Cite book
+Begin Template: Cite book
+k: authorlink
+Text: 'Mark E. Neely, Jr.'
+k: ref
+Text: 'Neely '
+k: last
+Text: 'Neely '
+k: first
+Text: 'Mark E. '
+k: title
+Text: 'The Fate of Liberty: Abraham Lincoln and Civil Liberties '
+k: publisher
+Text: 'Oxford University Press '
+k: year
+Text: '1992 '
+k: isbn
+Text: '9780195080322'
+End Template: Cite book
+Begin Template: cite journal
+k: last
+Text: 'Neely Jr.'
+k: first
+Text: 'Mark E.'
+k: year
+Text: '2004'
+k: month
+Text: 'December'
+k: title
+Text: 'Was the Civil War a Total War?
+'
+k: journal
+Text: 'Civil War History'
+k: volume
+Text: '50'
+k: issue
+Text: '4'
+k: pages
+Text: '434–458
+'
+k: issn
+k: oclc
+k: url
+Text: 'http://muse.jhu.edu/login?uri=/journals/civil_war_history/v050/50.4neely.html'
+k: doi
+Text: '10.1353/cwh.2004.0073'
+End Template: cite journal
+Begin Template: dead link
+k: date
+Text: 'April 2012'
+End Template: dead link
+Begin Template: Cite book
+k: ref
+Text: 'Nevins'
+k: last
+Text: 'Nevins '
+k: first
+Text: 'Allan '
+k: title
+Text: 'Ordeal of the Union; 8 vol '
+k: publisher
+Text: 'Scribner's '
+k: year
+Text: '1947-71 '
+k: isbn
+Text: '9780684104164'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Nevins1950'
+k: last
+Text: 'Nevins '
+k: first
+Text: 'Allan '
+k: title
+Text: 'The Emergence of Lincoln: Prologue to Civil War, 1857–1861 2 vol '
+k: publisher
+Text: 'Scribner's '
+k: year
+Text: '1950 '
+k: isbn
+Text: '9780684104164'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Nevins1960 '
+k: last
+Text: 'Nevins '
+k: first
+Text: 'Allan '
+k: title
+Text: 'The War for the Union; 4 vol 1861–1865'
+k: publisher
+Text: 'Scribner's'
+k: year
+Text: '1960–1971 '
+k: isbn
+Text: '9781568522975'
+End Template: Cite book
+Begin Template: cite book 
+k: ref
+Text: 'Nichols '
+k: last
+Text: 'Nichols '
+k: first
+Text: 'David A. '
+k: title
+Text: 'Lincoln Looks West: From the Mississippi to the Pacific '
+k: editor
+Text: 'Richard W. Etulain '
+k: publisher
+Text: 'Southern Illinois University '
+k: year
+Text: '2010 '
+k: isbn
+Text: '0809329611'
+End Template: cite book 
+Begin Template: Cite book
+k: ref
+Text: 'Noll '
+k: last
+Text: 'Noll '
+k: first
+Text: 'Mark '
+k: title
+Text: 'America's God: From Jonathan Edwards to Abraham Lincoln '
+k: publisher
+Text: 'Oxford University Press '
+k: year
+Text: '2000 '
+k: isbn
+Text: '0195151119'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Oates '
+k: last
+Text: 'Oates '
+k: first
+Text: 'Stephen B. '
+k: title
+Text: 'With Malice Toward None: a Life of Abraham Lincoln '
+k: publisher
+Text: 'HarperCollins '
+k: year
+Text: '1993 '
+k: isbn
+Text: '9780060924713'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Paludan '
+k: last
+Text: 'Paludan '
+k: first
+Text: 'Phillip Shaw '
+k: title
+Text: 'The Presidency of Abraham Lincoln '
+k: isbn
+Text: '9780700606719 '
+k: year
+Text: '1994 '
+k: publisher
+Text: 'University Press of Kansas'
+End Template: Cite book
+Begin Template: cite journal
+k: last
+Text: 'Parrillo'
+k: first
+Text: 'Nicholas
+'
+k: year
+Text: '2000'
+k: month
+Text: 'September'
+k: title
+Text: 'Lincoln's Calvinist Transformation: Emancipation and War'
+k: journal
+Text: 'Civil War History'
+k: volume
+Text: '46'
+k: issue
+Text: '3'
+k: pages
+Text: '227–253'
+k: publisher
+Text: 'Kent State University Press'
+k: issn
+k: oclc
+k: url
+k: doi
+Text: '10.1353/cwh.2000.0073'
+End Template: cite journal
+Begin Template: Cite book
+k: ref
+Text: 'Pessen '
+k: last
+Text: 'Pessen '
+k: first
+Text: 'Edward '
+k: title
+Text: 'The Log Cabin Myth: The Social Backgrounds of American Presidents '
+k: publisher
+Text: 'Yale University Press '
+k: year
+Text: '1984'
+k: isbn
+Text: '0300031661'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Peterson '
+k: last
+Text: 'Peterson '
+k: first
+Text: 'Merrill D. '
+k: title
+Text: 'Lincoln in American Memory '
+k: publisher
+Text: 'Oxford University Press '
+k: year
+Text: '1995 '
+k: isbn
+Text: '9780195096453'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Potter '
+k: last
+Text: 'Potter '
+k: first
+Text: 'David M. '
+k: coauthors
+Text: 'Don Edward Fehrenbacher '
+k: title
+Text: 'The impending crisis, 1848–1861 '
+k: publisher
+Text: 'HarperCollins '
+k: year
+Text: '1976 '
+k: isbn
+Text: '9780061319297'
+End Template: Cite book
+Begin Template: Cite book 
+k: ref
+Text: 'Prokopowicz '
+k: last
+Text: 'Prokopowicz '
+k: first
+Text: 'Gerald J. '
+k: title
+Text: 'Did Lincoln Own Slaves? '
+k: publisher
+Text: 'Vintage Books '
+k: year
+Text: '2008'
+k: isbn
+Text: '9780307279293'
+End Template: Cite book 
+Begin Template: cite book
+k: oclc
+Text: '748479'
+k: ref
+Text: 'Randall1947'
+k: last
+Text: 'Randall'
+k: first
+Text: 'James G.'
+k: authorlink
+Text: 'James G. Randall'
+k: title
+Text: 'Lincoln, the Liberal Statesman'
+k: year
+Text: '1947'
+k: publisher
+Text: 'Dodd, Mead'
+End Template: cite book
+Begin Template: Cite book
+k: oclc
+Text: '5852442'
+k: ref
+Text: 'Randall'
+k: last
+Text: 'Randall'
+k: first
+Text: 'J.G.'
+k: coauthors
+Text: 'Current, Richard Nelson'
+k: series
+Text: 'Lincoln the President'
+k: volume
+Text: 'IV'
+k: title
+Text: 'Last Full Measure '
+k: publisher
+Text: 'Dodd, Mead'
+k: year
+Text: '1955'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Reinhart '
+k: last
+Text: 'Reinhart '
+k: first
+Text: 'Mark S. '
+k: title
+Text: 'Abraham Lincoln on Screen '
+k: publisher
+Text: 'McFarland '
+k: year
+Text: '2008 '
+k: isbn
+Text: '9780786435364'
+End Template: Cite book
+Begin Template: Cite book
+k: oclc
+Text: '6579822'
+k: ref
+Text: 'Sandburg'
+k: last
+Text: 'Sandburg'
+k: first
+Text: 'Carl. '
+k: title
+Text: 'Abraham Lincoln: The Prairie Years'
+k: year
+Text: '1926'
+k: publisher
+Text: 'Harcourt, Brace & Company'
+End Template: Cite book
+Begin Template: cite book
+k: ref
+Text: 'SandburgPW2002 '
+k: last
+Text: 'Sandburg'
+k: first
+Text: 'Carl '
+k: title
+Text: 'Abraham Lincoln: The Prairie Years and the War Years'
+k: publisher
+Text: 'Houghton Mifflin Harcourt'
+k: year
+Text: '2002'
+k: isbn
+Text: '0156027526'
+End Template: cite book
+Begin Template: cite book
+k: ref
+Text: 'Schwartz2000'
+k: last
+Text: 'Schwartz'
+k: first
+Text: 'Barry'
+k: title
+Text: 'Abraham Lincoln and the Forge of National Memory'
+k: year
+Text: '2000'
+k: publisher
+Text: 'University Of Chicago Press'
+k: isbn
+Text: '978-0226741970'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Schwartz2009 '
+k: last
+Text: 'Schwartz '
+k: first
+Text: 'Barry '
+k: title
+Text: 'Abraham Lincoln in the Post-Heroic Era: History and Memory in Late Twentieth-Century America '
+k: publisher
+Text: 'University of Chicago Press '
+k: year
+Text: '2009 '
+k: isbn
+Text: '9780226741888'
+End Template: Cite book
+Begin Template: cite journal
+k: last
+Text: 'Scott'
+k: first
+Text: 'Kenneth'
+k: year
+Text: '1948'
+k: month
+Text: 'September'
+k: title
+Text: 'Press Opposition to Lincoln in New Hampshire'
+k: journal
+Text: 'The New England Quarterly'
+k: volume
+Text: '21'
+k: issue
+Text: '3'
+k: pages
+Text: '326–341'
+k: publisher
+Text: 'The New England Quarterly, Inc.'
+k: issn
+k: jstor
+Text: '361094'
+k: doi
+Text: '10.2307/361094'
+End Template: cite journal
+Begin Template: Cite book
+k: ref
+Text: 'Scott'
+k: last
+Text: 'Scott'
+k: title
+Text: 'Scott 2006 Classic Specialized Catalogue '
+k: publisher
+Text: 'Scott Pub. Co. '
+k: year
+Text: '2005 '
+k: isbn
+Text: '089487358X'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Sherman '
+k: last
+Text: 'Sherman '
+k: first
+Text: 'William T. '
+k: title
+Text: 'Memoirs of General W.T. Sherman '
+k: publisher
+Text: 'BiblioBazaar '
+k: year
+Text: '1990 '
+k: isbn
+Text: '1174631724'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Simon '
+k: last
+Text: 'Simon '
+k: first
+Text: 'Paul '
+k: title
+Text: 'Lincoln's Preparation for Greatness: The Illinois Legislative Years '
+k: publisher
+Text: 'University of Illinois '
+k: year
+Text: '1990 '
+k: isbn
+Text: '0252002032'
+End Template: Cite book
+Begin Template: cite book
+k: ref
+Text: 'Smith'
+k: last
+Text: 'Smith'
+k: first
+Text: 'Robert C.'
+k: title
+Text: 'Conservatism and Racism, and Why in America They Are the Same'
+k: year
+Text: '2010'
+k: publisher
+Text: 'State University of New York Press'
+k: isbn
+Text: '9781438432335'
+End Template: cite book
+Begin Template: Cite book 
+k: ref
+Text: 'Steers '
+k: last
+Text: 'Steers '
+k: first
+Text: 'Edward '
+k: title
+Text: 'The Lincoln Assassination Encyclopedia '
+k: publisher
+Text: 'Harper Collins '
+k: year
+Text: '2010 '
+k: isbn
+Text: '0061787752'
+End Template: Cite book 
+Begin Template: cite book
+k: last
+Text: 'Striner'
+k: first
+Text: 'Richard'
+k: title
+Text: 'Father Abraham: Lincoln's Relentless Struggle to End Slavery '
+k: year
+Text: '2006 '
+k: publisher
+Text: 'Oxford University Press'
+k: isbn
+Text: '978-0195183061'
+End Template: cite book
+Begin Template: cite book
+k: ref
+Text: 'Tagg'
+k: title
+Text: 'The Unpopular Mr. Lincoln:The Story of America's Most Reviled President'
+k: first
+Text: 'Larry'
+k: last
+Text: 'Tagg'
+k: publisher
+Text: 'Savas Beatie'
+k: year
+Text: '2009'
+k: isbn
+Text: '9781932714616'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Taranto '
+k: last
+Text: 'Taranto '
+k: first
+Text: 'James '
+k: coauthors
+Text: 'Leonard Leo '
+k: title
+Text: 'Presidential Leadership: Rating the Best and the Worst in the White House'
+k: publisher
+Text: 'Simon and Schuster'
+k: year
+Text: '2004 '
+k: isbn
+Text: '9780743254335'
+End Template: Cite book
+Begin Template: cite journal
+k: last
+Text: 'Tegeder'
+k: first
+Text: 'Vincent G.'
+k: year
+Text: '1948'
+k: month
+Text: 'June'
+k: title
+Text: 'Lincoln and the Territorial Patronage: The Ascendancy of the Radicals in the West'
+k: journal
+Text: 'Mississippi Valley Historical Review'
+k: volume
+Text: '35'
+k: issue
+Text: '1'
+k: pages
+Text: '77–90'
+k: publisher
+Text: 'Organization of American Historians'
+k: issn
+k: oclc
+k: jstor
+Text: '1895140'
+k: doi
+Text: '10.2307/1895140'
+End Template: cite journal
+Begin Template: cite book
+k: isbn
+Text: '9780807132319'
+k: oclc
+k: title
+Text: 'Inside the Confederate Nation: Essays in Honor of Emory M. Thomas'
+k: url
+k: authorlink
+Text: 'Emory M. Thomas'
+k: last
+Text: 'Thomas'
+k: first
+Text: 'Emory M.'
+k: editor1-first
+Text: 'Lesley J.'
+k: editor1-last
+Text: 'Gordon'
+k: editor2-first
+Text: 'John C.'
+k: editor2-last
+Text: 'Inscoe'
+k: publisher
+Text: 'Louisiana State University Press'
+k: year
+Text: '2007'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Thomas '
+k: first
+Text: 'Benjamin P. '
+k: last
+Text: 'Thomas '
+k: title
+Text: 'Abraham Lincoln: A Biography '
+k: publisher
+Text: 'Southern Illinois University '
+k: year
+Text: '2008 '
+k: isbn
+Text: '9780809328871'
+End Template: Cite book
+Begin Template: cite book
+k: isbn
+Text: '9780925436214'
+k: oclc
+k: title
+Text: 'The Lincoln Funeral Train: The Final Journey and National Funeral for Abraham Lincoln'
+k: last
+Text: 'Trostel'
+k: first
+Text: 'Scott D.'
+k: publisher
+Text: 'Cam-Tech Publishing'
+k: year
+Text: '2002'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Vorenberg '
+k: last
+Text: 'Vorenberg '
+k: first
+Text: 'Michael '
+k: title
+Text: 'Final Freedom: the Civil War, the Abolition of Slavery, and the Thirteenth Amendment '
+k: publisher
+Text: 'Cambridge University Press '
+k: year
+Text: '2001 '
+k: isbn
+Text: '9780521652674'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'White '
+k: last
+Text: 'White, Jr. '
+k: first
+Text: 'Ronald C. '
+k: title
+Text: 'A. Lincoln: A Biography '
+k: publisher
+Text: 'Random House, Inc '
+k: year
+Text: '2009 '
+k: isbn
+Text: '9781400064991'
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Wills '
+k: first
+Text: 'Garry '
+k: last
+Text: 'Wills '
+k: authorlink
+Text: 'Garry Wills '
+k: title
+Reference: Lincoln at Gettysburg: The Words That Remade America ''
+Text: ' '
+k: isbn
+Text: '0671867423 '
+k: year
+Text: '1993 '
+k: publisher
+Text: 'Simon & Schuster '
+End Template: Cite book
+Begin Template: Cite book
+k: ref
+Text: 'Wilson '
+k: first
+Text: 'Douglas L. '
+k: last
+Text: 'Wilson '
+k: publisher
+Text: 'Knopf Publishing Group '
+k: title
+Text: 'Honor's Voice: The Transformation of Abraham Lincoln '
+k: year
+Text: '1999 '
+k: isbn
+Text: '9780375703966 '
+End Template: Cite book
+Begin Template: cite book
+k: ref
+Text: 'Winkle'
+k: last
+Text: 'Winkle'
+k: first
+Text: 'Kenneth J.'
+k: title
+Text: 'The Young Eagle: The Rise of Abraham Lincoln'
+k: year
+Text: '2001'
+k: publisher
+Text: 'Taylor Trade Publications'
+k: isbn
+Text: '9780878332557'
+End Template: cite book
+Begin Template: Cite book
+k: ref
+Text: 'Zarefsky'
+k: authorlink
+Text: 'David Zarefsky'
+k: isbn
+Text: '9780226978765'
+k: title
+Text: 'Lincoln, Douglas, and Slavery: In the Crucible of Public Debate'
+k: last
+Text: 'Zarefsky'
+k: first
+Text: 'David S.'
+k: publisher
+Text: 'University of Chicago Press'
+k: year
+Text: '1993'
+End Template: Cite book
+Begin Template: cite journal
+k: last
+Text: 'Zilversmit'
+k: first
+Text: 'Arthur'
+k: year
+Text: '1980'
+k: title
+Text: 'Lincoln and the Problem of Race: A Decade of Interpretations'
+k: journal
+Text: 'Journal of the Abraham Lincoln Association'
+k: volume
+Text: '2'
+k: issue
+Text: '11'
+k: pages
+Text: '22–24'
+k: publisher
+Text: 'Abraham Lincoln Association'
+k: url
+Text: 'http://www.historycooperative.org/journals/jala/2/zilversmit.html'
+k: archiveurl
+Text: 'http://web.archive.org/web/20110720234453/http://www.historycooperative.org/journals/jala/2/zilversmit.html'
+k: archivedate
+Text: '2011-07-20'
+k: ref
+End Template: cite journal
+Begin Template: Refend
+End Template: Refend
+Section [1] Additional references
+Begin Template: cite book
+k: isbn
+Text: '9781581823691'
+k: oclc
+k: title
+Text: 'One Hundred Essential Lincoln Books'
+k: last
+Text: 'Burkhimer'
+k: first
+Text: 'Michael'
+k: publisher
+Text: 'Cumberland House'
+k: location
+k: year
+Text: '2003'
+End Template: cite book
+Begin Template: cite book
+k: isbn
+Text: '9780801889936'
+k: oclc
+k: title
+Text: 'Abraham Lincoln: A Life ''(2 volumes)'''
+k: authorlink
+Text: 'Michael Burlingame (historian)'
+k: last
+Text: 'Burlingame'
+k: first
+Text: 'Michael'
+k: publisher
+Text: 'Johns Hopkins University Press'
+k: location
+k: year
+Text: '2008'
+End Template: cite book
+Begin Template: cite book
+k: isbn
+Text: '9780872494008'
+k: oclc
+k: title
+Text: 'Lincoln and Black Freedom: A Study in Presidential Leadership'
+k: authorlink
+Text: 'LaWanda Cox
+'
+k: last
+Text: 'Cox'
+k: first
+Text: 'LaWanda'
+k: publisher
+Text: 'University of South Carolina Press
+'
+k: location
+k: year
+Text: '1981'
+End Template: cite book
+Begin Template: cite book
+k: isbn
+Text: '9780393067569'
+k: oclc
+k: title
+Text: 'Our Lincoln: New Perspectives on Lincoln and His World'
+k: last
+Text: 'Foner'
+k: first
+Text: 'Eric'
+k: publisher
+Text: 'W.W. Norton
+'
+k: location
+k: year
+Text: '2008'
+End Template: cite book
+Begin Template: cite book
+k: author
+Text: 'Holzer, Harold '
+k: title
+Text: 'Lincoln President-Elect: Abraham Lincoln and the Great Secession Winter 1860-1861'
+k: url
+Text: 'http://books.google.com/books?id=34cVaFHdgMMC'
+k: year
+Text: '2008'
+k: publisher
+Text: 'Simon and Schuster'
+End Template: cite book
+Begin Template: cite book
+k: isbn
+Text: '9781594201912'
+k: oclc
+k: title
+Text: 'Tried by War: Abraham Lincoln as Commander in Chief'
+k: last
+Text: 'McPherson'
+k: first
+Text: 'James M.'
+k: publisher
+Text: 'Penguin Press
+'
+k: location
+k: year
+Text: '2008'
+End Template: cite book
+Begin Template: cite book
+k: author
+Text: 'Miller, Richard Lawrence '
+k: title
+Text: 'Lincoln and His World: The Rise to National Prominence, 1843-1853'
+k: url
+Text: 'http://books.google.com/books?id=c1odBTiRSJcC'
+k: year
+Text: '2011'
+k: publisher
+Text: 'McFarland'
+End Template: cite book
+Begin Template: cite book
+k: isbn
+Text: '9780306802096'
+k: oclc
+k: title
+Text: 'The Abraham Lincoln Encyclopedia'
+k: last
+Text: 'Neely'
+k: first
+Text: 'Mark E'
+k: publisher
+Text: 'Da Capo Press'
+k: year
+Text: '1984'
+End Template: cite book
+Begin Template: cite book
+k: isbn
+Text: '9780674511255'
+k: oclc
+k: title
+Text: 'The Last Best Hope of Earth: Abraham Lincoln and the Promise of America
+'
+k: last
+Text: 'Neely'
+k: first
+Text: 'Mark E'
+k: publisher
+Text: 'Harvard University Press'
+k: year
+Text: '1994'
+End Template: cite book
+Begin Template: cite book
+k: isbn
+k: oclc
+Text: '4183070'
+k: title
+Text: 'Lincoln the President ''(4 volumes)'''
+k: last
+Text: 'Randall'
+k: first
+Text: 'James G.'
+k: publisher
+Text: 'Dodd, Mead
+'
+k: location
+k: year
+Text: '1945–1955'
+End Template: cite book
+Section [0] External links
+Begin Template: No more links
+End Template: No more links
+Reference: Wikipedia:External links ''
+Reference: Wikipedia:Spam ''
+Begin Template: dmoz
+End Template: dmoz
+Begin Template: No more links
+End Template: No more links
+Begin Template: Wikipedia books
+End Template: Wikipedia books
+Begin Template: Sister project links
+k: Abraham Lincoln
+k: n
+Text: 'no'
+k: s
+Text: 'Author:Abraham Lincoln'
+End Template: Sister project links
+Begin Template: Portal
+k: Biography
+k: American Civil War
+End Template: Portal
+Link: http://quod.lib.umich.edu/l/lincoln/ 'The Collected Works of Abraham Lincoln'
+Begin Template: worldcat id
+k: id
+Text: 'lccn-n79-6779'
+End Template: worldcat id
+Link: http://memory.loc.gov/ammem/alhtml/alhome.html 'Mr. Lincoln's Virtual Library'
+Link: http://www.loc.gov/rr/program/bib/prespoetry/al.html 'Poetry written by Abraham Lincoln'
+Link: http://www.alplm.org/home.html 'The Abraham Lincoln Presidential Library and Museum'
+Link: http://www.papersofabrahamlincoln.org/ 'The Papers of Abraham Lincoln'
+Begin Template: US patent 
+k: 6469 
+k: US PATNo. 6,469
+End Template: US patent 
+Link: http://edsitement.neh.gov/teaching-abraham-lincoln#node-19470 'National Endowment for the Humanities Spotlight&nbsp;– Abraham Lincoln'
+Link: http://www.abrahamlincoln200.org/ 'The Abraham Lincoln Bicentennial Commission'
+Link: http://lincoln.lib.niu.edu/ 'Lincoln/Net: Abraham Lincoln Historical Digitization Project, Northern Illinois University Libraries'
+Link: http://www.loc.gov/rr/program/bib/presidents/lincoln/ 'Abraham Lincoln: A Resource Guide from the Library of Congress'
+Link: http://web.archive.org/web/20110725003410/http://americanpresidents.org/presidents/president.asp?PresidentNumber=16 'Abraham Lincoln'
+Reference: C-SPAN ''
+Reference: American Presidents: Life Portraits ''
+Link: http://legacy.c-span.org/Series/Lincoln-200-Years.aspx 'C-SPAN's ''Lincoln 200 Years'''
+Begin Table
+Text: ' class="navbox collapsible collapsed" style="width:100%; margin:auto;"
+'
+Header Cell (1, 1)
+Text: 'style="background:#ccf;"'
+Body Cell (1, 3)
+Begin Template: space
+k: 12
+End Template: space
+Text: '<span style="font-size:110%;">Offices and distinctions</span>
+'
+Body Cell (2, 2)
+Begin Template: s-start
+End Template: s-start
+Text: '
+'
+Begin Template: s-par
+k: us-hs
+End Template: s-par
+Text: '
+'
+Begin Template: s-bef
+k: before
+Reference: John Henry (representative) 'John Henry'
+End Template: s-bef
+Text: '
+'
+Begin Template: s-ttl
+k: title
+Text: 'Member of the '
+Reference: List of United States Representatives from Illinois 'House of Representatives'
+Text: '<br>from '
+Reference: Illinois's 7th congressional district ''
+k: years
+Text: '1847–1849'
+End Template: s-ttl
+Text: '
+'
+Begin Template: s-aft
+k: after
+Reference: Thomas L. Harris 'Thomas Harris'
+End Template: s-aft
+Text: '
+'
+Begin Template: s-break
+End Template: s-break
+Text: '
+'
+Begin Template: s-ppo
+End Template: s-ppo
+Text: '
+'
+Begin Template: s-bef
+k: before
+Reference: John C. Frémont 'John Frémont'
+End Template: s-bef
+Text: '
+'
+Begin Template: s-ttl
+k: title
+Reference: Republican Party (United States) 'Republican'
+Text: ' '
+Reference: List of United States Republican Party presidential tickets 'nominee'
+Text: ' for President of the United States'
+k: years
+Reference: United States presidential election, 1860 '1860'
+Text: ', '
+Reference: United States presidential election, 1864 '1864'
+End Template: s-ttl
+Text: '
+'
+Begin Template: s-aft
+k: after
+Reference: Ulysses S. Grant 'Ulysses Grant'
+End Template: s-aft
+Text: '
+'
+Begin Template: s-break
+End Template: s-break
+Text: '
+'
+Begin Template: s-off
+End Template: s-off
+Text: '
+'
+Begin Template: s-bef
+k: before
+Reference: James Buchanan ''
+End Template: s-bef
+Text: '
+'
+Begin Template: s-ttl
+k: title
+Text: 'President of the United States'
+k: years
+Text: '1861–1865'
+End Template: s-ttl
+Text: '
+'
+Begin Template: s-aft
+k: after
+Reference: Andrew Johnson ''
+End Template: s-aft
+Text: '
+'
+Begin Template: s-break
+End Template: s-break
+Text: '
+'
+Begin Template: s-hon
+End Template: s-hon
+Text: '
+'
+Begin Template: s-bef
+k: before
+Reference: Henry Clay ''
+End Template: s-bef
+Text: '
+'
+Begin Template: s-ttl
+k: title
+Text: 'Persons who have '
+Reference: lying in state 'lain in state or honor'
+Text: '<br>in the '
+Reference: United States Capitol rotunda ''
+k: years
+Text: '1865'
+End Template: s-ttl
+Text: '
+'
+Begin Template: s-aft
+k: after
+Reference: Thaddeus Stevens ''
+End Template: s-aft
+Text: '
+'
+Begin Template: s-end
+End Template: s-end
+Text: '
+'
+End Table
+Begin Template: Navboxes
+
+k: title
+Text: 'Articles and topics related to Abraham Lincoln
+'
+k: state
+Text: 'collapsed
+'
+k: list1
+Begin Template: Abraham Lincoln
+End Template: Abraham Lincoln
+Text: '
+'
+Begin Template: Lincoln–Douglas debates
+End Template: Lincoln–Douglas debates
+Text: '
+'
+Begin Template: US Presidents
+End Template: US Presidents
+Text: '
+'
+Begin Template: USRepPresNominees
+End Template: USRepPresNominees
+Text: '
+'
+Begin Template: Lincoln cabinet
+End Template: Lincoln cabinet
+Text: '
+'
+Begin Template: American Civil War
+End Template: American Civil War
+Text: '
+'
+End Template: Navboxes
+
+Begin Template: Authority control
+k: PND
+Text: '11857308X'
+k: LCCN
+Text: 'n/79/6779'
+k: VIAF
+Text: '76349832'
+End Template: Authority control
+Begin Template: good article
+End Template: good article
+Begin Template: Persondata
+
+k: NAME
+Text: 'Abraham Lincoln
+'
+k: ALTERNATIVE NAMES
+k: SHORT DESCRIPTION
+Text: '16th President of the United States
+'
+k: DATE OF BIRTH
+Text: 'February 12, 1809
+'
+k: PLACE OF BIRTH
+Text: 'Hardin County, Kentucky
+'
+k: DATE OF DEATH
+Text: 'April 15, 1865
+'
+k: PLACE OF DEATH
+Text: 'Washington, D.C.
+'
+End Template: Persondata
+
+Begin Template: DEFAULTSORT:Lincoln, Abraham
+End Template: DEFAULTSORT:Lincoln, Abraham
+Reference: Category:1809 births ''
+Reference: Category:1865 deaths ''
+Reference: Category:Abraham Lincoln ' '
+Reference: Category:American people of English descent ''
+Reference: Category:American people of Welsh descent ''
+Reference: Category:Assassinated United States Presidents ''
+Reference: Category:Deaths by firearm in Washington, D.C. ''
+Reference: Category:Illinois lawyers ''
+Reference: Category:Illinois Republicans ''
+Reference: Category:Illinois Whigs ''
+Reference: Category:Lincoln family 'Abraham'
+Reference: Category:Members of the Illinois House of Representatives ''
+Reference: Category:Members of the United States House of Representatives from Illinois ''
+Reference: Category:People from Coles County, Illinois ''
+Reference: Category:People from LaRue County, Kentucky ''
+Reference: Category:People from Macon County, Illinois ''
+Reference: Category:People from Spencer County, Indiana ''
+Reference: Category:People from Springfield, Illinois ''
+Reference: Category:People murdered in Washington, D.C. ''
+Reference: Category:People of Illinois in the American Civil War ''
+Reference: Category:People of the Black Hawk War ''
+Reference: Category:Postmasters ''
+Reference: Category:Presidents of the United States ''
+Reference: Category:Republican Party Presidents of the United States ''
+Reference: Category:Republican Party (United States) presidential nominees ''
+Reference: Category:Union political leaders ''
+Reference: Category:United States presidential candidates, 1860 ''
+Reference: Category:United States presidential candidates, 1864 ''
+Begin Template: Link FA
+k: de
+End Template: Link FA
+Begin Template: Link GA
+k: ru
+End Template: Link GA
+Begin Template: Link FA
+k: ca
+End Template: Link FA
+Reference: af:Abraham Lincoln ''
+Reference: am:አብርሀም ሊንከን ''
+Reference: ang:Abraham Lincoln ''
+Reference: ar:أبراهام لينكون ''
+Reference: an:Abraham Lincoln ''
+Reference: ast:Abraham Lincoln ''
+Reference: az:Avraam Linkoln ''
+Reference: bn:আব্রাহাম লিংকন ''
+Reference: zh-min-nan:Abraham Lincoln ''
+Reference: be:Аўраам Лінкальн ''
+Reference: be-x-old:Абрагам Лінкальн ''
+Reference: bcl:Abraham Lincoln ''
+Reference: bg:Ейбрахам Линкълн ''
+Reference: bar:Abraham Lincoln ''
+Reference: bs:Abraham Lincoln ''
+Reference: br:Abraham Lincoln ''
+Reference: ca:Abraham Lincoln ''
+Reference: ceb:Abraham Lincoln ''
+Reference: cs:Abraham Lincoln ''
+Reference: co:Abraham Lincoln ''
+Reference: cy:Abraham Lincoln ''
+Reference: da:Abraham Lincoln ''
+Reference: de:Abraham Lincoln ''
+Reference: dv:އަބްރަހަމް ލިންކަން ''
+Reference: dsb:Abraham Lincoln ''
+Reference: et:Abraham Lincoln ''
+Reference: el:Αβραάμ Λίνκολν ''
+Reference: es:Abraham Lincoln ''
+Reference: eo:Abraham Lincoln ''
+Reference: eu:Abraham Lincoln ''
+Reference: fa:آبراهام لینکلن ''
+Reference: hif:Abraham Lincoln ''
+Reference: fo:Abraham Lincoln ''
+Reference: fr:Abraham Lincoln ''
+Reference: fy:Abraham Lincoln ''
+Reference: ga:Abraham Lincoln ''
+Reference: gv:Abraham Lincoln ''
+Reference: gd:Abraham Lincoln ''
+Reference: gl:Abraham Lincoln ''
+Reference: gan:亞伯拉罕·林肯 ''
+Reference: hak:Â-pak-lâ-hón Lìm-khén ''
+Reference: ko:에이브러햄 링컨 ''
+Reference: hy:Աբրահամ Լինքոլն ''
+Reference: hi:अब्राहम लिंकन ''
+Reference: hr:Abraham Lincoln ''
+Reference: io:Abraham Lincoln ''
+Reference: ilo:Abraham Lincoln ''
+Reference: id:Abraham Lincoln ''
+Reference: ia:Abraham Lincoln ''
+Reference: ie:Abraham Lincoln ''
+Reference: os:Линкольн, Авраам ''
+Reference: is:Abraham Lincoln ''
+Reference: it:Abramo Lincoln ''
+Reference: he:אברהם לינקולן ''
+Reference: jv:Abraham Lincoln ''
+Reference: kn:ಅಬ್ರಹಮ್ ಲಿಂಕನ್ ''
+Reference: pam:Abraham Lincoln ''
+Reference: ka:აბრაამ ლინკოლნი ''
+Reference: kk:Авраам Линкольн ''
+Reference: rw:Abraham Lincoln ''
+Reference: sw:Abraham Lincoln ''
+Reference: ku:Abraham Lincoln ''
+Reference: ky:Линкольн, Авраам ''
+Reference: la:Abrahamus Lincoln ''
+Reference: lv:Abrahams Linkolns ''
+Reference: lb:Abraham Lincoln ''
+Reference: lt:Abraham Lincoln ''
+Reference: hu:Abraham Lincoln ''
+Reference: mk:Абрахам Линколн ''
+Reference: ml:അബ്രഹാം ലിങ്കൺ ''
+Reference: mi:Abraham Lincoln ''
+Reference: mr:अब्राहम लिंकन ''
+Reference: xmf:აბრაამ ლინკოლნი ''
+Reference: arz:ابراهام لينكولن ''
+Reference: mzn:آبراهام لینکلن ''
+Reference: ms:Abraham Lincoln ''
+Reference: my:အေဘရာဟမ် လင်ကွန်း ''
+Reference: nah:Abraham Lincoln ''
+Reference: nl:Abraham Lincoln ''
+Reference: ne:अब्राहम लिंकन ''
+Reference: ja:エイブラハム・リンカーン ''
+Reference: nap:Abraham Lincoln ''
+Reference: no:Abraham Lincoln ''
+Reference: nn:Abraham Lincoln ''
+Reference: oc:Abraham Lincoln ''
+Reference: uz:Abraham Lincoln ''
+Reference: pnb:ابراہام لنکن ''
+Reference: pap:Abraham Lincoln ''
+Reference: km:អាប្រាហាម លីនខូន ''
+Reference: pms:Abraham Lincoln ''
+Reference: nds:Abraham Lincoln ''
+Reference: pl:Abraham Lincoln ''
+Reference: pt:Abraham Lincoln ''
+Reference: ro:Abraham Lincoln ''
+Reference: rm:Abraham Lincoln ''
+Reference: qu:Abraham Lincoln ''
+Reference: rue:Абрагам Лінколн ''
+Reference: ru:Линкольн, Авраам ''
+Reference: sco:Abraham Lincoln ''
+Reference: sq:Abraham Lincoln ''
+Reference: scn:Abraham Lincoln ''
+Reference: simple:Abraham Lincoln ''
+Reference: sk:Abraham Lincoln ''
+Reference: sl:Abraham Lincoln ''
+Reference: sr:Абрахам Линколн ''
+Reference: sh:Abraham Lincoln ''
+Reference: fi:Abraham Lincoln ''
+Reference: sv:Abraham Lincoln ''
+Reference: tl:Abraham Lincoln ''
+Reference: ta:ஆபிரகாம் லிங்கன் ''
+Reference: tt:Авраам Линкольн ''
+Reference: te:అబ్రహం లింకన్ ''
+Reference: th:เอบราฮัม ลิงเคิล์น ''
+Reference: tg:Авраҳам Линколн ''
+Reference: tr:Abraham Lincoln ''
+Reference: uk:Авраам Лінкольн ''
+Reference: ur:ابراہام لنکن ''
+Reference: za:Linzgenj ''
+Reference: vi:Abraham Lincoln ''
+Reference: war:Abraham Lincoln ''
+Reference: yi:אברהם לינקאלן ''
+Reference: yo:Abraham Lincoln ''
+Reference: zh-yue:林肯 ''
+Reference: bat-smg:Abrahams Lėnkuolns ''
+Reference: zh:亚伯拉罕·林肯 ''
+End Document

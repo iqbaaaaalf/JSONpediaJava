@@ -1,0 +1,2794 @@
+{
+    "__type": "page",
+    "url": "http://test/Page2",
+    "structure": [
+        {
+            "__type": "template",
+            "name": "pp-semi-blp",
+            "content": {
+                "small": [
+                    "yes"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "pp-move-indef",
+            "content": {}
+        },
+        {
+            "__type": "template",
+            "name": "Infobox person",
+            "content": {
+                "honorific_prefix": [],
+                "name": [
+                    "Sir Tim Berners-Lee"
+                ],
+                "honorific_suffix": [
+                    "<small>OM, KBE, FRS, FREng, FRSA</small>"
+                ],
+                "image": [
+                    "Tim Berners-Lee closeup.jpg"
+                ],
+                "caption": [
+                    "Berners-Lee in 2010"
+                ],
+                "birth_name": [
+                    "Timothy John Berners-Lee"
+                ],
+                "birth_date": [
+                    {
+                        "__type": "template",
+                        "name": "birth date and age",
+                        "content": {
+                            "6": [],
+                            "8": [],
+                            "1955": [],
+                            "df": [
+                                "y"
+                            ]
+                        }
+                    },
+                    "<ref name=\"W3Bio\">",
+                    {
+                        "__type": "template",
+                        "name": "cite web",
+                        "content": {
+                            "url": [
+                                "http://www.w3.org/People/Berners-Lee/Longer.html"
+                            ],
+                            "title": [
+                                "Berners-Lee Longer Biography"
+                            ],
+                            "publisher": [
+                                "World Wide Web Consortium"
+                            ],
+                            "accessdate": [
+                                "18 January 2011"
+                            ]
+                        }
+                    },
+                    "</ref>"
+                ],
+                "birth_place": [
+                    "London, England<ref name=\"W3Bio\" />"
+                ],
+                "nationality": [
+                    "English"
+                ],
+                "residence": [
+                    {
+                        "__type": "reference",
+                        "label": "Massachusetts",
+                        "description": ""
+                    },
+                    ", U.S.<ref name=\"W3Bio\" />"
+                ],
+                "known_for": [
+                    {
+                        "__type": "template",
+                        "name": "Plainlist",
+                        "content": {
+                            "NO NAME": {
+                                "__type": "list",
+                                "content": [
+                                    "Inventing the",
+                                    {
+                                        "__type": "reference",
+                                        "label": "World Wide Web",
+                                        "description": ""
+                                    },
+                                    "* Holder of the 3Com Founders Chair at",
+                                    {
+                                        "__type": "reference",
+                                        "label": "MIT",
+                                        "description": ""
+                                    },
+                                    "'s Computer Science and Artificial Intelligence Laboratory"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "alma_mater": [
+                    {
+                        "__type": "reference",
+                        "label": "Queen's College, Oxford",
+                        "description": ""
+                    }
+                ],
+                "employer": [
+                    {
+                        "__type": "template",
+                        "name": "Plainlist",
+                        "content": {
+                            "NO NAME": {
+                                "__type": "list",
+                                "content": [
+                                    {
+                                        "__type": "reference",
+                                        "label": "World Wide Web Consortium",
+                                        "description": ""
+                                    },
+                                    "*",
+                                    {
+                                        "__type": "reference",
+                                        "label": "University of Southampton",
+                                        "description": ""
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "occupation": [
+                    {
+                        "__type": "reference",
+                        "label": "Computer scientist",
+                        "description": ""
+                    }
+                ],
+                "title": [
+                    "Professor"
+                ],
+                "religion": [
+                    {
+                        "__type": "reference",
+                        "label": "Unitarian Universalism",
+                        "description": ""
+                    }
+                ],
+                "parents": [
+                    {
+                        "__type": "template",
+                        "name": "Plainlist",
+                        "content": {
+                            "NO NAME": {
+                                "__type": "list",
+                                "content": [
+                                    {
+                                        "__type": "reference",
+                                        "label": "Conway Berners-Lee",
+                                        "description": ""
+                                    },
+                                    "*",
+                                    {
+                                        "__type": "reference",
+                                        "label": "Mary Lee Woods",
+                                        "description": ""
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "website": [
+                    {
+                        "__type": "template",
+                        "name": "Url",
+                        "content": {
+                            "http://www.w3.org/People/Berners-Lee/": []
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "post-nominals",
+            "content": {
+                "post-noms": [
+                    {
+                        "__type": "reference",
+                        "label": "Order of Merit",
+                        "description": "OM"
+                    },
+                    ",",
+                    {
+                        "__type": "reference",
+                        "label": "Knight Commander of the Order of the British Empire",
+                        "description": "KBE"
+                    },
+                    ",",
+                    {
+                        "__type": "reference",
+                        "label": "Royal Society",
+                        "description": "FRS"
+                    },
+                    ",",
+                    {
+                        "__type": "reference",
+                        "label": "Royal Academy of Engineering",
+                        "description": "FREng"
+                    },
+                    ",",
+                    {
+                        "__type": "reference",
+                        "label": "Royal Society of Arts",
+                        "description": "FRSA"
+                    }
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "computer scientist",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Massachusetts Institute of Technology",
+            "description": "MIT"
+        },
+        {
+            "__type": "reference",
+            "label": "World Wide Web",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "url": [
+                    "http://info.cern.ch/Proposal.html"
+                ],
+                "title": [
+                    "cern.info.ch - Tim Berners-Lee's proposal"
+                ],
+                "publisher": [
+                    "Info.cern.ch"
+                ],
+                "date": [],
+                "accessdate": [
+                    "2011-12-21"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Robert Cailliau",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "CERN",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Hypertext Transfer Protocol",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Web server",
+            "description": "server"
+        },
+        {
+            "__type": "reference",
+            "label": "World Wide Web Consortium",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "World Wide Web Foundation",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "3Com",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Professors in the United States#Special academic ranks (tenured)",
+            "description": "Founders Chair"
+        },
+        {
+            "__type": "reference",
+            "label": "MIT Computer Science and Artificial Intelligence Laboratory",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Draper Prize"
+                ],
+                "url": [
+                    "http://web.mit.edu/newsoffice/2007/draper-prize.html"
+                ],
+                "publisher": [
+                    {
+                        "__type": "reference",
+                        "label": "Massachusetts Institute of Technology",
+                        "description": ""
+                    }
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "url": [
+                    "http://webscience.org/about/people/"
+                ],
+                "accessdate": [
+                    "17 January 2011"
+                ],
+                "title": [
+                    "People"
+                ],
+                "publisher": [
+                    "The Web Science Research Initiative"
+                ],
+                "archiveurl": [
+                    "http://web.archive.org/web/20080628052526/http://webscience.org/about/people/"
+                ],
+                "archivedate": [
+                    "28 June 2008"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "MIT Center for Collective Intelligence",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "url": [
+                    "http://cci.mit.edu"
+                ],
+                "title": [
+                    "MIT Center for Collective Intelligence (homepage)"
+                ],
+                "publisher": [
+                    "Cci.mit.edu"
+                ],
+                "accessdate": [
+                    "15 August 2010"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "url": [
+                    "http://cci.mit.edu/people/index.html"
+                ],
+                "title": [
+                    "MIT Center for Collective Intelligence (people)"
+                ],
+                "publisher": [
+                    "Cci.mit.edu"
+                ],
+                "accessdate": [
+                    "15 August 2010"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Order of the British Empire",
+            "description": "knighted"
+        },
+        {
+            "__type": "reference",
+            "label": "Elizabeth II",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "United States National Academy of Sciences",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Timothy Berners-Lee Elected to National Academy of Sciences"
+                ],
+                "url": [
+                    "http://www.ddj.com/217200450"
+                ],
+                "publisher": [
+                    {
+                        "__type": "reference",
+                        "label": "Dr. Dobb's Journal",
+                        "description": ""
+                    }
+                ],
+                "accessdate": [
+                    "9 June 2009"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite press release",
+            "content": {
+                "accessdate": [
+                    "17 January 2011"
+                ],
+                "date": [
+                    "28 April 2009"
+                ],
+                "title": [
+                    "72 New Members Chosen By Academy"
+                ],
+                "publisher": [
+                    "United States National Academy of Sciences"
+                ],
+                "url": [
+                    "http://www8.nationalacademies.org/onpinews/newsitem.aspx?RecordID=04282009"
+                ]
+            }
+        },
+        {
+            "__type": "section",
+            "title": "Early life",
+            "level": 0
+        },
+        {
+            "__type": "reference",
+            "label": "Conway Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Mary Lee Woods",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Ferranti Mark 1",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Emanuel School",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "The Queen's College, Oxford",
+            "description": ""
+        },
+        {
+            "__type": "section",
+            "title": "Career",
+            "level": 0
+        },
+        {
+            "__type": "reference",
+            "label": "File:Tim Berners-Lee.jpg",
+            "description": "thumb|left|Berners-Lee, 2005"
+        },
+        {
+            "__type": "reference",
+            "label": "hypertext",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Berners-Lee's original proposal to CERN"
+                ],
+                "publisher": [
+                    "World Wide Web Consortium"
+                ],
+                "month": [
+                    "March"
+                ],
+                "year": [
+                    "1989"
+                ],
+                "url": [
+                    "http://www.w3.org/History/1989/proposal.html"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "ENQUIRE",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "last": [
+                    "Stewart"
+                ],
+                "first": [
+                    "Bill"
+                ],
+                "title": [
+                    "Tim Berners-Lee, Robert Cailliau, and the World Wide Web"
+                ],
+                "url": [
+                    "http://www.livinginternet.com/w/wi_lee.htm"
+                ],
+                "accessdate": [
+                    "22 July 2010"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Frequently asked questions"
+                ],
+                "url": [
+                    "http://www.w3.org/People/Berners-Lee/FAQ.html"
+                ],
+                "publisher": [
+                    "World Wide Web Consortium"
+                ],
+                "accessdate": [
+                    "22 July 2010"
+                ],
+                "author": [
+                    "Tim Berners-Lee"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "computer network",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Transmission Control Protocol",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "domain name system",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "author": [
+                    "Tim Berners-Lee"
+                ],
+                "title": [
+                    "Answers for Young People"
+                ],
+                "publisher": [
+                    "World Wide Web Consortium"
+                ],
+                "url": [
+                    "http://www.w3.org/People/Berners-Lee/Kids"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "url": [
+                    "http://www.achievement.org/autodoc/page/ber1int-1"
+                ],
+                "title": [
+                    "Biography and Video Interview of Timothy Berners-Lee at Academy of Achievement"
+                ],
+                "publisher": [
+                    "Achievement.org"
+                ],
+                "date": [],
+                "accessdate": [
+                    "2011-12-21"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Robert Cailliau",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Association for Computing Machinery",
+            "description": "ACM"
+        },
+        {
+            "__type": "reference",
+            "label": "Software System Award",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Ten Years Public Domain for the  Original Web Software"
+                ],
+                "url": [
+                    "http://tenyears-www.web.cern.ch/tenyears-www/Story/WelcomeStory.html"
+                ],
+                "publisher": [
+                    "CERN"
+                ],
+                "accessdate": [
+                    "21 July 2010"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "WorldWideWeb",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "NeXTSTEP",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "CERN HTTPd",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Daemon (computer software)",
+            "description": "daemon"
+        },
+        {
+            "__type": "template",
+            "name": "quotation",
+            "content": {
+                "\" Mike Sendall buys a NeXT cube for evaluation, and gives it to Tim [Berners-Lee]. Tim's prototype implementation on NeXTStep is made in the space of a few months, thanks to the qualities of the NeXTStep software development system. This prototype offers WYSIWYG browsing/authoring! Current Web browsers used in \"surfing the Internet\" are mere passive windows, depriving the user of the possibility to contribute. During some sessions in the CERN cafeteria, Tim and I try to find a catching name for the system. I was determined that the name should not yet again be taken from Greek mythology. Tim proposes \"World-Wide Web\". I like this very much, except that it is difficult to pronounce in French...\" by Robert Cailliau, 2 November 1995.<ref name": [
+                    "\"Ben\">",
+                    {
+                        "__type": "link",
+                        "url": "http://www.netvalley.com/cgi-bin/intval/net_history.pl?chapter=4",
+                        "description": "Roads and Crossroads of Internet History"
+                    },
+                    "Chapter 4: Birth of the Web</ref>"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "web site",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Tim Berners-Lee. Confirming The Exact Location Where the Web Was Invented"
+                ],
+                "url": [
+                    "http://davidgalbraith.org/uncategorized/the-exact-location-where-the-web-was-invented/2343/"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Welcome to info.cern.ch, the website of the world's first-ever web server"
+                ],
+                "publisher": [
+                    "CERN"
+                ],
+                "url": [
+                    "http://info.cern.ch/"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "World Wide Web—Archive of world's first website"
+                ],
+                "publisher": [
+                    "World Wide Web Consortium"
+                ],
+                "url": [
+                    "http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "World Wide Web—First mentioned on USENET"
+                ],
+                "publisher": [
+                    "Google"
+                ],
+                "date": [
+                    "6 August 1991"
+                ],
+                "url": [
+                    "http://groups.google.co.uk/group/alt.hypertext/msg/06dad279804cb3ba?dmode=source&hl=en"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "The original post to alt.hypertalk describing the WorldWideWeb Project"
+                ],
+                "publisher": [
+                    "Google"
+                ],
+                "work": [
+                    {
+                        "__type": "reference",
+                        "label": "Google Groups",
+                        "description": ""
+                    }
+                ],
+                "date": [
+                    "9 August 1991"
+                ],
+                "url": [
+                    "http://groups.google.com/group/comp.archives/browse_thread/thread/9fb079523583d42/37bb6783d03a3b0d?lnk=st&q=&rnum=2&hl=en#37bb6783d03a3b0d"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Patent Policy—5&nbsp;February&nbsp;2004"
+                ],
+                "publisher": [
+                    "World Wide Web Consortium"
+                ],
+                "date": [
+                    "5 February 2004"
+                ],
+                "url": [
+                    "http://www.w3.org/Consortium/Patent-Policy-20040205/"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Colehill",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Wimborne Minster",
+            "description": "Wimborne"
+        },
+        {
+            "__type": "reference",
+            "label": "East Dorset",
+            "description": ""
+        },
+        {
+            "__type": "link",
+            "url": "http://books.google.com/books?id=WKuG-VIwID8C&pg=PA611&dq=tim+berners+lee++-+east+dorset+heritage+trust&hl=en&ei=0cE9TtyhIcyo8QPQx_zgDA&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCoQ6AEwAA#v=onepage&q=tim%20berners%20lee%20%20-%20east%20dorset%20heritage%20trust&f=false",
+            "description": "Icons of invention: the makers of the modern world from Gutenberg to Gates"
+        },
+        {
+            "__type": "reference",
+            "label": "University of Southampton",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Semantic Web",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite doi",
+            "content": {
+                "10.1038/scientificamerican0501-34": []
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Tim Berners-Lee, World Wide Web inventor, to join ECS"
+                ],
+                "publisher": [
+                    "World Wide Web Consortium"
+                ],
+                "date": [
+                    "2 December 2004"
+                ],
+                "url": [
+                    "http://www.ecs.soton.ac.uk/news/658"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "section",
+            "title": "Current work",
+            "level": 0
+        },
+        {
+            "__type": "reference",
+            "label": "Image:timbernerslee.jpg",
+            "description": "thumb|right|200px|Tim Berners-Lee at the [[Home Office"
+        },
+        {
+            "__type": "reference",
+            "label": "Gordon Brown",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Tim Berners-Lee"
+                ],
+                "publisher": [
+                    "World Wide Web Consortium"
+                ],
+                "date": [
+                    "10 June 2009"
+                ],
+                "url": [
+                    "http://www.w3.org/News/2009#item98"
+                ],
+                "accessdate": [
+                    "10 July 2009"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Nigel Shadbolt",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "data.gov.uk",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "UK Government",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Ordnance Survey",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "title": [
+                    "Ordnance Survey offers free data access"
+                ],
+                "publisher": [
+                    "BBC News"
+                ],
+                "date": [
+                    "1 April 2010"
+                ],
+                "url": [
+                    "http://news.bbc.co.uk/1/hi/technology/8597779.stm"
+                ],
+                "accessdate": [
+                    "3 April 2009"
+                ]
+            }
+        },
+        {
+            "__type": "link",
+            "url": "http://www.webfoundation.org/about/faq/",
+            "description": "FAQ—World Wide Web Foundation"
+        },
+        {
+            "__type": "reference",
+            "label": "Net Neutrality",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "url": [
+                    "http://news.bbc.co.uk/2/hi/technology/7613201.stm"
+                ],
+                "title": [
+                    "Web creator rejects net tracking"
+                ],
+                "publisher": [
+                    "BBC"
+                ],
+                "date": [
+                    "15 September 2008"
+                ],
+                "accessdate": [
+                    "15 September 2008"
+                ],
+                "quote": [
+                    "Warning sounded on web's future."
+                ],
+                "first": [
+                    "Pallab"
+                ],
+                "last": [
+                    "Ghosh"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "ISP",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "url": [
+                    "http://news.bbc.co.uk/1/hi/technology/7299875.stm"
+                ],
+                "title": [
+                    "Web creator rejects net tracking"
+                ],
+                "publisher": [
+                    "BBC"
+                ],
+                "date": [
+                    "March 2008"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ],
+                "quote": [
+                    "Sir Tim rejects net tracking like Phorm."
+                ],
+                "first": [
+                    "Rory"
+                ],
+                "last": [
+                    "Cellan-Jones"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "url": [
+                    "http://www.telegraph.co.uk/news/uknews/1581938/Web-inventor%27s-warning-on-spy-software.html"
+                ],
+                "title": [
+                    "Web inventor's warning on spy software"
+                ],
+                "work": [
+                    "The Daily Telegraph"
+                ],
+                "location": [
+                    "London"
+                ],
+                "date": [
+                    "March 2008"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ],
+                "quote": [
+                    "Sir Tim rejects net tracking like Phorm."
+                ],
+                "first": [
+                    "Stephen"
+                ],
+                "last": [
+                    "Adams"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "last": [
+                    "Berners"
+                ],
+                "first": [
+                    "Tim"
+                ],
+                "url": [
+                    "http://www.scientificamerican.com/article.cfm?id=long-live-the-web"
+                ],
+                "title": [
+                    "Tim Berners-Lee, Long Live the Web: A Call for Continued Open Standards and Neutrality, Scientific American Magazine, December 2010"
+                ],
+                "publisher": [
+                    "Scientificamerican.com"
+                ],
+                "date": [
+                    "2011-05-04"
+                ],
+                "accessdate": [
+                    "2011-12-21"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "The Times",
+            "description": "Times"
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "url": [
+                    "http://news.bbc.co.uk/1/hi/technology/8306631.stm"
+                ],
+                "title": [
+                    "Berners-Lee 'sorry' for slashes"
+                ],
+                "publisher": [
+                    "BBC"
+                ],
+                "date": [
+                    "14 October 2009"
+                ],
+                "accessdate": [
+                    "14 October 2009"
+                ]
+            }
+        },
+        {
+            "__type": "section",
+            "title": "Recognition",
+            "level": 0
+        },
+        {
+            "__type": "reference",
+            "label": "Image:First Web Server.jpg",
+            "description": "thumb|200px|This [[NeXT Computer"
+        },
+        {
+            "__type": "reference",
+            "label": "World Wide Web Hall of Fame",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "The World-Wide Web Hall of Fame"
+                ],
+                "url": [
+                    "http://botw.org/1994/awards/fame.html"
+                ],
+                "publisher": [
+                    {
+                        "__type": "reference",
+                        "label": "Best of the Web Directory",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Software System Award",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Association for Computing Machinery",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "publisher": [
+                    {
+                        "__type": "reference",
+                        "label": "Association for Computing Machinery",
+                        "description": ""
+                    }
+                ],
+                "url": [
+                    "http://awards.acm.org/homepage.cfm?srt=all&awd=149"
+                ],
+                "work": [
+                    "ACM Awards"
+                ],
+                "title": [
+                    "Software System Award"
+                ],
+                "accessdate": [
+                    {
+                        "__type": "template",
+                        "name": "Start date",
+                        "content": {
+                            "10": [],
+                            "25": [],
+                            "2011": [],
+                            "df": [
+                                "yes"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "University of Essex",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Honorary Graduates of University of Essex"
+                ],
+                "url": [
+                    "http://www.essex.ac.uk/honorary_graduates/hg/profiles/1998/t-berners-lee.aspx"
+                ],
+                "accessdate": [
+                    "December 15, 2011"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Time Magazine",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Time 100: The Most Important People of the Century",
+            "description": "100 Most Important People of the 20th century"
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "title": [
+                    "Tim Berners Lee—Time 100 People of the Century"
+                ],
+                "url": [
+                    "http://www.time.com/time/magazine/article/0,9171,990627,00.html"
+                ],
+                "work": [
+                    "Time Magazine"
+                ],
+                "quote": [
+                    "He wove the World Wide Web and created a mass medium for the 21st century. The World Wide Web is Berners-Lee's alone. He designed it. He loosed it on the world. And he more than anyone else has fought to keep it open, nonproprietary and free."
+                ],
+                "first": [
+                    "Joshua"
+                ],
+                "last": [
+                    "Quittner"
+                ],
+                "date": [
+                    "29 March 1999"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "The Open University",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "title": [
+                    "Open University's online graduation"
+                ],
+                "url": [
+                    "http://news.bbc.co.uk/1/hi/education/696176.stm"
+                ],
+                "work": [
+                    {
+                        "__type": "reference",
+                        "label": "BBC",
+                        "description": ""
+                    },
+                    "NEWS"
+                ],
+                "date": [
+                    "31. March 2000"
+                ],
+                "accessdate": [
+                    "22 September 2010"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "American Academy of Arts and Sciences",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Book of Members, 1780–2010: Chapter B"
+                ],
+                "url": [
+                    "http://www.amacad.org/publications/BookofMembers/ChapterB.pdf"
+                ],
+                "publisher": [
+                    "American Academy of Arts and Sciences"
+                ],
+                "accessdate": [
+                    "24 June 2011"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Computer History Museum",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "url": [
+                    "http://www.computerhistory.org/fellowawards/index.php?id=88"
+                ],
+                "title": [
+                    "Fellow Awards &#124; Fellows Home"
+                ],
+                "publisher": [
+                    "Computerhistory.org"
+                ],
+                "date": [
+                    "11 January 2010"
+                ],
+                "accessdate": [
+                    "15 August 2010"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Millennium Technology Prize",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Helsinki",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Tarja Halonen",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Millennium Technology Prize 2004 awarded to inventor of World Wide Web"
+                ],
+                "publisher": [
+                    {
+                        "__type": "reference",
+                        "label": "Millennium Technology Prize",
+                        "description": ""
+                    }
+                ],
+                "url": [
+                    "http://www.technologyawards.org/index.php?m=2&s=1&id=16&sm=4"
+                ],
+                "archiveurl": [
+                    "http://web.archive.org/web/20070830111145/http://www.technologyawards.org/index.php?m=2&s=1&id=16&sm=4"
+                ],
+                "archivedate": [
+                    "30 August 2007"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Order of the British Empire",
+            "description": "Knight Commander of the Most Excellent Order of the British Empire"
+        },
+        {
+            "__type": "reference",
+            "label": "Elizabeth II of the United Kingdom",
+            "description": "Queen Elizabeth II"
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "title": [
+                    "Web's inventor gets a knighthood"
+                ],
+                "publisher": [
+                    "BBC"
+                ],
+                "date": [
+                    "31 December 2003"
+                ],
+                "url": [
+                    "http://news.bbc.co.uk/1/hi/technology/3357073.stm"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "title": [
+                    "Creator of the web turns knight"
+                ],
+                "publisher": [
+                    "BBC"
+                ],
+                "date": [
+                    "16 July 2004"
+                ],
+                "url": [
+                    "http://news.bbc.co.uk/1/hi/technology/3899723.stm"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Doctor of Science",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Lancaster University",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "title": [
+                    "Lancaster University Honorary Degrees, July&nbsp;2004"
+                ],
+                "publisher": [
+                    {
+                        "__type": "reference",
+                        "label": "Lancaster University",
+                        "description": ""
+                    }
+                ],
+                "url": [
+                    "http://domino.lancs.ac.uk/info/lunews.nsf/I/2768F56EB38B32F780256ECC00404E69"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "David Hempleman-Adams",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "title": [
+                    "Three loud cheers for the father of the web"
+                ],
+                "work": [
+                    "The Daily Telegraph"
+                ],
+                "location": [
+                    "London"
+                ],
+                "date": [
+                    "28 January 2005"
+                ],
+                "url": [
+                    "http://www.telegraph.co.uk/news/uknews/1482211/Three-loud-cheers-for-the-father-of-the-web.html"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Academy of Achievement",
+            "description": "Academy of Achievement's Golden Plate Award"
+        },
+        {
+            "__type": "reference",
+            "label": "Albert Hofmann",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "The Daily Telegraph",
+            "description": "''The Telegraph''"
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "author": [
+                    "8:01AM GMT 30 Oct 2007"
+                ],
+                "url": [
+                    "http://www.telegraph.co.uk/news/uknews/1567544/Top-100-living-geniuses.html"
+                ],
+                "title": [
+                    "\"Top 100 living geniuses\" '&#39;The Daily Telegraph'&#39; 28 October 2007"
+                ],
+                "publisher": [
+                    "Telegraph.co.uk"
+                ],
+                "date": [
+                    "2007-10-30"
+                ],
+                "accessdate": [
+                    "2011-12-21"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Order of Merit",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "accessdate": [
+                    "25 May 2008"
+                ],
+                "url": [
+                    "http://news.bbc.co.uk/1/hi/technology/6750395.stm"
+                ],
+                "title": [
+                    "Web inventor gets Queen's honour"
+                ],
+                "publisher": [
+                    "BBC"
+                ],
+                "date": [
+                    "13 June 2007"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "IEEE/RSE Wolfson James Clerk Maxwell Award",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "url": [
+                    "http://www.ieee.org/documents/maxwell_rl.pdf"
+                ],
+                "title": [
+                    "IEEE/RSE Wolfson James Clerk Maxwell Award Recipients"
+                ],
+                "publisher": [
+                    "IEEE"
+                ],
+                "accessdate": [
+                    {
+                        "__type": "template",
+                        "name": "Start date",
+                        "content": {
+                            "4": [],
+                            "10": [],
+                            "2011": [],
+                            "df": [
+                                "yes"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "University of Manchester",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Manchester Mark 1",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "Cite news",
+            "content": {
+                "title": [
+                    "Scientific pioneers honoured by The University of Manchester"
+                ],
+                "url": [
+                    "http://www.manchester.ac.uk/aboutus/news/display/?id=4216"
+                ],
+                "work": [
+                    "manchester.ac.uk"
+                ],
+                "date": [
+                    "2 December 2008"
+                ],
+                "accessdate": [
+                    "10 October 2011"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Universidad Politécnica de Madrid",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "url": [
+                    "http://www2.upm.es/portal/site/institucional/menuitem.fa77d63875fa4490b99bfa04dffb46a8/?vgnextoid=c5d0492bf33c0210VgnVCM10000009c7648aRCRD"
+                ],
+                "title": [
+                    "Universidad Politécnica de Madrid: Berners-Lee y Vinton G. Cerf—Doctores Honoris Causa por la UPM"
+                ],
+                "accessdate": [
+                    "15 August 2010"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "United States National Academy of Sciences",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Webby Award",
+            "description": ""
+        },
+        {
+            "__type": "link",
+            "url": "http://www.webbyawards.com/press/press-release.php?id=187",
+            "description": "Press Release: Sir Tim Berners Lee, Inventor of the World Wide Web, to receive Webby Lifetime Award At the 13th Annual Webby Awards"
+        },
+        {
+            "__type": "reference",
+            "label": "Vrije Universiteit Amsterdam",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "language": [
+                    "Dutch"
+                ],
+                "url": [
+                    "http://www.vu.nl/nl/Images/pb%2009.082%20Eredoctoraat_tcm9-94528.pdf"
+                ],
+                "title": [
+                    "Uitvinder World Wide Web krijgt eredoctoraat Vrije Universiteit"
+                ],
+                "accessdate": [
+                    "22 July 2009"
+                ],
+                "author": [
+                    "Vrije Universiteit Amsterdam"
+                ],
+                "date": [
+                    "22 July 2008"
+                ],
+                "authorlink": [
+                    "Vrije Universiteit Amsterdam"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "language": [
+                    "Dutch"
+                ],
+                "url": [
+                    "http://www.nu.nl/internet/2046688/bedenker-wereldwijd-web-krijgt-eredoctoraat-vu.html"
+                ],
+                "title": [
+                    "'Bedenker' wereldwijd web krijgt eredoctoraat VU"
+                ],
+                "accessdate": [
+                    "22 July 2009"
+                ],
+                "author": [
+                    "NU.nl"
+                ],
+                "date": [
+                    "22 July 2008"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Mikhail Gorbachev",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Evans Wadongo",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Ted Turner",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Doctor of Science",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Harvard University",
+            "description": ""
+        },
+        {
+            "__type": "link",
+            "url": "http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee",
+            "description": "Harvard awards 9 honorary degrees"
+        },
+        {
+            "__type": "reference",
+            "label": "IEEE Intelligent Systems",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "Cite doi",
+            "content": {
+                "10.1109.2FMIS.2011.64": []
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite news",
+            "content": {
+                "url": [
+                    "http://www.digitaljournal.com/pr/399442"
+                ],
+                "title": [
+                    "IEEE Computer Society Magazine Honors Artificial Intelligence Leaders"
+                ],
+                "newspaper": [
+                    {
+                        "__type": "reference",
+                        "label": "DigitalJournal.com",
+                        "description": ""
+                    }
+                ],
+                "date": [
+                    {
+                        "__type": "template",
+                        "name": "Start date",
+                        "content": {
+                            "8": [],
+                            "24": [],
+                            "2011": [],
+                            "df": [
+                                "yes"
+                            ]
+                        }
+                    }
+                ],
+                "accessdate": [
+                    {
+                        "__type": "template",
+                        "name": "Start date",
+                        "content": {
+                            "9": [],
+                            "18": [],
+                            "2011": [],
+                            "df": [
+                                "yes"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "PRWeb",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Vocus",
+            "description": ""
+        },
+        {
+            "__type": "section",
+            "title": "Personal life",
+            "level": 0
+        },
+        {
+            "__type": "template",
+            "name": "relevance",
+            "content": {}
+        },
+        {
+            "__type": "template",
+            "name": "Expand section",
+            "content": {
+                "date": [
+                    "September 2010"
+                ]
+            }
+        },
+        {
+            "__type": "reference",
+            "label": "Church of England",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "confirmed",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Unitarian Universalism",
+            "description": "Unitarian Universalist"
+        },
+        {
+            "__type": "template",
+            "name": "cite web",
+            "content": {
+                "last": [
+                    "Berners-Lee"
+                ],
+                "first": [
+                    "Timothy"
+                ],
+                "title": [
+                    "The World Wide Web and the \"Web of Life\""
+                ],
+                "publisher": [
+                    "World Wide Web Consortium"
+                ],
+                "year": [
+                    "1998"
+                ],
+                "url": [
+                    "http://www.w3.org/People/Berners-Lee/UU.html''"
+                ],
+                "accessdate": [
+                    "25 May 2008"
+                ]
+            }
+        },
+        {
+            "__type": "section",
+            "title": "See also",
+            "level": 0
+        },
+        {
+            "__type": "reference",
+            "label": "Eelco van Asperen",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "History of the World Wide Web",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Kevin Hughes (www)",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "libwww",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Mundaneum",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Network neutrality",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Paul Otlet",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Semantic Web",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Robert Taylor (computer scientist)",
+            "description": "Bob Taylor"
+        },
+        {
+            "__type": "reference",
+            "label": "Vannevar Bush",
+            "description": ""
+        },
+        {
+            "__type": "section",
+            "title": "Publications",
+            "level": 0
+        },
+        {
+            "__type": "template",
+            "name": "cite book",
+            "content": {
+                "title": [
+                    {
+                        "__type": "reference",
+                        "label": "Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web by its inventor",
+                        "description": ""
+                    }
+                ],
+                "first": [
+                    "Tim"
+                ],
+                "last": [
+                    "Berners-Lee"
+                ],
+                "coauthors": [
+                    "Mark Fischetti"
+                ],
+                "location": [
+                    "Britain"
+                ],
+                "publisher": [
+                    "Orion Business"
+                ],
+                "year": [
+                    "1999"
+                ],
+                "isbn": [
+                    "0-7528-2090-7"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite doi",
+            "content": {
+                "10.1038/scientificamerican1210-80": []
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite pmid",
+            "content": {
+                "21141362": []
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite pmid",
+            "content": {
+                "18847088": []
+            }
+        },
+        {
+            "__type": "template",
+            "name": "cite pmid",
+            "content": {
+                "16902115": []
+            }
+        },
+        {
+            "__type": "section",
+            "title": "Notes",
+            "level": 0
+        },
+        {
+            "__type": "template",
+            "name": "Reflist",
+            "content": {
+                "colwidth": [
+                    "35em"
+                ]
+            }
+        },
+        {
+            "__type": "section",
+            "title": "Further reading",
+            "level": 0
+        },
+        {
+            "__type": "link",
+            "url": "http://computemagazine.com/man-who-invented-world-wide-web-gives-new-definition/",
+            "description": "Tim Berners-Lee Gives the Web a New Definition"
+        },
+        {
+            "__type": "link",
+            "url": "http://news.bbc.co.uk/2/hi/technology/4132752.stm",
+            "description": "BBC2 Newsnight &ndash; Transcript of video interview of Berners-Lee on the read/write Web"
+        },
+        {
+            "__type": "template",
+            "name": "Dead link",
+            "content": {
+                "url": [
+                    "http://web.archive.org/web/20080202115128/http://www.kayotix.com/tmp/newsfeeds/10.08.05/timbernerslee/"
+                ],
+                "date": [
+                    "September 2008"
+                ]
+            }
+        },
+        {
+            "__type": "link",
+            "url": "http://www.technologyreview.com/Infotech/13784/",
+            "description": "Technology Review interview"
+        },
+        {
+            "__type": "section",
+            "title": "External links",
+            "level": 0
+        },
+        {
+            "__type": "template",
+            "name": "commons category",
+            "content": {}
+        },
+        {
+            "__type": "template",
+            "name": "Wikiquote",
+            "content": {}
+        },
+        {
+            "__type": "template",
+            "name": "Twitter",
+            "content": {
+                "timberners_lee": []
+            }
+        },
+        {
+            "__type": "link",
+            "url": "http://identi.ca/timbl",
+            "description": "timbl"
+        },
+        {
+            "__type": "reference",
+            "label": "identi.ca",
+            "description": ""
+        },
+        {
+            "__type": "template",
+            "name": "TED",
+            "content": {
+                "speakers/tim_berners_lee.html": []
+            }
+        },
+        {
+            "__type": "template",
+            "name": "IMDb name",
+            "content": {
+                "3805083": []
+            }
+        },
+        {
+            "__type": "template",
+            "name": "Nndb",
+            "content": {
+                "573/000023504": []
+            }
+        },
+        {
+            "__type": "template",
+            "name": "Worldcat id",
+            "content": {
+                "lccn-no99-10609": []
+            }
+        },
+        {
+            "__type": "link",
+            "url": "http://www.w3.org/People/Berners-Lee/",
+            "description": "Tim Berners-Lee"
+        },
+        {
+            "__type": "link",
+            "url": "http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html",
+            "description": "First World Wide Web page"
+        },
+        {
+            "__type": "template",
+            "name": "s-start",
+            "content": {}
+        },
+        {
+            "__type": "template",
+            "name": "succession box",
+            "content": {
+                "before": [
+                    "First recipient"
+                ],
+                "after": [
+                    {
+                        "__type": "reference",
+                        "label": "Shuji Nakamura",
+                        "description": ""
+                    }
+                ],
+                "title": [
+                    {
+                        "__type": "reference",
+                        "label": "Millennium Technology Prize",
+                        "description": ""
+                    },
+                    "winner"
+                ],
+                "years": [
+                    "2004 (for the",
+                    {
+                        "__type": "reference",
+                        "label": "World Wide Web",
+                        "description": ""
+                    },
+                    ")"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "s-end",
+            "content": {}
+        },
+        {
+            "__type": "template",
+            "name": "Telecommunications",
+            "content": {}
+        },
+        {
+            "__type": "template",
+            "name": "Use dmy dates",
+            "content": {
+                "date": [
+                    "December 2011"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "Use British English",
+            "content": {
+                "date": [
+                    "December 2011"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "Persondata <!-- Metadata: see [[Wikipedia:Persondata]]. -->",
+            "content": {
+                "NAME": [
+                    "Berners-Lee, Tim"
+                ],
+                "DATE OF BIRTH": [
+                    "8 June 1955"
+                ],
+                "PLACE OF BIRTH": [
+                    "London, England"
+                ]
+            }
+        },
+        {
+            "__type": "template",
+            "name": "DEFAULTSORT:Berners-Lee, Tim",
+            "content": {}
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Free software people",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:1955 births",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Alumni of The Queen's College, Oxford",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:English computer scientists",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:English expatriates in the United States",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:English inventors",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Fellows of the American Academy of Arts and Sciences",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Fellows of the British Computer Society",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Fellows of the Royal Society",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Fellows of the Royal Academy of Engineering",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Internet pioneers",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Living people",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Japan Prize laureates",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Knights Commander of the Order of the British Empire",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:MacArthur Fellows",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Members of the Order of Merit",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Members of the United States National Academy of Engineering",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:People from London",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:People from Barnes, London",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:World Wide Web Consortium",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Computer pioneers",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Royal Medal winners",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:English Unitarians",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:HTTP",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:People educated at Emanuel School",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "Category:Unitarian Universalists",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "af:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "als:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ar:تيم بيرنرز لي",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "an:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "az:Tim Berners-Li",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "bn:টিম বার্নার্স-লি",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "zh-min-nan:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "be:Цім Бернерс-Лі",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "be-x-old:Тым Бэрнэрз-Лі",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "bs:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "br:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "bg:Тим Бърнърс-Лий",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ca:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "cs:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "cy:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "da:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "de:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "et:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "el:Τιμ Μπέρνερς Λι",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "es:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "eo:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "eu:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "fa:تیم برنرز لی",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "hif:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "fr:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "fy:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ga:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "gd:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "gl:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ko:팀 버너스리",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "hi:टिम बर्नर्स ली",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "hr:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "id:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "is:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "it:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "he:טים ברנרס-לי",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "jv:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "kn:ಟಿಮ್ ಬರ್ನರ್ಸ್ ಲೀ",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ka:ტიმ ბერნერს-ლი",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "kk:Тим Бернерс-Ли",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "sw:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "la:Timotheus Ioannes Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "lv:Tims Bērnerss-Lī",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "lb:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "lt:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "li:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "lmo:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "hu:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "mk:Тим Бернерс-Ли",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ml:ടിം ബർണേയ്സ് ലീ",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "mt:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "arz:تيم بيرنرز لى",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ms:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "mn:Тим Бернерс-Ли",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "nl:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "new:टिम बर्नर्स ली",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ja:ティム・バーナーズ＝リー",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "kk:Тим Бернерс-Ли",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "no:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "nn:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "oc:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "pnb:ٹم برنرز لی",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "pl:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "pt:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ksh:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ro:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "rue:Тім Бернерс-Лі",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ru:Бернерс-Ли, Тим",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "sah:Тим Бернерс-Ли",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "sq:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "scn:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "simple:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "sk:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "sl:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "sr:Тим Бернерс-Ли",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "sh:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "fi:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "sv:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "tl:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "ta:டிம் பேர்னேர்ஸ்-லீ",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "te:టిమ్ బెర్నర్స్ లీ",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "th:ทิม เบอร์เนิร์ส-ลี",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "tg:Тим Бернерс-Ли",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "tr:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "uk:Тім Бернерс-Лі",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "za:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "vec:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "vi:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "vo:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "war:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "yi:טים בערנערס-לי",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "yo:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "bat-smg:Tim Berners-Lee",
+            "description": ""
+        },
+        {
+            "__type": "reference",
+            "label": "zh:蒂姆·伯纳斯-李",
+            "description": ""
+        }
+    ]
+}

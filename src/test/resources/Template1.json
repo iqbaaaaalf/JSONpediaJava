@@ -1,0 +1,411 @@
+{
+    "__type": "page",
+    "url": "http://test/Template1",
+    "structure": [
+        {
+            "__type": "template",
+            "name": "Infobox U.S. state",
+            "content": {
+                "Name": [
+                    "Alabama"
+                ],
+                "Fullname": [
+                    "State of Alabama"
+                ],
+                "Flag": [
+                    "Flag of Alabama.svg"
+                ],
+                "Flaglink": [
+                    {
+                        "__type": "reference",
+                        "label": "Flag of Alabama",
+                        "description": "Flag"
+                    }
+                ],
+                "Seal": [
+                    "Seal of Alabama.svg"
+                ],
+                "Seallink": [
+                    {
+                        "__type": "reference",
+                        "label": "Seal of Alabama",
+                        "description": "Seal"
+                    }
+                ],
+                "Coat of arms": [
+                    "Alabama-COA.png"
+                ],
+                "Coatlink": [
+                    {
+                        "__type": "reference",
+                        "label": "Coat of arms of Alabama",
+                        "description": "Coat of arms"
+                    }
+                ],
+                "Map": [
+                    "Alabama in United States.svg"
+                ],
+                "Nickname": [
+                    "Yellowhammer State; Heart of",
+                    {
+                        "__type": "reference",
+                        "label": "Dixie",
+                        "description": ""
+                    },
+                    "; Cotton State"
+                ],
+                "Demonym": [
+                    {
+                        "__type": "reference",
+                        "label": "Adjectivals and demonyms for U.S. states",
+                        "description": "Alabamian"
+                    },
+                    "&lt;ref&gt;",
+                    {
+                        "__type": "link",
+                        "url": "http://www.gettysburg.stonesentinels.com/Confederate/AL.php",
+                        "description": "The Alabama monument south of Gettysburg"
+                    },
+                    "&lt;/ref&gt;"
+                ],
+                "Motto": [
+                    {
+                        "__type": "reference",
+                        "label": "Audemus jura nostra defendere",
+                        "description": ""
+                    },
+                    "(",
+                    {
+                        "__type": "reference",
+                        "label": "Latin",
+                        "description": ""
+                    },
+                    ")"
+                ],
+                "MottoEnglish": [
+                    "We dare defend our rights"
+                ],
+                "Former": [
+                    "Alabama Territory"
+                ],
+                "Capital": [
+                    {
+                        "__type": "reference",
+                        "label": "Montgomery, Alabama",
+                        "description": "Montgomery"
+                    }
+                ],
+                "OfficialLang": [
+                    "English"
+                ],
+                "Languages": [
+                    "English (96.17%) &lt;br /&gt;Spanish (2.12%)"
+                ],
+                "LargestMetro": [
+                    {
+                        "__type": "reference",
+                        "label": "Birmingham-Hoover-Cullman Combined Statistical Area",
+                        "description": "Greater Birmingham Area"
+                    }
+                ],
+                "LargestCity": [
+                    {
+                        "__type": "reference",
+                        "label": "Birmingham, Alabama",
+                        "description": "Birmingham"
+                    },
+                    "&lt;br /&gt;212,237 &lt;small&gt;(2010 census)&lt;/small&gt;"
+                ],
+                "Governor": [
+                    {
+                        "__type": "reference",
+                        "label": "Robert J. Bentley",
+                        "description": ""
+                    },
+                    "(",
+                    {
+                        "__type": "reference",
+                        "label": "Republican Party (United States)",
+                        "description": "R"
+                    },
+                    ")"
+                ],
+                "Lieutenant Governor": [
+                    {
+                        "__type": "reference",
+                        "label": "Kay Ivey",
+                        "description": ""
+                    },
+                    "(",
+                    {
+                        "__type": "reference",
+                        "label": "Republican Party (United States)",
+                        "description": "R"
+                    },
+                    ")"
+                ],
+                "Legislature": [
+                    {
+                        "__type": "reference",
+                        "label": "Alabama Legislature",
+                        "description": ""
+                    }
+                ],
+                "Upperhouse": [
+                    {
+                        "__type": "reference",
+                        "label": "Alabama Senate",
+                        "description": "Senate"
+                    }
+                ],
+                "Lowerhouse": [
+                    {
+                        "__type": "reference",
+                        "label": "Alabama House of Representatives",
+                        "description": "House of Representatives"
+                    }
+                ],
+                "Senators": [
+                    {
+                        "__type": "reference",
+                        "label": "Richard Shelby",
+                        "description": ""
+                    },
+                    "(R)&lt;br /&gt;",
+                    {
+                        "__type": "reference",
+                        "label": "Jeff Sessions",
+                        "description": ""
+                    },
+                    "(R)"
+                ],
+                "Representative": [
+                    "6 Republicans, 1 Democrat"
+                ],
+                "TradAbbreviation": [
+                    "Ala."
+                ],
+                "PostalAbbreviation": [
+                    "AL"
+                ],
+                "AreaRank": [
+                    "30th"
+                ],
+                "TotalArea": [
+                    "135,765"
+                ],
+                "TotalAreaUS": [
+                    "52,419"
+                ],
+                "LandArea": [
+                    "131,426"
+                ],
+                "LandAreaUS": [
+                    "50,744"
+                ],
+                "WaterArea": [
+                    "4,338"
+                ],
+                "WaterAreaUS": [
+                    "1,675"
+                ],
+                "PCWater": [
+                    "3.20"
+                ],
+                "PopRank": [
+                    "23rd"
+                ],
+                "2000Pop": [
+                    "4,802,740 (2011 est)&lt;ref name=PopEstUS/&gt;"
+                ],
+                "DensityRank": [
+                    "27th"
+                ],
+                "2010Density": [
+                    "36.5"
+                ],
+                "2010DensityUS": [
+                    "94.6"
+                ],
+                "AdmittanceOrder": [
+                    "22nd"
+                ],
+                "AdmittanceDate": [
+                    "December 14, 1819"
+                ],
+                "TimeZone": [
+                    {
+                        "__type": "reference",
+                        "label": "Central Time Zone (North America)",
+                        "description": "Central"
+                    },
+                    ":",
+                    {
+                        "__type": "reference",
+                        "label": "Coordinated Universal Time",
+                        "description": "UTC"
+                    },
+                    {
+                        "__type": "reference",
+                        "label": "Central Standard Time",
+                        "description": "-6"
+                    },
+                    "/",
+                    {
+                        "__type": "reference",
+                        "label": "Central Daylight Time",
+                        "description": "-5"
+                    }
+                ],
+                "TZ1Where": [
+                    "most of state"
+                ],
+                "TimeZone2": [
+                    {
+                        "__type": "reference",
+                        "label": "Eastern Time Zone (North America)",
+                        "description": "Eastern"
+                    },
+                    ":",
+                    {
+                        "__type": "reference",
+                        "label": "Coordinated Universal Time",
+                        "description": "UTC"
+                    },
+                    {
+                        "__type": "reference",
+                        "label": "Eastern Standard Time",
+                        "description": "−5"
+                    },
+                    "/",
+                    {
+                        "__type": "reference",
+                        "label": "Eastern Daylight Time",
+                        "description": "−4"
+                    }
+                ],
+                "TZ2Where": [
+                    {
+                        "__type": "reference",
+                        "label": "Phenix City, Alabama",
+                        "description": ""
+                    },
+                    "area"
+                ],
+                "Latitude": [
+                    "30° 11′ N to 35° N"
+                ],
+                "Longitude": [
+                    "84° 53′ W to 88° 28′ W"
+                ],
+                "Width": [
+                    "305"
+                ],
+                "WidthUS": [
+                    "190"
+                ],
+                "Length": [
+                    "531"
+                ],
+                "LengthUS": [
+                    "330"
+                ],
+                "LargestCounty": [
+                    {
+                        "__type": "reference",
+                        "label": "Baldwin County, Alabama",
+                        "description": "Baldwin County"
+                    }
+                ],
+                "HighestPoint": [
+                    {
+                        "__type": "reference",
+                        "label": "Mount Cheaha",
+                        "description": ""
+                    },
+                    "&lt;ref&gt;",
+                    {
+                        "__type": "template",
+                        "name": "cite ngs",
+                        "content": {
+                            "id": [
+                                "DG3595"
+                            ],
+                            "designation": [
+                                "Cheehahaw"
+                            ],
+                            "accessdate": [
+                                "October 20, 2011"
+                            ]
+                        }
+                    },
+                    "&lt;/ref&gt;&lt;ref name=USGS&gt;",
+                    {
+                        "__type": "template",
+                        "name": "cite web",
+                        "content": {
+                            "url": [
+                                "http://egsc.usgs.gov/isb/pubs/booklets/elvadist/elvadist.html"
+                            ],
+                            "title": [
+                                "Elevations and Distances in the United States"
+                            ],
+                            "publisher": [
+                                {
+                                    "__type": "reference",
+                                    "label": "United States Geological Survey",
+                                    "description": ""
+                                }
+                            ],
+                            "year": [
+                                "2001"
+                            ],
+                            "accessdate": [
+                                "October 21, 2011"
+                            ]
+                        }
+                    },
+                    "&lt;/ref&gt;&lt;ref name=NAVD88&gt;Elevation adjusted to",
+                    {
+                        "__type": "reference",
+                        "label": "North American Vertical Datum of 1988",
+                        "description": ""
+                    },
+                    ".&lt;/ref&gt;"
+                ],
+                "HighestElev": [
+                    "735.5"
+                ],
+                "HighestElevUS": [
+                    "2,413"
+                ],
+                "MeanElev": [
+                    "150"
+                ],
+                "MeanElevUS": [
+                    "500"
+                ],
+                "LowestPoint": [
+                    {
+                        "__type": "reference",
+                        "label": "Gulf of Mexico",
+                        "description": ""
+                    },
+                    "&lt;ref name=USGS/&gt;"
+                ],
+                "LowestElev": [
+                    "0"
+                ],
+                "LowestElevUS": [
+                    "0"
+                ],
+                "ISOCode": [
+                    "US-AL"
+                ],
+                "Website": [
+                    "alabama.gov"
+                ]
+            }
+        }
+    ]
+}
