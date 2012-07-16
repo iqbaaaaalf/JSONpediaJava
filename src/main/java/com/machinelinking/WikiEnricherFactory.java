@@ -42,6 +42,12 @@ public class WikiEnricherFactory {
             public String description() {
                 return "Apply Splitters on content";
             }
+        },
+        Structure {
+            @Override
+            public String description() {
+                return "Produces the full WikiText Structure expressed in JSON";
+            }
         };
 
         public abstract String description();
@@ -78,7 +84,8 @@ public class WikiEnricherFactory {
             enricher.addSplitter(new TableSplitter());
         }
 
-        enricher.setValidate( flagsSet.contains(Flag.Validate) );
+        enricher.setValidate    ( flagsSet.contains(Flag.Validate)  );
+        enricher.setProduceStructure(flagsSet.contains(Flag.Structure));
 
         return enricher;
     }

@@ -6,7 +6,8 @@ package com.machinelinking.service;
 
 public interface FlagSet {
 
-    Flag[] getFlags();
+    Flag[] getDefinedFlags();
 
+    Flag[] getDefaultFlags();
 
 }

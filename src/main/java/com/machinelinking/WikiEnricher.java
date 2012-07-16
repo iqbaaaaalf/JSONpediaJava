@@ -39,7 +39,8 @@ public class WikiEnricher {
 
     private final BufferedWikiPageHandler bufferedAPIHandler = new BufferedWikiPageHandler();
 
-    private boolean validate = false;
+    private boolean validate         = false;
+    private boolean produceStructure = true;
 
     public WikiEnricher() {}
 
@@ -49,6 +50,14 @@ public class WikiEnricher {
 
     public void setValidate(boolean validate) {
         this.validate = validate;
+    }
+
+    public boolean isProduceStructure() {
+        return produceStructure;
+    }
+
+    public void setProduceStructure(boolean produceStructure) {
+        this.produceStructure = produceStructure;
     }
 
     public boolean addExtractor(Extractor e) {
@@ -83,10 +92,7 @@ public class WikiEnricher {
             serializer.fieldValue("type", "enriched-entity");
 
             // Write Document Serialization.
-            serializer.field("wikitext-json");
-            serializer.openList();
             writeDocumentSerialization(source, serializer);
-            serializer.closeList();
 
             // Write extractors serialization.
             for (Extractor extractor : extractors) {
@@ -121,7 +127,9 @@ public class WikiEnricher {
         final WikiTextSerializerHandler serializerHandler =
                 WikiTextSerializerHandlerFactory.getInstance().createSerializerHandler(serializer);
         final MultiWikiTextParserHandler multiHandler = new MultiWikiTextParserHandler();
-        multiHandler.add(serializerHandler); // TODO: ADD JUST ONCE!!
+        if(produceStructure) {
+            multiHandler.add(serializerHandler); // TODO: ADD JUST ONCE!!
+        }
         for(Extractor extractor : extractors) { // Adding specific extractors.
             extractor.reset();
             multiHandler.add( wrapWithValiadator("validator-" + extractor.getName(), extractor) );
@@ -136,10 +144,17 @@ public class WikiEnricher {
         }
 
         final WikiTextParser wikiTextParser = new WikiTextParser( wrapWithValiadator("parser", multiHandler) );
+        if(produceStructure) {
+             serializer.field("wikitext-json");
+             serializer.openList();
+         }
         wikiTextParser.parse(
                 source.getDocumentURL(),
                 wikiTextInputStream
         );
+        if(produceStructure) {
+            serializer.closeList();
+        }
     }
 
     private WikiTextParserHandler wrapWithValiadator(String name, WikiTextParserHandler h) {

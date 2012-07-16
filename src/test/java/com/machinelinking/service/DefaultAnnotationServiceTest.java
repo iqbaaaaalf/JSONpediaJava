@@ -34,7 +34,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     @Test
     public void testFlags() throws IOException, URISyntaxException {
         final JsonNode node = performQuery("flags");
-        Assert.assertEquals(WikiEnricherFactory.Flag.values().length, node.get("flags").size());
+        Assert.assertEquals(WikiEnricherFactory.Flag.values().length, node.get("definedFlags").size());
     }
 
     @Test
@@ -42,7 +42,10 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
         final JsonNode node = performQuery(
                 "resource/" + URLEncoder.encode("http://en.wikipedia.org/wiki/Albert_Einstein", "UTF8")
         );
-        Assert.assertEquals(2, node.size());
+        final JsonNode content = node.get("wikitext-json");
+        Assert.assertNotNull(content);
+        Assert.assertTrue(content.isArray());
+        Assert.assertEquals(1, content.size());
     }
 
     // http://localhost:9998/annotate/resource/http%3A%2F%2Fen.wikipedia.org%2Fpage%2FAlbert_Einstein?flags=Offline
@@ -51,7 +54,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
         final JsonNode node = performQuery(
                 buildPath(TARGET_RESOURCE).queryParam("flags", WikiEnricherFactory.Flag.Offline).build()
         );
-        Assert.assertEquals(2, node.size());
+        Assert.assertEquals(1, node.size());
     }
 
     private JsonNode performQuery(String path) throws URISyntaxException, IOException {

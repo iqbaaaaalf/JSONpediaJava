@@ -28,7 +28,8 @@ public class WikiEnricherTest {
                         WikiEnricherFactory.Flag.Offline,
                         WikiEnricherFactory.Flag.Validate,
                         WikiEnricherFactory.Flag.Extractors,
-                        WikiEnricherFactory.Flag.Splitters
+                        WikiEnricherFactory.Flag.Splitters,
+                        WikiEnricherFactory.Flag.Structure
                 );
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final JSONSerializer serializer = new JSONSerializer(baos);

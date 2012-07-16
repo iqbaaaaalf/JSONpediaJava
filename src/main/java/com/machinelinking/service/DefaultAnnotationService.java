@@ -24,6 +24,10 @@ import java.util.Set;
 @Path("/annotate")
 public class DefaultAnnotationService implements AnnotationService {
 
+    public static final WikiEnricherFactory.Flag[] DEFAULT_FLAGS = new WikiEnricherFactory.Flag[] {
+         WikiEnricherFactory.Flag.Structure
+    };
+
     public static final String FLAG_SEPARATOR = ",";
 
     private final ByteArrayOutputStream baos = new ByteArrayOutputStream();
@@ -38,7 +42,7 @@ public class DefaultAnnotationService implements AnnotationService {
 
     @Path("/resource/{resource}")
     @GET
-    @Produces({MediaType.APPLICATION_JSON})
+    @Produces({MediaType.APPLICATION_JSON + ";charset=UTF-8"})
     @Override
     public String annotate(@PathParam("resource")String resource, @QueryParam("flags")String flags) {
         final URL resourceURL;
@@ -66,11 +70,12 @@ public class DefaultAnnotationService implements AnnotationService {
         } catch (Exception e) {
             throw new RuntimeException("Error while serializing resource", e);
         }
+        // System.out.println("BAOS: " + baos.toString());
         return baos.toString();
     }
 
     private WikiEnricherFactory.Flag[] toFlag(String flagsStr) {
-        if(flagsStr == null) return new WikiEnricherFactory.Flag[0];
+        if(flagsStr == null || flagsStr.trim().length() == 0) return DEFAULT_FLAGS;
         final String[] flagNames = flagsStr.split(FLAG_SEPARATOR);
         final Set<WikiEnricherFactory.Flag> flags = new HashSet<>();
         for(String flagName : flagNames) {

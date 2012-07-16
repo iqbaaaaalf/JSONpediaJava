@@ -5,7 +5,7 @@ package com.machinelinking.service;
  */
 public interface Flag {
 
-    String getName();
+    String getId();
 
     String getDescription();
 

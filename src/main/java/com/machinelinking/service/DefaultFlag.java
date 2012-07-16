@@ -23,7 +23,7 @@ public class DefaultFlag implements Flag {
 
     @XmlElement
     @Override
-    public String getName() {
+    public String getId() {
         return flag.name();
     }
 

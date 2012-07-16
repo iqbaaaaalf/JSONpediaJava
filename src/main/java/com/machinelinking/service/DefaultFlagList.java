@@ -21,6 +21,7 @@ public class DefaultFlagList implements FlagSet {
     }
 
     private final DefaultFlag[] flagSet;
+    private final DefaultFlag[] defaultFlagSet;
 
     private DefaultFlagList() {
         WikiEnricherFactory.Flag[] flags = WikiEnricherFactory.Flag.values();
@@ -28,12 +29,23 @@ public class DefaultFlagList implements FlagSet {
         for(int i = 0; i < flags.length; i++) {
             flagSet[i] = new DefaultFlag(flags[i]);
         }
+
+        defaultFlagSet = new DefaultFlag[DefaultAnnotationService.DEFAULT_FLAGS.length];
+        for(int i = 0; i < DefaultAnnotationService.DEFAULT_FLAGS.length; i++) {
+            defaultFlagSet[i] = new DefaultFlag(DefaultAnnotationService.DEFAULT_FLAGS[i]);
+        }
     }
 
     @XmlElement
     @Override
-    public DefaultFlag[] getFlags() {
+    public DefaultFlag[] getDefinedFlags() {
         return flagSet;
+    }
+
+    @XmlElement
+    @Override
+    public DefaultFlag[] getDefaultFlags() {
+        return defaultFlagSet;
     }
 
 }
