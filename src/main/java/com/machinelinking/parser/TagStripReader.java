@@ -15,13 +15,15 @@ public class TagStripReader extends Reader {
     private final StringBuilder tagSB       = new StringBuilder();
 
     private final BufferedReader wrapped;
+    private final NodeHandler nodeHandler;
 
     private boolean beginTag, closeTag, insideTag = false;
     private int intc;
     private char c;
 
-    public TagStripReader(Reader wrapped) {
+    public TagStripReader(Reader wrapped, NodeHandler nodeHandler) {
         this.wrapped = new BufferedReader(wrapped);
+        this.nodeHandler = nodeHandler;
     }
 
     @Override
@@ -44,10 +46,12 @@ public class TagStripReader extends Reader {
                         insideTag = false;
                         System.out.println("INSIDE: " + insideTagSB.toString());
                         insideTagSB.delete(0, insideTagSB.length());
+                        nodeHandler.endElement(currentTag);
                     }
                 } else {
                     insideTag = true;
                     openTags.push(currentTag);
+                    nodeHandler.startElement(currentTag);
                 }
             } else if(beginTag && c == '/') {
                 closeTag = true;
@@ -58,12 +62,27 @@ public class TagStripReader extends Reader {
                 if(beginTag) {
                     tagSB.append(c);
                 }
-                if(! insideTag && !beginTag) {
+                if(/*! insideTag && */!beginTag) {
                     cbuf[off + i++] = c;
                 }
             }
         }
-        throw new IllegalStateException();
+        return len;
+    }
+
+    @Override
+    public boolean markSupported() {
+        return wrapped.markSupported();
+    }
+
+    @Override
+    public void mark(int readAheadLimit) throws IOException {
+        wrapped.mark(readAheadLimit);
+    }
+
+    @Override
+    public void reset() throws IOException {
+        wrapped.reset();
     }
 
     @Override

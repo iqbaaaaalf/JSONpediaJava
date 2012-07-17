@@ -44,6 +44,8 @@ public class WikiTextParser {
             r = new BufferedReader(r);
         }
         this.r = r;
+        //TODO: the tag reader integration must be completed.
+        //this.r = new TagStripReader(r, handler);
 
         handler.beginDocument(url);
 

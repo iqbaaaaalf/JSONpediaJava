@@ -1,7 +1,5 @@
 package com.machinelinking.parser;
 
-import com.machinelinking.parser.WikiTextParserHandler;
-
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -154,4 +152,20 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
             handler.endDocument();
         }
     }
+
+    @Override
+    public void startElement(String name) {
+        for(WikiTextParserHandler handler : handlers) {
+            handler.startElement(name);
+        }
+
+    }
+
+    @Override
+    public void endElement(String name) {
+        for(WikiTextParserHandler handler : handlers) {
+            handler.endElement(name);
+        }
+    }
+
 }

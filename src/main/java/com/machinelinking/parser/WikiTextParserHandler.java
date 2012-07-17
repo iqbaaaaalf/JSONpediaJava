@@ -9,7 +9,7 @@ import java.net.URL;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public interface WikiTextParserHandler {
+public interface WikiTextParserHandler extends NodeHandler {
 
     void beginDocument(URL document);
 
