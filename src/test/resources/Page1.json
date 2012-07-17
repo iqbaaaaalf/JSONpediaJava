@@ -126,31 +126,57 @@
                                         "label": "Kingdom of Württemberg",
                                         "description": "Württemberg/Germany"
                                     },
-                                    "(1879–1896)\n*",
+                                    "(1879–1896)",
                                     {
-                                        "__type": "reference",
-                                        "label": "Statelessness",
-                                        "description": "Stateless"
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Statelessness",
+                                                "description": "Stateless"
+                                            },
+                                            "(1896–1901)"
+                                        ]
                                     },
-                                    "(1896–1901)\n*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Switzerland",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Switzerland",
+                                                "description": ""
+                                            },
+                                            "(1901–1955)"
+                                        ]
                                     },
-                                    "(1901–1955)\n*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Austria–Hungary",
-                                        "description": "Austria"
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Austria–Hungary",
+                                                "description": "Austria"
+                                            },
+                                            "(1911–1912)"
+                                        ]
                                     },
-                                    "(1911–1912)\n*",
                                     {
-                                        "__type": "reference",
-                                        "label": "German Empire",
-                                        "description": "Germany"
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "German Empire",
+                                                "description": "Germany"
+                                            },
+                                            "(1914–1933)"
+                                        ]
                                     },
-                                    "(1914–1933)\n* United States (1940–1955)"
+                                    {
+                                        "__type": "list_item",
+                                        "content": [
+                                            "United States (1940–1955)"
+                                        ]
+                                    }
                                 ]
                             }
                         }
@@ -186,47 +212,76 @@
                                         "label": "Bern",
                                         "description": ""
                                     },
-                                    ")\n*",
+                                    ")",
                                     {
-                                        "__type": "reference",
-                                        "label": "University of Zurich",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "University of Zurich",
+                                                "description": ""
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Charles University in Prague",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Charles University in Prague",
+                                                "description": ""
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "ETH Zurich",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "ETH Zurich",
+                                                "description": ""
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Prussian Academy of Sciences",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Prussian Academy of Sciences",
+                                                "description": ""
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Kaiser Wilhelm Institute",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Kaiser Wilhelm Institute",
+                                                "description": ""
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Leiden University",
-                                        "description": "University of Leiden"
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Leiden University",
+                                                "description": "University of Leiden"
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Institute for Advanced Study",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Institute for Advanced Study",
+                                                "description": ""
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -246,11 +301,15 @@
                                         "label": "ETH Zurich",
                                         "description": ""
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "University of Zurich",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "University of Zurich",
+                                                "description": ""
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -284,53 +343,65 @@
                                         "label": "Ernst G. Straus",
                                         "description": ""
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Nathan Rosen",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Nathan Rosen",
+                                                "description": ""
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Leo Szilard",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Leo Szilard",
+                                                "description": ""
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Raziuddin Siddiqui",
-                                        "description": ""
-                                    },
-                                    "<ref>",
-                                    {
-                                        "__type": "template",
-                                        "name": "cite web",
-                                        "content": {
-                                            "url": [
-                                                "http://www.ias.ac.in/currsci/apr25/articles32.htm"
-                                            ],
-                                            "title": [
-                                                "Mohammad Raziuddin Siddiqui"
-                                            ],
-                                            "publisher": [
-                                                "Ias.ac.in"
-                                            ],
-                                            "date": [
-                                                "2 January 1998"
-                                            ],
-                                            "archiveurl": [
-                                                "http://web.archive.org/web/20040601194117/http://www.ias.ac.in/currsci/apr25/articles32.htm"
-                                            ],
-                                            "archivedate": [
-                                                "1 June 2004"
-                                            ],
-                                            "accessdate": [
-                                                "3 April 2011"
-                                            ]
-                                        }
-                                    },
-                                    "</ref>"
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Raziuddin Siddiqui",
+                                                "description": ""
+                                            },
+                                            "<ref>",
+                                            {
+                                                "__type": "template",
+                                                "name": "cite web",
+                                                "content": {
+                                                    "url": [
+                                                        "http://www.ias.ac.in/currsci/apr25/articles32.htm"
+                                                    ],
+                                                    "title": [
+                                                        "Mohammad Raziuddin Siddiqui"
+                                                    ],
+                                                    "publisher": [
+                                                        "Ias.ac.in"
+                                                    ],
+                                                    "date": [
+                                                        "2 January 1998"
+                                                    ],
+                                                    "archiveurl": [
+                                                        "http://web.archive.org/web/20040601194117/http://www.ias.ac.in/currsci/apr25/articles32.htm"
+                                                    ],
+                                                    "archivedate": [
+                                                        "1 June 2004"
+                                                    ],
+                                                    "accessdate": [
+                                                        "3 April 2011"
+                                                    ]
+                                                }
+                                            },
+                                            "</ref>"
+                                        ]
+                                    }
                                 ]
                             }
                         }
@@ -355,47 +426,75 @@
                                         "label": "special relativity",
                                         "description": ""
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Photoelectric effect",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Photoelectric effect",
+                                                "description": ""
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Mass-energy equivalence",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Mass-energy equivalence",
+                                                "description": ""
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Brownian motion",
-                                        "description": "Theory of Brownian Motion"
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Brownian motion",
+                                                "description": "Theory of Brownian Motion"
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Einstein field equations",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Einstein field equations",
+                                                "description": ""
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Bose–Einstein statistics",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Bose–Einstein statistics",
+                                                "description": ""
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Classical unified field theories",
-                                        "description": "Unified Field Theory"
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Classical unified field theories",
+                                                "description": "Unified Field Theory"
+                                            }
+                                        ]
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "EPR paradox",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "EPR paradox",
+                                                "description": ""
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -415,31 +514,51 @@
                                         "label": "Nobel Prize in Physics",
                                         "description": ""
                                     },
-                                    "(1921)\n*",
+                                    "(1921)",
                                     {
-                                        "__type": "reference",
-                                        "label": "Matteucci Medal",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Matteucci Medal",
+                                                "description": ""
+                                            },
+                                            "(1921)"
+                                        ]
                                     },
-                                    "(1921)\n*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Copley Medal",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Copley Medal",
+                                                "description": ""
+                                            },
+                                            "(1925)"
+                                        ]
                                     },
-                                    "(1925)\n*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Max Planck Medal",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Max Planck Medal",
+                                                "description": ""
+                                            },
+                                            "(1929)"
+                                        ]
                                     },
-                                    "(1929)\n*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Time 100: The Most Important People of the Century",
-                                        "description": "''Time'' Person of the Century"
-                                    },
-                                    "(1999)"
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Time 100: The Most Important People of the Century",
+                                                "description": "''Time'' Person of the Century"
+                                            },
+                                            "(1999)"
+                                        ]
+                                    }
                                 ]
                             }
                         }
@@ -1077,10 +1196,10 @@
             "name": "Harvtxt",
             "content": {
                 "1993": [],
+                "Highfield": [],
                 "pp": [
                     "21,31,56–57"
                 ],
-                "Highfield": [],
                 "Carter": []
             }
         },
@@ -1206,10 +1325,10 @@
             "name": "Harvnb",
             "content": {
                 "1993": [],
+                "Highfield": [],
                 "p": [
                     "216"
                 ],
-                "Highfield": [],
                 "Carter": []
             }
         },

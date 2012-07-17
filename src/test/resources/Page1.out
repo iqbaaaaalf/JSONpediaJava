@@ -69,21 +69,25 @@ k: citizenship
 Begin Template: Plainlist
 Begin List
 Reference: Kingdom of Württemberg 'Württemberg/Germany'
-Text: ' (1879–1896)
-* '
+Text: ' (1879–1896)'
+List Item
+Text: ' '
 Reference: Statelessness 'Stateless'
-Text: ' (1896–1901)
-* '
+Text: ' (1896–1901)'
+List Item
+Text: ' '
 Reference: Switzerland ''
-Text: ' (1901–1955)
-* '
+Text: ' (1901–1955)'
+List Item
+Text: ' '
 Reference: Austria–Hungary 'Austria'
-Text: ' (1911–1912)
-* '
+Text: ' (1911–1912)'
+List Item
+Text: ' '
 Reference: German Empire 'Germany'
-Text: ' (1914–1933)
-* United States (1940–1955)
-'
+Text: ' (1914–1933)'
+List Item
+Text: ' United States (1940–1955)'
 End List
 End Template: Plainlist
 Text: '
@@ -102,29 +106,28 @@ Text: 'Swiss '
 Reference: Patent Office ''
 Text: ' ('
 Reference: Bern ''
-Text: ')
-* '
+Text: ')'
+List Item
+Text: ' '
 Reference: University of Zurich ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Charles University in Prague ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: ETH Zurich ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Prussian Academy of Sciences ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Kaiser Wilhelm Institute ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Leiden University 'University of Leiden'
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Institute for Advanced Study ''
-Text: '
-'
 End List
 End Template: Plainlist
 Text: '
@@ -133,11 +136,9 @@ k: alma_mater
 Begin Template: Plainlist
 Begin List
 Reference: ETH Zurich ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: University of Zurich ''
-Text: '
-'
 End List
 End Template: Plainlist
 Text: '
@@ -154,14 +155,14 @@ k: notable_students
 Begin Template: Plainlist
 Begin List
 Reference: Ernst G. Straus ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Nathan Rosen ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Leo Szilard ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Raziuddin Siddiqui ''
 Text: '<ref>'
 Begin Template: cite web
@@ -180,8 +181,7 @@ Text: '1 June 2004'
 k: accessdate
 Text: '3 April 2011'
 End Template: cite web
-Text: ' </ref>
-'
+Text: ' </ref>'
 End List
 End Template: Plainlist
 Text: '
@@ -192,29 +192,27 @@ Begin List
 Reference: General relativity ''
 Text: ' and '
 Reference: special relativity ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Photoelectric effect ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Mass-energy equivalence ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Brownian motion 'Theory of Brownian Motion'
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Einstein field equations ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Bose–Einstein statistics ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Classical unified field theories 'Unified Field Theory'
-Text: '
-* '
+List Item
+Text: ' '
 Reference: EPR paradox ''
-Text: '
-'
 End List
 End Template: Plainlist
 Text: '
@@ -223,20 +221,23 @@ k: awards
 Begin Template: Plainlist
 Begin List
 Reference: Nobel Prize in Physics ''
-Text: ' (1921)
-* '
+Text: ' (1921)'
+List Item
+Text: ' '
 Reference: Matteucci Medal ''
-Text: ' (1921)
-* '
+Text: ' (1921)'
+List Item
+Text: ' '
 Reference: Copley Medal ''
-Text: ' (1925)
-* '
+Text: ' (1925)'
+List Item
+Text: ' '
 Reference: Max Planck Medal ''
-Text: ' (1929)
-* '
+Text: ' (1929)'
+List Item
+Text: ' '
 Reference: Time 100: The Most Important People of the Century '''Time'' Person of the Century'
-Text: ' (1999)
-'
+Text: ' (1999)'
 End List
 End Template: Plainlist
 Text: '

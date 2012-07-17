@@ -18,6 +18,8 @@ public class WikiTextParser {
 
     private static final String[] TEMPLATE_CLOSURE = new String[]{"}}"};
 
+    private static final String[] TEMPLATE_LIST_DELIMITER = new String[]{"\n", "}}"};
+
     private static final String[] TABLE_DELIMITERS = new String[]{"|}", "|-", "!!" , "!", "||", "|"};
 
     private static final String[] LINK_DELIMITERS  = new String[]{"|", "]", "}}", "|}"};
@@ -288,14 +290,20 @@ public class WikiTextParser {
 
         consumeSpaces();
         mark();
-        final char c = read();
+        char c = read();
         if(c == '*')  {
             handler.beginList();
             while(true) {
                 consumeSpaces();
-                final int seq = readPropertyValue(TEMPLATE_CLOSURE, true );
-                //if(listElem != null) handler.listTextElem(listElem);
-                if(seq != -1) break;
+                c = read();
+                if(c == '*') {
+                    mark();
+                    handler.listItem();
+                } else {
+                   reset();
+                }
+                final int seq = readPropertyValue(TEMPLATE_LIST_DELIMITER, true );
+                if(seq == 1) break;
             }
             handler.endList();
         } else {

@@ -98,13 +98,18 @@
                                         "label": "World Wide Web",
                                         "description": ""
                                     },
-                                    "* Holder of the 3Com Founders Chair at",
                                     {
-                                        "__type": "reference",
-                                        "label": "MIT",
-                                        "description": ""
-                                    },
-                                    "'s Computer Science and Artificial Intelligence Laboratory"
+                                        "__type": "list_item",
+                                        "content": [
+                                            "Holder of the 3Com Founders Chair at",
+                                            {
+                                                "__type": "reference",
+                                                "label": "MIT",
+                                                "description": ""
+                                            },
+                                            "'s Computer Science and Artificial Intelligence Laboratory"
+                                        ]
+                                    }
                                 ]
                             }
                         }
@@ -130,11 +135,15 @@
                                         "label": "World Wide Web Consortium",
                                         "description": ""
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "University of Southampton",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "University of Southampton",
+                                                "description": ""
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -171,11 +180,15 @@
                                         "label": "Conway Berners-Lee",
                                         "description": ""
                                     },
-                                    "*",
                                     {
-                                        "__type": "reference",
-                                        "label": "Mary Lee Woods",
-                                        "description": ""
+                                        "__type": "list_item",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Mary Lee Woods",
+                                                "description": ""
+                                            }
+                                        ]
                                     }
                                 ]
                             }

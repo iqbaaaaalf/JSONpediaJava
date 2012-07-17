@@ -291,14 +291,15 @@ public class WikiTextParserTest {
                 "k: citizenship \n" +
                 "Begin Template: Plainlist\n" +
                 "Begin List\n" +
-                "Text: 'Germany\n" +
-                "* '\n" +
+                "Text: 'Germany'\n" +
+                "List Item\n" +
+                "Text: ' '\n" +
                 "Reference: Kingdom of Württemberg 'Württemberg/Germany'\n" +
-                "Text: ' (1879–1896)\n" +
-                "* '\n" +
+                "Text: ' (1879–1896)'\n" +
+                "List Item\n" +
+                "Text: ' '\n" +
                 "Reference: Statelessness 'Stateless'\n" +
-                "Text: ' (1896–1901)\n" +
-                "'\n" +
+                "Text: ' (1896–1901)'\n" +
                 "End List\n" +
                 "End Template: Plainlist\n" +
                 "Text: '\n" +

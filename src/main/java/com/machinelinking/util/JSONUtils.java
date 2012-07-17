@@ -8,7 +8,6 @@ import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.util.DefaultPrettyPrinter;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -27,7 +26,7 @@ public class JSONUtils {
 
     public static JsonGenerator createJSONGenerator(Writer writer) throws IOException {
         final JsonGenerator generator = jsonFactory.createJsonGenerator(writer);
-        generator.setPrettyPrinter( new DefaultPrettyPrinter() );
+        //generator.setPrettyPrinter( new DefaultPrettyPrinter() );
         return generator;
     }
 

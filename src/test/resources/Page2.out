@@ -59,11 +59,10 @@ Begin Template: Plainlist
 Begin List
 Text: 'Inventing the '
 Reference: World Wide Web ''
-Text: '
-* Holder of the 3Com Founders Chair at '
+List Item
+Text: ' Holder of the 3Com Founders Chair at '
 Reference: MIT ''
-Text: ''s Computer Science and Artificial Intelligence Laboratory
-'
+Text: ''s Computer Science and Artificial Intelligence Laboratory'
 End List
 End Template: Plainlist
 Text: '
@@ -76,11 +75,9 @@ k: employer
 Begin Template: Plainlist
 Begin List
 Reference: World Wide Web Consortium ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: University of Southampton ''
-Text: '
-'
 End List
 End Template: Plainlist
 Text: '
@@ -100,11 +97,9 @@ k: parents
 Begin Template: Plainlist
 Begin List
 Reference: Conway Berners-Lee ''
-Text: '
-* '
+List Item
+Text: ' '
 Reference: Mary Lee Woods ''
-Text: '
-'
 End List
 End Template: Plainlist
 Text: '
