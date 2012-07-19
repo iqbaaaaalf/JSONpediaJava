@@ -1,5 +1,6 @@
 package com.machinelinking;
 
+import com.machinelinking.extractor.CategoryExtractor;
 import com.machinelinking.extractor.FreebaseExtractor;
 import com.machinelinking.extractor.IssueExtractor;
 import com.machinelinking.extractor.LinkExtractor;
@@ -74,6 +75,7 @@ public class WikiEnricherFactory {
             enricher.addExtractor(new LinkExtractor());
             enricher.addExtractor(new ReferenceExtractor());
             enricher.addExtractor(new TemplateNameExtractor());
+            enricher.addExtractor(new CategoryExtractor());
             if (flagsSet.contains(Flag.Offline)) {
                 enricher.addExtractor(new TemplateMappingExtractor());
                 enricher.addExtractor(new FreebaseExtractor());
