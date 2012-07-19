@@ -62,6 +62,24 @@ public class JSONUtils {
         return baos.toString();
     }
 
+    public static String asPrimitiveString(JsonNode node) {
+        if(node == null) return null;
+        if(node.isTextual() || node.isNumber()) {
+            return node.asText();
+        }
+        if(node.isArray()) {
+            final int size = node.size();
+            if(size == 1) {
+                return node.get(0).asText();
+            } else if(size == 0) {
+                return null;
+            } else {
+                throw new IllegalArgumentException("Invalid array size");
+            }
+        }
+        throw new IllegalArgumentException("Unsupported primitive type.");
+    }
+
     private static void serializeArray(JsonNode node, Serializer serializer) {
         serializer.openList();
         for(int i = 0; i < node.size(); i++) {
