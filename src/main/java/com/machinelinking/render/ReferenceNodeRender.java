@@ -12,6 +12,11 @@ public class ReferenceNodeRender implements NodeRender {
     public static final String[] IMAGE_EXT = new String[] {"jpg"};
 
     @Override
+    public boolean acceptNode(JsonNode node) {
+        return true;
+    }
+
+    @Override
     public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
         final String label       = node.get("label").asText();
         final String description = node.get("description").asText().trim();

@@ -10,6 +10,8 @@ import java.io.IOException;
  */
 public interface NodeRender {
 
+    boolean acceptNode(JsonNode node);
+
     void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException;
 
 }

@@ -7,7 +7,7 @@ import java.io.IOException;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class CiteWebNodeRender implements CriteriaNodeRender {
+public class CiteWebNodeRender implements NodeRender {
 
     public static final String CITE_WEB_TEMPLATE_NAME = "cite web";
 

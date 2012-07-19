@@ -4,8 +4,10 @@ import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -23,8 +25,8 @@ public class DefaultHTMLRender implements HTMLRender {
         put("style","margin:5px");
     }};
 
-    private final Map<String,NodeRender> nodeRenders         = new HashMap<>();
-    private final Map<String,KeyValueRender> keyValueRenders = new HashMap<>();
+    private final Map<String,List<NodeRender>> nodeRenders     = new HashMap<>();
+    private final Map<String,KeyValueRender>   keyValueRenders = new HashMap<>();
 
     public void processRoot(JsonNode node, HTMLWriter writer) throws IOException {
         writer.openDocument();
@@ -35,8 +37,12 @@ public class DefaultHTMLRender implements HTMLRender {
 
     @Override
     public void addNodeRender(String type, NodeRender render) {
-        if(nodeRenders.containsKey(type)) throw new IllegalArgumentException();
-        nodeRenders.put(type, render);
+        List<NodeRender> rendersPerType = nodeRenders.get(type);
+        if(rendersPerType == null) {
+            rendersPerType = new ArrayList<>();
+            nodeRenders.put(type, rendersPerType);
+        }
+        rendersPerType.add(render);
     }
 
     @Override
@@ -55,21 +61,28 @@ public class DefaultHTMLRender implements HTMLRender {
         return keyValueRenders.remove(key) != null;
     }
 
+    @Override
+    public boolean acceptNode(JsonNode node) {
+        return true;
+    }
+
     public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
         if(node == null) return;
         final JsonNode type = node.get(TYPE_ATTR);
-        NodeRender nodeRender = null;
+        NodeRender targetRender = null;
         if (type != null) {
-            nodeRender = nodeRenders.get(type.asText());
-            if (nodeRender != null) {
-                if(nodeRender instanceof CriteriaNodeRender) {
-                    final CriteriaNodeRender criteriaNodeRender = (CriteriaNodeRender) nodeRender;
-                    if( ! criteriaNodeRender.acceptNode(node)) nodeRender = null;
+            final List<NodeRender> rendersPerType = nodeRenders.get(type.asText());
+            if (rendersPerType != null) {
+                for(NodeRender nodeRender : rendersPerType) {
+                    if(nodeRender.acceptNode(node)) {
+                        targetRender = nodeRender;
+                        break;
+                    }
                 }
             }
         }
-        if(nodeRender != null) {
-            nodeRender.render(rootRender, node, writer);
+        if(targetRender != null) {
+            targetRender.render(rootRender, node, writer);
             return;
         }
 
