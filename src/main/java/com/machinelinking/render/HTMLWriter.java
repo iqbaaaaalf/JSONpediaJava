@@ -28,7 +28,7 @@ public interface HTMLWriter {
 
     void image(String url, String text) throws IOException;
 
-    void openTable() throws IOException;
+    void openTable(String title) throws IOException;
 
     void tableRow(String... cols) throws IOException;
 

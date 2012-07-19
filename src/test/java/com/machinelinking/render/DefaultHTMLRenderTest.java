@@ -24,7 +24,7 @@ public class DefaultHTMLRenderTest {
         render.addNodeRender("reference", new ReferenceNodeRender());
         render.addNodeRender("link"     , new LinkNodeRender());
         render.addNodeRender("section"  , new SectionRender());
-        //render.addNodeRender("template" , new CiteWebNodeRender());
+        render.addNodeRender("template" , new CiteWebNodeRender());
 
         render.addKeyValueRender("url"         , new URLKeyValueRender());
         render.addKeyValueRender("archiveurl"  , new URLKeyValueRender());

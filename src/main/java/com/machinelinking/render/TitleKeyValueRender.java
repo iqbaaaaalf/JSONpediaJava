@@ -13,7 +13,7 @@ public class TitleKeyValueRender implements KeyValueRender {
     @Override
     public void render(RootRender rootRender, String key, JsonNode value, HTMLWriter writer) throws IOException {
         final String valueStr = JSONUtils.asPrimitiveString(value);
-        writer.openTag("h5");
+        writer.openTag("strong");
         writer.openColorTag("purple");
         writer.text(valueStr);
         writer.closeTag();

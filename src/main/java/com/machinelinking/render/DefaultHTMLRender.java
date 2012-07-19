@@ -23,7 +23,7 @@ public class DefaultHTMLRender implements HTMLRender {
         put("style","margin:5px");
     }};
 
-    private final Map<String,NodeRender> nodeRenders     = new HashMap<>();
+    private final Map<String,NodeRender> nodeRenders         = new HashMap<>();
     private final Map<String,KeyValueRender> keyValueRenders = new HashMap<>();
 
     public void processRoot(JsonNode node, HTMLWriter writer) throws IOException {
@@ -58,16 +58,19 @@ public class DefaultHTMLRender implements HTMLRender {
     public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
         if(node == null) return;
         final JsonNode type = node.get(TYPE_ATTR);
+        NodeRender nodeRender = null;
         if (type != null) {
-            final NodeRender nodeRender = nodeRenders.get(type.asText());
+            nodeRender = nodeRenders.get(type.asText());
             if (nodeRender != null) {
                 if(nodeRender instanceof CriteriaNodeRender) {
                     final CriteriaNodeRender criteriaNodeRender = (CriteriaNodeRender) nodeRender;
-                    if( ! criteriaNodeRender.acceptNode(node)) return;
+                    if( ! criteriaNodeRender.acceptNode(node)) nodeRender = null;
                 }
-                nodeRender.render(rootRender, node, writer);
-                return;
             }
+        }
+        if(nodeRender != null) {
+            nodeRender.render(rootRender, node, writer);
+            return;
         }
 
         if (node.isObject()) {
@@ -87,19 +90,27 @@ public class DefaultHTMLRender implements HTMLRender {
             return;
         }
 
+        writer.openTag("div");
+        writer.openTag("div");
         writer.openTag("i");
         writer.text(key);
         writer.closeTag();
         writer.text(":");
+        writer.closeTag();
+        writer.openTag("div");
         render(rootRender, value, writer);
+        writer.closeTag();
+        writer.closeTag();
     }
 
     private void renderObject(RootRender rootRender, JsonNode obj, HTMLWriter writer) throws IOException {
         writer.openTag("div");
         final JsonNode type = obj.get(TYPE_ATTR);
         if(type != null) {
+            writer.openColorTag("red");
             writer.openTag("small");
             writer.text(type.asText());
+            writer.closeTag();
             writer.closeTag();
         }
         final Iterator<Map.Entry<String,JsonNode>> iter = obj.getFields();

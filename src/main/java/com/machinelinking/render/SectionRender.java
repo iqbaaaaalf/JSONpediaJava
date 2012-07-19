@@ -17,7 +17,9 @@ public class SectionRender implements NodeRender {
         final String title = node.get(TITLE).asText();
         int level    = node.get(LEVEL).asInt() + 1;
         if(level > 6) level = 6;
+        writer.text("<div style=\"background-color: pink\">");
         writer.text( String.format("<font color=\"green\"><h%d>%s</h%d></font>",level, title, level) );
+        writer.text("</div>");
     }
 
 }

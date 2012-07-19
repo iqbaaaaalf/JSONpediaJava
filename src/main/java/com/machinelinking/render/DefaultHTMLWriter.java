@@ -98,8 +98,11 @@ public class DefaultHTMLWriter implements HTMLWriter {
     }
 
     @Override
-    public void openTable() throws IOException {
-        writer.append("<table>");
+    public void openTable(String title) throws IOException {
+        writer.append("<table style=\"border: solid 1px\">");
+        writer.append("<caption>");
+        writer.append(title);
+        writer.append("</caption>");
     }
 
     @Override

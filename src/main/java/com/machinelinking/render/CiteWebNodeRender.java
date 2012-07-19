@@ -11,10 +11,11 @@ public class CiteWebNodeRender implements CriteriaNodeRender {
 
     public static final String CITE_WEB_TEMPLATE_NAME = "cite web";
 
-    public static final String TEMPLATE_NAME = "name";
+    public static final String TEMPLATE_NAME    = "name";
+    public static final String TEMPLATE_CONTENT = "content";
 
     public static final String[] TEMPLATE_FIELDS = new String[] {
-            "title", "publisher", "author", "last", "work", "accessdate", "url"
+            "title", "publisher", "author", "last", "work", "archivedate", "accessdate", "url", "archiveurl",
     };
 
     @Override
@@ -25,11 +26,11 @@ public class CiteWebNodeRender implements CriteriaNodeRender {
 
     @Override
     public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
-        writer.text("<h2>BEGIN CITE WEB</h2>");
-        writer.openTable();
+        writer.openTable("Cite Web");
         JsonNode value;
+        final JsonNode content = node.get(TEMPLATE_CONTENT);
         for(String field: TEMPLATE_FIELDS) {
-            value = node.get(field);
+            value = content.get(field);
             if(value == null) continue;
             writer.openTag("tr");
             writer.openTag("td");
@@ -38,7 +39,6 @@ public class CiteWebNodeRender implements CriteriaNodeRender {
             writer.closeTag();
         }
         writer.closeTable();
-        writer.text("<h2>END CITE WEB</h2>");
     }
 
 }
