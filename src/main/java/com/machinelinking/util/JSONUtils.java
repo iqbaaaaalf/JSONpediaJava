@@ -63,7 +63,7 @@ public class JSONUtils {
     }
 
     public static String asPrimitiveString(JsonNode node) {
-        if(node == null) return null;
+        if(node == null || node.isNull()) return null;
         if(node.isTextual() || node.isNumber()) {
             return node.asText();
         }

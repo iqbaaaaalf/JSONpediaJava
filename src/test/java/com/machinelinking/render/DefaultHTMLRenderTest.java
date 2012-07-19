@@ -33,7 +33,8 @@ public class DefaultHTMLRenderTest {
 
     @Test
     public void testRender() throws IOException {
-        final JsonNode node = JSONUtils.parseJSON( this.getClass().getResourceAsStream("/Page1.json") );
+        //final JsonNode node = JSONUtils.parseJSON( this.getClass().getResourceAsStream("/Page1.json") );
+        final JsonNode node = JSONUtils.parseJSON( this.getClass().getResourceAsStream("/Enrichment.json") );
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final DefaultHTMLWriter writer = new DefaultHTMLWriter( new OutputStreamWriter(baos) );
         render.processRoot(node, writer);
