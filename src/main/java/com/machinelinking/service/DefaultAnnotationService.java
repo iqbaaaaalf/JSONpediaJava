@@ -3,7 +3,10 @@ package com.machinelinking.service;
 import com.machinelinking.WikiEnricher;
 import com.machinelinking.WikiEnricherFactory;
 import com.machinelinking.parser.DocumentSource;
+import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.serializer.JSONSerializer;
+import com.machinelinking.util.JSONUtils;
+import org.codehaus.jackson.JsonNode;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -11,6 +14,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -23,6 +27,11 @@ import java.util.Set;
  */
 @Path("/annotate")
 public class DefaultAnnotationService implements AnnotationService {
+
+    public enum OutputFormat {
+        json,
+        html
+    }
 
     public static final WikiEnricherFactory.Flag[] DEFAULT_FLAGS = new WikiEnricherFactory.Flag[] {
          WikiEnricherFactory.Flag.Structure
@@ -40,11 +49,18 @@ public class DefaultAnnotationService implements AnnotationService {
         return DefaultFlagList.getInstance();
     }
 
-    @Path("/resource/{resource}")
+    @Path("/resource/{outFormat}/{resource}")
     @GET
-    @Produces({MediaType.APPLICATION_JSON + ";charset=UTF-8"})
+    @Produces({
+            MediaType.APPLICATION_JSON + ";charset=UTF-8",
+            MediaType.TEXT_HTML + ";charset=UTF-8"
+    })
     @Override
-    public String annotate(@PathParam("resource")String resource, @QueryParam("flags")String flags) {
+    public Response annotate(
+            @PathParam("resource") String resource,
+            @PathParam("outFormat")String outFormat,
+            @QueryParam("flags")   String flags
+    ) {
         final URL resourceURL;
         try {
             resourceURL = new URL(resource);
@@ -67,11 +83,11 @@ public class DefaultAnnotationService implements AnnotationService {
         }
         try {
             wikiEnricher.enrichEntity(documentSource, jsonSerializer);
+            final String json = baos.toString();
+            return toOutputFormat(json, outFormat);
         } catch (Exception e) {
             throw new RuntimeException("Error while serializing resource", e);
         }
-        // System.out.println("BAOS: " + baos.toString());
-        return baos.toString();
     }
 
     private WikiEnricherFactory.Flag[] toFlag(String flagsStr) {
@@ -86,6 +102,27 @@ public class DefaultAnnotationService implements AnnotationService {
             }
         }
         return flags.toArray( new WikiEnricherFactory.Flag[flags.size()] );
+    }
+
+    private Response toOutputFormat(String json, String outFormat) throws IOException {
+        final OutputFormat format;
+        try {
+            format = OutputFormat.valueOf(outFormat);
+        } catch (Exception e) {
+            throw new IllegalArgumentException( String.format("Unsupported output format: [%s]", outFormat) );
+        }
+        switch(format) {
+            case json:
+                return Response.ok(json, MediaType.APPLICATION_JSON + ";charset=UTF-8").build();
+            case html:
+                final JsonNode rootNode = JSONUtils.parseJSON(json); // TODO: avoid this!
+                return Response.ok(
+                        DefaultHTMLRenderFactory.getInstance().renderToHTML(rootNode),
+                        MediaType.TEXT_HTML + ";charset=UTF-8"
+                ).build();
+            default:
+                throw new IllegalArgumentException("Unsupported conversion to " + format);
+        }
     }
 
 }
