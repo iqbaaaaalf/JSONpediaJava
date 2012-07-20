@@ -94,7 +94,7 @@ public class DefaultHTMLWriter implements HTMLWriter {
 
     @Override
     public void image(String url, String text) throws IOException {
-        writer.append( String.format("<img src=\"%s\"/ alt=\"%s\"></img>", url, text) );
+        writer.append( String.format("<a href=\"%s\"><img src=\"%s\"/ alt=\"%s\"/></a>", url, url, text) );
     }
 
     @Override

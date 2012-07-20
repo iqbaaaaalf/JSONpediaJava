@@ -11,6 +11,8 @@ public class ReferenceNodeRender implements NodeRender {
 
     public static final String[] IMAGE_EXT = new String[] {"jpg"};
 
+    private static final String ALT_PREFIX = "alt=";
+
     @Override
     public boolean acceptNode(JsonNode node) {
         return true;
@@ -38,12 +40,20 @@ public class ReferenceNodeRender implements NodeRender {
         }
     }
 
-    private void writeHTMLURL(String target, String desc, HTMLWriter writer) throws IOException {
+    private void writeHTMLURL(String target, String label, HTMLWriter writer) throws IOException {
         if( isImage(target) ) {
-            writer.key(desc);
-            writer.image(target, desc);
+            final String[] descSections = label.split("\\|");
+            writer.key(descSections[descSections.length -1]);
+            String alt = "";
+            for(String descSection : descSections) {
+                if(descSection.startsWith(ALT_PREFIX)) {
+                    alt = descSection.substring(ALT_PREFIX.length());
+                    break;
+                }
+            }
+            writer.image(target, alt);
         } else {
-            writer.anchor(target, desc);
+            writer.anchor(target, label);
         }
     }
 
