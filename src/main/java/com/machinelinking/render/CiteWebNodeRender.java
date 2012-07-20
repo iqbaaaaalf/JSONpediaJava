@@ -11,16 +11,13 @@ public class CiteWebNodeRender implements NodeRender {
 
     public static final String CITE_WEB_TEMPLATE_NAME = "cite web";
 
-    public static final String TEMPLATE_NAME    = "name";
-    public static final String TEMPLATE_CONTENT = "content";
-
     public static final String[] TEMPLATE_FIELDS = new String[] {
             "title", "publisher", "author", "last", "work", "archivedate", "accessdate", "url", "archiveurl",
     };
 
     @Override
     public boolean acceptNode(JsonNode node) {
-        final JsonNode name = node.get(TEMPLATE_NAME);
+        final JsonNode name = node.get(TemplateConstants.TEMPLATE_NAME);
         return name != null && CITE_WEB_TEMPLATE_NAME.equals(name.asText());
     }
 
@@ -28,7 +25,7 @@ public class CiteWebNodeRender implements NodeRender {
     public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
         writer.openTable("Cite Web");
         JsonNode value;
-        final JsonNode content = node.get(TEMPLATE_CONTENT);
+        final JsonNode content = node.get(TemplateConstants.TEMPLATE_CONTENT);
         for(String field: TEMPLATE_FIELDS) {
             value = content.get(field);
             if(value == null) continue;

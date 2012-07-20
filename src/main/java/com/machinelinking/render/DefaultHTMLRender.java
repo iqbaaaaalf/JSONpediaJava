@@ -15,8 +15,6 @@ import java.util.Map;
  */
 public class DefaultHTMLRender implements HTMLRender {
 
-    public static final String TYPE_ATTR = "__type";
-
     private static final Map<String,String> OBJECT_DIV_STYLE = new HashMap<String, String>(){{
         put("style","border: 1px solid");
     }};
@@ -68,7 +66,7 @@ public class DefaultHTMLRender implements HTMLRender {
 
     public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
         if(node == null) return;
-        final JsonNode type = node.get(TYPE_ATTR);
+        final JsonNode type = node.get(TemplateConstants.TYPE_ATTR);
         NodeRender targetRender = null;
         if (type != null) {
             final List<NodeRender> rendersPerType = nodeRenders.get(type.asText());
@@ -118,7 +116,7 @@ public class DefaultHTMLRender implements HTMLRender {
 
     private void renderObject(RootRender rootRender, JsonNode obj, HTMLWriter writer) throws IOException {
         writer.openTag("div");
-        final JsonNode type = obj.get(TYPE_ATTR);
+        final JsonNode type = obj.get(TemplateConstants.TYPE_ATTR);
         if(type != null) {
             writer.openColorTag("red");
             writer.openTag("small");
@@ -130,7 +128,7 @@ public class DefaultHTMLRender implements HTMLRender {
         Map.Entry<String,JsonNode> entry;
         while(iter.hasNext()) {
             entry = iter.next();
-            if(TYPE_ATTR.equals(entry.getKey())) continue;
+            if(TemplateConstants.TYPE_ATTR.equals(entry.getKey())) continue;
             writer.openTag("div", OBJECT_DIV_STYLE);
             render(rootRender, entry.getKey().trim(), entry.getValue(), writer);
             writer.closeTag();

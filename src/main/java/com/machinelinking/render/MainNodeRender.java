@@ -14,17 +14,14 @@ public class MainNodeRender implements NodeRender {
 
     public static final String MAIN_TEMPLATE_NAME = "Main";
 
-    public static final String TEMPLATE_NAME    = "name";
-    public static final String TEMPLATE_CONTENT = "content";
-
     private static final Map<String,String> MAIN_DIV_ATTR = new HashMap<String,String>(){{
-        put("background-color", "purple");
+        put("style", "background-color: purple");
     }};
 
     @Override
     public boolean acceptNode(JsonNode node) {
-        final JsonNode name = node.get(TEMPLATE_NAME);
-        return name != null && MAIN_TEMPLATE_NAME.equals(name.asText());
+        final JsonNode name = node.get(TemplateConstants.TEMPLATE_NAME);
+        return name != null && MAIN_TEMPLATE_NAME.equalsIgnoreCase(name.asText());
     }
 
     @Override
@@ -33,7 +30,7 @@ public class MainNodeRender implements NodeRender {
         writer.openTag("strong");
         writer.text("Main Article: ");
         writer.closeTag();
-        final JsonNode content = node.get(TEMPLATE_CONTENT);
+        final JsonNode content = node.get(TemplateConstants.TEMPLATE_CONTENT);
         final Iterator<String> articles = content.getFieldNames();
         String article;
         while(articles.hasNext()) {
