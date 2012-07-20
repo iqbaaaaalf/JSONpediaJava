@@ -121,7 +121,7 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "NO NAME": {
+                                    "anon_obj_0": {
                                         "__type": "list",
                                         "content": [
                                             {
@@ -200,7 +200,7 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "NO NAME": {
+                                    "anon_obj_1": {
                                         "__type": "list",
                                         "content": [
                                             "Swiss",
@@ -296,7 +296,7 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "NO NAME": {
+                                    "anon_obj_2": {
                                         "__type": "list",
                                         "content": [
                                             {
@@ -338,7 +338,7 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "NO NAME": {
+                                    "anon_obj_3": {
                                         "__type": "list",
                                         "content": [
                                             {
@@ -415,7 +415,7 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "NO NAME": {
+                                    "anon_obj_4": {
                                         "__type": "list",
                                         "content": [
                                             {
@@ -509,7 +509,7 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "NO NAME": {
+                                    "anon_obj_5": {
                                         "__type": "list",
                                         "content": [
                                             {
@@ -10010,7 +10010,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "NO NAME": {
+                            "anon_obj_6": {
                                 "__type": "list",
                                 "content": [
                                     {
@@ -10089,7 +10089,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "NO NAME": {
+                            "anon_obj_7": {
                                 "__type": "list",
                                 "content": [
                                     "Swiss",
@@ -10185,7 +10185,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "NO NAME": {
+                            "anon_obj_8": {
                                 "__type": "list",
                                 "content": [
                                     {
@@ -10227,7 +10227,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "NO NAME": {
+                            "anon_obj_9": {
                                 "__type": "list",
                                 "content": [
                                     {
@@ -10304,7 +10304,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "NO NAME": {
+                            "anon_obj_10": {
                                 "__type": "list",
                                 "content": [
                                     {
@@ -10398,7 +10398,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "NO NAME": {
+                            "anon_obj_11": {
                                 "__type": "list",
                                 "content": [
                                     {

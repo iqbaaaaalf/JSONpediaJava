@@ -89,7 +89,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "NO NAME": {
+                            "anon_obj_0": {
                                 "__type": "list",
                                 "content": [
                                     "Inventing the",
@@ -127,7 +127,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "NO NAME": {
+                            "anon_obj_1": {
                                 "__type": "list",
                                 "content": [
                                     {
@@ -172,7 +172,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "NO NAME": {
+                            "anon_obj_2": {
                                 "__type": "list",
                                 "content": [
                                     {

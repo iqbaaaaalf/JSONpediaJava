@@ -41,7 +41,7 @@ public class JSONSerializerTest {
     public void testOpenObject2() {
         serializer.openObject();
         serializer.openObject();
-        verify("{ \"NO NAME\" : {} }");
+        verify("{ \"anon_obj_0\" : {} }");
     }
 
     @Test

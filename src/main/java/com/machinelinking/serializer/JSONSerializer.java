@@ -14,6 +14,12 @@ import java.util.Stack;
  */
 public class JSONSerializer implements Serializer {
 
+    private static final String ANON_OBJ_FIELD_PREFIX  = "anon_obj_";
+    private static final String ANON_LIST_FIELD_PREFIX = "anon_lst_";
+
+    private long anonObjId   = 0;
+    private long anonFieldId = 0;
+
     private enum WriterStatus {
         Object {
             @Override
@@ -90,7 +96,7 @@ public class JSONSerializer implements Serializer {
     public void openObject() {
         try {
             if( check(WriterStatus.Object) ) {
-                jsonGenerator.writeFieldName("NO NAME");
+                jsonGenerator.writeFieldName(getNextAnonObjectName());
                 jsonGenerator.writeStartObject();
             } else if( check(WriterStatus.List) ) {
                 jsonGenerator.writeStartObject();
@@ -126,7 +132,7 @@ public class JSONSerializer implements Serializer {
     public void openList() {
         try {
             if( check(WriterStatus.Object) ) {
-                jsonGenerator.writeFieldName("NO NAME");
+                jsonGenerator.writeFieldName(getNextAnonListName());
             } else if( check(WriterStatus.List) ) {
             } else if( checkAndPop(WriterStatus.Field) ) {
             } else if( checkAndPop(WriterStatus.SpuriousField) ) {
@@ -275,6 +281,7 @@ public class JSONSerializer implements Serializer {
     }
 
     public void close() {
+        anonFieldId = anonObjId = 0;
         closeUntil(null);
         try {
             jsonGenerator.flush();
@@ -291,6 +298,14 @@ public class JSONSerializer implements Serializer {
     private String encodeFieldValue(String value) {
         if(dataEncoder == null) return value;
         return dataEncoder.encodeFieldValue(value);
+    }
+
+    private String getNextAnonObjectName() {
+        return ANON_OBJ_FIELD_PREFIX + anonObjId++;
+    }
+
+    private String getNextAnonListName() {
+        return ANON_LIST_FIELD_PREFIX + anonFieldId++;
     }
 
 }
