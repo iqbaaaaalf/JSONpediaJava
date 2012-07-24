@@ -17,12 +17,24 @@ import java.util.Map;
  */
 public class DefaultHTMLRender implements HTMLRender {
 
+    private static final String JSON_PATH_SELECTOR      = "jsonpath";
+    private static final String DEFAULT_RENDER_SELECTOR = "defaultrender";
+
     private static final Map<String,String> OBJECT_DIV_STYLE = new HashMap<String, String>(){{
         put("style","border: 1px solid");
     }};
 
     private static final Map<String,String> LIST_DIV_STYLE = new HashMap<String, String>(){{
         put("style","margin:5px");
+    }};
+
+    private static final Map<String,String> JSON_PATH_CLASS = new HashMap<String, String>(){{
+        put("class", JSON_PATH_SELECTOR);
+    }};
+
+    private static final Map<String,String> DEFAULT_RENDER_DIV = new HashMap<String,String>(){{
+        put("class", DEFAULT_RENDER_SELECTOR);
+        put("style", "visibility:none");
     }};
 
     private final Map<String,List<NodeRender>> nodeRenders     = new HashMap<>();
@@ -84,17 +96,14 @@ public class DefaultHTMLRender implements HTMLRender {
                 }
             }
         }
+
+        writeNodeMetadata(node, writer);
+
         if(targetRender != null) {
-            writer.openTag("div");
-            writer.openTag("small");
-            writer.text("(");
-            writer.text(jsonPathBuilder.getJsonPath());
-            writer.text(")");
-            writer.closeTag();
             targetRender.render(rootRender, node, writer);
-            writer.closeTag();
-            return;
+            writer.openTag("div", DEFAULT_RENDER_DIV);
         }
+
 
         if (node.isObject()) {
             renderObject(rootRender, node, writer);
@@ -103,6 +112,12 @@ public class DefaultHTMLRender implements HTMLRender {
         } else {
             renderPrimitive(node, writer);
         }
+
+        if(targetRender != null) {
+            writer.closeTag();
+        }
+
+        writer.closeTag();
     }
 
     public void render(RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
@@ -128,20 +143,8 @@ public class DefaultHTMLRender implements HTMLRender {
 
     private void renderObject(RootRender rootRender, JsonNode obj, HTMLWriter writer) throws IOException {
         jsonPathBuilder.enterObject();
+        //writeNodeMetadata(obj, writer);
         writer.openTag("div");
-        final JsonNode type = obj.get(TemplateConstants.TYPE_ATTR);
-        if(type != null) {
-            writer.openColorTag("red");
-            writer.openTag("small");
-            writer.text("(");
-            writer.text(type.asText());
-            writer.text(")");
-            writer.closeTag();
-            writer.openTag("small");
-            writer.text(jsonPathBuilder.getJsonPath());
-            writer.closeTag();
-            writer.closeTag();
-        }
         final Iterator<Map.Entry<String,JsonNode>> iter = obj.getFields();
         Map.Entry<String,JsonNode> entry;
         while(iter.hasNext()) {
@@ -153,6 +156,7 @@ public class DefaultHTMLRender implements HTMLRender {
             writer.closeTag();
         }
         jsonPathBuilder.exitObject();
+
         writer.closeTag();
     }
 
@@ -181,6 +185,39 @@ public class DefaultHTMLRender implements HTMLRender {
             writer.text(primitive.trim());
             writer.closeTag();
         }
+    }
+
+    // TODO: should write any metadata available
+    private String writeNodeMetadata(JsonNode node, HTMLWriter writer) throws IOException {
+        final JsonNode typeNode = node.get(TemplateConstants.TYPE_ATTR);
+        final String type;
+        if(typeNode == null) {
+            type = null;
+            writer.openTag("div");
+        } else {
+            type = typeNode.asText();
+            final String name;
+            name = "template".equals(type) ? node.get("name").asText() : null;
+            writer.openTag("div", new HashMap<String, String>(){{
+                put("itemtype", type);
+                put("name"    , name);
+            }});
+
+            writer.openColorTag("red");
+            writer.openTag("small");
+            writer.text(type);
+            writer.closeTag();
+            writer.closeTag();
+        }
+
+
+        writer.openTag("small", JSON_PATH_CLASS);
+        writer.text("(");
+        writer.text(jsonPathBuilder.getJsonPath());
+        writer.text(")");
+        writer.closeTag();
+
+        return type;
     }
 
 }

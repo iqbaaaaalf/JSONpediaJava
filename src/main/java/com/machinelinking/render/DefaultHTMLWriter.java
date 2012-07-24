@@ -1,5 +1,7 @@
 package com.machinelinking.render;
 
+import org.apache.commons.io.IOUtils;
+
 import java.io.IOException;
 import java.io.Writer;
 import java.util.HashMap;
@@ -22,18 +24,18 @@ public class DefaultHTMLWriter implements HTMLWriter {
     @Override
     public void openDocument() throws IOException {
         writer.append("<html>");
-        writer.append("<head>");
-        writer.append("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />");
-        writer.append("<link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'/>");
-        writer.append("<style type=\"text/css\">font-family: 'Aldrich', sans-serif;</style>");
-        writer.append("</head>");
+        writer.append( IOUtils.toString( this.getClass().getResourceAsStream("/default-html-writer-header.html") ) );
         writer.append("<body>");
+        writer.append("<script type=\"text/javascript\">");
+        writer.append( IOUtils.toString( this.getClass().getResourceAsStream("/default-html-writer-include.js") ) );
+        writer.append("</script>");
+        writer.append( IOUtils.toString( this.getClass().getResourceAsStream("/default-html-writer-body-open.html") ) );
 
     }
 
     @Override
     public void closeDocument() throws IOException {
-        writer.append("</body></html>");
+        writer.append( IOUtils.toString( this.getClass().getResourceAsStream("/default-html-writer-body-close.html") ) );
         if(!openTags.isEmpty()) throw new IllegalStateException();
     }
 

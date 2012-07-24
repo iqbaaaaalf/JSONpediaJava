@@ -70,7 +70,7 @@ public class DefaultJsonPathBuilder implements JsonPathBuilder {
 
     @Override
     public String getJsonPath() {
-        if(stack.isEmpty()) throw new IllegalStateException("Outside any element");
+        //if(stack.isEmpty()) throw new IllegalStateException("Outside any element");
         final StringBuilder sb = new StringBuilder();
         sb.append('$');
         for(Element element : stack) {
