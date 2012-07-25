@@ -31,6 +31,7 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         render.addKeyValueRender("archiveurl" , new URLKeyValueRender());
         render.addKeyValueRender("title"      , new TitleKeyValueRender());
         render.addKeyValueRender("content"    , new ContentKeyValueRender());
+        render.addKeyValueRender("freebase"   , new FreebaseKeyValueRender());
         return render;
     }
 
