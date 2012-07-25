@@ -14,7 +14,7 @@ public class CitationNodeRender implements NodeRender {
     public static final String CITATION_TEMPLATE_NAME = "Citation";
 
     private static final Map<String,String> CITATION_DIV_ATTR = new HashMap<String,String>(){{
-        put("style", "background-color: orange");
+        put("style", "background-color: #B86725");
     }};
 
     private static final String[] TEMPLATE_FIELDS = {

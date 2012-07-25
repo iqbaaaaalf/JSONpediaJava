@@ -30,6 +30,7 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         render.addKeyValueRender("url"        , new URLKeyValueRender());
         render.addKeyValueRender("archiveurl" , new URLKeyValueRender());
         render.addKeyValueRender("title"      , new TitleKeyValueRender());
+        render.addKeyValueRender("content"    , new ContentKeyValueRender());
         return render;
     }
 

@@ -21,6 +21,7 @@ public class LinkNodeRender implements NodeRender {
         final String description = node.get("description").asText().trim();
         writer.openTag("a", new HashMap<String, String>() {{
             put("href", url);
+            put("style", "background-color: #C95095");
         }});
         writer.text(description);
         writer.closeTag();

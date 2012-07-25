@@ -17,6 +17,10 @@ import java.util.Map;
  */
 public class DefaultHTMLRender implements HTMLRender {
 
+    private static final Map<String,String> PRIMITIVE_NODE_ATTR = new HashMap<String,String>(){{
+        put("style", "background-color: white");
+    }};
+
     private static final String JSON_PATH_SELECTOR      = "jsonpath";
     private static final String DEFAULT_RENDER_SELECTOR = "defaultrender";
 
@@ -32,9 +36,15 @@ public class DefaultHTMLRender implements HTMLRender {
         put("class", JSON_PATH_SELECTOR);
     }};
 
+    private static String DEFAULT_RENDER_BG_COLOR = "background-color: #8A3737;";
+
     private static final Map<String,String> DEFAULT_RENDER_DIV = new HashMap<String,String>(){{
+        put("style", DEFAULT_RENDER_BG_COLOR);
+    }};
+
+    private static final Map<String,String> DEFAULT_RENDER_HIDDEN_DIV = new HashMap<String,String>(){{
         put("class", DEFAULT_RENDER_SELECTOR);
-        put("style", "visibility:none");
+        put("style", DEFAULT_RENDER_BG_COLOR + "visibility:none");
     }};
 
     private final Map<String,List<NodeRender>> nodeRenders     = new HashMap<>();
@@ -101,9 +111,10 @@ public class DefaultHTMLRender implements HTMLRender {
 
         if(targetRender != null) {
             targetRender.render(rootRender, node, writer);
+            writer.openTag("div", DEFAULT_RENDER_HIDDEN_DIV);
+        } else {
             writer.openTag("div", DEFAULT_RENDER_DIV);
         }
-
 
         if (node.isObject()) {
             renderObject(rootRender, node, writer);
@@ -113,9 +124,7 @@ public class DefaultHTMLRender implements HTMLRender {
             renderPrimitive(node, writer);
         }
 
-        if(targetRender != null) {
-            writer.closeTag();
-        }
+        writer.closeTag();
 
         writer.closeTag();
     }
@@ -143,7 +152,6 @@ public class DefaultHTMLRender implements HTMLRender {
 
     private void renderObject(RootRender rootRender, JsonNode obj, HTMLWriter writer) throws IOException {
         jsonPathBuilder.enterObject();
-        //writeNodeMetadata(obj, writer);
         writer.openTag("div");
         final Iterator<Map.Entry<String,JsonNode>> iter = obj.getFields();
         Map.Entry<String,JsonNode> entry;
@@ -161,8 +169,12 @@ public class DefaultHTMLRender implements HTMLRender {
     }
 
     private void renderList(RootRender rootRender, JsonNode list, HTMLWriter writer) throws IOException {
-        if(list.size() == 1) {
+        final int size = list.size();
+        if(size == 1) {
             render(rootRender, list.get(0), writer);
+            return;
+        } else if(size == 0) {
+            renderPrimitive(list, writer);
             return;
         }
 
@@ -181,8 +193,12 @@ public class DefaultHTMLRender implements HTMLRender {
     private void renderPrimitive(JsonNode node, HTMLWriter writer) throws IOException {
         final String primitive = JSONUtils.asPrimitiveString(node);
         if (primitive != null) {
-            writer.openTag("pre");
+            writer.openTag("pre", PRIMITIVE_NODE_ATTR);
             writer.text(primitive.trim());
+            writer.closeTag();
+        } else {
+            writer.openTag("pre");
+            writer.text("&lt;empty&gt;");
             writer.closeTag();
         }
     }

@@ -3,6 +3,8 @@ package com.machinelinking.render;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
@@ -12,6 +14,10 @@ public class ReferenceNodeRender implements NodeRender {
     public static final String[] IMAGE_EXT = new String[] {"jpg"};
 
     private static final String ALT_PREFIX = "alt=";
+
+    private static final Map<String,String> REFERENCE_DIV_ATTR = new HashMap<String,String>(){{
+        put("style", "background-color: #C971AE");
+    }};
 
     @Override
     public boolean acceptNode(JsonNode node) {
@@ -41,6 +47,7 @@ public class ReferenceNodeRender implements NodeRender {
     }
 
     private void writeHTMLURL(String target, String label, HTMLWriter writer) throws IOException {
+         writer.openTag("div", REFERENCE_DIV_ATTR);
         if( isImage(target) ) {
             final String[] descSections = label.split("\\|");
             writer.key(descSections[descSections.length -1]);
@@ -55,6 +62,7 @@ public class ReferenceNodeRender implements NodeRender {
         } else {
             writer.anchor(target, label);
         }
+        writer.closeTag();
     }
 
     private boolean isImage(String url) {
