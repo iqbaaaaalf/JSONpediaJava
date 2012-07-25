@@ -20,9 +20,7 @@ public class TitleKeyValueRender implements KeyValueRender {
     public void render(RootRender rootRender, String key, JsonNode value, HTMLWriter writer) throws IOException {
         final String valueStr = JSONUtils.asPrimitiveString(value);
         writer.openTag("strong", TITLE_DIV_ATTR);
-        //writer.openColorTag("purple");
-        writer.text(valueStr);
-        //writer.closeTag();
+        writer.text( valueStr );
         writer.closeTag();
     }
 }

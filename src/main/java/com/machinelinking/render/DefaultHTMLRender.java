@@ -190,6 +190,7 @@ public class DefaultHTMLRender implements HTMLRender {
         writer.closeTag();
     }
 
+
     private void renderPrimitive(JsonNode node, HTMLWriter writer) throws IOException {
         final String primitive = JSONUtils.asPrimitiveString(node);
         if (primitive != null) {

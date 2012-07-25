@@ -19,7 +19,7 @@ public class FreebaseKeyValueRender implements KeyValueRender {
     public void render(RootRender rootRender, String key, JsonNode value, HTMLWriter writer) throws IOException {
         writer.openTag("div");
 
-        writer.text("<h3>Freebase</h3>");
+        writer.heading(3, "Freebase");
 
         final JsonNode aliases = value.get("alias");
         if(aliases.size() > 0) {
@@ -40,7 +40,7 @@ public class FreebaseKeyValueRender implements KeyValueRender {
         final JsonNode name = value.get("name");
         writer.anchor( String.format("http://www.freebase.com/view/%s", id.asText()), name.asText() );
 
-        writer.text("<h4>Types:</h4>");
+        writer.heading(4, "Types");
         final JsonNode types = value.get("type");
         JsonNode elem;
         for(int i=0; i < types.size(); i++) {

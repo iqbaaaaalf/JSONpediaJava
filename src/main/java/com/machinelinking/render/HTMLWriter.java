@@ -18,6 +18,8 @@ public interface HTMLWriter {
 
     void closeTag() throws IOException;
 
+    void heading(int level, String title) throws IOException;
+
     void text(String txt) throws IOException;
 
     void openColorTag(String color) throws IOException;

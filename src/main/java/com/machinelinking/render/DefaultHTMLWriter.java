@@ -75,8 +75,14 @@ public class DefaultHTMLWriter implements HTMLWriter {
     }
 
     @Override
+    public void heading(int level, String title) throws IOException {
+        if(level > 6) level = 6;
+        writer.append(String.format("<h%d>%s</h%d>", level, title, level));
+    }
+
+    @Override
     public void text(String txt) throws IOException {
-        writer.append(txt);
+        writer.append( escapeStringMarkup(txt) );
     }
 
     @Override
@@ -127,6 +133,10 @@ public class DefaultHTMLWriter implements HTMLWriter {
     @Override
     public void flush() throws IOException {
         writer.flush();
+    }
+
+    private String escapeStringMarkup(String in) {
+        return in.replace("<", "&lt;").replace(">", "&gt").replace("&nbsp", " ");
     }
 
 }
