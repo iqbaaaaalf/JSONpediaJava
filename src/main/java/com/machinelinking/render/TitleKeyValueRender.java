@@ -1,6 +1,5 @@
 package com.machinelinking.render;
 
-import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
@@ -18,9 +17,8 @@ public class TitleKeyValueRender implements KeyValueRender {
 
     @Override
     public void render(RootRender rootRender, String key, JsonNode value, HTMLWriter writer) throws IOException {
-        final String valueStr = JSONUtils.asPrimitiveString(value);
         writer.openTag("strong", TITLE_DIV_ATTR);
-        writer.text( valueStr );
+        rootRender.render(rootRender, value, writer);
         writer.closeTag();
     }
 }

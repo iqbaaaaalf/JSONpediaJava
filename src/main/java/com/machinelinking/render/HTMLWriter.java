@@ -26,7 +26,7 @@ public interface HTMLWriter {
 
     void key(String key) throws IOException;
 
-    void anchor(String url, String text) throws IOException;
+    void anchor(String url, String text, boolean internal) throws IOException;
 
     void image(String url, String text) throws IOException;
 

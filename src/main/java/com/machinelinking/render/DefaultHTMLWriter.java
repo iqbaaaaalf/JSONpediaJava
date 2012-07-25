@@ -4,6 +4,7 @@ import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
 import java.io.Writer;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
@@ -96,7 +97,10 @@ public class DefaultHTMLWriter implements HTMLWriter {
     }
 
     @Override
-    public void anchor(String url, String text) throws IOException {
+    public void anchor(String url, String text, boolean internal) throws IOException {
+        if(internal) {
+            url = "/annotate/resource/html/" + URLEncoder.encode(url, "utf-8");
+        }
         writer.append( String.format("<a href=\"%s\">%s</a>", url, text) );
     }
 

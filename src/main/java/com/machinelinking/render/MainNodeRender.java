@@ -35,7 +35,7 @@ public class MainNodeRender implements NodeRender {
         String article;
         while(articles.hasNext()) {
             article = articles.next();
-            writer.anchor( String.format("http://en.wikipedia.org/wiki/%s", article), article ); // TODO: en. must be parametric.
+            writer.anchor( String.format("http://en.wikipedia.org/wiki/%s", article), article, true ); // TODO: en. must be parametric.
             writer.text(" ");
         }
         writer.closeTag();

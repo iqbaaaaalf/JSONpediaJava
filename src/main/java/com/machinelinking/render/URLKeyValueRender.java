@@ -21,7 +21,7 @@ public class URLKeyValueRender implements KeyValueRender {
         final String valueStr = JSONUtils.asPrimitiveString(value);
         writer.openTag("div", URLKEY_DIV_ATTR);
         writer.key(key);
-        writer.anchor(valueStr, valueStr);
+        writer.anchor(valueStr, valueStr, false);
         writer.closeTag();
     }
 

@@ -38,7 +38,11 @@ public class FreebaseKeyValueRender implements KeyValueRender {
 
         final JsonNode id   = value.get("id");
         final JsonNode name = value.get("name");
-        writer.anchor( String.format("http://www.freebase.com/view/%s", id.asText()), name.asText() );
+        writer.anchor(
+                String.format("http://www.freebase.com/view/%s", id.asText()),
+                name.asText(),
+                false
+        );
 
         writer.heading(4, "Types");
         final JsonNode types = value.get("type");
@@ -48,7 +52,8 @@ public class FreebaseKeyValueRender implements KeyValueRender {
             writer.openTag("span", TYPE_DIV_ATTR);
             writer.anchor(
                     String.format("http://www.freebase.com/view/%s", elem.get("id").asText()),
-                    elem.get("name").asText()
+                    elem.get("name").asText(),
+                    false
             );
             writer.closeTag();
         }

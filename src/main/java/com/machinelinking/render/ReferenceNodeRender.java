@@ -60,7 +60,7 @@ public class ReferenceNodeRender implements NodeRender {
             }
             writer.image(target, alt);
         } else {
-            writer.anchor(target, label);
+            writer.anchor(target, label, true);
         }
         writer.closeTag();
     }
