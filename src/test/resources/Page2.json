@@ -206,6 +206,7 @@
                 ]
             }
         },
+        "'''Sir Timothy John \"Tim\" Berners-Lee''',",
         {
             "__type": "template",
             "name": "post-nominals",
@@ -243,21 +244,26 @@
                 ]
             }
         },
+        "(born 8 June 1955<ref name",
+        "W3Bio/>), also known as \"'''TimBL'''\", is an English",
         {
             "__type": "reference",
             "label": "computer scientist",
             "description": ""
         },
+        ",",
         {
             "__type": "reference",
             "label": "Massachusetts Institute of Technology",
             "description": "MIT"
         },
+        "professor and the inventor of the",
         {
             "__type": "reference",
             "label": "World Wide Web",
             "description": ""
         },
+        ". He made a proposal for an information management system in March 1989<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -277,36 +283,44 @@
                 ]
             }
         },
+        "</ref> and on 25 December 1990, with the help of",
         {
             "__type": "reference",
             "label": "Robert Cailliau",
             "description": ""
         },
+        "and a young student at",
         {
             "__type": "reference",
             "label": "CERN",
             "description": ""
         },
+        ", he implemented the first successful communication between a",
         {
             "__type": "reference",
             "label": "Hypertext Transfer Protocol",
             "description": ""
         },
+        "(HTTP) client and",
         {
             "__type": "reference",
             "label": "Web server",
             "description": "server"
         },
+        "via the Internet.<ref name",
+        "AFP/>\n\nBerners-Lee is the director of the",
         {
             "__type": "reference",
             "label": "World Wide Web Consortium",
             "description": ""
         },
+        "(W3C), which oversees the Web's continued development. He is also the founder of the",
         {
             "__type": "reference",
             "label": "World Wide Web Foundation",
             "description": ""
         },
+        ", and is a senior researcher and holder of the",
         {
             "__type": "reference",
             "label": "3Com",
@@ -317,11 +331,13 @@
             "label": "Professors in the United States#Special academic ranks (tenured)",
             "description": "Founders Chair"
         },
+        "at the",
         {
             "__type": "reference",
             "label": "MIT Computer Science and Artificial Intelligence Laboratory",
             "description": ""
         },
+        "(CSAIL).<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -344,6 +360,7 @@
                 ]
             }
         },
+        "</ref>\nHe is a director of The Web Science Research Initiative (WSRI),<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -368,11 +385,13 @@
                 ]
             }
         },
+        "</ref> and a member of the advisory board of the",
         {
             "__type": "reference",
             "label": "MIT Center for Collective Intelligence",
             "description": ""
         },
+        ".<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -391,6 +410,7 @@
                 ]
             }
         },
+        "</ref><ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -409,21 +429,26 @@
                 ]
             }
         },
+        "</ref>\n\nIn 2004, Berners-Lee was",
         {
             "__type": "reference",
             "label": "Order of the British Empire",
             "description": "knighted"
         },
+        "by Queen",
         {
             "__type": "reference",
             "label": "Elizabeth II",
             "description": ""
         },
+        "for his pioneering work.<ref name",
+        "tecb/> In April 2009, he was elected a foreign associate of the",
         {
             "__type": "reference",
             "label": "United States National Academy of Sciences",
             "description": ""
         },
+        ", based in Washington, D.C.<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -446,6 +471,7 @@
                 ]
             }
         },
+        "</ref><ref>",
         {
             "__type": "template",
             "name": "cite press release",
@@ -467,36 +493,45 @@
                 ]
             }
         },
+        "</ref>",
         {
             "__type": "section",
             "title": "Early life",
             "level": 0
         },
+        "Tim Berners-Lee was born in southwest London, England, on 8 June 1955, the son of",
         {
             "__type": "reference",
             "label": "Conway Berners-Lee",
             "description": ""
         },
+        "and",
         {
             "__type": "reference",
             "label": "Mary Lee Woods",
             "description": ""
         },
+        ".  His parents worked on the first commercially built computer, the",
         {
             "__type": "reference",
             "label": "Ferranti Mark 1",
             "description": ""
         },
+        ".  One of four children, he attended Sheen Mount Primary School, and then went on to",
         {
             "__type": "reference",
             "label": "Emanuel School",
             "description": ""
         },
+        "in London, from 1969 to 1973.<ref name",
+        "tecb/> He studied at",
         {
             "__type": "reference",
             "label": "The Queen's College, Oxford",
             "description": ""
         },
+        ", from 1973 to 1976, where he received a first-class degree in Physics.<ref name",
+        "W3Bio/>",
         {
             "__type": "section",
             "title": "Career",
@@ -507,11 +542,13 @@
             "label": "File:Tim Berners-Lee.jpg",
             "description": "thumb|left|Berners-Lee, 2005"
         },
+        "While an independent contractor at CERN from June to December 1980, Berners-Lee proposed a project based on the concept of",
         {
             "__type": "reference",
             "label": "hypertext",
             "description": ""
         },
+        ", to facilitate sharing and updating information among researchers.<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -536,11 +573,14 @@
                 ]
             }
         },
+        "</ref> While there, he built a prototype system named",
         {
             "__type": "reference",
             "label": "ENQUIRE",
             "description": ""
         },
+        ".<ref name",
+        "\"linvinginternet\">",
         {
             "__type": "template",
             "name": "cite web",
@@ -562,6 +602,8 @@
                 ]
             }
         },
+        "</ref>\n\nAfter leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.<ref name",
+        "\"faq\">",
         {
             "__type": "template",
             "name": "cite web",
@@ -583,21 +625,27 @@
                 ]
             }
         },
+        "</ref> The project he worked on was a ''real-time remote procedure call'' which gave him experience in",
         {
             "__type": "reference",
             "label": "computer network",
             "description": ""
         },
+        "ing.<ref name",
+        "\"faq\" /> In 1984 he returned to CERN as a fellow.<ref name",
+        "\"linvinginternet\" />\n\nIn 1989, CERN was the largest Internet node in Europe, and Berners-Lee saw an opportunity to join hypertext with the Internet: \"I just had to take the hypertext idea and connect it to the",
         {
             "__type": "reference",
             "label": "Transmission Control Protocol",
             "description": ""
         },
+        "and",
         {
             "__type": "reference",
             "label": "domain name system",
             "description": ""
         },
+        "ideas and—ta-da!—the World Wide Web.\"<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -619,6 +667,7 @@
                 ]
             }
         },
+        "</ref> “Creating the web was really an act of desperation, because the situation without it was very difficult when I was working at CERN later. Most of the technology involved in the web, like the hypertext, like the Internet, multifont text objects, had all been designed already. I just had to put them together. It was a step of generalising, going to a higher level of abstraction, thinking about all the documentation systems out there as being possibly part of a larger imaginary documentation system.”<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -638,11 +687,13 @@
                 ]
             }
         },
+        "</ref> He wrote his initial proposal in March 1989, and in 1990, with the help of",
         {
             "__type": "reference",
             "label": "Robert Cailliau",
             "description": ""
         },
+        "(with whom he shared the 1995",
         {
             "__type": "reference",
             "label": "Association for Computing Machinery",
@@ -653,6 +704,7 @@
             "label": "Software System Award",
             "description": ""
         },
+        "), produced a revision which was accepted by his manager, Mike Sendall.<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -671,26 +723,31 @@
                 ]
             }
         },
+        "</ref> He used similar ideas to those underlying the ENQUIRE system to create the World Wide Web, for which he designed and built the first Web browser. This also functioned as an editor (",
         {
             "__type": "reference",
             "label": "WorldWideWeb",
             "description": ""
         },
+        ", running on the",
         {
             "__type": "reference",
             "label": "NeXTSTEP",
             "description": ""
         },
+        "operating system), and the first Web server,",
         {
             "__type": "reference",
             "label": "CERN HTTPd",
             "description": ""
         },
+        "(short for Hypertext Transfer Protocol",
         {
             "__type": "reference",
             "label": "Daemon (computer software)",
             "description": "daemon"
         },
+        ").",
         {
             "__type": "template",
             "name": "quotation",
@@ -706,11 +763,13 @@
                 ]
             }
         },
+        "The first",
         {
             "__type": "reference",
             "label": "web site",
             "description": ""
         },
+        "built was at CERN within the border of France<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -723,6 +782,7 @@
                 ]
             }
         },
+        "</ref>, and was first put online on 6 August 1991:\n<blockquote>\n\"Info.cern.ch was the address of the world's first-ever web site and web server, running on a NeXT computer at CERN. The first web page address was http://info.cern.ch/hypertext/WWW/TheProject.html, which centred on information regarding the WWW project. Visitors could learn more about hypertext, technical details for creating their own webpage, and even an explanation on how to search the Web for information. There are no screenshots of this original page and, in any case, changes were made daily to the information available on the page as the WWW project developed. You may find a later copy (1992) on the World Wide Web Consortium website.\" -CERN </blockquote> It provided an explanation of what the World Wide Web was, and how one could use a browser and set up a web server.<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -741,6 +801,7 @@
                 ]
             }
         },
+        "</ref><ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -759,6 +820,7 @@
                 ]
             }
         },
+        "</ref><ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -780,6 +842,7 @@
                 ]
             }
         },
+        "</ref><ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -808,6 +871,7 @@
                 ]
             }
         },
+        "</ref>\n\nIn 1994, Berners-Lee founded the W3C at MIT. It comprised various companies that were willing to create standards and recommendations to improve the quality of the Web. Berners-Lee made his idea available freely, with no patent and no royalties due. The World Wide Web Consortium decided that its standards should be based on royalty-free technology, so that they could easily be adopted by anyone.<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -829,36 +893,43 @@
                 ]
             }
         },
+        "</ref>\n\nIn 2001, Berners-Lee became a patron of the East Dorset Heritage Trust, having previously lived in",
         {
             "__type": "reference",
             "label": "Colehill",
             "description": ""
         },
+        "in",
         {
             "__type": "reference",
             "label": "Wimborne Minster",
             "description": "Wimborne"
         },
+        ",",
         {
             "__type": "reference",
             "label": "East Dorset",
             "description": ""
         },
+        ", England.<ref>John W. Klooster (2009)",
         {
             "__type": "link",
             "url": "http://books.google.com/books?id=WKuG-VIwID8C&pg=PA611&dq=tim+berners+lee++-+east+dorset+heritage+trust&hl=en&ei=0cE9TtyhIcyo8QPQx_zgDA&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCoQ6AEwAA#v=onepage&q=tim%20berners%20lee%20%20-%20east%20dorset%20heritage%20trust&f=false",
             "description": "Icons of invention: the makers of the modern world from Gutenberg to Gates"
         },
+        "p.611. ABC-CLIO, 2009</ref>\n\nIn December 2004, he accepted a chair in Computer Science at the School of Electronics and Computer Science,",
         {
             "__type": "reference",
             "label": "University of Southampton",
             "description": ""
         },
+        ", England, to work on his new project, the",
         {
             "__type": "reference",
             "label": "Semantic Web",
             "description": ""
         },
+        ".<ref>",
         {
             "__type": "template",
             "name": "cite doi",
@@ -866,6 +937,7 @@
                 "10.1038/scientificamerican0501-34": []
             }
         },
+        "</ref><ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -887,6 +959,7 @@
                 ]
             }
         },
+        "</ref>",
         {
             "__type": "section",
             "title": "Current work",
@@ -897,11 +970,13 @@
             "label": "Image:timbernerslee.jpg",
             "description": "thumb|right|200px|Tim Berners-Lee at the [[Home Office"
         },
+        ", London, on 11 March 2010]]\nIn June 2009 then British Prime Minister",
         {
             "__type": "reference",
             "label": "Gordon Brown",
             "description": ""
         },
+        "announced Berners-Lee would work with the UK Government to help make data more open and accessible on the Web, building on the work of the Power of Information Task Force.<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -923,26 +998,31 @@
                 ]
             }
         },
+        "</ref> Berners-Lee and Professor",
         {
             "__type": "reference",
             "label": "Nigel Shadbolt",
             "description": ""
         },
+        "are the two key figures behind",
         {
             "__type": "reference",
             "label": "data.gov.uk",
             "description": ""
         },
+        ", a",
         {
             "__type": "reference",
             "label": "UK Government",
             "description": ""
         },
+        "project to open up almost all data acquired for official purposes for free re-use. Commenting on the opening up of",
         {
             "__type": "reference",
             "label": "Ordnance Survey",
             "description": ""
         },
+        "data in April 2010 Berners-Lee said that: \"The changes signal a wider cultural change in Government based on an assumption that information should be in the public domain unless there is a good reason not to—not the other way around.\" He went on to say \"Greater openness, accountability and transparency in Government will give people greater choice and make it easier for individuals to get more directly involved in issues that matter to them.\"<ref>",
         {
             "__type": "template",
             "name": "cite news",
@@ -964,16 +1044,19 @@
                 ]
             }
         },
+        "</ref>\n\nIn November 2009, Berners-Lee launched the World Wide Web Foundation in order to \"Advance the Web to empower humanity by launching transformative programs that build local capacity to leverage the Web as a medium for positive change.\"<ref>",
         {
             "__type": "link",
             "url": "http://www.webfoundation.org/about/faq/",
             "description": "FAQ—World Wide Web Foundation"
         },
+        "Retrieved 18 January 2011</ref>\n\nBerners-Lee is one of the pioneer voices in favour of",
         {
             "__type": "reference",
             "label": "Net Neutrality",
             "description": ""
         },
+        ",<ref>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1004,11 +1087,13 @@
                 ]
             }
         },
+        "</ref> and has expressed the view that",
         {
             "__type": "reference",
             "label": "ISP",
             "description": ""
         },
+        "s should supply \"connectivity with no strings attached,\" and should neither control nor monitor customers' browsing activities without their expressed consent.<ref>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1039,6 +1124,7 @@
                 ]
             }
         },
+        "</ref><ref>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1072,6 +1158,7 @@
                 ]
             }
         },
+        "</ref> He advocates the idea that net neutrality is a kind of human network right: \"Threats to the Internet, such as companies or governments that interfere with or snoop on Internet traffic, compromise basic human network rights.\"<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1099,11 +1186,13 @@
                 ]
             }
         },
+        "</ref>\n\nIn a ''",
         {
             "__type": "reference",
             "label": "The Times",
             "description": "Times"
         },
+        "'' article in October 2009, Berners-Lee admitted that the initial pair of slashes (\"//\") in a web address were actually \"unnecessary\". He told the newspaper that he could easily have designed URLs not to have the slashes. \"There you go, it seemed like a good idea at the time,\" he said in his lighthearted apology.<ref>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1125,6 +1214,7 @@
                 ]
             }
         },
+        "</ref>",
         {
             "__type": "section",
             "title": "Recognition",
@@ -1135,11 +1225,13 @@
             "label": "Image:First Web Server.jpg",
             "description": "thumb|200px|This [[NeXT Computer"
         },
+        "was used by Berners-Lee at CERN and became the world's first web server.]]\n*In 1994 he became one of only six members of the",
         {
             "__type": "reference",
             "label": "World Wide Web Hall of Fame",
             "description": ""
         },
+        ".<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1159,16 +1251,21 @@
                 ]
             }
         },
+        "</ref>\n*In 1995 he won the Kilby Foundation's \"Young Innovator of the Year\" Award.<ref name",
+        "\"W3Bio\" />\n*In 1995 he received also the",
         {
             "__type": "reference",
             "label": "Software System Award",
             "description": ""
         },
+        "from the",
         {
             "__type": "reference",
             "label": "Association for Computing Machinery",
             "description": ""
         },
+        "(ACM).<ref name",
+        "acmaward>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1205,11 +1302,13 @@
                 ]
             }
         },
+        "</ref>\n*In 1998 he was awarded with an honorary doctorate from the",
         {
             "__type": "reference",
             "label": "University of Essex",
             "description": ""
         },
+        ".<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1225,16 +1324,20 @@
                 ]
             }
         },
+        "</ref>\n*In 1999, ''",
         {
             "__type": "reference",
             "label": "Time Magazine",
             "description": ""
         },
+        "'' named Berners-Lee one of the",
         {
             "__type": "reference",
             "label": "Time 100: The Most Important People of the Century",
             "description": "100 Most Important People of the 20th century"
         },
+        ".<ref name",
+        "AFP>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1262,11 +1365,13 @@
                 ]
             }
         },
+        "</ref>\n*In March 2000 he was awarded an honorary degree from",
         {
             "__type": "reference",
             "label": "The Open University",
             "description": ""
         },
+        "as Doctor of the University.<ref>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1293,11 +1398,14 @@
                 ]
             }
         },
+        "</ref>\n*In 2001, he was elected a Fellow of the",
         {
             "__type": "reference",
             "label": "American Academy of Arts and Sciences",
             "description": ""
         },
+        ".<ref name",
+        "AAAS>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1316,11 +1424,13 @@
                 ]
             }
         },
+        "</ref>\n*In 2003, he received the",
         {
             "__type": "reference",
             "label": "Computer History Museum",
             "description": ""
         },
+        "'s Fellow Award, for his seminal contributions to the development of the World Wide Web.<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1342,21 +1452,25 @@
                 ]
             }
         },
+        "</ref>\n*On 15 April 2004, he was named as the first recipient of Finland's",
         {
             "__type": "reference",
             "label": "Millennium Technology Prize",
             "description": ""
         },
+        ", for inventing the World Wide Web. The cash prize, worth one million euros (about £892,000, or US$1.3&nbsp;million, as of Sept 2011), was awarded on 15 June, in",
         {
             "__type": "reference",
             "label": "Helsinki",
             "description": ""
         },
+        ", Finland, by the President of the Republic of Finland,",
         {
             "__type": "reference",
             "label": "Tarja Halonen",
             "description": ""
         },
+        ".<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1385,16 +1499,20 @@
                 ]
             }
         },
+        "</ref>\n*He was appointed to the rank of",
         {
             "__type": "reference",
             "label": "Order of the British Empire",
             "description": "Knight Commander of the Most Excellent Order of the British Empire"
         },
+        "(the second-highest class within this Order that entails a knighthood) by",
         {
             "__type": "reference",
             "label": "Elizabeth II of the United Kingdom",
             "description": "Queen Elizabeth II"
         },
+        ", in the 2004 New Year's Honours List, and was formally invested on 16 July 2004.<ref name",
+        "tecb>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1416,6 +1534,7 @@
                 ]
             }
         },
+        "</ref><ref>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1437,16 +1556,19 @@
                 ]
             }
         },
+        "</ref>\n*On 21 July 2004, he was presented with an honorary",
         {
             "__type": "reference",
             "label": "Doctor of Science",
             "description": ""
         },
+        "degree from",
         {
             "__type": "reference",
             "label": "Lancaster University",
             "description": ""
         },
+        ".<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1469,11 +1591,13 @@
                 ]
             }
         },
+        "</ref>\n*On 27 January 2005, he was named Greatest Briton of 2004, both for his achievements and for displaying the key British characteristics of \"diffidence, determination, a sharp sense of humour and adaptability\", as put by",
         {
             "__type": "reference",
             "label": "David Hempleman-Adams",
             "description": ""
         },
+        ", a panel member.<ref>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1498,21 +1622,25 @@
                 ]
             }
         },
+        "</ref>\n*In 2007, Berners-Lee received the",
         {
             "__type": "reference",
             "label": "Academy of Achievement",
             "description": "Academy of Achievement's Golden Plate Award"
         },
+        ".\n*In 2007, he was ranked Joint First, alongside",
         {
             "__type": "reference",
             "label": "Albert Hofmann",
             "description": ""
         },
+        ", in",
         {
             "__type": "reference",
             "label": "The Daily Telegraph",
             "description": "''The Telegraph''"
         },
+        "'s list of 100 greatest living geniuses.<ref>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1537,11 +1665,13 @@
                 ]
             }
         },
+        "</ref>\n*On 13 June 2007, he received the",
         {
             "__type": "reference",
             "label": "Order of Merit",
             "description": ""
         },
+        ", becoming one of only 24 living members entitled to hold the honour, and to use the post-nominals 'O.M.' after their name.<ref>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1563,11 +1693,13 @@
                 ]
             }
         },
+        "</ref> (The Order of Merit is within the personal bestowal of The Queen, and does not require recommendation by ministers or the Prime Minister)\n*He was awarded the 2008",
         {
             "__type": "reference",
             "label": "IEEE/RSE Wolfson James Clerk Maxwell Award",
             "description": ""
         },
+        ", for \"conceiving and further developing the World Wide Web\".<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1597,16 +1729,19 @@
                 ]
             }
         },
+        "</ref>\n*On 2 December 2008, Berners-Lee was awarded an honorary doctorate from the",
         {
             "__type": "reference",
             "label": "University of Manchester",
             "description": ""
         },
+        ". His parents worked on the",
         {
             "__type": "reference",
             "label": "Manchester Mark 1",
             "description": ""
         },
+        "in the 1940s and 50s.<ref>",
         {
             "__type": "template",
             "name": "Cite news",
@@ -1628,11 +1763,13 @@
                 ]
             }
         },
+        "</ref>\n*On 21 April 2009, he was awarded an honorary doctorate by the",
         {
             "__type": "reference",
             "label": "Universidad Politécnica de Madrid",
             "description": ""
         },
+        ".<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1648,26 +1785,31 @@
                 ]
             }
         },
+        "</ref>\n*On 28 April 2009, he was elected member of the",
         {
             "__type": "reference",
             "label": "United States National Academy of Sciences",
             "description": ""
         },
+        ".\n*On 8 June 2009, he received the",
         {
             "__type": "reference",
             "label": "Webby Award",
             "description": ""
         },
+        "for Lifetime Achievement, at the awards ceremony held in New York City.<ref>",
         {
             "__type": "link",
             "url": "http://www.webbyawards.com/press/press-release.php?id=187",
             "description": "Press Release: Sir Tim Berners Lee, Inventor of the World Wide Web, to receive Webby Lifetime Award At the 13th Annual Webby Awards"
         },
+        "''Webby Awards.com'' Retrieved 21 January 2011</ref>\n*In October 2009, he was awarded an honorary doctorate by the",
         {
             "__type": "reference",
             "label": "Vrije Universiteit Amsterdam",
             "description": ""
         },
+        "<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1695,6 +1837,7 @@
                 ]
             }
         },
+        "</ref><ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1719,41 +1862,49 @@
                 ]
             }
         },
+        "</ref>\n*On 30 March 2011, he was one of the first three recipients of the",
         {
             "__type": "reference",
             "label": "Mikhail Gorbachev",
             "description": ""
         },
+        "award for \"The Man Who Changed the World\", at the inuagural awards ceremony held in London. The other recipients were",
         {
             "__type": "reference",
             "label": "Evans Wadongo",
             "description": ""
         },
+        "for solar power development and anti-poverty work in Africa, and media mogul",
         {
             "__type": "reference",
             "label": "Ted Turner",
             "description": ""
         },
+        ".\n*On 26 May 2011, Berners-Lee was awarded with an honorary",
         {
             "__type": "reference",
             "label": "Doctor of Science",
             "description": ""
         },
+        "degree from",
         {
             "__type": "reference",
             "label": "Harvard University",
             "description": ""
         },
+        ".<ref>",
         {
             "__type": "link",
             "url": "http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee",
             "description": "Harvard awards 9 honorary degrees"
         },
+        "''news.harvard.edu'' Retrieved 11 June 2011</ref>\n*In 2011, he was inducted into",
         {
             "__type": "reference",
             "label": "IEEE Intelligent Systems",
             "description": ""
         },
+        "' AI's Hall of Fame for the \"significant contributions to the field of AI and intelligent systems\".<ref>",
         {
             "__type": "template",
             "name": "Cite doi",
@@ -1761,6 +1912,7 @@
                 "10.1109.2FMIS.2011.64": []
             }
         },
+        "</ref><ref>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1808,16 +1960,19 @@
                 ]
             }
         },
+        "Press release source: ''",
         {
             "__type": "reference",
             "label": "PRWeb",
             "description": ""
         },
+        "'' (",
         {
             "__type": "reference",
             "label": "Vocus",
             "description": ""
         },
+        ").</ref>",
         {
             "__type": "section",
             "title": "Personal life",
@@ -1837,21 +1992,25 @@
                 ]
             }
         },
+        "Berners-Lee had a religious upbringing, but left the",
         {
             "__type": "reference",
             "label": "Church of England",
             "description": ""
         },
+        "as a teenager, just after being",
         {
             "__type": "reference",
             "label": "confirmed",
             "description": ""
         },
+        "and \"told how essential it was to believe in all kinds of unbelievable things\". He and his family eventually joined a",
         {
             "__type": "reference",
             "label": "Unitarian Universalism",
             "description": "Unitarian Universalist"
         },
+        "church while they were living in Boston.<ref>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1879,56 +2038,67 @@
                 ]
             }
         },
+        "</ref>",
         {
             "__type": "section",
             "title": "See also",
             "level": 0
         },
+        "*",
         {
             "__type": "reference",
             "label": "Eelco van Asperen",
             "description": ""
         },
+        "*",
         {
             "__type": "reference",
             "label": "History of the World Wide Web",
             "description": ""
         },
+        "*",
         {
             "__type": "reference",
             "label": "Kevin Hughes (www)",
             "description": ""
         },
+        "*",
         {
             "__type": "reference",
             "label": "libwww",
             "description": ""
         },
+        "*",
         {
             "__type": "reference",
             "label": "Mundaneum",
             "description": ""
         },
+        "*",
         {
             "__type": "reference",
             "label": "Network neutrality",
             "description": ""
         },
+        "*",
         {
             "__type": "reference",
             "label": "Paul Otlet",
             "description": ""
         },
+        "*",
         {
             "__type": "reference",
             "label": "Semantic Web",
             "description": ""
         },
+        "*",
         {
             "__type": "reference",
             "label": "Robert Taylor (computer scientist)",
             "description": "Bob Taylor"
         },
+        "*",
         {
             "__type": "reference",
             "label": "Vannevar Bush",
@@ -1939,6 +2109,7 @@
             "title": "Publications",
             "level": 0
         },
+        "*",
         {
             "__type": "template",
             "name": "cite book",
@@ -1973,6 +2144,7 @@
                 ]
             }
         },
+        "*",
         {
             "__type": "template",
             "name": "cite doi",
@@ -1980,6 +2152,7 @@
                 "10.1038/scientificamerican1210-80": []
             }
         },
+        "*",
         {
             "__type": "template",
             "name": "cite pmid",
@@ -1987,6 +2160,7 @@
                 "21141362": []
             }
         },
+        "*",
         {
             "__type": "template",
             "name": "cite pmid",
@@ -1994,6 +2168,7 @@
                 "18847088": []
             }
         },
+        "*",
         {
             "__type": "template",
             "name": "cite pmid",
@@ -2020,16 +2195,19 @@
             "title": "Further reading",
             "level": 0
         },
+        "* ''Tim Berners-Lee and the Development of the World Wide Web (Unlocking the Secrets of Science)'', Ann Gaines (Mitchell Lane Publishers, 2001) ISBN 1-58415-096-3\n* ''Tim Berners-Lee: Inventor of the World Wide Web (Ferguson's Career Biographies)'', Melissa Stewart (Ferguson Publishing Company, 2001) ISBN 0-89434-367-X children's biography\n* ''Weaving the Web'' Berners-Lee, Tim, with Fischetti, Mark (Harper Collins Publishers,1999) ISBN 0-06-251586-1(cloth) ISBN 0-06-251587-X(paper)\n* ''How the Web was Born: The Story of the World Wide Web'' Robert Cailliau, James Gillies, R. Cailliau (Oxford University Press, 2000) ISBN 0-19-286207-3\n*",
         {
             "__type": "link",
             "url": "http://computemagazine.com/man-who-invented-world-wide-web-gives-new-definition/",
             "description": "Tim Berners-Lee Gives the Web a New Definition"
         },
+        "*",
         {
             "__type": "link",
             "url": "http://news.bbc.co.uk/2/hi/technology/4132752.stm",
             "description": "BBC2 Newsnight &ndash; Transcript of video interview of Berners-Lee on the read/write Web"
         },
+        "<!--",
         {
             "__type": "template",
             "name": "Dead link",
@@ -2042,6 +2220,7 @@
                 ]
             }
         },
+        "-->\n*",
         {
             "__type": "link",
             "url": "http://www.technologyreview.com/Infotech/13784/",
@@ -2062,6 +2241,7 @@
             "name": "Wikiquote",
             "content": {}
         },
+        "*",
         {
             "__type": "template",
             "name": "Twitter",
@@ -2069,16 +2249,19 @@
                 "timberners_lee": []
             }
         },
+        "*",
         {
             "__type": "link",
             "url": "http://identi.ca/timbl",
             "description": "timbl"
         },
+        "on",
         {
             "__type": "reference",
             "label": "identi.ca",
             "description": ""
         },
+        "*",
         {
             "__type": "template",
             "name": "TED",
@@ -2086,6 +2269,7 @@
                 "speakers/tim_berners_lee.html": []
             }
         },
+        "*",
         {
             "__type": "template",
             "name": "IMDb name",
@@ -2093,6 +2277,7 @@
                 "3805083": []
             }
         },
+        "*",
         {
             "__type": "template",
             "name": "Nndb",
@@ -2100,6 +2285,7 @@
                 "573/000023504": []
             }
         },
+        "*",
         {
             "__type": "template",
             "name": "Worldcat id",
@@ -2107,11 +2293,13 @@
                 "lccn-no99-10609": []
             }
         },
+        "*",
         {
             "__type": "link",
             "url": "http://www.w3.org/People/Berners-Lee/",
             "description": "Tim Berners-Lee"
         },
+        "on the W3C site\n*",
         {
             "__type": "link",
             "url": "http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html",

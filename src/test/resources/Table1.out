@@ -1,9 +1,16 @@
 Begin Document
+Text: 'Earlier versions of ASCII used the up-arrow instead of the '
 Reference: caret ''
+Text: ' (5E<sub>'
 Reference: hexadecimal 'hex'
+Text: '</sub>) and the left-arrow instead of the '
 Reference: underscore ''
+Text: ' (5F<sub>'
 Reference: hexadecimal 'hex'
+Text: '</sub>).<ref>'
 Link: http://www.wps.com/projects/codes/X3.4-1963/index.html 'ASA X3.4-1963'
+Text: '.</ref>
+'
 Begin Table
 Text: ' style="background:none; text-align:center;"
 '

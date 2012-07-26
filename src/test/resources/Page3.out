@@ -1,7 +1,12 @@
 Begin Document
 Begin Template: Other uses
 End Template: Other uses
+Text: '
+'
 Reference: File:Albedo-e hg.svg 'thumb|Percentage of diffusely reflected sun light in relation to various surface conditions of the Earth'
+Text: '
+
+'''Albedo''' ('
 Begin Template: IPAc-en
 k: icon
 k: æ
@@ -12,18 +17,40 @@ k: iː
 k: d
 k: oʊ
 End Template: IPAc-en
+Text: '), or ''reflection coefficient'', derived from '
 Reference: Latin ''
+Text: ' ''albedo'' "whiteness" (or reflected sunlight), in turn from ''albus'' "white", is the '
 Reference: diffuse reflection 'diffuse reflectivity'
+Text: ' or reflecting power of a surface. It is defined as the ratio of reflected radiation from the surface to incident radiation upon it. Being a '
 Reference: Dimensionless number 'dimensionless'
+Text: ' fraction, it may also be expressed as a percentage, and is measured on a scale from zero for no reflecting power of a perfectly black surface, to 1 for perfect reflection of a white surface.
+
+Albedo depends on the '
 Reference: frequency ''
+Text: ' of the radiation. When quoted unqualified, it usually refers to some appropriate average across the spectrum of '
 Reference: visible light ''
+Text: '. In general, the albedo depends on the directional distribution of incoming radiation.  Exceptions are '
 Reference: Lambertian ''
+Text: ' surfaces, which scatter radiation in all directions according to a cosine function, so their albedo does not depend on the incident distribution. In practice, a '
 Reference: bidirectional reflectance distribution function ''
+Text: ' (BRDF) may be required to characterize the scattering properties of a surface accurately, although the albedo is a very useful first approximation.
+
+The albedo is an important concept in '
 Reference: climatology ''
+Text: ' and '
 Reference: astronomy ''
+Text: ', as well as in calculating '
 Reference: reflectivity ''
+Text: ' of surfaces in LEED sustainable rating systems for buildings, computer graphics and computer vision. The average overall albedo of Earth, its ''planetary albedo'', is 30 to 35%, because of the covering by clouds, but varies widely locally across the surface, depending on the geological and environmental features.<ref>Environmental Encyclopedia, 3rd ed., Thompson Gale, 2003, ISBN 0-7876-5486-8</ref>
+
+The term was introduced into optics by '
 Reference: Johann Heinrich Lambert ''
+Text: ' in his 1760 work ''Photometria''.
+
+'
 Section [0] Terrestrial albedo
+Text: '
+'
 Begin Table
 Text: ' class="wikitable" style="float:right; margin:10px"
 '
@@ -193,7 +220,11 @@ Body Cell (11, 3)
 Text: '0.80–0.90<ref name="markvart" />
 '
 End Table
+Text: '
+Albedos of typical materials in visible light range from up to 0.9 for fresh snow, to about 0.04 for charcoal, one of the darkest substances. Deeply shadowed cavities can achieve an effective albedo approaching the zero of a '
 Reference: black body ''
+Text: '. When seen from a distance, the ocean surface has a low albedo, as do most forests, while desert areas have some of the highest albedos among landforms. Most land areas are in an albedo range of 0.1 to 0.4.<ref name'
+Text: '"PhysicsWorld">'
 Begin Template: cite web
 k: url
 Text: 'http://scienceworld.wolfram.com/physics/Albedo.html '
@@ -205,31 +236,98 @@ k: date
 k: accessdate
 Text: '2011-08-19'
 End Template: cite web
+Text: '</ref> The average albedo of the '
 Reference: Earth ''
+Text: ' is about 0.3.<ref name'
+Text: '"Goode" /> This is far higher than for the ocean primarily because of the contribution of clouds.
+
+Human activities have changed the albedo (via forest clearance and farming, for example) of various areas around the globe. However, quantification of this effect on the global scale is difficult.
+
+The classic example of albedo effect is the snow-temperature '
 Reference: feedback ''
+Text: '. If a snow-covered area warms and the snow melts, the albedo decreases, more sunlight is absorbed, and the temperature tends to increase. The converse is true: if snow forms, a cooling cycle happens. The intensity of the albedo effect depends on the size of the change in albedo and the amount of '
 Reference: insolation ''
+Text: '; for this reason it can be potentially very large in the tropics.
+
+'
 Reference: File:Ceres 2003 2004 clear sky total sky albedo.png 'thumb|200px|left|2003-2004 mean annual clear sky and total sky albedo'
+Text: '
+The Earth's surface albedo is regularly estimated via '
 Reference: Earth observation ''
+Text: ' satellite sensors such as '
 Reference: NASA ''
+Text: ''s '
 Reference: MODIS ''
+Text: ' instruments on board the '
 Reference: Terra (satellite) 'Terra'
+Text: ' and '
 Reference: Aqua (satellite) 'Aqua'
+Text: ' satellites. As the total amount of reflected radiation cannot be directly measured by satellite, a '
 Reference: mathematical model ''
+Text: ' of the BRDF is used to translate a sample set of satellite reflectance measurements into estimates of '
 Reference: directional-hemispherical reflectance ''
+Text: ' and bi-hemispherical reflectance.  (e.&nbsp;g.,
+.<ref name'
+Text: '"NASA" />)
+
+The Earth's average surface temperature due to its albedo and the '
 Reference: greenhouse effect ''
+Text: ' is currently about 15&nbsp;°C. For the frozen (more reflective) planet the average temperature is below −40&nbsp;°C<ref name'
+Text: '"washington" /> (If only all continents being completely covered by glaciers - the mean temperature is about 0&nbsp;°C<ref name'
+Text: '"clim-past" />). The simulation for (more absorptive) aquaplanet shows the average temperature close to 27&nbsp;°C.<ref name'
+Text: '"Smith Robin" />
+
+'
 Section [1] White-sky and black-sky albedo
+Text: '
+It has been shown that for many applications involving terrestrial albedo, the albedo at a particular solar '
 Reference: Celestial coordinate system 'zenith angle'
+Text: ' <math>'
+Text: 'heta_i}</math> can reasonably be approximated by the proportionate sum of two terms: the directional-hemispherical reflectance at that solar zenith angle, <math>'
+Text: 'ar \alpha(\theta_i)}</math>, and the bi-hemispherical reflectance, <math>\bar'
+Text: 'bar \alpha}</math> the proportion concerned being defined as the proportion of diffuse illumination <math>'
+Text: '</math>.
+
+Albedo <math>'
+Text: 'lpha}</math> can then be given as:
+
+:<math>'
+Text: 'lpha}'
+Text: ' (1-D) \bar \alpha(\theta_i) + D \bar'
+Text: 'bar \alpha}.</math>
+
+'
 Reference: Directional-hemispherical reflectance ''
+Text: ' is sometimes referred to as black-sky albedo and '
 Reference: bi-hemispherical reflectance ''
+Text: ' as white sky albedo. These terms are important because they allow the albedo to be calculated for any given illumination conditions from a knowledge of the intrinsic properties of the surface.<ref name'
+Text: '"BlueskyAlbedo" />
+
+'
 Section [0] Astronomical albedo
+Text: '
+The albedos of '
 Reference: planet ''
+Text: 's, '
 Reference: natural satellites 'satellites'
+Text: ' and '
 Reference: asteroid ''
+Text: 's can be used to infer much about their properties. The study of albedos, their dependence on wavelength, lighting angle ("phase angle"), and variation in time comprises a major part of the astronomical field of '
 Reference: photometry (astronomy) 'photometry'
+Text: '. For small and far objects that cannot be resolved by telescopes, much of what we know comes from the study of their albedos. For example, the absolute albedo can indicate the surface ice content of outer solar system objects, the variation of albedo with phase angle gives information about '
 Reference: regolith ''
+Text: ' properties, while unusually high radar albedo is indicative of high metallic content in '
 Reference: asteroid ''
+Text: 's.
+
+'
 Reference: Enceladus (moon) 'Enceladus'
+Text: ', a moon of Saturn, has one of the highest known albedos of any body in the Solar system, with 99% of EM radiation reflected. Another notable high-albedo body is '
 Reference: Eris (dwarf planet) 'Eris'
+Text: ', with an albedo of 0.96
+.<ref name'
+Text: '"sicardy">
+'
 Begin Template: cite journal
 
 k: title 
@@ -252,6 +350,9 @@ Text: '2011-09-14
 '
 End Template: cite journal
 
+Text: '
+</ref> Many small objects in the outer solar system<ref name'
+Text: '"tnoalbedo">'
 Begin Template: cite web
   
 k: date
@@ -277,7 +378,10 @@ k: archivedate
 Text: '22 October 2008<!--Added by DASHBot-->'
 End Template: cite web
   
+Text: '</ref> and '
 Reference: asteroid belt ''
+Text: ' have low albedos down to about 0.05.<ref name'
+Text: '"astalbedo">'
 Begin Template: cite web
   
 k: date
@@ -303,7 +407,10 @@ k: archivedate
 Text: '17 May 2008<!--Added by DASHBot-->'
 End Template: cite web
   
+Text: '</ref>  A typical '
 Reference: comet nucleus ''
+Text: ' has an albedo of 0.04.<ref name'
+Text: '"dark">'
 Begin Template: cite web
   
 k: date
@@ -333,17 +440,39 @@ Begin Template: dead link
 k: date
 Text: 'August 2011'
 End Template: dead link
+Text: '</ref>  Such a dark surface is thought to be indicative of a primitive and heavily '
 Reference: space weathering 'space weathered'
+Text: ' surface containing some '
 Reference: organic compound ''
+Text: 's.
+
+The overall albedo of the '
 Reference: Moon ''
+Text: ' is around 0.12, but it is strongly directional and non-Lambertian, displaying also a strong opposition effect.<ref name'
+Text: '"medkeff" /> While such reflectance properties are different from those of any terrestrial terrains, they are typical of the '
 Reference: regolith ''
+Text: ' surfaces of airless solar system bodies.
+
+Two common albedos that are used in astronomy are the (V-band) '
 Reference: geometric albedo ''
+Text: ' (measuring brightness when illumination comes from directly behind the observer) and the '
 Reference: Bond albedo ''
+Text: ' (measuring total proportion of electromagnetic energy reflected). Their values can differ significantly, which is a common source of confusion.
+
+In detailed studies, the directional reflectance properties of astronomical bodies are often expressed in terms of the five '
 Reference: Hapke parameters ''
+Text: ' which semi-empirically describe the variation of albedo with '
 Reference: phase angle (astronomy) 'phase angle'
+Text: ', including a characterization of the '
 Reference: opposition effect ''
+Text: ' of '
 Reference: regolith ''
+Text: ' surfaces.
+
+The correlation between astronomical (geometric) albedo, '
 Reference: Absolute magnitude#Absolute magnitude for planets (H) 'absolute magnitude'
+Text: ' and diameter is:<ref name'
+Text: '"bruton">'
 Begin Template: cite web
   
 k: title
@@ -366,8 +495,23 @@ k: archivedate
 Text: '10 December 2008<!--Added by DASHBot-->'
 End Template: cite web
   
+Text: '</ref>
+<math>A '
+Text: '\left ( \frac'
+Text: '29\times10^'
+Text: '/5}}'
+Text: ' \right ) ^2</math>,
+
+where <math>A</math> is the astronomical albedo, <math>D</math> is the diameter in kilometres, and ''H'' is the absolute magnitude.
+
+'
 Section [0] Examples of terrestrial albedo effects
+Text: '
+'
 Section [1] Illumination
+Text: '
+Although the albedo-temperature effect is best known in colder, whiter regions on Earth, the maximum albedo is actually found in the tropics where year-round illumination is greater.  The maximum is additionally in the northern hemisphere, varying between 3 and 12 degrees north.<ref name'
+Text: 'Winston>'
 Begin Template: cite journal
 k: first
 Text: 'Jay '
@@ -382,7 +526,14 @@ Text: '99(11) '
 k: pages
 Text: '818–827'
 End Template: cite journal
+Text: '</ref>  The minima are found in the subtropical regions of the north and south hemispheres, beyond which albedo increases without respect to illumination.<ref name'
+Text: 'Winston/>
+
+'
 Section [1] Small-scale effects
+Text: '
+Albedo works on a smaller scale, too. In sunlight, dark clothes absorb more heat and light-coloured clothes reflect it better, thus allowing some control over body temperature by exploiting the albedo effect of the colour of external clothing.<ref name'
+Text: '"ranknfile-ue">'
 Begin Template: cite web
 k: url
 Text: 'http://www.ranknfile-ue.org/h&s0897.html '
@@ -394,29 +545,78 @@ k: date
 k: accessdate
 Text: '2011-08-19'
 End Template: cite web
+Text: '</ref>
+
+'
 Section [1] Trees
+Text: '
+Because trees tend to have a low albedo, removing forests would tend to increase albedo and thereby could produce localized climate cooling (ignoring the lost evaporative cooling effect of trees). '
 Reference: Cloud feedback ''
+Text: 's further complicate the issue. In seasonally snow-covered zones, winter albedos of treeless areas are 10% to 50% higher than nearby forested areas because snow does not cover the trees as readily. '
 Reference: Deciduous trees ''
+Text: ' have an albedo value of about 0.15 to 0.18 while '
 Reference: coniferous trees ''
+Text: ' have a value of about 0.09 to 0.15.<ref name'
+Text: '"mmutrees" />
+
+Studies by the '
 Reference: Hadley Centre ''
+Text: ' have investigated the relative (generally warming) effect of albedo change and (cooling) effect of '
 Reference: carbon sequestration ''
+Text: ' on planting forests. They found that new forests in tropical and midlatitude areas tended to cool; new forests in high latitudes (e.g. Siberia) were neutral or perhaps warming.<ref name'
+Text: '"Betts" />
+
+'
 Section [1] Snow
+Text: '
+Snow albedos can be as high as 0.9; this, however, is for the ideal example: fresh deep snow over a featureless landscape. Over '
 Reference: Antarctica ''
+Text: ' they average a little more than 0.8.  If a marginally snow-covered area warms, snow tends to melt, lowering the albedo, and hence leading to more snowmelt (the ice-albedo '
 Reference: positive feedback ''
+Text: '). '
 Reference: Cryoconite ''
+Text: ', powdery windblown '
 Reference: dust ''
+Text: ' containing soot, sometimes reduces albedo on glaciers and ice sheets.<ref name '
+Text: ' "Nat. Geo">'
 Link: http://ngm.nationalgeographic.com/2010/06/melt-zone/jenkins-text/3 '"Changing Greenland - Melt Zone"'
+Text: ' page 3, of 4, article by Mark Jenkins in '''
 Reference: National Geographic (magazine) 'National Geographic'
+Text: ''' June 2010, accessed July 8, 2010</ref>
+
+'
 Section [1] Water
+Text: '
+Water reflects light very differently from typical terrestrial materials. The reflectivity of a water surface is calculated using the '
 Reference: Fresnel equations ''
+Text: ' (see graph).
+'
 Reference: File:water reflectivity.jpg 'thumb|right|250px|Reflectivity of smooth water at 20&nbsp;°C (refractive index=1.333)'
+Text: '
+At the scale of the wavelength of light even wavy water is always smooth so the light is reflected in a locally '
 Reference: specular reflection 'specular manner'
+Text: ' (not '
 Reference: Diffuse reflection 'diffusely'
+Text: '). The glint of light off water is a commonplace effect of this. At small '
 Reference: angle of incidence 'angles of incident'
+Text: ' light, '
 Reference: waviness ''
+Text: ' results in reduced reflectivity because of the steepness of the reflectivity-vs.-incident-angle curve and a locally increased average incident angle.<ref name'
+Text: '"Fresnel" />
+
+Although the reflectivity of water is very low at low and medium angles of incident light, it increases tremendously at high angles of incident light such as occur on the illuminated side of the Earth near the '
 Reference: terminator (solar) 'terminator'
+Text: ' (early morning, late afternoon and near the poles). However, as mentioned above, waviness causes an appreciable reduction. Since the light specularly reflected from water does not usually reach the viewer, water is usually considered to have a very low albedo in spite of its high reflectivity at high angles of incident light.
+
+Note that white caps on waves look white (and have high albedo) because the water is foamed up, so there are many superimposed bubble surfaces which reflect, adding up their reflectivities. Fresh ‘black’ ice exhibits Fresnel reflection.
+
+'
 Section [1] Clouds
+Text: '
+'
 Reference: Cloud albedo ''
+Text: ' has substantial influence over atmospheric temperatures. Different types of clouds exhibit different reflectivity, theoretically ranging in albedo from a minimum of near 0 to a maximum approaching 0.8. "On any given day, about half of Earth is covered by clouds, which reflect more sunlight than land and water. Clouds keep Earth cool by reflecting sunlight, but they can also serve as blankets to trap warmth."<ref name'
+Text: '"livescience">'
 Begin Template: cite web
 k: url
 Text: 'http://www.livescience.com/environment/060124_earth_albedo.html '
@@ -429,7 +629,13 @@ Text: '2006-01-24 '
 k: accessdate
 Text: '2011-08-19'
 End Template: cite web
+Text: '</ref>
+
+Albedo and climate in some areas are affected by artificial clouds, such as those created by the '
 Reference: contrail ''
+Text: 's of heavy commercial airliner traffic.<ref name'
+Text: '"uww" /> A study following the burning of the Kuwaiti oil fields during Iraqi occupation showed that temperatures under the burning oil fires were as much as 10&nbsp;°C colder than temperatures several miles away under clear skies.<ref name'
+Text: '"harvard">'
 Begin Template: cite web
 k: url
 Text: 'http://adsabs.harvard.edu/abs/1992JGR....9714565C '
@@ -442,10 +648,19 @@ Text: '1991-05-30 '
 k: accessdate
 Text: '2011-08-19'
 End Template: cite web
+Text: '</ref>
+
+'
 Section [1] Aerosol effects
+Text: '
+'
 Reference: Aerosols ''
+Text: ' (very fine particles/droplets in the atmosphere) have both direct and indirect effects on the Earth’s radiative balance. The direct (albedo) effect is generally to cool the planet; the indirect effect (the particles act as '
 Reference: cloud condensation nuclei ''
+Text: ' and thereby change '
 Reference: cloud ''
+Text: ' properties) is less certain.<ref name'
+Text: '"girda">'
 Begin Template: cite web
 k: url
 Text: 'http://www.grida.no/climate/ipcc_tar/wg1/231.htm#671 '
@@ -461,9 +676,23 @@ Text: 'http://web.archive.org/web/20110629175429/http://www.grida.no/climate/ipc
 k: archivedate
 Text: '29 June 2011<!--Added by DASHBot-->'
 End Template: cite web
+Text: '</ref> As per <ref name'
+Text: '"DOMINICK" /> the effects are:
+<blockquote>
+<!-- Aerosol radiative forcing. -->
+* ''Aerosol direct effect.'' Aerosols directly scatter and absorb radiation. The scattering of radiation causes atmospheric cooling, whereas absorption can cause atmospheric warming.
+* ''Aerosol indirect effect.'' Aerosols modify the properties of clouds through a subset of the aerosol population called '
 Reference: cloud condensation nuclei ''
+Text: '. Increased nuclei concentrations lead to increased cloud droplet number concentrations, which in turn leads to increased cloud albedo, increased light scattering and radiative cooling (''first indirect effect''), but also leads to reduced precipitation efficiency and increased lifetime of the cloud (''second indirect effect'').
+</blockquote>
+
+'
 Section [1] Black carbon
+Text: '
+Another albedo-related effect on the climate is from black carbon particles. The size of this effect is difficult to quantify: the '
 Reference: Intergovernmental Panel on Climate Change ''
+Text: ' estimates that the global mean radiative forcing for black carbon aerosols from fossil fuels is +0.2 W m<sup>−2</sup>, with a range +0.1 to +0.4 W m<sup>−2</sup>.<ref name'
+Text: '"girda 1">'
 Begin Template: cite web
 k: url
 Text: 'http://www.grida.no/climate/ipcc_tar/wg1/233.htm '
@@ -479,22 +708,50 @@ Text: 'http://web.archive.org/web/20110629180154/http://www.grida.no/climate/ipc
 k: archivedate
 Text: '29 June 2011<!--Added by DASHBot-->'
 End Template: cite web
+Text: '</ref>
+
+'
 Section [0] Other types of albedo
+Text: '
+'
 Reference: Single scattering albedo ''
+Text: ' is used to define scattering of electromagnetic waves on small particles. It depends on properties of the material ('
 Reference: refractive index ''
+Text: '); the size of the particle or particles; and the wavelength of the incoming radiation.
+
+'
 Section [0] See also
+Text: '
+'
 Begin Template: div col
 k: colwidth
 Text: '30em'
 End Template: div col
+Text: '
+* '
 Reference: Global dimming ''
+Text: '
+* '
 Reference: Irradiance ''
+Text: '
+* '
 Reference: Polar see-saw ''
+Text: '
+* '
 Reference: Solar radiation management ''
+Text: '
+* '
 Reference: Daisyworld ''
+Text: '
+'
 Begin Template: div col end
 End Template: div col end
+Text: '
+
+'
 Section [0] References
+Text: '
+'
 Begin Template: Reflist
 k: 30em
 k: refs
@@ -741,78 +998,225 @@ Text: '</ref>
 
 '
 End Template: Reflist
+Text: '
+
+'
 Section [0] External links
+Text: '
+'
 Begin Template: wiktionary
 End Template: wiktionary
+Text: '
+*'
 Link: http://www.albedo-project.org/ 'Official Website of Albedo Project'
+Text: '
+*'
 Link: http://www-c4.ucsd.edu/gap/ 'Global Albedo Project (Center for Clouds, Chemistry, and Climate)'
+Text: '
+*'
 Link: http://www.eoearth.org/article/Albedo 'Albedo - Encyclopedia of Earth'
+Text: '
+*'
 Link: http://www-modis.bu.edu/brdf/product.html 'NASA MODIS BRDF/albedo product site'
+Text: '
+*'
 Link: http://www.eumetsat.int/Home/Main/Access_to_Data/Meteosat_Meteorological_Products/Product_List/SP_1125489019643?l=en 'Surface albedo derived from Meteosat observations'
+Text: '
+*'
 Link: http://jeff.medkeff.com/astro/lunar/obs_tech/albedo.htm 'A discussion of Lunar albedos'
+Text: '
+'
 Begin Template: Global warming
 End Template: Global warming
+Text: '
+
+'
 Reference: Category:Climate forcing ''
+Text: '
+'
 Reference: Category:Climatology ''
+Text: '
+'
 Reference: Category:Electromagnetic radiation ''
+Text: '
+'
 Reference: Category:Radiometry ''
+Text: '
+'
 Reference: Category:Scattering, absorption and radiative transfer (optics) ''
+Text: '
+'
 Reference: Category:Radiation ''
+Text: '
+
+'
 Reference: als:Albedo ''
+Text: '
+'
 Reference: ar:بياض ''
+Text: '
+'
 Reference: an:Albedo ''
+Text: '
+'
 Reference: ast:Albedu ''
+Text: '
+'
 Reference: bn:প্রতিফলন অনুপাত ''
+Text: '
+'
 Reference: bg:Албедо ''
+Text: '
+'
 Reference: bs:Albedo ''
+Text: '
+'
 Reference: ca:Albedo ''
+Text: '
+'
 Reference: cs:Albedo ''
+Text: '
+'
 Reference: cy:Albedo ''
+Text: '
+'
 Reference: da:Albedo ''
+Text: '
+'
 Reference: de:Albedo ''
+Text: '
+'
 Reference: et:Albeedo ''
+Text: '
+'
 Reference: el:Λευκαύγεια ''
+Text: '
+'
 Reference: es:Albedo ''
+Text: '
+'
 Reference: eo:Albedo ''
+Text: '
+'
 Reference: eu:Albedo ''
+Text: '
+'
 Reference: fa:سپیدایی ''
+Text: '
+'
 Reference: fr:Albédo ''
+Text: '
+'
 Reference: gl:Albedo ''
+Text: '
+'
 Reference: ko:반사율 ''
+Text: '
+'
 Reference: hy:Ալբեդո ''
+Text: '
+'
 Reference: hi:ऐल्बीडो ''
+Text: '
+'
 Reference: hr:Albedo ''
+Text: '
+'
 Reference: id:Albedo ''
+Text: '
+'
 Reference: it:Albedo ''
+Text: '
+'
 Reference: he:אלבדו ''
+Text: '
+'
 Reference: ka:ალბედო ''
+Text: '
+'
 Reference: kk:Альбедо ''
+Text: '
+'
 Reference: ht:Albedo ''
+Text: '
+'
 Reference: la:Albedo ''
+Text: '
+'
 Reference: lv:Albedo ''
+Text: '
+'
 Reference: lb:Albedo ''
+Text: '
+'
 Reference: lt:Albedas ''
+Text: '
+'
 Reference: hu:Albedó ''
+Text: '
+'
 Reference: mk:Албедо ''
+Text: '
+'
 Reference: nl:Albedo ''
+Text: '
+'
 Reference: ja:アルベド ''
+Text: '
+'
 Reference: no:Albedo ''
+Text: '
+'
 Reference: nn:Albedo ''
+Text: '
+'
 Reference: nds:Albedo ''
+Text: '
+'
 Reference: pl:Albedo ''
+Text: '
+'
 Reference: pt:Albedo ''
+Text: '
+'
 Reference: ro:Albedo ''
+Text: '
+'
 Reference: ru:Альбедо ''
+Text: '
+'
 Reference: sq:Albedoja ''
+Text: '
+'
 Reference: simple:Albedo ''
+Text: '
+'
 Reference: sk:Albedo ''
+Text: '
+'
 Reference: sl:Albedo ''
+Text: '
+'
 Reference: sr:Албедо ''
+Text: '
+'
 Reference: sh:Albedo ''
+Text: '
+'
 Reference: fi:Albedo ''
+Text: '
+'
 Reference: sv:Albedo ''
+Text: '
+'
 Reference: ta:வெண் எகிர்சிதறல் ''
+Text: '
+'
 Reference: tr:Yansıtabilirlik ''
+Text: '
+'
 Reference: uk:Альбедо ''
+Text: '
+'
 Reference: zh:反照率 ''
 End Document

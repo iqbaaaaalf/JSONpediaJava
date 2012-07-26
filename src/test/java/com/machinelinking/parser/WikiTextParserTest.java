@@ -32,6 +32,7 @@ public class WikiTextParserTest {
                 "this is an internal link: [[Princeton, New Jersey|Princeton]] ending here.",
 
                 "Begin Document\n" +
+                "Text: 'this is an internal link: '\n" +
                 "Reference: Princeton, New Jersey 'Princeton'\n" +
                 "End Document\n"
         );
@@ -114,8 +115,12 @@ public class WikiTextParserTest {
                 "Begin Template: Redirect\n" +
                 "k: Einstein\n" +
                 "End Template: Redirect\n" +
+                "Text: '\n" +
+                "'\n" +
                 "Begin Template: Good article\n" +
                 "End Template: Good article\n" +
+                "Text: '\n" +
+                "'\n" +
                 "Begin Template: Infobox scientist\n" +
                 "\n" +
                 "k: name        \n" +
@@ -149,19 +154,23 @@ public class WikiTextParserTest {
                 "Begin Template: Redirect\n" +
                 "k: Einstein\n" +
                 "End Template: Redirect\n" +
+                "Text: '\n" +
+                "'\n" +
                 "Begin Template: Good article\n" +
                 "End Template: Good article\n" +
+                "Text: '\n" +
+                "'\n" +
                 "Begin Template: Infobox scientist\n" +
                 "\n" +
                 "k: name        \n" +
-                "Text: 'Albert Einstein\n'" +
-                "\n" +
+                "Text: 'Albert Einstein\n" +
+                "'\n" +
                 "k: image       \n" +
-                "Text: 'Einstein 1921 portrait2.jpg\n'" +
-                "\n" +
+                "Text: 'Einstein 1921 portrait2.jpg\n" +
+                "'\n" +
                 "k: caption     \n" +
-                "Text: 'Albert Einstein in 1921\n'" +
-                "\n" +
+                "Text: 'Albert Einstein in 1921\n" +
+                "'\n" +
                 "k: birth_date  \n" +
                 "Begin Template: Birth date\n" +
                 "k: df\n" +
@@ -172,8 +181,8 @@ public class WikiTextParserTest {
                 "Text: '3'\n" +
                 "k: 14\n" +
                 "End Template: Birth date\n" +
-                "Text: '\n'" +
-                "\n" +
+                "Text: '\n" +
+                "'\n" +
                 "End Template: Infobox scientist\n" +
                 "\n" +
                 "End Document\n"
@@ -198,8 +207,12 @@ public class WikiTextParserTest {
                "Begin Template: Redirect\n" +
                "k: Einstein\n" +
                "End Template: Redirect\n" +
+               "Text: '\n" +
+               "'\n" +
                "Begin Template: Good article\n" +
                "End Template: Good article\n" +
+               "Text: '\n" +
+               "'\n" +
                "Begin Template: Infobox scientist\n" +
                "\n" +
                "k: name          \n" +
@@ -259,8 +272,12 @@ public class WikiTextParserTest {
                 "Begin Template: Redirect\n" +
                 "k: Einstein\n" +
                 "End Template: Redirect\n" +
+                "Text: '\n" +
+                "'\n" +
                 "Begin Template: Good article\n" +
                 "End Template: Good article\n" +
+                "Text: '\n" +
+                "'\n" +
                 "Begin Template: Infobox scientist\n" +
                 "\n" +
                 "k: name        \n" +
@@ -587,6 +604,7 @@ public class WikiTextParserTest {
             "<math>\\bar{ \\bar \\alpha}</math> ",
 
             "Begin Document\n" +
+            "Text: '<math>\\bar'\n" +
             "End Document\n"
         );
     }
@@ -612,8 +630,11 @@ public class WikiTextParserTest {
                 "k: accessdate\n" +
                 "Text: '2011-08-20'\n" +
                 "End Template: cite web\n" +
+                "Text: '</ref> From time to time it has been proposed as a replacement for '''\n" +
                 "Reference: The Star-Spangled Banner ''\n" +
+                "Text: ''' as the national anthem, including television '\n" +
                 "Reference: sign-off ''\n" +
+                "Text: 's.'\n" +
                 "Begin Template: citation needed\n" +
                 "k: date\n" +
                 "Text: 'March 2012'\n" +

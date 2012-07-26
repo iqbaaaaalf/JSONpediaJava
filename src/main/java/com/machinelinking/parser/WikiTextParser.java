@@ -28,6 +28,8 @@ public class WikiTextParser {
 
     private static final Pattern URL_PATTERN = Pattern.compile("^https?://.*");
 
+    final StringBuilder externalCharsSB = new StringBuilder();
+
     private Reader r;
 
     private int row = 1, col = 0;
@@ -154,12 +156,18 @@ public class WikiTextParser {
     private void consumeChars() throws IOException {
         mark();
         char c;
+        externalCharsSB.delete(0, externalCharsSB.length());
         while(true) {
             c = read();
             if(c != '{' && c != '[' && c != '=') {
                 mark();
+                externalCharsSB.append(c);
             } else {
                 reset();
+                if(externalCharsSB.length() > 0) {
+                    handler.text(externalCharsSB.toString());
+                    externalCharsSB.delete(0, externalCharsSB.length());
+                }
                 break;
             }
         }
