@@ -12,7 +12,6 @@ import java.util.regex.Pattern;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-// TODO HIGH : listItem is not emitted !!
 // TODO HIGH: error detection is not working, see BrokenTemplate1 wikitext
 public class WikiTextParser {
 
@@ -28,10 +27,9 @@ public class WikiTextParser {
 
     private static final Pattern URL_PATTERN = Pattern.compile("^https?://.*");
 
-    final StringBuilder externalCharsSB = new StringBuilder();
-
     private Reader r;
 
+    // TODO: fix row / col management.
     private int row = 1, col = 0;
 
     private char lastRead;
@@ -139,6 +137,17 @@ public class WikiTextParser {
         r.reset();
     }
 
+    private void flushText(StringBuilder sb) {
+        if (sb.length() > 0) {
+            handler.text( sb.toString() );
+            sb.delete(0, sb.length());
+        }
+    }
+
+    private void clear(StringBuilder sb) {
+        sb.delete(0, sb.length());
+    }
+
     private void consumeSpaces() throws IOException {
         mark();
         char c;
@@ -153,10 +162,11 @@ public class WikiTextParser {
         }
     }
 
+    private final StringBuilder externalCharsSB = new StringBuilder();
     private void consumeChars() throws IOException {
         mark();
+        clear(externalCharsSB);
         char c;
-        externalCharsSB.delete(0, externalCharsSB.length());
         while(true) {
             c = read();
             if(c != '{' && c != '[' && c != '=') {
@@ -166,38 +176,40 @@ public class WikiTextParser {
                 reset();
                 if(externalCharsSB.length() > 0) {
                     handler.text(externalCharsSB.toString());
-                    externalCharsSB.delete(0, externalCharsSB.length());
+                    clear(externalCharsSB);
                 }
                 break;
             }
         }
     }
 
+    private final StringBuilder templateHeaderSB = new StringBuilder();
     private String readTemplateHeader() throws IOException {
-        StringBuilder sb = new StringBuilder();
+        clear(templateHeaderSB);
         char c;
         while(true) {
             mark();
             c = read();
             if(c != '|' && c != '}') {
-                sb.append(c);
+                templateHeaderSB.append(c);
             } else {
                 if(c == '}')
                     reset();
                 break;
             }
         }
-        return sb.toString();
+        return templateHeaderSB.toString();
     }
 
+    private final StringBuilder propertyKeySB = new StringBuilder();
     private String readPropertyKey() throws IOException {
-        StringBuilder sb = new StringBuilder();
+        clear(propertyKeySB);
         char c;
         while(true) {
             mark();
             c = read();
             if(c != '=' && c != '|' && c != '}' ) {
-                sb.append(c);
+                propertyKeySB.append(c);
                 mark();
             } else {
                 if(c != '=')
@@ -205,18 +217,11 @@ public class WikiTextParser {
                 break;
             }
         }
-        return sb.toString();
-    }
-
-    private void flushText(StringBuilder sb) {
-        if (sb.length() > 0) {
-            handler.text( sb.toString() );
-            sb.delete(0, sb.length());
-        }
+        return propertyKeySB.toString();
     }
 
     private int readPropertyValue(String[] lookAhead, boolean resetSequence) throws IOException {
-        StringBuilder sb = new StringBuilder();
+        final StringBuilder sb = new StringBuilder();
         char c;
         while(true) {
             mark();
@@ -333,36 +338,38 @@ public class WikiTextParser {
         }
     }
 
+    private final StringBuilder referenceLabelSB = new StringBuilder();
     private String readReferenceLabel() throws IOException {
-        StringBuilder sb = new StringBuilder();
+        clear(referenceLabelSB);
         char c;
         while(true) {
             mark();
             c = read();
             if(c != '|' && c != ']') {
-                sb.append(c);
+                referenceLabelSB.append(c);
             } else {
                 if(c == ']') reset();
                 break;
             }
         }
-        return sb.toString();
+        return referenceLabelSB.toString();
     }
 
+    private final StringBuilder referenceDescriptionSB = new StringBuilder();
     private String readReferenceDescription() throws IOException {
-        StringBuilder sb = new StringBuilder();
+        clear(referenceDescriptionSB);
         char c;
         while(true) {
             mark();
             c = read();
             if(c != ']') {
-                sb.append(c);
+                referenceDescriptionSB.append(c);
             } else {
                 reset();
                 break;
             }
         }
-        return sb.toString();
+        return referenceDescriptionSB.toString();
     }
 
     private void readReference() throws IOException {
@@ -372,8 +379,9 @@ public class WikiTextParser {
         handler.reference(referenceLabel, referenceDescription);
     }
 
+    private final StringBuilder linkURLSB = new StringBuilder();
     private String readLinkURL() throws IOException {
-        StringBuilder sb = new StringBuilder();
+        clear(linkURLSB);
         char c;
         while(true) {
             mark();
@@ -383,17 +391,18 @@ public class WikiTextParser {
                 break;
             }
             if(c != ' ' && c != '\t') {
-                sb.append(c);
+                linkURLSB.append(c);
             } else {
                 mark();
                 break;
             }
         }
-        return sb.toString();
+        return linkURLSB.toString();
     }
 
+    private final StringBuilder linkDescriptionSB = new StringBuilder();
     private String readLinkDescription() throws IOException {
-        StringBuilder sb = new StringBuilder();
+        clear(linkDescriptionSB);
         char c;
         int ahead;
         while(true) {
@@ -404,9 +413,9 @@ public class WikiTextParser {
                 break;
             }
             c = read();
-            sb.append(c);
+            linkDescriptionSB.append(c);
         }
-        return sb.toString();
+        return linkDescriptionSB.toString();
     }
 
     private void readLink() throws IOException {
@@ -453,6 +462,7 @@ public class WikiTextParser {
         }
     }
 
+    private final StringBuilder sectionSB = new StringBuilder();
     private void readSection() throws IOException {
         mark();
         char c;
@@ -471,7 +481,7 @@ public class WikiTextParser {
         }
 
         // Read section content.
-        final StringBuilder sb = new StringBuilder();
+        clear(sectionSB);
         while(true) {
             c = read();
             if(c == '=' && assertChar('=')) {
@@ -479,7 +489,7 @@ public class WikiTextParser {
                 break;
             } else{
                 mark();
-                sb.append(c);
+                sectionSB.append(c);
             }
         }
 
@@ -495,7 +505,7 @@ public class WikiTextParser {
             }
         }
 
-        handler.section(sb.toString(), sectionLevel);
+        handler.section(sectionSB.toString(), sectionLevel);
     }
 
     private int lookAhead(String[] sequences) throws IOException {
