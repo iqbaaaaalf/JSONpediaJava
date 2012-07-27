@@ -3,6 +3,10 @@ package com.machinelinking.render;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,7 +15,9 @@ import java.util.Map;
  */
 public class ReferenceNodeRender implements NodeRender {
 
-    public static final String[] IMAGE_EXT = new String[] {"jpg"};
+    public static final String[] IMAGE_EXT = new String[] {"jpg", "png"};
+
+    private static final String FILE_PREFIX = "File:";
 
     private static final String ALT_PREFIX = "alt=";
 
@@ -58,7 +64,7 @@ public class ReferenceNodeRender implements NodeRender {
                     break;
                 }
             }
-            writer.image(target, alt);
+            writer.image(imageURLToResource(target), alt);
         } else {
             writer.anchor(target, label, true);
         }
@@ -73,6 +79,46 @@ public class ReferenceNodeRender implements NodeRender {
             }
         }
         return false;
+    }
+
+    private String imageURLToResource(String fileImg) {
+        final int fileStart = fileImg.lastIndexOf('/') + 1;
+        final String file = fileImg.substring(fileStart + FILE_PREFIX.length());
+        final MessageDigest messageDigest;
+        try {
+            messageDigest = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException nsae) {
+            throw new IllegalStateException(nsae);
+        }
+
+        final String filename = file.replaceAll(" ", "_");
+        messageDigest.update(filename.getBytes());
+        final String digest =  md5bytesToHex( messageDigest.digest() );
+        final String urlEncFile;
+        final String folder;
+        try {
+            urlEncFile = URLEncoder.encode(filename, "utf-8");
+            folder = String.format(
+                "%c/%c%c/%s/220px-%s",
+                 digest.charAt(0),
+                 digest.charAt(0), digest.charAt(1),
+                 urlEncFile,
+                 urlEncFile
+            );
+        } catch (UnsupportedEncodingException uee) {
+            throw new IllegalStateException(uee);
+        }
+
+        final String location = folder.endsWith(".png") ? "en" : "commons";
+        return String.format("http://upload.wikimedia.org/wikipedia/%s/thumb/%s", location, folder);
+    }
+
+    private String md5bytesToHex(byte[] md5) {
+        StringBuilder sb = new StringBuilder();
+        for (byte aMd5 : md5) {
+            sb.append(Integer.toString((aMd5 & 0xff) + 0x100, 16).substring(1));
+        }
+        return sb.toString();
     }
 
 }
