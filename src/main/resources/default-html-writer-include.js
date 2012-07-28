@@ -1,35 +1,36 @@
 $(function(){
-    var jsonPathVisible      = true;
+    var jsonPathVisible      = false;
     var defaultRenderVisible = true;
 
-    function setJsonPathButtonLabel(visible) {
-        $('#toggle-jsonpath').attr('value', (visible ? 'Hide' : 'Show') + ' JSONPath')
-    }
-
-    function setDefaultRenderButtonLabel(visible) {
-        $('#toggle-defaultrender').attr('value', (visible ? 'Hide' : 'Show') + ' Default Render')
-    }
-
-    setJsonPathButtonLabel(jsonPathVisible);
-    $('#toggle-jsonpath').click(function(){
-        if(jsonPathVisible) {
-            $('.jsonpath').hide();
-        } else {
+    function setJsonPathVisible(visible) {
+        $('#toggle-jsonpath').attr('value', (visible ? 'Hide' : 'Show') + ' JSONPath');
+        if(visible) {
             $('.jsonpath').show();
+        } else {
+            $('.jsonpath').hide();
         }
+    }
+
+    function setDefaultRenderVisible(visible) {
+        $('#toggle-defaultrender').attr('value', (visible ? 'Hide' : 'Show') + ' Default Render');
+        if (visible) {
+            $('.defaultrender').show();
+        } else {
+            $('.defaultrender').hide();
+        }
+
+    }
+
+    setJsonPathVisible(jsonPathVisible);
+    $('#toggle-jsonpath').click(function(){
         jsonPathVisible = !jsonPathVisible;
-        setJsonPathButtonLabel(jsonPathVisible);
+        setJsonPathVisible(jsonPathVisible);
     });
 
-    setDefaultRenderButtonLabel(defaultRenderVisible);
+    setDefaultRenderVisible(defaultRenderVisible);
     $('#toggle-defaultrender').click(function(){
-        if(defaultRenderVisible) {
-            $('.defaultrender').hide();
-        } else {
-            $('.defaultrender').show();
-        }
         defaultRenderVisible = !defaultRenderVisible;
-        setDefaultRenderButtonLabel(defaultRenderVisible);
+        setDefaultRenderVisible(defaultRenderVisible);
     });
 
     modified = [];
