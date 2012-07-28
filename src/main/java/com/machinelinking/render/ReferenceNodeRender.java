@@ -15,6 +15,8 @@ import java.util.Map;
  */
 public class ReferenceNodeRender implements NodeRender {
 
+    public static final int DEFAULT_IMAGE_WIDTH = 110;
+
     public static final String[] IMAGE_EXT = new String[] {"jpg", "png"};
 
     private static final String FILE_PREFIX = "File:";
@@ -99,11 +101,12 @@ public class ReferenceNodeRender implements NodeRender {
         try {
             urlEncFile = URLEncoder.encode(filename, "utf-8");
             folder = String.format(
-                "%c/%c%c/%s/220px-%s",
-                 digest.charAt(0),
-                 digest.charAt(0), digest.charAt(1),
-                 urlEncFile,
-                 urlEncFile
+                    "%c/%c%c/%s/%dpx-%s",
+                    digest.charAt(0),
+                    digest.charAt(0), digest.charAt(1),
+                    urlEncFile,
+                    DEFAULT_IMAGE_WIDTH,
+                    urlEncFile
             );
         } catch (UnsupportedEncodingException uee) {
             throw new IllegalStateException(uee);
