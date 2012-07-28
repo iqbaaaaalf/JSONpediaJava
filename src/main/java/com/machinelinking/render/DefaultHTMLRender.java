@@ -36,7 +36,8 @@ public class DefaultHTMLRender implements HTMLRender {
         put("class", JSON_PATH_SELECTOR);
     }};
 
-    private static String DEFAULT_RENDER_BG_COLOR = "background-color: #8A3737;";
+    private static String DEFAULT_RENDER_BG_COLOR        = "background-color: #8A3737;";
+    private static String DEFAULT_RENDER_HIDDEN_BG_COLOR = "background-color: #8A5757;";
 
     private static final Map<String,String> DEFAULT_RENDER_DIV = new HashMap<String,String>(){{
         put("style", DEFAULT_RENDER_BG_COLOR);
@@ -44,7 +45,7 @@ public class DefaultHTMLRender implements HTMLRender {
 
     private static final Map<String,String> DEFAULT_RENDER_HIDDEN_DIV = new HashMap<String,String>(){{
         put("class", DEFAULT_RENDER_SELECTOR);
-        put("style", DEFAULT_RENDER_BG_COLOR + "visibility:none");
+        put("style", DEFAULT_RENDER_HIDDEN_BG_COLOR + "visibility:none");
     }};
 
     private final Map<String,List<NodeRender>> nodeRenders     = new HashMap<>();
