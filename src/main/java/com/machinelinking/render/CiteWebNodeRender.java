@@ -30,7 +30,7 @@ public class CiteWebNodeRender implements NodeRender {
     @Override
     public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
         writer.openTag("div", CITEWEB_DIV_ATTR);
-        writer.openTable("Cite Web");
+        writer.openTable("Cite Web", null);
         JsonNode value;
         final JsonNode content = node.get(TemplateConstants.TEMPLATE_CONTENT);
         for(String field: TEMPLATE_FIELDS) {

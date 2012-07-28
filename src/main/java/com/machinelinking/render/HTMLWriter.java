@@ -30,11 +30,23 @@ public interface HTMLWriter {
 
     void image(String url, String text) throws IOException;
 
-    void openTable(String title) throws IOException;
+    void openTable(String title, Map<String,String> attributes) throws IOException;
+
+    void openTableRow() throws IOException;
+
+    void closeTableRow() throws IOException;
+
+    void openTableCol() throws IOException;
+
+    void closeTableCol() throws IOException;
 
     void tableRow(String... cols) throws IOException;
 
     void closeTable() throws IOException;
+
+    void br() throws IOException;
+
+    void em() throws IOException;
 
     void flush() throws IOException;
 

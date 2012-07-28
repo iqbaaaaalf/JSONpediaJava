@@ -5,6 +5,7 @@ import org.apache.commons.io.IOUtils;
 import java.io.IOException;
 import java.io.Writer;
 import java.net.URLEncoder;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
@@ -110,28 +111,62 @@ public class DefaultHTMLWriter implements HTMLWriter {
     }
 
     @Override
-    public void openTable(String title) throws IOException {
-        writer.append("<table style=\"border: solid 1px\">");
+    public void openTable(String title, Map<String,String> attributes) throws IOException {
+        final Map<String,String> finalAttrs = new HashMap<>(
+                attributes == null ? Collections.<String,String>emptyMap() : attributes
+        );
+        merge("style", "border: 1px solid black", finalAttrs);
+        openTag("table", finalAttrs);
         writer.append("<caption>");
         writer.append(title);
         writer.append("</caption>");
     }
 
     @Override
-    public void tableRow(String... cols) throws IOException {
-        if(cols.length == 0) return;
+    public void openTableRow() throws IOException {
         writer.append("<tr>");
-        for(String col : cols) {
-            writer.append("<td>");
-            writer.append(col);
-            writer.append("</td>");
-        }
+    }
+
+    @Override
+    public void closeTableRow() throws IOException {
         writer.append("</tr>");
     }
 
     @Override
+    public void openTableCol() throws IOException {
+        writer.append("<td>");
+    }
+
+    @Override
+    public void closeTableCol() throws IOException {
+        writer.append("</td>");
+    }
+
+    @Override
+    public void tableRow(String... cols) throws IOException {
+        if(cols.length == 0) return;
+        openTableRow();
+        for(String col : cols) {
+            openTableCol();
+            writer.append(col);
+            closeTableCol();
+        }
+        closeTableRow();
+    }
+
+    @Override
     public void closeTable() throws IOException {
-        writer.append("</table>");
+        closeTag();
+    }
+
+    @Override
+    public void br() throws IOException {
+        writer.append("<br/>");
+    }
+
+    @Override
+    public void em() throws IOException {
+        openTag("em");
     }
 
     @Override
@@ -141,6 +176,18 @@ public class DefaultHTMLWriter implements HTMLWriter {
 
     private String escapeStringMarkup(String in) {
         return in.replace("<", "&lt;").replace(">", "&gt").replace("&nbsp", " ");
+    }
+
+    private void merge(String key, String val, Map<String,String> inOut) {
+        if(inOut.containsKey(key)) {
+            if("style".equals(key)) {
+                inOut.put(key, inOut.get(key) + "; " + val);
+            } else {
+                throw new IllegalArgumentException("Unsupported attribute merge for key " + key);
+            }
+        } else {
+            inOut.put(key, val);
+        }
     }
 
 }

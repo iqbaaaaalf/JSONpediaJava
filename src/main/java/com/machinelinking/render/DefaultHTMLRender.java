@@ -25,11 +25,11 @@ public class DefaultHTMLRender implements HTMLRender {
     private static final String DEFAULT_RENDER_SELECTOR = "defaultrender";
 
     private static final Map<String,String> OBJECT_DIV_STYLE = new HashMap<String, String>(){{
-        put("style","border: 1px solid");
+        put("style","border: 1px solid; padding 5px;");
     }};
 
     private static final Map<String,String> LIST_DIV_STYLE = new HashMap<String, String>(){{
-        put("style","margin:5px");
+        put("style","margin:5px; padding 5px;");
     }};
 
     private static final Map<String,String> JSON_PATH_CLASS = new HashMap<String, String>(){{
@@ -111,19 +111,17 @@ public class DefaultHTMLRender implements HTMLRender {
 
         if(targetRender != null) {
             targetRender.render(rootRender, node, writer);
-            writer.openTag("div", DEFAULT_RENDER_HIDDEN_DIV);
-        } else {
-            writer.openTag("div", DEFAULT_RENDER_DIV);
         }
 
+        writer.openTag("span");
+        final boolean isDefault = targetRender == null;
         if (node.isObject()) {
-            renderObject(rootRender, node, writer);
+            renderObject(rootRender, node, isDefault, writer);
         } else if (node.isArray()) {
-            renderList(rootRender, node, writer);
+            renderList(rootRender, node, isDefault, writer);
         } else {
             renderPrimitive(node, writer);
         }
-
         writer.closeTag();
 
         writer.closeTag();
@@ -138,21 +136,22 @@ public class DefaultHTMLRender implements HTMLRender {
         }
 
         writer.openTag("div");
-        writer.openTag("div");
+        writer.openTag("span");
         writer.openTag("i");
         writer.text(key);
         writer.closeTag();
         writer.text(":");
         writer.closeTag();
-        writer.openTag("div");
+        writer.openTag("span");
         render(rootRender, value, writer);
         writer.closeTag();
         writer.closeTag();
     }
 
-    private void renderObject(RootRender rootRender, JsonNode obj, HTMLWriter writer) throws IOException {
+    private void renderObject(RootRender rootRender, JsonNode obj, boolean isDefault, HTMLWriter writer)
+    throws IOException {
         jsonPathBuilder.enterObject();
-        writer.openTag("div");
+        writer.openTag("div", isDefault ? DEFAULT_RENDER_DIV : DEFAULT_RENDER_HIDDEN_DIV);
         final Iterator<Map.Entry<String,JsonNode>> iter = obj.getFields();
         Map.Entry<String,JsonNode> entry;
         while(iter.hasNext()) {
@@ -168,7 +167,12 @@ public class DefaultHTMLRender implements HTMLRender {
         writer.closeTag();
     }
 
-    private void renderList(RootRender rootRender, JsonNode list, HTMLWriter writer) throws IOException {
+    private void renderObject(RootRender rootRender, JsonNode obj, HTMLWriter writer) throws IOException {
+        renderObject(rootRender, obj, true, writer);
+    }
+
+    private void renderList(RootRender rootRender, JsonNode list, boolean isDefault, HTMLWriter writer)
+      throws IOException {
         final int size = list.size();
         if(size == 1) {
             render(rootRender, list.get(0), writer);
@@ -179,6 +183,7 @@ public class DefaultHTMLRender implements HTMLRender {
         }
 
         writer.openTag("div", LIST_DIV_STYLE);
+        writer.openTag("div", isDefault ? DEFAULT_RENDER_DIV : DEFAULT_RENDER_HIDDEN_DIV);
         jsonPathBuilder.enterArray();
         for(int i = 0; i < list.size(); i++) {
             jsonPathBuilder.arrayElem();
@@ -188,17 +193,21 @@ public class DefaultHTMLRender implements HTMLRender {
         }
         jsonPathBuilder.exitArray();
         writer.closeTag();
+        writer.closeTag();
     }
 
+    private void renderList(RootRender rootRender, JsonNode list, HTMLWriter writer) throws IOException {
+        renderList(rootRender, list, true, writer);
+    }
 
     private void renderPrimitive(JsonNode node, HTMLWriter writer) throws IOException {
         final String primitive = JSONUtils.asPrimitiveString(node);
         if (primitive != null) {
-            writer.openTag("pre", PRIMITIVE_NODE_ATTR);
+            writer.openTag("span", PRIMITIVE_NODE_ATTR);
             writer.text(primitive.trim());
             writer.closeTag();
         } else {
-            writer.openTag("pre");
+            writer.openTag("span");
             writer.text("&lt;empty&gt;");
             writer.closeTag();
         }
@@ -210,7 +219,7 @@ public class DefaultHTMLRender implements HTMLRender {
         final String type;
         if(typeNode == null) {
             type = null;
-            writer.openTag("div");
+            writer.openTag("span");
         } else {
             type = typeNode.asText();
             final String name;
@@ -220,6 +229,7 @@ public class DefaultHTMLRender implements HTMLRender {
                 put("name"    , name);
             }});
 
+            //writer.br();
             writer.openColorTag("red");
             writer.openTag("small");
             writer.text(type);
@@ -229,9 +239,11 @@ public class DefaultHTMLRender implements HTMLRender {
 
 
         writer.openTag("small", JSON_PATH_CLASS);
+        writer.em();
         writer.text("(");
         writer.text(jsonPathBuilder.getJsonPath());
         writer.text(")");
+        writer.closeTag();
         writer.closeTag();
 
         return type;
