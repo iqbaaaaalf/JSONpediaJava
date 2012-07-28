@@ -11,12 +11,13 @@ import java.util.HashMap;
 public class LinkNodeRender implements NodeRender {
 
     @Override
-    public boolean acceptNode(JsonNode node) {
+    public boolean acceptNode(JsonContext context, JsonNode node) {
         return true;
     }
 
     @Override
-    public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
+    throws IOException {
         final String url = node.get("url").asText();
         final String description = node.get("description").asText().trim();
         writer.openTag("a", new HashMap<String, String>() {{

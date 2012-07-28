@@ -36,13 +36,14 @@ public class CitationNodeRender implements NodeRender {
     };
 
     @Override
-    public boolean acceptNode(JsonNode node) {
+    public boolean acceptNode(JsonContext context, JsonNode node) {
         final JsonNode name = node.get(TemplateConstants.TEMPLATE_NAME);
         return name != null && CITATION_TEMPLATE_NAME.equals(name.asText());
     }
 
     @Override
-    public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
+    throws IOException {
         final JsonNode content = node.get(TemplateConstants.TEMPLATE_CONTENT);
         writer.openTag("div", CITATION_DIV_ATTR);
         writer.openTag("strong");
@@ -52,7 +53,7 @@ public class CitationNodeRender implements NodeRender {
         for(String field : TEMPLATE_FIELDS) {
             value = content.get(field);
             if(value == null) continue;
-            rootRender.render(rootRender, field, value, writer);
+            rootRender.render(context, rootRender, field, value, writer);
         }
         writer.closeTag();
     }

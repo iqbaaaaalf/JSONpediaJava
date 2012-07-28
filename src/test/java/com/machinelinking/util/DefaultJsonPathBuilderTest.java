@@ -73,12 +73,12 @@ public class DefaultJsonPathBuilderTest {
 
         Assert.assertTrue(
                 String.format("Invalid match: %s doesn't contain %s", b1.getJsonPath(), b2.getJsonPath()),
-                b1.contains(b2)
+                b1.subPathOf(b2)
         );
 
         Assert.assertFalse(
                 String.format("Invalid match: %s should not contain %s", b1.getJsonPath(), b3.getJsonPath()),
-                b1.contains(b3)
+                b1.subPathOf(b3)
         );
 
     }

@@ -53,10 +53,22 @@ public class DefaultHTMLRender implements HTMLRender {
 
     private final JsonPathBuilder jsonPathBuilder = new DefaultJsonPathBuilder();
 
+    private final JsonContext context = new JsonContext() {
+        @Override
+        public String getJSONPath() {
+            return jsonPathBuilder.getJsonPath();
+        }
+
+        @Override
+        public boolean subPathOf(JsonPathBuilder builder) {
+            return jsonPathBuilder.subPathOf(builder);
+        }
+    };
+
     public void processRoot(JsonNode node, HTMLWriter writer) throws IOException {
         jsonPathBuilder.startPath();
         writer.openDocument();
-        render(this, node, writer);
+        render(getContext(), this, node, writer);
         writer.closeDocument();
         writer.flush();
     }
@@ -88,11 +100,12 @@ public class DefaultHTMLRender implements HTMLRender {
     }
 
     @Override
-    public boolean acceptNode(JsonNode node) {
+    public boolean acceptNode(JsonContext context, JsonNode node) {
         return true;
     }
 
-    public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
+    @Override
+    public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
         if(node == null) return;
         final JsonNode type = node.get(TemplateConstants.TYPE_ATTR);
         NodeRender targetRender = null;
@@ -100,7 +113,7 @@ public class DefaultHTMLRender implements HTMLRender {
             final List<NodeRender> rendersPerType = nodeRenders.get(type.asText());
             if (rendersPerType != null) {
                 for(NodeRender nodeRender : rendersPerType) {
-                    if(nodeRender.acceptNode(node)) {
+                    if(nodeRender.acceptNode(context, node)) {
                         targetRender = nodeRender;
                         break;
                     }
@@ -110,10 +123,12 @@ public class DefaultHTMLRender implements HTMLRender {
 
         writeNodeMetadata(node, writer);
 
+        // Custom render.
         if(targetRender != null) {
-            targetRender.render(rootRender, node, writer);
+            targetRender.render(context, rootRender, node, writer);
         }
 
+        // Default render.
         writer.openTag("span");
         final boolean isDefault = targetRender == null;
         if (node.isObject()) {
@@ -128,11 +143,12 @@ public class DefaultHTMLRender implements HTMLRender {
         writer.closeTag();
     }
 
-    public void render(RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
+    @Override
+    public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
     throws IOException {
         final KeyValueRender render = keyValueRenders.get(key);
         if(render != null) {
-            render.render(rootRender, key, value, writer);
+            render.render(context, rootRender, key, value, writer);
             return;
         }
 
@@ -144,9 +160,13 @@ public class DefaultHTMLRender implements HTMLRender {
         writer.text(":");
         writer.closeTag();
         writer.openTag("span");
-        render(rootRender, value, writer);
+        render(context, rootRender, value, writer);
         writer.closeTag();
         writer.closeTag();
+    }
+
+    private JsonContext getContext() {
+        return context;
     }
 
     private void renderObject(RootRender rootRender, JsonNode obj, boolean isDefault, HTMLWriter writer)
@@ -160,7 +180,7 @@ public class DefaultHTMLRender implements HTMLRender {
             if(TemplateConstants.TYPE_ATTR.equals(entry.getKey())) continue;
             writer.openTag("div", OBJECT_DIV_STYLE);
             jsonPathBuilder.field(entry.getKey());
-            render(rootRender, entry.getKey().trim(), entry.getValue(), writer);
+            render(getContext(), rootRender, entry.getKey().trim(), entry.getValue(), writer);
             writer.closeTag();
         }
         jsonPathBuilder.exitObject();
@@ -168,15 +188,11 @@ public class DefaultHTMLRender implements HTMLRender {
         writer.closeTag();
     }
 
-    private void renderObject(RootRender rootRender, JsonNode obj, HTMLWriter writer) throws IOException {
-        renderObject(rootRender, obj, true, writer);
-    }
-
     private void renderList(RootRender rootRender, JsonNode list, boolean isDefault, HTMLWriter writer)
       throws IOException {
         final int size = list.size();
         if(size == 1) {
-            render(rootRender, list.get(0), writer);
+            render(getContext(), rootRender, list.get(0), writer);
             return;
         } else if(size == 0) {
             renderPrimitive(list, writer);
@@ -189,16 +205,12 @@ public class DefaultHTMLRender implements HTMLRender {
         for(int i = 0; i < list.size(); i++) {
             jsonPathBuilder.arrayElem();
             writer.openTag("div");
-            render(rootRender, list.get(i), writer);
+            render(getContext(), rootRender, list.get(i), writer);
             writer.closeTag();
         }
         jsonPathBuilder.exitArray();
         writer.closeTag();
         writer.closeTag();
-    }
-
-    private void renderList(RootRender rootRender, JsonNode list, HTMLWriter writer) throws IOException {
-        renderList(rootRender, list, true, writer);
     }
 
     private void renderPrimitive(JsonNode node, HTMLWriter writer) throws IOException {

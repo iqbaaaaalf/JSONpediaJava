@@ -9,6 +9,7 @@ import java.io.IOException;
  */
 public interface KeyValueRender {
 
-    void render(RootRender rootRender, String key, JsonNode value, HTMLWriter writer) throws IOException;
+    void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
+    throws IOException;
 
 }

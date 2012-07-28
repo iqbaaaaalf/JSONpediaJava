@@ -10,7 +10,8 @@ import java.io.IOException;
 public class ContentKeyValueRender implements KeyValueRender {
 
     @Override
-    public void render(RootRender rootRender, String key, JsonNode value, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
+    throws IOException {
         if(value.isNull()) {
             writer.openTag("i");
             writer.text("&lt;null&gt;");
@@ -20,7 +21,7 @@ public class ContentKeyValueRender implements KeyValueRender {
             writer.text("&lt;empty&gt;");
             writer.closeTag();
         } else {
-            rootRender.render(rootRender, "Content", value, writer);
+            rootRender.render(context, rootRender, "Content", value, writer);
         }
     }
 

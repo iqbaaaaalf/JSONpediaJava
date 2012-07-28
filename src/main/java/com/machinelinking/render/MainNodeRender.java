@@ -19,13 +19,14 @@ public class MainNodeRender implements NodeRender {
     }};
 
     @Override
-    public boolean acceptNode(JsonNode node) {
+    public boolean acceptNode(JsonContext context, JsonNode node) {
         final JsonNode name = node.get(TemplateConstants.TEMPLATE_NAME);
         return name != null && MAIN_TEMPLATE_NAME.equalsIgnoreCase(name.asText());
     }
 
     @Override
-    public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
+    throws IOException {
         writer.openTag("div", MAIN_DIV_ATTR);
         writer.openTag("strong");
         writer.text("Main Article: ");

@@ -16,9 +16,10 @@ public class TitleKeyValueRender implements KeyValueRender {
     }};
 
     @Override
-    public void render(RootRender rootRender, String key, JsonNode value, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
+    throws IOException {
         writer.openTag("strong", TITLE_DIV_ATTR);
-        rootRender.render(rootRender, value, writer);
+        rootRender.render(context, rootRender, value, writer);
         writer.closeTag();
     }
 }

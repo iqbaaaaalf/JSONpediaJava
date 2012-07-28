@@ -16,7 +16,8 @@ public class FreebaseKeyValueRender implements KeyValueRender {
     }};
 
     @Override
-    public void render(RootRender rootRender, String key, JsonNode value, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
+    throws IOException {
         writer.openTag("div");
 
         writer.heading(3, "Freebase");

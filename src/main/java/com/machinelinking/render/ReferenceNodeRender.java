@@ -28,12 +28,13 @@ public class ReferenceNodeRender implements NodeRender {
     }};
 
     @Override
-    public boolean acceptNode(JsonNode node) {
+    public boolean acceptNode(JsonContext context, JsonNode node) {
         return true;
     }
 
     @Override
-    public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
+    throws IOException {
         final String label       = node.get("label").asText();
         final String description = node.get("description").asText().trim();
         final String[] labelSections = label.split(".");

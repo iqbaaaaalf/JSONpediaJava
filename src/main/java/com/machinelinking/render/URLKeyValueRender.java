@@ -17,7 +17,8 @@ public class URLKeyValueRender implements KeyValueRender {
     }};
 
     @Override
-    public void render(RootRender rootRender, String key, JsonNode value, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
+    throws IOException {
         final String valueStr = JSONUtils.asPrimitiveString(value);
         writer.openTag("div", URLKEY_DIV_ATTR);
         writer.key(key);

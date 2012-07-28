@@ -16,12 +16,13 @@ public class TableNodeRender implements NodeRender {
     }};
 
     @Override
-    public boolean acceptNode(JsonNode node) {
+    public boolean acceptNode(JsonContext context, JsonNode node) {
         return true;
     }
 
     @Override
-    public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
+    throws IOException {
         final JsonNode content = node.get(TemplateConstants.TEMPLATE_CONTENT);
         writer.openTable("Table", TABLE_ATTR);
 
@@ -31,7 +32,7 @@ public class TableNodeRender implements NodeRender {
             cell = content.get(i);
             if( isHeadCell(cell) ) {
                 writer.openTableCol();
-                rootRender.render(rootRender, cell, writer);
+                rootRender.render(context, rootRender, cell, writer);
                 writer.closeTableCol();
             }
         }
@@ -44,7 +45,7 @@ public class TableNodeRender implements NodeRender {
                 final JsonNode rowContent = cell.get(TemplateConstants.TEMPLATE_CONTENT);
                 for(int j = 0; j < rowContent.size(); j++) {
                     writer.openTableCol();
-                    rootRender.render(rootRender, rowContent.get(j), writer);
+                    rootRender.render(context, rootRender, rowContent.get(j), writer);
                     writer.closeTableCol();
                 }
                 writer.closeTableRow();

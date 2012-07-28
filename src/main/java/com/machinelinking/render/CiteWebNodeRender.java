@@ -22,13 +22,14 @@ public class CiteWebNodeRender implements NodeRender {
     };
 
     @Override
-    public boolean acceptNode(JsonNode node) {
+    public boolean acceptNode(JsonContext context,  JsonNode node) {
         final JsonNode name = node.get(TemplateConstants.TEMPLATE_NAME);
         return name != null && CITE_WEB_TEMPLATE_NAME.equals(name.asText());
     }
 
     @Override
-    public void render(RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
+    throws IOException {
         writer.openTag("div", CITEWEB_DIV_ATTR);
         writer.openTable("Cite Web", null);
         JsonNode value;
@@ -38,7 +39,7 @@ public class CiteWebNodeRender implements NodeRender {
             if(value == null) continue;
             writer.openTag("tr");
             writer.openTag("td");
-            rootRender.render(rootRender, field, value, writer); // TODO: add check that a sub node is taken to prevent loop.
+            rootRender.render(context, rootRender, field, value, writer); // TODO: add check that a sub node is taken to prevent loop.
             writer.closeTag();
             writer.closeTag();
         }

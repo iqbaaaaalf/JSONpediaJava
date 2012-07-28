@@ -5,6 +5,4 @@ package com.machinelinking.render;
  */
 public interface RootRender extends NodeRender, KeyValueRender {
 
-//    void renderKeyValue(RootRender rootRender, String key, JsonNode value, HTMLWriter writer) throws IOException;
-
 }

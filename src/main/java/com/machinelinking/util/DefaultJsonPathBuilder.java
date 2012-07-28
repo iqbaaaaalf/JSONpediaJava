@@ -81,7 +81,7 @@ public class DefaultJsonPathBuilder implements JsonPathBuilder {
     }
 
     @Override
-    public boolean contains(JsonPathBuilder other) {
+    public boolean subPathOf(JsonPathBuilder other) {
         final DefaultJsonPathBuilder otherBuilder = (DefaultJsonPathBuilder) other;
         if(stack.size() > otherBuilder.stack.size()) return false;
         for(int i = 0; i < stack.size(); i++) {
