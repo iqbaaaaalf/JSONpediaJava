@@ -331,8 +331,7 @@ Begin Template: nowrap
 k: 1
 Text: '''E'' = ''mc''<sup>2</sup>'
 End Template: nowrap
-Text: ' (which has been dubbed "the world's most famous equation")<ref>David Bodanis, ''E&nbsp;'
-Text: '&nbsp;mc<sup>2</sup>: A Biography of the World's Most Famous Equation'' (New York: Walker, 2000).</ref>, he received the '
+Text: ' (which has been dubbed "the world's most famous equation")<ref>David Bodanis, ''E&nbsp;=&nbsp;mc<sup>2</sup>: A Biography of the World's Most Famous Equation'' (New York: Walker, 2000).</ref>, he received the '
 Reference: List of Nobel laureates in Physics '1921'
 Text: ' '
 Reference: Nobel Prize in Physics ''
@@ -381,8 +380,7 @@ Text: '. He also investigated the thermal properties of light which laid the fou
 Reference: photon ''
 Text: ' theory of light. In 1917, Einstein applied the general theory of relativity to model the structure of the '
 Reference: universe ''
-Text: ' as a whole.<ref name'
-Text: 'Nobel>'
+Text: ' as a whole.<ref name=Nobel>'
 Link: http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf '"Scientific Background on the Nobel Prize in Physics 2011. The accelerating universe." (page 2)'
 Text: ' Nobelprize.org.</ref>
 
@@ -390,8 +388,7 @@ He was visiting the United States when '
 Reference: Adolf Hitler ''
 Text: ' came to power in 1933, and did not go back to Germany, where he had been a professor at the '
 Reference: Prussian Academy of Sciences 'Berlin Academy of Sciences'
-Text: '. He settled in the U.S., becoming a citizen in 1940.<ref name'
-Text: '"misc">'
+Text: '. He settled in the U.S., becoming a citizen in 1940.<ref name="misc">'
 Begin Template: cite web 
 k: url
 Text: 'http://www.einstein-website.de/z_information/variousthings.html '
@@ -426,9 +423,7 @@ Text: ', until his death in 1955.
 
 Einstein published '
 Reference: List of scientific publications by Albert Einstein 'more than 300 scientific papers'
-Text: ' along with over 150 non-scientific works.<ref name'
-Text: 'Nobel/><ref name'
-Text: '"Paul Arthur Schilpp, editor 1951 730–746">'
+Text: ' along with over 150 non-scientific works.<ref name=Nobel/><ref name="Paul Arthur Schilpp, editor 1951 730–746">'
 Begin Template: Citation 
 k: author
 Text: 'Paul Arthur Schilpp, editor '
@@ -475,8 +470,7 @@ Albert Einstein was born in '
 Reference: Ulm ''
 Text: ', in the '
 Reference: Kingdom of Württemberg ''
-Text: ' in the German Empire on 14&nbsp;March 1879.<ref name'
-Text: 'Bio>'
+Text: ' in the German Empire on 14&nbsp;March 1879.<ref name=Bio>'
 Begin Template: cite web 
 k: url
 Text: 'http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html '
@@ -495,15 +489,13 @@ Text: '. In 1880, the family moved to '
 Reference: Munich ''
 Text: ', where his father and his uncle founded ''Elektrotechnische Fabrik J. Einstein & Cie'', a company that manufactured electrical equipment based on '
 Reference: direct current ''
-Text: '.<ref name'
-Text: 'Bio/>
+Text: '.<ref name=Bio/>
 
 The Einsteins were non-observant Jews. Albert attended a '
 Reference: Catholic school 'Catholic elementary school'
 Text: ' from the age of five for three years. Later, at the age of eight, Einstein was transferred to the '
 Reference: Luitpold Gymnasium ''
-Text: ' where he received advanced primary and secondary school education until he left Germany seven years later.<ref name'
-Text: '"Stachel2002">'
+Text: ' where he received advanced primary and secondary school education until he left Germany seven years later.<ref name="Stachel2002">'
 Begin Template: Citation 
 k: author
 Text: 'John J. Stachel '
@@ -542,8 +534,7 @@ Text: ' '
 k: year
 Text: '1979'
 End Template: Citation 
-Text: '</ref> As he grew, Einstein built models and mechanical devices for fun and began to show a talent for mathematics.<ref name'
-Text: 'Bio/> When Einstein was ten years old Max Talmud (later changed to '
+Text: '</ref> As he grew, Einstein built models and mechanical devices for fun and began to show a talent for mathematics.<ref name=Bio/> When Einstein was ten years old Max Talmud (later changed to '
 Reference: Max Talmey ''
 Text: '), a poor Jewish medical student from '
 Reference: Poland ''
@@ -551,8 +542,7 @@ Text: ', was introduced to the Einstein family by his brother, and during weekly
 Reference: Critique of Pure Reason ''
 Text: ''' and '''
 Reference: Euclid's Elements ''
-Text: ''' (which Einstein called the "holy little geometry book").<ref>M. Talmey, ''The Relativity Theory Simplified and the Formative Period of its Inventor''. Falcon Press, 1932, pp. 161–164.</ref><ref name'
-Text: 'HarvChemAE>Dudley Herschbach, "Einstein as a Student", Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA, pp. 4–5, web: '
+Text: ''' (which Einstein called the "holy little geometry book").<ref>M. Talmey, ''The Relativity Theory Simplified and the Formative Period of its Inventor''. Falcon Press, 1932, pp. 161–164.</ref><ref name=HarvChemAE>Dudley Herschbach, "Einstein as a Student", Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA, pp. 4–5, web: '
 Link: http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf 'HarvardChem-Einstein-PDF'
 Text: '</ref>'
 Begin Template: #tag:ref
@@ -693,8 +683,7 @@ Einstein '
 Reference: cousin marriage 'married'
 Text: ' '
 Reference: Elsa Einstein 'Elsa Löwenthal'
-Text: ' (née Einstein) on 2 June 1919, after having had a relationship with her since 1912. She was his first cousin maternally and his second cousin paternally. In 1933, they emigrated permanently to the United States. In 1935, Elsa Einstein was diagnosed with heart and kidney problems and died in December 1936.<ref name'
-Text: '"Highfield216">'
+Text: ' (née Einstein) on 2 June 1919, after having had a relationship with her since 1912. She was his first cousin maternally and his second cousin paternally. In 1933, they emigrated permanently to the United States. In 1935, Elsa Einstein was diagnosed with heart and kidney problems and died in December 1936.<ref name="Highfield216">'
 Begin Template: Harvnb
 k: Highfield
 k: Carter
@@ -840,8 +829,7 @@ Text: '</ref> at the University of Zurich. He became a full professor at '
 Reference: Charles University in Prague 'Karl-Ferdinand University in Prague'
 Text: ' in 1911. In 1914, he returned to Germany after being appointed director of the '
 Reference: Kaiser Wilhelm Society 'Kaiser Wilhelm Institute for Physics'
-Text: ' (1914–1932)<ref name'
-Text: '"Kant">Kant, Horst. "Albert Einstein and the '
+Text: ' (1914–1932)<ref name="Kant">Kant, Horst. "Albert Einstein and the '
 Reference: Kaiser Wilhelm Institute for Physics ''
 Text: ' in Berlin". in Renn, Jürgen. "Albert Einstein&nbsp;– Chief Engineer of the Universe: One Hundred Authors for Einstein." Ed. Renn, Jürgen. ''Wiley-VCH''. 2005. pp. 166–169. ISBN 3527405747</ref> and a professor at the '
 Reference: Humboldt University of Berlin ''
@@ -894,8 +882,7 @@ Text: ' during the '
 Reference: solar eclipse of 29 May 1919 ''
 Text: '. International media reports of this made Einstein world famous. On 7 November 1919, the leading British newspaper '''
 Reference: The Times ''
-Text: ''' printed a banner headline that read: "Revolution in Science&nbsp;– New Theory of the Universe&nbsp;– Newtonian Ideas Overthrown".<ref name'
-Text: '"Eddington">'
+Text: ''' printed a banner headline that read: "Revolution in Science&nbsp;– New Theory of the Universe&nbsp;– Newtonian Ideas Overthrown".<ref name="Eddington">'
 Begin Template: Citation
 k: last 
 Text: 'Andrzej '
@@ -946,13 +933,11 @@ Text: ', '
 Reference: Ceylon ''
 Text: ', and Japan, where he gave a series of lectures to thousands of Japanese. His first lecture in Tokyo lasted four hours, after which he met the emperor and empress at the '
 Reference: Tokyo Imperial Palace 'Imperial Palace'
-Text: ' where thousands came to watch. Einstein later gave his impressions of the Japanese in a letter to his sons:<ref name'
-Text: 'Isaacson2/>'
+Text: ' where thousands came to watch. Einstein later gave his impressions of the Japanese in a letter to his sons:<ref name=Isaacson2/>'
 Begin Template: rp
 k: 307
 End Template: rp
-Text: ' "Of all the people I have met, I like the Japanese most, as they are modest, intelligent, considerate, and have a feel for art."<ref name'
-Text: 'Isaacson2>Isaacson, Walter. ''Einstein: His Life and Universe'', Simon & Schuster (2007)</ref>'
+Text: ' "Of all the people I have met, I like the Japanese most, as they are modest, intelligent, considerate, and have a feel for art."<ref name=Isaacson2>Isaacson, Walter. ''Einstein: His Life and Universe'', Simon & Schuster (2007)</ref>'
 Begin Template: rp
 k: 308
 End Template: rp
@@ -980,23 +965,20 @@ Section [1] Love of music
 Text: '
 Einstein developed an appreciation of music at an early age. His mother played the piano reasonably well and wanted her son to learn the violin, not only to instill in him a love of music but also to help him assimilate within German culture. According to conductor '
 Reference: Leon Botstein ''
-Text: ', Einstein is said to have begun playing when he was five, but didn't enjoy trying to learn it at that age.<ref name'
-Text: 'Botstein/>
+Text: ', Einstein is said to have begun playing when he was five, but didn't enjoy trying to learn it at that age.<ref name=Botstein/>
 
 '
 Reference: File:Einstein - violin - 1939.jpg 'thumb|Playing violin at home in Princeton, 1939'
 Text: '
 When he turned thirteen, however, he discovered the violin sonatas of '
 Reference: Mozart ''
-Text: '. "Einstein fell in love" with Mozart's music, notes Botstein, and learned to play music more willingly. According to Einstein, he taught himself to play by "ever practicing systematically," adding that "Love is a better teacher than a sense of duty."<ref name'
-Text: 'Botstein>Botstein, Leon; Galison, Peter; Holton, Gerald James; Schweber, Silvan S. ''Einstein for the 21st Century: His Legacy in Science, Art, and Modern Culture'', Princeton Univ. Press (2008) pp. 161-164</ref> At age seventeen, he was heard by a school examiner in '
+Text: '. "Einstein fell in love" with Mozart's music, notes Botstein, and learned to play music more willingly. According to Einstein, he taught himself to play by "ever practicing systematically," adding that "Love is a better teacher than a sense of duty."<ref name=Botstein>Botstein, Leon; Galison, Peter; Holton, Gerald James; Schweber, Silvan S. ''Einstein for the 21st Century: His Legacy in Science, Art, and Modern Culture'', Princeton Univ. Press (2008) pp. 161-164</ref> At age seventeen, he was heard by a school examiner in '
 Reference: Aarau ''
 Text: ' as he played '
 Reference: Beethoven ''
 Text: ''s '
 Reference: violin sonata ''
-Text: 's, the examiner stating afterward that his playing was "remarkable and revealing of 'great insight.'" What struck the examiner, writes Botstein, was that Einstein "displayed a deep love of the music, a quality that was and remains in short supply. Music possessed an unusual meaning for this student."<ref name'
-Text: 'Botstein/>
+Text: 's, the examiner stating afterward that his playing was "remarkable and revealing of 'great insight.'" What struck the examiner, writes Botstein, was that Einstein "displayed a deep love of the music, a quality that was and remains in short supply. Music possessed an unusual meaning for this student."<ref name=Botstein/>
 
 Botstein notes that music assumed a pivotal and permanent role in Einstein's life from that period on. Although the idea of becoming a professional was not on his mind at any time, he did play '
 Reference: chamber music ''
@@ -1004,8 +986,7 @@ Text: ' with others, and performed for private audiences and friends. Chamber mu
 Reference: Max Planck ''
 Text: ' and his son, among others. Near the end of his life, while living in Princeton, the young '
 Reference: Juilliard Quartet ''
-Text: ' visited him and he joined them playing his violin, although they slowed the tempo to accommodate his lesser abilities. However, notes Botstein, the quartet was "impressed by Einstein's level of coordination and intonation."<ref name'
-Text: 'Botstein/>
+Text: ' visited him and he joined them playing his violin, although they slowed the tempo to accommodate his lesser abilities. However, notes Botstein, the quartet was "impressed by Einstein's level of coordination and intonation."<ref name=Botstein/>
 
 '
 Section [1] Emigration
@@ -1032,9 +1013,7 @@ Text: '</ref> While visiting American universities in April, 1933, he learned th
 Reference: Nazi book burnings ''
 Text: ' occurred, with Einstein's works being among those burnt, and Nazi propaganda minister '
 Reference: Joseph Goebbels ''
-Text: ' proclaimed, "Jewish intellectualism is dead."<ref name'
-Text: 'Isaacson>Isaacson, Walter. ''Einstein: His Life and Universe'', Simon & Schuster (2007) pp. 407–410</ref> Einstein also learned that his name was on a list of assassination targets, with a "$5,000 bounty on his head." One German magazine included him in a list of enemies of the German regime with the phrase, "not yet hanged".<ref name'
-Text: 'Isaacson/>
+Text: ' proclaimed, "Jewish intellectualism is dead."<ref name=Isaacson>Isaacson, Walter. ''Einstein: His Life and Universe'', Simon & Schuster (2007) pp. 407–410</ref> Einstein also learned that his name was on a list of assassination targets, with a "$5,000 bounty on his head." One German magazine included him in a list of enemies of the German regime with the phrase, "not yet hanged".<ref name=Isaacson/>
 
 Einstein was undertaking his third two-month visiting professorship at the '
 Reference: California Institute of Technology ''
@@ -1044,8 +1023,7 @@ He took up a position at the '
 Reference: Institute for Advanced Study ''
 Text: ' at '
 Reference: Princeton, New Jersey 'Princeton'
-Text: ', New Jersey,<ref name'
-Text: 'princeton>'
+Text: ', New Jersey,<ref name=princeton>'
 Begin Template: cite web
   
 k: title 
@@ -1082,16 +1060,14 @@ Text: ', both unsuccessfully.
 
 Other scientists also fled to America. Among them were Nobel laureates and professors of '
 Reference: theoretical physics ''
-Text: '. With so many other Jewish scientists now forced by circumstances to live in America, often working side by side, Einstein wrote to a friend, "For me the most beautiful thing is to be in contact with a few fine Jews—a few millennia of a civilized past do mean something after all." In another letter he writes, "In my whole life I have never felt so Jewish as now."<ref name'
-Text: 'Isaacson/>
+Text: '. With so many other Jewish scientists now forced by circumstances to live in America, often working side by side, Einstein wrote to a friend, "For me the most beautiful thing is to be in contact with a few fine Jews—a few millennia of a civilized past do mean something after all." In another letter he writes, "In my whole life I have never felt so Jewish as now."<ref name=Isaacson/>
 
 '
 Section [2] World War II and the Manhattan Project
-Text: '
+Text: '=
 In 1939, a group of Hungarian scientists that included emigre physicist '
 Reference: Leó Szilárd ''
-Text: ' attempted to alert Washington of ongoing Nazi atomic bomb research. The group's warnings were discounted.<ref name'
-Text: 'Pritchard>'
+Text: ' attempted to alert Washington of ongoing Nazi atomic bomb research. The group's warnings were discounted.<ref name=Pritchard>'
 Begin Template: cite news 
 k: url 
 Text: 'http://www.telegraph.co.uk/finance/comment/7970619/Obama-could-kill-fossil-fuels-overnight-with-a-nuclear-dash-for-thorium.html '
@@ -1114,13 +1090,11 @@ Text: ' and '
 Reference: Eugene Wigner ''
 Text: ', "regarded it as their responsibility to alert Americans to the possibility that German scientists might win the '
 Reference: German nuclear energy project 'race to build an atomic bomb'
-Text: ', and to warn that Hitler would be more than willing to resort to such a weapon."<ref name'
-Text: 'Isaacson2/>'
+Text: ', and to warn that Hitler would be more than willing to resort to such a weapon."<ref name=Isaacson2/>'
 Begin Template: rp
 k: 630
 End Template: rp
-Text: '<ref name'
-Text: 'Gosling>Gosling, F.G. ''The Manhattan Project: Making the Atomic Bomb'', U.S. Department of Energy, History Division (January, 1999) p. vii</ref> In the summer of 1939, a few months before the beginning of World War II in Europe, Einstein was persuaded to lend his prestige by writing '
+Text: '<ref name=Gosling>Gosling, F.G. ''The Manhattan Project: Making the Atomic Bomb'', U.S. Department of Energy, History Division (January, 1999) p. vii</ref> In the summer of 1939, a few months before the beginning of World War II in Europe, Einstein was persuaded to lend his prestige by writing '
 Reference: Einstein–Szilárd letter 'a letter'
 Text: ' with Szilárd to President '
 Reference: Franklin D. Roosevelt ''
@@ -1134,19 +1108,17 @@ Text: '. It became the only country to successfully develop an atomic bomb durin
 
 For Einstein, "war was a disease . . . '
 Text: 'and'
-Text: ' he called for resistance to war." But in 1933, after Hitler assumed full power in Germany, "he renounced pacifism altogether . . . In fact, he urged the Western powers to prepare themselves against another German onslaught."<ref name'
-Text: 'Stern/>'
+Text: ' he called for resistance to war." But in 1933, after Hitler assumed full power in Germany, "he renounced pacifism altogether . . . In fact, he urged the Western powers to prepare themselves against another German onslaught."<ref name=Stern/>'
 Begin Template: rp
 k: 110
 End Template: rp
 Text: ' In 1954, a year before his death, Einstein said to his old friend, '
 Reference: Linus Pauling ''
-Text: ', "I made one great mistake in my life&nbsp;— when I signed the letter to President Roosevelt recommending that atom bombs be made; but there was some justification&nbsp;— the danger that the Germans would make them..."<ref name'
-Text: '"regret">Einstein: The Life and Times'' by Ronald Clark. page 752</ref>
+Text: ', "I made one great mistake in my life&nbsp;— when I signed the letter to President Roosevelt recommending that atom bombs be made; but there was some justification&nbsp;— the danger that the Germans would make them..."<ref name="regret">Einstein: The Life and Times'' by Ronald Clark. page 752</ref>
 
 '
 Section [2] U.S. citizenship
-Text: '
+Text: '=
 '
 Reference: File:Citizen-Einstein.jpg 'thumb|right|Accepting U.S. citizenship, 1940'
 Text: '
@@ -1155,8 +1127,7 @@ Einstein became an American citizen in 1940. Not long after settling into his ca
 Reference: meritocracy ''
 Text: '" in American culture when compared to Europe. According to Isaacson, he recognized the "right of individuals to say and think what they pleased", without social barriers, and as result, the individual was "encouraged" to be more creative, a trait he valued from his own early education. Einstein writes:
 <blockquote>
-What makes the new arrival devoted to this country is the democratic trait among the people. No one humbles himself before another person or class. . . American youth has the good fortune not to have its outlook troubled by outworn traditions.<ref name'
-Text: 'Isaacson/>'
+What makes the new arrival devoted to this country is the democratic trait among the people. No one humbles himself before another person or class. . . American youth has the good fortune not to have its outlook troubled by outworn traditions.<ref name=Isaacson/>'
 Begin Template: rp
 k: 432
 End Template: rp
@@ -1185,8 +1156,7 @@ Text: ', in November 1952, Prime Minister '
 Reference: David Ben-Gurion ''
 Text: ' offered Einstein the position of '
 Reference: President of Israel ''
-Text: ', a mostly ceremonial post.<ref name'
-Text: 'Time>'
+Text: ', a mostly ceremonial post.<ref name=Time>'
 Begin Template: Cite news 
 k: url
 Text: 'http://www.time.com/time/magazine/article/0,9171,817454,00.html '
@@ -1201,20 +1171,17 @@ Text: '31 March 2010'
 End Template: Cite news 
 Text: '</ref> The offer was presented by Israel's ambassador in Washington, '
 Reference: Abba Eban ''
-Text: ', who explained that the offer "embodies the deepest respect which the Jewish people can repose in any of its sons".<ref name'
-Text: 'Isaacson2/>'
+Text: ', who explained that the offer "embodies the deepest respect which the Jewish people can repose in any of its sons".<ref name=Isaacson2/>'
 Begin Template: rp
 k: 522
 End Template: rp
 Text: ' However, Einstein declined, and wrote in his response that he was "deeply moved", and "at once saddened and ashamed" that he could not accept it:
 <blockquote>
-All my life I have dealt with objective matters, hence I lack both the natural aptitude and the experience to deal properly with people and to exercise official function. I am the more distressed over these circumstances because my relationship with the Jewish people became my strongest human tie once I achieved complete clarity about our precarious position among the nations of the world.''<ref name'
-Text: 'Isaacson2/>'
+All my life I have dealt with objective matters, hence I lack both the natural aptitude and the experience to deal properly with people and to exercise official function. I am the more distressed over these circumstances because my relationship with the Jewish people became my strongest human tie once I achieved complete clarity about our precarious position among the nations of the world.''<ref name=Isaacson2/>'
 Begin Template: rp
 k: 522
 End Template: rp
-Text: '<ref name'
-Text: 'Time/><ref>'
+Text: '<ref name=Time/><ref>'
 Begin Template: cite web 
 k: url
 Text: 'http://www.princetonhistory.org/museum_alberteinstein.cfm '
@@ -1349,11 +1316,9 @@ Text: '</ref>
 
 In his lecture at Einstein's memorial, nuclear physicist '
 Reference: Robert Oppenheimer ''
-Text: ' summarized his impression of him as a person: "He was almost wholly without sophistication and wholly without worldliness . . . There was always with him a wonderful purity at once childlike and profoundly stubborn."<ref name'
-Text: 'Stern>Stern, Fritz. Essay, '
+Text: ' summarized his impression of him as a person: "He was almost wholly without sophistication and wholly without worldliness . . . There was always with him a wonderful purity at once childlike and profoundly stubborn."<ref name=Stern>Stern, Fritz. Essay, '
 Link: http://books.google.com/books?id=zGzcV40b3IkC&pg=PA97&dq=E%3D+Einstein's+German+by+Fritz+Stern#v=onepage&q&f=false '"Einstein's Germany"'
-Text: ', ''E '
-Text: ' Einstein: His Life, His Thought, and His Influence on Our Culture'', Sterling Publishing (2006) pp. 97–118</ref>
+Text: ', ''E = Einstein: His Life, His Thought, and His Influence on Our Culture'', Sterling Publishing (2006) pp. 97–118</ref>
 
 '
 Section [0] Scientific career
@@ -1364,12 +1329,9 @@ Text: '
 '
 Reference: Image:Photoelectric effect.svg 'thumb|upright|The photoelectric effect. Incoming photons on the left strike a metal plate (bottom), and eject electrons, depicted as flying off to the right.'
 Text: '
-Throughout his life, Einstein published hundreds of books and articles.<ref name'
-Text: '"Paul Arthur Schilpp, editor 1951 730–746"/><ref name'
-Text: '"Bio"/> In addition to the work he did by himself he also collaborated with other scientists on additional projects including the Bose–Einstein statistics, the '
+Throughout his life, Einstein published hundreds of books and articles.<ref name="Paul Arthur Schilpp, editor 1951 730–746"/><ref name="Bio"/> In addition to the work he did by himself he also collaborated with other scientists on additional projects including the Bose–Einstein statistics, the '
 Reference: Einstein refrigerator ''
-Text: ' and others.<ref name'
-Text: '"Instituut-Lorentz">"'
+Text: ' and others.<ref name="Instituut-Lorentz">"'
 Link: http://www.lorentz.leidenuniv.nl/history/Einstein_archive/ 'Einstein archive at the Instituut-Lorentz'
 Text: '". ''Instituut-Lorentz.'' 2005. Retrieved on 21 November 2005.</ref>
 
@@ -1587,8 +1549,7 @@ k: thermal fluctuations
 k: statistical physics
 End Template: Main
 Text: '
-Albert Einstein's first paper<ref name'
-Text: 'PubList>'
+Albert Einstein's first paper<ref name=PubList>'
 Begin Template: cite web
 k: author
 Text: 'Hans-Josef Kuepper '
@@ -1607,8 +1568,7 @@ Text: '. It was published in 1901 with the title "Folgerungen aus den Kapillarit
 Reference: atom ''
 Text: 'ic phenomena from a statistical point of view. These papers were the foundation for the 1905 paper on '
 Reference: Brownian motion ''
-Text: ', which showed that Brownian movement can be construed as firm evidence that molecules exist. His research in 1903 and 1904 was mainly concerned with the effect of finite atomic size on diffusion phenomena.<ref name'
-Text: 'PubList/>
+Text: ', which showed that Brownian movement can be construed as firm evidence that molecules exist. His research in 1903 and 1904 was mainly concerned with the effect of finite atomic size on diffusion phenomena.<ref name=PubList/>
 
 '
 Section [1] General principles
@@ -1658,9 +1618,7 @@ Text: '</ref>
 
 In his paper on '''
 Reference: mass–energy equivalence ''
-Text: ''' Einstein produced ''E''&nbsp;'
-Text: '&nbsp;''mc''<sup>2</sup> from his special relativity equations.<ref name'
-Text: 'Stachel>'
+Text: ''' Einstein produced ''E''&nbsp;=&nbsp;''mc''<sup>2</sup> from his special relativity equations.<ref name=Stachel>'
 Begin Template: Citation
 k: last 
 Text: 'Stachel'
@@ -1881,8 +1839,7 @@ End Template: Main
 Text: '
 Einstein returned to the problem of thermodynamic fluctuations, giving a treatment of the density variations in a fluid at its critical point. Ordinarily the density fluctuations are controlled by the second derivative of the free energy with respect to the density. At the critical point, this derivative is zero, leading to large fluctuations. The effect of density fluctuations is that light of all wavelengths is scattered, making the fluid look milky white. Einstein relates this to '
 Reference: Raleigh scattering ''
-Text: ', which is what happens when the fluctuation size is much smaller than the wavelength, and which explains why the sky is blue.<ref name'
-Text: '"Levenson">Levenson, Thomas. "'
+Text: ', which is what happens when the fluctuation size is much smaller than the wavelength, and which explains why the sky is blue.<ref name="Levenson">Levenson, Thomas. "'
 Link: http://www.pbs.org/wgbh/nova/einstein/genius/ 'Einstein's Big Idea'
 Text: '". '''
 Reference: Public Broadcasting Service ''
@@ -2077,8 +2034,7 @@ Text: '</ref> '
 Reference: Bose–Einstein statistics ''
 Text: ' are now used to describe the behaviors of any assembly of '
 Reference: boson ''
-Text: 's. Einstein's sketches for this project may be seen in the Einstein Archive in the library of the Leiden University.<ref name'
-Text: 'Instituut-Lorentz/>
+Text: 's. Einstein's sketches for this project may be seen in the Einstein Archive in the library of the Leiden University.<ref name=Instituut-Lorentz/>
 
 '
 Section [1] Energy momentum pseudotensor
@@ -2225,7 +2181,7 @@ Text: ' and others, Einstein also had some one-shot collaborations with various 
 
 '
 Section [2] Einstein–de Haas experiment
-Text: '
+Text: '=
 '
 Begin Template: Main
 k: Einstein–de Haas effect
@@ -2237,7 +2193,7 @@ Text: '. They confirmed that this leads the bar to rotate, because the electron'
 
 '
 Section [2] Schrödinger gas model
-Text: '
+Text: '=
 Einstein suggested to Erwin Schrödinger that he might be able to reproduce the statistics of a '
 Reference: Bose–Einstein condensate 'Bose–Einstein gas'
 Text: ' by considering a box. Then to each possible quantum motion of a particle in a box associate an independent harmonic oscillator. Quantizing these oscillators, each level will have an integer occupation number, which will be the number of particles in it.
@@ -2271,7 +2227,7 @@ Text: '</ref>
 
 '
 Section [2] Einstein refrigerator
-Text: '
+Text: '=
 '
 Begin Template: Main
 k: Einstein refrigerator
@@ -2283,8 +2239,7 @@ Text: ' co-invented (and in 1930, patented) the '
 Reference: Einstein refrigerator ''
 Text: '. This '
 Reference: absorption refrigerator ''
-Text: ' was then revolutionary for having no moving parts and using only heat as an input.<ref name'
-Text: '"Goettling">Goettling, Gary. '
+Text: ' was then revolutionary for having no moving parts and using only heat as an input.<ref name="Goettling">Goettling, Gary. '
 Link: http://gtalumni.org/Publications/magazine/sum98/einsrefr.html 'Einstein's refrigerator'
 Text: ' ''Georgia Tech Alumni Magazine.'' 1998. Retrieved on 21 November 2005. '
 Reference: Leó Szilárd ''
@@ -2333,8 +2288,7 @@ Text: ' between Albert Einstein and '
 Reference: Niels Bohr ''
 Text: ' who were two of its founders. Their debates are remembered because of their importance to the '
 Reference: philosophy of science ''
-Text: '.<ref name'
-Text: ''Bohr1949'>'
+Text: '.<ref name='Bohr1949'>'
 Begin Template: cite web 
 k: url 
 Text: 'http://www.marxists.org/reference/subject/philosophy/works/dk/bohr.htm '
@@ -2493,8 +2447,7 @@ Text: '</ref> He is a favorite model for depictions of '
 Reference: mad scientist ''
 Text: 's and '
 Reference: absent-minded professor ''
-Text: 's; his expressive face and distinctive hairstyle have been widely copied and exaggerated. ''TIME'' magazine's Frederic Golden wrote that Einstein was "a cartoonist's dream come true".<ref name '
-Text: ' "slqbwn">'
+Text: 's; his expressive face and distinctive hairstyle have been widely copied and exaggerated. ''TIME'' magazine's Frederic Golden wrote that Einstein was "a cartoonist's dream come true".<ref name = "slqbwn">'
 Begin Template: Citation
 k: last 
 Text: 'Golden '
@@ -3274,8 +3227,7 @@ Text: '
 '
 Section [0] Notes
 Text: '
-<references group'
-Text: 'fn />
+<references group=fn />
 
 '
 Section [0] References

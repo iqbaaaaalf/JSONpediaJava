@@ -129,8 +129,7 @@ Reference: Royal Academy of Engineering 'FREng'
 Text: ', '
 Reference: Royal Society of Arts 'FRSA'
 End Template: post-nominals
-Text: ' (born 8 June 1955<ref name'
-Text: 'W3Bio/>), also known as "'''TimBL'''", is an English '
+Text: ' (born 8 June 1955<ref name=W3Bio/>), also known as "'''TimBL'''", is an English '
 Reference: computer scientist ''
 Text: ', '
 Reference: Massachusetts Institute of Technology 'MIT'
@@ -156,8 +155,7 @@ Text: ', he implemented the first successful communication between a '
 Reference: Hypertext Transfer Protocol ''
 Text: ' (HTTP) client and '
 Reference: Web server 'server'
-Text: ' via the Internet.<ref name'
-Text: 'AFP/>
+Text: ' via the Internet.<ref name=AFP/>
 
 Berners-Lee is the director of the '
 Reference: World Wide Web Consortium ''
@@ -226,8 +224,7 @@ In 2004, Berners-Lee was '
 Reference: Order of the British Empire 'knighted'
 Text: ' by Queen '
 Reference: Elizabeth II ''
-Text: ' for his pioneering work.<ref name'
-Text: 'tecb/> In April 2009, he was elected a foreign associate of the '
+Text: ' for his pioneering work.<ref name=tecb/> In April 2009, he was elected a foreign associate of the '
 Reference: United States National Academy of Sciences ''
 Text: ', based in Washington, D.C.<ref>'
 Begin Template: cite web
@@ -266,11 +263,9 @@ Text: '.  His parents worked on the first commercially built computer, the '
 Reference: Ferranti Mark 1 ''
 Text: '.  One of four children, he attended Sheen Mount Primary School, and then went on to '
 Reference: Emanuel School ''
-Text: ' in London, from 1969 to 1973.<ref name'
-Text: 'tecb/> He studied at '
+Text: ' in London, from 1969 to 1973.<ref name=tecb/> He studied at '
 Reference: The Queen's College, Oxford ''
-Text: ', from 1973 to 1976, where he received a first-class degree in Physics.<ref name'
-Text: 'W3Bio/>
+Text: ', from 1973 to 1976, where he received a first-class degree in Physics.<ref name=W3Bio/>
 
 '
 Section [0] Career
@@ -297,8 +292,7 @@ Text: '25 May 2008'
 End Template: cite web
 Text: '</ref> While there, he built a prototype system named '
 Reference: ENQUIRE ''
-Text: '.<ref name'
-Text: '"linvinginternet">'
+Text: '.<ref name="linvinginternet">'
 Begin Template: cite web
 k: last
 Text: 'Stewart'
@@ -313,8 +307,7 @@ Text: '22 July 2010'
 End Template: cite web
 Text: '</ref>
 
-After leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.<ref name'
-Text: '"faq">'
+After leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.<ref name="faq">'
 Begin Template: cite web
 k: title
 Text: 'Frequently asked questions'
@@ -329,9 +322,7 @@ Text: 'Tim Berners-Lee'
 End Template: cite web
 Text: '</ref> The project he worked on was a ''real-time remote procedure call'' which gave him experience in '
 Reference: computer network ''
-Text: 'ing.<ref name'
-Text: '"faq" /> In 1984 he returned to CERN as a fellow.<ref name'
-Text: '"linvinginternet" />
+Text: 'ing.<ref name="faq" /> In 1984 he returned to CERN as a fellow.<ref name="linvinginternet" />
 
 In 1989, CERN was the largest Internet node in Europe, and Berners-Lee saw an opportunity to join hypertext with the Internet: "I just had to take the hypertext idea and connect it to the '
 Reference: Transmission Control Protocol ''
@@ -675,14 +666,12 @@ k: publisher
 Reference: Best of the Web Directory ''
 End Template: cite web
 Text: '</ref>
-*In 1995 he won the Kilby Foundation's "Young Innovator of the Year" Award.<ref name'
-Text: '"W3Bio" />
+*In 1995 he won the Kilby Foundation's "Young Innovator of the Year" Award.<ref name="W3Bio" />
 *In 1995 he received also the '
 Reference: Software System Award ''
 Text: ' from the '
 Reference: Association for Computing Machinery ''
-Text: ' (ACM).<ref name'
-Text: 'acmaward>'
+Text: ' (ACM).<ref name=acmaward>'
 Begin Template: cite web 
 k: publisher
 Reference: Association for Computing Machinery ''
@@ -720,8 +709,7 @@ Text: '</ref>
 Reference: Time Magazine ''
 Text: ''' named Berners-Lee one of the '
 Reference: Time 100: The Most Important People of the Century '100 Most Important People of the 20th century'
-Text: '.<ref name'
-Text: 'AFP>'
+Text: '.<ref name=AFP>'
 Begin Template: cite news
 
 k: title       
@@ -766,8 +754,7 @@ End Template: cite news
 Text: '</ref>
 *In 2001, he was elected a Fellow of the '
 Reference: American Academy of Arts and Sciences ''
-Text: '.<ref name'
-Text: 'AAAS>'
+Text: '.<ref name=AAAS>'
 Begin Template: cite web
 k: title
 Text: 'Book of Members, 1780–2010: Chapter B'
@@ -829,8 +816,7 @@ Text: '</ref>
 Reference: Order of the British Empire 'Knight Commander of the Most Excellent Order of the British Empire'
 Text: ' (the second-highest class within this Order that entails a knighthood) by '
 Reference: Elizabeth II of the United Kingdom 'Queen Elizabeth II'
-Text: ', in the 2004 New Year's Honours List, and was formally invested on 16 July 2004.<ref name'
-Text: 'tecb>'
+Text: ', in the 2004 New Year's Honours List, and was formally invested on 16 July 2004.<ref name=tecb>'
 Begin Template: cite news
   
 k: title 

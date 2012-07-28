@@ -169,7 +169,7 @@ public class WikiTextParser {
         char c;
         while(true) {
             c = read();
-            if(c != '{' && c != '[' && c != '=') {
+            if(c != '{' && c != '[' && (c != '=' || col > 3) ) {
                 mark();
                 externalCharsSB.append(c);
             } else {

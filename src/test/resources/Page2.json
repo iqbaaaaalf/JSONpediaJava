@@ -244,8 +244,7 @@
                 ]
             }
         },
-        "(born 8 June 1955<ref name",
-        "W3Bio/>), also known as \"'''TimBL'''\", is an English",
+        "(born 8 June 1955<ref name=W3Bio/>), also known as \"'''TimBL'''\", is an English",
         {
             "__type": "reference",
             "label": "computer scientist",
@@ -307,8 +306,7 @@
             "label": "Web server",
             "description": "server"
         },
-        "via the Internet.<ref name",
-        "AFP/>\n\nBerners-Lee is the director of the",
+        "via the Internet.<ref name=AFP/>\n\nBerners-Lee is the director of the",
         {
             "__type": "reference",
             "label": "World Wide Web Consortium",
@@ -441,8 +439,7 @@
             "label": "Elizabeth II",
             "description": ""
         },
-        "for his pioneering work.<ref name",
-        "tecb/> In April 2009, he was elected a foreign associate of the",
+        "for his pioneering work.<ref name=tecb/> In April 2009, he was elected a foreign associate of the",
         {
             "__type": "reference",
             "label": "United States National Academy of Sciences",
@@ -523,15 +520,13 @@
             "label": "Emanuel School",
             "description": ""
         },
-        "in London, from 1969 to 1973.<ref name",
-        "tecb/> He studied at",
+        "in London, from 1969 to 1973.<ref name=tecb/> He studied at",
         {
             "__type": "reference",
             "label": "The Queen's College, Oxford",
             "description": ""
         },
-        ", from 1973 to 1976, where he received a first-class degree in Physics.<ref name",
-        "W3Bio/>",
+        ", from 1973 to 1976, where he received a first-class degree in Physics.<ref name=W3Bio/>",
         {
             "__type": "section",
             "title": "Career",
@@ -579,8 +574,7 @@
             "label": "ENQUIRE",
             "description": ""
         },
-        ".<ref name",
-        "\"linvinginternet\">",
+        ".<ref name=\"linvinginternet\">",
         {
             "__type": "template",
             "name": "cite web",
@@ -602,8 +596,7 @@
                 ]
             }
         },
-        "</ref>\n\nAfter leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.<ref name",
-        "\"faq\">",
+        "</ref>\n\nAfter leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.<ref name=\"faq\">",
         {
             "__type": "template",
             "name": "cite web",
@@ -631,9 +624,7 @@
             "label": "computer network",
             "description": ""
         },
-        "ing.<ref name",
-        "\"faq\" /> In 1984 he returned to CERN as a fellow.<ref name",
-        "\"linvinginternet\" />\n\nIn 1989, CERN was the largest Internet node in Europe, and Berners-Lee saw an opportunity to join hypertext with the Internet: \"I just had to take the hypertext idea and connect it to the",
+        "ing.<ref name=\"faq\" /> In 1984 he returned to CERN as a fellow.<ref name=\"linvinginternet\" />\n\nIn 1989, CERN was the largest Internet node in Europe, and Berners-Lee saw an opportunity to join hypertext with the Internet: \"I just had to take the hypertext idea and connect it to the",
         {
             "__type": "reference",
             "label": "Transmission Control Protocol",
@@ -1251,8 +1242,7 @@
                 ]
             }
         },
-        "</ref>\n*In 1995 he won the Kilby Foundation's \"Young Innovator of the Year\" Award.<ref name",
-        "\"W3Bio\" />\n*In 1995 he received also the",
+        "</ref>\n*In 1995 he won the Kilby Foundation's \"Young Innovator of the Year\" Award.<ref name=\"W3Bio\" />\n*In 1995 he received also the",
         {
             "__type": "reference",
             "label": "Software System Award",
@@ -1264,8 +1254,7 @@
             "label": "Association for Computing Machinery",
             "description": ""
         },
-        "(ACM).<ref name",
-        "acmaward>",
+        "(ACM).<ref name=acmaward>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1336,8 +1325,7 @@
             "label": "Time 100: The Most Important People of the Century",
             "description": "100 Most Important People of the 20th century"
         },
-        ".<ref name",
-        "AFP>",
+        ".<ref name=AFP>",
         {
             "__type": "template",
             "name": "cite news",
@@ -1404,8 +1392,7 @@
             "label": "American Academy of Arts and Sciences",
             "description": ""
         },
-        ".<ref name",
-        "AAAS>",
+        ".<ref name=AAAS>",
         {
             "__type": "template",
             "name": "cite web",
@@ -1511,8 +1498,7 @@
             "label": "Elizabeth II of the United Kingdom",
             "description": "Queen Elizabeth II"
         },
-        ", in the 2004 New Year's Honours List, and was formally invested on 16 July 2004.<ref name",
-        "tecb>",
+        ", in the 2004 New Year's Honours List, and was formally invested on 16 July 2004.<ref name=tecb>",
         {
             "__type": "template",
             "name": "cite news",

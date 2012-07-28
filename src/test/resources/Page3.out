@@ -223,8 +223,7 @@ End Table
 Text: '
 Albedos of typical materials in visible light range from up to 0.9 for fresh snow, to about 0.04 for charcoal, one of the darkest substances. Deeply shadowed cavities can achieve an effective albedo approaching the zero of a '
 Reference: black body ''
-Text: '. When seen from a distance, the ocean surface has a low albedo, as do most forests, while desert areas have some of the highest albedos among landforms. Most land areas are in an albedo range of 0.1 to 0.4.<ref name'
-Text: '"PhysicsWorld">'
+Text: '. When seen from a distance, the ocean surface has a low albedo, as do most forests, while desert areas have some of the highest albedos among landforms. Most land areas are in an albedo range of 0.1 to 0.4.<ref name="PhysicsWorld">'
 Begin Template: cite web
 k: url
 Text: 'http://scienceworld.wolfram.com/physics/Albedo.html '
@@ -238,8 +237,7 @@ Text: '2011-08-19'
 End Template: cite web
 Text: '</ref> The average albedo of the '
 Reference: Earth ''
-Text: ' is about 0.3.<ref name'
-Text: '"Goode" /> This is far higher than for the ocean primarily because of the contribution of clouds.
+Text: ' is about 0.3.<ref name="Goode" /> This is far higher than for the ocean primarily because of the contribution of clouds.
 
 Human activities have changed the albedo (via forest clearance and farming, for example) of various areas around the globe. However, quantification of this effect on the global scale is difficult.
 
@@ -267,15 +265,11 @@ Reference: mathematical model ''
 Text: ' of the BRDF is used to translate a sample set of satellite reflectance measurements into estimates of '
 Reference: directional-hemispherical reflectance ''
 Text: ' and bi-hemispherical reflectance.  (e.&nbsp;g.,
-.<ref name'
-Text: '"NASA" />)
+.<ref name="NASA" />)
 
 The Earth's average surface temperature due to its albedo and the '
 Reference: greenhouse effect ''
-Text: ' is currently about 15&nbsp;°C. For the frozen (more reflective) planet the average temperature is below −40&nbsp;°C<ref name'
-Text: '"washington" /> (If only all continents being completely covered by glaciers - the mean temperature is about 0&nbsp;°C<ref name'
-Text: '"clim-past" />). The simulation for (more absorptive) aquaplanet shows the average temperature close to 27&nbsp;°C.<ref name'
-Text: '"Smith Robin" />
+Text: ' is currently about 15&nbsp;°C. For the frozen (more reflective) planet the average temperature is below −40&nbsp;°C<ref name="washington" /> (If only all continents being completely covered by glaciers - the mean temperature is about 0&nbsp;°C<ref name="clim-past" />). The simulation for (more absorptive) aquaplanet shows the average temperature close to 27&nbsp;°C.<ref name="Smith Robin" />
 
 '
 Section [1] White-sky and black-sky albedo
@@ -292,16 +286,14 @@ Albedo <math>'
 Text: 'lpha}</math> can then be given as:
 
 :<math>'
-Text: 'lpha}'
-Text: ' (1-D) \bar \alpha(\theta_i) + D \bar'
+Text: 'lpha}= (1-D) \bar \alpha(\theta_i) + D \bar'
 Text: 'bar \alpha}.</math>
 
 '
 Reference: Directional-hemispherical reflectance ''
 Text: ' is sometimes referred to as black-sky albedo and '
 Reference: bi-hemispherical reflectance ''
-Text: ' as white sky albedo. These terms are important because they allow the albedo to be calculated for any given illumination conditions from a knowledge of the intrinsic properties of the surface.<ref name'
-Text: '"BlueskyAlbedo" />
+Text: ' as white sky albedo. These terms are important because they allow the albedo to be calculated for any given illumination conditions from a knowledge of the intrinsic properties of the surface.<ref name="BlueskyAlbedo" />
 
 '
 Section [0] Astronomical albedo
@@ -325,8 +317,7 @@ Reference: Enceladus (moon) 'Enceladus'
 Text: ', a moon of Saturn, has one of the highest known albedos of any body in the Solar system, with 99% of EM radiation reflected. Another notable high-albedo body is '
 Reference: Eris (dwarf planet) 'Eris'
 Text: ', with an albedo of 0.96
-.<ref name'
-Text: '"sicardy">
+.<ref name="sicardy">
 '
 Begin Template: cite journal
 
@@ -351,8 +342,7 @@ Text: '2011-09-14
 End Template: cite journal
 
 Text: '
-</ref> Many small objects in the outer solar system<ref name'
-Text: '"tnoalbedo">'
+</ref> Many small objects in the outer solar system<ref name="tnoalbedo">'
 Begin Template: cite web
   
 k: date
@@ -380,8 +370,7 @@ End Template: cite web
   
 Text: '</ref> and '
 Reference: asteroid belt ''
-Text: ' have low albedos down to about 0.05.<ref name'
-Text: '"astalbedo">'
+Text: ' have low albedos down to about 0.05.<ref name="astalbedo">'
 Begin Template: cite web
   
 k: date
@@ -409,8 +398,7 @@ End Template: cite web
   
 Text: '</ref>  A typical '
 Reference: comet nucleus ''
-Text: ' has an albedo of 0.04.<ref name'
-Text: '"dark">'
+Text: ' has an albedo of 0.04.<ref name="dark">'
 Begin Template: cite web
   
 k: date
@@ -448,8 +436,7 @@ Text: 's.
 
 The overall albedo of the '
 Reference: Moon ''
-Text: ' is around 0.12, but it is strongly directional and non-Lambertian, displaying also a strong opposition effect.<ref name'
-Text: '"medkeff" /> While such reflectance properties are different from those of any terrestrial terrains, they are typical of the '
+Text: ' is around 0.12, but it is strongly directional and non-Lambertian, displaying also a strong opposition effect.<ref name="medkeff" /> While such reflectance properties are different from those of any terrestrial terrains, they are typical of the '
 Reference: regolith ''
 Text: ' surfaces of airless solar system bodies.
 
@@ -471,8 +458,7 @@ Text: ' surfaces.
 
 The correlation between astronomical (geometric) albedo, '
 Reference: Absolute magnitude#Absolute magnitude for planets (H) 'absolute magnitude'
-Text: ' and diameter is:<ref name'
-Text: '"bruton">'
+Text: ' and diameter is:<ref name="bruton">'
 Begin Template: cite web
   
 k: title
@@ -496,8 +482,7 @@ Text: '10 December 2008<!--Added by DASHBot-->'
 End Template: cite web
   
 Text: '</ref>
-<math>A '
-Text: '\left ( \frac'
+<math>A =\left ( \frac'
 Text: '29\times10^'
 Text: '/5}}'
 Text: ' \right ) ^2</math>,
@@ -510,8 +495,7 @@ Text: '
 '
 Section [1] Illumination
 Text: '
-Although the albedo-temperature effect is best known in colder, whiter regions on Earth, the maximum albedo is actually found in the tropics where year-round illumination is greater.  The maximum is additionally in the northern hemisphere, varying between 3 and 12 degrees north.<ref name'
-Text: 'Winston>'
+Although the albedo-temperature effect is best known in colder, whiter regions on Earth, the maximum albedo is actually found in the tropics where year-round illumination is greater.  The maximum is additionally in the northern hemisphere, varying between 3 and 12 degrees north.<ref name=Winston>'
 Begin Template: cite journal
 k: first
 Text: 'Jay '
@@ -526,14 +510,12 @@ Text: '99(11) '
 k: pages
 Text: '818–827'
 End Template: cite journal
-Text: '</ref>  The minima are found in the subtropical regions of the north and south hemispheres, beyond which albedo increases without respect to illumination.<ref name'
-Text: 'Winston/>
+Text: '</ref>  The minima are found in the subtropical regions of the north and south hemispheres, beyond which albedo increases without respect to illumination.<ref name=Winston/>
 
 '
 Section [1] Small-scale effects
 Text: '
-Albedo works on a smaller scale, too. In sunlight, dark clothes absorb more heat and light-coloured clothes reflect it better, thus allowing some control over body temperature by exploiting the albedo effect of the colour of external clothing.<ref name'
-Text: '"ranknfile-ue">'
+Albedo works on a smaller scale, too. In sunlight, dark clothes absorb more heat and light-coloured clothes reflect it better, thus allowing some control over body temperature by exploiting the albedo effect of the colour of external clothing.<ref name="ranknfile-ue">'
 Begin Template: cite web
 k: url
 Text: 'http://www.ranknfile-ue.org/h&s0897.html '
@@ -556,15 +538,13 @@ Text: 's further complicate the issue. In seasonally snow-covered zones, winter 
 Reference: Deciduous trees ''
 Text: ' have an albedo value of about 0.15 to 0.18 while '
 Reference: coniferous trees ''
-Text: ' have a value of about 0.09 to 0.15.<ref name'
-Text: '"mmutrees" />
+Text: ' have a value of about 0.09 to 0.15.<ref name="mmutrees" />
 
 Studies by the '
 Reference: Hadley Centre ''
 Text: ' have investigated the relative (generally warming) effect of albedo change and (cooling) effect of '
 Reference: carbon sequestration ''
-Text: ' on planting forests. They found that new forests in tropical and midlatitude areas tended to cool; new forests in high latitudes (e.g. Siberia) were neutral or perhaps warming.<ref name'
-Text: '"Betts" />
+Text: ' on planting forests. They found that new forests in tropical and midlatitude areas tended to cool; new forests in high latitudes (e.g. Siberia) were neutral or perhaps warming.<ref name="Betts" />
 
 '
 Section [1] Snow
@@ -577,8 +557,7 @@ Text: '). '
 Reference: Cryoconite ''
 Text: ', powdery windblown '
 Reference: dust ''
-Text: ' containing soot, sometimes reduces albedo on glaciers and ice sheets.<ref name '
-Text: ' "Nat. Geo">'
+Text: ' containing soot, sometimes reduces albedo on glaciers and ice sheets.<ref name = "Nat. Geo">'
 Link: http://ngm.nationalgeographic.com/2010/06/melt-zone/jenkins-text/3 '"Changing Greenland - Melt Zone"'
 Text: ' page 3, of 4, article by Mark Jenkins in '''
 Reference: National Geographic (magazine) 'National Geographic'
@@ -601,8 +580,7 @@ Text: '). The glint of light off water is a commonplace effect of this. At small
 Reference: angle of incidence 'angles of incident'
 Text: ' light, '
 Reference: waviness ''
-Text: ' results in reduced reflectivity because of the steepness of the reflectivity-vs.-incident-angle curve and a locally increased average incident angle.<ref name'
-Text: '"Fresnel" />
+Text: ' results in reduced reflectivity because of the steepness of the reflectivity-vs.-incident-angle curve and a locally increased average incident angle.<ref name="Fresnel" />
 
 Although the reflectivity of water is very low at low and medium angles of incident light, it increases tremendously at high angles of incident light such as occur on the illuminated side of the Earth near the '
 Reference: terminator (solar) 'terminator'
@@ -615,8 +593,7 @@ Section [1] Clouds
 Text: '
 '
 Reference: Cloud albedo ''
-Text: ' has substantial influence over atmospheric temperatures. Different types of clouds exhibit different reflectivity, theoretically ranging in albedo from a minimum of near 0 to a maximum approaching 0.8. "On any given day, about half of Earth is covered by clouds, which reflect more sunlight than land and water. Clouds keep Earth cool by reflecting sunlight, but they can also serve as blankets to trap warmth."<ref name'
-Text: '"livescience">'
+Text: ' has substantial influence over atmospheric temperatures. Different types of clouds exhibit different reflectivity, theoretically ranging in albedo from a minimum of near 0 to a maximum approaching 0.8. "On any given day, about half of Earth is covered by clouds, which reflect more sunlight than land and water. Clouds keep Earth cool by reflecting sunlight, but they can also serve as blankets to trap warmth."<ref name="livescience">'
 Begin Template: cite web
 k: url
 Text: 'http://www.livescience.com/environment/060124_earth_albedo.html '
@@ -633,9 +610,7 @@ Text: '</ref>
 
 Albedo and climate in some areas are affected by artificial clouds, such as those created by the '
 Reference: contrail ''
-Text: 's of heavy commercial airliner traffic.<ref name'
-Text: '"uww" /> A study following the burning of the Kuwaiti oil fields during Iraqi occupation showed that temperatures under the burning oil fires were as much as 10&nbsp;°C colder than temperatures several miles away under clear skies.<ref name'
-Text: '"harvard">'
+Text: 's of heavy commercial airliner traffic.<ref name="uww" /> A study following the burning of the Kuwaiti oil fields during Iraqi occupation showed that temperatures under the burning oil fires were as much as 10&nbsp;°C colder than temperatures several miles away under clear skies.<ref name="harvard">'
 Begin Template: cite web
 k: url
 Text: 'http://adsabs.harvard.edu/abs/1992JGR....9714565C '
@@ -659,8 +634,7 @@ Text: ' (very fine particles/droplets in the atmosphere) have both direct and in
 Reference: cloud condensation nuclei ''
 Text: ' and thereby change '
 Reference: cloud ''
-Text: ' properties) is less certain.<ref name'
-Text: '"girda">'
+Text: ' properties) is less certain.<ref name="girda">'
 Begin Template: cite web
 k: url
 Text: 'http://www.grida.no/climate/ipcc_tar/wg1/231.htm#671 '
@@ -676,8 +650,7 @@ Text: 'http://web.archive.org/web/20110629175429/http://www.grida.no/climate/ipc
 k: archivedate
 Text: '29 June 2011<!--Added by DASHBot-->'
 End Template: cite web
-Text: '</ref> As per <ref name'
-Text: '"DOMINICK" /> the effects are:
+Text: '</ref> As per <ref name="DOMINICK" /> the effects are:
 <blockquote>
 <!-- Aerosol radiative forcing. -->
 * ''Aerosol direct effect.'' Aerosols directly scatter and absorb radiation. The scattering of radiation causes atmospheric cooling, whereas absorption can cause atmospheric warming.
@@ -691,8 +664,7 @@ Section [1] Black carbon
 Text: '
 Another albedo-related effect on the climate is from black carbon particles. The size of this effect is difficult to quantify: the '
 Reference: Intergovernmental Panel on Climate Change ''
-Text: ' estimates that the global mean radiative forcing for black carbon aerosols from fossil fuels is +0.2 W m<sup>−2</sup>, with a range +0.1 to +0.4 W m<sup>−2</sup>.<ref name'
-Text: '"girda 1">'
+Text: ' estimates that the global mean radiative forcing for black carbon aerosols from fossil fuels is +0.2 W m<sup>−2</sup>, with a range +0.1 to +0.4 W m<sup>−2</sup>.<ref name="girda 1">'
 Begin Template: cite web
 k: url
 Text: 'http://www.grida.no/climate/ipcc_tar/wg1/233.htm '
