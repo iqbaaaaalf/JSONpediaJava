@@ -38,4 +38,49 @@ public class DefaultJsonPathBuilderTest {
         jsonPathBuilder.exitObject();
     }
 
+    @Test
+    public void testMatch() {
+        final JsonPathBuilder b1 = new DefaultJsonPathBuilder();
+        b1.enterObject();
+        b1.field("fi");
+        b1.enterObject();
+        b1.field("f2");
+        b1.enterArray();
+        b1.arrayElem();
+        b1.arrayElem();
+
+        final JsonPathBuilder b2 = new DefaultJsonPathBuilder();
+        b2.enterObject();
+        b2.field("fi");
+        b2.enterObject();
+        b2.field("f2");
+        b2.enterArray();
+        b2.arrayElem();
+        b2.arrayElem();
+        b2.enterObject();
+        b2.field("f3");
+
+        final JsonPathBuilder b3 = new DefaultJsonPathBuilder();
+        b3.enterObject();
+        b3.field("fi");
+        b3.enterObject();
+        b3.field("fX");
+        b3.enterArray();
+        b3.arrayElem();
+        b3.arrayElem();
+        b3.enterObject();
+        b3.field("f3");
+
+        Assert.assertTrue(
+                String.format("Invalid match: %s doesn't contain %s", b1.getJsonPath(), b2.getJsonPath()),
+                b1.contains(b2)
+        );
+
+        Assert.assertFalse(
+                String.format("Invalid match: %s should not contain %s", b1.getJsonPath(), b3.getJsonPath()),
+                b1.contains(b3)
+        );
+
+    }
+
 }

@@ -80,8 +80,23 @@ public class DefaultJsonPathBuilder implements JsonPathBuilder {
         return sb.toString();
     }
 
-    private interface Element {
+    @Override
+    public boolean contains(JsonPathBuilder other) {
+        final DefaultJsonPathBuilder otherBuilder = (DefaultJsonPathBuilder) other;
+        if(stack.size() > otherBuilder.stack.size()) return false;
+        for(int i = 0; i < stack.size(); i++) {
+            if(! stack.get(i).equals(otherBuilder.stack.get(i)))
+                return false;
+        }
+        return true;
+    }
 
+    @Override
+    public String toString() {
+        return getJsonPath();
+    }
+
+    private interface Element {
         String toJsonSection();
         String getPathSeparator();
     }
@@ -106,10 +121,26 @@ public class DefaultJsonPathBuilder implements JsonPathBuilder {
         public String toString() {
             return toJsonSection();
         }
+
+        @Override
+        public int hashCode() {
+            return index;
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            if(obj == null) return false;
+            if(obj == this) return true;
+            if(! (obj instanceof ArrayElement)) return false;
+            final ArrayElement other = (ArrayElement) obj;
+            return index == other.index;
+        }
     }
 
     private class ObjectElement implements Element {
+
         private String field = null;
+
         void setField(String fieldName) {
             if(fieldName == null || fieldName.trim().length() == 0)
                 throw new IllegalArgumentException("Invalid field: " + fieldName);
@@ -124,6 +155,20 @@ public class DefaultJsonPathBuilder implements JsonPathBuilder {
         @Override
         public String getPathSeparator() {
             return field == null ? "" : ".";
+        }
+
+        @Override
+        public int hashCode() {
+            return field == null ? 0 : field.hashCode();
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            if (obj == null) return false;
+            if (obj == this) return true;
+            if (!(obj instanceof ObjectElement)) return false;
+            final ObjectElement other = (ObjectElement) obj;
+            return field == null ? other.field == null : field.equals(other.field);
         }
 
         @Override
