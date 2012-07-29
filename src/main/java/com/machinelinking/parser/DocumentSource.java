@@ -1,5 +1,6 @@
 package com.machinelinking.parser;
 
+import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.net.URL;
 
@@ -17,8 +18,19 @@ public class DocumentSource {
         this.inputStream = inputStream;
     }
 
+    public DocumentSource(URL documentURL, String wikitext) {
+        if(documentURL == null) throw new NullPointerException("documentURL cannot be null.");
+        if(wikitext == null) throw new NullPointerException("WikiText cannot be null");
+        this.documentURL = documentURL;
+        if(wikitext == null) {
+            this.inputStream = null;
+        } else {
+            this.inputStream = new ByteArrayInputStream( wikitext.getBytes() );
+        }
+    }
+
     public DocumentSource(URL documentURL) {
-        this(documentURL, null);
+        this(documentURL, (InputStream) null);
     }
 
     public URL getDocumentURL() {
