@@ -9,6 +9,6 @@ public interface JsonContext {
 
     String getJSONPath();
 
-    boolean subPathOf(JsonPathBuilder builder);
+    boolean subPathOf(JsonPathBuilder builder, boolean strict);
 
 }

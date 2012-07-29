@@ -48,8 +48,9 @@ public class DefaultHTMLRender implements HTMLRender {
         put("style", DEFAULT_RENDER_HIDDEN_BG_COLOR + "visibility:none");
     }};
 
-    private final Map<String,List<NodeRender>> nodeRenders     = new HashMap<>();
-    private final Map<String,KeyValueRender>   keyValueRenders = new HashMap<>();
+    private final Map<String,List<NodeRender>> nodeRenders       = new HashMap<>();
+    private final Map<String,KeyValueRender>   keyValueRenders   = new HashMap<>();
+    private final List<PrimitiveNodeRender> primitiveNodeRenders = new ArrayList<>();
 
     private final JsonPathBuilder jsonPathBuilder = new DefaultJsonPathBuilder();
 
@@ -60,8 +61,8 @@ public class DefaultHTMLRender implements HTMLRender {
         }
 
         @Override
-        public boolean subPathOf(JsonPathBuilder builder) {
-            return jsonPathBuilder.subPathOf(builder);
+        public boolean subPathOf(JsonPathBuilder builder, boolean strict) {
+            return jsonPathBuilder.subPathOf(builder, strict);
         }
     };
 
@@ -97,6 +98,16 @@ public class DefaultHTMLRender implements HTMLRender {
     @Override
     public boolean removeKeyValueRender(String key) {
         return keyValueRenders.remove(key) != null;
+    }
+
+    @Override
+    public void addPrimitiveRender(PrimitiveNodeRender render) {
+        primitiveNodeRenders.add(render);
+    }
+
+    @Override
+    public void removePrimitiveRender(PrimitiveNodeRender render) {
+        primitiveNodeRenders.remove(render);
     }
 
     @Override
@@ -192,7 +203,10 @@ public class DefaultHTMLRender implements HTMLRender {
       throws IOException {
         final int size = list.size();
         if(size == 1) {
+            jsonPathBuilder.enterArray();
+            jsonPathBuilder.arrayElem();
             render(getContext(), rootRender, list.get(0), writer);
+            jsonPathBuilder.exitArray();
             return;
         } else if(size == 0) {
             renderPrimitive(list, writer);
@@ -214,6 +228,10 @@ public class DefaultHTMLRender implements HTMLRender {
     }
 
     private void renderPrimitive(JsonNode node, HTMLWriter writer) throws IOException {
+        for(PrimitiveNodeRender primitiveRender : primitiveNodeRenders) {
+            if( primitiveRender.render(getContext(), node, writer) ) return;
+        }
+
         final String primitive = JSONUtils.asPrimitiveString(node);
         if (primitive != null) {
             writer.openTag("span", PRIMITIVE_NODE_ATTR);

@@ -70,7 +70,6 @@ public class DefaultJsonPathBuilder implements JsonPathBuilder {
 
     @Override
     public String getJsonPath() {
-        //if(stack.isEmpty()) throw new IllegalStateException("Outside any element");
         final StringBuilder sb = new StringBuilder();
         sb.append('$');
         for(Element element : stack) {
@@ -81,10 +80,16 @@ public class DefaultJsonPathBuilder implements JsonPathBuilder {
     }
 
     @Override
-    public boolean subPathOf(JsonPathBuilder other) {
+    public boolean subPathOf(JsonPathBuilder other, boolean strict) {
         final DefaultJsonPathBuilder otherBuilder = (DefaultJsonPathBuilder) other;
-        if(stack.size() > otherBuilder.stack.size()) return false;
-        for(int i = 0; i < stack.size(); i++) {
+        final int stackSize      = stack.size();
+        final int otherStackSize = otherBuilder.stack.size();
+        if(strict) {
+            if(stackSize != otherStackSize) return false;
+        } else {
+            if(otherStackSize > stackSize)  return false;
+        }
+        for(int i = 0; i < otherStackSize; i++) {
             if(! stack.get(i).equals(otherBuilder.stack.get(i)))
                 return false;
         }
@@ -133,7 +138,7 @@ public class DefaultJsonPathBuilder implements JsonPathBuilder {
             if(obj == this) return true;
             if(! (obj instanceof ArrayElement)) return false;
             final ArrayElement other = (ArrayElement) obj;
-            return index == other.index;
+            return index == -1 || other.index == -1 || index == other.index;
         }
     }
 

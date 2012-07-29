@@ -33,6 +33,8 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         render.addKeyValueRender("title"      , new TitleKeyValueRender());
         render.addKeyValueRender("content"    , new ContentKeyValueRender());
         render.addKeyValueRender("freebase"   , new FreebaseKeyValueRender());
+
+        render.addPrimitiveRender( new BaseTextPrimitiveNodeRender() );
         return render;
     }
 

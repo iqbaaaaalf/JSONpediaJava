@@ -21,6 +21,6 @@ public interface JsonPathBuilder {
 
     String getJsonPath();
 
-    boolean subPathOf(JsonPathBuilder other);
+    boolean subPathOf(JsonPathBuilder other, boolean strict);
 
 }

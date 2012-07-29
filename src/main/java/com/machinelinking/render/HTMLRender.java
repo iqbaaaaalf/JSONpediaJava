@@ -13,5 +13,9 @@ public interface HTMLRender extends RootRender {
 
     boolean removeKeyValueRender(String key);
 
+    void addPrimitiveRender(PrimitiveNodeRender render);
+
+    void removePrimitiveRender(PrimitiveNodeRender render);
+
 
 }
