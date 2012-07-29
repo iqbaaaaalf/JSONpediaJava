@@ -8,7 +8,9 @@ import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonNode;
 
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -56,24 +58,49 @@ public class DefaultAnnotationService implements AnnotationService {
             MediaType.TEXT_HTML + ";charset=UTF-8"
     })
     @Override
-    public Response annotate(
+    public Response annotateResource(
             @PathParam("resource") String resource,
             @PathParam("outFormat")String outFormat,
             @QueryParam("flags")   String flags
     ) {
-        final URL resourceURL;
+
+        final DocumentSource documentSource = new DocumentSource(toResourceURL(resource));
+        return annotateDocumentSource(documentSource, flags, outFormat);
+    }
+
+    @Path("/resource/{outFormat}/{resource}")
+    @POST
+    @Produces({
+            MediaType.APPLICATION_JSON + ";charset=UTF-8",
+            MediaType.TEXT_HTML + ";charset=UTF-8"
+    })
+    @Override
+    public Response annotateResource(
+            @PathParam("resource") String resource,
+            @PathParam("outFormat")String outFormat,
+            @QueryParam("flags")   String flags,
+            @FormParam("wikitext")String wikitext
+    ) {
+
+        final DocumentSource documentSource = new DocumentSource(toResourceURL(resource), wikitext);
+        return annotateDocumentSource(documentSource, flags, outFormat);
+    }
+
+    private URL toResourceURL(String resource) {
         try {
-            resourceURL = new URL(resource);
+            return new URL(resource);
         } catch (MalformedURLException murle) {
             throw new IllegalArgumentException(
                     String.format("Invalid resource [%s], must be a valid URL.", resource),
                     murle
             );
         }
+    }
 
+    private Response annotateDocumentSource(DocumentSource documentSource, String flags, String outFormat) {
+        final OutputFormat format = checkOutFormat(outFormat);
         final WikiEnricher wikiEnricher = WikiEnricherFactory.getInstance()
             .createFullyConfiguredInstance( toFlag(flags) );
-        final DocumentSource documentSource = new DocumentSource(resourceURL);
         final JSONSerializer jsonSerializer;
         try {
             baos.reset();
@@ -84,7 +111,7 @@ public class DefaultAnnotationService implements AnnotationService {
         try {
             wikiEnricher.enrichEntity(documentSource, jsonSerializer);
             final String json = baos.toString();
-            return toOutputFormat(json, outFormat);
+            return toOutputFormat(json, format);
         } catch (Exception e) {
             throw new RuntimeException("Error while serializing resource", e);
         }
@@ -104,13 +131,15 @@ public class DefaultAnnotationService implements AnnotationService {
         return flags.toArray( new WikiEnricherFactory.Flag[flags.size()] );
     }
 
-    private Response toOutputFormat(String json, String outFormat) throws IOException {
-        final OutputFormat format;
+    private OutputFormat checkOutFormat(String outFormat) {
         try {
-            format = OutputFormat.valueOf(outFormat);
+            return OutputFormat.valueOf(outFormat);
         } catch (Exception e) {
-            throw new IllegalArgumentException( String.format("Unsupported output format: [%s]", outFormat) );
+            throw new IllegalArgumentException(String.format("Unsupported output format: [%s]", outFormat));
         }
+    }
+
+    private Response toOutputFormat(String json, OutputFormat format) throws IOException {
         switch(format) {
             case json:
                 return Response.ok(json, MediaType.APPLICATION_JSON + ";charset=UTF-8").build();
