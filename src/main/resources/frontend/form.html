@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xml:lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:dc="http://purl.org/dc/elements/1.1/">
+<head>
+    <title>JSONpedia</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <script type="text/javascript" src="bootstrap-modal.js"></script>
+    <script type="application/javascript">
+        $(function ($) {
+            $.each($('.app-base-uri'), function () {
+                $(this).text(document.location.host);
+            });
+
+            $('#app-path').text(document.location.pathname);
+            $('#app-host').text(document.location.host);
+
+            $('#get-submit').click(function () {
+                document.location.href =
+                        '/annotate/resource/' +
+                                $('#get-format option:selected').attr('value') +
+                                '/' + encodeURIComponent($('#get-uri').val());
+            });
+            $('#post-submit').click(function () {
+                request = '/annotate/resource/' +
+                        $('#post-format option:selected').attr('value') +
+                        '/' + encodeURIComponent($('#post-uri').val());
+                $.post(request, {'wikitext':$('#post-wikitext').html()})
+                        .success(function (data) {
+                            $('body').html(data)
+                        })
+                        .error(function (e) {
+                            alert('Error while performing request: ' + e)
+                        });
+            });
+        });
+
+        function showModal(id) {
+            $(id).modal('show');
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+<h1>JSONpedia - Live Service Demo</h1>
+
+<p>Convert any MediaWiki resource to JSON, extract specific content.</p>
+
+<p>Download and install JSONPedia: visit the <a href="https://bitbucket.org/hardest/machinelinking" target="_blank">Developers
+    Site</a> and the <a href="https://bitbucket.org/hardest/machinelinking/wiki/Home" target="_blank">Documentation</a>.
+<hr/>
+<h2>Convert a Resource to JSON</h2>
+
+<form class="well form-horizontal" method="get">
+    <label>Pick an output format and enter the URI of a MediaWiki Resource:</label>
+
+    <div class="control-group">
+        <label class="control-label app-base-uri" for="format">http://.../</label>
+
+        <div class="controls">
+            <select id="get-format">
+                <option value="json" selected="selected">json</option>
+                <option value="html">html</option>
+            </select>/<input id="get-uri" type="text" style="width:500px"
+                             value="http://en.wikipedia.org/wiki/Albert_Einstein"/>
+        </div>
+    </div>
+    <div class="form-actions">
+        <button id="get-submit" type="button" class="btn btn-primary">Convert</button>
+        <button type="reset" class="btn">Cancel</button>
+    </div>
+</form>
+<hr/>
+
+<h2>Convert copy&amp;pasted WikiText</h2>
+
+<form class="well form-horizontal" method="post">
+    <div class="control-group">
+        <label class="control-label" for="out-format">Output format</label>
+
+        <div class="controls">
+            <select id="post-format" name="format">
+                <option value="json" selected="selected">json</option>
+                <option value="html">html</option>
+            </select>/<input id="post-uri" type="text" style="width:500px"
+                             value="http://en.wikipedia.org/wiki/Fake_Page"/>
+        </div>
+    </div>
+    <textarea id="post-wikitext" class="span11" name="body" rows="12">
+        {{Infobox scientist
+        | name = Albert Einstein
+        | image = Einstein 1921 portrait2.jpg
+        | caption = Albert Einstein in 1921
+        | birth_date = {{Birth date|df=yes|1879|3|14}}
+        | birth_place = [[Ulm]], [[Kingdom of Württemberg]], [[German Empire]]
+        | death_date = {{Death date and age|df=yes|1955|4|18|1879|3|14}}
+        | death_place = [[Princeton, New Jersey|Princeton]], New Jersey, United States
+        | spouse = [[Mileva Marić]]&nbsp;(1903–1919)<br>{{nowrap|[[Elsa Löwenthal]]&nbsp;(1919–1936)}}
+        | residence = Germany, Italy, Switzerland, Austria, Belgium, United Kingdom, United States
+        | citizenship = {{Plainlist|
+        * [[Kingdom of Württemberg|Württemberg/Germany]] (1879–1896)
+        * [[Statelessness|Stateless]] (1896–1901)
+        * [[Switzerland]] (1901–1955)
+        * [[Austria–Hungary|Austria]] (1911–1912)
+        * [[German Empire|Germany]] (1914–1933)
+        * United States (1940–1955)
+        }}
+        }}
+    </textarea>
+
+    <div class="form-actions">
+        <button id="post-submit" type="button" class="btn btn-primary">Convert</button>
+        <button type="reset" class="btn">Cancel</button>
+    </div>
+
+</form>
+<hr/>
+
+<h2>Quick API reference</h2>
+
+<h3>Examples</h3>
+<ul>
+    <li><code><a href="/annotate/resource/json/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/json/http://en.wikipedia.org/wiki/Albert_Einstein</a></code>
+    </li>
+    <li><code><a href="/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/html/http://en.wikipedia.org/wiki/Albert_Einstein</a></code>
+    </li>
+    <li><code><a href="/annotate/resource/json/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbedo"><span class="app-base-uri">http://...</span>/annotate/resource/json/http://en.wikipedia.org/wiki/Albedo</a></code>
+    </li>
+    <li><code><a href="/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbedo"><span class="app-base-uri">http://...</span>/annotate/resource/html/http://en.wikipedia.org/wiki/Albedo</a></code>
+    </li>
+</ul>
+<h3>Compact API</h3>
+
+<p>HTTP GET requests can be made
+    to URIs of the shape</p>
+<pre><span class="app-base-uri">http://...</span>/<em>format</em>/<em>input-uri</em></pre>
+<p>The response is the input document converted to the desired output format.</p>
+
+<h3>Form-style GET API</h3>
+
+<p>HTTP GET requests can be made to
+    the URI
+    <code class="app-base-uri">http://.../</code> with the following
+    query parameters:
+</p>
+<table class="table">
+    <tr>
+        <th>uri</th>
+        <td>URI of an input resource.</td>
+    </tr>
+    <tr>
+        <th>format</th>
+        <td>Desired output format, defaults to <code>json</code>.</td>
+    </tr>
+</table>
+Such URL will return an HTTP <i>302</i> redirect to <code><span
+        class="app-base-uri">http://...</span>/annotate/resource/<em>format</em></code>.<br/>
+
+<p>The response is the input resource converted to the desired output format.</p>
+
+<h3>Direct POST API</h3>
+
+<p>HTTP POSTing a WikiText body to
+    <code><span class="app-base-uri">http://...</span>/<em>format</em></code> will convert
+    the WikiText to the specified output format.<br/>
+    Typical media types for supported output formats are:
+</p>
+<table class="table">
+    <tr>
+        <th>Output format</th>
+        <th>Media type</th>
+    </tr>
+    <tr>
+        <th>JSON</th>
+        <td><code>application/json</code></td>
+    </tr>
+    <tr>
+        <th>HTML</th>
+        <td><code>application/xhtml</code></td>
+    </tr>
+</table>
+
+<h3>Form-style POST API</h3>
+
+<p>A document body can also be converted by HTTP POSTing form data to
+    <code><span class="app-base-uri">http://...</span>/</code>. <br/>
+    The <code>Content-Type</code> HTTP header must be set to
+    <code>application/x-www-form-urlencoded</code>.
+    The following parameters are supported:
+</p>
+<table class="table">
+    <tr>
+        <th>format</th>
+        <td>Desired output format; defaults to <code>json</code>.</td>
+    </tr>
+</table>
+
+<h3>Output formats</h3>
+
+<p>Supported output format identifiers are:</p>
+<ul>
+    <li><code>json</code> for <a href="http://json.org/" target="_blank">JSON</a>.</li>
+    <li><code>html</code> for XHTML Compliant markup.</li>
+</ul>
+
+<h3>Error reporting</h3>
+
+<p>Processing errors are indicated via
+    HTTP status codes and brief <code>text/plain</code> error messages.
+    The following status codes can be returned:</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Code</th>
+        <th>Reason</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>200 OK</th>
+        <td>Success</td>
+    </tr>
+    <tr>
+        <th>400 Bad Request</th>
+        <td>Missing or malformed input parameter</td>
+    </tr>
+    <tr>
+        <th>404 Not Found</th>
+        <td>Malformed request URI</td>
+    </tr>
+    <tr>
+        <th>502 Bad Gateway</th>
+        <td>Input document from a remote server could not be fetched or parsed</td>
+    </tr>
+    </tbody>
+</table>
+
+<p><b>JSONpedia v.${project.version} (${implementation.build.tstamp})</b></p>
+
+<p><a href="https://bitbucket.org/hardest/machinelinking" target="_blank">JSONpedia project homepage</a> |
+    Hosted at <a href="http://bitbucket.org" target="_blank">BitBucket</a></p>
+
+</div>
+
+<footer class="footer">
+    <div class="container-fluid" style="padding:50px">
+        Copyright &copy;2012 The <a href="http://machinelinking.com/">MachineLinking</a>. All Rights Reserved.<br/>
+    </div>
+</footer>
+</body>
+</html>

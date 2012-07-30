@@ -4,6 +4,7 @@ import com.sun.jersey.api.container.grizzly2.GrizzlyServerFactory;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.api.core.ResourceConfig;
 import org.glassfish.grizzly.http.server.HttpServer;
+import org.glassfish.grizzly.http.server.StaticHttpHandler;
 import org.junit.After;
 import org.junit.Before;
 
@@ -33,6 +34,11 @@ public class ServiceTestBase {
         System.out.println("Starting Grizzly Server...");
         ResourceConfig rc = new PackagesResourceConfig(ServiceTestBase.class.getPackage().getName());
         httpServer = GrizzlyServerFactory.createHttpServer(BASE_URI, rc);
+        httpServer.getServerConfiguration().addHttpHandler(
+                new StaticHttpHandler("./src/main/resources/frontend/"),
+                "/frontend"
+        );
+        httpServer.start();
 
     }
 
