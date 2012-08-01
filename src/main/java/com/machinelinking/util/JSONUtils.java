@@ -8,11 +8,14 @@ import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.util.DefaultPrettyPrinter;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.util.Iterator;
 import java.util.Map;
@@ -24,10 +27,15 @@ public class JSONUtils {
 
     private static final JsonFactory jsonFactory = new JsonFactory();
 
-    public static JsonGenerator createJSONGenerator(Writer writer) throws IOException {
+    public static JsonGenerator createJSONGenerator(Writer writer, boolean format) throws IOException {
         final JsonGenerator generator = jsonFactory.createJsonGenerator(writer);
-        //generator.setPrettyPrinter( new DefaultPrettyPrinter() );
+        if(format)
+            generator.setPrettyPrinter( new DefaultPrettyPrinter() );
         return generator;
+    }
+
+    public static JsonGenerator createJSONGenerator(OutputStream os, boolean format) throws IOException {
+        return createJSONGenerator( new OutputStreamWriter(os), format );
     }
 
     public static ObjectMapper createObjectMapper() {

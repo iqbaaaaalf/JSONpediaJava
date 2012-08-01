@@ -104,7 +104,7 @@ public class DefaultAnnotationService implements AnnotationService {
         final JSONSerializer jsonSerializer;
         try {
             baos.reset();
-            jsonSerializer = new JSONSerializer(baos);
+            jsonSerializer = new JSONSerializer( JSONUtils.createJSONGenerator(baos, true) );
         } catch (IOException ioe) {
             throw new RuntimeException("Error while initializing serializer.", ioe);
         }

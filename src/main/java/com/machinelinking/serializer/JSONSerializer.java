@@ -74,8 +74,13 @@ public class JSONSerializer implements Serializer {
 
     private DataEncoder dataEncoder;
 
+    public JSONSerializer(JsonGenerator jsonGenerator) throws IOException {
+        if(jsonGenerator == null) throw new NullPointerException("JSON generator cannot be null.");
+        this.jsonGenerator = jsonGenerator;
+    }
+
     public JSONSerializer(Writer writer) throws IOException {
-        this.jsonGenerator = JSONUtils.createJSONGenerator(writer);
+        this( JSONUtils.createJSONGenerator(writer, false) );
     }
 
     public JSONSerializer(OutputStream os) throws IOException {
