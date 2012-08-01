@@ -113,8 +113,16 @@ public class JSONUtils {
             serializeArray(node, serializer);
         } else if(node.isObject()) {
             serializeObject(node, serializer);
+        } else if(node.isTextual()) {
+            serializer.value( node.asText() );
+        } else if(node.isDouble()) {
+            serializer.value( node.asDouble() );
+        } else if(node.isInt()) {
+            serializer.value( node.asInt() );
+        } else if(node.isBoolean()) {
+            serializer.value( node.asBoolean() );
         } else {
-            serializer.value( node.getTextValue() ); // TODO: manage objects.
+            throw new IllegalArgumentException();
         }
     }
 
