@@ -12,7 +12,7 @@ import javax.ws.rs.core.UriBuilder;
 import java.io.IOException;
 import java.net.URI;
 
-//TODO: TESTED WITH http://localhost:9998/annotate/resource/http%3A%2F%2Fen.wikipedia.org%2Fpage%2FLondon
+//NOTE: TESTED WITH http://localhost:9998/annotate/resource/http%3A%2F%2Fen.wikipedia.org%2Fpage%2FLondon
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
