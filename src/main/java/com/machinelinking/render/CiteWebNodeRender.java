@@ -39,7 +39,7 @@ public class CiteWebNodeRender implements NodeRender {
             if(value == null) continue;
             writer.openTag("tr");
             writer.openTag("td");
-            rootRender.render(context, rootRender, field, value, writer); // TODO: add check that a sub node is taken to prevent loop.
+            rootRender.render(context, rootRender, field, value, writer);
             writer.closeTag();
             writer.closeTag();
         }

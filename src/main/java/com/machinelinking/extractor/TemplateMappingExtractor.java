@@ -74,11 +74,7 @@ public class TemplateMappingExtractor extends Extractor {
 
     private void waitMappings() throws InterruptedException, ExecutionException {
         for (Future future : waitList) {
-            try {
-                future.get();
-            } catch (Exception e) {
-                e.printStackTrace(); //TODO: count errors.
-            }
+            future.get();
         }
     }
 

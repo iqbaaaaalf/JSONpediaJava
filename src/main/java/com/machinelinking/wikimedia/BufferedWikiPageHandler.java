@@ -13,16 +13,16 @@ public class BufferedWikiPageHandler implements WikiPageHandler {
     private final ArrayBlockingQueue<WikiPage> pages = new ArrayBlockingQueue<>(1024);
 
     private String documentId;
+    private boolean eoqAdded = false;
 
     public int size() {
-        return pages.size() - ( pages.contains(EOQ) ? 1 : 0); //TODO: mmm
+        return pages.size() - (eoqAdded ? 1 : 0);
     }
 
     public WikiPage getPage(boolean wait) {
         try {
-            final WikiPage out = wait ? pages.take() : pages.poll();
-            if(out == EOQ) pages.put(EOQ);
-            return out;
+            if(pages.peek() == EOQ) return EOQ;
+            return wait ? pages.take() : pages.poll();
         } catch (InterruptedException ie) {
             throw new RuntimeException(ie);
         }
@@ -31,6 +31,7 @@ public class BufferedWikiPageHandler implements WikiPageHandler {
     public void reset() {
         sb.delete(0, sb.length());
         pages.clear();
+        eoqAdded = false;
     }
 
     @Override
@@ -61,6 +62,7 @@ public class BufferedWikiPageHandler implements WikiPageHandler {
     @Override
     public void endStream() {
         pages.add(EOQ);
+        eoqAdded = true;
     }
 
 }
