@@ -12,15 +12,35 @@ import java.io.IOException;
  */
 public class DefaultJSONFilterEngineTest {
 
-    private static final String FILTER_EXP = "name:Death date and age,__type:template";
+    public static final String FILTER_EXP = "name:Death date and age,__type:template";
+
+    @Test
+    public void testParseFilter() throws IOException {
+        final JSONFilter r = DefaultJSONFilterEngine.parseFilter(FILTER_EXP);
+        Assert.assertEquals(
+                "__type=template\n" +
+                "name=Death date and age\n",
+                r.print()
+        );
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testParseFilterFail() throws IOException {
+        DefaultJSONFilterEngine.parseFilter("name::fake");
+    }
+
+    @Test
+    public void testApplyFilter() throws IOException {
+        final JsonNode[] r = DefaultJSONFilterEngine.applyFilter(loadJSON(), FILTER_EXP);
+        Assert.assertEquals(2, r.length);
+    }
 
     @Test
     public void testFilter1() throws IOException {
         final JSONFilter filter = new DefaultJSONFilter();
         filter.addCriteria("__type", "template");
         filter.addCriteria("name"  , "Death date and age");
-
-        applyFilter(filter);
+        checkFilter(filter);
     }
 
     @Test
@@ -28,20 +48,14 @@ public class DefaultJSONFilterEngineTest {
         final JSONFilter filter = new DefaultJSONFilter();
         final JSONFilterParser parser = new DefaultJSONFilterParser();
         parser.parse(FILTER_EXP, filter);
-        applyFilter(filter);
-    }
-
-    @Test
-    public void testFilter3() throws IOException {
-        final JsonNode[] r = DefaultJSONFilterEngine.filter(loadJSON(), FILTER_EXP);
-        Assert.assertEquals(2, r.length);
+        checkFilter(filter);
     }
 
     private JsonNode loadJSON() throws IOException {
         return JSONUtils.parseJSON(this.getClass().getResourceAsStream("/Enrichment.json"));
     }
 
-    private void applyFilter(JSONFilter filter) throws IOException {
+    private void checkFilter(JSONFilter filter) throws IOException {
         final JsonNode node = loadJSON();
 
         final JSONFilterEngine engine = new DefaultJSONFilterEngine();

@@ -9,8 +9,8 @@ public interface AnnotationService {
 
     FlagSet flags();
 
-    Response annotateResource(String resource, String flags, String outFormat);
+    Response annotateResource(String resource, String flags, String outFormat, String filter);
 
-    Response annotateResource(String resource, String wikitext, String flags, String outFormat);
+    Response annotateResource(String resource, String wikitext, String flags, String outFormat, String filter);
 
 }

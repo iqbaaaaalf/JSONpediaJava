@@ -29,4 +29,13 @@ public class DefaultJSONFilter implements JSONFilter {
         return true;
     }
 
+    @Override
+    public String print() {
+        final StringBuilder sb = new StringBuilder();
+        for(Map.Entry<String,String> criteria : criterias.entrySet()) {
+            sb.append(criteria.getKey()).append('=').append(criteria.getValue()).append('\n');
+        }
+        return sb.toString();
+    }
+
 }

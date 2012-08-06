@@ -10,6 +10,7 @@ public class DefaultJSONFilterParser implements JSONFilterParser {
 
     @Override
     public void parse(String exp, JSONFilter filter) {
+        if(exp == null || exp.trim().length() == 0) return;
         final String[] criterias = exp.split(CONSTRAINT_SEPARATOR);
         for(String criteria : criterias) {
             final String[] keyVal = criteria.split(FIELD_SEPARATOR);

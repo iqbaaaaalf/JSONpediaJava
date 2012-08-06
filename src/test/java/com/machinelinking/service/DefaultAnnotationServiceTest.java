@@ -1,6 +1,7 @@
 package com.machinelinking.service;
 
 import com.machinelinking.WikiEnricherFactory;
+import com.machinelinking.filter.DefaultJSONFilterEngineTest;
 import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
@@ -56,6 +57,21 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
         Assert.assertEquals(1, node.size());
     }
 
+    @Test
+    public void testAnnotateWithFilters() throws URISyntaxException, IOException {
+        final JsonNode node = performQuery(
+                buildPath(TARGET_RESOURCE).queryParam("filter", DefaultJSONFilterEngineTest.FILTER_EXP).build()
+        );
+        Assert.assertEquals(
+                JSONUtils.parseJSON(
+                        "{\"filter\":\"__type=template\\nname=Death date and age\\n\"," +
+                        "\"result\":[{\"__type\":\"template\",\"name\":\"Death date and age\"," +
+                        "\"content\":{\"df\":[\"yes\"],\"1955\":[],\"4\":[],\"18\":[],\"1879\":[],\"3\":[],\"14\":[]}}]}"
+                ).toString(),
+                node.toString()
+        );
+    }
+
     private JsonNode performQuery(String path) throws URISyntaxException, IOException {
         final URI uri = buildPath(path).build();
         return performQuery(uri);
@@ -75,7 +91,6 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
         while((line = br.readLine()) != null) {
             content.append(line);
         }
-        System.out.println("CONTENT: " + content.toString());
         return JSONUtils.parseJSON(content.toString());
     }
 

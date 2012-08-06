@@ -11,10 +11,20 @@ import java.util.List;
  */
 public class DefaultJSONFilterEngine implements JSONFilterEngine {
 
-    public static JsonNode[] filter(JsonNode node, String exp) {
+    public static JSONFilter parseFilter(String exp) {
         final JSONFilter filter = new DefaultJSONFilter();
         final JSONFilterParser parser = new DefaultJSONFilterParser();
         parser.parse(exp, filter);
+        return filter;
+    }
+
+    public static JsonNode[] applyFilter(JsonNode node, String exp) {
+        final JSONFilter filter = parseFilter(exp);
+        final JSONFilterEngine engine = new DefaultJSONFilterEngine();
+        return engine.filter(node, filter);
+    }
+
+    public static JsonNode[] applyFilter(JsonNode node, JSONFilter filter) {
         final JSONFilterEngine engine = new DefaultJSONFilterEngine();
         return engine.filter(node, filter);
     }

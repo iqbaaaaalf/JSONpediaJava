@@ -21,13 +21,18 @@
                 document.location.href =
                         '/annotate/resource/' +
                                 $('#get-format option:selected').attr('value') +
-                                '/' + encodeURIComponent($('#get-uri').val());
+                                '/' + encodeURIComponent($('#get-uri').val()) + '?filter=' + $('#get-filter').val();
             });
             $('#post-submit').click(function () {
                 request = '/annotate/resource/' +
                         $('#post-format option:selected').attr('value') +
                         '/' + encodeURIComponent($('#post-uri').val());
-                $.post(request, {'wikitext':$('#post-wikitext').html()})
+                $.post( request,
+                        {
+                          wikitext :$('#post-wikitext').html(),
+                          filter  : $('#post-filter')
+                        }
+                )
                         .success(function (data) {
                             $('body').html(data)
                         })
@@ -55,18 +60,18 @@
 
 <form class="well form-horizontal" method="get">
     <label>Pick an output format and enter the URI of a MediaWiki Resource:</label>
-
     <div class="control-group">
-        <label class="control-label app-base-uri" for="format">http://.../</label>
-
-        <div class="controls">
+        <label class="control-label app-base-uri" for="get-format">http://...</label>
+        <div class="controls">/
             <select id="get-format">
                 <option value="json" selected="selected">json</option>
                 <option value="html">html</option>
-            </select>/<input id="get-uri" type="text" style="width:500px"
+            </select>/<input id="get-uri" type="text" style="width:400px"
                              value="http://en.wikipedia.org/wiki/Albert_Einstein"/>
         </div>
     </div>
+    <label class="control-label" for="get-filter">Filter:</label>
+    <input  class="span11" id="get-filter" type="text" style="width:300px" value="filter here..."/>
     <div class="form-actions">
         <button id="get-submit" type="button" class="btn btn-primary">Convert</button>
         <button type="reset" class="btn">Cancel</button>
@@ -78,17 +83,18 @@
 
 <form class="well form-horizontal" method="post">
     <div class="control-group">
-        <label class="control-label" for="out-format">Output format</label>
-
-        <div class="controls">
+        <label class="control-label app-base-uri" for="post-format">http://...</label>
+        <div class="controls">/
             <select id="post-format" name="format">
                 <option value="json" selected="selected">json</option>
                 <option value="html">html</option>
-            </select>/<input id="post-uri" type="text" style="width:500px"
+            </select>/<input id="post-uri" type="text" style="width:400px"
                              value="http://en.wikipedia.org/wiki/Fake_Page"/>
         </div>
     </div>
-    <textarea id="post-wikitext" class="span11" name="body" rows="12">
+    <label class="control-label" for="post-filter">Filter:</label>
+    <input  class="span11" id="post-filter" type="text" style="width:300px" value="filter here..."/>
+    <textarea id="post-wikitext" class="span11" rows="12">
         {{Infobox scientist
         | name = Albert Einstein
         | image = Einstein 1921 portrait2.jpg

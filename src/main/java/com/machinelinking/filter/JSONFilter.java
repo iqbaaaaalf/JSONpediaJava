@@ -11,4 +11,6 @@ public interface JSONFilter {
 
     boolean match(JsonNode node);
 
+    String print();
+
 }
