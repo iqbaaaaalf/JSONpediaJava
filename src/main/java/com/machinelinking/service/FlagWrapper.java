@@ -1,6 +1,5 @@
 package com.machinelinking.service;
 
-import com.machinelinking.enricher.WikiEnricherFactory;
 import com.machinelinking.enricher.Flag;
 
 import javax.xml.bind.annotation.XmlElement;
@@ -9,29 +8,29 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-@XmlRootElement
-public class DefaultFlag implements Flag {
+@XmlRootElement(name = "flag")
+public class FlagWrapper implements Flag {
 
-    private final WikiEnricherFactory.Flag flag;
+    private final Flag flag;
 
-    public DefaultFlag(WikiEnricherFactory.Flag flag) {
+    public FlagWrapper(Flag flag) {
         this.flag = flag;
     }
 
-    private DefaultFlag() {
+    private FlagWrapper() {
         this(null);
     }
 
     @XmlElement
     @Override
     public String getId() {
-        return flag.name();
+        return flag.getId();
     }
 
     @XmlElement
     @Override
     public String getDescription() {
-        return flag.description();
+        return flag.getDescription();
     }
 
 }

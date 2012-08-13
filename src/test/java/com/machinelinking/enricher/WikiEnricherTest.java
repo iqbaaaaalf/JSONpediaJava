@@ -1,7 +1,5 @@
 package com.machinelinking.enricher;
 
-import com.machinelinking.enricher.WikiEnricher;
-import com.machinelinking.enricher.WikiEnricherFactory;
 import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.serializer.JSONSerializer;
@@ -27,11 +25,11 @@ public class WikiEnricherTest {
         final WikiEnricher enricher = WikiEnricherFactory
                 .getInstance()
                 .createFullyConfiguredInstance(
-                        WikiEnricherFactory.Flag.Offline,
-                        WikiEnricherFactory.Flag.Validate,
-                        WikiEnricherFactory.Flag.Extractors,
-                        WikiEnricherFactory.Flag.Splitters,
-                        WikiEnricherFactory.Flag.Structure
+                        WikiEnricherFactory.Offline,
+                        WikiEnricherFactory.Validate,
+                        WikiEnricherFactory.Extractors,
+                        WikiEnricherFactory.Splitters,
+                        WikiEnricherFactory.Structure
                 );
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final JSONSerializer serializer = new JSONSerializer(baos);

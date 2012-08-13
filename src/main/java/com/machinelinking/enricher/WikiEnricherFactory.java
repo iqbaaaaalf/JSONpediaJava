@@ -11,8 +11,12 @@ import com.machinelinking.extractor.TemplateNameExtractor;
 import com.machinelinking.splitter.InfoboxSplitter;
 import com.machinelinking.splitter.TableSplitter;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -20,40 +24,13 @@ import java.util.Set;
  */
 public class WikiEnricherFactory {
 
-    public enum Flag {
-        Offline {
-            @Override
-            public String description() {
-                return "Prevent lookup external service enrichment.";
-            }
-        },
-        Validate {
-            @Override
-            public String description() {
-                return "Validate parser content";
-            }
-        },
-        Extractors {
-            @Override
-            public String description() {
-                return "Apply Extractors on content";
-            }
-        },
-        Splitters {
-            @Override
-            public String description() {
-                return "Apply Splitters on content";
-            }
-        },
-        Structure {
-            @Override
-            public String description() {
-                return "Produces the full WikiText Structure expressed in JSON";
-            }
-        };
+    public static final String FLAG_SEPARATOR = ",";
 
-        public abstract String description();
-    }
+    public static final Flag Offline    = new DefaultFlag("Offline"   , "Prevent lookup external service enrichment");
+    public static final Flag Validate   = new DefaultFlag("Validate"  , "Validate parser content");
+    public static final Flag Extractors = new DefaultFlag("Extractors", "Apply Extractors on content");
+    public static final Flag Splitters  = new DefaultFlag("Splitters" , "Apply Splitters on content");
+    public static final Flag Structure  = new DefaultFlag("Structure" , "Produces the full WikiText Structure expressed in JSON");
 
     private static WikiEnricherFactory instance;
 
@@ -62,36 +39,76 @@ public class WikiEnricherFactory {
         return instance;
     }
 
-    private WikiEnricherFactory() {}
+    private final Map<String,Flag> flagsMap = new HashMap<>();
+    private final List<Flag>       flagList = new ArrayList<>();
+    private final Flag[]           flags;
+
+    private WikiEnricherFactory() {
+        registerFlag(Offline);
+        registerFlag(Validate);
+        registerFlag(Extractors);
+        registerFlag(Splitters);
+        registerFlag(Structure);
+        flags = flagList.toArray( new Flag[flagList.size()] );
+    }
+
+    public Flag[] getDefinedFlags() {
+        return flags;
+    }
+
+    public Flag getFlagById(String id) {
+        final Flag found = flagsMap.get(id);
+        if(found == null) throw new IllegalArgumentException( String.format("Cannot find flag [%s].", id) );
+        return found;
+    }
+
+    public Flag[] toFlags(String flagsStr, Flag[] defaultFlags) {
+        if(flagsStr == null || flagsStr.trim().length() == 0) return defaultFlags;
+        final String[] flagNames = flagsStr.split(FLAG_SEPARATOR);
+        final Set<Flag> flags = new HashSet<>();
+        for(String flagName : flagNames) {
+            flags.add( getFlagById(flagName) );
+        }
+        return flags.toArray( new Flag[flags.size()] );
+    }
 
     public WikiEnricher createFullyConfiguredInstance(Flag... flags) {
         final Set<Flag> flagsSet = new HashSet<>(Arrays.asList(flags));
         final WikiEnricher enricher = new WikiEnricher();
 
         // Extractors.
-        if(flagsSet.contains(Flag.Extractors)) {
+        if(flagsSet.contains(Extractors)) {
             enricher.addExtractor(new IssueExtractor());
             enricher.addExtractor(new SectionExtractor());
             enricher.addExtractor(new LinkExtractor());
             enricher.addExtractor(new ReferenceExtractor());
             enricher.addExtractor(new TemplateNameExtractor());
             enricher.addExtractor(new CategoryExtractor());
-            if (flagsSet.contains(Flag.Offline)) {
+            if (flagsSet.contains(Offline)) {
                 enricher.addExtractor(new TemplateMappingExtractor());
                 enricher.addExtractor(new FreebaseExtractor());
             }
         }
 
         // Splitters.
-        if (flagsSet.contains(Flag.Splitters)) {
+        if (flagsSet.contains(Splitters)) {
             enricher.addSplitter(new InfoboxSplitter());
             enricher.addSplitter(new TableSplitter());
         }
 
-        enricher.setValidate    ( flagsSet.contains(Flag.Validate)  );
-        enricher.setProduceStructure(flagsSet.contains(Flag.Structure));
+        enricher.setValidate    ( flagsSet.contains(Validate)  );
+        enricher.setProduceStructure(flagsSet.contains(Structure));
 
         return enricher;
+    }
+
+    public WikiEnricher createFullyConfiguredInstance(String flagsStr, Flag[] defaultFlags) {
+        return createFullyConfiguredInstance( toFlags(flagsStr, defaultFlags) );
+    }
+
+    private void registerFlag(Flag f) {
+        flagList.add(f);
+        flagsMap.put(f.getId(), f);
     }
 
 }

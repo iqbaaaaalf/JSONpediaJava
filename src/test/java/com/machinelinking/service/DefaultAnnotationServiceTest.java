@@ -35,7 +35,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     @Test
     public void testFlags() throws IOException, URISyntaxException {
         final JsonNode node = performQuery("flags");
-        Assert.assertEquals(WikiEnricherFactory.Flag.values().length, node.get("definedFlags").size());
+        Assert.assertEquals(WikiEnricherFactory.getInstance().getDefinedFlags().length, node.get("definedFlags").size());
     }
 
     @Test
@@ -52,7 +52,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     @Test
     public void testAnnotateOffline() throws IOException, URISyntaxException {
         final JsonNode node = performQuery(
-                buildPath(TARGET_RESOURCE).queryParam("flags", WikiEnricherFactory.Flag.Offline).build()
+                buildPath(TARGET_RESOURCE).queryParam("flags", WikiEnricherFactory.Offline).build()
         );
         Assert.assertEquals(1, node.size());
     }

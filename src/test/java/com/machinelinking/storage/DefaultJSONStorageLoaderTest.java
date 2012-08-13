@@ -1,5 +1,6 @@
 package com.machinelinking.storage;
 
+import com.machinelinking.enricher.Flag;
 import com.machinelinking.enricher.WikiEnricherFactory;
 import junit.framework.Assert;
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;
@@ -19,10 +20,10 @@ import java.util.zip.GZIPInputStream;
  */
 public class DefaultJSONStorageLoaderTest {
 
-    private static final WikiEnricherFactory.Flag[] FLAGS = {
-            WikiEnricherFactory.Flag.Extractors,
-            WikiEnricherFactory.Flag.Splitters,
-            WikiEnricherFactory.Flag.Validate
+    private static final Flag[] FLAGS = {
+            WikiEnricherFactory.Extractors,
+            WikiEnricherFactory.Splitters,
+            WikiEnricherFactory.Validate
     };
 
     private static final String FILE_PREFIX = "file://";

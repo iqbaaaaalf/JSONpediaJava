@@ -1,5 +1,7 @@
 package com.machinelinking.service;
 
+import com.machinelinking.enricher.Flag;
+import com.machinelinking.enricher.FlagSet;
 import com.machinelinking.enricher.WikiEnricher;
 import com.machinelinking.enricher.WikiEnricherFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngine;
@@ -8,7 +10,6 @@ import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
-import com.machinelinking.enricher.FlagSet;
 import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -26,8 +27,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
@@ -40,11 +39,9 @@ public class DefaultAnnotationService implements AnnotationService {
         html
     }
 
-    public static final WikiEnricherFactory.Flag[] DEFAULT_FLAGS = new WikiEnricherFactory.Flag[] {
-         WikiEnricherFactory.Flag.Structure
+    public static final Flag[] DEFAULT_FLAGS = new Flag[] {
+         WikiEnricherFactory.Structure
     };
-
-    public static final String FLAG_SEPARATOR = ",";
 
     private final ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
@@ -53,7 +50,7 @@ public class DefaultAnnotationService implements AnnotationService {
     @Produces({MediaType.APPLICATION_JSON})
     @Override
     public FlagSet flags() {
-        return DefaultFlagList.getInstance();
+        return FlagSetWrapper.getInstance();
     }
 
     @Path("/resource/{outFormat}/{resource}")
@@ -111,8 +108,9 @@ public class DefaultAnnotationService implements AnnotationService {
             String filterExp
     ) {
         final OutputFormat format = checkOutFormat(outFormat);
-        final WikiEnricher wikiEnricher = WikiEnricherFactory.getInstance()
-            .createFullyConfiguredInstance( toFlag(flags) );
+        final WikiEnricher wikiEnricher = WikiEnricherFactory
+                .getInstance()
+                .createFullyConfiguredInstance(flags, DEFAULT_FLAGS);
         final JSONSerializer jsonSerializer;
         final JSONFilter filter;
         try {
@@ -133,20 +131,6 @@ public class DefaultAnnotationService implements AnnotationService {
         } catch (Exception e) {
             throw new RuntimeException("Error while serializing resource", e);
         }
-    }
-
-    private WikiEnricherFactory.Flag[] toFlag(String flagsStr) {
-        if(flagsStr == null || flagsStr.trim().length() == 0) return DEFAULT_FLAGS;
-        final String[] flagNames = flagsStr.split(FLAG_SEPARATOR);
-        final Set<WikiEnricherFactory.Flag> flags = new HashSet<>();
-        for(String flagName : flagNames) {
-            try {
-                flags.add(WikiEnricherFactory.Flag.valueOf(flagName));
-            } catch (Exception e) {
-                throw new RuntimeException(String.format("Error while resolving flag [%s]", flagName));
-            }
-        }
-        return flags.toArray( new WikiEnricherFactory.Flag[flags.size()] );
     }
 
     private OutputFormat checkOutFormat(String outFormat) {
