@@ -1,4 +1,4 @@
-package com.machinelinking;
+package com.machinelinking.enricher;
 
 import com.machinelinking.extractor.CategoryExtractor;
 import com.machinelinking.extractor.FreebaseExtractor;

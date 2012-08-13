@@ -1,13 +1,14 @@
 package com.machinelinking.service;
 
-import com.machinelinking.WikiEnricher;
-import com.machinelinking.WikiEnricherFactory;
+import com.machinelinking.enricher.WikiEnricher;
+import com.machinelinking.enricher.WikiEnricherFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.JSONFilter;
 import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
+import com.machinelinking.enricher.FlagSet;
 import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.map.ObjectMapper;

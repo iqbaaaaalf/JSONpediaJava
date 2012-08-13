@@ -1,6 +1,6 @@
 package com.machinelinking.storage;
 
-import com.machinelinking.WikiEnricherFactory;
+import com.machinelinking.enricher.WikiEnricherFactory;
 import junit.framework.Assert;
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;
 import org.junit.Ignore;

@@ -1,6 +1,7 @@
 package com.machinelinking.service;
 
-import com.machinelinking.WikiEnricherFactory;
+import com.machinelinking.enricher.WikiEnricherFactory;
+import com.machinelinking.enricher.FlagSet;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

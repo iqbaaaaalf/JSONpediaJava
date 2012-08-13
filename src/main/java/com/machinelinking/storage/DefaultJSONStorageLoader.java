@@ -1,7 +1,7 @@
 package com.machinelinking.storage;
 
-import com.machinelinking.WikiEnricher;
-import com.machinelinking.WikiEnricherFactory;
+import com.machinelinking.enricher.WikiEnricher;
+import com.machinelinking.enricher.WikiEnricherFactory;
 import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.serializer.DataEncoder;
 import com.machinelinking.serializer.JSONSerializer;

@@ -1,6 +1,6 @@
 package com.machinelinking.storage;
 
-import com.machinelinking.WikiEnricherFactory;
+import com.machinelinking.enricher.WikiEnricherFactory;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;

@@ -1,5 +1,7 @@
-package com.machinelinking;
+package com.machinelinking.enricher;
 
+import com.machinelinking.enricher.WikiEnricher;
+import com.machinelinking.enricher.WikiEnricherFactory;
 import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.serializer.JSONSerializer;

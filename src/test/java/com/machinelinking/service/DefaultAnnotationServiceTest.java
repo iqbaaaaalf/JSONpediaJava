@@ -1,6 +1,6 @@
 package com.machinelinking.service;
 
-import com.machinelinking.WikiEnricherFactory;
+import com.machinelinking.enricher.WikiEnricherFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngineTest;
 import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;

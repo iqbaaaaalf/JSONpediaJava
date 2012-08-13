@@ -1,5 +1,7 @@
 package com.machinelinking.service;
 
+import com.machinelinking.enricher.FlagSet;
+
 import javax.ws.rs.core.Response;
 
 /**
