@@ -52,7 +52,9 @@ public class DefaultJSONStorageLoaderTest {
     }
 
     public void loadDump(String dump, int expectedIssues) throws IOException, SAXException {
-        MongoJSONStorage  jsonStorage = new MongoJSONStorage();
+        MongoJSONStorage  jsonStorage = new MongoJSONStorage(
+                new MongoJSONStorageConfiguration("127.0.0.1", 7654, "jsonpedia")
+        );
         final DefaultJSONStorageLoader loader = new DefaultJSONStorageLoader(
                 WikiEnricherFactory.getInstance(),
                 FLAGS,

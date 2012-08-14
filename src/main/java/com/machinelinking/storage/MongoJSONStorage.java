@@ -8,14 +8,21 @@ import java.net.UnknownHostException;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class MongoJSONStorage implements JSONStorage<DBObjectDocument> {
+public class MongoJSONStorage implements JSONStorage<MongoJSONStorageConfiguration,DBObjectDocument> {
 
+    private final MongoJSONStorageConfiguration config;
     private final Mongo mongo;
     private final DB db;
 
-    public MongoJSONStorage() throws UnknownHostException {
-        mongo = new Mongo( "127.0.0.1", 7654);
-        db = mongo.getDB("jsonpedia");
+    public MongoJSONStorage(MongoJSONStorageConfiguration config) throws UnknownHostException {
+        this.config = config;
+        mongo       = new Mongo(config.getHost(), config.getPort());
+        db          = mongo.getDB( config.getDB() );
+    }
+
+    @Override
+    public MongoJSONStorageConfiguration getConfiguration() {
+        return config;
     }
 
     @Override
