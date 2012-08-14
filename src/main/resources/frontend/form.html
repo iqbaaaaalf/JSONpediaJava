@@ -8,6 +8,8 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
     <script type="text/javascript" src="bootstrap-modal.js"></script>
+    <script type="text/javascript" src="bootstrap-button.js"></script>
+    <!--<script type="text/javascript" src="bootstrap-dropdown.js"></script>-->
     <script type="application/javascript">
         $(function ($) {
             $.each($('.app-base-uri'), function () {
@@ -17,11 +19,30 @@
             $('#app-path').text(document.location.pathname);
             $('#app-host').text(document.location.host);
 
+            $.get('/annotate/flags').success(function(data){
+                declared = Array.isArray(data.definedFlags) ? data.definedFlags : [data.definedFlags];
+                defaultz = Array.isArray(data.defaultFlags) ? data.defaultFlags : [data.defaultFlags];
+                for(var i=0; i < declared.length; i++) {
+                    console.log('i:' + declared[i].id );
+                    active = false;
+                    for(var j=0; j < defaultz.length; j++) {
+                        if(defaultz[j].id == declared[i].id) active = true;
+                    }
+                    addFlagButton( $('#get-flags') , 'get-'  + declared[i].id, declared[i].id );
+                    addFlagButton( $('#post-flags'), 'post-' + declared[i].id, declared[i].id );
+
+                   // $('#get-flags').append('<button id="' + declared[i].id + '" class="btn btn-primary' + (active ? ' active' : '') + '">'+ declared[i].id + '</button>');
+                   // $('#' + declared[i].id).data('default-flag', active);
+                }
+            });
+
             $('#get-submit').click(function () {
                 document.location.href =
                         '/annotate/resource/' +
                                 $('#get-format option:selected').attr('value') +
-                                '/' + encodeURIComponent($('#get-uri').val()) + '?filter=' + $('#get-filter').val();
+                                '/' + encodeURIComponent($('#get-uri').val()) +
+                                '?filter=' + $('#get-filter').val() +
+                                '&flags=' + getActiveFlags('get-flags');
             });
             $('#post-submit').click(function () {
                 request = '/annotate/resource/' +
@@ -29,12 +50,13 @@
                         '/' + encodeURIComponent($('#post-uri').val());
                 $.post( request,
                         {
-                          wikitext :$('#post-wikitext').html(),
-                          filter  : $('#post-filter')
+                          wikitext : $('#post-wikitext').html(),
+                          filter   : $('#post-filter').val(),
+                          flags    : getActiveFlags('post-flags')
                         }
                 )
                         .success(function (data) {
-                            $('body').html(data)
+                            $('body').html(data.result);
                         })
                         .error(function (e) {
                             alert('Error while performing request: ' + e)
@@ -44,6 +66,24 @@
 
         function showModal(id) {
             $(id).modal('show');
+        }
+
+        function addFlagButton($root, id, name) {
+            $root.append('<button id="' + id + '" class="btn btn-primary' + (active ? ' active' : '') + '">'+ name + '</button>');
+            $('#' + id).data('default-flag', active);
+        }
+
+        function getActiveFlags(container) {
+            flags = '';
+            $('#' + container + ' .btn').each(function(i,e){
+                $e = $(e);
+                if( $e.attr('class').indexOf('active') != -1) {
+                    flags += $e.html() + ',';
+                } else {
+                    if( $e.data('default-flag') ) flags += '-' + $e.html() + ',';
+                }
+            });
+            return flags;
         }
     </script>
 </head>
@@ -58,7 +98,7 @@
 <hr/>
 <h2>Convert a Resource to JSON</h2>
 
-<form class="well form-horizontal" method="get">
+<div class="well form-horizontal" method="get">
     <label>Pick an output format and enter the URI of a MediaWiki Resource:</label>
     <div class="control-group">
         <label class="control-label app-base-uri" for="get-format">http://...</label>
@@ -70,18 +110,30 @@
                              value="http://en.wikipedia.org/wiki/Albert_Einstein"/>
         </div>
     </div>
-    <label class="control-label" for="get-filter">Filter:</label>
-    <input  class="span11" id="get-filter" type="text" style="width:300px" value="filter here..."/>
+
+    <div class="control-group">
+        <label class="control-label">Filter:</label>
+        <div class="controls">
+            <input class="span11" id="get-filter" type="text" style="width:300px" value=""/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div id="get-flags" class="btn-group" data-toggle="buttons-checkbox">
+            <!--<button class="btn btn-primary">Flag</button>-->
+        </div>
+    </div>
+
     <div class="form-actions">
         <button id="get-submit" type="button" class="btn btn-primary">Convert</button>
         <button type="reset" class="btn">Cancel</button>
     </div>
-</form>
+</div>
 <hr/>
 
 <h2>Convert copy&amp;pasted WikiText</h2>
 
-<form class="well form-horizontal" method="post">
+<div class="well form-horizontal" method="post">
     <div class="control-group">
         <label class="control-label app-base-uri" for="post-format">http://...</label>
         <div class="controls">/
@@ -92,36 +144,50 @@
                              value="http://en.wikipedia.org/wiki/Fake_Page"/>
         </div>
     </div>
-    <label class="control-label" for="post-filter">Filter:</label>
-    <input  class="span11" id="post-filter" type="text" style="width:300px" value="filter here..."/>
-    <textarea id="post-wikitext" class="span11" rows="12">
-        {{Infobox scientist
-        | name = Albert Einstein
-        | image = Einstein 1921 portrait2.jpg
-        | caption = Albert Einstein in 1921
-        | birth_date = {{Birth date|df=yes|1879|3|14}}
-        | birth_place = [[Ulm]], [[Kingdom of Württemberg]], [[German Empire]]
-        | death_date = {{Death date and age|df=yes|1955|4|18|1879|3|14}}
-        | death_place = [[Princeton, New Jersey|Princeton]], New Jersey, United States
-        | spouse = [[Mileva Marić]]&nbsp;(1903–1919)<br>{{nowrap|[[Elsa Löwenthal]]&nbsp;(1919–1936)}}
-        | residence = Germany, Italy, Switzerland, Austria, Belgium, United Kingdom, United States
-        | citizenship = {{Plainlist|
-        * [[Kingdom of Württemberg|Württemberg/Germany]] (1879–1896)
-        * [[Statelessness|Stateless]] (1896–1901)
-        * [[Switzerland]] (1901–1955)
-        * [[Austria–Hungary|Austria]] (1911–1912)
-        * [[German Empire|Germany]] (1914–1933)
-        * United States (1940–1955)
-        }}
-        }}
-    </textarea>
+
+    <div class="control-group">
+        <label class="control-label">Filter:</label>
+        <div class="controls">
+            <input  class="span11" id="post-filter" type="text" style="width:300px" value=""/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div id="post-flags" class="btn-group" data-toggle="buttons-checkbox">
+            <!--<button class="btn btn-primary">Flag</button>-->
+        </div>
+    </div>
+
+    <div class="control-group">
+        <textarea id="post-wikitext" class="span11" rows="12">
+            {{Infobox scientist
+            | name = Albert Einstein
+            | image = Einstein 1921 portrait2.jpg
+            | caption = Albert Einstein in 1921
+            | birth_date = {{Birth date|df=yes|1879|3|14}}
+            | birth_place = [[Ulm]], [[Kingdom of Württemberg]], [[German Empire]]
+            | death_date = {{Death date and age|df=yes|1955|4|18|1879|3|14}}
+            | death_place = [[Princeton, New Jersey|Princeton]], New Jersey, United States
+            | spouse = [[Mileva Marić]]&nbsp;(1903–1919)<br>{{nowrap|[[Elsa Löwenthal]]&nbsp;(1919–1936)}}
+            | residence = Germany, Italy, Switzerland, Austria, Belgium, United Kingdom, United States
+            | citizenship = {{Plainlist|
+            * [[Kingdom of Württemberg|Württemberg/Germany]] (1879–1896)
+            * [[Statelessness|Stateless]] (1896–1901)
+            * [[Switzerland]] (1901–1955)
+            * [[Austria–Hungary|Austria]] (1911–1912)
+            * [[German Empire|Germany]] (1914–1933)
+            * United States (1940–1955)
+            }}
+            }}
+        </textarea>
+    </div>
 
     <div class="form-actions">
         <button id="post-submit" type="button" class="btn btn-primary">Convert</button>
         <button type="reset" class="btn">Cancel</button>
     </div>
+</div>
 
-</form>
 <hr/>
 
 <h2>Quick API reference</h2>

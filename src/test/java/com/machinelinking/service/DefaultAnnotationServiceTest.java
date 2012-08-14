@@ -54,7 +54,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
         final JsonNode node = performQuery(
                 buildPath(TARGET_RESOURCE).queryParam("flags", WikiEnricherFactory.Offline).build()
         );
-        Assert.assertEquals(1, node.size());
+        Assert.assertEquals(2, node.size());
     }
 
     @Test

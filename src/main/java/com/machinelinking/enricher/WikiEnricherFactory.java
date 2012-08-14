@@ -25,6 +25,7 @@ import java.util.Set;
 public class WikiEnricherFactory {
 
     public static final String FLAG_SEPARATOR = ",";
+    public static final String FLAG_NEGATION  = "-";
 
     public static final Flag Offline    = new DefaultFlag("Offline"   , "Prevent lookup external service enrichment");
     public static final Flag Validate   = new DefaultFlag("Validate"  , "Validate parser content");
@@ -65,9 +66,17 @@ public class WikiEnricherFactory {
     public Flag[] toFlags(String flagsStr, Flag[] defaultFlags) {
         if(flagsStr == null || flagsStr.trim().length() == 0) return defaultFlags;
         final String[] flagNames = flagsStr.split(FLAG_SEPARATOR);
-        final Set<Flag> flags = new HashSet<>();
+        final Set<Flag> flags = new HashSet<>( Arrays.asList(defaultFlags) );
+        Flag flag;
         for(String flagName : flagNames) {
-            flags.add( getFlagById(flagName) );
+            if(flagName.startsWith(FLAG_NEGATION)) {
+                flag = getFlagById( flagName.substring(FLAG_NEGATION.length()) );
+                flags.remove(flag);
+            } else {
+                flag = getFlagById(flagName);
+                flags.add(flag);
+
+            }
         }
         return flags.toArray( new Flag[flags.size()] );
     }
