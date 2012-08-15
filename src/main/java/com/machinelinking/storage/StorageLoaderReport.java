@@ -5,21 +5,21 @@ package com.machinelinking.storage;
  */
 public class StorageLoaderReport {
 
-    private int processedPages;
-    private int pageErrors;
+    private long processedPages;
+    private long pageErrors;
     private long elapsedTime;
 
-    public StorageLoaderReport(int processedPages, int pageErrors, long elapsedTime) {
+    public StorageLoaderReport(long processedPages, long pageErrors, long elapsedTime) {
         this.processedPages = processedPages;
         this.pageErrors = pageErrors;
         this.elapsedTime = elapsedTime;
     }
 
-    public int getProcessedPages() {
+    public long getProcessedPages() {
         return processedPages;
     }
 
-    public int getPageErrors() {
+    public long getPageErrors() {
         return pageErrors;
     }
 

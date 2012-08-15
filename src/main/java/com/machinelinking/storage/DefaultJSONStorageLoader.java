@@ -20,6 +20,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -28,6 +30,8 @@ import java.util.concurrent.Future;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultJSONStorageLoader implements JSONStorageLoader {
+
+    public static final int MIN_NUM_OF_THREADS = 2;
 
     private final ExecutorService executorService = Executors.newCachedThreadPool();
 
@@ -57,29 +61,36 @@ public class DefaultJSONStorageLoader implements JSONStorageLoader {
 
     @Override
     public StorageLoaderReport process(URL pagePrefix, InputStream is) throws IOException, SAXException {
+        return process(pagePrefix, is, getBestNumberOfThreads());
+    }
+
+    public StorageLoaderReport process(URL pagePrefix, InputStream is, int threads) throws IOException, SAXException {
+        if(threads <= 0) throw new IllegalArgumentException("Invalid number of threads: " + threads);
+
+        System.out.println("Processing with " + threads + " threads");
         WikiDumpParser dumpParser = new WikiDumpParser();
         bufferedHandler = new BufferedWikiPageHandler();
-        final JSONStorageConnection conn1 = storage.openConnection("pages1");
-        final JSONStorageConnection conn2 = storage.openConnection("pages2");
-        final EnrichmentRunnable runnable1 = new EnrichmentRunnable(
-                "t1",
-                pagePrefix.toExternalForm(),
-                wikiEnricherFactory.createFullyConfiguredInstance(flags),
-                conn1
-        );
-        final EnrichmentRunnable runnable2 = new EnrichmentRunnable(
-                "t2",
-                pagePrefix.toExternalForm(),
-                wikiEnricherFactory.createFullyConfiguredInstance(flags),
-                conn2
-        );
+        final List<Future> futures               = new ArrayList<>();
+        final List<EnrichmentRunnable> runnables = new ArrayList<>();
+        for(int t = 0; t < threads; t++) {
+            final JSONStorageConnection conn = storage.openConnection("pages" + t);
+            final EnrichmentRunnable runnable = new EnrichmentRunnable(
+                    "t" + t,
+                    pagePrefix.toExternalForm(),
+                    wikiEnricherFactory.createFullyConfiguredInstance(flags),
+                    conn
+            );
+            runnables.add(runnable);
+            final Future future = executorService.submit(runnable);
+            futures.add(future);
+        }
+
         final long startTime = System.currentTimeMillis();
-        Future future1 = executorService.submit(runnable1);
-        Future future2 = executorService.submit(runnable2);
         dumpParser.parse(bufferedHandler, is);
         try {
-            future1.get();
-            future2.get();
+            for(Future future : futures) {
+                future.get();
+            }
         } catch(Exception e) {
             throw new RuntimeException("Error while waiting operation completion.", e);
         } finally {
@@ -88,18 +99,27 @@ public class DefaultJSONStorageLoader implements JSONStorageLoader {
             System.out.println("Done.");
             final long endTime = System.currentTimeMillis();
             final long elapsedTime = endTime - startTime;
-            System.out.println(runnable1.printReport());
-            System.out.println(runnable2.printReport());
-            final int totalPages = runnable1.getProcessedPages() + runnable2.getProcessedPages();
-            final int errorPages = runnable1.getErrorPages()     + runnable2.getErrorPages();
+
+            long processedPages = 0;
+            long pagesWithError = 0;
+            for(EnrichmentRunnable runnable : runnables) {
+                System.out.println(runnable.printReport());
+                processedPages += runnable.getProcessedPages();
+                pagesWithError += runnable.getErrorPages();
+            }
             System.out.println(
                     String.format(
                             "Elapsed time: %d msec. Total pages: %d, Pages/msec: %f",
-                            elapsedTime, totalPages, totalPages / (float) elapsedTime
+                            elapsedTime, processedPages, processedPages / (float) elapsedTime
                     )
             );
-            return new StorageLoaderReport(totalPages, errorPages, elapsedTime);
+            return new StorageLoaderReport(processedPages, pagesWithError, elapsedTime);
         }
+    }
+
+    private int getBestNumberOfThreads() {
+        final int candidate = Runtime.getRuntime().availableProcessors();
+        return candidate < MIN_NUM_OF_THREADS ? MIN_NUM_OF_THREADS : candidate;
     }
 
     private class EnrichmentRunnable implements Runnable {
