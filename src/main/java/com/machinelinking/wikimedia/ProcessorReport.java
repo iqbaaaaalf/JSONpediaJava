@@ -1,5 +1,6 @@
 package com.machinelinking.wikimedia;
 
+import java.util.Arrays;
 import java.util.concurrent.ExecutionException;
 
 /**
@@ -29,4 +30,13 @@ public class ProcessorReport {
         return executionExceptions;
     }
 
+    @Override
+    public String toString() {
+        return String.format(
+                "Processed pages: %d, elapsed time: %d (ms), exceptions: %s",
+                processedPages,
+                elapsedTime / 1000,
+                Arrays.asList(executionExceptions)
+        );
+    }
 }
