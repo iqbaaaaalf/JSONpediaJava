@@ -16,6 +16,6 @@ public interface JSONStorageLoader {
 
     JSONStorage getStorage();
 
-    StorageLoaderReport process(URL pagePrefix, InputStream is) throws IOException, SAXException;
+    StorageLoaderReport load(URL pagePrefix, InputStream is) throws IOException, SAXException;
 
 }

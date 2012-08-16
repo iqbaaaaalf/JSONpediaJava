@@ -61,7 +61,7 @@ public class DefaultJSONStorageLoaderTest {
                 jsonStorage
         );
 
-        final StorageLoaderReport report = loader.process(
+        final StorageLoaderReport report = loader.load(
                 new URL("http://en.wikipedia.org/"),
                 openResource(dump)
         );
