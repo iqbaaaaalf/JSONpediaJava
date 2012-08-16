@@ -128,7 +128,7 @@ implements JSONStorageLoader {
         public void processPage(String pagePrefix, String threadId, WikiPage page) {
             baos.reset();
             this.threadId = threadId;
-            final String pageURL = pagePrefix + page.getId();
+            final String pageURL = pagePrefix + page.getTitle();
 
             final Serializer serializer;
             try {
@@ -143,7 +143,7 @@ implements JSONStorageLoader {
                         serializer
                 );
                 final DBObject dbNode = (DBObject) JSON.parse(baos.toString()); // TODO: avoid it.
-                connection.addDocument(new DBObjectDocument(page.getId(), dbNode));
+                connection.addDocument(new DBObjectDocument(page.getTitle(), dbNode));
             } catch (Exception e) {
                 errorPages++;
                 System.out.println(

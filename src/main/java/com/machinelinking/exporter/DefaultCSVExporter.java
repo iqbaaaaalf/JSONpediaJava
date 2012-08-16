@@ -75,18 +75,17 @@ implements CSVExporter {
 
         private final WikiTextParser parser = new WikiTextParser(this);
 
-//        private boolean insideTemplate = false;
         private boolean nextIsValue = false;
 
-        private String pageID;
+        private String pageTitle;
         private String pageURL;
         private String template;
         private String property;
 
         @Override
         public void processPage(String pagePrefix, String threadId, WikiPage page) {
-            this.pageID = page.getId();
-            this.pageURL = pagePrefix + page.getId();
+            this.pageTitle = page.getTitle();
+            this.pageURL   = pagePrefix + pageTitle;
             final URL pageURL;
             try {
                 pageURL = new URL(this.pageURL);
@@ -117,7 +116,7 @@ implements CSVExporter {
                 writeLine(
                         String.format(
                                 "%s\t%d\t%s\t%s\t%s\n",
-                                pageID, 1, template, property, cleanString(content.trim())
+                                pageTitle, 1, template, property, cleanString(content.trim())
                         )
                 );
                 nextIsValue = false;
