@@ -119,7 +119,7 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
         return report;
     }
 
-    private int getBestNumberOfThreads() {
+    protected int getBestNumberOfThreads() {
         final int candidate = Runtime.getRuntime().availableProcessors();
         return candidate < MIN_NUM_OF_THREADS ? MIN_NUM_OF_THREADS : candidate;
     }

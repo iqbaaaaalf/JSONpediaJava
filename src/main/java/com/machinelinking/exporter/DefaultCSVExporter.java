@@ -23,15 +23,33 @@ public class DefaultCSVExporter extends WikiDumpMultiThreadProcessor<DefaultCSVE
 implements CSVExporter {
 
     private BufferedWriter writer;
+    private int threads = 0;
+
+    private long templatesCount          = 0;
+    private long propertiesCount         = 0;
+    private int maxPropertiesPerTemplate = 0;
+    private int propertiesPerTemplate    = 0;
+
+    public int getThreads() {
+        return threads;
+    }
+
+    public void setThreads(int threads) {
+        this.threads = threads;
+    }
 
     @Override
     public CSVExporterReport export(URL pagePrefix, InputStream is, OutputStream os) {
         writer = new BufferedWriter( new OutputStreamWriter(os) );
         try {
-            final ProcessorReport report = super.process(pagePrefix, is);
+            final ProcessorReport report = super.process(
+                    pagePrefix,
+                    is,
+                    threads <= 0 ? super.getBestNumberOfThreads() : threads
+            );
             System.out.println(report);
-            return null;
-            //return new CSVExporterReport(report.);
+            return new CSVExporterReport(report, templatesCount, propertiesCount, maxPropertiesPerTemplate);
+
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -75,7 +93,8 @@ implements CSVExporter {
 
         private final WikiTextParser parser = new WikiTextParser(this);
 
-        private boolean nextIsValue = false;
+        private boolean insideTemplate = false;
+        private boolean nextIsValue    = false;
 
         private int    pageId;
         private String pageTitle;
@@ -103,30 +122,60 @@ implements CSVExporter {
 
         @Override
         public void beginTemplate(String name) {
+            insideTemplate = true;
             template = cleanString(name.trim());
+            templatesCount++;
+            if(propertiesPerTemplate > maxPropertiesPerTemplate) {
+                maxPropertiesPerTemplate = propertiesPerTemplate;
+            }
+            propertiesPerTemplate = 0;
         }
 
         @Override
         public void templateParameterName(String param) {
             property = param.trim();
             nextIsValue = true;
+            propertiesCount++;
+            propertiesPerTemplate++;
         }
 
         @Override
         public void text(String content) {
-            if(nextIsValue) {
-                writeLine(
-                        String.format(
-                                "%s\t%d\t%s\t%s\t%s\n",
-                                pageTitle, pageId, template, property, cleanString(content.trim())
-                        )
-                );
-                nextIsValue = false;
+            if(insideTemplate && nextIsValue) {
+                print( cleanString(content.trim()) );
             }
+        }
+
+        @Override
+        public void link(String url, String description) {
+            if(insideTemplate && nextIsValue) {
+                print(String.format("[[%s %s]]", url, cleanString(description.trim())));
+            }
+        }
+
+        @Override
+        public void reference(String url, String description) {
+            if(insideTemplate && nextIsValue) {
+                print(String.format("[%s %s]", url, cleanString(description.trim())));
+            }
+        }
+
+        @Override
+        public void endTemplate(String name) {
+            insideTemplate = false;
         }
 
         private String cleanString(String in) {
             return in.replace('\t', ' ').replace('\n', ' ');
+        }
+
+        private void print(String value) {
+            writeLine(
+                    String.format(
+                            "%s\t%d\t%s\t%s\t%s\n",
+                            pageTitle, pageId, template, property, value
+                    )
+            );
         }
 
     }
