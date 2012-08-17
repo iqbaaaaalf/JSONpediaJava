@@ -77,6 +77,7 @@ implements CSVExporter {
 
         private boolean nextIsValue = false;
 
+        private int    pageId;
         private String pageTitle;
         private String pageURL;
         private String template;
@@ -84,6 +85,7 @@ implements CSVExporter {
 
         @Override
         public void processPage(String pagePrefix, String threadId, WikiPage page) {
+            this.pageId    = page.getId();
             this.pageTitle = page.getTitle();
             this.pageURL   = pagePrefix + pageTitle;
             final URL pageURL;
@@ -116,7 +118,7 @@ implements CSVExporter {
                 writeLine(
                         String.format(
                                 "%s\t%d\t%s\t%s\t%s\n",
-                                pageTitle, 1, template, property, cleanString(content.trim())
+                                pageTitle, pageId, template, property, cleanString(content.trim())
                         )
                 );
                 nextIsValue = false;

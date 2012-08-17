@@ -5,12 +5,18 @@ package com.machinelinking.wikimedia;
  */
 public class WikiPage {
 
+    private final int    id;
     private final String title;
     private final String content;
 
-    public WikiPage(String title, String content) {
-        this.title = title;
+    public WikiPage(int id, String title, String content) {
+        this.id      = id;
+        this.title   = title;
         this.content = content;
+    }
+
+    public int getId() {
+         return id;
     }
 
     public String getTitle() {
@@ -23,6 +29,7 @@ public class WikiPage {
 
     @Override
     public String toString() {
-        return String.format("title: %s\n\n content:%s\n", title, content);
+        return String.format("id: %d title: %s\n\n content:%s\n", id, title, content);
     }
+
 }

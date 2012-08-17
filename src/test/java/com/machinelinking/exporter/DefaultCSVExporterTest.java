@@ -17,7 +17,7 @@ public class DefaultCSVExporterTest {
         final CSVExporter exporter = new DefaultCSVExporter();
         exporter.export(
                 new URL("http://en.wikipedia.org/"),
-                FileUtil.openResource("file:///Users/hardest/Downloads/enwiki-latest-pages-articles7.xml-p000305002p000464996.bz2"),
+                FileUtil.openResource("/enwiki-latest-pages-articles-p1.xml.gz"),
                 new FileOutputStream("/Users/hardest/Desktop/appo.csv")
         );
     }

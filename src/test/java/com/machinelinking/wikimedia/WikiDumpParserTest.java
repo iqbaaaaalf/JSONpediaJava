@@ -38,6 +38,7 @@ public class WikiDumpParserTest {
         int count = 0;
         WikiPage page;
         while( (page = bufferedHandler.getPage(false)) != BufferedWikiPageHandler.EOQ) {
+            Assert.assertTrue(page.getId() > 1);
             Assert.assertTrue(page.getTitle().trim().length() > 0);
             Assert.assertTrue(page.getContent().trim().length() > 0);
             count++;

@@ -5,6 +5,7 @@ import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.wikimedia.WikiAPIParser;
+import com.machinelinking.wikimedia.WikiPage;
 import com.machinelinking.wikimedia.WikimediaUtils;
 import org.xml.sax.SAXException;
 
@@ -32,7 +33,7 @@ public class TemplateMapping implements Serializable {
     public static TemplateMapping readMappingForTemplate(String mappingName)
     throws IOException, WikiTextParserException, SAXException {
         final URL templateMappingURL = WikimediaUtils.templateToWikiMappingURLAPI(MAPPING_PREFIX + mappingName);
-        String wikiTextMapping;
+        WikiPage wikiTextMapping;
         try {
             wikiTextMapping = WikiAPIParser.parseAPIResponse(templateMappingURL);
         } catch (Exception e) {
@@ -49,7 +50,7 @@ public class TemplateMapping implements Serializable {
                 }
             };
             final WikiTextParser parser = new WikiTextParser(handler);
-            parser.parse(templateMappingURL, new ByteArrayInputStream(wikiTextMapping.getBytes()));
+            parser.parse(templateMappingURL, new ByteArrayInputStream(wikiTextMapping.getContent().getBytes()));
             return out[0];
         } else {
             return null;
@@ -109,7 +110,7 @@ public class TemplateMapping implements Serializable {
     }
 
     private void reportIssue(String issue) {
-        if(issues == null) issues = new ArrayList<String>();
+        if(issues == null) issues = new ArrayList<>();
         issues.add(issue);
     }
 

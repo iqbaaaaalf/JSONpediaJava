@@ -14,12 +14,14 @@ public class WikiAPIParserTest {
 
     @Test
     public void testParseAPIResponse() throws IOException, SAXException {
-        final String output = WikiAPIParser.parseAPIResponse(
+        final WikiPage page = WikiAPIParser.parseAPIResponse(
                 WikimediaUtils.entityToWikiTextURLAPI( new URL("http://en.wikipedia.org/Albert_Einstein") )
         );
-        System.out.println(output);
-        Assert.assertNotNull(output);
-        Assert.assertTrue(output.trim().length() > 0);
+        System.out.println(page);
+        Assert.assertNotNull(page);
+        Assert.assertEquals("Albert Einstein", page.getTitle());
+        Assert.assertEquals(736, page.getId());
+        Assert.assertTrue(page.getContent().trim().length() > 0);
     }
 
 }
