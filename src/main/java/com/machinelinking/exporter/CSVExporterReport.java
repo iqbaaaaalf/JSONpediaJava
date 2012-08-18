@@ -42,7 +42,7 @@ public class CSVExporterReport {
     @Override
     public String toString() {
         return String.format(
-                "processor: %s - templates: %d, properties %d, max properties/template: %d, avg properties/template: %f\n",
+                "processor: %s\n\ttemplates: %d, properties %d, max properties/template: %d, avg properties/template: %f\n",
                 processorReport, templatesCount, propertiesCount, maxPropertiesPerTemplate, (float)propertiesCount / templatesCount
         );
     }

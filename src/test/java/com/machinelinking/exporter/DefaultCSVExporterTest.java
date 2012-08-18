@@ -21,7 +21,7 @@ public class DefaultCSVExporterTest {
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         final CSVExporterReport report = exporter.export(
                 new URL("http://en.wikipedia.org/"),
-                FileUtil.openResource("/enwiki-latest-pages-articles-p1.xml.gz"),
+                FileUtil.openDecompressedInputStream("/enwiki-latest-pages-articles-p1.xml.gz"),
                 out
         );
 

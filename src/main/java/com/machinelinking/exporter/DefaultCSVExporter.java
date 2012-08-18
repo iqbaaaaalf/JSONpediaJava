@@ -3,12 +3,16 @@ package com.machinelinking.exporter;
 import com.machinelinking.parser.DefaultWikiTextParserHandler;
 import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.parser.WikiTextParser;
+import com.machinelinking.util.FileUtil;
 import com.machinelinking.wikimedia.PageProcessor;
 import com.machinelinking.wikimedia.ProcessorReport;
 import com.machinelinking.wikimedia.WikiDumpMultiThreadProcessor;
 import com.machinelinking.wikimedia.WikiPage;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -40,19 +44,24 @@ implements CSVExporter {
 
     @Override
     public CSVExporterReport export(URL pagePrefix, InputStream is, OutputStream os) {
+        final BufferedInputStream bis =
+                is instanceof BufferedInputStream ? (BufferedInputStream) is : new BufferedInputStream(is);
         writer = new BufferedWriter( new OutputStreamWriter(os) );
         try {
             final ProcessorReport report = super.process(
                     pagePrefix,
-                    is,
+                    bis,
                     threads <= 0 ? super.getBestNumberOfThreads() : threads
             );
-            System.out.println(report);
             return new CSVExporterReport(report, templatesCount, propertiesCount, maxPropertiesPerTemplate);
 
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public CSVExporterReport export(URL pageURL, File in, File out) throws IOException {
+        return export(pageURL, FileUtil.openDecompressedInputStream(in), new FileOutputStream(out));
     }
 
     @Override
