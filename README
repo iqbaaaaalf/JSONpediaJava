@@ -1,6 +1,44 @@
+JSONpedia README
+================
 
-A .jar file is generated in target/ when "mvn package" is invoked. Further, all
-required libraries are copied to target/lib. The program can now be invoked
-with:
+How to run the CLI:
 
-  $ java -jar target/[artifactId].jar [title]
+Requirements:
+
+  Maven 3.x+
+
+Compile sources
+
+  Some tests could fail preventing the building of the package
+  in such case add the skip test flag (maven.test.skip):
+
+     mvn [-Dmaven.test.skip=true] clean package
+
+  This will generate a target dir containing generated files included
+
+     target/jsonpedia-x.y-SNAPSHOT.jar
+
+Run CLI
+
+   java -cp target/jsonpedia-1.0-SNAPSHOT.jar com.machinelinking.exporter.CSVExporterCLI
+
+   Running without arguments will produce help info:
+   Usage: <main class> [options]
+     Options:
+     * --in, -i        Input file
+     * --out, -o       Output file
+     * --prefix, -p    Page prefix
+       --threads, -t   Number of threads
+                       Default: 0
+
+CLI Usage examples
+
+   java -cp target/jsonpedia-1.0-SNAPSHOT.jar com.machinelinking.exporter.CSVExporterCLI \
+      -p http://en.wikipedia.org/wiki -i src/test/resources/enwiki-latest-pages-articles-p3.xml.gz -o out.csv
+
+   Processing with 2 threads
+   Closing process...
+   Done.
+   processor: Processed pages: 25, elapsed time: 0 (ms), exceptions: []
+    templates: 1117, properties 4907, max properties/template: 52, avg properties/template: 4,393017
+
