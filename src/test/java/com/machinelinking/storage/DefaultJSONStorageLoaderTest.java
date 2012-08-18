@@ -57,7 +57,7 @@ public class DefaultJSONStorageLoaderTest {
 
         final StorageLoaderReport report = loader.load(
                 new URL("http://en.wikipedia.org/"),
-                FileUtil.openResource(dump)
+                FileUtil.openDecompressedInputStream(dump)
         );
 
         Assert.assertEquals("Unexpected number of issues.", expectedIssues, report.getPageErrors());
