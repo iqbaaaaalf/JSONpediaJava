@@ -72,6 +72,14 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void beginTag(String name, Attribute[] attributes) {
+    }
+
+    @Override
+    public void endTag(String node) {
+    }
+
+    @Override
     public void text(String content) {
     }
 

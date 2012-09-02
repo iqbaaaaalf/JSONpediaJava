@@ -3,6 +3,7 @@ package com.machinelinking.pagestruct;
 import com.machinelinking.parser.WikiTextParserHandler;
 
 import java.net.URL;
+import java.util.Arrays;
 import java.util.Stack;
 
 /**
@@ -121,6 +122,16 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     @Override
     public void endTable() {
         printOut("End Table");
+    }
+
+    @Override
+    public void beginTag(String node, Attribute[] attributes) {
+        printOut( String.format("Begin Tag: %s attributes: %s", node, Arrays.asList(attributes)) );
+    }
+
+    @Override
+    public void endTag(String node) {
+        printOut("End Tag: " + node);
     }
 
     @Override

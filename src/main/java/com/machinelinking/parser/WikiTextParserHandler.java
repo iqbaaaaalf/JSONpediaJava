@@ -49,10 +49,27 @@ public interface WikiTextParserHandler extends NodeHandler {
     @Pop(node="table")
     void endTable();
 
+    void beginTag(String node, Attribute[] attributes);
+
+    void endTag(String node);
+
     void text(String content);
 
     @ValidateStack
     void endDocument();
+
+    class Attribute {
+        public final String name;
+        public final String value;
+        public Attribute(String name, String value) {
+            this.name = name;
+            this.value = value;
+        }
+        @Override
+        public String toString() {
+            return String.format("%s : '%s'", name, value);
+        }
+    }
 
     @Retention(RetentionPolicy.RUNTIME)
     @Target(ElementType.METHOD)

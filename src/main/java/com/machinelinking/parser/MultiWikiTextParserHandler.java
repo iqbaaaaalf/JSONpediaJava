@@ -140,6 +140,20 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void beginTag(String node, Attribute[] attributes) {
+        for(WikiTextParserHandler handler : handlers) {
+            handler.beginTag(node, attributes);
+        }
+    }
+
+    @Override
+    public void endTag(String node) {
+        for(WikiTextParserHandler handler : handlers) {
+            handler.endTag(node);
+        }
+    }
+
+    @Override
     public void text(String content) {
         for(WikiTextParserHandler handler : handlers) {
             handler.text(content);
