@@ -1,5 +1,6 @@
 Begin Document
-Text: '<div align="center">
+Open Tag: div attributes: [align : 'center']
+Text: '
 '
 Begin Table
 Text: ' align="center" style="clear:both; margin:0em; border:1px solid #E9E9E9"
@@ -154,7 +155,9 @@ k: DBH
 Text: 'David Bruce Huxley 1915–1992'
 k: AFH
 Reference: Andrew Huxley ''
-Text: ' <br>  1917–2012'
+Text: ' '
+Open Tag: br attributes: []
+Text: '  1917–2012'
 k: RP
 Text: 'Richenda Pease 1925–2003'
 k: TH
@@ -185,4 +188,7 @@ End Template: chart/end
 Text: '
 '
 End Table
+Text: '
+'
+Close Tag: div
 End Document

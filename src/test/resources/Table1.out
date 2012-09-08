@@ -1,15 +1,22 @@
 Begin Document
 Text: 'Earlier versions of ASCII used the up-arrow instead of the '
 Reference: caret ''
-Text: ' (5E<sub>'
+Text: ' (5E'
+Open Tag: sub attributes: []
 Reference: hexadecimal 'hex'
-Text: '</sub>) and the left-arrow instead of the '
+Close Tag: sub
+Text: ') and the left-arrow instead of the '
 Reference: underscore ''
-Text: ' (5F<sub>'
+Text: ' (5F'
+Open Tag: sub attributes: []
 Reference: hexadecimal 'hex'
-Text: '</sub>).<ref>'
+Close Tag: sub
+Text: ').'
+Open Tag: ref attributes: []
 Link: http://www.wps.com/projects/codes/X3.4-1963/index.html 'ASA X3.4-1963'
-Text: '.</ref>
+Text: '.'
+Close Tag: ref
+Text: '
 '
 Begin Table
 Text: ' style="background:none; text-align:center;"

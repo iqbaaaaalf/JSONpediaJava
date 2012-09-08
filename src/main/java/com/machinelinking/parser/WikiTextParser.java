@@ -34,11 +34,15 @@ public class WikiTextParser {
 
     private char lastRead;
 
+    private final TagReader tagReader;
+
     private WikiTextParserHandler handler;
+
 
     public WikiTextParser(WikiTextParserHandler h) {
         if(h == null) throw new NullPointerException("Handler must be not null.");
         handler = h;
+        tagReader = new TagReader(handler);
     }
 
     public void parse(URL url, Reader r) throws IOException, WikiTextParserException {
@@ -46,8 +50,6 @@ public class WikiTextParser {
             r = new BufferedReader(r);
         }
         this.r = r;
-        //TODO: the tag reader integration must be completed.
-        //this.r = new TagStripReader(r, handler);
 
         handler.beginDocument(url);
 
@@ -56,8 +58,11 @@ public class WikiTextParser {
                 consumeChars();
                 mark();
                 final String couple = readCouple();
-                // System.out.println("COUPLE " + couple);
-                if ("{{".equals(couple)) {
+                if('<' == couple.charAt(0)) {
+                    reset();
+                    tagReader.readNode(r);
+                    mark();
+                } else if ("{{".equals(couple)) {
                     readTemplate();
                 } else if ("[[".equals(couple)) {
                     readReference();
@@ -67,12 +72,11 @@ public class WikiTextParser {
                 } else if("{|".equals(couple)) {
                     readTable();
                 } else if(col == 3 && "==".equals(couple)) {
-                    //System.out.println("ROW " + row);
                     readSection();
                 } else if('=' == couple.charAt(0)) {
                     reset(); read(); mark(); // TODO improve it.
                 } else {
-                    if(couple.charAt(0) == '{') { // A single { like "<math> {G} </math>" to be consumed.
+                    if(couple.charAt(0) == '{') { // TODO: REMOVE THIS - A single { like "<math> {G} </math>" to be consumed.
                         read();
                     } else {
                         reset();
@@ -81,7 +85,8 @@ public class WikiTextParser {
             }
         } catch (EOFException eofe) {
             // Parse ended.
-        } catch (Error e) {
+        } catch (Exception e) {
+            e.printStackTrace();
             final WikiTextParserException wtpe = new WikiTextParserException(
                     row, col,
                     "Error while parsing document.", e
@@ -94,7 +99,7 @@ public class WikiTextParser {
     }
 
     public void parse(URL url, InputStream is) throws IOException, WikiTextParserException {
-        parse(url, new BufferedReader(new InputStreamReader(is)));
+        parse(url, new InputStreamReader(is));
     }
 
     public void parse(DocumentSource source) throws IOException, WikiTextParserException {
@@ -169,7 +174,7 @@ public class WikiTextParser {
         char c;
         while(true) {
             c = read();
-            if(c != '{' && c != '[' && (c != '=' || col > 3) ) {
+            if(c != '{' && c != '[' && c != '<' && (c != '=' || col > 3) ) {
                 mark();
                 externalCharsSB.append(c);
             } else {
@@ -233,6 +238,14 @@ public class WikiTextParser {
             }
 
             c = read();
+
+            if(c == '<') {
+                flushText(sb);
+                reset();
+                tagReader.readNode(r);
+                mark();
+                continue;
+            }
 
             // Nested element.
             if(c == '{') {

@@ -14,7 +14,10 @@ k: name
 Text: 'Sir Tim Berners-Lee
 '
 k: honorific_suffix 
-Text: '<small>OM, KBE, FRS, FREng, FRSA</small>
+Open Tag: small attributes: []
+Text: 'OM, KBE, FRS, FREng, FRSA'
+Close Tag: small
+Text: '
 '
 k: image       
 Text: 'Tim Berners-Lee closeup.jpg
@@ -33,7 +36,7 @@ k: 8
 k: df
 Text: 'y'
 End Template: birth date and age
-Text: '<ref name="W3Bio">'
+Open Tag: ref attributes: [name : 'W3Bio']
 Begin Template: cite web
 k: url
 Text: 'http://www.w3.org/People/Berners-Lee/Longer.html'
@@ -44,17 +47,22 @@ Text: 'World Wide Web Consortium'
 k: accessdate
 Text: '18 January 2011'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 '
 k: birth_place 
-Text: 'London, England<ref name="W3Bio" />
+Text: 'London, England'
+Inline Tag: ref attributes: [name : 'W3Bio']
+Text: '
 '
 k: nationality 
 Text: 'English
 '
 k: residence   
 Reference: Massachusetts ''
-Text: ', U.S.<ref name="W3Bio" />
+Text: ', U.S.'
+Inline Tag: ref attributes: [name : 'W3Bio']
+Text: '
 '
 k: known_for   
 Begin Template: Plainlist
@@ -129,13 +137,16 @@ Reference: Royal Academy of Engineering 'FREng'
 Text: ', '
 Reference: Royal Society of Arts 'FRSA'
 End Template: post-nominals
-Text: ' (born 8 June 1955<ref name=W3Bio/>), also known as "'''TimBL'''", is an English '
+Text: ' (born 8 June 1955'
+Inline Tag: ref attributes: [name : 'W3Bio']
+Text: '), also known as "'''TimBL'''", is an English '
 Reference: computer scientist ''
 Text: ', '
 Reference: Massachusetts Institute of Technology 'MIT'
 Text: ' professor and the inventor of the '
 Reference: World Wide Web ''
-Text: '. He made a proposal for an information management system in March 1989<ref>'
+Text: '. He made a proposal for an information management system in March 1989'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: url
 Text: 'http://info.cern.ch/Proposal.html '
@@ -147,7 +158,8 @@ k: date
 k: accessdate
 Text: '2011-12-21'
 End Template: cite web
-Text: '</ref> and on 25 December 1990, with the help of '
+Close Tag: ref
+Text: ' and on 25 December 1990, with the help of '
 Reference: Robert Cailliau ''
 Text: ' and a young student at '
 Reference: CERN ''
@@ -155,7 +167,9 @@ Text: ', he implemented the first successful communication between a '
 Reference: Hypertext Transfer Protocol ''
 Text: ' (HTTP) client and '
 Reference: Web server 'server'
-Text: ' via the Internet.<ref name=AFP/>
+Text: ' via the Internet.'
+Inline Tag: ref attributes: [name : 'AFP']
+Text: '
 
 Berners-Lee is the director of the '
 Reference: World Wide Web Consortium ''
@@ -167,7 +181,8 @@ Text: ' '
 Reference: Professors in the United States#Special academic ranks (tenured) 'Founders Chair'
 Text: ' at the '
 Reference: MIT Computer Science and Artificial Intelligence Laboratory ''
-Text: ' (CSAIL).<ref>'
+Text: ' (CSAIL).'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'Draper Prize'
@@ -178,8 +193,10 @@ Reference: Massachusetts Institute of Technology ''
 k: accessdate
 Text: '25 May 2008'
 End Template: cite web
-Text: '</ref>
-He is a director of The Web Science Research Initiative (WSRI),<ref>'
+Close Tag: ref
+Text: '
+He is a director of The Web Science Research Initiative (WSRI),'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: url
 Text: 'http://webscience.org/about/people/ '
@@ -194,9 +211,11 @@ Text: 'http://web.archive.org/web/20080628052526/http://webscience.org/about/peo
 k: archivedate 
 Text: '28 June 2008'
 End Template: cite web
-Text: '</ref> and a member of the advisory board of the '
+Close Tag: ref
+Text: ' and a member of the advisory board of the '
 Reference: MIT Center for Collective Intelligence ''
-Text: '.<ref>'
+Text: '.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: url
 Text: 'http://cci.mit.edu '
@@ -207,7 +226,8 @@ Text: 'Cci.mit.edu '
 k: accessdate
 Text: '15 August 2010'
 End Template: cite web
-Text: '</ref><ref>'
+Close Tag: ref
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: url
 Text: 'http://cci.mit.edu/people/index.html '
@@ -218,15 +238,19 @@ Text: 'Cci.mit.edu '
 k: accessdate
 Text: '15 August 2010'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 In 2004, Berners-Lee was '
 Reference: Order of the British Empire 'knighted'
 Text: ' by Queen '
 Reference: Elizabeth II ''
-Text: ' for his pioneering work.<ref name=tecb/> In April 2009, he was elected a foreign associate of the '
+Text: ' for his pioneering work.'
+Inline Tag: ref attributes: [name : 'tecb']
+Text: ' In April 2009, he was elected a foreign associate of the '
 Reference: United States National Academy of Sciences ''
-Text: ', based in Washington, D.C.<ref>'
+Text: ', based in Washington, D.C.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'Timothy Berners-Lee Elected to National Academy of Sciences'
@@ -237,7 +261,8 @@ Reference: Dr. Dobb's Journal ''
 k: accessdate
 Text: '9 June 2009'
 End Template: cite web
-Text: '</ref><ref>'
+Close Tag: ref
+Open Tag: ref attributes: []
 Begin Template: cite press release
 k: accessdate
 Text: '17 January 2011'
@@ -250,7 +275,8 @@ Text: 'United States National Academy of Sciences'
 k: url
 Text: 'http://www8.nationalacademies.org/onpinews/newsitem.aspx?RecordID=04282009'
 End Template: cite press release
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 '
 Section [0] Early life
@@ -263,9 +289,13 @@ Text: '.  His parents worked on the first commercially built computer, the '
 Reference: Ferranti Mark 1 ''
 Text: '.  One of four children, he attended Sheen Mount Primary School, and then went on to '
 Reference: Emanuel School ''
-Text: ' in London, from 1969 to 1973.<ref name=tecb/> He studied at '
+Text: ' in London, from 1969 to 1973.'
+Inline Tag: ref attributes: [name : 'tecb']
+Text: ' He studied at '
 Reference: The Queen's College, Oxford ''
-Text: ', from 1973 to 1976, where he received a first-class degree in Physics.<ref name=W3Bio/>
+Text: ', from 1973 to 1976, where he received a first-class degree in Physics.'
+Inline Tag: ref attributes: [name : 'W3Bio']
+Text: '
 
 '
 Section [0] Career
@@ -275,7 +305,8 @@ Reference: File:Tim Berners-Lee.jpg 'thumb|left|Berners-Lee, 2005'
 Text: '
 While an independent contractor at CERN from June to December 1980, Berners-Lee proposed a project based on the concept of '
 Reference: hypertext ''
-Text: ', to facilitate sharing and updating information among researchers.<ref>'
+Text: ', to facilitate sharing and updating information among researchers.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'Berners-Lee's original proposal to CERN'
@@ -290,9 +321,11 @@ Text: 'http://www.w3.org/History/1989/proposal.html'
 k: accessdate
 Text: '25 May 2008'
 End Template: cite web
-Text: '</ref> While there, he built a prototype system named '
+Close Tag: ref
+Text: ' While there, he built a prototype system named '
 Reference: ENQUIRE ''
-Text: '.<ref name="linvinginternet">'
+Text: '.'
+Open Tag: ref attributes: [name : 'linvinginternet']
 Begin Template: cite web
 k: last
 Text: 'Stewart'
@@ -305,9 +338,11 @@ Text: 'http://www.livinginternet.com/w/wi_lee.htm'
 k: accessdate
 Text: '22 July 2010'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
-After leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.<ref name="faq">'
+After leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.'
+Open Tag: ref attributes: [name : 'faq']
 Begin Template: cite web
 k: title
 Text: 'Frequently asked questions'
@@ -320,15 +355,21 @@ Text: '22 July 2010'
 k: author
 Text: 'Tim Berners-Lee'
 End Template: cite web
-Text: '</ref> The project he worked on was a ''real-time remote procedure call'' which gave him experience in '
+Close Tag: ref
+Text: ' The project he worked on was a ''real-time remote procedure call'' which gave him experience in '
 Reference: computer network ''
-Text: 'ing.<ref name="faq" /> In 1984 he returned to CERN as a fellow.<ref name="linvinginternet" />
+Text: 'ing.'
+Inline Tag: ref attributes: [name : 'faq']
+Text: ' In 1984 he returned to CERN as a fellow.'
+Inline Tag: ref attributes: [name : 'linvinginternet']
+Text: '
 
 In 1989, CERN was the largest Internet node in Europe, and Berners-Lee saw an opportunity to join hypertext with the Internet: "I just had to take the hypertext idea and connect it to the '
 Reference: Transmission Control Protocol ''
 Text: ' and '
 Reference: domain name system ''
-Text: ' ideas and—ta-da!—the World Wide Web."<ref>'
+Text: ' ideas and—ta-da!—the World Wide Web."'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: author
 Text: 'Tim Berners-Lee'
@@ -341,7 +382,9 @@ Text: 'http://www.w3.org/People/Berners-Lee/Kids'
 k: accessdate
 Text: '25 May 2008'
 End Template: cite web
-Text: '</ref> “Creating the web was really an act of desperation, because the situation without it was very difficult when I was working at CERN later. Most of the technology involved in the web, like the hypertext, like the Internet, multifont text objects, had all been designed already. I just had to put them together. It was a step of generalising, going to a higher level of abstraction, thinking about all the documentation systems out there as being possibly part of a larger imaginary documentation system.”<ref>'
+Close Tag: ref
+Text: ' “Creating the web was really an act of desperation, because the situation without it was very difficult when I was working at CERN later. Most of the technology involved in the web, like the hypertext, like the Internet, multifont text objects, had all been designed already. I just had to put them together. It was a step of generalising, going to a higher level of abstraction, thinking about all the documentation systems out there as being possibly part of a larger imaginary documentation system.”'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: url
 Text: 'http://www.achievement.org/autodoc/page/ber1int-1 '
@@ -353,13 +396,15 @@ k: date
 k: accessdate
 Text: '2011-12-21'
 End Template: cite web
-Text: '</ref> He wrote his initial proposal in March 1989, and in 1990, with the help of '
+Close Tag: ref
+Text: ' He wrote his initial proposal in March 1989, and in 1990, with the help of '
 Reference: Robert Cailliau ''
 Text: ' (with whom he shared the 1995 '
 Reference: Association for Computing Machinery 'ACM'
 Text: ' '
 Reference: Software System Award ''
-Text: '), produced a revision which was accepted by his manager, Mike Sendall.<ref>'
+Text: '), produced a revision which was accepted by his manager, Mike Sendall.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'Ten Years Public Domain for the  Original Web Software'
@@ -370,7 +415,8 @@ Text: 'CERN'
 k: accessdate
 Text: '21 July 2010'
 End Template: cite web
-Text: '</ref> He used similar ideas to those underlying the ENQUIRE system to create the World Wide Web, for which he designed and built the first Web browser. This also functioned as an editor ('
+Close Tag: ref
+Text: ' He used similar ideas to those underlying the ENQUIRE system to create the World Wide Web, for which he designed and built the first Web browser. This also functioned as an editor ('
 Reference: WorldWideWeb ''
 Text: ', running on the '
 Reference: NeXTSTEP ''
@@ -385,22 +431,30 @@ Begin Template: quotation
 k: " Mike Sendall buys a NeXT cube for evaluation, and gives it to Tim [Berners-Lee]. Tim's prototype implementation on NeXTStep is made in the space of a few months, thanks to the qualities of the NeXTStep software development system. This prototype offers WYSIWYG browsing/authoring! Current Web browsers used in "surfing the Internet" are mere passive windows, depriving the user of the possibility to contribute. During some sessions in the CERN cafeteria, Tim and I try to find a catching name for the system. I was determined that the name should not yet again be taken from Greek mythology. Tim proposes "World-Wide Web". I like this very much, except that it is difficult to pronounce in French..." by Robert Cailliau, 2 November 1995.<ref name
 Text: '"Ben">'
 Link: http://www.netvalley.com/cgi-bin/intval/net_history.pl?chapter=4 'Roads and Crossroads of Internet History'
-Text: ' Chapter 4: Birth of the Web</ref> '
+Text: ' Chapter 4: Birth of the Web'
+Text: ' '
 End Template: quotation
 Text: '
 
 The first '
 Reference: web site ''
-Text: ' built was at CERN within the border of France<ref>'
+Text: ' built was at CERN within the border of France'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'Tim Berners-Lee. Confirming The Exact Location Where the Web Was Invented'
 k: url
 Text: 'http://davidgalbraith.org/uncategorized/the-exact-location-where-the-web-was-invented/2343/'
 End Template: cite web
-Text: '</ref>, and was first put online on 6 August 1991:
-<blockquote>
-"Info.cern.ch was the address of the world's first-ever web site and web server, running on a NeXT computer at CERN. The first web page address was http://info.cern.ch/hypertext/WWW/TheProject.html, which centred on information regarding the WWW project. Visitors could learn more about hypertext, technical details for creating their own webpage, and even an explanation on how to search the Web for information. There are no screenshots of this original page and, in any case, changes were made daily to the information available on the page as the WWW project developed. You may find a later copy (1992) on the World Wide Web Consortium website." -CERN </blockquote> It provided an explanation of what the World Wide Web was, and how one could use a browser and set up a web server.<ref>'
+Close Tag: ref
+Text: ', and was first put online on 6 August 1991:
+'
+Open Tag: blockquote attributes: []
+Text: '
+"Info.cern.ch was the address of the world's first-ever web site and web server, running on a NeXT computer at CERN. The first web page address was http://info.cern.ch/hypertext/WWW/TheProject.html, which centred on information regarding the WWW project. Visitors could learn more about hypertext, technical details for creating their own webpage, and even an explanation on how to search the Web for information. There are no screenshots of this original page and, in any case, changes were made daily to the information available on the page as the WWW project developed. You may find a later copy (1992) on the World Wide Web Consortium website." -CERN '
+Close Tag: blockquote
+Text: ' It provided an explanation of what the World Wide Web was, and how one could use a browser and set up a web server.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'Welcome to info.cern.ch, the website of the world's first-ever web server'
@@ -411,7 +465,8 @@ Text: 'http://info.cern.ch/'
 k: accessdate
 Text: '25 May 2008'
 End Template: cite web
-Text: '</ref><ref>'
+Close Tag: ref
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'World Wide Web—Archive of world's first website'
@@ -422,7 +477,8 @@ Text: 'http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.htm
 k: accessdate
 Text: '25 May 2008'
 End Template: cite web
-Text: '</ref><ref>'
+Close Tag: ref
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'World Wide Web—First mentioned on USENET'
@@ -435,7 +491,8 @@ Text: 'http://groups.google.co.uk/group/alt.hypertext/msg/06dad279804cb3ba?dmode
 k: accessdate
 Text: '25 May 2008'
 End Template: cite web
-Text: '</ref><ref>'
+Close Tag: ref
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'The original post to alt.hypertalk describing the WorldWideWeb Project'
@@ -450,9 +507,11 @@ Text: 'http://groups.google.com/group/comp.archives/browse_thread/thread/9fb0795
 k: accessdate
 Text: '25 May 2008'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
-In 1994, Berners-Lee founded the W3C at MIT. It comprised various companies that were willing to create standards and recommendations to improve the quality of the Web. Berners-Lee made his idea available freely, with no patent and no royalties due. The World Wide Web Consortium decided that its standards should be based on royalty-free technology, so that they could easily be adopted by anyone.<ref>'
+In 1994, Berners-Lee founded the W3C at MIT. It comprised various companies that were willing to create standards and recommendations to improve the quality of the Web. Berners-Lee made his idea available freely, with no patent and no royalties due. The World Wide Web Consortium decided that its standards should be based on royalty-free technology, so that they could easily be adopted by anyone.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'Patent Policy—5&nbsp;February&nbsp;2004'
@@ -465,7 +524,8 @@ Text: 'http://www.w3.org/Consortium/Patent-Policy-20040205/'
 k: accessdate
 Text: '25 May 2008'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 In 2001, Berners-Lee became a patron of the East Dorset Heritage Trust, having previously lived in '
 Reference: Colehill ''
@@ -473,19 +533,25 @@ Text: ' in '
 Reference: Wimborne Minster 'Wimborne'
 Text: ', '
 Reference: East Dorset ''
-Text: ', England.<ref>John W. Klooster (2009) '
+Text: ', England.'
+Open Tag: ref attributes: []
+Text: 'John W. Klooster (2009) '
 Link: http://books.google.com/books?id=WKuG-VIwID8C&pg=PA611&dq=tim+berners+lee++-+east+dorset+heritage+trust&hl=en&ei=0cE9TtyhIcyo8QPQx_zgDA&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCoQ6AEwAA#v=onepage&q=tim%20berners%20lee%20%20-%20east%20dorset%20heritage%20trust&f=false 'Icons of invention: the makers of the modern world from Gutenberg to Gates'
-Text: ' p.611. ABC-CLIO, 2009</ref>
+Text: ' p.611. ABC-CLIO, 2009'
+Close Tag: ref
+Text: '
 
 In December 2004, he accepted a chair in Computer Science at the School of Electronics and Computer Science, '
 Reference: University of Southampton ''
 Text: ', England, to work on his new project, the '
 Reference: Semantic Web ''
-Text: '.<ref>'
+Text: '.'
+Open Tag: ref attributes: []
 Begin Template: cite doi
 k: 10.1038/scientificamerican0501-34
 End Template: cite doi
-Text: '</ref><ref>'
+Close Tag: ref
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title 
 Text: 'Tim Berners-Lee, World Wide Web inventor, to join ECS'
@@ -498,7 +564,8 @@ Text: 'http://www.ecs.soton.ac.uk/news/658'
 k: accessdate
 Text: '25 May 2008  '
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 '
 Section [0]  Current work 
@@ -508,7 +575,8 @@ Reference: Image:timbernerslee.jpg 'thumb|right|200px|Tim Berners-Lee at the [[H
 Text: ', London, on 11 March 2010]]
 In June 2009 then British Prime Minister '
 Reference: Gordon Brown ''
-Text: ' announced Berners-Lee would work with the UK Government to help make data more open and accessible on the Web, building on the work of the Power of Information Task Force.<ref>'
+Text: ' announced Berners-Lee would work with the UK Government to help make data more open and accessible on the Web, building on the work of the Power of Information Task Force.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title 
 Text: 'Tim Berners-Lee'
@@ -521,7 +589,8 @@ Text: 'http://www.w3.org/News/2009#item98'
 k: accessdate
 Text: '10 July 2009  '
 End Template: cite web
-Text: '</ref> Berners-Lee and Professor '
+Close Tag: ref
+Text: ' Berners-Lee and Professor '
 Reference: Nigel Shadbolt ''
 Text: ' are the two key figures behind '
 Reference: data.gov.uk ''
@@ -529,7 +598,8 @@ Text: ', a '
 Reference: UK Government ''
 Text: ' project to open up almost all data acquired for official purposes for free re-use. Commenting on the opening up of '
 Reference: Ordnance Survey ''
-Text: ' data in April 2010 Berners-Lee said that: "The changes signal a wider cultural change in Government based on an assumption that information should be in the public domain unless there is a good reason not to—not the other way around." He went on to say "Greater openness, accountability and transparency in Government will give people greater choice and make it easier for individuals to get more directly involved in issues that matter to them."<ref>'
+Text: ' data in April 2010 Berners-Lee said that: "The changes signal a wider cultural change in Government based on an assumption that information should be in the public domain unless there is a good reason not to—not the other way around." He went on to say "Greater openness, accountability and transparency in Government will give people greater choice and make it easier for individuals to get more directly involved in issues that matter to them."'
+Open Tag: ref attributes: []
 Begin Template: cite news
 k: title 
 Text: 'Ordnance Survey offers free data access '
@@ -542,15 +612,20 @@ Text: 'http://news.bbc.co.uk/1/hi/technology/8597779.stm'
 k: accessdate
 Text: '3 April 2009  '
 End Template: cite news
-Text: '</ref>
+Close Tag: ref
+Text: '
 
-In November 2009, Berners-Lee launched the World Wide Web Foundation in order to "Advance the Web to empower humanity by launching transformative programs that build local capacity to leverage the Web as a medium for positive change."<ref>'
+In November 2009, Berners-Lee launched the World Wide Web Foundation in order to "Advance the Web to empower humanity by launching transformative programs that build local capacity to leverage the Web as a medium for positive change."'
+Open Tag: ref attributes: []
 Link: http://www.webfoundation.org/about/faq/ 'FAQ—World Wide Web Foundation'
-Text: ' Retrieved 18 January 2011</ref>
+Text: ' Retrieved 18 January 2011'
+Close Tag: ref
+Text: '
 
 Berners-Lee is one of the pioneer voices in favour of '
 Reference: Net Neutrality ''
-Text: ',<ref>'
+Text: ','
+Open Tag: ref attributes: []
 Begin Template: cite news
 k: url
 Text: 'http://news.bbc.co.uk/2/hi/technology/7613201.stm'
@@ -569,9 +644,11 @@ Text: 'Pallab'
 k: last
 Text: 'Ghosh'
 End Template: cite news
-Text: '</ref> and has expressed the view that '
+Close Tag: ref
+Text: ' and has expressed the view that '
 Reference: ISP ''
-Text: 's should supply "connectivity with no strings attached," and should neither control nor monitor customers' browsing activities without their expressed consent.<ref>'
+Text: 's should supply "connectivity with no strings attached," and should neither control nor monitor customers' browsing activities without their expressed consent.'
+Open Tag: ref attributes: []
 Begin Template: cite news
 k: url
 Text: 'http://news.bbc.co.uk/1/hi/technology/7299875.stm'
@@ -590,7 +667,8 @@ Text: 'Rory'
 k: last
 Text: 'Cellan-Jones'
 End Template: cite news
-Text: '</ref><ref>'
+Close Tag: ref
+Open Tag: ref attributes: []
 Begin Template: cite news
 k: url
 Text: 'http://www.telegraph.co.uk/news/uknews/1581938/Web-inventor%27s-warning-on-spy-software.html'
@@ -612,7 +690,9 @@ Text: 'Stephen'
 k: last
 Text: 'Adams'
 End Template: cite news
-Text: '</ref> He advocates the idea that net neutrality is a kind of human network right: "Threats to the Internet, such as companies or governments that interfere with or snoop on Internet traffic, compromise basic human network rights."<ref>'
+Close Tag: ref
+Text: ' He advocates the idea that net neutrality is a kind of human network right: "Threats to the Internet, such as companies or governments that interfere with or snoop on Internet traffic, compromise basic human network rights."'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: last
 Text: 'Berners '
@@ -629,11 +709,13 @@ Text: '2011-05-04 '
 k: accessdate
 Text: '2011-12-21'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 In a '''
 Reference: The Times 'Times'
-Text: ''' article in October 2009, Berners-Lee admitted that the initial pair of slashes ("//") in a web address were actually "unnecessary". He told the newspaper that he could easily have designed URLs not to have the slashes. "There you go, it seemed like a good idea at the time," he said in his lighthearted apology.<ref>'
+Text: ''' article in October 2009, Berners-Lee admitted that the initial pair of slashes ("//") in a web address were actually "unnecessary". He told the newspaper that he could easily have designed URLs not to have the slashes. "There you go, it seemed like a good idea at the time," he said in his lighthearted apology.'
+Open Tag: ref attributes: []
 Begin Template: cite news
 k: url
 Text: 'http://news.bbc.co.uk/1/hi/technology/8306631.stm'
@@ -646,7 +728,8 @@ Text: '14 October 2009'
 k: accessdate
 Text: '14 October 2009'
 End Template: cite news
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 '
 Section [0] Recognition
@@ -656,7 +739,8 @@ Reference: Image:First Web Server.jpg 'thumb|200px|This [[NeXT Computer'
 Text: ' was used by Berners-Lee at CERN and became the world's first web server.]]
 *In 1994 he became one of only six members of the '
 Reference: World Wide Web Hall of Fame ''
-Text: '.<ref>'
+Text: '.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'The World-Wide Web Hall of Fame'
@@ -665,13 +749,17 @@ Text: 'http://botw.org/1994/awards/fame.html '
 k: publisher
 Reference: Best of the Web Directory ''
 End Template: cite web
-Text: '</ref>
-*In 1995 he won the Kilby Foundation's "Young Innovator of the Year" Award.<ref name="W3Bio" />
+Close Tag: ref
+Text: '
+*In 1995 he won the Kilby Foundation's "Young Innovator of the Year" Award.'
+Inline Tag: ref attributes: [name : 'W3Bio']
+Text: '
 *In 1995 he received also the '
 Reference: Software System Award ''
 Text: ' from the '
 Reference: Association for Computing Machinery ''
-Text: ' (ACM).<ref name=acmaward>'
+Text: ' (ACM).'
+Open Tag: ref attributes: [name : 'acmaward']
 Begin Template: cite web 
 k: publisher
 Reference: Association for Computing Machinery ''
@@ -692,10 +780,12 @@ Text: 'yes'
 End Template: Start date
 Text: ' '
 End Template: cite web 
-Text: '</ref>
+Close Tag: ref
+Text: '
 *In 1998 he was awarded with an honorary doctorate from the '
 Reference: University of Essex ''
-Text: '.<ref>'
+Text: '.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
 Text: 'Honorary Graduates of University of Essex'
@@ -704,12 +794,14 @@ Text: 'http://www.essex.ac.uk/honorary_graduates/hg/profiles/1998/t-berners-lee.
 k: accessdate
 Text: 'December 15, 2011'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 *In 1999, '''
 Reference: Time Magazine ''
 Text: ''' named Berners-Lee one of the '
 Reference: Time 100: The Most Important People of the Century '100 Most Important People of the 20th century'
-Text: '.<ref name=AFP>'
+Text: '.'
+Open Tag: ref attributes: [name : 'AFP']
 Begin Template: cite news
 
 k: title       
@@ -734,10 +826,12 @@ k: date
 Text: '29 March 1999'
 End Template: cite news
 
-Text: '</ref>
+Close Tag: ref
+Text: '
 *In March 2000 he was awarded an honorary degree from '
 Reference: The Open University ''
-Text: ' as Doctor of the University.<ref>'
+Text: ' as Doctor of the University.'
+Open Tag: ref attributes: []
 Begin Template: cite news
 k: title
 Text: 'Open University's online graduation'
@@ -751,10 +845,12 @@ Text: '31. March 2000 '
 k: accessdate 
 Text: '22 September 2010'
 End Template: cite news
-Text: '</ref>
+Close Tag: ref
+Text: '
 *In 2001, he was elected a Fellow of the '
 Reference: American Academy of Arts and Sciences ''
-Text: '.<ref name=AAAS>'
+Text: '.'
+Open Tag: ref attributes: [name : 'AAAS']
 Begin Template: cite web
 k: title
 Text: 'Book of Members, 1780–2010: Chapter B'
@@ -765,10 +861,12 @@ Text: 'American Academy of Arts and Sciences'
 k: accessdate
 Text: '24 June 2011'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 *In 2003, he received the '
 Reference: Computer History Museum ''
-Text: ''s Fellow Award, for his seminal contributions to the development of the World Wide Web.<ref>'
+Text: ''s Fellow Award, for his seminal contributions to the development of the World Wide Web.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: url
 Text: 'http://www.computerhistory.org/fellowawards/index.php?id=88 '
@@ -781,14 +879,16 @@ Text: '11 January 2010 '
 k: accessdate
 Text: '15 August 2010'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 *On 15 April 2004, he was named as the first recipient of Finland's '
 Reference: Millennium Technology Prize ''
 Text: ', for inventing the World Wide Web. The cash prize, worth one million euros (about £892,000, or US$1.3&nbsp;million, as of Sept 2011), was awarded on 15 June, in '
 Reference: Helsinki ''
 Text: ', Finland, by the President of the Republic of Finland, '
 Reference: Tarja Halonen ''
-Text: '.<ref>'
+Text: '.'
+Open Tag: ref attributes: []
 Begin Template: cite web
   
 k: title 
@@ -811,12 +911,14 @@ k: accessdate
 Text: '25 May 2008 '
 End Template: cite web
   
-Text: '</ref>
+Close Tag: ref
+Text: '
 *He was appointed to the rank of '
 Reference: Order of the British Empire 'Knight Commander of the Most Excellent Order of the British Empire'
 Text: ' (the second-highest class within this Order that entails a knighthood) by '
 Reference: Elizabeth II of the United Kingdom 'Queen Elizabeth II'
-Text: ', in the 2004 New Year's Honours List, and was formally invested on 16 July 2004.<ref name=tecb>'
+Text: ', in the 2004 New Year's Honours List, and was formally invested on 16 July 2004.'
+Open Tag: ref attributes: [name : 'tecb']
 Begin Template: cite news
   
 k: title 
@@ -835,7 +937,8 @@ k: accessdate
 Text: '25 May 2008 '
 End Template: cite news
   
-Text: '</ref><ref>'
+Close Tag: ref
+Open Tag: ref attributes: []
 Begin Template: cite news
   
 k: title 
@@ -854,12 +957,14 @@ k: accessdate
 Text: '25 May 2008 '
 End Template: cite news
   
-Text: '</ref>
+Close Tag: ref
+Text: '
 *On 21 July 2004, he was presented with an honorary '
 Reference: Doctor of Science ''
 Text: ' degree from '
 Reference: Lancaster University ''
-Text: '.<ref>'
+Text: '.'
+Open Tag: ref attributes: []
 Begin Template: cite web
   
 k: title 
@@ -876,10 +981,12 @@ k: accessdate
 Text: '25 May 2008 '
 End Template: cite web
   
-Text: '</ref>
+Close Tag: ref
+Text: '
 *On 27 January 2005, he was named Greatest Briton of 2004, both for his achievements and for displaying the key British characteristics of "diffidence, determination, a sharp sense of humour and adaptability", as put by '
 Reference: David Hempleman-Adams ''
-Text: ', a panel member.<ref>'
+Text: ', a panel member.'
+Open Tag: ref attributes: []
 Begin Template: cite news
   
 k: title 
@@ -902,7 +1009,8 @@ Text: '25 May 2008
 '
 End Template: cite news
   
-Text: '</ref>
+Close Tag: ref
+Text: '
 *In 2007, Berners-Lee received the '
 Reference: Academy of Achievement 'Academy of Achievement's Golden Plate Award'
 Text: '.
@@ -910,7 +1018,8 @@ Text: '.
 Reference: Albert Hofmann ''
 Text: ', in '
 Reference: The Daily Telegraph '''The Telegraph'''
-Text: ''s list of 100 greatest living geniuses.<ref>'
+Text: ''s list of 100 greatest living geniuses.'
+Open Tag: ref attributes: []
 Begin Template: cite news
 k: author
 Text: '8:01AM GMT 30 Oct 2007 '
@@ -925,10 +1034,12 @@ Text: '2007-10-30 '
 k: accessdate
 Text: '2011-12-21'
 End Template: cite news
-Text: '</ref>
+Close Tag: ref
+Text: '
 *On 13 June 2007, he received the '
 Reference: Order of Merit ''
-Text: ', becoming one of only 24 living members entitled to hold the honour, and to use the post-nominals 'O.M.' after their name.<ref>'
+Text: ', becoming one of only 24 living members entitled to hold the honour, and to use the post-nominals 'O.M.' after their name.'
+Open Tag: ref attributes: []
 Begin Template: cite news
 k: accessdate
 Text: '25 May 2008'
@@ -941,10 +1052,12 @@ Text: 'BBC '
 k: date
 Text: '13 June 2007'
 End Template: cite news
-Text: '</ref> (The Order of Merit is within the personal bestowal of The Queen, and does not require recommendation by ministers or the Prime Minister)
+Close Tag: ref
+Text: ' (The Order of Merit is within the personal bestowal of The Queen, and does not require recommendation by ministers or the Prime Minister)
 *He was awarded the 2008 '
 Reference: IEEE/RSE Wolfson James Clerk Maxwell Award ''
-Text: ', for "conceiving and further developing the World Wide Web".<ref>'
+Text: ', for "conceiving and further developing the World Wide Web".'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: url
 Text: 'http://www.ieee.org/documents/maxwell_rl.pdf'
@@ -962,12 +1075,14 @@ Text: 'yes'
 End Template: Start date
 Text: ' '
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 *On 2 December 2008, Berners-Lee was awarded an honorary doctorate from the '
 Reference: University of Manchester ''
 Text: '. His parents worked on the '
 Reference: Manchester Mark 1 ''
-Text: ' in the 1940s and 50s.<ref>'
+Text: ' in the 1940s and 50s.'
+Open Tag: ref attributes: []
 Begin Template: Cite news 
 k: title
 Text: 'Scientific pioneers honoured by The University of Manchester '
@@ -980,10 +1095,12 @@ Text: '2 December 2008 '
 k: accessdate
 Text: '10 October 2011'
 End Template: Cite news 
-Text: '</ref>
+Close Tag: ref
+Text: '
 *On 21 April 2009, he was awarded an honorary doctorate by the '
 Reference: Universidad Politécnica de Madrid ''
-Text: '.<ref>'
+Text: '.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: url
 Text: 'http://www2.upm.es/portal/site/institucional/menuitem.fa77d63875fa4490b99bfa04dffb46a8/?vgnextoid=c5d0492bf33c0210VgnVCM10000009c7648aRCRD '
@@ -992,18 +1109,22 @@ Text: 'Universidad Politécnica de Madrid: Berners-Lee y Vinton G. Cerf—Doctor
 k: accessdate
 Text: '15 August 2010'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 *On 28 April 2009, he was elected member of the '
 Reference: United States National Academy of Sciences ''
 Text: '.
 *On 8 June 2009, he received the '
 Reference: Webby Award ''
-Text: ' for Lifetime Achievement, at the awards ceremony held in New York City.<ref>'
+Text: ' for Lifetime Achievement, at the awards ceremony held in New York City.'
+Open Tag: ref attributes: []
 Link: http://www.webbyawards.com/press/press-release.php?id=187 'Press Release: Sir Tim Berners Lee, Inventor of the World Wide Web, to receive Webby Lifetime Award At the 13th Annual Webby Awards'
-Text: ' ''Webby Awards.com'' Retrieved 21 January 2011</ref>
+Text: ' ''Webby Awards.com'' Retrieved 21 January 2011'
+Close Tag: ref
+Text: '
 *In October 2009, he was awarded an honorary doctorate by the '
 Reference: Vrije Universiteit Amsterdam ''
-Text: '<ref>'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: language
 Text: 'Dutch
@@ -1027,7 +1148,8 @@ k: authorlink
 Text: 'Vrije Universiteit Amsterdam
 '
 End Template: cite web
-Text: '</ref><ref>'
+Close Tag: ref
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: language
 Text: 'Dutch
@@ -1048,7 +1170,8 @@ k: date
 Text: '22 July 2008
 '
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 *On 30 March 2011, he was one of the first three recipients of the '
 Reference: Mikhail Gorbachev ''
 Text: ' award for "The Man Who Changed the World", at the inuagural awards ceremony held in London. The other recipients were '
@@ -1060,16 +1183,21 @@ Text: '.
 Reference: Doctor of Science ''
 Text: ' degree from '
 Reference: Harvard University ''
-Text: '.<ref>'
+Text: '.'
+Open Tag: ref attributes: []
 Link: http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee 'Harvard awards 9 honorary degrees'
-Text: ' ''news.harvard.edu'' Retrieved 11 June 2011</ref>
+Text: ' ''news.harvard.edu'' Retrieved 11 June 2011'
+Close Tag: ref
+Text: '
 *In 2011, he was inducted into '
 Reference: IEEE Intelligent Systems ''
-Text: '' AI's Hall of Fame for the "significant contributions to the field of AI and intelligent systems".<ref>'
+Text: '' AI's Hall of Fame for the "significant contributions to the field of AI and intelligent systems".'
+Open Tag: ref attributes: []
 Begin Template: Cite doi
 k: 10.1109.2FMIS.2011.64
 End Template: Cite doi
-Text: '</ref><ref>'
+Close Tag: ref
+Open Tag: ref attributes: []
 Begin Template: cite news
 k: url
 Text: 'http://www.digitaljournal.com/pr/399442 '
@@ -1100,7 +1228,9 @@ Text: ' Press release source: '''
 Reference: PRWeb ''
 Text: ''' ('
 Reference: Vocus ''
-Text: ').</ref>
+Text: ').'
+Close Tag: ref
+Text: '
 
 '
 Section [0] Personal life
@@ -1121,7 +1251,8 @@ Text: ' as a teenager, just after being '
 Reference: confirmed ''
 Text: ' and "told how essential it was to believe in all kinds of unbelievable things". He and his family eventually joined a '
 Reference: Unitarian Universalism 'Unitarian Universalist'
-Text: ' church while they were living in Boston.<ref>'
+Text: ' church while they were living in Boston.'
+Open Tag: ref attributes: []
 Begin Template: cite web
   
 k: last 
@@ -1146,7 +1277,8 @@ k: accessdate
 Text: '25 May 2008 '
 End Template: cite web
   
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 '
 Section [0]  See also 
@@ -1259,14 +1391,9 @@ Link: http://computemagazine.com/man-who-invented-world-wide-web-gives-new-defin
 Text: '
 * '
 Link: http://news.bbc.co.uk/2/hi/technology/4132752.stm 'BBC2 Newsnight &ndash; Transcript of video interview of Berners-Lee on the read/write Web'
-Text: ' <!--'
-Begin Template: Dead link
-k: url
-Text: 'http://web.archive.org/web/20080202115128/http://www.kayotix.com/tmp/newsfeeds/10.08.05/timbernerslee/'
-k: date
-Text: 'September 2008'
-End Template: Dead link
-Text: ' -->
+Text: ' '
+Comment Tag: {{Dead link|url=http://web.archive.org/web/20080202115128/http://www.kayotix.com/tmp/newsfeeds/10.08.05/timbernerslee/|date=September 2008}} 
+Text: '
 * '
 Link: http://www.technologyreview.com/Infotech/13784/ 'Technology Review interview'
 Text: '

@@ -430,7 +430,11 @@ public class WikiTextParserTest {
                 "Text: ' class=wikitable\n" +
                 "'\n" +
                 "Header Cell (1, 1)\n" +
-                "Text: 'Title <small>(translated)</small> '\n" +
+                "Text: 'Title '\n" +
+                "Open Tag: small attributes: []\n" +
+                "Text: '(translated)'\n" +
+                "Close Tag: small\n" +
+                "Text: ' '\n" +
                 "Header Cell (1, 2)\n" +
                 "Text: 'Area of focus '\n" +
                 "Header Cell (1, 3)\n" +
@@ -452,7 +456,8 @@ public class WikiTextParserTest {
                 "Body Cell (2, 6)\n" +
                 "Text: 'Resolved an unsolved puzzle by suggesting that energy is exchanged only in discrete amounts ('\n" +
                 "Reference: quantum 'quanta'\n" +
-                "Text: ').<ref>'\n" +
+                "Text: ').'\n" +
+                "Open Tag: ref attributes: []\n" +
                 "Begin Template: cite book \n" +
                 "k: title\n" +
                 "Text: 'Lectures on quantum mechanics '\n" +
@@ -471,7 +476,9 @@ public class WikiTextParserTest {
                 "k: url\n" +
                 "Text: 'http://books.google.com/books?id=KmwsAAAAYAAJ'\n" +
                 "End Template: cite book \n" +
-                "Text: '</ref> This idea was pivotal to the early development of quantum theory.<ref>'\n" +
+                "Close Tag: ref\n" +
+                "Text: ' This idea was pivotal to the early development of quantum theory.'\n" +
+                "Open Tag: ref attributes: []\n" +
                 "Begin Template: cite book \n" +
                 "k: title\n" +
                 "Text: 'Seven ideas that shook the universe '\n" +
@@ -496,7 +503,8 @@ public class WikiTextParserTest {
                 "k: url\n" +
                 "Text: 'http://books.google.com/books?id=_pbuAAAAMAAJ'\n" +
                 "End Template: cite book \n" +
-                "Text: '</ref>\n" +
+                "Close Tag: ref\n" +
+                "Text: '\n" +
                 "'\n" +
                 "Body Cell (3, 2)\n" +
                 "Text: '''On the Motion of Small Particles Suspended in a Stationary Liquid, as Required by the Molecular Kinetic Theory of Heat'' '\n" +
@@ -524,7 +532,8 @@ public class WikiTextParserTest {
                 "Body Cell (4, 5)\n" +
                 "Text: '26 Sept '\n" +
                 "Body Cell (4, 6)\n" +
-                "Text: 'Reconciled Maxwell's equations for electricity and magnetism with the laws of mechanics by introducing major changes to mechanics close to the speed of light, resulting from analysis based on empirical evidence that the speed of light is independent of the motion of the observer.<ref>'\n" +
+                "Text: 'Reconciled Maxwell's equations for electricity and magnetism with the laws of mechanics by introducing major changes to mechanics close to the speed of light, resulting from analysis based on empirical evidence that the speed of light is independent of the motion of the observer.'\n" +
+                "Open Tag: ref attributes: []\n" +
                 "Begin Template: cite book\n" +
                 "\n" +
                 "k: title\n" +
@@ -547,9 +556,11 @@ public class WikiTextParserTest {
                 "Text: 'http://books.google.com/books?id=tmdr6Wx_2PYC'\n" +
                 "End Template: cite book\n" +
                 "\n" +
-                "Text: '</ref>  Discredited the concept of an \"'\n" +
+                "Close Tag: ref\n" +
+                "Text: '  Discredited the concept of an \"'\n" +
                 "Reference: luminiferous ether ''\n" +
-                "Text: '.\"<ref>'\n" +
+                "Text: '.\"'\n" +
+                "Open Tag: ref attributes: []\n" +
                 "Begin Template: cite book \n" +
                 "k: title\n" +
                 "Text: 'Foundations of physics '\n" +
@@ -572,7 +583,8 @@ public class WikiTextParserTest {
                 "k: url\n" +
                 "Text: 'http://books.google.com/books?id=dwZltQAACAAJ'\n" +
                 "End Template: cite book \n" +
-                "Text: '</ref>\n" +
+                "Close Tag: ref\n" +
+                "Text: '\n" +
                 "'\n" +
                 "Body Cell (5, 2)\n" +
                 "Text: '''Does the Inertia of a Body Depend Upon Its Energy Content?'' '\n" +
@@ -587,7 +599,10 @@ public class WikiTextParserTest {
                 "Text: 'Equivalence of matter and energy, '\n" +
                 "Begin Template: nowrap\n" +
                 "k: 1\n" +
-                "Text: '''E'' = ''mc''<sup>2</sup>'\n" +
+                "Text: '''E'' = ''mc'''\n" +
+                "Open Tag: sup attributes: []\n" +
+                "Text: '2'\n" +
+                "Close Tag: sup\n" +
                 "End Template: nowrap\n" +
                 "Text: ' (and by implication, the ability of gravity to \"bend\" light), the existence of \"'\n" +
                 "Reference: rest energy ''\n" +
@@ -612,9 +627,10 @@ public class WikiTextParserTest {
     @Test
     public void testParseCite() throws IOException, WikiTextParserException {
         parse(
-                "{{cite web|url=http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.100010615/full.html |title=Materna (O Mother Dear, Jerusalem) / Samuel Augustus Ward [hymnal&#93;:Print Material Full Description: Performing Arts Encyclopedia, Library of Congress |publisher=Lcweb2.loc.gov |date=2007-10-30 |accessdate=2011-08-20}}</ref> From time to time it has been proposed as a replacement for ''[[The Star-Spangled Banner]]'' as the national anthem, including television [[sign-off]]s.{{citation needed|date=March 2012}}\n",
+                "<ref>{{cite web|url=http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.100010615/full.html |title=Materna (O Mother Dear, Jerusalem) / Samuel Augustus Ward [hymnal&#93;:Print Material Full Description: Performing Arts Encyclopedia, Library of Congress |publisher=Lcweb2.loc.gov |date=2007-10-30 |accessdate=2011-08-20}}</ref> From time to time it has been proposed as a replacement for ''[[The Star-Spangled Banner]]'' as the national anthem, including television [[sign-off]]s.{{citation needed|date=March 2012}}\n",
 
                 "Begin Document\n" +
+                "Open Tag: ref attributes: []\n" +
                 "Begin Template: cite web\n" +
                 "k: url\n" +
                 "Text: 'http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.100010615/full.html '\n" +
@@ -630,7 +646,8 @@ public class WikiTextParserTest {
                 "k: accessdate\n" +
                 "Text: '2011-08-20'\n" +
                 "End Template: cite web\n" +
-                "Text: '</ref> From time to time it has been proposed as a replacement for '''\n" +
+                "Close Tag: ref\n" +
+                "Text: ' From time to time it has been proposed as a replacement for '''\n" +
                 "Reference: The Star-Spangled Banner ''\n" +
                 "Text: ''' as the national anthem, including television '\n" +
                 "Reference: sign-off ''\n" +

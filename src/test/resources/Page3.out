@@ -41,7 +41,11 @@ Text: ' and '
 Reference: astronomy ''
 Text: ', as well as in calculating '
 Reference: reflectivity ''
-Text: ' of surfaces in LEED sustainable rating systems for buildings, computer graphics and computer vision. The average overall albedo of Earth, its ''planetary albedo'', is 30 to 35%, because of the covering by clouds, but varies widely locally across the surface, depending on the geological and environmental features.<ref>Environmental Encyclopedia, 3rd ed., Thompson Gale, 2003, ISBN 0-7876-5486-8</ref>
+Text: ' of surfaces in LEED sustainable rating systems for buildings, computer graphics and computer vision. The average overall albedo of Earth, its ''planetary albedo'', is 30 to 35%, because of the covering by clouds, but varies widely locally across the surface, depending on the geological and environmental features.'
+Open Tag: ref attributes: []
+Text: 'Environmental Encyclopedia, 3rd ed., Thompson Gale, 2003, ISBN 0-7876-5486-8'
+Close Tag: ref
+Text: '
 
 The term was introduced into optics by '
 Reference: Johann Heinrich Lambert ''
@@ -61,12 +65,15 @@ Header Cell (1, 1)
 Text: 'Surface
 '
 Header Cell (1, 2)
-Text: 'Typical<br />albedo
+Text: 'Typical'
+Inline Tag: br attributes: []
+Text: 'albedo
 '
 Body Cell (2, 2)
 Text: 'Fresh asphalt '
 Body Cell (2, 3)
-Text: '0.04<ref name="heat island">'
+Text: '0.04'
+Open Tag: ref attributes: [name : 'heat island']
 Begin Template: cite web
  
 k: last
@@ -90,20 +97,27 @@ Text: '2007-08-27
 k: archiveurl
 Text: 'http://web.archive.org/web/20070829153207/http://eetd.lbl.gov/HeatIsland/Pavements/Albedo/'
 k: archivedate
-Text: '29 August 2007<!--Added by DASHBot-->'
+Text: '29 August 2007'
+Comment Tag: Added by DASHBot
 End Template: cite web
  
-Text: '</ref>
+Close Tag: ref
+Text: '
 '
 Body Cell (3, 2)
 Text: 'Worn asphalt '
 Body Cell (3, 3)
-Text: '0.12<ref name="heat island" />
+Text: '0.12'
+Inline Tag: ref attributes: [name : 'heat island']
+Text: '
 '
 Body Cell (4, 2)
-Text: 'Conifer forest<br />(Summer) '
+Text: 'Conifer forest'
+Inline Tag: br attributes: []
+Text: '(Summer) '
 Body Cell (4, 3)
-Text: '0.08,<ref name="Betts 1">'
+Text: '0.08,'
+Open Tag: ref attributes: [name : 'Betts 1']
 Begin Template: Cite journal
  
 k: author
@@ -141,21 +155,28 @@ Text: '1997JGR...10228901B '
 k: archiveurl
 Text: 'http://web.archive.org/web/20070930184719/http://www.agu.org/pubs/crossref/1997/96JD03876.shtml'
 k: archivedate
-Text: '30 September 2007<!--Added by DASHBot-->'
+Text: '30 September 2007'
+Comment Tag: Added by DASHBot
 End Template: Cite journal
  
-Text: '</ref> 0.09 to 0.15<ref name="mmutrees" />
+Close Tag: ref
+Text: ' 0.09 to 0.15'
+Inline Tag: ref attributes: [name : 'mmutrees']
+Text: '
 '
 Body Cell (5, 2)
 Reference: Deciduous trees ''
 Text: ' '
 Body Cell (5, 3)
-Text: '0.15 to 0.18<ref name="mmutrees" />
+Text: '0.15 to 0.18'
+Inline Tag: ref attributes: [name : 'mmutrees']
+Text: '
 '
 Body Cell (6, 2)
 Text: 'Bare soil '
 Body Cell (6, 3)
-Text: '0.17<ref name="markvart">'
+Text: '0.17'
+Open Tag: ref attributes: [name : 'markvart']
 Begin Template: Cite book
   
 k: author
@@ -172,17 +193,21 @@ k: isbn
 Text: '1-85617-390-9 '
 End Template: Cite book
   
-Text: '</ref>
+Close Tag: ref
+Text: '
 '
 Body Cell (7, 2)
 Text: 'Green grass '
 Body Cell (7, 3)
-Text: '0.25<ref name="markvart" />
+Text: '0.25'
+Inline Tag: ref attributes: [name : 'markvart']
+Text: '
 '
 Body Cell (8, 2)
 Text: 'Desert sand '
 Body Cell (8, 3)
-Text: '0.40<ref name="Tetzlaff">'
+Text: '0.40'
+Open Tag: ref attributes: [name : 'Tetzlaff']
 Begin Template: Cite book
  
 k: first
@@ -202,28 +227,36 @@ k: pages
 Text: '60–63 '
 End Template: Cite book
  
-Text: '</ref>
+Close Tag: ref
+Text: '
 '
 Body Cell (9, 2)
 Text: 'New concrete '
 Body Cell (9, 3)
-Text: '0.55<ref name="markvart" />
+Text: '0.55'
+Inline Tag: ref attributes: [name : 'markvart']
+Text: '
 '
 Body Cell (10, 2)
 Text: 'Ocean Ice'
 Body Cell (10, 3)
-Text: '0.5–0.7<ref name="markvart" />
+Text: '0.5–0.7'
+Inline Tag: ref attributes: [name : 'markvart']
+Text: '
 '
 Body Cell (11, 2)
 Text: 'Fresh snow '
 Body Cell (11, 3)
-Text: '0.80–0.90<ref name="markvart" />
+Text: '0.80–0.90'
+Inline Tag: ref attributes: [name : 'markvart']
+Text: '
 '
 End Table
 Text: '
 Albedos of typical materials in visible light range from up to 0.9 for fresh snow, to about 0.04 for charcoal, one of the darkest substances. Deeply shadowed cavities can achieve an effective albedo approaching the zero of a '
 Reference: black body ''
-Text: '. When seen from a distance, the ocean surface has a low albedo, as do most forests, while desert areas have some of the highest albedos among landforms. Most land areas are in an albedo range of 0.1 to 0.4.<ref name="PhysicsWorld">'
+Text: '. When seen from a distance, the ocean surface has a low albedo, as do most forests, while desert areas have some of the highest albedos among landforms. Most land areas are in an albedo range of 0.1 to 0.4.'
+Open Tag: ref attributes: [name : 'PhysicsWorld']
 Begin Template: cite web
 k: url
 Text: 'http://scienceworld.wolfram.com/physics/Albedo.html '
@@ -235,9 +268,12 @@ k: date
 k: accessdate
 Text: '2011-08-19'
 End Template: cite web
-Text: '</ref> The average albedo of the '
+Close Tag: ref
+Text: ' The average albedo of the '
 Reference: Earth ''
-Text: ' is about 0.3.<ref name="Goode" /> This is far higher than for the ocean primarily because of the contribution of clouds.
+Text: ' is about 0.3.'
+Inline Tag: ref attributes: [name : 'Goode']
+Text: ' This is far higher than for the ocean primarily because of the contribution of clouds.
 
 Human activities have changed the albedo (via forest clearance and farming, for example) of various areas around the globe. However, quantification of this effect on the global scale is difficult.
 
@@ -265,35 +301,63 @@ Reference: mathematical model ''
 Text: ' of the BRDF is used to translate a sample set of satellite reflectance measurements into estimates of '
 Reference: directional-hemispherical reflectance ''
 Text: ' and bi-hemispherical reflectance.  (e.&nbsp;g.,
-.<ref name="NASA" />)
+.'
+Inline Tag: ref attributes: [name : 'NASA']
+Text: ')
 
 The Earth's average surface temperature due to its albedo and the '
 Reference: greenhouse effect ''
-Text: ' is currently about 15&nbsp;°C. For the frozen (more reflective) planet the average temperature is below −40&nbsp;°C<ref name="washington" /> (If only all continents being completely covered by glaciers - the mean temperature is about 0&nbsp;°C<ref name="clim-past" />). The simulation for (more absorptive) aquaplanet shows the average temperature close to 27&nbsp;°C.<ref name="Smith Robin" />
+Text: ' is currently about 15&nbsp;°C. For the frozen (more reflective) planet the average temperature is below −40&nbsp;°C'
+Inline Tag: ref attributes: [name : 'washington']
+Text: ' (If only all continents being completely covered by glaciers - the mean temperature is about 0&nbsp;°C'
+Inline Tag: ref attributes: [name : 'clim-past']
+Text: '). The simulation for (more absorptive) aquaplanet shows the average temperature close to 27&nbsp;°C.'
+Inline Tag: ref attributes: [name : 'Smith Robin']
+Text: '
 
 '
 Section [1] White-sky and black-sky albedo
 Text: '
 It has been shown that for many applications involving terrestrial albedo, the albedo at a particular solar '
 Reference: Celestial coordinate system 'zenith angle'
-Text: ' <math>'
-Text: 'heta_i}</math> can reasonably be approximated by the proportionate sum of two terms: the directional-hemispherical reflectance at that solar zenith angle, <math>'
-Text: 'ar \alpha(\theta_i)}</math>, and the bi-hemispherical reflectance, <math>\bar'
-Text: 'bar \alpha}</math> the proportion concerned being defined as the proportion of diffuse illumination <math>'
-Text: '</math>.
+Text: ' '
+Open Tag: math attributes: []
+Text: 'heta_i}'
+Close Tag: math
+Text: ' can reasonably be approximated by the proportionate sum of two terms: the directional-hemispherical reflectance at that solar zenith angle, '
+Open Tag: math attributes: []
+Text: 'ar \alpha(\theta_i)}'
+Close Tag: math
+Text: ', and the bi-hemispherical reflectance, '
+Open Tag: math attributes: []
+Text: '\bar'
+Text: 'bar \alpha}'
+Close Tag: math
+Text: ' the proportion concerned being defined as the proportion of diffuse illumination '
+Open Tag: math attributes: []
+Close Tag: math
+Text: '.
 
-Albedo <math>'
-Text: 'lpha}</math> can then be given as:
+Albedo '
+Open Tag: math attributes: []
+Text: 'lpha}'
+Close Tag: math
+Text: ' can then be given as:
 
-:<math>'
+:'
+Open Tag: math attributes: []
 Text: 'lpha}= (1-D) \bar \alpha(\theta_i) + D \bar'
-Text: 'bar \alpha}.</math>
+Text: 'bar \alpha}.'
+Close Tag: math
+Text: '
 
 '
 Reference: Directional-hemispherical reflectance ''
 Text: ' is sometimes referred to as black-sky albedo and '
 Reference: bi-hemispherical reflectance ''
-Text: ' as white sky albedo. These terms are important because they allow the albedo to be calculated for any given illumination conditions from a knowledge of the intrinsic properties of the surface.<ref name="BlueskyAlbedo" />
+Text: ' as white sky albedo. These terms are important because they allow the albedo to be calculated for any given illumination conditions from a knowledge of the intrinsic properties of the surface.'
+Inline Tag: ref attributes: [name : 'BlueskyAlbedo']
+Text: '
 
 '
 Section [0] Astronomical albedo
@@ -317,7 +381,9 @@ Reference: Enceladus (moon) 'Enceladus'
 Text: ', a moon of Saturn, has one of the highest known albedos of any body in the Solar system, with 99% of EM radiation reflected. Another notable high-albedo body is '
 Reference: Eris (dwarf planet) 'Eris'
 Text: ', with an albedo of 0.96
-.<ref name="sicardy">
+.'
+Open Tag: ref attributes: [name : 'sicardy']
+Text: '
 '
 Begin Template: cite journal
 
@@ -342,7 +408,10 @@ Text: '2011-09-14
 End Template: cite journal
 
 Text: '
-</ref> Many small objects in the outer solar system<ref name="tnoalbedo">'
+'
+Close Tag: ref
+Text: ' Many small objects in the outer solar system'
+Open Tag: ref attributes: [name : 'tnoalbedo']
 Begin Template: cite web
   
 k: date
@@ -365,12 +434,15 @@ Text: '2008-10-17'
 k: archiveurl
 Text: 'http://web.archive.org/web/20081022223827/http://www.johnstonsarchive.net/astro/tnodiam.html'
 k: archivedate
-Text: '22 October 2008<!--Added by DASHBot-->'
+Text: '22 October 2008'
+Comment Tag: Added by DASHBot
 End Template: cite web
   
-Text: '</ref> and '
+Close Tag: ref
+Text: ' and '
 Reference: asteroid belt ''
-Text: ' have low albedos down to about 0.05.<ref name="astalbedo">'
+Text: ' have low albedos down to about 0.05.'
+Open Tag: ref attributes: [name : 'astalbedo']
 Begin Template: cite web
   
 k: date
@@ -393,12 +465,15 @@ Text: '2008-06-16'
 k: archiveurl
 Text: 'http://web.archive.org/web/20080517100307/http://www.johnstonsarchive.net/astro/astalbedo.html'
 k: archivedate
-Text: '17 May 2008<!--Added by DASHBot-->'
+Text: '17 May 2008'
+Comment Tag: Added by DASHBot
 End Template: cite web
   
-Text: '</ref>  A typical '
+Close Tag: ref
+Text: '  A typical '
 Reference: comet nucleus ''
-Text: ' has an albedo of 0.04.<ref name="dark">'
+Text: ' has an albedo of 0.04.'
+Open Tag: ref attributes: [name : 'dark']
 Begin Template: cite web
   
 k: date
@@ -421,14 +496,16 @@ Text: '2008-10-26'
 k: archiveurl
 Text: 'http://web.archive.org/web/20090122074028/http://www.space.com/scienceastronomy/solarsystem/borrelly_dark_011129.html'
 k: archivedate
-Text: '22 January 2009<!--Added by DASHBot-->'
+Text: '22 January 2009'
+Comment Tag: Added by DASHBot
 End Template: cite web
   
 Begin Template: dead link
 k: date
 Text: 'August 2011'
 End Template: dead link
-Text: '</ref>  Such a dark surface is thought to be indicative of a primitive and heavily '
+Close Tag: ref
+Text: '  Such a dark surface is thought to be indicative of a primitive and heavily '
 Reference: space weathering 'space weathered'
 Text: ' surface containing some '
 Reference: organic compound ''
@@ -436,7 +513,9 @@ Text: 's.
 
 The overall albedo of the '
 Reference: Moon ''
-Text: ' is around 0.12, but it is strongly directional and non-Lambertian, displaying also a strong opposition effect.<ref name="medkeff" /> While such reflectance properties are different from those of any terrestrial terrains, they are typical of the '
+Text: ' is around 0.12, but it is strongly directional and non-Lambertian, displaying also a strong opposition effect.'
+Inline Tag: ref attributes: [name : 'medkeff']
+Text: ' While such reflectance properties are different from those of any terrestrial terrains, they are typical of the '
 Reference: regolith ''
 Text: ' surfaces of airless solar system bodies.
 
@@ -458,7 +537,8 @@ Text: ' surfaces.
 
 The correlation between astronomical (geometric) albedo, '
 Reference: Absolute magnitude#Absolute magnitude for planets (H) 'absolute magnitude'
-Text: ' and diameter is:<ref name="bruton">'
+Text: ' and diameter is:'
+Open Tag: ref attributes: [name : 'bruton']
 Begin Template: cite web
   
 k: title
@@ -478,16 +558,30 @@ Text: '2008-10-07'
 k: archiveurl
 Text: 'http://web.archive.org/web/20081210190134/http://www.physics.sfasu.edu/astro/asteroids/sizemagnitude.html'
 k: archivedate
-Text: '10 December 2008<!--Added by DASHBot-->'
+Text: '10 December 2008'
+Comment Tag: Added by DASHBot
 End Template: cite web
   
-Text: '</ref>
-<math>A =\left ( \frac'
+Close Tag: ref
+Text: '
+'
+Open Tag: math attributes: []
+Text: 'A =\left ( \frac'
 Text: '29\times10^'
 Text: '/5}}'
-Text: ' \right ) ^2</math>,
+Text: ' \right ) ^2'
+Close Tag: math
+Text: ',
 
-where <math>A</math> is the astronomical albedo, <math>D</math> is the diameter in kilometres, and ''H'' is the absolute magnitude.
+where '
+Open Tag: math attributes: []
+Text: 'A'
+Close Tag: math
+Text: ' is the astronomical albedo, '
+Open Tag: math attributes: []
+Text: 'D'
+Close Tag: math
+Text: ' is the diameter in kilometres, and ''H'' is the absolute magnitude.
 
 '
 Section [0] Examples of terrestrial albedo effects
@@ -495,7 +589,8 @@ Text: '
 '
 Section [1] Illumination
 Text: '
-Although the albedo-temperature effect is best known in colder, whiter regions on Earth, the maximum albedo is actually found in the tropics where year-round illumination is greater.  The maximum is additionally in the northern hemisphere, varying between 3 and 12 degrees north.<ref name=Winston>'
+Although the albedo-temperature effect is best known in colder, whiter regions on Earth, the maximum albedo is actually found in the tropics where year-round illumination is greater.  The maximum is additionally in the northern hemisphere, varying between 3 and 12 degrees north.'
+Open Tag: ref attributes: [name : 'Winston']
 Begin Template: cite journal
 k: first
 Text: 'Jay '
@@ -510,12 +605,16 @@ Text: '99(11) '
 k: pages
 Text: '818–827'
 End Template: cite journal
-Text: '</ref>  The minima are found in the subtropical regions of the north and south hemispheres, beyond which albedo increases without respect to illumination.<ref name=Winston/>
+Close Tag: ref
+Text: '  The minima are found in the subtropical regions of the north and south hemispheres, beyond which albedo increases without respect to illumination.'
+Inline Tag: ref attributes: [name : 'Winston']
+Text: '
 
 '
 Section [1] Small-scale effects
 Text: '
-Albedo works on a smaller scale, too. In sunlight, dark clothes absorb more heat and light-coloured clothes reflect it better, thus allowing some control over body temperature by exploiting the albedo effect of the colour of external clothing.<ref name="ranknfile-ue">'
+Albedo works on a smaller scale, too. In sunlight, dark clothes absorb more heat and light-coloured clothes reflect it better, thus allowing some control over body temperature by exploiting the albedo effect of the colour of external clothing.'
+Open Tag: ref attributes: [name : 'ranknfile-ue']
 Begin Template: cite web
 k: url
 Text: 'http://www.ranknfile-ue.org/h&s0897.html '
@@ -527,7 +626,8 @@ k: date
 k: accessdate
 Text: '2011-08-19'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 '
 Section [1] Trees
@@ -538,13 +638,17 @@ Text: 's further complicate the issue. In seasonally snow-covered zones, winter 
 Reference: Deciduous trees ''
 Text: ' have an albedo value of about 0.15 to 0.18 while '
 Reference: coniferous trees ''
-Text: ' have a value of about 0.09 to 0.15.<ref name="mmutrees" />
+Text: ' have a value of about 0.09 to 0.15.'
+Inline Tag: ref attributes: [name : 'mmutrees']
+Text: '
 
 Studies by the '
 Reference: Hadley Centre ''
 Text: ' have investigated the relative (generally warming) effect of albedo change and (cooling) effect of '
 Reference: carbon sequestration ''
-Text: ' on planting forests. They found that new forests in tropical and midlatitude areas tended to cool; new forests in high latitudes (e.g. Siberia) were neutral or perhaps warming.<ref name="Betts" />
+Text: ' on planting forests. They found that new forests in tropical and midlatitude areas tended to cool; new forests in high latitudes (e.g. Siberia) were neutral or perhaps warming.'
+Inline Tag: ref attributes: [name : 'Betts']
+Text: '
 
 '
 Section [1] Snow
@@ -557,11 +661,14 @@ Text: '). '
 Reference: Cryoconite ''
 Text: ', powdery windblown '
 Reference: dust ''
-Text: ' containing soot, sometimes reduces albedo on glaciers and ice sheets.<ref name = "Nat. Geo">'
+Text: ' containing soot, sometimes reduces albedo on glaciers and ice sheets.'
+Open Tag: ref attributes: [name : 'Nat. Geo']
 Link: http://ngm.nationalgeographic.com/2010/06/melt-zone/jenkins-text/3 '"Changing Greenland - Melt Zone"'
 Text: ' page 3, of 4, article by Mark Jenkins in '''
 Reference: National Geographic (magazine) 'National Geographic'
-Text: ''' June 2010, accessed July 8, 2010</ref>
+Text: ''' June 2010, accessed July 8, 2010'
+Close Tag: ref
+Text: '
 
 '
 Section [1] Water
@@ -580,7 +687,9 @@ Text: '). The glint of light off water is a commonplace effect of this. At small
 Reference: angle of incidence 'angles of incident'
 Text: ' light, '
 Reference: waviness ''
-Text: ' results in reduced reflectivity because of the steepness of the reflectivity-vs.-incident-angle curve and a locally increased average incident angle.<ref name="Fresnel" />
+Text: ' results in reduced reflectivity because of the steepness of the reflectivity-vs.-incident-angle curve and a locally increased average incident angle.'
+Inline Tag: ref attributes: [name : 'Fresnel']
+Text: '
 
 Although the reflectivity of water is very low at low and medium angles of incident light, it increases tremendously at high angles of incident light such as occur on the illuminated side of the Earth near the '
 Reference: terminator (solar) 'terminator'
@@ -593,7 +702,8 @@ Section [1] Clouds
 Text: '
 '
 Reference: Cloud albedo ''
-Text: ' has substantial influence over atmospheric temperatures. Different types of clouds exhibit different reflectivity, theoretically ranging in albedo from a minimum of near 0 to a maximum approaching 0.8. "On any given day, about half of Earth is covered by clouds, which reflect more sunlight than land and water. Clouds keep Earth cool by reflecting sunlight, but they can also serve as blankets to trap warmth."<ref name="livescience">'
+Text: ' has substantial influence over atmospheric temperatures. Different types of clouds exhibit different reflectivity, theoretically ranging in albedo from a minimum of near 0 to a maximum approaching 0.8. "On any given day, about half of Earth is covered by clouds, which reflect more sunlight than land and water. Clouds keep Earth cool by reflecting sunlight, but they can also serve as blankets to trap warmth."'
+Open Tag: ref attributes: [name : 'livescience']
 Begin Template: cite web
 k: url
 Text: 'http://www.livescience.com/environment/060124_earth_albedo.html '
@@ -606,11 +716,15 @@ Text: '2006-01-24 '
 k: accessdate
 Text: '2011-08-19'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 Albedo and climate in some areas are affected by artificial clouds, such as those created by the '
 Reference: contrail ''
-Text: 's of heavy commercial airliner traffic.<ref name="uww" /> A study following the burning of the Kuwaiti oil fields during Iraqi occupation showed that temperatures under the burning oil fires were as much as 10&nbsp;°C colder than temperatures several miles away under clear skies.<ref name="harvard">'
+Text: 's of heavy commercial airliner traffic.'
+Inline Tag: ref attributes: [name : 'uww']
+Text: ' A study following the burning of the Kuwaiti oil fields during Iraqi occupation showed that temperatures under the burning oil fires were as much as 10&nbsp;°C colder than temperatures several miles away under clear skies.'
+Open Tag: ref attributes: [name : 'harvard']
 Begin Template: cite web
 k: url
 Text: 'http://adsabs.harvard.edu/abs/1992JGR....9714565C '
@@ -623,7 +737,8 @@ Text: '1991-05-30 '
 k: accessdate
 Text: '2011-08-19'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 '
 Section [1] Aerosol effects
@@ -634,7 +749,8 @@ Text: ' (very fine particles/droplets in the atmosphere) have both direct and in
 Reference: cloud condensation nuclei ''
 Text: ' and thereby change '
 Reference: cloud ''
-Text: ' properties) is less certain.<ref name="girda">'
+Text: ' properties) is less certain.'
+Open Tag: ref attributes: [name : 'girda']
 Begin Template: cite web
 k: url
 Text: 'http://www.grida.no/climate/ipcc_tar/wg1/231.htm#671 '
@@ -648,23 +764,42 @@ Text: '2011-08-19'
 k: archiveurl
 Text: 'http://web.archive.org/web/20110629175429/http://www.grida.no/climate/ipcc_tar/wg1/231.htm'
 k: archivedate
-Text: '29 June 2011<!--Added by DASHBot-->'
+Text: '29 June 2011'
+Comment Tag: Added by DASHBot
 End Template: cite web
-Text: '</ref> As per <ref name="DOMINICK" /> the effects are:
-<blockquote>
-<!-- Aerosol radiative forcing. -->
+Close Tag: ref
+Text: ' As per '
+Inline Tag: ref attributes: [name : 'DOMINICK']
+Text: ' the effects are:
+'
+Open Tag: blockquote attributes: []
+Text: '
+'
+Comment Tag:  Aerosol radiative forcing. 
+Text: '
 * ''Aerosol direct effect.'' Aerosols directly scatter and absorb radiation. The scattering of radiation causes atmospheric cooling, whereas absorption can cause atmospheric warming.
 * ''Aerosol indirect effect.'' Aerosols modify the properties of clouds through a subset of the aerosol population called '
 Reference: cloud condensation nuclei ''
 Text: '. Increased nuclei concentrations lead to increased cloud droplet number concentrations, which in turn leads to increased cloud albedo, increased light scattering and radiative cooling (''first indirect effect''), but also leads to reduced precipitation efficiency and increased lifetime of the cloud (''second indirect effect'').
-</blockquote>
+'
+Close Tag: blockquote
+Text: '
 
 '
 Section [1] Black carbon
 Text: '
 Another albedo-related effect on the climate is from black carbon particles. The size of this effect is difficult to quantify: the '
 Reference: Intergovernmental Panel on Climate Change ''
-Text: ' estimates that the global mean radiative forcing for black carbon aerosols from fossil fuels is +0.2 W m<sup>−2</sup>, with a range +0.1 to +0.4 W m<sup>−2</sup>.<ref name="girda 1">'
+Text: ' estimates that the global mean radiative forcing for black carbon aerosols from fossil fuels is +0.2 W m'
+Open Tag: sup attributes: []
+Text: '−2'
+Close Tag: sup
+Text: ', with a range +0.1 to +0.4 W m'
+Open Tag: sup attributes: []
+Text: '−2'
+Close Tag: sup
+Text: '.'
+Open Tag: ref attributes: [name : 'girda 1']
 Begin Template: cite web
 k: url
 Text: 'http://www.grida.no/climate/ipcc_tar/wg1/233.htm '
@@ -678,9 +813,11 @@ Text: '2011-08-19'
 k: archiveurl
 Text: 'http://web.archive.org/web/20110629180154/http://www.grida.no/climate/ipcc_tar/wg1/233.htm'
 k: archivedate
-Text: '29 June 2011<!--Added by DASHBot-->'
+Text: '29 June 2011'
+Comment Tag: Added by DASHBot
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 '
 Section [0] Other types of albedo
@@ -727,7 +864,7 @@ Text: '
 Begin Template: Reflist
 k: 30em
 k: refs
-Text: '<ref name="Goode">'
+Open Tag: ref attributes: [name : 'Goode']
 Begin Template: Cite journal 
 k: last
 Text: 'Goode '
@@ -760,9 +897,11 @@ Text: '10.1029/2000GL012580 '
 k: bibcode 
 Text: '2001GeoRL..28.1671G '
 End Template: Cite journal 
-Text: '</ref>
+Close Tag: ref
+Text: '
 
-<ref name="NASA">'
+'
+Open Tag: ref attributes: [name : 'NASA']
 Begin Template: cite web
 k: url
 Text: 'http://modis.gsfc.nasa.gov/data/atbd/atbd_mod09.pdf'
@@ -773,11 +912,14 @@ Text: '2009-06-02'
 k: archiveurl
 Text: 'http://web.archive.org/web/20090601063932/http://modis.gsfc.nasa.gov/data/atbd/atbd_mod09.pdf'
 k: archivedate
-Text: '01 June 2009<!--Added by DASHBot-->'
+Text: '01 June 2009'
+Comment Tag: Added by DASHBot
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
-<ref name="washington">'
+'
+Open Tag: ref attributes: [name : 'washington']
 Begin Template: cite web
 k: url
 Text: 'http://www.atmos.washington.edu/~sgw/PAPERS/2002_Snowball.pdf'
@@ -786,9 +928,11 @@ Text: 'Snowball Earth: Ice thickness on the tropical ocean'
 k: accessdate
 Text: '2009-09-20'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
-<ref name="clim-past">'
+'
+Open Tag: ref attributes: [name : 'clim-past']
 Begin Template: cite web
 k: url
 Text: 'http://www.clim-past.net/2/31/2006/cp-2-31-2006.pdf'
@@ -797,9 +941,11 @@ Text: 'Effect of land albedo, CO2, orography, and oceanic heat transport on extr
 k: accessdate
 Text: '2009-09-20'
 End Template: cite web
-Text: '</ref>
+Close Tag: ref
+Text: '
 
-<ref name="Smith Robin">'
+'
+Open Tag: ref attributes: [name : 'Smith Robin']
 Begin Template: cite web
 k: url
 Text: 'http://www.mpimet.mpg.de/fileadmin/staff/smithrobin/IC_JClim-final.pdf'
@@ -810,10 +956,13 @@ Text: '2009-09-20'
 k: archiveurl
 Text: 'http://web.archive.org/web/20090920212836/http://www.mpimet.mpg.de/fileadmin/staff/smithrobin/IC_JClim-final.pdf'
 k: archivedate
-Text: '20 September 2009<!--Added by DASHBot-->'
+Text: '20 September 2009'
+Comment Tag: Added by DASHBot
 End Template: cite web
-Text: '</ref>
-<ref name="medkeff">'
+Close Tag: ref
+Text: '
+'
+Open Tag: ref attributes: [name : 'medkeff']
 Begin Template: cite web
 
 k: url         
@@ -847,15 +996,20 @@ k: postscript
 End Template: cite web
 
 Text: '
-</ref>
+'
+Close Tag: ref
+Text: '
 
-<!-- <ref name="Dickinson">Dickinson, R. E., and P. J. Kennedy, 1992: ''Impacts on regional climate of Amazon deforestation''. Geophys. Res. Lett., '''19''', 1947–1950.</ref> -->
+'
+Comment Tag:  <ref name="Dickinson">Dickinson, R. E., and P. J. Kennedy, 1992: ''Impacts on regional climate of Amazon deforestation''. Geophys. Res. Lett., '''19''', 1947–1950.</ref> 
+Text: '
 
-<!-- <ref name="mit">'
-Link: http://web.mit.edu/12.000/www/m2006/final/characterization/abiotic_water.html 'http://web.mit.edu/12.000/www/m2006/final/characterization/abiotic_water.html'
-Text: '  Project Amazonia: Characterization - Abiotic - Water</ref> -->
+'
+Comment Tag:  <ref name="mit">[http://web.mit.edu/12.000/www/m2006/final/characterization/abiotic_water.html http://web.mit.edu/12.000/www/m2006/final/characterization/abiotic_water.html]  Project Amazonia: Characterization - Abiotic - Water</ref> 
+Text: '
 
-<ref name="mmutrees">'
+'
+Open Tag: ref attributes: [name : 'mmutrees']
 Begin Template: cite web 
 k: url
 Text: 'http://www.ace.mmu.ac.uk/Resources/gcc/1-3-3.html '
@@ -868,11 +1022,14 @@ Text: '2007-11-11'
 k: archiveurl
 Text: 'http://web.archive.org/web/20071121192518/http://www.ace.mmu.ac.uk/resources/gcc/1-3-3.html'
 k: archivedate
-Text: '21 November 2007<!--Added by DASHBot-->'
+Text: '21 November 2007'
+Comment Tag: Added by DASHBot
 End Template: cite web 
-Text: '</ref>
+Close Tag: ref
+Text: '
 
-<ref name="Betts">'
+'
+Open Tag: ref attributes: [name : 'Betts']
 Begin Template: cite journal 
 k: doi 
 Text: '10.1038/35041545 '
@@ -895,13 +1052,23 @@ Text: '11089969 '
 k: title 
 Text: 'Offset of the potential carbon sink from boreal forestation by decreases in surface albedo '
 End Template: cite journal 
-Text: '</ref>
+Close Tag: ref
+Text: '
 
-<ref name="Fresnel">http://vih.freeshell.org/pp/01-ONW-St.Petersburg/Fresnel.pdf</ref>
+'
+Open Tag: ref attributes: [name : 'Fresnel']
+Text: 'http://vih.freeshell.org/pp/01-ONW-St.Petersburg/Fresnel.pdf'
+Close Tag: ref
+Text: '
 
-<ref name="uww">http://facstaff.uww.edu/travisd/pdf/jetcontrailsrecentresearch.pdf</ref>
+'
+Open Tag: ref attributes: [name : 'uww']
+Text: 'http://facstaff.uww.edu/travisd/pdf/jetcontrailsrecentresearch.pdf'
+Close Tag: ref
+Text: '
 
-<ref name="DOMINICK">'
+'
+Open Tag: ref attributes: [name : 'DOMINICK']
 Begin Template: cite journal 
 k: doi 
 Text: '10.1098/rsta.2008.0201 '
@@ -938,9 +1105,11 @@ Text: '2008RSPTA.366.4613S '
 k: pmid
 Text: '18826917'
 End Template: cite journal 
-Text: '</ref>
+Close Tag: ref
+Text: '
 
-<ref name="BlueskyAlbedo">'
+'
+Open Tag: ref attributes: [name : 'BlueskyAlbedo']
 Begin Template: Cite journal 
 k: last
 Text: 'Roman '
@@ -966,7 +1135,8 @@ Text: '10.1016/j.rse.2009.11.014 '
 k: accessdate
 k: quote
 End Template: Cite journal 
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 '
 End Template: Reflist

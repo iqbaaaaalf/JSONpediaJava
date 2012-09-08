@@ -132,7 +132,8 @@ Ward had originally written the music, ''Materna'', for the hymn '''
 Reference: O Mother dear, Jerusalem ''
 Text: ''' in 1882. Ward's music combined with the Bates poem was first published in 1910 and titled ''America the Beautiful''.
 
-The song is one of the most beloved and popular of the many American patriotic songs.<ref>'
+The song is one of the most beloved and popular of the many American patriotic songs.'
+Open Tag: ref attributes: []
 Begin Template: cite web
 k: url
 Text: 'http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.100010615/full.html '
@@ -148,7 +149,8 @@ Text: '2007-10-30 '
 k: accessdate
 Text: '2011-08-20'
 End Template: cite web
-Text: '</ref> From time to time it has been proposed as a replacement for '''
+Close Tag: ref
+Text: ' From time to time it has been proposed as a replacement for '''
 Reference: The Star-Spangled Banner ''
 Text: ''' as the national anthem, including television '
 Reference: sign-off ''
@@ -188,7 +190,8 @@ Text: ' composed by Samuel A. Ward was generally considered the best music as ea
 Reference: Coney Island ''
 Text: ' back to his home in '
 Reference: New York City ''
-Text: ', after a leisurely summer day in 1882, and he immediately wrote it down. He was so anxious to capture the tune in his head, he asked fellow passenger friend Harry Martin for his shirt cuff to write the tune on. He composed the tune for the old hymn "O Mother Dear, Jerusalem", retitling the work "Materna". Ward's music combined with Bates' poem were first published together in 1910 and titled, ''America the Beautiful''.<ref name="Collins">'
+Text: ', after a leisurely summer day in 1882, and he immediately wrote it down. He was so anxious to capture the tune in his head, he asked fellow passenger friend Harry Martin for his shirt cuff to write the tune on. He composed the tune for the old hymn "O Mother Dear, Jerusalem", retitling the work "Materna". Ward's music combined with Bates' poem were first published together in 1910 and titled, ''America the Beautiful''.'
+Open Tag: ref attributes: [name : 'Collins']
 Begin Template: cite book
  
 k: title
@@ -216,7 +219,8 @@ Text: 'http://books.google.com/books?id=kKsA1Qi8BBgC&pg=PA19#v=onepage&f=false
 '
 End Template: cite book
  
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 Ward died in 1903, not knowing the national stature his music would attain, as the music was only first applied to the song in 1904. Bates was more fortunate, as the song's popularity was well established by her death in 1929.
 
@@ -331,7 +335,8 @@ Three different renditions of the song have entered the '
 Reference: Hot Country Songs ''
 Text: ' charts. The first was by '
 Reference: Charlie Rich ''
-Text: ', which went to number 22 in 1976.<ref name="whitburn">'
+Text: ', which went to number 22 in 1976.'
+Open Tag: ref attributes: [name : 'whitburn']
 Begin Template: cite book
 k: last
 Text: 'Whitburn'
@@ -348,9 +353,14 @@ Text: '350'
 k: isbn
 Text: '0-89820-177-2'
 End Template: cite book
-Text: '</ref> A second, by '
+Close Tag: ref
+Text: ' A second, by '
 Reference: Mickey Newbury ''
-Text: ', peaked at number 82 in 1980.<ref>Whitburn, p. 297</ref> An '
+Text: ', peaked at number 82 in 1980.'
+Open Tag: ref attributes: []
+Text: 'Whitburn, p. 297'
+Close Tag: ref
+Text: ' An '
 Reference: all-star ''
 Text: ' version of "America the Beautiful" performed by '
 Reference: country music 'country'
@@ -376,7 +386,11 @@ Text: ', '
 Reference: Kenny Rogers ''
 Text: ' and '
 Reference: Keith Urban ''
-Text: ' reached number 58 in July 2001. The song re-entered the chart following the September 11 terrorist attacks.<ref>Whitburn, p. 24</ref>
+Text: ' reached number 58 in July 2001. The song re-entered the chart following the September 11 terrorist attacks.'
+Open Tag: ref attributes: []
+Text: 'Whitburn, p. 24'
+Close Tag: ref
+Text: '
 
 Popularity of the song increased greatly following the '
 Reference: September 11 attacks 'September 11, 2001 attacks'
@@ -384,7 +398,8 @@ Text: '; at some sporting events it was sung in addition to the traditional sing
 Reference: Late Show with David Letterman ''
 Text: ''' following the attacks, CBS newsman '
 Reference: Dan Rather ''
-Text: ' cried briefly as he quoted the fourth verse.<ref>'
+Text: ' cried briefly as he quoted the fourth verse.'
+Open Tag: ref attributes: []
 Begin Template: cite news 
 k: date
 Text: '2001-09-18 '
@@ -399,7 +414,8 @@ Text: 'Stephanie '
 k: last
 Text: 'Zacharek'
 End Template: cite news 
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 '
 Reference: Ray Charles ''
@@ -484,7 +500,8 @@ Text: '
 Reference: Lynn Sherr ''
 Text: ''s 2001 book ''America the Beautiful'' discusses the origins of the song and the backgrounds of its authors in depth. The book points out that the poem has the same meter as that of "'
 Reference: Auld Lang Syne ''
-Text: '"; the songs can be sung interchangeably. Additionally, Sherr points out that this was the original third verse written by Bates:<ref name="Sherr">'
+Text: '"; the songs can be sung interchangeably. Additionally, Sherr points out that this was the original third verse written by Bates:'
+Open Tag: ref attributes: [name : 'Sherr']
 Begin Template: cite book
 k: title
 Text: 'America the Beautiful: The Stirring True Story Behind Our Nation's Favorite Song'
@@ -503,7 +520,8 @@ Text: '978-1-58648-085-1
  '
 k: url
 End Template: cite book
-Text: '</ref>
+Close Tag: ref
+Text: '
 
 :America! America!
 :God shed His grace on thee,
