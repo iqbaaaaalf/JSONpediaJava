@@ -619,7 +619,9 @@ public class WikiTextParserTest {
             "<math>\\bar{ \\bar \\alpha}</math> ",
 
             "Begin Document\n" +
-            "Text: '<math>\\bar'\n" +
+            "Open Tag: math attributes: []\n" +
+            "Text: '\\bar{ \\bar \\alpha}'\n" +
+            "Close Tag: math\n" +
             "End Document\n"
         );
     }

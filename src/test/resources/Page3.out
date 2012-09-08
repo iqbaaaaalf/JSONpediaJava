@@ -322,32 +322,31 @@ It has been shown that for many applications involving terrestrial albedo, the a
 Reference: Celestial coordinate system 'zenith angle'
 Text: ' '
 Open Tag: math attributes: []
-Text: 'heta_i}'
+Text: '{\theta_i}'
 Close Tag: math
 Text: ' can reasonably be approximated by the proportionate sum of two terms: the directional-hemispherical reflectance at that solar zenith angle, '
 Open Tag: math attributes: []
-Text: 'ar \alpha(\theta_i)}'
+Text: '{\bar \alpha(\theta_i)}'
 Close Tag: math
 Text: ', and the bi-hemispherical reflectance, '
 Open Tag: math attributes: []
-Text: '\bar'
-Text: 'bar \alpha}'
+Text: '\bar{ \bar \alpha}'
 Close Tag: math
 Text: ' the proportion concerned being defined as the proportion of diffuse illumination '
 Open Tag: math attributes: []
+Text: '{D}'
 Close Tag: math
 Text: '.
 
 Albedo '
 Open Tag: math attributes: []
-Text: 'lpha}'
+Text: '{\alpha}'
 Close Tag: math
 Text: ' can then be given as:
 
 :'
 Open Tag: math attributes: []
-Text: 'lpha}= (1-D) \bar \alpha(\theta_i) + D \bar'
-Text: 'bar \alpha}.'
+Text: '{\alpha}= (1-D) \bar \alpha(\theta_i) + D \bar{ \bar \alpha}.'
 Close Tag: math
 Text: '
 
@@ -566,10 +565,7 @@ Close Tag: ref
 Text: '
 '
 Open Tag: math attributes: []
-Text: 'A =\left ( \frac'
-Text: '29\times10^'
-Text: '/5}}'
-Text: ' \right ) ^2'
+Text: 'A =\left ( \frac{1329\times10^{-H/5}}{D} \right ) ^2'
 Close Tag: math
 Text: ',
 

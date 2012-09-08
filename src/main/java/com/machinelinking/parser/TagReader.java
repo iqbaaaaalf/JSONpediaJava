@@ -76,6 +76,10 @@ public class TagReader {
         return ! tagStack.isEmpty();
     }
 
+    public boolean isInsideNode(String name) {
+        return ! tagStack.empty() && tagStack.peek().node.equals(name);
+    }
+
     public List<StackElement> getStack() {
         return Collections.unmodifiableList(tagStack);
     }
@@ -137,7 +141,6 @@ public class TagReader {
                 } else {
                     pushTag(tagName, attributeKeyValueScanner(content));
                 }
-                //System.out.printf("Tag name: [%s], open: %b, content:[%s]\n", tagName, !closeTag, content);
                 break;
             } else {
                 tagContent.append(c);
@@ -146,20 +149,28 @@ public class TagReader {
         }
     }
 
+    final StringBuilder insideNodeTagSB = new StringBuilder();
+    public void readUntilNextTag(Reader r) throws IOException {
+        char c;
+        while(true) {
+            c = read(r);
+            if('<' == c) {
+                final String content = insideNodeTagSB.toString();
+                insideNodeTagSB.delete(0, insideNodeTagSB.length());
+                handler.text(content);
+                r.reset();
+                break;
+            } else {
+                insideNodeTagSB.append(c);
+                mark(r);
+            }
+        }
+    }
+
     protected void pushTag(String name, WikiTextParserHandler.Attribute[] attributes) {
         tagStack.push( new StackElement(name, attributes) );
         handler.beginTag(name, attributes);
     }
-
-//    protected void popTag(String name) {
-//        final StackElement peek = tagStack.isEmpty() ? null : tagStack.peek();
-//        if(peek != null && peek.node.equals(name)) {
-//            tagStack.pop();
-//        } else {
-//            handler.parseWarning( String.format("Tag closure [%s] has never opened.", name), -1 , -1 ); // TODO: this should be active.
-//        }
-//        handler.endTag(name);
-//    }
 
     protected void popTag(String name) {
         if( tagStack.isEmpty() ) return;
@@ -185,6 +196,10 @@ public class TagReader {
         int intc = r.read();
         if(intc == -1) throw new EOFException();
         return  (char) intc;
+    }
+
+    private void mark(Reader r) throws IOException {
+        r.mark(500); // TODO
     }
 
     final StringBuilder commentSB = new StringBuilder();
