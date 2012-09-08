@@ -76,11 +76,11 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void endTag(String node) {
+    public void endTag(String name) {
     }
 
     @Override
-    public void inlineTag(String node, Attribute[] attributes) {
+    public void inlineTag(String name, Attribute[] attributes) {
     }
 
     @Override
