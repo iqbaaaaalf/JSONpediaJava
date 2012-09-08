@@ -97,7 +97,7 @@ public class TagReaderTest {
         tagReader.pushTag("br", new WikiTextParserHandler.Attribute[0]);
         tagReader.pushTag("ref", new WikiTextParserHandler.Attribute[0]);
         tagReader.pushTag("br", new WikiTextParserHandler.Attribute[0]);
-        tagReader.popTag("ref");
+        tagReader.popTag("ref", null);
 
         final List<TagReader.StackElement> stack = tagReader.getStack();
         Assert.assertEquals("[node: br attributes: []]", stack.toString());

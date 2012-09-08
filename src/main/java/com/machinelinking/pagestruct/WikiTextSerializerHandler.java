@@ -2,6 +2,7 @@ package com.machinelinking.pagestruct;
 
 import com.machinelinking.extractor.Issue;
 import com.machinelinking.parser.DefaultWikiTextParserHandler;
+import com.machinelinking.parser.ParserLocation;
 import com.machinelinking.serializer.Serializer;
 
 import java.net.URL;
@@ -39,15 +40,15 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void parseWarning(String msg, int row, int col) {
+    public void parseWarning(String msg, ParserLocation location) {
         if(issues == null) issues = new ArrayList<>();
-        issues.add( new Issue(Issue.Type.Warning, msg, row, col) );
+        issues.add( new Issue(Issue.Type.Warning, msg, location) );
     }
 
     @Override
-    public void parseError(Exception e, int row, int col) {
+    public void parseError(Exception e, ParserLocation location) {
         if(issues == null) issues = new ArrayList<>();
-        issues.add( new Issue(Issue.Type.Error, e.getMessage(), row, col) );
+        issues.add( new Issue(Issue.Type.Error, e.getMessage(), location) );
     }
 
     @Override

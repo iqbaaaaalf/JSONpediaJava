@@ -102,7 +102,7 @@ public class TagReader {
                 if('-' == c) {
                     readUntilCloseComment(r);
                 } else {
-                    handler.parseWarning("Invalid begin tag sequence: '<-" + c + "'", -1, -1); // TODO
+                    handler.parseWarning("Invalid begin tag sequence: '<-" + c + "'", r.getLocation());
                 }
                 break;
             } else if (c == ' ' && waitingTagName) {
@@ -123,7 +123,7 @@ public class TagReader {
                         final String content = tagContent.toString();
                         handler.inlineTag(tagName, attributeKeyValueScanner(content));
                     } else {
-                        handler.parseWarning("Sequence error in tag", -1, -1); // TODO: propagare row / col
+                        handler.parseWarning("Sequence error in tag", r.getLocation());
                     }
                     break;
                 }
@@ -135,7 +135,7 @@ public class TagReader {
                 }
                 final String content = tagContent.toString();
                 if(closeTag) {
-                    popTag(tagName);
+                    popTag(tagName, r.getLocation());
                 } else {
                     pushTag(tagName, attributeKeyValueScanner(content));
                 }
@@ -170,7 +170,7 @@ public class TagReader {
         handler.beginTag(name, attributes);
     }
 
-    protected void popTag(String name) {
+    protected void popTag(String name, ParserLocation location) {
         if( tagStack.isEmpty() ) return;
         final int currStackSize = tagStack.size();
         int popUntil = -1;
@@ -181,7 +181,7 @@ public class TagReader {
             }
         }
         if(popUntil == -1) {
-            handler.parseWarning( String.format("Tag closure [%s] has never opened.", name), -1 , -1 ); // TODO
+            handler.parseWarning( String.format("Tag closure [%s] has never opened.", name), location);
         } else {
             for (int j = 0; j < popUntil; j++) {
                 tagStack.pop();
@@ -203,7 +203,7 @@ public class TagReader {
                         handler.commentTag(commentSB.toString());
                         commentSB.delete(0, commentSB.length());
                     } else {
-                        handler.parseWarning("Invalid char '-' within comment tag.", -1, -1); // TODO
+                        handler.parseWarning("Invalid char '-' within comment tag.", r.getLocation());
                     }
                     break;
                 } else {

@@ -1,5 +1,6 @@
 package com.machinelinking.pagestruct;
 
+import com.machinelinking.parser.ParserLocation;
 import com.machinelinking.parser.WikiTextParserHandler;
 
 import java.net.URL;
@@ -53,15 +54,15 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void parseWarning(String msg, int row, int col) {
-        final String err = String.format("Warning: %s (%d, %d)", msg, row, col);
+    public void parseWarning(String msg, ParserLocation location) {
+        final String err = String.format("Warning: %s (%d, %d)", msg, location.getRow(), location.getCol());
         printOut(msg);
         if(validating) throw new IllegalStateException("Unexpected warning: " + err);
     }
 
     @Override
-    public void parseError(Exception e, int row, int col) {
-        printOut(String.format("Error: %s (%d, %d)", e, row, col));
+    public void parseError(Exception e, ParserLocation location) {
+        printOut(String.format("Error: %s (%d, %d)", e, location.getRow(), location.getCol()));
         if(validating) throw new IllegalStateException("Unexpected error.");
     }
 

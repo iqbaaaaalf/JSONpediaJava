@@ -97,7 +97,7 @@ public class WikiTextParser implements ParserReader {
                     row, col,
                     "Error while parsing document.", e
             );
-            handler.parseError(wtpe, row, col);
+            handler.parseError(wtpe, this.location);
             throw wtpe;
         } finally {
             handler.endDocument();
@@ -357,12 +357,12 @@ public class WikiTextParser implements ParserReader {
                 mark();
                 handler.endTemplate(templateHeader);
             } else {
-                handler.parseWarning("Unexpected '}' while parsing template.", row, col);
+                handler.parseWarning("Unexpected '}' while parsing template.", this.location);
                 reset();
             }
         } else {
             mark();
-            handler.parseWarning("Expected template closure, found [" + lastRead + "]", row, col);
+            handler.parseWarning("Expected template closure, found [" + lastRead + "]", this.location);
         }
     }
 

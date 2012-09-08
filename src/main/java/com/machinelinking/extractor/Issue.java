@@ -1,5 +1,6 @@
 package com.machinelinking.extractor;
 
+import com.machinelinking.parser.ParserLocation;
 import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
 
@@ -15,13 +16,12 @@ public class Issue implements Serializable {
 
     private Type   type;
     private String description;
-    private int    row, col;
+    private ParserLocation location;
 
-    public Issue(Type type, String description, int row, int col) {
+    public Issue(Type type, String description, ParserLocation location) {
         this.type = type;
         this.description = description;
-        this.row = row;
-        this.col = col;
+        this.location = location;
     }
 
     public Type getType() {
@@ -33,19 +33,19 @@ public class Issue implements Serializable {
     }
 
     public int getRow() {
-        return row;
+        return location.getRow();
     }
 
     public int getCol() {
-        return col;
+        return location.getCol();
     }
 
     public void serialize(Serializer serializer) {
         serializer.openObject();
         serializer.fieldValue("type", type.toString());
         serializer.fieldValue("description", description);
-        serializer.fieldValue("row", row);
-        serializer.fieldValue("col", col);
+        serializer.fieldValue("row", getRow());
+        serializer.fieldValue("col", getCol());
         serializer.closeObject();
     }
 

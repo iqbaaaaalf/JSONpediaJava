@@ -15,9 +15,9 @@ public interface WikiTextParserHandler extends NodeHandler {
 
     void section(String title, int level);
 
-    void parseWarning(String msg, int row, int col);
+    void parseWarning(String msg, ParserLocation location);
 
-    void parseError(Exception e, int row, int col);
+    void parseError(Exception e, ParserLocation location);
 
     void reference(String label, String description);
 

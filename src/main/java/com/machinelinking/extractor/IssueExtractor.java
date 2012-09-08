@@ -1,5 +1,6 @@
 package com.machinelinking.extractor;
 
+import com.machinelinking.parser.ParserLocation;
 import com.machinelinking.serializer.Serializer;
 
 import java.util.ArrayList;
@@ -17,15 +18,15 @@ public class IssueExtractor extends Extractor {
     }
 
     @Override
-    public void parseWarning(String msg, int row, int col) {
+    public void parseWarning(String msg, ParserLocation location) {
         if(issues == null) issues = new ArrayList<Issue>();
-        issues.add( new Issue(Issue.Type.Warning, msg, row, col) );
+        issues.add( new Issue(Issue.Type.Warning, msg, location) );
     }
 
     @Override
-    public void parseError(Exception e, int row, int col) {
+    public void parseError(Exception e, ParserLocation location) {
         if(issues == null) issues = new ArrayList<Issue>();
-        issues.add( new Issue(Issue.Type.Warning, e.getMessage(), row, col) );
+        issues.add( new Issue(Issue.Type.Warning, e.getMessage(), location) );
     }
 
     @Override

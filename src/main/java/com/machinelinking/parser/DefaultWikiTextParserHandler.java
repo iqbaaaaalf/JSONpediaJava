@@ -12,11 +12,11 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void parseWarning(String msg, int row, int col) {
+    public void parseWarning(String msg, ParserLocation location) {
     }
 
     @Override
-    public void parseError(Exception e, int row, int col) {
+    public void parseError(Exception e, ParserLocation location) {
     }
 
     @Override

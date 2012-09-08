@@ -29,17 +29,17 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void parseWarning(String msg, int row, int col) {
+    public void parseWarning(String msg, ParserLocation location) {
         for(WikiTextParserHandler handler : handlers) {
-            handler.parseWarning(msg, row, col);
+            handler.parseWarning(msg, location);
         }
 
     }
 
     @Override
-    public void parseError(Exception e, int row, int col) {
+    public void parseError(Exception e, ParserLocation location) {
         for(WikiTextParserHandler handler : handlers) {
-            handler.parseError(e, row, col);
+            handler.parseError(e, location);
         }
     }
 
