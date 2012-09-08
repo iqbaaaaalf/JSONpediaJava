@@ -1,8 +1,6 @@
 package com.machinelinking.parser;
 
-import java.io.EOFException;
 import java.io.IOException;
-import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -84,7 +82,7 @@ public class TagReader {
         return Collections.unmodifiableList(tagStack);
     }
 
-    public void readNode(Reader r) throws IOException {
+    public void readNode(ParserReader r) throws IOException {
         tagContent.delete(0, tagContent.length());
         closeTag = false;
         waitingTagName = true;
@@ -93,14 +91,14 @@ public class TagReader {
 
         char c;
 
-        c = read(r);
+        c = r.read();
         if(c != '<') throw new IllegalStateException();
 
         while (true) {
-            c = read(r);
+            c = r.read();
 
             if('-' == c && waitingTagName) {
-                c = read(r);
+                c = r.read();
                 if('-' == c) {
                     readUntilCloseComment(r);
                 } else {
@@ -115,7 +113,7 @@ public class TagReader {
                 if (cursorPosition == 0) {
                     closeTag = true;
                 } else { // Inline
-                    c = read(r);
+                    c = r.read();
                     if('>' == c) {
                         if (waitingTagName) {
                             tagName = tagContent.toString();
@@ -150,10 +148,10 @@ public class TagReader {
     }
 
     final StringBuilder insideNodeTagSB = new StringBuilder();
-    public void readUntilNextTag(Reader r) throws IOException {
+    public void readUntilNextTag(ParserReader r) throws IOException {
         char c;
         while(true) {
-            c = read(r);
+            c = r.read();
             if('<' == c) {
                 final String content = insideNodeTagSB.toString();
                 insideNodeTagSB.delete(0, insideNodeTagSB.length());
@@ -162,7 +160,7 @@ public class TagReader {
                 break;
             } else {
                 insideNodeTagSB.append(c);
-                mark(r);
+                r.mark();
             }
         }
     }
@@ -192,25 +190,15 @@ public class TagReader {
         }
     }
 
-    private char read(Reader r) throws IOException {
-        int intc = r.read();
-        if(intc == -1) throw new EOFException();
-        return  (char) intc;
-    }
-
-    private void mark(Reader r) throws IOException {
-        r.mark(500); // TODO
-    }
-
     final StringBuilder commentSB = new StringBuilder();
-    private void readUntilCloseComment(Reader r) throws IOException {
+    private void readUntilCloseComment(ParserReader r) throws IOException {
         commentSB.delete(0, commentSB.length());
         while(true) {
-            char c = read(r);
+            char c = r.read();
             if(c == '-') {
-                char c1 = read(r);
+                char c1 = r.read();
                 if('-' == c1) {
-                    char c2 = read(r);
+                    char c2 = r.read();
                     if ('>' == c2) {
                         handler.commentTag(commentSB.toString());
                         commentSB.delete(0, commentSB.length());

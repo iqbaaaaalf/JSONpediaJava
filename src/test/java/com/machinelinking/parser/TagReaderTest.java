@@ -5,6 +5,7 @@ import junit.framework.Assert;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
@@ -46,7 +47,7 @@ public class TagReaderTest {
     public void testReadOpenTag() throws IOException {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(false);
         final TagReader reader = new TagReader(handler);
-        reader.readNode(new InputStreamReader(new ByteArrayInputStream("<node attr1=v1 attr2=\"v2\" attr3=\"part1 part2\">".getBytes())));
+        reader.readNode(new TestParserReader("<node attr1=v1 attr2=\"v2\" attr3=\"part1 part2\">"));
         Assert.assertEquals("Open Tag: node attributes: [attr1 : 'v1', attr2 : 'v2', attr3 : 'part1 part2']\n", handler.getContent());
         Assert.assertTrue(reader.isInsideNode());
     }
@@ -56,7 +57,7 @@ public class TagReaderTest {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(false);
         final TagReader reader = new TagReader(handler);
         reader.pushTag("node", new WikiTextParserHandler.Attribute[0]);
-        reader.readNode( new InputStreamReader(new ByteArrayInputStream("</node>".getBytes())) );
+        reader.readNode(new TestParserReader("</node>"));
         Assert.assertEquals(
                 "Open Tag: node attributes: []\n" +
                 "Close Tag: node\n",
@@ -69,7 +70,7 @@ public class TagReaderTest {
     public void testReadInlineTag() throws IOException {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(false);
         final TagReader reader = new TagReader(handler);
-        reader.readNode( new InputStreamReader(new ByteArrayInputStream("<node a1=v1 a2=\"v2\"/>".getBytes())) );
+        reader.readNode(new TestParserReader("<node a1=v1 a2=\"v2\"/>"));
         Assert.assertEquals(
                 "Inline Tag: node attributes: [a1 : 'v1', a2 : 'v2']\n",
                 handler.getContent()
@@ -81,7 +82,7 @@ public class TagReaderTest {
     public void testReadCommentTag() throws IOException {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(false);
         final TagReader reader = new TagReader(handler);
-        reader.readNode( new InputStreamReader(new ByteArrayInputStream("<!-- ISO format (YYYY-MM-DD) -->".getBytes())) );
+        reader.readNode(new TestParserReader("<!-- ISO format (YYYY-MM-DD) -->"));
         Assert.assertEquals(
                 "Comment Tag:  ISO format (YYYY-MM-DD) \n",
                 handler.getContent()
@@ -100,6 +101,37 @@ public class TagReaderTest {
 
         final List<TagReader.StackElement> stack = tagReader.getStack();
         Assert.assertEquals("[node: br attributes: []]", stack.toString());
+    }
+
+    private class TestParserReader implements ParserReader {
+
+        private final InputStreamReader reader;
+
+        private TestParserReader(String in) {
+            this.reader = new InputStreamReader(new ByteArrayInputStream(in.getBytes()));
+        }
+
+        @Override
+        public char read() throws IOException {
+            int intc = reader.read();
+            if(intc == -1) throw new EOFException();
+            return (char) intc;
+        }
+
+        @Override
+        public void mark() throws IOException {
+            reader.mark(500);
+        }
+
+        @Override
+        public void reset() throws IOException {
+            reader.reset();
+        }
+
+        @Override
+        public ParserLocation getLocation() {
+            return null;
+        }
     }
 
 }

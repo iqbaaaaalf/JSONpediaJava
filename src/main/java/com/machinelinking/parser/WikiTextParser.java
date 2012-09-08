@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 // TODO HIGH: error detection is not working, see BrokenTemplate1 wikitext
-public class WikiTextParser {
+public class WikiTextParser implements ParserReader {
 
     protected static final String MATH_NODE = "math";
 
@@ -31,8 +31,7 @@ public class WikiTextParser {
 
     private Reader r;
 
-    // TODO: fix row / col management.
-    private int row = 1, col = 0;
+    private int row, markrow, col, markcol;
 
     private char lastRead;
 
@@ -40,6 +39,7 @@ public class WikiTextParser {
 
     private WikiTextParserHandler handler;
 
+    private final ParserLocation location = new InternalParserLocation();
 
     public WikiTextParser(WikiTextParserHandler h) {
         if(h == null) throw new NullPointerException("Handler must be not null.");
@@ -52,6 +52,7 @@ public class WikiTextParser {
             r = new BufferedReader(r);
         }
         this.r = r;
+        row = markrow = 1; col = markcol = 1;
 
         handler.beginDocument(url);
 
@@ -62,10 +63,10 @@ public class WikiTextParser {
                 final String couple = readCouple();
                 if('<' == couple.charAt(0)) {
                     reset();
-                    tagReader.readNode(r);
+                    tagReader.readNode(this);
                     mark();
                     if (tagReader.isInsideNode(MATH_NODE)) {
-                        tagReader.readUntilNextTag(r);
+                        tagReader.readUntilNextTag(this);
                     }
                 } else if ("{{".equals(couple)) {
                     readTemplate();
@@ -76,7 +77,7 @@ public class WikiTextParser {
                     readLink();
                 } else if("{|".equals(couple)) {
                     readTable();
-                } else if(col == 3 && "==".equals(couple)) {
+                } else if(col == 2 && "==".equals(couple)) {
                     readSection();
                 } else if('=' == couple.charAt(0)) {
                     reset(); read(); mark(); // TODO improve it.
@@ -114,7 +115,7 @@ public class WikiTextParser {
         );
     }
 
-    private char read() throws IOException {
+    public char read() throws IOException {
         int intc = r.read();
         if(intc == -1) throw new EOFException();
         char c = (char) intc;
@@ -128,6 +129,23 @@ public class WikiTextParser {
         return c;
     }
 
+    public void mark() throws IOException {
+        r.mark(AHEAD);
+        markrow = row;
+        markcol = col;
+    }
+
+    public void reset() throws IOException {
+        r.reset();
+        row = markrow;
+        col = markcol;
+    }
+
+    @Override
+    public ParserLocation getLocation() {
+        return location;
+    }
+
     private boolean assertChar(char c) throws IOException {
         return c == read();
     }
@@ -137,14 +155,6 @@ public class WikiTextParser {
         couple[0] = read();
         couple[1] = read();
         return new String(couple);
-    }
-
-    private void mark() throws IOException {
-        r.mark(AHEAD);
-    }
-
-    private void reset() throws IOException {
-        r.reset();
     }
 
     private void flushText(StringBuilder sb) {
@@ -247,7 +257,7 @@ public class WikiTextParser {
             if(c == '<') {
                 flushText(sb);
                 reset();
-                tagReader.readNode(r);
+                tagReader.readNode(this);
                 mark();
                 continue;
             }
@@ -544,6 +554,18 @@ public class WikiTextParser {
             }
         }
         return -1;
+    }
+
+    class InternalParserLocation implements ParserLocation {
+        @Override
+        public int getRow() {
+            return WikiTextParser.this.row;
+        }
+
+        @Override
+        public int getCol() {
+            return WikiTextParser.this.col;
+        }
     }
 
 }
