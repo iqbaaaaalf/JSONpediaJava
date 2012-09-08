@@ -106,6 +106,11 @@
                             },
                             "&nbsp;(1903–1919)",
                             {
+                                "__type": "open_tag",
+                                "name": "br",
+                                "attributes": []
+                            },
+                            {
                                 "__type": "template",
                                 "name": "nowrap",
                                 "content": {
@@ -375,6 +380,11 @@
                                                         "description": ""
                                                     },
                                                     {
+                                                        "__type": "open_tag",
+                                                        "name": "ref",
+                                                        "attributes": []
+                                                    },
+                                                    {
                                                         "__type": "template",
                                                         "name": "cite web",
                                                         "content": {
@@ -400,6 +410,10 @@
                                                                 "3 April 2011"
                                                             ]
                                                         }
+                                                    },
+                                                    {
+                                                        "__type": "close_tag",
+                                                        "name": "ref"
                                                     }
                                                 ]
                                             }
@@ -599,6 +613,10 @@
                     }
                 },
                 "; 14 March 1879&nbsp;– 18 April 1955) was a German",
+                {
+                    "__type": "comment_tag",
+                    "comment": "[[MOS:BIO]]&nbsp;– Notability: Einstein was a German Nobel laureate."
+                },
                 "-born",
                 {
                     "__type": "reference",
@@ -624,6 +642,11 @@
                     "description": ""
                 },
                 ".",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -662,11 +685,24 @@
                 },
                 ".",
                 {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "cite doi",
                     "content": {
                         "10.1098/rsbm.1955.0005": []
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "While best known for his",
                 {
@@ -681,14 +717,41 @@
                     "content": {
                         "1": [
                             "''E'' = ''mc''",
-                            "2"
+                            {
+                                "__type": "open_tag",
+                                "name": "sup",
+                                "attributes": []
+                            },
+                            "2",
+                            {
+                                "__type": "close_tag",
+                                "name": "sup"
+                            }
                         ]
                     }
                 },
                 "(which has been dubbed \"the world's most famous equation\")",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "David Bodanis, ''E&nbsp;=&nbsp;mc",
+                {
+                    "__type": "open_tag",
+                    "name": "sup",
+                    "attributes": []
+                },
                 "2",
+                {
+                    "__type": "close_tag",
+                    "name": "sup"
+                },
                 ": A Biography of the World's Most Famous Equation'' (New York: Walker, 2000).",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 ", he received the",
                 {
                     "__type": "reference",
@@ -707,6 +770,11 @@
                     "description": ""
                 },
                 "\".",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "cite web",
@@ -734,6 +802,10 @@
                             "5 October 2008"
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "The latter was pivotal in establishing",
                 {
@@ -815,11 +887,24 @@
                 },
                 "as a whole.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Nobel"
+                        }
+                    ]
+                },
+                {
                     "__type": "link",
                     "url": "http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf",
                     "description": "\"Scientific Background on the Nobel Prize in Physics 2011. The accelerating universe.\" (page 2)"
                 },
                 "Nobelprize.org.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "He was visiting the United States when",
                 {
                     "__type": "reference",
@@ -833,6 +918,15 @@
                     "description": "Berlin Academy of Sciences"
                 },
                 ". He settled in the U.S., becoming a citizen in 1940.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "misc"
+                        }
+                    ]
+                },
                 {
                     "__type": "template",
                     "name": "cite web",
@@ -859,6 +953,10 @@
                             "18 July 2009"
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "On the eve of World War II, he helped alert President",
                 {
@@ -910,6 +1008,24 @@
                 },
                 "along with over 150 non-scientific works.",
                 {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Nobel"
+                        }
+                    ]
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Paul Arthur Schilpp, editor 1951 730–746"
+                        }
+                    ]
+                },
+                {
                     "__type": "template",
                     "name": "Citation",
                     "content": {
@@ -952,6 +1068,10 @@
                     "description": ""
                 },
                 ").",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "His great intelligence and originality have made the word \"Einstein\" synonymous with",
                 {
                     "__type": "reference",
@@ -960,11 +1080,20 @@
                 },
                 ".",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "link",
                     "url": "http://wordnetweb.princeton.edu/perl/webwn?s=Einstein",
                     "description": "WordNet for Einstein"
                 },
                 ".",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 {
                     "__type": "section",
                     "title": "Biography",
@@ -1004,6 +1133,15 @@
                 },
                 "in the German Empire on 14&nbsp;March 1879.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Bio"
+                        }
+                    ]
+                },
+                {
                     "__type": "template",
                     "name": "cite web",
                     "content": {
@@ -1024,6 +1162,10 @@
                             }
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "His father was",
                 {
@@ -1050,6 +1192,15 @@
                     "description": ""
                 },
                 ".",
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Bio"
+                        }
+                    ]
+                },
                 "The Einsteins were non-observant Jews. Albert attended a",
                 {
                     "__type": "reference",
@@ -1063,6 +1214,15 @@
                     "description": ""
                 },
                 "where he received advanced primary and secondary school education until he left Germany seven years later.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Stachel2002"
+                        }
+                    ]
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -1093,14 +1253,32 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Although it has been thought that Einstein had early speech difficulties, this is disputed by the Albert Einstein Archives, and he excelled at the first school that he attended.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Einstein's Alleged Handicaps: The Legend of the Dull-Witted Child Who Grew Up to Be a Genius",
                 {
                     "__type": "link",
                     "url": "http://www.albert-einstein.org/.index11.html",
                     "description": ""
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "His father once showed him a pocket compass; Einstein realized that there must be something causing the needle to move, despite the apparent \"empty space\".",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -1129,7 +1307,20 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "As he grew, Einstein built models and mechanical devices for fun and began to show a talent for mathematics.",
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Bio"
+                        }
+                    ]
+                },
                 "When Einstein was ten years old Max Talmud (later changed to",
                 {
                     "__type": "reference",
@@ -1155,12 +1346,34 @@
                     "description": ""
                 },
                 "'' (which Einstein called the \"holy little geometry book\").",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "M. Talmey, ''The Relativity Theory Simplified and the Formative Period of its Inventor''. Falcon Press, 1932, pp. 161–164.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "HarvChemAE"
+                        }
+                    ]
+                },
                 "Dudley Herschbach, \"Einstein as a Student\", Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA, pp. 4–5, web:",
                 {
                     "__type": "link",
                     "url": "http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf",
                     "description": "HarvardChem-Einstein-PDF"
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 {
                     "__type": "template",
@@ -1209,7 +1422,16 @@
                     "description": ""
                 },
                 ". At the end of December 1894 he travelled to Italy to join his family in Pavia, convincing the school to let him go by using a doctor's note.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "A. Fölsing, ''Albert Einstein'', 1997, pp. 30-31.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "It was during his time in Italy that he wrote a short essay with the title \"On the Investigation of the State of the",
                 {
                     "__type": "reference",
@@ -1217,7 +1439,21 @@
                     "description": "Ether"
                 },
                 "in a Magnetic Field.\"",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "''Albert Einstein Collected Papers'', vol. 1 (1987), doc. 5.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -1254,6 +1490,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "In late summer 1895, at the age of sixteen, Einstein sat the entrance examinations for the Swiss Federal Polytechnic in",
                 {
                     "__type": "reference",
@@ -1267,7 +1507,16 @@
                     "description": "Eidgenössische Polytechnische Schule"
                 },
                 "). He failed to reach the required standard in several subjects, but obtained exceptional grades in physics and mathematics.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "A. Fölsing, ''Albert Einstein'', 1997, pp. 36-37.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "On the advice of the Principal of the Polytechnic, he attended the Aargau Cantonal School in",
                 {
                     "__type": "reference",
@@ -1282,6 +1531,11 @@
                 },
                 "later married the Wintelers' son, Paul.)",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Harvtxt",
                     "content": {
@@ -1292,6 +1546,10 @@
                             "21,31,56–57"
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "In January 1896, with his father's approval, he renounced his",
                 {
@@ -1306,7 +1564,16 @@
                     "description": "military service"
                 },
                 ".",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "A. Fölsing, ''Albert Einstein'', 1997, p. 40.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "In September 1896 he passed the Swiss",
                 {
                     "__type": "reference",
@@ -1314,7 +1581,16 @@
                     "description": ""
                 },
                 "with mostly good grades (gaining maximum grade 6 in physics and mathematical subjects, on a scale 1-6),",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "''Collected Papers'', vol. 1, docs. 21-27.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "and though still only seventeen he enrolled in the four year mathematics and physics teaching diploma program at the Zurich Polytechnic. Marie Winteler moved to",
                 {
                     "__type": "reference",
@@ -1328,9 +1604,32 @@
                     "description": ""
                 },
                 ", also enrolled at the Polytechnic that same year, the only woman among the six students in the mathematics and physics section of the teaching diploma course. Over the next few years, Einstein and Marić's friendship developed into romance, and they read books together on extra-curricular physics in which Einstein was taking an increasing interest. In 1900 Einstein was awarded the Zurich Polytechnic teaching diploma, but Marić failed the examination with a poor grade in the mathematics component, theory of functions.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "''Albert Einstein Collected Papers'', vol. 1, 1987, doc. 67.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "There have been claims that Marić collaborated with Einstein on his celebrated 1905 papers,",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Troemel-Ploetz, D., \"Mileva Einstein-Marić: The Woman Who Did Einstein's Mathematics\", ''Women's Studies Int. Forum'', vol. 13, no. 5, pp. 415–432, 1990.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -1361,20 +1660,60 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "but historians of physics who have studied the issue find no evidence that she made any substantive contributions.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Pais, A., ''Einstein Lived Here'', Oxford University Press, 1994, pp. 1–29.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Holton, G., ''Einstein, History, and Other Passions'', Harvard University Press, 1996, pp. 177–193.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Stachel, J., ''Einstein from B to Z'', Birkhäuser, 2002, pp. 26–38; 39–55.",
                 {
                     "__type": "link",
                     "url": "http://philoscience.unibe.ch/lehre/winter99/einstein/Stachel1966.pdf",
                     "description": "philoscience.unibe.ch"
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Martinez, A. A., “Handling evidence in history: the case of Einstein’s Wife.” ''School Science Review'', 86 (316), March 2005, pp. 49–56.",
                 {
                     "__type": "link",
                     "url": "https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf",
                     "description": ""
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 {
                     "__type": "section",
@@ -1407,9 +1746,27 @@
                     "description": ""
                 },
                 "where Marić's parents lived.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "This conclusion is from Einstein's correspondence with Marić. Lieserl is first mentioned in a letter from Einstein to Marić (who was staying with her family in or near Novi Sad at the time of Lieserl's birth) dated 4 February 1902 (''Collected papers'' Vol. 1, document 134).",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Her full name is not known, and her fate is uncertain after 1903.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Albrecht Fölsing (1998). Albert Einstein: A Biography. Penguin Group. ISBN 0140237194; see section I, II,",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Einstein and Marić married in January 1903. In May 1904, the couple's first son,",
                 {
                     "__type": "reference",
@@ -1441,6 +1798,15 @@
                 },
                 "(née Einstein) on 2 June 1919, after having had a relationship with her since 1912. She was his first cousin maternally and his second cousin paternally. In 1933, they emigrated permanently to the United States. In 1935, Elsa Einstein was diagnosed with heart and kidney problems and died in December 1936.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Highfield216"
+                        }
+                    ]
+                },
+                {
                     "__type": "template",
                     "name": "Harvnb",
                     "content": {
@@ -1451,6 +1817,10 @@
                             "216"
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 {
                     "__type": "section",
@@ -1481,6 +1851,11 @@
                     "description": "examiner"
                 },
                 ".",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Now the",
                 {
                     "__type": "template",
@@ -1510,6 +1885,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "He evaluated",
                 {
                     "__type": "reference",
@@ -1517,7 +1896,16 @@
                     "description": ""
                 },
                 "s for electromagnetic devices. In 1903, Einstein's position at the Swiss Patent Office became permanent, although he was passed over for promotion until he \"fully mastered machine technology\".",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Peter Galison, \"Einstein's Clocks: The Question of Time\" ''Critical Inquiry'' 26, no. 2 (Winter 2000): 355–389.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Much of his work at the patent office related to questions about transmission of electric signals and electrical-mechanical synchronization of time, two technical problems that show up conspicuously in the",
                 {
                     "__type": "reference",
@@ -1525,7 +1913,16 @@
                     "description": ""
                 },
                 "s that eventually led Einstein to his radical conclusions about the nature of light and the fundamental connection between space and time.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Gallison, Question of Time.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "With a few friends he met in Bern, Einstein started a small discussion group, self-mockingly named \"",
                 {
                     "__type": "reference",
@@ -1575,6 +1972,11 @@
                 },
                 "''.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Citation",
                     "content": {
@@ -1604,6 +2006,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "On 30 April 1905, Einstein completed his thesis, with",
                 {
                     "__type": "reference",
@@ -1624,12 +2030,26 @@
                 },
                 ". His dissertation was entitled \"A New Determination of Molecular Dimensions\".",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "harv",
                     "content": {
                         "Einstein": [],
                         "1905b": []
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
                 },
                 {
                     "__type": "template",
@@ -1651,6 +2071,10 @@
                             "26 September 2011"
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "That same year, which has been called Einstein's ''",
                 {
@@ -1677,6 +2101,11 @@
                     "description": "docent"
                 },
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "cite web",
                     "content": {
@@ -1697,6 +2126,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "at the University of Zurich. He became a full professor at",
                 {
                     "__type": "reference",
@@ -1710,6 +2143,15 @@
                     "description": "Kaiser Wilhelm Institute for Physics"
                 },
                 "(1914–1932)",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Kant"
+                        }
+                    ]
+                },
                 "Kant, Horst. \"Albert Einstein and the",
                 {
                     "__type": "reference",
@@ -1717,6 +2159,10 @@
                     "description": ""
                 },
                 "in Berlin\". in Renn, Jürgen. \"Albert Einstein&nbsp;– Chief Engineer of the Universe: One Hundred Authors for Einstein.\" Ed. Renn, Jürgen. ''Wiley-VCH''. 2005. pp. 166–169. ISBN 3527405747",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "and a professor at the",
                 {
                     "__type": "reference",
@@ -1736,6 +2182,11 @@
                     "description": ""
                 },
                 "(1916–1918).",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -1778,7 +2229,20 @@
                     "url": "http://books.google.com/books?id=5eWh2O_3OAQC&pg=PR19",
                     "description": "Timeline, p. xix"
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Heilbron, 2000, p. 84.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "During 1911, he had calculated that, based on his new theory of general relativity, light from another star would be bent by the Sun's gravity. That prediction was claimed confirmed by observations made by a British expedition led by Sir",
                 {
                     "__type": "reference",
@@ -1798,6 +2262,15 @@
                     "description": ""
                 },
                 "'' printed a banner headline that read: \"Revolution in Science&nbsp;– New Theory of the Universe&nbsp;– Newtonian Ideas Overthrown\".",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Eddington"
+                        }
+                    ]
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -1837,6 +2310,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "(Much later, questions were raised whether the measurements had been accurate enough to support Einstein's theory).\n\nIn 1921, Einstein was awarded the",
                 {
                     "__type": "reference",
@@ -1874,7 +2351,16 @@
                     "description": ""
                 },
                 "in London, where he met several renowned scientific, intellectual and political figures, and delivered a lecture at Kings College.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Hoffman and Dukas (1972), pp. 145–148; Fölsing (1997), pp. 499–508.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "In 1922, he traveled throughout Asia and later to Palestine, as part of a six-month excursion and speaking tour. His travels included",
                 {
                     "__type": "reference",
@@ -1895,6 +2381,15 @@
                 },
                 "where thousands came to watch. Einstein later gave his impressions of the Japanese in a letter to his sons:",
                 {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Isaacson2"
+                        }
+                    ]
+                },
+                {
                     "__type": "template",
                     "name": "rp",
                     "content": {
@@ -1902,7 +2397,20 @@
                     }
                 },
                 "\"Of all the people I have met, I like the Japanese most, as they are modest, intelligent, considerate, and have a feel for art.\"",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Isaacson2"
+                        }
+                    ]
+                },
                 "Isaacson, Walter. ''Einstein: His Life and Universe'', Simon & Schuster (2007)",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 {
                     "__type": "template",
                     "name": "rp",
@@ -1953,6 +2461,15 @@
                 },
                 ", Einstein is said to have begun playing when he was five, but didn't enjoy trying to learn it at that age.",
                 {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Botstein"
+                        }
+                    ]
+                },
+                {
                     "__type": "reference",
                     "label": "File:Einstein - violin - 1939.jpg",
                     "description": "thumb|Playing violin at home in Princeton, 1939"
@@ -1964,7 +2481,20 @@
                     "description": ""
                 },
                 ". \"Einstein fell in love\" with Mozart's music, notes Botstein, and learned to play music more willingly. According to Einstein, he taught himself to play by \"ever practicing systematically,\" adding that \"Love is a better teacher than a sense of duty.\"",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Botstein"
+                        }
+                    ]
+                },
                 "Botstein, Leon; Galison, Peter; Holton, Gerald James; Schweber, Silvan S. ''Einstein for the 21st Century: His Legacy in Science, Art, and Modern Culture'', Princeton Univ. Press (2008) pp. 161-164",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "At age seventeen, he was heard by a school examiner in",
                 {
                     "__type": "reference",
@@ -1984,6 +2514,15 @@
                     "description": ""
                 },
                 "s, the examiner stating afterward that his playing was \"remarkable and revealing of 'great insight.'\" What struck the examiner, writes Botstein, was that Einstein \"displayed a deep love of the music, a quality that was and remains in short supply. Music possessed an unusual meaning for this student.\"",
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Botstein"
+                        }
+                    ]
+                },
                 "Botstein notes that music assumed a pivotal and permanent role in Einstein's life from that period on. Although the idea of becoming a professional was not on his mind at any time, he did play",
                 {
                     "__type": "reference",
@@ -2003,6 +2542,15 @@
                     "description": ""
                 },
                 "visited him and he joined them playing his violin, although they slowed the tempo to accommodate his lesser abilities. However, notes Botstein, the quartet was \"impressed by Einstein's level of coordination and intonation.\"",
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Botstein"
+                        }
+                    ]
+                },
                 {
                     "__type": "section",
                     "title": "Emigration",
@@ -2027,6 +2575,11 @@
                 },
                 ".",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "cite web",
                     "content": {
@@ -2044,6 +2597,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "While visiting American universities in April, 1933, he learned that the new German government had passed a law barring Jews from holding any official positions, including teaching at universities. A month later, the",
                 {
                     "__type": "reference",
@@ -2057,8 +2614,30 @@
                     "description": ""
                 },
                 "proclaimed, \"Jewish intellectualism is dead.\"",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Isaacson"
+                        }
+                    ]
+                },
                 "Isaacson, Walter. ''Einstein: His Life and Universe'', Simon & Schuster (2007) pp. 407–410",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Einstein also learned that his name was on a list of assassination targets, with a \"$5,000 bounty on his head.\" One German magazine included him in a list of enemies of the German regime with the phrase, \"not yet hanged\".",
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Isaacson"
+                        }
+                    ]
+                },
                 "Einstein was undertaking his third two-month visiting professorship at the",
                 {
                     "__type": "reference",
@@ -2066,7 +2645,16 @@
                     "description": ""
                 },
                 "when Hitler came to power in Germany. On his return to Europe in March 1933 he resided in Belgium for some months, before temporarily moving to England.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Hoffman, B. (1972), pp. 165–171; Fölsing, A. (1997), pp. 666–677.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "He took up a position at the",
                 {
                     "__type": "reference",
@@ -2080,6 +2668,15 @@
                     "description": "Princeton"
                 },
                 ", New Jersey,",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "princeton"
+                        }
+                    ]
+                },
                 {
                     "__type": "template",
                     "name": "cite web",
@@ -2103,6 +2700,10 @@
                             "2 November 2010"
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "an affiliation that lasted until his death in 1955. He was one of the four first selected (two of the others being",
                 {
@@ -2142,6 +2743,15 @@
                 },
                 ". With so many other Jewish scientists now forced by circumstances to live in America, often working side by side, Einstein wrote to a friend, \"For me the most beautiful thing is to be in contact with a few fine Jews—a few millennia of a civilized past do mean something after all.\" In another letter he writes, \"In my whole life I have never felt so Jewish as now.\"",
                 {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Isaacson"
+                        }
+                    ]
+                },
+                {
                     "__type": "section",
                     "title": "World War II and the Manhattan Project",
                     "level": 2
@@ -2153,6 +2763,15 @@
                     "description": ""
                 },
                 "attempted to alert Washington of ongoing Nazi atomic bomb research. The group's warnings were discounted.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Pritchard"
+                        }
+                    ]
+                },
                 {
                     "__type": "template",
                     "name": "cite news",
@@ -2180,6 +2799,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Einstein and Szilárd, along with other refugees such as",
                 {
                     "__type": "reference",
@@ -2200,13 +2823,35 @@
                 },
                 ", and to warn that Hitler would be more than willing to resort to such a weapon.\"",
                 {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Isaacson2"
+                        }
+                    ]
+                },
+                {
                     "__type": "template",
                     "name": "rp",
                     "content": {
                         "630": []
                     }
                 },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Gosling"
+                        }
+                    ]
+                },
                 "Gosling, F.G. ''The Manhattan Project: Making the Atomic Bomb'', U.S. Department of Energy, History Division (January, 1999) p. vii",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "In the summer of 1939, a few months before the beginning of World War II in Europe, Einstein was persuaded to lend his prestige by writing",
                 {
                     "__type": "reference",
@@ -2220,6 +2865,11 @@
                     "description": ""
                 },
                 "to alert him of the possibility. The letter also recommended that the U.S. government pay attention to and become directly involved in uranium research and associated chain reaction research.\n\nThe letter is believed to be \"arguably the key stimulus for the U.S. adoption of serious investigations into nuclear weapons on the eve of the U.S. entry into World War II\".",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Diehl, Sarah J.; Moltz, James Clay.",
                 {
                     "__type": "link",
@@ -2227,6 +2877,10 @@
                     "description": "''Nuclear Weapons and Nonproliferation: a Reference Handbook''"
                 },
                 ", ABC-CLIO (2008) p. 218",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "President Roosevelt could not take the risk of allowing Hitler to possess atomic bombs first. As a result of Einstein's letter and his meetings with Roosevelt, the U.S. entered the \"race\" to develop the bomb, drawing on its \"immense material, financial, and scientific resources\" to initiate the",
                 {
                     "__type": "reference",
@@ -2236,6 +2890,15 @@
                 ". It became the only country to successfully develop an atomic bomb during World War II.\n\nFor Einstein, \"war was a disease . . .",
                 "and",
                 "he called for resistance to war.\" But in 1933, after Hitler assumed full power in Germany, \"he renounced pacifism altogether . . . In fact, he urged the Western powers to prepare themselves against another German onslaught.\"",
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Stern"
+                        }
+                    ]
+                },
                 {
                     "__type": "template",
                     "name": "rp",
@@ -2250,7 +2913,20 @@
                     "description": ""
                 },
                 ", \"I made one great mistake in my life&nbsp;— when I signed the letter to President Roosevelt recommending that atom bombs be made; but there was some justification&nbsp;— the danger that the Germans would make them...\"",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "regret"
+                        }
+                    ]
+                },
                 "Einstein: The Life and Times'' by Ronald Clark. page 752",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 {
                     "__type": "section",
                     "title": "U.S. citizenship",
@@ -2269,13 +2945,32 @@
                     "description": ""
                 },
                 "\" in American culture when compared to Europe. According to Isaacson, he recognized the \"right of individuals to say and think what they pleased\", without social barriers, and as result, the individual was \"encouraged\" to be more creative, a trait he valued from his own early education. Einstein writes:",
+                {
+                    "__type": "open_tag",
+                    "name": "blockquote",
+                    "attributes": []
+                },
                 "What makes the new arrival devoted to this country is the democratic trait among the people. No one humbles himself before another person or class. . . American youth has the good fortune not to have its outlook troubled by outworn traditions.",
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Isaacson"
+                        }
+                    ]
+                },
                 {
                     "__type": "template",
                     "name": "rp",
                     "content": {
                         "432": []
                     }
+                },
+                {
+                    "__type": "inline_tag",
+                    "name": "blockquote",
+                    "attributes": []
                 },
                 "As a member of the",
                 {
@@ -2296,6 +2991,11 @@
                     "description": ""
                 },
                 ", and in 1946 Einstein called racism America's \"worst disease\".",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Fred Jerome, Rodger Taylor (2006) ''",
                 {
                     "__type": "link",
@@ -2303,7 +3003,16 @@
                     "description": "Einstein on Race and Racism"
                 },
                 "'' Rutgers University Press, 2006.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "He later stated, \"Race prejudice has unfortunately become an American tradition which is uncritically handed down from one generation to the next. The only remedies are enlightenment and education\".",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Calaprice, Alice (2005) ''",
                 {
                     "__type": "link",
@@ -2317,6 +3026,10 @@
                     "description": "Odyssey in Climate Modeling, Global Warming, and Advising Five Presidents"
                 },
                 "''",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 {
                     "__type": "reference",
                     "label": "File:Albert Einstein at Princeton.jpg",
@@ -2342,6 +3055,15 @@
                 },
                 ", a mostly ceremonial post.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Time"
+                        }
+                    ]
+                },
+                {
                     "__type": "template",
                     "name": "Cite news",
                     "content": {
@@ -2362,6 +3084,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "The offer was presented by Israel's ambassador in Washington,",
                 {
                     "__type": "reference",
@@ -2370,6 +3096,15 @@
                 },
                 ", who explained that the offer \"embodies the deepest respect which the Jewish people can repose in any of its sons\".",
                 {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Isaacson2"
+                        }
+                    ]
+                },
+                {
                     "__type": "template",
                     "name": "rp",
                     "content": {
@@ -2377,13 +3112,41 @@
                     }
                 },
                 "However, Einstein declined, and wrote in his response that he was \"deeply moved\", and \"at once saddened and ashamed\" that he could not accept it:",
+                {
+                    "__type": "open_tag",
+                    "name": "blockquote",
+                    "attributes": []
+                },
                 "All my life I have dealt with objective matters, hence I lack both the natural aptitude and the experience to deal properly with people and to exercise official function. I am the more distressed over these circumstances because my relationship with the Jewish people became my strongest human tie once I achieved complete clarity about our precarious position among the nations of the world.''",
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Isaacson2"
+                        }
+                    ]
+                },
                 {
                     "__type": "template",
                     "name": "rp",
                     "content": {
                         "522": []
                     }
+                },
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Time"
+                        }
+                    ]
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
                 },
                 {
                     "__type": "template",
@@ -2402,6 +3165,14 @@
                             "31 March 2010"
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "blockquote"
                 },
                 {
                     "__type": "section",
@@ -2427,6 +3198,11 @@
                 },
                 "in 1948.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Citation",
                     "content": {
@@ -2444,7 +3220,16 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "He took the draft of a speech he was preparing for a television appearance commemorating the State of Israel's seventh anniversary with him to the hospital, but he did not live long enough to complete it.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -2472,7 +3257,16 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Einstein refused surgery, saying: \"I want to go when I want. It is tasteless to prolong life artificially. I have done my share, it is time to go. I will do it elegantly.\"",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -2512,6 +3306,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "He died in",
                 {
                     "__type": "reference",
@@ -2538,6 +3336,11 @@
                 },
                 "of the future would be able to discover what made Einstein so intelligent.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Citation",
                     "content": {
@@ -2559,7 +3362,16 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Einstein's remains were cremated and his ashes were scattered at an undisclosed location.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -2594,6 +3406,15 @@
                     }
                 },
                 {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Citation",
                     "content": {
@@ -2611,6 +3432,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "In his lecture at Einstein's memorial, nuclear physicist",
                 {
                     "__type": "reference",
@@ -2618,6 +3443,15 @@
                     "description": ""
                 },
                 "summarized his impression of him as a person: \"He was almost wholly without sophistication and wholly without worldliness . . . There was always with him a wonderful purity at once childlike and profoundly stubborn.\"",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Stern"
+                        }
+                    ]
+                },
                 "Stern, Fritz. Essay,",
                 {
                     "__type": "link",
@@ -2625,6 +3459,10 @@
                     "description": "\"Einstein's Germany\""
                 },
                 ", ''E = Einstein: His Life, His Thought, and His Influence on Our Culture'', Sterling Publishing (2006) pp. 97–118",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 {
                     "__type": "section",
                     "title": "Scientific career",
@@ -2641,6 +3479,24 @@
                     "description": "thumb|upright|The photoelectric effect. Incoming photons on the left strike a metal plate (bottom), and eject electrons, depicted as flying off to the right."
                 },
                 "Throughout his life, Einstein published hundreds of books and articles.",
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Paul Arthur Schilpp, editor 1951 730–746"
+                        }
+                    ]
+                },
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Bio"
+                        }
+                    ]
+                },
                 "In addition to the work he did by himself he also collaborated with other scientists on additional projects including the Bose–Einstein statistics, the",
                 {
                     "__type": "reference",
@@ -2648,6 +3504,15 @@
                     "description": ""
                 },
                 "and others.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Instituut-Lorentz"
+                        }
+                    ]
+                },
                 "\"",
                 {
                     "__type": "link",
@@ -2655,6 +3520,10 @@
                     "description": "Einstein archive at the Instituut-Lorentz"
                 },
                 "\". ''Instituut-Lorentz.'' 2005. Retrieved on 21 November 2005.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 {
                     "__type": "section",
                     "title": "1905 - Annus Mirabilis papers",
@@ -2739,7 +3608,16 @@
                             "__type": "head_cell",
                             "content": [
                                 "Title",
-                                "(translated)"
+                                {
+                                    "__type": "open_tag",
+                                    "name": "small",
+                                    "attributes": []
+                                },
+                                "(translated)",
+                                {
+                                    "__type": "close_tag",
+                                    "name": "small"
+                                }
                             ]
                         },
                         {
@@ -2805,6 +3683,11 @@
                                 },
                                 ").",
                                 {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": []
+                                },
+                                {
                                     "__type": "template",
                                     "name": "cite book",
                                     "content": {
@@ -2834,7 +3717,16 @@
                                         ]
                                     }
                                 },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
+                                },
                                 "This idea was pivotal to the early development of quantum theory.",
+                                {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": []
+                                },
                                 {
                                     "__type": "template",
                                     "name": "cite book",
@@ -2873,6 +3765,10 @@
                                             "http://books.google.com/books?id=_pbuAAAAMAAJ"
                                         ]
                                     }
+                                },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
                                 }
                             ]
                         },
@@ -2955,6 +3851,11 @@
                             "content": [
                                 "Reconciled Maxwell's equations for electricity and magnetism with the laws of mechanics by introducing major changes to mechanics close to the speed of light, resulting from analysis based on empirical evidence that the speed of light is independent of the motion of the observer.",
                                 {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": []
+                                },
+                                {
                                     "__type": "template",
                                     "name": "cite book",
                                     "content": {
@@ -2987,6 +3888,10 @@
                                         ]
                                     }
                                 },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
+                                },
                                 "Discredited the concept of an \"",
                                 {
                                     "__type": "reference",
@@ -2994,6 +3899,11 @@
                                     "description": ""
                                 },
                                 ".\"",
+                                {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": []
+                                },
                                 {
                                     "__type": "template",
                                     "name": "cite book",
@@ -3029,6 +3939,10 @@
                                             "http://books.google.com/books?id=dwZltQAACAAJ"
                                         ]
                                     }
+                                },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
                                 }
                             ]
                         },
@@ -3070,7 +3984,16 @@
                                     "content": {
                                         "1": [
                                             "''E'' = ''mc''",
-                                            "2"
+                                            {
+                                                "__type": "open_tag",
+                                                "name": "sup",
+                                                "attributes": []
+                                            },
+                                            "2",
+                                            {
+                                                "__type": "close_tag",
+                                                "name": "sup"
+                                            }
                                         ]
                                     }
                                 },
@@ -3101,6 +4024,15 @@
                 },
                 "Albert Einstein's first paper",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "PubList"
+                        }
+                    ]
+                },
+                {
                     "__type": "template",
                     "name": "cite web",
                     "content": {
@@ -3121,6 +4053,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "submitted in 1900 to ''Annalen der Physik'' was on",
                 {
                     "__type": "reference",
@@ -3140,6 +4076,15 @@
                     "description": ""
                 },
                 ", which showed that Brownian movement can be construed as firm evidence that molecules exist. His research in 1903 and 1904 was mainly concerned with the effect of finite atomic size on diffusion phenomena.",
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "PubList"
+                        }
+                    ]
+                },
                 {
                     "__type": "section",
                     "title": "General principles",
@@ -3226,12 +4171,21 @@
                 },
                 "&nbsp;– one of the leading theoretical entities in physics at the time&nbsp;– was superfluous.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "harv",
                     "content": {
                         "Einstein": [],
                         "1905d": []
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "In his paper on ''",
                 {
@@ -3240,8 +4194,26 @@
                     "description": ""
                 },
                 "'' Einstein produced ''E''&nbsp;=&nbsp;''mc''",
+                {
+                    "__type": "open_tag",
+                    "name": "sup",
+                    "attributes": []
+                },
                 "2",
+                {
+                    "__type": "close_tag",
+                    "name": "sup"
+                },
                 "from his special relativity equations.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Stachel"
+                        }
+                    ]
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -3278,8 +4250,26 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Einstein's 1905 work on relativity remained controversial for many years, but was accepted by leading physicists, starting with Max Planck.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "For a discussion of the reception of relativity theory around the world, and the different controversies it encountered, see the articles in Thomas F. Glick, ed., ''The Comparative Reception of Relativity'' (Kluwer Academic Publishers, 1987), ISBN 9027724989.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -3311,6 +4301,10 @@
                     }
                 },
                 {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
                     "__type": "section",
                     "title": "Photons and energy quanta",
                     "level": 1
@@ -3324,6 +4318,11 @@
                     }
                 },
                 "In a 1905 paper,",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -3366,6 +4365,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Einstein postulated that light itself consists of localized particles (''",
                 {
                     "__type": "reference",
@@ -3404,6 +4407,11 @@
                 },
                 ". He does not say much more, because he is not sure how the particles are related to the wave. But he does suggest that this idea would explain certain experimental results, notably the photoelectric effect.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "harv",
                     "content": {
@@ -3412,6 +4420,10 @@
                     }
                 },
                 ".",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 {
                     "__type": "section",
                     "title": "Quantized atomic vibrations",
@@ -3432,6 +4444,11 @@
                 },
                 "refined this model.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "link",
                     "url": "http://www.osti.gov/accomplishments/nuggets/einstein/solidcolda.html",
                     "description": "Celebrating Einstein \"Solid Cold\". U.S. DOE."
@@ -3443,6 +4460,10 @@
                     "description": ""
                 },
                 ", 2011.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 {
                     "__type": "section",
                     "title": "Adiabatic principle and action-angle variables",
@@ -3545,6 +4566,11 @@
                 },
                 ".",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Citation",
                     "content": {
@@ -3573,6 +4599,10 @@
                             "522"
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "In \"über die Entwicklung unserer Anschauungen über das Wesen und die Konstitution der Strahlung\" (\"",
                 {
@@ -3636,6 +4666,15 @@
                     "description": ""
                 },
                 ", which is what happens when the fluctuation size is much smaller than the wavelength, and which explains why the sky is blue.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Levenson"
+                        }
+                    ]
+                },
                 "Levenson, Thomas. \"",
                 {
                     "__type": "link",
@@ -3649,6 +4688,10 @@
                     "description": ""
                 },
                 ".'' 2005. Retrieved on 25 February 2006.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Einstein quantitatively derived critical opalescence from a treatment of density fluctuations, and demonstrated how both the effect and Rayleigh scattering originate from the atomistic constitution of matter.",
                 {
                     "__type": "section",
@@ -3747,6 +4790,11 @@
                     "description": ""
                 },
                 "was unsatisfactory, while a theory which from the outset prefers no state of motion (even accelerated ones) should appear more satisfactory.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "Albert Einstein,",
                 {
                     "__type": "link",
@@ -3754,6 +4802,10 @@
                     "description": "Nobel lecture"
                 },
                 "in 1921",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "So in 1908 he published an article on acceleration under",
                 {
                     "__type": "reference",
@@ -3804,7 +4856,16 @@
                     "description": ""
                 },
                 "in the theory. He formulated an argument that led him to conclude that a general relativistic field theory is impossible. He gave up looking for fully generally covariant tensor equations, and searched for equations that would be invariant under general linear transformations only.\n\nIn June, 1913 the Entwurf (\"draft\") theory was the result of these investigations. As its name suggests, it was a sketch of a theory, with the equations of motion supplemented by additional gauge fixing conditions. Simultaneously less elegant and more difficult than general relativity, after more than two years of intensive work Einstein abandoned the theory in November, 1915 after realizing that the hole argument was mistaken.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "van Dongen, Jeroen (2010) ''Einstein's Unification'' Cambridge University Press, p.23.",
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 {
                     "__type": "section",
                     "title": "Cosmology",
@@ -3831,12 +4892,21 @@
                 },
                 ".",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Harv",
                     "content": {
                         "Einstein": [],
                         "1917a": []
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 {
                     "__type": "reference",
@@ -3894,12 +4964,21 @@
                 },
                 ".",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Harv",
                     "content": {
                         "Einstein": [],
                         "1917b": []
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "This article showed that the statistics of absorption and emission of light would only be consistent with Planck's distribution law if the emission of light into a mode with n photons would be enhanced statistically compared to the emission of light into an empty mode. This paper was enormously influential in the later development of quantum mechanics, because it was the first paper to show that the statistics of atomic transitions had simple laws.\nEinstein discovered",
                 {
@@ -3958,12 +5037,21 @@
                 },
                 "phenomenon that some particulates should appear at very low temperatures.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Harv",
                     "content": {
                         "1924": [],
                         "Einstein": []
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "It was not until 1995 that the first such condensate was produced experimentally by",
                 {
@@ -4003,6 +5091,11 @@
                 },
                 ".",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Citation",
                     "content": {
@@ -4021,6 +5114,10 @@
                     }
                 },
                 {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
                     "__type": "reference",
                     "label": "Bose–Einstein statistics",
                     "description": ""
@@ -4032,6 +5129,15 @@
                     "description": ""
                 },
                 "s. Einstein's sketches for this project may be seen in the Einstein Archive in the library of the Leiden University.",
+                {
+                    "__type": "inline_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Instituut-Lorentz"
+                        }
+                    ]
+                },
                 {
                     "__type": "section",
                     "title": "Energy momentum pseudotensor",
@@ -4119,12 +5225,21 @@
                 },
                 "'' article entitled \"On the Generalized Theory of Gravitation\".",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Harv",
                     "content": {
                         "1950": [],
                         "Einstein": []
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "Although he continued to be lauded for his work, Einstein became increasingly isolated in his research, and his efforts were ultimately unsuccessful.\nIn his pursuit of a unification of the fundamental forces, Einstein ignored some mainstream developments in physics, most notably the",
                 {
@@ -4348,6 +5463,11 @@
                 },
                 ". Schrödinger urged Einstein to add his name as co-author, although Einstein declined the invitation.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Citation",
                     "content": {
@@ -4373,6 +5493,10 @@
                             "0-521-43767-9"
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 {
                     "__type": "section",
@@ -4406,6 +5530,15 @@
                     "description": ""
                 },
                 "was then revolutionary for having no moving parts and using only heat as an input.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "Goettling"
+                        }
+                    ]
+                },
                 "Goettling, Gary.",
                 {
                     "__type": "link",
@@ -4424,6 +5557,10 @@
                     "label": "chain reaction",
                     "description": ""
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "On 11 November 1930,",
                 {
                     "__type": "template",
@@ -4439,6 +5576,11 @@
                     "description": ""
                 },
                 "to protect its refrigeration technology from competition.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "In September 2008 it was reported that Malcolm McCulloch of Oxford University was heading a three-year project to develop more robust appliances that could be used in locales lacking electricity, and that his team had completed a prototype Einstein refrigerator. He was quoted as saying that improving the design and changing the types of gases used might allow the design's efficiency to be quadrupled.",
                 {
                     "__type": "template",
@@ -4469,6 +5611,10 @@
                             "22 February 2011"
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 {
                     "__type": "section",
@@ -4507,6 +5653,15 @@
                 },
                 ".",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "'Bohr1949'"
+                        }
+                    ]
+                },
+                {
                     "__type": "template",
                     "name": "cite web",
                     "content": {
@@ -4536,6 +5691,15 @@
                 },
                 "From Albert Einstein: Philosopher-Scientist (1949), publ. Cambridge University Press, 1949. Niels Bohr's report of conversations with Einstein.",
                 {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Harv",
                     "content": {
@@ -4545,12 +5709,25 @@
                 },
                 ". A reprint of this book was published by Edition Erbrich in 1982, ISBN 388682005X",
                 {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Harv",
                     "content": {
                         "1935": [],
                         "Einstein": []
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 {
                     "__type": "section",
@@ -4668,6 +5845,11 @@
                 },
                 ". Margot Einstein permitted the personal letters to be made available to the public, but requested that it not be done until twenty years after her death (she died in 1986",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "cite web",
                     "content": {
@@ -4688,6 +5870,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "). Barbara Wolff, of The Hebrew University's Albert Einstein Archives, told the",
                 {
                     "__type": "reference",
@@ -4695,6 +5881,11 @@
                     "description": ""
                 },
                 "that there are about 3,500 pages of private correspondence written between 1912 and 1955.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -4723,6 +5914,10 @@
                         ]
                     }
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Einstein bequeathed the royalties from use of his",
                 {
                     "__type": "reference",
@@ -4743,6 +5938,11 @@
                 },
                 ", licenses the use of his name and associated imagery, as agent for the university.",
                 {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
+                {
                     "__type": "template",
                     "name": "Citation",
                     "content": {
@@ -4761,6 +5961,10 @@
                     }
                 },
                 {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
+                {
                     "__type": "section",
                     "title": "In popular culture",
                     "level": 0
@@ -4773,13 +5977,27 @@
                     }
                 },
                 "In the period before World War II, Einstein was so well known in America that he would be stopped on the street by people wanting him to explain \"that theory\". He finally figured out a way to handle the incessant inquiries. He told his inquirers \"Pardon me, sorry! Always I am mistaken for Professor Einstein.\"",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 "The New Yorker April 1939 pg 69",
                 {
                     "__type": "link",
                     "url": "http://www.newyorker.com/search/query?queryType=nonparsed&query=Einstein+&bylquery=Maloney&month1=01&day1=14&year1=1939&month2=01&day2=14&year2=1939&page=&sort=&submit.x=10&submit.y=5",
                     "description": "Disguise"
                 },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
+                },
                 "Einstein has been the subject of or inspiration for many novels, films, plays, and works of music.",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": []
+                },
                 {
                     "__type": "link",
                     "url": "http://www.cindymctee.com/einsteins_dream.html",
@@ -4790,6 +6008,10 @@
                     "__type": "reference",
                     "label": "Cindy McTee",
                     "description": ""
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 "He is a favorite model for depictions of",
                 {
@@ -4804,6 +6026,15 @@
                     "description": ""
                 },
                 "s; his expressive face and distinctive hairstyle have been widely copied and exaggerated. ''TIME'' magazine's Frederic Golden wrote that Einstein was \"a cartoonist's dream come true\".",
+                {
+                    "__type": "open_tag",
+                    "name": "ref",
+                    "attributes": [
+                        {
+                            "name": "slqbwn"
+                        }
+                    ]
+                },
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -4830,6 +6061,10 @@
                             "25 February 2006"
                         ]
                     }
+                },
+                {
+                    "__type": "close_tag",
+                    "name": "ref"
                 },
                 {
                     "__type": "section",
@@ -5724,6 +6959,15 @@
                     "level": 0
                 },
                 {
+                    "__type": "inline_tag",
+                    "name": "references",
+                    "attributes": [
+                        {
+                            "group": "fn"
+                        }
+                    ]
+                },
+                {
                     "__type": "section",
                     "title": "References",
                     "level": 0
@@ -6016,7 +7260,11 @@
                             }
                         ],
                         "DATE OF BIRTH": [
-                            "1879-03-14"
+                            "1879-03-14",
+                            {
+                                "__type": "comment_tag",
+                                "comment": " ISO format (YYYY-MM-DD) "
+                            }
                         ],
                         "PLACE OF BIRTH": [
                             {
@@ -6038,7 +7286,11 @@
                             }
                         ],
                         "DATE OF DEATH": [
-                            "1955-04-18"
+                            "1955-04-18",
+                            {
+                                "__type": "comment_tag",
+                                "comment": " ISO format (YYYY-MM-DD) "
+                            }
                         ],
                         "PLACE OF DEATH": [
                             {
@@ -10281,7 +11533,7 @@
             "id": "/wikipedia/images/commons_id/925243"
         },
         "name": "Albert Einstein",
-        "relevance:score": 179.97789001464844,
+        "relevance:score": 180.0218505859375,
         "type": [
             {
                 "id": "/common/topic",
@@ -10540,6 +11792,11 @@
                         "description": ""
                     },
                     "&nbsp;(1903–1919)",
+                    {
+                        "__type": "open_tag",
+                        "name": "br",
+                        "attributes": []
+                    },
                     {
                         "__type": "template",
                         "name": "nowrap",
@@ -10810,6 +12067,11 @@
                                                 "description": ""
                                             },
                                             {
+                                                "__type": "open_tag",
+                                                "name": "ref",
+                                                "attributes": []
+                                            },
+                                            {
                                                 "__type": "template",
                                                 "name": "cite web",
                                                 "content": {
@@ -10835,6 +12097,10 @@
                                                         "3 April 2011"
                                                     ]
                                                 }
+                                            },
+                                            {
+                                                "__type": "close_tag",
+                                                "name": "ref"
                                             }
                                         ]
                                     }
@@ -11015,7 +12281,16 @@
                     "__type": "head_cell",
                     "content": [
                         "Title",
-                        "(translated)"
+                        {
+                            "__type": "open_tag",
+                            "name": "small",
+                            "attributes": []
+                        },
+                        "(translated)",
+                        {
+                            "__type": "close_tag",
+                            "name": "small"
+                        }
                     ]
                 },
                 {
@@ -11081,6 +12356,11 @@
                         },
                         ").",
                         {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": []
+                        },
+                        {
                             "__type": "template",
                             "name": "cite book",
                             "content": {
@@ -11110,7 +12390,16 @@
                                 ]
                             }
                         },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        },
                         "This idea was pivotal to the early development of quantum theory.",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": []
+                        },
                         {
                             "__type": "template",
                             "name": "cite book",
@@ -11149,6 +12438,10 @@
                                     "http://books.google.com/books?id=_pbuAAAAMAAJ"
                                 ]
                             }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
                         }
                     ]
                 },
@@ -11231,6 +12524,11 @@
                     "content": [
                         "Reconciled Maxwell's equations for electricity and magnetism with the laws of mechanics by introducing major changes to mechanics close to the speed of light, resulting from analysis based on empirical evidence that the speed of light is independent of the motion of the observer.",
                         {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": []
+                        },
+                        {
                             "__type": "template",
                             "name": "cite book",
                             "content": {
@@ -11263,6 +12561,10 @@
                                 ]
                             }
                         },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        },
                         "Discredited the concept of an \"",
                         {
                             "__type": "reference",
@@ -11270,6 +12572,11 @@
                             "description": ""
                         },
                         ".\"",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": []
+                        },
                         {
                             "__type": "template",
                             "name": "cite book",
@@ -11305,6 +12612,10 @@
                                     "http://books.google.com/books?id=dwZltQAACAAJ"
                                 ]
                             }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
                         }
                     ]
                 },
@@ -11346,7 +12657,16 @@
                             "content": {
                                 "1": [
                                     "''E'' = ''mc''",
-                                    "2"
+                                    {
+                                        "__type": "open_tag",
+                                        "name": "sup",
+                                        "attributes": []
+                                    },
+                                    "2",
+                                    {
+                                        "__type": "close_tag",
+                                        "name": "sup"
+                                    }
                                 ]
                             }
                         },

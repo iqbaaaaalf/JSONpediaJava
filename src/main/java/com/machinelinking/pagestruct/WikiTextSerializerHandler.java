@@ -211,6 +211,40 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
+    public void beginTag(String name, Attribute[] attributes) {
+        serializer.openObject();
+        serializer.fieldValue("__type", "open_tag");
+        serializer.fieldValue("name", name);
+        serializeAttributes(attributes, serializer);
+        serializer.closeObject();
+    }
+
+    @Override
+    public void endTag(String name) {
+        serializer.openObject();
+        serializer.fieldValue("__type", "close_tag");
+        serializer.fieldValue("name", name);
+        serializer.closeObject();
+    }
+
+    @Override
+    public void inlineTag(String name, Attribute[] attributes) {
+        serializer.openObject();
+        serializer.fieldValue("__type", "inline_tag");
+        serializer.fieldValue("name", name);
+        serializeAttributes(attributes, serializer);
+        serializer.closeObject();
+    }
+
+    @Override
+    public void commentTag(String comment) {
+        serializer.openObject();
+        serializer.fieldValue("__type", "comment_tag");
+        serializer.fieldValue("comment", comment);
+        serializer.closeObject();
+    }
+
+    @Override
     public void endDocument() {
         serializer.closeList();
 
@@ -243,6 +277,17 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     private DocumentElement peekElement() {
         return documentStack.peek();
+    }
+
+    private void serializeAttributes(Attribute[] attributes, Serializer serializer) {
+        serializer.field("attributes");
+        serializer.openList();
+        for(Attribute attribute : attributes) {
+            serializer.openObject();
+            serializer.fieldValue(attribute.name, attribute.value);
+            serializer.closeObject();
+        }
+        serializer.closeList();
     }
 
     private void serializeIssues(Serializer serializer) {
