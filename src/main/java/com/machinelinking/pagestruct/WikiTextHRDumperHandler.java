@@ -54,8 +54,9 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
 
     @Override
     public void parseWarning(String msg, int row, int col) {
-        printOut(String.format("Warning: %s (%d, %d)", msg, row, col));
-        if(validating) throw new IllegalStateException("Unexpected warning.");
+        final String err = String.format("Warning: %s (%d, %d)", msg, row, col);
+        printOut(msg);
+        if(validating) throw new IllegalStateException("Unexpected warning: " + err);
     }
 
     @Override
@@ -126,12 +127,22 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
 
     @Override
     public void beginTag(String node, Attribute[] attributes) {
-        printOut( String.format("Begin Tag: %s attributes: %s", node, Arrays.asList(attributes)) );
+        printOut( String.format("Open Tag: %s attributes: %s", node, Arrays.asList(attributes)) );
     }
 
     @Override
     public void endTag(String node) {
-        printOut("End Tag: " + node);
+        printOut("Close Tag: " + node);
+    }
+
+    @Override
+    public void inlineTag(String node, Attribute[] attributes) {
+        printOut( String.format("Inline Tag: %s attributes: %s", node, Arrays.asList(attributes)) );
+    }
+
+    @Override
+    public void commentTag(String comment) {
+        printOut("Comment Tag: " + comment);
     }
 
     @Override

@@ -53,6 +53,10 @@ public interface WikiTextParserHandler extends NodeHandler {
 
     void endTag(String node);
 
+    void inlineTag(String node, Attribute[] attributes);
+
+    void commentTag(String comment);
+
     void text(String content);
 
     @ValidateStack

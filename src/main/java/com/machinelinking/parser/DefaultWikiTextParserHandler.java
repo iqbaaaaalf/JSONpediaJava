@@ -80,6 +80,14 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void inlineTag(String node, Attribute[] attributes) {
+    }
+
+    @Override
+    public void commentTag(String comment) {
+    }
+
+    @Override
     public void text(String content) {
     }
 
