@@ -151,16 +151,6 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
         printOut("Text: " + ( content  == null ? "null" : "'" + content + "'"));
     }
 
-    @Override
-    public void startElement(String name) {
-        printOut("Start Element: " + name);
-    }
-
-    @Override
-    public void endElement(String name) {
-        printOut("End Element: " + name);
-    }
-
     //TODO: replace with ValidatingWikiTextParserHandler
     private void printOut(String msg) {
         if (validating) {

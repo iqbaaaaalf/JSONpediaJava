@@ -95,12 +95,4 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     public void endDocument() {
     }
 
-    @Override
-    public void startElement(String name) {
-    }
-
-    @Override
-    public void endElement(String name) {
-    }
-
 }

@@ -31,7 +31,7 @@ public class TagReaderTest {
 
     @Test
     public void testAttributeKeyValueScanner() {
-        WikiTextParserHandler.Attribute[] attributes;
+        TagHandler.Attribute[] attributes;
 
         attributes = TagReader.attributeKeyValueScanner("k1 = v1");
         Assert.assertEquals("[k1 : 'v1']", Arrays.asList(attributes).toString());
@@ -94,9 +94,9 @@ public class TagReaderTest {
     public void testNodeStack() {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(false);
         final TagReader tagReader = new TagReader(handler);
-        tagReader.pushTag("br", new WikiTextParserHandler.Attribute[0]);
-        tagReader.pushTag("ref", new WikiTextParserHandler.Attribute[0]);
-        tagReader.pushTag("br", new WikiTextParserHandler.Attribute[0]);
+        tagReader.pushTag("br", new TagHandler.Attribute[0]);
+        tagReader.pushTag("ref", new TagHandler.Attribute[0]);
+        tagReader.pushTag("br", new TagHandler.Attribute[0]);
         tagReader.popTag("ref", null);
 
         final List<TagReader.StackElement> stack = tagReader.getStack();

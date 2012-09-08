@@ -45,7 +45,7 @@ public class TagReader {
         return i;
     }
 
-    protected static WikiTextParserHandler.Attribute[] attributeKeyValueScanner(String content) {
+    protected static TagHandler.Attribute[] attributeKeyValueScanner(String content) {
         final StringBuilder keyBuilder = new StringBuilder();
         final StringBuilder valueBuilder = new StringBuilder();
         final List<WikiTextParserHandler.Attribute> attributes = new ArrayList<>();
@@ -57,13 +57,13 @@ public class TagReader {
             } else if('=' == c) {
                 valueBuilder.delete(0, valueBuilder.length());
                 i = attributeValueScanner(content, i + 1, valueBuilder);
-                attributes.add( new WikiTextParserHandler.Attribute(keyBuilder.toString(), valueBuilder.toString()));
+                attributes.add( new TagHandler.Attribute(keyBuilder.toString(), valueBuilder.toString()));
                 keyBuilder.delete(0, keyBuilder.length());
             } else {
                 keyBuilder.append(c);
             }
         }
-        return attributes.toArray( new WikiTextParserHandler.Attribute[attributes.size()]);
+        return attributes.toArray( new TagHandler.Attribute[attributes.size()]);
     }
 
     public TagReader(WikiTextParserHandler handler) {
@@ -218,7 +218,7 @@ public class TagReader {
 
     public class StackElement {
         private final String node;
-        private final WikiTextParserHandler.Attribute[] attributes;
+        private final TagHandler.Attribute[] attributes;
 
         StackElement(String node, WikiTextParserHandler.Attribute[] attributes) {
             this.node = node;
@@ -229,7 +229,7 @@ public class TagReader {
             return node;
         }
 
-        public List<WikiTextParserHandler.Attribute> getAttributes() {
+        public List<TagHandler.Attribute> getAttributes() {
             return Collections.unmodifiableList( Arrays.asList(attributes) );
         }
 

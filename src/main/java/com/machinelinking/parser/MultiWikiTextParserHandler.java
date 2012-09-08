@@ -181,19 +181,4 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
         }
     }
 
-    @Override
-    public void startElement(String name) {
-        for(WikiTextParserHandler handler : handlers) {
-            handler.startElement(name);
-        }
-
-    }
-
-    @Override
-    public void endElement(String name) {
-        for(WikiTextParserHandler handler : handlers) {
-            handler.endElement(name);
-        }
-    }
-
 }
