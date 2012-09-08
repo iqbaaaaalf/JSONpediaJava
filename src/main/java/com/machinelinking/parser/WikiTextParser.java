@@ -81,12 +81,6 @@ public class WikiTextParser implements ParserReader {
                     readSection();
                 } else if('=' == couple.charAt(0)) {
                     reset(); read(); mark(); // TODO improve it.
-                } else {
-                    if(couple.charAt(0) == '{') { // TODO: REMOVE THIS - A single { like "<math> {G} </math>" to be consumed.
-                        read();
-                    } else {
-                        reset();
-                    }
                 }
             }
         } catch (EOFException eofe) {
