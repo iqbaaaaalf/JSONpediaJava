@@ -52,6 +52,7 @@
             });
 
             $('#get-submit').click(function () {
+                if($('#get-submit').hasClass('disabled')) return;
                 document.location.href =
                         '/annotate/resource/' +
                                 $('#get-format option:selected').attr('value') +
@@ -60,6 +61,7 @@
                                 '&flags=' + getActiveFlags('get-flags');
             });
             $('#post-submit').click(function () {
+                if($('#get-submit').hasClass('disabled')) return;
                 request = '/annotate/resource/' +
                         $('#post-format option:selected').attr('value') +
                         '/' + encodeURIComponent($('#post-uri').val());

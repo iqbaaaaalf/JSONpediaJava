@@ -3,7 +3,7 @@ package com.machinelinking.enricher;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class DefaultFlag implements Flag {
+public class DefaultFlag implements Flag, Comparable {
 
     private final String id;
     private final String description;
@@ -44,4 +44,9 @@ public class DefaultFlag implements Flag {
         return id;
     }
 
+    @Override
+    public int compareTo(Object o) {
+        final Flag other = (Flag) o;
+        return id.compareTo(other.getId());
+    }
 }

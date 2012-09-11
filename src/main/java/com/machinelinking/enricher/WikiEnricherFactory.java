@@ -51,6 +51,7 @@ public class WikiEnricherFactory {
         registerFlag(Splitters);
         registerFlag(Structure);
         flags = flagList.toArray( new Flag[flagList.size()] );
+        Arrays.sort(flags);
     }
 
     public Flag[] getDefinedFlags() {

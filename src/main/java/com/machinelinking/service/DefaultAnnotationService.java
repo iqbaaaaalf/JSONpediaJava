@@ -45,6 +45,8 @@ public class DefaultAnnotationService implements AnnotationService {
          WikiEnricherFactory.Structure
     };
 
+    private final Pattern resourcePattern = Pattern.compile("^([a-z\\-]+):([^/]+)$");
+
     private final ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
     @Path("/flags/")
@@ -68,9 +70,12 @@ public class DefaultAnnotationService implements AnnotationService {
             @QueryParam("flags")   String flags,
             @QueryParam("filter")  String filter
     ) {
-
-        final DocumentSource documentSource = new DocumentSource(toResourceURL(resource));
-        return annotateDocumentSource(documentSource, flags, outFormat, filter);
+        try {
+            final DocumentSource documentSource = new DocumentSource(toResourceURL(resource));
+            return annotateDocumentSource(documentSource, flags, outFormat, filter);
+        } catch (IllegalArgumentException iae) {
+            throw new InvalidEntityException(iae);
+        }
     }
 
     @Path("/resource/{outFormat}/{resource}")
@@ -87,12 +92,14 @@ public class DefaultAnnotationService implements AnnotationService {
             @FormParam("wikitext") String wikitext,
             @FormParam("filter")   String filter
     ) {
-
+        try {
         final DocumentSource documentSource = new DocumentSource(toResourceURL(resource), wikitext);
         return annotateDocumentSource(documentSource, flags, outFormat, filter);
+        } catch (IllegalArgumentException iae) {
+            throw new InvalidEntityException(iae);
+        }
     }
 
-    private final Pattern resourcePattern = Pattern.compile("^([a-z\\-]+):([^/]+)$");
     private URL toResourceURL(String resource) {
         final Matcher resourceMatcher = resourcePattern.matcher(resource);
         final String resourceURL;
