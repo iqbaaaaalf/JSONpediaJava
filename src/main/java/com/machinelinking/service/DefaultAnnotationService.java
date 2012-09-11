@@ -27,6 +27,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
@@ -90,9 +92,19 @@ public class DefaultAnnotationService implements AnnotationService {
         return annotateDocumentSource(documentSource, flags, outFormat, filter);
     }
 
+    private final Pattern resourcePattern = Pattern.compile("^([a-z\\-]+):([^/]+)$");
     private URL toResourceURL(String resource) {
+        final Matcher resourceMatcher = resourcePattern.matcher(resource);
+        final String resourceURL;
+        if(resourceMatcher.matches()) {
+            resourceURL = String.format(
+                    "http://%s.wikipedia.org/%s", resourceMatcher.group(1), resourceMatcher.group(2)
+            );
+        } else {
+            resourceURL = resource;
+        }
         try {
-            return new URL(resource);
+            return new URL(resourceURL);
         } catch (MalformedURLException murle) {
             throw new IllegalArgumentException(
                     String.format("Invalid resource [%s], must be a valid URL.", resource),
