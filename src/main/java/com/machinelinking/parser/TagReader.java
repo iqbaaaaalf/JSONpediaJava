@@ -74,8 +74,13 @@ public class TagReader {
         return ! tagStack.isEmpty();
     }
 
-    public boolean isInsideNode(String name) {
-        return ! tagStack.empty() && tagStack.peek().node.equals(name);
+    public boolean isInsideNode(String... names) {
+        if(tagStack.empty()) return false;
+        final String peek = tagStack.peek().node;
+        for(String name : names) {
+            if(peek.equals(name)) return true;
+        }
+        return false;
     }
 
     public List<StackElement> getStack() {

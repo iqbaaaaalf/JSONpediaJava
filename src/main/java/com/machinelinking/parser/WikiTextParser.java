@@ -15,7 +15,9 @@ import java.util.regex.Pattern;
 // TODO HIGH: error detection is not working, see BrokenTemplate1 wikitext
 public class WikiTextParser implements ParserReader {
 
-    protected static final String MATH_NODE = "math";
+    protected static final String MATH_NODE   = "math";
+    protected static final String NOWIKI_NODE = "nowiki";
+    protected static final String[] UNPARSED_NODES = new String[] {MATH_NODE, NOWIKI_NODE};
 
     private static final String[] TEMPLATE_CLOSURE = new String[]{"}}"};
 
@@ -65,7 +67,7 @@ public class WikiTextParser implements ParserReader {
                     reset();
                     tagReader.readNode(this);
                     mark();
-                    if (tagReader.isInsideNode(MATH_NODE)) {
+                    if (tagReader.isInsideNode(UNPARSED_NODES)) {
                         tagReader.readUntilNextTag(this);
                     }
                 } else if ("{{".equals(couple)) {
