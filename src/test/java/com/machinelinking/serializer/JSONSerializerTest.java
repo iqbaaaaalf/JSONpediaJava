@@ -5,7 +5,6 @@ import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -164,16 +163,6 @@ public class JSONSerializerTest {
         serializer.field("f1");
         serializer.openList();
         verify("[ { \"f1\" : null }, [] ]");
-    }
-
-    @Ignore
-    @Test
-    public void testFieldMultiValue() {
-        serializer.openObject();
-        serializer.field("f1");
-        serializer.value("v1");
-        serializer.value("v2");
-        verify("{ \"f1\" : [\"v1\", \"v2\"] }");
     }
 
     private void verify(String expected) {
