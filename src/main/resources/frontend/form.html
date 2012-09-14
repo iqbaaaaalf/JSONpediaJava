@@ -5,11 +5,20 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/">
 <head>
     <title>JSONpedia</title>
-    <link rel="stylesheet" type="text/css" href="/frontend/bootstrap.min.css"/>
-    <script type="text/javascript" src="/frontend/jquery-1.7.2-min.js"></script>
-    <script type="text/javascript" src="/frontend/bootstrap-modal.js"></script>
-    <script type="text/javascript" src="/frontend/bootstrap-button.js"></script>
-    <script type="text/javascript" src="/frontend/bootstrap-dropdown.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <style type="text/css">
+        select {
+            width: 70px;
+        }
+        .example-dropdown {
+            width: 200px;
+        }
+    </style>
+
+    <script type="text/javascript" src="jquery-1.7.2-min.js"></script>
+    <script type="text/javascript" src="bootstrap-modal.js"></script>
+    <script type="text/javascript" src="bootstrap-button.js"></script>
+    <script type="text/javascript" src="bootstrap-dropdown.js"></script>
     <script type="application/javascript">
         $(function ($) {
             $.each($('.app-base-uri'), function () {
@@ -18,6 +27,11 @@
 
             $('#app-path').text(document.location.pathname);
             $('#app-host').text(document.location.host);
+
+            $('.example-button').click(function(e){
+                $('#get-uri').val( $(e.target).html() );
+                e.preventDefault();
+            })
 
             $.get('/annotate/flags').success(function(data){
                 declared = Array.isArray(data.definedFlags) ? data.definedFlags : [data.definedFlags];
@@ -123,7 +137,22 @@
             <select id="get-format">
                 <option value="json" selected="selected">json</option>
                 <option value="html">html</option>
-            </select>/<input id="get-uri" type="text" style="width:400px" placeholder="http://en.wikipedia.org/Albert_Einstein OR en:Albert_Einstein"/>
+            </select>/<input id="get-uri" type="text" style="width:400px" value="en:Albert_Einstein" placeholder="http://en.wikipedia.org/Albert_Einstein OR en:Albert_Einstein"/>
+            <span class="btn-group" style="float: right">
+              <button class="btn example-dropdown">Examples</button>
+              <button class="btn dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu example-dropdown">
+                  <li><a class="example-button" href="#">en:Albert_Einstein</a></li>
+                  <li><a class="example-button" href="#">en:Cetacea</a></li>
+                  <li><a class="example-button" href="#">en:Carbon</a></li>
+                  <li><a class="example-button" href="#">en:Italy</a></li>
+                  <li><a class="example-button" href="#">en:London</a></li>
+                  <li><a class="example-button" href="#">en:Philosophy</a></li>
+                  <li><a class="example-button" href="#">en:Star_Wars</a></li>
+              </ul>
+            </span>
         </div>
     </div>
 
@@ -140,7 +169,7 @@
     </div>
 
     <div class="form-actions">
-        <button id="get-submit" type="button" class="btn btn-primary disabled">Convert</button>
+        <button id="get-submit" type="button" class="btn btn-primary">Convert</button>
         <button type="reset" class="btn">Cancel</button>
     </div>
 </div>
@@ -155,7 +184,7 @@
             <select id="post-format" name="format">
                 <option value="json" selected="selected">json</option>
                 <option value="html">html</option>
-            </select>/<input id="post-uri" type="text" style="width:400px" placeholder="http://en.wikipedia.org/wiki/Fake_Page OR en:Fake_Page"/>
+            </select>/<input id="post-uri" type="text" style="width:400px" value="en:Albert_Einstein" placeholder="http://en.wikipedia.org/wiki/Fake_Page OR en:Fake_Page"/>
         </div>
     </div>
 
@@ -196,7 +225,7 @@
     </div>
 
     <div class="form-actions">
-        <button id="post-submit" type="button" class="btn btn-primary disabled">Convert</button>
+        <button id="post-submit" type="button" class="btn btn-primary">Convert</button>
         <button type="reset" class="btn">Cancel</button>
     </div>
 </div>
