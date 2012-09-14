@@ -121,6 +121,8 @@ public class JSONUtils {
             serializer.value( node.asInt() );
         } else if(node.isBoolean()) {
             serializer.value( node.asBoolean() );
+        } else if(node.isNull()){
+            serializer.value(null);
         } else {
             throw new IllegalArgumentException();
         }
