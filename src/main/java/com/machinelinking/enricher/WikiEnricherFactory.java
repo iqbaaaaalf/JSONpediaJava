@@ -27,7 +27,7 @@ public class WikiEnricherFactory {
     public static final String FLAG_SEPARATOR = ",";
     public static final String FLAG_NEGATION  = "-";
 
-    public static final Flag Offline    = new DefaultFlag("Offline"   , "Prevent lookup external service enrichment");
+    public static final Flag Online     = new DefaultFlag("Online"    , "Enable external services enrichment");
     public static final Flag Validate   = new DefaultFlag("Validate"  , "Validate parser content");
     public static final Flag Extractors = new DefaultFlag("Extractors", "Apply Extractors on content");
     public static final Flag Splitters  = new DefaultFlag("Splitters" , "Apply Splitters on content");
@@ -45,7 +45,7 @@ public class WikiEnricherFactory {
     private final Flag[]           flags;
 
     private WikiEnricherFactory() {
-        registerFlag(Offline);
+        registerFlag(Online);
         registerFlag(Validate);
         registerFlag(Extractors);
         registerFlag(Splitters);
@@ -94,7 +94,7 @@ public class WikiEnricherFactory {
             enricher.addExtractor(new ReferenceExtractor());
             enricher.addExtractor(new TemplateOccurrencesExtractor());
             enricher.addExtractor(new CategoryExtractor());
-            if (flagsSet.contains(Offline)) {
+            if (flagsSet.contains(Online)) {
                 enricher.addExtractor(new TemplateMappingExtractor());
                 enricher.addExtractor(new FreebaseExtractor());
             }

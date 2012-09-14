@@ -52,7 +52,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     @Test
     public void testAnnotateOffline() throws IOException, URISyntaxException {
         final JsonNode node = performQuery(
-                buildPath(TARGET_RESOURCE).queryParam("flags", WikiEnricherFactory.Offline).build()
+                buildPath(TARGET_RESOURCE).queryParam("flags", WikiEnricherFactory.Online).build()
         );
         Assert.assertEquals(2, node.size());
     }
