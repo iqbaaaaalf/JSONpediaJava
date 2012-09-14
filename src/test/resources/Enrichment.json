@@ -11521,7 +11521,6 @@
         "alias": [
             "Einstein",
             "albert_einstein",
-            "Albert Einstein",
             "Einstein, Albert"
         ],
         "article": {
@@ -11533,7 +11532,7 @@
             "id": "/wikipedia/images/commons_id/925243"
         },
         "name": "Albert Einstein",
-        "relevance:score": 180.0218505859375,
+        "relevance:score": null,
         "type": [
             {
                 "id": "/common/topic",
