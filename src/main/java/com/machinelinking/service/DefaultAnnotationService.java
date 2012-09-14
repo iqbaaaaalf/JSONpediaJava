@@ -105,7 +105,7 @@ public class DefaultAnnotationService implements AnnotationService {
         final String resourceURL;
         if(resourceMatcher.matches()) {
             resourceURL = String.format(
-                    "http://%s.wikipedia.org/%s", resourceMatcher.group(1), resourceMatcher.group(2)
+                    "http://%s.wikipedia.org/wiki/%s", resourceMatcher.group(1), resourceMatcher.group(2)
             );
         } else {
             resourceURL = resource;
