@@ -28,7 +28,7 @@ public abstract class WikiMappingHandler extends DefaultWikiTextParserHandler {
     public void beginTemplate(String name) {
         if(TEMPLATE_MAPPING_NAME.equalsIgnoreCase(name.trim())) {
             insideTemplateMapping = true;
-            if(mapping != null) throw new IllegalStateException();
+            if(mapping != null) throw new IllegalArgumentException("Unsupported nested mapping.");
             mapping = new TemplateMapping(name);
         } else if(insideTemplateMapping && PROPERTY_MAPPING_NAME.equalsIgnoreCase(name.trim())) {
             insidePropertyMapping = true;
