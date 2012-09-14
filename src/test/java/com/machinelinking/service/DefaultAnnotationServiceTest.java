@@ -22,6 +22,14 @@ import java.net.URLEncoder;
  */
 public class DefaultAnnotationServiceTest extends ServiceTestBase {
 
+    private static final String[] EXPECTED_ARRAY_NODES = {
+        "sections", "links", "references"
+    };
+
+    private static final String[] EXPECTED_OBJECT_NODES = {
+        "template-occurrences", "categories"
+    };
+
     private static final String TARGET_RESOURCE;
 
     static {
@@ -40,27 +48,24 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
 
     @Test
     public void testAnnotate() throws IOException, URISyntaxException {
-        final JsonNode node = performQuery(
-                TARGET_RESOURCE
-        );
-        final JsonNode content = node.get("wikitext-json");
-        Assert.assertNotNull(content);
-        Assert.assertTrue(content.isArray());
-        Assert.assertEquals(1, content.size());
+        checkJSONResponse( performQuery(TARGET_RESOURCE) );
     }
 
     @Test
-    public void testAnnotateOffline() throws IOException, URISyntaxException {
+    public void testAnnotateOnline() throws IOException, URISyntaxException {
         final JsonNode node = performQuery(
                 buildPath(TARGET_RESOURCE).queryParam("flags", WikiEnricherFactory.Online).build()
         );
-        Assert.assertEquals(2, node.size());
+        checkJSONResponse(node);
+        Assert.assertNotNull(node.get("freebase"));
     }
 
     @Test
     public void testAnnotateWithFilters() throws URISyntaxException, IOException {
         final JsonNode node = performQuery(
-                buildPath(TARGET_RESOURCE).queryParam("filter", DefaultJSONFilterEngineTest.FILTER_EXP).build()
+                buildPath(TARGET_RESOURCE)
+                        .queryParam("flags", WikiEnricherFactory.Structure)
+                        .queryParam("filter", DefaultJSONFilterEngineTest.FILTER_EXP).build()
         );
         Assert.assertEquals(
                 JSONUtils.parseJSON(
@@ -72,15 +77,15 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
         );
     }
 
-    private JsonNode performQuery(String path) throws URISyntaxException, IOException {
-        final URI uri = buildPath(path).build();
-        return performQuery(uri);
-    }
-
     private UriBuilder buildPath(String path) throws URISyntaxException {
         return  UriBuilder.fromResource(DefaultAnnotationService.class)
                 .uri(new URI(String.format("http://%s", HOST))).port(PORT)
                 .path(path);
+    }
+
+    private JsonNode performQuery(String path) throws URISyntaxException, IOException {
+        final URI uri = buildPath(path).build();
+        return performQuery(uri);
     }
 
     private JsonNode performQuery(URI uri) throws IOException {
@@ -92,6 +97,19 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
             content.append(line);
         }
         return JSONUtils.parseJSON(content.toString());
+    }
+
+    private void checkJSONResponse(JsonNode node) {
+        for (String expectedNode : EXPECTED_ARRAY_NODES) {
+            final JsonNode content = node.get(expectedNode);
+            Assert.assertNotNull(content);
+            Assert.assertTrue("Invalid content for " + expectedNode, content.isArray());
+        }
+        for (String expectedNode : EXPECTED_OBJECT_NODES) {
+            final JsonNode content = node.get(expectedNode);
+            Assert.assertNotNull(content);
+            Assert.assertTrue("Invalid content for " + expectedNode, content.isObject());
+        }
     }
 
 }

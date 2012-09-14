@@ -86,9 +86,11 @@ public class WikiEnricherFactory {
         final Set<Flag> flagsSet = new HashSet<>(Arrays.asList(flags));
         final WikiEnricher enricher = new WikiEnricher();
 
+        // Issue extractor is always active.
+        enricher.addExtractor(new IssueExtractor());
+
         // Extractors.
         if(flagsSet.contains(Extractors)) {
-            enricher.addExtractor(new IssueExtractor());
             enricher.addExtractor(new SectionExtractor());
             enricher.addExtractor(new LinkExtractor());
             enricher.addExtractor(new ReferenceExtractor());

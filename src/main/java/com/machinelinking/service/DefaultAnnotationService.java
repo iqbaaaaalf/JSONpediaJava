@@ -44,7 +44,7 @@ public class DefaultAnnotationService implements AnnotationService {
     }
 
     public static final Flag[] DEFAULT_FLAGS = new Flag[] {
-         WikiEnricherFactory.Structure
+         WikiEnricherFactory.Extractors
     };
 
     private final Pattern resourcePattern = Pattern.compile("^([a-z\\-]+):([^/]+)$");
