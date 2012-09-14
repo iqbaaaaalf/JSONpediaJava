@@ -11,7 +11,7 @@ public class Issue implements Serializable {
 
     public enum Type {
         Error,
-        Warning;
+        Warning
     }
 
     private Type   type;
