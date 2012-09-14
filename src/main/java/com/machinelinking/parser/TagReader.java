@@ -208,7 +208,7 @@ public class TagReader {
                         handler.commentTag(commentSB.toString());
                         commentSB.delete(0, commentSB.length());
                     } else {
-                        handler.parseWarning("Invalid char '-' within comment tag.", r.getLocation());
+                        handler.parseWarning("Invalid char '-' within comment tag.", r.getLocation()); //TODO: this warning is unuseful and should be removed.
                     }
                     break;
                 } else {

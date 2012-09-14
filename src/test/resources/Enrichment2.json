@@ -19856,20 +19856,20 @@
         {
             "type": "Warning",
             "description": "Invalid char '-' within comment tag.",
-            "row": 809,
-            "col": 0
+            "row": 307,
+            "col": 65
         },
         {
             "type": "Warning",
             "description": "Invalid char '-' within comment tag.",
-            "row": 809,
-            "col": 0
+            "row": 308,
+            "col": 75
         },
         {
             "type": "Warning",
             "description": "Invalid char '-' within comment tag.",
-            "row": 809,
-            "col": 0
+            "row": 415,
+            "col": 1106
         }
     ],
     "sections": [

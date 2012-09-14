@@ -41,8 +41,6 @@ public class WikiTextParser implements ParserReader {
 
     private WikiTextParserHandler handler;
 
-    private final ParserLocation location = new InternalParserLocation();
-
     public WikiTextParser(WikiTextParserHandler h) {
         if(h == null) throw new NullPointerException("Handler must be not null.");
         handler = h;
@@ -93,7 +91,7 @@ public class WikiTextParser implements ParserReader {
                     row, col,
                     "Error while parsing document.", e
             );
-            handler.parseError(wtpe, this.location);
+            handler.parseError(wtpe, new DefaultParserLocation(this.row, this.col) );
             throw wtpe;
         } finally {
             handler.endDocument();
@@ -139,7 +137,7 @@ public class WikiTextParser implements ParserReader {
 
     @Override
     public ParserLocation getLocation() {
-        return location;
+        return new DefaultParserLocation(this.row, this.col);
     }
 
     private boolean assertChar(char c) throws IOException {
@@ -353,12 +351,12 @@ public class WikiTextParser implements ParserReader {
                 mark();
                 handler.endTemplate(templateHeader);
             } else {
-                handler.parseWarning("Unexpected '}' while parsing template.", this.location);
+                handler.parseWarning("Unexpected '}' while parsing template.", new DefaultParserLocation(this.row, this.col));
                 reset();
             }
         } else {
             mark();
-            handler.parseWarning("Expected template closure, found [" + lastRead + "]", this.location);
+            handler.parseWarning("Expected template closure, found [" + lastRead + "]", new DefaultParserLocation(this.row, this.col));
         }
     }
 
@@ -550,18 +548,6 @@ public class WikiTextParser implements ParserReader {
             }
         }
         return -1;
-    }
-
-    class InternalParserLocation implements ParserLocation {
-        @Override
-        public int getRow() {
-            return WikiTextParser.this.row;
-        }
-
-        @Override
-        public int getCol() {
-            return WikiTextParser.this.col;
-        }
     }
 
 }
