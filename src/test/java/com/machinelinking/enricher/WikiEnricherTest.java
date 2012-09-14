@@ -13,6 +13,8 @@ import org.xml.sax.SAXException;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 /**
@@ -21,29 +23,39 @@ import java.util.concurrent.ExecutionException;
 public class WikiEnricherTest {
 
     @Test
-    public void testEnrich()
+    public void testEnrich1()
     throws IOException, SAXException, WikiTextParserException, InterruptedException, ExecutionException {
+        verifyEnrich(new URL("http://en.wikipedia.org/wiki/Albert_Einstein"), true, "/Page1.wikitext", "/Enrichment1.json");
+    }
+
+    @Test
+    public void testEnrich2()
+    throws IOException, SAXException, WikiTextParserException, InterruptedException, ExecutionException {
+        verifyEnrich(new URL("http://en.wikipedia.org/wiki/London"), false, "/Enrichment2.wikitext", "/Enrichment2.json");
+    }
+
+    private void verifyEnrich(URL entity, boolean online, String wikiInFile, String jsonOutExpectedFile)
+    throws IOException, WikiTextParserException, SAXException, ExecutionException, InterruptedException {
+        final List<Flag> flags = new ArrayList<>();
+        if(online) flags.add(WikiEnricherFactory.Online);
+        flags.add(WikiEnricherFactory.Validate);
+        flags.add(WikiEnricherFactory.Extractors);
+        flags.add(WikiEnricherFactory.Splitters);
+        flags.add(WikiEnricherFactory.Structure);
         final WikiEnricher enricher = WikiEnricherFactory
-                .getInstance()
-                .createFullyConfiguredInstance(
-                        WikiEnricherFactory.Online,
-                        WikiEnricherFactory.Validate,
-                        WikiEnricherFactory.Extractors,
-                        WikiEnricherFactory.Splitters,
-                        WikiEnricherFactory.Structure
-                );
+                .getInstance().createFullyConfiguredInstance( flags.toArray( new Flag[flags.size()] ) );
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final JSONSerializer serializer = new JSONSerializer(baos);
         enricher.enrichEntity(
                 new DocumentSource(
-                    new URL("http://en.wikipedia.org/wiki/Albert_Einstein"),
-                    this.getClass().getResourceAsStream("/Page1.wikitext")
+                    entity,
+                    this.getClass().getResourceAsStream(wikiInFile)
                 ),
                 serializer
         );
-        System.out.println("OUT " + baos);
+        System.out.println("JSON Output: " + baos);
         final JsonNode expectedJSON = JSONUtils.parseJSON(
-                this.getClass().getResourceAsStream("/Enrichment.json")
+                this.getClass().getResourceAsStream(jsonOutExpectedFile)
         );
         final JsonNode extractedJSON = JSONUtils.parseJSON(baos.toString());
         resetConfidence(expectedJSON);
@@ -53,7 +65,7 @@ public class WikiEnricherTest {
 
     private void resetConfidence(JsonNode node) {
         final ObjectNode onode = (ObjectNode) node.get("freebase");
-        onode.put("relevance:score", 0);
+        if(onode != null) onode.put("relevance:score", 0);
     }
 
 }

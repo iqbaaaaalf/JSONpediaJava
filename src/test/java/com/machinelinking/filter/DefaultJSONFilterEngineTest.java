@@ -52,7 +52,7 @@ public class DefaultJSONFilterEngineTest {
     }
 
     private JsonNode loadJSON() throws IOException {
-        return JSONUtils.parseJSON(this.getClass().getResourceAsStream("/Enrichment.json"));
+        return JSONUtils.parseJSON(this.getClass().getResourceAsStream("/Enrichment1.json"));
     }
 
     private void checkFilter(JSONFilter filter) throws IOException {

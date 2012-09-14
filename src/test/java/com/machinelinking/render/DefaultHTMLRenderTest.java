@@ -17,7 +17,7 @@ public class DefaultHTMLRenderTest {
     public void testRender() throws IOException {
         final JsonNode node = JSONUtils.parseJSON(
                 this.getClass().getResourceAsStream(
-                        "/Enrichment.json"
+                        "/Enrichment1.json"
                 )
         );
         final String html = DefaultHTMLRenderFactory.getInstance().renderToHTML(node);

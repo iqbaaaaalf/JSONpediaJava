@@ -1,13 +1,9 @@
 package com.machinelinking.pagestruct;
 
-import com.machinelinking.extractor.Issue;
 import com.machinelinking.parser.DefaultWikiTextParserHandler;
-import com.machinelinking.parser.ParserLocation;
 import com.machinelinking.serializer.Serializer;
 
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 /**
@@ -18,8 +14,6 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     private final Serializer serializer;
 
     private final Stack<DocumentElement> documentStack = new Stack<>();
-
-    private List<Issue> issues;
 
     protected WikiTextSerializerHandler(Serializer serializer) {
         if (serializer == null) throw new NullPointerException();
@@ -37,18 +31,6 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.fieldValue("url"   , document.toExternalForm());
         serializer.field("structure");
         serializer.openList();
-    }
-
-    @Override
-    public void parseWarning(String msg, ParserLocation location) {
-        if(issues == null) issues = new ArrayList<>();
-        issues.add( new Issue(Issue.Type.Warning, msg, location) );
-    }
-
-    @Override
-    public void parseError(Exception e, ParserLocation location) {
-        if(issues == null) issues = new ArrayList<>();
-        issues.add( new Issue(Issue.Type.Error, e.getMessage(), location) );
     }
 
     @Override
@@ -247,9 +229,6 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     @Override
     public void endDocument() {
         serializer.closeList();
-
-        serializeIssues(serializer);
-
         serializer.closeObject();
         serializer.flush();
     }
@@ -288,19 +267,6 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
             serializer.closeObject();
         }
         serializer.closeList();
-    }
-
-    private void serializeIssues(Serializer serializer) {
-        if(issues == null) return;
-        serializer.field("issues");
-        for(Issue issue : issues) {
-            serializer.openObject();
-            serializer.fieldValue("__type", issue.getType().name());
-            serializer.fieldValue("msg", issue.getDescription());
-            serializer.fieldValue("row", issue.getRow());
-            serializer.fieldValue("col", issue.getRow());
-            serializer.closeObject();
-        }
     }
 
     class DocumentElement {
