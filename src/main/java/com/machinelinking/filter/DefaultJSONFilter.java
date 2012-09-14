@@ -30,6 +30,11 @@ public class DefaultJSONFilter implements JSONFilter {
     }
 
     @Override
+    public boolean isEmpty() {
+        return criterias.isEmpty();
+    }
+
+    @Override
     public String print() {
         final StringBuilder sb = new StringBuilder();
         for(Map.Entry<String,String> criteria : criterias.entrySet()) {

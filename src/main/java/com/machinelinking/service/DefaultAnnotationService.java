@@ -36,6 +36,8 @@ import java.util.regex.Pattern;
 @Path("/annotate")
 public class DefaultAnnotationService implements AnnotationService {
 
+    public static final boolean FORMAT_JSON = false;
+
     public enum OutputFormat {
         json,
         html
@@ -133,13 +135,13 @@ public class DefaultAnnotationService implements AnnotationService {
         final JSONSerializer jsonSerializer;
         final JSONFilter filter;
         try {
-            filter = filterExp == null ? null : DefaultJSONFilterEngine.parseFilter(filterExp);
+            filter = DefaultJSONFilterEngine.parseFilter(filterExp);
         } catch (Exception e) {
             throw new RuntimeException("Error while parsing filter.", e);
         }
         try {
             baos.reset();
-            jsonSerializer = new JSONSerializer( JSONUtils.createJSONGenerator(baos, true) );
+            jsonSerializer = new JSONSerializer( JSONUtils.createJSONGenerator(baos, FORMAT_JSON) );
         } catch (IOException ioe) {
             throw new RuntimeException("Error while initializing serializer.", ioe);
         }
@@ -161,12 +163,9 @@ public class DefaultAnnotationService implements AnnotationService {
     }
 
     private String printOutFilterResult(JsonNode json, JSONFilter filter) throws IOException {
-        final JsonNode[] filteredNodes = DefaultJSONFilterEngine.applyFilter(
-                json,
-                filter
-        );
+        final JsonNode[] filteredNodes = DefaultJSONFilterEngine.applyFilter(json, filter);
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        final JsonGenerator generator = JSONUtils.createJSONGenerator(baos, true);
+        final JsonGenerator generator = JSONUtils.createJSONGenerator(baos, FORMAT_JSON);
         generator.writeStartObject();
         generator.writeObjectField("filter", filter.print());
         generator.writeFieldName("result");
@@ -193,13 +192,13 @@ public class DefaultAnnotationService implements AnnotationService {
         switch(format) {
             case json:
                 return Response.ok(
-                        filter == null ? json : printOutFilterResult(json, filter),
+                        filter.isEmpty() ? json : printOutFilterResult(json, filter),
                         MediaType.APPLICATION_JSON + ";charset=UTF-8"
                 ).build();
             case html:
                 final JsonNode rootNode = JSONUtils.parseJSON(json); // TODO: avoid this!
                 final JsonNode target   =
-                        filter == null ? rootNode : JSONUtils.parseJSON( printOutFilterResult(rootNode, filter) ); // TODO: avoid this!
+                        filter.isEmpty() ? rootNode : JSONUtils.parseJSON( printOutFilterResult(rootNode, filter) ); // TODO: avoid this!
                 return Response.ok(
                         DefaultHTMLRenderFactory.getInstance().renderToHTML(target),
                         MediaType.TEXT_HTML + ";charset=UTF-8"

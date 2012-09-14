@@ -11,6 +11,8 @@ public interface JSONFilter {
 
     boolean match(JsonNode node);
 
+    boolean isEmpty();
+
     String print();
 
 }
