@@ -7,7 +7,7 @@ import com.machinelinking.extractor.LinkExtractor;
 import com.machinelinking.extractor.ReferenceExtractor;
 import com.machinelinking.extractor.SectionExtractor;
 import com.machinelinking.extractor.TemplateMappingExtractor;
-import com.machinelinking.extractor.TemplateNameExtractor;
+import com.machinelinking.extractor.TemplateOccurrencesExtractor;
 import com.machinelinking.splitter.InfoboxSplitter;
 import com.machinelinking.splitter.TableSplitter;
 
@@ -92,7 +92,7 @@ public class WikiEnricherFactory {
             enricher.addExtractor(new SectionExtractor());
             enricher.addExtractor(new LinkExtractor());
             enricher.addExtractor(new ReferenceExtractor());
-            enricher.addExtractor(new TemplateNameExtractor());
+            enricher.addExtractor(new TemplateOccurrencesExtractor());
             enricher.addExtractor(new CategoryExtractor());
             if (flagsSet.contains(Offline)) {
                 enricher.addExtractor(new TemplateMappingExtractor());
