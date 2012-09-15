@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xml:lang="en"
       xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:dc="http://purl.org/dc/elements/1.1/">
+      xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>JSONpedia</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
     <style type="text/css">
         select {
             width: 70px;
         }
-        .example-dropdown {
-            width: 200px;
+        .label {
+            margin: 1px;
         }
     </style>
 
@@ -19,6 +20,7 @@
     <script type="text/javascript" src="bootstrap-modal.js"></script>
     <script type="text/javascript" src="bootstrap-button.js"></script>
     <script type="text/javascript" src="bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="bootstrap-tooltip.js"></script>
     <script type="application/javascript">
         $(function ($) {
             $.each($('.app-base-uri'), function () {
@@ -30,6 +32,7 @@
 
             $('.example-button').click(function(e){
                 $('#get-uri').val( $(e.target).html() );
+                $('#get-submit').removeClass('disabled');
                 e.preventDefault();
             })
 
@@ -42,9 +45,10 @@
                     for(var j=0; j < defaultz.length; j++) {
                         if(defaultz[j].id == declared[i].id) active = true;
                     }
-                    addFlagButton( $('#get-flags') , 'get-'  + declared[i].id, declared[i].id );
-                    addFlagButton( $('#post-flags'), 'post-' + declared[i].id, declared[i].id );
+                    addFlagButton( $('#get-flags') , 'get-'  + declared[i].id, declared[i].id, declared[i].description );
+                    addFlagButton( $('#post-flags'), 'post-' + declared[i].id, declared[i].id, declared[i].description );
                 }
+                $("[rel=tooltip]").tooltip();
             });
 
             $('#get-uri').keyup(function(){
@@ -99,8 +103,8 @@
             $(id).modal('show');
         }
 
-        function addFlagButton($root, id, name) {
-            $root.append('<button id="' + id + '" class="btn btn-primary' + (active ? ' active' : '') + '">'+ name + '</button>');
+        function addFlagButton($root, id, name, description) {
+            $root.append('<button id="' + id + '" rel="tooltip" data-placement="top" data-original-title="' + description + '" class="btn btn-primary' + (active ? ' active' : '') + '">'+ name + '</button>');
             $('#' + id).data('default-flag', active);
         }
 
@@ -137,21 +141,23 @@
             <select id="get-format">
                 <option value="json" selected="selected">json</option>
                 <option value="html">html</option>
-            </select>/<input id="get-uri" type="text" style="width:400px" value="en:Albert_Einstein" placeholder="http://en.wikipedia.org/Albert_Einstein OR en:Albert_Einstein"/>
-            <span class="btn-group" style="float: right">
-              <button class="btn example-dropdown">Examples</button>
-              <button class="btn dropdown-toggle" data-toggle="dropdown">
-                  <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu example-dropdown">
-                  <li><a class="example-button" href="#">en:Albert_Einstein</a></li>
-                  <li><a class="example-button" href="#">en:Cetacea</a></li>
-                  <li><a class="example-button" href="#">en:Carbon</a></li>
-                  <li><a class="example-button" href="#">en:Italy</a></li>
-                  <li><a class="example-button" href="#">en:London</a></li>
-                  <li><a class="example-button" href="#">en:Philosophy</a></li>
-                  <li><a class="example-button" href="#">en:Star_Wars</a></li>
-              </ul>
+            </select>/
+            <span class="btn-group">
+                <span>
+                    <input id="get-uri" type="text" style="width:400px" value="en:Albert_Einstein" placeholder="http://en.wikipedia.org/Albert_Einstein OR en:Albert_Einstein"/>
+                    <button class="btn dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                       <ul class="dropdown-menu example-dropdown">
+                           <li><a class="example-button" href="#">en:Albert_Einstein</a></li>
+                           <li><a class="example-button" href="#">en:Cetacea</a></li>
+                           <li><a class="example-button" href="#">en:Carbon</a></li>
+                           <li><a class="example-button" href="#">en:Italy</a></li>
+                           <li><a class="example-button" href="#">en:London</a></li>
+                           <li><a class="example-button" href="#">en:Philosophy</a></li>
+                           <li><a class="example-button" href="#">en:Star_Wars</a></li>
+                       </ul>
+                </span>
             </span>
         </div>
     </div>
@@ -159,13 +165,13 @@
     <div class="control-group">
         <label class="control-label">Filter:</label>
         <div class="controls">
-            <input class="span11" id="get-filter" type="text" style="width:300px" value=""/>
+            <input class="span11" id="get-filter" type="text" style="width:300px" placeholder="__type:link"/>
         </div>
     </div>
 
-    <div class="control-group">
-        <div id="get-flags" class="btn-group" data-toggle="buttons-checkbox">
-        </div>
+    <div class="control-group bs-docs-examples">
+        <a href="#processors-doc"><span class="label pull-left well">Processors:</span></a>
+        <span id="get-flags" class="btn-group" data-toggle="buttons-checkbox"></span>
     </div>
 
     <div class="form-actions">
@@ -184,7 +190,7 @@
             <select id="post-format" name="format">
                 <option value="json" selected="selected">json</option>
                 <option value="html">html</option>
-            </select>/<input id="post-uri" type="text" style="width:400px" value="en:Albert_Einstein" placeholder="http://en.wikipedia.org/wiki/Fake_Page OR en:Fake_Page"/>
+            </select>/<input id="post-uri" type="text" style="width:400px" value="en:Fake_Page" placeholder="http://en.wikipedia.org/wiki/Fake_Page OR en:Fake_Page"/>
         </div>
     </div>
 
@@ -196,6 +202,7 @@
     </div>
 
     <div class="control-group">
+        <a href="#processors-doc"><span class="label pull-left well">Processors:</span></a>
         <div id="post-flags" class="btn-group" data-toggle="buttons-checkbox">
         </div>
     </div>
@@ -231,6 +238,8 @@
 </div>
 
 <hr/>
+
+<!--------- BEGIN API Reference --------->
 
 <h2>Quick API reference</h2>
 
@@ -350,6 +359,26 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
     </tr>
     </tbody>
 </table>
+
+<!--------- END API   Reference --------->
+
+<!--------- BEGIN Processors Documentation --------->
+<a name="processors-doc"></a>
+<h2>Processors Documentation</h2>
+
+<h3>Extractors</h3>
+<span class="label label-important">TODO</span>
+<h3>OnlineExtractors</h3>
+<span class="label label-important">TODO</span>
+<h3>Splitters</h3>
+<span class="label label-important">TODO</span>
+<h3>Structure</h3>
+<span class="label label-important">TODO</span>
+<h3>Validate</h3>
+<span class="label label-important">TODO</span>
+
+<hr/>
+<!--------- END   Processors Documentation --------->
 
 <p><b>JSONpedia v.${project.version} (${implementation.build.tstamp})</b></p>
 
