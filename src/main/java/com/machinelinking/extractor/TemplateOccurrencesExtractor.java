@@ -13,7 +13,7 @@ public class TemplateOccurrencesExtractor extends Extractor {
     private Map<String,Integer> templateOccurrences = new HashMap<>();
 
     public TemplateOccurrencesExtractor() {
-        super("template");
+        super("templates");
     }
 
     @Override

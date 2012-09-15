@@ -27,7 +27,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     };
 
     private static final String[] EXPECTED_OBJECT_NODES = {
-        "template-occurrences", "categories"
+        "templates", "categories"
     };
 
     private static final String TARGET_RESOURCE;
@@ -69,9 +69,9 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
         );
         Assert.assertEquals(
                 JSONUtils.parseJSON(
-                        "{\"filter\":\"__type=template\\nname=Death date and age\\n\"," +
-                        "\"result\":[{\"__type\":\"template\",\"name\":\"Death date and age\"," +
-                        "\"content\":{\"df\":[\"yes\"],\"1955\":null,\"4\":null,\"18\":null,\"1879\":null,\"3\":null,\"14\":null}}]}"
+                        "{\"filter\":\"__type=template\\nname=Death date and age\\n\",\"result\":" +
+                        "[{\"__type\":\"template\",\"name\":\"Death date and age\"," +
+                        "\"content\":{\"df\":[\"yes\",\"1955\",\"4\",\"18\",\"1879\",\"3\",\"14\"]}}]}"
                 ).toString(),
                 node.toString()
         );
@@ -102,12 +102,12 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     private void checkJSONResponse(JsonNode node) {
         for (String expectedNode : EXPECTED_ARRAY_NODES) {
             final JsonNode content = node.get(expectedNode);
-            Assert.assertNotNull(content);
+            Assert.assertNotNull("Cannot find object node: " + expectedNode, content);
             Assert.assertTrue("Invalid content for " + expectedNode, content.isArray());
         }
         for (String expectedNode : EXPECTED_OBJECT_NODES) {
             final JsonNode content = node.get(expectedNode);
-            Assert.assertNotNull(content);
+            Assert.assertNotNull("Cannot find object node: " + expectedNode, content);
             Assert.assertTrue("Invalid content for " + expectedNode, content.isObject());
         }
     }
