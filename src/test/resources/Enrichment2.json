@@ -25275,8 +25275,8 @@
             "description": ""
         }
     ],
-    "template-occurrences": {
-        "__type": "template_occurrences",
+    "template": {
+        "__type": "templates",
         "occurrences": {
             "Portal": 1,
             "London commuter belt": 1,

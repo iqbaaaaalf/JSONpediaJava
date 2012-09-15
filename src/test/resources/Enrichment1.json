@@ -11357,8 +11357,8 @@
             "description": ""
         }
     ],
-    "template-occurrences": {
-        "__type": "template_occurrences",
+    "template": {
+        "__type": "templates",
         "occurrences": {
             "div col": 1,
             "Birth date": 1,
@@ -11483,7 +11483,7 @@
         ]
     },
     "template-mapping": {
-        "type": "mapping-collection",
+        "__type": "template-mapping",
         "mapping-collection": [
             {
                 "type": "mapping",
@@ -11532,7 +11532,7 @@
             "id": "/wikipedia/images/commons_id/925243"
         },
         "name": "Albert Einstein",
-        "relevance:score": 178.9317169189453,
+        "relevance:score": 178.92831420898438,
         "type": [
             {
                 "id": "/common/topic",

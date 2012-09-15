@@ -13,7 +13,7 @@ public class TemplateOccurrencesExtractor extends Extractor {
     private Map<String,Integer> templateOccurrences = new HashMap<>();
 
     public TemplateOccurrencesExtractor() {
-        super("template-occurrences");
+        super("template");
     }
 
     @Override
@@ -27,7 +27,7 @@ public class TemplateOccurrencesExtractor extends Extractor {
     @Override
     public void flushContent(Serializer serializer) {
         serializer.openObject();
-        serializer.fieldValue("__type", "template_occurrences");
+        serializer.fieldValue("__type", "templates");
         serializer.field("occurrences");
         serializer.openObject();
         for(Map.Entry<String,Integer> entry : templateOccurrences.entrySet()) {
