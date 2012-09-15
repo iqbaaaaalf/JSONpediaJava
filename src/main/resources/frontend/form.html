@@ -367,15 +367,259 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
 <h2>Processors Documentation</h2>
 
 <h3>Extractors</h3>
-<span class="label label-important">TODO</span>
+<p>Extract specific parts of content from the WikiText document stream.</p>
+
+<h4>SectionExtractor</h4>
+<p>Extracts the list of sections defined within the document.</p>
+<pre class="well">
+"sections": [
+        {
+            "title": "Biography",
+            "level": 0
+        },
+        <span class="label label-warning">...</span>
+]
+</pre>
+
+<h4>LinkExtractor</h4>
+<p>Extracts the list of links (to external resources) defined within the document.</p>
+<pre class="well">
+"links": [
+    {
+        "link": "http://books.google.com/books?id=jJl2JAqvoSAC&pg=PA41",
+        "description": "Chapter 2, p. 41"
+    },
+    <span class="label label-warning">...</span>
+]
+</pre>
+
+<h4>ReferenceExtractor</h4>
+<p>Extracts the list of links (to Wikipedia internal resources) defined within the document.</p>
+<pre class="well">
+"references": [
+    {
+        "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUlm",
+        "description": ""
+    },
+    <span class="label label-warning">...</span>
+]
+</pre>
+
+<h4>TemplateOccurrencesExtractor</h4>
+<p>Extracts statistics on template occurrences into the document.</p>
+<pre class="well">
+"templates": {
+    "__type": "templates",
+    "occurrences": {
+        "Birth date": 1,
+        "Block quote": 1,
+        "Portal": 1,
+        "Use dmy dates": 1,
+        "Link GA": 2,
+        "cite web": 12,
+        <span class="label label-warning">...</span>
+    }
+}
+</pre>
+
+<h4>CategoriesExtractor</h4>
+<p>Extracts the list of all declared categories into the document.</p>
+<pre class="well">
+"categories": {
+    "__type": "category",
+    "content": [
+        "1879 births",
+        "1955 deaths",
+        "20th-century American people",
+        "20th-century German people",
+        "20th-century Swiss people",
+        "American humanitarians",
+        "American inventors",
+        "American pacifists",
+        "American people of German-Jewish descent",
+        "Cosmologists",
+        <span class="label label-warning">...</span>
+    ]
+}
+</pre>
+
 <h3>OnlineExtractors</h3>
-<span class="label label-important">TODO</span>
+<p><strong>Online Extractors</strong> are specific <strong>Extractors</strong> which rely on external services.</p>
+
+<h4>TemplateMappingExtractor</h4>
+<p>Extracts the RDF ontology mapping defined in DBpedia.org for every detected template into the document.</p>
+<pre class="well">
+"template-mapping": {
+     "type": "mapping-collection",
+     "mapping-collection": [
+         {
+             "__type": "template-mapping",
+             "name": "TemplateMapping",
+             "mapping": {
+                 "notable_students": "notableStudent",
+                 "death_date": "deathDate",
+                 "birth_date": "birthDate",
+                 "birth_name": "birthName",
+                 "citizenship": "citizenship",
+                 <span class="label label-warning">...</span>
+             },
+             "issues": null
+         }
+     ]
+ }
+</pre>
+
+<h4>FreebaseExtractor</h4>
+<p>Extracts the definition of the entity represented by the document from Freebase</p>
+<pre class="well">
+"freebase": {
+    "alias": [
+        "Einstein",
+        "albert_einstein",
+        "Einstein, Albert"
+    ],
+    "article": {
+        "id": "/m/0jd6"
+    },
+    "guid": "#9202a8c04000641f800000000000417c",
+    "id": "/en/albert_einstein",
+    "image": {
+        "id": "/wikipedia/images/commons_id/925243"
+    },
+    "name": "Albert Einstein",
+    "relevance:score": 178.9317169189453,
+    "type": [
+        {
+            "id": "/influence/influence_node",
+            "name": "Influence Node"
+        },
+        {
+            "id": "/award/award_winner",
+            "name": "Award Winner"
+        },
+        {
+            "id": "/business/board_member",
+            "name": "Organization leader"
+        },
+        <span class="label label-warning">...</span>
+    ],
+    <span class="label label-warning">...</span>
+}
+</pre>
+
 <h3>Splitters</h3>
-<span class="label label-important">TODO</span>
+<p>A <strong>Splitter</strong> cuts sub-trees of the <strong>WikiText DOM</strong> containing specific sections.</p>
+
+<h4>InfoboxSplitter</h4>
+<p>Splits out from the parsing DOM the <strong>Infobox</strong> section.</p>
+<pre class="well">
+"infobox-splitter": [
+    {
+        "__type": "template",
+        "name": "Infobox scientist",
+        "content": {
+            "name": [
+                "Albert Einstein"
+            ],
+            "image": [
+                "Einstein 1921 portrait2.jpg"
+            ],
+            "caption": [
+                "Albert Einstein in 1921"
+            ],
+            "birth_date": [
+                {
+                    "__type": "template",
+                    "name": "Birth date",
+                    "content": {
+                        "3": null,
+                        "14": null,
+                        "1879": null,
+                        "df": [
+                            "yes"
+                        ]
+                    }
+                }
+            ],
+            "birth_place": [
+                {
+                    "__type": "reference",
+                    "label": "Ulm",
+                    "description": ""
+                },
+                <span class="label label-warning">...</span>
+            ],
+            <span class="label label-warning">...</span>
+        }
+    }
+]
+</pre>
+
+<h4>TableSplitter</h4>
+<p>Splits out from the parsing DOM all the <strong>table</strong> sections.</p>
+<pre class="well">
+"table-splitter": [
+     {
+         "__type": "table",
+         "content": [
+             "class=wikitable",
+             <span class="label label-warning">...</span>
+             {
+                 "__type": "head_cell",
+                 "content": [
+                     "Area of focus"
+                 ]
+             },
+             {
+                 "__type": "head_cell",
+                 "content": [
+                     "Received"
+                 ]
+             },
+             <span class="label label-warning">...</span>
+             {
+                 "__type": "head_cell",
+                 "content": [
+                     "Significance"
+                 ]
+             },
+             {
+                 "__type": "body_cell",
+                 "content": [
+                     "''On a Heuristic Viewpoint Concerning the Production and Transformation of Light''"
+                 ]
+             },
+             {
+                 "__type": "body_cell",
+                 "content": [
+                     {
+                         "__type": "reference",
+                         "label": "Photoelectric effect",
+                         "description": ""
+                     }
+                 ]
+             },
+             <span class="label label-warning">...</span>
+         ]
+    }
+]
+</pre>
+
 <h3>Structure</h3>
-<span class="label label-important">TODO</span>
+<p>Prints out the <strong>entire DOM tree</strong> representation.</p>
+
 <h3>Validate</h3>
-<span class="label label-important">TODO</span>
+<p>Prints out all warnings and errors detected during the document parsing.</p>
+<pre class="well">
+"issues": [
+    {
+        "type": "Warning",
+        "description": "Invalid char '<' within comment tag.",
+        "row": 307,
+        "col": 65
+    }
+]
+</pre>
 
 <hr/>
 <!--------- END   Processors Documentation --------->
