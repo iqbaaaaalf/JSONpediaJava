@@ -19852,26 +19852,7 @@
             ]
         }
     ],
-    "issues": [
-        {
-            "type": "Warning",
-            "description": "Invalid char '-' within comment tag.",
-            "row": 307,
-            "col": 65
-        },
-        {
-            "type": "Warning",
-            "description": "Invalid char '-' within comment tag.",
-            "row": 308,
-            "col": 75
-        },
-        {
-            "type": "Warning",
-            "description": "Invalid char '-' within comment tag.",
-            "row": 415,
-            "col": 1106
-        }
-    ],
+    "issues": null,
     "sections": [
         {
             "title": " History ",
