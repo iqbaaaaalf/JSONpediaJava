@@ -27,11 +27,11 @@ public class WikiEnricherFactory {
     public static final String FLAG_SEPARATOR = ",";
     public static final String FLAG_NEGATION  = "-";
 
-    public static final Flag Online     = new DefaultFlag("Online"    , "Enable external services enrichment");
-    public static final Flag Validate   = new DefaultFlag("Validate"  , "Validate parser content");
-    public static final Flag Extractors = new DefaultFlag("Extractors", "Apply Extractors on content");
-    public static final Flag Splitters  = new DefaultFlag("Splitters" , "Apply Splitters on content");
-    public static final Flag Structure  = new DefaultFlag("Structure" , "Produces the full WikiText Structure expressed in JSON");
+    public static final Flag Extractors = new DefaultFlag("Extractors"      , "Enable all available data extractors");
+    public static final Flag Online     = new DefaultFlag("OnlineExtractors", "Enable extracors based on online services (Freebase, DBpedia)");
+    public static final Flag Splitters  = new DefaultFlag("Splitters"       , "Enable all available splitters");
+    public static final Flag Structure  = new DefaultFlag("Structure"       , "Produces the full WikiText DOM");
+    public static final Flag Validate   = new DefaultFlag("Validate"        , "Validate WikiText content");
 
     private static WikiEnricherFactory instance;
 
