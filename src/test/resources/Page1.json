@@ -6,7 +6,7 @@
             "__type": "template",
             "name": "Redirect",
             "content": {
-                "Einstein": []
+                "Einstein": null
             }
         },
         {
@@ -42,9 +42,9 @@
                         "__type": "template",
                         "name": "Birth date",
                         "content": {
-                            "3": [],
-                            "14": [],
-                            "1879": [],
+                            "3": null,
+                            "14": null,
+                            "1879": null,
                             "df": [
                                 "yes"
                             ]
@@ -75,12 +75,12 @@
                         "__type": "template",
                         "name": "Death date and age",
                         "content": {
-                            "3": [],
-                            "4": [],
-                            "14": [],
-                            "18": [],
-                            "1879": [],
-                            "1955": [],
+                            "3": null,
+                            "4": null,
+                            "14": null,
+                            "18": null,
+                            "1879": null,
+                            "1955": null,
                             "df": [
                                 "yes"
                             ]
@@ -105,13 +105,13 @@
                     {
                         "__type": "open_tag",
                         "name": "br",
-                        "attributes": []
+                        "attributes": null
                     },
                     {
                         "__type": "template",
                         "name": "nowrap",
                         "content": {
-                            "[[Elsa Löwenthal]], née Einstein, (1919–1936)": []
+                            "[[Elsa Löwenthal]], née Einstein, (1919–1936)": null
                         }
                     }
                 ],
@@ -379,7 +379,7 @@
                                             {
                                                 "__type": "open_tag",
                                                 "name": "ref",
-                                                "attributes": []
+                                                "attributes": null
                                             },
                                             {
                                                 "__type": "template",
@@ -586,17 +586,17 @@
             "__type": "template",
             "name": "IPAc-en",
             "content": {
-                "icon": [],
-                "ˈ": [],
-                "æ": [],
-                "l": [],
-                "b": [],
-                "ər": [],
-                "t": [],
-                "_": [],
-                "aɪ": [],
-                "n": [],
-                "s": []
+                "icon": null,
+                "ˈ": null,
+                "æ": null,
+                "l": null,
+                "b": null,
+                "ər": null,
+                "t": null,
+                "_": null,
+                "aɪ": null,
+                "n": null,
+                "s": null
             }
         },
         ";",
@@ -604,9 +604,9 @@
             "__type": "template",
             "name": "IPA-de",
             "content": {
-                "ˈalbɐt ˈaɪnʃtaɪn": [],
-                "lang": [],
-                "Albert_Einstein_german.ogg": []
+                "ˈalbɐt ˈaɪnʃtaɪn": null,
+                "lang": null,
+                "Albert_Einstein_german.ogg": null
             }
         },
         "; 14 March 1879&nbsp;– 18 April 1955) was a German",
@@ -642,7 +642,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -688,13 +688,13 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "cite doi",
             "content": {
-                "10.1098/rsbm.1955.0005": []
+                "10.1098/rsbm.1955.0005": null
             }
         },
         {
@@ -717,7 +717,7 @@
                     {
                         "__type": "open_tag",
                         "name": "sup",
-                        "attributes": []
+                        "attributes": null
                     },
                     "2",
                     {
@@ -731,13 +731,13 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "David Bodanis, ''E&nbsp;=&nbsp;mc",
         {
             "__type": "open_tag",
             "name": "sup",
-            "attributes": []
+            "attributes": null
         },
         "2",
         {
@@ -770,7 +770,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1079,7 +1079,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "link",
@@ -1258,7 +1258,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Einstein's Alleged Handicaps: The Legend of the Dull-Witted Child Who Grew Up to Be a Genius",
         {
@@ -1274,7 +1274,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1346,7 +1346,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "M. Talmey, ''The Relativity Theory Simplified and the Formative Period of its Inventor''. Falcon Press, 1932, pp. 161–164.",
         {
@@ -1376,7 +1376,7 @@
             "__type": "template",
             "name": "#tag:ref",
             "content": {
-                "\"Albert's intellectual growth was strongly fostered at home. His mother, a talented pianist, ensured the children's musical education. His father regularly read Schiller and Heine aloud to the family. Uncle Jakob challenged Albert with mathematical problems, which he solved with 'a deep feeling of happiness'.\" More significant were the weekly visits of Max Talmud from 1889 through 1894 during which time he introduced the boy to popular scientific texts that brought to an end a short-lived religious phase, convincing him that 'a lot in the Bible stories could not be true'. A textbook of plane geometry that he quickly worked through led on to an avid self-study of mathematics, several years ahead of the school curriculum.\n\n<ref>[http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf Einstein as a Student], pp. 3–5.</ref>": [],
+                "\"Albert's intellectual growth was strongly fostered at home. His mother, a talented pianist, ensured the children's musical education. His father regularly read Schiller and Heine aloud to the family. Uncle Jakob challenged Albert with mathematical problems, which he solved with 'a deep feeling of happiness'.\" More significant were the weekly visits of Max Talmud from 1889 through 1894 during which time he introduced the boy to popular scientific texts that brought to an end a short-lived religious phase, convincing him that 'a lot in the Bible stories could not be true'. A textbook of plane geometry that he quickly worked through led on to an avid self-study of mathematics, several years ahead of the school curriculum.\n\n<ref>[http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf Einstein as a Student], pp. 3–5.</ref>": null,
                 "group": [
                     "fn"
                 ]
@@ -1422,7 +1422,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "A. Fölsing, ''Albert Einstein'', 1997, pp. 30-31.",
         {
@@ -1439,7 +1439,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "''Albert Einstein Collected Papers'', vol. 1 (1987), doc. 5.",
         {
@@ -1449,7 +1449,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1507,7 +1507,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "A. Fölsing, ''Albert Einstein'', 1997, pp. 36-37.",
         {
@@ -1530,15 +1530,15 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "Harvtxt",
             "content": {
-                "1993": [],
-                "Highfield": [],
-                "Carter": [],
+                "1993": null,
+                "Highfield": null,
+                "Carter": null,
                 "pp": [
                     "21,31,56–57"
                 ]
@@ -1564,7 +1564,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "A. Fölsing, ''Albert Einstein'', 1997, p. 40.",
         {
@@ -1581,7 +1581,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "''Collected Papers'', vol. 1, docs. 21-27.",
         {
@@ -1604,7 +1604,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "''Albert Einstein Collected Papers'', vol. 1, 1987, doc. 67.",
         {
@@ -1615,7 +1615,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Troemel-Ploetz, D., \"Mileva Einstein-Marić: The Woman Who Did Einstein's Mathematics\", ''Women's Studies Int. Forum'', vol. 13, no. 5, pp. 415–432, 1990.",
         {
@@ -1625,7 +1625,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1665,7 +1665,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Pais, A., ''Einstein Lived Here'', Oxford University Press, 1994, pp. 1–29.",
         {
@@ -1675,7 +1675,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Holton, G., ''Einstein, History, and Other Passions'', Harvard University Press, 1996, pp. 177–193.",
         {
@@ -1685,7 +1685,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Stachel, J., ''Einstein from B to Z'', Birkhäuser, 2002, pp. 26–38; 39–55.",
         {
@@ -1700,7 +1700,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Martinez, A. A., “Handling evidence in history: the case of Einstein’s Wife.” ''School Science Review'', 86 (316), March 2005, pp. 49–56.",
         {
@@ -1721,7 +1721,7 @@
             "__type": "template",
             "name": "main",
             "content": {
-                "Einstein family": []
+                "Einstein family": null
             }
         },
         "In early 1902, Einstein and",
@@ -1746,7 +1746,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "This conclusion is from Einstein's correspondence with Marić. Lieserl is first mentioned in a letter from Einstein to Marić (who was staying with her family in or near Novi Sad at the time of Lieserl's birth) dated 4 February 1902 (''Collected papers'' Vol. 1, document 134).",
         {
@@ -1757,7 +1757,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Albrecht Fölsing (1998). Albert Einstein: A Biography. Penguin Group. ISBN 0140237194; see section I, II,",
         {
@@ -1807,9 +1807,9 @@
             "__type": "template",
             "name": "Harvnb",
             "content": {
-                "1993": [],
-                "Highfield": [],
-                "Carter": [],
+                "1993": null,
+                "Highfield": null,
+                "Carter": null,
                 "p": [
                     "216"
                 ]
@@ -1851,7 +1851,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Now the",
         {
@@ -1896,7 +1896,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Peter Galison, \"Einstein's Clocks: The Question of Time\" ''Critical Inquiry'' 26, no. 2 (Winter 2000): 355–389.",
         {
@@ -1913,7 +1913,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Gallison, Question of Time.",
         {
@@ -1971,7 +1971,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2029,14 +2029,14 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "harv",
             "content": {
-                "Einstein": [],
-                "1905b": []
+                "Einstein": null,
+                "1905b": null
             }
         },
         {
@@ -2046,7 +2046,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2100,7 +2100,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2182,7 +2182,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2233,7 +2233,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Heilbron, 2000, p. 84.",
         {
@@ -2351,7 +2351,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Hoffman and Dukas (1972), pp. 145–148; Fölsing (1997), pp. 499–508.",
         {
@@ -2390,7 +2390,7 @@
             "__type": "template",
             "name": "rp",
             "content": {
-                "307": []
+                "307": null
             }
         },
         "\"Of all the people I have met, I like the Japanese most, as they are modest, intelligent, considerate, and have a feel for art.\"",
@@ -2412,7 +2412,7 @@
             "__type": "template",
             "name": "rp",
             "content": {
-                "308": []
+                "308": null
             }
         },
         "On his return voyage, he also visited",
@@ -2438,7 +2438,7 @@
                         "__type": "template",
                         "name": "rp",
                         "content": {
-                            "308": []
+                            "308": null
                         }
                     },
                     "."
@@ -2574,7 +2574,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2645,7 +2645,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Hoffman, B. (1972), pp. 165–171; Fölsing, A. (1997), pp. 666–677.",
         {
@@ -2832,7 +2832,7 @@
             "__type": "template",
             "name": "rp",
             "content": {
-                "630": []
+                "630": null
             }
         },
         {
@@ -2865,7 +2865,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Diehl, Sarah J.; Moltz, James Clay.",
         {
@@ -2900,7 +2900,7 @@
             "__type": "template",
             "name": "rp",
             "content": {
-                "110": []
+                "110": null
             }
         },
         "In 1954, a year before his death, Einstein said to his old friend,",
@@ -2945,7 +2945,7 @@
         {
             "__type": "open_tag",
             "name": "blockquote",
-            "attributes": []
+            "attributes": null
         },
         "What makes the new arrival devoted to this country is the democratic trait among the people. No one humbles himself before another person or class. . . American youth has the good fortune not to have its outlook troubled by outworn traditions.",
         {
@@ -2961,13 +2961,13 @@
             "__type": "template",
             "name": "rp",
             "content": {
-                "432": []
+                "432": null
             }
         },
         {
             "__type": "inline_tag",
             "name": "blockquote",
-            "attributes": []
+            "attributes": null
         },
         "As a member of the",
         {
@@ -2991,7 +2991,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Fred Jerome, Rodger Taylor (2006) ''",
         {
@@ -3008,7 +3008,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Calaprice, Alice (2005) ''",
         {
@@ -3105,14 +3105,14 @@
             "__type": "template",
             "name": "rp",
             "content": {
-                "522": []
+                "522": null
             }
         },
         "However, Einstein declined, and wrote in his response that he was \"deeply moved\", and \"at once saddened and ashamed\" that he could not accept it:",
         {
             "__type": "open_tag",
             "name": "blockquote",
-            "attributes": []
+            "attributes": null
         },
         "All my life I have dealt with objective matters, hence I lack both the natural aptitude and the experience to deal properly with people and to exercise official function. I am the more distressed over these circumstances because my relationship with the Jewish people became my strongest human tie once I achieved complete clarity about our precarious position among the nations of the world.''",
         {
@@ -3128,7 +3128,7 @@
             "__type": "template",
             "name": "rp",
             "content": {
-                "522": []
+                "522": null
             }
         },
         {
@@ -3143,7 +3143,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -3197,7 +3197,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -3225,7 +3225,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -3262,7 +3262,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -3335,7 +3335,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -3367,7 +3367,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -3409,7 +3409,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -3530,10 +3530,10 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Annus Mirabilis papers": [],
-                "Photoelectric effect": [],
-                "Special theory of relativity": [],
-                "Mass–energy equivalence": []
+                "Annus Mirabilis papers": null,
+                "Photoelectric effect": null,
+                "Special theory of relativity": null,
+                "Mass–energy equivalence": null
             }
         },
         "The ''",
@@ -3608,7 +3608,7 @@
                         {
                             "__type": "open_tag",
                             "name": "small",
-                            "attributes": []
+                            "attributes": null
                         },
                         "(translated)",
                         {
@@ -3682,7 +3682,7 @@
                         {
                             "__type": "open_tag",
                             "name": "ref",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "template",
@@ -3722,7 +3722,7 @@
                         {
                             "__type": "open_tag",
                             "name": "ref",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "template",
@@ -3850,7 +3850,7 @@
                         {
                             "__type": "open_tag",
                             "name": "ref",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "template",
@@ -3899,7 +3899,7 @@
                         {
                             "__type": "open_tag",
                             "name": "ref",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "template",
@@ -3984,7 +3984,7 @@
                                     {
                                         "__type": "open_tag",
                                         "name": "sup",
-                                        "attributes": []
+                                        "attributes": null
                                     },
                                     "2",
                                     {
@@ -4014,9 +4014,9 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Statistical mechanics": [],
-                "thermal fluctuations": [],
-                "statistical physics": []
+                "Statistical mechanics": null,
+                "thermal fluctuations": null,
+                "statistical physics": null
             }
         },
         "Albert Einstein's first paper",
@@ -4121,7 +4121,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "History of special relativity": []
+                "History of special relativity": null
             }
         },
         "Einstein's \"Zur Elektrodynamik bewegter Körper\" (\"On the Electrodynamics of Moving Bodies\") was received on 30 June 1905 and published 26 September of that same year. It reconciles",
@@ -4170,14 +4170,14 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "harv",
             "content": {
-                "Einstein": [],
-                "1905d": []
+                "Einstein": null,
+                "1905d": null
             }
         },
         {
@@ -4194,7 +4194,7 @@
         {
             "__type": "open_tag",
             "name": "sup",
-            "attributes": []
+            "attributes": null
         },
         "2",
         {
@@ -4255,7 +4255,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "For a discussion of the reception of relativity theory around the world, and the different controversies it encountered, see the articles in Thomas F. Glick, ed., ''The Comparative Reception of Relativity'' (Kluwer Academic Publishers, 1987), ISBN 9027724989.",
         {
@@ -4265,7 +4265,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -4310,15 +4310,15 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Photon": [],
-                "Quantum": []
+                "Photon": null,
+                "Quantum": null
             }
         },
         "In a 1905 paper,",
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -4406,14 +4406,14 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "harv",
             "content": {
-                "Einstein": [],
-                "1905a": []
+                "Einstein": null,
+                "1905a": null
             }
         },
         ".",
@@ -4430,7 +4430,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Einstein solid": []
+                "Einstein solid": null
             }
         },
         "In 1907 Einstein proposed a model of matter where each atom in a lattice structure is an independent harmonic oscillator. In the Einstein model, each atom oscillates independently&nbsp;– a series of equally spaced quantized states for each oscillator. Einstein was aware that getting the frequency of the actual oscillations would be different, but he nevertheless proposed this theory because it was a particularly clear demonstration that quantum mechanics could solve the specific heat problem in classical mechanics.",
@@ -4443,7 +4443,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "link",
@@ -4470,7 +4470,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Old quantum theory": []
+                "Old quantum theory": null
             }
         },
         "Throughout the 1910s, quantum mechanics expanded in scope to cover many different systems. After",
@@ -4546,7 +4546,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Wave–particle duality": []
+                "Wave–particle duality": null
             }
         },
         "Although the patent office promoted Einstein to Technical Examiner Second Class in 1906, he had not given up on academia. In 1908, he became a ''",
@@ -4565,7 +4565,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -4653,7 +4653,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Critical opalescence": []
+                "Critical opalescence": null
             }
         },
         "Einstein returned to the problem of thermodynamic fluctuations, giving a treatment of the density variations in a fluid at its critical point. Ordinarily the density fluctuations are controlled by the second derivative of the free energy with respect to the density. At the critical point, this derivative is zero, leading to large fluctuations. The effect of density fluctuations is that light of all wavelengths is scattered, making the fluid look milky white. Einstein relates this to",
@@ -4699,7 +4699,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Zero-point energy": []
+                "Zero-point energy": null
             }
         },
         "Einstein's physical intuition led him to note that Planck's oscillator energies had an incorrect zero point. He modified Planck's hypothesis by stating that the lowest energy state of an oscillator is equal to",
@@ -4707,8 +4707,8 @@
             "__type": "template",
             "name": "frac",
             "content": {
-                "1": [],
-                "2": []
+                "1": null,
+                "2": null
             }
         },
         "''hf'', to half the energy spacing between levels. This argument, which was made in 1913 in collaboration with",
@@ -4727,16 +4727,16 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "History of general relativity": []
+                "History of general relativity": null
             }
         },
         {
             "__type": "template",
             "name": "See also",
             "content": {
-                "Principle of equivalence": [],
-                "Theory of relativity": [],
-                "Einstein field equations": []
+                "Principle of equivalence": null,
+                "Theory of relativity": null,
+                "Einstein field equations": null
             }
         },
         {
@@ -4790,7 +4790,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "Albert Einstein,",
         {
@@ -4843,7 +4843,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Hole argument": []
+                "Hole argument": null
             }
         },
         "While developing general relativity, Einstein became confused about the",
@@ -4856,7 +4856,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "van Dongen, Jeroen (2010) ''Einstein's Unification'' Cambridge University Press, p.23.",
         {
@@ -4872,7 +4872,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Cosmology": []
+                "Cosmology": null
             }
         },
         "In 1917, Einstein applied the General theory of relativity to model the structure of the universe as a whole. He wanted the universe to be eternal and unchanging, but this type of universe is not consistent with relativity. To fix this, Einstein modified the general theory by introducing a new notion, the",
@@ -4891,14 +4891,14 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "Harv",
             "content": {
-                "Einstein": [],
-                "1917a": []
+                "Einstein": null,
+                "1917a": null
             }
         },
         {
@@ -4938,7 +4938,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Schrödinger equation": []
+                "Schrödinger equation": null
             }
         },
         "In 1917, at the height of his work on relativity, Einstein published an article in ''Physikalische Zeitschrift'' that proposed the possibility of",
@@ -4963,14 +4963,14 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "Harv",
             "content": {
-                "Einstein": [],
-                "1917b": []
+                "Einstein": null,
+                "1917b": null
             }
         },
         {
@@ -5005,7 +5005,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Bose–Einstein condensation": []
+                "Bose–Einstein condensation": null
             }
         },
         "In 1924, Einstein received a description of a",
@@ -5036,14 +5036,14 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "Harv",
             "content": {
-                "1924": [],
-                "Einstein": []
+                "1924": null,
+                "Einstein": null
             }
         },
         {
@@ -5090,7 +5090,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -5144,7 +5144,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Stress-energy-momentum pseudotensor": []
+                "Stress-energy-momentum pseudotensor": null
             }
         },
         "General relativity includes a dynamical spacetime, so it is difficult to see how to identify the conserved energy and momentum.",
@@ -5205,7 +5205,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Classical unified field theories": []
+                "Classical unified field theories": null
             }
         },
         "Following his research on general relativity, Einstein entered into a series of attempts to generalize his geometric theory of gravitation to include electromagnetism as another aspect of a single entity. In 1950, he described his \"",
@@ -5224,14 +5224,14 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "Harv",
             "content": {
-                "1950": [],
-                "Einstein": []
+                "1950": null,
+                "Einstein": null
             }
         },
         {
@@ -5272,7 +5272,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Wormhole": []
+                "Wormhole": null
             }
         },
         "Einstein collaborated with others to produce a model of a",
@@ -5297,7 +5297,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Einstein–Cartan theory": []
+                "Einstein–Cartan theory": null
             }
         },
         "In order to incorporate spinning point particles into general relativity, the affine connection needed to be generalized to include an antisymmetric part, called the",
@@ -5316,7 +5316,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Einstein–Infeld–Hoffmann equations": []
+                "Einstein–Infeld–Hoffmann equations": null
             }
         },
         "The theory of general relativity has a fundamental law &nbsp;– the",
@@ -5347,7 +5347,7 @@
             "__type": "template",
             "name": "main",
             "content": {
-                "Einstein's unsuccessful investigations": []
+                "Einstein's unsuccessful investigations": null
             }
         },
         "Einstein conducted other investigations that were unsuccessful and abandoned. These pertain to",
@@ -5414,7 +5414,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Einstein–de Haas effect": []
+                "Einstein–de Haas effect": null
             }
         },
         "Einstein and De Haas demonstrated that magnetization is due to the motion of electrons, nowadays known to be the spin. In order to show this, they reversed the magnetization in an iron bar suspended on a",
@@ -5462,7 +5462,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -5505,7 +5505,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Einstein refrigerator": []
+                "Einstein refrigerator": null
             }
         },
         "In 1926, Einstein and his former student",
@@ -5563,7 +5563,7 @@
             "__type": "template",
             "name": "US patent",
             "content": {
-                "1781541": []
+                "1781541": null
             }
         },
         "was awarded to Albert Einstein and Leó Szilárd for the refrigerator. Their invention was not immediately put into commercial production, as the most promising of their patents were quickly bought up by the Swedish company",
@@ -5576,7 +5576,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "In September 2008 it was reported that Malcolm McCulloch of Oxford University was heading a three-year project to develop more robust appliances that could be used in locales lacking electricity, and that his team had completed a prototype Einstein refrigerator. He was quoted as saying that improving the design and changing the types of gases used might allow the design's efficiency to be quadrupled.",
         {
@@ -5622,7 +5622,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Bohr–Einstein debates": []
+                "Bohr–Einstein debates": null
             }
         },
         {
@@ -5694,14 +5694,14 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "Harv",
             "content": {
-                "1969": [],
-                "Einstein": []
+                "1969": null,
+                "Einstein": null
             }
         },
         ". A reprint of this book was published by Edition Erbrich in 1982, ISBN 388682005X",
@@ -5712,14 +5712,14 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "Harv",
             "content": {
-                "1935": [],
-                "Einstein": []
+                "1935": null,
+                "Einstein": null
             }
         },
         {
@@ -5735,7 +5735,7 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "EPR paradox": []
+                "EPR paradox": null
             }
         },
         "In 1935, Einstein returned to the question of quantum mechanics. He considered how a measurement on one of two entangled particles would affect the other. He noted, along with his collaborators, that by performing different measurements on the distant particle, either of position or momentum, different properties of the entangled partner could be discovered without disturbing it in any way.\n\nHe then used a hypothesis of",
@@ -5766,8 +5766,8 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Albert Einstein's political views": [],
-                "Albert Einstein's religious views": []
+                "Albert Einstein's political views": null,
+                "Albert Einstein's religious views": null
             }
         },
         {
@@ -5844,7 +5844,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -5881,7 +5881,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -5937,7 +5937,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -5970,14 +5970,14 @@
             "__type": "template",
             "name": "Main",
             "content": {
-                "Albert Einstein in popular culture": []
+                "Albert Einstein in popular culture": null
             }
         },
         "In the period before World War II, Einstein was so well known in America that he would be stopped on the street by people wanting him to explain \"that theory\". He finally figured out a way to handle the incessant inquiries. He told his inquirers \"Pardon me, sorry! Always I am mistaken for Professor Einstein.\"",
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "The New Yorker April 1939 pg 69",
         {
@@ -5993,7 +5993,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "link",
@@ -6072,7 +6072,7 @@
             "__type": "template",
             "name": "main",
             "content": {
-                "Einstein's awards and honors": []
+                "Einstein's awards and honors": null
             }
         },
         "Einstein received numerous awards and honors, including the",
@@ -6545,8 +6545,8 @@
                         "__type": "template",
                         "name": "harvid",
                         "content": {
-                            "1935": [],
-                            "Einstein": []
+                            "1935": null,
+                            "Einstein": null
                         }
                     }
                 ],
@@ -6849,9 +6849,9 @@
             "__type": "template",
             "name": "Portal",
             "content": {
-                "Biography": [],
-                "Physics": [],
-                "Science": []
+                "Biography": null,
+                "Physics": null,
+                "Science": null
             }
         },
         {
@@ -7069,7 +7069,7 @@
             "__type": "template",
             "name": "Sister project links",
             "content": {
-                "Albert Einstein": [],
+                "Albert Einstein": null,
                 "s": [
                     "Author:Albert Einstein"
                 ]
@@ -7177,7 +7177,7 @@
             "__type": "template",
             "name": "GoogleScholar",
             "content": {
-                "qc6CJjYAAAAJ": []
+                "qc6CJjYAAAAJ": null
             }
         },
         "*",
@@ -7248,7 +7248,7 @@
                 "NAME": [
                     "Einstein, Albert"
                 ],
-                "ALTERNATIVE NAMES": [],
+                "ALTERNATIVE NAMES": null,
                 "SHORT DESCRIPTION": [
                     {
                         "__type": "reference",
@@ -7633,70 +7633,70 @@
             "__type": "template",
             "name": "Link GA",
             "content": {
-                "de": []
+                "de": null
             }
         },
         {
             "__type": "template",
             "name": "Link GA",
             "content": {
-                "no": []
+                "no": null
             }
         },
         {
             "__type": "template",
             "name": "Link FA",
             "content": {
-                "als": []
+                "als": null
             }
         },
         {
             "__type": "template",
             "name": "Link FA",
             "content": {
-                "an": []
+                "an": null
             }
         },
         {
             "__type": "template",
             "name": "Link FA",
             "content": {
-                "fi": []
+                "fi": null
             }
         },
         {
             "__type": "template",
             "name": "Link FA",
             "content": {
-                "he": []
+                "he": null
             }
         },
         {
             "__type": "template",
             "name": "Link FA",
             "content": {
-                "hr": []
+                "hr": null
             }
         },
         {
             "__type": "template",
             "name": "Link FA",
             "content": {
-                "ru": []
+                "ru": null
             }
         },
         {
             "__type": "template",
             "name": "Link FA",
             "content": {
-                "sr": []
+                "sr": null
             }
         },
         {
             "__type": "template",
             "name": "Link FA",
             "content": {
-                "ur": []
+                "ur": null
             }
         },
         {

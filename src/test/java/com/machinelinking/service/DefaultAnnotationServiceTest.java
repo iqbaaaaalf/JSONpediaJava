@@ -71,7 +71,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
                 JSONUtils.parseJSON(
                         "{\"filter\":\"__type=template\\nname=Death date and age\\n\"," +
                         "\"result\":[{\"__type\":\"template\",\"name\":\"Death date and age\"," +
-                        "\"content\":{\"df\":[\"yes\"],\"1955\":[],\"4\":[],\"18\":[],\"1879\":[],\"3\":[],\"14\":[]}}]}"
+                        "\"content\":{\"df\":[\"yes\"],\"1955\":null,\"4\":null,\"18\":null,\"1879\":null,\"3\":null,\"14\":null}}]}"
                 ).toString(),
                 node.toString()
         );

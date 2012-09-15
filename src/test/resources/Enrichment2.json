@@ -82,7 +82,7 @@
                             },
                             "in the United Kingdom"
                         ],
-                        "settlement_type": [],
+                        "settlement_type": null,
                         "coordinates_display": [
                             "inline, title"
                         ],
@@ -228,13 +228,13 @@
                             {
                                 "__type": "inline_tag",
                                 "name": "br",
-                                "attributes": []
+                                "attributes": null
                             },
                             "&nbsp;-&nbsp;London&nbsp;Assembly",
                             {
                                 "__type": "inline_tag",
                                 "name": "br",
-                                "attributes": []
+                                "attributes": null
                             },
                             "&nbsp;-&nbsp;",
                             {
@@ -252,7 +252,7 @@
                             {
                                 "__type": "inline_tag",
                                 "name": "br",
-                                "attributes": []
+                                "attributes": null
                             },
                             {
                                 "__type": "reference",
@@ -262,7 +262,7 @@
                             {
                                 "__type": "inline_tag",
                                 "name": "br",
-                                "attributes": []
+                                "attributes": null
                             },
                             {
                                 "__type": "reference",
@@ -287,7 +287,7 @@
                             },
                             ", c. 43 AD"
                         ],
-                        "area_magnitude": [],
+                        "area_magnitude": null,
                         "area_total_sq_mi": [
                             "607"
                         ],
@@ -303,7 +303,7 @@
                             {
                                 "__type": "open_tag",
                                 "name": "ref",
-                                "attributes": []
+                                "attributes": null
                             },
                             "http://www.ons.gov.uk/ons/rel/mro/news-release/census-result-shows-increase-in-population-of-london-as-it-tops-8-million/censuslondonnr0712.html",
                             {
@@ -344,12 +344,12 @@
                             {
                                 "__type": "inline_tag",
                                 "name": "br",
-                                "attributes": []
+                                "attributes": null
                             },
                             {
                                 "__type": "open_tag",
                                 "name": "small",
-                                "attributes": []
+                                "attributes": null
                             },
                             "(June 2009 estimates)",
                             {
@@ -684,7 +684,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "E": []
+                                    "E": null
                                 }
                             },
                             ",",
@@ -692,7 +692,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "EC": []
+                                    "EC": null
                                 }
                             },
                             ",",
@@ -700,7 +700,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "N": []
+                                    "N": null
                                 }
                             },
                             ",",
@@ -708,7 +708,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "NW": []
+                                    "NW": null
                                 }
                             },
                             ",",
@@ -716,7 +716,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "SE": []
+                                    "SE": null
                                 }
                             },
                             ",",
@@ -724,7 +724,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "SW": []
+                                    "SW": null
                                 }
                             },
                             ",",
@@ -732,7 +732,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "W": []
+                                    "W": null
                                 }
                             },
                             ",",
@@ -740,7 +740,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "WC": []
+                                    "WC": null
                                 }
                             },
                             ",",
@@ -748,7 +748,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "BR": []
+                                    "BR": null
                                 }
                             },
                             ",",
@@ -756,7 +756,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "CM": []
+                                    "CM": null
                                 }
                             },
                             ",",
@@ -764,7 +764,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "CR": []
+                                    "CR": null
                                 }
                             },
                             ",",
@@ -772,7 +772,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "DA": []
+                                    "DA": null
                                 }
                             },
                             ",",
@@ -780,7 +780,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "EN": []
+                                    "EN": null
                                 }
                             },
                             ",",
@@ -788,7 +788,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "HA": []
+                                    "HA": null
                                 }
                             },
                             ",",
@@ -796,7 +796,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "IG": []
+                                    "IG": null
                                 }
                             },
                             ",",
@@ -804,7 +804,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "KT": []
+                                    "KT": null
                                 }
                             },
                             ",",
@@ -812,7 +812,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "RM": []
+                                    "RM": null
                                 }
                             },
                             ",",
@@ -820,7 +820,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "SM": []
+                                    "SM": null
                                 }
                             },
                             ",",
@@ -828,7 +828,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "TN": []
+                                    "TN": null
                                 }
                             },
                             ",",
@@ -836,7 +836,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "TW": []
+                                    "TW": null
                                 }
                             },
                             ",",
@@ -844,7 +844,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "UB": []
+                                    "UB": null
                                 }
                             },
                             ",",
@@ -852,7 +852,7 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "WD": []
+                                    "WD": null
                                 }
                             }
                         ],
@@ -888,12 +888,12 @@
                         "audio": [
                             "En-uk-London.ogg"
                         ],
-                        "ˈ": [],
-                        "l": [],
-                        "ʌ": [],
-                        "n": [],
-                        "d": [],
-                        "ən": []
+                        "ˈ": null,
+                        "l": null,
+                        "ʌ": null,
+                        "n": null,
+                        "d": null,
+                        "ən": null
                     }
                 },
                 "is the capital city of",
@@ -925,11 +925,11 @@
                     "__type": "template",
                     "name": "#tag:ref",
                     "content": {
-                        "According to the [[Eurostat": [],
-                        "European Statistical Agency]], London is the largest [[Larger Urban Zones": [],
-                        "Larger Urban Zone]] which uses [[conurbation]]s and areas of high population as its definition. A [[Largest cities of the European Union by population within city limits": [],
-                        "ranking of population]] within municipal boundaries places London first. However, the [[University of Avignon]] in France claims that Paris is first and London second when including the whole urban area and [[hinterland]], that is the [[Largest urban areas of the European Union": [],
-                        "outlying cities as well]].": [],
+                        "According to the [[Eurostat": null,
+                        "European Statistical Agency]], London is the largest [[Larger Urban Zones": null,
+                        "Larger Urban Zone]] which uses [[conurbation]]s and areas of high population as its definition. A [[Largest cities of the European Union by population within city limits": null,
+                        "ranking of population]] within municipal boundaries places London first. However, the [[University of Avignon]] in France claims that Paris is first and London second when including the whole urban area and [[hinterland]], that is the [[Largest urban areas of the European Union": null,
+                        "outlying cities as well]].": null,
                         "group": [
                             "note"
                         ]
@@ -1022,8 +1022,8 @@
                     "__type": "template",
                     "name": "Harvnb",
                     "content": {
-                        "2001": [],
-                        "Mills": [],
+                        "2001": null,
+                        "Mills": null,
                         "p": [
                             "140"
                         ]
@@ -1228,7 +1228,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -1421,7 +1421,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -1457,7 +1457,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -1487,7 +1487,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -1514,7 +1514,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -1545,7 +1545,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -1841,7 +1841,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -2251,7 +2251,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -2368,7 +2368,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "History of London": []
+                        "History of London": null
                     }
                 },
                 {
@@ -2380,7 +2380,7 @@
                     "__type": "template",
                     "name": "main",
                     "content": {
-                        "Etymology of London": []
+                        "Etymology of London": null
                     }
                 },
                 {
@@ -2408,8 +2408,8 @@
                     "__type": "template",
                     "name": "Harvnb",
                     "content": {
-                        "2001": [],
-                        "Mills": [],
+                        "2001": null,
+                        "Mills": null,
                         "p": [
                             "139"
                         ]
@@ -3034,7 +3034,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -3086,7 +3086,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -3572,7 +3572,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -3761,7 +3761,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 "The Queen's Merchants and the Revolt of the Netherlands: The End of the Antwerp Mart, Volume 2, pages 1 and 62-63, George Daniel Ramsay, Manchester University Press ND, 1986. ISBN 978-0-7190-1849-7",
                 {
@@ -3778,7 +3778,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 "The life and times of Sir Thomas Gresham, founder of the Royal Exchange: including notices of many of his contemporaries. With illustrations, Volume 2, pages 80-81, John William Burgon, E. Wilson, 1839.",
                 {
@@ -4262,7 +4262,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 "\"",
                 {
@@ -4279,7 +4279,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -4316,7 +4316,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -4350,7 +4350,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -4406,7 +4406,7 @@
                     "__type": "template",
                     "name": "quote",
                     "content": {
-                        "You find no man, at all intellectual, who is willing to leave London. No, Sir, when a man is tired of London, he is tired of life; for there is in London all that life can afford.": [],
+                        "You find no man, at all intellectual, who is willing to leave London. No, Sir, when a man is tired of London, he is tired of life; for there is in London all that life can afford.": null,
                         "[[Samuel Johnson]], 1777<ref name": [
                             "london_022>",
                             {
@@ -4500,7 +4500,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -4528,7 +4528,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -4868,9 +4868,9 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Local government in London": [],
-                        "History of local government in London": [],
-                        "List of heads of London government": []
+                        "Local government in London": null,
+                        "History of local government in London": null,
+                        "List of heads of London government": null
                     }
                 },
                 {
@@ -5074,7 +5074,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 "http://www.communities.gov.uk/documents/statistics/pdf/1911067.pdf",
                 {
@@ -5583,7 +5583,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Geography of London": []
+                        "Geography of London": null
                     }
                 },
                 {
@@ -6049,15 +6049,15 @@
                     "__type": "template",
                     "name": "Coord",
                     "content": {
-                        "26": [],
-                        "30": [],
-                        "39": [],
-                        "51": [],
-                        "N": [],
-                        "00": [],
-                        "07": [],
-                        "W": [],
-                        "type:city(7,000,000)_region:GB": []
+                        "26": null,
+                        "30": null,
+                        "39": null,
+                        "51": null,
+                        "N": null,
+                        "00": null,
+                        "07": null,
+                        "W": null,
+                        "type:city(7,000,000)_region:GB": null
                     }
                 },
                 ".",
@@ -6429,9 +6429,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1583": [],
-                        "km2": [],
-                        "sqmi": []
+                        "1583": null,
+                        "km2": null,
+                        "sqmi": null
                     }
                 },
                 ", an area which had a population of 7,172,036 in 2001 and a population density of",
@@ -6439,9 +6439,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "4542": [],
-                        "PD/km2": [],
-                        "PD/sqmi": []
+                        "4542": null,
+                        "PD/km2": null,
+                        "PD/sqmi": null
                     }
                 },
                 ". A larger area, referred to as the London Metropolitan Region or the London Metropolitan Agglomeration covers an area of",
@@ -6449,9 +6449,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "8382": [],
-                        "km2": [],
-                        "sqmi": []
+                        "8382": null,
+                        "km2": null,
+                        "sqmi": null
                     }
                 },
                 "has a population of 12,653,500 and a population density of",
@@ -6459,16 +6459,16 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1510": [],
-                        "PD/km2": [],
-                        "PD/sqmi": []
+                        "1510": null,
+                        "PD/km2": null,
+                        "PD/sqmi": null
                     }
                 },
                 ".",
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -6730,7 +6730,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -6787,7 +6787,7 @@
                     "__type": "template",
                     "name": "selfref",
                     "content": {
-                        "\"The weather in London\" redirects here. On Wikipedia, it once was long used as a deliberate example of a non-existent page in Wikipedia documentation, see [[Talk:The weather in London]] for more details.": []
+                        "\"The weather in London\" redirects here. On Wikipedia, it once was long used as a deliberate example of a non-existent page in Wikipedia documentation, see [[Talk:The weather in London]] for more details.": null
                     }
                 },
                 "London has a temperate",
@@ -6801,9 +6801,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "834": [],
-                        "mm": [],
-                        "in": [],
+                        "834": null,
+                        "mm": null,
+                        "in": null,
                         "abbr": [
                             "on"
                         ]
@@ -6820,9 +6820,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "923": [],
-                        "mm": [],
-                        "in": [],
+                        "923": null,
+                        "mm": null,
+                        "in": null,
                         "abbr": [
                             "on"
                         ]
@@ -6832,7 +6832,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -6858,10 +6858,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "-4": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "-4": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 "or rise above",
@@ -6869,10 +6869,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "14": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "14": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 ". During the winter of 2010, London experienced its lowest temperature on record (",
@@ -6880,10 +6880,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "-14": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "-14": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 ") in Northolt and the heaviest snow seen for almost two decades, a huge strain on London's transport infrastructure.\n\nSummers are generally warm and sometimes hot, the heat being boosted by the",
@@ -6897,10 +6897,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "24": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "24": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 ". On average there are 7 days a year above",
@@ -6908,10 +6908,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "30": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "30": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 "and 2 days a year above",
@@ -6919,10 +6919,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "32": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "32": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 ". Temperatures of 26 °C (80 °F) usually occur on a weekly basis from mid- June to late August.\n\nDuring the",
@@ -6936,10 +6936,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "30": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "30": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 "and 2 consecutive days where temperatures soared up to",
@@ -6947,10 +6947,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "38": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "38": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 ", leading to hundreds of heat related deaths. Rain generally occurs on around 2 out of 10 summer days. Spring and Autumn are mixed seasons and can be pleasant. On 1 October 2011, the air temperature attained",
@@ -6958,10 +6958,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "30": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "30": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 "and in April 2011 it reached",
@@ -6969,10 +6969,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "28": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "28": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 ". However in recent years both of these months have also had snowfall. Temperature extremes range from",
@@ -6980,10 +6980,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "-10": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "-10": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 "to",
@@ -6991,10 +6991,10 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "37.9": [],
-                        "°C": [],
-                        "°F": []
+                        "1": null,
+                        "37.9": null,
+                        "°C": null,
+                        "°F": null
                     }
                 },
                 ".",
@@ -7012,7 +7012,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "List of districts of London": []
+                        "List of districts of London": null
                     }
                 },
                 {
@@ -7026,7 +7026,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "big",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 "'''The City of London and the 32 London boroughs'''",
                                 {
@@ -7047,12 +7047,12 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "ol",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7066,7 +7066,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7080,7 +7080,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7094,7 +7094,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7108,7 +7108,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7122,7 +7122,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7136,7 +7136,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7150,7 +7150,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7164,7 +7164,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7178,7 +7178,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7192,7 +7192,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7206,7 +7206,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7220,7 +7220,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7234,7 +7234,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7248,7 +7248,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7262,7 +7262,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7276,7 +7276,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7324,7 +7324,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7338,7 +7338,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7352,7 +7352,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7366,7 +7366,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7380,7 +7380,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7394,7 +7394,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7408,7 +7408,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7422,7 +7422,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7436,7 +7436,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7450,7 +7450,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7464,7 +7464,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7478,7 +7478,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7492,7 +7492,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7506,7 +7506,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7520,7 +7520,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7534,7 +7534,7 @@
                                 {
                                     "__type": "open_tag",
                                     "name": "li",
-                                    "attributes": []
+                                    "attributes": null
                                 },
                                 {
                                     "__type": "reference",
@@ -7998,8 +7998,8 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Architecture of London": [],
-                        "List of tallest buildings and structures in London": []
+                        "Architecture of London": null,
+                        "List of tallest buildings and structures in London": null
                     }
                 },
                 {
@@ -8087,7 +8087,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -8524,8 +8524,8 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Parks and open spaces in London": [],
-                        "Royal Parks of London": []
+                        "Parks and open spaces in London": null,
+                        "Royal Parks of London": null
                     }
                 },
                 {
@@ -8928,9 +8928,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "320": [],
-                        "ha": [],
-                        "acre": [],
+                        "320": null,
+                        "ha": null,
+                        "acre": null,
                         "sing": [
                             "on"
                         ]
@@ -8951,7 +8951,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -9046,7 +9046,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Demography of London": []
+                        "Demography of London": null
                     }
                 },
                 {
@@ -9070,11 +9070,11 @@
                     "__type": "template",
                     "name": "as of",
                     "content": {
-                        "2007": [],
+                        "2007": null,
                         "lc": [
                             "y"
                         ],
-                        "06": [],
+                        "06": null,
                         "alt": [
                             "as of mid-2007"
                         ]
@@ -9285,9 +9285,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1579": [],
-                        "km2": [],
-                        "sqmi": []
+                        "1579": null,
+                        "km2": null,
+                        "sqmi": null
                     }
                 },
                 ". The population density is",
@@ -9295,16 +9295,16 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "4542": [],
-                        "PD/km2": [],
-                        "PD/sqmi": []
+                        "4542": null,
+                        "PD/km2": null,
+                        "PD/sqmi": null
                     }
                 },
                 ",",
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -9496,7 +9496,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Ethnic groups in London": []
+                        "Ethnic groups in London": null
                     }
                 },
                 "According to the",
@@ -9708,7 +9708,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -9799,7 +9799,7 @@
                     "__type": "template",
                     "name": "as of",
                     "content": {
-                        "2010": [],
+                        "2010": null,
                         "lc": [
                             "y"
                         ]
@@ -10006,7 +10006,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Religion in London": []
+                        "Religion in London": null
                     }
                 },
                 {
@@ -10037,85 +10037,85 @@
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "Christian": [],
-                                    "purple": [],
-                                    "58.2": []
+                                    "Christian": null,
+                                    "purple": null,
+                                    "58.2": null
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "[[Irreligion": [],
-                                    "No religion]]": [],
-                                    "violet": [],
-                                    "15.8": []
+                                    "[[Irreligion": null,
+                                    "No religion]]": null,
+                                    "violet": null,
+                                    "15.8": null
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "Religion not stated": [],
-                                    "black": [],
-                                    "8.7": []
+                                    "Religion not stated": null,
+                                    "black": null,
+                                    "8.7": null
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "Muslim": [],
-                                    "Green": [],
-                                    "8.5": []
+                                    "Muslim": null,
+                                    "Green": null,
+                                    "8.5": null
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "[[Hinduism": [],
-                                    "Hindu]]": [],
-                                    "Orange": [],
-                                    "4.1": []
+                                    "[[Hinduism": null,
+                                    "Hindu]]": null,
+                                    "Orange": null,
+                                    "4.1": null
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "Jewish": [],
-                                    "Blue": [],
-                                    "2.1": []
+                                    "Jewish": null,
+                                    "Blue": null,
+                                    "2.1": null
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "[[Sikhism": [],
-                                    "Sikh]]": [],
-                                    "yellow": [],
-                                    "1.5": []
+                                    "[[Sikhism": null,
+                                    "Sikh]]": null,
+                                    "yellow": null,
+                                    "1.5": null
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "[[Buddhism": [],
-                                    "Buddhist]]": [],
-                                    "Gold": [],
-                                    "0.8": []
+                                    "[[Buddhism": null,
+                                    "Buddhist]]": null,
+                                    "Gold": null,
+                                    "0.8": null
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "Other": [],
-                                    "grey": [],
-                                    "0.2": []
+                                    "Other": null,
+                                    "grey": null,
+                                    "0.2": null
                                 }
                             }
                         ]
@@ -10929,8 +10929,8 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Economy of London": [],
-                        "Media in London": []
+                        "Economy of London": null,
+                        "Media in London": null
                     }
                 },
                 {
@@ -11380,7 +11380,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -11448,7 +11448,7 @@
                 {
                     "__type": "open_tag",
                     "name": "sup",
-                    "attributes": []
+                    "attributes": null
                 },
                 "2",
                 {
@@ -11459,7 +11459,7 @@
                 {
                     "__type": "open_tag",
                     "name": "sup",
-                    "attributes": []
+                    "attributes": null
                 },
                 "2",
                 {
@@ -11470,7 +11470,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -11506,7 +11506,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -11680,7 +11680,7 @@
                     "__type": "template",
                     "name": "PDFlink",
                     "content": {
-                        "{{cite web": [],
+                        "{{cite web": null,
                         "url": [
                             "http://corporate.visitlondon.com/ems/downloads/8112london101.pdf"
                         ],
@@ -11720,7 +11720,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -11825,8 +11825,8 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Transport in London": [],
-                        "Infrastructure in London": []
+                        "Transport in London": null,
+                        "Infrastructure in London": null
                     }
                 },
                 "Transport is one of the four main areas of policy administered by the Mayor of London,",
@@ -12214,7 +12214,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -12260,7 +12260,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -13582,9 +13582,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "195.5": [],
-                        "km": [],
-                        "mi": [],
+                        "195.5": null,
+                        "km": null,
+                        "mi": null,
                         "abbr": [
                             "on"
                         ]
@@ -13806,9 +13806,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "10.6": [],
-                        "mi/h": [],
-                        "km/h": [],
+                        "10.6": null,
+                        "mi/h": null,
+                        "km/h": null,
                         "abbr": [
                             "on"
                         ]
@@ -13874,7 +13874,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 "Santos, Georgina, Kenneth Button, and Roger G. Noll. \"London Congestion Charging/Comments.\" Brookings-Wharton Papers on Urban Affairs.15287084 (2008): 177,177–234.",
                 {
@@ -13885,7 +13885,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 "Table 3 in Santos, Georgina, Kenneth Button, and Roger G. Noll. \"London Congestion Charging/Comments.\" Brookings-Wharton Papers on Urban Affairs.15287084 (2008): 177,177–234.",
                 {
@@ -13901,7 +13901,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Education in London": []
+                        "Education in London": null
                     }
                 },
                 {
@@ -14003,7 +14003,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -14292,7 +14292,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -14402,7 +14402,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -14552,7 +14552,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -14727,7 +14727,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Culture of London": []
+                        "Culture of London": null
                     }
                 },
                 {
@@ -14821,8 +14821,8 @@
                     "__type": "template",
                     "name": "See also",
                     "content": {
-                        "List of annual events in London": [],
-                        "West End theatre": []
+                        "List of annual events in London": null,
+                        "West End theatre": null
                     }
                 },
                 {
@@ -15033,9 +15033,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "mi": [],
-                        "km": []
+                        "1": null,
+                        "mi": null,
+                        "km": null
                     }
                 },
                 "long Upper Street, extending northwards from",
@@ -15099,9 +15099,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": [],
-                        "mi": [],
-                        "km": []
+                        "1": null,
+                        "mi": null,
+                        "km": null
                     }
                 },
                 "long, making it the longest shopping street in the United Kingdom. Oxford Street is home to vast numbers of retailers and",
@@ -15405,11 +15405,11 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "London in fiction": [],
-                        "London in film": [],
-                        "List of films set in London": [],
-                        "List of television shows set in London": [],
-                        "London Television Archive": []
+                        "London in fiction": null,
+                        "London in film": null,
+                        "List of films set in London": null,
+                        "List of television shows set in London": null,
+                        "London Television Archive": null
                     }
                 },
                 {
@@ -16578,7 +16578,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Sport in London": []
+                        "Sport in London": null
                     }
                 },
                 {
@@ -16782,7 +16782,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -17488,9 +17488,9 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "26.2": [],
-                        "mi": [],
-                        "km": []
+                        "26.2": null,
+                        "mi": null,
+                        "km": null
                     }
                 },
                 "course around the city,",
@@ -17605,7 +17605,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "List of twin towns in the United Kingdom#London": [],
+                        "List of twin towns in the United Kingdom#London": null,
                         "l1": [
                             "List of towns and cities twinned with London"
                         ]
@@ -17674,7 +17674,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Colombia": []
+                        "Colombia": null
                     }
                 },
                 {
@@ -17687,7 +17687,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Bolivia": []
+                        "Bolivia": null
                     }
                 },
                 {
@@ -17700,7 +17700,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Peru": []
+                        "Peru": null
                     }
                 },
                 {
@@ -17713,7 +17713,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Germany": []
+                        "Germany": null
                     }
                 },
                 {
@@ -17759,7 +17759,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "India": []
+                        "India": null
                     }
                 },
                 {
@@ -17816,7 +17816,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "South Africa": []
+                        "South Africa": null
                     }
                 },
                 {
@@ -17828,7 +17828,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -17869,7 +17869,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Malaysia": []
+                        "Malaysia": null
                     }
                 },
                 {
@@ -17882,7 +17882,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Kuwait": []
+                        "Kuwait": null
                     }
                 },
                 {
@@ -17895,7 +17895,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Russia": []
+                        "Russia": null
                     }
                 },
                 {
@@ -17918,7 +17918,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "United States": []
+                        "United States": null
                     }
                 },
                 {
@@ -17930,7 +17930,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -17977,7 +17977,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Norway": []
+                        "Norway": null
                     }
                 },
                 {
@@ -17990,7 +17990,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Bangladesh": []
+                        "Bangladesh": null
                     }
                 },
                 {
@@ -18003,7 +18003,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "China": []
+                        "China": null
                     }
                 },
                 {
@@ -18015,7 +18015,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -18056,7 +18056,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "South Korea": []
+                        "South Korea": null
                     }
                 },
                 {
@@ -18069,7 +18069,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Iran": []
+                        "Iran": null
                     }
                 },
                 {
@@ -18101,7 +18101,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Algeria": []
+                        "Algeria": null
                     }
                 },
                 {
@@ -18114,7 +18114,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Azerbaijan": []
+                        "Azerbaijan": null
                     }
                 },
                 {
@@ -18127,7 +18127,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "China": []
+                        "China": null
                     }
                 },
                 {
@@ -18139,7 +18139,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -18180,7 +18180,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Romania": []
+                        "Romania": null
                     }
                 },
                 {
@@ -18193,7 +18193,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Argentina": []
+                        "Argentina": null
                     }
                 },
                 {
@@ -18206,7 +18206,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "India": []
+                        "India": null
                     }
                 },
                 {
@@ -18229,7 +18229,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Bangladesh": []
+                        "Bangladesh": null
                     }
                 },
                 {
@@ -18241,7 +18241,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -18282,7 +18282,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Turkey": []
+                        "Turkey": null
                     }
                 },
                 {
@@ -18295,7 +18295,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "United States": []
+                        "United States": null
                     }
                 },
                 {
@@ -18307,7 +18307,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -18345,7 +18345,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "India": []
+                        "India": null
                     }
                 },
                 {
@@ -18358,7 +18358,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "France": []
+                        "France": null
                     }
                 },
                 {
@@ -18370,7 +18370,7 @@
                 {
                     "__type": "open_tag",
                     "name": "ref",
-                    "attributes": []
+                    "attributes": null
                 },
                 {
                     "__type": "template",
@@ -18399,7 +18399,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Montenegro": []
+                        "Montenegro": null
                     }
                 },
                 {
@@ -18412,7 +18412,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Italy": []
+                        "Italy": null
                     }
                 },
                 {
@@ -18425,7 +18425,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Bulgaria": []
+                        "Bulgaria": null
                     }
                 },
                 {
@@ -18438,7 +18438,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Japan": []
+                        "Japan": null
                     }
                 },
                 {
@@ -18451,7 +18451,7 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Croatia": []
+                        "Croatia": null
                     }
                 },
                 {
@@ -18474,7 +18474,7 @@
                     "__type": "template",
                     "name": "Portal",
                     "content": {
-                        "London": []
+                        "London": null
                     }
                 },
                 "*",
@@ -18506,7 +18506,7 @@
                     "__type": "template",
                     "name": "Reflist",
                     "content": {
-                        "30em": []
+                        "30em": null
                     }
                 },
                 {
@@ -18636,7 +18636,7 @@
                     "__type": "template",
                     "name": "osmrelation-inline",
                     "content": {
-                        "175342": []
+                        "175342": null
                     }
                 },
                 "*",
@@ -18644,8 +18644,8 @@
                     "__type": "template",
                     "name": "wikia",
                     "content": {
-                        "london": [],
-                        "The London Wiki": []
+                        "london": null,
+                        "The London Wiki": null
                     }
                 },
                 {
@@ -18781,42 +18781,42 @@
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "eu": []
+                        "eu": null
                     }
                 },
                 {
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "hr": []
+                        "hr": null
                     }
                 },
                 {
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "nn": []
+                        "nn": null
                     }
                 },
                 {
                     "__type": "template",
                     "name": "Link GA",
                     "content": {
-                        "da": []
+                        "da": null
                     }
                 },
                 {
                     "__type": "template",
                     "name": "Link GA",
                     "content": {
-                        "de": []
+                        "de": null
                     }
                 },
                 {
                     "__type": "template",
                     "name": "Link GA",
                     "content": {
-                        "no": []
+                        "no": null
                     }
                 },
                 {
@@ -25411,7 +25411,7 @@
                     },
                     "in the United Kingdom"
                 ],
-                "settlement_type": [],
+                "settlement_type": null,
                 "coordinates_display": [
                     "inline, title"
                 ],
@@ -25557,13 +25557,13 @@
                     {
                         "__type": "inline_tag",
                         "name": "br",
-                        "attributes": []
+                        "attributes": null
                     },
                     "&nbsp;-&nbsp;London&nbsp;Assembly",
                     {
                         "__type": "inline_tag",
                         "name": "br",
-                        "attributes": []
+                        "attributes": null
                     },
                     "&nbsp;-&nbsp;",
                     {
@@ -25581,7 +25581,7 @@
                     {
                         "__type": "inline_tag",
                         "name": "br",
-                        "attributes": []
+                        "attributes": null
                     },
                     {
                         "__type": "reference",
@@ -25591,7 +25591,7 @@
                     {
                         "__type": "inline_tag",
                         "name": "br",
-                        "attributes": []
+                        "attributes": null
                     },
                     {
                         "__type": "reference",
@@ -25616,7 +25616,7 @@
                     },
                     ", c. 43 AD"
                 ],
-                "area_magnitude": [],
+                "area_magnitude": null,
                 "area_total_sq_mi": [
                     "607"
                 ],
@@ -25632,7 +25632,7 @@
                     {
                         "__type": "open_tag",
                         "name": "ref",
-                        "attributes": []
+                        "attributes": null
                     },
                     "http://www.ons.gov.uk/ons/rel/mro/news-release/census-result-shows-increase-in-population-of-london-as-it-tops-8-million/censuslondonnr0712.html",
                     {
@@ -25673,12 +25673,12 @@
                     {
                         "__type": "inline_tag",
                         "name": "br",
-                        "attributes": []
+                        "attributes": null
                     },
                     {
                         "__type": "open_tag",
                         "name": "small",
-                        "attributes": []
+                        "attributes": null
                     },
                     "(June 2009 estimates)",
                     {
@@ -26013,7 +26013,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "E": []
+                            "E": null
                         }
                     },
                     ",",
@@ -26021,7 +26021,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "EC": []
+                            "EC": null
                         }
                     },
                     ",",
@@ -26029,7 +26029,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "N": []
+                            "N": null
                         }
                     },
                     ",",
@@ -26037,7 +26037,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "NW": []
+                            "NW": null
                         }
                     },
                     ",",
@@ -26045,7 +26045,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "SE": []
+                            "SE": null
                         }
                     },
                     ",",
@@ -26053,7 +26053,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "SW": []
+                            "SW": null
                         }
                     },
                     ",",
@@ -26061,7 +26061,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "W": []
+                            "W": null
                         }
                     },
                     ",",
@@ -26069,7 +26069,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "WC": []
+                            "WC": null
                         }
                     },
                     ",",
@@ -26077,7 +26077,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "BR": []
+                            "BR": null
                         }
                     },
                     ",",
@@ -26085,7 +26085,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "CM": []
+                            "CM": null
                         }
                     },
                     ",",
@@ -26093,7 +26093,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "CR": []
+                            "CR": null
                         }
                     },
                     ",",
@@ -26101,7 +26101,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "DA": []
+                            "DA": null
                         }
                     },
                     ",",
@@ -26109,7 +26109,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "EN": []
+                            "EN": null
                         }
                     },
                     ",",
@@ -26117,7 +26117,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "HA": []
+                            "HA": null
                         }
                     },
                     ",",
@@ -26125,7 +26125,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "IG": []
+                            "IG": null
                         }
                     },
                     ",",
@@ -26133,7 +26133,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "KT": []
+                            "KT": null
                         }
                     },
                     ",",
@@ -26141,7 +26141,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "RM": []
+                            "RM": null
                         }
                     },
                     ",",
@@ -26149,7 +26149,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "SM": []
+                            "SM": null
                         }
                     },
                     ",",
@@ -26157,7 +26157,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "TN": []
+                            "TN": null
                         }
                     },
                     ",",
@@ -26165,7 +26165,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "TW": []
+                            "TW": null
                         }
                     },
                     ",",
@@ -26173,7 +26173,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "UB": []
+                            "UB": null
                         }
                     },
                     ",",
@@ -26181,7 +26181,7 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "WD": []
+                            "WD": null
                         }
                     }
                 ],
@@ -26214,7 +26214,7 @@
                         {
                             "__type": "open_tag",
                             "name": "big",
-                            "attributes": []
+                            "attributes": null
                         },
                         "'''The City of London and the 32 London boroughs'''",
                         {
@@ -26235,12 +26235,12 @@
                         {
                             "__type": "open_tag",
                             "name": "ol",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26254,7 +26254,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26268,7 +26268,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26282,7 +26282,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26296,7 +26296,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26310,7 +26310,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26324,7 +26324,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26338,7 +26338,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26352,7 +26352,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26366,7 +26366,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26380,7 +26380,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26394,7 +26394,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26408,7 +26408,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26422,7 +26422,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26436,7 +26436,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26450,7 +26450,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26464,7 +26464,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26512,7 +26512,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26526,7 +26526,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26540,7 +26540,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26554,7 +26554,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26568,7 +26568,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26582,7 +26582,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26596,7 +26596,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26610,7 +26610,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26624,7 +26624,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26638,7 +26638,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26652,7 +26652,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26666,7 +26666,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26680,7 +26680,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26694,7 +26694,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26708,7 +26708,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",
@@ -26722,7 +26722,7 @@
                         {
                             "__type": "open_tag",
                             "name": "li",
-                            "attributes": []
+                            "attributes": null
                         },
                         {
                             "__type": "reference",

@@ -61,14 +61,14 @@ public class JSONSerializerTest {
     @Test
     public void testOpenList() {
         serializer.openList();
-        verify("[]");
+        verify("null");
     }
 
     @Test
     public void testOpenList2() {
         serializer.openList();
         serializer.openList();
-        verify("[[]]");
+        verify("[null]");
     }
 
     @Test
@@ -154,7 +154,7 @@ public class JSONSerializerTest {
         serializer.openObject();
         serializer.field("f1");
         serializer.openList();
-        verify("{ \"f1\" : [] }");
+        verify("{ \"f1\" : null }");
     }
 
     @Test
@@ -162,7 +162,7 @@ public class JSONSerializerTest {
         serializer.openList();
         serializer.field("f1");
         serializer.openList();
-        verify("[ { \"f1\" : null }, [] ]");
+        verify("[ { \"f1\" : null }, null ]");
     }
 
     private void verify(String expected) {

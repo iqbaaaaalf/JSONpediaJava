@@ -20,7 +20,7 @@
             "__type": "template",
             "name": "Infobox person",
             "content": {
-                "honorific_prefix": [],
+                "honorific_prefix": null,
                 "name": [
                     "Sir Tim Berners-Lee"
                 ],
@@ -28,7 +28,7 @@
                     {
                         "__type": "open_tag",
                         "name": "small",
-                        "attributes": []
+                        "attributes": null
                     },
                     "OM, KBE, FRS, FREng, FRSA",
                     {
@@ -50,9 +50,9 @@
                         "__type": "template",
                         "name": "birth date and age",
                         "content": {
-                            "6": [],
-                            "8": [],
-                            "1955": [],
+                            "6": null,
+                            "8": null,
+                            "1955": null,
                             "df": [
                                 "y"
                             ]
@@ -238,7 +238,7 @@
                         "__type": "template",
                         "name": "Url",
                         "content": {
-                            "http://www.w3.org/People/Berners-Lee/": []
+                            "http://www.w3.org/People/Berners-Lee/": null
                         }
                     }
                 ]
@@ -314,7 +314,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -329,7 +329,7 @@
                 "publisher": [
                     "Info.cern.ch"
                 ],
-                "date": [],
+                "date": null,
                 "accessdate": [
                     "2011-12-21"
                 ]
@@ -406,7 +406,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -438,7 +438,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -478,7 +478,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -505,7 +505,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -561,7 +561,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -592,7 +592,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -694,7 +694,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -842,7 +842,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -873,7 +873,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -888,7 +888,7 @@
                 "publisher": [
                     "Achievement.org"
                 ],
-                "date": [],
+                "date": null,
                 "accessdate": [
                     "2011-12-21"
                 ]
@@ -919,7 +919,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -993,7 +993,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1015,7 +1015,7 @@
         {
             "__type": "open_tag",
             "name": "blockquote",
-            "attributes": []
+            "attributes": null
         },
         "\"Info.cern.ch was the address of the world's first-ever web site and web server, running on a NeXT computer at CERN. The first web page address was http://info.cern.ch/hypertext/WWW/TheProject.html, which centred on information regarding the WWW project. Visitors could learn more about hypertext, technical details for creating their own webpage, and even an explanation on how to search the Web for information. There are no screenshots of this original page and, in any case, changes were made daily to the information available on the page as the WWW project developed. You may find a later copy (1992) on the World Wide Web Consortium website.\" -CERN",
         {
@@ -1026,7 +1026,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1053,7 +1053,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1080,7 +1080,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1110,7 +1110,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1148,7 +1148,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1197,7 +1197,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         "John W. Klooster (2009)",
         {
@@ -1226,13 +1226,13 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "cite doi",
             "content": {
-                "10.1038/scientificamerican0501-34": []
+                "10.1038/scientificamerican0501-34": null
             }
         },
         {
@@ -1242,7 +1242,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1289,7 +1289,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1344,7 +1344,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1375,7 +1375,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "link",
@@ -1397,7 +1397,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1443,7 +1443,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1482,7 +1482,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1525,7 +1525,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1568,7 +1568,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1615,7 +1615,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1697,9 +1697,9 @@
                         "__type": "template",
                         "name": "Start date",
                         "content": {
-                            "10": [],
-                            "25": [],
-                            "2011": [],
+                            "10": null,
+                            "25": null,
+                            "2011": null,
                             "df": [
                                 "yes"
                             ]
@@ -1722,7 +1722,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1806,7 +1806,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1886,7 +1886,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -1935,7 +1935,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2019,7 +2019,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2062,7 +2062,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2100,7 +2100,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2152,7 +2152,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2192,7 +2192,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2229,7 +2229,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2249,9 +2249,9 @@
                         "__type": "template",
                         "name": "Start date",
                         "content": {
-                            "4": [],
-                            "10": [],
-                            "2011": [],
+                            "4": null,
+                            "10": null,
+                            "2011": null,
                             "df": [
                                 "yes"
                             ]
@@ -2280,7 +2280,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2317,7 +2317,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2354,7 +2354,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "link",
@@ -2375,7 +2375,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2411,7 +2411,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2475,7 +2475,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "link",
@@ -2497,13 +2497,13 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
             "name": "Cite doi",
             "content": {
-                "10.1109.2FMIS.2011.64": []
+                "10.1109.2FMIS.2011.64": null
             }
         },
         {
@@ -2513,7 +2513,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2537,9 +2537,9 @@
                         "__type": "template",
                         "name": "Start date",
                         "content": {
-                            "8": [],
-                            "24": [],
-                            "2011": [],
+                            "8": null,
+                            "24": null,
+                            "2011": null,
                             "df": [
                                 "yes"
                             ]
@@ -2551,9 +2551,9 @@
                         "__type": "template",
                         "name": "Start date",
                         "content": {
-                            "9": [],
-                            "18": [],
-                            "2011": [],
+                            "9": null,
+                            "18": null,
+                            "2011": null,
                             "df": [
                                 "yes"
                             ]
@@ -2620,7 +2620,7 @@
         {
             "__type": "open_tag",
             "name": "ref",
-            "attributes": []
+            "attributes": null
         },
         {
             "__type": "template",
@@ -2763,7 +2763,7 @@
             "__type": "template",
             "name": "cite doi",
             "content": {
-                "10.1038/scientificamerican1210-80": []
+                "10.1038/scientificamerican1210-80": null
             }
         },
         "*",
@@ -2771,7 +2771,7 @@
             "__type": "template",
             "name": "cite pmid",
             "content": {
-                "21141362": []
+                "21141362": null
             }
         },
         "*",
@@ -2779,7 +2779,7 @@
             "__type": "template",
             "name": "cite pmid",
             "content": {
-                "18847088": []
+                "18847088": null
             }
         },
         "*",
@@ -2787,7 +2787,7 @@
             "__type": "template",
             "name": "cite pmid",
             "content": {
-                "16902115": []
+                "16902115": null
             }
         },
         {
@@ -2851,7 +2851,7 @@
             "__type": "template",
             "name": "Twitter",
             "content": {
-                "timberners_lee": []
+                "timberners_lee": null
             }
         },
         "*",
@@ -2871,7 +2871,7 @@
             "__type": "template",
             "name": "TED",
             "content": {
-                "speakers/tim_berners_lee.html": []
+                "speakers/tim_berners_lee.html": null
             }
         },
         "*",
@@ -2879,7 +2879,7 @@
             "__type": "template",
             "name": "IMDb name",
             "content": {
-                "3805083": []
+                "3805083": null
             }
         },
         "*",
@@ -2887,7 +2887,7 @@
             "__type": "template",
             "name": "Nndb",
             "content": {
-                "573/000023504": []
+                "573/000023504": null
             }
         },
         "*",
@@ -2895,7 +2895,7 @@
             "__type": "template",
             "name": "Worldcat id",
             "content": {
-                "lccn-no99-10609": []
+                "lccn-no99-10609": null
             }
         },
         "*",

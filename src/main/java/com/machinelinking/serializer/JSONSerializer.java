@@ -12,6 +12,7 @@ import java.util.Stack;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
+//TODO: remove print out but before check for possible errors.
 public class JSONSerializer implements Serializer {
 
     private static final String ANON_OBJ_FIELD_PREFIX  = "anon_obj_";
@@ -30,6 +31,16 @@ public class JSONSerializer implements Serializer {
                     throw new RuntimeException(ioe);
                 }
 
+            }
+        },
+        PreList {
+            @Override
+            void close(JsonGenerator generator) {
+                try {
+                    generator.writeNull();
+                } catch (IOException ioe) {
+                    throw new RuntimeException(ioe);
+                }
             }
         },
         List {
@@ -103,6 +114,10 @@ public class JSONSerializer implements Serializer {
             if( check(WriterStatus.Object) ) {
                 jsonGenerator.writeFieldName(getNextAnonObjectName());
                 jsonGenerator.writeStartObject();
+            } else if( checkAndPop(WriterStatus.PreList) ) {
+                stack.push(WriterStatus.List);
+                jsonGenerator.writeStartArray();
+                jsonGenerator.writeStartObject();
             } else if( check(WriterStatus.List) ) {
                 jsonGenerator.writeStartObject();
             } else if( checkAndPop(WriterStatus.Field) ) {
@@ -139,13 +154,15 @@ public class JSONSerializer implements Serializer {
             if( check(WriterStatus.Object) ) {
                 jsonGenerator.writeFieldName(getNextAnonListName());
             } else if( check(WriterStatus.List) ) {
+            } else if( checkAndPop(WriterStatus.PreList) ) {
+                stack.push(WriterStatus.List);
+                jsonGenerator.writeStartArray();
             } else if( checkAndPop(WriterStatus.Field) ) {
             } else if( checkAndPop(WriterStatus.SpuriousField) ) {
                 jsonGenerator.writeNull();
                 jsonGenerator.writeEndObject();
             }
-            jsonGenerator.writeStartArray();
-            stack.push(WriterStatus.List);
+            stack.push(WriterStatus.PreList);
         } catch (IOException ioe) {
             throw new RuntimeException(ioe);
         }
@@ -156,6 +173,8 @@ public class JSONSerializer implements Serializer {
         try {
             if( checkAndPop(WriterStatus.List) ) {
                 jsonGenerator.writeEndArray();
+            } else if( checkAndPop(WriterStatus.PreList) ) {
+                jsonGenerator.writeNull();
             } else {
                 closeUntil(WriterStatus.List);
             }
@@ -170,8 +189,15 @@ public class JSONSerializer implements Serializer {
             if( check(WriterStatus.Object) ) {
                 jsonGenerator.writeFieldName( encodeFieldName(name) );
                 stack.push(WriterStatus.Field);
+            } else if(checkAndPop(WriterStatus.PreList)) {
+                stack.push(WriterStatus.List);
+                System.out.println("SPURIOUS A");
+                jsonGenerator.writeStartArray();
+                jsonGenerator.writeStartObject();
+                jsonGenerator.writeFieldName( encodeFieldName(name) );
+                stack.push(WriterStatus.SpuriousField);
             } else if(check(WriterStatus.List)) {
-                System.out.println("SPURIOUS");
+                System.out.println("SPURIOUS B");
                 jsonGenerator.writeStartObject();
                 jsonGenerator.writeFieldName( encodeFieldName(name) );
                 stack.push(WriterStatus.SpuriousField);
@@ -198,6 +224,10 @@ public class JSONSerializer implements Serializer {
             if ( check(WriterStatus.Object) ) {
                 System.out.println("NO FIELD");
                 jsonGenerator.writeObjectField("NO FIELD", value);
+            } else if( checkAndPop(WriterStatus.PreList) ) {
+                stack.push(WriterStatus.List);
+                jsonGenerator.writeStartArray();
+                internalWriteValue(value);
             } else if( check(WriterStatus.List) ) {
                 internalWriteValue(value);
             } else if( checkAndPop(WriterStatus.Field) ) {
@@ -260,7 +290,7 @@ public class JSONSerializer implements Serializer {
             stack.pop();
             return true;
         } else {
-            System.out.printf("ERROR, expected %s found %s\n", status, stack.peek());
+            //System.out.printf("ERROR, expected %s found %s\n", status, stack.peek());
             return false;
         }
     }
