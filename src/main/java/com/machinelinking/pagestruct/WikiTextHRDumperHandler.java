@@ -97,7 +97,7 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void templateParameterName(String param) {
+    public void parameter(String param) {
         printOut("k: " + param);
     }
 

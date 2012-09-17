@@ -147,7 +147,7 @@ implements CSVExporter {
         }
 
         @Override
-        public void templateParameterName(String param) {
+        public void parameter(String param) {
             property = param == null ? getNextAnonProperty() : param.trim();
             nextIsValue = true;
             propertiesCount++;

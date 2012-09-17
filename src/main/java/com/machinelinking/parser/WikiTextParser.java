@@ -248,7 +248,7 @@ public class WikiTextParser implements ParserReader {
             if(seq != -1) {
                 if(resetSequence) reset();
                 if(produceNullParamKey && !foundAssignment && sb.length() > 0) {
-                    handler.templateParameterName(null);
+                    handler.parameter(null);
                 }
                 flushText(sb);
                 return seq;
@@ -258,7 +258,7 @@ public class WikiTextParser implements ParserReader {
 
             if(!foundAssignment && c == '=') {
                 foundAssignment = true;
-                handler.templateParameterName(sb.toString());
+                handler.parameter(sb.toString());
                 clear(sb);
                 mark();
                 consumeSpaces();
@@ -268,7 +268,7 @@ public class WikiTextParser implements ParserReader {
             if(c == '<') {
                 if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
                     foundAssignment = true;
-                    handler.templateParameterName(null);
+                    handler.parameter(null);
                 }
                 flushText(sb);
                 reset();
@@ -285,7 +285,7 @@ public class WikiTextParser implements ParserReader {
                     mark();
                     if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
                         foundAssignment = true;
-                        handler.templateParameterName(null);
+                        handler.parameter(null);
                     }
                     flushText(sb);
                     readTemplate();
@@ -298,7 +298,7 @@ public class WikiTextParser implements ParserReader {
                     mark();
                     if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
                         foundAssignment = true;
-                        handler.templateParameterName(null);
+                        handler.parameter(null);
                     }
                     flushText(sb);
                     readTable();
@@ -314,7 +314,7 @@ public class WikiTextParser implements ParserReader {
                     mark();
                     if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
                         foundAssignment = true;
-                        handler.templateParameterName(null);
+                        handler.parameter(null);
                     }
                     flushText(sb);
                     readReference();
@@ -323,7 +323,7 @@ public class WikiTextParser implements ParserReader {
                     reset();
                     if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
                         foundAssignment = true;
-                        handler.templateParameterName(null);
+                        handler.parameter(null);
                     }
                     flushText(sb);
                     readLink();

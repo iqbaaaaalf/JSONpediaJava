@@ -28,14 +28,14 @@ public class InfoboxSplitterTest {
 
         multiHandler.beginDocument(new URL("http://test/doc"));
         multiHandler.beginTemplate("t1");
-        multiHandler.templateParameterName("t1-p1");
+        multiHandler.parameter("t1-p1");
         multiHandler.beginTemplate("tt1");
         splitter.split(); // < Split here
-        multiHandler.templateParameterName("tt1-p1");
+        multiHandler.parameter("tt1-p1");
         multiHandler.text("text 1");
         multiHandler.text("text 2");
         multiHandler.endTemplate("tt1");
-        multiHandler.templateParameterName("t1-p2");
+        multiHandler.parameter("t1-p2");
         multiHandler.text("text 3");
         multiHandler.endTemplate("t1");
         multiHandler.endDocument();

@@ -108,7 +108,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void templateParameterName(String param) {
+    public void parameter(String param) {
         if( peekElement() instanceof ParameterElement) {
             popElement(ParameterElement.class);
             serializer.closeList();

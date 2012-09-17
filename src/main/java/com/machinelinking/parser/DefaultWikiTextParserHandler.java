@@ -48,10 +48,6 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void templateParameterName(String param) {
-    }
-
-    @Override
     public void endTemplate(String name) {
     }
 
@@ -85,6 +81,10 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
 
     @Override
     public void commentTag(String comment) {
+    }
+
+    @Override
+    public void parameter(String param) {
     }
 
     @Override

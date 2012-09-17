@@ -26,7 +26,7 @@ public class WikiTextParserHandlerEventBufferTest {
         final WikiTextParserHandler handler = buffer.getProxy();
         handler.beginDocument( new URL("http://some.doc"));
         handler.beginTemplate("T1");
-        handler.templateParameterName("p1");
+        handler.parameter("p1");
         handler.text("t1");
         handler.text("t2");
         handler.text("t4");

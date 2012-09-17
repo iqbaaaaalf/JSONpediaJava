@@ -98,13 +98,6 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void templateParameterName(String param) {
-        for(WikiTextParserHandler handler : handlers) {
-            handler.templateParameterName(param);
-        }
-    }
-
-    @Override
     public void endTemplate(String name) {
         for(WikiTextParserHandler handler : handlers) {
             handler.endTemplate(name);
@@ -164,6 +157,13 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
     public void commentTag(String comment) {
         for(WikiTextParserHandler handler : handlers) {
             handler.commentTag(comment);
+        }
+    }
+
+    @Override
+    public void parameter(String param) {
+        for(WikiTextParserHandler handler : handlers) {
+            handler.parameter(param);
         }
     }
 

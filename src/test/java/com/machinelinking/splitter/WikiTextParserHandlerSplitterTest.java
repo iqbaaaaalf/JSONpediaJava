@@ -27,9 +27,9 @@ public class WikiTextParserHandlerSplitterTest {
         final WikiTextParserHandler proxy = splitter.getProxy();
         proxy.beginDocument( new URL("http://path/to/test") );
         proxy.beginTemplate("t1");
-        proxy.templateParameterName("p1");
+        proxy.parameter("p1");
         proxy.text("text0");
-        proxy.templateParameterName("p2");
+        proxy.parameter("p2");
         proxy.beginTemplate("tt1");
 
         // Redirect from here.
@@ -37,16 +37,16 @@ public class WikiTextParserHandlerSplitterTest {
         Assert.assertEquals(1, splitter.getActiveRedirections().size());
         Assert.assertEquals(REDIRECTION_NAME, splitter.getActiveRedirections().get(0).id);
 
-        proxy.templateParameterName("pp1");
+        proxy.parameter("pp1");
         proxy.text("text1");
         proxy.text("text2");
         proxy.text("text3");
         proxy.endTemplate("tt1");
         proxy.beginTemplate("tt2");
-        proxy.templateParameterName("pp11");
+        proxy.parameter("pp11");
         proxy.text("text pp11");
         proxy.endTemplate("tt2");
-        proxy.templateParameterName("p3");
+        proxy.parameter("p3");
         proxy.text("text4");
         proxy.endTemplate("t1");
         proxy.endDocument();

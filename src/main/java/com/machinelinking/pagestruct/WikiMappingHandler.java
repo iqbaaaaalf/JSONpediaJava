@@ -36,7 +36,7 @@ public abstract class WikiMappingHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void templateParameterName(String param) {
+    public void parameter(String param) {
         if(!insidePropertyMapping) return;
         nextIsTemplateProperty = nextIsOntologyProperty = false;
         if(TEMPLATE_PROPERTY_NAME.equalsIgnoreCase(param.trim())) {

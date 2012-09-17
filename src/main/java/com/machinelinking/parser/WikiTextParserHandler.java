@@ -34,8 +34,6 @@ public interface WikiTextParserHandler extends TagHandler {
     @Push(node="template", id=0)
     void beginTemplate(String name);
 
-    void templateParameterName(String param);
-
     @Pop(node="template", id=0)
     void endTemplate(String name);
 
@@ -48,6 +46,8 @@ public interface WikiTextParserHandler extends TagHandler {
 
     @Pop(node="table")
     void endTable();
+
+    void parameter(String param);
 
     void text(String content);
 
