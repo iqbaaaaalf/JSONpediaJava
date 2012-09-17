@@ -50,9 +50,15 @@
                         "__type": "template",
                         "name": "birth date and age",
                         "content": {
-                            "6": null,
-                            "8": null,
-                            "1955": null,
+                            "__anon_0": [
+                                "1955"
+                            ],
+                            "__anon_1": [
+                                "6"
+                            ],
+                            "__anon_2": [
+                                "8"
+                            ],
                             "df": [
                                 "y"
                             ]
@@ -127,7 +133,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "anon_obj_0": {
+                            "__anon_3": {
                                 "__type": "list",
                                 "content": [
                                     "Inventing the",
@@ -165,7 +171,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "anon_obj_1": {
+                            "__anon_4": {
                                 "__type": "list",
                                 "content": [
                                     {
@@ -210,7 +216,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "anon_obj_2": {
+                            "__anon_5": {
                                 "__type": "list",
                                 "content": [
                                     {
@@ -238,7 +244,9 @@
                         "__type": "template",
                         "name": "Url",
                         "content": {
-                            "http://www.w3.org/People/Berners-Lee/": null
+                            "__anon_6": [
+                                "http://www.w3.org/People/Berners-Lee/"
+                            ]
                         }
                     }
                 ]
@@ -972,14 +980,29 @@
             "__type": "template",
             "name": "quotation",
             "content": {
-                "\" Mike Sendall buys a NeXT cube for evaluation, and gives it to Tim [Berners-Lee]. Tim's prototype implementation on NeXTStep is made in the space of a few months, thanks to the qualities of the NeXTStep software development system. This prototype offers WYSIWYG browsing/authoring! Current Web browsers used in \"surfing the Internet\" are mere passive windows, depriving the user of the possibility to contribute. During some sessions in the CERN cafeteria, Tim and I try to find a catching name for the system. I was determined that the name should not yet again be taken from Greek mythology. Tim proposes \"World-Wide Web\". I like this very much, except that it is difficult to pronounce in French...\" by Robert Cailliau, 2 November 1995.<ref name": [
-                    "\"Ben\">",
+                "__anon_7": [
+                    "\" Mike Sendall buys a NeXT cube for evaluation, and gives it to Tim",
+                    "Berners-Lee",
+                    ". Tim's prototype implementation on NeXTStep is made in the space of a few months, thanks to the qualities of the NeXTStep software development system. This prototype offers WYSIWYG browsing/authoring! Current Web browsers used in \"surfing the Internet\" are mere passive windows, depriving the user of the possibility to contribute. During some sessions in the CERN cafeteria, Tim and I try to find a catching name for the system. I was determined that the name should not yet again be taken from Greek mythology. Tim proposes \"World-Wide Web\". I like this very much, except that it is difficult to pronounce in French...\" by Robert Cailliau, 2 November 1995.",
+                    {
+                        "__type": "open_tag",
+                        "name": "ref",
+                        "attributes": [
+                            {
+                                "name": "Ben"
+                            }
+                        ]
+                    },
                     {
                         "__type": "link",
                         "url": "http://www.netvalley.com/cgi-bin/intval/net_history.pl?chapter=4",
                         "description": "Roads and Crossroads of Internet History"
                     },
-                    "Chapter 4: Birth of the Web"
+                    "Chapter 4: Birth of the Web",
+                    {
+                        "__type": "close_tag",
+                        "name": "ref"
+                    }
                 ]
             }
         },
@@ -1232,7 +1255,9 @@
             "__type": "template",
             "name": "cite doi",
             "content": {
-                "10.1038/scientificamerican0501-34": null
+                "__anon_8": [
+                    "10.1038/scientificamerican0501-34"
+                ]
             }
         },
         {
@@ -1697,9 +1722,15 @@
                         "__type": "template",
                         "name": "Start date",
                         "content": {
-                            "10": null,
-                            "25": null,
-                            "2011": null,
+                            "__anon_9": [
+                                "2011"
+                            ],
+                            "__anon_10": [
+                                "10"
+                            ],
+                            "__anon_11": [
+                                "25"
+                            ],
                             "df": [
                                 "yes"
                             ]
@@ -2249,9 +2280,15 @@
                         "__type": "template",
                         "name": "Start date",
                         "content": {
-                            "4": null,
-                            "10": null,
-                            "2011": null,
+                            "__anon_12": [
+                                "2011"
+                            ],
+                            "__anon_13": [
+                                "10"
+                            ],
+                            "__anon_14": [
+                                "4"
+                            ],
                             "df": [
                                 "yes"
                             ]
@@ -2503,7 +2540,9 @@
             "__type": "template",
             "name": "Cite doi",
             "content": {
-                "10.1109.2FMIS.2011.64": null
+                "__anon_15": [
+                    "10.1109.2FMIS.2011.64"
+                ]
             }
         },
         {
@@ -2537,11 +2576,17 @@
                         "__type": "template",
                         "name": "Start date",
                         "content": {
-                            "8": null,
-                            "24": null,
-                            "2011": null,
                             "df": [
                                 "yes"
+                            ],
+                            "__anon_16": [
+                                "2011"
+                            ],
+                            "__anon_17": [
+                                "8"
+                            ],
+                            "__anon_18": [
+                                "24"
                             ]
                         }
                     }
@@ -2551,9 +2596,15 @@
                         "__type": "template",
                         "name": "Start date",
                         "content": {
-                            "9": null,
-                            "18": null,
-                            "2011": null,
+                            "__anon_19": [
+                                "2011"
+                            ],
+                            "__anon_20": [
+                                "9"
+                            ],
+                            "__anon_21": [
+                                "18"
+                            ],
                             "df": [
                                 "yes"
                             ]
@@ -2763,7 +2814,9 @@
             "__type": "template",
             "name": "cite doi",
             "content": {
-                "10.1038/scientificamerican1210-80": null
+                "__anon_22": [
+                    "10.1038/scientificamerican1210-80"
+                ]
             }
         },
         "*",
@@ -2771,7 +2824,9 @@
             "__type": "template",
             "name": "cite pmid",
             "content": {
-                "21141362": null
+                "__anon_23": [
+                    "21141362"
+                ]
             }
         },
         "*",
@@ -2779,7 +2834,9 @@
             "__type": "template",
             "name": "cite pmid",
             "content": {
-                "18847088": null
+                "__anon_24": [
+                    "18847088"
+                ]
             }
         },
         "*",
@@ -2787,7 +2844,9 @@
             "__type": "template",
             "name": "cite pmid",
             "content": {
-                "16902115": null
+                "__anon_25": [
+                    "16902115"
+                ]
             }
         },
         {
@@ -2851,7 +2910,9 @@
             "__type": "template",
             "name": "Twitter",
             "content": {
-                "timberners_lee": null
+                "__anon_26": [
+                    "timberners_lee"
+                ]
             }
         },
         "*",
@@ -2871,7 +2932,9 @@
             "__type": "template",
             "name": "TED",
             "content": {
-                "speakers/tim_berners_lee.html": null
+                "__anon_27": [
+                    "speakers/tim_berners_lee.html"
+                ]
             }
         },
         "*",
@@ -2879,7 +2942,9 @@
             "__type": "template",
             "name": "IMDb name",
             "content": {
-                "3805083": null
+                "__anon_28": [
+                    "3805083"
+                ]
             }
         },
         "*",
@@ -2887,7 +2952,9 @@
             "__type": "template",
             "name": "Nndb",
             "content": {
-                "573/000023504": null
+                "__anon_29": [
+                    "573/000023504"
+                ]
             }
         },
         "*",
@@ -2895,7 +2962,9 @@
             "__type": "template",
             "name": "Worldcat id",
             "content": {
-                "lccn-no99-10609": null
+                "__anon_30": [
+                    "lccn-no99-10609"
+                ]
             }
         },
         "*",

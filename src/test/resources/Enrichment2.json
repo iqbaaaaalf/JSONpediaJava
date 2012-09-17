@@ -684,7 +684,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "E": null
+                                    "__anon_0": [
+                                        "E"
+                                    ]
                                 }
                             },
                             ",",
@@ -692,7 +694,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "EC": null
+                                    "__anon_1": [
+                                        "EC"
+                                    ]
                                 }
                             },
                             ",",
@@ -700,7 +704,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "N": null
+                                    "__anon_2": [
+                                        "N"
+                                    ]
                                 }
                             },
                             ",",
@@ -708,7 +714,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "NW": null
+                                    "__anon_3": [
+                                        "NW"
+                                    ]
                                 }
                             },
                             ",",
@@ -716,7 +724,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "SE": null
+                                    "__anon_4": [
+                                        "SE"
+                                    ]
                                 }
                             },
                             ",",
@@ -724,7 +734,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "SW": null
+                                    "__anon_5": [
+                                        "SW"
+                                    ]
                                 }
                             },
                             ",",
@@ -732,7 +744,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "W": null
+                                    "__anon_6": [
+                                        "W"
+                                    ]
                                 }
                             },
                             ",",
@@ -740,7 +754,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "WC": null
+                                    "__anon_7": [
+                                        "WC"
+                                    ]
                                 }
                             },
                             ",",
@@ -748,7 +764,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "BR": null
+                                    "__anon_8": [
+                                        "BR"
+                                    ]
                                 }
                             },
                             ",",
@@ -756,7 +774,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "CM": null
+                                    "__anon_9": [
+                                        "CM"
+                                    ]
                                 }
                             },
                             ",",
@@ -764,7 +784,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "CR": null
+                                    "__anon_10": [
+                                        "CR"
+                                    ]
                                 }
                             },
                             ",",
@@ -772,7 +794,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "DA": null
+                                    "__anon_11": [
+                                        "DA"
+                                    ]
                                 }
                             },
                             ",",
@@ -780,7 +804,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "EN": null
+                                    "__anon_12": [
+                                        "EN"
+                                    ]
                                 }
                             },
                             ",",
@@ -788,7 +814,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "HA": null
+                                    "__anon_13": [
+                                        "HA"
+                                    ]
                                 }
                             },
                             ",",
@@ -796,7 +824,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "IG": null
+                                    "__anon_14": [
+                                        "IG"
+                                    ]
                                 }
                             },
                             ",",
@@ -804,7 +834,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "KT": null
+                                    "__anon_15": [
+                                        "KT"
+                                    ]
                                 }
                             },
                             ",",
@@ -812,7 +844,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "RM": null
+                                    "__anon_16": [
+                                        "RM"
+                                    ]
                                 }
                             },
                             ",",
@@ -820,7 +854,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "SM": null
+                                    "__anon_17": [
+                                        "SM"
+                                    ]
                                 }
                             },
                             ",",
@@ -828,7 +864,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "TN": null
+                                    "__anon_18": [
+                                        "TN"
+                                    ]
                                 }
                             },
                             ",",
@@ -836,7 +874,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "TW": null
+                                    "__anon_19": [
+                                        "TW"
+                                    ]
                                 }
                             },
                             ",",
@@ -844,7 +884,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "UB": null
+                                    "__anon_20": [
+                                        "UB"
+                                    ]
                                 }
                             },
                             ",",
@@ -852,7 +894,9 @@
                                 "__type": "template",
                                 "name": "postcode",
                                 "content": {
-                                    "WD": null
+                                    "__anon_21": [
+                                        "WD"
+                                    ]
                                 }
                             }
                         ],
@@ -888,12 +932,24 @@
                         "audio": [
                             "En-uk-London.ogg"
                         ],
-                        "ˈ": null,
-                        "l": null,
-                        "ʌ": null,
-                        "n": null,
-                        "d": null,
-                        "ən": null
+                        "__anon_22": [
+                            "ˈ"
+                        ],
+                        "__anon_23": [
+                            "l"
+                        ],
+                        "__anon_24": [
+                            "ʌ"
+                        ],
+                        "__anon_25": [
+                            "n"
+                        ],
+                        "__anon_26": [
+                            "d"
+                        ],
+                        "__anon_27": [
+                            "ən"
+                        ]
                     }
                 },
                 "is the capital city of",
@@ -925,11 +981,51 @@
                     "__type": "template",
                     "name": "#tag:ref",
                     "content": {
-                        "According to the [[Eurostat": null,
-                        "European Statistical Agency]], London is the largest [[Larger Urban Zones": null,
-                        "Larger Urban Zone]] which uses [[conurbation]]s and areas of high population as its definition. A [[Largest cities of the European Union by population within city limits": null,
-                        "ranking of population]] within municipal boundaries places London first. However, the [[University of Avignon]] in France claims that Paris is first and London second when including the whole urban area and [[hinterland]], that is the [[Largest urban areas of the European Union": null,
-                        "outlying cities as well]].": null,
+                        "__anon_28": [
+                            "According to the",
+                            {
+                                "__type": "reference",
+                                "label": "Eurostat",
+                                "description": "European Statistical Agency"
+                            },
+                            ", London is the largest",
+                            {
+                                "__type": "reference",
+                                "label": "Larger Urban Zones",
+                                "description": "Larger Urban Zone"
+                            },
+                            "which uses",
+                            {
+                                "__type": "reference",
+                                "label": "conurbation",
+                                "description": ""
+                            },
+                            "s and areas of high population as its definition. A",
+                            {
+                                "__type": "reference",
+                                "label": "Largest cities of the European Union by population within city limits",
+                                "description": "ranking of population"
+                            },
+                            "within municipal boundaries places London first. However, the",
+                            {
+                                "__type": "reference",
+                                "label": "University of Avignon",
+                                "description": ""
+                            },
+                            "in France claims that Paris is first and London second when including the whole urban area and",
+                            {
+                                "__type": "reference",
+                                "label": "hinterland",
+                                "description": ""
+                            },
+                            ", that is the",
+                            {
+                                "__type": "reference",
+                                "label": "Largest urban areas of the European Union",
+                                "description": "outlying cities as well"
+                            },
+                            "."
+                        ],
                         "group": [
                             "note"
                         ]
@@ -1022,8 +1118,12 @@
                     "__type": "template",
                     "name": "Harvnb",
                     "content": {
-                        "2001": null,
-                        "Mills": null,
+                        "__anon_29": [
+                            "Mills"
+                        ],
+                        "__anon_30": [
+                            "2001"
+                        ],
                         "p": [
                             "140"
                         ]
@@ -2368,7 +2468,9 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "History of London": null
+                        "__anon_31": [
+                            "History of London"
+                        ]
                     }
                 },
                 {
@@ -2380,7 +2482,9 @@
                     "__type": "template",
                     "name": "main",
                     "content": {
-                        "Etymology of London": null
+                        "__anon_32": [
+                            "Etymology of London"
+                        ]
                     }
                 },
                 {
@@ -2408,8 +2512,12 @@
                     "__type": "template",
                     "name": "Harvnb",
                     "content": {
-                        "2001": null,
-                        "Mills": null,
+                        "__anon_33": [
+                            "Mills"
+                        ],
+                        "__anon_34": [
+                            "2001"
+                        ],
                         "p": [
                             "139"
                         ]
@@ -4406,9 +4514,25 @@
                     "__type": "template",
                     "name": "quote",
                     "content": {
-                        "You find no man, at all intellectual, who is willing to leave London. No, Sir, when a man is tired of London, he is tired of life; for there is in London all that life can afford.": null,
-                        "[[Samuel Johnson]], 1777<ref name": [
-                            "london_022>",
+                        "__anon_35": [
+                            "You find no man, at all intellectual, who is willing to leave London. No, Sir, when a man is tired of London, he is tired of life; for there is in London all that life can afford.",
+                            {
+                                "__type": "reference",
+                                "label": "Samuel Johnson",
+                                "description": ""
+                            }
+                        ],
+                        "__anon_36": [
+                            ", 1777",
+                            {
+                                "__type": "open_tag",
+                                "name": "ref",
+                                "attributes": [
+                                    {
+                                        "name": "london_022"
+                                    }
+                                ]
+                            },
                             {
                                 "__type": "template",
                                 "name": "cite web",
@@ -4432,6 +4556,10 @@
                                         "no"
                                     ]
                                 }
+                            },
+                            {
+                                "__type": "close_tag",
+                                "name": "ref"
                             }
                         ]
                     }
@@ -4868,9 +4996,15 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Local government in London": null,
-                        "History of local government in London": null,
-                        "List of heads of London government": null
+                        "__anon_37": [
+                            "Local government in London"
+                        ],
+                        "__anon_38": [
+                            "History of local government in London"
+                        ],
+                        "__anon_39": [
+                            "List of heads of London government"
+                        ]
                     }
                 },
                 {
@@ -5583,7 +5717,9 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Geography of London": null
+                        "__anon_40": [
+                            "Geography of London"
+                        ]
                     }
                 },
                 {
@@ -6049,15 +6185,33 @@
                     "__type": "template",
                     "name": "Coord",
                     "content": {
-                        "26": null,
-                        "30": null,
-                        "39": null,
-                        "51": null,
-                        "N": null,
-                        "00": null,
-                        "07": null,
-                        "W": null,
-                        "type:city(7,000,000)_region:GB": null
+                        "__anon_41": [
+                            "51"
+                        ],
+                        "__anon_42": [
+                            "30"
+                        ],
+                        "__anon_43": [
+                            "26"
+                        ],
+                        "__anon_44": [
+                            "N"
+                        ],
+                        "__anon_45": [
+                            "00"
+                        ],
+                        "__anon_46": [
+                            "07"
+                        ],
+                        "__anon_47": [
+                            "39"
+                        ],
+                        "__anon_48": [
+                            "W"
+                        ],
+                        "__anon_49": [
+                            "type:city(7,000,000)_region:GB"
+                        ]
                     }
                 },
                 ".",
@@ -6268,8 +6422,22 @@
                     "__type": "template",
                     "name": "#tag:ref",
                     "content": {
-                        "According to the ''Collins English Dictionary'' definition of 'the seat of government',<ref name": [
-                            "london_061>(1994) ''Collins English Dictionary'', Collins Education plc.",
+                        "__anon_50": [
+                            "According to the ''Collins English Dictionary'' definition of 'the seat of government',",
+                            {
+                                "__type": "open_tag",
+                                "name": "ref",
+                                "attributes": [
+                                    {
+                                        "name": "london_061"
+                                    }
+                                ]
+                            },
+                            "(1994) ''Collins English Dictionary'', Collins Education plc.",
+                            {
+                                "__type": "close_tag",
+                                "name": "ref"
+                            },
                             "London is not the capital of England, as England does not have its own government. According to the ''Oxford English Reference Dictionary'' definition of 'the most important town'",
                             {
                                 "__type": "open_tag",
@@ -6429,9 +6597,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1583": null,
-                        "km2": null,
-                        "sqmi": null
+                        "__anon_51": [
+                            "1583"
+                        ],
+                        "__anon_52": [
+                            "km2"
+                        ],
+                        "__anon_53": [
+                            "sqmi"
+                        ]
                     }
                 },
                 ", an area which had a population of 7,172,036 in 2001 and a population density of",
@@ -6439,9 +6613,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "4542": null,
-                        "PD/km2": null,
-                        "PD/sqmi": null
+                        "__anon_54": [
+                            "4542"
+                        ],
+                        "__anon_55": [
+                            "PD/km2"
+                        ],
+                        "__anon_56": [
+                            "PD/sqmi"
+                        ]
                     }
                 },
                 ". A larger area, referred to as the London Metropolitan Region or the London Metropolitan Agglomeration covers an area of",
@@ -6449,9 +6629,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "8382": null,
-                        "km2": null,
-                        "sqmi": null
+                        "__anon_57": [
+                            "8382"
+                        ],
+                        "__anon_58": [
+                            "km2"
+                        ],
+                        "__anon_59": [
+                            "sqmi"
+                        ]
                     }
                 },
                 "has a population of 12,653,500 and a population density of",
@@ -6459,9 +6645,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1510": null,
-                        "PD/km2": null,
-                        "PD/sqmi": null
+                        "__anon_60": [
+                            "1510"
+                        ],
+                        "__anon_61": [
+                            "PD/km2"
+                        ],
+                        "__anon_62": [
+                            "PD/sqmi"
+                        ]
                     }
                 },
                 ".",
@@ -6787,7 +6979,15 @@
                     "__type": "template",
                     "name": "selfref",
                     "content": {
-                        "\"The weather in London\" redirects here. On Wikipedia, it once was long used as a deliberate example of a non-existent page in Wikipedia documentation, see [[Talk:The weather in London]] for more details.": null
+                        "__anon_63": [
+                            "\"The weather in London\" redirects here. On Wikipedia, it once was long used as a deliberate example of a non-existent page in Wikipedia documentation, see",
+                            {
+                                "__type": "reference",
+                                "label": "Talk:The weather in London",
+                                "description": ""
+                            },
+                            "for more details."
+                        ]
                     }
                 },
                 "London has a temperate",
@@ -6801,9 +7001,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "834": null,
-                        "mm": null,
-                        "in": null,
+                        "__anon_64": [
+                            "834"
+                        ],
+                        "__anon_65": [
+                            "mm"
+                        ],
+                        "__anon_66": [
+                            "in"
+                        ],
                         "abbr": [
                             "on"
                         ]
@@ -6820,9 +7026,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "923": null,
-                        "mm": null,
-                        "in": null,
+                        "__anon_67": [
+                            "923"
+                        ],
+                        "__anon_68": [
+                            "mm"
+                        ],
+                        "__anon_69": [
+                            "in"
+                        ],
                         "abbr": [
                             "on"
                         ]
@@ -6858,10 +7070,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "-4": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_70": [
+                            "-4"
+                        ],
+                        "__anon_71": [
+                            "°C"
+                        ],
+                        "__anon_72": [
+                            "°F"
+                        ],
+                        "__anon_73": [
+                            "1"
+                        ]
                     }
                 },
                 "or rise above",
@@ -6869,10 +7089,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "14": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_74": [
+                            "14"
+                        ],
+                        "__anon_75": [
+                            "°C"
+                        ],
+                        "__anon_76": [
+                            "°F"
+                        ],
+                        "__anon_77": [
+                            "1"
+                        ]
                     }
                 },
                 ". During the winter of 2010, London experienced its lowest temperature on record (",
@@ -6880,10 +7108,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "-14": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_78": [
+                            "-14"
+                        ],
+                        "__anon_79": [
+                            "°C"
+                        ],
+                        "__anon_80": [
+                            "°F"
+                        ],
+                        "__anon_81": [
+                            "1"
+                        ]
                     }
                 },
                 ") in Northolt and the heaviest snow seen for almost two decades, a huge strain on London's transport infrastructure.\n\nSummers are generally warm and sometimes hot, the heat being boosted by the",
@@ -6897,10 +7133,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "24": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_82": [
+                            "24"
+                        ],
+                        "__anon_83": [
+                            "°C"
+                        ],
+                        "__anon_84": [
+                            "°F"
+                        ],
+                        "__anon_85": [
+                            "1"
+                        ]
                     }
                 },
                 ". On average there are 7 days a year above",
@@ -6908,10 +7152,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "30": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_86": [
+                            "30"
+                        ],
+                        "__anon_87": [
+                            "°C"
+                        ],
+                        "__anon_88": [
+                            "°F"
+                        ],
+                        "__anon_89": [
+                            "1"
+                        ]
                     }
                 },
                 "and 2 days a year above",
@@ -6919,10 +7171,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "32": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_90": [
+                            "32"
+                        ],
+                        "__anon_91": [
+                            "°C"
+                        ],
+                        "__anon_92": [
+                            "°F"
+                        ],
+                        "__anon_93": [
+                            "1"
+                        ]
                     }
                 },
                 ". Temperatures of 26 °C (80 °F) usually occur on a weekly basis from mid- June to late August.\n\nDuring the",
@@ -6936,10 +7196,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "30": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_94": [
+                            "30"
+                        ],
+                        "__anon_95": [
+                            "°C"
+                        ],
+                        "__anon_96": [
+                            "°F"
+                        ],
+                        "__anon_97": [
+                            "1"
+                        ]
                     }
                 },
                 "and 2 consecutive days where temperatures soared up to",
@@ -6947,10 +7215,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "38": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_98": [
+                            "38"
+                        ],
+                        "__anon_99": [
+                            "°C"
+                        ],
+                        "__anon_100": [
+                            "°F"
+                        ],
+                        "__anon_101": [
+                            "1"
+                        ]
                     }
                 },
                 ", leading to hundreds of heat related deaths. Rain generally occurs on around 2 out of 10 summer days. Spring and Autumn are mixed seasons and can be pleasant. On 1 October 2011, the air temperature attained",
@@ -6958,10 +7234,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "30": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_102": [
+                            "30"
+                        ],
+                        "__anon_103": [
+                            "°C"
+                        ],
+                        "__anon_104": [
+                            "°F"
+                        ],
+                        "__anon_105": [
+                            "1"
+                        ]
                     }
                 },
                 "and in April 2011 it reached",
@@ -6969,10 +7253,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "28": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_106": [
+                            "28"
+                        ],
+                        "__anon_107": [
+                            "°C"
+                        ],
+                        "__anon_108": [
+                            "°F"
+                        ],
+                        "__anon_109": [
+                            "1"
+                        ]
                     }
                 },
                 ". However in recent years both of these months have also had snowfall. Temperature extremes range from",
@@ -6980,10 +7272,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "-10": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_110": [
+                            "-10"
+                        ],
+                        "__anon_111": [
+                            "°C"
+                        ],
+                        "__anon_112": [
+                            "°F"
+                        ],
+                        "__anon_113": [
+                            "1"
+                        ]
                     }
                 },
                 "to",
@@ -6991,10 +7291,18 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "37.9": null,
-                        "°C": null,
-                        "°F": null
+                        "__anon_114": [
+                            "37.9"
+                        ],
+                        "__anon_115": [
+                            "°C"
+                        ],
+                        "__anon_116": [
+                            "°F"
+                        ],
+                        "__anon_117": [
+                            "1"
+                        ]
                     }
                 },
                 ".",
@@ -7012,33 +7320,35 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "List of districts of London": null
+                        "__anon_118": [
+                            "List of districts of London"
+                        ]
                     }
                 },
                 {
                     "__type": "table",
                     "content": [
                         "class=\"toccolours\"  style=\"float:right; font-size:80%; margin-left:10px;\"",
+                        "+",
                         {
-                            "__type": "body_cell",
-                            "content": [
-                                "+",
-                                {
-                                    "__type": "open_tag",
-                                    "name": "big",
-                                    "attributes": null
-                                },
-                                "'''The City of London and the 32 London boroughs'''",
-                                {
-                                    "__type": "close_tag",
-                                    "name": "big"
-                                }
-                            ]
+                            "__type": "open_tag",
+                            "name": "big",
+                            "attributes": null
+                        },
+                        "'''The City of London and the 32 London boroughs'''",
+                        {
+                            "__type": "close_tag",
+                            "name": "big"
                         },
                         {
                             "__type": "body_cell",
                             "content": [
-                                "style=\"padding-right:1em;\""
+                                {
+                                    "style": null
+                                },
+                                [
+                                    "\"padding-right:1em;\""
+                                ]
                             ]
                         },
                         {
@@ -7296,7 +7606,12 @@
                         {
                             "__type": "body_cell",
                             "content": [
-                                "style=\"background:white; padding:0 1em;\" class=\"toccolours\""
+                                {
+                                    "style": null
+                                },
+                                [
+                                    "\"background:white; padding:0 1em;\" class=\"toccolours\""
+                                ]
                             ]
                         },
                         {
@@ -7998,8 +8313,12 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Architecture of London": null,
-                        "List of tallest buildings and structures in London": null
+                        "__anon_119": [
+                            "Architecture of London"
+                        ],
+                        "__anon_120": [
+                            "List of tallest buildings and structures in London"
+                        ]
                     }
                 },
                 {
@@ -8524,8 +8843,12 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Parks and open spaces in London": null,
-                        "Royal Parks of London": null
+                        "__anon_121": [
+                            "Parks and open spaces in London"
+                        ],
+                        "__anon_122": [
+                            "Royal Parks of London"
+                        ]
                     }
                 },
                 {
@@ -8928,9 +9251,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "320": null,
-                        "ha": null,
-                        "acre": null,
+                        "__anon_123": [
+                            "320"
+                        ],
+                        "__anon_124": [
+                            "ha"
+                        ],
+                        "__anon_125": [
+                            "acre"
+                        ],
                         "sing": [
                             "on"
                         ]
@@ -9046,7 +9375,9 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Demography of London": null
+                        "__anon_126": [
+                            "Demography of London"
+                        ]
                     }
                 },
                 {
@@ -9070,11 +9401,15 @@
                     "__type": "template",
                     "name": "as of",
                     "content": {
-                        "2007": null,
                         "lc": [
                             "y"
                         ],
-                        "06": null,
+                        "__anon_127": [
+                            "2007"
+                        ],
+                        "__anon_128": [
+                            "06"
+                        ],
                         "alt": [
                             "as of mid-2007"
                         ]
@@ -9285,9 +9620,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1579": null,
-                        "km2": null,
-                        "sqmi": null
+                        "__anon_129": [
+                            "1579"
+                        ],
+                        "__anon_130": [
+                            "km2"
+                        ],
+                        "__anon_131": [
+                            "sqmi"
+                        ]
                     }
                 },
                 ". The population density is",
@@ -9295,9 +9636,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "4542": null,
-                        "PD/km2": null,
-                        "PD/sqmi": null
+                        "__anon_132": [
+                            "4542"
+                        ],
+                        "__anon_133": [
+                            "PD/km2"
+                        ],
+                        "__anon_134": [
+                            "PD/sqmi"
+                        ]
                     }
                 },
                 ",",
@@ -9496,7 +9843,9 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Ethnic groups in London": null
+                        "__anon_135": [
+                            "Ethnic groups in London"
+                        ]
                     }
                 },
                 "According to the",
@@ -9799,9 +10148,11 @@
                     "__type": "template",
                     "name": "as of",
                     "content": {
-                        "2010": null,
                         "lc": [
                             "y"
+                        ],
+                        "__anon_136": [
+                            "2010"
                         ]
                     }
                 },
@@ -10006,7 +10357,9 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Religion in London": null
+                        "__anon_137": [
+                            "Religion in London"
+                        ]
                     }
                 },
                 {
@@ -10037,85 +10390,143 @@
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "Christian": null,
-                                    "purple": null,
-                                    "58.2": null
+                                    "__anon_138": [
+                                        "Christian"
+                                    ],
+                                    "__anon_139": [
+                                        "purple"
+                                    ],
+                                    "__anon_140": [
+                                        "58.2"
+                                    ]
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "[[Irreligion": null,
-                                    "No religion]]": null,
-                                    "violet": null,
-                                    "15.8": null
+                                    "__anon_141": {
+                                        "__type": "reference",
+                                        "label": "Irreligion",
+                                        "description": "No religion"
+                                    },
+                                    "__anon_142": [
+                                        "violet"
+                                    ],
+                                    "__anon_143": [
+                                        "15.8"
+                                    ]
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "Religion not stated": null,
-                                    "black": null,
-                                    "8.7": null
+                                    "__anon_144": [
+                                        "Religion not stated"
+                                    ],
+                                    "__anon_145": [
+                                        "black"
+                                    ],
+                                    "__anon_146": [
+                                        "8.7"
+                                    ]
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "Muslim": null,
-                                    "Green": null,
-                                    "8.5": null
+                                    "__anon_147": [
+                                        "Muslim"
+                                    ],
+                                    "__anon_148": [
+                                        "Green"
+                                    ],
+                                    "__anon_149": [
+                                        "8.5"
+                                    ]
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "[[Hinduism": null,
-                                    "Hindu]]": null,
-                                    "Orange": null,
-                                    "4.1": null
+                                    "__anon_150": {
+                                        "__type": "reference",
+                                        "label": "Hinduism",
+                                        "description": "Hindu"
+                                    },
+                                    "__anon_151": [
+                                        "Orange"
+                                    ],
+                                    "__anon_152": [
+                                        "4.1"
+                                    ]
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "Jewish": null,
-                                    "Blue": null,
-                                    "2.1": null
+                                    "__anon_153": [
+                                        "Jewish"
+                                    ],
+                                    "__anon_154": [
+                                        "Blue"
+                                    ],
+                                    "__anon_155": [
+                                        "2.1"
+                                    ]
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "[[Sikhism": null,
-                                    "Sikh]]": null,
-                                    "yellow": null,
-                                    "1.5": null
+                                    "__anon_156": {
+                                        "__type": "reference",
+                                        "label": "Sikhism",
+                                        "description": "Sikh"
+                                    },
+                                    "__anon_157": [
+                                        "yellow"
+                                    ],
+                                    "__anon_158": [
+                                        "1.5"
+                                    ]
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "[[Buddhism": null,
-                                    "Buddhist]]": null,
-                                    "Gold": null,
-                                    "0.8": null
+                                    "__anon_159": {
+                                        "__type": "reference",
+                                        "label": "Buddhism",
+                                        "description": "Buddhist"
+                                    },
+                                    "__anon_160": [
+                                        "Gold"
+                                    ],
+                                    "__anon_161": [
+                                        "0.8"
+                                    ]
                                 }
                             },
                             {
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "Other": null,
-                                    "grey": null,
-                                    "0.2": null
+                                    "__anon_162": [
+                                        "Other"
+                                    ],
+                                    "__anon_163": [
+                                        "grey"
+                                    ],
+                                    "__anon_164": [
+                                        "0.2"
+                                    ]
                                 }
                             }
                         ]
@@ -10929,8 +11340,12 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Economy of London": null,
-                        "Media in London": null
+                        "__anon_165": [
+                            "Economy of London"
+                        ],
+                        "__anon_166": [
+                            "Media in London"
+                        ]
                     }
                 },
                 {
@@ -11680,38 +12095,45 @@
                     "__type": "template",
                     "name": "PDFlink",
                     "content": {
-                        "{{cite web": null,
-                        "url": [
-                            "http://corporate.visitlondon.com/ems/downloads/8112london101.pdf"
-                        ],
-                        "format": [
-                            "PDF"
-                        ],
-                        "title": [
-                            "London 101: One Hundred and One Amazing Facts About London"
-                        ],
-                        "archiveurl": [
-                            "http://web.archive.org/web/20070628053808/http://corporate.visitlondon.com/ems/downloads/8112london101.pdf"
-                        ],
-                        "archivedate": [
-                            "28 June 2007"
-                        ],
-                        "ref": [
-                            "harv"
+                        "__anon_167": {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "url": [
+                                    "http://corporate.visitlondon.com/ems/downloads/8112london101.pdf"
+                                ],
+                                "format": [
+                                    "PDF"
+                                ],
+                                "title": [
+                                    "London 101: One Hundred and One Amazing Facts About London"
+                                ],
+                                "archiveurl": [
+                                    "http://web.archive.org/web/20070628053808/http://corporate.visitlondon.com/ems/downloads/8112london101.pdf"
+                                ],
+                                "archivedate": [
+                                    "28 June 2007"
+                                ],
+                                "ref": [
+                                    "harv"
+                                ]
+                            }
+                        },
+                        "__anon_168": [
+                            "1.15&nbsp;",
+                            {
+                                "__type": "reference",
+                                "label": "Mebibyte",
+                                "description": "MiB"
+                            },
+                            {
+                                "__type": "comment_tag",
+                                "comment": " application/pdf, 1207545 bytes "
+                            }
                         ]
                     }
                 },
-                "|1.15&nbsp;",
-                {
-                    "__type": "reference",
-                    "label": "Mebibyte",
-                    "description": "MiB"
-                },
-                {
-                    "__type": "comment_tag",
-                    "comment": " application/pdf, 1207545 bytes "
-                },
-                "}}\", Visit London. Retrieved on 3 June 2006.",
+                "\", Visit London. Retrieved on 3 June 2006.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -11825,8 +12247,12 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Transport in London": null,
-                        "Infrastructure in London": null
+                        "__anon_169": [
+                            "Transport in London"
+                        ],
+                        "__anon_170": [
+                            "Infrastructure in London"
+                        ]
                     }
                 },
                 "Transport is one of the four main areas of policy administered by the Mayor of London,",
@@ -13582,9 +14008,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "195.5": null,
-                        "km": null,
-                        "mi": null,
+                        "__anon_171": [
+                            "195.5"
+                        ],
+                        "__anon_172": [
+                            "km"
+                        ],
+                        "__anon_173": [
+                            "mi"
+                        ],
                         "abbr": [
                             "on"
                         ]
@@ -13806,9 +14238,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "10.6": null,
-                        "mi/h": null,
-                        "km/h": null,
+                        "__anon_174": [
+                            "10.6"
+                        ],
+                        "__anon_175": [
+                            "mi/h"
+                        ],
+                        "__anon_176": [
+                            "km/h"
+                        ],
                         "abbr": [
                             "on"
                         ]
@@ -13901,7 +14339,9 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Education in London": null
+                        "__anon_177": [
+                            "Education in London"
+                        ]
                     }
                 },
                 {
@@ -14727,7 +15167,9 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Culture of London": null
+                        "__anon_178": [
+                            "Culture of London"
+                        ]
                     }
                 },
                 {
@@ -14821,8 +15263,12 @@
                     "__type": "template",
                     "name": "See also",
                     "content": {
-                        "List of annual events in London": null,
-                        "West End theatre": null
+                        "__anon_179": [
+                            "List of annual events in London"
+                        ],
+                        "__anon_180": [
+                            "West End theatre"
+                        ]
                     }
                 },
                 {
@@ -15033,9 +15479,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "mi": null,
-                        "km": null
+                        "__anon_181": [
+                            "1"
+                        ],
+                        "__anon_182": [
+                            "mi"
+                        ],
+                        "__anon_183": [
+                            "km"
+                        ]
                     }
                 },
                 "long Upper Street, extending northwards from",
@@ -15099,9 +15551,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "1": null,
-                        "mi": null,
-                        "km": null
+                        "__anon_184": [
+                            "1"
+                        ],
+                        "__anon_185": [
+                            "mi"
+                        ],
+                        "__anon_186": [
+                            "km"
+                        ]
                     }
                 },
                 "long, making it the longest shopping street in the United Kingdom. Oxford Street is home to vast numbers of retailers and",
@@ -15405,11 +15863,21 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "London in fiction": null,
-                        "London in film": null,
-                        "List of films set in London": null,
-                        "List of television shows set in London": null,
-                        "London Television Archive": null
+                        "__anon_187": [
+                            "London in fiction"
+                        ],
+                        "__anon_188": [
+                            "London in film"
+                        ],
+                        "__anon_189": [
+                            "List of films set in London"
+                        ],
+                        "__anon_190": [
+                            "List of television shows set in London"
+                        ],
+                        "__anon_191": [
+                            "London Television Archive"
+                        ]
                     }
                 },
                 {
@@ -16578,7 +17046,9 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "Sport in London": null
+                        "__anon_192": [
+                            "Sport in London"
+                        ]
                     }
                 },
                 {
@@ -17488,9 +17958,15 @@
                     "__type": "template",
                     "name": "convert",
                     "content": {
-                        "26.2": null,
-                        "mi": null,
-                        "km": null
+                        "__anon_193": [
+                            "26.2"
+                        ],
+                        "__anon_194": [
+                            "mi"
+                        ],
+                        "__anon_195": [
+                            "km"
+                        ]
                     }
                 },
                 "course around the city,",
@@ -17605,7 +18081,9 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "List of twin towns in the United Kingdom#London": null,
+                        "__anon_196": [
+                            "List of twin towns in the United Kingdom#London"
+                        ],
                         "l1": [
                             "List of towns and cities twinned with London"
                         ]
@@ -17674,7 +18152,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Colombia": null
+                        "__anon_197": [
+                            "Colombia"
+                        ]
                     }
                 },
                 {
@@ -17687,7 +18167,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Bolivia": null
+                        "__anon_198": [
+                            "Bolivia"
+                        ]
                     }
                 },
                 {
@@ -17700,7 +18182,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Peru": null
+                        "__anon_199": [
+                            "Peru"
+                        ]
                     }
                 },
                 {
@@ -17713,7 +18197,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Germany": null
+                        "__anon_200": [
+                            "Germany"
+                        ]
                     }
                 },
                 {
@@ -17759,7 +18245,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "India": null
+                        "__anon_201": [
+                            "India"
+                        ]
                     }
                 },
                 {
@@ -17816,7 +18304,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "South Africa": null
+                        "__anon_202": [
+                            "South Africa"
+                        ]
                     }
                 },
                 {
@@ -17869,7 +18359,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Malaysia": null
+                        "__anon_203": [
+                            "Malaysia"
+                        ]
                     }
                 },
                 {
@@ -17882,7 +18374,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Kuwait": null
+                        "__anon_204": [
+                            "Kuwait"
+                        ]
                     }
                 },
                 {
@@ -17895,7 +18389,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Russia": null
+                        "__anon_205": [
+                            "Russia"
+                        ]
                     }
                 },
                 {
@@ -17918,7 +18414,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "United States": null
+                        "__anon_206": [
+                            "United States"
+                        ]
                     }
                 },
                 {
@@ -17977,7 +18475,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Norway": null
+                        "__anon_207": [
+                            "Norway"
+                        ]
                     }
                 },
                 {
@@ -17990,7 +18490,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Bangladesh": null
+                        "__anon_208": [
+                            "Bangladesh"
+                        ]
                     }
                 },
                 {
@@ -18003,7 +18505,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "China": null
+                        "__anon_209": [
+                            "China"
+                        ]
                     }
                 },
                 {
@@ -18056,7 +18560,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "South Korea": null
+                        "__anon_210": [
+                            "South Korea"
+                        ]
                     }
                 },
                 {
@@ -18069,7 +18575,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Iran": null
+                        "__anon_211": [
+                            "Iran"
+                        ]
                     }
                 },
                 {
@@ -18101,7 +18609,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Algeria": null
+                        "__anon_212": [
+                            "Algeria"
+                        ]
                     }
                 },
                 {
@@ -18114,7 +18624,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Azerbaijan": null
+                        "__anon_213": [
+                            "Azerbaijan"
+                        ]
                     }
                 },
                 {
@@ -18127,7 +18639,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "China": null
+                        "__anon_214": [
+                            "China"
+                        ]
                     }
                 },
                 {
@@ -18180,7 +18694,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Romania": null
+                        "__anon_215": [
+                            "Romania"
+                        ]
                     }
                 },
                 {
@@ -18193,7 +18709,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Argentina": null
+                        "__anon_216": [
+                            "Argentina"
+                        ]
                     }
                 },
                 {
@@ -18206,7 +18724,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "India": null
+                        "__anon_217": [
+                            "India"
+                        ]
                     }
                 },
                 {
@@ -18229,7 +18749,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Bangladesh": null
+                        "__anon_218": [
+                            "Bangladesh"
+                        ]
                     }
                 },
                 {
@@ -18282,7 +18804,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Turkey": null
+                        "__anon_219": [
+                            "Turkey"
+                        ]
                     }
                 },
                 {
@@ -18295,7 +18819,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "United States": null
+                        "__anon_220": [
+                            "United States"
+                        ]
                     }
                 },
                 {
@@ -18345,7 +18871,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "India": null
+                        "__anon_221": [
+                            "India"
+                        ]
                     }
                 },
                 {
@@ -18358,7 +18886,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "France": null
+                        "__anon_222": [
+                            "France"
+                        ]
                     }
                 },
                 {
@@ -18399,7 +18929,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Montenegro": null
+                        "__anon_223": [
+                            "Montenegro"
+                        ]
                     }
                 },
                 {
@@ -18412,7 +18944,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Italy": null
+                        "__anon_224": [
+                            "Italy"
+                        ]
                     }
                 },
                 {
@@ -18425,7 +18959,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Bulgaria": null
+                        "__anon_225": [
+                            "Bulgaria"
+                        ]
                     }
                 },
                 {
@@ -18438,7 +18974,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Japan": null
+                        "__anon_226": [
+                            "Japan"
+                        ]
                     }
                 },
                 {
@@ -18451,7 +18989,9 @@
                     "__type": "template",
                     "name": "flagicon",
                     "content": {
-                        "Croatia": null
+                        "__anon_227": [
+                            "Croatia"
+                        ]
                     }
                 },
                 {
@@ -18474,7 +19014,9 @@
                     "__type": "template",
                     "name": "Portal",
                     "content": {
-                        "London": null
+                        "__anon_228": [
+                            "London"
+                        ]
                     }
                 },
                 "*",
@@ -18506,7 +19048,9 @@
                     "__type": "template",
                     "name": "Reflist",
                     "content": {
-                        "30em": null
+                        "__anon_229": [
+                            "30em"
+                        ]
                     }
                 },
                 {
@@ -18636,7 +19180,9 @@
                     "__type": "template",
                     "name": "osmrelation-inline",
                     "content": {
-                        "175342": null
+                        "__anon_230": [
+                            "175342"
+                        ]
                     }
                 },
                 "*",
@@ -18644,8 +19190,12 @@
                     "__type": "template",
                     "name": "wikia",
                     "content": {
-                        "london": null,
-                        "The London Wiki": null
+                        "__anon_231": [
+                            "london"
+                        ],
+                        "__anon_232": [
+                            "The London Wiki"
+                        ]
                     }
                 },
                 {
@@ -18781,42 +19331,54 @@
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "eu": null
+                        "__anon_233": [
+                            "eu"
+                        ]
                     }
                 },
                 {
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "hr": null
+                        "__anon_234": [
+                            "hr"
+                        ]
                     }
                 },
                 {
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "nn": null
+                        "__anon_235": [
+                            "nn"
+                        ]
                     }
                 },
                 {
                     "__type": "template",
                     "name": "Link GA",
                     "content": {
-                        "da": null
+                        "__anon_236": [
+                            "da"
+                        ]
                     }
                 },
                 {
                     "__type": "template",
                     "name": "Link GA",
                     "content": {
-                        "de": null
+                        "__anon_237": [
+                            "de"
+                        ]
                     }
                 },
                 {
                     "__type": "template",
                     "name": "Link GA",
                     "content": {
-                        "no": null
+                        "__anon_238": [
+                            "no"
+                        ]
                     }
                 },
                 {
@@ -20331,6 +20893,34 @@
             "description": ""
         },
         {
+            "label": "http://en.wikipedia.org/wiki/LondonEurostat",
+            "description": "European Statistical Agency"
+        },
+        {
+            "label": "http://en.wikipedia.org/wiki/LondonLarger_Urban_Zones",
+            "description": "Larger Urban Zone"
+        },
+        {
+            "label": "http://en.wikipedia.org/wiki/Londonconurbation",
+            "description": ""
+        },
+        {
+            "label": "http://en.wikipedia.org/wiki/LondonLargest_cities_of_the_European_Union_by_population_within_city_limits",
+            "description": "ranking of population"
+        },
+        {
+            "label": "http://en.wikipedia.org/wiki/LondonUniversity_of_Avignon",
+            "description": ""
+        },
+        {
+            "label": "http://en.wikipedia.org/wiki/Londonhinterland",
+            "description": ""
+        },
+        {
+            "label": "http://en.wikipedia.org/wiki/LondonLargest_urban_areas_of_the_European_Union",
+            "description": "outlying cities as well"
+        },
+        {
             "label": "http://en.wikipedia.org/wiki/LondonRiver_Thames",
             "description": ""
         },
@@ -20967,6 +21557,10 @@
             "description": ""
         },
         {
+            "label": "http://en.wikipedia.org/wiki/LondonSamuel_Johnson",
+            "description": ""
+        },
+        {
             "label": "http://en.wikipedia.org/wiki/File:LondonBombedWWII_full.jpg",
             "description": "thumb|right|A bombed out London street during [[the Blitz"
         },
@@ -21520,6 +22114,10 @@
         },
         {
             "label": "http://en.wikipedia.org/wiki/LondonWoolwich",
+            "description": ""
+        },
+        {
+            "label": "http://Talk.wikipedia.org/wiki/The_weather_in_London",
             "description": ""
         },
         {
@@ -22209,6 +22807,22 @@
         {
             "label": "http://en.wikipedia.org/wiki/LondonReligion_in_London",
             "description": "Religion in London (2001 census)"
+        },
+        {
+            "label": "http://en.wikipedia.org/wiki/LondonIrreligion",
+            "description": "No religion"
+        },
+        {
+            "label": "http://en.wikipedia.org/wiki/LondonHinduism",
+            "description": "Hindu"
+        },
+        {
+            "label": "http://en.wikipedia.org/wiki/LondonSikhism",
+            "description": "Sikh"
+        },
+        {
+            "label": "http://en.wikipedia.org/wiki/LondonBuddhism",
+            "description": "Buddhist"
         },
         {
             "label": "http://en.wikipedia.org/wiki/LondonIrreligion",
@@ -25275,7 +25889,7 @@
             "description": ""
         }
     ],
-    "template": {
+    "templates": {
         "__type": "templates",
         "occurrences": {
             "Portal": 1,
@@ -25286,7 +25900,7 @@
             "Reflist": 2,
             "Governance of Greater London": 1,
             "Div col": 2,
-            "cite web": 155,
+            "cite web": 156,
             "Good article": 1,
             "#tag:ref": 2,
             "other uses": 1,
@@ -26013,7 +26627,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "E": null
+                            "__anon_239": [
+                                "E"
+                            ]
                         }
                     },
                     ",",
@@ -26021,7 +26637,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "EC": null
+                            "__anon_240": [
+                                "EC"
+                            ]
                         }
                     },
                     ",",
@@ -26029,7 +26647,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "N": null
+                            "__anon_241": [
+                                "N"
+                            ]
                         }
                     },
                     ",",
@@ -26037,7 +26657,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "NW": null
+                            "__anon_242": [
+                                "NW"
+                            ]
                         }
                     },
                     ",",
@@ -26045,7 +26667,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "SE": null
+                            "__anon_243": [
+                                "SE"
+                            ]
                         }
                     },
                     ",",
@@ -26053,7 +26677,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "SW": null
+                            "__anon_244": [
+                                "SW"
+                            ]
                         }
                     },
                     ",",
@@ -26061,7 +26687,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "W": null
+                            "__anon_245": [
+                                "W"
+                            ]
                         }
                     },
                     ",",
@@ -26069,7 +26697,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "WC": null
+                            "__anon_246": [
+                                "WC"
+                            ]
                         }
                     },
                     ",",
@@ -26077,7 +26707,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "BR": null
+                            "__anon_247": [
+                                "BR"
+                            ]
                         }
                     },
                     ",",
@@ -26085,7 +26717,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "CM": null
+                            "__anon_248": [
+                                "CM"
+                            ]
                         }
                     },
                     ",",
@@ -26093,7 +26727,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "CR": null
+                            "__anon_249": [
+                                "CR"
+                            ]
                         }
                     },
                     ",",
@@ -26101,7 +26737,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "DA": null
+                            "__anon_250": [
+                                "DA"
+                            ]
                         }
                     },
                     ",",
@@ -26109,7 +26747,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "EN": null
+                            "__anon_251": [
+                                "EN"
+                            ]
                         }
                     },
                     ",",
@@ -26117,7 +26757,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "HA": null
+                            "__anon_252": [
+                                "HA"
+                            ]
                         }
                     },
                     ",",
@@ -26125,7 +26767,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "IG": null
+                            "__anon_253": [
+                                "IG"
+                            ]
                         }
                     },
                     ",",
@@ -26133,7 +26777,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "KT": null
+                            "__anon_254": [
+                                "KT"
+                            ]
                         }
                     },
                     ",",
@@ -26141,7 +26787,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "RM": null
+                            "__anon_255": [
+                                "RM"
+                            ]
                         }
                     },
                     ",",
@@ -26149,7 +26797,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "SM": null
+                            "__anon_256": [
+                                "SM"
+                            ]
                         }
                     },
                     ",",
@@ -26157,7 +26807,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "TN": null
+                            "__anon_257": [
+                                "TN"
+                            ]
                         }
                     },
                     ",",
@@ -26165,7 +26817,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "TW": null
+                            "__anon_258": [
+                                "TW"
+                            ]
                         }
                     },
                     ",",
@@ -26173,7 +26827,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "UB": null
+                            "__anon_259": [
+                                "UB"
+                            ]
                         }
                     },
                     ",",
@@ -26181,7 +26837,9 @@
                         "__type": "template",
                         "name": "postcode",
                         "content": {
-                            "WD": null
+                            "__anon_260": [
+                                "WD"
+                            ]
                         }
                     }
                 ],
@@ -26207,26 +26865,26 @@
             "__type": "table",
             "content": [
                 "class=\"toccolours\"  style=\"float:right; font-size:80%; margin-left:10px;\"",
+                "+",
                 {
-                    "__type": "body_cell",
-                    "content": [
-                        "+",
-                        {
-                            "__type": "open_tag",
-                            "name": "big",
-                            "attributes": null
-                        },
-                        "'''The City of London and the 32 London boroughs'''",
-                        {
-                            "__type": "close_tag",
-                            "name": "big"
-                        }
-                    ]
+                    "__type": "open_tag",
+                    "name": "big",
+                    "attributes": null
+                },
+                "'''The City of London and the 32 London boroughs'''",
+                {
+                    "__type": "close_tag",
+                    "name": "big"
                 },
                 {
                     "__type": "body_cell",
                     "content": [
-                        "style=\"padding-right:1em;\""
+                        {
+                            "style": null
+                        },
+                        [
+                            "\"padding-right:1em;\""
+                        ]
                     ]
                 },
                 {
@@ -26484,7 +27142,12 @@
                 {
                     "__type": "body_cell",
                     "content": [
-                        "style=\"background:white; padding:0 1em;\" class=\"toccolours\""
+                        {
+                            "style": null
+                        },
+                        [
+                            "\"background:white; padding:0 1em;\" class=\"toccolours\""
+                        ]
                     ]
                 },
                 {

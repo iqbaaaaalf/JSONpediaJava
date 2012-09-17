@@ -8,14 +8,22 @@ Text: '
 
 '''Albedo''' ('
 Begin Template: IPAc-en
-k: icon
-k: æ
-k: l
-k: ˈ
-k: b
-k: iː
-k: d
-k: oʊ
+k: null
+Text: 'icon'
+k: null
+Text: 'æ'
+k: null
+Text: 'l'
+k: null
+Text: 'ˈ'
+k: null
+Text: 'b'
+k: null
+Text: 'iː'
+k: null
+Text: 'd'
+k: null
+Text: 'oʊ'
 End Template: IPAc-en
 Text: '), or ''reflection coefficient'', derived from '
 Reference: Latin ''
@@ -58,20 +66,19 @@ Text: '
 Begin Table
 Text: ' class="wikitable" style="float:right; margin:10px"
 '
-Body Cell (0, 1)
 Text: '+ Sample albedos
 '
-Header Cell (1, 1)
+Header Cell (2, 1)
 Text: 'Surface
 '
-Header Cell (1, 2)
+Header Cell (2, 2)
 Text: 'Typical'
 Inline Tag: br attributes: []
 Text: 'albedo
 '
-Body Cell (2, 2)
+Body Cell (3, 2)
 Text: 'Fresh asphalt '
-Body Cell (2, 3)
+Body Cell (3, 3)
 Text: '0.04'
 Open Tag: ref attributes: [name : 'heat island']
 Begin Template: cite web
@@ -104,18 +111,18 @@ End Template: cite web
 Close Tag: ref
 Text: '
 '
-Body Cell (3, 2)
+Body Cell (4, 2)
 Text: 'Worn asphalt '
-Body Cell (3, 3)
+Body Cell (4, 3)
 Text: '0.12'
 Inline Tag: ref attributes: [name : 'heat island']
 Text: '
 '
-Body Cell (4, 2)
+Body Cell (5, 2)
 Text: 'Conifer forest'
 Inline Tag: br attributes: []
 Text: '(Summer) '
-Body Cell (4, 3)
+Body Cell (5, 3)
 Text: '0.08,'
 Open Tag: ref attributes: [name : 'Betts 1']
 Begin Template: Cite journal
@@ -164,17 +171,17 @@ Text: ' 0.09 to 0.15'
 Inline Tag: ref attributes: [name : 'mmutrees']
 Text: '
 '
-Body Cell (5, 2)
+Body Cell (6, 2)
 Reference: Deciduous trees ''
 Text: ' '
-Body Cell (5, 3)
+Body Cell (6, 3)
 Text: '0.15 to 0.18'
 Inline Tag: ref attributes: [name : 'mmutrees']
 Text: '
 '
-Body Cell (6, 2)
+Body Cell (7, 2)
 Text: 'Bare soil '
-Body Cell (6, 3)
+Body Cell (7, 3)
 Text: '0.17'
 Open Tag: ref attributes: [name : 'markvart']
 Begin Template: Cite book
@@ -196,16 +203,16 @@ End Template: Cite book
 Close Tag: ref
 Text: '
 '
-Body Cell (7, 2)
+Body Cell (8, 2)
 Text: 'Green grass '
-Body Cell (7, 3)
+Body Cell (8, 3)
 Text: '0.25'
 Inline Tag: ref attributes: [name : 'markvart']
 Text: '
 '
-Body Cell (8, 2)
+Body Cell (9, 2)
 Text: 'Desert sand '
-Body Cell (8, 3)
+Body Cell (9, 3)
 Text: '0.40'
 Open Tag: ref attributes: [name : 'Tetzlaff']
 Begin Template: Cite book
@@ -230,23 +237,23 @@ End Template: Cite book
 Close Tag: ref
 Text: '
 '
-Body Cell (9, 2)
+Body Cell (10, 2)
 Text: 'New concrete '
-Body Cell (9, 3)
+Body Cell (10, 3)
 Text: '0.55'
 Inline Tag: ref attributes: [name : 'markvart']
 Text: '
 '
-Body Cell (10, 2)
+Body Cell (11, 2)
 Text: 'Ocean Ice'
-Body Cell (10, 3)
+Body Cell (11, 3)
 Text: '0.5–0.7'
 Inline Tag: ref attributes: [name : 'markvart']
 Text: '
 '
-Body Cell (11, 2)
+Body Cell (12, 2)
 Text: 'Fresh snow '
-Body Cell (11, 3)
+Body Cell (12, 3)
 Text: '0.80–0.90'
 Inline Tag: ref attributes: [name : 'markvart']
 Text: '
@@ -858,7 +865,8 @@ Section [0] References
 Text: '
 '
 Begin Template: Reflist
-k: 30em
+k: null
+Text: '30em'
 k: refs
 Open Tag: ref attributes: [name : 'Goode']
 Begin Template: Cite journal 

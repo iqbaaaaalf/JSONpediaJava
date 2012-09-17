@@ -19,9 +19,9 @@ public class WikiTextParser implements ParserReader {
     protected static final String NOWIKI_NODE = "nowiki";
     protected static final String[] UNPARSED_NODES = new String[] {MATH_NODE, NOWIKI_NODE};
 
-    private static final String[] TEMPLATE_CLOSURE = new String[]{"}}"};
+    private static final String[] TEMPLATE_CLOSURE = new String[]{"}}", "|"};
 
-    private static final String[] TEMPLATE_LIST_DELIMITER = new String[]{"\n", "}}"};
+    private static final String[] TEMPLATE_LIST_DELIMITER = new String[]{"\n", "}}", "|"};
 
     private static final String[] TABLE_DELIMITERS = new String[]{"|}", "|-", "!!" , "!", "||", "|"};
 
@@ -215,40 +215,61 @@ public class WikiTextParser implements ParserReader {
         return templateHeaderSB.toString();
     }
 
-    private final StringBuilder propertyKeySB = new StringBuilder();
-    private String readPropertyKey() throws IOException {
-        clear(propertyKeySB);
+    private final StringBuilder tableHeaderSB = new StringBuilder();
+    private String readTableHeader() throws IOException {
+        clear(tableHeaderSB);
         char c;
         while(true) {
             mark();
             c = read();
-            if(c != '=' && c != '|' && c != '}' ) {
-                propertyKeySB.append(c);
-                mark();
+            if(c != '|') {
+                tableHeaderSB.append(c);
             } else {
-                if(c != '=')
+                mark();
+                c = read();
+                if(c == '-')
+                    mark();
+                else
                     reset();
                 break;
             }
         }
-        return propertyKeySB.toString();
+        return tableHeaderSB.toString();
     }
 
-    private int readPropertyValue(String[] lookAhead, boolean resetSequence) throws IOException {
+    private int readPropertyValue(String[] lookAhead, boolean resetSequence, boolean produceNullParamKey)
+    throws IOException {
         final StringBuilder sb = new StringBuilder();
         char c;
+        boolean foundAssignment = false;
         while(true) {
             mark();
             final int seq = lookAhead(lookAhead);
             if(seq != -1) {
                 if(resetSequence) reset();
-                if(sb.length() > 0) handler.text(sb.toString());
+                if(produceNullParamKey && !foundAssignment && sb.length() > 0) {
+                    handler.templateParameterName(null);
+                }
+                flushText(sb);
                 return seq;
             }
 
             c = read();
 
+            if(!foundAssignment && c == '=') {
+                foundAssignment = true;
+                handler.templateParameterName(sb.toString());
+                clear(sb);
+                mark();
+                consumeSpaces();
+                continue;
+            }
+
             if(c == '<') {
+                if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
+                    foundAssignment = true;
+                    handler.templateParameterName(null);
+                }
                 flushText(sb);
                 reset();
                 tagReader.readNode(this);
@@ -262,6 +283,10 @@ public class WikiTextParser implements ParserReader {
 
                 if(assertChar('{')) {
                     mark();
+                    if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
+                        foundAssignment = true;
+                        handler.templateParameterName(null);
+                    }
                     flushText(sb);
                     readTemplate();
                     continue;
@@ -271,6 +296,10 @@ public class WikiTextParser implements ParserReader {
 
                 if (assertChar('|')) {
                     mark();
+                    if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
+                        foundAssignment = true;
+                        handler.templateParameterName(null);
+                    }
                     flushText(sb);
                     readTable();
                     continue;
@@ -283,38 +312,35 @@ public class WikiTextParser implements ParserReader {
                 mark();
                 if(assertChar('[')) {
                     mark();
+                    if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
+                        foundAssignment = true;
+                        handler.templateParameterName(null);
+                    }
                     flushText(sb);
                     readReference();
                     continue;
                 } else {
                     reset();
+                    if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
+                        foundAssignment = true;
+                        handler.templateParameterName(null);
+                    }
                     flushText(sb);
                     readLink();
                     continue;
                 }
             }
 
-            // Simple element.
-            if(c != '|') {
-                sb.append(c);
-            } else {
-                break;
-            }
+            sb.append(c);
         }
-        flushText(sb);
-        return -1;
     }
 
     private void readTemplateProperties() throws IOException {
         while(true) {
             consumeSpaces();
-            final String propertyKey = readPropertyKey();
-            if(propertyKey.length() != 0) {
-                handler.templateParameterName(propertyKey);
-            }
-            consumeSpaces();
-            final int seq = readPropertyValue(TEMPLATE_CLOSURE, true );
-            if(seq != -1) break;
+            final int seq = readPropertyValue(TEMPLATE_CLOSURE, false, true);
+            mark();
+            if(seq == 0) break;
         }
     }
 
@@ -337,26 +363,28 @@ public class WikiTextParser implements ParserReader {
                 } else {
                    reset();
                 }
-                final int seq = readPropertyValue(TEMPLATE_LIST_DELIMITER, true );
+                final int seq = readPropertyValue(TEMPLATE_LIST_DELIMITER, true, false);
                 if(seq == 1) break;
             }
             handler.endList();
+            // TODO: remove this block.
+            if(assertChar('}')) {
+                if(assertChar('}')) {
+                    mark();
+                    handler.endTemplate(templateHeader);
+                } else {
+                    handler.parseWarning("Unexpected '}' while parsing template.", new DefaultParserLocation(this.row, this.col));
+                    reset();
+                }
+            } else {
+                mark();
+                handler.parseWarning("Expected template closure, found [" + lastRead + "]", new DefaultParserLocation(this.row, this.col));
+            }
         } else {
             reset();
             readTemplateProperties();
-        }
-
-        if(assertChar('}')) {
-            if(assertChar('}')) {
-                mark();
-                handler.endTemplate(templateHeader);
-            } else {
-                handler.parseWarning("Unexpected '}' while parsing template.", new DefaultParserLocation(this.row, this.col));
-                reset();
-            }
-        } else {
             mark();
-            handler.parseWarning("Expected template closure, found [" + lastRead + "]", new DefaultParserLocation(this.row, this.col));
+            handler.endTemplate(templateHeader);
         }
     }
 
@@ -460,9 +488,12 @@ public class WikiTextParser implements ParserReader {
         mark();
         int ahead;
         int tableRow, tableCol;
-        tableRow = tableCol = 0;
+        tableRow = tableCol = 1;
+        final String header = readTableHeader();
+        handler.text(header);
+        consumeSpaces();
         while(true) {
-            ahead = readPropertyValue(TABLE_DELIMITERS, false);
+            ahead = readPropertyValue(TABLE_DELIMITERS, false, false);
             if(ahead == 0) {
                 mark();
                 handler.endTable();

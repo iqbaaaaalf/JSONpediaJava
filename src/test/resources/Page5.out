@@ -1,17 +1,25 @@
 Begin Document
 Begin Template: Redirect
-k: National Hymn
-k: the hymn tune of that title
-k: God of Our Fathers
+k: null
+Text: 'National Hymn'
+k: null
+Text: 'the hymn tune of that title'
+k: null
+Text: 'God of Our Fathers'
 End Template: Redirect
 Text: '
 '
 Begin Template: Two other uses
-k: an American patriotic song
-k: the US coin series
-k: America the Beautiful Quarters
-k: the documentary film
-k: America the Beautiful (film)
+k: null
+Text: 'an American patriotic song'
+k: null
+Text: 'the US coin series'
+k: null
+Text: 'America the Beautiful Quarters'
+k: null
+Text: 'the documentary film'
+k: null
+Text: 'America the Beautiful (film)'
 End Template: Two other uses
 Text: '
 '
@@ -551,8 +559,10 @@ Link: http://memory.loc.gov/cocoon/ihas/loc.natlib.ihas.200000001/default.html '
 Text: '
 *'
 Begin Template: cantorion
-k: pieces/3049/America_the_Beautiful_(Materna)
-k: America the Beautiful
+k: null
+Text: 'pieces/3049/America_the_Beautiful_(Materna)'
+k: null
+Text: 'America the Beautiful'
 End Template: cantorion
 Text: '
 *'

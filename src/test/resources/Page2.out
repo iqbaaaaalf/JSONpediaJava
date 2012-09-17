@@ -30,9 +30,12 @@ Text: 'Timothy John Berners-Lee
 '
 k: birth_date  
 Begin Template: birth date and age
-k: 1955
-k: 6
-k: 8
+k: null
+Text: '1955'
+k: null
+Text: '6'
+k: null
+Text: '8'
 k: df
 Text: 'y'
 End Template: birth date and age
@@ -116,7 +119,8 @@ Text: '
 '
 k: website     
 Begin Template: Url
-k: http://www.w3.org/People/Berners-Lee/
+k: null
+Text: 'http://www.w3.org/People/Berners-Lee/'
 End Template: Url
 Text: '
 '
@@ -428,10 +432,14 @@ Text: ').
 
 '
 Begin Template: quotation
-k: " Mike Sendall buys a NeXT cube for evaluation, and gives it to Tim [Berners-Lee]. Tim's prototype implementation on NeXTStep is made in the space of a few months, thanks to the qualities of the NeXTStep software development system. This prototype offers WYSIWYG browsing/authoring! Current Web browsers used in "surfing the Internet" are mere passive windows, depriving the user of the possibility to contribute. During some sessions in the CERN cafeteria, Tim and I try to find a catching name for the system. I was determined that the name should not yet again be taken from Greek mythology. Tim proposes "World-Wide Web". I like this very much, except that it is difficult to pronounce in French..." by Robert Cailliau, 2 November 1995.<ref name
-Text: '"Ben">'
+k: null
+Text: '" Mike Sendall buys a NeXT cube for evaluation, and gives it to Tim '
+Text: 'Berners-Lee'
+Text: '. Tim's prototype implementation on NeXTStep is made in the space of a few months, thanks to the qualities of the NeXTStep software development system. This prototype offers WYSIWYG browsing/authoring! Current Web browsers used in "surfing the Internet" are mere passive windows, depriving the user of the possibility to contribute. During some sessions in the CERN cafeteria, Tim and I try to find a catching name for the system. I was determined that the name should not yet again be taken from Greek mythology. Tim proposes "World-Wide Web". I like this very much, except that it is difficult to pronounce in French..." by Robert Cailliau, 2 November 1995.'
+Open Tag: ref attributes: [name : 'Ben']
 Link: http://www.netvalley.com/cgi-bin/intval/net_history.pl?chapter=4 'Roads and Crossroads of Internet History'
 Text: ' Chapter 4: Birth of the Web'
+Close Tag: ref
 Text: ' '
 End Template: quotation
 Text: '
@@ -548,7 +556,8 @@ Reference: Semantic Web ''
 Text: '.'
 Open Tag: ref attributes: []
 Begin Template: cite doi
-k: 10.1038/scientificamerican0501-34
+k: null
+Text: '10.1038/scientificamerican0501-34'
 End Template: cite doi
 Close Tag: ref
 Open Tag: ref attributes: []
@@ -772,9 +781,12 @@ k: title
 Text: 'Software System Award '
 k: accessdate
 Begin Template: Start date
-k: 2011
-k: 10
-k: 25
+k: null
+Text: '2011'
+k: null
+Text: '10'
+k: null
+Text: '25'
 k: df
 Text: 'yes'
 End Template: Start date
@@ -1067,9 +1079,12 @@ k: publisher
 Text: 'IEEE '
 k: accessdate
 Begin Template: Start date
-k: 2011
-k: 10
-k: 4
+k: null
+Text: '2011'
+k: null
+Text: '10'
+k: null
+Text: '4'
 k: df
 Text: 'yes'
 End Template: Start date
@@ -1194,7 +1209,8 @@ Reference: IEEE Intelligent Systems ''
 Text: '' AI's Hall of Fame for the "significant contributions to the field of AI and intelligent systems".'
 Open Tag: ref attributes: []
 Begin Template: Cite doi
-k: 10.1109.2FMIS.2011.64
+k: null
+Text: '10.1109.2FMIS.2011.64'
 End Template: Cite doi
 Close Tag: ref
 Open Tag: ref attributes: []
@@ -1210,16 +1226,22 @@ k: date
 Begin Template: Start date
 k: df
 Text: 'yes'
-k: 2011
-k: 8
-k: 24
+k: null
+Text: '2011'
+k: null
+Text: '8'
+k: null
+Text: '24'
 End Template: Start date
 Text: ' '
 k: accessdate
 Begin Template: Start date
-k: 2011
-k: 9
-k: 18
+k: null
+Text: '2011'
+k: null
+Text: '9'
+k: null
+Text: '18'
 k: df
 Text: 'yes'
 End Template: Start date
@@ -1350,22 +1372,26 @@ End Template: cite book
 Text: '
 * '
 Begin Template: cite doi
-k: 10.1038/scientificamerican1210-80
+k: null
+Text: '10.1038/scientificamerican1210-80'
 End Template: cite doi
 Text: '
 * '
 Begin Template: cite pmid
-k: 21141362
+k: null
+Text: '21141362'
 End Template: cite pmid
 Text: '
 * '
 Begin Template: cite pmid
-k: 18847088
+k: null
+Text: '18847088'
 End Template: cite pmid
 Text: '
 * '
 Begin Template: cite pmid
-k: 16902115
+k: null
+Text: '16902115'
 End Template: cite pmid
 Text: '
 
@@ -1412,7 +1438,8 @@ Text: '
 
 *'
 Begin Template: Twitter
-k: timberners_lee
+k: null
+Text: 'timberners_lee'
 End Template: Twitter
 Text: '
 *'
@@ -1422,22 +1449,26 @@ Reference: identi.ca ''
 Text: '
 *'
 Begin Template: TED
-k: speakers/tim_berners_lee.html
+k: null
+Text: 'speakers/tim_berners_lee.html'
 End Template: TED
 Text: '
 *'
 Begin Template: IMDb name
-k: 3805083
+k: null
+Text: '3805083'
 End Template: IMDb name
 Text: '
 *'
 Begin Template: Nndb
-k: 573/000023504
+k: null
+Text: '573/000023504'
 End Template: Nndb
 Text: '
 *'
 Begin Template: Worldcat id
-k: lccn-no99-10609
+k: null
+Text: 'lccn-no99-10609'
 End Template: Worldcat id
 Text: '
 * '

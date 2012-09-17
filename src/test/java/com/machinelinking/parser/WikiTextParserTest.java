@@ -79,7 +79,8 @@ public class WikiTextParserTest {
 
                 "Begin Document\n" +
                 "Begin Template: Redirect\n" +
-                "k: Einstein\n" +
+                "k: null\n" +
+                "Text: 'Einstein'\n" +
                 "End Template: Redirect\n" +
                 "End Document\n"
         );
@@ -92,7 +93,8 @@ public class WikiTextParserTest {
 
                 "Begin Document\n" +
                 "Begin Template: Redirect\n" +
-                "k: Einstein\n" +
+                "k: null\n" +
+                "Text: 'Einstein'\n" +
                 "End Template: Redirect\n" +
                 "Begin Template: Good article\n" +
                 "End Template: Good article\n" +
@@ -113,7 +115,8 @@ public class WikiTextParserTest {
 
                 "Begin Document\n" +
                 "Begin Template: Redirect\n" +
-                "k: Einstein\n" +
+                "k: null\n" +
+                "Text: 'Einstein'\n" +
                 "End Template: Redirect\n" +
                 "Text: '\n" +
                 "'\n" +
@@ -152,7 +155,8 @@ public class WikiTextParserTest {
 
                 "Begin Document\n" +
                 "Begin Template: Redirect\n" +
-                "k: Einstein\n" +
+                "k: null\n" +
+                "Text: 'Einstein'\n" +
                 "End Template: Redirect\n" +
                 "Text: '\n" +
                 "'\n" +
@@ -179,7 +183,8 @@ public class WikiTextParserTest {
                 "Text: '1879'\n" +
                 "k: month\n" +
                 "Text: '3'\n" +
-                "k: 14\n" +
+                "k: null\n" +
+                "Text: '14'\n" +
                 "End Template: Birth date\n" +
                 "Text: '\n" +
                 "'\n" +
@@ -205,7 +210,8 @@ public class WikiTextParserTest {
 
                "Begin Document\n" +
                "Begin Template: Redirect\n" +
-               "k: Einstein\n" +
+               "k: null\n" +
+               "Text: 'Einstein'\n" +
                "End Template: Redirect\n" +
                "Text: '\n" +
                "'\n" +
@@ -232,7 +238,8 @@ public class WikiTextParserTest {
                "Text: '1879'\n" +
                "k: month\n" +
                "Text: '3'\n" +
-               "k: 14\n" +
+               "k: null\n" +
+               "Text: '14'\n" +
                "End Template: Birth date\n" +
                "Text: '\n" +
                "'\n" +
@@ -270,7 +277,8 @@ public class WikiTextParserTest {
 
                 "Begin Document\n" +
                 "Begin Template: Redirect\n" +
-                "k: Einstein\n" +
+                "k: null\n" +
+                "Text: 'Einstein'\n" +
                 "End Template: Redirect\n" +
                 "Text: '\n" +
                 "'\n" +
@@ -297,7 +305,8 @@ public class WikiTextParserTest {
                 "Text: '1879'\n" +
                 "k: month\n" +
                 "Text: '3'\n" +
-                "k: 14\n" +
+                "k: null\n" +
+                "Text: '14'\n" +
                 "End Template: Birth date\n" +
                 "Text: '\n" +
                 "'\n" +
@@ -328,16 +337,20 @@ public class WikiTextParserTest {
     }
 
     @Test
-    public void testParseTemplateWithEmptyCells() throws IOException, WikiTextParserException {
+    public void testParseTemplateEmptyParams() throws IOException, WikiTextParserException {
         parse(
                 "{{chart | | | | ThA |y| MaP | | | | | | | | |  GH | GH=George Huxley|ThA=[[Thomas Arnold]] 1795–1842|MaP=Mary Penrose 1791–1873}}",
 
                 "Begin Document\n" +
                 "Begin Template: chart \n" +
-                "k: ThA \n" +
-                "k: y\n" +
-                "k: MaP \n" +
-                "k: GH \n" +
+                "k: null\n" +
+                "Text: 'ThA '\n" +
+                "k: null\n" +
+                "Text: 'y'\n" +
+                "k: null\n" +
+                "Text: 'MaP '\n" +
+                "k: null\n" +
+                "Text: 'GH '\n" +
                 "k: GH\n" +
                 "Text: 'George Huxley'\n" +
                 "k: ThA\n" +
@@ -350,6 +363,86 @@ public class WikiTextParserTest {
         );
     }
 
+    @Test
+    public void testParseTemplateQuote() throws IOException, WikiTextParserException {
+        parse(
+                "{{quote|This morning, as for some days past, it seems exceedingly probable that this Administration will not be re-elected. Then it will be my duty to so co-operate with the President elect, as to save the Union between the election and the inauguration; as he will have secured his election on such ground that he cannot possibly save it afterward.<ref>Basler (1953), p. 514.{{full}}</ref>}}",
+
+                "Begin Document\n" +
+                "Begin Template: quote\n" +
+                "k: null\n" +
+                "Text: 'This morning, as for some days past, it seems exceedingly probable that this Administration will not be re-elected. Then it will be my duty to so co-operate with the President elect, as to save the Union between the election and the inauguration; as he will have secured his election on such ground that he cannot possibly save it afterward.'\n" +
+                "Open Tag: ref attributes: []\n" +
+                "Text: 'Basler (1953), p. 514.'\n" +
+                "Begin Template: full\n" +
+                "End Template: full\n" +
+                "Close Tag: ref\n" +
+                "End Template: quote\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
+    public void testParseTemplateAnonParams() throws IOException, WikiTextParserException {
+        parse(
+                "{{IPAc-en|icon|ˈ|æ|l|b|ər|t|_|ˈ|aɪ|n|s|t|aɪ|n}}",
+
+                "Begin Document\n" +
+                "Begin Template: IPAc-en\n" +
+                "k: null\n" +
+                "Text: 'icon'\n" +
+                "k: null\n" +
+                "Text: 'ˈ'\n" +
+                "k: null\n" +
+                "Text: 'æ'\n" +
+                "k: null\n" +
+                "Text: 'l'\n" +
+                "k: null\n" +
+                "Text: 'b'\n" +
+                "k: null\n" +
+                "Text: 'ər'\n" +
+                "k: null\n" +
+                "Text: 't'\n" +
+                "k: null\n" +
+                "Text: '_'\n" +
+                "k: null\n" +
+                "Text: 'ˈ'\n" +
+                "k: null\n" +
+                "Text: 'aɪ'\n" +
+                "k: null\n" +
+                "Text: 'n'\n" +
+                "k: null\n" +
+                "Text: 's'\n" +
+                "k: null\n" +
+                "Text: 't'\n" +
+                "k: null\n" +
+                "Text: 'aɪ'\n" +
+                "k: null\n" +
+                "Text: 'n'\n" +
+                "End Template: IPAc-en\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
+    public void testParseTemplateAnonCompositeParams() throws IOException, WikiTextParserException {
+        parse(
+                "{{Template|v1|v2|v3 [[link]] v4}}",
+
+               "Begin Document\n" +
+               "Begin Template: Template\n" +
+               "k: null\n" +
+               "Text: 'v1'\n" +
+               "k: null\n" +
+               "Text: 'v2'\n" +
+               "k: null\n" +
+               "Text: 'v3 '\n" +
+               "Reference: link ''\n" +
+               "Text: ' v4'\n" +
+               "End Template: Template\n" +
+               "End Document\n"
+        );
+    }
 
     @Test
     public void testParseNestedTemplate() throws IOException, WikiTextParserException {

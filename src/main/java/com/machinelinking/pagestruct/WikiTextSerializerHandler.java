@@ -114,7 +114,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
             serializer.closeList();
         }
         pushElement( new ParameterElement(param) );
-        final String parameterName = param.trim();
+        final String parameterName = param == null ? null : param.trim();
         serializer.field(parameterName);
         serializer.openList();
     }
@@ -151,6 +151,10 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void headCell(int row, int col) {
+        if (peekElement() instanceof ParameterElement) {
+            popElement(ParameterElement.class);
+            serializer.closeList();
+        }
         if( peekElement().getClass().equals(TableCell.class) ) {
             serializer.closeList();
             serializer.closeObject();
@@ -166,6 +170,10 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void bodyCell(int row, int col) {
+        if (peekElement() instanceof ParameterElement) {
+            popElement(ParameterElement.class);
+            serializer.closeList();
+        }
         if( peekElement().getClass().equals(TableCell.class) ) {
             serializer.closeList();
             serializer.closeObject();

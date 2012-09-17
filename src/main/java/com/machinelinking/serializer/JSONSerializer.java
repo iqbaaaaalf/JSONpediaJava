@@ -15,10 +15,8 @@ import java.util.Stack;
 //TODO: remove print out but before check for possible errors.
 public class JSONSerializer implements Serializer {
 
-    private static final String ANON_OBJ_FIELD_PREFIX  = "anon_obj_";
-    private static final String ANON_LIST_FIELD_PREFIX = "anon_lst_";
+    private static final String ANON_FIELD_PREFIX = "__anon_";
 
-    private long anonObjId   = 0;
     private long anonFieldId = 0;
 
     private enum WriterStatus {
@@ -110,9 +108,10 @@ public class JSONSerializer implements Serializer {
 
     @Override
     public void openObject() {
+        resetAnonField();
         try {
             if( check(WriterStatus.Object) ) {
-                jsonGenerator.writeFieldName(getNextAnonObjectName());
+                jsonGenerator.writeFieldName(getNextAnonField());
                 jsonGenerator.writeStartObject();
             } else if( checkAndPop(WriterStatus.PreList) ) {
                 stack.push(WriterStatus.List);
@@ -150,9 +149,10 @@ public class JSONSerializer implements Serializer {
 
     @Override
     public void openList() {
+        resetAnonField();
         try {
             if( check(WriterStatus.Object) ) {
-                jsonGenerator.writeFieldName(getNextAnonListName());
+                jsonGenerator.writeFieldName(getNextAnonField());
             } else if( check(WriterStatus.List) ) {
             } else if( checkAndPop(WriterStatus.PreList) ) {
                 stack.push(WriterStatus.List);
@@ -185,32 +185,33 @@ public class JSONSerializer implements Serializer {
 
     @Override
     public void field(String name) {
+        final String finalName = name == null ? getNextAnonField() : encodeFieldName(name);
         try {
             if( check(WriterStatus.Object) ) {
-                jsonGenerator.writeFieldName( encodeFieldName(name) );
+                jsonGenerator.writeFieldName(finalName);
                 stack.push(WriterStatus.Field);
             } else if(checkAndPop(WriterStatus.PreList)) {
                 stack.push(WriterStatus.List);
                 System.out.println("SPURIOUS A");
                 jsonGenerator.writeStartArray();
                 jsonGenerator.writeStartObject();
-                jsonGenerator.writeFieldName( encodeFieldName(name) );
+                jsonGenerator.writeFieldName(finalName);
                 stack.push(WriterStatus.SpuriousField);
             } else if(check(WriterStatus.List)) {
                 System.out.println("SPURIOUS B");
                 jsonGenerator.writeStartObject();
-                jsonGenerator.writeFieldName( encodeFieldName(name) );
+                jsonGenerator.writeFieldName(finalName);
                 stack.push(WriterStatus.SpuriousField);
             } else if( checkAndPop(WriterStatus.SpuriousField) ) {
                 jsonGenerator.writeNull();
                 jsonGenerator.writeEndObject();
                 jsonGenerator.writeStartObject();
-                jsonGenerator.writeFieldName( encodeFieldName(name) );
+                jsonGenerator.writeFieldName(finalName);
                 stack.push(WriterStatus.SpuriousField);
             }else { // Field
                 System.out.println("NESTED");
                 jsonGenerator.writeStartObject();
-                jsonGenerator.writeFieldName( encodeFieldName(name) );
+                jsonGenerator.writeFieldName(finalName);
                 stack.push(WriterStatus.SpuriousField);
             }
         } catch (IOException ioe) {
@@ -222,8 +223,7 @@ public class JSONSerializer implements Serializer {
     public void value(Object value) {
         try {
             if ( check(WriterStatus.Object) ) {
-                System.out.println("NO FIELD");
-                jsonGenerator.writeObjectField("NO FIELD", value);
+                jsonGenerator.writeObjectField(getNextAnonField(), value);
             } else if( checkAndPop(WriterStatus.PreList) ) {
                 stack.push(WriterStatus.List);
                 jsonGenerator.writeStartArray();
@@ -290,7 +290,6 @@ public class JSONSerializer implements Serializer {
             stack.pop();
             return true;
         } else {
-            //System.out.printf("ERROR, expected %s found %s\n", status, stack.peek());
             return false;
         }
     }
@@ -316,7 +315,7 @@ public class JSONSerializer implements Serializer {
     }
 
     public void close() {
-        anonFieldId = anonObjId = 0;
+        anonFieldId = 0;
         closeUntil(null);
         try {
             jsonGenerator.flush();
@@ -335,12 +334,12 @@ public class JSONSerializer implements Serializer {
         return dataEncoder.encodeFieldValue(value);
     }
 
-    private String getNextAnonObjectName() {
-        return ANON_OBJ_FIELD_PREFIX + anonObjId++;
+    private String getNextAnonField() {
+        return ANON_FIELD_PREFIX + anonFieldId++;
     }
 
-    private String getNextAnonListName() {
-        return ANON_LIST_FIELD_PREFIX + anonFieldId++;
+    private void resetAnonField() {
+        //anonFieldId = 0;  //TODO: broken. Anon fields must be managed into the stack.
     }
 
 }

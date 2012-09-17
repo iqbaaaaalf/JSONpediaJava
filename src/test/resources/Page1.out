@@ -1,6 +1,7 @@
 Begin Document
 Begin Template: Redirect
-k: Einstein
+k: null
+Text: 'Einstein'
 End Template: Redirect
 Text: '
 '
@@ -29,9 +30,12 @@ k: birth_date
 Begin Template: Birth date
 k: df
 Text: 'yes'
-k: 1879
-k: 3
-k: 14
+k: null
+Text: '1879'
+k: null
+Text: '3'
+k: null
+Text: '14'
 End Template: Birth date
 Text: '
 '
@@ -47,12 +51,18 @@ k: death_date
 Begin Template: Death date and age
 k: df
 Text: 'yes'
-k: 1955
-k: 4
-k: 18
-k: 1879
-k: 3
-k: 14
+k: null
+Text: '1955'
+k: null
+Text: '4'
+k: null
+Text: '18'
+k: null
+Text: '1879'
+k: null
+Text: '3'
+k: null
+Text: '14'
 End Template: Death date and age
 Text: '
 '
@@ -65,7 +75,9 @@ Reference: Mileva Marić ''
 Text: '&nbsp;(1903–1919)'
 Open Tag: br attributes: []
 Begin Template: nowrap
-k: [[Elsa Löwenthal]], née Einstein, (1919–1936)
+Reference: Elsa Löwenthal ''
+k: null
+Text: ', née Einstein, (1919–1936)'
 End Template: nowrap
 Text: '
 '
@@ -259,27 +271,45 @@ Text: '
 
 '''Albert Einstein''' ('
 Begin Template: IPAc-en
-k: icon
-k: ˈ
-k: æ
-k: l
-k: b
-k: ər
-k: t
-k: _
-k: ˈ
-k: aɪ
-k: n
-k: s
-k: t
-k: aɪ
-k: n
+k: null
+Text: 'icon'
+k: null
+Text: 'ˈ'
+k: null
+Text: 'æ'
+k: null
+Text: 'l'
+k: null
+Text: 'b'
+k: null
+Text: 'ər'
+k: null
+Text: 't'
+k: null
+Text: '_'
+k: null
+Text: 'ˈ'
+k: null
+Text: 'aɪ'
+k: null
+Text: 'n'
+k: null
+Text: 's'
+k: null
+Text: 't'
+k: null
+Text: 'aɪ'
+k: null
+Text: 'n'
 End Template: IPAc-en
 Text: '; '
 Begin Template: IPA-de
-k: ˈalbɐt ˈaɪnʃtaɪn
-k: lang
-k: Albert_Einstein_german.ogg
+k: null
+Text: 'ˈalbɐt ˈaɪnʃtaɪn'
+k: null
+Text: 'lang'
+k: null
+Text: 'Albert_Einstein_german.ogg'
 End Template: IPA-de
 Text: '; 14 March 1879&nbsp;– 18 April 1955) was a German'
 Comment Tag: [[MOS:BIO]]&nbsp;– Notability: Einstein was a German Nobel laureate.
@@ -327,7 +357,8 @@ Text: '.
 Close Tag: ref
 Open Tag: ref attributes: []
 Begin Template: cite doi
-k: 10.1098/rsbm.1955.0005
+k: null
+Text: '10.1098/rsbm.1955.0005'
 End Template: cite doi
 Close Tag: ref
 Text: ' While best known for his '
@@ -595,9 +626,14 @@ Text: 'Dudley Herschbach, "Einstein as a Student", Department of Chemistry and C
 Link: http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf 'HarvardChem-Einstein-PDF'
 Close Tag: ref
 Begin Template: #tag:ref
-k: "Albert's intellectual growth was strongly fostered at home. His mother, a talented pianist, ensured the children's musical education. His father regularly read Schiller and Heine aloud to the family. Uncle Jakob challenged Albert with mathematical problems, which he solved with 'a deep feeling of happiness'." More significant were the weekly visits of Max Talmud from 1889 through 1894 during which time he introduced the boy to popular scientific texts that brought to an end a short-lived religious phase, convincing him that 'a lot in the Bible stories could not be true'. A textbook of plane geometry that he quickly worked through led on to an avid self-study of mathematics, several years ahead of the school curriculum.
+k: null
+Text: '"Albert's intellectual growth was strongly fostered at home. His mother, a talented pianist, ensured the children's musical education. His father regularly read Schiller and Heine aloud to the family. Uncle Jakob challenged Albert with mathematical problems, which he solved with 'a deep feeling of happiness'." More significant were the weekly visits of Max Talmud from 1889 through 1894 during which time he introduced the boy to popular scientific texts that brought to an end a short-lived religious phase, convincing him that 'a lot in the Bible stories could not be true'. A textbook of plane geometry that he quickly worked through led on to an avid self-study of mathematics, several years ahead of the school curriculum.
 
-<ref>[http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf Einstein as a Student], pp. 3–5.</ref>
+'
+Open Tag: ref attributes: []
+Link: http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf 'Einstein as a Student'
+Text: ', pp. 3–5.'
+Close Tag: ref
 k: group
 Text: 'fn'
 End Template: #tag:ref
@@ -666,9 +702,12 @@ Reference: Maja Einstein 'Maja'
 Text: ' later married the Wintelers' son, Paul.)'
 Open Tag: ref attributes: []
 Begin Template: Harvtxt
-k: Highfield
-k: Carter
-k: 1993
+k: null
+Text: 'Highfield'
+k: null
+Text: 'Carter'
+k: null
+Text: '1993'
 k: pp
 Text: '21,31,56–57'
 End Template: Harvtxt
@@ -752,7 +791,8 @@ Section [1] Marriages and children
 Text: '
 '
 Begin Template: main
-k: Einstein family
+k: null
+Text: 'Einstein family'
 End Template: main
 Text: '
 In early 1902, Einstein and '
@@ -786,9 +826,12 @@ Reference: Elsa Einstein 'Elsa Löwenthal'
 Text: ' (née Einstein) on 2 June 1919, after having had a relationship with her since 1912. She was his first cousin maternally and his second cousin paternally. In 1933, they emigrated permanently to the United States. In 1935, Elsa Einstein was diagnosed with heart and kidney problems and died in December 1936.'
 Open Tag: ref attributes: [name : 'Highfield216']
 Begin Template: Harvnb
-k: Highfield
-k: Carter
-k: 1993
+k: null
+Text: 'Highfield'
+k: null
+Text: 'Carter'
+k: null
+Text: '1993'
 k: p
 Text: '216'
 End Template: Harvnb
@@ -902,8 +945,10 @@ Reference: University of Zurich ''
 Text: '. His dissertation was entitled "A New Determination of Molecular Dimensions".'
 Open Tag: ref attributes: []
 Begin Template: harv
-k: Einstein
-k: 1905b
+k: null
+Text: 'Einstein'
+k: null
+Text: '1905b'
 End Template: harv
 Close Tag: ref
 Open Tag: ref attributes: []
@@ -1072,14 +1117,16 @@ Reference: Tokyo Imperial Palace 'Imperial Palace'
 Text: ' where thousands came to watch. Einstein later gave his impressions of the Japanese in a letter to his sons:'
 Inline Tag: ref attributes: [name : 'Isaacson2']
 Begin Template: rp
-k: 307
+k: null
+Text: '307'
 End Template: rp
 Text: ' "Of all the people I have met, I like the Japanese most, as they are modest, intelligent, considerate, and have a feel for art."'
 Open Tag: ref attributes: [name : 'Isaacson2']
 Text: 'Isaacson, Walter. ''Einstein: His Life and Universe'', Simon & Schuster (2007)'
 Close Tag: ref
 Begin Template: rp
-k: 308
+k: null
+Text: '308'
 End Template: rp
 Text: '
 
@@ -1091,10 +1138,12 @@ Text: '. During one reception given to him, the building was "stormed by throngs
 
 '
 Begin Template: Block quote
-k: I consider this the greatest day of my life. Before, I have always found something to regret in the Jewish soul, and that is the forgetfulness of its own people. Today, I have been made happy by the sight of the Jewish people learning to recognize themselves and to make themselves recognized as a force in the world.<ref name
-Text: 'Isaacson/>'
+k: null
+Text: 'I consider this the greatest day of my life. Before, I have always found something to regret in the Jewish soul, and that is the forgetfulness of its own people. Today, I have been made happy by the sight of the Jewish people learning to recognize themselves and to make themselves recognized as a force in the world.'
+Inline Tag: ref attributes: [name : 'Isaacson']
 Begin Template: rp
-k: 308
+k: null
+Text: '308'
 End Template: rp
 Text: '.'
 End Template: Block quote
@@ -1261,7 +1310,8 @@ Reference: German nuclear energy project 'race to build an atomic bomb'
 Text: ', and to warn that Hitler would be more than willing to resort to such a weapon."'
 Inline Tag: ref attributes: [name : 'Isaacson2']
 Begin Template: rp
-k: 630
+k: null
+Text: '630'
 End Template: rp
 Open Tag: ref attributes: [name : 'Gosling']
 Text: 'Gosling, F.G. ''The Manhattan Project: Making the Atomic Bomb'', U.S. Department of Energy, History Division (January, 1999) p. vii'
@@ -1287,7 +1337,8 @@ Text: 'and'
 Text: ' he called for resistance to war." But in 1933, after Hitler assumed full power in Germany, "he renounced pacifism altogether . . . In fact, he urged the Western powers to prepare themselves against another German onslaught."'
 Inline Tag: ref attributes: [name : 'Stern']
 Begin Template: rp
-k: 110
+k: null
+Text: '110'
 End Template: rp
 Text: ' In 1954, a year before his death, Einstein said to his old friend, '
 Reference: Linus Pauling ''
@@ -1313,7 +1364,8 @@ Text: '
 What makes the new arrival devoted to this country is the democratic trait among the people. No one humbles himself before another person or class. . . American youth has the good fortune not to have its outlook troubled by outworn traditions.'
 Inline Tag: ref attributes: [name : 'Isaacson']
 Begin Template: rp
-k: 432
+k: null
+Text: '432'
 End Template: rp
 Text: '
 '
@@ -1370,7 +1422,8 @@ Reference: Abba Eban ''
 Text: ', who explained that the offer "embodies the deepest respect which the Jewish people can repose in any of its sons".'
 Inline Tag: ref attributes: [name : 'Isaacson2']
 Begin Template: rp
-k: 522
+k: null
+Text: '522'
 End Template: rp
 Text: ' However, Einstein declined, and wrote in his response that he was "deeply moved", and "at once saddened and ashamed" that he could not accept it:
 '
@@ -1379,7 +1432,8 @@ Text: '
 All my life I have dealt with objective matters, hence I lack both the natural aptitude and the experience to deal properly with people and to exercise official function. I am the more distressed over these circumstances because my relationship with the Jewish people became my strongest human tie once I achieved complete clarity about our precarious position among the nations of the world.'''
 Inline Tag: ref attributes: [name : 'Isaacson2']
 Begin Template: rp
-k: 522
+k: null
+Text: '522'
 End Template: rp
 Inline Tag: ref attributes: [name : 'Time']
 Open Tag: ref attributes: []
@@ -1566,10 +1620,14 @@ Section [1] 1905 - Annus Mirabilis papers
 Text: '
 '
 Begin Template: Main
-k: Annus Mirabilis papers
-k: Photoelectric effect
-k: Special theory of relativity
-k: Mass–energy equivalence
+k: null
+Text: 'Annus Mirabilis papers'
+k: null
+Text: 'Photoelectric effect'
+k: null
+Text: 'Special theory of relativity'
+k: null
+Text: 'Mass–energy equivalence'
 End Template: Main
 Text: '
 The '''
@@ -1785,9 +1843,12 @@ Section [1] Thermodynamic fluctuations and statistical physics
 Text: '
 '
 Begin Template: Main
-k: Statistical mechanics
-k: thermal fluctuations
-k: statistical physics
+k: null
+Text: 'Statistical mechanics'
+k: null
+Text: 'thermal fluctuations'
+k: null
+Text: 'statistical physics'
 End Template: Main
 Text: '
 Albert Einstein's first paper'
@@ -1835,7 +1896,8 @@ Text: '
 
 '
 Begin Template: Main
-k: History of special relativity
+k: null
+Text: 'History of special relativity'
 End Template: Main
 Text: '
 Einstein's "Zur Elektrodynamik bewegter Körper" ("On the Electrodynamics of Moving Bodies") was received on 30 June 1905 and published 26 September of that same year. It reconciles '
@@ -1857,8 +1919,10 @@ Reference: luminiferous aether ''
 Text: '&nbsp;– one of the leading theoretical entities in physics at the time&nbsp;– was superfluous.'
 Open Tag: ref attributes: []
 Begin Template: harv
-k: Einstein
-k: 1905d
+k: null
+Text: 'Einstein'
+k: null
+Text: '1905d'
 End Template: harv
 Close Tag: ref
 Text: '
@@ -1932,8 +1996,10 @@ Text: '
 
 '
 Begin Template: Main
-k: Photon
-k: Quantum
+k: null
+Text: 'Photon'
+k: null
+Text: 'Quantum'
 End Template: Main
 Text: '
 In a 1905 paper,'
@@ -1982,8 +2048,10 @@ Reference: Planck's constant ''
 Text: '. He does not say much more, because he is not sure how the particles are related to the wave. But he does suggest that this idea would explain certain experimental results, notably the photoelectric effect.'
 Open Tag: ref attributes: []
 Begin Template: harv
-k: Einstein
-k: 1905a
+k: null
+Text: 'Einstein'
+k: null
+Text: '1905a'
 End Template: harv
 Text: '.'
 Close Tag: ref
@@ -1995,7 +2063,8 @@ Text: '
 
 '
 Begin Template: Main
-k: Einstein solid
+k: null
+Text: 'Einstein solid'
 End Template: Main
 Text: '
 In 1907 Einstein proposed a model of matter where each atom in a lattice structure is an independent harmonic oscillator. In the Einstein model, each atom oscillates independently&nbsp;– a series of equally spaced quantized states for each oscillator. Einstein was aware that getting the frequency of the actual oscillations would be different, but he nevertheless proposed this theory because it was a particularly clear demonstration that quantum mechanics could solve the specific heat problem in classical mechanics. '
@@ -2015,7 +2084,8 @@ Text: '
 
 '
 Begin Template: Main
-k: Old quantum theory
+k: null
+Text: 'Old quantum theory'
 End Template: Main
 Text: '
 Throughout the 1910s, quantum mechanics expanded in scope to cover many different systems. After '
@@ -2052,7 +2122,8 @@ Text: ' in 1911]]
 
 '
 Begin Template: Main
-k: Wave–particle duality
+k: null
+Text: 'Wave–particle duality'
 End Template: Main
 Text: '
 Although the patent office promoted Einstein to Technical Examiner Second Class in 1906, he had not given up on academia. In 1908, he became a '''
@@ -2102,7 +2173,8 @@ Section [1] Theory of critical opalescence
 Text: '
 '
 Begin Template: Main
-k: Critical opalescence
+k: null
+Text: 'Critical opalescence'
 End Template: Main
 Text: '
 Einstein returned to the problem of thermodynamic fluctuations, giving a treatment of the density variations in a fluid at its critical point. Ordinarily the density fluctuations are controlled by the second derivative of the free energy with respect to the density. At the critical point, this derivative is zero, leading to large fluctuations. The effect of density fluctuations is that light of all wavelengths is scattered, making the fluid look milky white. Einstein relates this to '
@@ -2123,13 +2195,16 @@ Text: '
 
 '
 Begin Template: Main
-k: Zero-point energy
+k: null
+Text: 'Zero-point energy'
 End Template: Main
 Text: '
 Einstein's physical intuition led him to note that Planck's oscillator energies had an incorrect zero point. He modified Planck's hypothesis by stating that the lowest energy state of an oscillator is equal to '
 Begin Template: frac
-k: 1
-k: 2
+k: null
+Text: '1'
+k: null
+Text: '2'
 End Template: frac
 Text: '''hf'', to half the energy spacing between levels. This argument, which was made in 1913 in collaboration with '
 Reference: Otto Stern ''
@@ -2140,14 +2215,18 @@ Section [1] General relativity and the Equivalence Principle
 Text: '
 '
 Begin Template: Main
-k: History of general relativity
+k: null
+Text: 'History of general relativity'
 End Template: Main
 Text: '
 '
 Begin Template: See also
-k: Principle of equivalence
-k: Theory of relativity
-k: Einstein field equations
+k: null
+Text: 'Principle of equivalence'
+k: null
+Text: 'Theory of relativity'
+k: null
+Text: 'Einstein field equations'
 End Template: See also
 Text: '
 '
@@ -2192,7 +2271,8 @@ Section [1] Hole argument and Entwurf theory
 Text: '
 '
 Begin Template: Main
-k: Hole argument
+k: null
+Text: 'Hole argument'
 End Template: Main
 Text: '
 While developing general relativity, Einstein became confused about the '
@@ -2210,7 +2290,8 @@ Section [1] Cosmology
 Text: '
 '
 Begin Template: Main
-k: Cosmology
+k: null
+Text: 'Cosmology'
 End Template: Main
 Text: '
 In 1917, Einstein applied the General theory of relativity to model the structure of the universe as a whole. He wanted the universe to be eternal and unchanging, but this type of universe is not consistent with relativity. To fix this, Einstein modified the general theory by introducing a new notion, the '
@@ -2220,8 +2301,10 @@ Reference: Einstein static universe 'eternal static sphere'
 Text: '.'
 Open Tag: ref attributes: []
 Begin Template: Harv
-k: Einstein
-k: 1917a
+k: null
+Text: 'Einstein'
+k: null
+Text: '1917a'
 End Template: Harv
 Close Tag: ref
 Text: '
@@ -2243,7 +2326,8 @@ Text: '
 
 '
 Begin Template: Main
-k: Schrödinger equation
+k: null
+Text: 'Schrödinger equation'
 End Template: Main
 Text: '
 In 1917, at the height of his work on relativity, Einstein published an article in ''Physikalische Zeitschrift'' that proposed the possibility of '
@@ -2255,8 +2339,10 @@ Reference: laser ''
 Text: '.'
 Open Tag: ref attributes: []
 Begin Template: Harv
-k: Einstein
-k: 1917b
+k: null
+Text: 'Einstein'
+k: null
+Text: '1917b'
 End Template: Harv
 Close Tag: ref
 Text: '
@@ -2275,7 +2361,8 @@ Text: '
 
 '
 Begin Template: Main
-k: Bose–Einstein condensation
+k: null
+Text: 'Bose–Einstein condensation'
 End Template: Main
 Text: '
 In 1924, Einstein received a description of a '
@@ -2289,8 +2376,10 @@ Reference: Bose–Einstein condensate ''
 Text: ' phenomenon that some particulates should appear at very low temperatures.'
 Open Tag: ref attributes: []
 Begin Template: Harv
-k: Einstein
-k: 1924
+k: null
+Text: 'Einstein'
+k: null
+Text: '1924'
 End Template: Harv
 Close Tag: ref
 Text: ' It was not until 1995 that the first such condensate was produced experimentally by '
@@ -2332,7 +2421,8 @@ Text: '
 
 '
 Begin Template: Main
-k: Stress-energy-momentum pseudotensor
+k: null
+Text: 'Stress-energy-momentum pseudotensor'
 End Template: Main
 Text: '
 General relativity includes a dynamical spacetime, so it is difficult to see how to identify the conserved energy and momentum. '
@@ -2363,7 +2453,8 @@ Text: '
 
 '
 Begin Template: Main
-k: Classical unified field theories
+k: null
+Text: 'Classical unified field theories'
 End Template: Main
 Text: '
 Following his research on general relativity, Einstein entered into a series of attempts to generalize his geometric theory of gravitation to include electromagnetism as another aspect of a single entity. In 1950, he described his "'
@@ -2373,8 +2464,10 @@ Reference: Scientific American ''
 Text: ''' article entitled "On the Generalized Theory of Gravitation".'
 Open Tag: ref attributes: []
 Begin Template: Harv
-k: Einstein
-k: 1950
+k: null
+Text: 'Einstein'
+k: null
+Text: '1950'
 End Template: Harv
 Close Tag: ref
 Text: ' Although he continued to be lauded for his work, Einstein became increasingly isolated in his research, and his efforts were ultimately unsuccessful.
@@ -2394,7 +2487,8 @@ Text: '
 
 '
 Begin Template: Main
-k: Wormhole
+k: null
+Text: 'Wormhole'
 End Template: Main
 Text: '
 Einstein collaborated with others to produce a model of a '
@@ -2411,7 +2505,8 @@ Text: '
 
 '
 Begin Template: Main
-k: Einstein–Cartan theory
+k: null
+Text: 'Einstein–Cartan theory'
 End Template: Main
 Text: '
 In order to incorporate spinning point particles into general relativity, the affine connection needed to be generalized to include an antisymmetric part, called the '
@@ -2424,7 +2519,8 @@ Text: '
 
 '
 Begin Template: Main
-k: Einstein–Infeld–Hoffmann equations
+k: null
+Text: 'Einstein–Infeld–Hoffmann equations'
 End Template: Main
 Text: '
 The theory of general relativity has a fundamental law &nbsp;– the '
@@ -2444,7 +2540,8 @@ Section [1] Other investigations
 Text: '
 '
 Begin Template: main
-k: Einstein's unsuccessful investigations
+k: null
+Text: 'Einstein's unsuccessful investigations'
 End Template: main
 Text: '
 Einstein conducted other investigations that were unsuccessful and abandoned. These pertain to '
@@ -2476,7 +2573,8 @@ Section [2] Einstein–de Haas experiment
 Text: '=
 '
 Begin Template: Main
-k: Einstein–de Haas effect
+k: null
+Text: 'Einstein–de Haas effect'
 End Template: Main
 Text: '
 Einstein and De Haas demonstrated that magnetization is due to the motion of electrons, nowadays known to be the spin. In order to show this, they reversed the magnetization in an iron bar suspended on a '
@@ -2524,7 +2622,8 @@ Section [2] Einstein refrigerator
 Text: '=
 '
 Begin Template: Main
-k: Einstein refrigerator
+k: null
+Text: 'Einstein refrigerator'
 End Template: Main
 Text: '
 In 1926, Einstein and his former student '
@@ -2544,7 +2643,8 @@ Reference: chain reaction ''
 Close Tag: ref
 Text: ' On 11 November 1930, '
 Begin Template: US patent
-k: 1781541
+k: null
+Text: '1781541'
 End Template: US patent
 Text: ' was awarded to Albert Einstein and Leó Szilárd for the refrigerator. Their invention was not immediately put into commercial production, as the most promising of their patents were quickly bought up by the Swedish company '
 Reference: Electrolux ''
@@ -2577,7 +2677,8 @@ Section [1] Bohr versus Einstein
 Text: '
 '
 Begin Template: Main
-k: Bohr–Einstein debates
+k: null
+Text: 'Bohr–Einstein debates'
 End Template: Main
 Text: '
 '
@@ -2608,15 +2709,19 @@ Text: ' From Albert Einstein: Philosopher-Scientist (1949), publ. Cambridge Univ
 Close Tag: ref
 Open Tag: ref attributes: []
 Begin Template: Harv
-k: Einstein
-k: 1969
+k: null
+Text: 'Einstein'
+k: null
+Text: '1969'
 End Template: Harv
 Text: '. A reprint of this book was published by Edition Erbrich in 1982, ISBN 388682005X'
 Close Tag: ref
 Open Tag: ref attributes: []
 Begin Template: Harv
-k: Einstein
-k: 1935
+k: null
+Text: 'Einstein'
+k: null
+Text: '1935'
 End Template: Harv
 Close Tag: ref
 Text: '
@@ -2626,7 +2731,8 @@ Section [1] Einstein–Podolsky–Rosen paradox
 Text: '
 '
 Begin Template: Main
-k: EPR paradox
+k: null
+Text: 'EPR paradox'
 End Template: Main
 Text: '
 In 1935, Einstein returned to the question of quantum mechanics. He considered how a measurement on one of two entangled particles would affect the other. He noted, along with his collaborators, that by performing different measurements on the distant particle, either of position or momentum, different properties of the entangled partner could be discovered without disturbing it in any way.
@@ -2646,8 +2752,10 @@ Section [0] Political and religious views
 Text: '
 '
 Begin Template: Main
-k: Albert Einstein's political views
-k: Albert Einstein's religious views
+k: null
+Text: 'Albert Einstein's political views'
+k: null
+Text: 'Albert Einstein's religious views'
 End Template: Main
 Text: '
 '
@@ -2744,7 +2852,8 @@ Section [0] In popular culture
 Text: '
 '
 Begin Template: Main
-k: Albert Einstein in popular culture
+k: null
+Text: 'Albert Einstein in popular culture'
 End Template: Main
 Text: '
 In the period before World War II, Einstein was so well known in America that he would be stopped on the street by people wanting him to explain "that theory". He finally figured out a way to handle the incessant inquiries. He told his inquirers "Pardon me, sorry! Always I am mistaken for Professor Einstein."'
@@ -2790,7 +2899,8 @@ Section [0] Awards and honors
 Text: '
 '
 Begin Template: main
-k: Einstein's awards and honors
+k: null
+Text: 'Einstein's awards and honors'
 End Template: main
 Text: '
 Einstein received numerous awards and honors, including the '
@@ -3211,8 +3321,10 @@ Text: '10.1103/PhysRev.47.777
 '
 k: ref 
 Begin Template: harvid
-k: Einstein
-k: 1935
+k: null
+Text: 'Einstein'
+k: null
+Text: '1935'
 End Template: harvid
 Text: '
 '
@@ -3484,9 +3596,12 @@ Section [0] See also
 Text: '
 '
 Begin Template: Portal
-k: Biography
-k: Physics
-k: Science
+k: null
+Text: 'Biography'
+k: null
+Text: 'Physics'
+k: null
+Text: 'Science'
 End Template: Portal
 Text: '
 '
@@ -3620,7 +3735,8 @@ Section [0] External links
 Text: '
 '
 Begin Template: Sister project links
-k: Albert Einstein
+k: null
+Text: 'Albert Einstein'
 k: s
 Text: 'Author:Albert Einstein'
 End Template: Sister project links
@@ -3677,7 +3793,8 @@ Link: http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstei
 Text: '&nbsp;— free study course that explores the changing roles of physics and physicists during the 20th century
 * '
 Begin Template: GoogleScholar
-k: qc6CJjYAAAAJ
+k: null
+Text: 'qc6CJjYAAAAJ'
 End Template: GoogleScholar
 Text: '
 * '
@@ -3958,52 +4075,62 @@ Text: '
 
 '
 Begin Template: Link GA
-k: de
+k: null
+Text: 'de'
 End Template: Link GA
 Text: '
 '
 Begin Template: Link GA
-k: no
+k: null
+Text: 'no'
 End Template: Link GA
 Text: '
 '
 Begin Template: Link FA
-k: als
+k: null
+Text: 'als'
 End Template: Link FA
 Text: '
 '
 Begin Template: Link FA
-k: an
+k: null
+Text: 'an'
 End Template: Link FA
 Text: '
 '
 Begin Template: Link FA
-k: fi
+k: null
+Text: 'fi'
 End Template: Link FA
 Text: '
 '
 Begin Template: Link FA
-k: he
+k: null
+Text: 'he'
 End Template: Link FA
 Text: '
 '
 Begin Template: Link FA
-k: hr
+k: null
+Text: 'hr'
 End Template: Link FA
 Text: '
 '
 Begin Template: Link FA
-k: ru
+k: null
+Text: 'ru'
 End Template: Link FA
 Text: '
 '
 Begin Template: Link FA
-k: sr
+k: null
+Text: 'sr'
 End Template: Link FA
 Text: '
 '
 Begin Template: Link FA
-k: ur
+k: null
+Text: 'ur'
 End Template: Link FA
 Text: '
 

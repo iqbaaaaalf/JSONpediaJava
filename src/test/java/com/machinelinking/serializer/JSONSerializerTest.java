@@ -40,7 +40,7 @@ public class JSONSerializerTest {
     public void testOpenObject2() {
         serializer.openObject();
         serializer.openObject();
-        verify("{ \"anon_obj_0\" : {} }");
+        verify("{ \"__anon_0\" : {} }");
     }
 
     @Test
@@ -99,7 +99,7 @@ public class JSONSerializerTest {
     public void testSpuriousValue() {
         serializer.openObject();
         serializer.value("v1");
-        verify("{ \"NO FIELD\" : \"v1\" }");
+        verify("{ \"__anon_0\" : \"v1\" }");
     }
 
     @Test
@@ -107,7 +107,7 @@ public class JSONSerializerTest {
         serializer.openObject();
         serializer.value("v1");
         serializer.value("v2");
-        verify("{ \"NO FIELD\" : \"v1\" , \"NO FIELD\" : \"v2\" }");
+        verify("{ \"__anon_0\" : \"v1\" , \"__anon_1\" : \"v2\" }");
     }
 
     @Test

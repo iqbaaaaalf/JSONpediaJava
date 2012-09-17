@@ -26,6 +26,8 @@ import java.net.URL;
 public class DefaultCSVExporter extends WikiDumpMultiThreadProcessor<DefaultCSVExporter.TemplatePropertyProcessor>
 implements CSVExporter {
 
+    public static final String ANON_PROPERTY_PREFIX = "_anon";
+
     private BufferedWriter writer;
     private int threads = 0;
 
@@ -33,6 +35,8 @@ implements CSVExporter {
     private long propertiesCount         = 0;
     private int maxPropertiesPerTemplate = 0;
     private int propertiesPerTemplate    = 0;
+
+    private long anonId;
 
     public int getThreads() {
         return threads;
@@ -44,6 +48,8 @@ implements CSVExporter {
 
     @Override
     public CSVExporterReport export(URL pagePrefix, InputStream is, OutputStream os) {
+        anonId = 0;
+
         final BufferedInputStream bis =
                 is instanceof BufferedInputStream ? (BufferedInputStream) is : new BufferedInputStream(is);
         writer = new BufferedWriter( new OutputStreamWriter(os) );
@@ -142,7 +148,7 @@ implements CSVExporter {
 
         @Override
         public void templateParameterName(String param) {
-            property = param.trim();
+            property = param == null ? getNextAnonProperty() : param.trim();
             nextIsValue = true;
             propertiesCount++;
             propertiesPerTemplate++;
@@ -172,6 +178,10 @@ implements CSVExporter {
         @Override
         public void endTemplate(String name) {
             insideTemplate = false;
+        }
+
+        private String getNextAnonProperty() {
+            return ANON_PROPERTY_PREFIX + anonId++;
         }
 
         private String cleanString(String in) {
