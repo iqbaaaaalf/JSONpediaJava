@@ -17,30 +17,38 @@ import java.net.URI;
  */
 public class BasicServer {
 
-    // public static final String HOST = "0.0.0.0";
-    public static final String HOST = "127.0.0.1";
-
-    public static final int PORT    = 9998;
+    public static final String DEFAULT_HOST = "127.0.0.1";
+    public static final int   DEFAULT_PORT  = 9998;
 
     private static final String CONTENT_TYPE = "Content-Type";
 
-    public static final URI BASE_URI = getBaseURI().build();
+    public final URI baseURI;
 
     private HttpServer httpServer;
 
-    protected static UriBuilder getBaseURI() {
-        return UriBuilder.fromUri( String.format("http://%s/", HOST)).port(PORT);
+    public BasicServer(String host, int port) {
+        this.baseURI = UriBuilder.fromUri( String.format("http://%s/", host)).port(port).build();
+    }
+
+    public BasicServer() {
+        this(DEFAULT_HOST, DEFAULT_PORT);
+    }
+
+    public URI getBaseURI() {
+        return baseURI;
     }
 
     public void setUp() throws IOException {
         System.out.println("Starting Grizzly Server...");
         ResourceConfig rc = new PackagesResourceConfig(BasicServer.class.getPackage().getName());
-        httpServer = GrizzlyServerFactory.createHttpServer(BASE_URI, rc);
+        httpServer = GrizzlyServerFactory.createHttpServer(getBaseURI(), rc);
         httpServer.getServerConfiguration().addHttpHandler(
                 new StaticHttpHandler("./src/main/resources/frontend/"){
                     @Override
                     protected boolean handle(String uri, Request req, Response res) throws Exception {
-                        if(uri.endsWith(".css")) {
+                        if(uri.endsWith(".html")) {
+                            res.setHeader(CONTENT_TYPE, "text/html; charset=utf-8");
+                        } else if(uri.endsWith(".css")) {
                             res.setHeader(CONTENT_TYPE, "text/css");
                         } else if(uri.endsWith(".js")) {
                             res.setHeader(CONTENT_TYPE, "test/javascript");
@@ -59,19 +67,24 @@ public class BasicServer {
     }
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        final BasicServer serviceTestBase = new BasicServer();
-        serviceTestBase.setUp();
+        if(args.length != 2) {
+            System.err.println("Usage $0 <host> <port>");
+            System.exit(1);
+        }
+
+        final BasicServer basicServer = new BasicServer(args[0], Integer.parseInt(args[1]));
+        basicServer.setUp();
         System.out.println(
             String.format(
-                "Jersey app started with WADL available at %sapplication.wadl\n" +
-                 "Hit C^ to stop ...",
-                BASE_URI
+                    "Jersey app started with WADL available at %sapplication.wadl\n" +
+                            "Hit C^ to stop ...",
+                    basicServer.getBaseURI()
             )
         );
-        synchronized (serviceTestBase) {
-            serviceTestBase.wait();
+        synchronized (basicServer) {
+            basicServer.wait();
         }
-        serviceTestBase.tearDown();
+        basicServer.tearDown();
     }
 
 }

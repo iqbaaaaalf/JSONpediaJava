@@ -80,7 +80,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
 
     private UriBuilder buildPath(String path) throws URISyntaxException {
         return  UriBuilder.fromResource(DefaultAnnotationService.class)
-                .uri(new URI(String.format("http://%s", BasicServer.HOST))).port(BasicServer.PORT)
+                .uri(new URI(String.format("http://%s", BasicServer.DEFAULT_HOST))).port(BasicServer.DEFAULT_PORT)
                 .path(path);
     }
 
