@@ -29,7 +29,8 @@ Text: 'GH '
 k: GH
 Text: 'George Huxley'
 k: ThA
-Reference: Thomas Arnold ''
+Begin Reference: Thomas Arnold
+End Reference: Thomas Arnold
 Text: ' 1795–1842'
 k: MaP
 Text: 'Mary Penrose 1791–1873'
@@ -64,15 +65,20 @@ Text: 'y'
 k: null
 Text: 'AH '
 k: THH
-Reference: Thomas Henry Huxley ''
+Begin Reference: Thomas Henry Huxley
+End Reference: Thomas Henry Huxley
 Text: ' 1825–1895'
 k: AH
 Text: 'Ann Heathorn 1825–1915'
 k: TA
-Reference: Tom Arnold (literary scholar) 'Tom Arnold'
+Begin Reference: Tom Arnold (literary scholar)
+k: null
+Text: 'Tom Arnold'
+End Reference: Tom Arnold (literary scholar)
 Text: ' 1823–1900'
 k: MA
-Reference: Matthew Arnold ''
+Begin Reference: Matthew Arnold
+End Reference: Matthew Arnold
 Text: ' 1822–1888'
 End Template: chart 
 Text: '
@@ -129,14 +135,18 @@ Text: 'Frederick Waller'
 k: JOH
 Text: 'Jessie Huxley 1856–1927'
 k: LH
-Reference: Leonard Huxley (writer) 'Leonard Huxley'
+Begin Reference: Leonard Huxley (writer)
+k: null
+Text: 'Leonard Huxley'
+End Reference: Leonard Huxley (writer)
 Text: ' 1860–1933'
 k: JA
 Text: 'Julia Arnold 1862–1908'
 k: RB
 Text: 'Rosalind Bruce 1890–1994'
 k: MAW
-Reference: Mary Augusta Ward ''
+Begin Reference: Mary Augusta Ward
+End Reference: Mary Augusta Ward
 Text: ' 1851–1920'
 End Template: chart 
 Text: '
@@ -215,14 +225,16 @@ Text: '~'
 k: null
 Text: 'RP '
 k: JH
-Reference: Julian Huxley ''
+Begin Reference: Julian Huxley
+End Reference: Julian Huxley
 Text: ' 1887–1975'
 k: AH
 Text: 'Aldous Huxley 1894–1963'
 k: DBH
 Text: 'David Bruce Huxley 1915–1992'
 k: AFH
-Reference: Andrew Huxley ''
+Begin Reference: Andrew Huxley
+End Reference: Andrew Huxley
 Text: ' '
 Open Tag: br attributes: []
 Text: '  1917–2012'
@@ -231,7 +243,8 @@ Text: 'Richenda Pease 1925–2003'
 k: TH
 Text: 'Trevelyan Huxley 1891–1914'
 k: LA
-Reference: Laura Archera ''
+Begin Reference: Laura Archera
+End Reference: Laura Archera
 Text: ' 1911–2007'
 k: MN
 Text: 'Maria Nys 1899–1955'
@@ -248,7 +261,8 @@ Begin Template: chart
 k: null
 Text: 'MH '
 k: MH
-Reference: Matthew Huxley ''
+Begin Reference: Matthew Huxley
+End Reference: Matthew Huxley
 Text: ' 1920–2005'
 End Template: chart 
 Text: '

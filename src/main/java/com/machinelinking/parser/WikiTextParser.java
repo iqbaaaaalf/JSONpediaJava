@@ -274,6 +274,9 @@ public class WikiTextParser implements ParserReader {
                 reset();
                 tagReader.readNode(this);
                 mark();
+                if (tagReader.isInsideNode(UNPARSED_NODES)) {
+                    tagReader.readUntilNextTag(this);
+                }
                 continue;
             }
 
@@ -423,10 +426,14 @@ public class WikiTextParser implements ParserReader {
     }
 
     private void readReference() throws IOException {
-        final String referenceLabel       = readReferenceLabel();
-        final String referenceDescription = readReferenceDescription();
-        if( assertChar(']') && assertChar(']') ) mark();
-        handler.reference(referenceLabel, referenceDescription);
+        final String referenceLabel = readReferenceLabel();
+        handler.beginReference(referenceLabel);
+        int ahead;
+        while(true) {
+            ahead = readPropertyValue( new String[] {"]]", "|"}, false, true);
+            if(ahead == 0) break;
+        }
+        handler.endReference(referenceLabel);
     }
 
     private final StringBuilder linkURLSB = new StringBuilder();

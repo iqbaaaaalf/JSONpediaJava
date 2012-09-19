@@ -35,6 +35,11 @@ public class WikiTextSerializerHandlerTest extends WikiTextSerializerHandlerTest
         verifySerialization("BrokenTemplate1");
     }
 
+    @Test
+    public void testTableSerialization1() throws IOException, WikiTextParserException {
+        verifySerialization("serialization/Table1");
+    }
+
     public static class TestWikiTextSerializerHandler extends WikiTextSerializerHandler {
 
         public TestWikiTextSerializerHandler(Serializer serializer) {

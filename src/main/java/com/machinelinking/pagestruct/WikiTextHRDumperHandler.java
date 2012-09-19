@@ -67,8 +67,13 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void reference(String label, String description) {
-        printOut(String.format("Reference: %s '%s'", label, description));
+    public void beginReference(String label) {
+        printOut("Begin Reference: " + label);
+    }
+
+    @Override
+    public void endReference(String label) {
+        printOut("End Reference: " + label);
     }
 
     @Override

@@ -1,15 +1,23 @@
 Begin Document
 Text: 'Earlier versions of ASCII used the up-arrow instead of the '
-Reference: caret ''
+Begin Reference: caret
+End Reference: caret
 Text: ' (5E'
 Open Tag: sub attributes: []
-Reference: hexadecimal 'hex'
+Begin Reference: hexadecimal
+k: null
+Text: 'hex'
+End Reference: hexadecimal
 Close Tag: sub
 Text: ') and the left-arrow instead of the '
-Reference: underscore ''
+Begin Reference: underscore
+End Reference: underscore
 Text: ' (5F'
 Open Tag: sub attributes: []
-Reference: hexadecimal 'hex'
+Begin Reference: hexadecimal
+k: null
+Text: 'hex'
+End Reference: hexadecimal
 Close Tag: sub
 Text: ').'
 Open Tag: ref attributes: []
@@ -57,7 +65,10 @@ Text: '"background:lightblue;"'
 Body Cell (2, 8)
 Text: '20 '
 Body Cell (2, 9)
-Reference: space (punctuation) '␠'
+Begin Reference: space (punctuation)
+k: null
+Text: '␠'
+End Reference: space (punctuation)
 Text: '
 '
 Body Cell (3, 2)
@@ -78,7 +89,10 @@ Text: '"background:lightblue;"'
 Body Cell (3, 8)
 Text: '21 '
 Body Cell (3, 9)
-Reference: Exclamation mark '!'
+Begin Reference: Exclamation mark
+k: null
+Text: '!'
+End Reference: Exclamation mark
 Text: '
 '
 Body Cell (4, 2)
@@ -99,7 +113,10 @@ Text: '"background:lightblue;"'
 Body Cell (4, 8)
 Text: '22 '
 Body Cell (4, 9)
-Reference: Quotation mark '"'
+Begin Reference: Quotation mark
+k: null
+Text: '"'
+End Reference: Quotation mark
 Text: '
 '
 Body Cell (5, 2)
@@ -120,7 +137,10 @@ Text: '"background:lightblue;"'
 Body Cell (5, 8)
 Text: '23 '
 Body Cell (5, 9)
-Reference: Number sign '#'
+Begin Reference: Number sign
+k: null
+Text: '#'
+End Reference: Number sign
 Text: '
 '
 Body Cell (6, 2)
@@ -141,7 +161,10 @@ Text: '"background:lightblue;"'
 Body Cell (6, 8)
 Text: '24 '
 Body Cell (6, 9)
-Reference: Dollar sign '$'
+Begin Reference: Dollar sign
+k: null
+Text: '$'
+End Reference: Dollar sign
 Text: '
 '
 Body Cell (7, 2)
@@ -162,7 +185,10 @@ Text: '"background:lightblue;"'
 Body Cell (7, 8)
 Text: '25 '
 Body Cell (7, 9)
-Reference: Percent sign '%'
+Begin Reference: Percent sign
+k: null
+Text: '%'
+End Reference: Percent sign
 Text: '
 '
 Body Cell (8, 2)
@@ -183,7 +209,10 @@ Text: '"background:lightblue;"'
 Body Cell (8, 8)
 Text: '26 '
 Body Cell (8, 9)
-Reference: Ampersand '&'
+Begin Reference: Ampersand
+k: null
+Text: '&'
+End Reference: Ampersand
 Text: '
 '
 Body Cell (9, 2)
@@ -204,7 +233,10 @@ Text: '"background:lightblue;"'
 Body Cell (9, 8)
 Text: '27 '
 Body Cell (9, 9)
-Reference: apostrophe '''
+Begin Reference: apostrophe
+k: null
+Text: '''
+End Reference: apostrophe
 Text: '
 '
 Body Cell (10, 2)
@@ -225,7 +257,10 @@ Text: '"background:lightblue;"'
 Body Cell (10, 8)
 Text: '28 '
 Body Cell (10, 9)
-Reference: Parentheses '('
+Begin Reference: Parentheses
+k: null
+Text: '('
+End Reference: Parentheses
 Text: '
 '
 Body Cell (11, 2)
@@ -246,7 +281,10 @@ Text: '"background:lightblue;"'
 Body Cell (11, 8)
 Text: '29 '
 Body Cell (11, 9)
-Reference: Parentheses ')'
+Begin Reference: Parentheses
+k: null
+Text: ')'
+End Reference: Parentheses
 Text: '
 '
 Body Cell (12, 2)
@@ -267,7 +305,10 @@ Text: '"background:lightblue;"'
 Body Cell (12, 8)
 Text: '2A '
 Body Cell (12, 9)
-Reference: Asterisk '*'
+Begin Reference: Asterisk
+k: null
+Text: '*'
+End Reference: Asterisk
 Text: '
 '
 Body Cell (13, 2)
@@ -288,7 +329,10 @@ Text: '"background:lightblue;"'
 Body Cell (13, 8)
 Text: '2B '
 Body Cell (13, 9)
-Reference: Plus sign '+'
+Begin Reference: Plus sign
+k: null
+Text: '+'
+End Reference: Plus sign
 Text: '
 '
 Body Cell (14, 2)
@@ -309,7 +353,10 @@ Text: '"background:lightblue;"'
 Body Cell (14, 8)
 Text: '2C '
 Body Cell (14, 9)
-Reference: Comma (punctuation) ','
+Begin Reference: Comma (punctuation)
+k: null
+Text: ','
+End Reference: Comma (punctuation)
 Text: '
 '
 Body Cell (15, 2)
@@ -330,7 +377,10 @@ Text: '"background:lightblue;"'
 Body Cell (15, 8)
 Text: '2D '
 Body Cell (15, 9)
-Reference: Hyphen-minus '-'
+Begin Reference: Hyphen-minus
+k: null
+Text: '-'
+End Reference: Hyphen-minus
 Text: '
 '
 Body Cell (16, 2)
@@ -351,7 +401,10 @@ Text: '"background:lightblue;"'
 Body Cell (16, 8)
 Text: '2E '
 Body Cell (16, 9)
-Reference: Full stop '.'
+Begin Reference: Full stop
+k: null
+Text: '.'
+End Reference: Full stop
 Text: '
 '
 Body Cell (17, 2)
@@ -372,7 +425,10 @@ Text: '"background:lightblue;"'
 Body Cell (17, 8)
 Text: '2F '
 Body Cell (17, 9)
-Reference: Slash (punctuation) '/'
+Begin Reference: Slash (punctuation)
+k: null
+Text: '/'
+End Reference: Slash (punctuation)
 Text: '
 '
 Body Cell (18, 2)
@@ -393,7 +449,10 @@ Text: '"background:lightblue;"'
 Body Cell (18, 8)
 Text: '30 '
 Body Cell (18, 9)
-Reference: 0 (number) '0'
+Begin Reference: 0 (number)
+k: null
+Text: '0'
+End Reference: 0 (number)
 Text: '
 '
 Body Cell (19, 2)
@@ -414,7 +473,10 @@ Text: '"background:lightblue;"'
 Body Cell (19, 8)
 Text: '31 '
 Body Cell (19, 9)
-Reference: 1 (number) '1'
+Begin Reference: 1 (number)
+k: null
+Text: '1'
+End Reference: 1 (number)
 Text: '
 '
 Body Cell (20, 2)
@@ -435,7 +497,10 @@ Text: '"background:lightblue;"'
 Body Cell (20, 8)
 Text: '32 '
 Body Cell (20, 9)
-Reference: 2 (number) '2'
+Begin Reference: 2 (number)
+k: null
+Text: '2'
+End Reference: 2 (number)
 Text: '
 '
 Body Cell (21, 2)
@@ -456,7 +521,10 @@ Text: '"background:lightblue;"'
 Body Cell (21, 8)
 Text: '33 '
 Body Cell (21, 9)
-Reference: 3 (number) '3'
+Begin Reference: 3 (number)
+k: null
+Text: '3'
+End Reference: 3 (number)
 Text: '
 '
 Body Cell (22, 2)
@@ -477,7 +545,10 @@ Text: '"background:lightblue;"'
 Body Cell (22, 8)
 Text: '34 '
 Body Cell (22, 9)
-Reference: 4 (number) '4'
+Begin Reference: 4 (number)
+k: null
+Text: '4'
+End Reference: 4 (number)
 Text: '
 '
 Body Cell (23, 2)
@@ -498,7 +569,10 @@ Text: '"background:lightblue;"'
 Body Cell (23, 8)
 Text: '35 '
 Body Cell (23, 9)
-Reference: 5 (number) '5'
+Begin Reference: 5 (number)
+k: null
+Text: '5'
+End Reference: 5 (number)
 Text: '
 '
 Body Cell (24, 2)
@@ -519,7 +593,10 @@ Text: '"background:lightblue;"'
 Body Cell (24, 8)
 Text: '36 '
 Body Cell (24, 9)
-Reference: 6 (number) '6'
+Begin Reference: 6 (number)
+k: null
+Text: '6'
+End Reference: 6 (number)
 Text: '
 '
 Body Cell (25, 2)
@@ -540,7 +617,10 @@ Text: '"background:lightblue;"'
 Body Cell (25, 8)
 Text: '37 '
 Body Cell (25, 9)
-Reference: 7 (number) '7'
+Begin Reference: 7 (number)
+k: null
+Text: '7'
+End Reference: 7 (number)
 Text: '
 '
 Body Cell (26, 2)
@@ -561,7 +641,10 @@ Text: '"background:lightblue;"'
 Body Cell (26, 8)
 Text: '38 '
 Body Cell (26, 9)
-Reference: 8 (number) '8'
+Begin Reference: 8 (number)
+k: null
+Text: '8'
+End Reference: 8 (number)
 Text: '
 '
 Body Cell (27, 2)
@@ -582,7 +665,10 @@ Text: '"background:lightblue;"'
 Body Cell (27, 8)
 Text: '39 '
 Body Cell (27, 9)
-Reference: 9 (number) '9'
+Begin Reference: 9 (number)
+k: null
+Text: '9'
+End Reference: 9 (number)
 Text: '
 '
 Body Cell (28, 2)
@@ -603,7 +689,10 @@ Text: '"background:lightblue;"'
 Body Cell (28, 8)
 Text: '3A '
 Body Cell (28, 9)
-Reference: Colon (punctuation) ':'
+Begin Reference: Colon (punctuation)
+k: null
+Text: ':'
+End Reference: Colon (punctuation)
 Text: '
 '
 Body Cell (29, 2)
@@ -624,7 +713,10 @@ Text: '"background:lightblue;"'
 Body Cell (29, 8)
 Text: '3B '
 Body Cell (29, 9)
-Reference: Semicolon ';'
+Begin Reference: Semicolon
+k: null
+Text: ';'
+End Reference: Semicolon
 Text: '
 '
 Body Cell (30, 2)
@@ -645,7 +737,8 @@ Text: '"background:lightblue;"'
 Body Cell (30, 8)
 Text: '3C '
 Body Cell (30, 9)
-Reference: Less-than sign '<'
+Begin Reference: Less-than sign
+End Reference: Less-than sign
 Text: '
 '
 Body Cell (31, 2)
@@ -666,7 +759,9 @@ Text: '"background:lightblue;"'
 Body Cell (31, 8)
 Text: '3D '
 Body Cell (31, 9)
-Reference: Equals sign '='
+Begin Reference: Equals sign
+k: 
+End Reference: Equals sign
 Text: '
 '
 Body Cell (32, 2)
@@ -687,7 +782,10 @@ Text: '"background:lightblue;"'
 Body Cell (32, 8)
 Text: '3E '
 Body Cell (32, 9)
-Reference: Greater-than sign '>'
+Begin Reference: Greater-than sign
+k: null
+Text: '>'
+End Reference: Greater-than sign
 Text: '
 '
 Body Cell (33, 2)
@@ -708,7 +806,10 @@ Text: '"background:lightblue;"'
 Body Cell (33, 8)
 Text: '3F '
 Body Cell (33, 9)
-Reference: Question mark '?'
+Begin Reference: Question mark
+k: null
+Text: '?'
+End Reference: Question mark
 Text: '
 '
 End Table
@@ -750,7 +851,8 @@ Text: '"background:lightblue;"'
 Body Cell (2, 8)
 Text: '40 '
 Body Cell (2, 9)
-Reference: @ ''
+Begin Reference: @
+End Reference: @
 Text: '
 '
 Body Cell (3, 2)
@@ -771,7 +873,8 @@ Text: '"background:lightblue;"'
 Body Cell (3, 8)
 Text: '41 '
 Body Cell (3, 9)
-Reference: A ''
+Begin Reference: A
+End Reference: A
 Text: '
 '
 Body Cell (4, 2)
@@ -792,7 +895,8 @@ Text: '"background:lightblue;"'
 Body Cell (4, 8)
 Text: '42 '
 Body Cell (4, 9)
-Reference: B ''
+Begin Reference: B
+End Reference: B
 Text: '
 '
 Body Cell (5, 2)
@@ -813,7 +917,8 @@ Text: '"background:lightblue;"'
 Body Cell (5, 8)
 Text: '43 '
 Body Cell (5, 9)
-Reference: C ''
+Begin Reference: C
+End Reference: C
 Text: '
 '
 Body Cell (6, 2)
@@ -834,7 +939,8 @@ Text: '"background:lightblue;"'
 Body Cell (6, 8)
 Text: '44 '
 Body Cell (6, 9)
-Reference: D ''
+Begin Reference: D
+End Reference: D
 Text: '
 '
 Body Cell (7, 2)
@@ -855,7 +961,8 @@ Text: '"background:lightblue;"'
 Body Cell (7, 8)
 Text: '45 '
 Body Cell (7, 9)
-Reference: E ''
+Begin Reference: E
+End Reference: E
 Text: '
 '
 Body Cell (8, 2)
@@ -876,7 +983,8 @@ Text: '"background:lightblue;"'
 Body Cell (8, 8)
 Text: '46 '
 Body Cell (8, 9)
-Reference: F ''
+Begin Reference: F
+End Reference: F
 Text: '
 '
 Body Cell (9, 2)
@@ -897,7 +1005,8 @@ Text: '"background:lightblue;"'
 Body Cell (9, 8)
 Text: '47 '
 Body Cell (9, 9)
-Reference: G ''
+Begin Reference: G
+End Reference: G
 Text: '
 '
 Body Cell (10, 2)
@@ -918,7 +1027,8 @@ Text: '"background:lightblue;"'
 Body Cell (10, 8)
 Text: '48 '
 Body Cell (10, 9)
-Reference: H ''
+Begin Reference: H
+End Reference: H
 Text: '
 '
 Body Cell (11, 2)
@@ -939,7 +1049,8 @@ Text: '"background:lightblue;"'
 Body Cell (11, 8)
 Text: '49 '
 Body Cell (11, 9)
-Reference: I ''
+Begin Reference: I
+End Reference: I
 Text: '
 '
 Body Cell (12, 2)
@@ -960,7 +1071,8 @@ Text: '"background:lightblue;"'
 Body Cell (12, 8)
 Text: '4A '
 Body Cell (12, 9)
-Reference: J ''
+Begin Reference: J
+End Reference: J
 Text: '
 '
 Body Cell (13, 2)
@@ -981,7 +1093,8 @@ Text: '"background:lightblue;"'
 Body Cell (13, 8)
 Text: '4B '
 Body Cell (13, 9)
-Reference: K ''
+Begin Reference: K
+End Reference: K
 Text: '
 '
 Body Cell (14, 2)
@@ -1002,7 +1115,8 @@ Text: '"background:lightblue;"'
 Body Cell (14, 8)
 Text: '4C '
 Body Cell (14, 9)
-Reference: L ''
+Begin Reference: L
+End Reference: L
 Text: '
 '
 Body Cell (15, 2)
@@ -1023,7 +1137,8 @@ Text: '"background:lightblue;"'
 Body Cell (15, 8)
 Text: '4D '
 Body Cell (15, 9)
-Reference: M ''
+Begin Reference: M
+End Reference: M
 Text: '
 '
 Body Cell (16, 2)
@@ -1044,7 +1159,8 @@ Text: '"background:lightblue;"'
 Body Cell (16, 8)
 Text: '4E '
 Body Cell (16, 9)
-Reference: N ''
+Begin Reference: N
+End Reference: N
 Text: '
 '
 Body Cell (17, 2)
@@ -1065,7 +1181,8 @@ Text: '"background:lightblue;"'
 Body Cell (17, 8)
 Text: '4F '
 Body Cell (17, 9)
-Reference: O ''
+Begin Reference: O
+End Reference: O
 Text: '
 '
 Body Cell (18, 2)
@@ -1086,7 +1203,8 @@ Text: '"background:lightblue;"'
 Body Cell (18, 8)
 Text: '50 '
 Body Cell (18, 9)
-Reference: P ''
+Begin Reference: P
+End Reference: P
 Text: '
 '
 Body Cell (19, 2)
@@ -1107,7 +1225,8 @@ Text: '"background:lightblue;"'
 Body Cell (19, 8)
 Text: '51 '
 Body Cell (19, 9)
-Reference: Q ''
+Begin Reference: Q
+End Reference: Q
 Text: '
 '
 Body Cell (20, 2)
@@ -1128,7 +1247,8 @@ Text: '"background:lightblue;"'
 Body Cell (20, 8)
 Text: '52 '
 Body Cell (20, 9)
-Reference: R ''
+Begin Reference: R
+End Reference: R
 Text: '
 '
 Body Cell (21, 2)
@@ -1149,7 +1269,8 @@ Text: '"background:lightblue;"'
 Body Cell (21, 8)
 Text: '53 '
 Body Cell (21, 9)
-Reference: S ''
+Begin Reference: S
+End Reference: S
 Text: '
 '
 Body Cell (22, 2)
@@ -1170,7 +1291,8 @@ Text: '"background:lightblue;"'
 Body Cell (22, 8)
 Text: '54 '
 Body Cell (22, 9)
-Reference: T ''
+Begin Reference: T
+End Reference: T
 Text: '
 '
 Body Cell (23, 2)
@@ -1191,7 +1313,8 @@ Text: '"background:lightblue;"'
 Body Cell (23, 8)
 Text: '55 '
 Body Cell (23, 9)
-Reference: U ''
+Begin Reference: U
+End Reference: U
 Text: '
 '
 Body Cell (24, 2)
@@ -1212,7 +1335,8 @@ Text: '"background:lightblue;"'
 Body Cell (24, 8)
 Text: '56 '
 Body Cell (24, 9)
-Reference: V ''
+Begin Reference: V
+End Reference: V
 Text: '
 '
 Body Cell (25, 2)
@@ -1233,7 +1357,8 @@ Text: '"background:lightblue;"'
 Body Cell (25, 8)
 Text: '57 '
 Body Cell (25, 9)
-Reference: W ''
+Begin Reference: W
+End Reference: W
 Text: '
 '
 Body Cell (26, 2)
@@ -1254,7 +1379,8 @@ Text: '"background:lightblue;"'
 Body Cell (26, 8)
 Text: '58 '
 Body Cell (26, 9)
-Reference: X ''
+Begin Reference: X
+End Reference: X
 Text: '
 '
 Body Cell (27, 2)
@@ -1275,7 +1401,8 @@ Text: '"background:lightblue;"'
 Body Cell (27, 8)
 Text: '59 '
 Body Cell (27, 9)
-Reference: Y ''
+Begin Reference: Y
+End Reference: Y
 Text: '
 '
 Body Cell (28, 2)
@@ -1296,7 +1423,8 @@ Text: '"background:lightblue;"'
 Body Cell (28, 8)
 Text: '5A '
 Body Cell (28, 9)
-Reference: Z ''
+Begin Reference: Z
+End Reference: Z
 Text: '
 '
 Body Cell (29, 2)
@@ -1317,7 +1445,11 @@ Text: '"background:lightblue;"'
 Body Cell (29, 8)
 Text: '5B '
 Body Cell (29, 9)
-Reference: Square brackets '<nowiki>[</nowiki>'
+Begin Reference: Square brackets
+Open Tag: nowiki attributes: []
+Text: '['
+Close Tag: nowiki
+End Reference: Square brackets
 Text: '
 '
 Body Cell (30, 2)
@@ -1338,7 +1470,10 @@ Text: '"background:lightblue;"'
 Body Cell (30, 8)
 Text: '5C '
 Body Cell (30, 9)
-Reference: Backslash '\'
+Begin Reference: Backslash
+k: null
+Text: '\'
+End Reference: Backslash
 Text: '
 '
 Body Cell (31, 2)
@@ -1359,8 +1494,12 @@ Text: '"background:lightblue;"'
 Body Cell (31, 8)
 Text: '5D '
 Body Cell (31, 9)
-Reference: Square brackets '<nowiki>'
-Text: '/nowiki>]]
+Begin Reference: Square brackets
+Open Tag: nowiki attributes: []
+Text: ']'
+Close Tag: nowiki
+End Reference: Square brackets
+Text: '
 '
 Body Cell (32, 2)
 Text: '101 1110 '
@@ -1380,7 +1519,10 @@ Text: '"background:lightblue;"'
 Body Cell (32, 8)
 Text: '5E '
 Body Cell (32, 9)
-Reference: Caret '^'
+Begin Reference: Caret
+k: null
+Text: '^'
+End Reference: Caret
 Text: '
 '
 Body Cell (33, 2)
@@ -1401,7 +1543,10 @@ Text: '"background:lightblue;"'
 Body Cell (33, 8)
 Text: '5F '
 Body Cell (33, 9)
-Reference: Underscore '_'
+Begin Reference: Underscore
+k: null
+Text: '_'
+End Reference: Underscore
 Text: '
 '
 End Table
@@ -1443,7 +1588,10 @@ Text: '"background:lightblue;"'
 Body Cell (2, 8)
 Text: '60 '
 Body Cell (2, 9)
-Reference: Grave accent '`'
+Begin Reference: Grave accent
+k: null
+Text: '`'
+End Reference: Grave accent
 Text: '
 '
 Body Cell (3, 2)
@@ -1464,7 +1612,8 @@ Text: '"background:lightblue;"'
 Body Cell (3, 8)
 Text: '61 '
 Body Cell (3, 9)
-Reference: a ''
+Begin Reference: a
+End Reference: a
 Text: '
 '
 Body Cell (4, 2)
@@ -1485,7 +1634,8 @@ Text: '"background:lightblue;"'
 Body Cell (4, 8)
 Text: '62 '
 Body Cell (4, 9)
-Reference: b ''
+Begin Reference: b
+End Reference: b
 Text: '
 '
 Body Cell (5, 2)
@@ -1506,7 +1656,8 @@ Text: '"background:lightblue;"'
 Body Cell (5, 8)
 Text: '63 '
 Body Cell (5, 9)
-Reference: c ''
+Begin Reference: c
+End Reference: c
 Text: '
 '
 Body Cell (6, 2)
@@ -1527,7 +1678,8 @@ Text: '"background:lightblue;"'
 Body Cell (6, 8)
 Text: '64 '
 Body Cell (6, 9)
-Reference: d ''
+Begin Reference: d
+End Reference: d
 Text: '
 '
 Body Cell (7, 2)
@@ -1548,7 +1700,8 @@ Text: '"background:lightblue;"'
 Body Cell (7, 8)
 Text: '65 '
 Body Cell (7, 9)
-Reference: e ''
+Begin Reference: e
+End Reference: e
 Text: '
 '
 Body Cell (8, 2)
@@ -1569,7 +1722,8 @@ Text: '"background:lightblue;"'
 Body Cell (8, 8)
 Text: '66 '
 Body Cell (8, 9)
-Reference: f ''
+Begin Reference: f
+End Reference: f
 Text: '
 '
 Body Cell (9, 2)
@@ -1590,7 +1744,8 @@ Text: '"background:lightblue;"'
 Body Cell (9, 8)
 Text: '67 '
 Body Cell (9, 9)
-Reference: g ''
+Begin Reference: g
+End Reference: g
 Text: '
 '
 Body Cell (10, 2)
@@ -1611,7 +1766,8 @@ Text: '"background:lightblue;"'
 Body Cell (10, 8)
 Text: '68 '
 Body Cell (10, 9)
-Reference: h ''
+Begin Reference: h
+End Reference: h
 Text: '
 '
 Body Cell (11, 2)
@@ -1632,7 +1788,8 @@ Text: '"background:lightblue;"'
 Body Cell (11, 8)
 Text: '69 '
 Body Cell (11, 9)
-Reference: i ''
+Begin Reference: i
+End Reference: i
 Text: '
 '
 Body Cell (12, 2)
@@ -1653,7 +1810,8 @@ Text: '"background:lightblue;"'
 Body Cell (12, 8)
 Text: '6A '
 Body Cell (12, 9)
-Reference: j ''
+Begin Reference: j
+End Reference: j
 Text: '
 '
 Body Cell (13, 2)
@@ -1674,7 +1832,8 @@ Text: '"background:lightblue;"'
 Body Cell (13, 8)
 Text: '6B '
 Body Cell (13, 9)
-Reference: k ''
+Begin Reference: k
+End Reference: k
 Text: '
 '
 Body Cell (14, 2)
@@ -1695,7 +1854,8 @@ Text: '"background:lightblue;"'
 Body Cell (14, 8)
 Text: '6C '
 Body Cell (14, 9)
-Reference: l ''
+Begin Reference: l
+End Reference: l
 Text: '
 '
 Body Cell (15, 2)
@@ -1716,7 +1876,8 @@ Text: '"background:lightblue;"'
 Body Cell (15, 8)
 Text: '6D '
 Body Cell (15, 9)
-Reference: m ''
+Begin Reference: m
+End Reference: m
 Text: '
 '
 Body Cell (16, 2)
@@ -1737,7 +1898,8 @@ Text: '"background:lightblue;"'
 Body Cell (16, 8)
 Text: '6E '
 Body Cell (16, 9)
-Reference: n ''
+Begin Reference: n
+End Reference: n
 Text: '
 '
 Body Cell (17, 2)
@@ -1758,7 +1920,8 @@ Text: '"background:lightblue;"'
 Body Cell (17, 8)
 Text: '6F '
 Body Cell (17, 9)
-Reference: o ''
+Begin Reference: o
+End Reference: o
 Text: '
 '
 Body Cell (18, 2)
@@ -1779,7 +1942,8 @@ Text: '"background:lightblue;"'
 Body Cell (18, 8)
 Text: '70 '
 Body Cell (18, 9)
-Reference: p ''
+Begin Reference: p
+End Reference: p
 Text: '
 '
 Body Cell (19, 2)
@@ -1800,7 +1964,8 @@ Text: '"background:lightblue;"'
 Body Cell (19, 8)
 Text: '71 '
 Body Cell (19, 9)
-Reference: q ''
+Begin Reference: q
+End Reference: q
 Text: '
 '
 Body Cell (20, 2)
@@ -1821,7 +1986,8 @@ Text: '"background:lightblue;"'
 Body Cell (20, 8)
 Text: '72 '
 Body Cell (20, 9)
-Reference: r ''
+Begin Reference: r
+End Reference: r
 Text: '
 '
 Body Cell (21, 2)
@@ -1842,7 +2008,8 @@ Text: '"background:lightblue;"'
 Body Cell (21, 8)
 Text: '73 '
 Body Cell (21, 9)
-Reference: s ''
+Begin Reference: s
+End Reference: s
 Text: '
 '
 Body Cell (22, 2)
@@ -1863,7 +2030,8 @@ Text: '"background:lightblue;"'
 Body Cell (22, 8)
 Text: '74 '
 Body Cell (22, 9)
-Reference: t ''
+Begin Reference: t
+End Reference: t
 Text: '
 '
 Body Cell (23, 2)
@@ -1884,7 +2052,8 @@ Text: '"background:lightblue;"'
 Body Cell (23, 8)
 Text: '75 '
 Body Cell (23, 9)
-Reference: u ''
+Begin Reference: u
+End Reference: u
 Text: '
 '
 Body Cell (24, 2)
@@ -1905,7 +2074,8 @@ Text: '"background:lightblue;"'
 Body Cell (24, 8)
 Text: '76 '
 Body Cell (24, 9)
-Reference: v ''
+Begin Reference: v
+End Reference: v
 Text: '
 '
 Body Cell (25, 2)
@@ -1926,7 +2096,8 @@ Text: '"background:lightblue;"'
 Body Cell (25, 8)
 Text: '77 '
 Body Cell (25, 9)
-Reference: w ''
+Begin Reference: w
+End Reference: w
 Text: '
 '
 Body Cell (26, 2)
@@ -1947,7 +2118,8 @@ Text: '"background:lightblue;"'
 Body Cell (26, 8)
 Text: '78 '
 Body Cell (26, 9)
-Reference: x ''
+Begin Reference: x
+End Reference: x
 Text: '
 '
 Body Cell (27, 2)
@@ -1968,7 +2140,8 @@ Text: '"background:lightblue;"'
 Body Cell (27, 8)
 Text: '79 '
 Body Cell (27, 9)
-Reference: y ''
+Begin Reference: y
+End Reference: y
 Text: '
 '
 Body Cell (28, 2)
@@ -1989,7 +2162,8 @@ Text: '"background:lightblue;"'
 Body Cell (28, 8)
 Text: '7A '
 Body Cell (28, 9)
-Reference: z ''
+Begin Reference: z
+End Reference: z
 Text: '
 '
 Body Cell (29, 2)
@@ -2010,7 +2184,10 @@ Text: '"background:lightblue;"'
 Body Cell (29, 8)
 Text: '7B '
 Body Cell (29, 9)
-Reference: Bracket#Curly brackets '&#123;'
+Begin Reference: Bracket#Curly brackets
+k: null
+Text: '&#123;'
+End Reference: Bracket#Curly brackets
 Text: '
 '
 Body Cell (30, 2)
@@ -2031,7 +2208,10 @@ Text: '"background:lightblue;"'
 Body Cell (30, 8)
 Text: '7C '
 Body Cell (30, 9)
-Reference: Vertical bar '&#124;'
+Begin Reference: Vertical bar
+k: null
+Text: '&#124;'
+End Reference: Vertical bar
 Text: '
 '
 Body Cell (31, 2)
@@ -2052,7 +2232,10 @@ Text: '"background:lightblue;"'
 Body Cell (31, 8)
 Text: '7D '
 Body Cell (31, 9)
-Reference: Bracket#Curly brackets '&#125;'
+Begin Reference: Bracket#Curly brackets
+k: null
+Text: '&#125;'
+End Reference: Bracket#Curly brackets
 Text: '
 '
 Body Cell (32, 2)
@@ -2073,7 +2256,10 @@ Text: '"background:lightblue;"'
 Body Cell (32, 8)
 Text: '7E '
 Body Cell (32, 9)
-Reference: Tilde '~'
+Begin Reference: Tilde
+k: null
+Text: '~'
+End Reference: Tilde
 Text: '
 '
 End Table

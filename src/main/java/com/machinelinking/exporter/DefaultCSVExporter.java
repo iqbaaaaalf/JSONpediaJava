@@ -169,10 +169,8 @@ implements CSVExporter {
         }
 
         @Override
-        public void reference(String url, String description) {
-            if(insideTemplate && nextIsValue) {
-                print(String.format("[%s %s]", url, cleanString(description.trim())));
-            }
+        public void beginReference(String label) {
+            print(String.format("[%s]", label));
         }
 
         @Override

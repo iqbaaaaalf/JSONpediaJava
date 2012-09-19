@@ -20,7 +20,7 @@ public class CategoryExtractor extends Extractor {
     }
 
     @Override
-    public void reference(String label, String description) {
+    public void beginReference(String label) {
         if(label != null && label.startsWith(CATEGORY_PREFIX)) {
             categories.add(label.substring(CATEGORY_PREFIX.length()));
         }

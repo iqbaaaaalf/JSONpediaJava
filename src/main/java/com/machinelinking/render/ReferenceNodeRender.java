@@ -36,7 +36,7 @@ public class ReferenceNodeRender implements NodeRender {
     public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
     throws IOException {
         final String label       = node.get("label").asText();
-        final String description = node.get("description").asText().trim();
+        final String description = node.get("content").asText().trim();
         final String[] labelSections = label.split(".");
         if(labelSections.length == 2) {
             writeHTMLURL(

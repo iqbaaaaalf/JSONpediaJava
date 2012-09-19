@@ -62,7 +62,8 @@ k: nationality
 Text: 'English
 '
 k: residence   
-Reference: Massachusetts ''
+Begin Reference: Massachusetts
+End Reference: Massachusetts
 Text: ', U.S.'
 Inline Tag: ref attributes: [name : 'W3Bio']
 Text: '
@@ -71,48 +72,57 @@ k: known_for
 Begin Template: Plainlist
 Begin List
 Text: 'Inventing the '
-Reference: World Wide Web ''
+Begin Reference: World Wide Web
+End Reference: World Wide Web
 List Item
 Text: ' Holder of the 3Com Founders Chair at '
-Reference: MIT ''
+Begin Reference: MIT
+End Reference: MIT
 Text: ''s Computer Science and Artificial Intelligence Laboratory'
 End List
 End Template: Plainlist
 Text: '
 '
 k: alma_mater  
-Reference: Queen's College, Oxford ''
+Begin Reference: Queen's College, Oxford
+End Reference: Queen's College, Oxford
 Text: '
 '
 k: employer    
 Begin Template: Plainlist
 Begin List
-Reference: World Wide Web Consortium ''
+Begin Reference: World Wide Web Consortium
+End Reference: World Wide Web Consortium
 List Item
 Text: ' '
-Reference: University of Southampton ''
+Begin Reference: University of Southampton
+End Reference: University of Southampton
 End List
 End Template: Plainlist
 Text: '
 '
 k: occupation  
-Reference: Computer scientist ''
+Begin Reference: Computer scientist
+End Reference: Computer scientist
 Text: '
 '
 k: title       
 Text: 'Professor
 '
 k: religion    
-Reference: Unitarian Universalism ''
+Begin Reference: Unitarian Universalism
+End Reference: Unitarian Universalism
 Text: '
 '
 k: parents     
 Begin Template: Plainlist
 Begin List
-Reference: Conway Berners-Lee ''
+Begin Reference: Conway Berners-Lee
+End Reference: Conway Berners-Lee
 List Item
 Text: ' '
-Reference: Mary Lee Woods ''
+Begin Reference: Mary Lee Woods
+End Reference: Mary Lee Woods
 End List
 End Template: Plainlist
 Text: '
@@ -131,24 +141,44 @@ Text: '
 '''Sir Timothy John "Tim" Berners-Lee''', '
 Begin Template: post-nominals
 k: post-noms
-Reference: Order of Merit 'OM'
+Begin Reference: Order of Merit
+k: null
+Text: 'OM'
+End Reference: Order of Merit
 Text: ', '
-Reference: Knight Commander of the Order of the British Empire 'KBE'
+Begin Reference: Knight Commander of the Order of the British Empire
+k: null
+Text: 'KBE'
+End Reference: Knight Commander of the Order of the British Empire
 Text: ', '
-Reference: Royal Society 'FRS'
+Begin Reference: Royal Society
+k: null
+Text: 'FRS'
+End Reference: Royal Society
 Text: ', '
-Reference: Royal Academy of Engineering 'FREng'
+Begin Reference: Royal Academy of Engineering
+k: null
+Text: 'FREng'
+End Reference: Royal Academy of Engineering
 Text: ', '
-Reference: Royal Society of Arts 'FRSA'
+Begin Reference: Royal Society of Arts
+k: null
+Text: 'FRSA'
+End Reference: Royal Society of Arts
 End Template: post-nominals
 Text: ' (born 8 June 1955'
 Inline Tag: ref attributes: [name : 'W3Bio']
 Text: '), also known as "'''TimBL'''", is an English '
-Reference: computer scientist ''
+Begin Reference: computer scientist
+End Reference: computer scientist
 Text: ', '
-Reference: Massachusetts Institute of Technology 'MIT'
+Begin Reference: Massachusetts Institute of Technology
+k: null
+Text: 'MIT'
+End Reference: Massachusetts Institute of Technology
 Text: ' professor and the inventor of the '
-Reference: World Wide Web ''
+Begin Reference: World Wide Web
+End Reference: World Wide Web
 Text: '. He made a proposal for an information management system in March 1989'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -164,27 +194,40 @@ Text: '2011-12-21'
 End Template: cite web
 Close Tag: ref
 Text: ' and on 25 December 1990, with the help of '
-Reference: Robert Cailliau ''
+Begin Reference: Robert Cailliau
+End Reference: Robert Cailliau
 Text: ' and a young student at '
-Reference: CERN ''
+Begin Reference: CERN
+End Reference: CERN
 Text: ', he implemented the first successful communication between a '
-Reference: Hypertext Transfer Protocol ''
+Begin Reference: Hypertext Transfer Protocol
+End Reference: Hypertext Transfer Protocol
 Text: ' (HTTP) client and '
-Reference: Web server 'server'
+Begin Reference: Web server
+k: null
+Text: 'server'
+End Reference: Web server
 Text: ' via the Internet.'
 Inline Tag: ref attributes: [name : 'AFP']
 Text: '
 
 Berners-Lee is the director of the '
-Reference: World Wide Web Consortium ''
+Begin Reference: World Wide Web Consortium
+End Reference: World Wide Web Consortium
 Text: ' (W3C), which oversees the Web's continued development. He is also the founder of the '
-Reference: World Wide Web Foundation ''
+Begin Reference: World Wide Web Foundation
+End Reference: World Wide Web Foundation
 Text: ', and is a senior researcher and holder of the '
-Reference: 3Com ''
+Begin Reference: 3Com
+End Reference: 3Com
 Text: ' '
-Reference: Professors in the United States#Special academic ranks (tenured) 'Founders Chair'
+Begin Reference: Professors in the United States#Special academic ranks (tenured)
+k: null
+Text: 'Founders Chair'
+End Reference: Professors in the United States#Special academic ranks (tenured)
 Text: ' at the '
-Reference: MIT Computer Science and Artificial Intelligence Laboratory ''
+Begin Reference: MIT Computer Science and Artificial Intelligence Laboratory
+End Reference: MIT Computer Science and Artificial Intelligence Laboratory
 Text: ' (CSAIL).'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -193,7 +236,8 @@ Text: 'Draper Prize'
 k: url
 Text: 'http://web.mit.edu/newsoffice/2007/draper-prize.html'
 k: publisher
-Reference: Massachusetts Institute of Technology ''
+Begin Reference: Massachusetts Institute of Technology
+End Reference: Massachusetts Institute of Technology
 k: accessdate
 Text: '25 May 2008'
 End Template: cite web
@@ -217,7 +261,8 @@ Text: '28 June 2008'
 End Template: cite web
 Close Tag: ref
 Text: ' and a member of the advisory board of the '
-Reference: MIT Center for Collective Intelligence ''
+Begin Reference: MIT Center for Collective Intelligence
+End Reference: MIT Center for Collective Intelligence
 Text: '.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -246,13 +291,18 @@ Close Tag: ref
 Text: '
 
 In 2004, Berners-Lee was '
-Reference: Order of the British Empire 'knighted'
+Begin Reference: Order of the British Empire
+k: null
+Text: 'knighted'
+End Reference: Order of the British Empire
 Text: ' by Queen '
-Reference: Elizabeth II ''
+Begin Reference: Elizabeth II
+End Reference: Elizabeth II
 Text: ' for his pioneering work.'
 Inline Tag: ref attributes: [name : 'tecb']
 Text: ' In April 2009, he was elected a foreign associate of the '
-Reference: United States National Academy of Sciences ''
+Begin Reference: United States National Academy of Sciences
+End Reference: United States National Academy of Sciences
 Text: ', based in Washington, D.C.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -261,7 +311,8 @@ Text: 'Timothy Berners-Lee Elected to National Academy of Sciences'
 k: url
 Text: 'http://www.ddj.com/217200450'
 k: publisher
-Reference: Dr. Dobb's Journal ''
+Begin Reference: Dr. Dobb's Journal
+End Reference: Dr. Dobb's Journal
 k: accessdate
 Text: '9 June 2009'
 End Template: cite web
@@ -286,17 +337,22 @@ Text: '
 Section [0] Early life
 Text: '
 Tim Berners-Lee was born in southwest London, England, on 8 June 1955, the son of '
-Reference: Conway Berners-Lee ''
+Begin Reference: Conway Berners-Lee
+End Reference: Conway Berners-Lee
 Text: ' and '
-Reference: Mary Lee Woods ''
+Begin Reference: Mary Lee Woods
+End Reference: Mary Lee Woods
 Text: '.  His parents worked on the first commercially built computer, the '
-Reference: Ferranti Mark 1 ''
+Begin Reference: Ferranti Mark 1
+End Reference: Ferranti Mark 1
 Text: '.  One of four children, he attended Sheen Mount Primary School, and then went on to '
-Reference: Emanuel School ''
+Begin Reference: Emanuel School
+End Reference: Emanuel School
 Text: ' in London, from 1969 to 1973.'
 Inline Tag: ref attributes: [name : 'tecb']
 Text: ' He studied at '
-Reference: The Queen's College, Oxford ''
+Begin Reference: The Queen's College, Oxford
+End Reference: The Queen's College, Oxford
 Text: ', from 1973 to 1976, where he received a first-class degree in Physics.'
 Inline Tag: ref attributes: [name : 'W3Bio']
 Text: '
@@ -305,10 +361,18 @@ Text: '
 Section [0] Career
 Text: '
 '
-Reference: File:Tim Berners-Lee.jpg 'thumb|left|Berners-Lee, 2005'
+Begin Reference: File:Tim Berners-Lee.jpg
+k: null
+Text: 'thumb'
+k: null
+Text: 'left'
+k: null
+Text: 'Berners-Lee, 2005'
+End Reference: File:Tim Berners-Lee.jpg
 Text: '
 While an independent contractor at CERN from June to December 1980, Berners-Lee proposed a project based on the concept of '
-Reference: hypertext ''
+Begin Reference: hypertext
+End Reference: hypertext
 Text: ', to facilitate sharing and updating information among researchers.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -327,7 +391,8 @@ Text: '25 May 2008'
 End Template: cite web
 Close Tag: ref
 Text: ' While there, he built a prototype system named '
-Reference: ENQUIRE ''
+Begin Reference: ENQUIRE
+End Reference: ENQUIRE
 Text: '.'
 Open Tag: ref attributes: [name : 'linvinginternet']
 Begin Template: cite web
@@ -361,7 +426,8 @@ Text: 'Tim Berners-Lee'
 End Template: cite web
 Close Tag: ref
 Text: ' The project he worked on was a ''real-time remote procedure call'' which gave him experience in '
-Reference: computer network ''
+Begin Reference: computer network
+End Reference: computer network
 Text: 'ing.'
 Inline Tag: ref attributes: [name : 'faq']
 Text: ' In 1984 he returned to CERN as a fellow.'
@@ -369,9 +435,11 @@ Inline Tag: ref attributes: [name : 'linvinginternet']
 Text: '
 
 In 1989, CERN was the largest Internet node in Europe, and Berners-Lee saw an opportunity to join hypertext with the Internet: "I just had to take the hypertext idea and connect it to the '
-Reference: Transmission Control Protocol ''
+Begin Reference: Transmission Control Protocol
+End Reference: Transmission Control Protocol
 Text: ' and '
-Reference: domain name system ''
+Begin Reference: domain name system
+End Reference: domain name system
 Text: ' ideas and—ta-da!—the World Wide Web."'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -402,11 +470,16 @@ Text: '2011-12-21'
 End Template: cite web
 Close Tag: ref
 Text: ' He wrote his initial proposal in March 1989, and in 1990, with the help of '
-Reference: Robert Cailliau ''
+Begin Reference: Robert Cailliau
+End Reference: Robert Cailliau
 Text: ' (with whom he shared the 1995 '
-Reference: Association for Computing Machinery 'ACM'
+Begin Reference: Association for Computing Machinery
+k: null
+Text: 'ACM'
+End Reference: Association for Computing Machinery
 Text: ' '
-Reference: Software System Award ''
+Begin Reference: Software System Award
+End Reference: Software System Award
 Text: '), produced a revision which was accepted by his manager, Mike Sendall.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -421,13 +494,19 @@ Text: '21 July 2010'
 End Template: cite web
 Close Tag: ref
 Text: ' He used similar ideas to those underlying the ENQUIRE system to create the World Wide Web, for which he designed and built the first Web browser. This also functioned as an editor ('
-Reference: WorldWideWeb ''
+Begin Reference: WorldWideWeb
+End Reference: WorldWideWeb
 Text: ', running on the '
-Reference: NeXTSTEP ''
+Begin Reference: NeXTSTEP
+End Reference: NeXTSTEP
 Text: ' operating system), and the first Web server, '
-Reference: CERN HTTPd ''
+Begin Reference: CERN HTTPd
+End Reference: CERN HTTPd
 Text: ' (short for Hypertext Transfer Protocol '
-Reference: Daemon (computer software) 'daemon'
+Begin Reference: Daemon (computer software)
+k: null
+Text: 'daemon'
+End Reference: Daemon (computer software)
 Text: ').
 
 '
@@ -445,7 +524,8 @@ End Template: quotation
 Text: '
 
 The first '
-Reference: web site ''
+Begin Reference: web site
+End Reference: web site
 Text: ' built was at CERN within the border of France'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -507,7 +587,8 @@ Text: 'The original post to alt.hypertalk describing the WorldWideWeb Project'
 k: publisher
 Text: 'Google'
 k: work
-Reference: Google Groups ''
+Begin Reference: Google Groups
+End Reference: Google Groups
 k: date
 Text: '9 August 1991'
 k: url 
@@ -536,11 +617,16 @@ Close Tag: ref
 Text: '
 
 In 2001, Berners-Lee became a patron of the East Dorset Heritage Trust, having previously lived in '
-Reference: Colehill ''
+Begin Reference: Colehill
+End Reference: Colehill
 Text: ' in '
-Reference: Wimborne Minster 'Wimborne'
+Begin Reference: Wimborne Minster
+k: null
+Text: 'Wimborne'
+End Reference: Wimborne Minster
 Text: ', '
-Reference: East Dorset ''
+Begin Reference: East Dorset
+End Reference: East Dorset
 Text: ', England.'
 Open Tag: ref attributes: []
 Text: 'John W. Klooster (2009) '
@@ -550,9 +636,11 @@ Close Tag: ref
 Text: '
 
 In December 2004, he accepted a chair in Computer Science at the School of Electronics and Computer Science, '
-Reference: University of Southampton ''
+Begin Reference: University of Southampton
+End Reference: University of Southampton
 Text: ', England, to work on his new project, the '
-Reference: Semantic Web ''
+Begin Reference: Semantic Web
+End Reference: Semantic Web
 Text: '.'
 Open Tag: ref attributes: []
 Begin Template: cite doi
@@ -580,10 +668,23 @@ Text: '
 Section [0]  Current work 
 Text: '
 '
-Reference: Image:timbernerslee.jpg 'thumb|right|200px|Tim Berners-Lee at the [[Home Office'
-Text: ', London, on 11 March 2010]]
+Begin Reference: Image:timbernerslee.jpg
+k: null
+Text: 'thumb'
+k: null
+Text: 'right'
+k: null
+Text: '200px'
+k: null
+Text: 'Tim Berners-Lee at the '
+Begin Reference: Home Office
+End Reference: Home Office
+Text: ', London, on 11 March 2010'
+End Reference: Image:timbernerslee.jpg
+Text: '
 In June 2009 then British Prime Minister '
-Reference: Gordon Brown ''
+Begin Reference: Gordon Brown
+End Reference: Gordon Brown
 Text: ' announced Berners-Lee would work with the UK Government to help make data more open and accessible on the Web, building on the work of the Power of Information Task Force.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -600,13 +701,17 @@ Text: '10 July 2009  '
 End Template: cite web
 Close Tag: ref
 Text: ' Berners-Lee and Professor '
-Reference: Nigel Shadbolt ''
+Begin Reference: Nigel Shadbolt
+End Reference: Nigel Shadbolt
 Text: ' are the two key figures behind '
-Reference: data.gov.uk ''
+Begin Reference: data.gov.uk
+End Reference: data.gov.uk
 Text: ', a '
-Reference: UK Government ''
+Begin Reference: UK Government
+End Reference: UK Government
 Text: ' project to open up almost all data acquired for official purposes for free re-use. Commenting on the opening up of '
-Reference: Ordnance Survey ''
+Begin Reference: Ordnance Survey
+End Reference: Ordnance Survey
 Text: ' data in April 2010 Berners-Lee said that: "The changes signal a wider cultural change in Government based on an assumption that information should be in the public domain unless there is a good reason not to—not the other way around." He went on to say "Greater openness, accountability and transparency in Government will give people greater choice and make it easier for individuals to get more directly involved in issues that matter to them."'
 Open Tag: ref attributes: []
 Begin Template: cite news
@@ -632,7 +737,8 @@ Close Tag: ref
 Text: '
 
 Berners-Lee is one of the pioneer voices in favour of '
-Reference: Net Neutrality ''
+Begin Reference: Net Neutrality
+End Reference: Net Neutrality
 Text: ','
 Open Tag: ref attributes: []
 Begin Template: cite news
@@ -655,7 +761,8 @@ Text: 'Ghosh'
 End Template: cite news
 Close Tag: ref
 Text: ' and has expressed the view that '
-Reference: ISP ''
+Begin Reference: ISP
+End Reference: ISP
 Text: 's should supply "connectivity with no strings attached," and should neither control nor monitor customers' browsing activities without their expressed consent.'
 Open Tag: ref attributes: []
 Begin Template: cite news
@@ -722,7 +829,10 @@ Close Tag: ref
 Text: '
 
 In a '''
-Reference: The Times 'Times'
+Begin Reference: The Times
+k: null
+Text: 'Times'
+End Reference: The Times
 Text: ''' article in October 2009, Berners-Lee admitted that the initial pair of slashes ("//") in a web address were actually "unnecessary". He told the newspaper that he could easily have designed URLs not to have the slashes. "There you go, it seemed like a good idea at the time," he said in his lighthearted apology.'
 Open Tag: ref attributes: []
 Begin Template: cite news
@@ -744,10 +854,21 @@ Text: '
 Section [0] Recognition
 Text: '
 '
-Reference: Image:First Web Server.jpg 'thumb|200px|This [[NeXT Computer'
-Text: ' was used by Berners-Lee at CERN and became the world's first web server.]]
+Begin Reference: Image:First Web Server.jpg
+k: null
+Text: 'thumb'
+k: null
+Text: '200px'
+k: null
+Text: 'This '
+Begin Reference: NeXT Computer
+End Reference: NeXT Computer
+Text: ' was used by Berners-Lee at CERN and became the world's first web server.'
+End Reference: Image:First Web Server.jpg
+Text: '
 *In 1994 he became one of only six members of the '
-Reference: World Wide Web Hall of Fame ''
+Begin Reference: World Wide Web Hall of Fame
+End Reference: World Wide Web Hall of Fame
 Text: '.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -756,7 +877,8 @@ Text: 'The World-Wide Web Hall of Fame'
 k: url
 Text: 'http://botw.org/1994/awards/fame.html '
 k: publisher
-Reference: Best of the Web Directory ''
+Begin Reference: Best of the Web Directory
+End Reference: Best of the Web Directory
 End Template: cite web
 Close Tag: ref
 Text: '
@@ -764,14 +886,17 @@ Text: '
 Inline Tag: ref attributes: [name : 'W3Bio']
 Text: '
 *In 1995 he received also the '
-Reference: Software System Award ''
+Begin Reference: Software System Award
+End Reference: Software System Award
 Text: ' from the '
-Reference: Association for Computing Machinery ''
+Begin Reference: Association for Computing Machinery
+End Reference: Association for Computing Machinery
 Text: ' (ACM).'
 Open Tag: ref attributes: [name : 'acmaward']
 Begin Template: cite web 
 k: publisher
-Reference: Association for Computing Machinery ''
+Begin Reference: Association for Computing Machinery
+End Reference: Association for Computing Machinery
 Text: ' '
 k: url
 Text: 'http://awards.acm.org/homepage.cfm?srt=all&awd=149 '
@@ -795,7 +920,8 @@ End Template: cite web
 Close Tag: ref
 Text: '
 *In 1998 he was awarded with an honorary doctorate from the '
-Reference: University of Essex ''
+Begin Reference: University of Essex
+End Reference: University of Essex
 Text: '.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -809,9 +935,13 @@ End Template: cite web
 Close Tag: ref
 Text: '
 *In 1999, '''
-Reference: Time Magazine ''
+Begin Reference: Time Magazine
+End Reference: Time Magazine
 Text: ''' named Berners-Lee one of the '
-Reference: Time 100: The Most Important People of the Century '100 Most Important People of the 20th century'
+Begin Reference: Time 100: The Most Important People of the Century
+k: null
+Text: '100 Most Important People of the 20th century'
+End Reference: Time 100: The Most Important People of the Century
 Text: '.'
 Open Tag: ref attributes: [name : 'AFP']
 Begin Template: cite news
@@ -841,7 +971,8 @@ End Template: cite news
 Close Tag: ref
 Text: '
 *In March 2000 he was awarded an honorary degree from '
-Reference: The Open University ''
+Begin Reference: The Open University
+End Reference: The Open University
 Text: ' as Doctor of the University.'
 Open Tag: ref attributes: []
 Begin Template: cite news
@@ -850,7 +981,8 @@ Text: 'Open University's online graduation'
 k: url
 Text: 'http://news.bbc.co.uk/1/hi/education/696176.stm '
 k: work 
-Reference: BBC ''
+Begin Reference: BBC
+End Reference: BBC
 Text: ' NEWS '
 k: date 
 Text: '31. March 2000 '
@@ -860,7 +992,8 @@ End Template: cite news
 Close Tag: ref
 Text: '
 *In 2001, he was elected a Fellow of the '
-Reference: American Academy of Arts and Sciences ''
+Begin Reference: American Academy of Arts and Sciences
+End Reference: American Academy of Arts and Sciences
 Text: '.'
 Open Tag: ref attributes: [name : 'AAAS']
 Begin Template: cite web
@@ -876,7 +1009,8 @@ End Template: cite web
 Close Tag: ref
 Text: '
 *In 2003, he received the '
-Reference: Computer History Museum ''
+Begin Reference: Computer History Museum
+End Reference: Computer History Museum
 Text: ''s Fellow Award, for his seminal contributions to the development of the World Wide Web.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -894,11 +1028,14 @@ End Template: cite web
 Close Tag: ref
 Text: '
 *On 15 April 2004, he was named as the first recipient of Finland's '
-Reference: Millennium Technology Prize ''
+Begin Reference: Millennium Technology Prize
+End Reference: Millennium Technology Prize
 Text: ', for inventing the World Wide Web. The cash prize, worth one million euros (about £892,000, or US$1.3&nbsp;million, as of Sept 2011), was awarded on 15 June, in '
-Reference: Helsinki ''
+Begin Reference: Helsinki
+End Reference: Helsinki
 Text: ', Finland, by the President of the Republic of Finland, '
-Reference: Tarja Halonen ''
+Begin Reference: Tarja Halonen
+End Reference: Tarja Halonen
 Text: '.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -907,7 +1044,8 @@ k: title
 Text: 'Millennium Technology Prize 2004 awarded to inventor of World Wide Web
   '
 k: publisher
-Reference: Millennium Technology Prize ''
+Begin Reference: Millennium Technology Prize
+End Reference: Millennium Technology Prize
 Text: '
   '
 k: url 
@@ -926,9 +1064,15 @@ End Template: cite web
 Close Tag: ref
 Text: '
 *He was appointed to the rank of '
-Reference: Order of the British Empire 'Knight Commander of the Most Excellent Order of the British Empire'
+Begin Reference: Order of the British Empire
+k: null
+Text: 'Knight Commander of the Most Excellent Order of the British Empire'
+End Reference: Order of the British Empire
 Text: ' (the second-highest class within this Order that entails a knighthood) by '
-Reference: Elizabeth II of the United Kingdom 'Queen Elizabeth II'
+Begin Reference: Elizabeth II of the United Kingdom
+k: null
+Text: 'Queen Elizabeth II'
+End Reference: Elizabeth II of the United Kingdom
 Text: ', in the 2004 New Year's Honours List, and was formally invested on 16 July 2004.'
 Open Tag: ref attributes: [name : 'tecb']
 Begin Template: cite news
@@ -972,9 +1116,11 @@ End Template: cite news
 Close Tag: ref
 Text: '
 *On 21 July 2004, he was presented with an honorary '
-Reference: Doctor of Science ''
+Begin Reference: Doctor of Science
+End Reference: Doctor of Science
 Text: ' degree from '
-Reference: Lancaster University ''
+Begin Reference: Lancaster University
+End Reference: Lancaster University
 Text: '.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -983,7 +1129,8 @@ k: title
 Text: 'Lancaster University Honorary Degrees, July&nbsp;2004
   '
 k: publisher
-Reference: Lancaster University ''
+Begin Reference: Lancaster University
+End Reference: Lancaster University
 Text: '
   '
 k: url 
@@ -996,7 +1143,8 @@ End Template: cite web
 Close Tag: ref
 Text: '
 *On 27 January 2005, he was named Greatest Briton of 2004, both for his achievements and for displaying the key British characteristics of "diffidence, determination, a sharp sense of humour and adaptability", as put by '
-Reference: David Hempleman-Adams ''
+Begin Reference: David Hempleman-Adams
+End Reference: David Hempleman-Adams
 Text: ', a panel member.'
 Open Tag: ref attributes: []
 Begin Template: cite news
@@ -1024,12 +1172,19 @@ End Template: cite news
 Close Tag: ref
 Text: '
 *In 2007, Berners-Lee received the '
-Reference: Academy of Achievement 'Academy of Achievement's Golden Plate Award'
+Begin Reference: Academy of Achievement
+k: null
+Text: 'Academy of Achievement's Golden Plate Award'
+End Reference: Academy of Achievement
 Text: '.
 *In 2007, he was ranked Joint First, alongside '
-Reference: Albert Hofmann ''
+Begin Reference: Albert Hofmann
+End Reference: Albert Hofmann
 Text: ', in '
-Reference: The Daily Telegraph '''The Telegraph'''
+Begin Reference: The Daily Telegraph
+k: null
+Text: '''The Telegraph'''
+End Reference: The Daily Telegraph
 Text: ''s list of 100 greatest living geniuses.'
 Open Tag: ref attributes: []
 Begin Template: cite news
@@ -1049,7 +1204,8 @@ End Template: cite news
 Close Tag: ref
 Text: '
 *On 13 June 2007, he received the '
-Reference: Order of Merit ''
+Begin Reference: Order of Merit
+End Reference: Order of Merit
 Text: ', becoming one of only 24 living members entitled to hold the honour, and to use the post-nominals 'O.M.' after their name.'
 Open Tag: ref attributes: []
 Begin Template: cite news
@@ -1067,7 +1223,8 @@ End Template: cite news
 Close Tag: ref
 Text: ' (The Order of Merit is within the personal bestowal of The Queen, and does not require recommendation by ministers or the Prime Minister)
 *He was awarded the 2008 '
-Reference: IEEE/RSE Wolfson James Clerk Maxwell Award ''
+Begin Reference: IEEE/RSE Wolfson James Clerk Maxwell Award
+End Reference: IEEE/RSE Wolfson James Clerk Maxwell Award
 Text: ', for "conceiving and further developing the World Wide Web".'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -1093,9 +1250,11 @@ End Template: cite web
 Close Tag: ref
 Text: '
 *On 2 December 2008, Berners-Lee was awarded an honorary doctorate from the '
-Reference: University of Manchester ''
+Begin Reference: University of Manchester
+End Reference: University of Manchester
 Text: '. His parents worked on the '
-Reference: Manchester Mark 1 ''
+Begin Reference: Manchester Mark 1
+End Reference: Manchester Mark 1
 Text: ' in the 1940s and 50s.'
 Open Tag: ref attributes: []
 Begin Template: Cite news 
@@ -1113,7 +1272,8 @@ End Template: Cite news
 Close Tag: ref
 Text: '
 *On 21 April 2009, he was awarded an honorary doctorate by the '
-Reference: Universidad Politécnica de Madrid ''
+Begin Reference: Universidad Politécnica de Madrid
+End Reference: Universidad Politécnica de Madrid
 Text: '.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -1127,10 +1287,12 @@ End Template: cite web
 Close Tag: ref
 Text: '
 *On 28 April 2009, he was elected member of the '
-Reference: United States National Academy of Sciences ''
+Begin Reference: United States National Academy of Sciences
+End Reference: United States National Academy of Sciences
 Text: '.
 *On 8 June 2009, he received the '
-Reference: Webby Award ''
+Begin Reference: Webby Award
+End Reference: Webby Award
 Text: ' for Lifetime Achievement, at the awards ceremony held in New York City.'
 Open Tag: ref attributes: []
 Link: http://www.webbyawards.com/press/press-release.php?id=187 'Press Release: Sir Tim Berners Lee, Inventor of the World Wide Web, to receive Webby Lifetime Award At the 13th Annual Webby Awards'
@@ -1138,7 +1300,8 @@ Text: ' ''Webby Awards.com'' Retrieved 21 January 2011'
 Close Tag: ref
 Text: '
 *In October 2009, he was awarded an honorary doctorate by the '
-Reference: Vrije Universiteit Amsterdam ''
+Begin Reference: Vrije Universiteit Amsterdam
+End Reference: Vrije Universiteit Amsterdam
 Open Tag: ref attributes: []
 Begin Template: cite web
 k: language
@@ -1188,16 +1351,21 @@ End Template: cite web
 Close Tag: ref
 Text: '
 *On 30 March 2011, he was one of the first three recipients of the '
-Reference: Mikhail Gorbachev ''
+Begin Reference: Mikhail Gorbachev
+End Reference: Mikhail Gorbachev
 Text: ' award for "The Man Who Changed the World", at the inuagural awards ceremony held in London. The other recipients were '
-Reference: Evans Wadongo ''
+Begin Reference: Evans Wadongo
+End Reference: Evans Wadongo
 Text: ' for solar power development and anti-poverty work in Africa, and media mogul '
-Reference: Ted Turner ''
+Begin Reference: Ted Turner
+End Reference: Ted Turner
 Text: '.
 *On 26 May 2011, Berners-Lee was awarded with an honorary '
-Reference: Doctor of Science ''
+Begin Reference: Doctor of Science
+End Reference: Doctor of Science
 Text: ' degree from '
-Reference: Harvard University ''
+Begin Reference: Harvard University
+End Reference: Harvard University
 Text: '.'
 Open Tag: ref attributes: []
 Link: http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee 'Harvard awards 9 honorary degrees'
@@ -1205,7 +1373,8 @@ Text: ' ''news.harvard.edu'' Retrieved 11 June 2011'
 Close Tag: ref
 Text: '
 *In 2011, he was inducted into '
-Reference: IEEE Intelligent Systems ''
+Begin Reference: IEEE Intelligent Systems
+End Reference: IEEE Intelligent Systems
 Text: '' AI's Hall of Fame for the "significant contributions to the field of AI and intelligent systems".'
 Open Tag: ref attributes: []
 Begin Template: Cite doi
@@ -1220,7 +1389,8 @@ Text: 'http://www.digitaljournal.com/pr/399442 '
 k: title
 Text: 'IEEE Computer Society Magazine Honors Artificial Intelligence Leaders '
 k: newspaper
-Reference: DigitalJournal.com ''
+Begin Reference: DigitalJournal.com
+End Reference: DigitalJournal.com
 Text: ' '
 k: date
 Begin Template: Start date
@@ -1247,9 +1417,11 @@ Text: 'yes'
 End Template: Start date
 End Template: cite news
 Text: ' Press release source: '''
-Reference: PRWeb ''
+Begin Reference: PRWeb
+End Reference: PRWeb
 Text: ''' ('
-Reference: Vocus ''
+Begin Reference: Vocus
+End Reference: Vocus
 Text: ').'
 Close Tag: ref
 Text: '
@@ -1268,11 +1440,16 @@ Text: 'September 2010'
 End Template: Expand section
 Text: '
 Berners-Lee had a religious upbringing, but left the '
-Reference: Church of England ''
+Begin Reference: Church of England
+End Reference: Church of England
 Text: ' as a teenager, just after being '
-Reference: confirmed ''
+Begin Reference: confirmed
+End Reference: confirmed
 Text: ' and "told how essential it was to believe in all kinds of unbelievable things". He and his family eventually joined a '
-Reference: Unitarian Universalism 'Unitarian Universalist'
+Begin Reference: Unitarian Universalism
+k: null
+Text: 'Unitarian Universalist'
+End Reference: Unitarian Universalism
 Text: ' church while they were living in Boston.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -1306,34 +1483,46 @@ Text: '
 Section [0]  See also 
 Text: '
 * '
-Reference: Eelco van Asperen ''
+Begin Reference: Eelco van Asperen
+End Reference: Eelco van Asperen
 Text: '
 * '
-Reference: History of the World Wide Web ''
+Begin Reference: History of the World Wide Web
+End Reference: History of the World Wide Web
 Text: '
 * '
-Reference: Kevin Hughes (www) ''
+Begin Reference: Kevin Hughes (www)
+End Reference: Kevin Hughes (www)
 Text: '
 * '
-Reference: libwww ''
+Begin Reference: libwww
+End Reference: libwww
 Text: '
 * '
-Reference: Mundaneum ''
+Begin Reference: Mundaneum
+End Reference: Mundaneum
 Text: '
 * '
-Reference: Network neutrality ''
+Begin Reference: Network neutrality
+End Reference: Network neutrality
 Text: '
 * '
-Reference: Paul Otlet ''
+Begin Reference: Paul Otlet
+End Reference: Paul Otlet
 Text: '
 * '
-Reference: Semantic Web ''
+Begin Reference: Semantic Web
+End Reference: Semantic Web
 Text: '
 * '
-Reference: Robert Taylor (computer scientist) 'Bob Taylor'
+Begin Reference: Robert Taylor (computer scientist)
+k: null
+Text: 'Bob Taylor'
+End Reference: Robert Taylor (computer scientist)
 Text: '
 * '
-Reference: Vannevar Bush ''
+Begin Reference: Vannevar Bush
+End Reference: Vannevar Bush
 Text: '
 
 '
@@ -1343,7 +1532,8 @@ Text: '
 Begin Template: cite book
  
 k: title 
-Reference: Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web by its inventor ''
+Begin Reference: Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web by its inventor
+End Reference: Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web by its inventor
 Text: '
  '
 k: first 
@@ -1445,7 +1635,8 @@ Text: '
 *'
 Link: http://identi.ca/timbl 'timbl'
 Text: ' on '
-Reference: identi.ca ''
+Begin Reference: identi.ca
+End Reference: identi.ca
 Text: '
 *'
 Begin Template: TED
@@ -1489,16 +1680,19 @@ k: before
 Text: 'First recipient
 '
 k: after 
-Reference: Shuji Nakamura ''
+Begin Reference: Shuji Nakamura
+End Reference: Shuji Nakamura
 Text: '
 '
 k: title 
-Reference: Millennium Technology Prize ''
+Begin Reference: Millennium Technology Prize
+End Reference: Millennium Technology Prize
 Text: ' winner
 '
 k: years 
 Text: '2004 (for the '
-Reference: World Wide Web ''
+Begin Reference: World Wide Web
+End Reference: World Wide Web
 Text: ')
 '
 End Template: succession box
@@ -1546,363 +1740,483 @@ Begin Template: DEFAULTSORT:Berners-Lee, Tim
 End Template: DEFAULTSORT:Berners-Lee, Tim
 Text: '
 '
-Reference: Category:Free software people ''
+Begin Reference: Category:Free software people
+End Reference: Category:Free software people
 Text: '
 '
-Reference: Category:1955 births ''
+Begin Reference: Category:1955 births
+End Reference: Category:1955 births
 Text: '
 '
-Reference: Category:Alumni of The Queen's College, Oxford ''
+Begin Reference: Category:Alumni of The Queen's College, Oxford
+End Reference: Category:Alumni of The Queen's College, Oxford
 Text: '
 '
-Reference: Category:English computer scientists ''
+Begin Reference: Category:English computer scientists
+End Reference: Category:English computer scientists
 Text: '
 '
-Reference: Category:English expatriates in the United States ''
+Begin Reference: Category:English expatriates in the United States
+End Reference: Category:English expatriates in the United States
 Text: '
 '
-Reference: Category:English inventors ''
+Begin Reference: Category:English inventors
+End Reference: Category:English inventors
 Text: '
 '
-Reference: Category:Fellows of the American Academy of Arts and Sciences ''
+Begin Reference: Category:Fellows of the American Academy of Arts and Sciences
+End Reference: Category:Fellows of the American Academy of Arts and Sciences
 Text: '
 '
-Reference: Category:Fellows of the British Computer Society ''
+Begin Reference: Category:Fellows of the British Computer Society
+End Reference: Category:Fellows of the British Computer Society
 Text: '
 '
-Reference: Category:Fellows of the Royal Society ''
+Begin Reference: Category:Fellows of the Royal Society
+End Reference: Category:Fellows of the Royal Society
 Text: '
 '
-Reference: Category:Fellows of the Royal Academy of Engineering ''
+Begin Reference: Category:Fellows of the Royal Academy of Engineering
+End Reference: Category:Fellows of the Royal Academy of Engineering
 Text: '
 '
-Reference: Category:Internet pioneers ''
+Begin Reference: Category:Internet pioneers
+End Reference: Category:Internet pioneers
 Text: '
 '
-Reference: Category:Living people ''
+Begin Reference: Category:Living people
+End Reference: Category:Living people
 Text: '
 '
-Reference: Category:Japan Prize laureates ''
+Begin Reference: Category:Japan Prize laureates
+End Reference: Category:Japan Prize laureates
 Text: '
 '
-Reference: Category:Knights Commander of the Order of the British Empire ''
+Begin Reference: Category:Knights Commander of the Order of the British Empire
+End Reference: Category:Knights Commander of the Order of the British Empire
 Text: '
 '
-Reference: Category:MacArthur Fellows ''
+Begin Reference: Category:MacArthur Fellows
+End Reference: Category:MacArthur Fellows
 Text: '
 '
-Reference: Category:Members of the Order of Merit ''
+Begin Reference: Category:Members of the Order of Merit
+End Reference: Category:Members of the Order of Merit
 Text: '
 '
-Reference: Category:Members of the United States National Academy of Engineering ''
+Begin Reference: Category:Members of the United States National Academy of Engineering
+End Reference: Category:Members of the United States National Academy of Engineering
 Text: '
 '
-Reference: Category:People from London ''
+Begin Reference: Category:People from London
+End Reference: Category:People from London
 Text: '
 '
-Reference: Category:People from Barnes, London ''
+Begin Reference: Category:People from Barnes, London
+End Reference: Category:People from Barnes, London
 Text: '
 '
-Reference: Category:World Wide Web Consortium ''
+Begin Reference: Category:World Wide Web Consortium
+End Reference: Category:World Wide Web Consortium
 Text: '
 '
-Reference: Category:Computer pioneers ''
+Begin Reference: Category:Computer pioneers
+End Reference: Category:Computer pioneers
 Text: '
 '
-Reference: Category:Royal Medal winners ''
+Begin Reference: Category:Royal Medal winners
+End Reference: Category:Royal Medal winners
 Text: '
 '
-Reference: Category:English Unitarians ''
+Begin Reference: Category:English Unitarians
+End Reference: Category:English Unitarians
 Text: '
 '
-Reference: Category:HTTP ''
+Begin Reference: Category:HTTP
+End Reference: Category:HTTP
 Text: '
 '
-Reference: Category:People educated at Emanuel School ''
+Begin Reference: Category:People educated at Emanuel School
+End Reference: Category:People educated at Emanuel School
 Text: '
 '
-Reference: Category:Unitarian Universalists ''
+Begin Reference: Category:Unitarian Universalists
+End Reference: Category:Unitarian Universalists
 Text: '
 
 '
-Reference: af:Tim Berners-Lee ''
+Begin Reference: af:Tim Berners-Lee
+End Reference: af:Tim Berners-Lee
 Text: '
 '
-Reference: als:Tim Berners-Lee ''
+Begin Reference: als:Tim Berners-Lee
+End Reference: als:Tim Berners-Lee
 Text: '
 '
-Reference: ar:تيم بيرنرز لي ''
+Begin Reference: ar:تيم بيرنرز لي
+End Reference: ar:تيم بيرنرز لي
 Text: '
 '
-Reference: an:Tim Berners-Lee ''
+Begin Reference: an:Tim Berners-Lee
+End Reference: an:Tim Berners-Lee
 Text: '
 '
-Reference: az:Tim Berners-Li ''
+Begin Reference: az:Tim Berners-Li
+End Reference: az:Tim Berners-Li
 Text: '
 '
-Reference: bn:টিম বার্নার্স-লি ''
+Begin Reference: bn:টিম বার্নার্স-লি
+End Reference: bn:টিম বার্নার্স-লি
 Text: '
 '
-Reference: zh-min-nan:Tim Berners-Lee ''
+Begin Reference: zh-min-nan:Tim Berners-Lee
+End Reference: zh-min-nan:Tim Berners-Lee
 Text: '
 '
-Reference: be:Цім Бернерс-Лі ''
+Begin Reference: be:Цім Бернерс-Лі
+End Reference: be:Цім Бернерс-Лі
 Text: '
 '
-Reference: be-x-old:Тым Бэрнэрз-Лі ''
+Begin Reference: be-x-old:Тым Бэрнэрз-Лі
+End Reference: be-x-old:Тым Бэрнэрз-Лі
 Text: '
 '
-Reference: bs:Tim Berners-Lee ''
+Begin Reference: bs:Tim Berners-Lee
+End Reference: bs:Tim Berners-Lee
 Text: '
 '
-Reference: br:Tim Berners-Lee ''
+Begin Reference: br:Tim Berners-Lee
+End Reference: br:Tim Berners-Lee
 Text: '
 '
-Reference: bg:Тим Бърнърс-Лий ''
+Begin Reference: bg:Тим Бърнърс-Лий
+End Reference: bg:Тим Бърнърс-Лий
 Text: '
 '
-Reference: ca:Tim Berners-Lee ''
+Begin Reference: ca:Tim Berners-Lee
+End Reference: ca:Tim Berners-Lee
 Text: '
 '
-Reference: cs:Tim Berners-Lee ''
+Begin Reference: cs:Tim Berners-Lee
+End Reference: cs:Tim Berners-Lee
 Text: '
 '
-Reference: cy:Tim Berners-Lee ''
+Begin Reference: cy:Tim Berners-Lee
+End Reference: cy:Tim Berners-Lee
 Text: '
 '
-Reference: da:Tim Berners-Lee ''
+Begin Reference: da:Tim Berners-Lee
+End Reference: da:Tim Berners-Lee
 Text: '
 '
-Reference: de:Tim Berners-Lee ''
+Begin Reference: de:Tim Berners-Lee
+End Reference: de:Tim Berners-Lee
 Text: '
 '
-Reference: et:Tim Berners-Lee ''
+Begin Reference: et:Tim Berners-Lee
+End Reference: et:Tim Berners-Lee
 Text: '
 '
-Reference: el:Τιμ Μπέρνερς Λι ''
+Begin Reference: el:Τιμ Μπέρνερς Λι
+End Reference: el:Τιμ Μπέρνερς Λι
 Text: '
 '
-Reference: es:Tim Berners-Lee ''
+Begin Reference: es:Tim Berners-Lee
+End Reference: es:Tim Berners-Lee
 Text: '
 '
-Reference: eo:Tim Berners-Lee ''
+Begin Reference: eo:Tim Berners-Lee
+End Reference: eo:Tim Berners-Lee
 Text: '
 '
-Reference: eu:Tim Berners-Lee ''
+Begin Reference: eu:Tim Berners-Lee
+End Reference: eu:Tim Berners-Lee
 Text: '
 '
-Reference: fa:تیم برنرز لی ''
+Begin Reference: fa:تیم برنرز لی
+End Reference: fa:تیم برنرز لی
 Text: '
 '
-Reference: hif:Tim Berners-Lee ''
+Begin Reference: hif:Tim Berners-Lee
+End Reference: hif:Tim Berners-Lee
 Text: '
 '
-Reference: fr:Tim Berners-Lee ''
+Begin Reference: fr:Tim Berners-Lee
+End Reference: fr:Tim Berners-Lee
 Text: '
 '
-Reference: fy:Tim Berners-Lee ''
+Begin Reference: fy:Tim Berners-Lee
+End Reference: fy:Tim Berners-Lee
 Text: '
 '
-Reference: ga:Tim Berners-Lee ''
+Begin Reference: ga:Tim Berners-Lee
+End Reference: ga:Tim Berners-Lee
 Text: '
 '
-Reference: gd:Tim Berners-Lee ''
+Begin Reference: gd:Tim Berners-Lee
+End Reference: gd:Tim Berners-Lee
 Text: '
 '
-Reference: gl:Tim Berners-Lee ''
+Begin Reference: gl:Tim Berners-Lee
+End Reference: gl:Tim Berners-Lee
 Text: '
 '
-Reference: ko:팀 버너스리 ''
+Begin Reference: ko:팀 버너스리
+End Reference: ko:팀 버너스리
 Text: '
 '
-Reference: hi:टिम बर्नर्स ली ''
+Begin Reference: hi:टिम बर्नर्स ली
+End Reference: hi:टिम बर्नर्स ली
 Text: '
 '
-Reference: hr:Tim Berners-Lee ''
+Begin Reference: hr:Tim Berners-Lee
+End Reference: hr:Tim Berners-Lee
 Text: '
 '
-Reference: id:Tim Berners-Lee ''
+Begin Reference: id:Tim Berners-Lee
+End Reference: id:Tim Berners-Lee
 Text: '
 '
-Reference: is:Tim Berners-Lee ''
+Begin Reference: is:Tim Berners-Lee
+End Reference: is:Tim Berners-Lee
 Text: '
 '
-Reference: it:Tim Berners-Lee ''
+Begin Reference: it:Tim Berners-Lee
+End Reference: it:Tim Berners-Lee
 Text: '
 '
-Reference: he:טים ברנרס-לי ''
+Begin Reference: he:טים ברנרס-לי
+End Reference: he:טים ברנרס-לי
 Text: '
 '
-Reference: jv:Tim Berners-Lee ''
+Begin Reference: jv:Tim Berners-Lee
+End Reference: jv:Tim Berners-Lee
 Text: '
 '
-Reference: kn:ಟಿಮ್ ಬರ್ನರ್ಸ್ ಲೀ ''
+Begin Reference: kn:ಟಿಮ್ ಬರ್ನರ್ಸ್ ಲೀ
+End Reference: kn:ಟಿಮ್ ಬರ್ನರ್ಸ್ ಲೀ
 Text: '
 '
-Reference: ka:ტიმ ბერნერს-ლი ''
+Begin Reference: ka:ტიმ ბერნერს-ლი
+End Reference: ka:ტიმ ბერნერს-ლი
 Text: '
 '
-Reference: kk:Тим Бернерс-Ли ''
+Begin Reference: kk:Тим Бернерс-Ли
+End Reference: kk:Тим Бернерс-Ли
 Text: '
 '
-Reference: sw:Tim Berners-Lee ''
+Begin Reference: sw:Tim Berners-Lee
+End Reference: sw:Tim Berners-Lee
 Text: '
 '
-Reference: la:Timotheus Ioannes Berners-Lee ''
+Begin Reference: la:Timotheus Ioannes Berners-Lee
+End Reference: la:Timotheus Ioannes Berners-Lee
 Text: '
 '
-Reference: lv:Tims Bērnerss-Lī ''
+Begin Reference: lv:Tims Bērnerss-Lī
+End Reference: lv:Tims Bērnerss-Lī
 Text: '
 '
-Reference: lb:Tim Berners-Lee ''
+Begin Reference: lb:Tim Berners-Lee
+End Reference: lb:Tim Berners-Lee
 Text: '
 '
-Reference: lt:Tim Berners-Lee ''
+Begin Reference: lt:Tim Berners-Lee
+End Reference: lt:Tim Berners-Lee
 Text: '
 '
-Reference: li:Tim Berners-Lee ''
+Begin Reference: li:Tim Berners-Lee
+End Reference: li:Tim Berners-Lee
 Text: '
 '
-Reference: lmo:Tim Berners-Lee ''
+Begin Reference: lmo:Tim Berners-Lee
+End Reference: lmo:Tim Berners-Lee
 Text: '
 '
-Reference: hu:Tim Berners-Lee ''
+Begin Reference: hu:Tim Berners-Lee
+End Reference: hu:Tim Berners-Lee
 Text: '
 '
-Reference: mk:Тим Бернерс-Ли ''
+Begin Reference: mk:Тим Бернерс-Ли
+End Reference: mk:Тим Бернерс-Ли
 Text: '
 '
-Reference: ml:ടിം ബർണേയ്സ് ലീ ''
+Begin Reference: ml:ടിം ബർണേയ്സ് ലീ
+End Reference: ml:ടിം ബർണേയ്സ് ലീ
 Text: '
 '
-Reference: mt:Tim Berners-Lee ''
+Begin Reference: mt:Tim Berners-Lee
+End Reference: mt:Tim Berners-Lee
 Text: '
 '
-Reference: arz:تيم بيرنرز لى ''
+Begin Reference: arz:تيم بيرنرز لى
+End Reference: arz:تيم بيرنرز لى
 Text: '
 '
-Reference: ms:Tim Berners-Lee ''
+Begin Reference: ms:Tim Berners-Lee
+End Reference: ms:Tim Berners-Lee
 Text: '
 '
-Reference: mn:Тим Бернерс-Ли ''
+Begin Reference: mn:Тим Бернерс-Ли
+End Reference: mn:Тим Бернерс-Ли
 Text: '
 '
-Reference: nl:Tim Berners-Lee ''
+Begin Reference: nl:Tim Berners-Lee
+End Reference: nl:Tim Berners-Lee
 Text: '
 '
-Reference: new:टिम बर्नर्स ली ''
+Begin Reference: new:टिम बर्नर्स ली
+End Reference: new:टिम बर्नर्स ली
 Text: '
 '
-Reference: ja:ティム・バーナーズ＝リー ''
+Begin Reference: ja:ティム・バーナーズ＝リー
+End Reference: ja:ティム・バーナーズ＝リー
 Text: '
 '
-Reference: kk:Тим Бернерс-Ли ''
+Begin Reference: kk:Тим Бернерс-Ли
+End Reference: kk:Тим Бернерс-Ли
 Text: '
 '
-Reference: no:Tim Berners-Lee ''
+Begin Reference: no:Tim Berners-Lee
+End Reference: no:Tim Berners-Lee
 Text: '
 '
-Reference: nn:Tim Berners-Lee ''
+Begin Reference: nn:Tim Berners-Lee
+End Reference: nn:Tim Berners-Lee
 Text: '
 '
-Reference: oc:Tim Berners-Lee ''
+Begin Reference: oc:Tim Berners-Lee
+End Reference: oc:Tim Berners-Lee
 Text: '
 '
-Reference: pnb:ٹم برنرز لی ''
+Begin Reference: pnb:ٹم برنرز لی
+End Reference: pnb:ٹم برنرز لی
 Text: '
 '
-Reference: pl:Tim Berners-Lee ''
+Begin Reference: pl:Tim Berners-Lee
+End Reference: pl:Tim Berners-Lee
 Text: '
 '
-Reference: pt:Tim Berners-Lee ''
+Begin Reference: pt:Tim Berners-Lee
+End Reference: pt:Tim Berners-Lee
 Text: '
 '
-Reference: ksh:Tim Berners-Lee ''
+Begin Reference: ksh:Tim Berners-Lee
+End Reference: ksh:Tim Berners-Lee
 Text: '
 '
-Reference: ro:Tim Berners-Lee ''
+Begin Reference: ro:Tim Berners-Lee
+End Reference: ro:Tim Berners-Lee
 Text: '
 '
-Reference: rue:Тім Бернерс-Лі ''
+Begin Reference: rue:Тім Бернерс-Лі
+End Reference: rue:Тім Бернерс-Лі
 Text: '
 '
-Reference: ru:Бернерс-Ли, Тим ''
+Begin Reference: ru:Бернерс-Ли, Тим
+End Reference: ru:Бернерс-Ли, Тим
 Text: '
 '
-Reference: sah:Тим Бернерс-Ли ''
+Begin Reference: sah:Тим Бернерс-Ли
+End Reference: sah:Тим Бернерс-Ли
 Text: '
 '
-Reference: sq:Tim Berners-Lee ''
+Begin Reference: sq:Tim Berners-Lee
+End Reference: sq:Tim Berners-Lee
 Text: '
 '
-Reference: scn:Tim Berners-Lee ''
+Begin Reference: scn:Tim Berners-Lee
+End Reference: scn:Tim Berners-Lee
 Text: '
 '
-Reference: simple:Tim Berners-Lee ''
+Begin Reference: simple:Tim Berners-Lee
+End Reference: simple:Tim Berners-Lee
 Text: '
 '
-Reference: sk:Tim Berners-Lee ''
+Begin Reference: sk:Tim Berners-Lee
+End Reference: sk:Tim Berners-Lee
 Text: '
 '
-Reference: sl:Tim Berners-Lee ''
+Begin Reference: sl:Tim Berners-Lee
+End Reference: sl:Tim Berners-Lee
 Text: '
 '
-Reference: sr:Тим Бернерс-Ли ''
+Begin Reference: sr:Тим Бернерс-Ли
+End Reference: sr:Тим Бернерс-Ли
 Text: '
 '
-Reference: sh:Tim Berners-Lee ''
+Begin Reference: sh:Tim Berners-Lee
+End Reference: sh:Tim Berners-Lee
 Text: '
 '
-Reference: fi:Tim Berners-Lee ''
+Begin Reference: fi:Tim Berners-Lee
+End Reference: fi:Tim Berners-Lee
 Text: '
 '
-Reference: sv:Tim Berners-Lee ''
+Begin Reference: sv:Tim Berners-Lee
+End Reference: sv:Tim Berners-Lee
 Text: '
 '
-Reference: tl:Tim Berners-Lee ''
+Begin Reference: tl:Tim Berners-Lee
+End Reference: tl:Tim Berners-Lee
 Text: '
 '
-Reference: ta:டிம் பேர்னேர்ஸ்-லீ ''
+Begin Reference: ta:டிம் பேர்னேர்ஸ்-லீ
+End Reference: ta:டிம் பேர்னேர்ஸ்-லீ
 Text: '
 '
-Reference: te:టిమ్ బెర్నర్స్ లీ ''
+Begin Reference: te:టిమ్ బెర్నర్స్ లీ
+End Reference: te:టిమ్ బెర్నర్స్ లీ
 Text: '
 '
-Reference: th:ทิม เบอร์เนิร์ส-ลี ''
+Begin Reference: th:ทิม เบอร์เนิร์ส-ลี
+End Reference: th:ทิม เบอร์เนิร์ส-ลี
 Text: '
 '
-Reference: tg:Тим Бернерс-Ли ''
+Begin Reference: tg:Тим Бернерс-Ли
+End Reference: tg:Тим Бернерс-Ли
 Text: '
 '
-Reference: tr:Tim Berners-Lee ''
+Begin Reference: tr:Tim Berners-Lee
+End Reference: tr:Tim Berners-Lee
 Text: '
 '
-Reference: uk:Тім Бернерс-Лі ''
+Begin Reference: uk:Тім Бернерс-Лі
+End Reference: uk:Тім Бернерс-Лі
 Text: '
 '
-Reference: za:Tim Berners-Lee ''
+Begin Reference: za:Tim Berners-Lee
+End Reference: za:Tim Berners-Lee
 Text: '
 '
-Reference: vec:Tim Berners-Lee ''
+Begin Reference: vec:Tim Berners-Lee
+End Reference: vec:Tim Berners-Lee
 Text: '
 '
-Reference: vi:Tim Berners-Lee ''
+Begin Reference: vi:Tim Berners-Lee
+End Reference: vi:Tim Berners-Lee
 Text: '
 '
-Reference: vo:Tim Berners-Lee ''
+Begin Reference: vo:Tim Berners-Lee
+End Reference: vo:Tim Berners-Lee
 Text: '
 '
-Reference: war:Tim Berners-Lee ''
+Begin Reference: war:Tim Berners-Lee
+End Reference: war:Tim Berners-Lee
 Text: '
 '
-Reference: yi:טים בערנערס-לי ''
+Begin Reference: yi:טים בערנערס-לי
+End Reference: yi:טים בערנערס-לי
 Text: '
 '
-Reference: yo:Tim Berners-Lee ''
+Begin Reference: yo:Tim Berners-Lee
+End Reference: yo:Tim Berners-Lee
 Text: '
 '
-Reference: bat-smg:Tim Berners-Lee ''
+Begin Reference: bat-smg:Tim Berners-Lee
+End Reference: bat-smg:Tim Berners-Lee
 Text: '
 '
-Reference: zh:蒂姆·伯纳斯-李 ''
+Begin Reference: zh:蒂姆·伯纳斯-李
+End Reference: zh:蒂姆·伯纳斯-李
 End Document

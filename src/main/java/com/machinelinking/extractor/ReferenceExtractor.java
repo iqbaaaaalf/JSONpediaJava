@@ -16,6 +16,9 @@ public class ReferenceExtractor extends Extractor {
 
     private List<Reference> references;
 
+    private StringBuilder referenceContent = new StringBuilder();
+    private boolean foundParam;
+
     public ReferenceExtractor() {
         super("references");
     }
@@ -26,10 +29,30 @@ public class ReferenceExtractor extends Extractor {
     }
 
     @Override
-    public void reference(String label, String description) {
-        if(references == null) references = new ArrayList<Reference>();
+    public void beginReference(String label) {
+        referenceContent.delete(0, referenceContent.length());
+        foundParam = false;
+    }
+
+    @Override
+    public void parameter(String param) {
+        if(foundParam) referenceContent.append("|");
+        foundParam = true;
+        if(param != null) {
+            referenceContent.append(param).append("=");
+        }
+    }
+
+    @Override
+    public void text(String content) {
+        referenceContent.append(content);
+    }
+
+    @Override
+    public void endReference(String label) {
+        if(references == null) references = new ArrayList<>();
         try {
-            references.add( new Reference(documentURL, label, description) );
+            references.add(new Reference(documentURL, label, referenceContent.toString()));
         } catch (MalformedURLException murle) {
             throw new RuntimeException("Error while building reference.", murle);
         }

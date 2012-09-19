@@ -19,7 +19,11 @@
                     {
                         "__type": "reference",
                         "label": "Flag of Alabama",
-                        "description": "Flag"
+                        "content": {
+                            "__anon_0": [
+                                "Flag"
+                            ]
+                        }
                     }
                 ],
                 "Seal": [
@@ -29,7 +33,11 @@
                     {
                         "__type": "reference",
                         "label": "Seal of Alabama",
-                        "description": "Seal"
+                        "content": {
+                            "__anon_1": [
+                                "Seal"
+                            ]
+                        }
                     }
                 ],
                 "Coat of arms": [
@@ -39,7 +47,11 @@
                     {
                         "__type": "reference",
                         "label": "Coat of arms of Alabama",
-                        "description": "Coat of arms"
+                        "content": {
+                            "__anon_2": [
+                                "Coat of arms"
+                            ]
+                        }
                     }
                 ],
                 "Map": [
@@ -50,7 +62,7 @@
                     {
                         "__type": "reference",
                         "label": "Dixie",
-                        "description": ""
+                        "content": {}
                     },
                     "; Cotton State"
                 ],
@@ -58,7 +70,11 @@
                     {
                         "__type": "reference",
                         "label": "Adjectivals and demonyms for U.S. states",
-                        "description": "Alabamian"
+                        "content": {
+                            "__anon_3": [
+                                "Alabamian"
+                            ]
+                        }
                     },
                     "&lt;ref&gt;",
                     {
@@ -72,13 +88,13 @@
                     {
                         "__type": "reference",
                         "label": "Audemus jura nostra defendere",
-                        "description": ""
+                        "content": {}
                     },
                     "(",
                     {
                         "__type": "reference",
                         "label": "Latin",
-                        "description": ""
+                        "content": {}
                     },
                     ")"
                 ],

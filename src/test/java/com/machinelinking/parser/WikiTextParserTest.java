@@ -33,9 +33,63 @@ public class WikiTextParserTest {
 
                 "Begin Document\n" +
                 "Text: 'this is an internal link: '\n" +
-                "Reference: Princeton, New Jersey 'Princeton'\n" +
+                "Begin Reference: Princeton, New Jersey\n" +
+                "k: null\n" +
+                "Text: 'Princeton'\n" +
+                "End Reference: Princeton, New Jersey\n" +
                 "End Document\n"
         );
+    }
+
+    @Test
+    public void testNestedReference() throws IOException, WikiTextParserException {
+         parse(
+                 "[[File:Einstein 1911 Solvay.jpg|alt=Upper body shot of man in suit, high white collar and bow tie.|thumb|upright|Einstein at the [[Solvay Conference]] in 1911]]",
+
+                 "Begin Document\n" +
+                 "Begin Reference: File:Einstein 1911 Solvay.jpg\n" +
+                 "k: alt\n" +
+                 "Text: 'Upper body shot of man in suit, high white collar and bow tie.'\n" +
+                 "k: null\n" +
+                 "Text: 'thumb'\n" +
+                 "k: null\n" +
+                 "Text: 'upright'\n" +
+                 "k: null\n" +
+                 "Text: 'Einstein at the '\n" +
+                 "Begin Reference: Solvay Conference\n" +
+                 "End Reference: Solvay Conference\n" +
+                 "Text: ' in 1911'\n" +
+                 "End Reference: File:Einstein 1911 Solvay.jpg\n" +
+                 "End Document\n"
+         );
+    }
+
+    @Test
+    public void testReferenceWithTag() throws IOException, WikiTextParserException {
+        parse(
+                "[[Square brackets|<nowiki>[</nowiki>]]",
+
+                "Begin Document\n" +
+                "Begin Reference: Square brackets\n" +
+                "Open Tag: nowiki attributes: []\n" +
+                "Text: '['\n" +
+                "Close Tag: nowiki\n" +
+                "End Reference: Square brackets\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
+    public void testReferenceWithMinus() throws IOException, WikiTextParserException {
+         parse(
+                 "[[Less-than sign|<]]",
+
+                 "Begin Document\n" +
+                 "Begin Reference: Less-than sign\n" +
+                 // TODO: missing '<'
+                 "End Reference: Less-than sign\n" +
+                 "End Document\n"
+         );
     }
 
     @Test
@@ -244,7 +298,10 @@ public class WikiTextParserTest {
                "Text: '\n" +
                "'\n" +
                "k: death_place   \n" +
-               "Reference: Princeton, New Jersey 'Princeton'\n" +
+               "Begin Reference: Princeton, New Jersey\n" +
+               "k: null\n" +
+               "Text: 'Princeton'\n" +
+               "End Reference: Princeton, New Jersey\n" +
                "Text: ', New Jersey, United States\n" +
                "'\n" +
                "k: official_site \n" +
@@ -311,7 +368,10 @@ public class WikiTextParserTest {
                 "Text: '\n" +
                 "'\n" +
                 "k: death_place \n" +
-                "Reference: Princeton, New Jersey 'Princeton'\n" +
+                "Begin Reference: Princeton, New Jersey\n" +
+                "k: null\n" +
+                "Text: 'Princeton'\n" +
+                "End Reference: Princeton, New Jersey\n" +
                 "Text: ', New Jersey, United States\n" +
                 "'\n" +
                 "k: citizenship \n" +
@@ -320,11 +380,17 @@ public class WikiTextParserTest {
                 "Text: 'Germany'\n" +
                 "List Item\n" +
                 "Text: ' '\n" +
-                "Reference: Kingdom of Württemberg 'Württemberg/Germany'\n" +
+                "Begin Reference: Kingdom of Württemberg\n" +
+                "k: null\n" +
+                "Text: 'Württemberg/Germany'\n" +
+                "End Reference: Kingdom of Württemberg\n" +
                 "Text: ' (1879–1896)'\n" +
                 "List Item\n" +
                 "Text: ' '\n" +
-                "Reference: Statelessness 'Stateless'\n" +
+                "Begin Reference: Statelessness\n" +
+                "k: null\n" +
+                "Text: 'Stateless'\n" +
+                "End Reference: Statelessness\n" +
                 "Text: ' (1896–1901)'\n" +
                 "End List\n" +
                 "End Template: Plainlist\n" +
@@ -354,7 +420,8 @@ public class WikiTextParserTest {
                 "k: GH\n" +
                 "Text: 'George Huxley'\n" +
                 "k: ThA\n" +
-                "Reference: Thomas Arnold ''\n" +
+                "Begin Reference: Thomas Arnold\n" +
+                "End Reference: Thomas Arnold\n" +
                 "Text: ' 1795–1842'\n" +
                 "k: MaP\n" +
                 "Text: 'Mary Penrose 1791–1873'\n" +
@@ -437,7 +504,8 @@ public class WikiTextParserTest {
                "Text: 'v2'\n" +
                "k: null\n" +
                "Text: 'v3 '\n" +
-               "Reference: link ''\n" +
+               "Begin Reference: link\n" +
+               "End Reference: link\n" +
                "Text: ' v4'\n" +
                "End Template: Template\n" +
                "End Document\n"
@@ -518,191 +586,206 @@ public class WikiTextParserTest {
                 "| ''Does the Inertia of a Body Depend Upon Its Energy Content?'' || [[Mass–energy equivalence|Matter–energy equivalence]] || 27 Sept || 21 Nov || Equivalence of matter and energy, {{nowrap|1=''E'' = ''mc''<sup>2</sup>}} (and by implication, the ability of gravity to \"bend\" light), the existence of \"[[rest energy]]\", and the basis of nuclear energy.\n" +
                 "|}",
 
-                "Begin Document\n" +
-                "Begin Table\n" +
-                "Text: ' class=wikitable\n" +
-                "'\n" +
-                "Header Cell (1, 1)\n" +
-                "Text: 'Title '\n" +
-                "Open Tag: small attributes: []\n" +
-                "Text: '(translated)'\n" +
-                "Close Tag: small\n" +
-                "Text: ' '\n" +
-                "Header Cell (1, 2)\n" +
-                "Text: 'Area of focus '\n" +
-                "Header Cell (1, 3)\n" +
-                "Text: 'Received '\n" +
-                "Header Cell (1, 4)\n" +
-                "Text: 'Published '\n" +
-                "Header Cell (1, 5)\n" +
-                "Text: 'Significance\n" +
-                "'\n" +
-                "Body Cell (2, 2)\n" +
-                "Text: '''On a Heuristic Viewpoint Concerning the Production and Transformation of Light'' '\n" +
-                "Body Cell (2, 3)\n" +
-                "Reference: Photoelectric effect ''\n" +
-                "Text: ' '\n" +
-                "Body Cell (2, 4)\n" +
-                "Text: '18 March '\n" +
-                "Body Cell (2, 5)\n" +
-                "Text: '9 June '\n" +
-                "Body Cell (2, 6)\n" +
-                "Text: 'Resolved an unsolved puzzle by suggesting that energy is exchanged only in discrete amounts ('\n" +
-                "Reference: quantum 'quanta'\n" +
-                "Text: ').'\n" +
-                "Open Tag: ref attributes: []\n" +
-                "Begin Template: cite book \n" +
-                "k: title\n" +
-                "Text: 'Lectures on quantum mechanics '\n" +
-                "k: first1\n" +
-                "Text: 'Ashok '\n" +
-                "k: last1\n" +
-                "Text: 'Das '\n" +
-                "k: publisher\n" +
-                "Text: 'Hindustan Book Agency '\n" +
-                "k: year\n" +
-                "Text: '2003 '\n" +
-                "k: isbn\n" +
-                "Text: '8-185-93141-0 '\n" +
-                "k: page\n" +
-                "Text: '59 '\n" +
-                "k: url\n" +
-                "Text: 'http://books.google.com/books?id=KmwsAAAAYAAJ'\n" +
-                "End Template: cite book \n" +
-                "Close Tag: ref\n" +
-                "Text: ' This idea was pivotal to the early development of quantum theory.'\n" +
-                "Open Tag: ref attributes: []\n" +
-                "Begin Template: cite book \n" +
-                "k: title\n" +
-                "Text: 'Seven ideas that shook the universe '\n" +
-                "k: edition\n" +
-                "Text: '2nd '\n" +
-                "k: first1\n" +
-                "Text: 'Nathan '\n" +
-                "k: last1\n" +
-                "Text: 'Spielberg '\n" +
-                "k: first2\n" +
-                "Text: 'Bryon D. '\n" +
-                "k: last2\n" +
-                "Text: 'Anderson '\n" +
-                "k: publisher\n" +
-                "Text: 'John Wiley & Sons '\n" +
-                "k: year\n" +
-                "Text: '1995 '\n" +
-                "k: isbn\n" +
-                "Text: '0-471-30606-1 '\n" +
-                "k: page\n" +
-                "Text: '263 '\n" +
-                "k: url\n" +
-                "Text: 'http://books.google.com/books?id=_pbuAAAAMAAJ'\n" +
-                "End Template: cite book \n" +
-                "Close Tag: ref\n" +
-                "Text: '\n" +
-                "'\n" +
-                "Body Cell (3, 2)\n" +
-                "Text: '''On the Motion of Small Particles Suspended in a Stationary Liquid, as Required by the Molecular Kinetic Theory of Heat'' '\n" +
-                "Body Cell (3, 3)\n" +
-                "Reference: Brownian motion ''\n" +
-                "Text: ' '\n" +
-                "Body Cell (3, 4)\n" +
-                "Text: '11 May '\n" +
-                "Body Cell (3, 5)\n" +
-                "Text: '18 July '\n" +
-                "Body Cell (3, 6)\n" +
-                "Text: 'Explained empirical evidence for the '\n" +
-                "Reference: atom 'atomic theory'\n" +
-                "Text: ', supporting the application of '\n" +
-                "Reference: statistical physics ''\n" +
-                "Text: '.\n" +
-                "'\n" +
-                "Body Cell (4, 2)\n" +
-                "Text: '''On the Electrodynamics of Moving Bodies'' '\n" +
-                "Body Cell (4, 3)\n" +
-                "Reference: Special relativity ''\n" +
-                "Text: ' '\n" +
-                "Body Cell (4, 4)\n" +
-                "Text: '30 June '\n" +
-                "Body Cell (4, 5)\n" +
-                "Text: '26 Sept '\n" +
-                "Body Cell (4, 6)\n" +
-                "Text: 'Reconciled Maxwell's equations for electricity and magnetism with the laws of mechanics by introducing major changes to mechanics close to the speed of light, resulting from analysis based on empirical evidence that the speed of light is independent of the motion of the observer.'\n" +
-                "Open Tag: ref attributes: []\n" +
-                "Begin Template: cite book\n" +
-                "\n" +
-                "k: title\n" +
-                "Text: 'The quantum beat: principles and applications of atomic clocks '\n" +
-                "k: edition\n" +
-                "Text: '2nd  '\n" +
-                "k: first1\n" +
-                "Text: 'Fouad G. '\n" +
-                "k: last1\n" +
-                "Text: 'Major '\n" +
-                "k: publisher\n" +
-                "Text: 'Springer  '\n" +
-                "k: year\n" +
-                "Text: '2007 '\n" +
-                "k: isbn\n" +
-                "Text: '0-387-69533-8 '\n" +
-                "k: page\n" +
-                "Text: '142 '\n" +
-                "k: url\n" +
-                "Text: 'http://books.google.com/books?id=tmdr6Wx_2PYC'\n" +
-                "End Template: cite book\n" +
-                "\n" +
-                "Close Tag: ref\n" +
-                "Text: '  Discredited the concept of an \"'\n" +
-                "Reference: luminiferous ether ''\n" +
-                "Text: '.\"'\n" +
-                "Open Tag: ref attributes: []\n" +
-                "Begin Template: cite book \n" +
-                "k: title\n" +
-                "Text: 'Foundations of physics '\n" +
-                "k: first1\n" +
-                "Text: 'Robert Bruce '\n" +
-                "k: last1\n" +
-                "Text: 'Lindsay '\n" +
-                "k: first2\n" +
-                "Text: 'Henry '\n" +
-                "k: last2\n" +
-                "Text: 'Margenau '\n" +
-                "k: publisher\n" +
-                "Text: 'Ox Bow Press '\n" +
-                "k: year\n" +
-                "Text: '1981 '\n" +
-                "k: isbn\n" +
-                "Text: '0-918-02417-X '\n" +
-                "k: page\n" +
-                "Text: '330 '\n" +
-                "k: url\n" +
-                "Text: 'http://books.google.com/books?id=dwZltQAACAAJ'\n" +
-                "End Template: cite book \n" +
-                "Close Tag: ref\n" +
-                "Text: '\n" +
-                "'\n" +
-                "Body Cell (5, 2)\n" +
-                "Text: '''Does the Inertia of a Body Depend Upon Its Energy Content?'' '\n" +
-                "Body Cell (5, 3)\n" +
-                "Reference: Mass–energy equivalence 'Matter–energy equivalence'\n" +
-                "Text: ' '\n" +
-                "Body Cell (5, 4)\n" +
-                "Text: '27 Sept '\n" +
-                "Body Cell (5, 5)\n" +
-                "Text: '21 Nov '\n" +
-                "Body Cell (5, 6)\n" +
-                "Text: 'Equivalence of matter and energy, '\n" +
-                "Begin Template: nowrap\n" +
-                "k: 1\n" +
-                "Text: '''E'' = ''mc'''\n" +
-                "Open Tag: sup attributes: []\n" +
-                "Text: '2'\n" +
-                "Close Tag: sup\n" +
-                "End Template: nowrap\n" +
-                "Text: ' (and by implication, the ability of gravity to \"bend\" light), the existence of \"'\n" +
-                "Reference: rest energy ''\n" +
-                "Text: '\", and the basis of nuclear energy.\n" +
-                "'\n" +
-                "End Table\n" +
-                "End Document\n"
+              "Begin Document\n" +
+              "Begin Table\n" +
+              "Text: ' class=wikitable\n" +
+              "'\n" +
+              "Header Cell (1, 1)\n" +
+              "Text: 'Title '\n" +
+              "Open Tag: small attributes: []\n" +
+              "Text: '(translated)'\n" +
+              "Close Tag: small\n" +
+              "Text: ' '\n" +
+              "Header Cell (1, 2)\n" +
+              "Text: 'Area of focus '\n" +
+              "Header Cell (1, 3)\n" +
+              "Text: 'Received '\n" +
+              "Header Cell (1, 4)\n" +
+              "Text: 'Published '\n" +
+              "Header Cell (1, 5)\n" +
+              "Text: 'Significance\n" +
+              "'\n" +
+              "Body Cell (2, 2)\n" +
+              "Text: '''On a Heuristic Viewpoint Concerning the Production and Transformation of Light'' '\n" +
+              "Body Cell (2, 3)\n" +
+              "Begin Reference: Photoelectric effect\n" +
+              "End Reference: Photoelectric effect\n" +
+              "Text: ' '\n" +
+              "Body Cell (2, 4)\n" +
+              "Text: '18 March '\n" +
+              "Body Cell (2, 5)\n" +
+              "Text: '9 June '\n" +
+              "Body Cell (2, 6)\n" +
+              "Text: 'Resolved an unsolved puzzle by suggesting that energy is exchanged only in discrete amounts ('\n" +
+              "Begin Reference: quantum\n" +
+              "k: null\n" +
+              "Text: 'quanta'\n" +
+              "End Reference: quantum\n" +
+              "Text: ').'\n" +
+              "Open Tag: ref attributes: []\n" +
+              "Begin Template: cite book \n" +
+              "k: title\n" +
+              "Text: 'Lectures on quantum mechanics '\n" +
+              "k: first1\n" +
+              "Text: 'Ashok '\n" +
+              "k: last1\n" +
+              "Text: 'Das '\n" +
+              "k: publisher\n" +
+              "Text: 'Hindustan Book Agency '\n" +
+              "k: year\n" +
+              "Text: '2003 '\n" +
+              "k: isbn\n" +
+              "Text: '8-185-93141-0 '\n" +
+              "k: page\n" +
+              "Text: '59 '\n" +
+              "k: url\n" +
+              "Text: 'http://books.google.com/books?id=KmwsAAAAYAAJ'\n" +
+              "End Template: cite book \n" +
+              "Close Tag: ref\n" +
+              "Text: ' This idea was pivotal to the early development of quantum theory.'\n" +
+              "Open Tag: ref attributes: []\n" +
+              "Begin Template: cite book \n" +
+              "k: title\n" +
+              "Text: 'Seven ideas that shook the universe '\n" +
+              "k: edition\n" +
+              "Text: '2nd '\n" +
+              "k: first1\n" +
+              "Text: 'Nathan '\n" +
+              "k: last1\n" +
+              "Text: 'Spielberg '\n" +
+              "k: first2\n" +
+              "Text: 'Bryon D. '\n" +
+              "k: last2\n" +
+              "Text: 'Anderson '\n" +
+              "k: publisher\n" +
+              "Text: 'John Wiley & Sons '\n" +
+              "k: year\n" +
+              "Text: '1995 '\n" +
+              "k: isbn\n" +
+              "Text: '0-471-30606-1 '\n" +
+              "k: page\n" +
+              "Text: '263 '\n" +
+              "k: url\n" +
+              "Text: 'http://books.google.com/books?id=_pbuAAAAMAAJ'\n" +
+              "End Template: cite book \n" +
+              "Close Tag: ref\n" +
+              "Text: '\n" +
+              "'\n" +
+              "Body Cell (3, 2)\n" +
+              "Text: '''On the Motion of Small Particles Suspended in a Stationary Liquid, as Required by the Molecular Kinetic Theory of Heat'' '\n" +
+              "Body Cell (3, 3)\n" +
+              "Begin Reference: Brownian motion\n" +
+              "End Reference: Brownian motion\n" +
+              "Text: ' '\n" +
+              "Body Cell (3, 4)\n" +
+              "Text: '11 May '\n" +
+              "Body Cell (3, 5)\n" +
+              "Text: '18 July '\n" +
+              "Body Cell (3, 6)\n" +
+              "Text: 'Explained empirical evidence for the '\n" +
+              "Begin Reference: atom\n" +
+              "k: null\n" +
+              "Text: 'atomic theory'\n" +
+              "End Reference: atom\n" +
+              "Text: ', supporting the application of '\n" +
+              "Begin Reference: statistical physics\n" +
+              "End Reference: statistical physics\n" +
+              "Text: '.\n" +
+              "'\n" +
+              "Body Cell (4, 2)\n" +
+              "Text: '''On the Electrodynamics of Moving Bodies'' '\n" +
+              "Body Cell (4, 3)\n" +
+              "Begin Reference: Special relativity\n" +
+              "End Reference: Special relativity\n" +
+              "Text: ' '\n" +
+              "Body Cell (4, 4)\n" +
+              "Text: '30 June '\n" +
+              "Body Cell (4, 5)\n" +
+              "Text: '26 Sept '\n" +
+              "Body Cell (4, 6)\n" +
+              "Text: 'Reconciled Maxwell's equations for electricity and magnetism with the laws of mechanics by introducing major changes to mechanics close to the speed of light, resulting from analysis based on empirical evidence that the speed of light is independent of the motion of the observer.'\n" +
+              "Open Tag: ref attributes: []\n" +
+              "Begin Template: cite book\n" +
+              "\n" +
+              "k: title\n" +
+              "Text: 'The quantum beat: principles and applications of atomic clocks '\n" +
+              "k: edition\n" +
+              "Text: '2nd  '\n" +
+              "k: first1\n" +
+              "Text: 'Fouad G. '\n" +
+              "k: last1\n" +
+              "Text: 'Major '\n" +
+              "k: publisher\n" +
+              "Text: 'Springer  '\n" +
+              "k: year\n" +
+              "Text: '2007 '\n" +
+              "k: isbn\n" +
+              "Text: '0-387-69533-8 '\n" +
+              "k: page\n" +
+              "Text: '142 '\n" +
+              "k: url\n" +
+              "Text: 'http://books.google.com/books?id=tmdr6Wx_2PYC'\n" +
+              "End Template: cite book\n" +
+              "\n" +
+              "Close Tag: ref\n" +
+              "Text: '  Discredited the concept of an \"'\n" +
+              "Begin Reference: luminiferous ether\n" +
+              "End Reference: luminiferous ether\n" +
+              "Text: '.\"'\n" +
+              "Open Tag: ref attributes: []\n" +
+              "Begin Template: cite book \n" +
+              "k: title\n" +
+              "Text: 'Foundations of physics '\n" +
+              "k: first1\n" +
+              "Text: 'Robert Bruce '\n" +
+              "k: last1\n" +
+              "Text: 'Lindsay '\n" +
+              "k: first2\n" +
+              "Text: 'Henry '\n" +
+              "k: last2\n" +
+              "Text: 'Margenau '\n" +
+              "k: publisher\n" +
+              "Text: 'Ox Bow Press '\n" +
+              "k: year\n" +
+              "Text: '1981 '\n" +
+              "k: isbn\n" +
+              "Text: '0-918-02417-X '\n" +
+              "k: page\n" +
+              "Text: '330 '\n" +
+              "k: url\n" +
+              "Text: 'http://books.google.com/books?id=dwZltQAACAAJ'\n" +
+              "End Template: cite book \n" +
+              "Close Tag: ref\n" +
+              "Text: '\n" +
+              "'\n" +
+              "Body Cell (5, 2)\n" +
+              "Text: '''Does the Inertia of a Body Depend Upon Its Energy Content?'' '\n" +
+              "Body Cell (5, 3)\n" +
+              "Begin Reference: Mass–energy equivalence\n" +
+              "k: null\n" +
+              "Text: 'Matter–energy equivalence'\n" +
+              "End Reference: Mass–energy equivalence\n" +
+              "Text: ' '\n" +
+              "Body Cell (5, 4)\n" +
+              "Text: '27 Sept '\n" +
+              "Body Cell (5, 5)\n" +
+              "Text: '21 Nov '\n" +
+              "Body Cell (5, 6)\n" +
+              "Text: 'Equivalence of matter and energy, '\n" +
+              "Begin Template: nowrap\n" +
+              "k: 1\n" +
+              "Text: '''E'' = ''mc'''\n" +
+              "Open Tag: sup attributes: []\n" +
+              "Text: '2'\n" +
+              "Close Tag: sup\n" +
+              "End Template: nowrap\n" +
+              "Text: ' (and by implication, the ability of gravity to \"bend\" light), the existence of \"'\n" +
+              "Begin Reference: rest energy\n" +
+              "End Reference: rest energy\n" +
+              "Text: '\", and the basis of nuclear energy.\n" +
+              "'\n" +
+              "End Table\n" +
+              "End Document\n"
         );
     }
 
@@ -743,9 +826,11 @@ public class WikiTextParserTest {
                 "End Template: cite web\n" +
                 "Close Tag: ref\n" +
                 "Text: ' From time to time it has been proposed as a replacement for '''\n" +
-                "Reference: The Star-Spangled Banner ''\n" +
+                "Begin Reference: The Star-Spangled Banner\n" +
+                "End Reference: The Star-Spangled Banner\n" +
                 "Text: ''' as the national anthem, including television '\n" +
-                "Reference: sign-off ''\n" +
+                "Begin Reference: sign-off\n" +
+                "End Reference: sign-off\n" +
                 "Text: 's.'\n" +
                 "Begin Template: citation needed\n" +
                 "k: date\n" +

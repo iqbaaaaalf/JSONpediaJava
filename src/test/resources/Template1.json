@@ -19,7 +19,11 @@
                     {
                         "__type": "reference",
                         "label": "Flag of Alabama",
-                        "description": "Flag"
+                        "content": {
+                            "__anon_0": [
+                                "Flag"
+                            ]
+                        }
                     }
                 ],
                 "Seal": [
@@ -29,7 +33,11 @@
                     {
                         "__type": "reference",
                         "label": "Seal of Alabama",
-                        "description": "Seal"
+                        "content": {
+                            "__anon_1": [
+                                "Seal"
+                            ]
+                        }
                     }
                 ],
                 "Coat of arms": [
@@ -39,7 +47,11 @@
                     {
                         "__type": "reference",
                         "label": "Coat of arms of Alabama",
-                        "description": "Coat of arms"
+                        "content": {
+                            "__anon_2": [
+                                "Coat of arms"
+                            ]
+                        }
                     }
                 ],
                 "Map": [
@@ -50,7 +62,7 @@
                     {
                         "__type": "reference",
                         "label": "Dixie",
-                        "description": ""
+                        "content": {}
                     },
                     "; Cotton State"
                 ],
@@ -58,7 +70,11 @@
                     {
                         "__type": "reference",
                         "label": "Adjectivals and demonyms for U.S. states",
-                        "description": "Alabamian"
+                        "content": {
+                            "__anon_3": [
+                                "Alabamian"
+                            ]
+                        }
                     },
                     "&lt;ref&gt;",
                     {
@@ -72,13 +88,13 @@
                     {
                         "__type": "reference",
                         "label": "Audemus jura nostra defendere",
-                        "description": ""
+                        "content": {}
                     },
                     "(",
                     {
                         "__type": "reference",
                         "label": "Latin",
-                        "description": ""
+                        "content": {}
                     },
                     ")"
                 ],
@@ -92,7 +108,11 @@
                     {
                         "__type": "reference",
                         "label": "Montgomery, Alabama",
-                        "description": "Montgomery"
+                        "content": {
+                            "__anon_4": [
+                                "Montgomery"
+                            ]
+                        }
                     }
                 ],
                 "OfficialLang": [
@@ -105,14 +125,22 @@
                     {
                         "__type": "reference",
                         "label": "Birmingham-Hoover-Cullman Combined Statistical Area",
-                        "description": "Greater Birmingham Area"
+                        "content": {
+                            "__anon_5": [
+                                "Greater Birmingham Area"
+                            ]
+                        }
                     }
                 ],
                 "LargestCity": [
                     {
                         "__type": "reference",
                         "label": "Birmingham, Alabama",
-                        "description": "Birmingham"
+                        "content": {
+                            "__anon_6": [
+                                "Birmingham"
+                            ]
+                        }
                     },
                     "&lt;br /&gt;212,237 &lt;small&gt;(2010 census)&lt;/small&gt;"
                 ],
@@ -120,13 +148,17 @@
                     {
                         "__type": "reference",
                         "label": "Robert J. Bentley",
-                        "description": ""
+                        "content": {}
                     },
                     "(",
                     {
                         "__type": "reference",
                         "label": "Republican Party (United States)",
-                        "description": "R"
+                        "content": {
+                            "__anon_7": [
+                                "R"
+                            ]
+                        }
                     },
                     ")"
                 ],
@@ -134,13 +166,17 @@
                     {
                         "__type": "reference",
                         "label": "Kay Ivey",
-                        "description": ""
+                        "content": {}
                     },
                     "(",
                     {
                         "__type": "reference",
                         "label": "Republican Party (United States)",
-                        "description": "R"
+                        "content": {
+                            "__anon_8": [
+                                "R"
+                            ]
+                        }
                     },
                     ")"
                 ],
@@ -148,34 +184,42 @@
                     {
                         "__type": "reference",
                         "label": "Alabama Legislature",
-                        "description": ""
+                        "content": {}
                     }
                 ],
                 "Upperhouse": [
                     {
                         "__type": "reference",
                         "label": "Alabama Senate",
-                        "description": "Senate"
+                        "content": {
+                            "__anon_9": [
+                                "Senate"
+                            ]
+                        }
                     }
                 ],
                 "Lowerhouse": [
                     {
                         "__type": "reference",
                         "label": "Alabama House of Representatives",
-                        "description": "House of Representatives"
+                        "content": {
+                            "__anon_10": [
+                                "House of Representatives"
+                            ]
+                        }
                     }
                 ],
                 "Senators": [
                     {
                         "__type": "reference",
                         "label": "Richard Shelby",
-                        "description": ""
+                        "content": {}
                     },
                     "(R)&lt;br /&gt;",
                     {
                         "__type": "reference",
                         "label": "Jeff Sessions",
-                        "description": ""
+                        "content": {}
                     },
                     "(R)"
                 ],
@@ -237,24 +281,40 @@
                     {
                         "__type": "reference",
                         "label": "Central Time Zone (North America)",
-                        "description": "Central"
+                        "content": {
+                            "__anon_11": [
+                                "Central"
+                            ]
+                        }
                     },
                     ":",
                     {
                         "__type": "reference",
                         "label": "Coordinated Universal Time",
-                        "description": "UTC"
+                        "content": {
+                            "__anon_12": [
+                                "UTC"
+                            ]
+                        }
                     },
                     {
                         "__type": "reference",
                         "label": "Central Standard Time",
-                        "description": "-6"
+                        "content": {
+                            "__anon_13": [
+                                "-6"
+                            ]
+                        }
                     },
                     "/",
                     {
                         "__type": "reference",
                         "label": "Central Daylight Time",
-                        "description": "-5"
+                        "content": {
+                            "__anon_14": [
+                                "-5"
+                            ]
+                        }
                     }
                 ],
                 "TZ1Where": [
@@ -264,31 +324,47 @@
                     {
                         "__type": "reference",
                         "label": "Eastern Time Zone (North America)",
-                        "description": "Eastern"
+                        "content": {
+                            "__anon_15": [
+                                "Eastern"
+                            ]
+                        }
                     },
                     ":",
                     {
                         "__type": "reference",
                         "label": "Coordinated Universal Time",
-                        "description": "UTC"
+                        "content": {
+                            "__anon_16": [
+                                "UTC"
+                            ]
+                        }
                     },
                     {
                         "__type": "reference",
                         "label": "Eastern Standard Time",
-                        "description": "−5"
+                        "content": {
+                            "__anon_17": [
+                                "−5"
+                            ]
+                        }
                     },
                     "/",
                     {
                         "__type": "reference",
                         "label": "Eastern Daylight Time",
-                        "description": "−4"
+                        "content": {
+                            "__anon_18": [
+                                "−4"
+                            ]
+                        }
                     }
                 ],
                 "TZ2Where": [
                     {
                         "__type": "reference",
                         "label": "Phenix City, Alabama",
-                        "description": ""
+                        "content": {}
                     },
                     "area"
                 ],
@@ -314,14 +390,18 @@
                     {
                         "__type": "reference",
                         "label": "Baldwin County, Alabama",
-                        "description": "Baldwin County"
+                        "content": {
+                            "__anon_19": [
+                                "Baldwin County"
+                            ]
+                        }
                     }
                 ],
                 "HighestPoint": [
                     {
                         "__type": "reference",
                         "label": "Mount Cheaha",
-                        "description": ""
+                        "content": {}
                     },
                     "&lt;ref&gt;",
                     {
@@ -354,7 +434,7 @@
                                 {
                                     "__type": "reference",
                                     "label": "United States Geological Survey",
-                                    "description": ""
+                                    "content": {}
                                 }
                             ],
                             "year": [
@@ -369,7 +449,7 @@
                     {
                         "__type": "reference",
                         "label": "North American Vertical Datum of 1988",
-                        "description": ""
+                        "content": {}
                     },
                     ".&lt;/ref&gt;"
                 ],
@@ -389,7 +469,7 @@
                     {
                         "__type": "reference",
                         "label": "Gulf of Mexico",
-                        "description": ""
+                        "content": {}
                     },
                     "&lt;ref name=USGS/&gt;"
                 ],

@@ -34,15 +34,21 @@ k: caption
 Text: 'Abraham Lincoln at age 54, 1863
 '
 k: office        
-Reference: List of Presidents of the United States '16th'
+Begin Reference: List of Presidents of the United States
+k: null
+Text: '16th'
+End Reference: List of Presidents of the United States
 Text: ' '
-Reference: President of the United States ''
+Begin Reference: President of the United States
+End Reference: President of the United States
 Text: '
 '
 k: vicepresident 
-Reference: Hannibal Hamlin ''
+Begin Reference: Hannibal Hamlin
+End Reference: Hannibal Hamlin
 Open Tag: br attributes: []
-Reference: Andrew Johnson ''
+Begin Reference: Andrew Johnson
+End Reference: Andrew Johnson
 Text: '
 '
 k: term_start    
@@ -52,19 +58,25 @@ k: term_end
 Text: 'April 15, 1865
 '
 k: predecessor   
-Reference: James Buchanan ''
+Begin Reference: James Buchanan
+End Reference: James Buchanan
 Text: '
 '
 k: successor     
-Reference: Andrew Johnson ''
+Begin Reference: Andrew Johnson
+End Reference: Andrew Johnson
 Text: '
 '
 k: state2        
-Reference: Illinois ''
+Begin Reference: Illinois
+End Reference: Illinois
 Text: '
 '
 k: district2     
-Reference: Illinois' 7th congressional district '7th'
+Begin Reference: Illinois' 7th congressional district
+k: null
+Text: '7th'
+End Reference: Illinois' 7th congressional district
 Text: '
 '
 k: term_start2   
@@ -74,11 +86,17 @@ k: term_end2
 Text: 'March 3, 1849
 '
 k: predecessor2  
-Reference: John Henry (representative) 'John Henry'
+Begin Reference: John Henry (representative)
+k: null
+Text: 'John Henry'
+End Reference: John Henry (representative)
 Text: '
 '
 k: successor2    
-Reference: Thomas L. Harris 'Thomas Harris'
+Begin Reference: Thomas L. Harris
+k: null
+Text: 'Thomas Harris'
+End Reference: Thomas L. Harris
 Text: '
 '
 k: state_house3 
@@ -96,7 +114,8 @@ End Template: birth date
 Text: '
 '
 k: birth_place   
-Reference: Hodgenville, Kentucky ''
+Begin Reference: Hodgenville, Kentucky
+End Reference: Hodgenville, Kentucky
 Text: ', U.S.
 '
 k: death_date    
@@ -117,19 +136,29 @@ End Template: death date and age
 Text: '
 '
 k: death_place   
-Reference: Petersen House (Washington, D.C.) 'Petersen House'
+Begin Reference: Petersen House (Washington, D.C.)
+k: null
+Text: 'Petersen House'
+End Reference: Petersen House (Washington, D.C.)
 Text: ', '
-Reference: Washington, D.C. ''
+Begin Reference: Washington, D.C.
+End Reference: Washington, D.C.
 Text: ', U.S.
 '
 k: party         
-Reference: Republican Party (United States) 'Republican'
+Begin Reference: Republican Party (United States)
+k: null
+Text: 'Republican'
+End Reference: Republican Party (United States)
 Text: ' '
 Open Tag: small attributes: []
 Text: '(1854–1865)'
 Close Tag: small
 Open Tag: br attributes: []
-Reference: National Union Party (United States) 'National Union'
+Begin Reference: National Union Party (United States)
+k: null
+Text: 'National Union'
+End Reference: National Union Party (United States)
 Text: ' '
 Open Tag: small attributes: []
 Text: '(1864–1865)'
@@ -137,7 +166,10 @@ Close Tag: small
 Text: '
 '
 k: otherparty    
-Reference: Whig Party (United States) 'Whig'
+Begin Reference: Whig Party (United States)
+k: null
+Text: 'Whig'
+End Reference: Whig Party (United States)
 Text: ' '
 Open Tag: small attributes: []
 Text: '(Before 1854)'
@@ -145,17 +177,32 @@ Close Tag: small
 Text: '
 '
 k: spouse        
-Reference: Mary Todd Lincoln 'Mary Todd'
+Begin Reference: Mary Todd Lincoln
+k: null
+Text: 'Mary Todd'
+End Reference: Mary Todd Lincoln
 Text: '
 '
 k: children      
-Reference: Robert Todd Lincoln 'Robert'
+Begin Reference: Robert Todd Lincoln
+k: null
+Text: 'Robert'
+End Reference: Robert Todd Lincoln
 Open Tag: br attributes: []
-Reference: Edward Baker Lincoln 'Edward'
+Begin Reference: Edward Baker Lincoln
+k: null
+Text: 'Edward'
+End Reference: Edward Baker Lincoln
 Open Tag: br attributes: []
-Reference: William Wallace Lincoln 'William'
+Begin Reference: William Wallace Lincoln
+k: null
+Text: 'William'
+End Reference: William Wallace Lincoln
 Open Tag: br attributes: []
-Reference: Tad Lincoln 'Tad'
+Begin Reference: Tad Lincoln
+k: null
+Text: 'Tad'
+End Reference: Tad Lincoln
 Text: '
 '
 k: profession    
@@ -163,7 +210,10 @@ Text: 'Lawyer
 '
 k: religion      
 Text: ''''
-Reference: Abraham Lincoln and religion 'See article'
+Begin Reference: Abraham Lincoln and religion
+k: null
+Text: 'See article'
+End Reference: Abraham Lincoln and religion
 Text: '''
 '
 k: signature     
@@ -179,7 +229,8 @@ k: serviceyears
 Text: '1832
 '
 k: battles       
-Reference: Black Hawk War ''
+Begin Reference: Black Hawk War
+End Reference: Black Hawk War
 Text: '
 '
 End Template: Infobox officeholder
@@ -222,67 +273,127 @@ k: null
 Text: 'ən'
 End Template: IPAc-en
 Text: ' (February 12, 1809 – April 15, 1865) was the '
-Reference: List of Presidents of the United States '16th President of the United States'
+Begin Reference: List of Presidents of the United States
+k: null
+Text: '16th President of the United States'
+End Reference: List of Presidents of the United States
 Text: ', serving from March 1861 until '
-Reference: Assassination of Abraham Lincoln 'his assassination in April 1865'
+Begin Reference: Assassination of Abraham Lincoln
+k: null
+Text: 'his assassination in April 1865'
+End Reference: Assassination of Abraham Lincoln
 Text: '. He successfully led his country through a great constitutional, military and moral crisis – the '
-Reference: American Civil War ''
+Begin Reference: American Civil War
+End Reference: American Civil War
 Text: ' – preserving the Union, while ending slavery, and promoting economic and financial modernization. Reared in a poor family on the western frontier, Lincoln was mostly self-educated. He became a country lawyer, a '
-Reference: Whig Party (United States) 'Whig Party'
+Begin Reference: Whig Party (United States)
+k: null
+Text: 'Whig Party'
+End Reference: Whig Party (United States)
 Text: ' '
-Reference: Illinois House of Representatives 'Illinois state legislator'
+Begin Reference: Illinois House of Representatives
+k: null
+Text: 'Illinois state legislator'
+End Reference: Illinois House of Representatives
 Text: ', and a one-term member of the '
-Reference: United States House of Representatives ''
+Begin Reference: United States House of Representatives
+End Reference: United States House of Representatives
 Text: ', but failed in two attempts to be elected to the '
-Reference: United States Senate ''
+Begin Reference: United States Senate
+End Reference: United States Senate
 Text: ' as a '
-Reference: History of the Republican Party (United States) 'new Republican Party'
+Begin Reference: History of the Republican Party (United States)
+k: null
+Text: 'new Republican Party'
+End Reference: History of the Republican Party (United States)
 Text: '.
 
 After opposing the expansion of '
-Reference: slavery in the United States ''
+Begin Reference: slavery in the United States
+End Reference: slavery in the United States
 Text: ' in his campaign debates and speeches,'
 Open Tag: ref attributes: []
 Text: 'Goodwin, p. 91; Holzer, p. 232.'
 Close Tag: ref
 Text: ' Lincoln secured the Republican nomination and was '
-Reference: United States presidential election, 1860 'elected president in 1860'
+Begin Reference: United States presidential election, 1860
+k: null
+Text: 'elected president in 1860'
+End Reference: United States presidential election, 1860
 Text: '. Before Lincoln took office in March, seven '
-Reference: Southern United States 'southern slave states'
+Begin Reference: Southern United States
+k: null
+Text: 'southern slave states'
+End Reference: Southern United States
 Text: ' declared their '
-Reference: Secession in the United States 'secession'
+Begin Reference: Secession in the United States
+k: null
+Text: 'secession'
+End Reference: Secession in the United States
 Text: ' and formed the Confederacy. When war began with the Confederate attack on '
-Reference: Fort Sumter ''
+Begin Reference: Fort Sumter
+End Reference: Fort Sumter
 Text: ' on April 12, 1861, Lincoln concentrated on both the military and political dimensions of the war effort, seeking to reunify the nation. He vigorously exercised unprecedented war powers, including the arrest and detention without trial of thousands of suspected secessionists. He prevented British recognition of the '
-Reference: Confederate States of America 'Confederacy'
+Begin Reference: Confederate States of America
+k: null
+Text: 'Confederacy'
+End Reference: Confederate States of America
 Text: ' by skillfully handling the '
-Reference: Trent Affair '''Trent'' affair'
+Begin Reference: Trent Affair
+k: null
+Text: '''Trent'' affair'
+End Reference: Trent Affair
 Text: ' late in 1861.  His efforts toward the '
-Reference: abolitionism 'abolition'
+Begin Reference: abolitionism
+k: null
+Text: 'abolition'
+End Reference: abolitionism
 Text: ' of slavery include issuing his '
-Reference: Emancipation Proclamation ''
+Begin Reference: Emancipation Proclamation
+End Reference: Emancipation Proclamation
 Text: ' in 1863 and encouraging Congress to propose what would become the '
-Reference: Thirteenth Amendment to the United States Constitution 'Thirteenth Amendment'
+Begin Reference: Thirteenth Amendment to the United States Constitution
+k: null
+Text: 'Thirteenth Amendment'
+End Reference: Thirteenth Amendment to the United States Constitution
 Text: ' to the United States Constitution.
 
 Lincoln closely supervised the war effort, especially the selection of top generals, including commanding general '
-Reference: Ulysses S. Grant ''
+Begin Reference: Ulysses S. Grant
+End Reference: Ulysses S. Grant
 Text: '. He brought leaders of various factions of his party into his cabinet and pressured them to cooperate. Under his leadership, the '
-Reference: Union (American Civil War) 'Union'
+Begin Reference: Union (American Civil War)
+k: null
+Text: 'Union'
+End Reference: Union (American Civil War)
 Text: ' set up a naval blockade that shut down the South's normal trade, took control of the '
-Reference: Border states (American Civil War) 'border slave states'
+Begin Reference: Border states (American Civil War)
+k: null
+Text: 'border slave states'
+End Reference: Border states (American Civil War)
 Text: ' at the start of the war, gained control of communications with gunboats on the southern river systems, and tried repeatedly to capture the Confederate capital at '
-Reference: Richmond, Virginia 'Richmond'
+Begin Reference: Richmond, Virginia
+k: null
+Text: 'Richmond'
+End Reference: Richmond, Virginia
 Text: '. Each time a general failed, Lincoln substituted another until finally Grant succeeded in 1865. An exceptionally astute politician deeply involved with power issues in each state, he reached out to '
-Reference: War Democrats ''
+Begin Reference: War Democrats
+End Reference: War Democrats
 Text: ' and managed his own re-election in the '
-Reference: United States presidential election, 1864 '1864 presidential election'
+Begin Reference: United States presidential election, 1864
+k: null
+Text: '1864 presidential election'
+End Reference: United States presidential election, 1864
 Text: '.
 
 As the leader of the moderate faction of the Republican party, Lincoln found his policies and personality were "blasted from all sides": '
-Reference: Radical Republicans ''
+Begin Reference: Radical Republicans
+End Reference: Radical Republicans
 Text: ' demanded harsher treatment of the South, War Democrats desired more compromise, '
-Reference: Copperheads (politics) 'Copperheads'
+Begin Reference: Copperheads (politics)
+k: null
+Text: 'Copperheads'
+End Reference: Copperheads (politics)
 Text: ' despised him, and irreconcilable secessionists plotted his death.'
 Open Tag: ref attributes: []
 Text: 'Tagg, p. xiii.'
@@ -292,25 +403,43 @@ Open Tag: ref attributes: []
 Text: 'Randall (1947), pp. 65–87.'
 Close Tag: ref
 Text: ' His '
-Reference: Gettysburg Address ''
+Begin Reference: Gettysburg Address
+End Reference: Gettysburg Address
 Text: ' of 1863 became the most quoted speech in American history.'
 Open Tag: ref attributes: [name : 'Bulla']
 Text: 'Bulla (2010), p. 222.'
 Close Tag: ref
 Text: ' It was an iconic statement of America's dedication to the principles of nationalism, '
-Reference: Republicanism in the United States 'republicanism'
+Begin Reference: Republicanism in the United States
+k: null
+Text: 'republicanism'
+End Reference: Republicanism in the United States
 Text: ', equal rights, liberty, and democracy. At the close of the war, Lincoln held a moderate view of '
-Reference: Reconstruction Era of the United States 'Reconstruction'
+Begin Reference: Reconstruction Era of the United States
+k: null
+Text: 'Reconstruction'
+End Reference: Reconstruction Era of the United States
 Text: ', seeking to reunite the nation speedily through a policy of generous reconciliation in the face of lingering and bitter divisiveness. But six days after the surrender of Confederate commanding general '
-Reference: Robert E. Lee ''
+Begin Reference: Robert E. Lee
+End Reference: Robert E. Lee
 Text: ', Lincoln was '
-Reference: Assassination of Abraham Lincoln 'assassinated'
+Begin Reference: Assassination of Abraham Lincoln
+k: null
+Text: 'assassinated'
+End Reference: Assassination of Abraham Lincoln
 Text: ' by Confederate sympathizer '
-Reference: John Wilkes Booth ''
+Begin Reference: John Wilkes Booth
+End Reference: John Wilkes Booth
 Text: '.  His death was the first assassination of a U.S. president and sent the nation  into '
-Reference: Funeral and burial of Abraham Lincoln 'mourning'
+Begin Reference: Funeral and burial of Abraham Lincoln
+k: null
+Text: 'mourning'
+End Reference: Funeral and burial of Abraham Lincoln
 Text: '. Lincoln has been consistently '
-Reference: Historical rankings of Presidents of the United States#Scholar survey results 'ranked'
+Begin Reference: Historical rankings of Presidents of the United States#Scholar survey results
+k: null
+Text: 'ranked'
+End Reference: Historical rankings of Presidents of the United States#Scholar survey results
 Text: ' by scholars and the public as one of the three greatest U.S. presidents.'
 Open Tag: ref attributes: [name : 'Ranking Our Presidents']
 Link: http://history-world.org/pres.pdf '"Ranking Our Presidents"'
@@ -335,23 +464,38 @@ Text: 'Early life and career of Abraham Lincoln'
 End Template: Main
 Text: '
 Abraham Lincoln was born February 12, 1809, the second child of '
-Reference: Thomas Lincoln ''
+Begin Reference: Thomas Lincoln
+End Reference: Thomas Lincoln
 Text: ' and '
-Reference: Nancy Lincoln ''
+Begin Reference: Nancy Lincoln
+End Reference: Nancy Lincoln
 Text: ' (née Hanks), in a one-room log cabin on the '
-Reference: Sinking Spring Farm ''
+Begin Reference: Sinking Spring Farm
+End Reference: Sinking Spring Farm
 Text: ' in '
-Reference: Hardin County, Kentucky 'Hardin County'
+Begin Reference: Hardin County, Kentucky
+k: null
+Text: 'Hardin County'
+End Reference: Hardin County, Kentucky
 Text: ', Kentucky,'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 20–22.'
 Close Tag: ref
 Text: ' (now '
-Reference: LaRue County, Kentucky 'LaRue County'
+Begin Reference: LaRue County, Kentucky
+k: null
+Text: 'LaRue County'
+End Reference: LaRue County, Kentucky
 Text: ').  Lincoln's paternal grandfather and namesake, '
-Reference: Abraham Lincoln (captain) 'Abraham'
+Begin Reference: Abraham Lincoln (captain)
+k: null
+Text: 'Abraham'
+End Reference: Abraham Lincoln (captain)
 Text: ', had moved his family from Virginia to '
-Reference: Jefferson County, Kentucky 'Jefferson County'
+Begin Reference: Jefferson County, Kentucky
+k: null
+Text: 'Jefferson County'
+End Reference: Jefferson County, Kentucky
 Text: ', Kentucky,'
 Open Tag: ref attributes: [name : 'Pessen2425']
 Text: 'Pessen, pp. 24–25.'
@@ -366,9 +510,13 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 21.'
 Close Tag: ref
 Text: '  Lincoln's mother, Nancy, was the daughter of Lucy Hanks, and was born in what is now '
-Reference: Mineral County, West Virginia 'Mineral County'
+Begin Reference: Mineral County, West Virginia
+k: null
+Text: 'Mineral County'
+End Reference: Mineral County, West Virginia
 Text: ', West Virginia, then part of Virginia. Lucy moved with Nancy to Kentucky. Nancy Hanks married Thomas, who became a respected citizen. He bought and sold several farms, including the Sinking Spring Farm. The family attended a '
-Reference: Separate Baptists ''
+Begin Reference: Separate Baptists
+End Reference: Separate Baptists
 Text: ' church, which had high moral standards and opposed alcohol, dancing, and slavery.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 22–24.'
@@ -390,27 +538,46 @@ Open Tag: ref attributes: []
 Text: 'Lamb, p. 189.'
 Close Tag: ref
 Text: ' However, in 1816, Thomas lost all of his land in court cases because of faulty '
-Reference: title (property) 'property titles'
+Begin Reference: title (property)
+k: null
+Text: 'property titles'
+End Reference: title (property)
 Text: '.'
 Inline Tag: ref attributes: [name : 'sandberg-20']
 Text: '
 
 '
-Reference: File:Young Lincoln By Charles Keck.JPG 'thumb|left|The young Lincoln in sculpture at Senn Park, Chicago|alt=A statue of young Lincoln sitting on a stump, holding a book open on his lap'
+Begin Reference: File:Young Lincoln By Charles Keck.JPG
+k: null
+Text: 'thumb'
+k: null
+Text: 'left'
+k: null
+Text: 'The young Lincoln in sculpture at Senn Park, Chicago'
+k: alt
+Text: 'A statue of young Lincoln sitting on a stump, holding a book open on his lap'
+End Reference: File:Young Lincoln By Charles Keck.JPG
 Text: '
 
 The family moved north across the Ohio River to free (i.e., non-slave) territory and made a new start in '
-Reference: Perry County, Indiana 'Perry County'
+Begin Reference: Perry County, Indiana
+k: null
+Text: 'Perry County'
+End Reference: Perry County, Indiana
 Text: ', Indiana.  Lincoln later noted that this move was "partly on account of slavery" but mainly due to land title difficulties.'
 Open Tag: ref attributes: [name : 'sandberg-20']
 Text: 'Sandburg (1926), p. 20.'
 Close Tag: ref
 Text: ' In Indiana, when Lincoln was nine, his mother Nancy died of '
-Reference: milk sickness ''
+Begin Reference: milk sickness
+End Reference: milk sickness
 Text: ' in 1818.'
 Inline Tag: ref attributes: [name : 'donald-1996-p30-33']
 Text: '  After the death of Lincoln's mother, his older sister, '
-Reference: Sarah Lincoln Grigsby 'Sarah'
+Begin Reference: Sarah Lincoln Grigsby
+k: null
+Text: 'Sarah'
+End Reference: Sarah Lincoln Grigsby
 Text: ', took charge of caring for him until their father remarried in 1819; Sarah later died in her 20s while giving birth to a stillborn son.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 20.'
@@ -418,7 +585,10 @@ Close Tag: ref
 Text: '
 
 Thomas Lincoln's new wife was the widow '
-Reference: Sarah Bush Lincoln 'Sarah Bush Johnston'
+Begin Reference: Sarah Bush Lincoln
+k: null
+Text: 'Sarah Bush Johnston'
+End Reference: Sarah Bush Lincoln
 Text: ', the mother of three of her own children. Lincoln became very close to his stepmother, and referred to her as "Mother".'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 26–27.'
@@ -449,29 +619,47 @@ Close Tag: ref
 Text: '
 
 In 1830, fearing a milk sickness outbreak along the Ohio River, the Lincoln family moved west, where they settled on public land in '
-Reference: Macon County, Illinois 'Macon County'
+Begin Reference: Macon County, Illinois
+k: null
+Text: 'Macon County'
+End Reference: Macon County, Illinois
 Text: ', Illinois, another free, non-slave state.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 36.'
 Close Tag: ref
 Text: ' In 1831, Thomas relocated the family to a '
-Reference: Lincoln Log Cabin State Historic Site 'new homestead'
+Begin Reference: Lincoln Log Cabin State Historic Site
+k: null
+Text: 'new homestead'
+End Reference: Lincoln Log Cabin State Historic Site
 Text: ' in '
-Reference: Coles County, Illinois 'Coles County'
+Begin Reference: Coles County, Illinois
+k: null
+Text: 'Coles County'
+End Reference: Coles County, Illinois
 Text: ', Illinois. It was then that, as an ambitious 22-year-old, Lincoln decided to seek a better life and struck out on his own.  Canoeing down the '
-Reference: Sangamon River ''
+Begin Reference: Sangamon River
+End Reference: Sangamon River
 Text: ', Lincoln ended up in the village of '
-Reference: New Salem, Menard County, Illinois 'New Salem'
+Begin Reference: New Salem, Menard County, Illinois
+k: null
+Text: 'New Salem'
+End Reference: New Salem, Menard County, Illinois
 Text: ' in '
-Reference: Sangamon County, Illinois 'Sangamon County'
+Begin Reference: Sangamon County, Illinois
+k: null
+Text: 'Sangamon County'
+End Reference: Sangamon County, Illinois
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Thomas (2008), pp. 23–53; Carwardine (2003), pp. 3–5.'
 Close Tag: ref
 Text: ' In the spring of 1831, hired by New Salem businessman '
-Reference: Denton Offutt ''
+Begin Reference: Denton Offutt
+End Reference: Denton Offutt
 Text: ' and accompanied by friends, he took goods by '
-Reference: flatboat ''
+Begin Reference: flatboat
+End Reference: flatboat
 Text: ' from New Salem to New Orleans via the Sangamon, Illinois, and Mississippi rivers. After arriving in New Orleans—and witnessing slavery firsthand—he walked back home.'
 Open Tag: ref attributes: []
 Text: 'Sandburg (1926), pp. 22–23.'
@@ -483,9 +671,12 @@ Section [1] Marriage and children
 Text: '
 '
 Begin Template: Further2
-Reference: Lincoln family tree ''
-Reference: Medical and mental health of Abraham Lincoln ''
-Reference: Sexuality of Abraham Lincoln ''
+Begin Reference: Lincoln family tree
+End Reference: Lincoln family tree
+Begin Reference: Medical and mental health of Abraham Lincoln
+End Reference: Medical and mental health of Abraham Lincoln
+Begin Reference: Sexuality of Abraham Lincoln
+End Reference: Sexuality of Abraham Lincoln
 End Template: Further2
 Text: '
 '
@@ -525,9 +716,11 @@ End Template: multiple image
 Text: '
 
 Lincoln's first romantic interest was '
-Reference: Ann Rutledge ''
+Begin Reference: Ann Rutledge
+End Reference: Ann Rutledge
 Text: ', whom he met when he first moved to New Salem; by 1835, they were in a relationship but not formally engaged. She died on August 25, most likely of '
-Reference: typhoid fever ''
+Begin Reference: typhoid fever
+End Reference: typhoid fever
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 55–58.'
@@ -539,15 +732,24 @@ Close Tag: ref
 Text: '
 
 In 1840, Lincoln became engaged to '
-Reference: Mary Todd Lincoln 'Mary Todd'
+Begin Reference: Mary Todd Lincoln
+k: null
+Text: 'Mary Todd'
+End Reference: Mary Todd Lincoln
 Text: ', who was from a wealthy slave-holding family in '
-Reference: Lexington, Kentucky 'Lexington'
+Begin Reference: Lexington, Kentucky
+k: null
+Text: 'Lexington'
+End Reference: Lexington, Kentucky
 Text: ', Kentucky.'
 Open Tag: ref attributes: []
 Text: 'Lamb, p. 43.'
 Close Tag: ref
 Text: ' They met in '
-Reference: Springfield, Illinois 'Springfield'
+Begin Reference: Springfield, Illinois
+k: null
+Text: 'Springfield'
+End Reference: Springfield, Illinois
 Text: ', Illinois, in December 1839'
 Open Tag: ref attributes: [name : 'Sandburg4648']
 Text: 'Sandburg (1926), pp. 46–48.'
@@ -582,9 +784,11 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 95–96.'
 Close Tag: ref
 Text: ' '
-Reference: Robert Todd Lincoln ''
+Begin Reference: Robert Todd Lincoln
+End Reference: Robert Todd Lincoln
 Text: ' was born in 1843 and '
-Reference: Edward Baker Lincoln ''
+Begin Reference: Edward Baker Lincoln
+End Reference: Edward Baker Lincoln
 Text: ' (Eddie) in 1846. Lincoln "was remarkably fond of children",'
 Open Tag: ref attributes: []
 Text: 'White, p. 126.'
@@ -594,11 +798,18 @@ Open Tag: ref attributes: []
 Text: 'Baker, p. 120.'
 Close Tag: ref
 Text: ' Robert was the only child to live to adulthood. Edward died on February 1, 1850, in Springfield, likely of '
-Reference: tuberculosis ''
+Begin Reference: tuberculosis
+End Reference: tuberculosis
 Text: '.  '
-Reference: William Wallace Lincoln '"Willie" Lincoln'
+Begin Reference: William Wallace Lincoln
+k: null
+Text: '"Willie" Lincoln'
+End Reference: William Wallace Lincoln
 Text: ' was born on December 21, 1850, and died on February 20, 1862. The Lincolns' fourth son, '
-Reference: Tad Lincoln 'Thomas "Tad" Lincoln'
+Begin Reference: Tad Lincoln
+k: null
+Text: 'Thomas "Tad" Lincoln'
+End Reference: Tad Lincoln
 Text: ', was born on April 4, 1853, and died of heart failure at the age of 18 on July 16, 1871.'
 Open Tag: ref attributes: []
 Text: 'White, pp. 179–181, 476.'
@@ -610,7 +821,8 @@ Open Tag: ref attributes: []
 Text: 'Steers, p. 341.'
 Close Tag: ref
 Text: ' Abraham Lincoln suffered from "'
-Reference: melancholy ''
+Begin Reference: melancholy
+End Reference: melancholy
 Text: '", a condition which now is referred to as clinical depression.'
 Open Tag: ref attributes: [name : 'Atlanticoct2005']
 Begin Template: cite web
@@ -658,9 +870,13 @@ End Template: Main
 Text: '
 
 In 1832, at age 23, Lincoln and a partner bought a small general store on credit in '
-Reference: Lincoln's New Salem 'New Salem'
+Begin Reference: Lincoln's New Salem
+k: null
+Text: 'New Salem'
+End Reference: Lincoln's New Salem
 Text: ', Illinois. Although the economy was booming in the region, the business struggled and Lincoln eventually sold his share. That March he began his political career with his first campaign for the '
-Reference: Illinois General Assembly ''
+Begin Reference: Illinois General Assembly
+End Reference: Illinois General Assembly
 Text: '. He had attained local popularity and could draw crowds as a natural raconteur in New Salem, though he lacked an education, powerful friends, and money, which may be why he lost. He advocated navigational improvements on the Sangamon River.'
 Open Tag: ref attributes: []
 Text: 'Winkle ch 7–8.'
@@ -672,11 +888,25 @@ Close Tag: ref
 Text: '
 
 '
-Reference: File:Abe Lincoln young.jpg 'thumb|left|150px|upright|alt=Thin man looking to the right wearing a bow tie.|A sketch of candidate Abraham Lincoln'
+Begin Reference: File:Abe Lincoln young.jpg
+k: null
+Text: 'thumb'
+k: null
+Text: 'left'
+k: null
+Text: '150px'
+k: null
+Text: 'upright'
+k: alt
+Text: 'Thin man looking to the right wearing a bow tie.'
+k: null
+Text: 'A sketch of candidate Abraham Lincoln'
+End Reference: File:Abe Lincoln young.jpg
 Text: '
 
 Before the election Lincoln served as a captain in the Illinois Militia during the '
-Reference: Black Hawk War ''
+Begin Reference: Black Hawk War
+End Reference: Black Hawk War
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Winkle, pp. 86–95.'
@@ -711,41 +941,57 @@ Close Tag: ref
 Text: '
 
 Lincoln served as New Salem's postmaster and later as county surveyor, all the while reading voraciously. He then decided to become a lawyer and began teaching himself law by reading '
-Reference: William Blackstone 'Blackstone'
+Begin Reference: William Blackstone
+k: null
+Text: 'Blackstone'
+End Reference: William Blackstone
 Text: ''s '''
-Reference: Commentaries on the Laws of England ''
+Begin Reference: Commentaries on the Laws of England
+End Reference: Commentaries on the Laws of England
 Text: ''' and other law books. Of his learning method, Lincoln stated: "I studied with nobody".'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 53–55.'
 Close Tag: ref
 Text: '  His second campaign in 1834 was successful. He won election to the state legislature; though he ran as a '
-Reference: Whig Party (United States) 'Whig'
+Begin Reference: Whig Party (United States)
+k: null
+Text: 'Whig'
+End Reference: Whig Party (United States)
 Text: ', many Democrats favored him over a more powerful Whig opponent.'
 Open Tag: ref attributes: []
 Text: 'White, p. 59.'
 Close Tag: ref
 Text: '  '
-Reference: Admission to the bar in the United States 'Admitted to the bar'
+Begin Reference: Admission to the bar in the United States
+k: null
+Text: 'Admitted to the bar'
+End Reference: Admission to the bar in the United States
 Text: ' in 1836,'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 64.'
 Close Tag: ref
 Text: ' he moved to Springfield, Illinois, and began to practice law under '
-Reference: John T. Stuart ''
+Begin Reference: John T. Stuart
+End Reference: John T. Stuart
 Text: ', Mary Todd's cousin.'
 Open Tag: ref attributes: []
 Text: 'White, pp. 71, 79, 108.'
 Close Tag: ref
 Text: ' Lincoln became an able and successful lawyer with a reputation as a formidable adversary during cross-examinations and closing arguments. He partnered with '
-Reference: Stephen T. Logan ''
+Begin Reference: Stephen T. Logan
+End Reference: Stephen T. Logan
 Text: ' from 1841 until 1844, when he began his practice with '
-Reference: William Herndon (lawyer) 'William Herndon'
+Begin Reference: William Herndon (lawyer)
+k: null
+Text: 'William Herndon'
+End Reference: William Herndon (lawyer)
 Text: ', whom Lincoln thought "a studious young man".'
 Open Tag: ref attributes: []
 Text: 'Donald (1948), p. 17.'
 Close Tag: ref
 Text: ' He served four successive terms in the '
-Reference: Illinois House of Representatives ''
+Begin Reference: Illinois House of Representatives
+End Reference: Illinois House of Representatives
 Text: ' as a Whig representative from Sangamon County.'
 Open Tag: ref attributes: []
 Text: 'Simon, p. 283.'
@@ -757,17 +1003,21 @@ Open Tag: ref attributes: []
 Text: 'Simon, p. 130.'
 Close Tag: ref
 Text: ' He was known for his "free soil" stance of opposing both slavery and '
-Reference: abolitionism ''
+Begin Reference: abolitionism
+End Reference: abolitionism
 Text: '. He first articulated this in 1837, saying, "Institution of slavery is founded on both injustice and bad policy, but the promulgation of abolition doctrines tends rather to increase than abate its evils."'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 134.'
 Close Tag: ref
 Text: ' He closely followed '
-Reference: Henry Clay ''
+Begin Reference: Henry Clay
+End Reference: Henry Clay
 Text: ' in supporting the '
-Reference: American Colonization Society ''
+Begin Reference: American Colonization Society
+End Reference: American Colonization Society
 Text: ' program of making the abolition of slavery practical by helping the freed slaves to settle in '
-Reference: Liberia ''
+Begin Reference: Liberia
+End Reference: Liberia
 Text: ' in Africa.'
 Open Tag: ref attributes: []
 Text: 'Foner (2010), pp. 17–19, 67.'
@@ -782,13 +1032,17 @@ Text: '
 Section [0] Congressman Lincoln
 Text: '
 From the early 1830s, Lincoln was a steadfast '
-Reference: Whig Party (United States) 'Whig'
+Begin Reference: Whig Party (United States)
+k: null
+Text: 'Whig'
+End Reference: Whig Party (United States)
 Text: ' and professed to friends in 1861 to be, "an old line Whig, a disciple of Henry Clay".'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 222.'
 Close Tag: ref
 Text: ' The party, including Lincoln, favored economic modernization in banking, protective tariffs to fund '
-Reference: internal improvements ''
+Begin Reference: internal improvements
+End Reference: internal improvements
 Text: ' including railroads, and espoused urbanization as well.'
 Open Tag: ref attributes: []
 Text: 'Boritt (1994), pp. 137–153.'
@@ -800,21 +1054,27 @@ Open Tag: ref attributes: []
 Text: 'Oates, p. 79.'
 Close Tag: ref
 Text: ' Lincoln, in collaboration with abolitionist Congressman '
-Reference: Joshua R. Giddings ''
+Begin Reference: Joshua R. Giddings
+End Reference: Joshua R. Giddings
 Text: ', wrote a bill to abolish slavery in the District of Columbia with compensation for the owners, enforcement to capture fugitive slaves, and a popular vote on the matter. He abandoned the bill when it failed to garner sufficient Whig supporters.'
 Open Tag: ref attributes: []
 Text: 'Harris, p. 54; Foner (2010), p. 57.'
 Close Tag: ref
 Text: ' On foreign and military policy, Lincoln spoke out against the '
-Reference: Mexican–American War ''
+Begin Reference: Mexican–American War
+End Reference: Mexican–American War
 Text: ', which he attributed to '
-Reference: James K. Polk 'President Polk'
+Begin Reference: James K. Polk
+k: null
+Text: 'President Polk'
+End Reference: James K. Polk
 Text: ''s desire for "military glory—that attractive rainbow, that rises in showers of blood".'
 Open Tag: ref attributes: []
 Text: 'Heidler (2006), pp. 181–183.'
 Close Tag: ref
 Text: ' Lincoln also supported the '
-Reference: Wilmot Proviso ''
+Begin Reference: Wilmot Proviso
+End Reference: Wilmot Proviso
 Text: ', which, if it had been adopted, would have banned slavery in any U.S. territory won from Mexico.'
 Open Tag: ref attributes: []
 Text: 'Holzer, p. 63.'
@@ -822,7 +1082,8 @@ Close Tag: ref
 Text: '
 
 Lincoln emphasized his opposition to Polk by drafting and introducing his '
-Reference: Spot Resolutions ''
+Begin Reference: Spot Resolutions
+End Reference: Spot Resolutions
 Text: '. The war had begun with a Mexican slaughter of American soldiers in territory disputed by Mexico and the US; Polk insisted that Mexican soldiers had "invaded ''our territory'' and shed the blood of our fellow-citizens on our ''own soil''".'
 Open Tag: ref attributes: []
 Text: 'Oates, pp. 79–80.'
@@ -862,21 +1123,27 @@ Close Tag: ref
 Text: '
 
 Realizing Clay was unlikely to win the presidency, Lincoln, who had pledged in 1846 to serve only one term in the House, supported General '
-Reference: Zachary Taylor ''
+Begin Reference: Zachary Taylor
+End Reference: Zachary Taylor
 Text: ' for the Whig nomination in the '
-Reference: United States presidential election, 1848 '1848 presidential election'
+Begin Reference: United States presidential election, 1848
+k: null
+Text: '1848 presidential election'
+End Reference: United States presidential election, 1848
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 124–126.'
 Close Tag: ref
 Text: ' Taylor won and Lincoln hoped to be appointed Commissioner of the '
-Reference: General Land Office ''
+Begin Reference: General Land Office
+End Reference: General Land Office
 Text: ', but that lucrative patronage job went to an Illinois rival, Justin Butterfield, considered by the administration to be a highly skilled lawyer, but in Lincoln's view, an "old fossil".'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 140.'
 Close Tag: ref
 Text: ' The administration offered him the consolation prize of secretary or governor of the '
-Reference: Oregon Territory ''
+Begin Reference: Oregon Territory
+End Reference: Oregon Territory
 Text: '. This distant territory was a Democratic stronghold, and acceptance of the post would have effectively ended his legal and political career in Illinois, so he declined and resumed his law practice.'
 Open Tag: ref attributes: []
 Text: 'Harris, pp. 55–57.'
@@ -887,7 +1154,18 @@ Text: '
 Section [0] Prairie lawyer
 Text: '
 '
-Reference: File:Abelincoln1846.jpeg 'thumb|right|upright|alt=Middle aged clean shaven Lincoln from the hips up.|Lincoln in his late 30s – photo taken by one of Lincoln's law students around 1846'
+Begin Reference: File:Abelincoln1846.jpeg
+k: null
+Text: 'thumb'
+k: null
+Text: 'right'
+k: null
+Text: 'upright'
+k: alt
+Text: 'Middle aged clean shaven Lincoln from the hips up.'
+k: null
+Text: 'Lincoln in his late 30s – photo taken by one of Lincoln's law students around 1846'
+End Reference: File:Abelincoln1846.jpeg
 Text: '
 
 Lincoln returned to practicing law in Springfield, handling "every kind of business that could come before a prairie lawyer".'
@@ -903,13 +1181,17 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 142–143.'
 Close Tag: ref
 Text: ' His reputation grew, and he appeared before the '
-Reference: Supreme Court of the United States ''
+Begin Reference: Supreme Court of the United States
+End Reference: Supreme Court of the United States
 Text: ', arguing a case involving a canal boat that sank after hitting a bridge.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 156–157.'
 Close Tag: ref
 Text: ' In 1849, he received '
-Reference: Abraham Lincoln's patent 'a patent for a flotation device'
+Begin Reference: Abraham Lincoln's patent
+k: null
+Text: 'a patent for a flotation device'
+End Reference: Abraham Lincoln's patent
 Text: ' for the movement of boats in shallow water. The idea was never commercialized, but Lincoln is the only president to hold a patent.'
 Open Tag: ref attributes: []
 Text: 'White, p. 163.'
@@ -932,7 +1214,10 @@ Close Tag: ref
 Text: '
 
 In 1851, he represented '
-Reference: Alton Railroad 'Alton & Sangamon Railroad'
+Begin Reference: Alton Railroad
+k: null
+Text: 'Alton & Sangamon Railroad'
+End Reference: Alton Railroad
 Text: ' in a dispute with one of its shareholders, James A. Barret, who had refused to pay the balance on his pledge to buy shares in the railroad on the grounds that the company had changed its original train route.'
 Open Tag: ref attributes: [name : 'Donald p. 155']
 Text: 'Donald (1996), p. 155.'
@@ -941,7 +1226,10 @@ Open Tag: ref attributes: []
 Text: 'Dirck (2007), p. 92.'
 Close Tag: ref
 Text: ' Lincoln successfully argued that the railroad company was not bound by its original charter in existence at the time of Barret's pledge; the charter was amended in the public interest to provide a newer, superior, and less expensive route, and the corporation retained the right to demand Barret's payment. The decision by the '
-Reference: Supreme Court of Illinois 'Illinois Supreme Court'
+Begin Reference: Supreme Court of Illinois
+k: null
+Text: 'Illinois Supreme Court'
+End Reference: Supreme Court of Illinois
 Text: ' has been cited by numerous other courts in the nation.'
 Inline Tag: ref attributes: [name : 'Donald p. 155']
 Text: ' Lincoln appeared before the Illinois Supreme Court in 175 cases, in 51 as sole counsel, of which 31 were decided in his favor.'
@@ -949,7 +1237,8 @@ Open Tag: ref attributes: []
 Text: 'Handy, p. 440.'
 Close Tag: ref
 Text: ' From 1853 to 1860, another of Lincoln's largest clients was the '
-Reference: Illinois Central Railroad ''
+Begin Reference: Illinois Central Railroad
+End Reference: Illinois Central Railroad
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 155–156, 196–197.'
@@ -957,15 +1246,18 @@ Close Tag: ref
 Text: '
 
 Lincoln's most notable criminal trial occurred in 1858 when he defended '
-Reference: William "Duff" Armstrong ''
+Begin Reference: William "Duff" Armstrong
+End Reference: William "Duff" Armstrong
 Text: ', who was on trial for the murder of James Preston Metzker.'
 Open Tag: ref attributes: [name : 'Donald150151']
 Text: 'Donald (1996), pp. 150–151.'
 Close Tag: ref
 Text: ' The case is famous for Lincoln's use of a fact established by '
-Reference: judicial notice ''
+Begin Reference: judicial notice
+End Reference: judicial notice
 Text: ' in order to challenge the credibility of an eyewitness. After an opposing witness testified seeing the crime in the moonlight, Lincoln produced a '
-Reference: Farmers' Almanac ''
+Begin Reference: Farmers' Almanac
+End Reference: Farmers' Almanac
 Text: ' showing the moon was at a low angle, drastically reducing visibility. Based on this evidence, Armstrong was acquitted.'
 Inline Tag: ref attributes: [name : 'Donald150151']
 Text: ' Lincoln rarely raised objections in the courtroom; but in an 1859 case, where he defended a cousin Peachy Harrison, who was accused of stabbing another to death, Lincoln angrily protested the judge's decision to exclude evidence favorable to his client. Instead of holding Lincoln in contempt of court as was expected, the judge, a Democrat, reversed his ruling, allowing the evidence and acquitting Harrison.'
@@ -1024,19 +1316,28 @@ Text: 'January 5, 2012'
 End Template: cite web
 Close Tag: ref
 Text: ' He returned to politics to oppose the pro-slavery '
-Reference: Kansas–Nebraska Act ''
+Begin Reference: Kansas–Nebraska Act
+End Reference: Kansas–Nebraska Act
 Text: ' (1854); this law repealed the slavery-restricting '
-Reference: Missouri Compromise ''
+Begin Reference: Missouri Compromise
+End Reference: Missouri Compromise
 Text: ' (1820). Senior Senator '
-Reference: Stephen A. Douglas ''
+Begin Reference: Stephen A. Douglas
+End Reference: Stephen A. Douglas
 Text: ' of Illinois had incorporated '
-Reference: Popular sovereignty in the United States#Emergence of the term “popular sovereignty” and its pejorative connotation 'popular sovereignty'
+Begin Reference: Popular sovereignty in the United States#Emergence of the term “popular sovereignty” and its pejorative connotation
+k: null
+Text: 'popular sovereignty'
+End Reference: Popular sovereignty in the United States#Emergence of the term “popular sovereignty” and its pejorative connotation
 Text: ' into the Act. Douglas' provision, which Lincoln opposed, specified settlers had the right to determine locally whether to allow slavery in new U.S. territory, rather than have such a decision restricted by the national Congress.'
 Open Tag: ref attributes: []
 Text: 'McGovern, pp. 36–37.'
 Close Tag: ref
 Text: ' Foner (2010) contrasts the abolitionists and anti-slavery Radical Republicans of the Northeast who saw slavery as a sin, with the conservative Republicans who thought it was bad because it hurt white people and blocked progress. Foner argues that Lincoln was a moderate in the middle, opposing slavery primarily because it violated the '
-Reference: Republicanism in the United States 'republicanism principles'
+Begin Reference: Republicanism in the United States
+k: null
+Text: 'republicanism principles'
+End Reference: Republicanism in the United States
 Text: ' of the Founding Fathers, especially the equality of all men and democratic self-government as expressed in the Declaration of Independence.'
 Open Tag: ref attributes: []
 Text: 'Foner (2010), pp. 84–88.'
@@ -1044,11 +1345,26 @@ Close Tag: ref
 Text: '
 
 '
-Reference: Image:DredScott.jpg '|alt=Painting|thumb|180px|Portrait of [[Dred Scott'
-Text: '. Lincoln denounced the Supreme Court decision in ''Dred Scott v. Sandford'' as a conspiracy.]]
+Begin Reference: Image:DredScott.jpg
+k: alt
+Text: 'Painting'
+k: null
+Text: 'thumb'
+k: null
+Text: '180px'
+k: null
+Text: 'Portrait of '
+Begin Reference: Dred Scott
+End Reference: Dred Scott
+Text: '. Lincoln denounced the Supreme Court decision in ''Dred Scott v. Sandford'' as a conspiracy.'
+End Reference: Image:DredScott.jpg
+Text: '
 
 On October 16, 1854, in his "'
-Reference: Abraham Lincoln Peoria speech 'Peoria Speech'
+Begin Reference: Abraham Lincoln Peoria speech
+k: null
+Text: 'Peoria Speech'
+End Reference: Abraham Lincoln Peoria speech
 Text: '", Lincoln declared his opposition to slavery, which he repeated en route to the presidency.'
 Open Tag: ref attributes: []
 Text: 'Thomas (2008), pp. 148–152.'
@@ -1070,9 +1386,11 @@ Open Tag: ref attributes: []
 Text: 'Oates, p. 119.'
 Close Tag: ref
 Text: ' After leading in the first six rounds of voting in the Illinois assembly, his support began to dwindle, and Lincoln instructed his backers to vote for '
-Reference: Lyman Trumbull ''
+Begin Reference: Lyman Trumbull
+End Reference: Lyman Trumbull
 Text: ', who defeated opponent '
-Reference: Joel Aldrich Matteson ''
+Begin Reference: Joel Aldrich Matteson
+End Reference: Joel Aldrich Matteson
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'White, pp. 205–208.'
@@ -1087,7 +1405,8 @@ Open Tag: ref attributes: []
 Text: 'McGovern, pp. 38–39.'
 Close Tag: ref
 Text: ' At the '
-Reference: 1856 Republican National Convention ''
+Begin Reference: 1856 Republican National Convention
+End Reference: 1856 Republican National Convention
 Text: ', Lincoln placed second in the contest to become the party's candidate for vice president.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 193.'
@@ -1095,19 +1414,24 @@ Close Tag: ref
 Text: '
 
 In 1857–58, Douglas broke with President '
-Reference: James Buchanan ''
+Begin Reference: James Buchanan
+End Reference: James Buchanan
 Text: ', leading to a fight for control of the Democratic Party. Some eastern Republicans even favored the reelection of Douglas for the Senate in 1858, since he had led the opposition to the '
-Reference: Lecompton Constitution ''
+Begin Reference: Lecompton Constitution
+End Reference: Lecompton Constitution
 Text: ', which would have admitted Kansas as a '
-Reference: slave state ''
+Begin Reference: slave state
+End Reference: slave state
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Oates, pp. 138–139.'
 Close Tag: ref
 Text: ' In March 1857, the Supreme Court issued its decision in '''
-Reference: Dred Scott v. Sandford ''
+Begin Reference: Dred Scott v. Sandford
+End Reference: Dred Scott v. Sandford
 Text: '''; Chief Justice '
-Reference: Roger B. Taney ''
+Begin Reference: Roger B. Taney
+End Reference: Roger B. Taney
 Text: ' opined that blacks were not citizens, and derived no rights from the Constitution. Lincoln denounced the decision, alleging it was the product of a conspiracy of Democrats to support the Slave Power'
 Open Tag: ref attributes: []
 Text: 'Zarefsky, pp. 69–110.'
@@ -1119,7 +1443,10 @@ Close Tag: ref
 Text: '
 
 After the state Republican party convention nominated him for the U.S. Senate in 1858, Lincoln delivered his '
-Reference: Lincoln's House Divided Speech 'House Divided Speech'
+Begin Reference: Lincoln's House Divided Speech
+k: null
+Text: 'House Divided Speech'
+End Reference: Lincoln's House Divided Speech
 Text: ', drawing on '
 Begin Template: bible
 k: null
@@ -1143,29 +1470,48 @@ Text: '
 Section [1] Lincoln–Douglas debates and Cooper Union speech
 Text: '
 '
-Reference: File:Abraham Lincoln by Alexander Helser, 1860-crop.jpg 'thumb|left|upright|A. Helser photographed Lincoln in 1860.|alt=Head shot of older, clean shaven Lincoln'
+Begin Reference: File:Abraham Lincoln by Alexander Helser, 1860-crop.jpg
+k: null
+Text: 'thumb'
+k: null
+Text: 'left'
+k: null
+Text: 'upright'
+k: null
+Text: 'A. Helser photographed Lincoln in 1860.'
+k: alt
+Text: 'Head shot of older, clean shaven Lincoln'
+End Reference: File:Abraham Lincoln by Alexander Helser, 1860-crop.jpg
 Text: '
 
 The 1858 senate campaign featured the seven '
-Reference: Lincoln–Douglas debates of 1858 ''
+Begin Reference: Lincoln–Douglas debates of 1858
+End Reference: Lincoln–Douglas debates of 1858
 Text: ', the most famous political debates in American history.'
 Open Tag: ref attributes: []
 Text: 'McPherson (1993), p. 182.'
 Close Tag: ref
 Text: ' The principals stood in stark contrast both physically and politically. Lincoln warned that "'
-Reference: The Slave Power ''
+Begin Reference: The Slave Power
+End Reference: The Slave Power
 Text: '" was threatening the values of '
-Reference: Republicanism in the United States 'republicanism'
+Begin Reference: Republicanism in the United States
+k: null
+Text: 'republicanism'
+End Reference: Republicanism in the United States
 Text: ', and accused Douglas of distorting the values of the Founding Fathers that '
-Reference: all men are created equal ''
+Begin Reference: all men are created equal
+End Reference: all men are created equal
 Text: ', while Douglas emphasized his '
-Reference: Freeport Doctrine ''
+Begin Reference: Freeport Doctrine
+End Reference: Freeport Doctrine
 Text: ', that local settlers were free to choose whether to allow slavery or not, and accused Lincoln of having joined the abolitionists.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 214–224.'
 Close Tag: ref
 Text: ' The debates had an atmosphere of a prize fight and drew crowds in the thousands. Lincoln stated Douglas's '
-Reference: popular sovereignty ''
+Begin Reference: popular sovereignty
+End Reference: popular sovereignty
 Text: ' theory was a threat to the nation's morality and that Douglas represented a conspiracy to extend slavery to free states. Douglas said that Lincoln was defying the authority of the U.S. Supreme Court and the ''Dred Scott'' decision.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 223.'
@@ -1183,7 +1529,10 @@ Close Tag: ref
 Text: '
 
 On February 27, 1860, New York party leaders invited Lincoln to give a '
-Reference: Cooper Union speech 'speech at Cooper Union'
+Begin Reference: Cooper Union speech
+k: null
+Text: 'speech at Cooper Union'
+End Reference: Cooper Union speech
 Text: ' to a group of powerful Republicans. Lincoln argued that the Founding Fathers had little use for popular sovereignty and had repeatedly sought to restrict slavery. Lincoln insisted the moral foundation of the Republicans required opposition to slavery, and rejected any "groping for some middle ground between the right and the wrong".'
 Open Tag: ref attributes: []
 Text: 'Jaffa, p. 473.'
@@ -1193,7 +1542,8 @@ Open Tag: ref attributes: []
 Text: 'Holzer, pp. 108–111.'
 Close Tag: ref
 Text: '—Lincoln demonstrated an intellectual leadership that brought him into the front ranks of the party and into contention for the Republican presidential nomination. Journalist '
-Reference: Noah Brooks ''
+Begin Reference: Noah Brooks
+End Reference: Noah Brooks
 Text: ' reported, "No man ever before made such an impression on his first appeal to a New York audience."'
 Open Tag: ref attributes: []
 Text: 'Carwardine (2003), p. 97.'
@@ -1202,9 +1552,11 @@ Open Tag: ref attributes: []
 Text: 'Holzer, p. 157.'
 Close Tag: ref
 Text: ' Historian Donald described the speech as a "superb political move for an unannounced candidate, to appear in one rival's ('
-Reference: William H. Seward ''
+Begin Reference: William H. Seward
+End Reference: William H. Seward
 Text: ') own state at an event sponsored by the second rival's ('
-Reference: Salmon P. Chase ''
+Begin Reference: Salmon P. Chase
+End Reference: Salmon P. Chase
 Text: ') loyalists, while not mentioning either by name during its delivery."'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 240.'
@@ -1228,19 +1580,33 @@ End Template: Main
 Text: '
 
 '
-Reference: File:The Rail Candidate.jpg 'thumb|alt=Lincoln being carried by two men on a long board.|"The Rail Candidate"—Lincoln's 1860 candidacy is depicted as held up by the slavery issue—a slave on the left and party organization on the right.'
+Begin Reference: File:The Rail Candidate.jpg
+k: null
+Text: 'thumb'
+k: alt
+Text: 'Lincoln being carried by two men on a long board.'
+k: null
+Text: '"The Rail Candidate"—Lincoln's 1860 candidacy is depicted as held up by the slavery issue—a slave on the left and party organization on the right.'
+End Reference: File:The Rail Candidate.jpg
 Text: '
 
 On May 9–10, 1860, the Illinois Republican State Convention was held in '
-Reference: Decatur, Illinois 'Decatur'
+Begin Reference: Decatur, Illinois
+k: null
+Text: 'Decatur'
+End Reference: Decatur, Illinois
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 244.'
 Close Tag: ref
 Text: ' Lincoln's followers organized a campaign team led by David Davis, '
-Reference: Norman B. Judd 'Norman Judd'
+Begin Reference: Norman B. Judd
+k: null
+Text: 'Norman Judd'
+End Reference: Norman B. Judd
 Text: ', '
-Reference: Leonard Swett ''
+Begin Reference: Leonard Swett
+End Reference: Leonard Swett
 Text: ', and Jesse DuBois, and Lincoln received his first endorsement to run for the presidency.'
 Open Tag: ref attributes: []
 Text: 'Oates, pp. 175–176.'
@@ -1250,9 +1616,13 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 245.'
 Close Tag: ref
 Text: ' On May 18, at the '
-Reference: 1860 Republican National Convention 'Republican National Convention'
+Begin Reference: 1860 Republican National Convention
+k: null
+Text: 'Republican National Convention'
+End Reference: 1860 Republican National Convention
 Text: ' in Chicago, Lincoln's friends promised and manipulated and won the nomination on the third ballot, beating candidates such as William H. Seward and Salmon P. Chase. A former Democrat '
-Reference: Hannibal Hamlin ''
+Begin Reference: Hannibal Hamlin
+End Reference: Hannibal Hamlin
 Text: ' of Maine was nominated for Vice President to balance the ticket. Lincoln's success depended on his reputation as a moderate on the slavery issue, and his strong support for Whiggish programs of internal improvements and the protective tariff.'
 Open Tag: ref attributes: []
 Text: 'Luthin, pp. 609–629.'
@@ -1272,11 +1642,16 @@ Open Tag: ref attributes: []
 Text: 'Boritt (1994), pp. 10, 13, 18.'
 Close Tag: ref
 Text: ' Meanwhile, Douglas was selected as the candidate of the Northern Democrats, with '
-Reference: Herschel Vespasian Johnson ''
+Begin Reference: Herschel Vespasian Johnson
+End Reference: Herschel Vespasian Johnson
 Text: ' as the vice-presidential candidate. Delegates from 11 slave states walked out of the '
-Reference: 1860 Democratic National Convention 'Democratic convention'
+Begin Reference: 1860 Democratic National Convention
+k: null
+Text: 'Democratic convention'
+End Reference: 1860 Democratic National Convention
 Text: ', disagreeing with Douglas's position on popular sovereignty, and ultimately selected '
-Reference: John C. Breckinridge ''
+Begin Reference: John C. Breckinridge
+End Reference: John C. Breckinridge
 Text: ' as their candidate.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 253.'
@@ -1336,7 +1711,10 @@ Text: 'Map of the U.S. showing Lincoln winning the North-east and West, Breckinr
    '
 k: caption1  
 Text: 'In 1860, northern and western '
-Reference: Electoral College (United States) 'electoral'
+Begin Reference: Electoral College (United States)
+k: null
+Text: 'electoral'
+End Reference: Electoral College (United States)
 Text: ' votes (shown in red) put Lincoln into the White House.
    '
 k: width2    
@@ -1350,16 +1728,25 @@ Text: 'A large crowd in front of a large building with many pillars.
    '
 k: caption2  
 Text: '1861 inaugural at '
-Reference: U.S. Capitol Building 'Capitol'
+Begin Reference: U.S. Capitol Building
+k: null
+Text: 'Capitol'
+End Reference: U.S. Capitol Building
 Text: '. The rotunda still under construction
 '
 End Template: multiple image
    
 Text: '
 On November 6, 1860, Lincoln was elected the 16th president of the United States, beating Democrat Stephen A. Douglas, John C. Breckinridge of the Southern Democrats, and '
-Reference: John Bell (Tennessee politician) 'John Bell'
+Begin Reference: John Bell (Tennessee politician)
+k: null
+Text: 'John Bell'
+End Reference: John Bell (Tennessee politician)
 Text: ' of the new '
-Reference: Constitutional Union Party (United States) 'Constitutional Union Party'
+Begin Reference: Constitutional Union Party (United States)
+k: null
+Text: 'Constitutional Union Party'
+End Reference: Constitutional Union Party (United States)
 Text: '. He was the first president from the Republican Party. Winning entirely on the strength of his support in the North and West, no ballots were cast for him in 10 of the 15 Southern slave states, and he won only two of 996 counties in all the Southern states.'
 Open Tag: ref attributes: []
 Text: 'Mansch, p. 61.'
@@ -1373,9 +1760,15 @@ Open Tag: ref attributes: []
 Text: 'White, p. 350.'
 Close Tag: ref
 Text: ' Although Lincoln won only a plurality of the popular vote, his victory in the '
-Reference: United States Electoral College 'electoral college'
+Begin Reference: United States Electoral College
+k: null
+Text: 'electoral college'
+End Reference: United States Electoral College
 Text: ' was decisive: Lincoln had 180 and his opponents added together had only 123. There were '
-Reference: Electoral fusion 'fusion tickets'
+Begin Reference: Electoral fusion
+k: null
+Text: 'fusion tickets'
+End Reference: Electoral fusion
 Text: ' in which all of Lincoln's opponents combined to support the same slate of Electors in New York, New Jersey, and Rhode Island, but even if the anti-Lincoln vote had been combined in every state, Lincoln still would have won a majority in the Electoral College.'
 Open Tag: ref attributes: []
 Text: 'Nevins, ''Ordeal of the Union'' vol 4. p. 312.'
@@ -1392,7 +1785,8 @@ Open Tag: ref attributes: []
 Text: 'Potter, p. 498.'
 Close Tag: ref
 Text: ' Six of these states then adopted a constitution and declared themselves to be a sovereign nation, the '
-Reference: Confederate States of America ''
+Begin Reference: Confederate States of America
+End Reference: Confederate States of America
 Text: '.'
 Open Tag: ref attributes: [name : 'Donald, p. 267']
 Text: 'Donald (1996), p. 267.'
@@ -1406,7 +1800,8 @@ Open Tag: ref attributes: []
 Text: 'Potter, pp. 520, 569–570.'
 Close Tag: ref
 Text: ' The Confederacy selected '
-Reference: Jefferson Davis ''
+Begin Reference: Jefferson Davis
+End Reference: Jefferson Davis
 Text: ' as its provisional President on February 9, 1861.'
 Open Tag: ref attributes: []
 Text: 'White, p. 369.'
@@ -1414,9 +1809,11 @@ Close Tag: ref
 Text: '
 
 There were attempts at compromise. The '
-Reference: Crittenden Compromise ''
+Begin Reference: Crittenden Compromise
+End Reference: Crittenden Compromise
 Text: ' would have extended the '
-Reference: Missouri Compromise ''
+Begin Reference: Missouri Compromise
+End Reference: Missouri Compromise
 Text: ' line of 1820, dividing the territories into slave and free, contrary to the Republican Party's free-soil platform.'
 Open Tag: ref attributes: [name : 'White360-361']
 Text: 'White, pp. 360–361.'
@@ -1426,7 +1823,8 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 268.'
 Close Tag: ref
 Text: ' Lincoln, however, did support the '
-Reference: Corwin Amendment ''
+Begin Reference: Corwin Amendment
+End Reference: Corwin Amendment
 Text: ' to the Constitution, which had passed in Congress and protected slavery in those states where it already existed.'
 Open Tag: ref attributes: []
 Text: 'Vorenberg, p. 22.'
@@ -1442,21 +1840,31 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 273–277.'
 Close Tag: ref
 Text: ' The president-elect then '
-Reference: Baltimore Plot 'evaded possible assassins'
+Begin Reference: Baltimore Plot
+k: null
+Text: 'evaded possible assassins'
+End Reference: Baltimore Plot
 Text: ' in Baltimore, who were uncovered by Lincoln's head of security, '
-Reference: Allan Pinkerton ''
+Begin Reference: Allan Pinkerton
+End Reference: Allan Pinkerton
 Text: '. On February 23, 1861, he arrived in disguise in Washington, D.C., which was placed under substantial military guard.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 277–279.'
 Close Tag: ref
 Text: ' Lincoln directed his '
-Reference: Lincoln's first inaugural address 'inaugural address'
+Begin Reference: Lincoln's first inaugural address
+k: null
+Text: 'inaugural address'
+End Reference: Lincoln's first inaugural address
 Text: ' to the South, proclaiming once again that he had no intention, or inclination, to abolish slavery in the Southern states:
 '
 Begin Template: quote
 k: null
 Text: 'Apprehension seems to exist among the people of the Southern States that by the accession of a Republican Administration their property and their peace and personal security are to be endangered. There has never been any reasonable cause for such apprehension. Indeed, the most ample evidence to the contrary has all the while existed and been open to their inspection. It is found in nearly all the published speeches of him who now addresses you. I do but quote from one of those speeches when I declare that "I have no purpose, directly or indirectly, to interfere with the institution of slavery in the States where it exists. I believe I have no lawful right to do so, and I have no inclination to do so."'
-Reference: Lincoln's first inaugural address 'First inaugural address'
+Begin Reference: Lincoln's first inaugural address
+k: null
+Text: 'First inaugural address'
+End Reference: Lincoln's first inaugural address
 k: null
 Text: ', 4 March 1861'
 Open Tag: ref attributes: []
@@ -1469,7 +1877,8 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 283–284.'
 Close Tag: ref
 Text: ' The failure of the '
-Reference: Peace Conference of 1861 ''
+Begin Reference: Peace Conference of 1861
+End Reference: Peace Conference of 1861
 Text: ' signaled that legislative compromise was implausible. By March 1861, no leaders of the insurrection had proposed rejoining the Union on any terms. Meanwhile, Lincoln and nearly every Republican leader agreed that the dismantling of the Union could not be tolerated.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 268, 279.'
@@ -1486,20 +1895,37 @@ Text: 'American Civil War'
 End Template: Main
 Text: '
 '
-Reference: File:Major Robert Anderson.jpg 'alt=portrait|thumb|170px|Major Anderson, Ft. Sumter commander'
+Begin Reference: File:Major Robert Anderson.jpg
+k: alt
+Text: 'portrait'
+k: null
+Text: 'thumb'
+k: null
+Text: '170px'
+k: null
+Text: 'Major Anderson, Ft. Sumter commander'
+End Reference: File:Major Robert Anderson.jpg
 Text: '
 The commander of Fort Sumter, South Carolina, '
-Reference: Robert Anderson (Civil War) 'Major Robert Anderson'
+Begin Reference: Robert Anderson (Civil War)
+k: null
+Text: 'Major Robert Anderson'
+End Reference: Robert Anderson (Civil War)
 Text: ' sent a request for provisions to Washington, and the execution of Lincoln's order to meet that request was seen by the secessionists as an act of war.  On April 12, 1861, Confederate forces fired on Union troops at '
-Reference: Battle of Fort Sumter 'Fort Sumter'
+Begin Reference: Battle of Fort Sumter
+k: null
+Text: 'Fort Sumter'
+End Reference: Battle of Fort Sumter
 Text: ', forcing them to surrender, and began the war.  Historian '
-Reference: Allan Nevins ''
+Begin Reference: Allan Nevins
+End Reference: Allan Nevins
 Text: ' argued that the newly inaugurated Lincoln made three miscalculations: underestimating the gravity of the crisis, exaggerating the strength of Unionist sentiment in the South, and not realizing the Southern Unionists were insisting there be no invasion.'
 Open Tag: ref attributes: []
 Text: 'Allan Nevins, Ordeal of the Union'' (1959) vol 5 p 29'
 Close Tag: ref
 Text: '  '
-Reference: William Tecumseh Sherman ''
+Begin Reference: William Tecumseh Sherman
+End Reference: William Tecumseh Sherman
 Text: ' talked to Lincoln during inauguration week and was "sadly disappointed" at his failure to realize that "the country was sleeping on a volcano" and that the South was preparing for war.'
 Open Tag: ref attributes: []
 Text: 'Sherman, pp. 185–186.'
@@ -1511,7 +1937,10 @@ Close Tag: ref
 Text: '
 
 On April 15, Lincoln called on all the states to send detachments totaling 75,000 troops to recapture forts, protect Washington, and "preserve the Union", which, in his view, still existed intact despite the actions of the seceding states. This call forced the states to choose sides. Virginia declared its secession and was rewarded with the Confederate capital, despite the exposed position of '
-Reference: Richmond, Virginia 'Richmond'
+Begin Reference: Richmond, Virginia
+k: null
+Text: 'Richmond'
+End Reference: Richmond, Virginia
 Text: ' so close to Union lines. North Carolina, Tennessee, and Arkansas also voted for secession over the next two months. Secession sentiment was strong in Missouri and Maryland, but did not prevail; Kentucky tried to be neutral.'
 Open Tag: ref attributes: [name : 'Oates, p. 226']
 Text: 'Oates, p. 226.'
@@ -1519,21 +1948,31 @@ Close Tag: ref
 Text: '
 
 Troops headed south towards Washington to protect the capital in response to Lincoln's call. On April 19, secessionist mobs in Baltimore that controlled the rail links '
-Reference: Baltimore riot of 1861 'attacked Union troops'
+Begin Reference: Baltimore riot of 1861
+k: null
+Text: 'attacked Union troops'
+End Reference: Baltimore riot of 1861
 Text: ' traveling to the capital. '
-Reference: George William Brown ''
+Begin Reference: George William Brown
+End Reference: George William Brown
 Text: ', the Mayor of Baltimore, and other suspect Maryland politicians were arrested and imprisoned, without a warrant, as Lincoln suspended the writ of '''
-Reference: Habeas corpus in the United States#Suspension during the Civil War 'habeas corpus'
+Begin Reference: Habeas corpus in the United States#Suspension during the Civil War
+k: null
+Text: 'habeas corpus'
+End Reference: Habeas corpus in the United States#Suspension during the Civil War
 Text: '''.'
 Open Tag: ref attributes: []
 Text: 'Heidler (2000), p. 174.'
 Close Tag: ref
 Text: ' '
-Reference: John Merryman ''
+Begin Reference: John Merryman
+End Reference: John Merryman
 Text: ', a leader in the secessionist group in Maryland, petitioned Chief Justice '
-Reference: Roger B. Taney ''
+Begin Reference: Roger B. Taney
+End Reference: Roger B. Taney
 Text: ' to issue a writ of habeas corpus, saying holding Merryman without a hearing was unlawful. Taney issued the writ, thereby ordering Merryman's release, but Lincoln ignored it.  Then and throughout the war, Lincoln came under heavy, often vituperative attack from antiwar Democrats, called '
-Reference: Copperheads ''
+Begin Reference: Copperheads
+End Reference: Copperheads
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Scott, pp. 326–341.'
@@ -1545,9 +1984,13 @@ Section [1] Assuming command for the Union in the war
 Text: '
 
 After the fall of '
-Reference: Battle of Fort Sumter 'Fort Sumter'
+Begin Reference: Battle of Fort Sumter
+k: null
+Text: 'Fort Sumter'
+End Reference: Battle of Fort Sumter
 Text: ', Lincoln realized the importance of taking immediate executive control of the war and making an overall strategy to put down the rebellion.  Lincoln encountered an unprecedented political and military crisis, and he responded as '
-Reference: commander-in-chief ''
+Begin Reference: commander-in-chief
+End Reference: commander-in-chief
 Text: ', using unprecedented powers. He expanded his war powers, and imposed a blockade on all the Confederate shipping ports, disbursed funds before appropriation by Congress, and after suspending ''habeas corpus'', arrested and imprisoned thousands of suspected Confederate sympathizers. Lincoln was supported by Congress and the northern public for these actions. In addition, Lincoln had to contend with reinforcing strong Union sympathies in the border slave states and keeping the war from becoming an international conflict.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 303–304; Carwardine (2003), pp. 163–164.'
@@ -1555,7 +1998,18 @@ Close Tag: ref
 Text: '
 
 '
-Reference: File:RunningtheMachine-LincAdmin.jpg 'thumb|left|300px|alt=A group of men sitting at a table as another man creates money on a wooden machine.|"Running the 'Machine'&nbsp;": An 1864 political cartoon takes a swing at Lincoln's administration—featuring William Fessenden, Edwin Stanton, William Seward, Gideon Welles, Lincoln and others.'
+Begin Reference: File:RunningtheMachine-LincAdmin.jpg
+k: null
+Text: 'thumb'
+k: null
+Text: 'left'
+k: null
+Text: '300px'
+k: alt
+Text: 'A group of men sitting at a table as another man creates money on a wooden machine.'
+k: null
+Text: '"Running the 'Machine'&nbsp;": An 1864 political cartoon takes a swing at Lincoln's administration—featuring William Fessenden, Edwin Stanton, William Seward, Gideon Welles, Lincoln and others.'
+End Reference: File:RunningtheMachine-LincAdmin.jpg
 Text: '
 
 The war effort was the source of continued disparagement of Lincoln, and dominated his time and attention. From the start, it was clear that bipartisan support would be essential to success in the war effort, and any manner of compromise alienated factions on both sides of the aisle, such as the appointment of Republicans and Democrats to command positions in the Union Army. Copperheads criticized Lincoln for refusing to compromise on the slavery issue. Conversely, the Radical Republicans criticized him for moving too slowly in abolishing slavery.'
@@ -1563,7 +2017,10 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 315, 331–333, 338–339, 417.'
 Close Tag: ref
 Text: ' On August 6, 1861, Lincoln signed the '
-Reference: Confiscation Act of 1861 'Confiscation Act'
+Begin Reference: Confiscation Act of 1861
+k: null
+Text: 'Confiscation Act'
+End Reference: Confiscation Act of 1861
 Text: ' that authorized judiciary proceedings to confiscate and free slaves who were used to support the Confederate war effort. In practice the law had little effect, but it did signal political support for abolishing slavery in the Confederacy'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 314; Carwardine (2003), p. 178.'
@@ -1571,9 +2028,11 @@ Close Tag: ref
 Text: '
 
 In late August 1861, General '
-Reference: John C. Frémont ''
+Begin Reference: John C. Frémont
+End Reference: John C. Frémont
 Text: ', the 1856 Republican presidential nominee, issued, without consulting Washington, a proclamation of martial law in Missouri. He declared that any citizen found bearing arms could be court-martialed and shot, and that slaves of persons aiding the rebellion would be freed. Frémont was already under a cloud with charges of negligence in his command of the '
-Reference: Department of the West ''
+Begin Reference: Department of the West
+End Reference: Department of the West
 Text: ' compounded with allegations of fraud and corruption. Lincoln overruled Frémont's proclamation. Lincoln believed that Fremont's emancipation was political; neither militarily necessary nor legal.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 314–317.'
@@ -1585,13 +2044,15 @@ Close Tag: ref
 Text: '
 
 The '
-Reference: Trent Affair ''
+Begin Reference: Trent Affair
+End Reference: Trent Affair
 Text: ' of late 1861 threatened war with Great Britain. The U.S. Navy illegally intercepted a British merchant ship the ''Trent'' on the high seas and seized two Confederate envoys; Britain protested vehemently while the U.S. cheered. Lincoln resolved the issue by releasing the two men and war was successfully averted with Britain.'
 Open Tag: ref attributes: [name : 'CFAdams']
 Text: 'Adams, pp. 540–562.'
 Close Tag: ref
 Text: '  Lincoln's foreign policy approach had been initially hands off, due to his inexperience; he left most diplomacy appointments and other foreign policy matters to his Secretary of State, William Seward. Seward's initial reaction to the ''Trent'' affair, however, was too bellicose, so Lincoln also turned to Senator '
-Reference: Charles Sumner ''
+Begin Reference: Charles Sumner
+End Reference: Charles Sumner
 Text: ', the chairman of the Senate Foreign Relations Committee and an expert in British diplomacy.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 322.'
@@ -1599,15 +2060,18 @@ Close Tag: ref
 Text: '
 
 To learn technical military terms, Lincoln borrowed and studied '
-Reference: Henry Halleck ''
+Begin Reference: Henry Halleck
+End Reference: Henry Halleck
 Text: ''s book, ''Elements of Military Art and Science'' from the Library of Congress.'
 Open Tag: ref attributes: []
 Text: 'Prokopowicz, p. 127.'
 Close Tag: ref
 Text: ' Lincoln painstakingly monitored the telegraphic reports coming in to the War Department in Washington, D.C. He kept close tabs on all phases of the military effort, consulted with governors, and selected generals based on their past success (as well as their state and party). In January 1862, after many complaints of inefficiency and profiteering in the War Department, Lincoln replaced '
-Reference: Simon Cameron ''
+Begin Reference: Simon Cameron
+End Reference: Simon Cameron
 Text: ' with '
-Reference: Edwin Stanton ''
+Begin Reference: Edwin Stanton
+End Reference: Edwin Stanton
 Text: ' as War Secretary. Stanton was one of many conservative Democrats (he supported Breckenridge in the 1860 election) who became anti-slavery Republicans under Lincoln's leadership.'
 Open Tag: ref attributes: []
 Text: 'Benjamin P. Thomas and Harold M. Hyman, ''Stanton, the Life and Times of Lincoln's Secretary of War'' (Knopf, 1962)'
@@ -1625,9 +2089,15 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 391–392.'
 Close Tag: ref
 Text: ' Lincoln learned from his chief of staff General '
-Reference: Henry Wager Halleck 'Henry Halleck'
+Begin Reference: Henry Wager Halleck
+k: null
+Text: 'Henry Halleck'
+End Reference: Henry Wager Halleck
 Text: ', a student of the European strategist '
-Reference: Antoine-Henri Jomini 'Jomini'
+Begin Reference: Antoine-Henri Jomini
+k: null
+Text: 'Jomini'
+End Reference: Antoine-Henri Jomini
 Text: ', of the critical need to control strategic points, such as the Mississippi River;'
 Open Tag: ref attributes: []
 Text: 'Ambrose, pp. 7, 66, 159.'
@@ -1642,11 +2112,14 @@ Text: '
 Section [1] General McClellan
 Text: '
 After the Union defeat at the '
-Reference: First Battle of Bull Run ''
+Begin Reference: First Battle of Bull Run
+End Reference: First Battle of Bull Run
 Text: ' and the retirement of the aged '
-Reference: Winfield Scott ''
+Begin Reference: Winfield Scott
+End Reference: Winfield Scott
 Text: ' in late 1861, Lincoln appointed Major General '
-Reference: George B. McClellan ''
+Begin Reference: George B. McClellan
+End Reference: George B. McClellan
 Text: ' general-in-chief of all the Union armies.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 318–319.'
@@ -1658,27 +2131,43 @@ Close Tag: ref
 Text: '
 
 '
-Reference: File:Lincoln and McClellan 1862-10-03.jpg 'alt=Photograph of Lincoln and McClellan sitting at a table in a field tent|thumb|275px|Lincoln and McClellan after the Battle of Antietam'
+Begin Reference: File:Lincoln and McClellan 1862-10-03.jpg
+k: alt
+Text: 'Photograph of Lincoln and McClellan sitting at a table in a field tent'
+k: null
+Text: 'thumb'
+k: null
+Text: '275px'
+k: null
+Text: 'Lincoln and McClellan after the Battle of Antietam'
+End Reference: File:Lincoln and McClellan 1862-10-03.jpg
 Text: '
 
 Lincoln removed McClellan as general-in-chief and appointed '
-Reference: Henry Wager Halleck ''
+Begin Reference: Henry Wager Halleck
+End Reference: Henry Wager Halleck
 Text: ' in March 1862, after McClellan's "Harrison's Landing Letter", in which he offered unsolicited political advice to Lincoln urging caution in the war effort.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 360–361.'
 Close Tag: ref
 Text: ' McClellan's letter incensed Radical Republicans, who successfully pressured Lincoln to appoint '
-Reference: John Pope (military officer) 'John Pope'
+Begin Reference: John Pope (military officer)
+k: null
+Text: 'John Pope'
+End Reference: John Pope (military officer)
 Text: ', a Republican, as head of the new '
-Reference: Army of Virginia ''
+Begin Reference: Army of Virginia
+End Reference: Army of Virginia
 Text: '. Pope complied with Lincoln's strategic desire to move toward Richmond from the north, thus protecting the capital from attack. However, lacking requested reinforcements from McClellan, now commanding the Army of the Potomac, Pope was soundly defeated at the '
-Reference: Second Battle of Bull Run ''
+Begin Reference: Second Battle of Bull Run
+End Reference: Second Battle of Bull Run
 Text: ' in the summer of 1862, forcing the Army of the Potomac to defend Washington for a second time.'
 Open Tag: ref attributes: []
 Text: 'Nevins (1960), pp. 2:159–162.'
 Close Tag: ref
 Text: ' The war also expanded with naval operations in 1862 when the CSS ''Virginia'', formerly the USS ''Merrimack'', damaged or destroyed three Union vessels in Norfolk, Virginia, before being engaged and damaged by the USS ''Monitor''. Lincoln closely reviewed the dispatches and interrogated naval officers during their clash in the '
-Reference: Battle of Hampton Roads ''
+Begin Reference: Battle of Hampton Roads
+End Reference: Battle of Hampton Roads
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 339–340.'
@@ -1690,9 +2179,11 @@ Open Tag: ref attributes: []
 Text: 'Goodwin, pp. 478–479.'
 Close Tag: ref
 Text: ' Two days after McClellan's return to command, General '
-Reference: Robert E. Lee ''
+Begin Reference: Robert E. Lee
+End Reference: Robert E. Lee
 Text: ''s forces crossed the Potomac River into Maryland, leading to the '
-Reference: Battle of Antietam ''
+Begin Reference: Battle of Antietam
+End Reference: Battle of Antietam
 Text: ' in September 1862.'
 Open Tag: ref attributes: []
 Text: 'Goodwin, pp. 478–480.'
@@ -1702,11 +2193,14 @@ Open Tag: ref attributes: []
 Text: 'Goodwin, p. 481.'
 Close Tag: ref
 Text: ' McClellan then resisted the President's demand that he pursue Lee's retreating and exposed army, while his counterpart General '
-Reference: Don Carlos Buell ''
+Begin Reference: Don Carlos Buell
+End Reference: Don Carlos Buell
 Text: ' likewise refused orders to move the Army of the Ohio against rebel forces in eastern Tennessee. As a result, Lincoln replaced Buell with '
-Reference: William Rosecrans ''
+Begin Reference: William Rosecrans
+End Reference: William Rosecrans
 Text: '; and, after the 1862 midterm elections, he replaced McClellan with Republican '
-Reference: Ambrose Burnside ''
+Begin Reference: Ambrose Burnside
+End Reference: Ambrose Burnside
 Text: '. Both of these replacements were political moderates and prospectively more supportive of the Commander-in-Chief.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 389–390.'
@@ -1714,15 +2208,20 @@ Close Tag: ref
 Text: '
 
 Burnside, against the advice of the president, prematurely launched an offensive across the '
-Reference: Rappahannock River ''
+Begin Reference: Rappahannock River
+End Reference: Rappahannock River
 Text: ' and was stunningly defeated by Lee at '
-Reference: Battle of Fredericksburg 'Fredericksburg'
+Begin Reference: Battle of Fredericksburg
+k: null
+Text: 'Fredericksburg'
+End Reference: Battle of Fredericksburg
 Text: ' in December. Not only had Burnside been defeated on the battlefield, but his soldiers were disgruntled and undisciplined. Desertions during 1863 were in the thousands and they increased after Fredericksburg.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 429–431.'
 Close Tag: ref
 Text: ' Lincoln brought in '
-Reference: Joseph Hooker ''
+Begin Reference: Joseph Hooker
+End Reference: Joseph Hooker
 Text: ', despite his record of loose talk about the need for a military dictatorship.'
 Open Tag: ref attributes: []
 Text: 'Nevins 6:433-44'
@@ -1730,9 +2229,15 @@ Close Tag: ref
 Text: '
 
 The '
-Reference: United States House of Representatives elections, 1862 'mid-term elections'
+Begin Reference: United States House of Representatives elections, 1862
+k: null
+Text: 'mid-term elections'
+End Reference: United States House of Representatives elections, 1862
 Text: ' in 1862 brought the Republicans severe losses due to sharp disfavor with the administration over its failure to deliver a speedy end to the war, as well as rising inflation, new high taxes, rumors of corruption, the suspension of habeas corpus, '
-Reference: Conscription 'the military draft law'
+Begin Reference: Conscription
+k: null
+Text: 'the military draft law'
+End Reference: Conscription
 Text: ', and fears that freed slaves would undermine the labor market. The Emancipation Proclamation announced in September gained votes for the Republicans in the rural areas of New England and the upper Midwest, but it lost votes in the cities and the lower Midwest. While Republicans were discouraged, Democrats were energized and did especially well in Pennsylvania, Ohio, Indiana, and New York. The Republicans did maintain their majorities in Congress and in the major states, except New York. The Cincinnati ''Gazette'' contended that the voters were "depressed by the interminable nature of this war, as so far conducted, and by the rapid exhaustion of the national resources without progress".'
 Open Tag: ref attributes: []
 Text: 'Nevins vol 6 pp. 318–322, quote on p. 322.'
@@ -1746,15 +2251,18 @@ Close Tag: ref
 Text: '
 
 Hooker was routed by Lee at the '
-Reference: Battle of Chancellorsville ''
+Begin Reference: Battle of Chancellorsville
+End Reference: Battle of Chancellorsville
 Text: ' in May,'
 Open Tag: ref attributes: []
 Text: 'Nevins 6:432–450.'
 Close Tag: ref
 Text: ' but continued to command his troops for some weeks. He ignored Lincoln's order to divide his troops, and possibly force Lee to do the same in Harper's Ferry, and tendered his resignation, which Lincoln accepted. He was replaced by '
-Reference: George Meade ''
+Begin Reference: George Meade
+End Reference: George Meade
 Text: ', who followed Lee into Pennsylvania for the '
-Reference: Gettysburg Campaign ''
+Begin Reference: Gettysburg Campaign
+End Reference: Gettysburg Campaign
 Text: ', which was a victory for the Union, though Lee's army avoided capture. At the same time, after initial setbacks, Grant laid siege to Vicksburg and the Union navy attained some success in Charleston harbor.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 444–447.'
@@ -1779,12 +2287,30 @@ End Template: Main
 Text: '
 
 '
-Reference: File:Emancipation proclamation.jpg 'thumb|300px|left|Lincoln presents the first draft of the Emancipation Proclamation to his cabinet. Painted by [[Francis Bicknell Carpenter'
-Text: ' in 1864|alt=A dark-haired, bearded, middle-aged man holding documents is seated among seven other men.]]
+Begin Reference: File:Emancipation proclamation.jpg
+k: null
+Text: 'thumb'
+k: null
+Text: '300px'
+k: null
+Text: 'left'
+k: null
+Text: 'Lincoln presents the first draft of the Emancipation Proclamation to his cabinet. Painted by '
+Begin Reference: Francis Bicknell Carpenter
+End Reference: Francis Bicknell Carpenter
+Text: ' in 1864'
+k: alt
+Text: 'A dark-haired, bearded, middle-aged man holding documents is seated among seven other men.'
+End Reference: File:Emancipation proclamation.jpg
+Text: '
 Lincoln understood that the Federal government's power to end slavery was limited by the Constitution, which before 1865, committed the issue to individual states. He argued before and during his election that the eventual extinction of slavery would result from preventing its expansion into new U.S. territory. At the beginning of the war, he also sought to persuade the states to accept '
-Reference: compensated emancipation ''
+Begin Reference: compensated emancipation
+End Reference: compensated emancipation
 Text: ' in return for their prohibition of slavery (an offer that took effect only in Washington, D.C., in April 1862). Lincoln believed that curtailing slavery in these ways would economically expunge it, as envisioned by the '
-Reference: Founding Fathers of the United States 'Founding Fathers'
+Begin Reference: Founding Fathers of the United States
+k: null
+Text: 'Founding Fathers'
+End Reference: Founding Fathers of the United States
 Text: ', under the constitution.'
 Open Tag: ref attributes: [name : 'Mackubin']
 Begin Template: cite web
@@ -1810,9 +2336,11 @@ k: deadurl
 End Template: cite web
 Close Tag: ref
 Text: ' President Lincoln rejected two geographically limited emancipation attempts by Major General '
-Reference: John C. Frémont ''
+Begin Reference: John C. Frémont
+End Reference: John C. Frémont
 Text: ' in August 1861 and by Major General '
-Reference: David Hunter ''
+Begin Reference: David Hunter
+End Reference: David Hunter
 Text: ' in May 1862, on the grounds that it was not within their power, and it would upset the border states loyal to the Union.'
 Open Tag: ref attributes: []
 Text: 'Guelzo (1999), pp. 290–291.'
@@ -1820,7 +2348,10 @@ Close Tag: ref
 Text: '
 
 On June 19, 1862, endorsed by Lincoln, Congress passed an act banning slavery on all federal territory. In July 1862, the Second '
-Reference: Confiscation Acts 'Confiscation Act'
+Begin Reference: Confiscation Acts
+k: null
+Text: 'Confiscation Act'
+End Reference: Confiscation Acts
 Text: ' was passed, which set up court procedures that could free the slaves of anyone convicted of aiding the rebellion. Although Lincoln believed it was not within Congress's power to free the slaves within the states, he approved the bill in deference to the legislature. He felt such action could only be taken by the commander-in-chief using war powers granted to the president by the Constitution, and Lincoln was planning to take that action. In that month, Lincoln discussed a draft of the Emancipation Proclamation with his cabinet. In it, he stated that "as a fit and necessary military measure, on January 1, 1863, all persons held as slaves in the Confederate states will thenceforward, and forever, be free."'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 364–365.'
@@ -1828,7 +2359,8 @@ Close Tag: ref
 Text: '
 
 Privately, Lincoln concluded at this point that the war could not be won without freeing the slaves. However Confederate and anti-war propagandists had success spreading the theme that emancipation was a stumbling block to peace and reunification. Republican editor '
-Reference: Horace Greeley ''
+Begin Reference: Horace Greeley
+End Reference: Horace Greeley
 Text: ' of the highly influential ''New York Tribune'' fell for the ploy.'
 Open Tag: ref attributes: []
 Text: 'McPherson (1992), p. 124.'
@@ -1861,13 +2393,17 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 407.'
 Close Tag: ref
 Text: ' For some time, Lincoln continued earlier plans to set up '
-Reference: Abraham Lincoln on slavery#Colonization 'colonies'
+Begin Reference: Abraham Lincoln on slavery#Colonization
+k: null
+Text: 'colonies'
+End Reference: Abraham Lincoln on slavery#Colonization
 Text: ' for the newly freed slaves. He commented favorably on colonization in the Emancipation Proclamation, but all attempts at such a massive undertaking failed.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 408.'
 Close Tag: ref
 Text: ' A few days after Emancipation was announced, 13 Republican governors met at the '
-Reference: War Governors' Conference ''
+Begin Reference: War Governors' Conference
+End Reference: War Governors' Conference
 Text: '; they supported the president's Proclamation, but suggested the removal of General George B. McClellan as commander of the Union Army.'
 Open Tag: ref attributes: []
 Text: 'Nevins (1960), pp. 2:239–240.'
@@ -1883,7 +2419,8 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 431.'
 Close Tag: ref
 Text: ' '
-Reference: Frederick Douglass ''
+Begin Reference: Frederick Douglass
+End Reference: Frederick Douglass
 Text: ' once observed of Lincoln: "In his company, I was never reminded of my humble origin, or of my unpopular color".'
 Open Tag: ref attributes: []
 Text: 'Douglass, pp. 259–260.'
@@ -1900,9 +2437,11 @@ Text: 'Gettysburg Address'
 End Template: Main
 Text: '
 With the great Union victory at the '
-Reference: Battle of Gettysburg ''
+Begin Reference: Battle of Gettysburg
+End Reference: Battle of Gettysburg
 Text: ' in July 1863, and the defeat of the Copperheads in the Ohio election in the fall, Lincoln maintained a strong base of party support and was in a strong position to redefine the war effort, despite the '
-Reference: New York City draft riots ''
+Begin Reference: New York City draft riots
+End Reference: New York City draft riots
 Text: '. The stage was set for his address at the Gettysburg battlefield cemetery.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 453–460.'
@@ -1912,7 +2451,10 @@ Inline Tag: ref attributes: [name : 'Bulla']
 Text: '
 
 The Gettysburg Address was delivered at the dedication of the '
-Reference: Gettysburg National Cemetery 'Soldiers' National Cemetery'
+Begin Reference: Gettysburg National Cemetery
+k: null
+Text: 'Soldiers' National Cemetery'
+End Reference: Gettysburg National Cemetery
 Text: ' in Gettysburg, Pennsylvania, on the afternoon of Thursday, November 19, 1863. In 272 words, and three minutes, Lincoln asserted the nation was born not in 1789, but in 1776, "conceived in Liberty, and dedicated to the proposition that all men are created equal."   He defined the war as an effort dedicated to these principles of liberty and equality for all. The emancipation of slaves was now part of the national war effort.  He declared that the deaths of so many brave soldiers would not be in vain, that slavery would end as a result of the losses, and the future of democracy would be assured, that "government of the people, by the people, for the people, shall not perish from the earth." Lincoln concluded that the Civil War had a profound objective: a new birth of freedom in the nation.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 460–466.'
@@ -1926,15 +2468,32 @@ Text: '
 Section [1] General Grant
 Text: '
 '
-Reference: File:The Peacemakers 1868.jpg '|alt=Painting of four men conferring in a ship's cabin, entitled "The Peacemakers".|thumb|300px|President Lincoln (center right) with, from left, Generals Sherman, Grant and Admiral Porter – 1868 painting of events aboard the ''[[River Queen (steamboat)|River Queen'
-Text: ''' in March, 1865]]
+Begin Reference: File:The Peacemakers 1868.jpg
+k: alt
+Text: 'Painting of four men conferring in a ship's cabin, entitled "The Peacemakers".'
+k: null
+Text: 'thumb'
+k: null
+Text: '300px'
+k: null
+Text: 'President Lincoln (center right) with, from left, Generals Sherman, Grant and Admiral Porter – 1868 painting of events aboard the '''
+Begin Reference: River Queen (steamboat)
+k: null
+Text: 'River Queen'
+End Reference: River Queen (steamboat)
+Text: ''' in March, 1865'
+End Reference: File:The Peacemakers 1868.jpg
+Text: '
 
 Meade's failure to capture Lee's army as it retreated from Gettysburg, and the continued passivity of the Army of the Potomac, persuaded Lincoln that a change in command was needed. General '
-Reference: Ulysses S. Grant ''
+Begin Reference: Ulysses S. Grant
+End Reference: Ulysses S. Grant
 Text: ''s victories at the '
-Reference: Battle of Shiloh ''
+Begin Reference: Battle of Shiloh
+End Reference: Battle of Shiloh
 Text: ' and in the '
-Reference: Vicksburg campaign ''
+Begin Reference: Vicksburg campaign
+End Reference: Vicksburg campaign
 Text: ' impressed Lincoln and made Grant a strong candidate to head the Union Army. Responding to criticism of Grant after Shiloh, Lincoln had said, "I can't spare this man. He fights."'
 Open Tag: ref attributes: []
 Text: 'Thomas (2008), p. 315.'
@@ -1954,13 +2513,21 @@ Close Tag: ref
 Text: '
 
 Grant waged his bloody '
-Reference: Overland Campaign ''
+Begin Reference: Overland Campaign
+End Reference: Overland Campaign
 Text: ' in 1864. This is often characterized as a '
-Reference: attrition warfare 'war of attrition'
+Begin Reference: attrition warfare
+k: null
+Text: 'war of attrition'
+End Reference: attrition warfare
 Text: ', given high Union losses at battles such as the '
-Reference: Battle of the Wilderness ''
+Begin Reference: Battle of the Wilderness
+End Reference: Battle of the Wilderness
 Text: ' and '
-Reference: Battle of Cold Harbor 'Cold Harbor'
+Begin Reference: Battle of Cold Harbor
+k: null
+Text: 'Cold Harbor'
+End Reference: Battle of Cold Harbor
 Text: '. Even though they had the advantage of fighting on the defensive, the Confederate forces had "almost as high a percentage of casualties as the Union forces".'
 Open Tag: ref attributes: []
 Text: 'McPherson (2009), p. 113.'
@@ -1972,7 +2539,8 @@ Close Tag: ref
 Text: '
 
 The Confederacy lacked reinforcements, so Lee's army shrank with every battle, forcing it back to trenches outside Petersburg, Virginia, where Grant began a siege. Lincoln then made an extended visit to Grant's headquarters at City Point, Virginia. This allowed the president to confer in person with Grant and '
-Reference: William Tecumseh Sherman ''
+Begin Reference: William Tecumseh Sherman
+End Reference: William Tecumseh Sherman
 Text: ' about the hostilities, as Sherman coincidentally managed a hasty visit to Grant from his position in North Carolina.'
 Open Tag: ref attributes: [name : 'whitehousehistory']
 Begin Template: cite web
@@ -1996,11 +2564,14 @@ Close Tag: ref
 Text: '
 
 Lincoln authorized Grant to target the Confederate infrastructure—such as plantations, railroads, and bridges—hoping to destroy the South's morale and weaken its economic ability to continue fighting. Grant's move to Petersburg resulted in the obstruction of three railroads between Richmond and the South. This strategy allowed Generals Sherman and '
-Reference: Philip Sheridan ''
+Begin Reference: Philip Sheridan
+End Reference: Philip Sheridan
 Text: ' to destroy plantations and towns in Virginia's '
-Reference: Shenandoah Valley ''
+Begin Reference: Shenandoah Valley
+End Reference: Shenandoah Valley
 Text: '. The damage caused by '
-Reference: Sherman's March to the Sea ''
+Begin Reference: Sherman's March to the Sea
+End Reference: Sherman's March to the Sea
 Text: ' through Georgia in 1864 was limited to a '
 Begin Template: convert
 k: null
@@ -2019,11 +2590,18 @@ Close Tag: ref
 Text: '
 
 Confederate general '
-Reference: Jubal Anderson Early ''
+Begin Reference: Jubal Anderson Early
+End Reference: Jubal Anderson Early
 Text: ' began a series of assaults in the North that threatened the Capital. During his '
-Reference: Battle of Fort Stevens 'raid on Washington, D.C.'
+Begin Reference: Battle of Fort Stevens
+k: null
+Text: 'raid on Washington, D.C.'
+End Reference: Battle of Fort Stevens
 Text: ' in 1864, Lincoln was watching the combat from an exposed position; Captain '
-Reference: Oliver Wendell Holmes, Jr. 'Oliver Wendell Holmes'
+Begin Reference: Oliver Wendell Holmes, Jr.
+k: null
+Text: 'Oliver Wendell Holmes'
+End Reference: Oliver Wendell Holmes, Jr.
 Text: ' shouted at him, "Get down, you damn fool, before you get shot!"'
 Open Tag: ref attributes: []
 Text: 'Thomas (2008), p. 434.'
@@ -2035,19 +2613,28 @@ Close Tag: ref
 Text: '
 
 As Grant continued to wear down Lee's forces, efforts to discuss peace began. Confederate Vice President '
-Reference: Alexander H. Stephens 'Stephens'
+Begin Reference: Alexander H. Stephens
+k: null
+Text: 'Stephens'
+End Reference: Alexander H. Stephens
 Text: ' led a group to meet with Lincoln, Seward, and others at '
-Reference: Hampton Roads ''
+Begin Reference: Hampton Roads
+End Reference: Hampton Roads
 Text: '. Lincoln refused to allow any negotiation with the Confederacy as a coequal; his sole objective was an agreement to end the fighting and the meetings produced no results.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 565.'
 Close Tag: ref
 Text: ' On April 1, 1865, Grant successfully outflanked Lee's forces in the '
-Reference: Battle of Five Forks ''
+Begin Reference: Battle of Five Forks
+End Reference: Battle of Five Forks
 Text: ' and nearly encircled Petersburg, and the Confederate government evacuated Richmond. Days later, when that city fell, Lincoln visited the vanquished Confederate capital; as he walked through the city, white Southerners were stone-faced, but '
-Reference: freedmen ''
+Begin Reference: freedmen
+End Reference: freedmen
 Text: ' greeted him as a hero. On April 9, Lee surrendered to Grant at '
-Reference: Appomattox Court House 'Appomattox'
+Begin Reference: Appomattox Court House
+k: null
+Text: 'Appomattox'
+End Reference: Appomattox Court House
 Text: ' and the war was effectively over.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 589.'
@@ -2066,11 +2653,14 @@ Text: 'United States presidential election, 1864'
 End Template: Main
 Text: '
 Lincoln was a master politician, bringing together—and holding together—all the main factions of the Republican Party, and bringing in '
-Reference: War Democrats ''
+Begin Reference: War Democrats
+End Reference: War Democrats
 Text: ' such as '
-Reference: Edwin M. Stanton ''
+Begin Reference: Edwin M. Stanton
+End Reference: Edwin M. Stanton
 Text: ' and '
-Reference: Andrew Johnson ''
+Begin Reference: Andrew Johnson
+End Reference: Andrew Johnson
 Text: ' as well.  Lincoln spent many hours a week talking to politicians from across the land and using his patronage powers—greatly expanded over peacetime—to hold the factions of his party together, build support for his own policies, and fend off efforts by Radicals to drop him from the 1864 ticket.'
 Open Tag: ref attributes: []
 Text: 'Fish, pp. 53–69.'
@@ -2079,9 +2669,13 @@ Open Tag: ref attributes: []
 Text: 'Tegeder, pp. 77–90.'
 Close Tag: ref
 Text: ' At its 1864 convention, the Republican Party selected '
-Reference: Andrew Johnson ''
+Begin Reference: Andrew Johnson
+End Reference: Andrew Johnson
 Text: ', a War Democrat from the Southern state of Tennessee, as his running mate. To broaden his coalition to include War Democrats as well as Republicans, Lincoln ran under the label of the new '
-Reference: National Union Party (United States) 'Union Party'
+Begin Reference: National Union Party (United States)
+k: null
+Text: 'Union Party'
+End Reference: National Union Party (United States)
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 494–507.'
@@ -2127,7 +2721,10 @@ Text: '=Map of the U.S. showing Lincoln winning all the Union states except for 
    '
 k: caption1  
 Text: 'An '
-Reference: Electoral College (United States) 'electoral'
+Begin Reference: Electoral College (United States)
+k: null
+Text: 'electoral'
+End Reference: Electoral College (United States)
 Text: ' landslide (in red) for Lincoln in the 1864 election, southern states (brown) and territories (light brown) not in play
    '
 k: width2    
@@ -2147,9 +2744,15 @@ End Template: multiple image
 Text: '
 
 While the Democratic platform followed the '
-Reference: Copperheads (politics) 'Peace wing'
+Begin Reference: Copperheads (politics)
+k: null
+Text: 'Peace wing'
+End Reference: Copperheads (politics)
 Text: ' of the party and called the war a "failure", their candidate, General George B. McClellan, supported the war and repudiated the platform. Lincoln provided Grant with more troops and mobilized his party to renew its support of Grant in the war effort. Sherman's capture of Atlanta in September and '
-Reference: David Farragut 'David Farragut's'
+Begin Reference: David Farragut
+k: null
+Text: 'David Farragut's'
+End Reference: David Farragut
 Text: ' capture of Mobile ended defeatist jitters;'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 531.'
@@ -2165,7 +2768,10 @@ Close Tag: ref
 Text: '
 
 On March 4, 1865, Lincoln delivered his '
-Reference: Lincoln's second inaugural address 'second inaugural address'
+Begin Reference: Lincoln's second inaugural address
+k: null
+Text: 'second inaugural address'
+End Reference: Lincoln's second inaugural address
 Text: '. In it, he deemed the high casualties on both sides to be God's will. Historian Mark Noll concludes it ranks "among the small handful of semi-sacred texts by which Americans conceive their place in the world".'
 Open Tag: ref attributes: []
 Text: 'Noll, p. 426.'
@@ -2196,11 +2802,16 @@ Open Tag: ref attributes: []
 Text: 'Thomas (2008), pp. 509–512.'
 Close Tag: ref
 Text: ' In keeping with that sentiment, Lincoln led the moderates regarding Reconstruction policy, and was opposed by the Radical Republicans, under Rep. '
-Reference: Thaddeus Stevens ''
+Begin Reference: Thaddeus Stevens
+End Reference: Thaddeus Stevens
 Text: ', Sen. Charles Sumner and Sen. '
-Reference: Benjamin Wade ''
+Begin Reference: Benjamin Wade
+End Reference: Benjamin Wade
 Text: ', political allies of the president on other issues. Determined to find a course that would reunite the nation and not alienate the South, Lincoln urged that speedy elections under generous terms be held throughout the war. His '
-Reference: Ten percent plan 'Amnesty Proclamation'
+Begin Reference: Ten percent plan
+k: null
+Text: 'Amnesty Proclamation'
+End Reference: Ten percent plan
 Text: ' of December 8, 1863, offered pardons to those who had not held a Confederate civil office, had not mistreated Union prisoners, and would sign an oath of allegiance.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 471–472.'
@@ -2208,17 +2819,30 @@ Close Tag: ref
 Text: '
 
 '
-Reference: File:Lincoln and Johnsond.jpg '|alt=Cartoon of Lincoln and Johnson attempting to stitch up the broken Union|thumb|260px|A political cartoon of Andrew Johnson and Abraham Lincoln, 1865, entitled "The Rail Splitter At Work Repairing the Union." The caption reads (Johnson): ''Take it quietly Uncle Abe and I will draw it closer than ever.'' (Lincoln): ''A few more stitches Andy and the good old Union will be mended.'''
+Begin Reference: File:Lincoln and Johnsond.jpg
+k: alt
+Text: 'Cartoon of Lincoln and Johnson attempting to stitch up the broken Union'
+k: null
+Text: 'thumb'
+k: null
+Text: '260px'
+k: null
+Text: 'A political cartoon of Andrew Johnson and Abraham Lincoln, 1865, entitled "The Rail Splitter At Work Repairing the Union." The caption reads (Johnson): ''Take it quietly Uncle Abe and I will draw it closer than ever.'' (Lincoln): ''A few more stitches Andy and the good old Union will be mended.'''
+End Reference: File:Lincoln and Johnsond.jpg
 Text: '
 
 As Southern states were subdued, critical decisions had to be made as to their leadership while their administrations were re-formed. Of special importance were Tennessee and Arkansas, where Lincoln appointed Generals '
-Reference: Andrew Johnson ''
+Begin Reference: Andrew Johnson
+End Reference: Andrew Johnson
 Text: ' and '
-Reference: Frederick Steele ''
+Begin Reference: Frederick Steele
+End Reference: Frederick Steele
 Text: ' as military governors, respectively. In Louisiana, Lincoln ordered General '
-Reference: Nathaniel P. Banks ''
+Begin Reference: Nathaniel P. Banks
+End Reference: Nathaniel P. Banks
 Text: ' to promote a plan that would restore statehood when 10 percent of the voters agreed to it. Lincoln's Democratic opponents seized on these appointments to accuse him of using the military to ensure his and the Republicans' political aspirations. On the other hand, the Radicals denounced his policy as too lenient, and passed their own plan, the '
-Reference: Wade-Davis Bill ''
+Begin Reference: Wade-Davis Bill
+End Reference: Wade-Davis Bill
 Text: ', in 1864. When Lincoln vetoed the bill, the Radicals retaliated by refusing to seat representatives elected from Louisiana, Arkansas, and Tennessee.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 485–486.'
@@ -2226,7 +2850,8 @@ Close Tag: ref
 Text: '
 
 Lincoln's appointments were designed to keep both the moderate and Radical factions in harness. To fill Chief Justice Taney's seat on the Supreme Court, he named the choice of the Radicals, '
-Reference: Salmon P. Chase ''
+Begin Reference: Salmon P. Chase
+End Reference: Salmon P. Chase
 Text: ', who Lincoln believed would uphold the emancipation and paper money policies.'
 Open Tag: ref attributes: []
 Text: 'Nevins (2000), Vol IV., p. 206.'
@@ -2244,7 +2869,10 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 562–563.'
 Close Tag: ref
 Text: '  Upon ratification, it became the '
-Reference: Thirteenth Amendment to the United States Constitution 'Thirteenth Amendment'
+Begin Reference: Thirteenth Amendment to the United States Constitution
+k: null
+Text: 'Thirteenth Amendment'
+End Reference: Thirteenth Amendment to the United States Constitution
 Text: ' to the United States Constitution on December 6, 1865.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -2264,9 +2892,11 @@ Close Tag: ref
 Text: '
 
 As the war drew to a close, Lincoln's presidential Reconstruction for the South was in flux; having believed the federal government had limited responsibility to the millions of '
-Reference: freedmen ''
+Begin Reference: freedmen
+End Reference: freedmen
 Text: '.  He signed into law Senator Charles Sumner's '
-Reference: Freedman's Bureau ''
+Begin Reference: Freedman's Bureau
+End Reference: Freedman's Bureau
 Text: ' bill that set up a temporary federal agency designed to meet the immediate material needs of former slaves. The law assigned land for a lease of three years with the ability to purchase title for the freedmen.  Lincoln stated that his Louisiana plan did not apply to all states under Reconstruction. Shortly before his assassination, Lincoln announced he had a new plan for southern Reconstruction.  Discussions with his cabinet revealed Lincoln planned short-term military control over southern states, until readmission under the control of southern Unionists.'
 Open Tag: ref attributes: []
 Text: 'Carwardine (2003), pp. 242–243.'
@@ -2277,7 +2907,18 @@ Text: '
 Section [1] Redefining the republic and republicanism
 Text: '
 '
-Reference: File:Lincoln-Warren-1865-03-06.jpeg 'thumb|upright|left|alt=An older tired looking Lincoln with a beard.|The last high-quality photograph of Lincoln was taken March 1865.'
+Begin Reference: File:Lincoln-Warren-1865-03-06.jpeg
+k: null
+Text: 'thumb'
+k: null
+Text: 'upright'
+k: null
+Text: 'left'
+k: alt
+Text: 'An older tired looking Lincoln with a beard.'
+k: null
+Text: 'The last high-quality photograph of Lincoln was taken March 1865.'
+End Reference: File:Lincoln-Warren-1865-03-06.jpeg
 Text: '
 
 The successful reunification of the states had consequences for the name of the country. The term "the United States" has historically been used, sometimes in the plural ("these United States"), and other times in the singular, without any particular grammatical consistency. The Civil War was a significant force in the eventual dominance of the singular usage by the end of the 19th century.'
@@ -2303,7 +2944,10 @@ Close Tag: ref
 Text: '
 
 In recent years, historians such as Harry Jaffa, Herman Belz, John Diggins, Vernon Burton and Eric Foner have stressed Lincoln's redefinition of '
-Reference: Republicanism in the United States 'republican values'
+Begin Reference: Republicanism in the United States
+k: null
+Text: 'republican values'
+End Reference: Republicanism in the United States
 Text: '. As early as the 1850s, a time when most political rhetoric focused on the sanctity of the Constitution, Lincoln redirected emphasis to the Declaration of Independence as the foundation of American political values—what he called the "sheet anchor" of republicanism.'
 Open Tag: ref attributes: []
 Text: 'Jaffa, p. 399.'
@@ -2327,7 +2971,10 @@ Close Tag: ref
 Text: '
 
 In March 1861, in his '
-Reference: Lincoln's first inaugural address 'First Inaugural Address'
+Begin Reference: Lincoln's first inaugural address
+k: null
+Text: 'First Inaugural Address'
+End Reference: Lincoln's first inaugural address
 Text: ', Lincoln explored the nature of democracy. He denounced secession as anarchy, and explained that majority rule had to be balanced by constitutional restraints in the American system. He said "A majority held in restraint by constitutional checks and limitations, and always changing easily with deliberate changes of popular opinions and sentiments, is the only true sovereign of a free people."'
 Open Tag: ref attributes: []
 Text: 'Belz (1998), p. 86.'
@@ -2346,13 +2993,17 @@ Open Tag: ref attributes: []
 Text: 'Donald (2001), p. 137.'
 Close Tag: ref
 Text: ' He signed the '
-Reference: Homestead Act ''
+Begin Reference: Homestead Act
+End Reference: Homestead Act
 Text: ' in 1862, making millions of acres of government-held land in the West available for purchase at very low cost. The '
-Reference: Morrill Land-Grant Colleges Act ''
+Begin Reference: Morrill Land-Grant Colleges Act
+End Reference: Morrill Land-Grant Colleges Act
 Text: ', also signed in 1862, provided government grants for agricultural colleges in each state. The '
-Reference: Pacific Railway Acts ''
+Begin Reference: Pacific Railway Acts
+End Reference: Pacific Railway Acts
 Text: ' of 1862 and 1864 granted federal support for the construction of the United States' '
-Reference: First Transcontinental Railroad ''
+Begin Reference: First Transcontinental Railroad
+End Reference: First Transcontinental Railroad
 Text: ', which was completed in 1869.'
 Open Tag: ref attributes: []
 Text: 'Paludan, p. 116.'
@@ -2370,15 +3021,18 @@ Comment Tag:  sidebar may be edited at [[Template:Lincoln cabinet sidebar]]
 Text: '
 
 Other important legislation involved two measures to raise revenues for the Federal government: tariffs (a policy with long precedent), and a new Federal income tax. In 1861, Lincoln signed the second and third '
-Reference: Morrill Tariff ''
+Begin Reference: Morrill Tariff
+End Reference: Morrill Tariff
 Text: ', the first having become law under James Buchanan. In 1861, Lincoln signed the '
-Reference: Revenue Act of 1861 ''
+Begin Reference: Revenue Act of 1861
+End Reference: Revenue Act of 1861
 Text: ', creating the first U.S. income tax.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 424.'
 Close Tag: ref
 Text: ' This created a flat tax of 3 percent on incomes above $800, which was later changed by the '
-Reference: Revenue Act of 1862 ''
+Begin Reference: Revenue Act of 1862
+End Reference: Revenue Act of 1862
 Text: ' to a progressive rate structure.'
 Open Tag: ref attributes: []
 Text: 'Paludan, p. 111.'
@@ -2386,17 +3040,27 @@ Close Tag: ref
 Text: '
 
 Lincoln also presided over the expansion of the federal government's economic influence in several other areas. The creation of the system of national banks by the '
-Reference: National Banking Act ''
+Begin Reference: National Banking Act
+End Reference: National Banking Act
 Text: ' provided a strong financial network in the country. It also established a national currency. In 1862, Congress created, with Lincoln's approval, the '
-Reference: United States Department of Agriculture 'Department of Agriculture'
+Begin Reference: United States Department of Agriculture
+k: null
+Text: 'Department of Agriculture'
+End Reference: United States Department of Agriculture
 Text: '.'
 Open Tag: ref attributes: [name : 'Donald 2001 p. 424']
 Text: 'Donald (2001), p. 424.'
 Close Tag: ref
 Text: ' In 1862, Lincoln sent a senior general, John Pope, to put down the "'
-Reference: Dakota War of 1862 'Sioux Uprising'
+Begin Reference: Dakota War of 1862
+k: null
+Text: 'Sioux Uprising'
+End Reference: Dakota War of 1862
 Text: '" in Minnesota. Presented with 303 execution warrants for convicted '
-Reference: Sioux#Santee (Isáŋyathi or Eastern Dakota) 'Santee Dakota'
+Begin Reference: Sioux#Santee (Isáŋyathi or Eastern Dakota)
+k: null
+Text: 'Santee Dakota'
+End Reference: Sioux#Santee (Isáŋyathi or Eastern Dakota)
 Text: ' who were accused of killing innocent farmers, Lincoln conducted his own personal review of each of these warrants, eventually approving 39 for execution (one was later reprieved).'
 Open Tag: ref attributes: []
 Text: 'Cox, p. 182.'
@@ -2414,17 +3078,22 @@ Close Tag: ref
 Text: '
 
 Lincoln is largely responsible for the institution of the '
-Reference: Thanksgiving (United States) 'Thanksgiving holiday'
+Begin Reference: Thanksgiving (United States)
+k: null
+Text: 'Thanksgiving holiday'
+End Reference: Thanksgiving (United States)
 Text: ' in the United States.'
 Open Tag: ref attributes: [name : 'Donald 1996, p. 471']
 Text: 'Donald (1996), p. 471.'
 Close Tag: ref
 Text: ' Before Lincoln's presidency, Thanksgiving, while a regional holiday in New England since the 17th century, had been proclaimed by the federal government only sporadically and on irregular dates. The last such proclamation had been during '
-Reference: James Madison ''
+Begin Reference: James Madison
+End Reference: James Madison
 Text: ''s presidency 50 years before. In 1863, Lincoln declared the final Thursday in November of that year to be a day of Thanksgiving.'
 Inline Tag: ref attributes: [name : 'Donald 1996, p. 471']
 Text: ' In June 1864, Lincoln approved the Yosemite Grant enacted by Congress, which provided unprecedented federal protection for the area now known as '
-Reference: Yosemite National Park ''
+Begin Reference: Yosemite National Park
+End Reference: Yosemite National Park
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Schaffer, p. 48.'
@@ -2439,15 +3108,22 @@ Text: '
 Lincoln's declared philosophy on court nominations was that "we cannot ask a man what he will do, and if we should, and he should answer us, we should despise him for it. Therefore we must take a man whose opinions are known."'
 Inline Tag: ref attributes: [name : 'Donald 1996, p. 471']
 Text: ' Lincoln made five appointments to the United States Supreme Court. '
-Reference: Noah Haynes Swayne ''
+Begin Reference: Noah Haynes Swayne
+End Reference: Noah Haynes Swayne
 Text: ', nominated January 21, 1862 and appointed January 24, 1862, was chosen as an anti-slavery lawyer who was committed to the Union. '
-Reference: Samuel Freeman Miller ''
+Begin Reference: Samuel Freeman Miller
+End Reference: Samuel Freeman Miller
 Text: ', nominated and appointed on July 16, 1862, supported Lincoln in the 1860 election and was an avowed abolitionist. '
-Reference: David Davis (Supreme Court justice) 'David Davis'
+Begin Reference: David Davis (Supreme Court justice)
+k: null
+Text: 'David Davis'
+End Reference: David Davis (Supreme Court justice)
 Text: ', Lincoln's campaign manager in 1860, nominated December 1, 1862 and appointed December 8, 1862, had also served as a judge in Lincoln's Illinois court circuit. '
-Reference: Stephen Johnson Field ''
+Begin Reference: Stephen Johnson Field
+End Reference: Stephen Johnson Field
 Text: ', a previous California Supreme Court justice, was nominated March 6, 1863 and appointed March 10, 1863, and provided geographic balance, as well as political balance to the court as a Democrat. Finally, Lincoln's Treasury Secretary, '
-Reference: Salmon P. Chase ''
+Begin Reference: Salmon P. Chase
+End Reference: Salmon P. Chase
 Text: ', was nominated as Chief Justice, and appointed the same day, on December 6, 1864. Lincoln believed Chase was an able jurist, would support Reconstruction legislation, and that his appointment united the Republican Party.'
 Open Tag: ref attributes: []
 Text: 'Blue, p. 245.'
@@ -2480,7 +3156,8 @@ End Template: main
 Text: '
 
 '
-Reference: John Wilkes Booth ''
+Begin Reference: John Wilkes Booth
+End Reference: John Wilkes Booth
 Text: ' was a well-known actor and a Confederate spy from Maryland; though he never joined the Confederate army, he had contacts with the Confederate secret service.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 586–587.'
@@ -2490,21 +3167,35 @@ Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 587.'
 Close Tag: ref
 Text: ' to kidnap Lincoln in exchange for the release of Confederate prisoners. '
-Reference: File:The Assassination of President Lincoln - Currier and Ives 2.png 'thumb|left||alt=A drawing of Lincoln being shot by Booth while sitting in a theater booth.|Shown in the presidential booth of Ford's Theatre, from left to right, are Henry Rathbone, Clara Harris, Mary Todd Lincoln, Abraham Lincoln, and his assassin John Wilkes Booth.'
+Begin Reference: File:The Assassination of President Lincoln - Currier and Ives 2.png
+k: null
+Text: 'thumb'
+k: null
+Text: 'left'
+k: alt
+Text: 'A drawing of Lincoln being shot by Booth while sitting in a theater booth.'
+k: null
+Text: 'Shown in the presidential booth of Ford's Theatre, from left to right, are Henry Rathbone, Clara Harris, Mary Todd Lincoln, Abraham Lincoln, and his assassin John Wilkes Booth.'
+End Reference: File:The Assassination of President Lincoln - Currier and Ives 2.png
 Text: '  After attending an April 11, 1865, speech in which Lincoln promoted voting rights for blacks, an incensed Booth changed his plans and became determined to assassinate the president.'
 Open Tag: ref attributes: []
 Text: 'Harrison (2000), pp. 3–4.'
 Close Tag: ref
 Text: ' Learning that the President, First Lady, and head Union general Ulysses S. Grant would be attending '
-Reference: Ford's Theatre ''
+Begin Reference: Ford's Theatre
+End Reference: Ford's Theatre
 Text: ', Booth formulated a plan with co-conspirators to assassinate Vice President '
-Reference: Andrew Johnson ''
+Begin Reference: Andrew Johnson
+End Reference: Andrew Johnson
 Text: ', Secretary of State '
-Reference: William H. Seward ''
+Begin Reference: William H. Seward
+End Reference: William H. Seward
 Text: ' and General Grant. Without his main bodyguard, '
-Reference: Ward Hill Lamon ''
+Begin Reference: Ward Hill Lamon
+End Reference: Ward Hill Lamon
 Text: ', Lincoln left to attend the play '''
-Reference: Our American Cousin ''
+Begin Reference: Our American Cousin
+End Reference: Our American Cousin
 Text: ''' on April 14. Grant along with his wife chose at the last minute to travel to Philadelphia instead of attending the play.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 594–597.'
@@ -2512,7 +3203,8 @@ Close Tag: ref
 Text: '
 
 Lincoln's bodyguard, John Parker, left Ford's Theater during intermission to join Lincoln's coachman for drinks in the Star Saloon next door. The now unguarded President sat in his state box in the balcony. Seizing the opportunity, Booth crept up from behind and at about 10:13&nbsp;pm, aimed at the back of Lincoln's head and fired at point-blank range, mortally wounding the President. Major '
-Reference: Henry Rathbone ''
+Begin Reference: Henry Rathbone
+End Reference: Henry Rathbone
 Text: ' momentarily grappled with Booth, but Booth stabbed him and escaped.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 597.'
@@ -2552,7 +3244,8 @@ k: null
 Text: 'km'
 End Template: convert
 Text: ' south of Washington, D.C. After a brief fight with Union troops, Booth was killed by Sergeant '
-Reference: Boston Corbett ''
+Begin Reference: Boston Corbett
+End Reference: Boston Corbett
 Text: ' on April 26.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 599.'
@@ -2560,11 +3253,14 @@ Close Tag: ref
 Text: '
 
 An Army surgeon, Doctor '
-Reference: Charles Leale ''
+Begin Reference: Charles Leale
+End Reference: Charles Leale
 Text: ', assessed Lincoln's wound as mortal. The dying man was taken across the street to '
-Reference: Petersen House ''
+Begin Reference: Petersen House
+End Reference: Petersen House
 Text: '. After being in a coma for nine hours, Lincoln died at 7:22&nbsp;am on April 15. Presbyterian minister '
-Reference: Phineas Densmore Gurley ''
+Begin Reference: Phineas Densmore Gurley
+End Reference: Phineas Densmore Gurley
 Text: ', then present, was asked to offer a prayer, after which Secretary of War Stanton saluted and said, "Now he belongs to the ages."'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 598–599, 686. Witnesses have provided other versions of the quote, i.e. "He now belongs to the ages." and "He is a man for the ages."'
@@ -2590,8 +3286,20 @@ Text: 'Abraham Lincoln and religion'
 End Template: See
 Text: '
 '
-Reference: File:AbrahamLincolnOilPainting1869Restored.jpg 'thumb|160px|alt=A painting of Lincoln sitting with his hand on his chin and his elbow on his leg.|Lincoln: painting by [[George Peter Alexander Healy'
-Text: ' in 1869]]
+Begin Reference: File:AbrahamLincolnOilPainting1869Restored.jpg
+k: null
+Text: 'thumb'
+k: null
+Text: '160px'
+k: alt
+Text: 'A painting of Lincoln sitting with his hand on his chin and his elbow on his leg.'
+k: null
+Text: 'Lincoln: painting by '
+Begin Reference: George Peter Alexander Healy
+End Reference: George Peter Alexander Healy
+Text: ' in 1869'
+End Reference: File:AbrahamLincolnOilPainting1869Restored.jpg
+Text: '
 
 Scholars have extensively written on topics concerning Lincoln's beliefs and philosophy; e.g. whether Lincoln's frequent use of religious imagery and language reflected his own personal beliefs or was a device to appeal to his audiences, who were mostly evangelical Protestants.'
 Open Tag: ref attributes: []
@@ -2629,7 +3337,10 @@ Text: '
 Section [0] Historical reputation
 Text: '
 In '
-Reference: Historical rankings of Presidents of the United States 'surveys of scholars ranking Presidents'
+Begin Reference: Historical rankings of Presidents of the United States
+k: null
+Text: 'surveys of scholars ranking Presidents'
+End Reference: Historical rankings of Presidents of the United States
 Comment Tag: Lincoln is 1st in 9 of 17 on that page
 Text: ' since the 1940s, Lincoln is consistently ranked in the top three, often #1.'
 Inline Tag: ref attributes: [name : 'Ranking Our Presidents']
@@ -2651,17 +3362,31 @@ Close Tag: ref
 Text: '
 
 '
-Reference: File:Lincoln Museum Exterior.jpg '|alt=Exterior photograph of museum|thumb|left|The [[Abraham Lincoln Presidential Library and Museum'
-Text: ' focuses on Lincoln scholarship and popular interpretation]]
+Begin Reference: File:Lincoln Museum Exterior.jpg
+k: alt
+Text: 'Exterior photograph of museum'
+k: null
+Text: 'thumb'
+k: null
+Text: 'left'
+k: null
+Text: 'The '
+Begin Reference: Abraham Lincoln Presidential Library and Museum
+End Reference: Abraham Lincoln Presidential Library and Museum
+Text: ' focuses on Lincoln scholarship and popular interpretation'
+End Reference: File:Lincoln Museum Exterior.jpg
+Text: '
 
 Schwartz argues that Lincoln's reputation grew slowly in the late 19th century until the Progressive Era (1900–1920s) when he emerged as one of the most venerated heroes in American history, with even white Southerners in agreement. The high point came in 1922 with the dedication of the Lincoln Memorial on the Mall in Washington.'
 Open Tag: ref attributes: []
 Text: 'Schwartz (2000), p. 109.'
 Close Tag: ref
 Text: '  In the '
-Reference: New Deal ''
+Begin Reference: New Deal
+End Reference: New Deal
 Text: ' era liberals honored Lincoln not so much as the self-made man or the great war president, but as the advocate of the common man who doubtless would have supported the welfare state. In the '
-Reference: Cold War ''
+Begin Reference: Cold War
+End Reference: Cold War
 Text: ' years, Lincoln's image shifted to emphasize the symbol of freedom who brought hope to those oppressed by communist regimes.'
 Open Tag: ref attributes: []
 Text: 'Schwartz (2009), pp. 23, 91–98.'
@@ -2669,10 +3394,14 @@ Close Tag: ref
 Text: '
 
 By the 1970s Lincoln had became a hero to '
-Reference: Conservatism in the United States 'political conservatives'
+Begin Reference: Conservatism in the United States
+k: null
+Text: 'political conservatives'
+End Reference: Conservatism in the United States
 Open Tag: ref attributes: []
 Text: 'Havers, p. 96. Apart from neo-Confederates such as '
-Reference: Mel Bradford ''
+Begin Reference: Mel Bradford
+End Reference: Mel Bradford
 Text: ' who denounced his treatment of the white South.'
 Close Tag: ref
 Text: ' for his intense nationalism, support for business, his insistence on stopping the spread of un-freedom (slavery), his acting in terms of Lockean and Burkean principles on behalf of both liberty and tradition, and his devotion to the principles of the Founding Fathers.'
@@ -2686,7 +3415,10 @@ Open Tag: ref attributes: []
 Text: 'Smith, pp. 43–45.'
 Close Tag: ref
 Text: ' As a Whig activist, Lincoln was a spokesman for business interests, favoring high tariffs, banks, internal improvements, and railroads in opposition to the '
-Reference: Jacksonian Democracy 'agrarian Democrats'
+Begin Reference: Jacksonian Democracy
+k: null
+Text: 'agrarian Democrats'
+End Reference: Jacksonian Democracy
 Text: '.'
 Open Tag: ref attributes: []
 Text: 'Boritt (1994), pp. 196, 198, 228, 301.'
@@ -2702,7 +3434,10 @@ Close Tag: ref
 Text: '
 
 By the late 1960s, liberals, such as historian '
-Reference: Lerone Bennett, Jr. 'Lerone Bennett'
+Begin Reference: Lerone Bennett, Jr.
+k: null
+Text: 'Lerone Bennett'
+End Reference: Lerone Bennett, Jr.
 Text: ', were having second thoughts, especially regarding Lincoln's views on racial issues.'
 Open Tag: ref attributes: []
 Text: 'Zilversmit, pp. 22–24.'
@@ -2715,7 +3450,10 @@ Open Tag: ref attributes: []
 Text: 'Bennett, pp. 35–42.'
 Close Tag: ref
 Text: ' He noted that Lincoln used ethnic slurs, told jokes that ridiculed blacks, insisted he opposed social equality, and proposed '
-Reference: American Colonization Society 'sending freed slaves'
+Begin Reference: American Colonization Society
+k: null
+Text: 'sending freed slaves'
+End Reference: American Colonization Society
 Text: ' to another country. Defenders, such as authors Dirck and Cashin, retorted that he was not as bad as most politicians;'
 Open Tag: ref attributes: []
 Text: 'Dirck (2008), p. 31.'
@@ -2736,7 +3474,8 @@ Open Tag: ref attributes: []
 Text: 'Schwartz (2009), p. 146.'
 Close Tag: ref
 Text: ' On the other hand, Donald opined in his 1996 biography that Lincoln was distinctly endowed with the personality trait of '
-Reference: negative capability ''
+Begin Reference: negative capability
+End Reference: negative capability
 Text: ', defined by the poet John Keats and attributed to extraordinary leaders who were "content in the midst of uncertainties and doubts, and not compelled toward fact or reason."'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 15.'
@@ -2753,7 +3492,14 @@ Text: 'Cultural depictions of Abraham Lincoln'
 End Template: See
 Text: '
 '
-Reference: File:Aerial view of Lincoln Memorial - east side EDIT.jpeg 'thumb|alt=An aerial photo a large white building with big pillars.|Lincoln Memorial in Washington, D.C.'
+Begin Reference: File:Aerial view of Lincoln Memorial - east side EDIT.jpeg
+k: null
+Text: 'thumb'
+k: alt
+Text: 'An aerial photo a large white building with big pillars.'
+k: null
+Text: 'Lincoln Memorial in Washington, D.C.'
+End Reference: File:Aerial view of Lincoln Memorial - east side EDIT.jpeg
 Text: '
 
 Lincoln has been memorialized in many town, city, and county names,'
@@ -2761,9 +3507,15 @@ Open Tag: ref attributes: [name : 'Dennis, p. 194']
 Text: 'Dennis, p. 194.'
 Close Tag: ref
 Text: ' including the '
-Reference: Lincoln, Nebraska 'capital'
+Begin Reference: Lincoln, Nebraska
+k: null
+Text: 'capital'
+End Reference: Lincoln, Nebraska
 Text: ' of Nebraska. The first public monument to Abraham Lincoln was a statue erected in front of the District of Columbia '
-Reference: District of Columbia City Hall 'City Hall'
+Begin Reference: District of Columbia City Hall
+k: null
+Text: 'City Hall'
+End Reference: District of Columbia City Hall
 Text: ' in 1868, three years after his assassination.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -2783,9 +3535,11 @@ k: deadurl
 End Template: cite web
 Close Tag: ref
 Text: ' Lincoln's name and image appear in numerous other places, such as the '
-Reference: Lincoln Memorial ''
+Begin Reference: Lincoln Memorial
+End Reference: Lincoln Memorial
 Text: ' in Washington, D.C. and Lincoln's sculpture on '
-Reference: Mount Rushmore ''
+Begin Reference: Mount Rushmore
+End Reference: Mount Rushmore
 Text: '.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -2803,7 +3557,10 @@ k: deadurl
 End Template: cite web
 Close Tag: ref
 Text: ' Abraham Lincoln '
-Reference: Abraham Lincoln Birthplace National Historical Park 'Birthplace'
+Begin Reference: Abraham Lincoln Birthplace National Historical Park
+k: null
+Text: 'Birthplace'
+End Reference: Abraham Lincoln Birthplace National Historical Park
 Text: ' National Historical Park in Hodgenville, Kentucky,'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -2821,7 +3578,10 @@ k: deadurl
 End Template: cite web
 Close Tag: ref
 Text: ' Lincoln '
-Reference: Lincoln Boyhood National Memorial 'Boyhood'
+Begin Reference: Lincoln Boyhood National Memorial
+k: null
+Text: 'Boyhood'
+End Reference: Lincoln Boyhood National Memorial
 Text: ' National Memorial in Lincoln City, Indiana,'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -2839,7 +3599,8 @@ k: deadurl
 End Template: cite web
 Close Tag: ref
 Text: ' '
-Reference: Lincoln's New Salem ''
+Begin Reference: Lincoln's New Salem
+End Reference: Lincoln's New Salem
 Text: ', Illinois,'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -2857,7 +3618,10 @@ k: deadurl
 End Template: cite web
 Close Tag: ref
 Text: ' and '
-Reference: Lincoln Home National Historic Site 'Lincoln Home'
+Begin Reference: Lincoln Home National Historic Site
+k: null
+Text: 'Lincoln Home'
+End Reference: Lincoln Home National Historic Site
 Text: ' National Historic Site in Springfield, Illinois'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -2880,11 +3644,16 @@ Text: 'Peterson, pp. 312, 368.'
 Close Tag: ref
 Text: '
 '
-Reference: Ford's Theatre ''
+Begin Reference: Ford's Theatre
+End Reference: Ford's Theatre
 Text: ' and '
-Reference: Petersen House ''
+Begin Reference: Petersen House
+End Reference: Petersen House
 Text: ' (where he died) are maintained as museums, as is the Abraham Lincoln Presidential '
-Reference: Abraham Lincoln Presidential Library and Museum 'Library and Museum'
+Begin Reference: Abraham Lincoln Presidential Library and Museum
+k: null
+Text: 'Library and Museum'
+End Reference: Abraham Lincoln Presidential Library and Museum
 Text: ', located in Springfield.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -2917,7 +3686,8 @@ k: deadurl
 End Template: cite web
 Close Tag: ref
 Text: ' The '
-Reference: Lincoln Tomb ''
+Begin Reference: Lincoln Tomb
+End Reference: Lincoln Tomb
 Text: ' in Oak Ridge Cemetery in Springfield, Illinois, contains his remains and those of his wife Mary and three of his four sons, Edward, William, and Thomas.'
 Open Tag: ref attributes: []
 Begin Template: cite web
@@ -2958,16 +3728,26 @@ k: deadurl
 End Template: cite news
 Close Tag: ref
 Text: ' and he is the only U.S. President to appear on a '
-Reference: :File:Abraham Lincoln Airmail 1960 Issue-25c.jpg 'U.S. airmail stamp'
+Begin Reference: :File:Abraham Lincoln Airmail 1960 Issue-25c.jpg
+k: null
+Text: 'U.S. airmail stamp'
+End Reference: :File:Abraham Lincoln Airmail 1960 Issue-25c.jpg
 Text: '.'
 Open Tag: ref attributes: []
-Reference: #Cummings 'Cummings'
+Begin Reference: #Cummings
+k: null
+Text: 'Cummings'
+End Reference: #Cummings
 Text: ', p. 284.'
 Close Tag: ref
 Text: '  Currency honoring the president includes the United States' '
-Reference: United States five-dollar bill 'five-dollar bill'
+Begin Reference: United States five-dollar bill
+k: null
+Text: 'five-dollar bill'
+End Reference: United States five-dollar bill
 Text: ' and the '
-Reference: Lincoln cent ''
+Begin Reference: Lincoln cent
+End Reference: Lincoln cent
 Text: ', which represents the first regularly circulating U.S. coin to feature an actual person's image.'
 Open Tag: ref attributes: []
 Begin Template: cite news
@@ -2996,17 +3776,25 @@ Close Tag: ref
 Text: '
 
 The first statue of Lincoln outside the United States was erected in '
-Reference: Edinburgh ''
+Begin Reference: Edinburgh
+End Reference: Edinburgh
 Text: ', '
-Reference: Scotland ''
+Begin Reference: Scotland
+End Reference: Scotland
 Text: ' in 1893. The work of '
-Reference: George Edwin Bissell ''
+Begin Reference: George Edwin Bissell
+End Reference: George Edwin Bissell
 Text: ', it stands on a memorial to Scots immigrants who enlisted with the Union during the Civil War, the only memorial to the war erected outside the United States. A large statue of '
-Reference: Standing Lincoln 'Lincoln standing'
+Begin Reference: Standing Lincoln
+k: null
+Text: 'Lincoln standing'
+End Reference: Standing Lincoln
 Text: ' was unveiled near '
-Reference: Westminster Abbey ''
+Begin Reference: Westminster Abbey
+End Reference: Westminster Abbey
 Text: ' in '
-Reference: London ''
+Begin Reference: London
+End Reference: London
 Text: ', on July 28, 1920, in an elaborate ceremony. The principal addresses were delivered in the abbey church.'
 Open Tag: ref attributes: []
 Text: 'Twenty-Sixth Annual Report of the American Scenic and Historic Preservation Society, 1921 (Albany, NY: J. B. Lyon Company Printers, 1922), pp. 194-95.'
@@ -3016,19 +3804,26 @@ Text: '
 Abraham Lincoln's birthday, February 12, was never a national holiday, but it was at one time observed by as many as 30 states.'
 Inline Tag: ref attributes: [name : 'Dennis, p. 194']
 Text: ' In 1971, '
-Reference: Presidents Day (United States) 'Presidents Day'
+Begin Reference: Presidents Day (United States)
+k: null
+Text: 'Presidents Day'
+End Reference: Presidents Day (United States)
 Text: ' became a national holiday, combining Lincoln's and Washington's birthdays and replacing most states' celebration of his birthday.'
 Open Tag: ref attributes: []
 Text: 'Schwartz (2009), pp. 196–199.'
 Close Tag: ref
 Text: ' The '
-Reference: Abraham Lincoln Association ''
+Begin Reference: Abraham Lincoln Association
+End Reference: Abraham Lincoln Association
 Text: ' was formed in 1908 to commemorate the centennial of Lincoln's birth.'
 Open Tag: ref attributes: []
 Text: 'Peterson pp. 147, 263.'
 Close Tag: ref
 Text: ' In 2000, Congress established the Abraham Lincoln '
-Reference: Abraham Lincoln Bicentennial Commission 'Bicentennial Commission'
+Begin Reference: Abraham Lincoln Bicentennial Commission
+k: null
+Text: 'Bicentennial Commission'
+End Reference: Abraham Lincoln Bicentennial Commission
 Text: ' to commemorate his 200th birthday in February 2009.'
 Open Tag: ref attributes: []
 Begin Template: cite news
@@ -3679,7 +4474,8 @@ Text: 'Foner '
 k: first
 Text: 'Eric '
 k: title
-Reference: The Fiery Trial: Abraham Lincoln and American Slavery ''
+Begin Reference: The Fiery Trial: Abraham Lincoln and American Slavery
+End Reference: The Fiery Trial: Abraham Lincoln and American Slavery
 Text: ' '
 k: publisher
 Text: 'W.W. Norton '
@@ -4852,7 +5648,8 @@ Text: 'Wills '
 k: authorlink
 Text: 'Garry Wills '
 k: title
-Reference: Lincoln at Gettysburg: The Words That Remade America ''
+Begin Reference: Lincoln at Gettysburg: The Words That Remade America
+End Reference: Lincoln at Gettysburg: The Words That Remade America
 Text: ' '
 k: isbn
 Text: '0671867423 '
@@ -5220,9 +6017,11 @@ Text: '
 *'
 Link: http://web.archive.org/web/20110725003410/http://americanpresidents.org/presidents/president.asp?PresidentNumber=16 'Abraham Lincoln'
 Text: ' at '
-Reference: C-SPAN ''
+Begin Reference: C-SPAN
+End Reference: C-SPAN
 Text: ''s '''
-Reference: American Presidents: Life Portraits ''
+Begin Reference: American Presidents: Life Portraits
+End Reference: American Presidents: Life Portraits
 Text: '''
 *'
 Link: http://legacy.c-span.org/Series/Lincoln-200-Years.aspx 'C-SPAN's ''Lincoln 200 Years'''
@@ -5258,17 +6057,24 @@ Text: '
 '
 Begin Template: s-bef
 k: before
-Reference: John Henry (representative) 'John Henry'
+Begin Reference: John Henry (representative)
+k: null
+Text: 'John Henry'
+End Reference: John Henry (representative)
 End Template: s-bef
 Text: '
 '
 Begin Template: s-ttl
 k: title
 Text: 'Member of the '
-Reference: List of United States Representatives from Illinois 'House of Representatives'
+Begin Reference: List of United States Representatives from Illinois
+k: null
+Text: 'House of Representatives'
+End Reference: List of United States Representatives from Illinois
 Open Tag: br attributes: []
 Text: 'from '
-Reference: Illinois's 7th congressional district ''
+Begin Reference: Illinois's 7th congressional district
+End Reference: Illinois's 7th congressional district
 k: years
 Text: '1847–1849'
 End Template: s-ttl
@@ -5276,7 +6082,10 @@ Text: '
 '
 Begin Template: s-aft
 k: after
-Reference: Thomas L. Harris 'Thomas Harris'
+Begin Reference: Thomas L. Harris
+k: null
+Text: 'Thomas Harris'
+End Reference: Thomas L. Harris
 End Template: s-aft
 Text: '
 '
@@ -5290,26 +6099,44 @@ Text: '
 '
 Begin Template: s-bef
 k: before
-Reference: John C. Frémont 'John Frémont'
+Begin Reference: John C. Frémont
+k: null
+Text: 'John Frémont'
+End Reference: John C. Frémont
 End Template: s-bef
 Text: '
 '
 Begin Template: s-ttl
 k: title
-Reference: Republican Party (United States) 'Republican'
+Begin Reference: Republican Party (United States)
+k: null
+Text: 'Republican'
+End Reference: Republican Party (United States)
 Text: ' '
-Reference: List of United States Republican Party presidential tickets 'nominee'
+Begin Reference: List of United States Republican Party presidential tickets
+k: null
+Text: 'nominee'
+End Reference: List of United States Republican Party presidential tickets
 Text: ' for President of the United States'
 k: years
-Reference: United States presidential election, 1860 '1860'
+Begin Reference: United States presidential election, 1860
+k: null
+Text: '1860'
+End Reference: United States presidential election, 1860
 Text: ', '
-Reference: United States presidential election, 1864 '1864'
+Begin Reference: United States presidential election, 1864
+k: null
+Text: '1864'
+End Reference: United States presidential election, 1864
 End Template: s-ttl
 Text: '
 '
 Begin Template: s-aft
 k: after
-Reference: Ulysses S. Grant 'Ulysses Grant'
+Begin Reference: Ulysses S. Grant
+k: null
+Text: 'Ulysses Grant'
+End Reference: Ulysses S. Grant
 End Template: s-aft
 Text: '
 '
@@ -5323,7 +6150,8 @@ Text: '
 '
 Begin Template: s-bef
 k: before
-Reference: James Buchanan ''
+Begin Reference: James Buchanan
+End Reference: James Buchanan
 End Template: s-bef
 Text: '
 '
@@ -5337,7 +6165,8 @@ Text: '
 '
 Begin Template: s-aft
 k: after
-Reference: Andrew Johnson ''
+Begin Reference: Andrew Johnson
+End Reference: Andrew Johnson
 End Template: s-aft
 Text: '
 '
@@ -5351,17 +6180,22 @@ Text: '
 '
 Begin Template: s-bef
 k: before
-Reference: Henry Clay ''
+Begin Reference: Henry Clay
+End Reference: Henry Clay
 End Template: s-bef
 Text: '
 '
 Begin Template: s-ttl
 k: title
 Text: 'Persons who have '
-Reference: lying in state 'lain in state or honor'
+Begin Reference: lying in state
+k: null
+Text: 'lain in state or honor'
+End Reference: lying in state
 Open Tag: br attributes: []
 Text: 'in the '
-Reference: United States Capitol rotunda ''
+Begin Reference: United States Capitol rotunda
+End Reference: United States Capitol rotunda
 k: years
 Text: '1865'
 End Template: s-ttl
@@ -5369,7 +6203,8 @@ Text: '
 '
 Begin Template: s-aft
 k: after
-Reference: Thaddeus Stevens ''
+Begin Reference: Thaddeus Stevens
+End Reference: Thaddeus Stevens
 End Template: s-aft
 Text: '
 '
@@ -5462,88 +6297,120 @@ Begin Template: DEFAULTSORT:Lincoln, Abraham
 End Template: DEFAULTSORT:Lincoln, Abraham
 Text: '
 '
-Reference: Category:1809 births ''
+Begin Reference: Category:1809 births
+End Reference: Category:1809 births
 Text: '
 '
-Reference: Category:1865 deaths ''
+Begin Reference: Category:1865 deaths
+End Reference: Category:1865 deaths
 Text: '
 '
-Reference: Category:Abraham Lincoln ' '
+Begin Reference: Category:Abraham Lincoln
+k: null
+Text: ' '
+End Reference: Category:Abraham Lincoln
 Text: '
 '
-Reference: Category:American people of English descent ''
+Begin Reference: Category:American people of English descent
+End Reference: Category:American people of English descent
 Text: '
 '
-Reference: Category:American people of Welsh descent ''
+Begin Reference: Category:American people of Welsh descent
+End Reference: Category:American people of Welsh descent
 Text: '
 '
-Reference: Category:Assassinated United States Presidents ''
+Begin Reference: Category:Assassinated United States Presidents
+End Reference: Category:Assassinated United States Presidents
 Text: '
 '
-Reference: Category:Deaths by firearm in Washington, D.C. ''
+Begin Reference: Category:Deaths by firearm in Washington, D.C.
+End Reference: Category:Deaths by firearm in Washington, D.C.
 Text: '
 '
-Reference: Category:Illinois lawyers ''
+Begin Reference: Category:Illinois lawyers
+End Reference: Category:Illinois lawyers
 Text: '
 '
-Reference: Category:Illinois Republicans ''
+Begin Reference: Category:Illinois Republicans
+End Reference: Category:Illinois Republicans
 Text: '
 '
-Reference: Category:Illinois Whigs ''
+Begin Reference: Category:Illinois Whigs
+End Reference: Category:Illinois Whigs
 Text: '
 '
-Reference: Category:Lincoln family 'Abraham'
+Begin Reference: Category:Lincoln family
+k: null
+Text: 'Abraham'
+End Reference: Category:Lincoln family
 Text: '
 '
-Reference: Category:Members of the Illinois House of Representatives ''
+Begin Reference: Category:Members of the Illinois House of Representatives
+End Reference: Category:Members of the Illinois House of Representatives
 Text: '
 '
-Reference: Category:Members of the United States House of Representatives from Illinois ''
+Begin Reference: Category:Members of the United States House of Representatives from Illinois
+End Reference: Category:Members of the United States House of Representatives from Illinois
 Text: '
 '
-Reference: Category:People from Coles County, Illinois ''
+Begin Reference: Category:People from Coles County, Illinois
+End Reference: Category:People from Coles County, Illinois
 Text: '
 '
-Reference: Category:People from LaRue County, Kentucky ''
+Begin Reference: Category:People from LaRue County, Kentucky
+End Reference: Category:People from LaRue County, Kentucky
 Text: '
 '
-Reference: Category:People from Macon County, Illinois ''
+Begin Reference: Category:People from Macon County, Illinois
+End Reference: Category:People from Macon County, Illinois
 Text: '
 '
-Reference: Category:People from Spencer County, Indiana ''
+Begin Reference: Category:People from Spencer County, Indiana
+End Reference: Category:People from Spencer County, Indiana
 Text: '
 '
-Reference: Category:People from Springfield, Illinois ''
+Begin Reference: Category:People from Springfield, Illinois
+End Reference: Category:People from Springfield, Illinois
 Text: '
 '
-Reference: Category:People murdered in Washington, D.C. ''
+Begin Reference: Category:People murdered in Washington, D.C.
+End Reference: Category:People murdered in Washington, D.C.
 Text: '
 '
-Reference: Category:People of Illinois in the American Civil War ''
+Begin Reference: Category:People of Illinois in the American Civil War
+End Reference: Category:People of Illinois in the American Civil War
 Text: '
 '
-Reference: Category:People of the Black Hawk War ''
+Begin Reference: Category:People of the Black Hawk War
+End Reference: Category:People of the Black Hawk War
 Text: '
 '
-Reference: Category:Postmasters ''
+Begin Reference: Category:Postmasters
+End Reference: Category:Postmasters
 Text: '
 '
-Reference: Category:Presidents of the United States ''
+Begin Reference: Category:Presidents of the United States
+End Reference: Category:Presidents of the United States
 Text: '
 '
-Reference: Category:Republican Party Presidents of the United States ''
+Begin Reference: Category:Republican Party Presidents of the United States
+End Reference: Category:Republican Party Presidents of the United States
 Text: '
 '
-Reference: Category:Republican Party (United States) presidential nominees ''
+Begin Reference: Category:Republican Party (United States) presidential nominees
+End Reference: Category:Republican Party (United States) presidential nominees
 Text: '
 '
-Reference: Category:Union political leaders ''
+Begin Reference: Category:Union political leaders
+End Reference: Category:Union political leaders
 Text: '
 '
-Reference: Category:United States presidential candidates, 1860 ''
+Begin Reference: Category:United States presidential candidates, 1860
+End Reference: Category:United States presidential candidates, 1860
 Text: '
 '
-Reference: Category:United States presidential candidates, 1864 ''
+Begin Reference: Category:United States presidential candidates, 1864
+End Reference: Category:United States presidential candidates, 1864
 Text: '
 
 '
@@ -5566,377 +6433,502 @@ End Template: Link FA
 Text: '
 
 '
-Reference: af:Abraham Lincoln ''
+Begin Reference: af:Abraham Lincoln
+End Reference: af:Abraham Lincoln
 Text: '
 '
-Reference: am:አብርሀም ሊንከን ''
+Begin Reference: am:አብርሀም ሊንከን
+End Reference: am:አብርሀም ሊንከን
 Text: '
 '
-Reference: ang:Abraham Lincoln ''
+Begin Reference: ang:Abraham Lincoln
+End Reference: ang:Abraham Lincoln
 Text: '
 '
-Reference: ar:أبراهام لينكون ''
+Begin Reference: ar:أبراهام لينكون
+End Reference: ar:أبراهام لينكون
 Text: '
 '
-Reference: an:Abraham Lincoln ''
+Begin Reference: an:Abraham Lincoln
+End Reference: an:Abraham Lincoln
 Text: '
 '
-Reference: ast:Abraham Lincoln ''
+Begin Reference: ast:Abraham Lincoln
+End Reference: ast:Abraham Lincoln
 Text: '
 '
-Reference: az:Avraam Linkoln ''
+Begin Reference: az:Avraam Linkoln
+End Reference: az:Avraam Linkoln
 Text: '
 '
-Reference: bn:আব্রাহাম লিংকন ''
+Begin Reference: bn:আব্রাহাম লিংকন
+End Reference: bn:আব্রাহাম লিংকন
 Text: '
 '
-Reference: zh-min-nan:Abraham Lincoln ''
+Begin Reference: zh-min-nan:Abraham Lincoln
+End Reference: zh-min-nan:Abraham Lincoln
 Text: '
 '
-Reference: be:Аўраам Лінкальн ''
+Begin Reference: be:Аўраам Лінкальн
+End Reference: be:Аўраам Лінкальн
 Text: '
 '
-Reference: be-x-old:Абрагам Лінкальн ''
+Begin Reference: be-x-old:Абрагам Лінкальн
+End Reference: be-x-old:Абрагам Лінкальн
 Text: '
 '
-Reference: bcl:Abraham Lincoln ''
+Begin Reference: bcl:Abraham Lincoln
+End Reference: bcl:Abraham Lincoln
 Text: '
 '
-Reference: bg:Ейбрахам Линкълн ''
+Begin Reference: bg:Ейбрахам Линкълн
+End Reference: bg:Ейбрахам Линкълн
 Text: '
 '
-Reference: bar:Abraham Lincoln ''
+Begin Reference: bar:Abraham Lincoln
+End Reference: bar:Abraham Lincoln
 Text: '
 '
-Reference: bs:Abraham Lincoln ''
+Begin Reference: bs:Abraham Lincoln
+End Reference: bs:Abraham Lincoln
 Text: '
 '
-Reference: br:Abraham Lincoln ''
+Begin Reference: br:Abraham Lincoln
+End Reference: br:Abraham Lincoln
 Text: '
 '
-Reference: ca:Abraham Lincoln ''
+Begin Reference: ca:Abraham Lincoln
+End Reference: ca:Abraham Lincoln
 Text: '
 '
-Reference: ceb:Abraham Lincoln ''
+Begin Reference: ceb:Abraham Lincoln
+End Reference: ceb:Abraham Lincoln
 Text: '
 '
-Reference: cs:Abraham Lincoln ''
+Begin Reference: cs:Abraham Lincoln
+End Reference: cs:Abraham Lincoln
 Text: '
 '
-Reference: co:Abraham Lincoln ''
+Begin Reference: co:Abraham Lincoln
+End Reference: co:Abraham Lincoln
 Text: '
 '
-Reference: cy:Abraham Lincoln ''
+Begin Reference: cy:Abraham Lincoln
+End Reference: cy:Abraham Lincoln
 Text: '
 '
-Reference: da:Abraham Lincoln ''
+Begin Reference: da:Abraham Lincoln
+End Reference: da:Abraham Lincoln
 Text: '
 '
-Reference: de:Abraham Lincoln ''
+Begin Reference: de:Abraham Lincoln
+End Reference: de:Abraham Lincoln
 Text: '
 '
-Reference: dv:އަބްރަހަމް ލިންކަން ''
+Begin Reference: dv:އަބްރަހަމް ލިންކަން
+End Reference: dv:އަބްރަހަމް ލިންކަން
 Text: '
 '
-Reference: dsb:Abraham Lincoln ''
+Begin Reference: dsb:Abraham Lincoln
+End Reference: dsb:Abraham Lincoln
 Text: '
 '
-Reference: et:Abraham Lincoln ''
+Begin Reference: et:Abraham Lincoln
+End Reference: et:Abraham Lincoln
 Text: '
 '
-Reference: el:Αβραάμ Λίνκολν ''
+Begin Reference: el:Αβραάμ Λίνκολν
+End Reference: el:Αβραάμ Λίνκολν
 Text: '
 '
-Reference: es:Abraham Lincoln ''
+Begin Reference: es:Abraham Lincoln
+End Reference: es:Abraham Lincoln
 Text: '
 '
-Reference: eo:Abraham Lincoln ''
+Begin Reference: eo:Abraham Lincoln
+End Reference: eo:Abraham Lincoln
 Text: '
 '
-Reference: eu:Abraham Lincoln ''
+Begin Reference: eu:Abraham Lincoln
+End Reference: eu:Abraham Lincoln
 Text: '
 '
-Reference: fa:آبراهام لینکلن ''
+Begin Reference: fa:آبراهام لینکلن
+End Reference: fa:آبراهام لینکلن
 Text: '
 '
-Reference: hif:Abraham Lincoln ''
+Begin Reference: hif:Abraham Lincoln
+End Reference: hif:Abraham Lincoln
 Text: '
 '
-Reference: fo:Abraham Lincoln ''
+Begin Reference: fo:Abraham Lincoln
+End Reference: fo:Abraham Lincoln
 Text: '
 '
-Reference: fr:Abraham Lincoln ''
+Begin Reference: fr:Abraham Lincoln
+End Reference: fr:Abraham Lincoln
 Text: '
 '
-Reference: fy:Abraham Lincoln ''
+Begin Reference: fy:Abraham Lincoln
+End Reference: fy:Abraham Lincoln
 Text: '
 '
-Reference: ga:Abraham Lincoln ''
+Begin Reference: ga:Abraham Lincoln
+End Reference: ga:Abraham Lincoln
 Text: '
 '
-Reference: gv:Abraham Lincoln ''
+Begin Reference: gv:Abraham Lincoln
+End Reference: gv:Abraham Lincoln
 Text: '
 '
-Reference: gd:Abraham Lincoln ''
+Begin Reference: gd:Abraham Lincoln
+End Reference: gd:Abraham Lincoln
 Text: '
 '
-Reference: gl:Abraham Lincoln ''
+Begin Reference: gl:Abraham Lincoln
+End Reference: gl:Abraham Lincoln
 Text: '
 '
-Reference: gan:亞伯拉罕·林肯 ''
+Begin Reference: gan:亞伯拉罕·林肯
+End Reference: gan:亞伯拉罕·林肯
 Text: '
 '
-Reference: hak:Â-pak-lâ-hón Lìm-khén ''
+Begin Reference: hak:Â-pak-lâ-hón Lìm-khén
+End Reference: hak:Â-pak-lâ-hón Lìm-khén
 Text: '
 '
-Reference: ko:에이브러햄 링컨 ''
+Begin Reference: ko:에이브러햄 링컨
+End Reference: ko:에이브러햄 링컨
 Text: '
 '
-Reference: hy:Աբրահամ Լինքոլն ''
+Begin Reference: hy:Աբրահամ Լինքոլն
+End Reference: hy:Աբրահամ Լինքոլն
 Text: '
 '
-Reference: hi:अब्राहम लिंकन ''
+Begin Reference: hi:अब्राहम लिंकन
+End Reference: hi:अब्राहम लिंकन
 Text: '
 '
-Reference: hr:Abraham Lincoln ''
+Begin Reference: hr:Abraham Lincoln
+End Reference: hr:Abraham Lincoln
 Text: '
 '
-Reference: io:Abraham Lincoln ''
+Begin Reference: io:Abraham Lincoln
+End Reference: io:Abraham Lincoln
 Text: '
 '
-Reference: ilo:Abraham Lincoln ''
+Begin Reference: ilo:Abraham Lincoln
+End Reference: ilo:Abraham Lincoln
 Text: '
 '
-Reference: id:Abraham Lincoln ''
+Begin Reference: id:Abraham Lincoln
+End Reference: id:Abraham Lincoln
 Text: '
 '
-Reference: ia:Abraham Lincoln ''
+Begin Reference: ia:Abraham Lincoln
+End Reference: ia:Abraham Lincoln
 Text: '
 '
-Reference: ie:Abraham Lincoln ''
+Begin Reference: ie:Abraham Lincoln
+End Reference: ie:Abraham Lincoln
 Text: '
 '
-Reference: os:Линкольн, Авраам ''
+Begin Reference: os:Линкольн, Авраам
+End Reference: os:Линкольн, Авраам
 Text: '
 '
-Reference: is:Abraham Lincoln ''
+Begin Reference: is:Abraham Lincoln
+End Reference: is:Abraham Lincoln
 Text: '
 '
-Reference: it:Abramo Lincoln ''
+Begin Reference: it:Abramo Lincoln
+End Reference: it:Abramo Lincoln
 Text: '
 '
-Reference: he:אברהם לינקולן ''
+Begin Reference: he:אברהם לינקולן
+End Reference: he:אברהם לינקולן
 Text: '
 '
-Reference: jv:Abraham Lincoln ''
+Begin Reference: jv:Abraham Lincoln
+End Reference: jv:Abraham Lincoln
 Text: '
 '
-Reference: kn:ಅಬ್ರಹಮ್ ಲಿಂಕನ್ ''
+Begin Reference: kn:ಅಬ್ರಹಮ್ ಲಿಂಕನ್
+End Reference: kn:ಅಬ್ರಹಮ್ ಲಿಂಕನ್
 Text: '
 '
-Reference: pam:Abraham Lincoln ''
+Begin Reference: pam:Abraham Lincoln
+End Reference: pam:Abraham Lincoln
 Text: '
 '
-Reference: ka:აბრაამ ლინკოლნი ''
+Begin Reference: ka:აბრაამ ლინკოლნი
+End Reference: ka:აბრაამ ლინკოლნი
 Text: '
 '
-Reference: kk:Авраам Линкольн ''
+Begin Reference: kk:Авраам Линкольн
+End Reference: kk:Авраам Линкольн
 Text: '
 '
-Reference: rw:Abraham Lincoln ''
+Begin Reference: rw:Abraham Lincoln
+End Reference: rw:Abraham Lincoln
 Text: '
 '
-Reference: sw:Abraham Lincoln ''
+Begin Reference: sw:Abraham Lincoln
+End Reference: sw:Abraham Lincoln
 Text: '
 '
-Reference: ku:Abraham Lincoln ''
+Begin Reference: ku:Abraham Lincoln
+End Reference: ku:Abraham Lincoln
 Text: '
 '
-Reference: ky:Линкольн, Авраам ''
+Begin Reference: ky:Линкольн, Авраам
+End Reference: ky:Линкольн, Авраам
 Text: '
 '
-Reference: la:Abrahamus Lincoln ''
+Begin Reference: la:Abrahamus Lincoln
+End Reference: la:Abrahamus Lincoln
 Text: '
 '
-Reference: lv:Abrahams Linkolns ''
+Begin Reference: lv:Abrahams Linkolns
+End Reference: lv:Abrahams Linkolns
 Text: '
 '
-Reference: lb:Abraham Lincoln ''
+Begin Reference: lb:Abraham Lincoln
+End Reference: lb:Abraham Lincoln
 Text: '
 '
-Reference: lt:Abraham Lincoln ''
+Begin Reference: lt:Abraham Lincoln
+End Reference: lt:Abraham Lincoln
 Text: '
 '
-Reference: hu:Abraham Lincoln ''
+Begin Reference: hu:Abraham Lincoln
+End Reference: hu:Abraham Lincoln
 Text: '
 '
-Reference: mk:Абрахам Линколн ''
+Begin Reference: mk:Абрахам Линколн
+End Reference: mk:Абрахам Линколн
 Text: '
 '
-Reference: ml:അബ്രഹാം ലിങ്കൺ ''
+Begin Reference: ml:അബ്രഹാം ലിങ്കൺ
+End Reference: ml:അബ്രഹാം ലിങ്കൺ
 Text: '
 '
-Reference: mi:Abraham Lincoln ''
+Begin Reference: mi:Abraham Lincoln
+End Reference: mi:Abraham Lincoln
 Text: '
 '
-Reference: mr:अब्राहम लिंकन ''
+Begin Reference: mr:अब्राहम लिंकन
+End Reference: mr:अब्राहम लिंकन
 Text: '
 '
-Reference: xmf:აბრაამ ლინკოლნი ''
+Begin Reference: xmf:აბრაამ ლინკოლნი
+End Reference: xmf:აბრაამ ლინკოლნი
 Text: '
 '
-Reference: arz:ابراهام لينكولن ''
+Begin Reference: arz:ابراهام لينكولن
+End Reference: arz:ابراهام لينكولن
 Text: '
 '
-Reference: mzn:آبراهام لینکلن ''
+Begin Reference: mzn:آبراهام لینکلن
+End Reference: mzn:آبراهام لینکلن
 Text: '
 '
-Reference: ms:Abraham Lincoln ''
+Begin Reference: ms:Abraham Lincoln
+End Reference: ms:Abraham Lincoln
 Text: '
 '
-Reference: my:အေဘရာဟမ် လင်ကွန်း ''
+Begin Reference: my:အေဘရာဟမ် လင်ကွန်း
+End Reference: my:အေဘရာဟမ် လင်ကွန်း
 Text: '
 '
-Reference: nah:Abraham Lincoln ''
+Begin Reference: nah:Abraham Lincoln
+End Reference: nah:Abraham Lincoln
 Text: '
 '
-Reference: nl:Abraham Lincoln ''
+Begin Reference: nl:Abraham Lincoln
+End Reference: nl:Abraham Lincoln
 Text: '
 '
-Reference: ne:अब्राहम लिंकन ''
+Begin Reference: ne:अब्राहम लिंकन
+End Reference: ne:अब्राहम लिंकन
 Text: '
 '
-Reference: ja:エイブラハム・リンカーン ''
+Begin Reference: ja:エイブラハム・リンカーン
+End Reference: ja:エイブラハム・リンカーン
 Text: '
 '
-Reference: nap:Abraham Lincoln ''
+Begin Reference: nap:Abraham Lincoln
+End Reference: nap:Abraham Lincoln
 Text: '
 '
-Reference: no:Abraham Lincoln ''
+Begin Reference: no:Abraham Lincoln
+End Reference: no:Abraham Lincoln
 Text: '
 '
-Reference: nn:Abraham Lincoln ''
+Begin Reference: nn:Abraham Lincoln
+End Reference: nn:Abraham Lincoln
 Text: '
 '
-Reference: oc:Abraham Lincoln ''
+Begin Reference: oc:Abraham Lincoln
+End Reference: oc:Abraham Lincoln
 Text: '
 '
-Reference: uz:Abraham Lincoln ''
+Begin Reference: uz:Abraham Lincoln
+End Reference: uz:Abraham Lincoln
 Text: '
 '
-Reference: pnb:ابراہام لنکن ''
+Begin Reference: pnb:ابراہام لنکن
+End Reference: pnb:ابراہام لنکن
 Text: '
 '
-Reference: pap:Abraham Lincoln ''
+Begin Reference: pap:Abraham Lincoln
+End Reference: pap:Abraham Lincoln
 Text: '
 '
-Reference: km:អាប្រាហាម លីនខូន ''
+Begin Reference: km:អាប្រាហាម លីនខូន
+End Reference: km:អាប្រាហាម លីនខូន
 Text: '
 '
-Reference: pms:Abraham Lincoln ''
+Begin Reference: pms:Abraham Lincoln
+End Reference: pms:Abraham Lincoln
 Text: '
 '
-Reference: nds:Abraham Lincoln ''
+Begin Reference: nds:Abraham Lincoln
+End Reference: nds:Abraham Lincoln
 Text: '
 '
-Reference: pl:Abraham Lincoln ''
+Begin Reference: pl:Abraham Lincoln
+End Reference: pl:Abraham Lincoln
 Text: '
 '
-Reference: pt:Abraham Lincoln ''
+Begin Reference: pt:Abraham Lincoln
+End Reference: pt:Abraham Lincoln
 Text: '
 '
-Reference: ro:Abraham Lincoln ''
+Begin Reference: ro:Abraham Lincoln
+End Reference: ro:Abraham Lincoln
 Text: '
 '
-Reference: rm:Abraham Lincoln ''
+Begin Reference: rm:Abraham Lincoln
+End Reference: rm:Abraham Lincoln
 Text: '
 '
-Reference: qu:Abraham Lincoln ''
+Begin Reference: qu:Abraham Lincoln
+End Reference: qu:Abraham Lincoln
 Text: '
 '
-Reference: rue:Абрагам Лінколн ''
+Begin Reference: rue:Абрагам Лінколн
+End Reference: rue:Абрагам Лінколн
 Text: '
 '
-Reference: ru:Линкольн, Авраам ''
+Begin Reference: ru:Линкольн, Авраам
+End Reference: ru:Линкольн, Авраам
 Text: '
 '
-Reference: sco:Abraham Lincoln ''
+Begin Reference: sco:Abraham Lincoln
+End Reference: sco:Abraham Lincoln
 Text: '
 '
-Reference: sq:Abraham Lincoln ''
+Begin Reference: sq:Abraham Lincoln
+End Reference: sq:Abraham Lincoln
 Text: '
 '
-Reference: scn:Abraham Lincoln ''
+Begin Reference: scn:Abraham Lincoln
+End Reference: scn:Abraham Lincoln
 Text: '
 '
-Reference: simple:Abraham Lincoln ''
+Begin Reference: simple:Abraham Lincoln
+End Reference: simple:Abraham Lincoln
 Text: '
 '
-Reference: sk:Abraham Lincoln ''
+Begin Reference: sk:Abraham Lincoln
+End Reference: sk:Abraham Lincoln
 Text: '
 '
-Reference: sl:Abraham Lincoln ''
+Begin Reference: sl:Abraham Lincoln
+End Reference: sl:Abraham Lincoln
 Text: '
 '
-Reference: sr:Абрахам Линколн ''
+Begin Reference: sr:Абрахам Линколн
+End Reference: sr:Абрахам Линколн
 Text: '
 '
-Reference: sh:Abraham Lincoln ''
+Begin Reference: sh:Abraham Lincoln
+End Reference: sh:Abraham Lincoln
 Text: '
 '
-Reference: fi:Abraham Lincoln ''
+Begin Reference: fi:Abraham Lincoln
+End Reference: fi:Abraham Lincoln
 Text: '
 '
-Reference: sv:Abraham Lincoln ''
+Begin Reference: sv:Abraham Lincoln
+End Reference: sv:Abraham Lincoln
 Text: '
 '
-Reference: tl:Abraham Lincoln ''
+Begin Reference: tl:Abraham Lincoln
+End Reference: tl:Abraham Lincoln
 Text: '
 '
-Reference: ta:ஆபிரகாம் லிங்கன் ''
+Begin Reference: ta:ஆபிரகாம் லிங்கன்
+End Reference: ta:ஆபிரகாம் லிங்கன்
 Text: '
 '
-Reference: tt:Авраам Линкольн ''
+Begin Reference: tt:Авраам Линкольн
+End Reference: tt:Авраам Линкольн
 Text: '
 '
-Reference: te:అబ్రహం లింకన్ ''
+Begin Reference: te:అబ్రహం లింకన్
+End Reference: te:అబ్రహం లింకన్
 Text: '
 '
-Reference: th:เอบราฮัม ลิงเคิล์น ''
+Begin Reference: th:เอบราฮัม ลิงเคิล์น
+End Reference: th:เอบราฮัม ลิงเคิล์น
 Text: '
 '
-Reference: tg:Авраҳам Линколн ''
+Begin Reference: tg:Авраҳам Линколн
+End Reference: tg:Авраҳам Линколн
 Text: '
 '
-Reference: tr:Abraham Lincoln ''
+Begin Reference: tr:Abraham Lincoln
+End Reference: tr:Abraham Lincoln
 Text: '
 '
-Reference: uk:Авраам Лінкольн ''
+Begin Reference: uk:Авраам Лінкольн
+End Reference: uk:Авраам Лінкольн
 Text: '
 '
-Reference: ur:ابراہام لنکن ''
+Begin Reference: ur:ابراہام لنکن
+End Reference: ur:ابراہام لنکن
 Text: '
 '
-Reference: za:Linzgenj ''
+Begin Reference: za:Linzgenj
+End Reference: za:Linzgenj
 Text: '
 '
-Reference: vi:Abraham Lincoln ''
+Begin Reference: vi:Abraham Lincoln
+End Reference: vi:Abraham Lincoln
 Text: '
 '
-Reference: war:Abraham Lincoln ''
+Begin Reference: war:Abraham Lincoln
+End Reference: war:Abraham Lincoln
 Text: '
 '
-Reference: yi:אברהם לינקאלן ''
+Begin Reference: yi:אברהם לינקאלן
+End Reference: yi:אברהם לינקאלן
 Text: '
 '
-Reference: yo:Abraham Lincoln ''
+Begin Reference: yo:Abraham Lincoln
+End Reference: yo:Abraham Lincoln
 Text: '
 '
-Reference: zh-yue:林肯 ''
+Begin Reference: zh-yue:林肯
+End Reference: zh-yue:林肯
 Text: '
 '
-Reference: bat-smg:Abrahams Lėnkuolns ''
+Begin Reference: bat-smg:Abrahams Lėnkuolns
+End Reference: bat-smg:Abrahams Lėnkuolns
 Text: '
 '
-Reference: zh:亚伯拉罕·林肯 ''
+Begin Reference: zh:亚伯拉罕·林肯
+End Reference: zh:亚伯拉罕·林肯
 End Document

@@ -17,11 +17,6 @@ public class TagReader {
 
     private final Stack<StackElement> tagStack = new Stack<>();
 
-    private int cursorPosition;
-    private boolean closeTag;
-    private boolean waitingTagName;
-    private String tagName;
-
     protected static int attributeValueScanner(String content, int index, final StringBuilder out) {
         boolean withinQuotes = false;
         char c;
@@ -88,37 +83,47 @@ public class TagReader {
     }
 
     public void readNode(ParserReader r) throws IOException {
+        boolean closeTag       = false;
+        boolean waitingTagName = true;
+        String tagName         = null;
+        int cursorPosition     = -1;
         tagContent.delete(0, tagContent.length());
-        closeTag = false;
-        waitingTagName = true;
-        tagName = null;
-        cursorPosition = 0;
 
         char c;
-
         c = r.read();
+        cursorPosition++;
         if(c != '<') throw new IllegalStateException();
 
         while (true) {
+            r.mark();
             c = r.read();
+            cursorPosition++;
 
-            if('-' == c && waitingTagName) {
+            if(cursorPosition == 1 && '!' == c) {
                 c = r.read();
-                if('-' == c) {
-                    readUntilCloseComment(r);
-                } else {
-                    handler.parseWarning("Invalid begin tag sequence: '<-" + c + "'", r.getLocation());
+                cursorPosition++;
+                if ('-' == c) {
+                    c = r.read();
+                    cursorPosition++;
+                    if ('-' == c) {
+                        readUntilCloseComment(r);
+                    } else {
+                        handler.parseWarning("Invalid begin tag sequence: '<-" + c + "'", r.getLocation());
+                    }
                 }
                 break;
-            } else if (c == ' ' && waitingTagName) {
+            }
+
+            if (c == ' ' && waitingTagName) {
                 tagName = tagContent.toString();
                 tagContent.delete(0, tagContent.length());
                 waitingTagName = false;
             } else if (c == '/') {
-                if (cursorPosition == 0) {
+                if (cursorPosition == 1) {
                     closeTag = true;
                 } else { // Inline
                     c = r.read();
+                    cursorPosition++;
                     if('>' == c) {
                         if (waitingTagName) {
                             tagName = tagContent.toString();
@@ -145,10 +150,12 @@ public class TagReader {
                     pushTag(tagName, attributeKeyValueScanner(content));
                 }
                 break;
+            } else if(waitingTagName && ! Character.isJavaIdentifierPart(c)) {
+                r.reset();
+                break;
             } else {
                 tagContent.append(c);
             }
-            cursorPosition++;
         }
     }
 
@@ -241,4 +248,5 @@ public class TagReader {
             return String.format("node: %s attributes: %s", node, Arrays.asList(attributes));
         }
     }
+
 }

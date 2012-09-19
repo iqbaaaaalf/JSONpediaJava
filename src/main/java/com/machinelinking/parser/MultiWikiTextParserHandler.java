@@ -48,15 +48,20 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
         for(WikiTextParserHandler handler : handlers) {
             handler.section(title, level);
         }
-
     }
 
     @Override
-    public void reference(String label, String description) {
-        for(WikiTextParserHandler handler : handlers) {
-            handler.reference(label, description);
+    public void beginReference(String label) {
+        for (WikiTextParserHandler handler : handlers) {
+            handler.beginReference(label);
         }
+    }
 
+    @Override
+    public void endReference(String label) {
+        for (WikiTextParserHandler handler : handlers) {
+            handler.endReference(label);
+        }
     }
 
     @Override
@@ -64,7 +69,6 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
         for(WikiTextParserHandler handler : handlers) {
             handler.link(url, description);
         }
-
     }
 
     @Override
@@ -72,7 +76,6 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
         for(WikiTextParserHandler handler : handlers) {
             handler.beginList();
         }
-
     }
 
     @Override
@@ -80,7 +83,6 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
         for(WikiTextParserHandler handler : handlers) {
             handler.listItem();
         }
-
     }
 
     @Override

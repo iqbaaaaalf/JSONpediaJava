@@ -33,11 +33,15 @@ Text: 'Americathebeautiful.jpg
 '
 k: Caption        
 Text: 'Commemoration plaque atop '
-Reference: Pikes Peak ''
+Begin Reference: Pikes Peak
+End Reference: Pikes Peak
 Text: '
 '
 k: Type           
-Reference: Patriotic song 'Patriotic'
+Begin Reference: Patriotic song
+k: null
+Text: 'Patriotic'
+End Reference: Patriotic song
 Text: '
 '
 k: Artist         
@@ -52,11 +56,13 @@ k: Recorded
 k: Genre          
 k: Length         
 k: Writer         
-Reference: Katharine Lee Bates ''
+Begin Reference: Katharine Lee Bates
+End Reference: Katharine Lee Bates
 Text: '
 '
 k: Composer       
-Reference: Samuel A. Ward ''
+Begin Reference: Samuel A. Ward
+End Reference: Samuel A. Ward
 Text: '
 '
 k: Label          
@@ -97,10 +103,12 @@ k: title
 Text: '"America the Beautiful"'
 k: description
 Text: 'Performed by the '
-Reference: United States Navy Band ''
+Begin Reference: United States Navy Band
+End Reference: United States Navy Band
 Text: ' and Sea Chanters, arr. Carmen Dragon'
 k: format
-Reference: Ogg ''
+Begin Reference: Ogg
+End Reference: Ogg
 Text: '
 '
 k: filename2
@@ -110,34 +118,53 @@ k: title2
 Text: '"America The Beautiful"
 '
 k: description2
-Reference: United States Army Band ''
+Begin Reference: United States Army Band
+End Reference: United States Army Band
 Text: ' Brass version
 '
 k: filetype2
-Reference: Ogg ''
+Begin Reference: Ogg
+End Reference: Ogg
 Text: '
 '
 End Template: Listen
 Text: '
  '
-Reference: File:5 America, the Beautiful.png 'right|thumb|300px|Sheet music version'
+Begin Reference: File:5 America, the Beautiful.png
+k: null
+Text: 'right'
+k: null
+Text: 'thumb'
+k: null
+Text: '300px'
+k: null
+Text: 'Sheet music version'
+End Reference: File:5 America, the Beautiful.png
 Text: '
 "'''America the Beautiful'''" is an '
-Reference: United States 'American'
+Begin Reference: United States
+k: null
+Text: 'American'
+End Reference: United States
 Text: ' '
-Reference: patriotic song ''
+Begin Reference: patriotic song
+End Reference: patriotic song
 Text: '. The lyrics were written by '
-Reference: Katharine Lee Bates ''
+Begin Reference: Katharine Lee Bates
+End Reference: Katharine Lee Bates
 Text: ' and the music composed by church organist and choirmaster '
-Reference: Samuel A. Ward ''
+Begin Reference: Samuel A. Ward
+End Reference: Samuel A. Ward
 Text: '.
 
 Bates originally wrote the words as a poem, ''Pikes Peak'', first published in the '
-Reference: Fourth of July ''
+Begin Reference: Fourth of July
+End Reference: Fourth of July
 Text: ' edition of the church periodical ''The Congregationalist'' in 1895. At that time, the poem was titled ''America'' for publication.
 
 Ward had originally written the music, ''Materna'', for the hymn '''
-Reference: O Mother dear, Jerusalem ''
+Begin Reference: O Mother dear, Jerusalem
+End Reference: O Mother dear, Jerusalem
 Text: ''' in 1882. Ward's music combined with the Bates poem was first published in 1910 and titled ''America the Beautiful''.
 
 The song is one of the most beloved and popular of the many American patriotic songs.'
@@ -159,9 +186,11 @@ Text: '2011-08-20'
 End Template: cite web
 Close Tag: ref
 Text: ' From time to time it has been proposed as a replacement for '''
-Reference: The Star-Spangled Banner ''
+Begin Reference: The Star-Spangled Banner
+End Reference: The Star-Spangled Banner
 Text: ''' as the national anthem, including television '
-Reference: sign-off ''
+Begin Reference: sign-off
+End Reference: sign-off
 Text: 's.'
 Begin Template: citation needed
 k: date
@@ -173,31 +202,44 @@ Text: '
 Section [0] History
 Text: '
 In 1893, at the age of thirty-three, Bates, an English professor at '
-Reference: Wellesley College ''
+Begin Reference: Wellesley College
+End Reference: Wellesley College
 Text: ', had taken a train trip to '
-Reference: Colorado Springs, Colorado 'Colorado Springs'
+Begin Reference: Colorado Springs, Colorado
+k: null
+Text: 'Colorado Springs'
+End Reference: Colorado Springs, Colorado
 Text: ', Colorado, to teach a short summer school session at '
-Reference: Colorado College ''
+Begin Reference: Colorado College
+End Reference: Colorado College
 Text: '. Several of the sights on her trip inspired her, and they found their way into her poem, including the '
-Reference: World's Columbian Exposition ''
+Begin Reference: World's Columbian Exposition
+End Reference: World's Columbian Exposition
 Text: ' in '
-Reference: Chicago ''
+Begin Reference: Chicago
+End Reference: Chicago
 Text: ', the "White City" with its promise of the future contained within its alabaster buildings; the wheat fields of America's heartland '
-Reference: Kansas ''
+Begin Reference: Kansas
+End Reference: Kansas
 Text: ', through which her train was riding on July 16; and the majestic view of the '
-Reference: Great Plains ''
+Begin Reference: Great Plains
+End Reference: Great Plains
 Text: ' from high atop Zebulon's '
-Reference: Pikes Peak ''
+Begin Reference: Pikes Peak
+End Reference: Pikes Peak
 Text: '.
 
 On the pinnacle of that mountain, the words of the poem started to come to her, and she wrote them down upon returning to her hotel room at the original Antlers Hotel. The poem was initially published two years later in ''The Congregationalist,'' to commemorate the Fourth of July. It quickly caught the public's fancy. Amended versions were published in 1904 and 1913.
 
 Several existing pieces of music were adapted to the poem. A '
-Reference: hymn tune ''
+Begin Reference: hymn tune
+End Reference: hymn tune
 Text: ' composed by Samuel A. Ward was generally considered the best music as early as 1910 and is still the popular tune today. Just as Bates had been inspired to write her poem, Ward too was inspired to compose his tune. The tune came to him while he was on a ferryboat trip from '
-Reference: Coney Island ''
+Begin Reference: Coney Island
+End Reference: Coney Island
 Text: ' back to his home in '
-Reference: New York City ''
+Begin Reference: New York City
+End Reference: New York City
 Text: ', after a leisurely summer day in 1882, and he immediately wrote it down. He was so anxious to capture the tune in his head, he asked fellow passenger friend Harry Martin for his shirt cuff to write the tune on. He composed the tune for the old hymn "O Mother Dear, Jerusalem", retitling the work "Materna". Ward's music combined with Bates' poem were first published together in 1910 and titled, ''America the Beautiful''.'
 Open Tag: ref attributes: [name : 'Collins']
 Begin Template: cite book
@@ -233,19 +275,26 @@ Text: '
 Ward died in 1903, not knowing the national stature his music would attain, as the music was only first applied to the song in 1904. Bates was more fortunate, as the song's popularity was well established by her death in 1929.
 
 At various times in the more than 100 years that have elapsed since the song was written, particularly during the '
-Reference: John F. Kennedy ''
+Begin Reference: John F. Kennedy
+End Reference: John F. Kennedy
 Text: ' administration, there have been efforts to give "America the Beautiful" legal status either as a national hymn, or as a national anthem equal to, or in place of, "'
-Reference: The Star-Spangled Banner ''
+Begin Reference: The Star-Spangled Banner
+End Reference: The Star-Spangled Banner
 Text: '", but so far this has not succeeded. Proponents prefer "America the Beautiful" for various reasons, saying it is easier to sing, more melodic, and more adaptable to new orchestrations while still remaining as easily recognizable as "The Star-Spangled Banner." Some prefer "America the Beautiful" over "The Star-Spangled Banner" due to the latter's war-oriented imagery. Others prefer "The Star-Spangled Banner" for the same reason. While that national dichotomy has stymied any effort at changing the tradition of the national anthem, "America the Beautiful" continues to be held in high esteem by a large number of Americans.
 
 When '
-Reference: Richard Nixon ''
+Begin Reference: Richard Nixon
+End Reference: Richard Nixon
 Text: ' visited '
-Reference: China ''
+Begin Reference: China
+End Reference: China
 Text: ' in 1972, this song was played as the welcome music.
 
 The song is often included in songbooks in a wide variety of '
-Reference: religion 'religious'
+Begin Reference: religion
+k: null
+Text: 'religious'
+End Reference: religion
 Text: ' congregations in the United States.
 
 '
@@ -336,13 +385,16 @@ Text: '
 Section [0] Popular versions
 Text: '
 Possibly the most notable current version of "America the Beautiful" is the setting for band and symphonic orchestra by the late arranger/conductor/composer '
-Reference: Carmen Dragon ''
+Begin Reference: Carmen Dragon
+End Reference: Carmen Dragon
 Text: '.  Performed thousands of times in recent years, Mr. Dragon's arrangement has been played for state occasions such as the memorial services for Presidents Ford and Reagan and at tribute concerts for events such as the Oklahoma City bombing and 9/11.
 
 Three different renditions of the song have entered the '
-Reference: Hot Country Songs ''
+Begin Reference: Hot Country Songs
+End Reference: Hot Country Songs
 Text: ' charts. The first was by '
-Reference: Charlie Rich ''
+Begin Reference: Charlie Rich
+End Reference: Charlie Rich
 Text: ', which went to number 22 in 1976.'
 Open Tag: ref attributes: [name : 'whitburn']
 Begin Template: cite book
@@ -363,37 +415,53 @@ Text: '0-89820-177-2'
 End Template: cite book
 Close Tag: ref
 Text: ' A second, by '
-Reference: Mickey Newbury ''
+Begin Reference: Mickey Newbury
+End Reference: Mickey Newbury
 Text: ', peaked at number 82 in 1980.'
 Open Tag: ref attributes: []
 Text: 'Whitburn, p. 297'
 Close Tag: ref
 Text: ' An '
-Reference: all-star ''
+Begin Reference: all-star
+End Reference: all-star
 Text: ' version of "America the Beautiful" performed by '
-Reference: country music 'country'
+Begin Reference: country music
+k: null
+Text: 'country'
+End Reference: country music
 Text: ' singers '
-Reference: Trace Adkins ''
+Begin Reference: Trace Adkins
+End Reference: Trace Adkins
 Text: ', '
-Reference: Billy Dean ''
+Begin Reference: Billy Dean
+End Reference: Billy Dean
 Text: ', '
-Reference: Vince Gill ''
+Begin Reference: Vince Gill
+End Reference: Vince Gill
 Text: ', '
-Reference: Carolyn Dawn Johnson ''
+Begin Reference: Carolyn Dawn Johnson
+End Reference: Carolyn Dawn Johnson
 Text: ', '
-Reference: Toby Keith ''
+Begin Reference: Toby Keith
+End Reference: Toby Keith
 Text: ', '
-Reference: Brenda Lee ''
+Begin Reference: Brenda Lee
+End Reference: Brenda Lee
 Text: ', '
-Reference: Lonestar ''
+Begin Reference: Lonestar
+End Reference: Lonestar
 Text: ', '
-Reference: Martina McBride ''
+Begin Reference: Martina McBride
+End Reference: Martina McBride
 Text: ', '
-Reference: Jamie O'Neal ''
+Begin Reference: Jamie O'Neal
+End Reference: Jamie O'Neal
 Text: ', '
-Reference: Kenny Rogers ''
+Begin Reference: Kenny Rogers
+End Reference: Kenny Rogers
 Text: ' and '
-Reference: Keith Urban ''
+Begin Reference: Keith Urban
+End Reference: Keith Urban
 Text: ' reached number 58 in July 2001. The song re-entered the chart following the September 11 terrorist attacks.'
 Open Tag: ref attributes: []
 Text: 'Whitburn, p. 24'
@@ -401,11 +469,16 @@ Close Tag: ref
 Text: '
 
 Popularity of the song increased greatly following the '
-Reference: September 11 attacks 'September 11, 2001 attacks'
+Begin Reference: September 11 attacks
+k: null
+Text: 'September 11, 2001 attacks'
+End Reference: September 11 attacks
 Text: '; at some sporting events it was sung in addition to the traditional singing of the national anthem.  During the first taping of the '''
-Reference: Late Show with David Letterman ''
+Begin Reference: Late Show with David Letterman
+End Reference: Late Show with David Letterman
 Text: ''' following the attacks, CBS newsman '
-Reference: Dan Rather ''
+Begin Reference: Dan Rather
+End Reference: Dan Rather
 Text: ' cried briefly as he quoted the fourth verse.'
 Open Tag: ref attributes: []
 Begin Template: cite news 
@@ -426,35 +499,52 @@ Close Tag: ref
 Text: '
 
 '
-Reference: Ray Charles ''
+Begin Reference: Ray Charles
+End Reference: Ray Charles
 Text: ' is credited with the song's most well known rendition in current times (although '
-Reference: Elvis Presley ''
+Begin Reference: Elvis Presley
+End Reference: Elvis Presley
 Text: ' had success with it in the 1970s). Charles' recording is very commonly played at major sporting and entertainment events, such as the '
-Reference: Super Bowl ''
+Begin Reference: Super Bowl
+End Reference: Super Bowl
 Text: ', and '
-Reference: WrestleMania ''
+Begin Reference: WrestleMania
+End Reference: WrestleMania
 Text: '; Charles gave a live performance of the song prior to '
-Reference: Super Bowl XXXV ''
+Begin Reference: Super Bowl XXXV
+End Reference: Super Bowl XXXV
 Text: ', the last Super Bowl played before the September 11 terrorist attacks. He places the third verse first, after which he sings the usual first verse. In the third verse (see above), the author scolds the materialistic and self-serving '
-Reference: robber baron (industrialist) 'robber barons'
+Begin Reference: robber baron (industrialist)
+k: null
+Text: 'robber barons'
+End Reference: robber baron (industrialist)
 Text: ' of her day, and urges America to live up to its noble ideals and to honor, with both word and deed, the memory of those who died for their country. He also performed the song on Red Sox opening day at Fenway Park in 2003, though the game was eventually '
-Reference: Rainout (sports) 'rained out'
+Begin Reference: Rainout (sports)
+k: null
+Text: 'rained out'
+End Reference: Rainout (sports)
 Text: '.  A version with '
-Reference: Alicia Keys ''
+Begin Reference: Alicia Keys
+End Reference: Alicia Keys
 Text: ' was included in Charles' 2005 duets album '''
-Reference: Genius & Friends ''
+Begin Reference: Genius & Friends
+End Reference: Genius & Friends
 Text: '''.
 
 Symbolically, '
-Reference: Marian Anderson ''
+Begin Reference: Marian Anderson
+End Reference: Marian Anderson
 Text: ' (a noted opera singer of her day) sang a rendition of "America the Beautiful" on the steps of the '
-Reference: Lincoln Memorial ''
+Begin Reference: Lincoln Memorial
+End Reference: Lincoln Memorial
 Text: ' in 1939 after being refused use of Constitution Hall by the '
-Reference: Daughters of the American Revolution ''
+Begin Reference: Daughters of the American Revolution
+End Reference: Daughters of the American Revolution
 Text: ' because of her skin color.
 
 In 2009, on her album ''Running for the Drum'', '
-Reference: Buffy Sainte-Marie ''
+Begin Reference: Buffy Sainte-Marie
+End Reference: Buffy Sainte-Marie
 Text: ' released a new version of "America the Beautiful".  Her version contained some new lyrics, as well as a small modification of the melody.  This version includes only two verses, the second of which is original.
 
 :O beautiful for vision clear,
@@ -475,39 +565,55 @@ Wellesley students honor Bates with a version at graduation, substituting
 :From sea to shining sea.
 
 In 2008 '
-Reference: Christina Aguilera ''
+Begin Reference: Christina Aguilera
+End Reference: Christina Aguilera
 Text: ' covered this song for a '
-Reference: Rock the Vote ''
+Begin Reference: Rock the Vote
+End Reference: Rock the Vote
 Text: ' commercial
 
 '
 Section [0] Idioms
 Text: '
 '''"From sea to shining sea"''' is an '
-Reference: United States 'American'
+Begin Reference: United States
+k: null
+Text: 'American'
+End Reference: United States
 Text: ' '
-Reference: idiom ''
+Begin Reference: idiom
+End Reference: idiom
 Text: ' meaning from the '
-Reference: Atlantic Ocean ''
+Begin Reference: Atlantic Ocean
+End Reference: Atlantic Ocean
 Text: ' to the '
-Reference: Pacific Ocean ''
+Begin Reference: Pacific Ocean
+End Reference: Pacific Ocean
 Text: ' (or vice versa).  Many songs have used this term, including the American patriotic songs "America, The Beautiful" and "'
-Reference: God Bless the USA ''
+Begin Reference: God Bless the USA
+End Reference: God Bless the USA
 Text: '".  In addition to these, it is also featured in '
-Reference: Schoolhouse Rock ''
+Begin Reference: Schoolhouse Rock
+End Reference: Schoolhouse Rock
 Text: ''s "Elbow Room".  A term similar to this is the '
-Reference: Canada 'Canadian'
+Begin Reference: Canada
+k: null
+Text: 'Canadian'
+End Reference: Canada
 Text: ' motto '''
-Reference: A Mari Usque Ad Mare ''
+Begin Reference: A Mari Usque Ad Mare
+End Reference: A Mari Usque Ad Mare
 Text: ''' ("From sea to sea.")
 
 '
 Section [0] Books
 Text: '
 *'
-Reference: Lynn Sherr ''
+Begin Reference: Lynn Sherr
+End Reference: Lynn Sherr
 Text: ''s 2001 book ''America the Beautiful'' discusses the origins of the song and the backgrounds of its authors in depth. The book points out that the poem has the same meter as that of "'
-Reference: Auld Lang Syne ''
+Begin Reference: Auld Lang Syne
+End Reference: Auld Lang Syne
 Text: '"; the songs can be sung interchangeably. Additionally, Sherr points out that this was the original third verse written by Bates:'
 Open Tag: ref attributes: [name : 'Sherr']
 Begin Template: cite book
@@ -591,54 +697,71 @@ Begin Template: DEFAULTSORT:America The Beautiful
 End Template: DEFAULTSORT:America The Beautiful
 Text: '
 '
-Reference: Category:American patriotic songs ''
+Begin Reference: Category:American patriotic songs
+End Reference: Category:American patriotic songs
 Text: '
 '
-Reference: Category:1895 songs ''
+Begin Reference: Category:1895 songs
+End Reference: Category:1895 songs
 Text: '
 '
-Reference: Category:Pikes Peak ''
+Begin Reference: Category:Pikes Peak
+End Reference: Category:Pikes Peak
 Text: '
 '
-Reference: Category:Elvis Presley songs ''
+Begin Reference: Category:Elvis Presley songs
+End Reference: Category:Elvis Presley songs
 Text: '
 '
-Reference: Category:Charlie Rich songs ''
+Begin Reference: Category:Charlie Rich songs
+End Reference: Category:Charlie Rich songs
 Text: '
 '
-Reference: Category:Ray Charles songs ''
+Begin Reference: Category:Ray Charles songs
+End Reference: Category:Ray Charles songs
 Text: '
 '
-Reference: Category:Barbra Streisand songs ''
+Begin Reference: Category:Barbra Streisand songs
+End Reference: Category:Barbra Streisand songs
 Text: '
 '
-Reference: Category:Mormon Tabernacle Choir songs ''
+Begin Reference: Category:Mormon Tabernacle Choir songs
+End Reference: Category:Mormon Tabernacle Choir songs
 Text: '
 
 '
-Reference: de:America the Beautiful ''
+Begin Reference: de:America the Beautiful
+End Reference: de:America the Beautiful
 Text: '
 '
-Reference: es:America The Beautiful ''
+Begin Reference: es:America The Beautiful
+End Reference: es:America The Beautiful
 Text: '
 '
-Reference: fr:America the Beautiful (hymne) ''
+Begin Reference: fr:America the Beautiful (hymne)
+End Reference: fr:America the Beautiful (hymne)
 Text: '
 '
-Reference: nl:America the Beautiful ''
+Begin Reference: nl:America the Beautiful
+End Reference: nl:America the Beautiful
 Text: '
 '
-Reference: pl:America the Beautiful ''
+Begin Reference: pl:America the Beautiful
+End Reference: pl:America the Beautiful
 Text: '
 '
-Reference: pt:America the Beautiful ''
+Begin Reference: pt:America the Beautiful
+End Reference: pt:America the Beautiful
 Text: '
 '
-Reference: ru:America the Beautiful ''
+Begin Reference: ru:America the Beautiful
+End Reference: ru:America the Beautiful
 Text: '
 '
-Reference: vi:America the Beautiful ''
+Begin Reference: vi:America the Beautiful
+End Reference: vi:America the Beautiful
 Text: '
 '
-Reference: zh:美丽的阿美利加 ''
+Begin Reference: zh:美丽的阿美利加
+End Reference: zh:美丽的阿美利加
 End Document

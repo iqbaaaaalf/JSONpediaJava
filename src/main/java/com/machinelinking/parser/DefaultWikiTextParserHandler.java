@@ -24,7 +24,11 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void reference(String label, String description) {
+    public void beginReference(String label) {
+    }
+
+    @Override
+    public void endReference(String label) {
     }
 
     @Override

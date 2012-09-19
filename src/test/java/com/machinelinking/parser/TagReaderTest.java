@@ -4,10 +4,12 @@ import com.machinelinking.pagestruct.WikiTextHRDumperHandler;
 import junit.framework.Assert;
 import org.junit.Test;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.Arrays;
 import java.util.List;
 
@@ -103,12 +105,23 @@ public class TagReaderTest {
         Assert.assertEquals("[node: br attributes: []]", stack.toString());
     }
 
+    @Test
+    public void testInvalidCloseSequenceDetection() throws IOException {
+        final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(false);
+        final TagReader reader = new TagReader(handler);
+        reader.readNode(new TestParserReader("<]]\n|-\n"));
+        Assert.assertEquals(
+                "",
+                handler.getContent()
+        );
+    }
+
     private class TestParserReader implements ParserReader {
 
-        private final InputStreamReader reader;
+        private final Reader reader;
 
         private TestParserReader(String in) {
-            this.reader = new InputStreamReader(new ByteArrayInputStream(in.getBytes()));
+            this.reader = new BufferedReader( new InputStreamReader(new ByteArrayInputStream(in.getBytes())) );
         }
 
         @Override
@@ -130,7 +143,7 @@ public class TagReaderTest {
 
         @Override
         public ParserLocation getLocation() {
-            return null;
+            return new DefaultParserLocation(0, 0);
         }
     }
 

@@ -26,6 +26,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void beginDocument(URL document) {
+        pushElement(new Document());
         serializer.openObject();
         serializer.fieldValue("__type", "page");
         serializer.fieldValue("url"   , document.toExternalForm());
@@ -43,12 +44,25 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void reference(String label, String description) {
+    public void beginReference(String label) {
+        pushElement( new Reference(label) );
         serializer.openObject();
         serializer.fieldValue("__type", "reference");
         serializer.fieldValue("label", label);
-        serializer.fieldValue("description", description);
+        serializer.field("content");
+        serializer.openObject();
+    }
+
+    @Override
+    public void endReference(String label) {
+        if (peekElement() instanceof ParameterElement) {
+            popElement(ParameterElement.class);
+            serializer.closeList();
+        }
+
         serializer.closeObject();
+        serializer.closeObject();
+        popElement(Reference.class);
     }
 
     @Override
@@ -147,6 +161,8 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         pushElement( new TableElement() );
         serializer.field("content");
         serializer.openList();
+        // serializer.field("header");
+        // serializer.openObject();
     }
 
     @Override
@@ -155,6 +171,11 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
             popElement(ParameterElement.class);
             serializer.closeList();
         }
+//        if (peekElement() instanceof TableElement) {
+//            serializer.closeObject();
+//            serializer.field("content");
+//            serializer.openList();
+//        }
         if( peekElement().getClass().equals(TableCell.class) ) {
             serializer.closeList();
             serializer.closeObject();
@@ -174,6 +195,11 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
             popElement(ParameterElement.class);
             serializer.closeList();
         }
+//        if (peekElement() instanceof TableElement) {
+//            serializer.closeObject();
+//            serializer.field("content");
+//            serializer.openList();
+//        }
         if( peekElement().getClass().equals(TableCell.class) ) {
             serializer.closeList();
             serializer.closeObject();
@@ -189,12 +215,15 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void endTable() {
+//        if (peekElement() instanceof TableElement) {
+//            popElement(TableElement.class);
+//            serializer.closeObject();
+//        }
         if( peekElement().getClass().equals(TableCell.class) ) {
             serializer.closeList();
             serializer.closeObject();
             popElement(TableCell.class);
         }
-
         serializer.closeList();
         serializer.closeObject();
         popElement(TableElement.class);
@@ -236,6 +265,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void endDocument() {
+        popElement(Document.class);
         serializer.closeList();
         serializer.closeObject();
         serializer.flush();
@@ -277,10 +307,16 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.closeList();
     }
 
-    class DocumentElement {
+    abstract class DocumentElement {
         private final String name;
         private DocumentElement(String name) {
             this.name = name;
+        }
+    }
+
+    class Document extends DocumentElement {
+        private Document() {
+            super(null);
         }
     }
 
@@ -311,6 +347,12 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     class TableCell extends DocumentElement {
         private TableCell() {
             super(null);
+        }
+    }
+
+    class Reference extends DocumentElement {
+        private Reference(String name) {
+            super(name);
         }
     }
 

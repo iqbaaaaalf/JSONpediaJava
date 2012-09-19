@@ -19,7 +19,11 @@ public interface WikiTextParserHandler extends TagHandler {
 
     void parseError(Exception e, ParserLocation location);
 
-    void reference(String label, String description);
+    @Push(node="reference", id=0)
+    void beginReference(String label);
+
+    @Pop(node="reference", id=0)
+    void endReference(String label);
 
     void link(String url, String description);
 
