@@ -135,6 +135,10 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void text(String content) {
+        if(peekElement() instanceof TableElement) {
+            serializer.fieldValue("header", content);
+            return;
+        }
         if(content == null) return;
         content = content.trim();
         if(content.length() == 0) return;
@@ -159,25 +163,22 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.openObject();
         serializer.fieldValue("__type", "table");
         pushElement( new TableElement() );
-        serializer.field("content");
-        serializer.openList();
-        // serializer.field("header");
-        // serializer.openObject();
     }
 
     @Override
     public void headCell(int row, int col) {
+        if(peekElement() instanceof TableElement) {
+            serializer.field("content");
+            serializer.openList();
+        }
+
         if (peekElement() instanceof ParameterElement) {
             popElement(ParameterElement.class);
             serializer.closeList();
         }
-//        if (peekElement() instanceof TableElement) {
-//            serializer.closeObject();
-//            serializer.field("content");
-//            serializer.openList();
-//        }
+
         if( peekElement().getClass().equals(TableCell.class) ) {
-            serializer.closeList();
+            serializer.closeObject();
             serializer.closeObject();
             popElement(TableCell.class);
         }
@@ -186,7 +187,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.openObject();
         serializer.fieldValue("__type", "head_cell");
         serializer.field("content");
-        serializer.openList();
+        serializer.openObject();
     }
 
     @Override
@@ -195,13 +196,9 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
             popElement(ParameterElement.class);
             serializer.closeList();
         }
-//        if (peekElement() instanceof TableElement) {
-//            serializer.closeObject();
-//            serializer.field("content");
-//            serializer.openList();
-//        }
+
         if( peekElement().getClass().equals(TableCell.class) ) {
-            serializer.closeList();
+            serializer.closeObject();
             serializer.closeObject();
             popElement(TableCell.class);
         }
@@ -210,20 +207,17 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.openObject();
         serializer.fieldValue("__type", "body_cell");
         serializer.field("content");
-        serializer.openList();
+        serializer.openObject();
     }
 
     @Override
     public void endTable() {
-//        if (peekElement() instanceof TableElement) {
-//            popElement(TableElement.class);
-//            serializer.closeObject();
-//        }
         if( peekElement().getClass().equals(TableCell.class) ) {
-            serializer.closeList();
+            serializer.closeObject();
             serializer.closeObject();
             popElement(TableCell.class);
         }
+
         serializer.closeList();
         serializer.closeObject();
         popElement(TableElement.class);

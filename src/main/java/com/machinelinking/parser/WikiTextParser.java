@@ -498,6 +498,8 @@ public class WikiTextParser implements ParserReader {
         tableRow = tableCol = 1;
         final String header = readTableHeader();
         handler.text(header);
+        handler.headCell(tableRow, tableCol);
+        tableCol++;
         consumeSpaces();
         while(true) {
             ahead = readPropertyValue(TABLE_DELIMITERS, false, false);
@@ -505,7 +507,9 @@ public class WikiTextParser implements ParserReader {
                 mark();
                 handler.endTable();
                 break;
-            } else if(ahead == 2 || ahead == 3) {
+            } else if(ahead == 3) {
+                // Do nothing.
+            } else if(ahead == 2) {
                 mark();
                 handler.headCell(tableRow, tableCol);
                 tableCol++;

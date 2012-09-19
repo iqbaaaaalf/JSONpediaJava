@@ -4,416 +4,382 @@
     "structure": [
         {
             "__type": "table",
-            "header": {
-                "__anon_0": "class=wikitable style=text-align:right",
-                "align": [
-                    "center"
-                ],
-                "__anon_1": {
-                    "__type": "body_cell",
-                    "content": [
-                        {
-                            "align": null
-                        },
-                        [
-                            "right"
-                        ]
-                    ]
-                },
-                "__anon_2": {
-                    "__type": "body_cell",
-                    "content": [
-                        "'''character'''"
-                    ]
-                },
-                "__anon_3": {
-                    "__type": "body_cell",
-                    "content": [
-                        {
-                            "colspan": null
-                        },
-                        [
-                            "2"
-                        ]
-                    ]
-                },
-                "__anon_4": {
-                    "__type": "body_cell",
-                    "content": [
-                        "A"
-                    ]
-                },
-                "__anon_5": {
-                    "__type": "body_cell",
-                    "content": [
-                        {
-                            "colspan": null
-                        },
-                        [
-                            "2"
-                        ]
-                    ]
-                },
-                "__anon_6": {
-                    "__type": "body_cell",
-                    "content": [
-                        "a",
-                        {
-                            "align": null
-                        },
-                        [
+            "header": " class=wikitable style=text-align:right\n",
+            "content": [
+                {
+                    "__type": "head_cell",
+                    "content": {
+                        "align": [
                             "center"
                         ]
-                    ]
+                    }
                 },
-                "__anon_7": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
-                            "align": null
-                        },
-                        [
+                    "content": {
+                        "align": [
                             "right"
                         ]
-                    ]
+                    }
                 },
-                "__anon_8": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "'''Unicode name'''"
-                    ]
+                    "content": {
+                        "__anon_0": "'''character'''"
+                    }
                 },
-                "__anon_9": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
-                            "colspan": null
-                        },
-                        [
+                    "content": {
+                        "colspan": [
                             "2"
                         ]
-                    ]
+                    }
                 },
-                "__anon_10": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
+                    "content": {
+                        "__anon_1": "A"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "colspan": [
+                            "2"
+                        ]
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__anon_2": "a",
+                        "align": [
+                            "center"
+                        ]
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "align": [
+                            "right"
+                        ]
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__anon_3": "'''Unicode name'''"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "colspan": [
+                            "2"
+                        ]
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__anon_4": {
                             "__type": "open_tag",
                             "name": "small",
                             "attributes": null
                         },
-                        "LATIN CAPITAL LETTER A",
-                        {
+                        "__anon_5": "LATIN CAPITAL LETTER A",
+                        "__anon_6": {
                             "__type": "close_tag",
                             "name": "small"
                         }
-                    ]
+                    }
                 },
-                "__anon_11": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
-                            "colspan": null
-                        },
-                        [
+                    "content": {
+                        "colspan": [
                             "2"
                         ]
-                    ]
+                    }
                 },
-                "__anon_12": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
+                    "content": {
+                        "__anon_7": {
                             "__type": "open_tag",
                             "name": "small",
                             "attributes": null
                         },
-                        "LATIN SMALL LETTER A",
-                        {
+                        "__anon_8": "LATIN SMALL LETTER A",
+                        "__anon_9": {
                             "__type": "close_tag",
                             "name": "small"
                         }
-                    ]
+                    }
                 },
-                "__anon_13": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
-                            "align": null
-                        },
-                        [
+                    "content": {
+                        "align": [
                             "left"
                         ]
-                    ]
+                    }
                 },
-                "__anon_14": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "'''character encoding'''"
-                    ]
+                    "content": {
+                        "__anon_10": "'''character encoding'''"
+                    }
                 },
-                "__anon_15": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "decimal"
-                    ]
+                    "content": {
+                        "__anon_11": "decimal"
+                    }
                 },
-                "__anon_16": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "hex"
-                    ]
+                    "content": {
+                        "__anon_12": "hex"
+                    }
                 },
-                "__anon_17": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "decimal"
-                    ]
+                    "content": {
+                        "__anon_13": "decimal"
+                    }
                 },
-                "__anon_18": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "hex"
-                    ]
+                    "content": {
+                        "__anon_14": "hex"
+                    }
                 },
-                "__anon_19": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
-                            "align": null
-                        },
-                        [
+                    "content": {
+                        "align": [
                             "left"
                         ]
-                    ]
+                    }
                 },
-                "__anon_20": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
+                    "content": {
+                        "__anon_15": {
                             "__type": "reference",
                             "label": "Unicode",
                             "content": {}
                         }
-                    ]
+                    }
                 },
-                "__anon_21": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "65"
-                    ]
+                    "content": {
+                        "__anon_16": "65"
+                    }
                 },
-                "__anon_22": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "0041"
-                    ]
+                    "content": {
+                        "__anon_17": "0041"
+                    }
                 },
-                "__anon_23": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "97"
-                    ]
+                    "content": {
+                        "__anon_18": "97"
+                    }
                 },
-                "__anon_24": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "0061"
-                    ]
+                    "content": {
+                        "__anon_19": "0061"
+                    }
                 },
-                "__anon_25": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
-                            "align": null
-                        },
-                        [
+                    "content": {
+                        "align": [
                             "left"
                         ]
-                    ]
+                    }
                 },
-                "__anon_26": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
+                    "content": {
+                        "__anon_20": {
                             "__type": "reference",
                             "label": "UTF-8",
                             "content": {}
                         }
-                    ]
+                    }
                 },
-                "__anon_27": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "65"
-                    ]
+                    "content": {
+                        "__anon_21": "65"
+                    }
                 },
-                "__anon_28": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "41"
-                    ]
+                    "content": {
+                        "__anon_22": "41"
+                    }
                 },
-                "__anon_29": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "97"
-                    ]
+                    "content": {
+                        "__anon_23": "97"
+                    }
                 },
-                "__anon_30": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "61"
-                    ]
+                    "content": {
+                        "__anon_24": "61"
+                    }
                 },
-                "__anon_31": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
-                            "align": null
-                        },
-                        [
+                    "content": {
+                        "align": [
                             "left"
                         ]
-                    ]
+                    }
                 },
-                "__anon_32": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
+                    "content": {
+                        "__anon_25": {
                             "__type": "reference",
                             "label": "Numeric character reference",
                             "content": {}
                         }
-                    ]
+                    }
                 },
-                "__anon_33": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "&amp;#65;"
-                    ]
+                    "content": {
+                        "__anon_26": "&amp;#65;"
+                    }
                 },
-                "__anon_34": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "&amp;#x0041;"
-                    ]
+                    "content": {
+                        "__anon_27": "&amp;#x0041;"
+                    }
                 },
-                "__anon_35": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "&amp;#97;"
-                    ]
+                    "content": {
+                        "__anon_28": "&amp;#97;"
+                    }
                 },
-                "__anon_36": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "&amp;#x0061;"
-                    ]
+                    "content": {
+                        "__anon_29": "&amp;#x0061;"
+                    }
                 },
-                "__anon_37": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
-                            "align": null
-                        },
-                        [
+                    "content": {
+                        "align": [
                             "left"
                         ]
-                    ]
+                    }
                 },
-                "__anon_38": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
+                    "content": {
+                        "__anon_30": {
                             "__type": "reference",
                             "label": "EBCDIC",
                             "content": {}
                         },
-                        "family"
-                    ]
+                        "__anon_31": "family"
+                    }
                 },
-                "__anon_39": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "193"
-                    ]
+                    "content": {
+                        "__anon_32": "193"
+                    }
                 },
-                "__anon_40": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "C1"
-                    ]
+                    "content": {
+                        "__anon_33": "C1"
+                    }
                 },
-                "__anon_41": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "129"
-                    ]
+                    "content": {
+                        "__anon_34": "129"
+                    }
                 },
-                "__anon_42": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "81"
-                    ]
+                    "content": {
+                        "__anon_35": "81"
+                    }
                 },
-                "__anon_43": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
-                            "align": null
-                        },
-                        [
+                    "content": {
+                        "align": [
                             "left"
                         ]
-                    ]
+                    }
                 },
-                "__anon_44": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        {
+                    "content": {
+                        "__anon_36": {
                             "__type": "reference",
                             "label": "ASCII",
                             "content": {}
                         },
-                        {
+                        "__anon_37": {
                             "__type": "open_tag",
                             "name": "sup",
                             "attributes": null
                         },
-                        "1",
-                        {
+                        "__anon_38": "1",
+                        "__anon_39": {
                             "__type": "inline_tag",
                             "name": "sup",
                             "attributes": null
                         }
-                    ]
+                    }
                 },
-                "__anon_45": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "65"
-                    ]
+                    "content": {
+                        "__anon_40": "65"
+                    }
                 },
-                "__anon_46": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "41"
-                    ]
+                    "content": {
+                        "__anon_41": "41"
+                    }
                 },
-                "__anon_47": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "97"
-                    ]
+                    "content": {
+                        "__anon_42": "97"
+                    }
                 },
-                "__anon_48": {
+                {
                     "__type": "body_cell",
-                    "content": [
-                        "61"
-                    ]
+                    "content": {
+                        "__anon_43": "61"
+                    }
                 }
-            }
+            ]
         }
     ]
 }

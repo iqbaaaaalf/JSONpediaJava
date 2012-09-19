@@ -86,12 +86,11 @@ Text: '
 Begin Table
 Text: ' class="wikitable" style="float:right; margin:10px"
 '
+Header Cell (1, 1)
 Text: '+ Sample albedos
 '
-Header Cell (2, 1)
 Text: 'Surface
 '
-Header Cell (2, 2)
 Text: 'Typical'
 Inline Tag: br attributes: []
 Text: 'albedo
