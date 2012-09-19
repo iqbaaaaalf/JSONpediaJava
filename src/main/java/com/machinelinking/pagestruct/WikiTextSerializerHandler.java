@@ -122,30 +122,6 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void parameter(String param) {
-        if( peekElement() instanceof ParameterElement) {
-            popElement(ParameterElement.class);
-            serializer.closeList();
-        }
-        pushElement( new ParameterElement(param) );
-        final String parameterName = param == null ? null : param.trim();
-        serializer.field(parameterName);
-        serializer.openList();
-    }
-
-    @Override
-    public void text(String content) {
-        if(peekElement() instanceof TableElement) {
-            serializer.fieldValue("header", content);
-            return;
-        }
-        if(content == null) return;
-        content = content.trim();
-        if(content.length() == 0) return;
-        serializer.value(content);
-    }
-
-    @Override
     public void endTemplate(String name) {
         // Close last param if any.
         if (peekElement() instanceof ParameterElement) {
@@ -255,6 +231,30 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.fieldValue("__type", "comment_tag");
         serializer.fieldValue("comment", comment);
         serializer.closeObject();
+    }
+
+    @Override
+    public void parameter(String param) {
+        if( peekElement() instanceof ParameterElement) {
+            popElement(ParameterElement.class);
+            serializer.closeList();
+        }
+        pushElement( new ParameterElement(param) );
+        final String parameterName = param == null ? null : param.trim();
+        serializer.field(parameterName);
+        serializer.openList();
+    }
+
+    @Override
+    public void text(String content) {
+        if(peekElement() instanceof TableElement) {
+            serializer.fieldValue("header", content);
+            return;
+        }
+        if(content == null) return;
+        content = content.trim();
+        if(content.length() == 0) return;
+        serializer.value(content);
     }
 
     @Override
