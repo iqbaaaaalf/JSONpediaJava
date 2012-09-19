@@ -51,7 +51,7 @@ public class BasicServer {
                         } else if(uri.endsWith(".css")) {
                             res.setHeader(CONTENT_TYPE, "text/css");
                         } else if(uri.endsWith(".js")) {
-                            res.setHeader(CONTENT_TYPE, "test/javascript");
+                            res.setHeader(CONTENT_TYPE, "text/javascript");
                         }
                         return super.handle(uri, req, res);
                     }
