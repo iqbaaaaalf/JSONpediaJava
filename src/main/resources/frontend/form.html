@@ -79,23 +79,26 @@
                                 '&flags=' + getActiveFlags('get-flags');
             });
             $('#post-submit').click(function () {
-                if($('#get-submit').hasClass('disabled')) return;
+                if($('#post-submit').hasClass('disabled')) return;
                 request = '/annotate/resource/' +
                         $('#post-format option:selected').attr('value') +
                         '/' + encodeURIComponent($('#post-uri').val());
                 $.post( request,
                         {
-                          wikitext : $('#post-wikitext').html(),
+                          wikitext : $('#post-wikitext').val(),
                           filter   : $('#post-filter').val(),
                           flags    : getActiveFlags('post-flags')
                         }
                 )
                         .success(function (data) {
-                            $('body').html(data.result);
+                            $('#post-result').html(JSON.stringify(data));
                         })
                         .error(function (e) {
                             alert('Error while performing request: ' + e)
                         });
+            });
+            $('#post-reset').click(function(){
+                $('#post-result').html('');
             });
         });
 
@@ -142,7 +145,7 @@ Download and install JSONPedia: visit the
 
 <h2>Convert a Resource</h2>
 
-<div class="well form-horizontal" method="get">
+<form class="well form-horizontal">
     <label>Pick an output format and enter the URI of a MediaWiki Resource:</label>
     <div class="control-group">
         <label class="control-label app-base-uri" for="get-format">http://...</label>
@@ -187,12 +190,12 @@ Download and install JSONPedia: visit the
         <button id="get-submit" type="button" class="btn btn-primary">Convert</button>
         <button type="reset" class="btn">Cancel</button>
     </div>
-</div>
+</form>
 <hr/>
 
 <h2>Convert a WikiText</h2>
 
-<div class="well form-horizontal" method="post">
+<form class="well form-horizontal">
     <div class="control-group">
         <label class="control-label app-base-uri" for="post-format">http://...</label>
         <div class="controls">/
@@ -242,9 +245,14 @@ Download and install JSONPedia: visit the
 
     <div class="form-actions">
         <button id="post-submit" type="button" class="btn btn-primary">Convert</button>
-        <button type="reset" class="btn">Cancel</button>
+        <button id="post-reset"  type="reset" class="btn">Cancel</button>
     </div>
-</div>
+
+    <div>
+        <span class="label label-info">Result:</span>
+        <div id="post-result" class="well"></div>
+    </div>
+</form>
 
 <hr/>
 
@@ -263,79 +271,100 @@ Download and install JSONPedia: visit the
     <li><code><a href="/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbedo"><span class="app-base-uri">http://...</span>/annotate/resource/html/http://en.wikipedia.org/wiki/Albedo</a></code>
     </li>
 </ul>
-<h3>Compact API</h3>
+<h3>Compact GET API</h3>
 
-<p>HTTP GET requests can be made
-    to URIs of the shape</p>
-<pre><span class="app-base-uri">http://...</span>/<em>format</em>/<em>input-uri</em></pre>
+<p>HTTP GET requests have the pattern:</p>
+<pre><span class="app-base-uri">http://...</span>/annotate/<em>format</em>/<em>input-uri</em></pre>
 <p>The response is the input document converted to the desired output format.</p>
 
-<h3>Form-style GET API</h3>
+<h3>GET API</h3>
 
-<p>HTTP GET requests can be made to
-    the URI
-    <code class="app-base-uri">http://.../</code> with the following
-    query parameters:
+<p>HTTP GET requests can be made to the URL:
+    <pre><code class="app-base-uri">http://.../</code>/annotate/</pre> with the following query parameters:
 </p>
 <table class="table">
+    <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
     <tr>
         <th>uri</th>
         <td>URI of an input resource.</td>
+        <td><span class="label label-info">True</span></td>
     </tr>
     <tr>
         <th>format</th>
-        <td>Desired output format, defaults to <code>json</code>.</td>
+        <td>Desired output format. See <a href="#supported-formats">supported formats</a>.</td>
+        <td><span class="label label-info">False</span></td>
+    </tr>
+    <tr>
+        <th>filter</th>
+        <td>Filter criteria to be applied to the result. See <a href="#filter-syntax">filter syntax</a>.</td>
+        <td><span class="label label-info">False</span></td>
     </tr>
 </table>
 Such URL will return an HTTP <i>302</i> redirect to <code><span
-        class="app-base-uri">http://...</span>/annotate/resource/<em>format</em></code>.<br/>
+        class="app-base-uri">http://...</span>/annotate/<em>format</em>/resource</code>.<br/>
 
 <p>The response is the input resource converted to the desired output format.</p>
 
-<h3>Direct POST API</h3>
+<h3>POST API</h3>
 
-<p>HTTP POSTing a WikiText body to
-    <code><span class="app-base-uri">http://...</span>/<em>format</em></code> will convert
-    the WikiText to the specified output format.<br/>
-    Typical media types for supported output formats are:
-</p>
-<table class="table">
-    <tr>
-        <th>Output format</th>
-        <th>Media type</th>
-    </tr>
-    <tr>
-        <th>JSON</th>
-        <td><code>application/json</code></td>
-    </tr>
-    <tr>
-        <th>HTML</th>
-        <td><code>application/xhtml</code></td>
-    </tr>
-</table>
-
-<h3>Form-style POST API</h3>
-
-<p>A document body can also be converted by HTTP POSTing form data to
-    <code><span class="app-base-uri">http://...</span>/</code>. <br/>
-    The <code>Content-Type</code> HTTP header must be set to
-    <code>application/x-www-form-urlencoded</code>.
+<p>A document body can also be converted by HTTP POSTing form data to<code><span class="app-base-uri">http://...</span>/</code>. <br/>
+    The <code>Content-Type</code> HTTP header must be set to <code>application/x-www-form-urlencoded</code>.
     The following parameters are supported:
 </p>
 <table class="table">
     <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
+        <th>uri</th>
+        <td>URI of the resource provided as input.</td>
+        <td><span class="label label-info">True</span></td>
+    </tr>
+    <tr>
         <th>format</th>
-        <td>Desired output format; defaults to <code>json</code>.</td>
+        <td>Desired output format. See <a href="#supported-formats">supported formats</a>.</td>
+        <td><span class="label label-info">False</span></td>
+    </tr>
+    <tr>
+        <th>wikitext</th>
+        <td>The wikitext to be converted, if not specified will be retrieved the one addressed by <code>uri</code></td>
+        <td><span class="label label-info">False</span></td>
+    </tr>
+    <tr>
+        <th>filter</th>
+        <td>Filter criteria to be applied to the result. See <a href="#filter-syntax">filter syntax</a>.</td>
+        <td><span class="label label-info">False</span></td>
     </tr>
 </table>
 
+<a name="supported-formats"></a>
 <h3>Output formats</h3>
 
 <p>Supported output format identifiers are:</p>
-<ul>
-    <li><code>json</code> for <a href="http://json.org/" target="_blank">JSON</a>.</li>
-    <li><code>html</code> for XHTML Compliant markup.</li>
-</ul>
+
+<table class="table">
+    <tr>
+        <th>Output format</th>
+        <th>Media type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <th>JSON</th>
+        <td><code>application/json</code></td>
+        <td>Produces a <a href="http://json.org/" target="_blank">JSON</a> object which sections are described in <a href="#processors-doc">processors doc.</a></td>
+    </tr>
+    <tr>
+        <th>HTML<span class="label label-important">Beta</span></th>
+        <td><code>application/xhtml</code></td>
+        <td>Produces a XHTML Compliant markup mapping the extracted JSON structure.</td>
+    </tr>
+</table>
 
 <h3>Error reporting</h3>
 
@@ -632,6 +661,14 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
 
 <hr/>
 <!--------- END   Processors Documentation --------->
+
+<!--------- BEGIN Filter Documentation --------->
+<a name="filter-syntax"></a>
+<h3>Filter Syntax</h3>
+<span class="label label-important">TODO</span>
+<!--------- END   Filter Documentation --------->
+
+<hr/>
 
 <p><b>JSONpedia v.${project.version} (${implementation.build.tstamp})</b></p>
 
