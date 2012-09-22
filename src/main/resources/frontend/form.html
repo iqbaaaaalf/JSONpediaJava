@@ -107,7 +107,7 @@
         }
 
         function addFlagButton($root, id, name, description) {
-            $root.append('<button id="' + id + '" rel="tooltip" data-placement="top" data-original-title="' + description + '" class="btn btn-primary' + (active ? ' active' : '') + '">'+ name + '</button>');
+            $root.append('<button id="' + id + '" onclick="return false;" rel="tooltip" data-placement="top" data-original-title="' + description + '" class="btn btn-primary' + (active ? ' active' : '') + '">'+ name + '</button>');
             $('#' + id).data('default-flag', active);
         }
 
