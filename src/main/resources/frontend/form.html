@@ -34,7 +34,7 @@
                 $('#get-uri').val( $(e.target).html() );
                 $('#get-submit').removeClass('disabled');
                 e.preventDefault();
-            })
+            });
 
             $.get('/annotate/flags').success(function(data){
                 declared = Array.isArray(data.definedFlags) ? data.definedFlags : [data.definedFlags];
@@ -71,6 +71,7 @@
 
             $('#get-submit').click(function () {
                 if($('#get-submit').hasClass('disabled')) return;
+                $('#get-load-spinner').show();
                 document.location.href =
                         '/annotate/resource/' +
                                 $('#get-format option:selected').attr('value') +
@@ -78,25 +79,29 @@
                                 '?filter=' + $('#get-filter').val() +
                                 '&flags=' + getActiveFlags('get-flags');
             });
+
             $('#post-submit').click(function () {
                 if($('#post-submit').hasClass('disabled')) return;
                 request = '/annotate/resource/' +
                         $('#post-format option:selected').attr('value') +
                         '/' + encodeURIComponent($('#post-uri').val());
+                $('#post-load-spinner').show();
                 $.post( request,
                         {
                           wikitext : $('#post-wikitext').val(),
                           filter   : $('#post-filter').val(),
                           flags    : getActiveFlags('post-flags')
                         }
-                )
-                        .success(function (data) {
+                ).success(function (data) {
                             $('#post-result').html(JSON.stringify(data));
-                        })
-                        .error(function (e) {
-                            alert('Error while performing request: ' + e)
-                        });
+                        }
+                ).error(function (e) {
+                    alert('Error while performing request: ' + e)
+                }).complete(function(){
+                    $('#post-load-spinner').hide();
+                });
             });
+
             $('#post-reset').click(function(){
                 $('#post-result').html('');
             });
@@ -189,6 +194,7 @@ Download and install JSONPedia: visit the
     <div class="form-actions">
         <button id="get-submit" type="button" class="btn btn-primary">Convert</button>
         <button type="reset" class="btn">Cancel</button>
+        <div style="float:right; display: none;" id="get-load-spinner"><img src="spinner.gif"></div>
     </div>
 </form>
 <hr/>
@@ -246,6 +252,7 @@ Download and install JSONPedia: visit the
     <div class="form-actions">
         <button id="post-submit" type="button" class="btn btn-primary">Convert</button>
         <button id="post-reset"  type="reset" class="btn">Cancel</button>
+        <div style="float:right; display: none;" id="post-load-spinner"><img src="spinner.gif"></div>
     </div>
 
     <div>
