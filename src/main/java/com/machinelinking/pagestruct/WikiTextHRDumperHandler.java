@@ -56,7 +56,7 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     @Override
     public void parseWarning(String msg, ParserLocation location) {
         final String err = String.format("Warning: %s (%d, %d)", msg, location.getRow(), location.getCol());
-        printOut(msg);
+        printOut(err);
         if(validating) throw new IllegalStateException("Unexpected warning: " + err);
     }
 
