@@ -34,6 +34,7 @@
                 $('#get-uri').val( $(e.target).html() );
                 $('#get-submit').removeClass('disabled');
                 e.preventDefault();
+                updateGetRequest();
             });
 
             $.get('/annotate/flags').success(function(data){
@@ -49,6 +50,9 @@
                     addFlagButton( $('#post-flags'), 'post-' + declared[i].id, declared[i].id, declared[i].description );
                 }
                 $("[rel=tooltip]").tooltip();
+                $('.flagbutton').live('click', function(e){
+                    updateGetRequest();
+                });
             });
 
             $('#get-uri').keyup(function(){
@@ -72,12 +76,7 @@
             $('#get-submit').click(function () {
                 if($('#get-submit').hasClass('disabled')) return;
                 $('#get-load-spinner').show();
-                document.location.href =
-                        '/annotate/resource/' +
-                                $('#get-format option:selected').attr('value') +
-                                '/' + encodeURIComponent($('#get-uri').val()) +
-                                '?filter=' + $('#get-filter').val() +
-                                '&flags=' + getActiveFlags('get-flags');
+                document.location.href = buildGetRequest();
             });
 
             $('#post-submit').click(function () {
@@ -105,14 +104,31 @@
             $('#post-reset').click(function(){
                 $('#post-result').html('');
             });
+
+            $('#get-form').live('change keyup', function(e) {
+                updateGetRequest();
+            });
+            updateGetRequest();
         });
+
+        function buildGetRequest() {
+            return '/annotate/resource/' +
+            $('#get-format option:selected').attr('value') +
+            '/' + encodeURIComponent($('#get-uri').val()) +
+            '?filter=' + $('#get-filter').val() +
+            '&flags=' + getActiveFlags('get-flags');
+        }
+
+        function updateGetRequest() {
+            $('#get-query').html( 'http://' + document.location.host + buildGetRequest() );
+        }
 
         function showModal(id) {
             $(id).modal('show');
         }
 
         function addFlagButton($root, id, name, description) {
-            $root.append('<button id="' + id + '" onclick="return false;" rel="tooltip" data-placement="top" data-original-title="' + description + '" class="btn btn-primary' + (active ? ' active' : '') + '">'+ name + '</button>');
+            $root.append('<button id="' + id + '" onclick="return false;" rel="tooltip" data-placement="top" data-original-title="' + description + '" class="btn btn-primary flagbutton' + (active ? ' active' : '') + '">'+ name + '</button>');
             $('#' + id).data('default-flag', active);
         }
 
@@ -150,11 +166,11 @@ Download and install JSONPedia: visit the
 
 <h2>Convert a Resource</h2>
 
-<form class="well form-horizontal">
-    <label>Pick an output format and enter the URI of a MediaWiki Resource:</label>
+<form id="get-form" class="well form-horizontal">
+    <label>Enter a MediaWiki resource ID or URI, an output format, a set of processors to be applied and optionally a filter:</label>
     <div class="control-group">
         <label class="control-label app-base-uri" for="get-format">http://...</label>
-        <div class="controls">/
+        <div class="controls">/annotate/resource/
             <select id="get-format">
                 <option value="json" selected="selected">json</option>
                 <option value="html">html</option>
@@ -191,20 +207,27 @@ Download and install JSONPedia: visit the
         <span id="get-flags" class="btn-group" data-toggle="buttons-checkbox"></span>
     </div>
 
+    <div>
+        <span class="label label-info">Query:</span>
+        <span id="get-query" class="label label-info"></span>
+    </div>
+
     <div class="form-actions">
         <button id="get-submit" type="button" class="btn btn-primary">Convert</button>
         <button type="reset" class="btn">Cancel</button>
         <div style="float:right; display: none;" id="get-load-spinner"><img src="spinner.gif"></div>
     </div>
 </form>
+
 <hr/>
 
 <h2>Convert a WikiText</h2>
 
 <form class="well form-horizontal">
+    <label>Enter a MediaWiki resource ID or URI, a WikiText content, an output format, a set of processors to be applied and optionally a filter:</label>
     <div class="control-group">
         <label class="control-label app-base-uri" for="post-format">http://...</label>
-        <div class="controls">/
+        <div class="controls">/annotate/resource/
             <select id="post-format" name="format">
                 <option value="json" selected="selected">json</option>
                 <option value="html">html</option>
@@ -680,13 +703,13 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
 <p><b>JSONpedia v1.0-alpha</b></p>
 
 <p><a href="https://bitbucket.org/hardest/machinelinking" target="_blank">JSONpedia project homepage</a> |
-    Hosted at <a href="http://bitbucket.org" target="_blank">BitBucket</a></p>
+    Hosted by <a href="http://www.top-ix.org/" target="_blank">Top-IX</a></p>
 
 </div>
 
 <footer class="footer">
     <div class="container-fluid" style="padding:50px">
-        Copyright &copy;2012 The <a href="http://machinelinking.com/">MachineLinking</a>. All Rights Reserved.<br/>
+        Copyright &copy;2012 The <a href="http://www.machinelinking.com">MachineLinking</a>. All Rights Reserved.<br/>
     </div>
 </footer>
 </body>
