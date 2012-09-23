@@ -430,8 +430,13 @@ public class WikiTextParser implements ParserReader {
         handler.beginReference(referenceLabel);
         int ahead;
         while(true) {
-            ahead = readPropertyValue( new String[] {"]]", "|"}, false, true);
-            if(ahead == 0) break;
+            ahead = readPropertyValue( new String[] {"]]", "]", "|"}, false, true);
+            if(ahead == 0)
+                break;
+            if(ahead == 1) {
+                handler.parseWarning( "Invalid closure for reference.", getLocation() );
+                break;
+            }
         }
         handler.endReference(referenceLabel);
     }

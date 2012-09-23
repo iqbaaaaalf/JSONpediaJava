@@ -3,7 +3,6 @@ package com.machinelinking.parser;
 import com.machinelinking.pagestruct.WikiTextHRDumperHandler;
 import junit.framework.Assert;
 import org.apache.commons.io.IOUtils;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -16,15 +15,6 @@ import java.net.URL;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextParserTest {
-
-    private WikiTextHRDumperHandler handler;
-    private WikiTextParser parser;
-
-    @Before
-    public void setUp() {
-        handler = new WikiTextHRDumperHandler();
-        parser  = new WikiTextParser(handler);
-    }
 
     @Test
     public void testParseReference() throws IOException, WikiTextParserException {
@@ -90,6 +80,21 @@ public class WikiTextParserTest {
                  "End Reference: Less-than sign\n" +
                  "End Document\n"
          );
+    }
+
+    @Test
+    public void testReferenceInvalidClose() throws IOException, WikiTextParserException {
+        parse(
+                "[[id:Bronkioli]\n",
+
+                "Begin Document\n" +
+                "Begin Reference: id:Bronkioli\n" +
+                "Warning: Invalid closure for reference. (1, 16)\n" +
+                "End Reference: id:Bronkioli\n" +
+                "End Document\n",
+
+                false
+        );
     }
 
     @Test
@@ -875,7 +880,9 @@ public class WikiTextParserTest {
         verifyParsing("Table2");
     }
 
-    private void parse(InputStreamReader reader, String expected) throws IOException, WikiTextParserException {
+    private void parse(InputStreamReader reader, String expected, boolean validate) throws IOException, WikiTextParserException {
+        final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(validate);
+        final WikiTextParser parser = new WikiTextParser(handler);
         final long begin = System.nanoTime();
         parser.parse( new URL("http://test/url"), new BufferedReader(reader) );
         final long end   = System.nanoTime();
@@ -884,19 +891,28 @@ public class WikiTextParserTest {
         Assert.assertTrue(handler.isEventStackEmpty());
     }
 
-    private void parse(String in, String expected) throws IOException, WikiTextParserException {
+    private void parse(String in, String expected, boolean validate) throws IOException, WikiTextParserException {
         final ByteArrayInputStream bais = new ByteArrayInputStream( in.getBytes() );
-        parse( new InputStreamReader(bais), expected );
+        parse( new InputStreamReader(bais), expected, validate );
     }
 
-    private void verifyParsing(String page) throws IOException, WikiTextParserException {
+    private void parse(String in, String expected) throws IOException, WikiTextParserException {
+        parse(in, expected, true);
+    }
+
+    private void verifyParsing(String page, boolean validate) throws IOException, WikiTextParserException {
         final InputStreamReader fullWikiPageReader = new InputStreamReader(
                 this.getClass().getResourceAsStream(String.format("/%s.wikitext", page))
         );
         parse(
                 fullWikiPageReader,
-                IOUtils.toString(this.getClass().getResourceAsStream(String.format("/%s.out", page)))
+                IOUtils.toString(this.getClass().getResourceAsStream(String.format("/%s.out", page))),
+                validate
         );
+    }
+
+    private void verifyParsing(String page) throws IOException, WikiTextParserException {
+        verifyParsing(page, true);
     }
 
 }
