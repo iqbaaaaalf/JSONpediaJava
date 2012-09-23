@@ -28,10 +28,10 @@ public class WikiEnricherFactory {
     public static final String FLAG_NEGATION  = "-";
 
     public static final Flag Extractors = new DefaultFlag("Extractors"      , "Enable all available data extractors");
-    public static final Flag Online     = new DefaultFlag("OnlineExtractors", "Enable extracors based on online services (Freebase, DBpedia)");
-    public static final Flag Splitters  = new DefaultFlag("Splitters"       , "Enable all available splitters");
+    public static final Flag Linkers    = new DefaultFlag("Linkers"         , "Enable linking of current entity to external resources(Freebase, DBpedia)");
+    public static final Flag Splitters  = new DefaultFlag("Splitters"       , "Enable all available data splitters");
     public static final Flag Structure  = new DefaultFlag("Structure"       , "Produces the full WikiText DOM");
-    public static final Flag Validate   = new DefaultFlag("Validate"        , "Validate WikiText content");
+    public static final Flag Validate   = new DefaultFlag("Validate"        , "Validate the WikiText structure");
 
     private static WikiEnricherFactory instance;
 
@@ -45,7 +45,7 @@ public class WikiEnricherFactory {
     private final Flag[]           flags;
 
     private WikiEnricherFactory() {
-        registerFlag(Online);
+        registerFlag(Linkers);
         registerFlag(Validate);
         registerFlag(Extractors);
         registerFlag(Splitters);
@@ -96,7 +96,7 @@ public class WikiEnricherFactory {
             enricher.addExtractor(new ReferenceExtractor());
             enricher.addExtractor(new TemplateOccurrencesExtractor());
             enricher.addExtractor(new CategoryExtractor());
-            if (flagsSet.contains(Online)) {
+            if (flagsSet.contains(Linkers)) {
                 enricher.addExtractor(new TemplateMappingExtractor());
                 enricher.addExtractor(new FreebaseExtractor());
             }

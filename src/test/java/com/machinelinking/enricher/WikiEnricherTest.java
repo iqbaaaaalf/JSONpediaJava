@@ -37,7 +37,7 @@ public class WikiEnricherTest {
     private void verifyEnrich(URL entity, boolean online, String wikiInFile, String jsonOutExpectedFile)
     throws IOException, WikiTextParserException, SAXException, ExecutionException, InterruptedException {
         final List<Flag> flags = new ArrayList<>();
-        if(online) flags.add(WikiEnricherFactory.Online);
+        if(online) flags.add(WikiEnricherFactory.Linkers);
         flags.add(WikiEnricherFactory.Validate);
         flags.add(WikiEnricherFactory.Extractors);
         flags.add(WikiEnricherFactory.Splitters);

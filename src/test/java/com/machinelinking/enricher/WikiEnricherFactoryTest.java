@@ -23,8 +23,8 @@ public class WikiEnricherFactoryTest {
     public void testToFlagsOptionalAdded() {
         final Flag[] DEFAULTS = new Flag[]{ WikiEnricherFactory.Structure, WikiEnricherFactory.Validate };
         Assert.assertEquals(
-                Arrays.asList( new Flag[]{ WikiEnricherFactory.Structure, WikiEnricherFactory.Validate, WikiEnricherFactory.Online }),
-                Arrays.asList(WikiEnricherFactory.getInstance().toFlags("OnlineExtractors", DEFAULTS))
+                Arrays.asList( new Flag[]{ WikiEnricherFactory.Structure, WikiEnricherFactory.Validate, WikiEnricherFactory.Linkers }),
+                Arrays.asList(WikiEnricherFactory.getInstance().toFlags("Linkers", DEFAULTS))
         );
     }
 
@@ -41,8 +41,8 @@ public class WikiEnricherFactoryTest {
     public void testToFlagsOptionalAddedDefaultRemoved() {
         final Flag[] DEFAULTS = new Flag[]{ WikiEnricherFactory.Structure, WikiEnricherFactory.Validate };
         Assert.assertEquals(
-                Arrays.asList( new Flag[]{ WikiEnricherFactory.Validate, WikiEnricherFactory.Online } ),
-                Arrays.asList(WikiEnricherFactory.getInstance().toFlags("OnlineExtractors,-Structure", DEFAULTS))
+                Arrays.asList( new Flag[]{ WikiEnricherFactory.Validate, WikiEnricherFactory.Linkers } ),
+                Arrays.asList(WikiEnricherFactory.getInstance().toFlags("Linkers,-Structure", DEFAULTS))
         );
     }
 
