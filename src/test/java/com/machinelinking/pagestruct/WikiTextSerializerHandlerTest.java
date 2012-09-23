@@ -40,6 +40,16 @@ public class WikiTextSerializerHandlerTest extends WikiTextSerializerHandlerTest
         verifySerialization("serialization/Table1");
     }
 
+    @Test
+    public void testTableSerialization2() throws IOException, WikiTextParserException {
+        verifySerialization("serialization/Table2");
+    }
+
+    @Test
+    public void testTableSerialization3() throws IOException, WikiTextParserException {
+        verifySerialization("serialization/Table3");
+    }
+
     public static class TestWikiTextSerializerHandler extends WikiTextSerializerHandler {
 
         public TestWikiTextSerializerHandler(Serializer serializer) {

@@ -13,7 +13,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     private final Serializer serializer;
 
-    private final Stack<DocumentElement> documentStack = new Stack<>();
+    private final Stack<Element> documentStack = new Stack<>();
 
     protected WikiTextSerializerHandler(Serializer serializer) {
         if (serializer == null) throw new NullPointerException();
@@ -26,7 +26,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void beginDocument(URL document) {
-        pushElement(new Document());
+        pushElement(new DocumentElement());
         serializer.openObject();
         serializer.fieldValue("__type", "page");
         serializer.fieldValue("url"   , document.toExternalForm());
@@ -138,7 +138,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     public void beginTable() {
         serializer.openObject();
         serializer.fieldValue("__type", "table");
-        pushElement( new TableElement() );
+        pushElement(new TableElement());
     }
 
     @Override
@@ -159,7 +159,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
             popElement(TableCell.class);
         }
 
-        pushElement( new TableCell() );
+        pushElement(new TableCell());
         serializer.openObject();
         serializer.fieldValue("__type", "head_cell");
         serializer.field("content");
@@ -194,6 +194,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
             popElement(TableCell.class);
         }
 
+        //popUntilElement(TableElement.class); // TODO: verify this solution
         serializer.closeList();
         serializer.closeObject();
         popElement(TableElement.class);
@@ -239,7 +240,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
             popElement(ParameterElement.class);
             serializer.closeList();
         }
-        pushElement( new ParameterElement(param) );
+        pushElement(new ParameterElement(param));
         final String parameterName = param == null ? null : param.trim();
         serializer.field(parameterName);
         serializer.openList();
@@ -259,7 +260,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void endDocument() {
-        popElement(Document.class);
+        popElement(DocumentElement.class);
         serializer.closeList();
         serializer.closeObject();
         serializer.flush();
@@ -269,12 +270,12 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         return templateName.trim();
     }
 
-    private void pushElement(DocumentElement de) {
+    private void pushElement(Element de) {
         documentStack.push(de);
     }
 
-    private void popElement(Class<? extends DocumentElement> ce) {
-        final DocumentElement peek = documentStack.pop();
+    private void popElement(Class<? extends Element> ce) {
+        final Element peek = documentStack.pop();
         if(! peek.getClass().equals(ce)) {
             throw new IllegalStateException(
                     String.format(
@@ -286,7 +287,17 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         }
     }
 
-    private DocumentElement peekElement() {
+    private void popUntilElement(Class<? extends Element> ce) {
+        while(true) {
+            final Element peek = documentStack.pop();
+            peek.close(serializer);
+            if(peek.getClass().equals(ce)) {
+                break;
+            }
+        }
+    }
+
+    private Element peekElement() {
         return documentStack.peek();
     }
 
@@ -301,52 +312,81 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.closeList();
     }
 
-    abstract class DocumentElement {
+    abstract class Element {
         private final String name;
-        private DocumentElement(String name) {
+        private Element(String name) {
             this.name = name;
         }
+        abstract void close(Serializer s);
     }
 
-    class Document extends DocumentElement {
-        private Document() {
+    class DocumentElement extends Element {
+        private DocumentElement() {
             super(null);
+        }
+        @Override
+        void close(Serializer s) {
+            throw new UnsupportedOperationException();
         }
     }
 
-    class TemplateElement extends DocumentElement {
+    class TemplateElement extends Element {
         private TemplateElement(String name) {
             super(name);
         }
+        @Override
+        void close(Serializer s) {
+            throw new UnsupportedOperationException();
+        }
     }
 
-    class ParameterElement extends DocumentElement {
+    class ParameterElement extends Element {
         private ParameterElement(String name) {
             super(name);
         }
+        @Override
+        void close(Serializer s) {
+            s.closeList();
+        }
     }
 
-    class TableElement extends DocumentElement {
+    class TableElement extends Element {
         private TableElement() {
             super(null);
         }
+        @Override
+        void close(Serializer s) {
+            s.closeObject();
+        }
     }
 
-    class ListItem extends DocumentElement {
+    class ListItem extends Element {
         private ListItem() {
             super(null);
         }
-    }
-
-    class TableCell extends DocumentElement {
-        private TableCell() {
-            super(null);
+        @Override
+        void close(Serializer s) {
+            throw new UnsupportedOperationException();
         }
     }
 
-    class Reference extends DocumentElement {
+    class TableCell extends Element {
+        private TableCell() {
+            super(null);
+        }
+        @Override
+        void close(Serializer s) {
+            s.closeObject();
+        }
+    }
+
+    class Reference extends Element {
         private Reference(String name) {
             super(name);
+        }
+        @Override
+        void close(Serializer s) {
+            throw new UnsupportedOperationException();
         }
     }
 
