@@ -25,7 +25,11 @@ public interface WikiTextParserHandler extends TagHandler {
     @Pop(node="reference", id=0)
     void endReference(String label);
 
-    void link(String url, String description);
+    @Push(node="link", id=0)
+    void beginLink(URL url);
+
+    @Pop(node="link", id=0)
+    void endLink(URL url);
 
     @Push(node="list")
     void beginList();

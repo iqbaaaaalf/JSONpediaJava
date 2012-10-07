@@ -32,7 +32,11 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void link(String url, String description) {
+    public void beginLink(URL url) {
+    }
+
+    @Override
+    public void endLink(URL url) {
     }
 
     @Override

@@ -418,7 +418,10 @@ Text: 'http://books.google.com/?id=jJl2JAqvoSAC'
 End Template: Citation
 
 Text: ', '
-Link: http://books.google.com/books?id=jJl2JAqvoSAC&pg=PA41 'Chapter 2, p. 41'
+Begin Link: http://books.google.com/books?id=jJl2JAqvoSAC&pg=PA41
+k: null
+Text: 'Chapter 2, p. 41'
+End Link: http://books.google.com/books?id=jJl2JAqvoSAC&pg=PA41
 Text: '.
 '
 Close Tag: ref
@@ -527,7 +530,10 @@ Begin Reference: universe
 End Reference: universe
 Text: ' as a whole.'
 Open Tag: ref attributes: [name : 'Nobel']
-Link: http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf '"Scientific Background on the Nobel Prize in Physics 2011. The accelerating universe." (page 2)'
+Begin Link: http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf
+k: null
+Text: '"Scientific Background on the Nobel Prize in Physics 2011. The accelerating universe." (page 2)'
+End Link: http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf
 Text: ' Nobelprize.org.'
 Close Tag: ref
 Text: '
@@ -620,7 +626,10 @@ Begin Reference: genius
 End Reference: genius
 Text: '.'
 Open Tag: ref attributes: []
-Link: http://wordnetweb.princeton.edu/perl/webwn?s=Einstein 'WordNet for Einstein'
+Begin Link: http://wordnetweb.princeton.edu/perl/webwn?s=Einstein
+k: null
+Text: 'WordNet for Einstein'
+End Link: http://wordnetweb.princeton.edu/perl/webwn?s=Einstein
 Text: '.'
 Close Tag: ref
 Text: '
@@ -738,7 +747,8 @@ Close Tag: ref
 Text: ' Although it has been thought that Einstein had early speech difficulties, this is disputed by the Albert Einstein Archives, and he excelled at the first school that he attended.'
 Open Tag: ref attributes: []
 Text: 'Einstein's Alleged Handicaps: The Legend of the Dull-Witted Child Who Grew Up to Be a Genius '
-Link: http://www.albert-einstein.org/.index11.html ''
+Begin Link: http://www.albert-einstein.org/.index11.html
+End Link: http://www.albert-einstein.org/.index11.html
 Close Tag: ref
 Text: '
 
@@ -781,7 +791,10 @@ Text: 'M. Talmey, ''The Relativity Theory Simplified and the Formative Period of
 Close Tag: ref
 Open Tag: ref attributes: [name : 'HarvChemAE']
 Text: 'Dudley Herschbach, "Einstein as a Student", Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA, USA, pp. 4–5, web: '
-Link: http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf 'HarvardChem-Einstein-PDF'
+Begin Link: http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf
+k: null
+Text: 'HarvardChem-Einstein-PDF'
+End Link: http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf
 Close Tag: ref
 Begin Template: #tag:ref
 k: null
@@ -789,7 +802,10 @@ Text: '"Albert's intellectual growth was strongly fostered at home. His mother, 
 
 '
 Open Tag: ref attributes: []
-Link: http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf 'Einstein as a Student'
+Begin Link: http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf
+k: null
+Text: 'Einstein as a Student'
+End Link: http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf
 Text: ', pp. 3–5.'
 Close Tag: ref
 k: group
@@ -962,11 +978,15 @@ Text: 'Holton, G., ''Einstein, History, and Other Passions'', Harvard University
 Close Tag: ref
 Open Tag: ref attributes: []
 Text: 'Stachel, J., ''Einstein from B to Z'', Birkhäuser, 2002, pp. 26–38; 39–55. '
-Link: http://philoscience.unibe.ch/lehre/winter99/einstein/Stachel1966.pdf 'philoscience.unibe.ch'
+Begin Link: http://philoscience.unibe.ch/lehre/winter99/einstein/Stachel1966.pdf
+k: null
+Text: 'philoscience.unibe.ch'
+End Link: http://philoscience.unibe.ch/lehre/winter99/einstein/Stachel1966.pdf
 Close Tag: ref
 Open Tag: ref attributes: []
 Text: 'Martinez, A. A., “Handling evidence in history: the case of Einstein’s Wife.” ''School Science Review'', 86 (316), March 2005, pp. 49–56. '
-Link: https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf ''
+Begin Link: https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf
+End Link: https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf
 Close Tag: ref
 Text: '
 
@@ -1317,7 +1337,10 @@ Text: 'http://books.google.com/?id=5eWh2O_3OAQC'
 End Template: Citation
 
 Text: ', '
-Link: http://books.google.com/books?id=5eWh2O_3OAQC&pg=PR19 'Timeline, p. xix'
+Begin Link: http://books.google.com/books?id=5eWh2O_3OAQC&pg=PR19
+k: null
+Text: 'Timeline, p. xix'
+End Link: http://books.google.com/books?id=5eWh2O_3OAQC&pg=PR19
 Text: '
 '
 Close Tag: ref
@@ -1668,7 +1691,10 @@ Text: ' to alert him of the possibility. The letter also recommended that the U.
 The letter is believed to be "arguably the key stimulus for the U.S. adoption of serious investigations into nuclear weapons on the eve of the U.S. entry into World War II".'
 Open Tag: ref attributes: []
 Text: 'Diehl, Sarah J.; Moltz, James Clay. '
-Link: http://books.google.com/books?id=3PN-NEfl_U0C&pg=PA218&dq=Einstein+Roosevelt&num=30&cd=4#v=onepage&q=Letter%20from%20Einstein%20Roosevelt&f=false '''Nuclear Weapons and Nonproliferation: a Reference Handbook'''
+Begin Link: http://books.google.com/books?id=3PN-NEfl_U0C&pg=PA218&dq=Einstein+Roosevelt&num=30&cd=4#v=onepage&q=Letter%20from%20Einstein%20Roosevelt&f=false
+k: null
+Text: '''Nuclear Weapons and Nonproliferation: a Reference Handbook'''
+End Link: http://books.google.com/books?id=3PN-NEfl_U0C&pg=PA218&dq=Einstein+Roosevelt&num=30&cd=4#v=onepage&q=Letter%20from%20Einstein%20Roosevelt&f=false
 Text: ', ABC-CLIO (2008) p. 218'
 Close Tag: ref
 Text: ' President Roosevelt could not take the risk of allowing Hitler to possess atomic bombs first. As a result of Einstein's letter and his meetings with Roosevelt, the U.S. entered the "race" to develop the bomb, drawing on its "immense material, financial, and scientific resources" to initiate the '
@@ -1677,8 +1703,8 @@ End Reference: Manhattan Project
 Text: '. It became the only country to successfully develop an atomic bomb during World War II.
 
 For Einstein, "war was a disease . . . '
-Text: 'and'
-Text: ' he called for resistance to war." But in 1933, after Hitler assumed full power in Germany, "he renounced pacifism altogether . . . In fact, he urged the Western powers to prepare themselves against another German onslaught."'
+Text: '[and'
+Text: '] he called for resistance to war." But in 1933, after Hitler assumed full power in Germany, "he renounced pacifism altogether . . . In fact, he urged the Western powers to prepare themselves against another German onslaught."'
 Inline Tag: ref attributes: [name : 'Stern']
 Begin Template: rp
 k: null
@@ -1738,15 +1764,24 @@ End Reference: W. E. B. Du Bois
 Text: ', and in 1946 Einstein called racism America's "worst disease".'
 Open Tag: ref attributes: []
 Text: 'Fred Jerome, Rodger Taylor (2006) '''
-Link: http://books.google.com/books?id=4d79VQdOfFUC&pg=PR10&dq=Einstein+on+Race+and+Racism+america's+worst+disease#v=onepage&q&f=false 'Einstein on Race and Racism'
+Begin Link: http://books.google.com/books?id=4d79VQdOfFUC&pg=PR10&dq=Einstein+on+Race+and+Racism+america's+worst+disease#v=onepage&q&f=false
+k: null
+Text: 'Einstein on Race and Racism'
+End Link: http://books.google.com/books?id=4d79VQdOfFUC&pg=PR10&dq=Einstein+on+Race+and+Racism+america's+worst+disease#v=onepage&q&f=false
 Text: ''' Rutgers University Press, 2006.'
 Close Tag: ref
 Text: ' He later stated, "Race prejudice has unfortunately become an American tradition which is uncritically handed down from one generation to the next. The only remedies are enlightenment and education".'
 Open Tag: ref attributes: []
 Text: 'Calaprice, Alice (2005) '''
-Link: http://press.princeton.edu/titles/7921.html 'The new quotable Einstein'
+Begin Link: http://press.princeton.edu/titles/7921.html
+k: null
+Text: 'The new quotable Einstein'
+End Link: http://press.princeton.edu/titles/7921.html
 Text: '''. pp.148–149 Princeton University Press, 2005. See also '''
-Link: http://books.google.com/books?id=dLhVn-McDDgC&pg=PA226&dq=racism+americas+worst+disease+1946#v=onepage&q&f=false 'Odyssey in Climate Modeling, Global Warming, and Advising Five Presidents'
+Begin Link: http://books.google.com/books?id=dLhVn-McDDgC&pg=PA226&dq=racism+americas+worst+disease+1946#v=onepage&q&f=false
+k: null
+Text: 'Odyssey in Climate Modeling, Global Warming, and Advising Five Presidents'
+End Link: http://books.google.com/books?id=dLhVn-McDDgC&pg=PA226&dq=racism+americas+worst+disease+1946#v=onepage&q&f=false
 Text: ''''
 Close Tag: ref
 Text: '
@@ -1975,7 +2010,10 @@ End Reference: Robert Oppenheimer
 Text: ' summarized his impression of him as a person: "He was almost wholly without sophistication and wholly without worldliness . . . There was always with him a wonderful purity at once childlike and profoundly stubborn."'
 Open Tag: ref attributes: [name : 'Stern']
 Text: 'Stern, Fritz. Essay, '
-Link: http://books.google.com/books?id=zGzcV40b3IkC&pg=PA97&dq=E%3D+Einstein's+German+by+Fritz+Stern#v=onepage&q&f=false '"Einstein's Germany"'
+Begin Link: http://books.google.com/books?id=zGzcV40b3IkC&pg=PA97&dq=E%3D+Einstein's+German+by+Fritz+Stern#v=onepage&q&f=false
+k: null
+Text: '"Einstein's Germany"'
+End Link: http://books.google.com/books?id=zGzcV40b3IkC&pg=PA97&dq=E%3D+Einstein's+German+by+Fritz+Stern#v=onepage&q&f=false
 Text: ', ''E = Einstein: His Life, His Thought, and His Influence on Our Culture'', Sterling Publishing (2006) pp. 97–118'
 Close Tag: ref
 Text: '
@@ -2014,7 +2052,10 @@ End Reference: Einstein refrigerator
 Text: ' and others.'
 Open Tag: ref attributes: [name : 'Instituut-Lorentz']
 Text: '"'
-Link: http://www.lorentz.leidenuniv.nl/history/Einstein_archive/ 'Einstein archive at the Instituut-Lorentz'
+Begin Link: http://www.lorentz.leidenuniv.nl/history/Einstein_archive/
+k: null
+Text: 'Einstein archive at the Instituut-Lorentz'
+End Link: http://www.lorentz.leidenuniv.nl/history/Einstein_archive/
 Text: '". ''Instituut-Lorentz.'' 2005. Retrieved on 21 November 2005.'
 Close Tag: ref
 Text: '
@@ -2543,7 +2584,10 @@ Begin Reference: Peter Debye
 End Reference: Peter Debye
 Text: ' refined this model.'
 Open Tag: ref attributes: []
-Link: http://www.osti.gov/accomplishments/nuggets/einstein/solidcolda.html 'Celebrating Einstein "Solid Cold". U.S. DOE.'
+Begin Link: http://www.osti.gov/accomplishments/nuggets/einstein/solidcolda.html
+k: null
+Text: 'Celebrating Einstein "Solid Cold". U.S. DOE.'
+End Link: http://www.osti.gov/accomplishments/nuggets/einstein/solidcolda.html
 Text: ', '
 Begin Reference: Office of Scientific and Technical Information
 End Reference: Office of Scientific and Technical Information
@@ -2701,7 +2745,10 @@ End Reference: Raleigh scattering
 Text: ', which is what happens when the fluctuation size is much smaller than the wavelength, and which explains why the sky is blue.'
 Open Tag: ref attributes: [name : 'Levenson']
 Text: 'Levenson, Thomas. "'
-Link: http://www.pbs.org/wgbh/nova/einstein/genius/ 'Einstein's Big Idea'
+Begin Link: http://www.pbs.org/wgbh/nova/einstein/genius/
+k: null
+Text: 'Einstein's Big Idea'
+End Link: http://www.pbs.org/wgbh/nova/einstein/genius/
 Text: '". '''
 Begin Reference: Public Broadcasting Service
 End Reference: Public Broadcasting Service
@@ -2792,7 +2839,10 @@ End Reference: special relativity
 Text: ' was unsatisfactory, while a theory which from the outset prefers no state of motion (even accelerated ones) should appear more satisfactory.'
 Open Tag: ref attributes: []
 Text: 'Albert Einstein, '
-Link: http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-lecture.html 'Nobel lecture'
+Begin Link: http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-lecture.html
+k: null
+Text: 'Nobel lecture'
+End Link: http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-lecture.html
 Text: ' in 1921'
 Close Tag: ref
 Text: ' So in 1908 he published an article on acceleration under '
@@ -3291,7 +3341,10 @@ End Reference: absorption refrigerator
 Text: ' was then revolutionary for having no moving parts and using only heat as an input.'
 Open Tag: ref attributes: [name : 'Goettling']
 Text: 'Goettling, Gary. '
-Link: http://gtalumni.org/Publications/magazine/sum98/einsrefr.html 'Einstein's refrigerator'
+Begin Link: http://gtalumni.org/Publications/magazine/sum98/einsrefr.html
+k: null
+Text: 'Einstein's refrigerator'
+End Link: http://gtalumni.org/Publications/magazine/sum98/einsrefr.html
 Text: ' ''Georgia Tech Alumni Magazine.'' 1998. Retrieved on 21 November 2005. '
 Begin Reference: Leó Szilárd
 End Reference: Leó Szilárd
@@ -3566,13 +3619,17 @@ Text: '
 In the period before World War II, Einstein was so well known in America that he would be stopped on the street by people wanting him to explain "that theory". He finally figured out a way to handle the incessant inquiries. He told his inquirers "Pardon me, sorry! Always I am mistaken for Professor Einstein."'
 Open Tag: ref attributes: []
 Text: 'The New Yorker April 1939 pg 69 '
-Link: http://www.newyorker.com/search/query?queryType=nonparsed&query=Einstein+&bylquery=Maloney&month1=01&day1=14&year1=1939&month2=01&day2=14&year2=1939&page=&sort=&submit.x=10&submit.y=5 'Disguise'
+Begin Link: http://www.newyorker.com/search/query?queryType=nonparsed&query=Einstein+&bylquery=Maloney&month1=01&day1=14&year1=1939&month2=01&day2=14&year2=1939&page=&sort=&submit.x=10&submit.y=5
+k: null
+Text: 'Disguise'
+End Link: http://www.newyorker.com/search/query?queryType=nonparsed&query=Einstein+&bylquery=Maloney&month1=01&day1=14&year1=1939&month2=01&day2=14&year2=1939&page=&sort=&submit.x=10&submit.y=5
 Close Tag: ref
 Text: '
 
 Einstein has been the subject of or inspiration for many novels, films, plays, and works of music.'
 Open Tag: ref attributes: []
-Link: http://www.cindymctee.com/einsteins_dream.html ''
+Begin Link: http://www.cindymctee.com/einsteins_dream.html
+End Link: http://www.cindymctee.com/einsteins_dream.html
 Text: ' ''Einstein's Dream'' for orchestra by '
 Begin Reference: Cindy McTee
 End Reference: Cindy McTee
@@ -4298,12 +4355,18 @@ Text: 'http://press.princeton.edu/einstein/writings.html#papers
 End Template: Citation
 
 Text: ' Further information about the volumes published so far can be found on the webpages of the '
-Link: http://www.einstein.caltech.edu/index.html 'Einstein Papers Project'
+Begin Link: http://www.einstein.caltech.edu/index.html
+k: null
+Text: 'Einstein Papers Project'
+End Link: http://www.einstein.caltech.edu/index.html
 Text: ' and on the '
 Begin Reference: Princeton University Press
 End Reference: Princeton University Press
 Text: ' '
-Link: http://press.princeton.edu/einstein/ 'Einstein Page'
+Begin Link: http://press.princeton.edu/einstein/
+k: null
+Text: 'Einstein Page'
+End Link: http://press.princeton.edu/einstein/
 Text: '
 '
 Begin Template: refend
@@ -4441,7 +4504,10 @@ Text: '
 * Hoffmann, Banesh, with the collaboration of Helen Dukas (1972): ''Albert Einstein: Creator and Rebel''. London: Hart-Davis, MacGibbon Ltd.
 * Isaacson, Walter (2007): ''Einstein: His Life and Universe''. Simon & Schuster Paperbacks, New York. ISBN 9780743264730
 * Moring, Gary (2004): '''
-Link: http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover 'The complete idiot's guide to understanding Einstein'
+Begin Link: http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover
+k: null
+Text: 'The complete idiot's guide to understanding Einstein'
+End Link: http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover
 Text: ''' ( 1st ed. 2000). Indianapolis IN: Alpha books (Macmillan USA). ISBN 0028631803
 * '
 Begin Reference: Abraham Pais
@@ -4463,7 +4529,10 @@ k: null
 Text: 'Oppenheimer'
 End Reference: J. Robert Oppenheimer
 Text: ', J.R. (1971): "On Albert Einstein," p.&nbsp;8–12 in ''Science and synthesis: an international colloquium organized by Unesco on the tenth anniversary of the death of Albert Einstein and Teilhard de Chardin'', Springer-Verlag, 1971, 208 pp. (Lecture delivered at the UNESCO House in Paris on 13 December 1965.) Also published in The New York Review of Books, 17 March 1966, '
-Link: http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false 'On Albert Einstein by Robert Oppenheimer'
+Begin Link: http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false
+k: null
+Text: 'On Albert Einstein by Robert Oppenheimer'
+End Link: http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false
 Text: '
 '
 Begin Template: refend
@@ -4482,7 +4551,10 @@ Text: 'Author:Albert Einstein'
 End Template: Sister project links
 Text: '
 * '
-Link: http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en 'Einstein's Scholar Google profile'
+Begin Link: http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en
+k: null
+Text: 'Einstein's Scholar Google profile'
+End Link: http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en
 Text: '
 * '
 Begin Reference: wikilivres:Albert Einstein
@@ -4507,34 +4579,58 @@ Text: '14 June 2009'
 End Template: Citation
 Text: '
 * '''
-Link: http://www.monthlyreview.org/598einstein.php 'Why Socialism?'
+Begin Link: http://www.monthlyreview.org/598einstein.php
+k: null
+Text: 'Why Socialism?'
+End Link: http://www.monthlyreview.org/598einstein.php
 Text: ''' by Albert Einstein, '''
 Begin Reference: Monthly Review
 End Reference: Monthly Review
 Text: ''', May 1949
 *'
-Link: http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren 'Einstein's Personal Correspondence: Religion, Politics, The Holocaust, and Philosophy'
+Begin Link: http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren
+k: null
+Text: 'Einstein's Personal Correspondence: Religion, Politics, The Holocaust, and Philosophy'
+End Link: http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren
 Text: ' Shapell Manuscript Foundation
 * '
-Link: http://vault.fbi.gov/Albert%20Einstein 'FBI file on Albert Einstein'
+Begin Link: http://vault.fbi.gov/Albert%20Einstein
+k: null
+Text: 'FBI file on Albert Einstein'
+End Link: http://vault.fbi.gov/Albert%20Einstein
 Text: '
 * '
-Link: http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html 'Nobelprize.org Biography:Albert Einstein'
+Begin Link: http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html
+k: null
+Text: 'Nobelprize.org Biography:Albert Einstein'
+End Link: http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html
 Text: '
 * '
-Link: http://www.life.com/image/first/in-gallery/41492/the-einstein-you-never-knew 'The Einstein You Never Knew'
+Begin Link: http://www.life.com/image/first/in-gallery/41492/the-einstein-you-never-knew
+k: null
+Text: 'The Einstein You Never Knew'
+End Link: http://www.life.com/image/first/in-gallery/41492/the-einstein-you-never-knew
 Text: '&nbsp;— slideshow by '''
 Begin Reference: Life magazine
 End Reference: Life magazine
 Text: '''
 * '
-Link: http://www.history.com/topics/albert-einstein 'Albert Einstein'
+Begin Link: http://www.history.com/topics/albert-einstein
+k: null
+Text: 'Albert Einstein'
+End Link: http://www.history.com/topics/albert-einstein
 Text: '&nbsp;— videos
 * '
-Link: http://www.pbs.org/wgbh/aso/databank/entries/bpeins.html 'Science Odyssey People And Discoveries'
+Begin Link: http://www.pbs.org/wgbh/aso/databank/entries/bpeins.html
+k: null
+Text: 'Science Odyssey People And Discoveries'
+End Link: http://www.pbs.org/wgbh/aso/databank/entries/bpeins.html
 Text: '
 * '
-Link: http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstein-oppenheimer-feynman-physics-in-the-20th-century-spring-2006/ 'MIT OpenCourseWare STS.042J/8.225J: Einstein, Oppenheimer, Feynman: Physics in the 20th century'
+Begin Link: http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstein-oppenheimer-feynman-physics-in-the-20th-century-spring-2006/
+k: null
+Text: 'MIT OpenCourseWare STS.042J/8.225J: Einstein, Oppenheimer, Feynman: Physics in the 20th century'
+End Link: http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstein-oppenheimer-feynman-physics-in-the-20th-century-spring-2006/
 Text: '&nbsp;— free study course that explores the changing roles of physics and physicists during the 20th century
 * '
 Begin Template: GoogleScholar
@@ -4543,9 +4639,15 @@ Text: 'qc6CJjYAAAAJ'
 End Template: GoogleScholar
 Text: '
 * '
-Link: http://www.alberteinstein.info 'Albert Einstein Archives Online (80,000+ Documents)'
+Begin Link: http://www.alberteinstein.info
+k: null
+Text: 'Albert Einstein Archives Online (80,000+ Documents)'
+End Link: http://www.alberteinstein.info
 Text: ' ('
-Link: http://www.msnbc.msn.com/id/46785542/ns/technology_and_science-science/ 'MSNBC - 03/19/2012'
+Begin Link: http://www.msnbc.msn.com/id/46785542/ns/technology_and_science-science/
+k: null
+Text: 'MSNBC - 03/19/2012'
+End Link: http://www.msnbc.msn.com/id/46785542/ns/technology_and_science-science/
 Text: ')
 
 '

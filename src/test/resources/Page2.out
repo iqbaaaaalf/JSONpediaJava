@@ -513,10 +513,13 @@ Text: ').
 Begin Template: quotation
 k: null
 Text: '" Mike Sendall buys a NeXT cube for evaluation, and gives it to Tim '
-Text: 'Berners-Lee'
-Text: '. Tim's prototype implementation on NeXTStep is made in the space of a few months, thanks to the qualities of the NeXTStep software development system. This prototype offers WYSIWYG browsing/authoring! Current Web browsers used in "surfing the Internet" are mere passive windows, depriving the user of the possibility to contribute. During some sessions in the CERN cafeteria, Tim and I try to find a catching name for the system. I was determined that the name should not yet again be taken from Greek mythology. Tim proposes "World-Wide Web". I like this very much, except that it is difficult to pronounce in French..." by Robert Cailliau, 2 November 1995.'
+Text: '[Berners-Lee'
+Text: ']. Tim's prototype implementation on NeXTStep is made in the space of a few months, thanks to the qualities of the NeXTStep software development system. This prototype offers WYSIWYG browsing/authoring! Current Web browsers used in "surfing the Internet" are mere passive windows, depriving the user of the possibility to contribute. During some sessions in the CERN cafeteria, Tim and I try to find a catching name for the system. I was determined that the name should not yet again be taken from Greek mythology. Tim proposes "World-Wide Web". I like this very much, except that it is difficult to pronounce in French..." by Robert Cailliau, 2 November 1995.'
 Open Tag: ref attributes: [name : 'Ben']
-Link: http://www.netvalley.com/cgi-bin/intval/net_history.pl?chapter=4 'Roads and Crossroads of Internet History'
+Begin Link: http://www.netvalley.com/cgi-bin/intval/net_history.pl?chapter=4
+k: null
+Text: 'Roads and Crossroads of Internet History'
+End Link: http://www.netvalley.com/cgi-bin/intval/net_history.pl?chapter=4
 Text: ' Chapter 4: Birth of the Web'
 Close Tag: ref
 Text: ' '
@@ -630,7 +633,10 @@ End Reference: East Dorset
 Text: ', England.'
 Open Tag: ref attributes: []
 Text: 'John W. Klooster (2009) '
-Link: http://books.google.com/books?id=WKuG-VIwID8C&pg=PA611&dq=tim+berners+lee++-+east+dorset+heritage+trust&hl=en&ei=0cE9TtyhIcyo8QPQx_zgDA&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCoQ6AEwAA#v=onepage&q=tim%20berners%20lee%20%20-%20east%20dorset%20heritage%20trust&f=false 'Icons of invention: the makers of the modern world from Gutenberg to Gates'
+Begin Link: http://books.google.com/books?id=WKuG-VIwID8C&pg=PA611&dq=tim+berners+lee++-+east+dorset+heritage+trust&hl=en&ei=0cE9TtyhIcyo8QPQx_zgDA&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCoQ6AEwAA#v=onepage&q=tim%20berners%20lee%20%20-%20east%20dorset%20heritage%20trust&f=false
+k: null
+Text: 'Icons of invention: the makers of the modern world from Gutenberg to Gates'
+End Link: http://books.google.com/books?id=WKuG-VIwID8C&pg=PA611&dq=tim+berners+lee++-+east+dorset+heritage+trust&hl=en&ei=0cE9TtyhIcyo8QPQx_zgDA&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCoQ6AEwAA#v=onepage&q=tim%20berners%20lee%20%20-%20east%20dorset%20heritage%20trust&f=false
 Text: ' p.611. ABC-CLIO, 2009'
 Close Tag: ref
 Text: '
@@ -731,7 +737,10 @@ Text: '
 
 In November 2009, Berners-Lee launched the World Wide Web Foundation in order to "Advance the Web to empower humanity by launching transformative programs that build local capacity to leverage the Web as a medium for positive change."'
 Open Tag: ref attributes: []
-Link: http://www.webfoundation.org/about/faq/ 'FAQ—World Wide Web Foundation'
+Begin Link: http://www.webfoundation.org/about/faq/
+k: null
+Text: 'FAQ—World Wide Web Foundation'
+End Link: http://www.webfoundation.org/about/faq/
 Text: ' Retrieved 18 January 2011'
 Close Tag: ref
 Text: '
@@ -1295,7 +1304,10 @@ Begin Reference: Webby Award
 End Reference: Webby Award
 Text: ' for Lifetime Achievement, at the awards ceremony held in New York City.'
 Open Tag: ref attributes: []
-Link: http://www.webbyawards.com/press/press-release.php?id=187 'Press Release: Sir Tim Berners Lee, Inventor of the World Wide Web, to receive Webby Lifetime Award At the 13th Annual Webby Awards'
+Begin Link: http://www.webbyawards.com/press/press-release.php?id=187
+k: null
+Text: 'Press Release: Sir Tim Berners Lee, Inventor of the World Wide Web, to receive Webby Lifetime Award At the 13th Annual Webby Awards'
+End Link: http://www.webbyawards.com/press/press-release.php?id=187
 Text: ' ''Webby Awards.com'' Retrieved 21 January 2011'
 Close Tag: ref
 Text: '
@@ -1368,7 +1380,10 @@ Begin Reference: Harvard University
 End Reference: Harvard University
 Text: '.'
 Open Tag: ref attributes: []
-Link: http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee 'Harvard awards 9 honorary degrees'
+Begin Link: http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee
+k: null
+Text: 'Harvard awards 9 honorary degrees'
+End Link: http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee
 Text: ' ''news.harvard.edu'' Retrieved 11 June 2011'
 Close Tag: ref
 Text: '
@@ -1603,15 +1618,24 @@ Text: '
 * ''Weaving the Web'' Berners-Lee, Tim, with Fischetti, Mark (Harper Collins Publishers,1999) ISBN 0-06-251586-1(cloth) ISBN 0-06-251587-X(paper)
 * ''How the Web was Born: The Story of the World Wide Web'' Robert Cailliau, James Gillies, R. Cailliau (Oxford University Press, 2000) ISBN 0-19-286207-3
 * '
-Link: http://computemagazine.com/man-who-invented-world-wide-web-gives-new-definition/ 'Tim Berners-Lee Gives the Web a New Definition'
+Begin Link: http://computemagazine.com/man-who-invented-world-wide-web-gives-new-definition/
+k: null
+Text: 'Tim Berners-Lee Gives the Web a New Definition'
+End Link: http://computemagazine.com/man-who-invented-world-wide-web-gives-new-definition/
 Text: '
 * '
-Link: http://news.bbc.co.uk/2/hi/technology/4132752.stm 'BBC2 Newsnight &ndash; Transcript of video interview of Berners-Lee on the read/write Web'
+Begin Link: http://news.bbc.co.uk/2/hi/technology/4132752.stm
+k: null
+Text: 'BBC2 Newsnight &ndash; Transcript of video interview of Berners-Lee on the read/write Web'
+End Link: http://news.bbc.co.uk/2/hi/technology/4132752.stm
 Text: ' '
 Comment Tag: {{Dead link|url=http://web.archive.org/web/20080202115128/http://www.kayotix.com/tmp/newsfeeds/10.08.05/timbernerslee/|date=September 2008}} 
 Text: '
 * '
-Link: http://www.technologyreview.com/Infotech/13784/ 'Technology Review interview'
+Begin Link: http://www.technologyreview.com/Infotech/13784/
+k: null
+Text: 'Technology Review interview'
+End Link: http://www.technologyreview.com/Infotech/13784/
 Text: '
 
 '
@@ -1633,7 +1657,10 @@ Text: 'timberners_lee'
 End Template: Twitter
 Text: '
 *'
-Link: http://identi.ca/timbl 'timbl'
+Begin Link: http://identi.ca/timbl
+k: null
+Text: 'timbl'
+End Link: http://identi.ca/timbl
 Text: ' on '
 Begin Reference: identi.ca
 End Reference: identi.ca
@@ -1663,10 +1690,16 @@ Text: 'lccn-no99-10609'
 End Template: Worldcat id
 Text: '
 * '
-Link: http://www.w3.org/People/Berners-Lee/ 'Tim Berners-Lee'
+Begin Link: http://www.w3.org/People/Berners-Lee/
+k: null
+Text: 'Tim Berners-Lee'
+End Link: http://www.w3.org/People/Berners-Lee/
 Text: ' on the W3C site
 * '
-Link: http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html 'First World Wide Web page'
+Begin Link: http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html
+k: null
+Text: 'First World Wide Web page'
+End Link: http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html
 Text: '
 
 '

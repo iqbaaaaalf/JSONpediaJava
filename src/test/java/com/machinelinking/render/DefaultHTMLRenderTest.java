@@ -21,7 +21,7 @@ public class DefaultHTMLRenderTest {
                 )
         );
         final String html = DefaultHTMLRenderFactory.getInstance().renderToHTML(node);
-        FileUtils.writeStringToFile( new File("/Users/hardest/Desktop/test-render.html"), html);
+        FileUtils.writeStringToFile( new File("./test-render.html"), html);
     }
 
 }

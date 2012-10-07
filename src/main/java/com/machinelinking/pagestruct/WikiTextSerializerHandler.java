@@ -66,12 +66,26 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void link(String url, String description) {
+    public void beginLink(URL url) {
+        final String urlStr = url.toExternalForm();
+        pushElement( new Link(urlStr) );
         serializer.openObject();
         serializer.fieldValue("__type", "link");
-        serializer.fieldValue("url", url);
-        serializer.fieldValue("description", description);
+        serializer.fieldValue("url", urlStr);
+        serializer.field("content");
+        serializer.openObject();
+    }
+
+    @Override
+    public void endLink(URL url) {
+        if (peekElement() instanceof ParameterElement) {
+            popElement(ParameterElement.class);
+            serializer.closeList();
+        }
+
         serializer.closeObject();
+        serializer.closeObject();
+        popElement(Link.class);
     }
 
     @Override
@@ -382,6 +396,16 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     class Reference extends Element {
         private Reference(String name) {
+            super(name);
+        }
+        @Override
+        void close(Serializer s) {
+            throw new UnsupportedOperationException();
+        }
+    }
+
+    class Link extends Element {
+        private Link(String name) {
             super(name);
         }
         @Override

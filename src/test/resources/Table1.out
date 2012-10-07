@@ -21,7 +21,10 @@ End Reference: hexadecimal
 Close Tag: sub
 Text: ').'
 Open Tag: ref attributes: []
-Link: http://www.wps.com/projects/codes/X3.4-1963/index.html 'ASA X3.4-1963'
+Begin Link: http://www.wps.com/projects/codes/X3.4-1963/index.html
+k: null
+Text: 'ASA X3.4-1963'
+End Link: http://www.wps.com/projects/codes/X3.4-1963/index.html
 Text: '.'
 Close Tag: ref
 Text: '

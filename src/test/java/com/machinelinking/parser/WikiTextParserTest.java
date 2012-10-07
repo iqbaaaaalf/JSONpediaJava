@@ -3,6 +3,7 @@ package com.machinelinking.parser;
 import com.machinelinking.pagestruct.WikiTextHRDumperHandler;
 import junit.framework.Assert;
 import org.apache.commons.io.IOUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -103,7 +104,10 @@ public class WikiTextParserTest {
                 "[http://link Text]",
 
                 "Begin Document\n" +
-                "Link: http://link 'Text'\n" +
+                "Begin Link: http://link\n" +
+                "k: null\n" +
+                "Text: 'Text'\n" +
+                "End Link: http://link\n" +
                 "End Document\n"
         );
     }
@@ -114,7 +118,33 @@ public class WikiTextParserTest {
                 "[http://link]",
 
                 "Begin Document\n" +
-                "Link: http://link ''\n" +
+                "Begin Link: http://link\n" +
+                "End Link: http://link\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
+    public void testNoLink1() throws IOException, WikiTextParserException {
+        parse(
+                "Samuel Augustus Ward [hymnal&#93;:Print Materia",
+
+                "Begin Document\n" +
+                "Text: 'Samuel Augustus Ward '\n" +
+                "Text: '[hymnal&#93;:Print'\n" +
+                "End Document\n"
+        );
+    }
+
+    // TODO: this test demonstrates the need to convert the parser into a context-sensitive (type1) grammar parser.
+    @Ignore
+    @Test
+    public void testNoLink2() throws IOException, WikiTextParserException {
+        parse(
+                "[http://path.to/fake&#93; ",
+
+                "Begin Document\n" +
+                "Text: [http://path.to/fake]\n" +
                 "End Document\n"
         );
     }
@@ -310,7 +340,10 @@ public class WikiTextParserTest {
                "Text: ', New Jersey, United States\n" +
                "'\n" +
                "k: official_site \n" +
-               "Link: http://alberteinstein.org 'Albert Einstein Official Site'\n" +
+               "Begin Link: http://alberteinstein.org\n" +
+               "k: null\n" +
+               "Text: 'Albert Einstein Official Site'\n" +
+               "End Link: http://alberteinstein.org\n" +
                "Text: '\n" +
                "'\n" +
                "End Template: Infobox scientist\n" +
@@ -810,7 +843,7 @@ public class WikiTextParserTest {
     @Test
     public void testParseCite() throws IOException, WikiTextParserException {
         parse(
-                "<ref>{{cite web|url=http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.100010615/full.html |title=Materna (O Mother Dear, Jerusalem) / Samuel Augustus Ward [hymnal&#93;:Print Material Full Description: Performing Arts Encyclopedia, Library of Congress |publisher=Lcweb2.loc.gov |date=2007-10-30 |accessdate=2011-08-20}}</ref> From time to time it has been proposed as a replacement for ''[[The Star-Spangled Banner]]'' as the national anthem, including television [[sign-off]]s.{{citation needed|date=March 2012}}\n",
+                "<ref>{{cite web|url=http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.100010615/full.html |title=Materna (O Mother Dear, Jerusalem) / Samuel Augustus Ward &#91;hymnal&#93;:Print Material Full Description: Performing Arts Encyclopedia, Library of Congress |publisher=Lcweb2.loc.gov |date=2007-10-30 |accessdate=2011-08-20}}</ref> From time to time it has been proposed as a replacement for ''[[The Star-Spangled Banner]]'' as the national anthem, including television [[sign-off]]s.{{citation needed|date=March 2012}}\n",
 
                 "Begin Document\n" +
                 "Open Tag: ref attributes: []\n" +
@@ -818,10 +851,7 @@ public class WikiTextParserTest {
                 "k: url\n" +
                 "Text: 'http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.100010615/full.html '\n" +
                 "k: title\n" +
-                "Text: 'Materna (O Mother Dear, Jerusalem) / Samuel Augustus Ward '\n" +
-                "Text: 'hymnal&#93;:Print'\n" +
-                "Text: ' '\n" +
-                "Text: 'Material Full Description: Performing Arts Encyclopedia, Library of Congress '\n" +
+                "Text: 'Materna (O Mother Dear, Jerusalem) / Samuel Augustus Ward &#91;hymnal&#93;:Print Material Full Description: Performing Arts Encyclopedia, Library of Congress '\n" +
                 "k: publisher\n" +
                 "Text: 'Lcweb2.loc.gov '\n" +
                 "k: date\n" +
@@ -841,7 +871,9 @@ public class WikiTextParserTest {
                 "k: date\n" +
                 "Text: 'March 2012'\n" +
                 "End Template: citation needed\n" +
-                "End Document\n"
+                "End Document\n",
+
+                false
         );
     }
 
@@ -867,7 +899,7 @@ public class WikiTextParserTest {
 
     @Test
     public void testParseComplete5() throws IOException, WikiTextParserException {
-        verifyParsing("Page5");
+        verifyParsing("Page5", false);
     }
 
     @Test

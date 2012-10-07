@@ -80,7 +80,11 @@
                     {
                         "__type": "link",
                         "url": "http://www.gettysburg.stonesentinels.com/Confederate/AL.php",
-                        "description": "The Alabama monument south of Gettysburg"
+                        "content": {
+                            "__anon_4": [
+                                "The Alabama monument south of Gettysburg"
+                            ]
+                        }
                     },
                     "&lt;/ref&gt;"
                 ],
@@ -109,7 +113,7 @@
                         "__type": "reference",
                         "label": "Montgomery, Alabama",
                         "content": {
-                            "__anon_4": [
+                            "__anon_5": [
                                 "Montgomery"
                             ]
                         }
@@ -126,7 +130,7 @@
                         "__type": "reference",
                         "label": "Birmingham-Hoover-Cullman Combined Statistical Area",
                         "content": {
-                            "__anon_5": [
+                            "__anon_6": [
                                 "Greater Birmingham Area"
                             ]
                         }
@@ -137,7 +141,7 @@
                         "__type": "reference",
                         "label": "Birmingham, Alabama",
                         "content": {
-                            "__anon_6": [
+                            "__anon_7": [
                                 "Birmingham"
                             ]
                         }
@@ -155,7 +159,7 @@
                         "__type": "reference",
                         "label": "Republican Party (United States)",
                         "content": {
-                            "__anon_7": [
+                            "__anon_8": [
                                 "R"
                             ]
                         }
@@ -173,7 +177,7 @@
                         "__type": "reference",
                         "label": "Republican Party (United States)",
                         "content": {
-                            "__anon_8": [
+                            "__anon_9": [
                                 "R"
                             ]
                         }
@@ -192,7 +196,7 @@
                         "__type": "reference",
                         "label": "Alabama Senate",
                         "content": {
-                            "__anon_9": [
+                            "__anon_10": [
                                 "Senate"
                             ]
                         }
@@ -203,7 +207,7 @@
                         "__type": "reference",
                         "label": "Alabama House of Representatives",
                         "content": {
-                            "__anon_10": [
+                            "__anon_11": [
                                 "House of Representatives"
                             ]
                         }
@@ -282,7 +286,7 @@
                         "__type": "reference",
                         "label": "Central Time Zone (North America)",
                         "content": {
-                            "__anon_11": [
+                            "__anon_12": [
                                 "Central"
                             ]
                         }
@@ -292,7 +296,7 @@
                         "__type": "reference",
                         "label": "Coordinated Universal Time",
                         "content": {
-                            "__anon_12": [
+                            "__anon_13": [
                                 "UTC"
                             ]
                         }
@@ -301,7 +305,7 @@
                         "__type": "reference",
                         "label": "Central Standard Time",
                         "content": {
-                            "__anon_13": [
+                            "__anon_14": [
                                 "-6"
                             ]
                         }
@@ -311,7 +315,7 @@
                         "__type": "reference",
                         "label": "Central Daylight Time",
                         "content": {
-                            "__anon_14": [
+                            "__anon_15": [
                                 "-5"
                             ]
                         }
@@ -325,7 +329,7 @@
                         "__type": "reference",
                         "label": "Eastern Time Zone (North America)",
                         "content": {
-                            "__anon_15": [
+                            "__anon_16": [
                                 "Eastern"
                             ]
                         }
@@ -335,7 +339,7 @@
                         "__type": "reference",
                         "label": "Coordinated Universal Time",
                         "content": {
-                            "__anon_16": [
+                            "__anon_17": [
                                 "UTC"
                             ]
                         }
@@ -344,7 +348,7 @@
                         "__type": "reference",
                         "label": "Eastern Standard Time",
                         "content": {
-                            "__anon_17": [
+                            "__anon_18": [
                                 "−5"
                             ]
                         }
@@ -354,7 +358,7 @@
                         "__type": "reference",
                         "label": "Eastern Daylight Time",
                         "content": {
-                            "__anon_18": [
+                            "__anon_19": [
                                 "−4"
                             ]
                         }
@@ -391,7 +395,7 @@
                         "__type": "reference",
                         "label": "Baldwin County, Alabama",
                         "content": {
-                            "__anon_19": [
+                            "__anon_20": [
                                 "Baldwin County"
                             ]
                         }

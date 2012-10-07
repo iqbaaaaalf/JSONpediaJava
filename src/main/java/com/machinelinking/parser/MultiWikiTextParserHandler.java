@@ -65,9 +65,16 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void link(String url, String description) {
-        for(WikiTextParserHandler handler : handlers) {
-            handler.link(url, description);
+    public void beginLink(URL url) {
+        for (WikiTextParserHandler handler : handlers) {
+            handler.beginLink(url);
+        }
+    }
+
+    @Override
+    public void endLink(URL url) {
+        for (WikiTextParserHandler handler : handlers) {
+            handler.endLink(url);
         }
     }
 

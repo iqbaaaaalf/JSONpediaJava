@@ -173,10 +173,7 @@ Begin Template: cite web
 k: url
 Text: 'http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.100010615/full.html '
 k: title
-Text: 'Materna (O Mother Dear, Jerusalem) / Samuel Augustus Ward '
-Text: 'hymnal&#93;:Print'
-Text: ' '
-Text: 'Material Full Description: Performing Arts Encyclopedia, Library of Congress '
+Text: 'Materna (O Mother Dear, Jerusalem) / Samuel Augustus Ward &#91;hymnal&#93;:Print Material Full Description: Performing Arts Encyclopedia, Library of Congress '
 k: publisher
 Text: 'Lcweb2.loc.gov '
 k: date
@@ -661,7 +658,10 @@ Begin Template: Wikisource
 End Template: Wikisource
 Text: '
 *'
-Link: http://memory.loc.gov/cocoon/ihas/loc.natlib.ihas.200000001/default.html 'MP3 and RealAudio recordings available at the United States Library of Congress'
+Begin Link: http://memory.loc.gov/cocoon/ihas/loc.natlib.ihas.200000001/default.html
+k: null
+Text: 'MP3 and RealAudio recordings available at the United States Library of Congress'
+End Link: http://memory.loc.gov/cocoon/ihas/loc.natlib.ihas.200000001/default.html
 Text: '
 *'
 Begin Template: cantorion
@@ -672,19 +672,34 @@ Text: 'America the Beautiful'
 End Template: cantorion
 Text: '
 *'
-Link: http://hymntime.com/tch/htm/o/b/f/obfsskis.htm 'Words, sheet music & MIDI file'
+Begin Link: http://hymntime.com/tch/htm/o/b/f/obfsskis.htm
+k: null
+Text: 'Words, sheet music & MIDI file'
+End Link: http://hymntime.com/tch/htm/o/b/f/obfsskis.htm
 Text: ' at the Cyber Hymnal
 *'
-Link: http://www.springsgov.com/Page.asp?NavID=5138 'America the Beautiful Park'
+Begin Link: http://www.springsgov.com/Page.asp?NavID=5138
+k: null
+Text: 'America the Beautiful Park'
+End Link: http://www.springsgov.com/Page.asp?NavID=5138
 Text: ' in Colorado Springs named for Katharine Lee Bates' words.
 *'
-Link: http://web.me.com/highlandsarchives/The_Highlands_Archives/America.html ' Archival collection'
+Begin Link: http://web.me.com/highlandsarchives/The_Highlands_Archives/America.html
+k: null
+Text: ' Archival collection'
+End Link: http://web.me.com/highlandsarchives/The_Highlands_Archives/America.html
 Text: ' of America the Beautiful lantern slides from the 1930s.
 *'
-Link: http://www.traditional-songs.com/download_score.php?name=America%20the%20Beautiful&country=Usa 'Another free sheet music'
+Begin Link: http://www.traditional-songs.com/download_score.php?name=America%20the%20Beautiful&country=Usa
+k: null
+Text: 'Another free sheet music'
+End Link: http://www.traditional-songs.com/download_score.php?name=America%20the%20Beautiful&country=Usa
 Text: '
 *'
-Link: http://loyalopposition.blogs.nytimes.com/2012/01/03/mitt-romney-and-america-the-beautiful-when-reach-exceeds-grasp/?ref=opinion 'David Firestone - When Romney’s Reach Exceeds His Grasp - Mitt Romney quotes the song '
+Begin Link: http://loyalopposition.blogs.nytimes.com/2012/01/03/mitt-romney-and-america-the-beautiful-when-reach-exceeds-grasp/?ref=opinion
+k: null
+Text: 'David Firestone - When Romney’s Reach Exceeds His Grasp - Mitt Romney quotes the song '
+End Link: http://loyalopposition.blogs.nytimes.com/2012/01/03/mitt-romney-and-america-the-beautiful-when-reach-exceeds-grasp/?ref=opinion
 Text: '
 
 '

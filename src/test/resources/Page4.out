@@ -442,11 +442,17 @@ Text: 'ranked'
 End Reference: Historical rankings of Presidents of the United States#Scholar survey results
 Text: ' by scholars and the public as one of the three greatest U.S. presidents.'
 Open Tag: ref attributes: [name : 'Ranking Our Presidents']
-Link: http://history-world.org/pres.pdf '"Ranking Our Presidents"'
+Begin Link: http://history-world.org/pres.pdf
+k: null
+Text: '"Ranking Our Presidents"'
+End Link: http://history-world.org/pres.pdf
 Text: '. James Lindgren. November 16, 2000. International World History Project.'
 Close Tag: ref
 Open Tag: ref attributes: [name : 'gallup']
-Link: http://www.gallup.com/poll/146183/Americans-Say-Reagan-Greatest-President.aspx '"Americans Say Reagan Is the Greatest President"'
+Begin Link: http://www.gallup.com/poll/146183/Americans-Say-Reagan-Greatest-President.aspx
+k: null
+Text: '"Americans Say Reagan Is the Greatest President"'
+End Link: http://www.gallup.com/poll/146183/Americans-Say-Reagan-Greatest-President.aspx
 Text: '. Gallup Inc. February 28, 2011.'
 Close Tag: ref
 Text: '
@@ -2375,8 +2381,8 @@ Text: '
 Begin Template: quote
 k: null
 Text: 'My paramount object in this struggle is to save the Union, and is not either to save or to destroy slavery. If I could save the Union without freeing any slave I would do it, and if I could save it by freeing all the slaves I would do it; and if I could save it by freeing some and leaving others alone I would also do that. What I do about slavery, and the colored race, I do because I believe it helps to save the Union; and what I forbear, I forbear because I do not believe it would help to save the Union. . . . '
-Text: '¶'
-Text: ' I have here stated my purpose according to my view of official duty; and I intend no modification of my oft-expressed personal wish that all men everywhere could be free.'
+Text: '[¶'
+Text: '] I have here stated my purpose according to my view of official duty; and I intend no modification of my oft-expressed personal wish that all men everywhere could be free.'
 Open Tag: ref attributes: []
 Text: 'Roy P. Basler, ed. ''The collected works of Abraham Lincoln'' (Rutgers U.P., 1953) vol 5 p. 388'
 Close Tag: ref
@@ -5974,7 +5980,10 @@ Text: 'American Civil War'
 End Template: Portal
 Text: '
 * '
-Link: http://quod.lib.umich.edu/l/lincoln/ 'The Collected Works of Abraham Lincoln'
+Begin Link: http://quod.lib.umich.edu/l/lincoln/
+k: null
+Text: 'The Collected Works of Abraham Lincoln'
+End Link: http://quod.lib.umich.edu/l/lincoln/
 Text: '
 * '
 Begin Template: worldcat id
@@ -5983,16 +5992,28 @@ Text: 'lccn-n79-6779'
 End Template: worldcat id
 Text: '
 * '
-Link: http://memory.loc.gov/ammem/alhtml/alhome.html 'Mr. Lincoln's Virtual Library'
+Begin Link: http://memory.loc.gov/ammem/alhtml/alhome.html
+k: null
+Text: 'Mr. Lincoln's Virtual Library'
+End Link: http://memory.loc.gov/ammem/alhtml/alhome.html
 Text: '
 * '
-Link: http://www.loc.gov/rr/program/bib/prespoetry/al.html 'Poetry written by Abraham Lincoln'
+Begin Link: http://www.loc.gov/rr/program/bib/prespoetry/al.html
+k: null
+Text: 'Poetry written by Abraham Lincoln'
+End Link: http://www.loc.gov/rr/program/bib/prespoetry/al.html
 Text: '
 * '
-Link: http://www.alplm.org/home.html 'The Abraham Lincoln Presidential Library and Museum'
+Begin Link: http://www.alplm.org/home.html
+k: null
+Text: 'The Abraham Lincoln Presidential Library and Museum'
+End Link: http://www.alplm.org/home.html
 Text: ' Springfield, Illinois
 * '
-Link: http://www.papersofabrahamlincoln.org/ 'The Papers of Abraham Lincoln'
+Begin Link: http://www.papersofabrahamlincoln.org/
+k: null
+Text: 'The Papers of Abraham Lincoln'
+End Link: http://www.papersofabrahamlincoln.org/
 Text: ' documentary editing project
 * '
 Begin Template: US patent 
@@ -6003,19 +6024,34 @@ Text: 'US PATNo. 6,469'
 End Template: US patent 
 Text: '—''Manner of Buoying Vessels''—A. Lincoln—1849
 * '
-Link: http://edsitement.neh.gov/teaching-abraham-lincoln#node-19470 'National Endowment for the Humanities Spotlight&nbsp;– Abraham Lincoln'
+Begin Link: http://edsitement.neh.gov/teaching-abraham-lincoln#node-19470
+k: null
+Text: 'National Endowment for the Humanities Spotlight&nbsp;– Abraham Lincoln'
+End Link: http://edsitement.neh.gov/teaching-abraham-lincoln#node-19470
 Text: '
 * '
-Link: http://www.abrahamlincoln200.org/ 'The Abraham Lincoln Bicentennial Commission'
+Begin Link: http://www.abrahamlincoln200.org/
+k: null
+Text: 'The Abraham Lincoln Bicentennial Commission'
+End Link: http://www.abrahamlincoln200.org/
 Text: '
 * '
-Link: http://lincoln.lib.niu.edu/ 'Lincoln/Net: Abraham Lincoln Historical Digitization Project, Northern Illinois University Libraries'
+Begin Link: http://lincoln.lib.niu.edu/
+k: null
+Text: 'Lincoln/Net: Abraham Lincoln Historical Digitization Project, Northern Illinois University Libraries'
+End Link: http://lincoln.lib.niu.edu/
 Text: '
 * '
-Link: http://www.loc.gov/rr/program/bib/presidents/lincoln/ 'Abraham Lincoln: A Resource Guide from the Library of Congress'
+Begin Link: http://www.loc.gov/rr/program/bib/presidents/lincoln/
+k: null
+Text: 'Abraham Lincoln: A Resource Guide from the Library of Congress'
+End Link: http://www.loc.gov/rr/program/bib/presidents/lincoln/
 Text: '
 *'
-Link: http://web.archive.org/web/20110725003410/http://americanpresidents.org/presidents/president.asp?PresidentNumber=16 'Abraham Lincoln'
+Begin Link: http://web.archive.org/web/20110725003410/http://americanpresidents.org/presidents/president.asp?PresidentNumber=16
+k: null
+Text: 'Abraham Lincoln'
+End Link: http://web.archive.org/web/20110725003410/http://americanpresidents.org/presidents/president.asp?PresidentNumber=16
 Text: ' at '
 Begin Reference: C-SPAN
 End Reference: C-SPAN
@@ -6024,7 +6060,10 @@ Begin Reference: American Presidents: Life Portraits
 End Reference: American Presidents: Life Portraits
 Text: '''
 *'
-Link: http://legacy.c-span.org/Series/Lincoln-200-Years.aspx 'C-SPAN's ''Lincoln 200 Years'''
+Begin Link: http://legacy.c-span.org/Series/Lincoln-200-Years.aspx
+k: null
+Text: 'C-SPAN's ''Lincoln 200 Years'''
+End Link: http://legacy.c-span.org/Series/Lincoln-200-Years.aspx
 Text: '
 
 '

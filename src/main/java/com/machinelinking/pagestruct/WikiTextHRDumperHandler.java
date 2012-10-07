@@ -77,8 +77,13 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void link(String url, String description) {
-        printOut(String.format("Link: %s '%s'", url, description));
+    public void beginLink(URL url) {
+        printOut(String.format("Begin Link: %s", url));
+    }
+
+    @Override
+    public void endLink(URL url) {
+        printOut(String.format("End Link: %s", url));
     }
 
     @Override

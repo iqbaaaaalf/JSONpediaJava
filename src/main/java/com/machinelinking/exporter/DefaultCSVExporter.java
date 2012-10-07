@@ -162,9 +162,9 @@ implements CSVExporter {
         }
 
         @Override
-        public void link(String url, String description) {
+        public void beginLink(URL url) {
             if(insideTemplate && nextIsValue) {
-                print(String.format("[[%s %s]]", url, cleanString(description.trim())));
+                print(String.format("[[%s]]", url));
             }
         }
 

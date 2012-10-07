@@ -19,7 +19,7 @@ public class LinkNodeRender implements NodeRender {
     public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
     throws IOException {
         final String url = node.get("url").asText();
-        final String description = node.get("description").asText().trim();
+        final String description = node.get("content").asText().trim();
         writer.openTag("a", new HashMap<String, String>() {{
             put("href", url);
             put("style", "background-color: #C95095");

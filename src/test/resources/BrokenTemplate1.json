@@ -80,7 +80,11 @@
                     {
                         "__type": "link",
                         "url": "http://www.gettysburg.stonesentinels.com/Confederate/AL.php",
-                        "description": "The Alabama monument south of Gettysburg"
+                        "content": {
+                            "__anon_4": [
+                                "The Alabama monument south of Gettysburg"
+                            ]
+                        }
                     },
                     "&lt;/ref&gt;"
                 ],

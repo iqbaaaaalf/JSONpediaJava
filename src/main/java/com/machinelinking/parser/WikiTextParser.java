@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.regex.Pattern;
 
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
@@ -28,8 +28,6 @@ public class WikiTextParser implements ParserReader {
     private static final String[] LINK_DELIMITERS  = new String[]{"|", "]", "}}", "|}"};
 
     private static final int AHEAD = 500;
-
-    private static final Pattern URL_PATTERN = Pattern.compile("^https?://.*");
 
     private Reader r;
 
@@ -408,23 +406,6 @@ public class WikiTextParser implements ParserReader {
         return referenceLabelSB.toString();
     }
 
-    private final StringBuilder referenceDescriptionSB = new StringBuilder();
-    private String readReferenceDescription() throws IOException {
-        clear(referenceDescriptionSB);
-        char c;
-        while(true) {
-            mark();
-            c = read();
-            if(c != ']') {
-                referenceDescriptionSB.append(c);
-            } else {
-                reset();
-                break;
-            }
-        }
-        return referenceDescriptionSB.toString();
-    }
-
     private void readReference() throws IOException {
         final String referenceLabel = readReferenceLabel();
         handler.beginReference(referenceLabel);
@@ -462,37 +443,23 @@ public class WikiTextParser implements ParserReader {
         return linkURLSB.toString();
     }
 
-    private final StringBuilder linkDescriptionSB = new StringBuilder();
-    private String readLinkDescription() throws IOException {
-        clear(linkDescriptionSB);
-        char c;
+    private void readLink() throws IOException {
+        final String urlString = readLinkURL();
+        final URL url;
+        try {
+            url = new URL(urlString);
+        } catch (MalformedURLException murle) {
+            handler.text("[" + urlString);
+            return;
+        }
+
+        handler.beginLink(url);
         int ahead;
         while(true) {
-            mark();
-            ahead = lookAhead(LINK_DELIMITERS);
-            if(ahead != -1) {
-                reset();
-                break;
-            }
-            c = read();
-            linkDescriptionSB.append(c);
+            ahead = readPropertyValue( new String[] {"]", "|"}, false, true);
+            if(ahead == 0) break;
         }
-        return linkDescriptionSB.toString();
-    }
-
-    private void readLink() throws IOException {
-        final String url         = readLinkURL();
-        final String description = readLinkDescription();
-        if( assertChar(']') ) mark(); else reset();
-        if( URL_PATTERN.matcher(url).matches() ) { //TODO: this can be improved?
-            handler.link(url, description);
-        } else {
-            handler.text(url);
-            if(description.length() > 0){
-                handler.text(" ");
-                handler.text(description);
-            }
-        }
+        handler.endLink(url);
     }
 
     private void readTable() throws IOException {

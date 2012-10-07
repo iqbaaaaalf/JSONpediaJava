@@ -760,7 +760,10 @@ Begin Reference: dust
 End Reference: dust
 Text: ' containing soot, sometimes reduces albedo on glaciers and ice sheets.'
 Open Tag: ref attributes: [name : 'Nat. Geo']
-Link: http://ngm.nationalgeographic.com/2010/06/melt-zone/jenkins-text/3 '"Changing Greenland - Melt Zone"'
+Begin Link: http://ngm.nationalgeographic.com/2010/06/melt-zone/jenkins-text/3
+k: null
+Text: '"Changing Greenland - Melt Zone"'
+End Link: http://ngm.nationalgeographic.com/2010/06/melt-zone/jenkins-text/3
 Text: ' page 3, of 4, article by Mark Jenkins in '''
 Begin Reference: National Geographic (magazine)
 k: null
@@ -1289,22 +1292,40 @@ Begin Template: wiktionary
 End Template: wiktionary
 Text: '
 *'
-Link: http://www.albedo-project.org/ 'Official Website of Albedo Project'
+Begin Link: http://www.albedo-project.org/
+k: null
+Text: 'Official Website of Albedo Project'
+End Link: http://www.albedo-project.org/
 Text: '
 *'
-Link: http://www-c4.ucsd.edu/gap/ 'Global Albedo Project (Center for Clouds, Chemistry, and Climate)'
+Begin Link: http://www-c4.ucsd.edu/gap/
+k: null
+Text: 'Global Albedo Project (Center for Clouds, Chemistry, and Climate)'
+End Link: http://www-c4.ucsd.edu/gap/
 Text: '
 *'
-Link: http://www.eoearth.org/article/Albedo 'Albedo - Encyclopedia of Earth'
+Begin Link: http://www.eoearth.org/article/Albedo
+k: null
+Text: 'Albedo - Encyclopedia of Earth'
+End Link: http://www.eoearth.org/article/Albedo
 Text: '
 *'
-Link: http://www-modis.bu.edu/brdf/product.html 'NASA MODIS BRDF/albedo product site'
+Begin Link: http://www-modis.bu.edu/brdf/product.html
+k: null
+Text: 'NASA MODIS BRDF/albedo product site'
+End Link: http://www-modis.bu.edu/brdf/product.html
 Text: '
 *'
-Link: http://www.eumetsat.int/Home/Main/Access_to_Data/Meteosat_Meteorological_Products/Product_List/SP_1125489019643?l=en 'Surface albedo derived from Meteosat observations'
+Begin Link: http://www.eumetsat.int/Home/Main/Access_to_Data/Meteosat_Meteorological_Products/Product_List/SP_1125489019643?l=en
+k: null
+Text: 'Surface albedo derived from Meteosat observations'
+End Link: http://www.eumetsat.int/Home/Main/Access_to_Data/Meteosat_Meteorological_Products/Product_List/SP_1125489019643?l=en
 Text: '
 *'
-Link: http://jeff.medkeff.com/astro/lunar/obs_tech/albedo.htm 'A discussion of Lunar albedos'
+Begin Link: http://jeff.medkeff.com/astro/lunar/obs_tech/albedo.htm
+k: null
+Text: 'A discussion of Lunar albedos'
+End Link: http://jeff.medkeff.com/astro/lunar/obs_tech/albedo.htm
 Text: '
 '
 Begin Template: Global warming

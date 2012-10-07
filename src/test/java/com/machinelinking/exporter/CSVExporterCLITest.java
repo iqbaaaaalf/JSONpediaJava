@@ -23,7 +23,7 @@ public class CSVExporterCLITest {
         );
 
         Assert.assertEquals(0    , exitCode);
-        Assert.assertEquals(11743, FileUtils.readLines(out).size());
+        Assert.assertEquals(11759, FileUtils.readLines(out).size());
     }
 
 }
