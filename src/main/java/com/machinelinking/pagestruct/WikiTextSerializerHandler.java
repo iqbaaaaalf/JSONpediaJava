@@ -202,6 +202,11 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void endTable() {
+        if (peekElement() instanceof ParameterElement) {
+            popElement(ParameterElement.class);
+            serializer.closeList();
+        }
+
         if( peekElement().getClass().equals(TableCell.class) ) {
             serializer.closeObject();
             serializer.closeObject();
