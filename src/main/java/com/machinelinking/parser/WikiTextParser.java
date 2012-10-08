@@ -25,7 +25,7 @@ public class WikiTextParser implements ParserReader {
 
     private static final String[] TABLE_DELIMITERS = new String[]{"|}", "|-", "!!" , "!", "||", "|"};
 
-    private static final String[] LINK_DELIMITERS  = new String[]{"|", "]", "}}", "|}"};
+    private static final String[] LINK_DELIMITERS  = new String[] {"]", "|"};
 
     private static final int AHEAD = 500;
 
@@ -456,7 +456,7 @@ public class WikiTextParser implements ParserReader {
         handler.beginLink(url);
         int ahead;
         while(true) {
-            ahead = readPropertyValue( new String[] {"]", "|"}, false, true);
+            ahead = readPropertyValue( LINK_DELIMITERS, false, true);
             if(ahead == 0) break;
         }
         handler.endLink(url);
