@@ -213,7 +213,6 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
             popElement(TableCell.class);
         }
 
-        //popUntilElement(TableElement.class); // TODO: verify this solution
         serializer.closeList();
         serializer.closeObject();
         popElement(TableElement.class);
