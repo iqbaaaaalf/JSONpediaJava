@@ -43,7 +43,7 @@ public class BasicServer {
         ResourceConfig rc = new PackagesResourceConfig(BasicServer.class.getPackage().getName());
         httpServer = GrizzlyServerFactory.createHttpServer(getBaseURI(), rc);
         httpServer.getServerConfiguration().addHttpHandler(
-                new StaticHttpHandler("./src/main/resources/frontend/"){
+                new StaticHttpHandler("./src/main/resources/com/machinelinking/service/frontend/"){
                     @Override
                     protected boolean handle(String uri, Request req, Response res) throws Exception {
                         if(uri.endsWith(".html")) {
