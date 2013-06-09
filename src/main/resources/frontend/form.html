@@ -375,6 +375,11 @@ Download and install JSONpedia: visit the
         <td>Filter criteria to be applied to the result. See <a href="#filter-syntax">filter syntax</a>.</td>
         <td><span class="label label-info">False</span></td>
     </tr>
+    <tr>
+        <th>procs</th>
+        <td>Processors to be activated on this request. See <a href="#procs-syntax">procs syntax</a>.</td>
+        <td><span class="label label-info">False</span></td>
+    </tr>
 </table>
 Such URL will return an HTTP <i>302</i> redirect to <code><span
         class="app-base-uri">http://...</span>/annotate/<em>format</em>/resource</code>.<br/>
@@ -404,13 +409,18 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
         <td><span class="label label-info">False</span></td>
     </tr>
     <tr>
-        <th>wikitext</th>
-        <td>The wikitext to be converted, if not specified will be retrieved the one addressed by <code>uri</code></td>
+        <th>filter</th>
+        <td>Filter criteria to be applied to the result. See <a href="#filter-syntax">filter syntax</a>.</td>
         <td><span class="label label-info">False</span></td>
     </tr>
     <tr>
-        <th>filter</th>
-        <td>Filter criteria to be applied to the result. See <a href="#filter-syntax">filter syntax</a>.</td>
+        <th>procs</th>
+        <td>Processors to be activated on this request. See <a href="#procs-syntax">procs syntax</a>.</td>
+        <td><span class="label label-info">False</span></td>
+    </tr>
+    <tr>
+        <th>wikitext</th>
+        <td>The wikitext to be converted, if not specified will be retrieved the one addressed by <code>uri</code></td>
         <td><span class="label label-info">False</span></td>
     </tr>
 </table>
@@ -554,10 +564,10 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
 </pre>
 
 <h3>OnlineExtractors</h3>
-<p><strong>Online Extractors</strong> are specific <strong>Extractors</strong> which rely on external services.</p>
+<p><strong>Online Extractors</strong> are specific <strong>Extractors</strong> which rely on external services, like <i>DBpedia</i> and <i>Freebase</i>.</p>
 
 <h4>TemplateMappingExtractor</h4>
-<p>Extracts the RDF ontology mapping defined in DBpedia.org for every detected template into the document.</p>
+<p>Extracts the RDF ontology mapping defined in <i>DBpedia.org</i> for every detected template into the document.</p>
 <pre class="well">
 "template-mapping": {
      "type": "mapping-collection",
@@ -580,7 +590,7 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
 </pre>
 
 <h4>FreebaseExtractor</h4>
-<p>Extracts the definition of the entity represented by the document from Freebase</p>
+<p>Extracts the definition of the entity represented by the document from <i>Freebase</i>.</p>
 <pre class="well">
 "freebase": {
     "alias": [
@@ -737,8 +747,25 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
 <!--------- BEGIN Filter Documentation --------->
 <a name="filter-syntax"></a>
 <h3>Filter Syntax</h3>
-<span class="label label-important">TODO</span>
+<p>
+A Filter can be expressed as a list of <i>comma-separated</i> patterns like:
+<pre>Key1=Value1,Key2=Value2,...,KeyN=ValueN</pre>
+where <i>Key-i</i> is a string matching with a key defined in the output JSON and
+<i>Value-i</i> is a pattern to match the value associated to such key.
+Any JSON object matching <strong>ALL</strong> these patterns will be returned.
+</p>
 <!--------- END   Filter Documentation --------->
+
+<!--------- BEGIN Procs Documentation --------->
+<a name="procs-syntax"></a>
+<h3>Processors Syntax</h3>
+A list of <i>comma-separated</i> processor names that must be applied over the page processing.
+Some Processors are active by default, so they don't require to be explicitly activated.
+The default Processors can be forcibly disabled preprending a <strong>-</strong> symbol before the name.
+For example the following string:
+<pre>-Extractors,Linkers</pre>
+disables the <i>Extractors</i> (otherwise active by default)and enables the <i>Linkers</i>.
+<!--------- END   Procs Documentation --------->
 
 <hr/>
 
@@ -751,7 +778,7 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
 
 <footer class="footer">
     <div class="container-fluid" style="padding:50px">
-        Copyright &copy;2012 The <a href="http://www.machinelinking.com">MachineLinking</a>. All Rights Reserved.<br/>
+        Copyright &copy;2013 The <a href="http://www.machinelinking.com">MachineLinking S.r.l.</a>. All Rights Reserved.<br/>
     </div>
 </footer>
 </body>
