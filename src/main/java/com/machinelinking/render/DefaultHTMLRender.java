@@ -25,11 +25,13 @@ public class DefaultHTMLRender implements HTMLRender {
     private static final String DEFAULT_RENDER_SELECTOR = "defaultrender";
 
     private static final Map<String,String> OBJECT_DIV_STYLE = new HashMap<String, String>(){{
-        put("style","border: 1px solid; padding 5px;");
+        //put("style","border: 1px solid; padding 5px;");
+        put("style","border: 1px solid; padding 2px;");
     }};
 
     private static final Map<String,String> LIST_DIV_STYLE = new HashMap<String, String>(){{
-        put("style","margin:5px; padding 5px;");
+        //put("style","margin:5px; padding 5px;");
+        put("style","margin:2px; padding 2px;");
     }};
 
     private static final Map<String,String> JSON_PATH_CLASS = new HashMap<String, String>(){{
@@ -40,7 +42,7 @@ public class DefaultHTMLRender implements HTMLRender {
     private static String DEFAULT_RENDER_HIDDEN_BG_COLOR = "background-color: #8A5757;";
 
     private static final Map<String,String> DEFAULT_RENDER_DIV = new HashMap<String,String>(){{
-        put("style", DEFAULT_RENDER_BG_COLOR);
+        //put("style", DEFAULT_RENDER_BG_COLOR);
     }};
 
     private static final Map<String,String> DEFAULT_RENDER_HIDDEN_DIV = new HashMap<String,String>(){{
