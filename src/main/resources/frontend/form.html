@@ -6,7 +6,8 @@
 <head>
     <title>JSONpedia</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="js/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/highlight.default.css"/>
     <style type="text/css">
         select {
             width: 70px;
@@ -18,6 +19,7 @@
 
     <script type="text/javascript" src="js/jquery-1.7.2-min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/highlight.min.js"></script>
     <script type="application/javascript">
         $(function ($) {
             $.each($('.app-base-uri'), function () {
@@ -73,8 +75,19 @@
 
             $('#get-submit').click(function () {
                 if($('#get-submit').hasClass('disabled')) return;
+                $('#get-form-result').html('');
                 $('#get-load-spinner').show();
-                document.location.href = buildGetRequest();
+                $.get( buildGetRequest())
+                  .success(function(data){
+                    $getFormResult = $('#get-form-result');
+                    $getFormResult.append('<div><i id="delete-get-query-result" class="icon-remove-circle" rel="tooltip" data-original-title="Close"></i></div>');
+                    $('#delete-get-query-result').click(function(e){ $('#get-form-result').html('') });
+                    $getFormResult.append( hljs.highlight('json', JSON.stringify(data, null, 2)).value );
+                }).error(function (xhr, ajaxOptions, thrownError) {
+                    alert('Error while performing request: ' + xhr.status + ' ' + thrownError);
+                }).complete(function(e){
+                    $('#get-load-spinner').hide();
+                });
             });
 
             $('#post-submit').click(function () {
@@ -91,9 +104,8 @@
                         }
                 ).success(function (data) {
                             $('#post-result').html(JSON.stringify(data));
-                        }
-                ).error(function (e) {
-                    alert('Error while performing request: ' + e)
+                }).error(function (xhr, ajaxOptions, thrownError) {
+                    alert('Error while performing request: ' + xhr.status + ' ' + thrownError);
                 }).complete(function(){
                     $('#post-load-spinner').hide();
                 });
@@ -152,9 +164,20 @@
             });
             return flags;
         }
+
+        function alert(msg) {
+            $('#alert-message').html(
+                '<div class="alert fade in"><button type="button" class="close" data-dismiss="alert">&times;</button>'
+                        + msg +
+                '</div>'
+            );
+        }
     </script>
 </head>
 <body>
+
+<div id="alert-message"></div>
+
 <div class="container">
 
 <div style="float: right;">
@@ -227,6 +250,7 @@ Download and install JSONpedia: visit the
         <button type="reset" class="btn">Cancel</button>
         <div style="float:right; display: none;" id="get-load-spinner"><img src="img/spinner.gif"></div>
     </div>
+    <pre id="get-form-result"></pre>
 </form>
 
 <hr/>
