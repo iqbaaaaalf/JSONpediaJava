@@ -49,9 +49,6 @@
                     addFlagButton( $('#post-flags'), 'post-' + declared[i].id, declared[i].id, declared[i].description, active );
                 }
                 $("[rel=tooltip]").tooltip();
-                $('.flagbutton').live('click', function(e){
-                    updateGetRequest();
-                });
                 updateGetRequest();
             });
 
@@ -115,7 +112,7 @@
                 $('#post-result').html('');
             });
 
-            $('#get-form').live('click', function(e) {
+            $('#get-form').live('click change keyup', function(e) {
                 updateGetRequest();
             });
 
