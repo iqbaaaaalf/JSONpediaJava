@@ -76,17 +76,7 @@
                 $('#get-load-spinner').show();
                 $.get( buildGetRequest())
                   .success(function(data){
-                    $getFormResult = $('#get-form-result');
-                    $getFormResult.append('<div><i id="delete-get-query-result" class="icon-remove-circle" rel="tooltip" data-original-title="Close"></i></div>');
-                    $('#delete-get-query-result').click(function(e){ $('#get-form-result').html('') });
-                    outFormat = getSelectedGETOutFormat();
-                    $getFormResult.append(
-                            outFormat == 'json'
-                                ?
-                            hljs.highlight('json', JSON.stringify(data, null, 2)).value
-                                :
-                            data
-                    );
+                    processResponse('get', getSelectedGETOutFormat(), data);
                 }).error(function (xhr, ajaxOptions, thrownError) {
                     alert('Error while performing request: ' + xhr.status + ' ' + thrownError);
                 }).complete(function(e){
@@ -97,8 +87,9 @@
             $('#post-submit').click(function () {
                 if($('#post-submit').hasClass('disabled')) return;
                 request = '/annotate/resource/' +
-                        $('#post-format option:selected').attr('value') +
-                        '/' + encodeURIComponent($('#post-uri').val());
+                           getSelectedPOSTOutFormat() + '/' +
+                           encodeURIComponent($('#post-uri').val());
+                $('#post-form-result').html('');
                 $('#post-load-spinner').show();
                 $.post( request,
                         {
@@ -107,7 +98,7 @@
                           procs    : getActiveFlags('post-flags')
                         }
                 ).success(function (data) {
-                            $('#post-result').html(JSON.stringify(data));
+                    processResponse('post', getSelectedPOSTOutFormat(), data);
                 }).error(function (xhr, ajaxOptions, thrownError) {
                     alert('Error while performing request: ' + xhr.status + ' ' + thrownError);
                 }).complete(function(){
@@ -134,6 +125,10 @@
 
         function getSelectedGETOutFormat() {
             return $('#get-format option:selected').attr('value');
+        }
+
+        function getSelectedPOSTOutFormat() {
+            return $('#post-format option:selected').attr('value');
         }
 
         function buildGetRequest() {
@@ -171,6 +166,24 @@
                 first = false;
             });
             return flags;
+        }
+
+        function processResponse(method, outFormat, data) {
+            $resultContainer = $('#' + method + '-form-result');
+            closeResultButtonId = 'delete-' + method + '-query-result';
+            $resultContainer.append(
+                    '<div><i id="' + closeResultButtonId + '" class="icon-remove-circle" rel="tooltip" data-original-title="Close"></i></div>'
+            );
+            $('#' + closeResultButtonId).click(function (e) {
+                $('#' + method + '-form-result').html('')
+            });
+            $resultContainer.append(
+                    outFormat == 'json'
+                            ?
+                            hljs.highlight('json', JSON.stringify(data, null, 2)).value
+                            :
+                            data
+            );
         }
 
         function alert(msg) {
@@ -254,8 +267,12 @@ Download and install JSONpedia: visit the
         <button type="reset" class="btn">Cancel</button>
         <div style="float:right; display: none;" id="get-load-spinner"><img src="img/spinner.gif"></div>
     </div>
-    <pre id="get-form-result"></pre>
 </form>
+
+<div>
+    <span class="label label-info">Result:</span>
+    <pre id="get-form-result"></pre>
+</div>
 
 <hr/>
 
@@ -269,7 +286,7 @@ Download and install JSONpedia: visit the
             <select id="post-format" name="format">
                 <option value="json" selected="selected">json</option>
                 <option value="html">html</option>
-            </select>/<input id="post-uri" type="text" style="width:400px" value="en:Fake_Page" placeholder="http://en.wikipedia.org/wiki/Fake_Page OR en:Fake_Page"/>
+            </select>/<input id="post-uri" type="text" style="width:400px" value="en:FakeDoc" placeholder="http://&lt;lang&gt;.wikipedia.org/wiki/&lt;Doc&gt; OR &lt;lang&gt;:&lt;Doc&gt;"/>
         </div>
     </div>
 
@@ -315,12 +332,13 @@ Download and install JSONpedia: visit the
         <button id="post-reset"  type="reset" class="btn">Cancel</button>
         <div style="float:right; display: none;" id="post-load-spinner"><img src="img/spinner.gif"></div>
     </div>
-
-    <div>
-        <span class="label label-info">Result:</span>
-        <div id="post-result" class="well"></div>
-    </div>
 </form>
+
+<div>
+    <span class="label label-info">Result:</span>
+    <pre id="post-form-result"></pre>
+</div>
+
 
 <hr/>
 
@@ -330,26 +348,21 @@ Download and install JSONpedia: visit the
 
 <h3>Examples</h3>
 <ul>
-    <li><code><a href="/annotate/resource/json/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/json/http://en.wikipedia.org/wiki/Albert_Einstein</a></code>
+    <li><code><a target="_blank" href="/annotate/resource/json/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/json/http://en.wikipedia.org/wiki/Albert_Einstein</a></code>
     </li>
-    <li><code><a href="/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/html/http://en.wikipedia.org/wiki/Albert_Einstein</a></code>
+    <li><code><a target="_blank" href="/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/html/http://en.wikipedia.org/wiki/Albert_Einstein</a></code>
     </li>
-    <li><code><a href="/annotate/resource/json/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbedo"><span class="app-base-uri">http://...</span>/annotate/resource/json/http://en.wikipedia.org/wiki/Albedo</a></code>
+    <li><code><a target="_blank" href="/annotate/resource/json/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbedo"><span class="app-base-uri">http://...</span>/annotate/resource/json/http://en.wikipedia.org/wiki/Albedo</a></code>
     </li>
-    <li><code><a href="/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbedo"><span class="app-base-uri">http://...</span>/annotate/resource/html/http://en.wikipedia.org/wiki/Albedo</a></code>
+    <li><code><a target="_blank" href="/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlbedo"><span class="app-base-uri">http://...</span>/annotate/resource/html/http://en.wikipedia.org/wiki/Albedo</a></code>
     </li>
 </ul>
-<h3>Compact GET API</h3>
-
-<p>HTTP GET requests have the pattern:</p>
-<pre><span class="app-base-uri">http://...</span>/annotate/<em>format</em>/<em>input-uri</em></pre>
-<p>The response is the input document converted to the desired output format.</p>
 
 <h3>GET API</h3>
 
-<p>HTTP GET requests can be made to the URL:
-    <pre><code class="app-base-uri">http://.../</code>/annotate/</pre> with the following query parameters:
-</p>
+<p>HTTP GET requests can be sent to the URL:</p>
+<pre><span class="app-base-uri">http://.../</span>/annotate/<em>&lt;format&gt;</em>/<em>&lt;uri&gt;</em></pre> with the following parameters:
+
 <table class="table">
     <tr>
         <th>Parameter</th>
@@ -358,13 +371,13 @@ Download and install JSONpedia: visit the
     </tr>
     <tr>
         <th>uri</th>
-        <td>URI of an input resource.</td>
+        <td>full URL (or short identifier) of a Wikipedia input resource, es: <i>http://en.wikipedia.org/wiki/Albert_Einstein</i> or <i>en:Albert_Einstein</i></td>
         <td><span class="label label-info">True</span></td>
     </tr>
     <tr>
         <th>format</th>
         <td>Desired output format. See <a href="#supported-formats">supported formats</a>.</td>
-        <td><span class="label label-info">False</span></td>
+        <td><span class="label label-info">True</span></td>
     </tr>
     <tr>
         <th>filter</th>
@@ -384,10 +397,16 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
 
 <h3>POST API</h3>
 
-<p>A document body can also be converted by HTTP POSTing form data to<code><span class="app-base-uri">http://...</span>/</code>. <br/>
-    The <code>Content-Type</code> HTTP header must be set to <code>application/x-www-form-urlencoded</code>.
-    The following parameters are supported:
+<p>Large WikiText documents can be also sent by HTTP POSTing form data to:</p>
+
+<pre><span class="app-base-uri">http://.../</span>/annotate/<em>&lt;format&gt;</em>/<em>&lt;uri&gt;</em></pre>
+
+<p>
+The request <code>Content-Type</code> must be set to <code>application/x-www-form-urlencoded</code>.
+<br/>
+The following parameters are supported:
 </p>
+
 <table class="table">
     <tr>
         <th>Parameter</th>
@@ -396,13 +415,13 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
     </tr>
     <tr>
         <th>uri</th>
-        <td>URI of the resource provided as input.</td>
+        <td>full URL (or short identifier) of a Wikipedia input resource, es: <i>http://en.wikipedia.org/wiki/Albert_Einstein</i> or <i>en:Albert_Einstein</i></td>
         <td><span class="label label-info">True</span></td>
     </tr>
     <tr>
         <th>format</th>
         <td>Desired output format. See <a href="#supported-formats">supported formats</a>.</td>
-        <td><span class="label label-info">False</span></td>
+        <td><span class="label label-info">True</span></td>
     </tr>
     <tr>
         <th>filter</th>
@@ -416,7 +435,7 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
     </tr>
     <tr>
         <th>wikitext</th>
-        <td>The wikitext to be converted, if not specified will be retrieved the one addressed by <code>uri</code></td>
+        <td>The wikitext to be converted, if not specified will be retrieved the one addressed by <code>uri</code>.</td>
         <td><span class="label label-info">False</span></td>
     </tr>
 </table>
@@ -424,7 +443,7 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
 <a name="supported-formats"></a>
 <h3>Output formats</h3>
 
-<p>Supported output format identifiers are:</p>
+<p>Supported output format are:</p>
 
 <table class="table">
     <tr>
@@ -435,20 +454,23 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
     <tr>
         <th>JSON</th>
         <td><code>application/json</code></td>
-        <td>Produces a <a href="http://json.org/" target="_blank">JSON</a> object which sections are described in <a href="#processors-doc">processors doc.</a></td>
+        <td>Produces a <a href="http://json.org/" target="_blank">JSON</a> object which sections are described in
+        <a href="#processors-doc">processors section.</a></td>
     </tr>
     <tr>
         <th>HTML<span class="label label-important">Beta</span></th>
         <td><code>application/xhtml</code></td>
-        <td>Produces a XHTML Compliant markup mapping the extracted JSON structure.</td>
+        <td>Produces an XHTML markup showing the extracted data structure.</td>
     </tr>
 </table>
 
 <h3>Error reporting</h3>
 
-<p>Processing errors are indicated via
-    HTTP status codes and brief <code>text/plain</code> error messages.
-    The following status codes can be returned:</p>
+<p>
+Processing errors are reported as HTTP status codes with short <code>text/plain</code> messages.
+<br/>
+The following status codes can be returned:
+</p>
 <table class="table">
     <thead>
     <tr>
@@ -459,19 +481,19 @@ Such URL will return an HTTP <i>302</i> redirect to <code><span
     <tbody>
     <tr>
         <th>200 OK</th>
-        <td>Success</td>
+        <td><span class="label label-success">Success.</span></td>
     </tr>
     <tr>
         <th>400 Bad Request</th>
-        <td>Missing or malformed input parameter</td>
+        <td>Missing or malformed input parameter.</td>
     </tr>
     <tr>
         <th>404 Not Found</th>
-        <td>Malformed request URI</td>
+        <td>Malformed request URI.</td>
     </tr>
     <tr>
         <th>502 Bad Gateway</th>
-        <td>Input document from a remote server could not be fetched or parsed</td>
+        <td>Input document from a remote server could not be fetched or parsed.</td>
     </tr>
     </tbody>
 </table>
@@ -755,7 +777,7 @@ Any JSON object matching <strong>ALL</strong> these patterns will be returned.
 <!--------- BEGIN Procs Documentation --------->
 <a name="procs-syntax"></a>
 <h3>Processors Syntax</h3>
-A list of <i>comma-separated</i> processor names that must be applied over the page processing.
+A list of <i>comma-separated</i> names of <i>Processors</i> that must be applied over the document processing.
 Some Processors are active by default, so they don't require to be explicitly activated.
 The default Processors can be forcibly disabled preprending a <strong>-</strong> symbol before the name.
 For example the following string:
