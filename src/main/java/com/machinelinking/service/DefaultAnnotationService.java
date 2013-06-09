@@ -69,12 +69,12 @@ public class DefaultAnnotationService implements AnnotationService {
     public Response annotateResource(
             @PathParam("resource") String resource,
             @PathParam("outFormat")String outFormat,
-            @QueryParam("flags")   String flags,
+            @QueryParam("procs")   String processors,
             @QueryParam("filter")  String filter
     ) {
         try {
             final DocumentSource documentSource = new DocumentSource(toResourceURL(resource));
-            return annotateDocumentSource(documentSource, flags, outFormat, filter);
+            return annotateDocumentSource(documentSource, processors, outFormat, filter);
         } catch (IllegalArgumentException iae) {
             throw new InvalidEntityException(iae);
         }
@@ -90,13 +90,13 @@ public class DefaultAnnotationService implements AnnotationService {
     public Response annotateResource(
             @PathParam("resource") String resource,
             @PathParam("outFormat")String outFormat,
-            @FormParam("flags")    String flags,
+            @FormParam("procs")    String processors,
             @FormParam("wikitext") String wikitext,
             @FormParam("filter")   String filter
     ) {
         try {
         final DocumentSource documentSource = new DocumentSource(toResourceURL(resource), wikitext);
-        return annotateDocumentSource(documentSource, flags, outFormat, filter);
+        return annotateDocumentSource(documentSource, processors, outFormat, filter);
         } catch (IllegalArgumentException iae) {
             throw new InvalidEntityException(iae);
         }

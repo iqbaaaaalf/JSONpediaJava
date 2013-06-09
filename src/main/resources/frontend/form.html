@@ -104,7 +104,7 @@
                         {
                           wikitext : $('#post-wikitext').val(),
                           filter   : $('#post-filter').val(),
-                          flags    : getActiveFlags('post-flags')
+                          procs    : getActiveFlags('post-flags')
                         }
                 ).success(function (data) {
                             $('#post-result').html(JSON.stringify(data));
@@ -140,8 +140,9 @@
             filter = $('#get-filter').val();
             return '/annotate/resource/' + getSelectedGETOutFormat() +
             '/' + encodeURIComponent($('#get-uri').val()) +
-            (filter.trim().length == 0 ? '' : '?filter=' + filter) +
-            '&flags=' + getActiveFlags('get-flags');
+            '?' +
+            (filter.trim().length == 0 ? '' : 'filter=' + filter) +
+            '&procs=' + getActiveFlags('get-flags');
         }
 
         function updateGetRequest() {
