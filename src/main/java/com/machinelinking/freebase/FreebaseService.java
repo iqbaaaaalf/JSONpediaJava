@@ -12,9 +12,9 @@ import java.net.URLEncoder;
  */
 public class FreebaseService {
 
-    private static final String API_SERVICE = "http://api.freebase.com/api/service/";
+    private static final String API_SERVICE = "https://www.googleapis.com/freebase/v1/";
 
-    private static final String SEARCH_SERVICE = API_SERVICE + "search?query=";
+    private static final String SEARCH_SERVICE = API_SERVICE + "search?query=%s";
 
     private static final String RESPONSE_OK  = "200 OK";
     private static final String RESULT_FIELD = "result";
@@ -31,7 +31,9 @@ public class FreebaseService {
     public JsonNode getEntityData(String entityName) throws IOException {
         final URL query;
         try {
-            query = new URL(SEARCH_SERVICE + URLEncoder.encode(entityName, "UTF-8"));
+            query = new URL(
+                    String.format(SEARCH_SERVICE, URLEncoder.encode(entityName, "UTF-8"))
+            );
         } catch (Exception e) {
             throw new RuntimeException("Error while preparing query.");
         }
