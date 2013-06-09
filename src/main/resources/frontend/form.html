@@ -79,7 +79,14 @@
                     $getFormResult = $('#get-form-result');
                     $getFormResult.append('<div><i id="delete-get-query-result" class="icon-remove-circle" rel="tooltip" data-original-title="Close"></i></div>');
                     $('#delete-get-query-result').click(function(e){ $('#get-form-result').html('') });
-                    $getFormResult.append( hljs.highlight('json', JSON.stringify(data, null, 2)).value );
+                    outFormat = getSelectedGETOutFormat();
+                    $getFormResult.append(
+                            outFormat == 'json'
+                                ?
+                            hljs.highlight('json', JSON.stringify(data, null, 2)).value
+                                :
+                            data
+                    );
                 }).error(function (xhr, ajaxOptions, thrownError) {
                     alert('Error while performing request: ' + xhr.status + ' ' + thrownError);
                 }).complete(function(e){
@@ -125,10 +132,13 @@
             });
         });
 
+        function getSelectedGETOutFormat() {
+            return $('#get-format option:selected').attr('value');
+        }
+
         function buildGetRequest() {
             filter = $('#get-filter').val();
-            return '/annotate/resource/' +
-            $('#get-format option:selected').attr('value') +
+            return '/annotate/resource/' + getSelectedGETOutFormat() +
             '/' + encodeURIComponent($('#get-uri').val()) +
             (filter.trim().length == 0 ? '' : '?filter=' + filter) +
             '&flags=' + getActiveFlags('get-flags');
