@@ -54,7 +54,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     @Test
     public void testAnnotateOnline() throws IOException, URISyntaxException {
         final JsonNode node = performQuery(
-                buildPath(TARGET_RESOURCE).queryParam("flags", WikiEnricherFactory.Linkers).build()
+                buildPath(TARGET_RESOURCE).queryParam("procs", WikiEnricherFactory.Linkers).build()
         );
         checkJSONResponse(node);
         Assert.assertNotNull(node.get("freebase"));
@@ -64,7 +64,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     public void testAnnotateWithFilters() throws URISyntaxException, IOException {
         final JsonNode node = performQuery(
                 buildPath(TARGET_RESOURCE)
-                        .queryParam("flags", WikiEnricherFactory.Structure)
+                        .queryParam("procs", WikiEnricherFactory.Structure)
                         .queryParam("filter", DefaultJSONFilterEngineTest.FILTER_EXP).build()
         );
         Assert.assertEquals(

@@ -36,6 +36,8 @@ import java.util.regex.Pattern;
 @Path("/annotate")
 public class DefaultAnnotationService implements AnnotationService {
 
+    public static final String SPACE_REPLACER = "_";
+
     public static final boolean FORMAT_JSON = false;
 
     public enum OutputFormat {
@@ -106,9 +108,11 @@ public class DefaultAnnotationService implements AnnotationService {
         final Matcher resourceMatcher = resourcePattern.matcher(resource);
         final String resourceURL;
         if(resourceMatcher.matches()) {
-            resourceURL = String.format(
-                    "http://%s.wikipedia.org/wiki/%s", resourceMatcher.group(1), resourceMatcher.group(2)
-            );
+            final String lang = resourceMatcher.group(1);
+            final String document = resourceMatcher
+                    .group(2)
+                    .replaceAll(" ", SPACE_REPLACER).replaceAll("%20", SPACE_REPLACER);
+            resourceURL = String.format("http://%s.wikipedia.org/wiki/%s", lang, document);
         } else {
             resourceURL = resource;
         }
