@@ -6,7 +6,7 @@
 <head>
     <title>JSONpedia</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="js/bootstrap.min.css"/>
     <style type="text/css">
         select {
             width: 70px;
@@ -16,8 +16,8 @@
         }
     </style>
 
-    <script type="text/javascript" src="jquery-1.7.2-min.js"></script>
-    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2-min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="application/javascript">
         $(function ($) {
             $.each($('.app-base-uri'), function () {
@@ -43,13 +43,14 @@
                     for(var j=0; j < defaultz.length; j++) {
                         if(defaultz[j].id == declared[i].id) active = true;
                     }
-                    addFlagButton( $('#get-flags') , 'get-'  + declared[i].id, declared[i].id, declared[i].description );
-                    addFlagButton( $('#post-flags'), 'post-' + declared[i].id, declared[i].id, declared[i].description );
+                    addFlagButton( $('#get-flags') , 'get-'  + declared[i].id, declared[i].id, declared[i].description, active );
+                    addFlagButton( $('#post-flags'), 'post-' + declared[i].id, declared[i].id, declared[i].description, active );
                 }
                 $("[rel=tooltip]").tooltip();
                 $('.flagbutton').live('click', function(e){
                     updateGetRequest();
                 });
+                updateGetRequest();
             });
 
             $('#get-uri').keyup(function(){
@@ -102,17 +103,25 @@
                 $('#post-result').html('');
             });
 
-            $('#get-form').live('change keyup', function(e) {
+            $('#get-form').live('click', function(e) {
                 updateGetRequest();
             });
-            updateGetRequest();
+
+            $('#get-query-copy').click(function(e){
+                window.prompt('CTRL + C to copy:', $('#get-query').html() );
+            });
+
+            $('#get-query-open-external').click(function (e) {
+                window.open( buildGetRequest() );
+            });
         });
 
         function buildGetRequest() {
+            filter = $('#get-filter').val();
             return '/annotate/resource/' +
             $('#get-format option:selected').attr('value') +
             '/' + encodeURIComponent($('#get-uri').val()) +
-            '?filter=' + $('#get-filter').val() +
+            (filter.trim().length == 0 ? '' : '?filter=' + filter) +
             '&flags=' + getActiveFlags('get-flags');
         }
 
@@ -124,20 +133,22 @@
             $(id).modal('show');
         }
 
-        function addFlagButton($root, id, name, description) {
+        function addFlagButton($root, id, name, description, active) {
             $root.append('<button id="' + id + '" onclick="return false;" rel="tooltip" data-placement="top" data-original-title="' + description + '" class="btn btn-primary flagbutton' + (active ? ' active' : '') + '">'+ name + '</button>');
             $('#' + id).data('default-flag', active);
         }
 
         function getActiveFlags(container) {
             flags = '';
+            first = true;
             $('#' + container + ' .btn').each(function(i,e){
                 $e = $(e);
                 if( $e.attr('class').indexOf('active') != -1) {
-                    flags += $e.html() + ',';
+                    flags += (first ? '' : ',') + $e.html();
                 } else {
-                    if( $e.data('default-flag') ) flags += '-' + $e.html() + ',';
+                    if( $e.data('default-flag') ) flags += (first ? '' : ',') + '-' + $e.html();
                 }
+                first = false;
             });
             return flags;
         }
@@ -152,7 +163,7 @@
 
 <h1>JSONpedia - Live Service Demo</h1>
 
-<p>Convert any MediaWiki document to JSON!</p>
+<p>Convert any <a href="http://en.wikipedia.org/wiki/Help:Wiki_markup" target="_blank">MediaWiki</a> document to <a href="http://www.json.org/" target="_blank">JSON</a>!</p>
 <p>
 Download and install JSONpedia: visit the
 <a href="https://bitbucket.org/hardest/machinelinking" target="_blank">Developers Site</a> and the
@@ -207,12 +218,14 @@ Download and install JSONpedia: visit the
     <div>
         <span class="label label-info">Query:</span>
         <span id="get-query" class="label label-info"></span>
+        <i id="get-query-copy" class="icon-edit" rel="tooltip" data-original-title="Copy query"></i>
+        <i id="get-query-open-external" class="icon-circle-arrow-right" rel="tooltip" data-original-title="Open in a new window"></i>
     </div>
 
     <div class="form-actions">
         <button id="get-submit" type="button" class="btn btn-primary">Convert</button>
         <button type="reset" class="btn">Cancel</button>
-        <div style="float:right; display: none;" id="get-load-spinner"><img src="spinner.gif"></div>
+        <div style="float:right; display: none;" id="get-load-spinner"><img src="img/spinner.gif"></div>
     </div>
 </form>
 
@@ -272,7 +285,7 @@ Download and install JSONpedia: visit the
     <div class="form-actions">
         <button id="post-submit" type="button" class="btn btn-primary">Convert</button>
         <button id="post-reset"  type="reset" class="btn">Cancel</button>
-        <div style="float:right; display: none;" id="post-load-spinner"><img src="spinner.gif"></div>
+        <div style="float:right; display: none;" id="post-load-spinner"><img src="img/spinner.gif"></div>
     </div>
 
     <div>
