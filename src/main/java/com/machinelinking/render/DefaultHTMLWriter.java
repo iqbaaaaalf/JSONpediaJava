@@ -26,18 +26,17 @@ public class DefaultHTMLWriter implements HTMLWriter {
     @Override
     public void openDocument() throws IOException {
         writer.append("<html>");
-        writer.append( IOUtils.toString( this.getClass().getResourceAsStream("/default-html-writer-header.html") ) );
+        writer.append(loadResource("default-html-writer-header.html"));
         writer.append("<body>");
         writer.append("<script type=\"text/javascript\">");
-        writer.append( IOUtils.toString( this.getClass().getResourceAsStream("/default-html-writer-include.js") ) );
+        writer.append(loadResource("default-html-writer-include.js"));
         writer.append("</script>");
-        writer.append( IOUtils.toString( this.getClass().getResourceAsStream("/default-html-writer-body-open.html") ) );
-
+        writer.append(loadResource("default-html-writer-body-open.html"));
     }
 
     @Override
     public void closeDocument() throws IOException {
-        writer.append( IOUtils.toString( this.getClass().getResourceAsStream("/default-html-writer-body-close.html") ) );
+        writer.append( loadResource("default-html-writer-body-close.html"));
         if(!openTags.isEmpty()) throw new IllegalStateException();
     }
 
@@ -172,6 +171,14 @@ public class DefaultHTMLWriter implements HTMLWriter {
     @Override
     public void flush() throws IOException {
         writer.flush();
+    }
+
+    private String loadResource(String resource) throws IOException {
+        return IOUtils.toString(
+                this.getClass().getResourceAsStream(
+                        String.format("/com/machinelinking/render/%s", resource)
+                )
+        );
     }
 
     private String escapeStringMarkup(String in) {
