@@ -1,0 +1,4 @@
+/usr/lib/jvm/java-7-openjdk-amd64/bin/java -Djava.net.preferIPv4Stack=true -cp activation-1.1.jar:grizzly-http-2.1.2.jar:jackson-xc-1.9.2.jar:jersey-json-1.11.jar:management-api-3.0.0-b012.jar:xercesImpl-2.9.1.jar:asm-3.1.jar:grizzly-http-server-2.1.2.jar:jaxb-api-2.2.2.jar:jersey-server-1.11.jar:mongo-java-driver-2.7.2.jar:xml-apis-1.3.04.jar:commons-compress-1.0.jar:grizzly-rcm-2.1.2.jar:jaxb-impl-2.2.3-1.jar:jettison-1.1.jar:nekohtml-1.9.16.jar:commons-io-2.4.jar:jackson-core-asl-1.9.6.jar:jcommander-1.29.jar:servlet-api-2.5.jar:gmbal-api-only-3.0.0-b023.jar:jackson-jaxrs-1.9.6.jar:jersey-core-1.11.jar:stax-api-1.0.1.jar:grizzly-framework-2.1.2.jar:jackson-mapper-asl-1.9.6.jar:jersey-grizzly2-1.11.jar:stax-api-1.0-2.jar:target/jsonpedia-1.0-SNAPSHOT.jar com.machinelinking.service.BasicServer 0.0.0.0 9998
+
+
+

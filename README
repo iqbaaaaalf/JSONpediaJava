@@ -41,4 +41,11 @@ CLI Usage examples
    Done.
    processor: Processed pages: 25, elapsed time: 0 (ms), exceptions: []
     templates: 1117, properties 4907, max properties/template: 52, avg properties/template: 4,393017
+    
+
+How to run MongoDB:
+
+   bin/mongod --port 7654 --dbpath data/
+
+
 
