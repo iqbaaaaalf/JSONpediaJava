@@ -79,11 +79,28 @@ public class EntityExpansionReaderTest {
         Assert.assertEquals(']', c);
     }
 
-    public void checkString(String in, String expected) throws IOException {
+    private void checkString(String in, String expected) throws IOException {
+        checkStringCharByChar(in, expected);
+        checkStringWithBulkBuffer(in, expected);
+    }
+
+    private void checkStringCharByChar(String in, String expected) throws IOException {
         final EntityExpansionReader expandableReader = new EntityExpansionReader( new BufferedReader(new StringReader(in)) );
-        final char[] buffer = new char[expected.length()];
-        final int readChars = expandableReader.read(buffer, 0, buffer.length);
-        final String out = new String(buffer);
+        final char[] charByCharBuffer = new char[expected.length()];
+        for(int i = 0; i < charByCharBuffer.length; i++) {
+            charByCharBuffer[i] = (char) expandableReader.read();
+        }
+        final String out = new String(charByCharBuffer);
+        System.out.printf("Expected: '%s'\n", expected);
+        System.out.printf("Out     : '%s'\n", out);
+        Assert.assertEquals(expected, out);
+    }
+
+    private void checkStringWithBulkBuffer(String in, String expected) throws IOException {
+        final EntityExpansionReader expandableReader = new EntityExpansionReader( new BufferedReader(new StringReader(in)) );
+        final char[] bulkBuffer = new char[expected.length()];
+        final int readChars     = expandableReader.read(bulkBuffer, 0, bulkBuffer.length);
+        final String out = new String(bulkBuffer);
         System.out.printf("Expected: '%s'\n", expected);
         System.out.printf("Out     : '%s'\n", out);
         Assert.assertEquals(expected.length() == 0 ?  -1 : expected.length(), readChars);

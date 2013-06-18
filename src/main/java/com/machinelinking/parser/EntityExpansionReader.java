@@ -7,6 +7,7 @@ import java.io.Reader;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
+// TODO: this class should be used to detect HTML entities within the TEXT. is not intended to be used by the entire parser.
 public class EntityExpansionReader extends Reader {
 
     private final short MAX_ENTITY_NUMERIC_SIZE = 6;
@@ -35,12 +36,12 @@ public class EntityExpansionReader extends Reader {
         char c;
         int charsRead = 0;
         boolean foundTerminal = false;
-        int i;
-        for (i = off; i < len; i++) {
+        for (int i = off; i < len; i++) {
             intc = inner.read();
             if (intc == -1) break;
             c = (char) intc;
             if (c == '&') {
+                //inner.mark(MAX_ENTITY_NUMERIC_SIZE + 2);
                 intBuffer.delete(0, intBuffer.length());
                 for(int l = 0; l < MAX_ENTITY_NUMERIC_SIZE; l++) {
                     intc = inner.read();
@@ -76,6 +77,10 @@ public class EntityExpansionReader extends Reader {
                         i += bufferLength;
                     }
                 } else { // &something else...
+                    //inner.reset();
+                    cbuf[i] = '&';
+                    charsRead++;
+                    /*
                     cbuf[i++] = '&';
                     final int bufferLength = intBuffer.length();
                     if (!foundTerminal && bufferLength > 0) {
@@ -84,6 +89,7 @@ public class EntityExpansionReader extends Reader {
                         charsRead += bufferLength + 1;
                         i = k + 1;
                     }
+                    */
                 }
             } else {
                 cbuf[i] = c;
