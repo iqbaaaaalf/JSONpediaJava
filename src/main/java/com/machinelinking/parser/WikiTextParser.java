@@ -25,7 +25,7 @@ public class WikiTextParser implements ParserReader {
 
     private static final String[] TABLE_DELIMITERS = new String[]{"|}", "|-", "!!" , "!", "||", "|"};
 
-    private static final String[] REFERENCE_DELIMITERS = new String[] {"]]", "]", "|"};
+    private static final String[] REFERENCE_DELIMITERS = new String[] {"]]", "]", "\n", "|"};
 
     private static final String[] LINK_DELIMITERS  = new String[] {"]", "|"};
 
@@ -418,16 +418,19 @@ public class WikiTextParser implements ParserReader {
         final String referenceLabel = readReferenceLabel();
         handler.beginReference(referenceLabel);
         int ahead;
-        while(true) {
-            ahead = readPropertyValue(REFERENCE_DELIMITERS , false, true);
-            if(ahead == 0)
-                break;
-            if(ahead == 1) {
-                handler.parseWarning( "Invalid closure for reference.", getLocation() );
-                break;
+        try {
+            while (true) {
+                ahead = readPropertyValue(REFERENCE_DELIMITERS, false, true);
+                if (ahead == 0)
+                    break;
+                if (ahead == 1 || ahead == 2) {
+                    handler.parseWarning("Invalid closure for reference.", getLocation());
+                    break;
+                }
             }
+        } finally {
+            handler.endReference(referenceLabel);
         }
-        handler.endReference(referenceLabel);
     }
 
     private final StringBuilder linkURLSB = new StringBuilder();

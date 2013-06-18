@@ -139,13 +139,27 @@ public class WikiTextParserTest {
     }
 
     // TODO: close at carriage return?
-    @Ignore
     @Test
     public void testMissingLinkClosure() throws IOException, WikiTextParserException {
         parse(
-                "land in the southeastern portion of the [[Borough (New York City)|borough of [[the Bronx]] in [[New York City]]) was named in his honor.",
+                "land in the southeastern portion of the [[Borough (New York City)|borough of [[the Bronx]] in [[New York City]]) was named in his honor.\n",
 
-                ""
+                "Begin Document\n" +
+                "Text: 'land in the southeastern portion of the '\n" +
+                "Begin Reference: Borough (New York City)\n" +
+                "k: null\n" +
+                "Text: 'borough of '\n" +
+                "Begin Reference: the Bronx\n" +
+                "End Reference: the Bronx\n" +
+                "Text: ' in '\n" +
+                "Begin Reference: New York City\n" +
+                "End Reference: New York City\n" +
+                "Text: ') was named in his honor.'\n" +
+                "Warning: Invalid closure for reference. (2, 0)\n" +
+                "End Reference: Borough (New York City)\n" +
+                "End Document\n",
+
+                false
         );
     }
 
