@@ -17,7 +17,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_0": "ANA type"
+                        "__an0": "ANA type"
                     }
                 },
                 {
@@ -31,7 +31,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_1": "Target antigen"
+                        "__an0": "Target antigen"
                     }
                 },
                 {
@@ -45,20 +45,20 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_2": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Sensitivity and specificity",
                             "content": {
-                                "__anon_3": [
+                                "__an0": [
                                     "Sensitivity"
                                 ]
                             }
                         },
-                        "__anon_4": {
+                        "__an1": {
                             "__type": "reference",
                             "label": "Systemic lupus erythematosus",
                             "content": {
-                                "__anon_5": [
+                                "__an0": [
                                     "SLE"
                                 ]
                             }
@@ -68,11 +68,11 @@
                 {
                     "__type": "head_cell",
                     "content": {
-                        "__anon_6": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Drug-induced lupus erythematosus",
                             "content": {
-                                "__anon_7": [
+                                "__an0": [
                                     "Drug-induced LE"
                                 ]
                             }
@@ -82,11 +82,11 @@
                 {
                     "__type": "head_cell",
                     "content": {
-                        "__anon_8": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Systemic_sclerosis#Types",
                             "content": {
-                                "__anon_9": [
+                                "__an0": [
                                     "Diffuse systemic sclerosis"
                                 ]
                             }
@@ -96,11 +96,11 @@
                 {
                     "__type": "head_cell",
                     "content": {
-                        "__anon_10": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "CREST syndrome",
                             "content": {
-                                "__anon_11": [
+                                "__an0": [
                                     "Limited systemic scleroderma"
                                 ]
                             }
@@ -110,7 +110,7 @@
                 {
                     "__type": "head_cell",
                     "content": {
-                        "__anon_12": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Sjögren syndrome",
                             "content": {}
@@ -120,7 +120,7 @@
                 {
                     "__type": "head_cell",
                     "content": {
-                        "__anon_13": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Inflammatory myopathy",
                             "content": {}
@@ -130,22 +130,22 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_14": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Mixed connective tissue disease",
                             "content": {
-                                "__anon_15": [
+                                "__an0": [
                                     "MCTD"
                                 ]
                             }
                         },
-                        "__anon_16": "All ANAs",
-                        "__anon_17": {
+                        "__an1": "All ANAs",
+                        "__an2": {
                             "__type": "open_tag",
                             "name": "br",
                             "attributes": null
                         },
-                        "__anon_18": {
+                        "__an3": {
                             "__type": "open_tag",
                             "name": "font",
                             "attributes": [
@@ -154,66 +154,66 @@
                                 }
                             ]
                         },
-                        "__anon_19": "(by indirect",
-                        "__anon_20": {
+                        "__an4": "(by indirect",
+                        "__an5": {
                             "__type": "reference",
                             "label": "Immunofluorescence",
                             "content": {
-                                "__anon_21": [
+                                "__an0": [
                                     "IF"
                                 ]
                             }
                         },
-                        "__anon_22": ")"
+                        "__an6": ")"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_23": "Various"
+                        "__an0": "Various"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_24": ">95"
+                        "__an0": ">95"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_25": ">95"
+                        "__an0": ">95"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_26": "70-90"
+                        "__an0": "70-90"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_27": "70-90"
+                        "__an0": "70-90"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_28": "50-80"
+                        "__an0": "50-80"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_29": "40-60"
+                        "__an0": "40-60"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_30": "95",
-                        "__anon_31": {
+                        "__an0": "95",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -222,7 +222,7 @@
                                 }
                             ]
                         },
-                        "__anon_32": {
+                        "__an2": {
                             "__type": "reference",
                             "label": "Anti-dsDNA",
                             "content": {}
@@ -232,50 +232,50 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_33": "DNA"
+                        "__an0": "DNA"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_34": "40-60"
+                        "__an0": "40-60"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_35": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_36": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_37": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_38": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_39": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_40": "-",
-                        "__anon_41": {
+                        "__an0": "-",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -284,7 +284,7 @@
                                 }
                             ]
                         },
-                        "__anon_42": {
+                        "__an2": {
                             "__type": "reference",
                             "label": "Anti-Sm",
                             "content": {}
@@ -294,56 +294,56 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_43": "Core proteins of",
-                        "__anon_44": {
+                        "__an0": "Core proteins of",
+                        "__an1": {
                             "__type": "reference",
                             "label": "snRNP",
                             "content": {}
                         },
-                        "__anon_45": "s"
+                        "__an2": "s"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_46": "20-30"
+                        "__an0": "20-30"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_47": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_48": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_49": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_50": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_51": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_52": "-",
-                        "__anon_53": {
+                        "__an0": "-",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -352,11 +352,11 @@
                                 }
                             ]
                         },
-                        "__anon_54": {
+                        "__an2": {
                             "__type": "reference",
                             "label": "Anti-histone antibodies",
                             "content": {
-                                "__anon_55": [
+                                "__an0": [
                                     "Anti-histone"
                                 ]
                             }
@@ -366,25 +366,25 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_56": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Histone",
                             "content": {}
                         },
-                        "__anon_57": "s"
+                        "__an1": "s"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_58": "50-70"
+                        "__an0": "50-70"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_59": "90",
-                        "__anon_60": {
+                        "__an0": "90",
+                        "__an1": {
                             "__type": "open_tag",
                             "name": "ref",
                             "attributes": [
@@ -393,8 +393,8 @@
                                 }
                             ]
                         },
-                        "__anon_61": "Table 6-2 in:",
-                        "__anon_62": {
+                        "__an2": "Table 6-2 in:",
+                        "__an3": {
                             "__type": "template",
                             "name": "cite book",
                             "content": {
@@ -422,42 +422,42 @@
                                 "accessdate": null
                             }
                         },
-                        "__anon_63": {
+                        "__an4": {
                             "__type": "close_tag",
                             "name": "ref"
                         },
-                        "__anon_64": "- 95"
+                        "__an5": "- 95"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_65": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_66": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_67": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_68": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_69": "-",
-                        "__anon_70": {
+                        "__an0": "-",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -466,7 +466,7 @@
                                 }
                             ]
                         },
-                        "__anon_71": {
+                        "__an2": {
                             "__type": "reference",
                             "label": "Anti Scl-70",
                             "content": {}
@@ -476,7 +476,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_72": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Type I topoisomerase",
                             "content": {}
@@ -486,44 +486,44 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_73": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_74": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_75": "28-70"
+                        "__an0": "28-70"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_76": "10-18"
+                        "__an0": "10-18"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_77": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_78": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_79": "-",
-                        "__anon_80": {
+                        "__an0": "-",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -532,65 +532,65 @@
                                 }
                             ]
                         },
-                        "__anon_81": "Anti-centromere"
+                        "__an2": "Anti-centromere"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_82": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Centromere",
                             "content": {
-                                "__anon_83": [
+                                "__an0": [
                                     "Centromeric"
                                 ]
                             }
                         },
-                        "__anon_84": "proteins"
+                        "__an1": "proteins"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_85": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_86": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_87": "22-26"
+                        "__an0": "22-26"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_88": "90"
+                        "__an0": "90"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_89": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_90": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_91": "-",
-                        "__anon_92": {
+                        "__an0": "-",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -599,7 +599,7 @@
                                 }
                             ]
                         },
-                        "__anon_93": {
+                        "__an2": {
                             "__type": "reference",
                             "label": "Anti-snRNP70",
                             "content": {}
@@ -609,7 +609,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_94": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "snRNP70",
                             "content": {}
@@ -619,8 +619,8 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_95": "30",
-                        "__anon_96": {
+                        "__an0": "30",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -629,8 +629,8 @@
                                 }
                             ]
                         },
-                        "__anon_97": "-40",
-                        "__anon_98": {
+                        "__an2": "-40",
+                        "__an3": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -639,7 +639,7 @@
                                 }
                             ]
                         },
-                        "__anon_99": {
+                        "__an4": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -653,8 +653,8 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_100": "-",
-                        "__anon_101": {
+                        "__an0": "-",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -668,8 +668,8 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_102": "15",
-                        "__anon_103": {
+                        "__an0": "15",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -683,8 +683,8 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_104": "10",
-                        "__anon_105": {
+                        "__an0": "10",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -698,8 +698,8 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_106": "-",
-                        "__anon_107": {
+                        "__an0": "-",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -713,8 +713,8 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_108": "15",
-                        "__anon_109": {
+                        "__an0": "15",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -728,8 +728,8 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_110": "90",
-                        "__anon_111": {
+                        "__an0": "90",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -738,70 +738,70 @@
                                 }
                             ]
                         },
-                        "__anon_112": {
+                        "__an2": {
                             "__type": "reference",
                             "label": "SS-A",
                             "content": {}
                         },
-                        "__anon_113": "(Ro)"
+                        "__an3": "(Ro)"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_114": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Ribonucleoprotein",
                             "content": {
-                                "__anon_115": [
+                                "__an0": [
                                     "RNP"
                                 ]
                             }
                         },
-                        "__anon_116": "s"
+                        "__an1": "s"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_117": "30-50"
+                        "__an0": "30-50"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_118": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_119": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_120": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_121": "70-95"
+                        "__an0": "70-95"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_122": "10"
+                        "__an0": "10"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_123": "-",
-                        "__anon_124": {
+                        "__an0": "-",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -810,70 +810,70 @@
                                 }
                             ]
                         },
-                        "__anon_125": {
+                        "__an2": {
                             "__type": "reference",
                             "label": "SS-B",
                             "content": {}
                         },
-                        "__anon_126": "(La)"
+                        "__an3": "(La)"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_127": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Ribonucleoprotein",
                             "content": {
-                                "__anon_128": [
+                                "__an0": [
                                     "RNP"
                                 ]
                             }
                         },
-                        "__anon_129": "s"
+                        "__an1": "s"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_130": "10-15"
+                        "__an0": "10-15"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_131": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_132": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_133": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_134": "60-90"
+                        "__an0": "60-90"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_135": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_136": "-",
-                        "__anon_137": {
+                        "__an0": "-",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -882,7 +882,7 @@
                                 }
                             ]
                         },
-                        "__anon_138": {
+                        "__an2": {
                             "__type": "reference",
                             "label": "Jo-1",
                             "content": {}
@@ -892,7 +892,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_139": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Histidine-tRNA ligase",
                             "content": {}
@@ -902,44 +902,44 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_140": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_141": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_142": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_143": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_144": "-"
+                        "__an0": "-"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_145": "25"
+                        "__an0": "25"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_146": "-",
-                        "__anon_147": {
+                        "__an0": "-",
+                        "__an1": {
                             "__type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -961,7 +961,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_148": {
+                        "__an0": {
                             "__type": "open_tag",
                             "name": "font",
                             "attributes": [

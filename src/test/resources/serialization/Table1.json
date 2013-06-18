@@ -25,7 +25,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_0": "'''character'''"
+                        "__an0": "'''character'''"
                     }
                 },
                 {
@@ -39,7 +39,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_1": "A"
+                        "__an0": "A"
                     }
                 },
                 {
@@ -53,7 +53,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_2": "a",
+                        "__an0": "a",
                         "align": [
                             "center"
                         ]
@@ -70,7 +70,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_3": "'''Unicode name'''"
+                        "__an0": "'''Unicode name'''"
                     }
                 },
                 {
@@ -84,13 +84,13 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_4": {
+                        "__an0": {
                             "__type": "open_tag",
                             "name": "small",
                             "attributes": null
                         },
-                        "__anon_5": "LATIN CAPITAL LETTER A",
-                        "__anon_6": {
+                        "__an1": "LATIN CAPITAL LETTER A",
+                        "__an2": {
                             "__type": "close_tag",
                             "name": "small"
                         }
@@ -107,13 +107,13 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_7": {
+                        "__an0": {
                             "__type": "open_tag",
                             "name": "small",
                             "attributes": null
                         },
-                        "__anon_8": "LATIN SMALL LETTER A",
-                        "__anon_9": {
+                        "__an1": "LATIN SMALL LETTER A",
+                        "__an2": {
                             "__type": "close_tag",
                             "name": "small"
                         }
@@ -130,31 +130,31 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_10": "'''character encoding'''"
+                        "__an0": "'''character encoding'''"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_11": "decimal"
+                        "__an0": "decimal"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_12": "hex"
+                        "__an0": "hex"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_13": "decimal"
+                        "__an0": "decimal"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_14": "hex"
+                        "__an0": "hex"
                     }
                 },
                 {
@@ -168,7 +168,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_15": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Unicode",
                             "content": {}
@@ -178,25 +178,25 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_16": "65"
+                        "__an0": "65"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_17": "0041"
+                        "__an0": "0041"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_18": "97"
+                        "__an0": "97"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_19": "0061"
+                        "__an0": "0061"
                     }
                 },
                 {
@@ -210,7 +210,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_20": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "UTF-8",
                             "content": {}
@@ -220,25 +220,25 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_21": "65"
+                        "__an0": "65"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_22": "41"
+                        "__an0": "41"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_23": "97"
+                        "__an0": "97"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_24": "61"
+                        "__an0": "61"
                     }
                 },
                 {
@@ -252,7 +252,7 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_25": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Numeric character reference",
                             "content": {}
@@ -262,25 +262,25 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_26": "&amp;#65;"
+                        "__an0": "&amp;#65;"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_27": "&amp;#x0041;"
+                        "__an0": "&amp;#x0041;"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_28": "&amp;#97;"
+                        "__an0": "&amp;#97;"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_29": "&amp;#x0061;"
+                        "__an0": "&amp;#x0061;"
                     }
                 },
                 {
@@ -294,36 +294,36 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_30": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "EBCDIC",
                             "content": {}
                         },
-                        "__anon_31": "family"
+                        "__an1": "family"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_32": "193"
+                        "__an0": "193"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_33": "C1"
+                        "__an0": "C1"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_34": "129"
+                        "__an0": "129"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_35": "81"
+                        "__an0": "81"
                     }
                 },
                 {
@@ -337,18 +337,18 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_36": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "ASCII",
                             "content": {}
                         },
-                        "__anon_37": {
+                        "__an1": {
                             "__type": "open_tag",
                             "name": "sup",
                             "attributes": null
                         },
-                        "__anon_38": "1",
-                        "__anon_39": {
+                        "__an2": "1",
+                        "__an3": {
                             "__type": "inline_tag",
                             "name": "sup",
                             "attributes": null
@@ -358,25 +358,25 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_40": "65"
+                        "__an0": "65"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_41": "41"
+                        "__an0": "41"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_42": "97"
+                        "__an0": "97"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_43": "61"
+                        "__an0": "61"
                     }
                 }
             ]

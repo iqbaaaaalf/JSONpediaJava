@@ -15,9 +15,7 @@ import java.util.Stack;
 //TODO: remove print out but before check for possible errors.
 public class JSONSerializer implements Serializer {
 
-    private static final String ANON_FIELD_PREFIX = "__anon_";
-
-    private long anonFieldId = 0;
+    private static final String ANON_FIELD_PREFIX = "__an";
 
     private enum WriterStatus {
         Object {
@@ -80,6 +78,7 @@ public class JSONSerializer implements Serializer {
     private final JsonGenerator jsonGenerator;
 
     private final Stack<WriterStatus> stack = new Stack<WriterStatus>();
+    private final Stack<Integer> indexStack = new Stack<>();
 
     private DataEncoder dataEncoder;
 
@@ -108,13 +107,12 @@ public class JSONSerializer implements Serializer {
 
     @Override
     public void openObject() {
-        resetAnonField();
         try {
             if( check(WriterStatus.Object) ) {
                 jsonGenerator.writeFieldName(getNextAnonField());
                 jsonGenerator.writeStartObject();
             } else if( checkAndPop(WriterStatus.PreList) ) {
-                stack.push(WriterStatus.List);
+                stackPush(WriterStatus.List);
                 jsonGenerator.writeStartArray();
                 jsonGenerator.writeStartObject();
             } else if( check(WriterStatus.List) ) {
@@ -128,7 +126,7 @@ public class JSONSerializer implements Serializer {
             } else {
                 jsonGenerator.writeStartObject();
             }
-            stack.push(WriterStatus.Object);
+            stackPush(WriterStatus.Object);
         } catch (IOException ioe) {
             throw new RuntimeException(ioe);
         }
@@ -149,20 +147,19 @@ public class JSONSerializer implements Serializer {
 
     @Override
     public void openList() {
-        resetAnonField();
         try {
             if( check(WriterStatus.Object) ) {
                 jsonGenerator.writeFieldName(getNextAnonField());
             } else if( check(WriterStatus.List) ) {
             } else if( checkAndPop(WriterStatus.PreList) ) {
-                stack.push(WriterStatus.List);
+                stackPush(WriterStatus.List);
                 jsonGenerator.writeStartArray();
             } else if( checkAndPop(WriterStatus.Field) ) {
             } else if( checkAndPop(WriterStatus.SpuriousField) ) {
                 jsonGenerator.writeNull();
                 jsonGenerator.writeEndObject();
             }
-            stack.push(WriterStatus.PreList);
+            stackPush(WriterStatus.PreList);
         } catch (IOException ioe) {
             throw new RuntimeException(ioe);
         }
@@ -189,30 +186,30 @@ public class JSONSerializer implements Serializer {
         try {
             if( check(WriterStatus.Object) ) {
                 jsonGenerator.writeFieldName(finalName);
-                stack.push(WriterStatus.Field);
+                stackPush(WriterStatus.Field);
             } else if(checkAndPop(WriterStatus.PreList)) {
-                stack.push(WriterStatus.List);
+                stackPush(WriterStatus.List);
                 System.out.println("SPURIOUS A");
                 jsonGenerator.writeStartArray();
                 jsonGenerator.writeStartObject();
                 jsonGenerator.writeFieldName(finalName);
-                stack.push(WriterStatus.SpuriousField);
+                stackPush(WriterStatus.SpuriousField);
             } else if(check(WriterStatus.List)) {
                 System.out.println("SPURIOUS B");
                 jsonGenerator.writeStartObject();
                 jsonGenerator.writeFieldName(finalName);
-                stack.push(WriterStatus.SpuriousField);
+                stackPush(WriterStatus.SpuriousField);
             } else if( checkAndPop(WriterStatus.SpuriousField) ) {
                 jsonGenerator.writeNull();
                 jsonGenerator.writeEndObject();
                 jsonGenerator.writeStartObject();
                 jsonGenerator.writeFieldName(finalName);
-                stack.push(WriterStatus.SpuriousField);
+                stackPush(WriterStatus.SpuriousField);
             }else { // Field
                 System.out.println("NESTED");
                 jsonGenerator.writeStartObject();
                 jsonGenerator.writeFieldName(finalName);
-                stack.push(WriterStatus.SpuriousField);
+                stackPush(WriterStatus.SpuriousField);
             }
         } catch (IOException ioe) {
             throw new RuntimeException(ioe);
@@ -225,7 +222,7 @@ public class JSONSerializer implements Serializer {
             if ( check(WriterStatus.Object) ) {
                 jsonGenerator.writeObjectField(getNextAnonField(), value);
             } else if( checkAndPop(WriterStatus.PreList) ) {
-                stack.push(WriterStatus.List);
+                stackPush(WriterStatus.List);
                 jsonGenerator.writeStartArray();
                 internalWriteValue(value);
             } else if( check(WriterStatus.List) ) {
@@ -284,10 +281,16 @@ public class JSONSerializer implements Serializer {
         }
     }
 
+    private void stackPush(WriterStatus status) {
+        stack.push(status);
+        indexStack.push(0);
+    }
+
     private boolean checkAndPop(WriterStatus status) {
         if(stack.isEmpty()) return false;
         if(stack.peek() == status) {
             stack.pop();
+            indexStack.pop();
             return true;
         } else {
             return false;
@@ -315,7 +318,7 @@ public class JSONSerializer implements Serializer {
     }
 
     public void close() {
-        anonFieldId = 0;
+        indexStack.clear();
         closeUntil(null);
         try {
             jsonGenerator.flush();
@@ -335,11 +338,9 @@ public class JSONSerializer implements Serializer {
     }
 
     private String getNextAnonField() {
-        return ANON_FIELD_PREFIX + anonFieldId++;
-    }
-
-    private void resetAnonField() {
-        //anonFieldId = 0;  //TODO: broken. Anon fields must be managed into the stack.
+        final int value = indexStack.pop();
+        indexStack.push(value + 1);
+        return ANON_FIELD_PREFIX + value;
     }
 
 }

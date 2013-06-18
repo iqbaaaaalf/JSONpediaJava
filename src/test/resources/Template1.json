@@ -20,7 +20,7 @@
                         "__type": "reference",
                         "label": "Flag of Alabama",
                         "content": {
-                            "__anon_0": [
+                            "__an0": [
                                 "Flag"
                             ]
                         }
@@ -34,7 +34,7 @@
                         "__type": "reference",
                         "label": "Seal of Alabama",
                         "content": {
-                            "__anon_1": [
+                            "__an0": [
                                 "Seal"
                             ]
                         }
@@ -48,7 +48,7 @@
                         "__type": "reference",
                         "label": "Coat of arms of Alabama",
                         "content": {
-                            "__anon_2": [
+                            "__an0": [
                                 "Coat of arms"
                             ]
                         }
@@ -71,7 +71,7 @@
                         "__type": "reference",
                         "label": "Adjectivals and demonyms for U.S. states",
                         "content": {
-                            "__anon_3": [
+                            "__an0": [
                                 "Alabamian"
                             ]
                         }
@@ -81,7 +81,7 @@
                         "__type": "link",
                         "url": "http://www.gettysburg.stonesentinels.com/Confederate/AL.php",
                         "content": {
-                            "__anon_4": [
+                            "__an0": [
                                 "The Alabama monument south of Gettysburg"
                             ]
                         }
@@ -113,7 +113,7 @@
                         "__type": "reference",
                         "label": "Montgomery, Alabama",
                         "content": {
-                            "__anon_5": [
+                            "__an0": [
                                 "Montgomery"
                             ]
                         }
@@ -130,7 +130,7 @@
                         "__type": "reference",
                         "label": "Birmingham-Hoover-Cullman Combined Statistical Area",
                         "content": {
-                            "__anon_6": [
+                            "__an0": [
                                 "Greater Birmingham Area"
                             ]
                         }
@@ -141,7 +141,7 @@
                         "__type": "reference",
                         "label": "Birmingham, Alabama",
                         "content": {
-                            "__anon_7": [
+                            "__an0": [
                                 "Birmingham"
                             ]
                         }
@@ -159,7 +159,7 @@
                         "__type": "reference",
                         "label": "Republican Party (United States)",
                         "content": {
-                            "__anon_8": [
+                            "__an0": [
                                 "R"
                             ]
                         }
@@ -177,7 +177,7 @@
                         "__type": "reference",
                         "label": "Republican Party (United States)",
                         "content": {
-                            "__anon_9": [
+                            "__an0": [
                                 "R"
                             ]
                         }
@@ -196,7 +196,7 @@
                         "__type": "reference",
                         "label": "Alabama Senate",
                         "content": {
-                            "__anon_10": [
+                            "__an0": [
                                 "Senate"
                             ]
                         }
@@ -207,7 +207,7 @@
                         "__type": "reference",
                         "label": "Alabama House of Representatives",
                         "content": {
-                            "__anon_11": [
+                            "__an0": [
                                 "House of Representatives"
                             ]
                         }
@@ -286,7 +286,7 @@
                         "__type": "reference",
                         "label": "Central Time Zone (North America)",
                         "content": {
-                            "__anon_12": [
+                            "__an0": [
                                 "Central"
                             ]
                         }
@@ -296,7 +296,7 @@
                         "__type": "reference",
                         "label": "Coordinated Universal Time",
                         "content": {
-                            "__anon_13": [
+                            "__an0": [
                                 "UTC"
                             ]
                         }
@@ -305,7 +305,7 @@
                         "__type": "reference",
                         "label": "Central Standard Time",
                         "content": {
-                            "__anon_14": [
+                            "__an0": [
                                 "-6"
                             ]
                         }
@@ -315,7 +315,7 @@
                         "__type": "reference",
                         "label": "Central Daylight Time",
                         "content": {
-                            "__anon_15": [
+                            "__an0": [
                                 "-5"
                             ]
                         }
@@ -329,7 +329,7 @@
                         "__type": "reference",
                         "label": "Eastern Time Zone (North America)",
                         "content": {
-                            "__anon_16": [
+                            "__an0": [
                                 "Eastern"
                             ]
                         }
@@ -339,7 +339,7 @@
                         "__type": "reference",
                         "label": "Coordinated Universal Time",
                         "content": {
-                            "__anon_17": [
+                            "__an0": [
                                 "UTC"
                             ]
                         }
@@ -348,7 +348,7 @@
                         "__type": "reference",
                         "label": "Eastern Standard Time",
                         "content": {
-                            "__anon_18": [
+                            "__an0": [
                                 "−5"
                             ]
                         }
@@ -358,7 +358,7 @@
                         "__type": "reference",
                         "label": "Eastern Daylight Time",
                         "content": {
-                            "__anon_19": [
+                            "__an0": [
                                 "−4"
                             ]
                         }
@@ -395,7 +395,7 @@
                         "__type": "reference",
                         "label": "Baldwin County, Alabama",
                         "content": {
-                            "__anon_20": [
+                            "__an0": [
                                 "Baldwin County"
                             ]
                         }

@@ -20,7 +20,7 @@
                         "__type": "reference",
                         "label": "Flag of Alabama",
                         "content": {
-                            "__anon_0": [
+                            "__an0": [
                                 "Flag"
                             ]
                         }
@@ -34,7 +34,7 @@
                         "__type": "reference",
                         "label": "Seal of Alabama",
                         "content": {
-                            "__anon_1": [
+                            "__an0": [
                                 "Seal"
                             ]
                         }
@@ -48,7 +48,7 @@
                         "__type": "reference",
                         "label": "Coat of arms of Alabama",
                         "content": {
-                            "__anon_2": [
+                            "__an0": [
                                 "Coat of arms"
                             ]
                         }
@@ -71,7 +71,7 @@
                         "__type": "reference",
                         "label": "Adjectivals and demonyms for U.S. states",
                         "content": {
-                            "__anon_3": [
+                            "__an0": [
                                 "Alabamian"
                             ]
                         }
@@ -81,7 +81,7 @@
                         "__type": "link",
                         "url": "http://www.gettysburg.stonesentinels.com/Confederate/AL.php",
                         "content": {
-                            "__anon_4": [
+                            "__an0": [
                                 "The Alabama monument south of Gettysburg"
                             ]
                         }

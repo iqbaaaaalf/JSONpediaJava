@@ -9,7 +9,7 @@
                     "__type": "template",
                     "name": "Redirect",
                     "content": {
-                        "__anon_0": [
+                        "__an0": [
                             "Einstein"
                         ]
                     }
@@ -50,13 +50,13 @@
                                     "df": [
                                         "yes"
                                     ],
-                                    "__anon_1": [
+                                    "__an0": [
                                         "1879"
                                     ],
-                                    "__anon_2": [
+                                    "__an1": [
                                         "3"
                                     ],
-                                    "__anon_3": [
+                                    "__an2": [
                                         "14"
                                     ]
                                 }
@@ -89,22 +89,22 @@
                                     "df": [
                                         "yes"
                                     ],
-                                    "__anon_4": [
+                                    "__an0": [
                                         "1955"
                                     ],
-                                    "__anon_5": [
+                                    "__an1": [
                                         "4"
                                     ],
-                                    "__anon_6": [
+                                    "__an2": [
                                         "18"
                                     ],
-                                    "__anon_7": [
+                                    "__an3": [
                                         "1879"
                                     ],
-                                    "__anon_8": [
+                                    "__an4": [
                                         "3"
                                     ],
-                                    "__anon_9": [
+                                    "__an5": [
                                         "14"
                                     ]
                                 }
@@ -115,7 +115,7 @@
                                 "__type": "reference",
                                 "label": "Princeton, New Jersey",
                                 "content": {
-                                    "__anon_10": [
+                                    "__an0": [
                                         "Princeton"
                                     ]
                                 }
@@ -138,12 +138,12 @@
                                 "__type": "template",
                                 "name": "nowrap",
                                 "content": {
-                                    "__anon_11": {
+                                    "__an0": {
                                         "__type": "reference",
                                         "label": "Elsa Löwenthal",
                                         "content": {}
                                     },
-                                    "__anon_12": [
+                                    "__an1": [
                                         ", née Einstein, (1919–1936)"
                                     ]
                                 }
@@ -157,14 +157,14 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "__anon_13": {
+                                    "__an0": {
                                         "__type": "list",
                                         "content": [
                                             {
                                                 "__type": "reference",
                                                 "label": "Kingdom of Württemberg",
                                                 "content": {
-                                                    "__anon_14": [
+                                                    "__an0": [
                                                         "Württemberg/Germany"
                                                     ]
                                                 }
@@ -177,7 +177,7 @@
                                                         "__type": "reference",
                                                         "label": "Statelessness",
                                                         "content": {
-                                                            "__anon_15": [
+                                                            "__an0": [
                                                                 "Stateless"
                                                             ]
                                                         }
@@ -203,7 +203,7 @@
                                                         "__type": "reference",
                                                         "label": "Austria–Hungary",
                                                         "content": {
-                                                            "__anon_16": [
+                                                            "__an0": [
                                                                 "Austria"
                                                             ]
                                                         }
@@ -218,7 +218,7 @@
                                                         "__type": "reference",
                                                         "label": "German Empire",
                                                         "content": {
-                                                            "__anon_17": [
+                                                            "__an0": [
                                                                 "Germany"
                                                             ]
                                                         }
@@ -252,7 +252,7 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "__anon_18": {
+                                    "__an0": {
                                         "__type": "list",
                                         "content": [
                                             "Swiss",
@@ -325,7 +325,7 @@
                                                         "__type": "reference",
                                                         "label": "Leiden University",
                                                         "content": {
-                                                            "__anon_19": [
+                                                            "__an0": [
                                                                 "University of Leiden"
                                                             ]
                                                         }
@@ -352,7 +352,7 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "__anon_20": {
+                                    "__an0": {
                                         "__type": "list",
                                         "content": [
                                             {
@@ -394,7 +394,7 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "__anon_21": {
+                                    "__an0": {
                                         "__type": "list",
                                         "content": [
                                             {
@@ -478,7 +478,7 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "__anon_22": {
+                                    "__an0": {
                                         "__type": "list",
                                         "content": [
                                             {
@@ -519,7 +519,7 @@
                                                         "__type": "reference",
                                                         "label": "Brownian motion",
                                                         "content": {
-                                                            "__anon_23": [
+                                                            "__an0": [
                                                                 "Theory of Brownian Motion"
                                                             ]
                                                         }
@@ -553,7 +553,7 @@
                                                         "__type": "reference",
                                                         "label": "Classical unified field theories",
                                                         "content": {
-                                                            "__anon_24": [
+                                                            "__an0": [
                                                                 "Unified Field Theory"
                                                             ]
                                                         }
@@ -580,7 +580,7 @@
                                 "__type": "template",
                                 "name": "Plainlist",
                                 "content": {
-                                    "__anon_25": {
+                                    "__an0": {
                                         "__type": "list",
                                         "content": [
                                             {
@@ -629,7 +629,7 @@
                                                         "__type": "reference",
                                                         "label": "Time 100: The Most Important People of the Century",
                                                         "content": {
-                                                            "__anon_26": [
+                                                            "__an0": [
                                                                 "''Time'' Person of the Century"
                                                             ]
                                                         }
@@ -652,49 +652,49 @@
                     "__type": "template",
                     "name": "IPAc-en",
                     "content": {
-                        "__anon_27": [
+                        "__an0": [
                             "icon"
                         ],
-                        "__anon_28": [
+                        "__an1": [
                             "ˈ"
                         ],
-                        "__anon_29": [
+                        "__an2": [
                             "æ"
                         ],
-                        "__anon_30": [
+                        "__an3": [
                             "l"
                         ],
-                        "__anon_31": [
+                        "__an4": [
                             "b"
                         ],
-                        "__anon_32": [
+                        "__an5": [
                             "ər"
                         ],
-                        "__anon_33": [
+                        "__an6": [
                             "t"
                         ],
-                        "__anon_34": [
+                        "__an7": [
                             "_"
                         ],
-                        "__anon_35": [
+                        "__an8": [
                             "ˈ"
                         ],
-                        "__anon_36": [
+                        "__an9": [
                             "aɪ"
                         ],
-                        "__anon_37": [
+                        "__an10": [
                             "n"
                         ],
-                        "__anon_38": [
+                        "__an11": [
                             "s"
                         ],
-                        "__anon_39": [
+                        "__an12": [
                             "t"
                         ],
-                        "__anon_40": [
+                        "__an13": [
                             "aɪ"
                         ],
-                        "__anon_41": [
+                        "__an14": [
                             "n"
                         ]
                     }
@@ -704,13 +704,13 @@
                     "__type": "template",
                     "name": "IPA-de",
                     "content": {
-                        "__anon_42": [
+                        "__an0": [
                             "ˈalbɐt ˈaɪnʃtaɪn"
                         ],
-                        "__anon_43": [
+                        "__an1": [
                             "lang"
                         ],
-                        "__anon_44": [
+                        "__an2": [
                             "Albert_Einstein_german.ogg"
                         ]
                     }
@@ -725,7 +725,7 @@
                     "__type": "reference",
                     "label": "theoretical physics",
                     "content": {
-                        "__anon_45": [
+                        "__an0": [
                             "theoretical physicist"
                         ]
                     }
@@ -789,7 +789,7 @@
                     "__type": "link",
                     "url": "http://books.google.com/books?id=jJl2JAqvoSAC&pg=PA41",
                     "content": {
-                        "__anon_46": [
+                        "__an0": [
                             "Chapter 2, p. 41"
                         ]
                     }
@@ -808,7 +808,7 @@
                     "__type": "template",
                     "name": "cite doi",
                     "content": {
-                        "__anon_47": [
+                        "__an0": [
                             "10.1098/rsbm.1955.0005"
                         ]
                     }
@@ -870,7 +870,7 @@
                     "__type": "reference",
                     "label": "List of Nobel laureates in Physics",
                     "content": {
-                        "__anon_48": [
+                        "__an0": [
                             "1921"
                         ]
                     }
@@ -929,7 +929,7 @@
                     "__type": "reference",
                     "label": "Introduction to quantum mechanics",
                     "content": {
-                        "__anon_49": [
+                        "__an0": [
                             "quantum theory"
                         ]
                     }
@@ -981,7 +981,7 @@
                     "__type": "reference",
                     "label": "quantum mechanics",
                     "content": {
-                        "__anon_50": [
+                        "__an0": [
                             "quantum theory"
                         ]
                     }
@@ -991,7 +991,7 @@
                     "__type": "reference",
                     "label": "particle",
                     "content": {
-                        "__anon_51": [
+                        "__an0": [
                             "particle theory"
                         ]
                     }
@@ -1001,7 +1001,7 @@
                     "__type": "reference",
                     "label": "Brownian motion",
                     "content": {
-                        "__anon_52": [
+                        "__an0": [
                             "motion of molecules"
                         ]
                     }
@@ -1032,7 +1032,7 @@
                     "__type": "link",
                     "url": "http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf",
                     "content": {
-                        "__anon_53": [
+                        "__an0": [
                             "\"Scientific Background on the Nobel Prize in Physics 2011. The accelerating universe.\" (page 2)"
                         ]
                     }
@@ -1053,7 +1053,7 @@
                     "__type": "reference",
                     "label": "Prussian Academy of Sciences",
                     "content": {
-                        "__anon_54": [
+                        "__an0": [
                             "Berlin Academy of Sciences"
                         ]
                     }
@@ -1146,7 +1146,7 @@
                     "__type": "reference",
                     "label": "List of scientific publications by Albert Einstein",
                     "content": {
-                        "__anon_55": [
+                        "__an0": [
                             "more than 300 scientific papers"
                         ]
                     }
@@ -1233,7 +1233,7 @@
                     "__type": "link",
                     "url": "http://wordnetweb.princeton.edu/perl/webwn?s=Einstein",
                     "content": {
-                        "__anon_56": [
+                        "__an0": [
                             "WordNet for Einstein"
                         ]
                     }
@@ -1260,13 +1260,13 @@
                         "alt": [
                             "A young boy with short hair and a round face, wearing a white collar and large bow, with vest, coat, skirt and high boots. He is leaning against an ornate chair."
                         ],
-                        "__anon_57": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_58": [
+                        "__an1": [
                             "upright"
                         ],
-                        "__anon_59": [
+                        "__an2": [
                             "Einstein at the age of three in 1882"
                         ]
                     }
@@ -1278,13 +1278,13 @@
                         "alt": [
                             "Studio photo of a boy seated in a relaxed posture and wearing a suit, posed in front of a backdrop of scenery."
                         ],
-                        "__anon_60": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_61": [
+                        "__an1": [
                             "upright"
                         ],
-                        "__anon_62": [
+                        "__an2": [
                             "Albert Einstein in 1893 (age 14)"
                         ]
                     }
@@ -1296,13 +1296,13 @@
                         "alt": [
                             "Einstein's matriculation certificate at the age of 17. The heading reads \"The Education Committee of the Canton of Aargau.\" His scores were German 5, French 3, Italian 5, History 6, Geography 4, Algebra 6, Geometry 6, Descriptive Geometry 6, Physics 6, Chemistry 5, Natural History 5, Art Drawing 4, Technical Drawing 4. The scores are 6 = excellent, 5 = good, 4 = sufficient, 3 = poor, 2 = very poor, 1 = unusable."
                         ],
-                        "__anon_63": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_64": [
+                        "__an1": [
                             "upright"
                         ],
-                        "__anon_65": [
+                        "__an2": [
                             "Einstein's matriculation certificate at the age of 17, showing his final grades from the Aargau Kantonsschule (on a scale of 1-6)."
                         ]
                     }
@@ -1366,7 +1366,7 @@
                     "__type": "reference",
                     "label": "Einstein family#Pauline Koch",
                     "content": {
-                        "__anon_66": [
+                        "__an0": [
                             "Pauline Einstein (née Koch)"
                         ]
                     }
@@ -1398,7 +1398,7 @@
                     "__type": "reference",
                     "label": "Catholic school",
                     "content": {
-                        "__anon_67": [
+                        "__an0": [
                             "Catholic elementary school"
                         ]
                     }
@@ -1566,7 +1566,7 @@
                     "__type": "link",
                     "url": "http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf",
                     "content": {
-                        "__anon_68": [
+                        "__an0": [
                             "HarvardChem-Einstein-PDF"
                         ]
                     }
@@ -1579,7 +1579,7 @@
                     "__type": "template",
                     "name": "#tag:ref",
                     "content": {
-                        "__anon_69": [
+                        "__an0": [
                             "\"Albert's intellectual growth was strongly fostered at home. His mother, a talented pianist, ensured the children's musical education. His father regularly read Schiller and Heine aloud to the family. Uncle Jakob challenged Albert with mathematical problems, which he solved with 'a deep feeling of happiness'.\" More significant were the weekly visits of Max Talmud from 1889 through 1894 during which time he introduced the boy to popular scientific texts that brought to an end a short-lived religious phase, convincing him that 'a lot in the Bible stories could not be true'. A textbook of plane geometry that he quickly worked through led on to an avid self-study of mathematics, several years ahead of the school curriculum.",
                             {
                                 "__type": "open_tag",
@@ -1590,7 +1590,7 @@
                                 "__type": "link",
                                 "url": "http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf",
                                 "content": {
-                                    "__anon_70": [
+                                    "__an0": [
                                         "Einstein as a Student"
                                     ]
                                 }
@@ -1658,7 +1658,7 @@
                     "__type": "reference",
                     "label": "Aether theories",
                     "content": {
-                        "__anon_71": [
+                        "__an0": [
                             "Ether"
                         ]
                     }
@@ -1730,7 +1730,7 @@
                     "__type": "reference",
                     "label": "ETH",
                     "content": {
-                        "__anon_72": [
+                        "__an0": [
                             "Eidgenössische Polytechnische Schule"
                         ]
                     }
@@ -1757,7 +1757,7 @@
                     "__type": "reference",
                     "label": "Maja Einstein",
                     "content": {
-                        "__anon_73": [
+                        "__an0": [
                             "Maja"
                         ]
                     }
@@ -1772,13 +1772,13 @@
                     "__type": "template",
                     "name": "Harvtxt",
                     "content": {
-                        "__anon_74": [
+                        "__an0": [
                             "Highfield"
                         ],
-                        "__anon_75": [
+                        "__an1": [
                             "Carter"
                         ],
-                        "__anon_76": [
+                        "__an2": [
                             "1993"
                         ],
                         "pp": [
@@ -1795,7 +1795,7 @@
                     "__type": "reference",
                     "label": "German citizenship",
                     "content": {
-                        "__anon_77": [
+                        "__an0": [
                             "citizenship in the German Kingdom of Württemberg"
                         ]
                     }
@@ -1805,7 +1805,7 @@
                     "__type": "reference",
                     "label": "Conscription in Germany",
                     "content": {
-                        "__anon_78": [
+                        "__an0": [
                             "military service"
                         ]
                     }
@@ -1942,7 +1942,7 @@
                     "__type": "link",
                     "url": "http://philoscience.unibe.ch/lehre/winter99/einstein/Stachel1966.pdf",
                     "content": {
-                        "__anon_79": [
+                        "__an0": [
                             "philoscience.unibe.ch"
                         ]
                     }
@@ -1975,7 +1975,7 @@
                     "__type": "template",
                     "name": "main",
                     "content": {
-                        "__anon_80": [
+                        "__an0": [
                             "Einstein family"
                         ]
                     }
@@ -1991,7 +1991,7 @@
                     "__type": "reference",
                     "label": "Lieserl Einstein",
                     "content": {
-                        "__anon_81": [
+                        "__an0": [
                             "Lieserl"
                         ]
                     }
@@ -2041,7 +2041,7 @@
                     "__type": "reference",
                     "label": "Eduard Einstein",
                     "content": {
-                        "__anon_82": [
+                        "__an0": [
                             "Eduard"
                         ]
                     }
@@ -2051,7 +2051,7 @@
                     "__type": "reference",
                     "label": "cousin marriage",
                     "content": {
-                        "__anon_83": [
+                        "__an0": [
                             "married"
                         ]
                     }
@@ -2060,7 +2060,7 @@
                     "__type": "reference",
                     "label": "Elsa Einstein",
                     "content": {
-                        "__anon_84": [
+                        "__an0": [
                             "Elsa Löwenthal"
                         ]
                     }
@@ -2079,13 +2079,13 @@
                     "__type": "template",
                     "name": "Harvnb",
                     "content": {
-                        "__anon_85": [
+                        "__an0": [
                             "Highfield"
                         ],
-                        "__anon_86": [
+                        "__an1": [
                             "Carter"
                         ],
-                        "__anon_87": [
+                        "__an2": [
                             "1993"
                         ],
                         "p": [
@@ -2106,16 +2106,16 @@
                     "__type": "reference",
                     "label": "File:Einstein-with-habicht-and-solovine.jpg",
                     "content": {
-                        "__anon_88": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_89": [
+                        "__an1": [
                             "left"
                         ],
                         "alt": [
                             "Three young men in suits with high white collars and bow ties, sitting."
                         ],
-                        "__anon_90": [
+                        "__an2": [
                             "Left to right: Conrad Habicht,",
                             {
                                 "__type": "reference",
@@ -2133,25 +2133,25 @@
                         "alt": [
                             "Attached stone dwelling with drapery visible in the windows. It is over a first story restaurant."
                         ],
-                        "__anon_91": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_92": [
+                        "__an1": [
                             "right"
                         ],
-                        "__anon_93": [
+                        "__an2": [
                             "upright",
                             {
                                 "__type": "reference",
                                 "label": "Einsteinhaus",
                                 "content": {
-                                    "__anon_94": [
+                                    "__an0": [
                                         "Einstein's home"
                                     ]
                                 }
                             }
                         ],
-                        "__anon_95": [
+                        "__an3": [
                             "in Bern"
                         ]
                     }
@@ -2161,7 +2161,7 @@
                     "__type": "reference",
                     "label": "Swiss Federal Institute of Intellectual Property",
                     "content": {
-                        "__anon_96": [
+                        "__an0": [
                             "Federal Office for Intellectual Property"
                         ]
                     }
@@ -2171,7 +2171,7 @@
                     "__type": "reference",
                     "label": "patent examiner",
                     "content": {
-                        "__anon_97": [
+                        "__an0": [
                             "examiner"
                         ]
                     }
@@ -2254,7 +2254,7 @@
                     "__type": "reference",
                     "label": "Olympia Academy",
                     "content": {
-                        "__anon_98": [
+                        "__an0": [
                             "The Olympia Academy"
                         ]
                     }
@@ -2287,13 +2287,13 @@
                     "__type": "reference",
                     "label": "File:Albert Einstein (Nobel).png",
                     "content": {
-                        "__anon_99": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_100": [
+                        "__an1": [
                             "left"
                         ],
-                        "__anon_101": [
+                        "__an2": [
                             "Einstein's official 1921 portrait after receiving the Nobel Prize in Physics."
                         ]
                     }
@@ -2303,7 +2303,7 @@
                     "__type": "reference",
                     "label": "List of scientific publications by Albert Einstein#Journal articles",
                     "content": {
-                        "__anon_102": [
+                        "__an0": [
                             "\"Folgerungen aus den Kapillarität Erscheinungen\""
                         ]
                     }
@@ -2365,7 +2365,7 @@
                     "__type": "reference",
                     "label": "Wikt:pro forma",
                     "content": {
-                        "__anon_103": [
+                        "__an0": [
                             "pro-forma"
                         ]
                     }
@@ -2386,10 +2386,10 @@
                     "__type": "template",
                     "name": "harv",
                     "content": {
-                        "__anon_104": [
+                        "__an0": [
                             "Einstein"
                         ],
-                        "__anon_105": [
+                        "__an1": [
                             "1905b"
                         ]
                     }
@@ -2439,7 +2439,7 @@
                     "__type": "reference",
                     "label": "Annus Mirabilis papers",
                     "content": {
-                        "__anon_106": [
+                        "__an0": [
                             "four groundbreaking papers"
                         ]
                     }
@@ -2455,7 +2455,7 @@
                     "__type": "reference",
                     "label": "Docent#Germany and Switzerland",
                     "content": {
-                        "__anon_107": [
+                        "__an0": [
                             "docent"
                         ]
                     }
@@ -2495,7 +2495,7 @@
                     "__type": "reference",
                     "label": "Charles University in Prague",
                     "content": {
-                        "__anon_108": [
+                        "__an0": [
                             "Karl-Ferdinand University in Prague"
                         ]
                     }
@@ -2505,7 +2505,7 @@
                     "__type": "reference",
                     "label": "Kaiser Wilhelm Society",
                     "content": {
-                        "__anon_109": [
+                        "__an0": [
                             "Kaiser Wilhelm Institute for Physics"
                         ]
                     }
@@ -2596,7 +2596,7 @@
                     "__type": "link",
                     "url": "http://books.google.com/books?id=5eWh2O_3OAQC&pg=PR19",
                     "content": {
-                        "__anon_110": [
+                        "__an0": [
                             "Timeline, p. xix"
                         ]
                     }
@@ -2620,7 +2620,7 @@
                     "__type": "reference",
                     "label": "Arthur Stanley Eddington",
                     "content": {
-                        "__anon_111": [
+                        "__an0": [
                             "Arthur Eddington"
                         ]
                     }
@@ -2719,7 +2719,7 @@
                     "__type": "reference",
                     "label": "John Francis Hylan",
                     "content": {
-                        "__anon_112": [
+                        "__an0": [
                             "the Mayor"
                         ]
                     }
@@ -2758,7 +2758,7 @@
                     "__type": "reference",
                     "label": "Tokyo Imperial Palace",
                     "content": {
-                        "__anon_113": [
+                        "__an0": [
                             "Imperial Palace"
                         ]
                     }
@@ -2777,7 +2777,7 @@
                     "__type": "template",
                     "name": "rp",
                     "content": {
-                        "__anon_114": [
+                        "__an0": [
                             "307"
                         ]
                     }
@@ -2801,7 +2801,7 @@
                     "__type": "template",
                     "name": "rp",
                     "content": {
-                        "__anon_115": [
+                        "__an0": [
                             "308"
                         ]
                     }
@@ -2811,7 +2811,7 @@
                     "__type": "reference",
                     "label": "British Mandate for Palestine",
                     "content": {
-                        "__anon_116": [
+                        "__an0": [
                             "Palestine"
                         ]
                     }
@@ -2827,7 +2827,7 @@
                     "__type": "template",
                     "name": "Block quote",
                     "content": {
-                        "__anon_117": [
+                        "__an0": [
                             "I consider this the greatest day of my life. Before, I have always found something to regret in the Jewish soul, and that is the forgetfulness of its own people. Today, I have been made happy by the sight of the Jewish people learning to recognize themselves and to make themselves recognized as a force in the world.",
                             {
                                 "__type": "inline_tag",
@@ -2842,7 +2842,7 @@
                                 "__type": "template",
                                 "name": "rp",
                                 "content": {
-                                    "__anon_118": [
+                                    "__an0": [
                                         "308"
                                     ]
                                 }
@@ -2876,10 +2876,10 @@
                     "__type": "reference",
                     "label": "File:Einstein - violin - 1939.jpg",
                     "content": {
-                        "__anon_119": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_120": [
+                        "__an1": [
                             "Playing violin at home in Princeton, 1939"
                         ]
                     }
@@ -2970,13 +2970,13 @@
                     "__type": "reference",
                     "label": "File:Einstein-cartoon1.jpg",
                     "content": {
-                        "__anon_121": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_122": [
+                        "__an1": [
                             "left"
                         ],
-                        "__anon_123": [
+                        "__an2": [
                             "Cartoon of Einstein, who has shed his \"Pacifism\" wings, standing next to a pillar labeled \"World Peace.\" He is rolling up his sleeves and holding a sword labeled \"Preparedness\" (circa 1933)."
                         ]
                     }
@@ -2986,7 +2986,7 @@
                     "__type": "reference",
                     "label": "Nazi Germany",
                     "content": {
-                        "__anon_124": [
+                        "__an0": [
                             "Nazis"
                         ]
                     }
@@ -3090,7 +3090,7 @@
                     "__type": "reference",
                     "label": "Princeton, New Jersey",
                     "content": {
-                        "__anon_125": [
+                        "__an0": [
                             "Princeton"
                         ]
                     }
@@ -3248,7 +3248,7 @@
                     "__type": "reference",
                     "label": "German nuclear energy project",
                     "content": {
-                        "__anon_126": [
+                        "__an0": [
                             "race to build an atomic bomb"
                         ]
                     }
@@ -3267,7 +3267,7 @@
                     "__type": "template",
                     "name": "rp",
                     "content": {
-                        "__anon_127": [
+                        "__an0": [
                             "630"
                         ]
                     }
@@ -3291,7 +3291,7 @@
                     "__type": "reference",
                     "label": "Einstein–Szilárd letter",
                     "content": {
-                        "__anon_128": [
+                        "__an0": [
                             "a letter"
                         ]
                     }
@@ -3313,7 +3313,7 @@
                     "__type": "link",
                     "url": "http://books.google.com/books?id=3PN-NEfl_U0C&pg=PA218&dq=Einstein+Roosevelt&num=30&cd=4#v=onepage&q=Letter%20from%20Einstein%20Roosevelt&f=false",
                     "content": {
-                        "__anon_129": [
+                        "__an0": [
                             "''Nuclear Weapons and Nonproliferation: a Reference Handbook''"
                         ]
                     }
@@ -3345,7 +3345,7 @@
                     "__type": "template",
                     "name": "rp",
                     "content": {
-                        "__anon_130": [
+                        "__an0": [
                             "110"
                         ]
                     }
@@ -3381,13 +3381,13 @@
                     "__type": "reference",
                     "label": "File:Citizen-Einstein.jpg",
                     "content": {
-                        "__anon_131": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_132": [
+                        "__an1": [
                             "right"
                         ],
-                        "__anon_133": [
+                        "__an2": [
                             "Accepting U.S. citizenship, 1940"
                         ]
                     }
@@ -3418,7 +3418,7 @@
                     "__type": "template",
                     "name": "rp",
                     "content": {
-                        "__anon_134": [
+                        "__an0": [
                             "432"
                         ]
                     }
@@ -3439,7 +3439,7 @@
                     "__type": "reference",
                     "label": "African-American Civil Rights Movement (1896–1954)",
                     "content": {
-                        "__anon_135": [
+                        "__an0": [
                             "civil rights"
                         ]
                     }
@@ -3461,7 +3461,7 @@
                     "__type": "link",
                     "url": "http://books.google.com/books?id=4d79VQdOfFUC&pg=PR10&dq=Einstein+on+Race+and+Racism+america's+worst+disease#v=onepage&q&f=false",
                     "content": {
-                        "__anon_136": [
+                        "__an0": [
                             "Einstein on Race and Racism"
                         ]
                     }
@@ -3482,7 +3482,7 @@
                     "__type": "link",
                     "url": "http://press.princeton.edu/titles/7921.html",
                     "content": {
-                        "__anon_137": [
+                        "__an0": [
                             "The new quotable Einstein"
                         ]
                     }
@@ -3492,7 +3492,7 @@
                     "__type": "link",
                     "url": "http://books.google.com/books?id=dLhVn-McDDgC&pg=PA226&dq=racism+americas+worst+disease+1946#v=onepage&q&f=false",
                     "content": {
-                        "__anon_138": [
+                        "__an0": [
                             "Odyssey in Climate Modeling, Global Warming, and Advising Five Presidents"
                         ]
                     }
@@ -3506,10 +3506,10 @@
                     "__type": "reference",
                     "label": "File:Albert Einstein at Princeton.jpg",
                     "content": {
-                        "__anon_139": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_140": [
+                        "__an1": [
                             "Einstein at his home in Princeton, 1949"
                         ]
                     }
@@ -3587,7 +3587,7 @@
                     "__type": "template",
                     "name": "rp",
                     "content": {
-                        "__anon_141": [
+                        "__an0": [
                             "522"
                         ]
                     }
@@ -3612,7 +3612,7 @@
                     "__type": "template",
                     "name": "rp",
                     "content": {
-                        "__anon_142": [
+                        "__an0": [
                             "522"
                         ]
                     }
@@ -3666,10 +3666,10 @@
                     "__type": "reference",
                     "label": "File:Death headline.jpg",
                     "content": {
-                        "__anon_143": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_144": [
+                        "__an1": [
                             "The ''",
                             {
                                 "__type": "reference",
@@ -3691,7 +3691,7 @@
                     "__type": "reference",
                     "label": "Nissen fundoplication",
                     "content": {
-                        "__anon_145": [
+                        "__an0": [
                             "Dr. Rudolph Nissen"
                         ]
                     }
@@ -3827,7 +3827,7 @@
                     "__type": "reference",
                     "label": "Albert Einstein's brain",
                     "content": {
-                        "__anon_146": [
+                        "__an0": [
                             "Einstein's brain"
                         ]
                     }
@@ -3961,7 +3961,7 @@
                     "__type": "link",
                     "url": "http://books.google.com/books?id=zGzcV40b3IkC&pg=PA97&dq=E%3D+Einstein's+German+by+Fritz+Stern#v=onepage&q&f=false",
                     "content": {
-                        "__anon_147": [
+                        "__an0": [
                             "\"Einstein's Germany\""
                         ]
                     }
@@ -3983,13 +3983,13 @@
                         "alt": [
                             "Head and shoulders shot of a young, moustached man with dark, curly hair wearing a plaid suit and vest, striped shirt, and a dark tie."
                         ],
-                        "__anon_148": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_149": [
+                        "__an1": [
                             "upright"
                         ],
-                        "__anon_150": [
+                        "__an2": [
                             "Albert Einstein in 1904"
                         ]
                     }
@@ -3998,13 +3998,13 @@
                     "__type": "reference",
                     "label": "Image:Photoelectric effect.svg",
                     "content": {
-                        "__anon_151": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_152": [
+                        "__an1": [
                             "upright"
                         ],
-                        "__anon_153": [
+                        "__an2": [
                             "The photoelectric effect. Incoming photons on the left strike a metal plate (bottom), and eject electrons, depicted as flying off to the right."
                         ]
                     }
@@ -4049,7 +4049,7 @@
                     "__type": "link",
                     "url": "http://www.lorentz.leidenuniv.nl/history/Einstein_archive/",
                     "content": {
-                        "__anon_154": [
+                        "__an0": [
                             "Einstein archive at the Instituut-Lorentz"
                         ]
                     }
@@ -4068,16 +4068,16 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_155": [
+                        "__an0": [
                             "Annus Mirabilis papers"
                         ],
-                        "__anon_156": [
+                        "__an1": [
                             "Photoelectric effect"
                         ],
-                        "__anon_157": [
+                        "__an2": [
                             "Special theory of relativity"
                         ],
-                        "__anon_158": [
+                        "__an3": [
                             "Mass–energy equivalence"
                         ]
                     }
@@ -4087,7 +4087,7 @@
                     "__type": "reference",
                     "label": "Annus mirabilis",
                     "content": {
-                        "__anon_159": [
+                        "__an0": [
                             "Annus Mirabilis"
                         ]
                     }
@@ -4103,7 +4103,7 @@
                     "__type": "reference",
                     "label": "quantum mechanics",
                     "content": {
-                        "__anon_160": [
+                        "__an0": [
                             "quantum theory"
                         ]
                     }
@@ -4151,7 +4151,7 @@
                     "__type": "reference",
                     "label": "History of physics#Modern physics",
                     "content": {
-                        "__anon_161": [
+                        "__an0": [
                             "modern physics"
                         ]
                     }
@@ -4176,14 +4176,14 @@
                         {
                             "__type": "head_cell",
                             "content": {
-                                "__anon_162": "Title",
-                                "__anon_163": {
+                                "__an0": "Title",
+                                "__an1": {
                                     "__type": "open_tag",
                                     "name": "small",
                                     "attributes": null
                                 },
-                                "__anon_164": "(translated)",
-                                "__anon_165": {
+                                "__an2": "(translated)",
+                                "__an3": {
                                     "__type": "close_tag",
                                     "name": "small"
                                 }
@@ -4192,37 +4192,37 @@
                         {
                             "__type": "head_cell",
                             "content": {
-                                "__anon_166": "Area of focus"
+                                "__an0": "Area of focus"
                             }
                         },
                         {
                             "__type": "head_cell",
                             "content": {
-                                "__anon_167": "Received"
+                                "__an0": "Received"
                             }
                         },
                         {
                             "__type": "head_cell",
                             "content": {
-                                "__anon_168": "Published"
+                                "__an0": "Published"
                             }
                         },
                         {
                             "__type": "head_cell",
                             "content": {
-                                "__anon_169": "Significance"
+                                "__an0": "Significance"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_170": "''On a Heuristic Viewpoint Concerning the Production and Transformation of Light''"
+                                "__an0": "''On a Heuristic Viewpoint Concerning the Production and Transformation of Light''"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_171": {
+                                "__an0": {
                                     "__type": "reference",
                                     "label": "Photoelectric effect",
                                     "content": {}
@@ -4232,35 +4232,35 @@
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_172": "18 March"
+                                "__an0": "18 March"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_173": "9 June"
+                                "__an0": "9 June"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_174": "Resolved an unsolved puzzle by suggesting that energy is exchanged only in discrete amounts (",
-                                "__anon_175": {
+                                "__an0": "Resolved an unsolved puzzle by suggesting that energy is exchanged only in discrete amounts (",
+                                "__an1": {
                                     "__type": "reference",
                                     "label": "quantum",
                                     "content": {
-                                        "__anon_176": [
+                                        "__an0": [
                                             "quanta"
                                         ]
                                     }
                                 },
-                                "__anon_177": ").",
-                                "__anon_178": {
+                                "__an2": ").",
+                                "__an3": {
                                     "__type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
-                                "__anon_179": {
+                                "__an4": {
                                     "__type": "template",
                                     "name": "cite book",
                                     "content": {
@@ -4290,17 +4290,17 @@
                                         ]
                                     }
                                 },
-                                "__anon_180": {
+                                "__an5": {
                                     "__type": "close_tag",
                                     "name": "ref"
                                 },
-                                "__anon_181": "This idea was pivotal to the early development of quantum theory.",
-                                "__anon_182": {
+                                "__an6": "This idea was pivotal to the early development of quantum theory.",
+                                "__an7": {
                                     "__type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
-                                "__anon_183": {
+                                "__an8": {
                                     "__type": "template",
                                     "name": "cite book",
                                     "content": {
@@ -4339,7 +4339,7 @@
                                         ]
                                     }
                                 },
-                                "__anon_184": {
+                                "__an9": {
                                     "__type": "close_tag",
                                     "name": "ref"
                                 }
@@ -4348,13 +4348,13 @@
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_185": "''On the Motion of Small Particles Suspended in a Stationary Liquid, as Required by the Molecular Kinetic Theory of Heat''"
+                                "__an0": "''On the Motion of Small Particles Suspended in a Stationary Liquid, as Required by the Molecular Kinetic Theory of Heat''"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_186": {
+                                "__an0": {
                                     "__type": "reference",
                                     "label": "Brownian motion",
                                     "content": {}
@@ -4364,47 +4364,47 @@
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_187": "11 May"
+                                "__an0": "11 May"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_188": "18 July"
+                                "__an0": "18 July"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_189": "Explained empirical evidence for the",
-                                "__anon_190": {
+                                "__an0": "Explained empirical evidence for the",
+                                "__an1": {
                                     "__type": "reference",
                                     "label": "atom",
                                     "content": {
-                                        "__anon_191": [
+                                        "__an0": [
                                             "atomic theory"
                                         ]
                                     }
                                 },
-                                "__anon_192": ", supporting the application of",
-                                "__anon_193": {
+                                "__an2": ", supporting the application of",
+                                "__an3": {
                                     "__type": "reference",
                                     "label": "statistical physics",
                                     "content": {}
                                 },
-                                "__anon_194": "."
+                                "__an4": "."
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_195": "''On the Electrodynamics of Moving Bodies''"
+                                "__an0": "''On the Electrodynamics of Moving Bodies''"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_196": {
+                                "__an0": {
                                     "__type": "reference",
                                     "label": "Special relativity",
                                     "content": {}
@@ -4414,25 +4414,25 @@
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_197": "30 June"
+                                "__an0": "30 June"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_198": "26 Sept"
+                                "__an0": "26 Sept"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_199": "Reconciled Maxwell's equations for electricity and magnetism with the laws of mechanics by introducing major changes to mechanics close to the speed of light, resulting from analysis based on empirical evidence that the speed of light is independent of the motion of the observer.",
-                                "__anon_200": {
+                                "__an0": "Reconciled Maxwell's equations for electricity and magnetism with the laws of mechanics by introducing major changes to mechanics close to the speed of light, resulting from analysis based on empirical evidence that the speed of light is independent of the motion of the observer.",
+                                "__an1": {
                                     "__type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
-                                "__anon_201": {
+                                "__an2": {
                                     "__type": "template",
                                     "name": "cite book",
                                     "content": {
@@ -4465,23 +4465,23 @@
                                         ]
                                     }
                                 },
-                                "__anon_202": {
+                                "__an3": {
                                     "__type": "close_tag",
                                     "name": "ref"
                                 },
-                                "__anon_203": "Discredited the concept of an \"",
-                                "__anon_204": {
+                                "__an4": "Discredited the concept of an \"",
+                                "__an5": {
                                     "__type": "reference",
                                     "label": "luminiferous ether",
                                     "content": {}
                                 },
-                                "__anon_205": ".\"",
-                                "__anon_206": {
+                                "__an6": ".\"",
+                                "__an7": {
                                     "__type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
-                                "__anon_207": {
+                                "__an8": {
                                     "__type": "template",
                                     "name": "cite book",
                                     "content": {
@@ -4517,7 +4517,7 @@
                                         ]
                                     }
                                 },
-                                "__anon_208": {
+                                "__an9": {
                                     "__type": "close_tag",
                                     "name": "ref"
                                 }
@@ -4526,17 +4526,17 @@
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_209": "''Does the Inertia of a Body Depend Upon Its Energy Content?''"
+                                "__an0": "''Does the Inertia of a Body Depend Upon Its Energy Content?''"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_210": {
+                                "__an0": {
                                     "__type": "reference",
                                     "label": "Mass–energy equivalence",
                                     "content": {
-                                        "__anon_211": [
+                                        "__an0": [
                                             "Matter–energy equivalence"
                                         ]
                                     }
@@ -4546,20 +4546,20 @@
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_212": "27 Sept"
+                                "__an0": "27 Sept"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_213": "21 Nov"
+                                "__an0": "21 Nov"
                             }
                         },
                         {
                             "__type": "body_cell",
                             "content": {
-                                "__anon_214": "Equivalence of matter and energy,",
-                                "__anon_215": {
+                                "__an0": "Equivalence of matter and energy,",
+                                "__an1": {
                                     "__type": "template",
                                     "name": "nowrap",
                                     "content": {
@@ -4578,13 +4578,13 @@
                                         ]
                                     }
                                 },
-                                "__anon_216": "(and by implication, the ability of gravity to \"bend\" light), the existence of \"",
-                                "__anon_217": {
+                                "__an2": "(and by implication, the ability of gravity to \"bend\" light), the existence of \"",
+                                "__an3": {
                                     "__type": "reference",
                                     "label": "rest energy",
                                     "content": {}
                                 },
-                                "__anon_218": "\", and the basis of nuclear energy."
+                                "__an4": "\", and the basis of nuclear energy."
                             }
                         }
                     ]
@@ -4598,13 +4598,13 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_219": [
+                        "__an0": [
                             "Statistical mechanics"
                         ],
-                        "__anon_220": [
+                        "__an1": [
                             "thermal fluctuations"
                         ],
-                        "__anon_221": [
+                        "__an2": [
                             "statistical physics"
                         ]
                     }
@@ -4700,7 +4700,7 @@
                     "__type": "reference",
                     "label": "adiabatic invariant",
                     "content": {
-                        "__anon_222": [
+                        "__an0": [
                             "adiabatic invariance"
                         ]
                     }
@@ -4715,7 +4715,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_223": [
+                        "__an0": [
                             "History of special relativity"
                         ]
                     }
@@ -4743,7 +4743,7 @@
                     "__type": "reference",
                     "label": "Spacetime",
                     "content": {
-                        "__anon_224": [
+                        "__an0": [
                             "time-space frame"
                         ]
                     }
@@ -4753,7 +4753,7 @@
                     "__type": "reference",
                     "label": "Time dilation",
                     "content": {
-                        "__anon_225": [
+                        "__an0": [
                             "slow down"
                         ]
                     }
@@ -4763,7 +4763,7 @@
                     "__type": "reference",
                     "label": "Length contraction",
                     "content": {
-                        "__anon_226": [
+                        "__an0": [
                             "contract"
                         ]
                     }
@@ -4784,10 +4784,10 @@
                     "__type": "template",
                     "name": "harv",
                     "content": {
-                        "__anon_227": [
+                        "__an0": [
                             "Einstein"
                         ],
-                        "__anon_228": [
+                        "__an1": [
                             "1905d"
                         ]
                     }
@@ -4922,10 +4922,10 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_229": [
+                        "__an0": [
                             "Photon"
                         ],
-                        "__anon_230": [
+                        "__an1": [
                             "Quantum"
                         ]
                     }
@@ -4987,7 +4987,7 @@
                     "__type": "reference",
                     "label": "quantum",
                     "content": {
-                        "__anon_231": [
+                        "__an0": [
                             "quanta"
                         ]
                     }
@@ -5032,10 +5032,10 @@
                     "__type": "template",
                     "name": "harv",
                     "content": {
-                        "__anon_232": [
+                        "__an0": [
                             "Einstein"
                         ],
-                        "__anon_233": [
+                        "__an1": [
                             "1905a"
                         ]
                     }
@@ -5054,7 +5054,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_234": [
+                        "__an0": [
                             "Einstein solid"
                         ]
                     }
@@ -5075,7 +5075,7 @@
                     "__type": "link",
                     "url": "http://www.osti.gov/accomplishments/nuggets/einstein/solidcolda.html",
                     "content": {
-                        "__anon_235": [
+                        "__an0": [
                             "Celebrating Einstein \"Solid Cold\". U.S. DOE."
                         ]
                     }
@@ -5100,7 +5100,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_236": [
+                        "__an0": [
                             "Old quantum theory"
                         ]
                     }
@@ -5128,7 +5128,7 @@
                     "__type": "reference",
                     "label": "adiabatic invariant",
                     "content": {
-                        "__anon_237": [
+                        "__an0": [
                             "adiabatic invariance"
                         ]
                     }
@@ -5138,7 +5138,7 @@
                     "__type": "reference",
                     "label": "blackbody radiation",
                     "content": {
-                        "__anon_238": [
+                        "__an0": [
                             "blackbody curves"
                         ]
                     }
@@ -5148,7 +5148,7 @@
                     "__type": "reference",
                     "label": "Wien's displacement law",
                     "content": {
-                        "__anon_239": [
+                        "__an0": [
                             "simple shifting process"
                         ]
                     }
@@ -5164,7 +5164,7 @@
                     "__type": "reference",
                     "label": "action-angle variables",
                     "content": {
-                        "__anon_240": [
+                        "__an0": [
                             "action variable"
                         ]
                     }
@@ -5191,13 +5191,13 @@
                         "alt": [
                             "Upper body shot of man in suit, high white collar and bow tie."
                         ],
-                        "__anon_241": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_242": [
+                        "__an1": [
                             "upright"
                         ],
-                        "__anon_243": [
+                        "__an2": [
                             "Einstein at the",
                             {
                                 "__type": "reference",
@@ -5212,7 +5212,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_244": [
+                        "__an0": [
                             "Wave–particle duality"
                         ]
                     }
@@ -5274,7 +5274,7 @@
                     "__type": "reference",
                     "label": "s:The Development of Our Views on the Composition and Essence of Radiation",
                     "content": {
-                        "__anon_245": [
+                        "__an0": [
                             "The Development of Our Views on the Composition and Essence of Radiation"
                         ]
                     }
@@ -5284,7 +5284,7 @@
                     "__type": "reference",
                     "label": "quantization (physics)",
                     "content": {
-                        "__anon_246": [
+                        "__an0": [
                             "quantization"
                         ]
                     }
@@ -5294,7 +5294,7 @@
                     "__type": "reference",
                     "label": "momentum",
                     "content": {
-                        "__anon_247": [
+                        "__an0": [
                             "momenta"
                         ]
                     }
@@ -5304,7 +5304,7 @@
                     "__type": "reference",
                     "label": "point particle",
                     "content": {
-                        "__anon_248": [
+                        "__an0": [
                             "point-like particles"
                         ]
                     }
@@ -5337,7 +5337,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_249": [
+                        "__an0": [
                             "Critical opalescence"
                         ]
                     }
@@ -5363,7 +5363,7 @@
                     "__type": "link",
                     "url": "http://www.pbs.org/wgbh/nova/einstein/genius/",
                     "content": {
-                        "__anon_250": [
+                        "__an0": [
                             "Einstein's Big Idea"
                         ]
                     }
@@ -5389,7 +5389,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_251": [
+                        "__an0": [
                             "Zero-point energy"
                         ]
                     }
@@ -5399,10 +5399,10 @@
                     "__type": "template",
                     "name": "frac",
                     "content": {
-                        "__anon_252": [
+                        "__an0": [
                             "1"
                         ],
-                        "__anon_253": [
+                        "__an1": [
                             "2"
                         ]
                     }
@@ -5423,7 +5423,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_254": [
+                        "__an0": [
                             "History of general relativity"
                         ]
                     }
@@ -5432,13 +5432,13 @@
                     "__type": "template",
                     "name": "See also",
                     "content": {
-                        "__anon_255": [
+                        "__an0": [
                             "Principle of equivalence"
                         ],
-                        "__anon_256": [
+                        "__an1": [
                             "Theory of relativity"
                         ],
-                        "__anon_257": [
+                        "__an2": [
                             "Einstein field equations"
                         ]
                     }
@@ -5450,22 +5450,22 @@
                         "alt": [
                             "Black circle covering the sun, rays visible around it, in a dark sky."
                         ],
-                        "__anon_258": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_259": [
+                        "__an1": [
                             "upright",
                             {
                                 "__type": "reference",
                                 "label": "Arthur Stanley Eddington",
                                 "content": {
-                                    "__anon_260": [
+                                    "__an0": [
                                         "Eddington"
                                     ]
                                 }
                             }
                         ],
-                        "__anon_261": [
+                        "__an2": [
                             "’s photograph of a",
                             {
                                 "__type": "reference",
@@ -5523,7 +5523,7 @@
                     "__type": "link",
                     "url": "http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-lecture.html",
                     "content": {
-                        "__anon_262": [
+                        "__an0": [
                             "Nobel lecture"
                         ]
                     }
@@ -5562,7 +5562,7 @@
                     "__type": "reference",
                     "label": "Gravitational lensing",
                     "content": {
-                        "__anon_263": [
+                        "__an0": [
                             "deflection of light"
                         ]
                     }
@@ -5577,7 +5577,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_264": [
+                        "__an0": [
                             "Hole argument"
                         ]
                     }
@@ -5608,7 +5608,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_265": [
+                        "__an0": [
                             "Cosmology"
                         ]
                     }
@@ -5624,7 +5624,7 @@
                     "__type": "reference",
                     "label": "Einstein static universe",
                     "content": {
-                        "__anon_266": [
+                        "__an0": [
                             "eternal static sphere"
                         ]
                     }
@@ -5639,10 +5639,10 @@
                     "__type": "template",
                     "name": "Harv",
                     "content": {
-                        "__anon_267": [
+                        "__an0": [
                             "Einstein"
                         ],
-                        "__anon_268": [
+                        "__an1": [
                             "1917a"
                         ]
                     }
@@ -5658,13 +5658,13 @@
                         "alt": [
                             "Einstein, sitting at a table, looks up from the papers he is reading and into the camera."
                         ],
-                        "__anon_269": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_270": [
+                        "__an1": [
                             "upright"
                         ],
-                        "__anon_271": [
+                        "__an2": [
                             "Einstein in his office at the",
                             {
                                 "__type": "reference",
@@ -5692,7 +5692,7 @@
                     "__type": "reference",
                     "label": "Gravitomagnetism",
                     "content": {
-                        "__anon_272": [
+                        "__an0": [
                             "gravitomagnetic fields"
                         ]
                     }
@@ -5707,7 +5707,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_273": [
+                        "__an0": [
                             "Schrödinger equation"
                         ]
                     }
@@ -5740,10 +5740,10 @@
                     "__type": "template",
                     "name": "Harv",
                     "content": {
-                        "__anon_274": [
+                        "__an0": [
                             "Einstein"
                         ],
-                        "__anon_275": [
+                        "__an1": [
                             "1917b"
                         ]
                     }
@@ -5763,7 +5763,7 @@
                     "__type": "reference",
                     "label": "Matter wave",
                     "content": {
-                        "__anon_276": [
+                        "__an0": [
                             "de Broglie waves"
                         ]
                     }
@@ -5784,7 +5784,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_277": [
+                        "__an0": [
                             "Bose–Einstein condensation"
                         ]
                     }
@@ -5794,7 +5794,7 @@
                     "__type": "reference",
                     "label": "statistical mechanics",
                     "content": {
-                        "__anon_278": [
+                        "__an0": [
                             "statistical"
                         ]
                     }
@@ -5827,10 +5827,10 @@
                     "__type": "template",
                     "name": "Harv",
                     "content": {
-                        "__anon_279": [
+                        "__an0": [
                             "Einstein"
                         ],
-                        "__anon_280": [
+                        "__an1": [
                             "1924"
                         ]
                     }
@@ -5856,7 +5856,7 @@
                     "__type": "reference",
                     "label": "ultracold atom",
                     "content": {
-                        "__anon_281": [
+                        "__an0": [
                             "ultra-cooling"
                         ]
                     }
@@ -5866,7 +5866,7 @@
                     "__type": "reference",
                     "label": "National Institute of Standards and Technology",
                     "content": {
-                        "__anon_282": [
+                        "__an0": [
                             "NIST"
                         ]
                     }
@@ -5941,7 +5941,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_283": [
+                        "__an0": [
                             "Stress-energy-momentum pseudotensor"
                         ]
                     }
@@ -5963,7 +5963,7 @@
                     "__type": "reference",
                     "label": "Translational symmetry",
                     "content": {
-                        "__anon_284": [
+                        "__an0": [
                             "translation invariance"
                         ]
                     }
@@ -6008,7 +6008,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_285": [
+                        "__an0": [
                             "Classical unified field theories"
                         ]
                     }
@@ -6035,10 +6035,10 @@
                     "__type": "template",
                     "name": "Harv",
                     "content": {
-                        "__anon_286": [
+                        "__an0": [
                             "Einstein"
                         ],
-                        "__anon_287": [
+                        "__an1": [
                             "1950"
                         ]
                     }
@@ -6052,7 +6052,7 @@
                     "__type": "reference",
                     "label": "strong nuclear force",
                     "content": {
-                        "__anon_288": [
+                        "__an0": [
                             "strong"
                         ]
                     }
@@ -6085,7 +6085,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_289": [
+                        "__an0": [
                             "Wormhole"
                         ]
                     }
@@ -6112,7 +6112,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_290": [
+                        "__an0": [
                             "Einstein–Cartan theory"
                         ]
                     }
@@ -6122,7 +6122,7 @@
                     "__type": "reference",
                     "label": "Torsion tensor",
                     "content": {
-                        "__anon_291": [
+                        "__an0": [
                             "torsion"
                         ]
                     }
@@ -6137,7 +6137,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_292": [
+                        "__an0": [
                             "Einstein–Infeld–Hoffmann equations"
                         ]
                     }
@@ -6170,7 +6170,7 @@
                     "__type": "template",
                     "name": "main",
                     "content": {
-                        "__anon_293": [
+                        "__an0": [
                             "Einstein's unsuccessful investigations"
                         ]
                     }
@@ -6198,7 +6198,7 @@
                     "__type": "reference",
                     "label": "Einstein's unsuccessful investigations",
                     "content": {
-                        "__anon_294": [
+                        "__an0": [
                             "main article"
                         ]
                     }
@@ -6213,13 +6213,13 @@
                     "__type": "reference",
                     "label": "File:Solvay conference 1927.jpg",
                     "content": {
-                        "__anon_295": [
+                        "__an0": [
                             "230px"
                         ],
-                        "__anon_296": [
+                        "__an1": [
                             "thumb"
                         ],
-                        "__anon_297": [
+                        "__an2": [
                             "The 1927",
                             {
                                 "__type": "reference",
@@ -6259,7 +6259,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_298": [
+                        "__an0": [
                             "Einstein–de Haas effect"
                         ]
                     }
@@ -6281,7 +6281,7 @@
                     "__type": "reference",
                     "label": "Bose–Einstein condensate",
                     "content": {
-                        "__anon_299": [
+                        "__an0": [
                             "Bose–Einstein gas"
                         ]
                     }
@@ -6297,7 +6297,7 @@
                     "__type": "reference",
                     "label": "thermodynamics",
                     "content": {
-                        "__anon_300": [
+                        "__an0": [
                             "thermodynamic"
                         ]
                     }
@@ -6307,7 +6307,7 @@
                     "__type": "reference",
                     "label": "Quantum chaos",
                     "content": {
-                        "__anon_301": [
+                        "__an0": [
                             "semiclassical"
                         ]
                     }
@@ -6364,7 +6364,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_302": [
+                        "__an0": [
                             "Einstein refrigerator"
                         ]
                     }
@@ -6402,7 +6402,7 @@
                     "__type": "link",
                     "url": "http://gtalumni.org/Publications/magazine/sum98/einsrefr.html",
                     "content": {
-                        "__anon_303": [
+                        "__an0": [
                             "Einstein's refrigerator"
                         ]
                     }
@@ -6428,7 +6428,7 @@
                     "__type": "template",
                     "name": "US patent",
                     "content": {
-                        "__anon_304": [
+                        "__an0": [
                             "1781541"
                         ]
                     }
@@ -6489,7 +6489,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_305": [
+                        "__an0": [
                             "Bohr–Einstein debates"
                         ]
                     }
@@ -6501,10 +6501,10 @@
                         "alt": [
                             "Two men sitting, looking relaxed. A dark-haired Bohr is talking while Einstein looks sceptical."
                         ],
-                        "__anon_306": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_307": [
+                        "__an1": [
                             "Einstein and",
                             {
                                 "__type": "reference",
@@ -6585,10 +6585,10 @@
                     "__type": "template",
                     "name": "Harv",
                     "content": {
-                        "__anon_308": [
+                        "__an0": [
                             "Einstein"
                         ],
-                        "__anon_309": [
+                        "__an1": [
                             "1969"
                         ]
                     }
@@ -6607,10 +6607,10 @@
                     "__type": "template",
                     "name": "Harv",
                     "content": {
-                        "__anon_310": [
+                        "__an0": [
                             "Einstein"
                         ],
-                        "__anon_311": [
+                        "__an1": [
                             "1935"
                         ]
                     }
@@ -6628,7 +6628,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_312": [
+                        "__an0": [
                             "EPR paradox"
                         ]
                     }
@@ -6661,10 +6661,10 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_313": [
+                        "__an0": [
                             "Albert Einstein's political views"
                         ],
-                        "__anon_314": [
+                        "__an1": [
                             "Albert Einstein's religious views"
                         ]
                     }
@@ -6676,10 +6676,10 @@
                         "alt": [
                             "Casual group shot of four men and two women standing on a brick pavement."
                         ],
-                        "__anon_315": [
+                        "__an0": [
                             "thumb"
                         ],
-                        "__anon_316": [
+                        "__an1": [
                             "Albert Einstein, seen here with his wife",
                             {
                                 "__type": "reference",
@@ -6702,7 +6702,7 @@
                                 "__type": "reference",
                                 "label": "Vera Weizmann",
                                 "content": {
-                                    "__anon_317": [
+                                    "__an0": [
                                         "Dr. Vera Weizmann"
                                     ]
                                 }
@@ -6728,7 +6728,7 @@
                     "__type": "reference",
                     "label": "Albert Einstein's political views",
                     "content": {
-                        "__anon_318": [
+                        "__an0": [
                             "see main article"
                         ]
                     }
@@ -6843,7 +6843,7 @@
                     "__type": "reference",
                     "label": "personality rights",
                     "content": {
-                        "__anon_319": [
+                        "__an0": [
                             "image"
                         ]
                     }
@@ -6897,7 +6897,7 @@
                     "__type": "template",
                     "name": "Main",
                     "content": {
-                        "__anon_320": [
+                        "__an0": [
                             "Albert Einstein in popular culture"
                         ]
                     }
@@ -6913,7 +6913,7 @@
                     "__type": "link",
                     "url": "http://www.newyorker.com/search/query?queryType=nonparsed&query=Einstein+&bylquery=Maloney&month1=01&day1=14&year1=1939&month2=01&day2=14&year2=1939&page=&sort=&submit.x=10&submit.y=5",
                     "content": {
-                        "__anon_321": [
+                        "__an0": [
                             "Disguise"
                         ]
                     }
@@ -7005,7 +7005,7 @@
                     "__type": "template",
                     "name": "main",
                     "content": {
-                        "__anon_322": [
+                        "__an0": [
                             "Einstein's awards and honors"
                         ]
                     }
@@ -7480,10 +7480,10 @@
                                 "__type": "template",
                                 "name": "harvid",
                                 "content": {
-                                    "__anon_323": [
+                                    "__an0": [
                                         "Einstein"
                                     ],
-                                    "__anon_324": [
+                                    "__an1": [
                                         "1935"
                                     ]
                                 }
@@ -7736,7 +7736,7 @@
                                 "__type": "reference",
                                 "label": "John Stachel",
                                 "content": {
-                                    "__anon_325": [
+                                    "__an0": [
                                         "Stachel, John"
                                     ]
                                 }
@@ -7766,7 +7766,7 @@
                     "__type": "link",
                     "url": "http://www.einstein.caltech.edu/index.html",
                     "content": {
-                        "__anon_326": [
+                        "__an0": [
                             "Einstein Papers Project"
                         ]
                     }
@@ -7781,7 +7781,7 @@
                     "__type": "link",
                     "url": "http://press.princeton.edu/einstein/",
                     "content": {
-                        "__anon_327": [
+                        "__an0": [
                             "Einstein Page"
                         ]
                     }
@@ -7800,13 +7800,13 @@
                     "__type": "template",
                     "name": "Portal",
                     "content": {
-                        "__anon_328": [
+                        "__an0": [
                             "Biography"
                         ],
-                        "__anon_329": [
+                        "__an1": [
                             "Physics"
                         ],
-                        "__anon_330": [
+                        "__an2": [
                             "Science"
                         ]
                     }
@@ -7987,7 +7987,7 @@
                     "__type": "link",
                     "url": "http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover",
                     "content": {
-                        "__anon_331": [
+                        "__an0": [
                             "The complete idiot's guide to understanding Einstein"
                         ]
                     }
@@ -7997,7 +7997,7 @@
                     "__type": "reference",
                     "label": "Abraham Pais",
                     "content": {
-                        "__anon_332": [
+                        "__an0": [
                             "Pais, Abraham"
                         ]
                     }
@@ -8007,7 +8007,7 @@
                     "__type": "reference",
                     "label": "J. Robert Oppenheimer",
                     "content": {
-                        "__anon_333": [
+                        "__an0": [
                             "Oppenheimer"
                         ]
                     }
@@ -8017,7 +8017,7 @@
                     "__type": "reference",
                     "label": "J. Robert Oppenheimer",
                     "content": {
-                        "__anon_334": [
+                        "__an0": [
                             "Oppenheimer"
                         ]
                     }
@@ -8027,7 +8027,7 @@
                     "__type": "link",
                     "url": "http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false",
                     "content": {
-                        "__anon_335": [
+                        "__an0": [
                             "On Albert Einstein by Robert Oppenheimer"
                         ]
                     }
@@ -8046,7 +8046,7 @@
                     "__type": "template",
                     "name": "Sister project links",
                     "content": {
-                        "__anon_336": [
+                        "__an0": [
                             "Albert Einstein"
                         ],
                         "s": [
@@ -8059,7 +8059,7 @@
                     "__type": "link",
                     "url": "http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en",
                     "content": {
-                        "__anon_337": [
+                        "__an0": [
                             "Einstein's Scholar Google profile"
                         ]
                     }
@@ -8069,7 +8069,7 @@
                     "__type": "reference",
                     "label": "wikilivres:Albert Einstein",
                     "content": {
-                        "__anon_338": [
+                        "__an0": [
                             "Works by Albert Einstein"
                         ]
                     }
@@ -8104,7 +8104,7 @@
                     "__type": "link",
                     "url": "http://www.monthlyreview.org/598einstein.php",
                     "content": {
-                        "__anon_339": [
+                        "__an0": [
                             "Why Socialism?"
                         ]
                     }
@@ -8120,7 +8120,7 @@
                     "__type": "link",
                     "url": "http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren",
                     "content": {
-                        "__anon_340": [
+                        "__an0": [
                             "Einstein's Personal Correspondence: Religion, Politics, The Holocaust, and Philosophy"
                         ]
                     }
@@ -8130,7 +8130,7 @@
                     "__type": "link",
                     "url": "http://vault.fbi.gov/Albert%20Einstein",
                     "content": {
-                        "__anon_341": [
+                        "__an0": [
                             "FBI file on Albert Einstein"
                         ]
                     }
@@ -8140,7 +8140,7 @@
                     "__type": "link",
                     "url": "http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html",
                     "content": {
-                        "__anon_342": [
+                        "__an0": [
                             "Nobelprize.org Biography:Albert Einstein"
                         ]
                     }
@@ -8150,7 +8150,7 @@
                     "__type": "link",
                     "url": "http://www.life.com/image/first/in-gallery/41492/the-einstein-you-never-knew",
                     "content": {
-                        "__anon_343": [
+                        "__an0": [
                             "The Einstein You Never Knew"
                         ]
                     }
@@ -8166,7 +8166,7 @@
                     "__type": "link",
                     "url": "http://www.history.com/topics/albert-einstein",
                     "content": {
-                        "__anon_344": [
+                        "__an0": [
                             "Albert Einstein"
                         ]
                     }
@@ -8176,7 +8176,7 @@
                     "__type": "link",
                     "url": "http://www.pbs.org/wgbh/aso/databank/entries/bpeins.html",
                     "content": {
-                        "__anon_345": [
+                        "__an0": [
                             "Science Odyssey People And Discoveries"
                         ]
                     }
@@ -8186,7 +8186,7 @@
                     "__type": "link",
                     "url": "http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstein-oppenheimer-feynman-physics-in-the-20th-century-spring-2006/",
                     "content": {
-                        "__anon_346": [
+                        "__an0": [
                             "MIT OpenCourseWare STS.042J/8.225J: Einstein, Oppenheimer, Feynman: Physics in the 20th century"
                         ]
                     }
@@ -8196,7 +8196,7 @@
                     "__type": "template",
                     "name": "GoogleScholar",
                     "content": {
-                        "__anon_347": [
+                        "__an0": [
                             "qc6CJjYAAAAJ"
                         ]
                     }
@@ -8206,7 +8206,7 @@
                     "__type": "link",
                     "url": "http://www.alberteinstein.info",
                     "content": {
-                        "__anon_348": [
+                        "__an0": [
                             "Albert Einstein Archives Online (80,000+ Documents)"
                         ]
                     }
@@ -8216,7 +8216,7 @@
                     "__type": "link",
                     "url": "http://www.msnbc.msn.com/id/46785542/ns/technology_and_science-science/",
                     "content": {
-                        "__anon_349": [
+                        "__an0": [
                             "MSNBC - 03/19/2012"
                         ]
                     }
@@ -8392,7 +8392,7 @@
                     "__type": "reference",
                     "label": "Category:Albert Einstein",
                     "content": {
-                        "__anon_350": null
+                        "__an0": null
                     }
                 },
                 {
@@ -8664,7 +8664,7 @@
                     "__type": "template",
                     "name": "Link GA",
                     "content": {
-                        "__anon_351": [
+                        "__an0": [
                             "de"
                         ]
                     }
@@ -8673,7 +8673,7 @@
                     "__type": "template",
                     "name": "Link GA",
                     "content": {
-                        "__anon_352": [
+                        "__an0": [
                             "no"
                         ]
                     }
@@ -8682,7 +8682,7 @@
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "__anon_353": [
+                        "__an0": [
                             "als"
                         ]
                     }
@@ -8691,7 +8691,7 @@
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "__anon_354": [
+                        "__an0": [
                             "an"
                         ]
                     }
@@ -8700,7 +8700,7 @@
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "__anon_355": [
+                        "__an0": [
                             "fi"
                         ]
                     }
@@ -8709,7 +8709,7 @@
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "__anon_356": [
+                        "__an0": [
                             "he"
                         ]
                     }
@@ -8718,7 +8718,7 @@
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "__anon_357": [
+                        "__an0": [
                             "hr"
                         ]
                     }
@@ -8727,7 +8727,7 @@
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "__anon_358": [
+                        "__an0": [
                             "ru"
                         ]
                     }
@@ -8736,7 +8736,7 @@
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "__anon_359": [
+                        "__an0": [
                             "sr"
                         ]
                     }
@@ -8745,7 +8745,7 @@
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
-                        "__anon_360": [
+                        "__an0": [
                             "ur"
                         ]
                     }
@@ -12614,11 +12614,11 @@
         "id": "/en/albert_einstein",
         "name": "Albert Einstein",
         "notable": {
-            "name": "Theoretical Physicist",
-            "id": "/m/02ktm6n"
+            "name": "Physicist",
+            "id": "/m/05snw"
         },
         "lang": "en",
-        "score": 802.952515
+        "score": 801.603882
     },
     "infobox-splitter": [
         {
@@ -12642,13 +12642,13 @@
                             "df": [
                                 "yes"
                             ],
-                            "__anon_361": [
+                            "__an0": [
                                 "1879"
                             ],
-                            "__anon_362": [
+                            "__an1": [
                                 "3"
                             ],
-                            "__anon_363": [
+                            "__an2": [
                                 "14"
                             ]
                         }
@@ -12681,22 +12681,22 @@
                             "df": [
                                 "yes"
                             ],
-                            "__anon_364": [
+                            "__an0": [
                                 "1955"
                             ],
-                            "__anon_365": [
+                            "__an1": [
                                 "4"
                             ],
-                            "__anon_366": [
+                            "__an2": [
                                 "18"
                             ],
-                            "__anon_367": [
+                            "__an3": [
                                 "1879"
                             ],
-                            "__anon_368": [
+                            "__an4": [
                                 "3"
                             ],
-                            "__anon_369": [
+                            "__an5": [
                                 "14"
                             ]
                         }
@@ -12707,7 +12707,7 @@
                         "__type": "reference",
                         "label": "Princeton, New Jersey",
                         "content": {
-                            "__anon_370": [
+                            "__an0": [
                                 "Princeton"
                             ]
                         }
@@ -12730,12 +12730,12 @@
                         "__type": "template",
                         "name": "nowrap",
                         "content": {
-                            "__anon_371": {
+                            "__an0": {
                                 "__type": "reference",
                                 "label": "Elsa Löwenthal",
                                 "content": {}
                             },
-                            "__anon_372": [
+                            "__an1": [
                                 ", née Einstein, (1919–1936)"
                             ]
                         }
@@ -12749,14 +12749,14 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "__anon_373": {
+                            "__an0": {
                                 "__type": "list",
                                 "content": [
                                     {
                                         "__type": "reference",
                                         "label": "Kingdom of Württemberg",
                                         "content": {
-                                            "__anon_374": [
+                                            "__an0": [
                                                 "Württemberg/Germany"
                                             ]
                                         }
@@ -12769,7 +12769,7 @@
                                                 "__type": "reference",
                                                 "label": "Statelessness",
                                                 "content": {
-                                                    "__anon_375": [
+                                                    "__an0": [
                                                         "Stateless"
                                                     ]
                                                 }
@@ -12795,7 +12795,7 @@
                                                 "__type": "reference",
                                                 "label": "Austria–Hungary",
                                                 "content": {
-                                                    "__anon_376": [
+                                                    "__an0": [
                                                         "Austria"
                                                     ]
                                                 }
@@ -12810,7 +12810,7 @@
                                                 "__type": "reference",
                                                 "label": "German Empire",
                                                 "content": {
-                                                    "__anon_377": [
+                                                    "__an0": [
                                                         "Germany"
                                                     ]
                                                 }
@@ -12844,7 +12844,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "__anon_378": {
+                            "__an0": {
                                 "__type": "list",
                                 "content": [
                                     "Swiss",
@@ -12917,7 +12917,7 @@
                                                 "__type": "reference",
                                                 "label": "Leiden University",
                                                 "content": {
-                                                    "__anon_379": [
+                                                    "__an0": [
                                                         "University of Leiden"
                                                     ]
                                                 }
@@ -12944,7 +12944,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "__anon_380": {
+                            "__an0": {
                                 "__type": "list",
                                 "content": [
                                     {
@@ -12986,7 +12986,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "__anon_381": {
+                            "__an0": {
                                 "__type": "list",
                                 "content": [
                                     {
@@ -13070,7 +13070,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "__anon_382": {
+                            "__an0": {
                                 "__type": "list",
                                 "content": [
                                     {
@@ -13111,7 +13111,7 @@
                                                 "__type": "reference",
                                                 "label": "Brownian motion",
                                                 "content": {
-                                                    "__anon_383": [
+                                                    "__an0": [
                                                         "Theory of Brownian Motion"
                                                     ]
                                                 }
@@ -13145,7 +13145,7 @@
                                                 "__type": "reference",
                                                 "label": "Classical unified field theories",
                                                 "content": {
-                                                    "__anon_384": [
+                                                    "__an0": [
                                                         "Unified Field Theory"
                                                     ]
                                                 }
@@ -13172,7 +13172,7 @@
                         "__type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "__anon_385": {
+                            "__an0": {
                                 "__type": "list",
                                 "content": [
                                     {
@@ -13221,7 +13221,7 @@
                                                 "__type": "reference",
                                                 "label": "Time 100: The Most Important People of the Century",
                                                 "content": {
-                                                    "__anon_386": [
+                                                    "__an0": [
                                                         "''Time'' Person of the Century"
                                                     ]
                                                 }
@@ -13248,14 +13248,14 @@
                 {
                     "__type": "head_cell",
                     "content": {
-                        "__anon_387": "Title",
-                        "__anon_388": {
+                        "__an0": "Title",
+                        "__an1": {
                             "__type": "open_tag",
                             "name": "small",
                             "attributes": null
                         },
-                        "__anon_389": "(translated)",
-                        "__anon_390": {
+                        "__an2": "(translated)",
+                        "__an3": {
                             "__type": "close_tag",
                             "name": "small"
                         }
@@ -13264,37 +13264,37 @@
                 {
                     "__type": "head_cell",
                     "content": {
-                        "__anon_391": "Area of focus"
+                        "__an0": "Area of focus"
                     }
                 },
                 {
                     "__type": "head_cell",
                     "content": {
-                        "__anon_392": "Received"
+                        "__an0": "Received"
                     }
                 },
                 {
                     "__type": "head_cell",
                     "content": {
-                        "__anon_393": "Published"
+                        "__an0": "Published"
                     }
                 },
                 {
                     "__type": "head_cell",
                     "content": {
-                        "__anon_394": "Significance"
+                        "__an0": "Significance"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_395": "''On a Heuristic Viewpoint Concerning the Production and Transformation of Light''"
+                        "__an0": "''On a Heuristic Viewpoint Concerning the Production and Transformation of Light''"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_396": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Photoelectric effect",
                             "content": {}
@@ -13304,35 +13304,35 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_397": "18 March"
+                        "__an0": "18 March"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_398": "9 June"
+                        "__an0": "9 June"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_399": "Resolved an unsolved puzzle by suggesting that energy is exchanged only in discrete amounts (",
-                        "__anon_400": {
+                        "__an0": "Resolved an unsolved puzzle by suggesting that energy is exchanged only in discrete amounts (",
+                        "__an1": {
                             "__type": "reference",
                             "label": "quantum",
                             "content": {
-                                "__anon_401": [
+                                "__an0": [
                                     "quanta"
                                 ]
                             }
                         },
-                        "__anon_402": ").",
-                        "__anon_403": {
+                        "__an2": ").",
+                        "__an3": {
                             "__type": "open_tag",
                             "name": "ref",
                             "attributes": null
                         },
-                        "__anon_404": {
+                        "__an4": {
                             "__type": "template",
                             "name": "cite book",
                             "content": {
@@ -13362,17 +13362,17 @@
                                 ]
                             }
                         },
-                        "__anon_405": {
+                        "__an5": {
                             "__type": "close_tag",
                             "name": "ref"
                         },
-                        "__anon_406": "This idea was pivotal to the early development of quantum theory.",
-                        "__anon_407": {
+                        "__an6": "This idea was pivotal to the early development of quantum theory.",
+                        "__an7": {
                             "__type": "open_tag",
                             "name": "ref",
                             "attributes": null
                         },
-                        "__anon_408": {
+                        "__an8": {
                             "__type": "template",
                             "name": "cite book",
                             "content": {
@@ -13411,7 +13411,7 @@
                                 ]
                             }
                         },
-                        "__anon_409": {
+                        "__an9": {
                             "__type": "close_tag",
                             "name": "ref"
                         }
@@ -13420,13 +13420,13 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_410": "''On the Motion of Small Particles Suspended in a Stationary Liquid, as Required by the Molecular Kinetic Theory of Heat''"
+                        "__an0": "''On the Motion of Small Particles Suspended in a Stationary Liquid, as Required by the Molecular Kinetic Theory of Heat''"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_411": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Brownian motion",
                             "content": {}
@@ -13436,47 +13436,47 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_412": "11 May"
+                        "__an0": "11 May"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_413": "18 July"
+                        "__an0": "18 July"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_414": "Explained empirical evidence for the",
-                        "__anon_415": {
+                        "__an0": "Explained empirical evidence for the",
+                        "__an1": {
                             "__type": "reference",
                             "label": "atom",
                             "content": {
-                                "__anon_416": [
+                                "__an0": [
                                     "atomic theory"
                                 ]
                             }
                         },
-                        "__anon_417": ", supporting the application of",
-                        "__anon_418": {
+                        "__an2": ", supporting the application of",
+                        "__an3": {
                             "__type": "reference",
                             "label": "statistical physics",
                             "content": {}
                         },
-                        "__anon_419": "."
+                        "__an4": "."
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_420": "''On the Electrodynamics of Moving Bodies''"
+                        "__an0": "''On the Electrodynamics of Moving Bodies''"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_421": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Special relativity",
                             "content": {}
@@ -13486,25 +13486,25 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_422": "30 June"
+                        "__an0": "30 June"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_423": "26 Sept"
+                        "__an0": "26 Sept"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_424": "Reconciled Maxwell's equations for electricity and magnetism with the laws of mechanics by introducing major changes to mechanics close to the speed of light, resulting from analysis based on empirical evidence that the speed of light is independent of the motion of the observer.",
-                        "__anon_425": {
+                        "__an0": "Reconciled Maxwell's equations for electricity and magnetism with the laws of mechanics by introducing major changes to mechanics close to the speed of light, resulting from analysis based on empirical evidence that the speed of light is independent of the motion of the observer.",
+                        "__an1": {
                             "__type": "open_tag",
                             "name": "ref",
                             "attributes": null
                         },
-                        "__anon_426": {
+                        "__an2": {
                             "__type": "template",
                             "name": "cite book",
                             "content": {
@@ -13537,23 +13537,23 @@
                                 ]
                             }
                         },
-                        "__anon_427": {
+                        "__an3": {
                             "__type": "close_tag",
                             "name": "ref"
                         },
-                        "__anon_428": "Discredited the concept of an \"",
-                        "__anon_429": {
+                        "__an4": "Discredited the concept of an \"",
+                        "__an5": {
                             "__type": "reference",
                             "label": "luminiferous ether",
                             "content": {}
                         },
-                        "__anon_430": ".\"",
-                        "__anon_431": {
+                        "__an6": ".\"",
+                        "__an7": {
                             "__type": "open_tag",
                             "name": "ref",
                             "attributes": null
                         },
-                        "__anon_432": {
+                        "__an8": {
                             "__type": "template",
                             "name": "cite book",
                             "content": {
@@ -13589,7 +13589,7 @@
                                 ]
                             }
                         },
-                        "__anon_433": {
+                        "__an9": {
                             "__type": "close_tag",
                             "name": "ref"
                         }
@@ -13598,17 +13598,17 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_434": "''Does the Inertia of a Body Depend Upon Its Energy Content?''"
+                        "__an0": "''Does the Inertia of a Body Depend Upon Its Energy Content?''"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_435": {
+                        "__an0": {
                             "__type": "reference",
                             "label": "Mass–energy equivalence",
                             "content": {
-                                "__anon_436": [
+                                "__an0": [
                                     "Matter–energy equivalence"
                                 ]
                             }
@@ -13618,20 +13618,20 @@
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_437": "27 Sept"
+                        "__an0": "27 Sept"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_438": "21 Nov"
+                        "__an0": "21 Nov"
                     }
                 },
                 {
                     "__type": "body_cell",
                     "content": {
-                        "__anon_439": "Equivalence of matter and energy,",
-                        "__anon_440": {
+                        "__an0": "Equivalence of matter and energy,",
+                        "__an1": {
                             "__type": "template",
                             "name": "nowrap",
                             "content": {
@@ -13650,13 +13650,13 @@
                                 ]
                             }
                         },
-                        "__anon_441": "(and by implication, the ability of gravity to \"bend\" light), the existence of \"",
-                        "__anon_442": {
+                        "__an2": "(and by implication, the ability of gravity to \"bend\" light), the existence of \"",
+                        "__an3": {
                             "__type": "reference",
                             "label": "rest energy",
                             "content": {}
                         },
-                        "__anon_443": "\", and the basis of nuclear energy."
+                        "__an4": "\", and the basis of nuclear energy."
                     }
                 }
             ]
