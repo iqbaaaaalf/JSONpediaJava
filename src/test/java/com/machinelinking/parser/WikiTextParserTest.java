@@ -3,7 +3,6 @@ package com.machinelinking.parser;
 import com.machinelinking.pagestruct.WikiTextHRDumperHandler;
 import junit.framework.Assert;
 import org.apache.commons.io.IOUtils;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -138,7 +137,6 @@ public class WikiTextParserTest {
         );
     }
 
-    // TODO: close at carriage return?
     @Test
     public void testMissingLinkClosure() throws IOException, WikiTextParserException {
         parse(
@@ -160,16 +158,6 @@ public class WikiTextParserTest {
                 "End Document\n",
 
                 false
-        );
-    }
-
-    @Ignore
-    @Test
-    public void testMissingClosureWithClosureOfContainer() throws IOException, WikiTextParserException {
-        parse(
-                "<ref name=2010PH_Census>[http://census.gov.ph/data/census2010/index.html National Statistics Office 2010 Census: Population and Annual Growth Rates for The Philippines and Its Regions, Provinces, and Highly Urbanized Cities </ref>",
-
-                ""
         );
     }
 
