@@ -48,10 +48,13 @@ public class WikiTextParser implements ParserReader {
     }
 
     public void parse(URL url, Reader r) throws IOException, WikiTextParserException {
+        BufferedReader br;
         if(!(r instanceof BufferedReader)) {
-            r = new BufferedReader(r);
+            br = new BufferedReader(r);
+        } else {
+            br = (BufferedReader) r;
         }
-        this.r = r;
+        this.r = br;
         row = markrow = 1; col = markcol = 1;
 
         handler.beginDocument(url);
@@ -181,18 +184,21 @@ public class WikiTextParser implements ParserReader {
         mark();
         clear(externalCharsSB);
         char c;
-        while(true) {
-            c = read();
-            if(c != '{' && c != '[' && c != '<' && (c != '=' || col > 3) ) {
-                mark();
-                externalCharsSB.append(c);
-            } else {
-                reset();
-                if(externalCharsSB.length() > 0) {
-                    handler.text(externalCharsSB.toString());
-                    clear(externalCharsSB);
+        try {
+            while (true) {
+                c = read();
+                if (c != '{' && c != '[' && c != '<' && (c != '=' || col > 3)) {
+                    mark();
+                    externalCharsSB.append(c);
+                } else {
+                    reset();
+                    break;
                 }
-                break;
+            }
+        } finally {
+            if (externalCharsSB.length() > 0) {
+                handler.text(externalCharsSB.toString());
+                clear(externalCharsSB);
             }
         }
     }
@@ -451,14 +457,14 @@ public class WikiTextParser implements ParserReader {
         try {
             url = new URL(urlString);
         } catch (MalformedURLException murle) {
-            handler.text("[" + urlString);
+            handler.text( String.format("[%s", urlString) );
             return;
         }
 
         handler.beginLink(url);
         int ahead;
         while(true) {
-            ahead = readPropertyValue( LINK_DELIMITERS, false, true);
+            ahead = readPropertyValue(LINK_DELIMITERS, false, true);
             if(ahead == 0) break;
         }
         handler.endLink(url);

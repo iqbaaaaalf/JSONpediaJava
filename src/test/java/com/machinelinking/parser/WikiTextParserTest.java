@@ -28,6 +28,7 @@ public class WikiTextParserTest {
                 "k: null\n" +
                 "Text: 'Princeton'\n" +
                 "End Reference: Princeton, New Jersey\n" +
+                "Text: ' ending here.'\n" +
                 "End Document\n"
         );
     }
@@ -92,6 +93,7 @@ public class WikiTextParserTest {
                 "Begin Reference: id:Bronkioli\n" +
                 "Warning: Invalid closure for reference. (1, 16)\n" +
                 "End Reference: id:Bronkioli\n" +
+                "Text: '\n'\n" +
                 "End Document\n",
 
                 false
@@ -125,27 +127,35 @@ public class WikiTextParserTest {
     }
 
     @Test
-    public void testNoLink1() throws IOException, WikiTextParserException {
+    public void testParseNoLink() throws IOException, WikiTextParserException {
         parse(
-                "Samuel Augustus Ward [hymnal&#93;:Print Materia",
+                "[thisissometext]",
 
                 "Begin Document\n" +
-                "Text: 'Samuel Augustus Ward '\n" +
-                "Text: '[hymnal&#93;:Print'\n" +
+                "Text: '[thisissometext'\n" +
+                "Text: ']'\n" +
                 "End Document\n"
         );
     }
 
-    // TODO: this test demonstrates the need to convert the parser into a context-sensitive (type1) grammar parser.
+    // TODO: close at carriage return?
     @Ignore
     @Test
-    public void testNoLink2() throws IOException, WikiTextParserException {
+    public void testMissingLinkClosure() throws IOException, WikiTextParserException {
         parse(
-                "[http://path.to/fake&#93; ",
+                "land in the southeastern portion of the [[Borough (New York City)|borough of [[the Bronx]] in [[New York City]]) was named in his honor.",
 
-                "Begin Document\n" +
-                "Text: [http://path.to/fake]\n" +
-                "End Document\n"
+                ""
+        );
+    }
+
+    @Ignore
+    @Test
+    public void testMissingClosureWithClosureOfContainer() throws IOException, WikiTextParserException {
+        parse(
+                "<ref name=2010PH_Census>[http://census.gov.ph/data/census2010/index.html National Statistics Office 2010 Census: Population and Annual Growth Rates for The Philippines and Its Regions, Provinces, and Highly Urbanized Cities </ref>",
+
+                ""
         );
     }
 
@@ -436,6 +446,7 @@ public class WikiTextParserTest {
                 "'\n" +
                 "End Template: Infobox scientist\n" +
                 "\n" +
+                "Text: '\n'\n" +
                 "End Document\n"
         );
     }
@@ -601,8 +612,8 @@ public class WikiTextParserTest {
                 "End Template: PropertyMapping \n" +
                 "Text: '\n" +
                 "'\n" +
-                "End Template: TemplateMapping\n" +
-                "\n" +
+                "End Template: TemplateMapping\n\n" +
+                "Text: '\n'\n" +
                 "End Document\n"
         );
     }
@@ -830,7 +841,7 @@ public class WikiTextParserTest {
     @Test
     public void testParseFormula() throws IOException, WikiTextParserException {
         parse(
-            "<math>\\bar{ \\bar \\alpha}</math> ",
+            "<math>\\bar{ \\bar \\alpha}</math>",
 
             "Begin Document\n" +
             "Open Tag: math attributes: []\n" +
@@ -843,7 +854,7 @@ public class WikiTextParserTest {
     @Test
     public void testParseCite() throws IOException, WikiTextParserException {
         parse(
-                "<ref>{{cite web|url=http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.100010615/full.html |title=Materna (O Mother Dear, Jerusalem) / Samuel Augustus Ward &#91;hymnal&#93;:Print Material Full Description: Performing Arts Encyclopedia, Library of Congress |publisher=Lcweb2.loc.gov |date=2007-10-30 |accessdate=2011-08-20}}</ref> From time to time it has been proposed as a replacement for ''[[The Star-Spangled Banner]]'' as the national anthem, including television [[sign-off]]s.{{citation needed|date=March 2012}}\n",
+                "<ref>{{cite web|url=http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.100010615/full.html |title=Materna (O Mother Dear, Jerusalem) / Samuel Augustus Ward &#91;hymnal&#93;:Print Material Full Description: Performing Arts Encyclopedia, Library of Congress |publisher=Lcweb2.loc.gov |date=2007-10-30 |accessdate=2011-08-20}}</ref> From time to time it has been proposed as a replacement for ''[[The Star-Spangled Banner]]'' as the national anthem, including television [[sign-off]]s.{{citation needed|date=March 2012}}",
 
                 "Begin Document\n" +
                 "Open Tag: ref attributes: []\n" +
