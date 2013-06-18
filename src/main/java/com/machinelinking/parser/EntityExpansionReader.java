@@ -41,7 +41,6 @@ public class EntityExpansionReader extends Reader {
             if (intc == -1) break;
             c = (char) intc;
             if (c == '&') {
-                inner.mark(MAX_ENTITY_NUMERIC_SIZE + 1);
                 intBuffer.delete(0, intBuffer.length());
                 for(int l = 0; l < MAX_ENTITY_NUMERIC_SIZE; l++) {
                     intc = inner.read();

@@ -67,6 +67,18 @@ public class EntityExpansionReaderTest {
         );
     }
 
+    @Test
+    public void testExpansionWithMarkReset() throws IOException {
+        final EntityExpansionReader expandableReader = new EntityExpansionReader( new BufferedReader(new StringReader("&#93;")) );
+        expandableReader.mark(1);
+        char c;
+        c = (char) expandableReader.read();
+        Assert.assertEquals(']', c);
+        expandableReader.reset();
+        c = (char) expandableReader.read();
+        Assert.assertEquals(']', c);
+    }
+
     public void checkString(String in, String expected) throws IOException {
         final EntityExpansionReader expandableReader = new EntityExpansionReader( new BufferedReader(new StringReader(in)) );
         final char[] buffer = new char[expected.length()];
