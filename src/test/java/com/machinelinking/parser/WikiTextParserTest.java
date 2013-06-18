@@ -138,7 +138,7 @@ public class WikiTextParserTest {
     }
 
     @Test
-    public void testMissingLinkClosure() throws IOException, WikiTextParserException {
+    public void testMissingReferenceClosure() throws IOException, WikiTextParserException {
         parse(
                 "land in the southeastern portion of the [[Borough (New York City)|borough of [[the Bronx]] in [[New York City]]) was named in his honor.\n",
 
@@ -155,6 +155,26 @@ public class WikiTextParserTest {
                 "Text: ') was named in his honor.'\n" +
                 "Warning: Invalid closure for reference. (2, 0)\n" +
                 "End Reference: Borough (New York City)\n" +
+                "End Document\n",
+
+                false
+        );
+    }
+
+    /**
+     * There are too many pages with this issue, that can be solved only at parsing level.
+     */
+    @Test
+    public void testLinkInMarkupNotClosed() throws IOException, WikiTextParserException {
+        parse(
+                "<ref>[http://www.fmv.se/WmTemplates/page.aspx?id=5295</ref>",
+
+                "Begin Document\n" +
+                "Open Tag: ref attributes: []\n" +
+                "Begin Link: http://www.fmv.se/WmTemplates/page.aspx?id=5295\n" +
+                "Warning: Invalid link closure. (1, 54)\n" +
+                "End Link: http://www.fmv.se/WmTemplates/page.aspx?id=5295\n" +
+                "Close Tag: ref\n" +
                 "End Document\n",
 
                 false

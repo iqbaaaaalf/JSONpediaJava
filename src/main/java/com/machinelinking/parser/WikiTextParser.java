@@ -27,7 +27,7 @@ public class WikiTextParser implements ParserReader {
 
     private static final String[] REFERENCE_DELIMITERS = new String[] {"]]", "]", "\n", "|"};
 
-    private static final String[] LINK_DELIMITERS  = new String[] {"]", "|"};
+    private static final String[] LINK_DELIMITERS  = new String[] {"]",  "<"};
 
     private static final int AHEAD = 500;
 
@@ -440,7 +440,7 @@ public class WikiTextParser implements ParserReader {
         while(true) {
             mark();
             c = read();
-            if(c == ']') {
+            if(c == LINK_DELIMITERS[0].charAt(0) || c == LINK_DELIMITERS[1].charAt(0)) {
                 reset();
                 break;
             }
@@ -467,8 +467,14 @@ public class WikiTextParser implements ParserReader {
         handler.beginLink(url);
         int ahead;
         while(true) {
-            ahead = readPropertyValue(LINK_DELIMITERS, false, true);
-            if(ahead == 0) break;
+            ahead = readPropertyValue(LINK_DELIMITERS, true, true);
+            if(ahead == 0) { // TODO: improve this solution.
+                read();
+                mark();
+            }else if(ahead == 1) {
+                handler.parseWarning("Invalid link closure.", getLocation());
+            }
+            break;
         }
         handler.endLink(url);
     }
