@@ -15,7 +15,7 @@
         .label {
             margin: 1px;
         }
-        .example-button {
+        .dropdown-list-button {
             font-size: 14px;
         }
     </style>
@@ -32,11 +32,16 @@
             $('#app-path').text(document.location.pathname);
             $('#app-host').text(document.location.host);
 
-            $('.example-button').click(function(e){
+            $('.uri-button').click(function(e){
                 $('#get-uri').val( $(e.target).html() );
                 $('#get-submit').removeClass('disabled');
                 e.preventDefault();
                 updateGetRequest();
+            });
+
+            $('.wt-sample-button').click(function(e){
+                $('#post-wikitext').val( $(e.target).html() );
+                e.preventDefault();
             });
 
             $.get('/annotate/flags').success(function(data){
@@ -232,14 +237,14 @@ Download and install JSONpedia: visit the
                     <button class="btn dropdown-toggle" data-toggle="dropdown">
                         <span class="caret"></span>
                     </button>
-                       <ul class="dropdown-menu example-dropdown">
-                           <li><a class="example-button" href="#">en:Albert_Einstein</a></li>
-                           <li><a class="example-button" href="#">en:Cetacea</a></li>
-                           <li><a class="example-button" href="#">en:Carbon</a></li>
-                           <li><a class="example-button" href="#">en:Italy</a></li>
-                           <li><a class="example-button" href="#">en:London</a></li>
-                           <li><a class="example-button" href="#">en:Philosophy</a></li>
-                           <li><a class="example-button" href="#">en:Star_Wars</a></li>
+                       <ul class="dropdown-menu">
+                           <li><a class="uri-button dropdown-list-button" href="#">en:Albert_Einstein</a></li>
+                           <li><a class="uri-button dropdown-list-button" href="#">en:Cetacea</a></li>
+                           <li><a class="uri-button dropdown-list-button" href="#">en:Carbon</a></li>
+                           <li><a class="uri-button dropdown-list-button" href="#">en:Italy</a></li>
+                           <li><a class="uri-button dropdown-list-button" href="#">en:London</a></li>
+                           <li><a class="uri-button dropdown-list-button" href="#">en:Philosophy</a></li>
+                           <li><a class="uri-button dropdown-list-button" href="#">en:Star_Wars</a></li>
                        </ul>
                 </span>
             </span>
@@ -307,6 +312,31 @@ Download and install JSONpedia: visit the
     </div>
 
     <div class="control-group">
+        <div class="btn-group pull-left">
+            <span>
+                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                    Examples<span class="caret"></span>
+                </button>
+                   <ul class="dropdown-menu">
+                       <li><a class="wt-sample-button dropdown-list-button" href="#">Reference: [[Reference Description|Reference]].</a></li>
+                       <li><a class="wt-sample-button dropdown-list-button" href="#">Link: [http://path.to.lnk Description]</a></li>
+                       <li><a class="wt-sample-button dropdown-list-button" href="#">Template: {{Redirect|Einstein}}</a></li>
+                       <li><a class="wt-sample-button dropdown-list-button" href="#">Template Infobox: {{Infobox scientist
+    | name        = Albert Einstein
+    | image       = Einstein 1921 portrait2.jpg
+    | caption     = Albert Einstein in 1921
+}}</a></li>
+                       <li><a class="wt-sample-button dropdown-list-button" href="#">Table: {| border="1" cellspacing="0" cellpadding="5" align="center"
+    |-
+    ! This
+    ! is
+    |-
+    | a
+    | table
+|}</a></li>
+                   </ul>
+            </span>
+        </div>
         <textarea id="post-wikitext" class="span11" rows="12">
             {{Infobox scientist
             | name = Albert Einstein
