@@ -17,6 +17,19 @@ import java.net.URL;
 public class WikiTextParserTest {
 
     @Test
+    public void testApostrophesParsing() throws IOException, WikiTextParserException {
+        parse(
+                "''A Biography of the World's Most Famous Equation''",
+
+                "Begin Document\n" +
+                "ItalicBold: 2\n" +
+                "Text: 'A Biography of the World's Most Famous Equation'\n" +
+                "ItalicBold: 2\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
     public void testParseReference() throws IOException, WikiTextParserException {
         parse(
                 "this is an internal link: [[Princeton, New Jersey|Princeton]] ending here.",
@@ -893,10 +906,12 @@ public class WikiTextParserTest {
                 "Text: '2011-08-20'\n" +
                 "End Template: cite web\n" +
                 "Close Tag: ref\n" +
-                "Text: ' From time to time it has been proposed as a replacement for '''\n" +
+                "Text: ' From time to time it has been proposed as a replacement for '\n" +
+                "ItalicBold: 2\n" +
                 "Begin Reference: The Star-Spangled Banner\n" +
                 "End Reference: The Star-Spangled Banner\n" +
-                "Text: ''' as the national anthem, including television '\n" +
+                "ItalicBold: 2\n" +
+                "Text: ' as the national anthem, including television '\n" +
                 "Begin Reference: sign-off\n" +
                 "End Reference: sign-off\n" +
                 "Text: 's.'\n" +

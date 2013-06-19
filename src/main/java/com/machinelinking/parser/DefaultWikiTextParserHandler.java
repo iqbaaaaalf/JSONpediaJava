@@ -100,6 +100,10 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void italicBold(int level) {
+    }
+
+    @Override
     public void endDocument() {
     }
 

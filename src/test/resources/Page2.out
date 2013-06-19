@@ -138,7 +138,11 @@ End Template: Infobox person
 
 Text: '
 
-'''Sir Timothy John "Tim" Berners-Lee''', '
+'
+ItalicBold: 3
+Text: 'Sir Timothy John "Tim" Berners-Lee'
+ItalicBold: 3
+Text: ', '
 Begin Template: post-nominals
 k: post-noms
 Begin Reference: Order of Merit
@@ -168,7 +172,11 @@ End Reference: Royal Society of Arts
 End Template: post-nominals
 Text: ' (born 8 June 1955'
 Inline Tag: ref attributes: [name : 'W3Bio']
-Text: '), also known as "'''TimBL'''", is an English '
+Text: '), also known as "'
+ItalicBold: 3
+Text: 'TimBL'
+ItalicBold: 3
+Text: '", is an English '
 Begin Reference: computer scientist
 End Reference: computer scientist
 Text: ', '
@@ -425,7 +433,11 @@ k: author
 Text: 'Tim Berners-Lee'
 End Template: cite web
 Close Tag: ref
-Text: ' The project he worked on was a ''real-time remote procedure call'' which gave him experience in '
+Text: ' The project he worked on was a '
+ItalicBold: 2
+Text: 'real-time remote procedure call'
+ItalicBold: 2
+Text: ' which gave him experience in '
 Begin Reference: computer network
 End Reference: computer network
 Text: 'ing.'
@@ -837,12 +849,14 @@ End Template: cite web
 Close Tag: ref
 Text: '
 
-In a '''
+In a '
+ItalicBold: 2
 Begin Reference: The Times
 k: null
 Text: 'Times'
 End Reference: The Times
-Text: ''' article in October 2009, Berners-Lee admitted that the initial pair of slashes ("//") in a web address were actually "unnecessary". He told the newspaper that he could easily have designed URLs not to have the slashes. "There you go, it seemed like a good idea at the time," he said in his lighthearted apology.'
+ItalicBold: 2
+Text: ' article in October 2009, Berners-Lee admitted that the initial pair of slashes ("//") in a web address were actually "unnecessary". He told the newspaper that he could easily have designed URLs not to have the slashes. "There you go, it seemed like a good idea at the time," he said in his lighthearted apology.'
 Open Tag: ref attributes: []
 Begin Template: cite news
 k: url
@@ -943,10 +957,12 @@ Text: 'December 15, 2011'
 End Template: cite web
 Close Tag: ref
 Text: '
-*In 1999, '''
+*In 1999, '
+ItalicBold: 2
 Begin Reference: Time Magazine
 End Reference: Time Magazine
-Text: ''' named Berners-Lee one of the '
+ItalicBold: 2
+Text: ' named Berners-Lee one of the '
 Begin Reference: Time 100: The Most Important People of the Century
 k: null
 Text: '100 Most Important People of the 20th century'
@@ -1308,7 +1324,11 @@ Begin Link: http://www.webbyawards.com/press/press-release.php?id=187
 k: null
 Text: 'Press Release: Sir Tim Berners Lee, Inventor of the World Wide Web, to receive Webby Lifetime Award At the 13th Annual Webby Awards'
 End Link: http://www.webbyawards.com/press/press-release.php?id=187
-Text: ' ''Webby Awards.com'' Retrieved 21 January 2011'
+Text: ' '
+ItalicBold: 2
+Text: 'Webby Awards.com'
+ItalicBold: 2
+Text: ' Retrieved 21 January 2011'
 Close Tag: ref
 Text: '
 *In October 2009, he was awarded an honorary doctorate by the '
@@ -1384,7 +1404,11 @@ Begin Link: http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-
 k: null
 Text: 'Harvard awards 9 honorary degrees'
 End Link: http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee
-Text: ' ''news.harvard.edu'' Retrieved 11 June 2011'
+Text: ' '
+ItalicBold: 2
+Text: 'news.harvard.edu'
+ItalicBold: 2
+Text: ' Retrieved 11 June 2011'
 Close Tag: ref
 Text: '
 *In 2011, he was inducted into '
@@ -1431,10 +1455,12 @@ k: df
 Text: 'yes'
 End Template: Start date
 End Template: cite news
-Text: ' Press release source: '''
+Text: ' Press release source: '
+ItalicBold: 2
 Begin Reference: PRWeb
 End Reference: PRWeb
-Text: ''' ('
+ItalicBold: 2
+Text: ' ('
 Begin Reference: Vocus
 End Reference: Vocus
 Text: ').'
@@ -1613,10 +1639,26 @@ Text: '
 '
 Section [0]  Further reading 
 Text: '
-* ''Tim Berners-Lee and the Development of the World Wide Web (Unlocking the Secrets of Science)'', Ann Gaines (Mitchell Lane Publishers, 2001) ISBN 1-58415-096-3
-* ''Tim Berners-Lee: Inventor of the World Wide Web (Ferguson's Career Biographies)'', Melissa Stewart (Ferguson Publishing Company, 2001) ISBN 0-89434-367-X children's biography
-* ''Weaving the Web'' Berners-Lee, Tim, with Fischetti, Mark (Harper Collins Publishers,1999) ISBN 0-06-251586-1(cloth) ISBN 0-06-251587-X(paper)
-* ''How the Web was Born: The Story of the World Wide Web'' Robert Cailliau, James Gillies, R. Cailliau (Oxford University Press, 2000) ISBN 0-19-286207-3
+* '
+ItalicBold: 2
+Text: 'Tim Berners-Lee and the Development of the World Wide Web (Unlocking the Secrets of Science)'
+ItalicBold: 2
+Text: ', Ann Gaines (Mitchell Lane Publishers, 2001) ISBN 1-58415-096-3
+* '
+ItalicBold: 2
+Text: 'Tim Berners-Lee: Inventor of the World Wide Web (Ferguson's Career Biographies)'
+ItalicBold: 2
+Text: ', Melissa Stewart (Ferguson Publishing Company, 2001) ISBN 0-89434-367-X children's biography
+* '
+ItalicBold: 2
+Text: 'Weaving the Web'
+ItalicBold: 2
+Text: ' Berners-Lee, Tim, with Fischetti, Mark (Harper Collins Publishers,1999) ISBN 0-06-251586-1(cloth) ISBN 0-06-251587-X(paper)
+* '
+ItalicBold: 2
+Text: 'How the Web was Born: The Story of the World Wide Web'
+ItalicBold: 2
+Text: ' Robert Cailliau, James Gillies, R. Cailliau (Oxford University Press, 2000) ISBN 0-19-286207-3
 * '
 Begin Link: http://computemagazine.com/man-who-invented-world-wide-web-gives-new-definition/
 k: null

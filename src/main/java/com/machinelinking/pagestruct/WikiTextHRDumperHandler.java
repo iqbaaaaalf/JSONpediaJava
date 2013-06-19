@@ -161,6 +161,11 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
         printOut("Text: " + ( content  == null ? "null" : "'" + content + "'"));
     }
 
+    @Override
+    public void italicBold(int level) {
+        printOut("ItalicBold: " + level);
+    }
+
     //TODO: replace with ValidatingWikiTextParserHandler
     private void printOut(String msg) {
         if (validating) {

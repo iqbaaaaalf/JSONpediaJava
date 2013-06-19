@@ -184,6 +184,13 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void italicBold(int level) {
+        for (WikiTextParserHandler handler : handlers) {
+            handler.italicBold(level);
+        }
+    }
+
+    @Override
     public void endDocument() {
         for(WikiTextParserHandler handler : handlers) {
             handler.endDocument();

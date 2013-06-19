@@ -1096,7 +1096,9 @@
                     "__type": "comment_tag",
                     "comment": "Paragraph 1/4: Introduction, history and governance:"
                 },
-                "'''London'''",
+                "<b>",
+                "London",
+                "</b>",
                 {
                     "__type": "template",
                     "name": "IPAc-en",
@@ -1245,7 +1247,8 @@
                         ]
                     }
                 },
-                ", who named it ''",
+                ", who named it",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Roman London",
@@ -1255,7 +1258,8 @@
                         ]
                     }
                 },
-                "''.",
+                "</i>",
+                ".",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -2787,13 +2791,15 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "It is an ancient name and can be found in sources from the 2nd century. It is recorded c. 121 as ''",
+                "It is an ancient name and can be found in sources from the 2nd century. It is recorded c. 121 as",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Londinium",
                     "content": {}
                 },
-                "'', which points to",
+                "</i>",
+                ", which points to",
                 {
                     "__type": "reference",
                     "label": "Romano-British",
@@ -2815,13 +2821,15 @@
                     "label": "Geoffrey of Monmouth",
                     "content": {}
                 },
-                "in ''",
+                "in",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Historia Regum Britanniae",
                     "content": {}
                 },
-                "''.",
+                "</i>",
+                ".",
                 {
                     "__type": "inline_tag",
                     "name": "ref",
@@ -2841,7 +2849,11 @@
                         ]
                     }
                 },
-                ", who had allegedly taken over the city and named it ''Kaerlud''.",
+                ", who had allegedly taken over the city and named it",
+                "<i>",
+                "Kaerlud",
+                "</i>",
+                ".",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -2895,7 +2907,11 @@
                         ]
                     }
                 },
-                "origin and meant ''place belonging to a man called *Londinos''; this explanation has since been rejected.",
+                "origin and meant",
+                "<i>",
+                "place belonging to a man called *Londinos",
+                "</i>",
+                "; this explanation has since been rejected.",
                 {
                     "__type": "inline_tag",
                     "name": "ref",
@@ -2920,13 +2936,20 @@
                         ]
                     }
                 },
-                "''*(p)lowonida'', meaning 'river too wide to ford', and suggested that this was a name given to the part of the",
+                "<i>",
+                "*(p)lowonida",
+                "</i>",
+                ", meaning 'river too wide to ford', and suggested that this was a name given to the part of the",
                 {
                     "__type": "reference",
                     "label": "River Thames",
                     "content": {}
                 },
-                "which flows through London; from this, the settlement gained the Celtic form of its name, ''*Lowonidonjon'';",
+                "which flows through London; from this, the settlement gained the Celtic form of its name,",
+                "<i>",
+                "*Lowonidonjon",
+                "</i>",
+                ";",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -2988,7 +3011,23 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "this requires quite a serious amendment however. The ultimate difficulty lies in reconciling the Latin form ''Londinium'' with the modern Welsh ''Llundain'', which should demand a form ''*(h)lōndinion'' (as opposed to *londīnion), from earlier ''*loundiniom''; however this has proved difficult to interpret.",
+                "this requires quite a serious amendment however. The ultimate difficulty lies in reconciling the Latin form",
+                "<i>",
+                "Londinium",
+                "</i>",
+                "with the modern Welsh",
+                "<i>",
+                "Llundain",
+                "</i>",
+                ", which should demand a form",
+                "<i>",
+                "*(h)lōndinion",
+                "</i>",
+                "(as opposed to *londīnion), from earlier",
+                "<i>",
+                "*loundiniom",
+                "</i>",
+                "; however this has proved difficult to interpret.",
                 {
                     "__type": "template",
                     "name": "citation needed",
@@ -3294,7 +3333,11 @@
                     "label": "Viking",
                     "content": {}
                 },
-                "s and forced to move east, back to the location of the Roman ''Londinium'', in order to use its walls for protection.",
+                "s and forced to move east, back to the location of the Roman",
+                "<i>",
+                "Londinium",
+                "</i>",
+                ", in order to use its walls for protection.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -3390,7 +3433,11 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "The original Saxon city of Lundenwic became ''Ealdwic'' (\"old city\"), a name surviving to the present day as",
+                "The original Saxon city of Lundenwic became",
+                "<i>",
+                "Ealdwic",
+                "</i>",
+                "(\"old city\"), a name surviving to the present day as",
                 {
                     "__type": "reference",
                     "label": "Aldwych",
@@ -3645,7 +3692,11 @@
                     "label": "Vikings",
                     "content": {}
                 },
-                ", leading to a relocation of the city back to the location of Roman ''Londinium'', in order to use its walls for protection.",
+                ", leading to a relocation of the city back to the location of Roman",
+                "<i>",
+                "Londinium",
+                "</i>",
+                ", in order to use its walls for protection.",
                 {
                     "__type": "inline_tag",
                     "name": "ref",
@@ -4215,7 +4266,11 @@
                     "label": "Nikolaus Pevsner",
                     "content": {}
                 },
-                ", ''London I: The Cities of London and Westminster'' rev. edition,1962, Introduction p 48.",
+                ",",
+                "<i>",
+                "London I: The Cities of London and Westminster",
+                "</i>",
+                "rev. edition,1962, Introduction p 48.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -5168,13 +5223,15 @@
                     "label": "The Blitz",
                     "content": {}
                 },
-                "and other bombing by the German ''",
+                "and other bombing by the German",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Luftwaffe",
                     "content": {}
                 },
-                "'' during World War II killed over 30,000 Londoners and destroyed large tracts of housing and other buildings across London. Immediately after the war, the",
+                "</i>",
+                "during World War II killed over 30,000 Londoners and destroyed large tracts of housing and other buildings across London. Immediately after the war, the",
                 {
                     "__type": "reference",
                     "label": "1948 Summer Olympics",
@@ -6200,13 +6257,15 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "The British Parliament is often referred to as the \"Mother of Parliaments\" (although this ''",
+                "The British Parliament is often referred to as the \"Mother of Parliaments\" (although this",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "sobriquet",
                     "content": {}
                 },
-                "'' was first applied to England itself by",
+                "</i>",
+                "was first applied to England itself by",
                 {
                     "__type": "reference",
                     "label": "John Bright",
@@ -7098,7 +7157,11 @@
                         ]
                     }
                 },
-                ", making its status as ''de facto'' capital a part of the",
+                ", making its status as",
+                "<i>",
+                "de facto",
+                "</i>",
+                "capital a part of the",
                 {
                     "__type": "reference",
                     "label": "Constitution of the United Kingdom",
@@ -7202,7 +7265,11 @@
                         ]
                     }
                 },
-                "and in this context known as ''London''.",
+                "and in this context known as",
+                "<i>",
+                "London",
+                "</i>",
+                ".",
                 {
                     "__type": "inline_tag",
                     "name": "ref",
@@ -9649,13 +9716,17 @@
                     "label": "St Paul's Cathedral",
                     "content": {}
                 },
-                "and other historic buildings. Nevertheless there are a number of very tall skyscrapers to be found in central London ''(see",
+                "and other historic buildings. Nevertheless there are a number of very tall skyscrapers to be found in central London",
+                "<i>",
+                "(see",
                 {
                     "__type": "reference",
                     "label": "Tall buildings in London",
                     "content": {}
                 },
-                ")'', including the 72-storey",
+                ")",
+                "</i>",
+                ", including the 72-storey",
                 {
                     "__type": "reference",
                     "label": "Shard London Bridge",
@@ -13577,7 +13648,8 @@
                     "label": "London Passenger Transport Board",
                     "content": {}
                 },
-                "(LPTB) or ''",
+                "(LPTB) or",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "London Transport (brand)",
@@ -13587,7 +13659,8 @@
                         ]
                     }
                 },
-                "'' was created.",
+                "</i>",
+                "was created.",
                 {
                     "__type": "reference",
                     "label": "Transport for London",
@@ -13768,7 +13841,11 @@
                         "alt": null
                     }
                 },
-                "London is a major international air transport hub with the largest city airspace in the world. Eight airports use the word ''London'' in their name, but most traffic passes through six of these.",
+                "London is a major international air transport hub with the largest city airspace in the world. Eight airports use the word",
+                "<i>",
+                "London",
+                "</i>",
+                "in their name, but most traffic passes through six of these.",
                 {
                     "__type": "reference",
                     "label": "London Heathrow Airport",
@@ -15828,13 +15905,14 @@
                         }
                     ]
                 },
-                "A number of world-leading education institutions are based in London. In the 2011 ''",
+                "A number of world-leading education institutions are based in London. In the 2011",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "QS World University Rankings",
                     "content": {}
                 },
-                "''",
+                "</i>",
                 {
                     "__type": "reference",
                     "label": "Imperial College London",
@@ -15952,13 +16030,15 @@
                     "label": "London Business School",
                     "content": {}
                 },
-                "is considered one of the world's leading business schools and in 2010 its MBA programme was ranked best in the world by the ''",
+                "is considered one of the world's leading business schools and in 2010 its MBA programme was ranked best in the world by the",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Financial Times",
                     "content": {}
                 },
-                "''.",
+                "</i>",
+                ".",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -17650,13 +17730,14 @@
                         }
                     ]
                 },
-                "''",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "A Journal of the Plague Year",
                     "content": {}
                 },
-                "'' (1722) by",
+                "</i>",
+                "(1722) by",
                 {
                     "__type": "reference",
                     "label": "Daniel Defoe",
@@ -17722,7 +17803,8 @@
                     "label": "psychogeography",
                     "content": {}
                 },
-                ".\n\nLondon was the setting for the films ''",
+                ".\n\nLondon was the setting for the films",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Oliver Twist (1948 film)",
@@ -17732,7 +17814,9 @@
                         ]
                     }
                 },
-                "'' (1948), ''",
+                "</i>",
+                "(1948),",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Peter Pan (1953 film)",
@@ -17742,13 +17826,17 @@
                         ]
                     }
                 },
-                "'' (1953), ''",
+                "</i>",
+                "(1953),",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "The Ladykillers",
                     "content": {}
                 },
-                "'' (1955), ''",
+                "</i>",
+                "(1955),",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "101 Dalmatians (1996 film)",
@@ -17758,7 +17846,9 @@
                         ]
                     }
                 },
-                "'' (1961), ''",
+                "</i>",
+                "(1961),",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Mary Poppins (film)",
@@ -17768,19 +17858,25 @@
                         ]
                     }
                 },
-                "'' (1964), ''",
+                "</i>",
+                "(1964),",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Blowup",
                     "content": {}
                 },
-                "'' (1966), ''",
+                "</i>",
+                "(1966),",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "The Long Good Friday",
                     "content": {}
                 },
-                "'' (1980), ''",
+                "</i>",
+                "(1980),",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Secrets & Lies (film)",
@@ -17790,7 +17886,9 @@
                         ]
                     }
                 },
-                "'' (1996), ''",
+                "</i>",
+                "(1996),",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Notting Hill (film)",
@@ -17800,13 +17898,17 @@
                         ]
                     }
                 },
-                "'' (1999), ''",
+                "</i>",
+                "(1999),",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Match Point",
                     "content": {}
                 },
-                "'' (2005), ''",
+                "</i>",
+                "(2005),",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "V For Vendetta (film)",
@@ -17816,19 +17918,24 @@
                         ]
                     }
                 },
-                "'' (2005) and ''",
+                "</i>",
+                "(2005) and",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Sweeney Todd: The Demon Barber Of Fleet Street",
                     "content": {}
                 },
-                "'' (2008). The television soap opera ''",
+                "</i>",
+                "(2008). The television soap opera",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "EastEnders",
                     "content": {}
                 },
-                "'', first broadcast in 1985, is also set in the city. London has played a significant role in the film industry, and has major studios at",
+                "</i>",
+                ", first broadcast in 1985, is also set in the city. London has played a significant role in the film industry, and has major studios at",
                 {
                     "__type": "reference",
                     "label": "Ealing Studios",
@@ -17915,7 +18022,8 @@
                     "label": "BBC",
                     "content": {}
                 },
-                "including ''",
+                "including",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "The Weakest Link (UK game show)",
@@ -17925,19 +18033,24 @@
                         ]
                     }
                 },
-                "'', ''",
+                "</i>",
+                ",",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Breakfast Time",
                     "content": {}
                 },
-                "'', and ''",
+                "</i>",
+                ", and",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "BBC News",
                     "content": {}
                 },
-                "''.",
+                "</i>",
+                ".",
                 {
                     "__type": "section",
                     "title": "Museums and art galleries",
@@ -20052,13 +20165,19 @@
                         ]
                     }
                 },
-                ", Timesonline 29 December 2008. The original byline for the article in ''",
+                ", Timesonline 29 December 2008. The original byline for the article in",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "The Times",
                     "content": {}
                 },
-                "'' of the same day was \"The 55 corners of foreign fields that will be for ever ... Richmond\" (page 9). Cites ''The Times Universal Atlas of the World''. http://www.webcitation.org/5yoKJBWF8",
+                "</i>",
+                "of the same day was \"The 55 corners of foreign fields that will be for ever ... Richmond\" (page 9). Cites",
+                "<i>",
+                "The Times Universal Atlas of the World",
+                "</i>",
+                ". http://www.webcitation.org/5yoKJBWF8",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -21104,7 +21223,11 @@
                         ]
                     }
                 },
-                "in ''British History Online'', with links to numerous authoritative online sources\n*",
+                "in",
+                "<i>",
+                "British History Online",
+                "</i>",
+                ", with links to numerous authoritative online sources\n*",
                 {
                     "__type": "link",
                     "url": "http://www.visitlondon.com/",

@@ -647,7 +647,10 @@
                         ]
                     }
                 },
-                "'''Albert Einstein''' (",
+                "<b>",
+                "Albert Einstein",
+                "</b>",
+                "(",
                 {
                     "__type": "template",
                     "name": "IPAc-en",
@@ -849,7 +852,9 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "David Bodanis, ''E&nbsp;=&nbsp;mc",
+                "David Bodanis,",
+                "<i>",
+                "E&nbsp;=&nbsp;mc",
                 {
                     "__type": "open_tag",
                     "name": "sup",
@@ -860,7 +865,9 @@
                     "__type": "close_tag",
                     "name": "sup"
                 },
-                ": A Biography of the World's Most Famous Equation'' (New York: Walker, 2000).",
+                ": A Biography of the World's Most Famous Equation",
+                "</i>",
+                "(New York: Walker, 2000).",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -1194,19 +1201,33 @@
                         ]
                     }
                 },
-                "His non-scientific works include: ''About Zionism: Speeches and Lectures by Professor Albert Einstein'' (1930), \"Why War?\" (1933, co-authored by",
+                "His non-scientific works include:",
+                "<i>",
+                "About Zionism: Speeches and Lectures by Professor Albert Einstein",
+                "</i>",
+                "(1930), \"Why War?\" (1933, co-authored by",
                 {
                     "__type": "reference",
                     "label": "Sigmund Freud",
                     "content": {}
                 },
-                "), ''The World As I See It'' (1934), ''Out of My Later Years'' (1950), and a book on science for the general reader, ''",
+                "),",
+                "<i>",
+                "The World As I See It",
+                "</i>",
+                "(1934),",
+                "<i>",
+                "Out of My Later Years",
+                "</i>",
+                "(1950), and a book on science for the general reader,",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "The Evolution of Physics",
                     "content": {}
                 },
-                "'' (1938, co-authored by",
+                "</i>",
+                "(1938, co-authored by",
                 {
                     "__type": "reference",
                     "label": "Leopold Infeld",
@@ -1377,7 +1398,11 @@
                     "label": "Munich",
                     "content": {}
                 },
-                ", where his father and his uncle founded ''Elektrotechnische Fabrik J. Einstein & Cie'', a company that manufactured electrical equipment based on",
+                ", where his father and his uncle founded",
+                "<i>",
+                "Elektrotechnische Fabrik J. Einstein & Cie",
+                "</i>",
+                ", a company that manufactured electrical equipment based on",
                 {
                     "__type": "reference",
                     "label": "direct current",
@@ -1529,25 +1554,33 @@
                     "label": "Poland",
                     "content": {}
                 },
-                ", was introduced to the Einstein family by his brother, and during weekly visits over the next five years he gave the boy popular books on science, mathematical texts and philosophical writings. These included Immanuel Kant's ''",
+                ", was introduced to the Einstein family by his brother, and during weekly visits over the next five years he gave the boy popular books on science, mathematical texts and philosophical writings. These included Immanuel Kant's",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Critique of Pure Reason",
                     "content": {}
                 },
-                "'' and ''",
+                "</i>",
+                "and",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Euclid's Elements",
                     "content": {}
                 },
-                "'' (which Einstein called the \"holy little geometry book\").",
+                "</i>",
+                "(which Einstein called the \"holy little geometry book\").",
                 {
                     "__type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "M. Talmey, ''The Relativity Theory Simplified and the Formative Period of its Inventor''. Falcon Press, 1932, pp. 161–164.",
+                "M. Talmey,",
+                "<i>",
+                "The Relativity Theory Simplified and the Formative Period of its Inventor",
+                "</i>",
+                ". Falcon Press, 1932, pp. 161–164.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -1648,7 +1681,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "A. Fölsing, ''Albert Einstein'', 1997, pp. 30-31.",
+                "A. Fölsing,",
+                "<i>",
+                "Albert Einstein",
+                "</i>",
+                ", 1997, pp. 30-31.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -1669,7 +1706,10 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "''Albert Einstein Collected Papers'', vol. 1 (1987), doc. 5.",
+                "<i>",
+                "Albert Einstein Collected Papers",
+                "</i>",
+                ", vol. 1 (1987), doc. 5.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -1741,7 +1781,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "A. Fölsing, ''Albert Einstein'', 1997, pp. 36-37.",
+                "A. Fölsing,",
+                "<i>",
+                "Albert Einstein",
+                "</i>",
+                ", 1997, pp. 36-37.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -1816,7 +1860,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "A. Fölsing, ''Albert Einstein'', 1997, p. 40.",
+                "A. Fölsing,",
+                "<i>",
+                "Albert Einstein",
+                "</i>",
+                ", 1997, p. 40.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -1833,7 +1881,10 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "''Collected Papers'', vol. 1, docs. 21-27.",
+                "<i>",
+                "Collected Papers",
+                "</i>",
+                ", vol. 1, docs. 21-27.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -1856,7 +1907,10 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "''Albert Einstein Collected Papers'', vol. 1, 1987, doc. 67.",
+                "<i>",
+                "Albert Einstein Collected Papers",
+                "</i>",
+                ", vol. 1, 1987, doc. 67.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -1867,7 +1921,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "Troemel-Ploetz, D., \"Mileva Einstein-Marić: The Woman Who Did Einstein's Mathematics\", ''Women's Studies Int. Forum'', vol. 13, no. 5, pp. 415–432, 1990.",
+                "Troemel-Ploetz, D., \"Mileva Einstein-Marić: The Woman Who Did Einstein's Mathematics\",",
+                "<i>",
+                "Women's Studies Int. Forum",
+                "</i>",
+                ", vol. 13, no. 5, pp. 415–432, 1990.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -1917,7 +1975,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "Pais, A., ''Einstein Lived Here'', Oxford University Press, 1994, pp. 1–29.",
+                "Pais, A.,",
+                "<i>",
+                "Einstein Lived Here",
+                "</i>",
+                ", Oxford University Press, 1994, pp. 1–29.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -1927,7 +1989,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "Holton, G., ''Einstein, History, and Other Passions'', Harvard University Press, 1996, pp. 177–193.",
+                "Holton, G.,",
+                "<i>",
+                "Einstein, History, and Other Passions",
+                "</i>",
+                ", Harvard University Press, 1996, pp. 177–193.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -1937,7 +2003,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "Stachel, J., ''Einstein from B to Z'', Birkhäuser, 2002, pp. 26–38; 39–55.",
+                "Stachel, J.,",
+                "<i>",
+                "Einstein from B to Z",
+                "</i>",
+                ", Birkhäuser, 2002, pp. 26–38; 39–55.",
                 {
                     "__type": "link",
                     "url": "http://philoscience.unibe.ch/lehre/winter99/einstein/Stachel1966.pdf",
@@ -1956,7 +2026,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "Martinez, A. A., “Handling evidence in history: the case of Einstein’s Wife.” ''School Science Review'', 86 (316), March 2005, pp. 49–56.",
+                "Martinez, A. A., “Handling evidence in history: the case of Einstein’s Wife.”",
+                "<i>",
+                "School Science Review",
+                "</i>",
+                ", 86 (316), March 2005, pp. 49–56.",
                 {
                     "__type": "link",
                     "url": "https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf",
@@ -2008,7 +2082,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "This conclusion is from Einstein's correspondence with Marić. Lieserl is first mentioned in a letter from Einstein to Marić (who was staying with her family in or near Novi Sad at the time of Lieserl's birth) dated 4 February 1902 (''Collected papers'' Vol. 1, document 134).",
+                "This conclusion is from Einstein's correspondence with Marić. Lieserl is first mentioned in a letter from Einstein to Marić (who was staying with her family in or near Novi Sad at the time of Lieserl's birth) dated 4 February 1902 (",
+                "<i>",
+                "Collected papers",
+                "</i>",
+                "Vol. 1, document 134).",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -2227,7 +2305,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "Peter Galison, \"Einstein's Clocks: The Question of Time\" ''Critical Inquiry'' 26, no. 2 (Winter 2000): 355–389.",
+                "Peter Galison, \"Einstein's Clocks: The Question of Time\"",
+                "<i>",
+                "Critical Inquiry",
+                "</i>",
+                "26, no. 2 (Winter 2000): 355–389.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -2308,13 +2390,15 @@
                         ]
                     }
                 },
-                "(\"Conclusions from the Capillarity Phenomena\") was published in the prestigious ''",
+                "(\"Conclusions from the Capillarity Phenomena\") was published in the prestigious",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Annalen der Physik",
                     "content": {}
                 },
-                "''.",
+                "</i>",
+                ".",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -2360,7 +2444,8 @@
                     "label": "Alfred Kleiner",
                     "content": {}
                 },
-                ", Professor of Experimental Physics, serving as ''",
+                ", Professor of Experimental Physics, serving as",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Wikt:pro forma",
@@ -2370,7 +2455,8 @@
                         ]
                     }
                 },
-                "'' advisor. Einstein was awarded a PhD by the",
+                "</i>",
+                "advisor. Einstein was awarded a PhD by the",
                 {
                     "__type": "reference",
                     "label": "University of Zurich",
@@ -2428,13 +2514,15 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "That same year, which has been called Einstein's ''",
+                "That same year, which has been called Einstein's",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "annus mirabilis",
                     "content": {}
                 },
-                "'' (miracle year), he published",
+                "</i>",
+                "(miracle year), he published",
                 {
                     "__type": "reference",
                     "label": "Annus Mirabilis papers",
@@ -2526,7 +2614,11 @@
                     "label": "Kaiser Wilhelm Institute for Physics",
                     "content": {}
                 },
-                "in Berlin\". in Renn, Jürgen. \"Albert Einstein&nbsp;– Chief Engineer of the Universe: One Hundred Authors for Einstein.\" Ed. Renn, Jürgen. ''Wiley-VCH''. 2005. pp. 166–169. ISBN 3527405747",
+                "in Berlin\". in Renn, Jürgen. \"Albert Einstein&nbsp;– Chief Engineer of the Universe: One Hundred Authors for Einstein.\" Ed. Renn, Jürgen.",
+                "<i>",
+                "Wiley-VCH",
+                "</i>",
+                ". 2005. pp. 166–169. ISBN 3527405747",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -2631,13 +2723,15 @@
                     "label": "solar eclipse of 29 May 1919",
                     "content": {}
                 },
-                ". International media reports of this made Einstein world famous. On 7 November 1919, the leading British newspaper ''",
+                ". International media reports of this made Einstein world famous. On 7 November 1919, the leading British newspaper",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "The Times",
                     "content": {}
                 },
-                "'' printed a banner headline that read: \"Revolution in Science&nbsp;– New Theory of the Universe&nbsp;– Newtonian Ideas Overthrown\".",
+                "</i>",
+                "printed a banner headline that read: \"Revolution in Science&nbsp;– New Theory of the Universe&nbsp;– Newtonian Ideas Overthrown\".",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -2792,7 +2886,11 @@
                         }
                     ]
                 },
-                "Isaacson, Walter. ''Einstein: His Life and Universe'', Simon & Schuster (2007)",
+                "Isaacson, Walter.",
+                "<i>",
+                "Einstein: His Life and Universe",
+                "</i>",
+                ", Simon & Schuster (2007)",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -2900,7 +2998,11 @@
                         }
                     ]
                 },
-                "Botstein, Leon; Galison, Peter; Holton, Gerald James; Schweber, Silvan S. ''Einstein for the 21st Century: His Legacy in Science, Art, and Modern Culture'', Princeton Univ. Press (2008) pp. 161-164",
+                "Botstein, Leon; Galison, Peter; Holton, Gerald James; Schweber, Silvan S.",
+                "<i>",
+                "Einstein for the 21st Century: His Legacy in Science, Art, and Modern Culture",
+                "</i>",
+                ", Princeton Univ. Press (2008) pp. 161-164",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -3047,7 +3149,11 @@
                         }
                     ]
                 },
-                "Isaacson, Walter. ''Einstein: His Life and Universe'', Simon & Schuster (2007) pp. 407–410",
+                "Isaacson, Walter.",
+                "<i>",
+                "Einstein: His Life and Universe",
+                "</i>",
+                ", Simon & Schuster (2007) pp. 407–410",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -3281,7 +3387,11 @@
                         }
                     ]
                 },
-                "Gosling, F.G. ''The Manhattan Project: Making the Atomic Bomb'', U.S. Department of Energy, History Division (January, 1999) p. vii",
+                "Gosling, F.G.",
+                "<i>",
+                "The Manhattan Project: Making the Atomic Bomb",
+                "</i>",
+                ", U.S. Department of Energy, History Division (January, 1999) p. vii",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -3366,7 +3476,9 @@
                         }
                     ]
                 },
-                "Einstein: The Life and Times'' by Ronald Clark. page 752",
+                "Einstein: The Life and Times",
+                "<i>",
+                "by Ronald Clark. page 752",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -3456,7 +3568,8 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "Fred Jerome, Rodger Taylor (2006) ''",
+                "Fred Jerome, Rodger Taylor (2006)",
+                "</i>",
                 {
                     "__type": "link",
                     "url": "http://books.google.com/books?id=4d79VQdOfFUC&pg=PR10&dq=Einstein+on+Race+and+Racism+america's+worst+disease#v=onepage&q&f=false",
@@ -3466,7 +3579,8 @@
                         ]
                     }
                 },
-                "'' Rutgers University Press, 2006.",
+                "<i>",
+                "Rutgers University Press, 2006.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -3477,7 +3591,8 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "Calaprice, Alice (2005) ''",
+                "Calaprice, Alice (2005)",
+                "</i>",
                 {
                     "__type": "link",
                     "url": "http://press.princeton.edu/titles/7921.html",
@@ -3487,7 +3602,9 @@
                         ]
                     }
                 },
-                "''. pp.148–149 Princeton University Press, 2005. See also ''",
+                "<i>",
+                ". pp.148–149 Princeton University Press, 2005. See also",
+                "</i>",
                 {
                     "__type": "link",
                     "url": "http://books.google.com/books?id=dLhVn-McDDgC&pg=PA226&dq=racism+americas+worst+disease+1946#v=onepage&q&f=false",
@@ -3497,7 +3614,7 @@
                         ]
                     }
                 },
-                "''",
+                "<i>",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -3598,7 +3715,8 @@
                     "name": "blockquote",
                     "attributes": null
                 },
-                "All my life I have dealt with objective matters, hence I lack both the natural aptitude and the experience to deal properly with people and to exercise official function. I am the more distressed over these circumstances because my relationship with the Jewish people became my strongest human tie once I achieved complete clarity about our precarious position among the nations of the world.''",
+                "All my life I have dealt with objective matters, hence I lack both the natural aptitude and the experience to deal properly with people and to exercise official function. I am the more distressed over these circumstances because my relationship with the Jewish people became my strongest human tie once I achieved complete clarity about our precarious position among the nations of the world.",
+                "</i>",
                 {
                     "__type": "inline_tag",
                     "name": "ref",
@@ -3966,7 +4084,11 @@
                         ]
                     }
                 },
-                ", ''E = Einstein: His Life, His Thought, and His Influence on Our Culture'', Sterling Publishing (2006) pp. 97–118",
+                ",",
+                "<i>",
+                "E = Einstein: His Life, His Thought, and His Influence on Our Culture",
+                "</i>",
+                ", Sterling Publishing (2006) pp. 97–118",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -4054,7 +4176,11 @@
                         ]
                     }
                 },
-                "\". ''Instituut-Lorentz.'' 2005. Retrieved on 21 November 2005.",
+                "\".",
+                "<i>",
+                "Instituut-Lorentz.",
+                "</i>",
+                "2005. Retrieved on 21 November 2005.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -4082,7 +4208,8 @@
                         ]
                     }
                 },
-                "The ''",
+                "The",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Annus mirabilis",
@@ -4092,7 +4219,8 @@
                         ]
                     }
                 },
-                "'' papers are four articles pertaining to the",
+                "</i>",
+                "papers are four articles pertaining to the",
                 {
                     "__type": "reference",
                     "label": "photoelectric effect",
@@ -4140,13 +4268,15 @@
                         ]
                     }
                 },
-                "that Albert Einstein published in the ''",
+                "that Albert Einstein published in the",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Annalen der Physik",
                     "content": {}
                 },
-                "'' scientific journal in 1905. These four works contributed substantially to the foundation of",
+                "</i>",
+                "scientific journal in 1905. These four works contributed substantially to the foundation of",
                 {
                     "__type": "reference",
                     "label": "History of physics#Modern physics",
@@ -4644,7 +4774,11 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "submitted in 1900 to ''Annalen der Physik'' was on",
+                "submitted in 1900 to",
+                "<i>",
+                "Annalen der Physik",
+                "</i>",
+                "was on",
                 {
                     "__type": "reference",
                     "label": "capillary attraction",
@@ -4796,13 +4930,22 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "In his paper on ''",
+                "In his paper on",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "mass–energy equivalence",
                     "content": {}
                 },
-                "'' Einstein produced ''E''&nbsp;=&nbsp;''mc''",
+                "</i>",
+                "Einstein produced",
+                "<i>",
+                "E",
+                "</i>",
+                "&nbsp;=&nbsp;",
+                "<i>",
+                "mc",
+                "</i>",
                 {
                     "__type": "open_tag",
                     "name": "sup",
@@ -4869,7 +5012,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "For a discussion of the reception of relativity theory around the world, and the different controversies it encountered, see the articles in Thomas F. Glick, ed., ''The Comparative Reception of Relativity'' (Kluwer Academic Publishers, 1987), ISBN 9027724989.",
+                "For a discussion of the reception of relativity theory around the world, and the different controversies it encountered, see the articles in Thomas F. Glick, ed.,",
+                "<i>",
+                "The Comparative Reception of Relativity",
+                "</i>",
+                "(Kluwer Academic Publishers, 1987), ISBN 9027724989.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -4982,7 +5129,8 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "Einstein postulated that light itself consists of localized particles (''",
+                "Einstein postulated that light itself consists of localized particles (",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "quantum",
@@ -4992,7 +5140,8 @@
                         ]
                     }
                 },
-                "''). Einstein's light quanta were nearly universally rejected by all physicists, including Max Planck and Niels Bohr. This idea only became universally accepted in 1919, with",
+                "</i>",
+                "). Einstein's light quanta were nearly universally rejected by all physicists, including Max Planck and Niels Bohr. This idea only became universally accepted in 1919, with",
                 {
                     "__type": "reference",
                     "label": "Robert Millikan",
@@ -5010,13 +5159,25 @@
                     "label": "Compton scattering",
                     "content": {}
                 },
-                ".\n\nEinstein concluded that each wave of frequency ''f'' is associated with a collection of",
+                ".\n\nEinstein concluded that each wave of frequency",
+                "<i>",
+                "f",
+                "</i>",
+                "is associated with a collection of",
                 {
                     "__type": "reference",
                     "label": "photon",
                     "content": {}
                 },
-                "s with energy ''hf'' each, where ''h'' is",
+                "s with energy",
+                "<i>",
+                "hf",
+                "</i>",
+                "each, where",
+                "<i>",
+                "h",
+                "</i>",
+                "is",
                 {
                     "__type": "reference",
                     "label": "Planck's constant",
@@ -5217,13 +5378,15 @@
                         ]
                     }
                 },
-                "Although the patent office promoted Einstein to Technical Examiner Second Class in 1906, he had not given up on academia. In 1908, he became a ''",
+                "Although the patent office promoted Einstein to Technical Examiner Second Class in 1906, he had not given up on academia. In 1908, he became a",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "privatdozent",
                     "content": {}
                 },
-                "'' at the",
+                "</i>",
+                "at the",
                 {
                     "__type": "reference",
                     "label": "University of Bern",
@@ -5309,7 +5472,15 @@
                         ]
                     }
                 },
-                ". This paper introduced the ''photon'' concept (although the name ''photon'' was introduced later by",
+                ". This paper introduced the",
+                "<i>",
+                "photon",
+                "</i>",
+                "concept (although the name",
+                "<i>",
+                "photon",
+                "</i>",
+                "was introduced later by",
                 {
                     "__type": "reference",
                     "label": "Gilbert N. Lewis",
@@ -5368,13 +5539,16 @@
                         ]
                     }
                 },
-                "\". ''",
+                "\".",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Public Broadcasting Service",
                     "content": {}
                 },
-                ".'' 2005. Retrieved on 25 February 2006.",
+                ".",
+                "</i>",
+                "2005. Retrieved on 25 February 2006.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -5407,7 +5581,10 @@
                         ]
                     }
                 },
-                "''hf'', to half the energy spacing between levels. This argument, which was made in 1913 in collaboration with",
+                "<i>",
+                "hf",
+                "</i>",
+                ", to half the energy spacing between levels. This argument, which was made in 1913 in collaboration with",
                 {
                     "__type": "reference",
                     "label": "Otto Stern",
@@ -5594,7 +5771,11 @@
                     "name": "ref",
                     "attributes": null
                 },
-                "van Dongen, Jeroen (2010) ''Einstein's Unification'' Cambridge University Press, p.23.",
+                "van Dongen, Jeroen (2010)",
+                "<i>",
+                "Einstein's Unification",
+                "</i>",
+                "Cambridge University Press, p.23.",
                 {
                     "__type": "close_tag",
                     "name": "ref"
@@ -5712,7 +5893,11 @@
                         ]
                     }
                 },
-                "In 1917, at the height of his work on relativity, Einstein published an article in ''Physikalische Zeitschrift'' that proposed the possibility of",
+                "In 1917, at the height of his work on relativity, Einstein published an article in",
+                "<i>",
+                "Physikalische Zeitschrift",
+                "</i>",
+                "that proposed the possibility of",
                 {
                     "__type": "reference",
                     "label": "stimulated emission",
@@ -5805,13 +5990,15 @@
                     "label": "Satyendra Nath Bose",
                     "content": {}
                 },
-                ", based on a counting method that assumed that light could be understood as a gas of indistinguishable particles. Einstein noted that Bose's statistics applied to some atoms as well as to the proposed light particles, and submitted his translation of Bose's paper to the ''",
+                ", based on a counting method that assumed that light could be understood as a gas of indistinguishable particles. Einstein noted that Bose's statistics applied to some atoms as well as to the proposed light particles, and submitted his translation of Bose's paper to the",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Zeitschrift für Physik",
                     "content": {}
                 },
-                "''. Einstein also published his own articles describing the model and its implications, among them the",
+                "</i>",
+                ". Einstein also published his own articles describing the model and its implications, among them the",
                 {
                     "__type": "reference",
                     "label": "Bose–Einstein condensate",
@@ -6019,13 +6206,15 @@
                     "label": "unified field theory",
                     "content": {}
                 },
-                "\" in a ''",
+                "\" in a",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Scientific American",
                     "content": {}
                 },
-                "'' article entitled \"On the Generalized Theory of Gravitation\".",
+                "</i>",
+                "article entitled \"On the Generalized Theory of Gravitation\".",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -6407,7 +6596,10 @@
                         ]
                     }
                 },
-                "''Georgia Tech Alumni Magazine.'' 1998. Retrieved on 21 November 2005.",
+                "<i>",
+                "Georgia Tech Alumni Magazine.",
+                "</i>",
+                "1998. Retrieved on 21 November 2005.",
                 {
                     "__type": "reference",
                     "label": "Leó Szilárd",
@@ -6515,7 +6707,11 @@
                         ]
                     }
                 },
-                "The '''Bohr–Einstein debates''' were a series of public disputes about",
+                "The",
+                "<b>",
+                "Bohr–Einstein debates",
+                "</b>",
+                "were a series of public disputes about",
                 {
                     "__type": "reference",
                     "label": "quantum mechanics",
@@ -6933,7 +7129,10 @@
                     "url": "http://www.cindymctee.com/einsteins_dream.html",
                     "content": {}
                 },
-                "''Einstein's Dream'' for orchestra by",
+                "<i>",
+                "Einstein's Dream",
+                "</i>",
+                "for orchestra by",
                 {
                     "__type": "reference",
                     "label": "Cindy McTee",
@@ -6955,7 +7154,11 @@
                     "label": "absent-minded professor",
                     "content": {}
                 },
-                "s; his expressive face and distinctive hairstyle have been widely copied and exaggerated. ''TIME'' magazine's Frederic Golden wrote that Einstein was \"a cartoonist's dream come true\".",
+                "s; his expressive face and distinctive hairstyle have been widely copied and exaggerated.",
+                "<i>",
+                "TIME",
+                "</i>",
+                "magazine's Frederic Golden wrote that Einstein was \"a cartoonist's dream come true\".",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -7022,13 +7225,16 @@
                     "title": "Publications",
                     "level": 0
                 },
-                ": ''The following publications by Albert Einstein are referenced in this article. A more complete list of his publications may be found at",
+                ":",
+                "<i>",
+                "The following publications by Albert Einstein are referenced in this article. A more complete list of his publications may be found at",
                 {
                     "__type": "reference",
                     "label": "List of scientific publications by Albert Einstein",
                     "content": {}
                 },
-                ".''",
+                ".",
+                "</i>",
                 {
                     "__type": "template",
                     "name": "refbegin",
@@ -7115,7 +7321,11 @@
                         ]
                     }
                 },
-                "This annus mirabilis paper on the photoelectric effect was received by ''Annalen der Physik'' 18 March.\n*",
+                "This annus mirabilis paper on the photoelectric effect was received by",
+                "<i>",
+                "Annalen der Physik",
+                "</i>",
+                "18 March.\n*",
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -7726,7 +7936,11 @@
                         ]
                     }
                 },
-                ". The ''chasing a light beam'' thought experiment is described on pages 48–51.\n* Collected Papers:",
+                ". The",
+                "<i>",
+                "chasing a light beam",
+                "</i>",
+                "thought experiment is described on pages 48–51.\n* Collected Papers:",
                 {
                     "__type": "template",
                     "name": "Citation",
@@ -7825,13 +8039,15 @@
                         ]
                     }
                 },
-                "* ''",
+                "*",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "The Einstein Theory of Relativity",
                     "content": {}
                 },
-                "'' (educational film about the theory of relativity)\n*",
+                "</i>",
+                "(educational film about the theory of relativity)\n*",
                 {
                     "__type": "reference",
                     "label": "German inventors and discoverers",
@@ -7945,7 +8161,11 @@
                     "name": "refbegin",
                     "content": {}
                 },
-                "* Fölsing, Albrecht (1997): ''Albert Einstein: A Biography''. New York: Penguin Viking. (Translated and abridged from the German by Ewald Osers.)\n*",
+                "* Fölsing, Albrecht (1997):",
+                "<i>",
+                "Albert Einstein: A Biography",
+                "</i>",
+                ". New York: Penguin Viking. (Translated and abridged from the German by Ewald Osers.)\n*",
                 {
                     "__type": "template",
                     "name": "cite book",
@@ -7982,7 +8202,16 @@
                         ]
                     }
                 },
-                "* Hoffmann, Banesh, with the collaboration of Helen Dukas (1972): ''Albert Einstein: Creator and Rebel''. London: Hart-Davis, MacGibbon Ltd.\n* Isaacson, Walter (2007): ''Einstein: His Life and Universe''. Simon & Schuster Paperbacks, New York. ISBN 9780743264730\n* Moring, Gary (2004): ''",
+                "* Hoffmann, Banesh, with the collaboration of Helen Dukas (1972):",
+                "<i>",
+                "Albert Einstein: Creator and Rebel",
+                "</i>",
+                ". London: Hart-Davis, MacGibbon Ltd.\n* Isaacson, Walter (2007):",
+                "<i>",
+                "Einstein: His Life and Universe",
+                "</i>",
+                ". Simon & Schuster Paperbacks, New York. ISBN 9780743264730\n* Moring, Gary (2004):",
+                "<i>",
                 {
                     "__type": "link",
                     "url": "http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover",
@@ -7992,7 +8221,8 @@
                         ]
                     }
                 },
-                "'' ( 1st ed. 2000). Indianapolis IN: Alpha books (Macmillan USA). ISBN 0028631803\n*",
+                "</i>",
+                "( 1st ed. 2000). Indianapolis IN: Alpha books (Macmillan USA). ISBN 0028631803\n*",
                 {
                     "__type": "reference",
                     "label": "Abraham Pais",
@@ -8002,7 +8232,21 @@
                         ]
                     }
                 },
-                "(1982): ''Subtle is the Lord: The science and the life of Albert Einstein''. Oxford University Press. The definitive biography to date.\n* Pais, Abraham (1994): ''Einstein Lived Here''. Oxford University Press.\n* Parker, Barry (2000): ''Einstein's Brainchild''. Prometheus Books. A review of Einstein's career and accomplishments, written for the lay public.\n* Schweber, Sylvan S. (2008): ''Einstein and",
+                "(1982):",
+                "<i>",
+                "Subtle is the Lord: The science and the life of Albert Einstein",
+                "</i>",
+                ". Oxford University Press. The definitive biography to date.\n* Pais, Abraham (1994):",
+                "<i>",
+                "Einstein Lived Here",
+                "</i>",
+                ". Oxford University Press.\n* Parker, Barry (2000):",
+                "<i>",
+                "Einstein's Brainchild",
+                "</i>",
+                ". Prometheus Books. A review of Einstein's career and accomplishments, written for the lay public.\n* Schweber, Sylvan S. (2008):",
+                "<i>",
+                "Einstein and",
                 {
                     "__type": "reference",
                     "label": "J. Robert Oppenheimer",
@@ -8012,7 +8256,9 @@
                         ]
                     }
                 },
-                ": The Meaning of Genius''. Harvard University Press. ISBN 978-0674028289.\n*",
+                ": The Meaning of Genius",
+                "</i>",
+                ". Harvard University Press. ISBN 978-0674028289.\n*",
                 {
                     "__type": "reference",
                     "label": "J. Robert Oppenheimer",
@@ -8022,7 +8268,11 @@
                         ]
                     }
                 },
-                ", J.R. (1971): \"On Albert Einstein,\" p.&nbsp;8–12 in ''Science and synthesis: an international colloquium organized by Unesco on the tenth anniversary of the death of Albert Einstein and Teilhard de Chardin'', Springer-Verlag, 1971, 208 pp. (Lecture delivered at the UNESCO House in Paris on 13 December 1965.) Also published in The New York Review of Books, 17 March 1966,",
+                ", J.R. (1971): \"On Albert Einstein,\" p.&nbsp;8–12 in",
+                "<i>",
+                "Science and synthesis: an international colloquium organized by Unesco on the tenth anniversary of the death of Albert Einstein and Teilhard de Chardin",
+                "</i>",
+                ", Springer-Verlag, 1971, 208 pp. (Lecture delivered at the UNESCO House in Paris on 13 December 1965.) Also published in The New York Review of Books, 17 March 1966,",
                 {
                     "__type": "link",
                     "url": "http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false",
@@ -8099,7 +8349,8 @@
                         ]
                     }
                 },
-                "* ''",
+                "*",
+                "<i>",
                 {
                     "__type": "link",
                     "url": "http://www.monthlyreview.org/598einstein.php",
@@ -8109,13 +8360,16 @@
                         ]
                     }
                 },
-                "'' by Albert Einstein, ''",
+                "</i>",
+                "by Albert Einstein,",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Monthly Review",
                     "content": {}
                 },
-                "'', May 1949\n*",
+                "</i>",
+                ", May 1949\n*",
                 {
                     "__type": "link",
                     "url": "http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren",
@@ -8155,13 +8409,15 @@
                         ]
                     }
                 },
-                "&nbsp;— slideshow by ''",
+                "&nbsp;— slideshow by",
+                "<i>",
                 {
                     "__type": "reference",
                     "label": "Life magazine",
                     "content": {}
                 },
-                "''\n*",
+                "</i>",
+                "*",
                 {
                     "__type": "link",
                     "url": "http://www.history.com/topics/albert-einstein",

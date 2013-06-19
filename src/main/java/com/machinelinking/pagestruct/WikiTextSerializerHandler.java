@@ -15,6 +15,8 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     private final Stack<Element> documentStack = new Stack<>();
 
+    private boolean isItalicBoldOpen;
+
     protected WikiTextSerializerHandler(Serializer serializer) {
         if (serializer == null) throw new NullPointerException();
         this.serializer = serializer;
@@ -26,6 +28,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void beginDocument(URL document) {
+        isItalicBoldOpen = false;
         pushElement(new DocumentElement());
         serializer.openObject();
         serializer.fieldValue("__type", "page");
@@ -262,6 +265,13 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         final String parameterName = param == null ? null : param.trim();
         serializer.field(parameterName);
         serializer.openList();
+    }
+
+    @Override
+    public void italicBold(int level) {
+        isItalicBoldOpen = !isItalicBoldOpen;
+        final String tag = level > 2 ? "b" : "i";
+        text( String.format("<%s%s>", isItalicBoldOpen ? "" : "/", tag ) );
     }
 
     @Override

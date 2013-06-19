@@ -11,7 +11,11 @@ Text: 'Percentage of diffusely reflected sun light in relation to various surfac
 End Reference: File:Albedo-e hg.svg
 Text: '
 
-'''Albedo''' ('
+'
+ItalicBold: 3
+Text: 'Albedo'
+ItalicBold: 3
+Text: ' ('
 Begin Template: IPAc-en
 k: null
 Text: 'icon'
@@ -30,10 +34,22 @@ Text: 'd'
 k: null
 Text: 'oʊ'
 End Template: IPAc-en
-Text: '), or ''reflection coefficient'', derived from '
+Text: '), or '
+ItalicBold: 2
+Text: 'reflection coefficient'
+ItalicBold: 2
+Text: ', derived from '
 Begin Reference: Latin
 End Reference: Latin
-Text: ' ''albedo'' "whiteness" (or reflected sunlight), in turn from ''albus'' "white", is the '
+Text: ' '
+ItalicBold: 2
+Text: 'albedo'
+ItalicBold: 2
+Text: ' "whiteness" (or reflected sunlight), in turn from '
+ItalicBold: 2
+Text: 'albus'
+ItalicBold: 2
+Text: ' "white", is the '
 Begin Reference: diffuse reflection
 k: null
 Text: 'diffuse reflectivity'
@@ -68,7 +84,11 @@ End Reference: astronomy
 Text: ', as well as in calculating '
 Begin Reference: reflectivity
 End Reference: reflectivity
-Text: ' of surfaces in LEED sustainable rating systems for buildings, computer graphics and computer vision. The average overall albedo of Earth, its ''planetary albedo'', is 30 to 35%, because of the covering by clouds, but varies widely locally across the surface, depending on the geological and environmental features.'
+Text: ' of surfaces in LEED sustainable rating systems for buildings, computer graphics and computer vision. The average overall albedo of Earth, its '
+ItalicBold: 2
+Text: 'planetary albedo'
+ItalicBold: 2
+Text: ', is 30 to 35%, because of the covering by clouds, but varies widely locally across the surface, depending on the geological and environmental features.'
 Open Tag: ref attributes: []
 Text: 'Environmental Encyclopedia, 3rd ed., Thompson Gale, 2003, ISBN 0-7876-5486-8'
 Close Tag: ref
@@ -77,7 +97,11 @@ Text: '
 The term was introduced into optics by '
 Begin Reference: Johann Heinrich Lambert
 End Reference: Johann Heinrich Lambert
-Text: ' in his 1760 work ''Photometria''.
+Text: ' in his 1760 work '
+ItalicBold: 2
+Text: 'Photometria'
+ItalicBold: 2
+Text: '.
 
 '
 Section [0] Terrestrial albedo
@@ -669,7 +693,11 @@ Text: ' is the astronomical albedo, '
 Open Tag: math attributes: []
 Text: 'D'
 Close Tag: math
-Text: ' is the diameter in kilometres, and ''H'' is the absolute magnitude.
+Text: ' is the diameter in kilometres, and '
+ItalicBold: 2
+Text: 'H'
+ItalicBold: 2
+Text: ' is the absolute magnitude.
 
 '
 Section [0] Examples of terrestrial albedo effects
@@ -764,12 +792,14 @@ Begin Link: http://ngm.nationalgeographic.com/2010/06/melt-zone/jenkins-text/3
 k: null
 Text: '"Changing Greenland - Melt Zone"'
 End Link: http://ngm.nationalgeographic.com/2010/06/melt-zone/jenkins-text/3
-Text: ' page 3, of 4, article by Mark Jenkins in '''
+Text: ' page 3, of 4, article by Mark Jenkins in '
+ItalicBold: 2
 Begin Reference: National Geographic (magazine)
 k: null
 Text: 'National Geographic'
 End Reference: National Geographic (magazine)
-Text: ''' June 2010, accessed July 8, 2010'
+ItalicBold: 2
+Text: ' June 2010, accessed July 8, 2010'
 Close Tag: ref
 Text: '
 
@@ -908,11 +938,27 @@ Text: '
 '
 Comment Tag:  Aerosol radiative forcing. 
 Text: '
-* ''Aerosol direct effect.'' Aerosols directly scatter and absorb radiation. The scattering of radiation causes atmospheric cooling, whereas absorption can cause atmospheric warming.
-* ''Aerosol indirect effect.'' Aerosols modify the properties of clouds through a subset of the aerosol population called '
+* '
+ItalicBold: 2
+Text: 'Aerosol direct effect.'
+ItalicBold: 2
+Text: ' Aerosols directly scatter and absorb radiation. The scattering of radiation causes atmospheric cooling, whereas absorption can cause atmospheric warming.
+* '
+ItalicBold: 2
+Text: 'Aerosol indirect effect.'
+ItalicBold: 2
+Text: ' Aerosols modify the properties of clouds through a subset of the aerosol population called '
 Begin Reference: cloud condensation nuclei
 End Reference: cloud condensation nuclei
-Text: '. Increased nuclei concentrations lead to increased cloud droplet number concentrations, which in turn leads to increased cloud albedo, increased light scattering and radiative cooling (''first indirect effect''), but also leads to reduced precipitation efficiency and increased lifetime of the cloud (''second indirect effect'').
+Text: '. Increased nuclei concentrations lead to increased cloud droplet number concentrations, which in turn leads to increased cloud albedo, increased light scattering and radiative cooling ('
+ItalicBold: 2
+Text: 'first indirect effect'
+ItalicBold: 2
+Text: '), but also leads to reduced precipitation efficiency and increased lifetime of the cloud ('
+ItalicBold: 2
+Text: 'second indirect effect'
+ItalicBold: 2
+Text: ').
 '
 Close Tag: blockquote
 Text: '

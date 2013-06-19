@@ -59,6 +59,8 @@ public interface WikiTextParserHandler extends TagHandler {
 
     void text(String content);
 
+    void italicBold(int level);
+
     @ValidateStack
     void endDocument();
 

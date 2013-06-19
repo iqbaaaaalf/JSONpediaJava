@@ -237,7 +237,11 @@ End Template: Infobox officeholder
 
 Text: '
 
-'''Abraham Lincoln''' '
+'
+ItalicBold: 3
+Text: 'Abraham Lincoln'
+ItalicBold: 3
+Text: ' '
 Begin Template: IPAc-en
 k: audio
 Text: 'Lincoln.ogg'
@@ -951,10 +955,12 @@ Begin Reference: William Blackstone
 k: null
 Text: 'Blackstone'
 End Reference: William Blackstone
-Text: ''s '''
+Text: ''s '
+ItalicBold: 2
 Begin Reference: Commentaries on the Laws of England
 End Reference: Commentaries on the Laws of England
-Text: ''' and other law books. Of his learning method, Lincoln stated: "I studied with nobody".'
+ItalicBold: 2
+Text: ' and other law books. Of his learning method, Lincoln stated: "I studied with nobody".'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 53–55.'
 Close Tag: ref
@@ -1090,7 +1096,15 @@ Text: '
 Lincoln emphasized his opposition to Polk by drafting and introducing his '
 Begin Reference: Spot Resolutions
 End Reference: Spot Resolutions
-Text: '. The war had begun with a Mexican slaughter of American soldiers in territory disputed by Mexico and the US; Polk insisted that Mexican soldiers had "invaded ''our territory'' and shed the blood of our fellow-citizens on our ''own soil''".'
+Text: '. The war had begun with a Mexican slaughter of American soldiers in territory disputed by Mexico and the US; Polk insisted that Mexican soldiers had "invaded '
+ItalicBold: 2
+Text: 'our territory'
+ItalicBold: 2
+Text: ' and shed the blood of our fellow-citizens on our '
+ItalicBold: 2
+Text: 'own soil'
+ItalicBold: 2
+Text: '".'
 Open Tag: ref attributes: []
 Text: 'Oates, pp. 79–80.'
 Close Tag: ref
@@ -1379,7 +1393,15 @@ Text: ' Speaking in his Kentucky accent, with a very powerful voice,'
 Open Tag: ref attributes: []
 Text: 'White, p. 199.'
 Close Tag: ref
-Text: ' he said the Kansas Act had a "''declared'' indifference, but as I must think, a covert ''real'' zeal for the spread of slavery. I cannot but hate it. I hate it because of the monstrous injustice of slavery itself. I hate it because it deprives our republican example of its just influence in the world..."'
+Text: ' he said the Kansas Act had a "'
+ItalicBold: 2
+Text: 'declared'
+ItalicBold: 2
+Text: ' indifference, but as I must think, a covert '
+ItalicBold: 2
+Text: 'real'
+ItalicBold: 2
+Text: ' zeal for the spread of slavery. I cannot but hate it. I hate it because of the monstrous injustice of slavery itself. I hate it because it deprives our republican example of its just influence in the world..."'
 Open Tag: ref attributes: []
 Text: 'Basler (1953), p. 255.'
 Begin Template: full
@@ -1401,7 +1423,11 @@ Text: '.'
 Open Tag: ref attributes: []
 Text: 'White, pp. 205–208.'
 Close Tag: ref
-Text: ' The Whigs had been irreparably split by the Kansas–Nebraska Act. Lincoln wrote, "I think I am a Whig, but others say there are no Whigs, and that I am an abolitionist, even though I do no more than oppose the ''extension'' of slavery." '
+Text: ' The Whigs had been irreparably split by the Kansas–Nebraska Act. Lincoln wrote, "I think I am a Whig, but others say there are no Whigs, and that I am an abolitionist, even though I do no more than oppose the '
+ItalicBold: 2
+Text: 'extension'
+ItalicBold: 2
+Text: ' of slavery." '
 Begin Template: cite quote
 k: date
 Text: 'March 2012'
@@ -1432,10 +1458,12 @@ Text: '.'
 Open Tag: ref attributes: []
 Text: 'Oates, pp. 138–139.'
 Close Tag: ref
-Text: ' In March 1857, the Supreme Court issued its decision in '''
+Text: ' In March 1857, the Supreme Court issued its decision in '
+ItalicBold: 2
 Begin Reference: Dred Scott v. Sandford
 End Reference: Dred Scott v. Sandford
-Text: '''; Chief Justice '
+ItalicBold: 2
+Text: '; Chief Justice '
 Begin Reference: Roger B. Taney
 End Reference: Roger B. Taney
 Text: ' opined that blacks were not citizens, and derived no rights from the Constitution. Lincoln denounced the decision, alleging it was the product of a conspiracy of Democrats to support the Slave Power'
@@ -1518,7 +1546,11 @@ Close Tag: ref
 Text: ' The debates had an atmosphere of a prize fight and drew crowds in the thousands. Lincoln stated Douglas's '
 Begin Reference: popular sovereignty
 End Reference: popular sovereignty
-Text: ' theory was a threat to the nation's morality and that Douglas represented a conspiracy to extend slavery to free states. Douglas said that Lincoln was defying the authority of the U.S. Supreme Court and the ''Dred Scott'' decision.'
+Text: ' theory was a threat to the nation's morality and that Douglas represented a conspiracy to extend slavery to free states. Douglas said that Lincoln was defying the authority of the U.S. Supreme Court and the '
+ItalicBold: 2
+Text: 'Dred Scott'
+ItalicBold: 2
+Text: ' decision.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 223.'
 Close Tag: ref
@@ -1528,7 +1560,11 @@ Though the Republican legislative candidates won more popular votes, the Democra
 Open Tag: ref attributes: []
 Text: 'Carwardine (2003), pp. 89–90.'
 Close Tag: ref
-Text: ' In May 1859, Lincoln purchased the ''Illinois Staats-Anzeiger,'' a German-language newspaper which was consistently supportive; most of the state's 130,000 German Americans voted Democratic but there was Republican support that a German-language paper could mobilize.'
+Text: ' In May 1859, Lincoln purchased the '
+ItalicBold: 2
+Text: 'Illinois Staats-Anzeiger,'
+ItalicBold: 2
+Text: ' a German-language newspaper which was consistently supportive; most of the state's 130,000 German Americans voted Democratic but there was Republican support that a German-language paper could mobilize.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 242, 412.'
 Close Tag: ref
@@ -1567,7 +1603,11 @@ Text: ') loyalists, while not mentioning either by name during its delivery."'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 240.'
 Close Tag: ref
-Text: ' In response to an inquiry about his presidential intentions, Lincoln said, "The taste ''is'' in my mouth a little."'
+Text: ' In response to an inquiry about his presidential intentions, Lincoln said, "The taste '
+ItalicBold: 2
+Text: 'is'
+ItalicBold: 2
+Text: ' in my mouth a little."'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 241.'
 Close Tag: ref
@@ -1643,7 +1683,11 @@ Text: 'Donald (1996), pp. 247–250.'
 Close Tag: ref
 Text: '
 
-Most Republicans agreed with Lincoln that the North was the aggrieved party, as the Slave Power tightened its grasp on the national government with the ''Dred Scott'' decision and the presidency of James Buchanan.  Throughout the 1850s, Lincoln doubted the prospects of civil war, and his supporters rejected claims that his election would incite secession.'
+Most Republicans agreed with Lincoln that the North was the aggrieved party, as the Slave Power tightened its grasp on the national government with the '
+ItalicBold: 2
+Text: 'Dred Scott'
+ItalicBold: 2
+Text: ' decision and the presidency of James Buchanan.  Throughout the 1850s, Lincoln doubted the prospects of civil war, and his supporters rejected claims that his election would incite secession.'
 Open Tag: ref attributes: []
 Text: 'Boritt (1994), pp. 10, 13, 18.'
 Close Tag: ref
@@ -1668,7 +1712,11 @@ As Douglas and the other candidates went through with their campaigns, Lincoln w
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 254–256.'
 Close Tag: ref
-Text: ' The Republican Party's production of campaign literature dwarfed the combined opposition; a ''Chicago Tribune'' writer produced a pamphlet that detailed Lincoln's life, and sold 100,000 to 200,000 copies.'
+Text: ' The Republican Party's production of campaign literature dwarfed the combined opposition; a '
+ItalicBold: 2
+Text: 'Chicago Tribune'
+ItalicBold: 2
+Text: ' writer produced a pamphlet that detailed Lincoln's life, and sold 100,000 to 200,000 copies.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), p. 254.'
 Close Tag: ref
@@ -1777,7 +1825,11 @@ Text: 'fusion tickets'
 End Reference: Electoral fusion
 Text: ' in which all of Lincoln's opponents combined to support the same slate of Electors in New York, New Jersey, and Rhode Island, but even if the anti-Lincoln vote had been combined in every state, Lincoln still would have won a majority in the Electoral College.'
 Open Tag: ref attributes: []
-Text: 'Nevins, ''Ordeal of the Union'' vol 4. p. 312.'
+Text: 'Nevins, '
+ItalicBold: 2
+Text: 'Ordeal of the Union'
+ItalicBold: 2
+Text: ' vol 4. p. 312.'
 Close Tag: ref
 Text: '
 
@@ -1927,7 +1979,9 @@ Begin Reference: Allan Nevins
 End Reference: Allan Nevins
 Text: ' argued that the newly inaugurated Lincoln made three miscalculations: underestimating the gravity of the crisis, exaggerating the strength of Unionist sentiment in the South, and not realizing the Southern Unionists were insisting there be no invasion.'
 Open Tag: ref attributes: []
-Text: 'Allan Nevins, Ordeal of the Union'' (1959) vol 5 p 29'
+Text: 'Allan Nevins, Ordeal of the Union'
+ItalicBold: 2
+Text: ' (1959) vol 5 p 29'
 Close Tag: ref
 Text: '  '
 Begin Reference: William Tecumseh Sherman
@@ -1961,12 +2015,14 @@ End Reference: Baltimore riot of 1861
 Text: ' traveling to the capital. '
 Begin Reference: George William Brown
 End Reference: George William Brown
-Text: ', the Mayor of Baltimore, and other suspect Maryland politicians were arrested and imprisoned, without a warrant, as Lincoln suspended the writ of '''
+Text: ', the Mayor of Baltimore, and other suspect Maryland politicians were arrested and imprisoned, without a warrant, as Lincoln suspended the writ of '
+ItalicBold: 2
 Begin Reference: Habeas corpus in the United States#Suspension during the Civil War
 k: null
 Text: 'habeas corpus'
 End Reference: Habeas corpus in the United States#Suspension during the Civil War
-Text: '''.'
+ItalicBold: 2
+Text: '.'
 Open Tag: ref attributes: []
 Text: 'Heidler (2000), p. 174.'
 Close Tag: ref
@@ -1997,7 +2053,11 @@ End Reference: Battle of Fort Sumter
 Text: ', Lincoln realized the importance of taking immediate executive control of the war and making an overall strategy to put down the rebellion.  Lincoln encountered an unprecedented political and military crisis, and he responded as '
 Begin Reference: commander-in-chief
 End Reference: commander-in-chief
-Text: ', using unprecedented powers. He expanded his war powers, and imposed a blockade on all the Confederate shipping ports, disbursed funds before appropriation by Congress, and after suspending ''habeas corpus'', arrested and imprisoned thousands of suspected Confederate sympathizers. Lincoln was supported by Congress and the northern public for these actions. In addition, Lincoln had to contend with reinforcing strong Union sympathies in the border slave states and keeping the war from becoming an international conflict.'
+Text: ', using unprecedented powers. He expanded his war powers, and imposed a blockade on all the Confederate shipping ports, disbursed funds before appropriation by Congress, and after suspending '
+ItalicBold: 2
+Text: 'habeas corpus'
+ItalicBold: 2
+Text: ', arrested and imprisoned thousands of suspected Confederate sympathizers. Lincoln was supported by Congress and the northern public for these actions. In addition, Lincoln had to contend with reinforcing strong Union sympathies in the border slave states and keeping the war from becoming an international conflict.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 303–304; Carwardine (2003), pp. 163–164.'
 Close Tag: ref
@@ -2052,11 +2112,19 @@ Text: '
 The '
 Begin Reference: Trent Affair
 End Reference: Trent Affair
-Text: ' of late 1861 threatened war with Great Britain. The U.S. Navy illegally intercepted a British merchant ship the ''Trent'' on the high seas and seized two Confederate envoys; Britain protested vehemently while the U.S. cheered. Lincoln resolved the issue by releasing the two men and war was successfully averted with Britain.'
+Text: ' of late 1861 threatened war with Great Britain. The U.S. Navy illegally intercepted a British merchant ship the '
+ItalicBold: 2
+Text: 'Trent'
+ItalicBold: 2
+Text: ' on the high seas and seized two Confederate envoys; Britain protested vehemently while the U.S. cheered. Lincoln resolved the issue by releasing the two men and war was successfully averted with Britain.'
 Open Tag: ref attributes: [name : 'CFAdams']
 Text: 'Adams, pp. 540–562.'
 Close Tag: ref
-Text: '  Lincoln's foreign policy approach had been initially hands off, due to his inexperience; he left most diplomacy appointments and other foreign policy matters to his Secretary of State, William Seward. Seward's initial reaction to the ''Trent'' affair, however, was too bellicose, so Lincoln also turned to Senator '
+Text: '  Lincoln's foreign policy approach had been initially hands off, due to his inexperience; he left most diplomacy appointments and other foreign policy matters to his Secretary of State, William Seward. Seward's initial reaction to the '
+ItalicBold: 2
+Text: 'Trent'
+ItalicBold: 2
+Text: ' affair, however, was too bellicose, so Lincoln also turned to Senator '
 Begin Reference: Charles Sumner
 End Reference: Charles Sumner
 Text: ', the chairman of the Senate Foreign Relations Committee and an expert in British diplomacy.'
@@ -2068,7 +2136,11 @@ Text: '
 To learn technical military terms, Lincoln borrowed and studied '
 Begin Reference: Henry Halleck
 End Reference: Henry Halleck
-Text: ''s book, ''Elements of Military Art and Science'' from the Library of Congress.'
+Text: ''s book, '
+ItalicBold: 2
+Text: 'Elements of Military Art and Science'
+ItalicBold: 2
+Text: ' from the Library of Congress.'
 Open Tag: ref attributes: []
 Text: 'Prokopowicz, p. 127.'
 Close Tag: ref
@@ -2080,7 +2152,11 @@ Begin Reference: Edwin Stanton
 End Reference: Edwin Stanton
 Text: ' as War Secretary. Stanton was one of many conservative Democrats (he supported Breckenridge in the 1860 election) who became anti-slavery Republicans under Lincoln's leadership.'
 Open Tag: ref attributes: []
-Text: 'Benjamin P. Thomas and Harold M. Hyman, ''Stanton, the Life and Times of Lincoln's Secretary of War'' (Knopf, 1962)'
+Text: 'Benjamin P. Thomas and Harold M. Hyman, '
+ItalicBold: 2
+Text: 'Stanton, the Life and Times of Lincoln's Secretary of War'
+ItalicBold: 2
+Text: ' (Knopf, 1962)'
 Begin Template: Page needed
 k: date
 Text: 'October 2011'
@@ -2171,7 +2247,19 @@ Text: ' in the summer of 1862, forcing the Army of the Potomac to defend Washing
 Open Tag: ref attributes: []
 Text: 'Nevins (1960), pp. 2:159–162.'
 Close Tag: ref
-Text: ' The war also expanded with naval operations in 1862 when the CSS ''Virginia'', formerly the USS ''Merrimack'', damaged or destroyed three Union vessels in Norfolk, Virginia, before being engaged and damaged by the USS ''Monitor''. Lincoln closely reviewed the dispatches and interrogated naval officers during their clash in the '
+Text: ' The war also expanded with naval operations in 1862 when the CSS '
+ItalicBold: 2
+Text: 'Virginia'
+ItalicBold: 2
+Text: ', formerly the USS '
+ItalicBold: 2
+Text: 'Merrimack'
+ItalicBold: 2
+Text: ', damaged or destroyed three Union vessels in Norfolk, Virginia, before being engaged and damaged by the USS '
+ItalicBold: 2
+Text: 'Monitor'
+ItalicBold: 2
+Text: '. Lincoln closely reviewed the dispatches and interrogated naval officers during their clash in the '
 Begin Reference: Battle of Hampton Roads
 End Reference: Battle of Hampton Roads
 Text: '.'
@@ -2244,7 +2332,11 @@ Begin Reference: Conscription
 k: null
 Text: 'the military draft law'
 End Reference: Conscription
-Text: ', and fears that freed slaves would undermine the labor market. The Emancipation Proclamation announced in September gained votes for the Republicans in the rural areas of New England and the upper Midwest, but it lost votes in the cities and the lower Midwest. While Republicans were discouraged, Democrats were energized and did especially well in Pennsylvania, Ohio, Indiana, and New York. The Republicans did maintain their majorities in Congress and in the major states, except New York. The Cincinnati ''Gazette'' contended that the voters were "depressed by the interminable nature of this war, as so far conducted, and by the rapid exhaustion of the national resources without progress".'
+Text: ', and fears that freed slaves would undermine the labor market. The Emancipation Proclamation announced in September gained votes for the Republicans in the rural areas of New England and the upper Midwest, but it lost votes in the cities and the lower Midwest. While Republicans were discouraged, Democrats were energized and did especially well in Pennsylvania, Ohio, Indiana, and New York. The Republicans did maintain their majorities in Congress and in the major states, except New York. The Cincinnati '
+ItalicBold: 2
+Text: 'Gazette'
+ItalicBold: 2
+Text: ' contended that the voters were "depressed by the interminable nature of this war, as so far conducted, and by the rapid exhaustion of the national resources without progress".'
 Open Tag: ref attributes: []
 Text: 'Nevins vol 6 pp. 318–322, quote on p. 322.'
 Close Tag: ref
@@ -2367,7 +2459,11 @@ Text: '
 Privately, Lincoln concluded at this point that the war could not be won without freeing the slaves. However Confederate and anti-war propagandists had success spreading the theme that emancipation was a stumbling block to peace and reunification. Republican editor '
 Begin Reference: Horace Greeley
 End Reference: Horace Greeley
-Text: ' of the highly influential ''New York Tribune'' fell for the ploy.'
+Text: ' of the highly influential '
+ItalicBold: 2
+Text: 'New York Tribune'
+ItalicBold: 2
+Text: ' fell for the ploy.'
 Open Tag: ref attributes: []
 Text: 'McPherson (1992), p. 124.'
 Close Tag: ref
@@ -2972,7 +3068,11 @@ Text: 'Jaffa, p. 263.'
 Close Tag: ref
 Text: ' Burton (2008) argues that Lincoln's republicanism was taken up by the Freedmen as they were emancipated.'
 Open Tag: ref attributes: []
-Text: 'Orville Vernon Burton, ''The Age of Lincoln'' (2008) p 243'
+Text: 'Orville Vernon Burton, '
+ItalicBold: 2
+Text: 'The Age of Lincoln'
+ItalicBold: 2
+Text: ' (2008) p 243'
 Close Tag: ref
 Text: '
 
@@ -3077,7 +3177,15 @@ Text: 'Nichols, pp. 210–232.'
 Close Tag: ref
 Text: '
 
-In the wake of Grant's casualties in his campaign against Lee, Lincoln had considered yet another executive call for a military draft, but it was never issued. In response to rumors of one, however, the editors of the ''New York World'' and the ''Journal of Commerce'' published a false draft proclamation which created an opportunity for the editors and others employed at the publications to corner the gold market. Lincoln's reaction was to send the strongest of messages to the media about such behavior; he ordered the military to seize the two papers. The seizure lasted for two days.'
+In the wake of Grant's casualties in his campaign against Lee, Lincoln had considered yet another executive call for a military draft, but it was never issued. In response to rumors of one, however, the editors of the '
+ItalicBold: 2
+Text: 'New York World'
+ItalicBold: 2
+Text: ' and the '
+ItalicBold: 2
+Text: 'Journal of Commerce'
+ItalicBold: 2
+Text: ' published a false draft proclamation which created an opportunity for the editors and others employed at the publications to corner the gold market. Lincoln's reaction was to send the strongest of messages to the media about such behavior; he ordered the military to seize the two papers. The seizure lasted for two days.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 501–502.'
 Close Tag: ref
@@ -3199,10 +3307,12 @@ End Reference: William H. Seward
 Text: ' and General Grant. Without his main bodyguard, '
 Begin Reference: Ward Hill Lamon
 End Reference: Ward Hill Lamon
-Text: ', Lincoln left to attend the play '''
+Text: ', Lincoln left to attend the play '
+ItalicBold: 2
 Begin Reference: Our American Cousin
 End Reference: Our American Cousin
-Text: ''' on April 14. Grant along with his wife chose at the last minute to travel to Philadelphia instead of attending the play.'
+ItalicBold: 2
+Text: ' on April 14. Grant along with his wife chose at the last minute to travel to Philadelphia instead of attending the play.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 594–597.'
 Close Tag: ref
@@ -3317,13 +3427,21 @@ Text: 'Donald (1996), pp. 48–49, 514–515.'
 Close Tag: ref
 Text: '
 
-In the 1840s Lincoln subscribed to the ''Doctrine of Necessity'', a belief that asserted the human mind was controlled by some higher power.'
+In the 1840s Lincoln subscribed to the '
+ItalicBold: 2
+Text: 'Doctrine of Necessity'
+ItalicBold: 2
+Text: ', a belief that asserted the human mind was controlled by some higher power.'
 Open Tag: ref attributes: []
 Text: 'Donald (1996), pp. 48–49.'
 Close Tag: ref
 Text: '  In the 1850s, Lincoln acknowledged "providence" in a general way, and rarely used the language or imagery of the evangelicals; he regarded the republicanism of the Founding Fathers with an almost religious reverence.'
 Open Tag: ref attributes: []
-Text: 'Grant R. Brodrecht, ''"Our country": Northern evangelicals and the Union during the Civil War and Reconstruction'' (2008) p. 40'
+Text: 'Grant R. Brodrecht, '
+ItalicBold: 2
+Text: '"Our country": Northern evangelicals and the Union during the Civil War and Reconstruction'
+ItalicBold: 2
+Text: ' (2008) p. 40'
 Close Tag: ref
 Text: ' When he suffered the death of his son Edward, Lincoln more frequently acknowledged his own need to depend on God.'
 Open Tag: ref attributes: []
@@ -3355,9 +3473,25 @@ Text: ' A 2004 study found that scholars in the fields of history and politics r
 Open Tag: ref attributes: [name : 'Taranto']
 Text: 'Taranto, p. 264.'
 Close Tag: ref
-Text: '  Of all the presidential ranking polls conducted since 1948, Lincoln has been rated at the very top in the majority of polls: Schlesinger 1948, Schlesinger 1962, 1982 Murray Blessing Survey, ''Chicago Tribune'' 1982 poll, Schlesinger 1996, CSPAN 1996, Ridings-McIver 1996, ''Time'' 2008, and CSPAN 2009. Generally, the top three presidents are rated as 1) Lincoln; 2) George Washington; and 3) Franklin D. Roosevelt, although Lincoln and Washington, and Washington and Roosevelt, occasionally are reversed.'
+Text: '  Of all the presidential ranking polls conducted since 1948, Lincoln has been rated at the very top in the majority of polls: Schlesinger 1948, Schlesinger 1962, 1982 Murray Blessing Survey, '
+ItalicBold: 2
+Text: 'Chicago Tribune'
+ItalicBold: 2
+Text: ' 1982 poll, Schlesinger 1996, CSPAN 1996, Ridings-McIver 1996, '
+ItalicBold: 2
+Text: 'Time'
+ItalicBold: 2
+Text: ' 2008, and CSPAN 2009. Generally, the top three presidents are rated as 1) Lincoln; 2) George Washington; and 3) Franklin D. Roosevelt, although Lincoln and Washington, and Washington and Roosevelt, occasionally are reversed.'
 Open Tag: ref attributes: []
-Text: 'Densen, John V., Editor, ''Reassessing The Presidency, The Rise of the Executive State and the Decline of Freedom'' (Ludwig von Mises Institute, 2001), pgs. 1-32; Ridings, William H., & Stuard B. McIver, ''Rating The Presidents, A Ranking of U.S. Leaders, From the Great and Honorable to the Dishonest and Incompetent'' (Citadel Press, Kensington Publishing Corp., 2000).'
+Text: 'Densen, John V., Editor, '
+ItalicBold: 2
+Text: 'Reassessing The Presidency, The Rise of the Executive State and the Decline of Freedom'
+ItalicBold: 2
+Text: ' (Ludwig von Mises Institute, 2001), pgs. 1-32; Ridings, William H., & Stuard B. McIver, '
+ItalicBold: 2
+Text: 'Rating The Presidents, A Ranking of U.S. Leaders, From the Great and Honorable to the Dishonest and Incompetent'
+ItalicBold: 2
+Text: ' (Citadel Press, Kensington Publishing Corp., 2000).'
 Close Tag: ref
 Text: '
 
@@ -5065,7 +5199,11 @@ Text: '1950 '
 k: isbn
 Text: '9780684104164'
 End Template: Cite book
-Text: ', also published as vol 3–4 of ''Ordeal of the Union''
+Text: ', also published as vol 3–4 of '
+ItalicBold: 2
+Text: 'Ordeal of the Union'
+ItalicBold: 2
+Text: '
 ** '
 Begin Template: Cite book
 k: ref
@@ -5083,7 +5221,11 @@ Text: '1960–1971 '
 k: isbn
 Text: '9781568522975'
 End Template: Cite book
-Text: '; also published as vol 5–8 of ''Ordeal of the Union''
+Text: '; also published as vol 5–8 of '
+ItalicBold: 2
+Text: 'Ordeal of the Union'
+ItalicBold: 2
+Text: '
 * '
 Begin Template: cite book 
 k: ref
@@ -5938,7 +6080,11 @@ k: year
 Text: '1945–1955'
 End Template: cite book
 Text: '
-* Smith, Adam I.P. "The 'Cult' of Abraham Lincoln and the Strange Survival of Liberal England in the Era of the World Wars," ''Twentieth Century British History,'' (Dec 2010) 21#4 pp 486-509
+* Smith, Adam I.P. "The 'Cult' of Abraham Lincoln and the Strange Survival of Liberal England in the Era of the World Wars," '
+ItalicBold: 2
+Text: 'Twentieth Century British History,'
+ItalicBold: 2
+Text: ' (Dec 2010) 21#4 pp 486-509
 
 '
 Section [0] External links
@@ -6022,7 +6168,11 @@ Text: '6469 '
 k: null
 Text: 'US PATNo. 6,469'
 End Template: US patent 
-Text: '—''Manner of Buoying Vessels''—A. Lincoln—1849
+Text: '—'
+ItalicBold: 2
+Text: 'Manner of Buoying Vessels'
+ItalicBold: 2
+Text: '—A. Lincoln—1849
 * '
 Begin Link: http://edsitement.neh.gov/teaching-abraham-lincoln#node-19470
 k: null
@@ -6055,10 +6205,12 @@ End Link: http://web.archive.org/web/20110725003410/http://americanpresidents.or
 Text: ' at '
 Begin Reference: C-SPAN
 End Reference: C-SPAN
-Text: ''s '''
+Text: ''s '
+ItalicBold: 2
 Begin Reference: American Presidents: Life Portraits
 End Reference: American Presidents: Life Portraits
-Text: '''
+ItalicBold: 2
+Text: '
 *'
 Begin Link: http://legacy.c-span.org/Series/Lincoln-200-Years.aspx
 k: null

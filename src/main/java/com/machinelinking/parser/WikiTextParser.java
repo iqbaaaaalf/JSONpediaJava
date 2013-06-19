@@ -187,7 +187,28 @@ public class WikiTextParser implements ParserReader {
         try {
             while (true) {
                 c = read();
-                if (c != '{' && c != '[' && c != '<' && (c != '=' || col > 3)) {
+                if(c == '\'') { // Manage ' sequences
+                    mark();
+                    int apostrophesCount = 1;
+                    try {
+                        while (true) {
+                            c = read();
+                            if (c != '\'') {
+                                reset();
+                                break;
+                            }
+                            apostrophesCount++;
+                            mark();
+                        }
+                    } finally {
+                        if (apostrophesCount >= 2) {
+                            flushText(externalCharsSB);
+                            handler.italicBold(apostrophesCount);
+                        } else {
+                            externalCharsSB.append('\'');
+                        }
+                    }
+                } else if (c != '{' && c != '[' && c != '<' && (c != '=' || col > 3)) {
                     mark();
                     externalCharsSB.append(c);
                 } else {
@@ -196,10 +217,7 @@ public class WikiTextParser implements ParserReader {
                 }
             }
         } finally {
-            if (externalCharsSB.length() > 0) {
-                handler.text(externalCharsSB.toString());
-                clear(externalCharsSB);
-            }
+            flushText(externalCharsSB);
         }
     }
 
