@@ -100,6 +100,30 @@ public class WikiTextParserTest {
     }
 
     @Test
+    public void testMissingReferenceClosure() throws IOException, WikiTextParserException {
+        parse(
+                "land in the southeastern portion of the [[Borough (New York City)|borough of [[the Bronx]] in [[New York City]]) was named in his honor.\n",
+
+                "Begin Document\n" +
+                "Text: 'land in the southeastern portion of the '\n" +
+                "Begin Reference: Borough (New York City)\n" +
+                "k: null\n" +
+                "Text: 'borough of '\n" +
+                "Begin Reference: the Bronx\n" +
+                "End Reference: the Bronx\n" +
+                "Text: ' in '\n" +
+                "Begin Reference: New York City\n" +
+                "End Reference: New York City\n" +
+                "Text: ') was named in his honor.'\n" +
+                "Warning: Invalid closure for reference. (2, 0)\n" +
+                "End Reference: Borough (New York City)\n" +
+                "End Document\n",
+
+                false
+        );
+    }
+
+    @Test
     public void testParseLinkWithLabel() throws IOException, WikiTextParserException {
         parse(
                 "[http://link Text]",
@@ -134,30 +158,6 @@ public class WikiTextParserTest {
                 "Text: '[thisissometext'\n" +
                 "Text: ']'\n" +
                 "End Document\n"
-        );
-    }
-
-    @Test
-    public void testMissingReferenceClosure() throws IOException, WikiTextParserException {
-        parse(
-                "land in the southeastern portion of the [[Borough (New York City)|borough of [[the Bronx]] in [[New York City]]) was named in his honor.\n",
-
-                "Begin Document\n" +
-                "Text: 'land in the southeastern portion of the '\n" +
-                "Begin Reference: Borough (New York City)\n" +
-                "k: null\n" +
-                "Text: 'borough of '\n" +
-                "Begin Reference: the Bronx\n" +
-                "End Reference: the Bronx\n" +
-                "Text: ' in '\n" +
-                "Begin Reference: New York City\n" +
-                "End Reference: New York City\n" +
-                "Text: ') was named in his honor.'\n" +
-                "Warning: Invalid closure for reference. (2, 0)\n" +
-                "End Reference: Borough (New York City)\n" +
-                "End Document\n",
-
-                false
         );
     }
 
