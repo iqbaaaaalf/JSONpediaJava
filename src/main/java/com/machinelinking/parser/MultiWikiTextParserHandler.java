@@ -33,7 +33,6 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
         for(WikiTextParserHandler handler : handlers) {
             handler.parseWarning(msg, location);
         }
-
     }
 
     @Override
@@ -86,9 +85,9 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void listItem() {
+    public void listItem(int level) {
         for(WikiTextParserHandler handler : handlers) {
-            handler.listItem();
+            handler.listItem(level);
         }
     }
 

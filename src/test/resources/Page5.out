@@ -659,14 +659,12 @@ Text: ' ("From sea to sea.")
 '
 Section [0] Books
 Text: '
-*'
+'
+Begin List
+List Item: 1
 Begin Reference: Lynn Sherr
 End Reference: Lynn Sherr
-Text: ''s 2001 book '
-ItalicBold: 2
-Text: 'America the Beautiful'
-ItalicBold: 2
-Text: ' discusses the origins of the song and the backgrounds of its authors in depth. The book points out that the poem has the same meter as that of "'
+Text: ''s 2001 book ''America the Beautiful'' discusses the origins of the song and the backgrounds of its authors in depth. The book points out that the poem has the same meter as that of "'
 Begin Reference: Auld Lang Syne
 End Reference: Auld Lang Syne
 Text: '"; the songs can be sung interchangeably. Additionally, Sherr points out that this was the original third verse written by Bates:'
@@ -690,19 +688,19 @@ Text: '978-1-58648-085-1
 k: url
 End Template: cite book
 Close Tag: ref
+End List
 Text: '
-
 :America! America!
 :God shed His grace on thee,
 :'Til selfish gain no longer stain,
 :The banner of the free.
 
-*Barbara Younger has written a children's book about the writing of the song: '
-ItalicBold: 2
-Text: 'Purple Mountain Majesties: The Story of Katharine Lee Bates and "America the Beautiful"'
-ItalicBold: 2
-Text: '. The book has illustrations by artist Stacey Schuett.
-
+'
+Begin List
+List Item: 1
+Text: 'Barbara Younger has written a children's book about the writing of the song: ''Purple Mountain Majesties: The Story of Katharine Lee Bates and "America the Beautiful"''. The book has illustrations by artist Stacey Schuett.'
+End List
+Text: '
 '
 Section [0] References
 Text: '
@@ -723,51 +721,50 @@ Text: '
 Begin Template: Wikisource
 End Template: Wikisource
 Text: '
-*'
+'
+Begin List
+List Item: 1
 Begin Link: http://memory.loc.gov/cocoon/ihas/loc.natlib.ihas.200000001/default.html
 k: null
 Text: 'MP3 and RealAudio recordings available at the United States Library of Congress'
 End Link: http://memory.loc.gov/cocoon/ihas/loc.natlib.ihas.200000001/default.html
-Text: '
-*'
+List Item: 1
 Begin Template: cantorion
 k: null
 Text: 'pieces/3049/America_the_Beautiful_(Materna)'
 k: null
 Text: 'America the Beautiful'
 End Template: cantorion
-Text: '
-*'
+List Item: 1
 Begin Link: http://hymntime.com/tch/htm/o/b/f/obfsskis.htm
 k: null
 Text: 'Words, sheet music & MIDI file'
 End Link: http://hymntime.com/tch/htm/o/b/f/obfsskis.htm
-Text: ' at the Cyber Hymnal
-*'
+Text: ' at the Cyber Hymnal'
+List Item: 1
 Begin Link: http://www.springsgov.com/Page.asp?NavID=5138
 k: null
 Text: 'America the Beautiful Park'
 End Link: http://www.springsgov.com/Page.asp?NavID=5138
-Text: ' in Colorado Springs named for Katharine Lee Bates' words.
-*'
+Text: ' in Colorado Springs named for Katharine Lee Bates' words.'
+List Item: 1
 Begin Link: http://web.me.com/highlandsarchives/The_Highlands_Archives/America.html
 k: null
 Text: ' Archival collection'
 End Link: http://web.me.com/highlandsarchives/The_Highlands_Archives/America.html
-Text: ' of America the Beautiful lantern slides from the 1930s.
-*'
+Text: ' of America the Beautiful lantern slides from the 1930s.'
+List Item: 1
 Begin Link: http://www.traditional-songs.com/download_score.php?name=America%20the%20Beautiful&country=Usa
 k: null
 Text: 'Another free sheet music'
 End Link: http://www.traditional-songs.com/download_score.php?name=America%20the%20Beautiful&country=Usa
-Text: '
-*'
+List Item: 1
 Begin Link: http://loyalopposition.blogs.nytimes.com/2012/01/03/mitt-romney-and-america-the-beautiful-when-reach-exceeds-grasp/?ref=opinion
 k: null
 Text: 'David Firestone - When Romney’s Reach Exceeds His Grasp - Mitt Romney quotes the song '
 End Link: http://loyalopposition.blogs.nytimes.com/2012/01/03/mitt-romney-and-america-the-beautiful-when-reach-exceeds-grasp/?ref=opinion
+End List
 Text: '
-
 '
 Begin Template: Elvis Presley singles
 End Template: Elvis Presley singles

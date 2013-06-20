@@ -144,6 +144,7 @@
                                     },
                                     {
                                         "__type": "list_item",
+                                        "level": 1,
                                         "content": [
                                             "Holder of the 3Com Founders Chair at",
                                             {
@@ -181,6 +182,7 @@
                                     },
                                     {
                                         "__type": "list_item",
+                                        "level": 1,
                                         "content": [
                                             {
                                                 "__type": "reference",
@@ -226,6 +228,7 @@
                                     },
                                     {
                                         "__type": "list_item",
+                                        "level": 1,
                                         "content": [
                                             {
                                                 "__type": "reference",
@@ -1752,1043 +1755,1186 @@
                 ]
             }
         },
-        "*In 1994 he became one of only six members of the",
         {
-            "__type": "reference",
-            "label": "World Wide Web Hall of Fame",
-            "content": {}
-        },
-        ".",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite web",
-            "content": {
-                "title": [
-                    "The World-Wide Web Hall of Fame"
-                ],
-                "url": [
-                    "http://botw.org/1994/awards/fame.html"
-                ],
-                "publisher": [
-                    {
-                        "__type": "reference",
-                        "label": "Best of the Web Directory",
-                        "content": {}
-                    }
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*In 1995 he won the Kilby Foundation's \"Young Innovator of the Year\" Award.",
-        {
-            "__type": "inline_tag",
-            "name": "ref",
-            "attributes": [
+            "__type": "list",
+            "content": [
                 {
-                    "name": "W3Bio"
-                }
-            ]
-        },
-        "*In 1995 he received also the",
-        {
-            "__type": "reference",
-            "label": "Software System Award",
-            "content": {}
-        },
-        "from the",
-        {
-            "__type": "reference",
-            "label": "Association for Computing Machinery",
-            "content": {}
-        },
-        "(ACM).",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": [
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In 1994 he became one of only six members of the",
+                        {
+                            "__type": "reference",
+                            "label": "World Wide Web Hall of Fame",
+                            "content": {}
+                        },
+                        ".",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "title": [
+                                    "The World-Wide Web Hall of Fame"
+                                ],
+                                "url": [
+                                    "http://botw.org/1994/awards/fame.html"
+                                ],
+                                "publisher": [
+                                    {
+                                        "__type": "reference",
+                                        "label": "Best of the Web Directory",
+                                        "content": {}
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
                 {
-                    "name": "acmaward"
-                }
-            ]
-        },
-        {
-            "__type": "template",
-            "name": "cite web",
-            "content": {
-                "publisher": [
-                    {
-                        "__type": "reference",
-                        "label": "Association for Computing Machinery",
-                        "content": {}
-                    }
-                ],
-                "url": [
-                    "http://awards.acm.org/homepage.cfm?srt=all&awd=149"
-                ],
-                "work": [
-                    "ACM Awards"
-                ],
-                "title": [
-                    "Software System Award"
-                ],
-                "accessdate": [
-                    {
-                        "__type": "template",
-                        "name": "Start date",
-                        "content": {
-                            "__an0": [
-                                "2011"
-                            ],
-                            "__an1": [
-                                "10"
-                            ],
-                            "__an2": [
-                                "25"
-                            ],
-                            "df": [
-                                "yes"
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In 1995 he won the Kilby Foundation's \"Young Innovator of the Year\" Award.",
+                        {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "W3Bio"
+                                }
                             ]
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*In 1998 he was awarded with an honorary doctorate from the",
-        {
-            "__type": "reference",
-            "label": "University of Essex",
-            "content": {}
-        },
-        ".",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite web",
-            "content": {
-                "title": [
-                    "Honorary Graduates of University of Essex"
-                ],
-                "url": [
-                    "http://www.essex.ac.uk/honorary_graduates/hg/profiles/1998/t-berners-lee.aspx"
-                ],
-                "accessdate": [
-                    "December 15, 2011"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*In 1999,",
-        "<i>",
-        {
-            "__type": "reference",
-            "label": "Time Magazine",
-            "content": {}
-        },
-        "</i>",
-        "named Berners-Lee one of the",
-        {
-            "__type": "reference",
-            "label": "Time 100: The Most Important People of the Century",
-            "content": {
-                "__an0": [
-                    "100 Most Important People of the 20th century"
-                ]
-            }
-        },
-        ".",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": [
+                    ]
+                },
                 {
-                    "name": "AFP"
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In 1995 he received also the",
+                        {
+                            "__type": "reference",
+                            "label": "Software System Award",
+                            "content": {}
+                        },
+                        "from the",
+                        {
+                            "__type": "reference",
+                            "label": "Association for Computing Machinery",
+                            "content": {}
+                        },
+                        "(ACM).",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "acmaward"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "publisher": [
+                                    {
+                                        "__type": "reference",
+                                        "label": "Association for Computing Machinery",
+                                        "content": {}
+                                    }
+                                ],
+                                "url": [
+                                    "http://awards.acm.org/homepage.cfm?srt=all&awd=149"
+                                ],
+                                "work": [
+                                    "ACM Awards"
+                                ],
+                                "title": [
+                                    "Software System Award"
+                                ],
+                                "accessdate": [
+                                    {
+                                        "__type": "template",
+                                        "name": "Start date",
+                                        "content": {
+                                            "__an0": [
+                                                "2011"
+                                            ],
+                                            "__an1": [
+                                                "10"
+                                            ],
+                                            "__an2": [
+                                                "25"
+                                            ],
+                                            "df": [
+                                                "yes"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In 1998 he was awarded with an honorary doctorate from the",
+                        {
+                            "__type": "reference",
+                            "label": "University of Essex",
+                            "content": {}
+                        },
+                        ".",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "title": [
+                                    "Honorary Graduates of University of Essex"
+                                ],
+                                "url": [
+                                    "http://www.essex.ac.uk/honorary_graduates/hg/profiles/1998/t-berners-lee.aspx"
+                                ],
+                                "accessdate": [
+                                    "December 15, 2011"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In 1999, ''",
+                        {
+                            "__type": "reference",
+                            "label": "Time Magazine",
+                            "content": {}
+                        },
+                        "'' named Berners-Lee one of the",
+                        {
+                            "__type": "reference",
+                            "label": "Time 100: The Most Important People of the Century",
+                            "content": {
+                                "__an0": [
+                                    "100 Most Important People of the 20th century"
+                                ]
+                            }
+                        },
+                        ".",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "AFP"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite news",
+                            "content": {
+                                "title": [
+                                    "Tim Berners Lee—Time 100 People of the Century"
+                                ],
+                                "url": [
+                                    "http://www.time.com/time/magazine/article/0,9171,990627,00.html"
+                                ],
+                                "work": [
+                                    "Time Magazine"
+                                ],
+                                "quote": [
+                                    "He wove the World Wide Web and created a mass medium for the 21st century. The World Wide Web is Berners-Lee's alone. He designed it. He loosed it on the world. And he more than anyone else has fought to keep it open, nonproprietary and free."
+                                ],
+                                "first": [
+                                    "Joshua"
+                                ],
+                                "last": [
+                                    "Quittner"
+                                ],
+                                "date": [
+                                    "29 March 1999"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In March 2000 he was awarded an honorary degree from",
+                        {
+                            "__type": "reference",
+                            "label": "The Open University",
+                            "content": {}
+                        },
+                        "as Doctor of the University.",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite news",
+                            "content": {
+                                "title": [
+                                    "Open University's online graduation"
+                                ],
+                                "url": [
+                                    "http://news.bbc.co.uk/1/hi/education/696176.stm"
+                                ],
+                                "work": [
+                                    {
+                                        "__type": "reference",
+                                        "label": "BBC",
+                                        "content": {}
+                                    },
+                                    "NEWS"
+                                ],
+                                "date": [
+                                    "31. March 2000"
+                                ],
+                                "accessdate": [
+                                    "22 September 2010"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In 2001, he was elected a Fellow of the",
+                        {
+                            "__type": "reference",
+                            "label": "American Academy of Arts and Sciences",
+                            "content": {}
+                        },
+                        ".",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "AAAS"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "title": [
+                                    "Book of Members, 1780–2010: Chapter B"
+                                ],
+                                "url": [
+                                    "http://www.amacad.org/publications/BookofMembers/ChapterB.pdf"
+                                ],
+                                "publisher": [
+                                    "American Academy of Arts and Sciences"
+                                ],
+                                "accessdate": [
+                                    "24 June 2011"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In 2003, he received the",
+                        {
+                            "__type": "reference",
+                            "label": "Computer History Museum",
+                            "content": {}
+                        },
+                        "'s Fellow Award, for his seminal contributions to the development of the World Wide Web.",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "url": [
+                                    "http://www.computerhistory.org/fellowawards/index.php?id=88"
+                                ],
+                                "title": [
+                                    "Fellow Awards &#124; Fellows Home"
+                                ],
+                                "publisher": [
+                                    "Computerhistory.org"
+                                ],
+                                "date": [
+                                    "11 January 2010"
+                                ],
+                                "accessdate": [
+                                    "15 August 2010"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "On 15 April 2004, he was named as the first recipient of Finland's",
+                        {
+                            "__type": "reference",
+                            "label": "Millennium Technology Prize",
+                            "content": {}
+                        },
+                        ", for inventing the World Wide Web. The cash prize, worth one million euros (about £892,000, or US$1.3&nbsp;million, as of Sept 2011), was awarded on 15 June, in",
+                        {
+                            "__type": "reference",
+                            "label": "Helsinki",
+                            "content": {}
+                        },
+                        ", Finland, by the President of the Republic of Finland,",
+                        {
+                            "__type": "reference",
+                            "label": "Tarja Halonen",
+                            "content": {}
+                        },
+                        ".",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "title": [
+                                    "Millennium Technology Prize 2004 awarded to inventor of World Wide Web"
+                                ],
+                                "publisher": [
+                                    {
+                                        "__type": "reference",
+                                        "label": "Millennium Technology Prize",
+                                        "content": {}
+                                    }
+                                ],
+                                "url": [
+                                    "http://www.technologyawards.org/index.php?m=2&s=1&id=16&sm=4"
+                                ],
+                                "archiveurl": [
+                                    "http://web.archive.org/web/20070830111145/http://www.technologyawards.org/index.php?m=2&s=1&id=16&sm=4"
+                                ],
+                                "archivedate": [
+                                    "30 August 2007"
+                                ],
+                                "accessdate": [
+                                    "25 May 2008"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "He was appointed to the rank of",
+                        {
+                            "__type": "reference",
+                            "label": "Order of the British Empire",
+                            "content": {
+                                "__an0": [
+                                    "Knight Commander of the Most Excellent Order of the British Empire"
+                                ]
+                            }
+                        },
+                        "(the second-highest class within this Order that entails a knighthood) by",
+                        {
+                            "__type": "reference",
+                            "label": "Elizabeth II of the United Kingdom",
+                            "content": {
+                                "__an0": [
+                                    "Queen Elizabeth II"
+                                ]
+                            }
+                        },
+                        ", in the 2004 New Year's Honours List, and was formally invested on 16 July 2004.",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "tecb"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite news",
+                            "content": {
+                                "title": [
+                                    "Web's inventor gets a knighthood"
+                                ],
+                                "publisher": [
+                                    "BBC"
+                                ],
+                                "date": [
+                                    "31 December 2003"
+                                ],
+                                "url": [
+                                    "http://news.bbc.co.uk/1/hi/technology/3357073.stm"
+                                ],
+                                "accessdate": [
+                                    "25 May 2008"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        },
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite news",
+                            "content": {
+                                "title": [
+                                    "Creator of the web turns knight"
+                                ],
+                                "publisher": [
+                                    "BBC"
+                                ],
+                                "date": [
+                                    "16 July 2004"
+                                ],
+                                "url": [
+                                    "http://news.bbc.co.uk/1/hi/technology/3899723.stm"
+                                ],
+                                "accessdate": [
+                                    "25 May 2008"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "On 21 July 2004, he was presented with an honorary",
+                        {
+                            "__type": "reference",
+                            "label": "Doctor of Science",
+                            "content": {}
+                        },
+                        "degree from",
+                        {
+                            "__type": "reference",
+                            "label": "Lancaster University",
+                            "content": {}
+                        },
+                        ".",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "title": [
+                                    "Lancaster University Honorary Degrees, July&nbsp;2004"
+                                ],
+                                "publisher": [
+                                    {
+                                        "__type": "reference",
+                                        "label": "Lancaster University",
+                                        "content": {}
+                                    }
+                                ],
+                                "url": [
+                                    "http://domino.lancs.ac.uk/info/lunews.nsf/I/2768F56EB38B32F780256ECC00404E69"
+                                ],
+                                "accessdate": [
+                                    "25 May 2008"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "On 27 January 2005, he was named Greatest Briton of 2004, both for his achievements and for displaying the key British characteristics of \"diffidence, determination, a sharp sense of humour and adaptability\", as put by",
+                        {
+                            "__type": "reference",
+                            "label": "David Hempleman-Adams",
+                            "content": {}
+                        },
+                        ", a panel member.",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite news",
+                            "content": {
+                                "title": [
+                                    "Three loud cheers for the father of the web"
+                                ],
+                                "work": [
+                                    "The Daily Telegraph"
+                                ],
+                                "location": [
+                                    "London"
+                                ],
+                                "date": [
+                                    "28 January 2005"
+                                ],
+                                "url": [
+                                    "http://www.telegraph.co.uk/news/uknews/1482211/Three-loud-cheers-for-the-father-of-the-web.html"
+                                ],
+                                "accessdate": [
+                                    "25 May 2008"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In 2007, Berners-Lee received the",
+                        {
+                            "__type": "reference",
+                            "label": "Academy of Achievement",
+                            "content": {
+                                "__an0": [
+                                    "Academy of Achievement's Golden Plate Award"
+                                ]
+                            }
+                        },
+                        "."
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In 2007, he was ranked Joint First, alongside",
+                        {
+                            "__type": "reference",
+                            "label": "Albert Hofmann",
+                            "content": {}
+                        },
+                        ", in",
+                        {
+                            "__type": "reference",
+                            "label": "The Daily Telegraph",
+                            "content": {
+                                "__an0": [
+                                    "''The Telegraph''"
+                                ]
+                            }
+                        },
+                        "'s list of 100 greatest living geniuses.",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite news",
+                            "content": {
+                                "author": [
+                                    "8:01AM GMT 30 Oct 2007"
+                                ],
+                                "url": [
+                                    "http://www.telegraph.co.uk/news/uknews/1567544/Top-100-living-geniuses.html"
+                                ],
+                                "title": [
+                                    "\"Top 100 living geniuses\" '&#39;The Daily Telegraph'&#39; 28 October 2007"
+                                ],
+                                "publisher": [
+                                    "Telegraph.co.uk"
+                                ],
+                                "date": [
+                                    "2007-10-30"
+                                ],
+                                "accessdate": [
+                                    "2011-12-21"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "On 13 June 2007, he received the",
+                        {
+                            "__type": "reference",
+                            "label": "Order of Merit",
+                            "content": {}
+                        },
+                        ", becoming one of only 24 living members entitled to hold the honour, and to use the post-nominals 'O.M.' after their name.",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite news",
+                            "content": {
+                                "accessdate": [
+                                    "25 May 2008"
+                                ],
+                                "url": [
+                                    "http://news.bbc.co.uk/1/hi/technology/6750395.stm"
+                                ],
+                                "title": [
+                                    "Web inventor gets Queen's honour"
+                                ],
+                                "publisher": [
+                                    "BBC"
+                                ],
+                                "date": [
+                                    "13 June 2007"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        },
+                        "(The Order of Merit is within the personal bestowal of The Queen, and does not require recommendation by ministers or the Prime Minister)"
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "He was awarded the 2008",
+                        {
+                            "__type": "reference",
+                            "label": "IEEE/RSE Wolfson James Clerk Maxwell Award",
+                            "content": {}
+                        },
+                        ", for \"conceiving and further developing the World Wide Web\".",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "url": [
+                                    "http://www.ieee.org/documents/maxwell_rl.pdf"
+                                ],
+                                "title": [
+                                    "IEEE/RSE Wolfson James Clerk Maxwell Award Recipients"
+                                ],
+                                "publisher": [
+                                    "IEEE"
+                                ],
+                                "accessdate": [
+                                    {
+                                        "__type": "template",
+                                        "name": "Start date",
+                                        "content": {
+                                            "__an0": [
+                                                "2011"
+                                            ],
+                                            "__an1": [
+                                                "10"
+                                            ],
+                                            "__an2": [
+                                                "4"
+                                            ],
+                                            "df": [
+                                                "yes"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "On 2 December 2008, Berners-Lee was awarded an honorary doctorate from the",
+                        {
+                            "__type": "reference",
+                            "label": "University of Manchester",
+                            "content": {}
+                        },
+                        ". His parents worked on the",
+                        {
+                            "__type": "reference",
+                            "label": "Manchester Mark 1",
+                            "content": {}
+                        },
+                        "in the 1940s and 50s.",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "Cite news",
+                            "content": {
+                                "title": [
+                                    "Scientific pioneers honoured by The University of Manchester"
+                                ],
+                                "url": [
+                                    "http://www.manchester.ac.uk/aboutus/news/display/?id=4216"
+                                ],
+                                "work": [
+                                    "manchester.ac.uk"
+                                ],
+                                "date": [
+                                    "2 December 2008"
+                                ],
+                                "accessdate": [
+                                    "10 October 2011"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "On 21 April 2009, he was awarded an honorary doctorate by the",
+                        {
+                            "__type": "reference",
+                            "label": "Universidad Politécnica de Madrid",
+                            "content": {}
+                        },
+                        ".",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "url": [
+                                    "http://www2.upm.es/portal/site/institucional/menuitem.fa77d63875fa4490b99bfa04dffb46a8/?vgnextoid=c5d0492bf33c0210VgnVCM10000009c7648aRCRD"
+                                ],
+                                "title": [
+                                    "Universidad Politécnica de Madrid: Berners-Lee y Vinton G. Cerf—Doctores Honoris Causa por la UPM"
+                                ],
+                                "accessdate": [
+                                    "15 August 2010"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "On 28 April 2009, he was elected member of the",
+                        {
+                            "__type": "reference",
+                            "label": "United States National Academy of Sciences",
+                            "content": {}
+                        },
+                        "."
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "On 8 June 2009, he received the",
+                        {
+                            "__type": "reference",
+                            "label": "Webby Award",
+                            "content": {}
+                        },
+                        "for Lifetime Achievement, at the awards ceremony held in New York City.",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "link",
+                            "url": "http://www.webbyawards.com/press/press-release.php?id=187",
+                            "content": {
+                                "__an0": [
+                                    "Press Release: Sir Tim Berners Lee, Inventor of the World Wide Web, to receive Webby Lifetime Award At the 13th Annual Webby Awards"
+                                ]
+                            }
+                        },
+                        "''Webby Awards.com'' Retrieved 21 January 2011",
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In October 2009, he was awarded an honorary doctorate by the",
+                        {
+                            "__type": "reference",
+                            "label": "Vrije Universiteit Amsterdam",
+                            "content": {}
+                        },
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "language": [
+                                    "Dutch"
+                                ],
+                                "url": [
+                                    "http://www.vu.nl/nl/Images/pb%2009.082%20Eredoctoraat_tcm9-94528.pdf"
+                                ],
+                                "title": [
+                                    "Uitvinder World Wide Web krijgt eredoctoraat Vrije Universiteit"
+                                ],
+                                "accessdate": [
+                                    "22 July 2009"
+                                ],
+                                "author": [
+                                    "Vrije Universiteit Amsterdam"
+                                ],
+                                "date": [
+                                    "22 July 2008"
+                                ],
+                                "authorlink": [
+                                    "Vrije Universiteit Amsterdam"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        },
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite web",
+                            "content": {
+                                "language": [
+                                    "Dutch"
+                                ],
+                                "url": [
+                                    "http://www.nu.nl/internet/2046688/bedenker-wereldwijd-web-krijgt-eredoctoraat-vu.html"
+                                ],
+                                "title": [
+                                    "'Bedenker' wereldwijd web krijgt eredoctoraat VU"
+                                ],
+                                "accessdate": [
+                                    "22 July 2009"
+                                ],
+                                "author": [
+                                    "NU.nl"
+                                ],
+                                "date": [
+                                    "22 July 2008"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "On 30 March 2011, he was one of the first three recipients of the",
+                        {
+                            "__type": "reference",
+                            "label": "Mikhail Gorbachev",
+                            "content": {}
+                        },
+                        "award for \"The Man Who Changed the World\", at the inuagural awards ceremony held in London. The other recipients were",
+                        {
+                            "__type": "reference",
+                            "label": "Evans Wadongo",
+                            "content": {}
+                        },
+                        "for solar power development and anti-poverty work in Africa, and media mogul",
+                        {
+                            "__type": "reference",
+                            "label": "Ted Turner",
+                            "content": {}
+                        },
+                        "."
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "On 26 May 2011, Berners-Lee was awarded with an honorary",
+                        {
+                            "__type": "reference",
+                            "label": "Doctor of Science",
+                            "content": {}
+                        },
+                        "degree from",
+                        {
+                            "__type": "reference",
+                            "label": "Harvard University",
+                            "content": {}
+                        },
+                        ".",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "link",
+                            "url": "http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee",
+                            "content": {
+                                "__an0": [
+                                    "Harvard awards 9 honorary degrees"
+                                ]
+                            }
+                        },
+                        "''news.harvard.edu'' Retrieved 11 June 2011",
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "In 2011, he was inducted into",
+                        {
+                            "__type": "reference",
+                            "label": "IEEE Intelligent Systems",
+                            "content": {}
+                        },
+                        "' AI's Hall of Fame for the \"significant contributions to the field of AI and intelligent systems\".",
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "Cite doi",
+                            "content": {
+                                "__an0": [
+                                    "10.1109.2FMIS.2011.64"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        },
+                        {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": null
+                        },
+                        {
+                            "__type": "template",
+                            "name": "cite news",
+                            "content": {
+                                "url": [
+                                    "http://www.digitaljournal.com/pr/399442"
+                                ],
+                                "title": [
+                                    "IEEE Computer Society Magazine Honors Artificial Intelligence Leaders"
+                                ],
+                                "newspaper": [
+                                    {
+                                        "__type": "reference",
+                                        "label": "DigitalJournal.com",
+                                        "content": {}
+                                    }
+                                ],
+                                "date": [
+                                    {
+                                        "__type": "template",
+                                        "name": "Start date",
+                                        "content": {
+                                            "df": [
+                                                "yes"
+                                            ],
+                                            "__an0": [
+                                                "2011"
+                                            ],
+                                            "__an1": [
+                                                "8"
+                                            ],
+                                            "__an2": [
+                                                "24"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "accessdate": [
+                                    {
+                                        "__type": "template",
+                                        "name": "Start date",
+                                        "content": {
+                                            "__an0": [
+                                                "2011"
+                                            ],
+                                            "__an1": [
+                                                "9"
+                                            ],
+                                            "__an2": [
+                                                "18"
+                                            ],
+                                            "df": [
+                                                "yes"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "Press release source: ''",
+                        {
+                            "__type": "reference",
+                            "label": "PRWeb",
+                            "content": {}
+                        },
+                        "'' (",
+                        {
+                            "__type": "reference",
+                            "label": "Vocus",
+                            "content": {}
+                        },
+                        ").",
+                        {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        }
+                    ]
                 }
             ]
-        },
-        {
-            "__type": "template",
-            "name": "cite news",
-            "content": {
-                "title": [
-                    "Tim Berners Lee—Time 100 People of the Century"
-                ],
-                "url": [
-                    "http://www.time.com/time/magazine/article/0,9171,990627,00.html"
-                ],
-                "work": [
-                    "Time Magazine"
-                ],
-                "quote": [
-                    "He wove the World Wide Web and created a mass medium for the 21st century. The World Wide Web is Berners-Lee's alone. He designed it. He loosed it on the world. And he more than anyone else has fought to keep it open, nonproprietary and free."
-                ],
-                "first": [
-                    "Joshua"
-                ],
-                "last": [
-                    "Quittner"
-                ],
-                "date": [
-                    "29 March 1999"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*In March 2000 he was awarded an honorary degree from",
-        {
-            "__type": "reference",
-            "label": "The Open University",
-            "content": {}
-        },
-        "as Doctor of the University.",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite news",
-            "content": {
-                "title": [
-                    "Open University's online graduation"
-                ],
-                "url": [
-                    "http://news.bbc.co.uk/1/hi/education/696176.stm"
-                ],
-                "work": [
-                    {
-                        "__type": "reference",
-                        "label": "BBC",
-                        "content": {}
-                    },
-                    "NEWS"
-                ],
-                "date": [
-                    "31. March 2000"
-                ],
-                "accessdate": [
-                    "22 September 2010"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*In 2001, he was elected a Fellow of the",
-        {
-            "__type": "reference",
-            "label": "American Academy of Arts and Sciences",
-            "content": {}
-        },
-        ".",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": [
-                {
-                    "name": "AAAS"
-                }
-            ]
-        },
-        {
-            "__type": "template",
-            "name": "cite web",
-            "content": {
-                "title": [
-                    "Book of Members, 1780–2010: Chapter B"
-                ],
-                "url": [
-                    "http://www.amacad.org/publications/BookofMembers/ChapterB.pdf"
-                ],
-                "publisher": [
-                    "American Academy of Arts and Sciences"
-                ],
-                "accessdate": [
-                    "24 June 2011"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*In 2003, he received the",
-        {
-            "__type": "reference",
-            "label": "Computer History Museum",
-            "content": {}
-        },
-        "'s Fellow Award, for his seminal contributions to the development of the World Wide Web.",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite web",
-            "content": {
-                "url": [
-                    "http://www.computerhistory.org/fellowawards/index.php?id=88"
-                ],
-                "title": [
-                    "Fellow Awards &#124; Fellows Home"
-                ],
-                "publisher": [
-                    "Computerhistory.org"
-                ],
-                "date": [
-                    "11 January 2010"
-                ],
-                "accessdate": [
-                    "15 August 2010"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*On 15 April 2004, he was named as the first recipient of Finland's",
-        {
-            "__type": "reference",
-            "label": "Millennium Technology Prize",
-            "content": {}
-        },
-        ", for inventing the World Wide Web. The cash prize, worth one million euros (about £892,000, or US$1.3&nbsp;million, as of Sept 2011), was awarded on 15 June, in",
-        {
-            "__type": "reference",
-            "label": "Helsinki",
-            "content": {}
-        },
-        ", Finland, by the President of the Republic of Finland,",
-        {
-            "__type": "reference",
-            "label": "Tarja Halonen",
-            "content": {}
-        },
-        ".",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite web",
-            "content": {
-                "title": [
-                    "Millennium Technology Prize 2004 awarded to inventor of World Wide Web"
-                ],
-                "publisher": [
-                    {
-                        "__type": "reference",
-                        "label": "Millennium Technology Prize",
-                        "content": {}
-                    }
-                ],
-                "url": [
-                    "http://www.technologyawards.org/index.php?m=2&s=1&id=16&sm=4"
-                ],
-                "archiveurl": [
-                    "http://web.archive.org/web/20070830111145/http://www.technologyawards.org/index.php?m=2&s=1&id=16&sm=4"
-                ],
-                "archivedate": [
-                    "30 August 2007"
-                ],
-                "accessdate": [
-                    "25 May 2008"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*He was appointed to the rank of",
-        {
-            "__type": "reference",
-            "label": "Order of the British Empire",
-            "content": {
-                "__an0": [
-                    "Knight Commander of the Most Excellent Order of the British Empire"
-                ]
-            }
-        },
-        "(the second-highest class within this Order that entails a knighthood) by",
-        {
-            "__type": "reference",
-            "label": "Elizabeth II of the United Kingdom",
-            "content": {
-                "__an0": [
-                    "Queen Elizabeth II"
-                ]
-            }
-        },
-        ", in the 2004 New Year's Honours List, and was formally invested on 16 July 2004.",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": [
-                {
-                    "name": "tecb"
-                }
-            ]
-        },
-        {
-            "__type": "template",
-            "name": "cite news",
-            "content": {
-                "title": [
-                    "Web's inventor gets a knighthood"
-                ],
-                "publisher": [
-                    "BBC"
-                ],
-                "date": [
-                    "31 December 2003"
-                ],
-                "url": [
-                    "http://news.bbc.co.uk/1/hi/technology/3357073.stm"
-                ],
-                "accessdate": [
-                    "25 May 2008"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite news",
-            "content": {
-                "title": [
-                    "Creator of the web turns knight"
-                ],
-                "publisher": [
-                    "BBC"
-                ],
-                "date": [
-                    "16 July 2004"
-                ],
-                "url": [
-                    "http://news.bbc.co.uk/1/hi/technology/3899723.stm"
-                ],
-                "accessdate": [
-                    "25 May 2008"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*On 21 July 2004, he was presented with an honorary",
-        {
-            "__type": "reference",
-            "label": "Doctor of Science",
-            "content": {}
-        },
-        "degree from",
-        {
-            "__type": "reference",
-            "label": "Lancaster University",
-            "content": {}
-        },
-        ".",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite web",
-            "content": {
-                "title": [
-                    "Lancaster University Honorary Degrees, July&nbsp;2004"
-                ],
-                "publisher": [
-                    {
-                        "__type": "reference",
-                        "label": "Lancaster University",
-                        "content": {}
-                    }
-                ],
-                "url": [
-                    "http://domino.lancs.ac.uk/info/lunews.nsf/I/2768F56EB38B32F780256ECC00404E69"
-                ],
-                "accessdate": [
-                    "25 May 2008"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*On 27 January 2005, he was named Greatest Briton of 2004, both for his achievements and for displaying the key British characteristics of \"diffidence, determination, a sharp sense of humour and adaptability\", as put by",
-        {
-            "__type": "reference",
-            "label": "David Hempleman-Adams",
-            "content": {}
-        },
-        ", a panel member.",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite news",
-            "content": {
-                "title": [
-                    "Three loud cheers for the father of the web"
-                ],
-                "work": [
-                    "The Daily Telegraph"
-                ],
-                "location": [
-                    "London"
-                ],
-                "date": [
-                    "28 January 2005"
-                ],
-                "url": [
-                    "http://www.telegraph.co.uk/news/uknews/1482211/Three-loud-cheers-for-the-father-of-the-web.html"
-                ],
-                "accessdate": [
-                    "25 May 2008"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*In 2007, Berners-Lee received the",
-        {
-            "__type": "reference",
-            "label": "Academy of Achievement",
-            "content": {
-                "__an0": [
-                    "Academy of Achievement's Golden Plate Award"
-                ]
-            }
-        },
-        ".\n*In 2007, he was ranked Joint First, alongside",
-        {
-            "__type": "reference",
-            "label": "Albert Hofmann",
-            "content": {}
-        },
-        ", in",
-        {
-            "__type": "reference",
-            "label": "The Daily Telegraph",
-            "content": {
-                "__an0": [
-                    "''The Telegraph''"
-                ]
-            }
-        },
-        "'s list of 100 greatest living geniuses.",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite news",
-            "content": {
-                "author": [
-                    "8:01AM GMT 30 Oct 2007"
-                ],
-                "url": [
-                    "http://www.telegraph.co.uk/news/uknews/1567544/Top-100-living-geniuses.html"
-                ],
-                "title": [
-                    "\"Top 100 living geniuses\" '&#39;The Daily Telegraph'&#39; 28 October 2007"
-                ],
-                "publisher": [
-                    "Telegraph.co.uk"
-                ],
-                "date": [
-                    "2007-10-30"
-                ],
-                "accessdate": [
-                    "2011-12-21"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*On 13 June 2007, he received the",
-        {
-            "__type": "reference",
-            "label": "Order of Merit",
-            "content": {}
-        },
-        ", becoming one of only 24 living members entitled to hold the honour, and to use the post-nominals 'O.M.' after their name.",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite news",
-            "content": {
-                "accessdate": [
-                    "25 May 2008"
-                ],
-                "url": [
-                    "http://news.bbc.co.uk/1/hi/technology/6750395.stm"
-                ],
-                "title": [
-                    "Web inventor gets Queen's honour"
-                ],
-                "publisher": [
-                    "BBC"
-                ],
-                "date": [
-                    "13 June 2007"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "(The Order of Merit is within the personal bestowal of The Queen, and does not require recommendation by ministers or the Prime Minister)\n*He was awarded the 2008",
-        {
-            "__type": "reference",
-            "label": "IEEE/RSE Wolfson James Clerk Maxwell Award",
-            "content": {}
-        },
-        ", for \"conceiving and further developing the World Wide Web\".",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite web",
-            "content": {
-                "url": [
-                    "http://www.ieee.org/documents/maxwell_rl.pdf"
-                ],
-                "title": [
-                    "IEEE/RSE Wolfson James Clerk Maxwell Award Recipients"
-                ],
-                "publisher": [
-                    "IEEE"
-                ],
-                "accessdate": [
-                    {
-                        "__type": "template",
-                        "name": "Start date",
-                        "content": {
-                            "__an0": [
-                                "2011"
-                            ],
-                            "__an1": [
-                                "10"
-                            ],
-                            "__an2": [
-                                "4"
-                            ],
-                            "df": [
-                                "yes"
-                            ]
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*On 2 December 2008, Berners-Lee was awarded an honorary doctorate from the",
-        {
-            "__type": "reference",
-            "label": "University of Manchester",
-            "content": {}
-        },
-        ". His parents worked on the",
-        {
-            "__type": "reference",
-            "label": "Manchester Mark 1",
-            "content": {}
-        },
-        "in the 1940s and 50s.",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "Cite news",
-            "content": {
-                "title": [
-                    "Scientific pioneers honoured by The University of Manchester"
-                ],
-                "url": [
-                    "http://www.manchester.ac.uk/aboutus/news/display/?id=4216"
-                ],
-                "work": [
-                    "manchester.ac.uk"
-                ],
-                "date": [
-                    "2 December 2008"
-                ],
-                "accessdate": [
-                    "10 October 2011"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*On 21 April 2009, he was awarded an honorary doctorate by the",
-        {
-            "__type": "reference",
-            "label": "Universidad Politécnica de Madrid",
-            "content": {}
-        },
-        ".",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite web",
-            "content": {
-                "url": [
-                    "http://www2.upm.es/portal/site/institucional/menuitem.fa77d63875fa4490b99bfa04dffb46a8/?vgnextoid=c5d0492bf33c0210VgnVCM10000009c7648aRCRD"
-                ],
-                "title": [
-                    "Universidad Politécnica de Madrid: Berners-Lee y Vinton G. Cerf—Doctores Honoris Causa por la UPM"
-                ],
-                "accessdate": [
-                    "15 August 2010"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*On 28 April 2009, he was elected member of the",
-        {
-            "__type": "reference",
-            "label": "United States National Academy of Sciences",
-            "content": {}
-        },
-        ".\n*On 8 June 2009, he received the",
-        {
-            "__type": "reference",
-            "label": "Webby Award",
-            "content": {}
-        },
-        "for Lifetime Achievement, at the awards ceremony held in New York City.",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "link",
-            "url": "http://www.webbyawards.com/press/press-release.php?id=187",
-            "content": {
-                "__an0": [
-                    "Press Release: Sir Tim Berners Lee, Inventor of the World Wide Web, to receive Webby Lifetime Award At the 13th Annual Webby Awards"
-                ]
-            }
-        },
-        "<i>",
-        "Webby Awards.com",
-        "</i>",
-        "Retrieved 21 January 2011",
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*In October 2009, he was awarded an honorary doctorate by the",
-        {
-            "__type": "reference",
-            "label": "Vrije Universiteit Amsterdam",
-            "content": {}
-        },
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite web",
-            "content": {
-                "language": [
-                    "Dutch"
-                ],
-                "url": [
-                    "http://www.vu.nl/nl/Images/pb%2009.082%20Eredoctoraat_tcm9-94528.pdf"
-                ],
-                "title": [
-                    "Uitvinder World Wide Web krijgt eredoctoraat Vrije Universiteit"
-                ],
-                "accessdate": [
-                    "22 July 2009"
-                ],
-                "author": [
-                    "Vrije Universiteit Amsterdam"
-                ],
-                "date": [
-                    "22 July 2008"
-                ],
-                "authorlink": [
-                    "Vrije Universiteit Amsterdam"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite web",
-            "content": {
-                "language": [
-                    "Dutch"
-                ],
-                "url": [
-                    "http://www.nu.nl/internet/2046688/bedenker-wereldwijd-web-krijgt-eredoctoraat-vu.html"
-                ],
-                "title": [
-                    "'Bedenker' wereldwijd web krijgt eredoctoraat VU"
-                ],
-                "accessdate": [
-                    "22 July 2009"
-                ],
-                "author": [
-                    "NU.nl"
-                ],
-                "date": [
-                    "22 July 2008"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*On 30 March 2011, he was one of the first three recipients of the",
-        {
-            "__type": "reference",
-            "label": "Mikhail Gorbachev",
-            "content": {}
-        },
-        "award for \"The Man Who Changed the World\", at the inuagural awards ceremony held in London. The other recipients were",
-        {
-            "__type": "reference",
-            "label": "Evans Wadongo",
-            "content": {}
-        },
-        "for solar power development and anti-poverty work in Africa, and media mogul",
-        {
-            "__type": "reference",
-            "label": "Ted Turner",
-            "content": {}
-        },
-        ".\n*On 26 May 2011, Berners-Lee was awarded with an honorary",
-        {
-            "__type": "reference",
-            "label": "Doctor of Science",
-            "content": {}
-        },
-        "degree from",
-        {
-            "__type": "reference",
-            "label": "Harvard University",
-            "content": {}
-        },
-        ".",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "link",
-            "url": "http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee",
-            "content": {
-                "__an0": [
-                    "Harvard awards 9 honorary degrees"
-                ]
-            }
-        },
-        "<i>",
-        "news.harvard.edu",
-        "</i>",
-        "Retrieved 11 June 2011",
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        "*In 2011, he was inducted into",
-        {
-            "__type": "reference",
-            "label": "IEEE Intelligent Systems",
-            "content": {}
-        },
-        "' AI's Hall of Fame for the \"significant contributions to the field of AI and intelligent systems\".",
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "Cite doi",
-            "content": {
-                "__an0": [
-                    "10.1109.2FMIS.2011.64"
-                ]
-            }
-        },
-        {
-            "__type": "close_tag",
-            "name": "ref"
-        },
-        {
-            "__type": "open_tag",
-            "name": "ref",
-            "attributes": null
-        },
-        {
-            "__type": "template",
-            "name": "cite news",
-            "content": {
-                "url": [
-                    "http://www.digitaljournal.com/pr/399442"
-                ],
-                "title": [
-                    "IEEE Computer Society Magazine Honors Artificial Intelligence Leaders"
-                ],
-                "newspaper": [
-                    {
-                        "__type": "reference",
-                        "label": "DigitalJournal.com",
-                        "content": {}
-                    }
-                ],
-                "date": [
-                    {
-                        "__type": "template",
-                        "name": "Start date",
-                        "content": {
-                            "df": [
-                                "yes"
-                            ],
-                            "__an0": [
-                                "2011"
-                            ],
-                            "__an1": [
-                                "8"
-                            ],
-                            "__an2": [
-                                "24"
-                            ]
-                        }
-                    }
-                ],
-                "accessdate": [
-                    {
-                        "__type": "template",
-                        "name": "Start date",
-                        "content": {
-                            "__an0": [
-                                "2011"
-                            ],
-                            "__an1": [
-                                "9"
-                            ],
-                            "__an2": [
-                                "18"
-                            ],
-                            "df": [
-                                "yes"
-                            ]
-                        }
-                    }
-                ]
-            }
-        },
-        "Press release source:",
-        "<i>",
-        {
-            "__type": "reference",
-            "label": "PRWeb",
-            "content": {}
-        },
-        "</i>",
-        "(",
-        {
-            "__type": "reference",
-            "label": "Vocus",
-            "content": {}
-        },
-        ").",
-        {
-            "__type": "close_tag",
-            "name": "ref"
         },
         {
             "__type": "section",
@@ -2873,149 +3019,234 @@
             "title": "See also",
             "level": 0
         },
-        "*",
         {
-            "__type": "reference",
-            "label": "Eelco van Asperen",
-            "content": {}
-        },
-        "*",
-        {
-            "__type": "reference",
-            "label": "History of the World Wide Web",
-            "content": {}
-        },
-        "*",
-        {
-            "__type": "reference",
-            "label": "Kevin Hughes (www)",
-            "content": {}
-        },
-        "*",
-        {
-            "__type": "reference",
-            "label": "libwww",
-            "content": {}
-        },
-        "*",
-        {
-            "__type": "reference",
-            "label": "Mundaneum",
-            "content": {}
-        },
-        "*",
-        {
-            "__type": "reference",
-            "label": "Network neutrality",
-            "content": {}
-        },
-        "*",
-        {
-            "__type": "reference",
-            "label": "Paul Otlet",
-            "content": {}
-        },
-        "*",
-        {
-            "__type": "reference",
-            "label": "Semantic Web",
-            "content": {}
-        },
-        "*",
-        {
-            "__type": "reference",
-            "label": "Robert Taylor (computer scientist)",
-            "content": {
-                "__an0": [
-                    "Bob Taylor"
-                ]
-            }
-        },
-        "*",
-        {
-            "__type": "reference",
-            "label": "Vannevar Bush",
-            "content": {}
+            "__type": "list",
+            "content": [
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "reference",
+                            "label": "Eelco van Asperen",
+                            "content": {}
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "reference",
+                            "label": "History of the World Wide Web",
+                            "content": {}
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "reference",
+                            "label": "Kevin Hughes (www)",
+                            "content": {}
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "reference",
+                            "label": "libwww",
+                            "content": {}
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "reference",
+                            "label": "Mundaneum",
+                            "content": {}
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "reference",
+                            "label": "Network neutrality",
+                            "content": {}
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "reference",
+                            "label": "Paul Otlet",
+                            "content": {}
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "reference",
+                            "label": "Semantic Web",
+                            "content": {}
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "reference",
+                            "label": "Robert Taylor (computer scientist)",
+                            "content": {
+                                "__an0": [
+                                    "Bob Taylor"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "reference",
+                            "label": "Vannevar Bush",
+                            "content": {}
+                        }
+                    ]
+                }
+            ]
         },
         {
             "__type": "section",
             "title": "Publications",
             "level": 0
         },
-        "*",
         {
-            "__type": "template",
-            "name": "cite book",
-            "content": {
-                "title": [
-                    {
-                        "__type": "reference",
-                        "label": "Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web by its inventor",
-                        "content": {}
-                    }
-                ],
-                "first": [
-                    "Tim"
-                ],
-                "last": [
-                    "Berners-Lee"
-                ],
-                "coauthors": [
-                    "Mark Fischetti"
-                ],
-                "location": [
-                    "Britain"
-                ],
-                "publisher": [
-                    "Orion Business"
-                ],
-                "year": [
-                    "1999"
-                ],
-                "isbn": [
-                    "0-7528-2090-7"
-                ]
-            }
-        },
-        "*",
-        {
-            "__type": "template",
-            "name": "cite doi",
-            "content": {
-                "__an0": [
-                    "10.1038/scientificamerican1210-80"
-                ]
-            }
-        },
-        "*",
-        {
-            "__type": "template",
-            "name": "cite pmid",
-            "content": {
-                "__an0": [
-                    "21141362"
-                ]
-            }
-        },
-        "*",
-        {
-            "__type": "template",
-            "name": "cite pmid",
-            "content": {
-                "__an0": [
-                    "18847088"
-                ]
-            }
-        },
-        "*",
-        {
-            "__type": "template",
-            "name": "cite pmid",
-            "content": {
-                "__an0": [
-                    "16902115"
-                ]
-            }
+            "__type": "list",
+            "content": [
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "template",
+                            "name": "cite book",
+                            "content": {
+                                "title": [
+                                    {
+                                        "__type": "reference",
+                                        "label": "Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web by its inventor",
+                                        "content": {}
+                                    }
+                                ],
+                                "first": [
+                                    "Tim"
+                                ],
+                                "last": [
+                                    "Berners-Lee"
+                                ],
+                                "coauthors": [
+                                    "Mark Fischetti"
+                                ],
+                                "location": [
+                                    "Britain"
+                                ],
+                                "publisher": [
+                                    "Orion Business"
+                                ],
+                                "year": [
+                                    "1999"
+                                ],
+                                "isbn": [
+                                    "0-7528-2090-7"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "template",
+                            "name": "cite doi",
+                            "content": {
+                                "__an0": [
+                                    "10.1038/scientificamerican1210-80"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "template",
+                            "name": "cite pmid",
+                            "content": {
+                                "__an0": [
+                                    "21141362"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "template",
+                            "name": "cite pmid",
+                            "content": {
+                                "__an0": [
+                                    "18847088"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "template",
+                            "name": "cite pmid",
+                            "content": {
+                                "__an0": [
+                                    "16902115"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
         },
         {
             "__type": "section",
@@ -3036,55 +3267,87 @@
             "title": "Further reading",
             "level": 0
         },
-        "*",
-        "<i>",
-        "Tim Berners-Lee and the Development of the World Wide Web (Unlocking the Secrets of Science)",
-        "</i>",
-        ", Ann Gaines (Mitchell Lane Publishers, 2001) ISBN 1-58415-096-3\n*",
-        "<i>",
-        "Tim Berners-Lee: Inventor of the World Wide Web (Ferguson's Career Biographies)",
-        "</i>",
-        ", Melissa Stewart (Ferguson Publishing Company, 2001) ISBN 0-89434-367-X children's biography\n*",
-        "<i>",
-        "Weaving the Web",
-        "</i>",
-        "Berners-Lee, Tim, with Fischetti, Mark (Harper Collins Publishers,1999) ISBN 0-06-251586-1(cloth) ISBN 0-06-251587-X(paper)\n*",
-        "<i>",
-        "How the Web was Born: The Story of the World Wide Web",
-        "</i>",
-        "Robert Cailliau, James Gillies, R. Cailliau (Oxford University Press, 2000) ISBN 0-19-286207-3\n*",
         {
-            "__type": "link",
-            "url": "http://computemagazine.com/man-who-invented-world-wide-web-gives-new-definition/",
-            "content": {
-                "__an0": [
-                    "Tim Berners-Lee Gives the Web a New Definition"
-                ]
-            }
-        },
-        "*",
-        {
-            "__type": "link",
-            "url": "http://news.bbc.co.uk/2/hi/technology/4132752.stm",
-            "content": {
-                "__an0": [
-                    "BBC2 Newsnight &ndash; Transcript of video interview of Berners-Lee on the read/write Web"
-                ]
-            }
-        },
-        {
-            "__type": "comment_tag",
-            "comment": "{{Dead link|url=http://web.archive.org/web/20080202115128/http://www.kayotix.com/tmp/newsfeeds/10.08.05/timbernerslee/|date=September 2008}} "
-        },
-        "*",
-        {
-            "__type": "link",
-            "url": "http://www.technologyreview.com/Infotech/13784/",
-            "content": {
-                "__an0": [
-                    "Technology Review interview"
-                ]
-            }
+            "__type": "list",
+            "content": [
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "''Tim Berners-Lee and the Development of the World Wide Web (Unlocking the Secrets of Science)'', Ann Gaines (Mitchell Lane Publishers, 2001) ISBN 1-58415-096-3"
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "''Tim Berners-Lee: Inventor of the World Wide Web (Ferguson's Career Biographies)'', Melissa Stewart (Ferguson Publishing Company, 2001) ISBN 0-89434-367-X children's biography"
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "''Weaving the Web'' Berners-Lee, Tim, with Fischetti, Mark (Harper Collins Publishers,1999) ISBN 0-06-251586-1(cloth) ISBN 0-06-251587-X(paper)"
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        "''How the Web was Born: The Story of the World Wide Web'' Robert Cailliau, James Gillies, R. Cailliau (Oxford University Press, 2000) ISBN 0-19-286207-3"
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "link",
+                            "url": "http://computemagazine.com/man-who-invented-world-wide-web-gives-new-definition/",
+                            "content": {
+                                "__an0": [
+                                    "Tim Berners-Lee Gives the Web a New Definition"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "link",
+                            "url": "http://news.bbc.co.uk/2/hi/technology/4132752.stm",
+                            "content": {
+                                "__an0": [
+                                    "BBC2 Newsnight &ndash; Transcript of video interview of Berners-Lee on the read/write Web"
+                                ]
+                            }
+                        },
+                        {
+                            "__type": "comment_tag",
+                            "comment": "{{Dead link|url=http://web.archive.org/web/20080202115128/http://www.kayotix.com/tmp/newsfeeds/10.08.05/timbernerslee/|date=September 2008}} "
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "link",
+                            "url": "http://www.technologyreview.com/Infotech/13784/",
+                            "content": {
+                                "__an0": [
+                                    "Technology Review interview"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
         },
         {
             "__type": "section",
@@ -3101,91 +3364,137 @@
             "name": "Wikiquote",
             "content": {}
         },
-        "*",
         {
-            "__type": "template",
-            "name": "Twitter",
-            "content": {
-                "__an0": [
-                    "timberners_lee"
-                ]
-            }
-        },
-        "*",
-        {
-            "__type": "link",
-            "url": "http://identi.ca/timbl",
-            "content": {
-                "__an0": [
-                    "timbl"
-                ]
-            }
-        },
-        "on",
-        {
-            "__type": "reference",
-            "label": "identi.ca",
-            "content": {}
-        },
-        "*",
-        {
-            "__type": "template",
-            "name": "TED",
-            "content": {
-                "__an0": [
-                    "speakers/tim_berners_lee.html"
-                ]
-            }
-        },
-        "*",
-        {
-            "__type": "template",
-            "name": "IMDb name",
-            "content": {
-                "__an0": [
-                    "3805083"
-                ]
-            }
-        },
-        "*",
-        {
-            "__type": "template",
-            "name": "Nndb",
-            "content": {
-                "__an0": [
-                    "573/000023504"
-                ]
-            }
-        },
-        "*",
-        {
-            "__type": "template",
-            "name": "Worldcat id",
-            "content": {
-                "__an0": [
-                    "lccn-no99-10609"
-                ]
-            }
-        },
-        "*",
-        {
-            "__type": "link",
-            "url": "http://www.w3.org/People/Berners-Lee/",
-            "content": {
-                "__an0": [
-                    "Tim Berners-Lee"
-                ]
-            }
-        },
-        "on the W3C site\n*",
-        {
-            "__type": "link",
-            "url": "http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html",
-            "content": {
-                "__an0": [
-                    "First World Wide Web page"
-                ]
-            }
+            "__type": "list",
+            "content": [
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "template",
+                            "name": "Twitter",
+                            "content": {
+                                "__an0": [
+                                    "timberners_lee"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "link",
+                            "url": "http://identi.ca/timbl",
+                            "content": {
+                                "__an0": [
+                                    "timbl"
+                                ]
+                            }
+                        },
+                        "on",
+                        {
+                            "__type": "reference",
+                            "label": "identi.ca",
+                            "content": {}
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "template",
+                            "name": "TED",
+                            "content": {
+                                "__an0": [
+                                    "speakers/tim_berners_lee.html"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "template",
+                            "name": "IMDb name",
+                            "content": {
+                                "__an0": [
+                                    "3805083"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "template",
+                            "name": "Nndb",
+                            "content": {
+                                "__an0": [
+                                    "573/000023504"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "template",
+                            "name": "Worldcat id",
+                            "content": {
+                                "__an0": [
+                                    "lccn-no99-10609"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "link",
+                            "url": "http://www.w3.org/People/Berners-Lee/",
+                            "content": {
+                                "__an0": [
+                                    "Tim Berners-Lee"
+                                ]
+                            }
+                        },
+                        "on the W3C site"
+                    ]
+                },
+                {
+                    "__type": "list_item",
+                    "level": 1,
+                    "content": [
+                        {
+                            "__type": "link",
+                            "url": "http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html",
+                            "content": {
+                                "__an0": [
+                                    "First World Wide Web page"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
         },
         {
             "__type": "template",

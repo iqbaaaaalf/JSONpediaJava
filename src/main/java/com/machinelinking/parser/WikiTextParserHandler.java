@@ -34,7 +34,7 @@ public interface WikiTextParserHandler extends TagHandler {
     @Push(node="list")
     void beginList();
 
-    void listItem();
+    void listItem(int level);
 
     @Pop(node="list")
     void endList();

@@ -92,8 +92,8 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void listItem() {
-        printOut("List Item");
+    public void listItem(int level) {
+        printOut( String.format("List Item: %d", level) );
     }
 
     @Override

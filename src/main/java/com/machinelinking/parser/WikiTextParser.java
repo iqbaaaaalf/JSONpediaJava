@@ -84,6 +84,9 @@ public class WikiTextParser implements ParserReader {
                     readSection();
                 } else if('=' == couple.charAt(0)) {
                     reset(); read(); mark(); // TODO improve it.
+                } else if(col == 2 && '*' == couple.charAt(0)) {
+                    reset();
+                    readList();
                 }
             }
         } catch (EOFException eofe) {
@@ -180,7 +183,7 @@ public class WikiTextParser implements ParserReader {
     }
 
     private final StringBuilder externalCharsSB = new StringBuilder();
-    private void consumeChars() throws IOException {
+    private void consumeChars(boolean breakAtCR) throws IOException {
         mark();
         clear(externalCharsSB);
         char c;
@@ -208,7 +211,10 @@ public class WikiTextParser implements ParserReader {
                             externalCharsSB.append('\'');
                         }
                     }
-                } else if (c != '{' && c != '[' && c != '<' && (c != '=' || col > 3)) {
+                } else if(breakAtCR && c == '\n') {
+                    mark();
+                    break;
+                } else if (c != '{' && c != '[' && c != '<' && (c != '=' || col > 3) && (c != '*' || col > 1)) {
                     mark();
                     externalCharsSB.append(c);
                 } else {
@@ -219,6 +225,10 @@ public class WikiTextParser implements ParserReader {
         } finally {
             flushText(externalCharsSB);
         }
+    }
+
+    private void consumeChars() throws IOException {
+        consumeChars(false);
     }
 
     private final StringBuilder templateHeaderSB = new StringBuilder();
@@ -386,7 +396,7 @@ public class WikiTextParser implements ParserReader {
                 c = read();
                 if(c == '*') {
                     mark();
-                    handler.listItem();
+                    handler.listItem(1); // TODO: no more levels inside template?
                 } else {
                    reset();
                 }
@@ -565,18 +575,40 @@ public class WikiTextParser implements ParserReader {
         }
 
         // Consumes section end.
-        while(true) {
-            c = read();
-            if(c == '=') {
-                mark();
-                break;
-            } else {
-                reset();
-                break;
-            }
-        }
+        readSequence('=');
 
         handler.section(sectionSB.toString(), sectionLevel);
+    }
+
+    private void readList() throws IOException {
+        handler.beginList();
+        try {
+            while (true) {
+                int level = readSequence('*');
+                if(level == 0) break;
+                handler.listItem(level);
+                readPropertyValue( new String[]{"\n"}, false, false);
+                mark();
+            }
+        } finally {
+            handler.endList();
+        }
+    }
+
+    private int readSequence(char t) throws IOException {
+        int count = 0;
+        char c;
+        while (true) {
+            c = read();
+            if (c != t) {
+                reset();
+                break;
+            } else {
+                mark();
+                count++;
+            }
+        }
+        return count;
     }
 
     private int lookAhead(String[] sequences) throws IOException {

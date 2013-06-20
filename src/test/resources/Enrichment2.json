@@ -20217,445 +20217,533 @@
                         ]
                     }
                 },
-                "*",
                 {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Colombia"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Bogotá",
-                    "content": {}
-                },
-                ", Colombia\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Bolivia"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "La Paz",
-                    "content": {}
-                },
-                ", Bolivia\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Peru"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Arequipa",
-                    "content": {}
-                },
-                ", Peru\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Germany"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Berlin",
-                    "content": {}
-                },
-                ", Germany",
-                {
-                    "__type": "open_tag",
-                    "name": "ref",
-                    "attributes": [
+                    "__type": "list",
+                    "content": [
                         {
-                            "name": "twinning"
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Colombia"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Bogotá",
+                                    "content": {}
+                                },
+                                ", Colombia"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Bolivia"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "La Paz",
+                                    "content": {}
+                                },
+                                ", Bolivia"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Peru"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Arequipa",
+                                    "content": {}
+                                },
+                                ", Peru"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Germany"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Berlin",
+                                    "content": {}
+                                },
+                                ", Germany",
+                                {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": [
+                                        {
+                                            "name": "twinning"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__type": "template",
+                                    "name": "cite web",
+                                    "content": {
+                                        "url": [
+                                            "http://www.inlondonguide.co.uk/london-sight-guide/interesting-facts-about-london.html London is twinned with New York, Moscow and Berlin."
+                                        ],
+                                        "title": [
+                                            "Interesting Facts About London"
+                                        ],
+                                        "publisher": [
+                                            "insideguide to London"
+                                        ],
+                                        "accessdate": [
+                                            "27 July 2011"
+                                        ]
+                                    }
+                                },
+                                "See Fact 2 by Big Ben photo.",
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "India"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Delhi",
+                                    "content": {}
+                                },
+                                ", India",
+                                {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": [
+                                        {
+                                            "name": "Mayor of London"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__type": "template",
+                                    "name": "cite web",
+                                    "content": {
+                                        "url": [
+                                            "http://legacy.london.gov.uk/view_press_release.jsp?releaseid=1329"
+                                        ],
+                                        "title": [
+                                            "Friendship agreement to be signed between London and Delhi"
+                                        ],
+                                        "date": [
+                                            "25 July 2002"
+                                        ],
+                                        "publisher": [
+                                            "Mayor of London"
+                                        ],
+                                        "accessdate": [
+                                            "23 February 2010"
+                                        ],
+                                        "archiveurl": [
+                                            "http://www.webcitation.org/5yoKJLcvL"
+                                        ],
+                                        "archivedate": [
+                                            "19 May 2011"
+                                        ],
+                                        "deadurl": [
+                                            "no"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "South Africa"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Johannesburg",
+                                    "content": {}
+                                },
+                                ", South Africa",
+                                {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": null
+                                },
+                                {
+                                    "__type": "template",
+                                    "name": "cite web",
+                                    "content": {
+                                        "url": [
+                                            "http://www.joburg.org.za/content/view/833/131/#ixzz0PU5ypfol"
+                                        ],
+                                        "title": [
+                                            "Twinning agreements"
+                                        ],
+                                        "work": [
+                                            "Making Joburg an entry point into Africa"
+                                        ],
+                                        "publisher": [
+                                            "City of Johannesburg"
+                                        ],
+                                        "accessdate": [
+                                            "28 August 2009"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "template",
+                                    "name": "dead link",
+                                    "content": {
+                                        "date": [
+                                            "May 2011"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Malaysia"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Kuala Lumpur",
+                                    "content": {}
+                                },
+                                ", Malaysia"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Kuwait"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Kuwait City",
+                                    "content": {}
+                                },
+                                ", Kuwait"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Russia"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Moscow",
+                                    "content": {}
+                                },
+                                ", Russia",
+                                {
+                                    "__type": "inline_tag",
+                                    "name": "ref",
+                                    "attributes": [
+                                        {
+                                            "name": "twinning"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "United States"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "New York City",
+                                    "content": {}
+                                },
+                                ", United States",
+                                {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": null
+                                },
+                                {
+                                    "__type": "template",
+                                    "name": "cite web",
+                                    "content": {
+                                        "url": [
+                                            "http://www.london.gov.uk/mayor/international/city_partnerships/docs/new_york_partnership_agreement.pdf"
+                                        ],
+                                        "archiveurl": [
+                                            "http://www.webcitation.org/5mxnSYQPt"
+                                        ],
+                                        "archivedate": [
+                                            "22 January 2010"
+                                        ],
+                                        "title": [
+                                            "The New York City-London sister city partnership"
+                                        ],
+                                        "last": [
+                                            "Barfield"
+                                        ],
+                                        "first": [
+                                            "M"
+                                        ],
+                                        "date": [
+                                            "March 2001"
+                                        ],
+                                        "format": [
+                                            "PDF"
+                                        ],
+                                        "publisher": [
+                                            "Greater London Authority"
+                                        ],
+                                        "accessdate": [
+                                            "26 October 2009"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Norway"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Oslo",
+                                    "content": {}
+                                },
+                                ", Norway"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Bangladesh"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Sylhet",
+                                    "content": {}
+                                },
+                                ", Bangladesh"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "China"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Shanghai",
+                                    "content": {}
+                                },
+                                ", China",
+                                {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": null
+                                },
+                                {
+                                    "__type": "template",
+                                    "name": "cite web",
+                                    "content": {
+                                        "url": [
+                                            "http://www.shfao.gov.cn/wsb/english/Sister_Cities/u1a14240.html"
+                                        ],
+                                        "title": [
+                                            "Shanghai Foreign Affairs"
+                                        ],
+                                        "publisher": [
+                                            "Shfao.gov.cn"
+                                        ],
+                                        "date": [
+                                            "27 July 2009"
+                                        ],
+                                        "accessdate": [
+                                            "23 May 2010"
+                                        ],
+                                        "archiveurl": [
+                                            "http://www.webcitation.org/5yoKKcj5N"
+                                        ],
+                                        "archivedate": [
+                                            "19 May 2011"
+                                        ],
+                                        "deadurl": [
+                                            "no"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "South Korea"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Seoul",
+                                    "content": {}
+                                },
+                                ", South Korea"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Iran"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Tehran",
+                                    "content": {}
+                                },
+                                ", Iran"
+                            ]
                         }
                     ]
                 },
-                {
-                    "__type": "template",
-                    "name": "cite web",
-                    "content": {
-                        "url": [
-                            "http://www.inlondonguide.co.uk/london-sight-guide/interesting-facts-about-london.html London is twinned with New York, Moscow and Berlin."
-                        ],
-                        "title": [
-                            "Interesting Facts About London"
-                        ],
-                        "publisher": [
-                            "insideguide to London"
-                        ],
-                        "accessdate": [
-                            "27 July 2011"
-                        ]
-                    }
-                },
-                "See Fact 2 by Big Ben photo.",
-                {
-                    "__type": "close_tag",
-                    "name": "ref"
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "India"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Delhi",
-                    "content": {}
-                },
-                ", India",
-                {
-                    "__type": "open_tag",
-                    "name": "ref",
-                    "attributes": [
-                        {
-                            "name": "Mayor of London"
-                        }
-                    ]
-                },
-                {
-                    "__type": "template",
-                    "name": "cite web",
-                    "content": {
-                        "url": [
-                            "http://legacy.london.gov.uk/view_press_release.jsp?releaseid=1329"
-                        ],
-                        "title": [
-                            "Friendship agreement to be signed between London and Delhi"
-                        ],
-                        "date": [
-                            "25 July 2002"
-                        ],
-                        "publisher": [
-                            "Mayor of London"
-                        ],
-                        "accessdate": [
-                            "23 February 2010"
-                        ],
-                        "archiveurl": [
-                            "http://www.webcitation.org/5yoKJLcvL"
-                        ],
-                        "archivedate": [
-                            "19 May 2011"
-                        ],
-                        "deadurl": [
-                            "no"
-                        ]
-                    }
-                },
-                {
-                    "__type": "close_tag",
-                    "name": "ref"
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "South Africa"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Johannesburg",
-                    "content": {}
-                },
-                ", South Africa",
-                {
-                    "__type": "open_tag",
-                    "name": "ref",
-                    "attributes": null
-                },
-                {
-                    "__type": "template",
-                    "name": "cite web",
-                    "content": {
-                        "url": [
-                            "http://www.joburg.org.za/content/view/833/131/#ixzz0PU5ypfol"
-                        ],
-                        "title": [
-                            "Twinning agreements"
-                        ],
-                        "work": [
-                            "Making Joburg an entry point into Africa"
-                        ],
-                        "publisher": [
-                            "City of Johannesburg"
-                        ],
-                        "accessdate": [
-                            "28 August 2009"
-                        ]
-                    }
-                },
-                {
-                    "__type": "template",
-                    "name": "dead link",
-                    "content": {
-                        "date": [
-                            "May 2011"
-                        ]
-                    }
-                },
-                {
-                    "__type": "close_tag",
-                    "name": "ref"
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Malaysia"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Kuala Lumpur",
-                    "content": {}
-                },
-                ", Malaysia\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Kuwait"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Kuwait City",
-                    "content": {}
-                },
-                ", Kuwait\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Russia"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Moscow",
-                    "content": {}
-                },
-                ", Russia",
-                {
-                    "__type": "inline_tag",
-                    "name": "ref",
-                    "attributes": [
-                        {
-                            "name": "twinning"
-                        }
-                    ]
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "United States"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "New York City",
-                    "content": {}
-                },
-                ", United States",
-                {
-                    "__type": "open_tag",
-                    "name": "ref",
-                    "attributes": null
-                },
-                {
-                    "__type": "template",
-                    "name": "cite web",
-                    "content": {
-                        "url": [
-                            "http://www.london.gov.uk/mayor/international/city_partnerships/docs/new_york_partnership_agreement.pdf"
-                        ],
-                        "archiveurl": [
-                            "http://www.webcitation.org/5mxnSYQPt"
-                        ],
-                        "archivedate": [
-                            "22 January 2010"
-                        ],
-                        "title": [
-                            "The New York City-London sister city partnership"
-                        ],
-                        "last": [
-                            "Barfield"
-                        ],
-                        "first": [
-                            "M"
-                        ],
-                        "date": [
-                            "March 2001"
-                        ],
-                        "format": [
-                            "PDF"
-                        ],
-                        "publisher": [
-                            "Greater London Authority"
-                        ],
-                        "accessdate": [
-                            "26 October 2009"
-                        ]
-                    }
-                },
-                {
-                    "__type": "close_tag",
-                    "name": "ref"
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Norway"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Oslo",
-                    "content": {}
-                },
-                ", Norway\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Bangladesh"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Sylhet",
-                    "content": {}
-                },
-                ", Bangladesh\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "China"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Shanghai",
-                    "content": {}
-                },
-                ", China",
-                {
-                    "__type": "open_tag",
-                    "name": "ref",
-                    "attributes": null
-                },
-                {
-                    "__type": "template",
-                    "name": "cite web",
-                    "content": {
-                        "url": [
-                            "http://www.shfao.gov.cn/wsb/english/Sister_Cities/u1a14240.html"
-                        ],
-                        "title": [
-                            "Shanghai Foreign Affairs"
-                        ],
-                        "publisher": [
-                            "Shfao.gov.cn"
-                        ],
-                        "date": [
-                            "27 July 2009"
-                        ],
-                        "accessdate": [
-                            "23 May 2010"
-                        ],
-                        "archiveurl": [
-                            "http://www.webcitation.org/5yoKKcj5N"
-                        ],
-                        "archivedate": [
-                            "19 May 2011"
-                        ],
-                        "deadurl": [
-                            "no"
-                        ]
-                    }
-                },
-                {
-                    "__type": "close_tag",
-                    "name": "ref"
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "South Korea"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Seoul",
-                    "content": {}
-                },
-                ", South Korea\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Iran"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Tehran",
-                    "content": {}
-                },
-                ", Iran",
                 {
                     "__type": "template",
                     "name": "Div col end",
@@ -20674,402 +20762,497 @@
                         ]
                     }
                 },
-                "*",
                 {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Algeria"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Algiers",
-                    "content": {}
-                },
-                ", Algeria\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Azerbaijan"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Baku",
-                    "content": {}
-                },
-                ", Azerbaijan\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "China"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Beijing",
-                    "content": {}
-                },
-                ", China",
-                {
-                    "__type": "open_tag",
-                    "name": "ref",
-                    "attributes": null
-                },
-                {
-                    "__type": "template",
-                    "name": "cite web",
-                    "content": {
-                        "url": [
-                            "http://www.gov.cn/misc/2006-04/10/content_250542.htm"
-                        ],
-                        "title": [
-                            "Beijing, London establish sister city ties"
-                        ],
-                        "publisher": [
-                            "Gov.cn"
-                        ],
-                        "date": [
-                            "10 April 2006"
-                        ],
-                        "accessdate": [
-                            "23 May 2010"
-                        ],
-                        "archiveurl": [
-                            "http://www.webcitation.org/5yoKM2Hdx"
-                        ],
-                        "archivedate": [
-                            "19 May 2011"
-                        ],
-                        "deadurl": [
-                            "no"
-                        ]
-                    }
-                },
-                {
-                    "__type": "close_tag",
-                    "name": "ref"
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Romania"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Bucharest",
-                    "content": {}
-                },
-                ", Romania\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Argentina"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Buenos Aires",
-                    "content": {}
-                },
-                ", Argentina\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "India"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Delhi",
-                    "content": {}
-                },
-                ", India",
-                {
-                    "__type": "inline_tag",
-                    "name": "ref",
-                    "attributes": [
+                    "__type": "list",
+                    "content": [
                         {
-                            "name": "Mayor of London"
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Algeria"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Algiers",
+                                    "content": {}
+                                },
+                                ", Algeria"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Azerbaijan"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Baku",
+                                    "content": {}
+                                },
+                                ", Azerbaijan"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "China"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Beijing",
+                                    "content": {}
+                                },
+                                ", China",
+                                {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": null
+                                },
+                                {
+                                    "__type": "template",
+                                    "name": "cite web",
+                                    "content": {
+                                        "url": [
+                                            "http://www.gov.cn/misc/2006-04/10/content_250542.htm"
+                                        ],
+                                        "title": [
+                                            "Beijing, London establish sister city ties"
+                                        ],
+                                        "publisher": [
+                                            "Gov.cn"
+                                        ],
+                                        "date": [
+                                            "10 April 2006"
+                                        ],
+                                        "accessdate": [
+                                            "23 May 2010"
+                                        ],
+                                        "archiveurl": [
+                                            "http://www.webcitation.org/5yoKM2Hdx"
+                                        ],
+                                        "archivedate": [
+                                            "19 May 2011"
+                                        ],
+                                        "deadurl": [
+                                            "no"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Romania"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Bucharest",
+                                    "content": {}
+                                },
+                                ", Romania"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Argentina"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Buenos Aires",
+                                    "content": {}
+                                },
+                                ", Argentina"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "India"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Delhi",
+                                    "content": {}
+                                },
+                                ", India",
+                                {
+                                    "__type": "inline_tag",
+                                    "name": "ref",
+                                    "attributes": [
+                                        {
+                                            "name": "Mayor of London"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Bangladesh"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Dhaka",
+                                    "content": {}
+                                },
+                                ", Bangladesh",
+                                {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": null
+                                },
+                                {
+                                    "__type": "template",
+                                    "name": "cite web",
+                                    "content": {
+                                        "url": [
+                                            "http://legacy.london.gov.uk/view_press_release.jsp?releaseid=1971"
+                                        ],
+                                        "title": [
+                                            "Mayors of London and Dhaka, Bangladesh sign friendship agreement"
+                                        ],
+                                        "date": [
+                                            "10 September 2003"
+                                        ],
+                                        "publisher": [
+                                            "Mayor of London"
+                                        ],
+                                        "accessdate": [
+                                            "23 February 2010"
+                                        ],
+                                        "archiveurl": [
+                                            "http://www.webcitation.org/5yoKOA8RF"
+                                        ],
+                                        "archivedate": [
+                                            "19 May 2011"
+                                        ],
+                                        "deadurl": [
+                                            "no"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Turkey"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Istanbul",
+                                    "content": {}
+                                },
+                                ", Turkey"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "United States"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Los Angeles",
+                                    "content": {}
+                                },
+                                ", United States",
+                                {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": null
+                                },
+                                {
+                                    "__type": "template",
+                                    "name": "cite web",
+                                    "content": {
+                                        "url": [
+                                            "http://sistercitiesofla.com/page1/page57/page57.html"
+                                        ],
+                                        "title": [
+                                            "London, UK"
+                                        ],
+                                        "publisher": [
+                                            "Sister cities of Los Angeles, Inc."
+                                        ],
+                                        "accessdate": [
+                                            "13 September 2010"
+                                        ],
+                                        "archiveurl": [
+                                            "http://www.webcitation.org/5yoKORhmX"
+                                        ],
+                                        "archivedate": [
+                                            "19 May 2011"
+                                        ],
+                                        "deadurl": [
+                                            "no"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "India"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Mumbai",
+                                    "content": {}
+                                },
+                                ", India"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "France"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Paris",
+                                    "content": {}
+                                },
+                                ", France",
+                                {
+                                    "__type": "open_tag",
+                                    "name": "ref",
+                                    "attributes": null
+                                },
+                                {
+                                    "__type": "template",
+                                    "name": "cite web",
+                                    "content": {
+                                        "url": [
+                                            "http://www.paris.fr/portail/politiques/Portal.lut?page_id=6587&document_type_id=5&document_id=16468&portlet_id=14974"
+                                        ],
+                                        "title": [
+                                            "Les pactes d'amitié et de coopération"
+                                        ],
+                                        "publisher": [
+                                            "Paris.fr"
+                                        ],
+                                        "accessdate": [
+                                            "23 May 2010"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "close_tag",
+                                    "name": "ref"
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Montenegro"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Podgorica",
+                                    "content": {}
+                                },
+                                ", Montenegro"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Italy"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Rome",
+                                    "content": {}
+                                },
+                                ", Italy"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Bulgaria"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Sofia",
+                                    "content": {}
+                                },
+                                ", Bulgaria"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Japan"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Tokyo",
+                                    "content": {}
+                                },
+                                ", Japan"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "flagicon",
+                                    "content": {
+                                        "__an0": [
+                                            "Croatia"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "reference",
+                                    "label": "Zagreb",
+                                    "content": {}
+                                },
+                                ", Croatia"
+                            ]
                         }
                     ]
                 },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Bangladesh"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Dhaka",
-                    "content": {}
-                },
-                ", Bangladesh",
-                {
-                    "__type": "open_tag",
-                    "name": "ref",
-                    "attributes": null
-                },
-                {
-                    "__type": "template",
-                    "name": "cite web",
-                    "content": {
-                        "url": [
-                            "http://legacy.london.gov.uk/view_press_release.jsp?releaseid=1971"
-                        ],
-                        "title": [
-                            "Mayors of London and Dhaka, Bangladesh sign friendship agreement"
-                        ],
-                        "date": [
-                            "10 September 2003"
-                        ],
-                        "publisher": [
-                            "Mayor of London"
-                        ],
-                        "accessdate": [
-                            "23 February 2010"
-                        ],
-                        "archiveurl": [
-                            "http://www.webcitation.org/5yoKOA8RF"
-                        ],
-                        "archivedate": [
-                            "19 May 2011"
-                        ],
-                        "deadurl": [
-                            "no"
-                        ]
-                    }
-                },
-                {
-                    "__type": "close_tag",
-                    "name": "ref"
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Turkey"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Istanbul",
-                    "content": {}
-                },
-                ", Turkey\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "United States"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Los Angeles",
-                    "content": {}
-                },
-                ", United States",
-                {
-                    "__type": "open_tag",
-                    "name": "ref",
-                    "attributes": null
-                },
-                {
-                    "__type": "template",
-                    "name": "cite web",
-                    "content": {
-                        "url": [
-                            "http://sistercitiesofla.com/page1/page57/page57.html"
-                        ],
-                        "title": [
-                            "London, UK"
-                        ],
-                        "publisher": [
-                            "Sister cities of Los Angeles, Inc."
-                        ],
-                        "accessdate": [
-                            "13 September 2010"
-                        ],
-                        "archiveurl": [
-                            "http://www.webcitation.org/5yoKORhmX"
-                        ],
-                        "archivedate": [
-                            "19 May 2011"
-                        ],
-                        "deadurl": [
-                            "no"
-                        ]
-                    }
-                },
-                {
-                    "__type": "close_tag",
-                    "name": "ref"
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "India"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Mumbai",
-                    "content": {}
-                },
-                ", India\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "France"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Paris",
-                    "content": {}
-                },
-                ", France",
-                {
-                    "__type": "open_tag",
-                    "name": "ref",
-                    "attributes": null
-                },
-                {
-                    "__type": "template",
-                    "name": "cite web",
-                    "content": {
-                        "url": [
-                            "http://www.paris.fr/portail/politiques/Portal.lut?page_id=6587&document_type_id=5&document_id=16468&portlet_id=14974"
-                        ],
-                        "title": [
-                            "Les pactes d'amitié et de coopération"
-                        ],
-                        "publisher": [
-                            "Paris.fr"
-                        ],
-                        "accessdate": [
-                            "23 May 2010"
-                        ]
-                    }
-                },
-                {
-                    "__type": "close_tag",
-                    "name": "ref"
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Montenegro"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Podgorica",
-                    "content": {}
-                },
-                ", Montenegro\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Italy"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Rome",
-                    "content": {}
-                },
-                ", Italy\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Bulgaria"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Sofia",
-                    "content": {}
-                },
-                ", Bulgaria\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Japan"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Tokyo",
-                    "content": {}
-                },
-                ", Japan\n*",
-                {
-                    "__type": "template",
-                    "name": "flagicon",
-                    "content": {
-                        "__an0": [
-                            "Croatia"
-                        ]
-                    }
-                },
-                {
-                    "__type": "reference",
-                    "label": "Zagreb",
-                    "content": {}
-                },
-                ", Croatia",
                 {
                     "__type": "template",
                     "name": "Div col end",
@@ -21089,11 +21272,21 @@
                         ]
                     }
                 },
-                "*",
                 {
-                    "__type": "reference",
-                    "label": "Outline of England",
-                    "content": {}
+                    "__type": "list",
+                    "content": [
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "reference",
+                                    "label": "Outline of England",
+                                    "content": {}
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "__type": "section",
@@ -21128,70 +21321,85 @@
                     "title": "Bibliography",
                     "level": 1
                 },
-                "*",
                 {
-                    "__type": "template",
-                    "name": "Cite book",
-                    "content": {
-                        "last": [
-                            "Ackroyd"
-                        ],
-                        "first": [
-                            "Peter"
-                        ],
-                        "title": [
-                            "London: The Biography"
-                        ],
-                        "publisher": [
-                            "Vintage"
-                        ],
-                        "location": [
-                            "London"
-                        ],
-                        "year": [
-                            "2001"
-                        ],
-                        "isbn": [
-                            "978-0-09-942258-7"
-                        ],
-                        "page": [
-                            "880"
-                        ],
-                        "ref": [
-                            "harv"
-                        ]
-                    }
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "Cite book",
-                    "content": {
-                        "last": [
-                            "Mills"
-                        ],
-                        "first": [
-                            "David"
-                        ],
-                        "title": [
-                            "Dictionary of London Place Names"
-                        ],
-                        "publisher": [
-                            "Oxford Paperbacks"
-                        ],
-                        "year": [
-                            "2001"
-                        ],
-                        "isbn": [
-                            "978-0-19-280106-7"
-                        ],
-                        "oclc": [
-                            "45406491"
-                        ],
-                        "ref": [
-                            "harv"
-                        ]
-                    }
+                    "__type": "list",
+                    "content": [
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "Cite book",
+                                    "content": {
+                                        "last": [
+                                            "Ackroyd"
+                                        ],
+                                        "first": [
+                                            "Peter"
+                                        ],
+                                        "title": [
+                                            "London: The Biography"
+                                        ],
+                                        "publisher": [
+                                            "Vintage"
+                                        ],
+                                        "location": [
+                                            "London"
+                                        ],
+                                        "year": [
+                                            "2001"
+                                        ],
+                                        "isbn": [
+                                            "978-0-09-942258-7"
+                                        ],
+                                        "page": [
+                                            "880"
+                                        ],
+                                        "ref": [
+                                            "harv"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "Cite book",
+                                    "content": {
+                                        "last": [
+                                            "Mills"
+                                        ],
+                                        "first": [
+                                            "David"
+                                        ],
+                                        "title": [
+                                            "Dictionary of London Place Names"
+                                        ],
+                                        "publisher": [
+                                            "Oxford Paperbacks"
+                                        ],
+                                        "year": [
+                                            "2001"
+                                        ],
+                                        "isbn": [
+                                            "978-0-19-280106-7"
+                                        ],
+                                        "oclc": [
+                                            "45406491"
+                                        ],
+                                        "ref": [
+                                            "harv"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "__type": "section",
@@ -21203,102 +21411,153 @@
                     "name": "Sister project links",
                     "content": {}
                 },
-                "*",
                 {
-                    "__type": "link",
-                    "url": "http://www.britishpathe.com/workspace.php?id=2449&delete_record=75105/",
-                    "content": {
-                        "__an0": [
-                            "British Pathé"
-                        ]
-                    }
-                },
-                "Digitalised archive containing hundreds of films of 20th century London\n*",
-                {
-                    "__type": "link",
-                    "url": "http://www.british-history.ac.uk/place.aspx?region=1",
-                    "content": {
-                        "__an0": [
-                            "London"
-                        ]
-                    }
-                },
-                "in",
-                "<i>",
-                "British History Online",
-                "</i>",
-                ", with links to numerous authoritative online sources\n*",
-                {
-                    "__type": "link",
-                    "url": "http://www.visitlondon.com/",
-                    "content": {
-                        "__an0": [
-                            "VisitLondon.com"
-                        ]
-                    }
-                },
-                "&nbsp;– Official London site\n*",
-                {
-                    "__type": "link",
-                    "url": "http://www.museumoflondon.org.uk/",
-                    "content": {
-                        "__an0": [
-                            "Museum of London Group Portal&nbsp;– Home"
-                        ]
-                    }
-                },
-                "*",
-                {
-                    "__type": "link",
-                    "url": "http://www.tfl.gov.uk/",
-                    "content": {
-                        "__an0": [
-                            "Transport for London"
-                        ]
-                    }
-                },
-                "(TfL)&nbsp;– city transport authority\n*",
-                {
-                    "__type": "link",
-                    "url": "http://mapoflondon.uvic.ca/",
-                    "content": {
-                        "__an0": [
-                            "Map of Early Modern London"
-                        ]
-                    }
-                },
-                "Historical Map & Encyclopaedia of Shakespeare's London. Scholarly\n*",
-                {
-                    "__type": "link",
-                    "url": "http://www.london.gov.uk/",
-                    "content": {
-                        "__an0": [
-                            "London.gov.uk&nbsp;– Official site for the government of London by the Greater London Authority covering the Office of Mayor of London and the London Assembly"
-                        ]
-                    }
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "osmrelation-inline",
-                    "content": {
-                        "__an0": [
-                            "175342"
-                        ]
-                    }
-                },
-                "*",
-                {
-                    "__type": "template",
-                    "name": "wikia",
-                    "content": {
-                        "__an0": [
-                            "london"
-                        ],
-                        "__an1": [
-                            "The London Wiki"
-                        ]
-                    }
+                    "__type": "list",
+                    "content": [
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "link",
+                                    "url": "http://www.britishpathe.com/workspace.php?id=2449&delete_record=75105/",
+                                    "content": {
+                                        "__an0": [
+                                            "British Pathé"
+                                        ]
+                                    }
+                                },
+                                "Digitalised archive containing hundreds of films of 20th century London"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "link",
+                                    "url": "http://www.british-history.ac.uk/place.aspx?region=1",
+                                    "content": {
+                                        "__an0": [
+                                            "London"
+                                        ]
+                                    }
+                                },
+                                "in ''British History Online'', with links to numerous authoritative online sources"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "link",
+                                    "url": "http://www.visitlondon.com/",
+                                    "content": {
+                                        "__an0": [
+                                            "VisitLondon.com"
+                                        ]
+                                    }
+                                },
+                                "&nbsp;– Official London site"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "link",
+                                    "url": "http://www.museumoflondon.org.uk/",
+                                    "content": {
+                                        "__an0": [
+                                            "Museum of London Group Portal&nbsp;– Home"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "link",
+                                    "url": "http://www.tfl.gov.uk/",
+                                    "content": {
+                                        "__an0": [
+                                            "Transport for London"
+                                        ]
+                                    }
+                                },
+                                "(TfL)&nbsp;– city transport authority"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "link",
+                                    "url": "http://mapoflondon.uvic.ca/",
+                                    "content": {
+                                        "__an0": [
+                                            "Map of Early Modern London"
+                                        ]
+                                    }
+                                },
+                                "Historical Map & Encyclopaedia of Shakespeare's London. Scholarly"
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "link",
+                                    "url": "http://www.london.gov.uk/",
+                                    "content": {
+                                        "__an0": [
+                                            "London.gov.uk&nbsp;– Official site for the government of London by the Greater London Authority covering the Office of Mayor of London and the London Assembly"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "osmrelation-inline",
+                                    "content": {
+                                        "__an0": [
+                                            "175342"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "__type": "list_item",
+                            "level": 1,
+                            "content": [
+                                {
+                                    "__type": "template",
+                                    "name": "wikia",
+                                    "content": {
+                                        "__an0": [
+                                            "london"
+                                        ],
+                                        "__an1": [
+                                            "The London Wiki"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "__type": "template",

@@ -938,28 +938,16 @@ Text: '
 '
 Comment Tag:  Aerosol radiative forcing. 
 Text: '
-* '
-ItalicBold: 2
-Text: 'Aerosol direct effect.'
-ItalicBold: 2
-Text: ' Aerosols directly scatter and absorb radiation. The scattering of radiation causes atmospheric cooling, whereas absorption can cause atmospheric warming.
-* '
-ItalicBold: 2
-Text: 'Aerosol indirect effect.'
-ItalicBold: 2
-Text: ' Aerosols modify the properties of clouds through a subset of the aerosol population called '
+'
+Begin List
+List Item: 1
+Text: ' ''Aerosol direct effect.'' Aerosols directly scatter and absorb radiation. The scattering of radiation causes atmospheric cooling, whereas absorption can cause atmospheric warming.'
+List Item: 1
+Text: ' ''Aerosol indirect effect.'' Aerosols modify the properties of clouds through a subset of the aerosol population called '
 Begin Reference: cloud condensation nuclei
 End Reference: cloud condensation nuclei
-Text: '. Increased nuclei concentrations lead to increased cloud droplet number concentrations, which in turn leads to increased cloud albedo, increased light scattering and radiative cooling ('
-ItalicBold: 2
-Text: 'first indirect effect'
-ItalicBold: 2
-Text: '), but also leads to reduced precipitation efficiency and increased lifetime of the cloud ('
-ItalicBold: 2
-Text: 'second indirect effect'
-ItalicBold: 2
-Text: ').
-'
+Text: '. Increased nuclei concentrations lead to increased cloud droplet number concentrations, which in turn leads to increased cloud albedo, increased light scattering and radiative cooling (''first indirect effect''), but also leads to reduced precipitation efficiency and increased lifetime of the cloud (''second indirect effect'').'
+End List
 Close Tag: blockquote
 Text: '
 
@@ -1018,27 +1006,29 @@ k: colwidth
 Text: '30em'
 End Template: div col
 Text: '
-* '
+'
+Begin List
+List Item: 1
+Text: ' '
 Begin Reference: Global dimming
 End Reference: Global dimming
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: Irradiance
 End Reference: Irradiance
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: Polar see-saw
 End Reference: Polar see-saw
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: Solar radiation management
 End Reference: Solar radiation management
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: Daisyworld
 End Reference: Daisyworld
-Text: '
-'
+End List
 Begin Template: div col end
 End Template: div col end
 Text: '
@@ -1337,43 +1327,39 @@ Text: '
 Begin Template: wiktionary
 End Template: wiktionary
 Text: '
-*'
+'
+Begin List
+List Item: 1
 Begin Link: http://www.albedo-project.org/
 k: null
 Text: 'Official Website of Albedo Project'
 End Link: http://www.albedo-project.org/
-Text: '
-*'
+List Item: 1
 Begin Link: http://www-c4.ucsd.edu/gap/
 k: null
 Text: 'Global Albedo Project (Center for Clouds, Chemistry, and Climate)'
 End Link: http://www-c4.ucsd.edu/gap/
-Text: '
-*'
+List Item: 1
 Begin Link: http://www.eoearth.org/article/Albedo
 k: null
 Text: 'Albedo - Encyclopedia of Earth'
 End Link: http://www.eoearth.org/article/Albedo
-Text: '
-*'
+List Item: 1
 Begin Link: http://www-modis.bu.edu/brdf/product.html
 k: null
 Text: 'NASA MODIS BRDF/albedo product site'
 End Link: http://www-modis.bu.edu/brdf/product.html
-Text: '
-*'
+List Item: 1
 Begin Link: http://www.eumetsat.int/Home/Main/Access_to_Data/Meteosat_Meteorological_Products/Product_List/SP_1125489019643?l=en
 k: null
 Text: 'Surface albedo derived from Meteosat observations'
 End Link: http://www.eumetsat.int/Home/Main/Access_to_Data/Meteosat_Meteorological_Products/Product_List/SP_1125489019643?l=en
-Text: '
-*'
+List Item: 1
 Begin Link: http://jeff.medkeff.com/astro/lunar/obs_tech/albedo.htm
 k: null
 Text: 'A discussion of Lunar albedos'
 End Link: http://jeff.medkeff.com/astro/lunar/obs_tech/albedo.htm
-Text: '
-'
+End List
 Begin Template: Global warming
 End Template: Global warming
 Text: '

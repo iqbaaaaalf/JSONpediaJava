@@ -100,33 +100,33 @@ k: null
 Text: 'Württemberg/Germany'
 End Reference: Kingdom of Württemberg
 Text: ' (1879–1896)'
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Statelessness
 k: null
 Text: 'Stateless'
 End Reference: Statelessness
 Text: ' (1896–1901)'
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Switzerland
 End Reference: Switzerland
 Text: ' (1901–1955)'
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Austria–Hungary
 k: null
 Text: 'Austria'
 End Reference: Austria–Hungary
 Text: ' (1911–1912)'
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: German Empire
 k: null
 Text: 'Germany'
 End Reference: German Empire
 Text: ' (1914–1933)'
-List Item
+List Item: 1
 Text: ' United States (1940–1955)'
 End List
 End Template: Plainlist
@@ -150,33 +150,33 @@ Text: ' ('
 Begin Reference: Bern
 End Reference: Bern
 Text: ')'
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: University of Zurich
 End Reference: University of Zurich
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Charles University in Prague
 End Reference: Charles University in Prague
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: ETH Zurich
 End Reference: ETH Zurich
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Prussian Academy of Sciences
 End Reference: Prussian Academy of Sciences
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Kaiser Wilhelm Institute
 End Reference: Kaiser Wilhelm Institute
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Leiden University
 k: null
 Text: 'University of Leiden'
 End Reference: Leiden University
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Institute for Advanced Study
 End Reference: Institute for Advanced Study
@@ -189,7 +189,7 @@ Begin Template: Plainlist
 Begin List
 Begin Reference: ETH Zurich
 End Reference: ETH Zurich
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: University of Zurich
 End Reference: University of Zurich
@@ -212,15 +212,15 @@ Begin Template: Plainlist
 Begin List
 Begin Reference: Ernst G. Straus
 End Reference: Ernst G. Straus
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Nathan Rosen
 End Reference: Nathan Rosen
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Leo Szilard
 End Reference: Leo Szilard
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Raziuddin Siddiqui
 End Reference: Raziuddin Siddiqui
@@ -255,35 +255,35 @@ End Reference: General relativity
 Text: ' and '
 Begin Reference: special relativity
 End Reference: special relativity
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Photoelectric effect
 End Reference: Photoelectric effect
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Mass-energy equivalence
 End Reference: Mass-energy equivalence
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Brownian motion
 k: null
 Text: 'Theory of Brownian Motion'
 End Reference: Brownian motion
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Einstein field equations
 End Reference: Einstein field equations
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Bose–Einstein statistics
 End Reference: Bose–Einstein statistics
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Classical unified field theories
 k: null
 Text: 'Unified Field Theory'
 End Reference: Classical unified field theories
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: EPR paradox
 End Reference: EPR paradox
@@ -297,22 +297,22 @@ Begin List
 Begin Reference: Nobel Prize in Physics
 End Reference: Nobel Prize in Physics
 Text: ' (1921)'
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Matteucci Medal
 End Reference: Matteucci Medal
 Text: ' (1921)'
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Copley Medal
 End Reference: Copley Medal
 Text: ' (1925)'
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Max Planck Medal
 End Reference: Max Planck Medal
 Text: ' (1929)'
-List Item
+List Item: 1
 Text: ' '
 Begin Reference: Time 100: The Most Important People of the Century
 k: null
@@ -1742,7 +1742,7 @@ Text: '
 
 '
 Section [2] World War II and the Manhattan Project
-Text: '=
+Text: '
 In 1939, a group of Hungarian scientists that included emigre physicist '
 Begin Reference: Leó Szilárd
 End Reference: Leó Szilárd
@@ -1834,7 +1834,7 @@ Text: '
 
 '
 Section [2] U.S. citizenship
-Text: '=
+Text: '
 '
 Begin Reference: File:Citizen-Einstein.jpg
 k: null
@@ -3451,7 +3451,7 @@ Text: ' and others, Einstein also had some one-shot collaborations with various 
 
 '
 Section [2] Einstein–de Haas experiment
-Text: '=
+Text: '
 '
 Begin Template: Main
 k: null
@@ -3465,7 +3465,7 @@ Text: '. They confirmed that this leads the bar to rotate, because the electron'
 
 '
 Section [2] Schrödinger gas model
-Text: '=
+Text: '
 Einstein suggested to Erwin Schrödinger that he might be able to reproduce the statistics of a '
 Begin Reference: Bose–Einstein condensate
 k: null
@@ -3512,7 +3512,7 @@ Text: '
 
 '
 Section [2] Einstein refrigerator
-Text: '=
+Text: '
 '
 Begin Template: Main
 k: null
@@ -3898,7 +3898,10 @@ k: colwidth
 Text: '30em'
 End Template: refbegin
 Text: '
-* '
+'
+Begin List
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -3932,8 +3935,8 @@ k: issue
 Text: '3 '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -3970,12 +3973,9 @@ k: issue
 Text: '6 '
 End Template: Citation
 
-Text: ' This annus mirabilis paper on the photoelectric effect was received by '
-ItalicBold: 2
-Text: 'Annalen der Physik'
-ItalicBold: 2
-Text: ' 18 March.
-* '
+Text: ' This annus mirabilis paper on the photoelectric effect was received by ''Annalen der Physik'' 18 March.'
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -3990,8 +3990,9 @@ Text: 'A new determination of molecular dimensions
 '
 End Template: Citation
 
-Text: '. This PhD thesis was completed 30 April and submitted 20 July.
-* '
+Text: '. This PhD thesis was completed 30 April and submitted 20 July.'
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4024,8 +4025,9 @@ k: issue
 Text: '8 '
 End Template: Citation
 
-Text: '. This annus mirabilis paper on Brownian motion was received 11 May.
-* '
+Text: '. This annus mirabilis paper on Brownian motion was received 11 May.'
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4058,8 +4060,9 @@ k: issue
 Text: '10 '
 End Template: Citation
 
-Text: '. This annus mirabilis paper on special relativity was received 30 June.
-* '
+Text: '. This annus mirabilis paper on special relativity was received 30 June.'
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4089,8 +4092,9 @@ k: issue
 Text: '13 '
 End Template: Citation
 
-Text: '. This annus mirabilis paper on mass-energy equivalence was received 27 September.
-* '
+Text: '. This annus mirabilis paper on mass-energy equivalence was received 27 September.'
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4113,8 +4117,8 @@ Text: '1915
 '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4134,8 +4138,8 @@ Text: '1917a
 '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4163,8 +4167,8 @@ k: bibcode
 Text: '1917PhyZ...18..121E '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4196,8 +4200,8 @@ Text: '25 March 2007
 '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4220,8 +4224,9 @@ Text: '1924
 '
 End Template: Citation
 
-Text: '. First of a series of papers on this topic.
-* '
+Text: '. First of a series of papers on this topic.'
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4261,8 +4266,9 @@ End Reference: Baer's law
 Text: ' and '
 Begin Reference: meander
 End Reference: meander
-Text: 's in the courses of rivers.
-* '
+Text: 's in the courses of rivers.'
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4317,8 +4323,8 @@ k: bibcode
 Text: '1935PhRv...47..777E '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4361,8 +4367,8 @@ k: issue
 Text: '3706 '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4394,8 +4400,8 @@ Text: 'Melville, NY
 '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4421,8 +4427,8 @@ Text: '16 January 2006
 '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4451,8 +4457,8 @@ Text: '1950
 '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4478,8 +4484,8 @@ Text: '0-517-00393-7
 '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4508,8 +4514,8 @@ Text: '388682005X
 '
 End Template: Citation
 
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Template: Citation
 
 k: last 
@@ -4541,12 +4547,9 @@ Text: 'Paul Arthur Schilpp
 '
 End Template: Citation
 
-Text: '. The '
-ItalicBold: 2
-Text: 'chasing a light beam'
-ItalicBold: 2
-Text: ' thought experiment is described on pages 48–51.
-* Collected Papers: '
+Text: '. The ''chasing a light beam'' thought experiment is described on pages 48–51.'
+List Item: 1
+Text: ' Collected Papers: '
 Begin Template: Citation
 
 k: author
@@ -4585,8 +4588,7 @@ Begin Link: http://press.princeton.edu/einstein/
 k: null
 Text: 'Einstein Page'
 End Link: http://press.princeton.edu/einstein/
-Text: '
-'
+End List
 Begin Template: refend
 End Template: refend
 Text: '
@@ -4614,57 +4616,59 @@ k: colwidth
 Text: '20em'
 End Template: div col
 Text: '
-* '
-ItalicBold: 2
+'
+Begin List
+List Item: 1
+Text: ' '''
 Begin Reference: The Einstein Theory of Relativity
 End Reference: The Einstein Theory of Relativity
-ItalicBold: 2
-Text: ' (educational film about the theory of relativity)
-* '
+Text: ''' (educational film about the theory of relativity)'
+List Item: 1
+Text: ' '
 Begin Reference: German inventors and discoverers
 End Reference: German inventors and discoverers
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: Heinrich Burkhardt
 End Reference: Heinrich Burkhardt
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: Hermann Einstein
 End Reference: Hermann Einstein
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: Historical Museum of Bern
 End Reference: Historical Museum of Bern
-Text: ' (Einstein museum)
-* '
+Text: ' (Einstein museum)'
+List Item: 1
+Text: ' '
 Begin Reference: History of gravitational theory
 End Reference: History of gravitational theory
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: Introduction to special relativity
 End Reference: Introduction to special relativity
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: List of coupled cousins
 End Reference: List of coupled cousins
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: Relativity priority dispute
 End Reference: Relativity priority dispute
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: Sticky bead argument
 End Reference: Sticky bead argument
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: Summation convention
 End Reference: Summation convention
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: List of Jewish Nobel laureates
 End Reference: List of Jewish Nobel laureates
-Text: '
-'
+End List
 Begin Template: div col end
 End Template: div col end
 Text: '
@@ -4696,12 +4700,12 @@ Text: '
 Begin Template: refbegin
 End Template: refbegin
 Text: '
-* Fölsing, Albrecht (1997): '
-ItalicBold: 2
-Text: 'Albert Einstein: A Biography'
-ItalicBold: 2
-Text: '. New York: Penguin Viking. (Translated and abridged from the German by Ewald Osers.)
-* '
+'
+Begin List
+List Item: 1
+Text: ' Fölsing, Albrecht (1997): ''Albert Einstein: A Biography''. New York: Penguin Viking. (Translated and abridged from the German by Ewald Osers.)'
+List Item: 1
+Text: ' '
 Begin Template: cite book 
 k: last1
 Text: 'Highfield '
@@ -4724,71 +4728,47 @@ Text: '978-0571167449 '
 k: ref
 Text: 'harv'
 End Template: cite book 
-Text: '
-* Hoffmann, Banesh, with the collaboration of Helen Dukas (1972): '
-ItalicBold: 2
-Text: 'Albert Einstein: Creator and Rebel'
-ItalicBold: 2
-Text: '. London: Hart-Davis, MacGibbon Ltd.
-* Isaacson, Walter (2007): '
-ItalicBold: 2
-Text: 'Einstein: His Life and Universe'
-ItalicBold: 2
-Text: '. Simon & Schuster Paperbacks, New York. ISBN 9780743264730
-* Moring, Gary (2004): '
-ItalicBold: 2
+List Item: 1
+Text: ' Hoffmann, Banesh, with the collaboration of Helen Dukas (1972): ''Albert Einstein: Creator and Rebel''. London: Hart-Davis, MacGibbon Ltd.'
+List Item: 1
+Text: ' Isaacson, Walter (2007): ''Einstein: His Life and Universe''. Simon & Schuster Paperbacks, New York. ISBN 9780743264730'
+List Item: 1
+Text: ' Moring, Gary (2004): '''
 Begin Link: http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover
 k: null
 Text: 'The complete idiot's guide to understanding Einstein'
 End Link: http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover
-ItalicBold: 2
-Text: ' ( 1st ed. 2000). Indianapolis IN: Alpha books (Macmillan USA). ISBN 0028631803
-* '
+Text: ''' ( 1st ed. 2000). Indianapolis IN: Alpha books (Macmillan USA). ISBN 0028631803'
+List Item: 1
+Text: ' '
 Begin Reference: Abraham Pais
 k: null
 Text: 'Pais, Abraham'
 End Reference: Abraham Pais
-Text: ' (1982): '
-ItalicBold: 2
-Text: 'Subtle is the Lord: The science and the life of Albert Einstein'
-ItalicBold: 2
-Text: '. Oxford University Press. The definitive biography to date.
-* Pais, Abraham (1994): '
-ItalicBold: 2
-Text: 'Einstein Lived Here'
-ItalicBold: 2
-Text: '. Oxford University Press.
-* Parker, Barry (2000): '
-ItalicBold: 2
-Text: 'Einstein's Brainchild'
-ItalicBold: 2
-Text: '. Prometheus Books. A review of Einstein's career and accomplishments, written for the lay public.
-* Schweber, Sylvan S. (2008): '
-ItalicBold: 2
-Text: 'Einstein and '
+Text: ' (1982): ''Subtle is the Lord: The science and the life of Albert Einstein''. Oxford University Press. The definitive biography to date.'
+List Item: 1
+Text: ' Pais, Abraham (1994): ''Einstein Lived Here''. Oxford University Press.'
+List Item: 1
+Text: ' Parker, Barry (2000): ''Einstein's Brainchild''. Prometheus Books. A review of Einstein's career and accomplishments, written for the lay public.'
+List Item: 1
+Text: ' Schweber, Sylvan S. (2008): ''Einstein and '
 Begin Reference: J. Robert Oppenheimer
 k: null
 Text: 'Oppenheimer'
 End Reference: J. Robert Oppenheimer
-Text: ': The Meaning of Genius'
-ItalicBold: 2
-Text: '. Harvard University Press. ISBN 978-0674028289.
-* '
+Text: ': The Meaning of Genius''. Harvard University Press. ISBN 978-0674028289.'
+List Item: 1
+Text: ' '
 Begin Reference: J. Robert Oppenheimer
 k: null
 Text: 'Oppenheimer'
 End Reference: J. Robert Oppenheimer
-Text: ', J.R. (1971): "On Albert Einstein," p.&nbsp;8–12 in '
-ItalicBold: 2
-Text: 'Science and synthesis: an international colloquium organized by Unesco on the tenth anniversary of the death of Albert Einstein and Teilhard de Chardin'
-ItalicBold: 2
-Text: ', Springer-Verlag, 1971, 208 pp. (Lecture delivered at the UNESCO House in Paris on 13 December 1965.) Also published in The New York Review of Books, 17 March 1966, '
+Text: ', J.R. (1971): "On Albert Einstein," p.&nbsp;8–12 in ''Science and synthesis: an international colloquium organized by Unesco on the tenth anniversary of the death of Albert Einstein and Teilhard de Chardin'', Springer-Verlag, 1971, 208 pp. (Lecture delivered at the UNESCO House in Paris on 13 December 1965.) Also published in The New York Review of Books, 17 March 1966, '
 Begin Link: http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false
 k: null
 Text: 'On Albert Einstein by Robert Oppenheimer'
 End Link: http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false
-Text: '
-'
+End List
 Begin Template: refend
 End Template: refend
 Text: '
@@ -4804,19 +4784,23 @@ k: s
 Text: 'Author:Albert Einstein'
 End Template: Sister project links
 Text: '
-* '
+'
+Begin List
+List Item: 1
+Text: ' '
 Begin Link: http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en
 k: null
 Text: 'Einstein's Scholar Google profile'
 End Link: http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Reference: wikilivres:Albert Einstein
 k: null
 Text: 'Works by Albert Einstein'
 End Reference: wikilivres:Albert Einstein
-Text: ' (public domain in Canada)
-* '
+Text: ' (public domain in Canada)'
+List Item: 1
+Text: ' '
 Begin Template: Citation
 k: year
 Text: '1997 '
@@ -4831,74 +4815,72 @@ Text: 'http://www-history.mcs.st-andrews.ac.uk/Biographies/Einstein.html '
 k: accessdate 
 Text: '14 June 2009'
 End Template: Citation
-Text: '
-* '
-ItalicBold: 2
+List Item: 1
+Text: ' '''
 Begin Link: http://www.monthlyreview.org/598einstein.php
 k: null
 Text: 'Why Socialism?'
 End Link: http://www.monthlyreview.org/598einstein.php
-ItalicBold: 2
-Text: ' by Albert Einstein, '
-ItalicBold: 2
+Text: ''' by Albert Einstein, '''
 Begin Reference: Monthly Review
 End Reference: Monthly Review
-ItalicBold: 2
-Text: ', May 1949
-*'
+Text: ''', May 1949'
+List Item: 1
 Begin Link: http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren
 k: null
 Text: 'Einstein's Personal Correspondence: Religion, Politics, The Holocaust, and Philosophy'
 End Link: http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren
-Text: ' Shapell Manuscript Foundation
-* '
+Text: ' Shapell Manuscript Foundation'
+List Item: 1
+Text: ' '
 Begin Link: http://vault.fbi.gov/Albert%20Einstein
 k: null
 Text: 'FBI file on Albert Einstein'
 End Link: http://vault.fbi.gov/Albert%20Einstein
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Link: http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html
 k: null
 Text: 'Nobelprize.org Biography:Albert Einstein'
 End Link: http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Link: http://www.life.com/image/first/in-gallery/41492/the-einstein-you-never-knew
 k: null
 Text: 'The Einstein You Never Knew'
 End Link: http://www.life.com/image/first/in-gallery/41492/the-einstein-you-never-knew
-Text: '&nbsp;— slideshow by '
-ItalicBold: 2
+Text: '&nbsp;— slideshow by '''
 Begin Reference: Life magazine
 End Reference: Life magazine
-ItalicBold: 2
-Text: '
-* '
+Text: ''''
+List Item: 1
+Text: ' '
 Begin Link: http://www.history.com/topics/albert-einstein
 k: null
 Text: 'Albert Einstein'
 End Link: http://www.history.com/topics/albert-einstein
-Text: '&nbsp;— videos
-* '
+Text: '&nbsp;— videos'
+List Item: 1
+Text: ' '
 Begin Link: http://www.pbs.org/wgbh/aso/databank/entries/bpeins.html
 k: null
 Text: 'Science Odyssey People And Discoveries'
 End Link: http://www.pbs.org/wgbh/aso/databank/entries/bpeins.html
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Link: http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstein-oppenheimer-feynman-physics-in-the-20th-century-spring-2006/
 k: null
 Text: 'MIT OpenCourseWare STS.042J/8.225J: Einstein, Oppenheimer, Feynman: Physics in the 20th century'
 End Link: http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstein-oppenheimer-feynman-physics-in-the-20th-century-spring-2006/
-Text: '&nbsp;— free study course that explores the changing roles of physics and physicists during the 20th century
-* '
+Text: '&nbsp;— free study course that explores the changing roles of physics and physicists during the 20th century'
+List Item: 1
+Text: ' '
 Begin Template: GoogleScholar
 k: null
 Text: 'qc6CJjYAAAAJ'
 End Template: GoogleScholar
-Text: '
-* '
+List Item: 1
+Text: ' '
 Begin Link: http://www.alberteinstein.info
 k: null
 Text: 'Albert Einstein Archives Online (80,000+ Documents)'
@@ -4908,8 +4890,9 @@ Begin Link: http://www.msnbc.msn.com/id/46785542/ns/technology_and_science-scien
 k: null
 Text: 'MSNBC - 03/19/2012'
 End Link: http://www.msnbc.msn.com/id/46785542/ns/technology_and_science-science/
-Text: ')
-
+Text: ')'
+End List
+Text: '
 '
 Begin Template: Copley Medallists 1901-1950
 End Template: Copley Medallists 1901-1950

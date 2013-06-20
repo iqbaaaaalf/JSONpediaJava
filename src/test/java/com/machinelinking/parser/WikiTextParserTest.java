@@ -30,6 +30,72 @@ public class WikiTextParserTest {
     }
 
     @Test
+    public void testUnorderedList() throws IOException, WikiTextParserException {
+        parse(
+                "This is a list:\n" +
+                "* Unordered list are easy to do:\n" +
+                "** Start every line with a star.\n" +
+                "*** More stars indicate a deeper level.\n" +
+                "* Previous item continues.\n" +
+                "*** [http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en Einstein's Scholar Google profile]\n" +
+                "** A newline\n" +
+                "* in a list\n" +
+                "This closes the list\n",
+
+                "Begin Document\n" +
+                "Text: 'This is a list:\n" +
+                "'\n" +
+                "Begin List\n" +
+                "List Item: 1\n" +
+                "Text: ' Unordered list are easy to do:'\n" +
+                "List Item: 2\n" +
+                "Text: ' Start every line with a star.'\n" +
+                "List Item: 3\n" +
+                "Text: ' More stars indicate a deeper level.'\n" +
+                "List Item: 1\n" +
+                "Text: ' Previous item continues.'\n" +
+                "List Item: 3\n" +
+                "Text: ' '\n" +
+                "Begin Link: http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en\n" +
+                "k: null\n" +
+                "Text: 'Einstein's Scholar Google profile'\n" +
+                "End Link: http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en\n" +
+                "List Item: 2\n" +
+                "Text: ' A newline'\n" +
+                "List Item: 1\n" +
+                "Text: ' in a list'\n" +
+                "End List\n" +
+                "Text: 'This closes the list\n" +
+                "'\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
+    public void testReadSection() throws IOException, WikiTextParserException {
+        parse(
+                "\n" +
+                "==This is a Section==\n" +
+                "Section content\n" +
+                "===This is another Section===\n" +
+                "Other section content\n",
+
+                "Begin Document\n" +
+                "Text: '\n" +
+                "'\n" +
+                "Section [0] This is a Section\n" +
+                "Text: '\n" +
+                "Section content\n" +
+                "'\n" +
+                "Section [1] This is another Section\n" +
+                "Text: '\n" +
+                "Other section content\n" +
+                "'\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
     public void testParseReference() throws IOException, WikiTextParserException {
         parse(
                 "this is an internal link: [[Princeton, New Jersey|Princeton]] ending here.",
@@ -461,14 +527,14 @@ public class WikiTextParserTest {
                 "Begin Template: Plainlist\n" +
                 "Begin List\n" +
                 "Text: 'Germany'\n" +
-                "List Item\n" +
+                "List Item: 1\n" +
                 "Text: ' '\n" +
                 "Begin Reference: Kingdom of Württemberg\n" +
                 "k: null\n" +
                 "Text: 'Württemberg/Germany'\n" +
                 "End Reference: Kingdom of Württemberg\n" +
                 "Text: ' (1879–1896)'\n" +
-                "List Item\n" +
+                "List Item: 1\n" +
                 "Text: ' '\n" +
                 "Begin Reference: Statelessness\n" +
                 "k: null\n" +
