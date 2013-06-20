@@ -19,6 +19,32 @@ public class WikiTextParser implements ParserReader {
     protected static final String NOWIKI_NODE = "nowiki";
     protected static final String[] UNPARSED_NODES = new String[] {MATH_NODE, NOWIKI_NODE};
 
+    private enum InternalListType {
+        Unordered {
+            @Override
+            char getTrailingChar() {
+                return '*';
+            }
+            @Override
+            WikiTextParserHandler.ListType getType() {
+                return WikiTextParserHandler.ListType.Unordered;
+            }
+        },
+        Numbered {
+            @Override
+            char getTrailingChar() {
+                return '#';
+            }
+            @Override
+            WikiTextParserHandler.ListType getType() {
+                return WikiTextParserHandler.ListType.Numbered;
+            }
+        };
+
+        abstract char getTrailingChar();
+        abstract WikiTextParserHandler.ListType getType();
+    }
+
     private static final String[] TEMPLATE_CLOSURE = new String[]{"}}", "|"};
 
     private static final String[] TEMPLATE_LIST_DELIMITER = new String[]{"\n", "}}", "|"};
@@ -86,7 +112,10 @@ public class WikiTextParser implements ParserReader {
                     reset(); read(); mark(); // TODO improve it.
                 } else if(col == 2 && '*' == couple.charAt(0)) {
                     reset();
-                    readList();
+                    readList(InternalListType.Unordered);
+                } else if(col == 2 && '#' == couple.charAt(0)) {
+                    reset();
+                    readList(InternalListType.Numbered);
                 }
             }
         } catch (EOFException eofe) {
@@ -214,7 +243,14 @@ public class WikiTextParser implements ParserReader {
                 } else if(breakAtCR && c == '\n') {
                     mark();
                     break;
-                } else if (c != '{' && c != '[' && c != '<' && (c != '=' || col > 3) && (c != '*' || col > 1)) {
+                } else if (
+                        c != '{' &&
+                        c != '[' &&
+                        c != '<' &&
+                        (c != '=' || col > 3) &&
+                        (c != '*' || col > 1) &&
+                        (c != '#' || col > 1)
+                ) {
                     mark();
                     externalCharsSB.append(c);
                 } else {
@@ -396,7 +432,7 @@ public class WikiTextParser implements ParserReader {
                 c = read();
                 if(c == '*') {
                     mark();
-                    handler.listItem(1); // TODO: no more levels inside template?
+                    handler.listItem(WikiTextParserHandler.ListType.Unordered, 1); // TODO: no more levels inside template?
                 } else {
                    reset();
                 }
@@ -580,14 +616,14 @@ public class WikiTextParser implements ParserReader {
         handler.section(sectionSB.toString(), sectionLevel);
     }
 
-    private void readList() throws IOException {
+    private void readList(InternalListType type) throws IOException {
         handler.beginList();
         try {
             while (true) {
-                int level = readSequence('*');
+                int level = readSequence(type.getTrailingChar());
                 if(level == 0) break;
-                handler.listItem(level);
-                readPropertyValue( new String[]{"\n"}, false, false);
+                handler.listItem(type.getType(), level);
+                readPropertyValue(new String[]{"\n"}, false, false);
                 mark();
             }
         } finally {

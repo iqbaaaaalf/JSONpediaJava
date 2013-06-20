@@ -100,7 +100,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void listItem(int level) {
+    public void listItem(ListType t, int level) {
         if( peekElement().getClass().equals(ListItem.class) ) {
             serializer.closeList();
             serializer.closeObject();
@@ -111,6 +111,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.openObject();
         serializer.fieldValue("__type", "list_item");
         serializer.fieldValue("level", level);
+        serializer.fieldValue("item_type", t.name());
         serializer.field("content");
         serializer.openList();
     }

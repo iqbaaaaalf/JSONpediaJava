@@ -85,9 +85,9 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void listItem(int level) {
+    public void listItem(ListType t, int level) {
         for(WikiTextParserHandler handler : handlers) {
-            handler.listItem(level);
+            handler.listItem(t, level);
         }
     }
 

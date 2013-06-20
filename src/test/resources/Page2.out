@@ -74,7 +74,7 @@ Begin List
 Text: 'Inventing the '
 Begin Reference: World Wide Web
 End Reference: World Wide Web
-List Item: 1
+List Item: Unordered 1
 Text: ' Holder of the 3Com Founders Chair at '
 Begin Reference: MIT
 End Reference: MIT
@@ -93,7 +93,7 @@ Begin Template: Plainlist
 Begin List
 Begin Reference: World Wide Web Consortium
 End Reference: World Wide Web Consortium
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: University of Southampton
 End Reference: University of Southampton
@@ -119,7 +119,7 @@ Begin Template: Plainlist
 Begin List
 Begin Reference: Conway Berners-Lee
 End Reference: Conway Berners-Lee
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Mary Lee Woods
 End Reference: Mary Lee Woods
@@ -891,7 +891,7 @@ End Reference: Image:First Web Server.jpg
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Text: 'In 1994 he became one of only six members of the '
 Begin Reference: World Wide Web Hall of Fame
 End Reference: World Wide Web Hall of Fame
@@ -907,10 +907,10 @@ Begin Reference: Best of the Web Directory
 End Reference: Best of the Web Directory
 End Template: cite web
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'In 1995 he won the Kilby Foundation's "Young Innovator of the Year" Award.'
 Inline Tag: ref attributes: [name : 'W3Bio']
-List Item: 1
+List Item: Unordered 1
 Text: 'In 1995 he received also the '
 Begin Reference: Software System Award
 End Reference: Software System Award
@@ -944,7 +944,7 @@ End Template: Start date
 Text: ' '
 End Template: cite web 
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'In 1998 he was awarded with an honorary doctorate from the '
 Begin Reference: University of Essex
 End Reference: University of Essex
@@ -959,7 +959,7 @@ k: accessdate
 Text: 'December 15, 2011'
 End Template: cite web
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'In 1999, '''
 Begin Reference: Time Magazine
 End Reference: Time Magazine
@@ -995,7 +995,7 @@ Text: '29 March 1999'
 End Template: cite news
 
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'In March 2000 he was awarded an honorary degree from '
 Begin Reference: The Open University
 End Reference: The Open University
@@ -1016,7 +1016,7 @@ k: accessdate
 Text: '22 September 2010'
 End Template: cite news
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'In 2001, he was elected a Fellow of the '
 Begin Reference: American Academy of Arts and Sciences
 End Reference: American Academy of Arts and Sciences
@@ -1033,7 +1033,7 @@ k: accessdate
 Text: '24 June 2011'
 End Template: cite web
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'In 2003, he received the '
 Begin Reference: Computer History Museum
 End Reference: Computer History Museum
@@ -1052,7 +1052,7 @@ k: accessdate
 Text: '15 August 2010'
 End Template: cite web
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'On 15 April 2004, he was named as the first recipient of Finland's '
 Begin Reference: Millennium Technology Prize
 End Reference: Millennium Technology Prize
@@ -1088,7 +1088,7 @@ Text: '25 May 2008 '
 End Template: cite web
   
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'He was appointed to the rank of '
 Begin Reference: Order of the British Empire
 k: null
@@ -1140,7 +1140,7 @@ Text: '25 May 2008 '
 End Template: cite news
   
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'On 21 July 2004, he was presented with an honorary '
 Begin Reference: Doctor of Science
 End Reference: Doctor of Science
@@ -1167,7 +1167,7 @@ Text: '25 May 2008 '
 End Template: cite web
   
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'On 27 January 2005, he was named Greatest Briton of 2004, both for his achievements and for displaying the key British characteristics of "diffidence, determination, a sharp sense of humour and adaptability", as put by '
 Begin Reference: David Hempleman-Adams
 End Reference: David Hempleman-Adams
@@ -1196,14 +1196,14 @@ Text: '25 May 2008
 End Template: cite news
   
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'In 2007, Berners-Lee received the '
 Begin Reference: Academy of Achievement
 k: null
 Text: 'Academy of Achievement's Golden Plate Award'
 End Reference: Academy of Achievement
 Text: '.'
-List Item: 1
+List Item: Unordered 1
 Text: 'In 2007, he was ranked Joint First, alongside '
 Begin Reference: Albert Hofmann
 End Reference: Albert Hofmann
@@ -1229,7 +1229,7 @@ k: accessdate
 Text: '2011-12-21'
 End Template: cite news
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'On 13 June 2007, he received the '
 Begin Reference: Order of Merit
 End Reference: Order of Merit
@@ -1249,7 +1249,7 @@ Text: '13 June 2007'
 End Template: cite news
 Close Tag: ref
 Text: ' (The Order of Merit is within the personal bestowal of The Queen, and does not require recommendation by ministers or the Prime Minister)'
-List Item: 1
+List Item: Unordered 1
 Text: 'He was awarded the 2008 '
 Begin Reference: IEEE/RSE Wolfson James Clerk Maxwell Award
 End Reference: IEEE/RSE Wolfson James Clerk Maxwell Award
@@ -1276,7 +1276,7 @@ End Template: Start date
 Text: ' '
 End Template: cite web
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'On 2 December 2008, Berners-Lee was awarded an honorary doctorate from the '
 Begin Reference: University of Manchester
 End Reference: University of Manchester
@@ -1298,7 +1298,7 @@ k: accessdate
 Text: '10 October 2011'
 End Template: Cite news 
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'On 21 April 2009, he was awarded an honorary doctorate by the '
 Begin Reference: Universidad Politécnica de Madrid
 End Reference: Universidad Politécnica de Madrid
@@ -1313,12 +1313,12 @@ k: accessdate
 Text: '15 August 2010'
 End Template: cite web
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'On 28 April 2009, he was elected member of the '
 Begin Reference: United States National Academy of Sciences
 End Reference: United States National Academy of Sciences
 Text: '.'
-List Item: 1
+List Item: Unordered 1
 Text: 'On 8 June 2009, he received the '
 Begin Reference: Webby Award
 End Reference: Webby Award
@@ -1330,7 +1330,7 @@ Text: 'Press Release: Sir Tim Berners Lee, Inventor of the World Wide Web, to re
 End Link: http://www.webbyawards.com/press/press-release.php?id=187
 Text: ' ''Webby Awards.com'' Retrieved 21 January 2011'
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'In October 2009, he was awarded an honorary doctorate by the '
 Begin Reference: Vrije Universiteit Amsterdam
 End Reference: Vrije Universiteit Amsterdam
@@ -1381,7 +1381,7 @@ Text: '22 July 2008
 '
 End Template: cite web
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'On 30 March 2011, he was one of the first three recipients of the '
 Begin Reference: Mikhail Gorbachev
 End Reference: Mikhail Gorbachev
@@ -1392,7 +1392,7 @@ Text: ' for solar power development and anti-poverty work in Africa, and media m
 Begin Reference: Ted Turner
 End Reference: Ted Turner
 Text: '.'
-List Item: 1
+List Item: Unordered 1
 Text: 'On 26 May 2011, Berners-Lee was awarded with an honorary '
 Begin Reference: Doctor of Science
 End Reference: Doctor of Science
@@ -1407,7 +1407,7 @@ Text: 'Harvard awards 9 honorary degrees'
 End Link: http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee
 Text: ' ''news.harvard.edu'' Retrieved 11 June 2011'
 Close Tag: ref
-List Item: 1
+List Item: Unordered 1
 Text: 'In 2011, he was inducted into '
 Begin Reference: IEEE Intelligent Systems
 End Reference: IEEE Intelligent Systems
@@ -1520,45 +1520,45 @@ Section [0]  See also
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Eelco van Asperen
 End Reference: Eelco van Asperen
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: History of the World Wide Web
 End Reference: History of the World Wide Web
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Kevin Hughes (www)
 End Reference: Kevin Hughes (www)
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: libwww
 End Reference: libwww
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Mundaneum
 End Reference: Mundaneum
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Network neutrality
 End Reference: Network neutrality
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Paul Otlet
 End Reference: Paul Otlet
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Semantic Web
 End Reference: Semantic Web
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Robert Taylor (computer scientist)
 k: null
 Text: 'Bob Taylor'
 End Reference: Robert Taylor (computer scientist)
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Vannevar Bush
 End Reference: Vannevar Bush
@@ -1569,7 +1569,7 @@ Section [0] Publications
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: cite book
  
@@ -1601,25 +1601,25 @@ Text: '0-7528-2090-7
 '
 End Template: cite book
  
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: cite doi
 k: null
 Text: '10.1038/scientificamerican1210-80'
 End Template: cite doi
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: cite pmid
 k: null
 Text: '21141362'
 End Template: cite pmid
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: cite pmid
 k: null
 Text: '18847088'
 End Template: cite pmid
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: cite pmid
 k: null
@@ -1642,21 +1642,21 @@ Section [0]  Further reading
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Text: ' ''Tim Berners-Lee and the Development of the World Wide Web (Unlocking the Secrets of Science)'', Ann Gaines (Mitchell Lane Publishers, 2001) ISBN 1-58415-096-3'
-List Item: 1
+List Item: Unordered 1
 Text: ' ''Tim Berners-Lee: Inventor of the World Wide Web (Ferguson's Career Biographies)'', Melissa Stewart (Ferguson Publishing Company, 2001) ISBN 0-89434-367-X children's biography'
-List Item: 1
+List Item: Unordered 1
 Text: ' ''Weaving the Web'' Berners-Lee, Tim, with Fischetti, Mark (Harper Collins Publishers,1999) ISBN 0-06-251586-1(cloth) ISBN 0-06-251587-X(paper)'
-List Item: 1
+List Item: Unordered 1
 Text: ' ''How the Web was Born: The Story of the World Wide Web'' Robert Cailliau, James Gillies, R. Cailliau (Oxford University Press, 2000) ISBN 0-19-286207-3'
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://computemagazine.com/man-who-invented-world-wide-web-gives-new-definition/
 k: null
 Text: 'Tim Berners-Lee Gives the Web a New Definition'
 End Link: http://computemagazine.com/man-who-invented-world-wide-web-gives-new-definition/
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://news.bbc.co.uk/2/hi/technology/4132752.stm
 k: null
@@ -1664,7 +1664,7 @@ Text: 'BBC2 Newsnight &ndash; Transcript of video interview of Berners-Lee on th
 End Link: http://news.bbc.co.uk/2/hi/technology/4132752.stm
 Text: ' '
 Comment Tag: {{Dead link|url=http://web.archive.org/web/20080202115128/http://www.kayotix.com/tmp/newsfeeds/10.08.05/timbernerslee/|date=September 2008}} 
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://www.technologyreview.com/Infotech/13784/
 k: null
@@ -1686,12 +1686,12 @@ Text: '
 
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Begin Template: Twitter
 k: null
 Text: 'timberners_lee'
 End Template: Twitter
-List Item: 1
+List Item: Unordered 1
 Begin Link: http://identi.ca/timbl
 k: null
 Text: 'timbl'
@@ -1699,34 +1699,34 @@ End Link: http://identi.ca/timbl
 Text: ' on '
 Begin Reference: identi.ca
 End Reference: identi.ca
-List Item: 1
+List Item: Unordered 1
 Begin Template: TED
 k: null
 Text: 'speakers/tim_berners_lee.html'
 End Template: TED
-List Item: 1
+List Item: Unordered 1
 Begin Template: IMDb name
 k: null
 Text: '3805083'
 End Template: IMDb name
-List Item: 1
+List Item: Unordered 1
 Begin Template: Nndb
 k: null
 Text: '573/000023504'
 End Template: Nndb
-List Item: 1
+List Item: Unordered 1
 Begin Template: Worldcat id
 k: null
 Text: 'lccn-no99-10609'
 End Template: Worldcat id
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://www.w3.org/People/Berners-Lee/
 k: null
 Text: 'Tim Berners-Lee'
 End Link: http://www.w3.org/People/Berners-Lee/
 Text: ' on the W3C site'
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html
 k: null

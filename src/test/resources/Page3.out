@@ -940,9 +940,9 @@ Comment Tag:  Aerosol radiative forcing.
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Text: ' ''Aerosol direct effect.'' Aerosols directly scatter and absorb radiation. The scattering of radiation causes atmospheric cooling, whereas absorption can cause atmospheric warming.'
-List Item: 1
+List Item: Unordered 1
 Text: ' ''Aerosol indirect effect.'' Aerosols modify the properties of clouds through a subset of the aerosol population called '
 Begin Reference: cloud condensation nuclei
 End Reference: cloud condensation nuclei
@@ -1008,23 +1008,23 @@ End Template: div col
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Global dimming
 End Reference: Global dimming
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Irradiance
 End Reference: Irradiance
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Polar see-saw
 End Reference: Polar see-saw
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Solar radiation management
 End Reference: Solar radiation management
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Reference: Daisyworld
 End Reference: Daisyworld
@@ -1329,32 +1329,32 @@ End Template: wiktionary
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Begin Link: http://www.albedo-project.org/
 k: null
 Text: 'Official Website of Albedo Project'
 End Link: http://www.albedo-project.org/
-List Item: 1
+List Item: Unordered 1
 Begin Link: http://www-c4.ucsd.edu/gap/
 k: null
 Text: 'Global Albedo Project (Center for Clouds, Chemistry, and Climate)'
 End Link: http://www-c4.ucsd.edu/gap/
-List Item: 1
+List Item: Unordered 1
 Begin Link: http://www.eoearth.org/article/Albedo
 k: null
 Text: 'Albedo - Encyclopedia of Earth'
 End Link: http://www.eoearth.org/article/Albedo
-List Item: 1
+List Item: Unordered 1
 Begin Link: http://www-modis.bu.edu/brdf/product.html
 k: null
 Text: 'NASA MODIS BRDF/albedo product site'
 End Link: http://www-modis.bu.edu/brdf/product.html
-List Item: 1
+List Item: Unordered 1
 Begin Link: http://www.eumetsat.int/Home/Main/Access_to_Data/Meteosat_Meteorological_Products/Product_List/SP_1125489019643?l=en
 k: null
 Text: 'Surface albedo derived from Meteosat observations'
 End Link: http://www.eumetsat.int/Home/Main/Access_to_Data/Meteosat_Meteorological_Products/Product_List/SP_1125489019643?l=en
-List Item: 1
+List Item: Unordered 1
 Begin Link: http://jeff.medkeff.com/astro/lunar/obs_tech/albedo.htm
 k: null
 Text: 'A discussion of Lunar albedos'

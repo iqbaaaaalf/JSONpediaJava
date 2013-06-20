@@ -4025,7 +4025,7 @@ End Template: Refbegin
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Adams'
@@ -4053,7 +4053,7 @@ k: doi
 Text: '10.2307/1834388'
 End Template: cite journal
 Comment Tag: |doi=10.2307/1834388}}  
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 k: oclc
@@ -4072,7 +4072,7 @@ Text: 'Louisiana State University Press'
 k: year
 Text: '1962'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: Cite book
 k: ref
 Text: 'Baker'
@@ -4089,7 +4089,7 @@ Text: '1989 '
 k: isbn
 Text: '9780393305869'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 k: oclc
@@ -4107,7 +4107,7 @@ Text: 'World Publishing'
 k: year
 Text: '1946'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: Cite book
 k: ref
 Text: 'Belz'
@@ -4124,7 +4124,7 @@ Text: '1998'
 k: isbn
 Text: '9780823217694'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite encyclopedia
 k: last
 Text: 'Belz'
@@ -4156,7 +4156,7 @@ Text: '9781932236439'
 k: quote
 k: ref
 End Template: cite encyclopedia
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Bennett Jr'
@@ -4184,7 +4184,7 @@ Text: '0012-9011'
 k: url
 Text: 'http://books.google.com/?id=H84DAAAAMBAJ&pg=PA35#v=onepage&q&f=false'
 End Template: cite journal
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book 
 k: ref
@@ -4207,7 +4207,7 @@ Comment Tag:  NOT CITED IN ARTICLE *{{Cite book|ref=Boritt1997|last=Boritt|first
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '0252064453'
@@ -4230,7 +4230,7 @@ Text: '1994'
 k: origyear
 Text: '1978'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book 
 k: ref
@@ -4250,7 +4250,7 @@ Text: 'Peter Lang Publishing Inc.'
 k: isbn
 Text: '1433107228'
 End Template: Cite book 
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Carwardine'
@@ -4286,7 +4286,7 @@ Text: 'http://web.archive.org/web/20091124091750/http://www.historycooperative.o
 k: archivedate
 Text: '2009-11-24'
 End Template: cite journal
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4304,7 +4304,7 @@ Text: '2003 '
 k: isbn
 Text: '9780582032798 '
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9780691091730'
@@ -4320,7 +4320,7 @@ Text: 'Princeton University Press'
 k: year
 Text: '2002'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4338,7 +4338,7 @@ Text: '1994 '
 k: isbn
 Text: '9780873384919'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4356,7 +4356,7 @@ Text: '2005 '
 k: isbn
 Text: '9781581824575'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book 
 k: ref
@@ -4376,7 +4376,7 @@ Text: 'Scott Publishing Company'
 k: isbn
 Text: '0894870424'
 End Template: Cite book 
-List Item: 1
+List Item: Unordered 1
 Begin Template: Cite book
 k: ref
 Text: 'Dennis'
@@ -4393,7 +4393,7 @@ Text: '2002'
 k: isbn
 Text: '9780801472688'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4411,7 +4411,7 @@ Text: '1986 '
 k: isbn
 Text: '0226148777'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9780875803593'
@@ -4427,7 +4427,7 @@ Text: 'Northern Illinois University Press'
 k: year
 Text: '2007'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4445,7 +4445,7 @@ Text: '2008 '
 k: isbn
 Text: '9780252076145'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: ref
 Text: 'Donald1948'
@@ -4465,7 +4465,7 @@ Text: '1948'
 k: oclc
 Text: '186314258'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: Cite book
 k: ref
 Text: 'Donald '
@@ -4484,7 +4484,7 @@ Text: '1995 '
 k: isbn
 Text: '9780684825359 '
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: Cite book
 k: ref
 Text: 'Donald2 '
@@ -4501,7 +4501,7 @@ Text: 'Knopf Doubleday Publishing Group '
 k: isbn
 Text: '9780375725326'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: authorlink
@@ -4521,7 +4521,7 @@ Text: 'Cosimo Classics '
 k: isbn
 Text: '1605203998'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4539,7 +4539,7 @@ Text: 'University of South Carolina Press '
 k: isbn
 Text: '9781570032554'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Fish'
@@ -4571,7 +4571,7 @@ Text: '1832574'
 k: doi
 Text: '10.2307/1832574'
 End Template: cite journal
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4593,7 +4593,7 @@ Text: '9780195094978'
 k: publisher
 Text: 'Oxford University Press'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4613,7 +4613,7 @@ Text: '2010 '
 k: isbn
 Text: '9780393066180'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4633,7 +4633,7 @@ Text: '2005 '
 k: publisher
 Text: 'Simon & Schuster'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9780253345677'
@@ -4649,7 +4649,7 @@ Text: 'Indiana University Press'
 k: year
 Text: '2005'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: oclc
 Text: '428674'
@@ -4667,7 +4667,7 @@ Text: 'University of Illinois Press
 k: year
 Text: '1959'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4685,7 +4685,7 @@ Text: '2001 '
 k: isbn
 Text: '0803221703'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4705,7 +4705,7 @@ Text: '1999'
 k: publisher
 Text: 'W.B. Eerdmans Publishing'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: ref
 Text: 'Guelzo2004'
@@ -4728,7 +4728,7 @@ Comment Tag:  NOT CITED IN ARTICLE* {{Cite book|ref=Guelzo2009 |last=Guelzo |fir
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4744,7 +4744,7 @@ Text: 'Northwestern University Law Publication Association '
 k: year
 Text: '1917 '
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4762,7 +4762,7 @@ Text: '1935'
 k: publisher
 Text: 'J.K. Reubush'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4781,7 +4781,7 @@ Text: '2000
 k: isbn
 Text: '0813121566'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4799,7 +4799,7 @@ Text: 'University Press of Kansas '
 k: year
 Text: '2007 '
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4817,7 +4817,7 @@ Text: 'University of Missouri Press '
 k: year
 Text: '2009 '
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4833,7 +4833,7 @@ Text: 'W. W. Norton & Company, Inc '
 k: isbn
 Text: '9780393047585 '
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4851,7 +4851,7 @@ Text: 'Greenwood Publishing Group'
 k: isbn
 Text: '9780313327926'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Hofstadter'
@@ -4882,7 +4882,7 @@ Text: '1840850'
 k: doi
 Text: '10.2307/1840850'
 End Template: cite journal
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4900,7 +4900,7 @@ Text: 'Simon & Schuster '
 k: isbn
 Text: '9780743299640 '
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: Cite book
 k: ref
 Text: 'Jaffa'
@@ -4917,7 +4917,7 @@ Text: '0847699528'
 k: publisher
 Text: 'Rowman & Littlefield'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9780198040064'
@@ -4937,7 +4937,7 @@ Text: 'Oxford University Press'
 k: year
 Text: '2005'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -4953,7 +4953,7 @@ Text: '2008 '
 k: isbn
 Text: '9781586486761 '
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Lupton'
@@ -4985,7 +4985,7 @@ Comment Tag:  NOT CITED IN ARTICLE *{{Cite book|authorlink=Reinhard H. Luthin|re
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Luthin'
@@ -5014,7 +5014,7 @@ Text: '1850218'
 k: doi
 Text: '10.2307/1850218'
 End Template: cite journal
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5032,7 +5032,7 @@ Text: '2005 '
 k: isbn
 Text: '078642026X'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: authorlink
@@ -5052,7 +5052,7 @@ Text: '2008 '
 k: isbn
 Text: '9780805083453'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: ref
 Text: 'McPherson1992'
@@ -5071,7 +5071,7 @@ Text: 'Oxford University Press'
 k: isbn
 Text: '9780195076066'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5089,7 +5089,7 @@ Text: 'Oxford University Press '
 k: isbn
 Text: '9780195168952'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5115,7 +5115,7 @@ Comment Tag:  NOT CITED IN ARTICLE *{{Cite book|authorlink=Mark E. Neely, Jr.|re
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Neely Jr.'
@@ -5148,7 +5148,7 @@ Begin Template: dead link
 k: date
 Text: 'April 2012'
 End Template: dead link
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5166,7 +5166,7 @@ Text: '1947-71 '
 k: isbn
 Text: '9780684104164'
 End Template: Cite book
-List Item: 2
+List Item: Unordered 2
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5185,7 +5185,7 @@ k: isbn
 Text: '9780684104164'
 End Template: Cite book
 Text: ', also published as vol 3–4 of ''Ordeal of the Union'''
-List Item: 2
+List Item: Unordered 2
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5204,7 +5204,7 @@ k: isbn
 Text: '9781568522975'
 End Template: Cite book
 Text: '; also published as vol 5–8 of ''Ordeal of the Union'''
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: cite book 
 k: ref
@@ -5224,7 +5224,7 @@ Text: '2010 '
 k: isbn
 Text: '0809329611'
 End Template: cite book 
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5242,7 +5242,7 @@ Text: '2000 '
 k: isbn
 Text: '0195151119'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5260,7 +5260,7 @@ Text: '1993 '
 k: isbn
 Text: '9780060924713'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5278,7 +5278,7 @@ Text: '1994 '
 k: publisher
 Text: 'University Press of Kansas'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Parrillo'
@@ -5307,7 +5307,7 @@ k: url
 k: doi
 Text: '10.1353/cwh.2000.0073'
 End Template: cite journal
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5325,7 +5325,7 @@ Text: '1984'
 k: isbn
 Text: '0300031661'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5343,7 +5343,7 @@ Text: '1995 '
 k: isbn
 Text: '9780195096453'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5363,7 +5363,7 @@ Text: '1976 '
 k: isbn
 Text: '9780061319297'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book 
 k: ref
@@ -5381,7 +5381,7 @@ Text: '2008'
 k: isbn
 Text: '9780307279293'
 End Template: Cite book 
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: cite book
 k: oclc
@@ -5401,7 +5401,7 @@ Text: '1947'
 k: publisher
 Text: 'Dodd, Mead'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: Cite book
 k: oclc
 Text: '5852442'
@@ -5429,7 +5429,7 @@ Comment Tag:  NOT CITED IN ARTICLE * {{Cite book|ref=Reinhart |last=Reinhart |fi
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: oclc
@@ -5447,7 +5447,7 @@ Text: '1926'
 k: publisher
 Text: 'Harcourt, Brace & Company'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: cite book
 k: ref
@@ -5465,7 +5465,7 @@ Text: '2002'
 k: isbn
 Text: '0156027526'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: ref
 Text: 'Schwartz2000'
@@ -5482,7 +5482,7 @@ Text: 'University Of Chicago Press'
 k: isbn
 Text: '978-0226741970'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: Cite book
 k: ref
 Text: 'Schwartz2009 '
@@ -5499,7 +5499,7 @@ Text: '2009 '
 k: isbn
 Text: '9780226741888'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Scott'
@@ -5532,7 +5532,7 @@ Comment Tag:  NOT CITED IN ARTICLE * {{Cite book|ref=Scott|last=Scott|title=Scot
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5550,7 +5550,7 @@ Text: '1990 '
 k: isbn
 Text: '1174631724'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5568,7 +5568,7 @@ Text: '1990 '
 k: isbn
 Text: '0252002032'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: ref
 Text: 'Smith'
@@ -5585,7 +5585,7 @@ Text: 'State University of New York Press'
 k: isbn
 Text: '9781438432335'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book 
 k: ref
@@ -5603,7 +5603,7 @@ Text: '2010 '
 k: isbn
 Text: '0061787752'
 End Template: Cite book 
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: last
 Text: 'Striner'
@@ -5618,7 +5618,7 @@ Text: 'Oxford University Press'
 k: isbn
 Text: '978-0195183061'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: ref
 Text: 'Tagg'
@@ -5635,7 +5635,7 @@ Text: '2009'
 k: isbn
 Text: '9781932714616'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5655,7 +5655,7 @@ Text: '2004 '
 k: isbn
 Text: '9780743254335'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Tegeder'
@@ -5689,7 +5689,7 @@ Comment Tag:  NOT CITED IN ARTICLE *{{cite book|isbn=9780807132319|oclc=|title=I
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5707,7 +5707,7 @@ Text: '2008 '
 k: isbn
 Text: '9780809328871'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9780925436214'
@@ -5723,7 +5723,7 @@ Text: 'Cam-Tech Publishing'
 k: year
 Text: '2002'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5741,7 +5741,7 @@ Text: '2001 '
 k: isbn
 Text: '9780521652674'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5759,7 +5759,7 @@ Text: '2009 '
 k: isbn
 Text: '9781400064991'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5781,7 +5781,7 @@ Text: '1993 '
 k: publisher
 Text: 'Simon & Schuster '
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: Cite book
 k: ref
@@ -5799,7 +5799,7 @@ Text: '1999 '
 k: isbn
 Text: '9780375703966 '
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: cite book
 k: ref
@@ -5817,7 +5817,7 @@ Text: 'Taylor Trade Publications'
 k: isbn
 Text: '9780878332557'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: Cite book
 k: ref
 Text: 'Zarefsky'
@@ -5836,7 +5836,7 @@ Text: 'University of Chicago Press'
 k: year
 Text: '1993'
 End Template: Cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite journal
 k: last
 Text: 'Zilversmit'
@@ -5874,7 +5874,7 @@ Section [1] Additional references
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9781581823691'
@@ -5891,7 +5891,7 @@ k: location
 k: year
 Text: '2003'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9780801889936'
@@ -5911,7 +5911,7 @@ k: year
 Text: '2008'
 End Template: cite book
 Text: ', the most detailed biography'
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9780872494008'
@@ -5932,7 +5932,7 @@ k: location
 k: year
 Text: '1981'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9780393067569'
@@ -5950,7 +5950,7 @@ k: location
 k: year
 Text: '2008'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: author
 Text: 'Holzer, Harold '
@@ -5963,7 +5963,7 @@ Text: '2008'
 k: publisher
 Text: 'Simon and Schuster'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9781594201912'
@@ -5981,7 +5981,7 @@ k: location
 k: year
 Text: '2008'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: cite book
 k: author
@@ -5996,7 +5996,7 @@ k: publisher
 Text: 'McFarland'
 End Template: cite book
 Text: ', vol 3. of detailed biography'
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9780306802096'
@@ -6012,7 +6012,7 @@ Text: 'Da Capo Press'
 k: year
 Text: '1984'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 Text: '9780674511255'
@@ -6029,7 +6029,7 @@ Text: 'Harvard University Press'
 k: year
 Text: '1994'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Begin Template: cite book
 k: isbn
 k: oclc
@@ -6047,7 +6047,7 @@ k: location
 k: year
 Text: '1945–1955'
 End Template: cite book
-List Item: 1
+List Item: Unordered 1
 Text: ' Smith, Adam I.P. "The 'Cult' of Abraham Lincoln and the Strange Survival of Liberal England in the Era of the World Wars," ''Twentieth Century British History,'' (Dec 2010) 21#4 pp 486-509'
 End List
 Text: '
@@ -6092,45 +6092,45 @@ End Template: Portal
 Text: '
 '
 Begin List
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://quod.lib.umich.edu/l/lincoln/
 k: null
 Text: 'The Collected Works of Abraham Lincoln'
 End Link: http://quod.lib.umich.edu/l/lincoln/
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: worldcat id
 k: id
 Text: 'lccn-n79-6779'
 End Template: worldcat id
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://memory.loc.gov/ammem/alhtml/alhome.html
 k: null
 Text: 'Mr. Lincoln's Virtual Library'
 End Link: http://memory.loc.gov/ammem/alhtml/alhome.html
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://www.loc.gov/rr/program/bib/prespoetry/al.html
 k: null
 Text: 'Poetry written by Abraham Lincoln'
 End Link: http://www.loc.gov/rr/program/bib/prespoetry/al.html
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://www.alplm.org/home.html
 k: null
 Text: 'The Abraham Lincoln Presidential Library and Museum'
 End Link: http://www.alplm.org/home.html
 Text: ' Springfield, Illinois'
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://www.papersofabrahamlincoln.org/
 k: null
 Text: 'The Papers of Abraham Lincoln'
 End Link: http://www.papersofabrahamlincoln.org/
 Text: ' documentary editing project'
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Template: US patent 
 k: null
@@ -6139,31 +6139,31 @@ k: null
 Text: 'US PATNo. 6,469'
 End Template: US patent 
 Text: '—''Manner of Buoying Vessels''—A. Lincoln—1849'
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://edsitement.neh.gov/teaching-abraham-lincoln#node-19470
 k: null
 Text: 'National Endowment for the Humanities Spotlight&nbsp;– Abraham Lincoln'
 End Link: http://edsitement.neh.gov/teaching-abraham-lincoln#node-19470
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://www.abrahamlincoln200.org/
 k: null
 Text: 'The Abraham Lincoln Bicentennial Commission'
 End Link: http://www.abrahamlincoln200.org/
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://lincoln.lib.niu.edu/
 k: null
 Text: 'Lincoln/Net: Abraham Lincoln Historical Digitization Project, Northern Illinois University Libraries'
 End Link: http://lincoln.lib.niu.edu/
-List Item: 1
+List Item: Unordered 1
 Text: ' '
 Begin Link: http://www.loc.gov/rr/program/bib/presidents/lincoln/
 k: null
 Text: 'Abraham Lincoln: A Resource Guide from the Library of Congress'
 End Link: http://www.loc.gov/rr/program/bib/presidents/lincoln/
-List Item: 1
+List Item: Unordered 1
 Begin Link: http://web.archive.org/web/20110725003410/http://americanpresidents.org/presidents/president.asp?PresidentNumber=16
 k: null
 Text: 'Abraham Lincoln'
@@ -6175,7 +6175,7 @@ Text: ''s '''
 Begin Reference: American Presidents: Life Portraits
 End Reference: American Presidents: Life Portraits
 Text: ''''
-List Item: 1
+List Item: Unordered 1
 Begin Link: http://legacy.c-span.org/Series/Lincoln-200-Years.aspx
 k: null
 Text: 'C-SPAN's ''Lincoln 200 Years'''

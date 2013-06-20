@@ -11,6 +11,11 @@ import java.net.URL;
  */
 public interface WikiTextParserHandler extends TagHandler {
 
+    enum ListType {
+        Unordered,
+        Numbered
+    }
+
     void beginDocument(URL document);
 
     void section(String title, int level);
@@ -34,7 +39,7 @@ public interface WikiTextParserHandler extends TagHandler {
     @Push(node="list")
     void beginList();
 
-    void listItem(int level);
+    void listItem(ListType t, int level);
 
     @Pop(node="list")
     void endList();

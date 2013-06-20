@@ -44,7 +44,7 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void listItem(int level) {
+    public void listItem(ListType t, int level) {
     }
 
     @Override
