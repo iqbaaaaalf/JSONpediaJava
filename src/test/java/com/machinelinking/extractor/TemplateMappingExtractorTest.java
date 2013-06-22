@@ -1,6 +1,6 @@
 package com.machinelinking.extractor;
 
-import com.machinelinking.pagestruct.TemplateMapping;
+import com.machinelinking.dbpedia.TemplateMapping;
 import com.machinelinking.parser.WikiTextParser;
 import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.serializer.JSONSerializer;

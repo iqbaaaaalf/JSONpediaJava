@@ -1,4 +1,4 @@
-package com.machinelinking.pagestruct;
+package com.machinelinking.dbpedia;
 
 import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.util.JSONUtils;
