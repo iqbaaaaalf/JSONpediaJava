@@ -10,6 +10,8 @@ import java.io.Writer;
 import java.util.Stack;
 
 /**
+ * Serializes events to <i>JSON</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 //TODO: remove print out but before check for possible errors.

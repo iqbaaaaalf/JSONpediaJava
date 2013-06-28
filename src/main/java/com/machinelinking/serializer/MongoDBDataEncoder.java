@@ -1,6 +1,8 @@
 package com.machinelinking.serializer;
 
 /**
+ * {@link DataEncoder} implementation for <i>MongoDB</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class MongoDBDataEncoder implements DataEncoder {

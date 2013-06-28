@@ -11,6 +11,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 /**
+ * Test case for {@link JSONSerializer}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class JSONSerializerTest {
@@ -168,7 +170,6 @@ public class JSONSerializerTest {
     private void verify(String expected) {
         serializer.close();
         final String out = baos.toString();
-        System.out.println("BAOS: " + out);
         try {
             final JsonNode expectedNode = JSONUtils.parseJSON(expected);
             final JsonNode outNode = JSONUtils.parseJSON(out);

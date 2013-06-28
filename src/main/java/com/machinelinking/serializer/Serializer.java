@@ -1,6 +1,8 @@
 package com.machinelinking.serializer;
 
 /**
+ * Event based serializer interface.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface Serializer {
