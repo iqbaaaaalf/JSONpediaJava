@@ -32,7 +32,7 @@ public class TemplateMapping implements Serializable {
 
     private final String mappingClass;
 
-    private final Map<String,PropertyMapping> propertyNameToPropertyMapping;
+    private final Map<String,Property> propertyNameToPropertyMapping;
 
     private List<String> issues;
 
@@ -82,7 +82,7 @@ public class TemplateMapping implements Serializable {
         return mappingClass;
     }
 
-    public PropertyMapping getMappingForProperty(String property) {
+    public Property getMappingForProperty(String property) {
         return propertyNameToPropertyMapping.get(property);
     }
 
@@ -98,8 +98,8 @@ public class TemplateMapping implements Serializable {
 
         serializer.field("mapping");
         serializer.openObject();
-        PropertyMapping propertyMapping;
-        for(Map.Entry<String,PropertyMapping> entry : propertyNameToPropertyMapping.entrySet()) {
+        Property propertyMapping;
+        for(Map.Entry<String,Property> entry : propertyNameToPropertyMapping.entrySet()) {
             propertyMapping = entry.getValue();
             serializer.field(entry.getKey());
             if(propertyMapping == null) {
@@ -107,10 +107,10 @@ public class TemplateMapping implements Serializable {
                 continue;
             }
             serializer.openObject();
-            serializer.fieldValueIfNotNull("name"  , propertyMapping.getPropertyName());
-            serializer.fieldValueIfNotNull("label" , propertyMapping.getPropertyLabel());
+            serializer.fieldValueIfNotNull("name", propertyMapping.getPropertyName());
+            serializer.fieldValueIfNotNull("label", propertyMapping.getPropertyLabel());
             serializer.fieldValueIfNotNull("domain", propertyMapping.getPropertyDomain());
-            serializer.fieldValueIfNotNull("range" , propertyMapping.getPropertyRange());
+            serializer.fieldValueIfNotNull("range", propertyMapping.getPropertyRange());
             serializer.closeObject();
         }
         serializer.closeObject();
@@ -128,11 +128,11 @@ public class TemplateMapping implements Serializable {
     }
 
     protected void addMapping(String propertyName, String property) {
-        PropertyMapping propertyMapping = ontologyManager.getPropertyMapping(property);
+        Property propertyMapping = ontologyManager.getProperty(property);
         if(propertyMapping == null) {
-            propertyMapping = new DefaultPropertyMapping(property, null, null, null);
+            propertyMapping = new DefaultProperty(property, null, null, null);
         }
-        final PropertyMapping prev = propertyNameToPropertyMapping.put(
+        final Property prev = propertyNameToPropertyMapping.put(
                 propertyName,
                 propertyMapping
         );

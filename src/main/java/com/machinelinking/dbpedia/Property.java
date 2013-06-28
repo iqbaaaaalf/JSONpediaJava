@@ -5,7 +5,7 @@ package com.machinelinking.dbpedia;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public interface PropertyMapping {
+public interface Property {
 
     public String getPropertyName();
 

@@ -12,9 +12,9 @@ public class InMemoryOntologyManagerTest {
 
     @Test
     public void testInitialization() throws OntologyManagerException {
-        Map<String,PropertyMapping> propertyMappings = InMemoryOntologyManager.initOntologyIndex(false);
+        Map<String,Property> propertyMappings = InMemoryOntologyManager.initOntologyIndex(false);
         Assert.assertTrue(propertyMappings.size() > 24700);
-        for(Map.Entry<String,PropertyMapping> mapping : propertyMappings.entrySet()) {
+        for(Map.Entry<String,Property> mapping : propertyMappings.entrySet()) {
             Assert.assertNotNull(mapping.getValue().getPropertyName());
             Assert.assertNotNull(mapping.getValue().getPropertyLabel());
         }
@@ -25,19 +25,19 @@ public class InMemoryOntologyManagerTest {
         final InMemoryOntologyManager manager = new InMemoryOntologyManager();
         Assert.assertEquals(
                 "{property=birthDate label='birth date' domain=Person range=xsd:date}",
-                manager.getPropertyMapping("birthDate").toString()
+                manager.getProperty("birthDate").toString()
         );
         Assert.assertEquals(
                 "{property=birthPlace label='birth place' domain=Person range=Place}",
-                manager.getPropertyMapping("birthPlace").toString()
+                manager.getProperty("birthPlace").toString()
         );
         Assert.assertEquals(
                 "{property=spouse label='spouse' domain=Person range=Person}",
-                manager.getPropertyMapping("spouse").toString()
+                manager.getProperty("spouse").toString()
         );
         Assert.assertEquals(
                 "{property=successor label='successor' domain=null range=null}",
-                manager.getPropertyMapping("successor").toString()
+                manager.getProperty("successor").toString()
         );
     }
 

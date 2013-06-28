@@ -8,11 +8,11 @@ package com.machinelinking.dbpedia;
 public interface OntologyManager {
 
     /**
-     * Returns a {@link PropertyMapping} for a given <i>property</i> name.
+     * Returns a {@link Property} for a given <i>property</i> name.
      *
      * @param property
      * @return a property mapping or <code>null</code> if not found.
      */
-    PropertyMapping getPropertyMapping(String property);
+    Property getProperty(String property);
 
 }

@@ -4,11 +4,11 @@ package com.machinelinking.dbpedia;
 import java.io.Serializable;
 
 /**
- * Default implementation for {@link PropertyMapping}.
+ * Default implementation for {@link Property}.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class DefaultPropertyMapping implements PropertyMapping, Serializable {
+public class DefaultProperty implements Property, Serializable {
 
     private final String property;
 
@@ -18,7 +18,7 @@ public class DefaultPropertyMapping implements PropertyMapping, Serializable {
 
     private final String range;
 
-    public DefaultPropertyMapping(String property, String label, String domain, String range) {
+    public DefaultProperty(String property, String label, String domain, String range) {
         if(property == null) throw new NullPointerException();
         this.property = property;
         this.label = label;

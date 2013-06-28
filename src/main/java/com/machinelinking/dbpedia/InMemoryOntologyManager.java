@@ -40,9 +40,9 @@ public class InMemoryOntologyManager implements OntologyManager {
             "FILTER langMatches( lang(?label), \"EN\" )\n" +
             "}";
 
-    private final Map<String, PropertyMapping> mapping;
+    private final Map<String, Property> mapping;
 
-    public static Map<String, PropertyMapping> initOntologyIndex(boolean force) throws OntologyManagerException {
+    public static Map<String, Property> initOntologyIndex(boolean force) throws OntologyManagerException {
         final File serializationFile = getSerializationFile();
         if(!force && serializationFile.exists()) return loadOntologyIndex(serializationFile);
 
@@ -63,20 +63,20 @@ public class InMemoryOntologyManager implements OntologyManager {
         String enLabel;
         String domain;
         String range;
-        Map<String, PropertyMapping> ontology = new HashMap<>();
+        Map<String, Property> ontology = new HashMap<>();
         while(bindings.hasNext()) {
             current = bindings.next();
             property = normalizePrefix(current.get("p").get("value").asText());
             enLabel  = normalizePrefix(current.get("label").get("value").asText());
             domain   = normalizePrefix(JSONUtils.asPrimitiveString(optionallyGetFieldValue(current, "domain")));
             range    = normalizePrefix(JSONUtils.asPrimitiveString(optionallyGetFieldValue(current, "range")));
-            ontology.put(property, new DefaultPropertyMapping(property, enLabel, domain, range));
+            ontology.put(property, new DefaultProperty(property, enLabel, domain, range));
         }
         saveOntologyIndex(ontology, serializationFile);
         return ontology;
     }
 
-    public static Map<String, PropertyMapping> initOntologyIndex() throws OntologyManagerException {
+    public static Map<String, Property> initOntologyIndex() throws OntologyManagerException {
         return initOntologyIndex(false);
     }
 
@@ -95,7 +95,7 @@ public class InMemoryOntologyManager implements OntologyManager {
         return url;
     }
 
-    private static void saveOntologyIndex(Map<String, ? extends PropertyMapping> ontology, File serializationFile) {
+    private static void saveOntologyIndex(Map<String, ? extends Property> ontology, File serializationFile) {
         ObjectOutputStream oos;
         try {
             oos = new ObjectOutputStream( new BufferedOutputStream( new FileOutputStream(serializationFile)));
@@ -106,12 +106,12 @@ public class InMemoryOntologyManager implements OntologyManager {
         }
     }
 
-    private static Map<String, PropertyMapping> loadOntologyIndex(File serializationFile) {
+    private static Map<String, Property> loadOntologyIndex(File serializationFile) {
         ObjectInputStream ois;
         try {
             ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream(serializationFile)));
-            final Map<String, PropertyMapping> mapping =
-                    (Map<String, PropertyMapping>) ois.readObject();
+            final Map<String, Property> mapping =
+                    (Map<String, Property>) ois.readObject();
             ois.close();
             return mapping;
         } catch (IOException ioe) {
@@ -125,7 +125,7 @@ public class InMemoryOntologyManager implements OntologyManager {
         return new File("ontology.ser");
     }
 
-    public InMemoryOntologyManager(Map<String, PropertyMapping> mapping) throws OntologyManagerException {
+    public InMemoryOntologyManager(Map<String, Property> mapping) throws OntologyManagerException {
         this.mapping = mapping;
     }
 
@@ -134,7 +134,7 @@ public class InMemoryOntologyManager implements OntologyManager {
     }
 
     @Override
-    public PropertyMapping getPropertyMapping(String property) {
+    public Property getProperty(String property) {
         return mapping.get(property);
     }
 
