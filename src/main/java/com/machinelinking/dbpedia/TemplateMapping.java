@@ -20,7 +20,6 @@ import java.util.Map;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-// TODO: rename to TemplateMappingFetcher
 public class TemplateMapping implements Serializable {
 
     public static final String MAPPING_PREFIX = "Mapping:";
@@ -70,7 +69,7 @@ public class TemplateMapping implements Serializable {
         }
         this.mappingName = mappingName;
         this.mappingClass = mappingClass;
-        this.propertyNameToPropertyMapping = new HashMap<String, PropertyMapping>();
+        this.propertyNameToPropertyMapping = new HashMap<>();
     }
 
     public String getMappingName() {
