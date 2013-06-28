@@ -6,6 +6,8 @@ import java.io.IOException;
 
 
 /**
+ * Defines the renderer for a {@link JsonNode}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface NodeRender {

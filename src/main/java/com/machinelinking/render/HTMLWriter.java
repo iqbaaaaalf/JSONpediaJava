@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
+ * Auxiliary class to write <i>HTML</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface HTMLWriter {

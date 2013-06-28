@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * {@link NodeRender} imeplementation for <i>Wikitext table</i>s.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TableNodeRender implements NodeRender {

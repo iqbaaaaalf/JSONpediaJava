@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * <i>Citation</i> template render.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class CitationNodeRender implements NodeRender {

@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * <i>Cite Web</i> template render.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class CiteWebNodeRender implements NodeRender {

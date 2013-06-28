@@ -5,6 +5,8 @@ import org.codehaus.jackson.JsonNode;
 import java.io.IOException;
 
 /**
+ * Defines the renderer for a primitive {@link JsonNode} value.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface PrimitiveNodeRender {

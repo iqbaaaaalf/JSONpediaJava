@@ -9,6 +9,8 @@ import java.io.File;
 import java.io.IOException;
 
 /**
+ * Test case for {@link DefaultHTMLRender}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultHTMLRenderTest {
@@ -17,7 +19,7 @@ public class DefaultHTMLRenderTest {
     public void testRender() throws IOException {
         final JsonNode node = JSONUtils.parseJSON(
                 this.getClass().getResourceAsStream(
-                        "/Enrichment1.json"
+                        "Enrichment1.json"
                 )
         );
         final String html = DefaultHTMLRenderFactory.getInstance().renderToHTML(node);

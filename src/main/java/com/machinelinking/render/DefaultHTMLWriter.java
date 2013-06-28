@@ -11,6 +11,8 @@ import java.util.Map;
 import java.util.Stack;
 
 /**
+ * Default implementation of {@link HTMLWriter}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultHTMLWriter implements HTMLWriter {

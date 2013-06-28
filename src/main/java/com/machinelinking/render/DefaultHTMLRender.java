@@ -13,6 +13,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * Default implementation of {@link HTMLRender}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultHTMLRender implements HTMLRender {

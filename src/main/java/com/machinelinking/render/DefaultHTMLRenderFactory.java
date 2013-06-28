@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 /**
+ * Default implementation of {@link HTMLRenderFactory}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
