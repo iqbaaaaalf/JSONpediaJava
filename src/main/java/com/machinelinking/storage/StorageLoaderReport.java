@@ -1,6 +1,8 @@
 package com.machinelinking.storage;
 
 /**
+ * Report produced by a {@link JSONStorageLoader}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class StorageLoaderReport {

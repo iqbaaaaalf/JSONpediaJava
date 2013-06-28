@@ -40,9 +40,7 @@ public class DefaultJSONStorageLoaderTest {
     @Ignore
     @Test
     public void testLoaderDump4() throws IOException, SAXException {
-        //loadDump("file:///Users/hardest/Downloads/enwiki-latest-pages-articles1.xml-p000000010p000010000.bz2", 0);
         loadDump("file:///Users/hardest/Downloads/enwiki-latest-pages-articles7.xml-p000305002p000464996.bz2", 0);
-        //loadDump("file:///Users/hardest/Downloads/enwiki-latest-pages-articles8.xml-p000465001p000665000.bz2", 0);
     }
 
     public void loadDump(String dump, int expectedIssues) throws IOException, SAXException {

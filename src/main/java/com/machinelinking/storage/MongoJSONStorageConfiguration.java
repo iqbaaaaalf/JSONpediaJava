@@ -1,6 +1,8 @@
 package com.machinelinking.storage;
 
 /**
+ * Implementation of {@link JSONStorageConfiguration} for <i>MongoDB</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class MongoJSONStorageConfiguration implements JSONStorageConfiguration {

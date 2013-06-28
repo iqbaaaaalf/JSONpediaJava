@@ -24,9 +24,12 @@ import java.net.URL;
 import java.util.Arrays;
 
 /**
+ * Default implementation of {@link JSONStorageLoader}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class DefaultJSONStorageLoader extends WikiDumpMultiThreadProcessor<DefaultJSONStorageLoader.EnrichmentProcessor>
+public class DefaultJSONStorageLoader
+extends WikiDumpMultiThreadProcessor<DefaultJSONStorageLoader.EnrichmentProcessor>
 implements JSONStorageLoader {
 
     private final WikiEnricherFactory wikiEnricherFactory;

@@ -4,6 +4,8 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 
 /**
+ * {@link Document} implementation for {@link DBObject}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DBObjectDocument implements Document<DBObject> {

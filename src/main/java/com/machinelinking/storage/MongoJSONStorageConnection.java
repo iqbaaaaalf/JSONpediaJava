@@ -4,6 +4,8 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
 
 /**
+ * Implementation of {@link JSONStorageConnection} for <i>MongoDB</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class MongoJSONStorageConnection implements JSONStorageConnection<DBObjectDocument> {
