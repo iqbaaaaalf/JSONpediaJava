@@ -1,0 +1,56 @@
+{
+    "__type": "mapping",
+    "name": "Chembox",
+    "class": "ChemicalCompound",
+    "mapping": {
+        "MeltingPt": {
+            "name": "meltingPoint"
+        },
+        "melting point C": {
+            "name": "meltingPoint"
+        },
+        "boiling point C": {
+            "name": "boilingPoint"
+        },
+        "InChI": {
+            "name": "inchi"
+        },
+        "Density": {
+            "name": "density"
+        },
+        "melting point K": {
+            "name": "meltingPoint"
+        },
+        "boiling point K": {
+            "name": "boilingPoint"
+        },
+        "PubChem": {
+            "name": "pubchem"
+        },
+        "melting point F": {
+            "name": "meltingPoint"
+        },
+        "boiling point F": {
+            "name": "boilingPoint"
+        },
+        "UNII": {
+            "name": "fdaUniiCode"
+        },
+        "Name": {
+            "name": "foaf:name"
+        },
+        "ImageFile": {
+            "name": "foaf:thumbnail"
+        },
+        "IUPACName": {
+            "name": "iupacName"
+        },
+        "BoilingPt": {
+            "name": "boilingPoint"
+        },
+        "CASNo": {
+            "name": "casNumber"
+        }
+    },
+    "issues": null
+}

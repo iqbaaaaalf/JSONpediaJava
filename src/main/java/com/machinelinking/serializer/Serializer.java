@@ -23,6 +23,8 @@ public interface Serializer {
 
     void fieldValue(String name, Object value);
 
+    void fieldValueIfNotNull(String name, Object value);
+
     void flush();
 
     void close();

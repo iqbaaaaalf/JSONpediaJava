@@ -20,13 +20,18 @@ import java.util.Map;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
+// TODO: rename to TemplateMappingFetcher
 public class TemplateMapping implements Serializable {
 
     public static final String MAPPING_PREFIX = "Mapping:";
 
+    private final OntologyManager ontologyManager;
+
     private final String mappingName;
 
-    private final Map<String,String> propertyNameToPropertyMapping;
+    private final String mappingClass;
+
+    private final Map<String,PropertyMapping> propertyNameToPropertyMapping;
 
     private List<String> issues;
 
@@ -43,7 +48,7 @@ public class TemplateMapping implements Serializable {
 
         if (wikiTextMapping != null) {
             final TemplateMapping[] out = new TemplateMapping[1];
-            final WikiMappingHandler handler = new WikiMappingHandler() {
+            final WikiMappingHandler handler = new WikiMappingHandler(mappingName) {
                 @Override
                 public void handle(TemplateMapping mapping) {
                     out[0] = mapping;
@@ -57,16 +62,26 @@ public class TemplateMapping implements Serializable {
         }
     }
 
-    public TemplateMapping(String mappingName) {
+    public TemplateMapping(String mappingName, String mappingClass) {
+        try {
+            this.ontologyManager = OntologyManagerFactory.getInstance().createOntologyManager();
+        } catch (OntologyManagerException ome) {
+            throw new RuntimeException("Error while initializing ontology manager.", ome);
+        }
         this.mappingName = mappingName;
-        this.propertyNameToPropertyMapping = new HashMap<String, String>();
+        this.mappingClass = mappingClass;
+        this.propertyNameToPropertyMapping = new HashMap<String, PropertyMapping>();
     }
 
     public String getMappingName() {
         return mappingName;
     }
 
-    public String getMappingForProperty(String property) {
+    public String getMappingClass() {
+        return mappingClass;
+    }
+
+    public PropertyMapping getMappingForProperty(String property) {
         return propertyNameToPropertyMapping.get(property);
     }
 
@@ -76,13 +91,26 @@ public class TemplateMapping implements Serializable {
 
     public void serialize(Serializer serializer) {
         serializer.openObject();
-        serializer.fieldValue("type", "mapping");
+        serializer.fieldValue("__type", "mapping");
         serializer.fieldValue("name", getMappingName());
+        serializer.fieldValue("class", getMappingClass());
 
         serializer.field("mapping");
         serializer.openObject();
-        for(Map.Entry<String,String> entry : propertyNameToPropertyMapping.entrySet()) {
-            serializer.fieldValue(entry.getKey(), entry.getValue());
+        PropertyMapping propertyMapping;
+        for(Map.Entry<String,PropertyMapping> entry : propertyNameToPropertyMapping.entrySet()) {
+            propertyMapping = entry.getValue();
+            serializer.field(entry.getKey());
+            if(propertyMapping == null) {
+                serializer.value(null);
+                continue;
+            }
+            serializer.openObject();
+            serializer.fieldValueIfNotNull("name"  , propertyMapping.getPropertyName());
+            serializer.fieldValueIfNotNull("label" , propertyMapping.getPropertyLabel());
+            serializer.fieldValueIfNotNull("domain", propertyMapping.getPropertyDomain());
+            serializer.fieldValueIfNotNull("range" , propertyMapping.getPropertyRange());
+            serializer.closeObject();
         }
         serializer.closeObject();
 
@@ -98,12 +126,19 @@ public class TemplateMapping implements Serializable {
         serializer.closeObject();
     }
 
-    protected void addMapping(String propertyName, String propertyMapping) {
-        final String prev = propertyNameToPropertyMapping.put(propertyName, propertyMapping);
+    protected void addMapping(String propertyName, String property) {
+        PropertyMapping propertyMapping = ontologyManager.getPropertyMapping(property);
+        if(propertyMapping == null) {
+            propertyMapping = new DefaultPropertyMapping(property, null, null, null);
+        }
+        final PropertyMapping prev = propertyNameToPropertyMapping.put(
+                propertyName,
+                propertyMapping
+        );
         if(prev != null)
             reportIssue (
                 String.format(
-                    "Property name '%s' already mapped with value '%s' while adding mapping '%s'",
+                    "Property name '%s' already mapped with value %s while adding mapping %s",
                     propertyName, prev, propertyMapping
                 )
             );

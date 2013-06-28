@@ -19,31 +19,7 @@ public class TemplateMappingTest {
         final String json = JSONUtils.serializeToJSON(mapping);
         System.out.println( json );
         Assert.assertEquals(
-                JSONUtils.parseJSON(
-                        "{\n" +
-                        "    \"type\": \"mapping\",\n" +
-                        "    \"name\": \"TemplateMapping\\n\",\n" +
-                        "    \"mapping\": {\n" +
-                        "        \"MeltingPt\": \"meltingPoint\",\n" +
-                        "        \"melting point C\": \"meltingPoint\",\n" +
-                        "        \"boiling point C\": \"boilingPoint\",\n" +
-                        "        \"InChI\": \"inchi\",\n" +
-                        "        \"Density\": \"density\",\n" +
-                        "        \"melting point K\": \"meltingPoint\",\n" +
-                        "        \"boiling point K\": \"boilingPoint\",\n" +
-                        "        \"PubChem\": \"pubchem\",\n" +
-                        "        \"melting point F\": \"meltingPoint\",\n" +
-                        "        \"boiling point F\": \"boilingPoint\",\n" +
-                        "        \"UNII\": \"fdaUniiCode\",\n" +
-                        "        \"Name\": \"foaf:name\",\n" +
-                        "        \"ImageFile\": \"foaf:thumbnail\",\n" +
-                        "        \"IUPACName\": \"iupacName\",\n" +
-                        "        \"BoilingPt\": \"boilingPoint\",\n" +
-                        "        \"CASNo\": \"casNumber\"\n" +
-                        "    },\n" +
-                        "    \"issues\": null\n" +
-                        "}"
-                ),
+                JSONUtils.parseJSON( this.getClass().getResourceAsStream("Mapping1.json") ),
                 JSONUtils.parseJSON(json)
         );
     }

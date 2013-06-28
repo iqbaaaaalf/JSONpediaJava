@@ -13225,32 +13225,130 @@
         "__type": "template-mapping",
         "mapping-collection": [
             {
-                "type": "mapping",
-                "name": " TemplateMapping ",
+                "__type": "mapping",
+                "name": "Infobox scientist",
+                "class": "Scientist",
                 "mapping": {
-                    "notable_students": "notableStudent",
-                    "death_date": "deathDate",
-                    "birth_date": "birthDate",
-                    "birth_name": "birthName",
-                    "citizenship": "citizenship",
-                    "influences": "influencedBy",
-                    "doctoral_students": "doctoralStudent",
-                    "birth_place": "birthPlace",
-                    "alma_mater": "almaMater",
-                    "field": "field",
-                    "known_for": "knownFor",
-                    "death_place": "deathPlace",
-                    "death_cause": "deathCause",
-                    "nationality": "nationality",
-                    "academic_advisors": "academicAdvisor",
-                    "residence": "residence",
-                    "awards": "award",
-                    "spouse": "spouse",
-                    "doctoral_advisor": "doctoralAdvisor",
-                    "name": "foaf:name",
-                    "prizes": "award",
-                    "influenced": "influenced",
-                    "fields": "field"
+                    "notable_students": {
+                        "name": "notableStudent",
+                        "label": "notable student",
+                        "domain": "Scientist",
+                        "range": "Person"
+                    },
+                    "death_date": {
+                        "name": "deathDate",
+                        "label": "death date",
+                        "domain": "Person",
+                        "range": "xsd:date"
+                    },
+                    "birth_date": {
+                        "name": "birthDate",
+                        "label": "birth date",
+                        "domain": "Person",
+                        "range": "xsd:date"
+                    },
+                    "birth_name": {
+                        "name": "birthName"
+                    },
+                    "citizenship": {
+                        "name": "citizenship",
+                        "label": "citizenship"
+                    },
+                    "influences": {
+                        "name": "influencedBy",
+                        "label": "influenced by",
+                        "domain": "Person",
+                        "range": "Person"
+                    },
+                    "doctoral_students": {
+                        "name": "doctoralStudent",
+                        "label": "doctoral student",
+                        "domain": "Scientist",
+                        "range": "Person"
+                    },
+                    "birth_place": {
+                        "name": "birthPlace",
+                        "label": "birth place",
+                        "domain": "Person",
+                        "range": "Place"
+                    },
+                    "alma_mater": {
+                        "name": "almaMater",
+                        "label": "alma mater",
+                        "domain": "Person",
+                        "range": "EducationalInstitution"
+                    },
+                    "field": {
+                        "name": "field",
+                        "label": "field"
+                    },
+                    "known_for": {
+                        "name": "knownFor",
+                        "label": "known for"
+                    },
+                    "death_place": {
+                        "name": "deathPlace",
+                        "label": "death place",
+                        "domain": "Person",
+                        "range": "Place"
+                    },
+                    "death_cause": {
+                        "name": "deathCause",
+                        "label": "death cause"
+                    },
+                    "nationality": {
+                        "name": "nationality",
+                        "label": "nationality",
+                        "domain": "Person",
+                        "range": "Country"
+                    },
+                    "academic_advisors": {
+                        "name": "academicAdvisor",
+                        "label": "academic advisor",
+                        "domain": "Scientist",
+                        "range": "Person"
+                    },
+                    "residence": {
+                        "name": "residence",
+                        "label": "residence"
+                    },
+                    "awards": {
+                        "name": "award",
+                        "label": "award",
+                        "domain": "Person",
+                        "range": "Award"
+                    },
+                    "spouse": {
+                        "name": "spouse",
+                        "label": "spouse",
+                        "domain": "Person",
+                        "range": "Person"
+                    },
+                    "doctoral_advisor": {
+                        "name": "doctoralAdvisor",
+                        "label": "doctoral advisor",
+                        "domain": "Scientist",
+                        "range": "Person"
+                    },
+                    "name": {
+                        "name": "foaf:name"
+                    },
+                    "prizes": {
+                        "name": "award",
+                        "label": "award",
+                        "domain": "Person",
+                        "range": "Award"
+                    },
+                    "influenced": {
+                        "name": "influenced",
+                        "label": "influenced",
+                        "domain": "Person",
+                        "range": "Person"
+                    },
+                    "fields": {
+                        "name": "field",
+                        "label": "field"
+                    }
                 },
                 "issues": null
             }
@@ -13265,7 +13363,7 @@
             "id": "/m/05snw"
         },
         "lang": "en",
-        "score": 801.603882
+        "score": 801.815491
     },
     "infobox-splitter": [
         {

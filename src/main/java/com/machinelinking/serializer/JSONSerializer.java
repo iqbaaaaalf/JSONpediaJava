@@ -245,6 +245,11 @@ public class JSONSerializer implements Serializer {
     }
 
     @Override
+    public void fieldValueIfNotNull(String name, Object value) {
+        if(value != null) fieldValue(name, value);
+    }
+
+    @Override
     public void flush() {
         try {
             jsonGenerator.flush();
