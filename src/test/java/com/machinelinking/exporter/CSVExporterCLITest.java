@@ -8,6 +8,8 @@ import java.io.File;
 import java.io.IOException;
 
 /**
+ * Test case for {@link CSVExporterCLI}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class CSVExporterCLITest {

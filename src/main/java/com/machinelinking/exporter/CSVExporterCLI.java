@@ -12,6 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
+ * Commandline utility for {@link CSVExporter}.
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class CSVExporterCLI {
@@ -105,7 +106,9 @@ public class CSVExporterCLI {
     public static class NumOfThreadsValidator implements IValueValidator<Integer> {
         public void validate(String name, Integer v)
         throws ParameterException {
-            if(v < 0) throw new ParameterException("Invalid number of threads, must be >= 0. (0 => NumOfThreads == # CPU Cores)");
+            if(v < 0) throw new ParameterException(
+                    "Invalid number of threads, must be >= 0. (0 => NumOfThreads == # CPU Cores)"
+            );
         }
     }
 

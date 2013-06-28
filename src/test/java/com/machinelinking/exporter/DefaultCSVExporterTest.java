@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.net.URL;
 
 /**
+ *  Test case for {@link DefaultCSVExporter}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultCSVExporterTest {
@@ -21,13 +23,12 @@ public class DefaultCSVExporterTest {
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         final CSVExporterReport report = exporter.export(
                 new URL("http://en.wikipedia.org/"),
-                FileUtil.openDecompressedInputStream("/enwiki-latest-pages-articles-p1.xml.gz"),
+                FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz"),
                 out
         );
 
-        System.out.println("REPORT: " + report);
-        System.out.println("OUT:\n"   + out);
-        final String expected = IOUtils.toString( this.getClass().getResourceAsStream("/exporter/out.csv") );
+        Assert.assertEquals(1133, report.getTemplatesCount());
+        final String expected = IOUtils.toString( this.getClass().getResourceAsStream("out.csv") );
         Assert.assertEquals(expected, out.toString());
     }
 

@@ -3,6 +3,8 @@ package com.machinelinking.exporter;
 import com.machinelinking.wikimedia.ProcessorReport;
 
 /**
+ * Execution report for {@link CSVExporter}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class CSVExporterReport {
@@ -42,8 +44,9 @@ public class CSVExporterReport {
     @Override
     public String toString() {
         return String.format(
-                "processor: %s\n\ttemplates: %d, properties %d, max properties/template: %d, avg properties/template: %f\n",
-                processorReport, templatesCount, propertiesCount, maxPropertiesPerTemplate, (float)propertiesCount / templatesCount
+            "processor: %s\n\ttemplates: %d, properties %d, max properties/template: %d, avg properties/template: %f\n",
+            processorReport, templatesCount, propertiesCount, maxPropertiesPerTemplate,
+                (float)propertiesCount / templatesCount
         );
     }
 

@@ -21,6 +21,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
+ * Default {@link CSVExporter} implementation.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultCSVExporter extends WikiDumpMultiThreadProcessor<DefaultCSVExporter.TemplatePropertyProcessor>

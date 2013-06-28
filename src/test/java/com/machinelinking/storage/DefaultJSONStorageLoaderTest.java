@@ -24,17 +24,17 @@ public class DefaultJSONStorageLoaderTest {
 
     @Test
     public void testLoaderDump1() throws IOException, SAXException {
-        loadDump("/enwiki-latest-pages-articles-p1.xml.gz", 0);
+        loadDump("/dumps/enwiki-latest-pages-articles-p1.xml.gz", 0);
     }
 
     @Test
     public void testLoaderDump2() throws IOException, SAXException {
-        loadDump("/enwiki-latest-pages-articles-p2.xml.gz", 0);
+        loadDump("/dumps/enwiki-latest-pages-articles-p2.xml.gz", 0);
     }
 
     @Test
     public void testLoaderDump3() throws IOException, SAXException {
-        loadDump("/enwiki-latest-pages-articles-p3.xml.gz", 0);
+        loadDump("/dumps/enwiki-latest-pages-articles-p3.xml.gz", 0);
     }
 
     @Ignore
