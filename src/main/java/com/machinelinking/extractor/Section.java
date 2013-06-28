@@ -4,6 +4,8 @@ import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
 
 /**
+ * Defines a <i>Wikipedia section</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class Section implements Serializable {

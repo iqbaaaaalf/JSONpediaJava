@@ -6,6 +6,8 @@ import com.machinelinking.serializer.Serializer;
 import java.net.URL;
 
 /**
+ * Defines a <i>Wikipedia link</i>s.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class Link implements Serializable {

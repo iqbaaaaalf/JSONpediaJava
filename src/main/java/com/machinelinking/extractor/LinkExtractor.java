@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Specific {@link Extractor} for <i>Wikipedia link</i>s.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class LinkExtractor extends Extractor {

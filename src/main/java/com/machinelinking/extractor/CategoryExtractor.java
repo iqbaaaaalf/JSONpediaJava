@@ -7,6 +7,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
+ * {@link Extractor} for categories.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class CategoryExtractor extends Extractor {

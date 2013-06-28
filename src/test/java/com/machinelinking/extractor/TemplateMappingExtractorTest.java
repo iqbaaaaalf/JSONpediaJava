@@ -24,7 +24,7 @@ public class TemplateMappingExtractorTest {
     public void testFetchMapping() throws IOException, WikiTextParserException, ExecutionException, InterruptedException {
         final TemplateMappingExtractor extractor = new TemplateMappingExtractor();
         final WikiTextParser parser = new WikiTextParser(extractor);
-        parser.parse(new URL("http://test/page1"), this.getClass().getResourceAsStream("/Page1.wikitext"));
+        parser.parse(new URL("http://test/page1"), this.getClass().getResourceAsStream("Page1.wikitext"));
 
         final Map<String, TemplateMapping> mappings = extractor.getCollectedMappings();
         Assert.assertNotNull(mappings);

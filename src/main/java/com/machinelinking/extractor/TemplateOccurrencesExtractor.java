@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Specific {@link Extractor} collecting occurrences of <i>Wikipedia Template</i>s.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TemplateOccurrencesExtractor extends Extractor {

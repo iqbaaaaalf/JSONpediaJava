@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Defines a <i>Wikipedia table</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class Table {

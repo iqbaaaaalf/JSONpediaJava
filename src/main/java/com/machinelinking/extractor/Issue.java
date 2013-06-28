@@ -5,6 +5,8 @@ import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
 
 /**
+ * Defines any issue raised while processing extraction.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class Issue implements Serializable {

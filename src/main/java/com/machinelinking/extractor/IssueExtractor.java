@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * This {@link Extractor} collects issues during extraction.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class IssueExtractor extends Extractor {

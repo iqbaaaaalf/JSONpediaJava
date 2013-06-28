@@ -9,6 +9,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
+ * Defines a <i>Wikipedia reference</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class Reference implements Serializable {

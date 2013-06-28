@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Specific {@link Extractor} for <i>Wikipedia section</i>s.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class SectionExtractor extends Extractor {

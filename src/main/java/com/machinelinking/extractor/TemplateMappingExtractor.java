@@ -15,6 +15,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
+ * Extracts <i>DBpedia Mapping</i>s for <i>Wikipedia Template</i>s.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TemplateMappingExtractor extends Extractor {

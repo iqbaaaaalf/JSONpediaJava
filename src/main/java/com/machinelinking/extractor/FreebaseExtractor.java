@@ -13,6 +13,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
+ * <i>Freebase</i> {@link Extractor}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class FreebaseExtractor extends Extractor {
