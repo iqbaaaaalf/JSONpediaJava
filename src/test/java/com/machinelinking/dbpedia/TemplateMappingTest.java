@@ -9,6 +9,8 @@ import org.xml.sax.SAXException;
 import java.io.IOException;
 
 /**
+ * Test case for {@link TemplateMapping} lookup.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TemplateMappingTest {

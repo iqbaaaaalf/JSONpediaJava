@@ -6,6 +6,8 @@ import org.junit.Test;
 import java.util.Map;
 
 /**
+ * Test case for {@link InMemoryOntologyManager}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class InMemoryOntologyManagerTest {

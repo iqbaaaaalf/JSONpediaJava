@@ -11,6 +11,8 @@ import java.io.InputStreamReader;
 import java.net.URL;
 
 /**
+ * Test case for {@link WikiMappingHandler}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiMappingHandlerTest {
