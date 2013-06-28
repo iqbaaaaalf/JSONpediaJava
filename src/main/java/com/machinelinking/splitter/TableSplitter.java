@@ -1,6 +1,8 @@
 package com.machinelinking.splitter;
 
 /**
+ * {@link Splitter} implementation for <i>table</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TableSplitter extends Splitter {

@@ -11,6 +11,8 @@ import java.net.URL;
 import java.util.Map;
 
 /**
+ * Test case for {@link InfoboxSplitter}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class InfoboxSplitterTest {
@@ -41,7 +43,8 @@ public class InfoboxSplitterTest {
         multiHandler.endDocument();
 
         Assert.assertEquals(0, splitterHandler.getActiveRedirections().size() );
-        final Map<String,WikiTextParserHandlerSplitter.Redirect> redirections = splitterHandler.getcompletedRedirections();
+        final Map<String,WikiTextParserHandlerSplitter.Redirect> redirections =
+                splitterHandler.getcompletedRedirections();
         Assert.assertEquals(1, redirections.size());
 
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();

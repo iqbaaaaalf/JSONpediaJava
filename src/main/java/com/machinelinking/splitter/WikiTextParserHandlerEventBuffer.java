@@ -10,9 +10,12 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
+ * Buffer able to store {@link WikiTextParserHandler} event streams.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextParserHandlerEventBuffer {
@@ -89,7 +92,11 @@ public class WikiTextParserHandlerEventBuffer {
                 method.invoke(out, args);
             } catch (Exception e) {
                 throw new RuntimeException(
-                        String.format("Error while applying method %s with args [%s]", method, args), e
+                        String.format(
+                                "Error while applying method %s with args [%s]",
+                                method,
+                                Arrays.toString(args)
+                        ), e
                 );
             }
         }

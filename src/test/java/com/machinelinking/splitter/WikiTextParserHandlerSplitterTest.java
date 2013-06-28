@@ -10,6 +10,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
+ * Test case for {@link WikiTextParserHandlerSplitter}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextParserHandlerSplitterTest {
