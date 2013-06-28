@@ -8,6 +8,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 /**
+ * Provides enrichment on the <i>Google Freebase</i> service.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class FreebaseService {
@@ -28,6 +30,13 @@ public class FreebaseService {
 
     private FreebaseService() {}
 
+    /**
+     * Returns data for a given entity name.
+     *
+     * @param entityName
+     * @return
+     * @throws IOException
+     */
     public JsonNode getEntityData(String entityName) throws IOException {
         final URL query;
         try {
