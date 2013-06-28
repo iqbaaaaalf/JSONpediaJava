@@ -1,6 +1,8 @@
 package com.machinelinking.enricher;
 
 /**
+ * Default {@link Flag} implementation.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultFlag implements Flag, Comparable {

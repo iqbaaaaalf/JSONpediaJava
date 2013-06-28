@@ -20,6 +20,8 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ * Factory for {@link WikiEnricher} instances.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiEnricherFactory {
@@ -64,6 +66,13 @@ public class WikiEnricherFactory {
         return found;
     }
 
+    /**
+     * Converts a flag string to a list of {@link Flag} having care of the default {@link Flag}s.
+     *
+     * @param flagsStr
+     * @param defaultFlags
+     * @return
+     */
     public Flag[] toFlags(String flagsStr, Flag[] defaultFlags) {
         if(flagsStr == null || flagsStr.trim().length() == 0) return defaultFlags;
         final String[] flagNames = flagsStr.split(FLAG_SEPARATOR);
@@ -82,6 +91,12 @@ public class WikiEnricherFactory {
         return flags.toArray( new Flag[flags.size()] );
     }
 
+    /**
+     * Creates a {@link WikiEnricher} based on the given list of {@link Flag}s.
+     *
+     * @param flags
+     * @return
+     */
     public WikiEnricher createFullyConfiguredInstance(Flag... flags) {
         final Set<Flag> flagsSet = new HashSet<>(Arrays.asList(flags));
         final WikiEnricher enricher = new WikiEnricher();

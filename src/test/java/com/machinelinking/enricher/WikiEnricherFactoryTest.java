@@ -6,6 +6,8 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
+ * Test case for {@link WikiEnricherFactory}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiEnricherFactoryTest {
@@ -23,7 +25,9 @@ public class WikiEnricherFactoryTest {
     public void testToFlagsOptionalAdded() {
         final Flag[] DEFAULTS = new Flag[]{ WikiEnricherFactory.Structure, WikiEnricherFactory.Validate };
         Assert.assertEquals(
-                Arrays.asList( new Flag[]{ WikiEnricherFactory.Structure, WikiEnricherFactory.Validate, WikiEnricherFactory.Linkers }),
+                Arrays.asList( new Flag[]{
+                        WikiEnricherFactory.Structure, WikiEnricherFactory.Validate, WikiEnricherFactory.Linkers
+                }),
                 Arrays.asList(WikiEnricherFactory.getInstance().toFlags("Linkers", DEFAULTS))
         );
     }

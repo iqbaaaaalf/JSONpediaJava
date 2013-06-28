@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 /**
+ * Test case for {@link WikiEnricher}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiEnricherTest {
@@ -25,13 +27,17 @@ public class WikiEnricherTest {
     @Test
     public void testEnrich1()
     throws IOException, SAXException, WikiTextParserException, InterruptedException, ExecutionException {
-        verifyEnrich(new URL("http://en.wikipedia.org/wiki/Albert_Einstein"), true, "/Page1.wikitext", "/Enrichment1.json");
+        verifyEnrich(
+                new URL("http://en.wikipedia.org/wiki/Albert_Einstein"), true, "/Page1.wikitext", "/Enrichment1.json"
+        );
     }
 
     @Test
     public void testEnrich2()
     throws IOException, SAXException, WikiTextParserException, InterruptedException, ExecutionException {
-        verifyEnrich(new URL("http://en.wikipedia.org/wiki/London"), false, "/Enrichment2.wikitext", "/Enrichment2.json");
+        verifyEnrich(
+                new URL("http://en.wikipedia.org/wiki/London"), false, "/Enrichment2.wikitext", "/Enrichment2.json"
+        );
     }
 
     private void verifyEnrich(URL entity, boolean online, String wikiInFile, String jsonOutExpectedFile)

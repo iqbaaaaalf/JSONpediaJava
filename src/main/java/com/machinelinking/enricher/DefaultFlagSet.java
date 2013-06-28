@@ -1,6 +1,8 @@
 package com.machinelinking.enricher;
 
 /**
+ * Default {@link FlagSet} implementation.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultFlagSet implements FlagSet {

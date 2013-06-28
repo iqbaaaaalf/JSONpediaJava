@@ -27,6 +27,8 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 /**
+ * The <i>Wiki</i> processor facade.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiEnricher {
