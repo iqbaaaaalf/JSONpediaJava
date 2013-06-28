@@ -8,6 +8,8 @@ import org.junit.Test;
 import java.io.IOException;
 
 /**
+ * Test case for {@link DefaultJSONFilterEngine}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultJSONFilterEngineTest {
@@ -52,7 +54,7 @@ public class DefaultJSONFilterEngineTest {
     }
 
     private JsonNode loadJSON() throws IOException {
-        return JSONUtils.parseJSON(this.getClass().getResourceAsStream("/Enrichment1.json"));
+        return JSONUtils.parseJSON(this.getClass().getResourceAsStream("Data.json"));
     }
 
     private void checkFilter(JSONFilter filter) throws IOException {

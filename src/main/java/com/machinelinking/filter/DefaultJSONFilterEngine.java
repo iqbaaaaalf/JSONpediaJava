@@ -7,6 +7,8 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
+ * Default {@link JSONFilterEngine} implementation.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultJSONFilterEngine implements JSONFilterEngine {

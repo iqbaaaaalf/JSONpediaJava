@@ -1,6 +1,8 @@
 package com.machinelinking.filter;
 
 /**
+ * Default {@link JSONFilterParser} implementation.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultJSONFilterParser implements JSONFilterParser {

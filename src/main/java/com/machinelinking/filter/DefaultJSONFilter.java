@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Default implementation for {@link JSONFilter}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultJSONFilter implements JSONFilter {
