@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
+ * Invalid entity exception definition.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class InvalidEntityException extends WebApplicationException {

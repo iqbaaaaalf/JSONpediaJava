@@ -5,6 +5,8 @@ import com.machinelinking.enricher.FlagSet;
 import javax.ws.rs.core.Response;
 
 /**
+ * Defines an Annotation Service.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface AnnotationService {

@@ -13,6 +13,8 @@ import java.io.IOException;
 import java.net.URI;
 
 /**
+ * Basic Service implementation based on <i>Grizzly</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class BasicServer {

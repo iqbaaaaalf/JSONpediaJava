@@ -6,6 +6,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
+ * Annotation wrapper for {@link Flag}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 @XmlRootElement(name = "flag")

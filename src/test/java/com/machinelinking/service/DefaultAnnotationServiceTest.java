@@ -34,7 +34,9 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
 
     static {
         try {
-            TARGET_RESOURCE = "resource/json/" + URLEncoder.encode("http://en.wikipedia.org/wiki/Albert_Einstein", "UTF8");
+            TARGET_RESOURCE = "resource/json/" + URLEncoder.encode(
+                    "http://en.wikipedia.org/wiki/Albert_Einstein", "UTF8"
+            );
         } catch (UnsupportedEncodingException urise) {
             throw new IllegalStateException();
         }
@@ -43,7 +45,10 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     @Test
     public void testFlags() throws IOException, URISyntaxException {
         final JsonNode node = performQuery("flags");
-        Assert.assertEquals(WikiEnricherFactory.getInstance().getDefinedFlags().length, node.get("definedFlags").size());
+        Assert.assertEquals(
+                WikiEnricherFactory.getInstance().getDefinedFlags().length,
+                node.get("definedFlags").size()
+        );
     }
 
     @Test

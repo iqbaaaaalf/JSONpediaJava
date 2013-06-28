@@ -31,6 +31,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * Default implementation for {@link AnnotationService}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 @Path("/annotate")
