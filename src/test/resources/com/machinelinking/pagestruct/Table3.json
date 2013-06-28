@@ -1,0 +1,806 @@
+{
+    "__type": "page",
+    "url": "http://test/Table3",
+    "structure": [
+        {
+            "__type": "table",
+            "header": " style=\"float: right; margin-left: 3em; margin-bottom: 2em\"\n",
+            "content": [
+                {
+                    "__type": "head_cell",
+                    "content": {}
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "table",
+                            "header": " border=\"0\" cellpadding=\"2\" cellspacing=\"0\" style=\"width: 100%; margin-bottom: 1em; text-align: center; border: 1px solid #333333; font-family: Arial\"\n",
+                            "content": [
+                                {
+                                    "__type": "head_cell",
+                                    "content": {
+                                        "style": [
+                                            "\"background-color: #DDDDDD\""
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "style": [
+                                            "\"padding-top: 5px; padding-bottom: 5px\""
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": {
+                                            "__type": "reference",
+                                            "label": "August 2003",
+                                            "content": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "colspan": [
+                                            "\"5\" style=\"padding-top: 5px; padding-bottom: 5px\""
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "September 2003"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "style": [
+                                            "\"padding-top: 5px; padding-bottom: 5px\""
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": {
+                                            "__type": "reference",
+                                            "label": "October 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    ">"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "style": [
+                                            "\"padding-top: 4px\""
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "S"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "style": [
+                                            "\"padding-top: 4px\""
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "M"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "style": [
+                                            "\"padding-top: 4px\""
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "T"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "style": [
+                                            "\"padding-top: 4px\""
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "W"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "style": [
+                                            "\"padding-top: 4px\""
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "T"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "style": [
+                                            "\"padding-top: 4px\""
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "F"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "style": [
+                                            "\"padding-top: 4px\""
+                                        ]
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "S"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "&nbsp;"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 1, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "1"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 2, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "2"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 3, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "3"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 4, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "4"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 5, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "5"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 6, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "6"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 7, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "7"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 8, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "8"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 9, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "9"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 10, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "10"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 11, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "11"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 12, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "12"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 13, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "13"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 14, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "14"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 15, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "15"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 16, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "16"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 17, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "17"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 18, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "18"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 19, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "19"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 20, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "20"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 21, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "21"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 22, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "22"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 23, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "23"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 24, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "24"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 25, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "25"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 26, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "26"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 27, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "27"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 28, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "28"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 29, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "29"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "'''",
+                                        "__an1": {
+                                            "__type": "reference",
+                                            "label": "#September 30, 2003",
+                                            "content": {
+                                                "__an0": [
+                                                    "30"
+                                                ]
+                                            }
+                                        },
+                                        "__an2": "'''"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "&nbsp;"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "&nbsp;"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "&nbsp;"
+                                    }
+                                },
+                                {
+                                    "__type": "body_cell",
+                                    "content": {
+                                        "__an0": "&nbsp;"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "style": [
+                            "\"border: 1px solid #000000; background-color: #fff5f5; padding: 7px\""
+                        ]
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "": [
+                            "==See also===\n\n*",
+                            {
+                                "__type": "reference",
+                                "label": "U.S. presidential election, 2004",
+                                "content": {
+                                    "__an0": [
+                                        "U.S. Presidential Election"
+                                    ]
+                                }
+                            },
+                            "*",
+                            {
+                                "__type": "reference",
+                                "label": "2003 occupation of Iraq timeline",
+                                "content": {
+                                    "__an0": [
+                                        "Iraq timeline"
+                                    ]
+                                }
+                            },
+                            "*",
+                            {
+                                "__type": "reference",
+                                "label": "Timeline of the War in Afghanistan (September 2003)",
+                                "content": {}
+                            },
+                            "*",
+                            {
+                                "__type": "reference",
+                                "label": "2003 California recall",
+                                "content": {
+                                    "__an0": [
+                                        "California recall"
+                                    ]
+                                }
+                            },
+                            "*",
+                            {
+                                "__type": "reference",
+                                "label": "Hutton Inquiry",
+                                "content": {}
+                            },
+                            "*",
+                            {
+                                "__type": "reference",
+                                "label": "Politics of Liberia",
+                                "content": {
+                                    "__an0": [
+                                        "''Liberian crisis''"
+                                    ]
+                                }
+                            },
+                            "*",
+                            {
+                                "__type": "reference",
+                                "label": "North Korea nuclear weapons program",
+                                "content": {
+                                    "__an0": [
+                                        "''North Korea crisis''"
+                                    ]
+                                }
+                            },
+                            "*",
+                            {
+                                "__type": "reference",
+                                "label": "Road map for peace",
+                                "content": {}
+                            },
+                            "*",
+                            {
+                                "__type": "reference",
+                                "label": "Same-sex marriage in Canada",
+                                "content": {
+                                    "__an0": [
+                                        "Same-sex marriage"
+                                    ]
+                                }
+                            },
+                            "*",
+                            {
+                                "__type": "reference",
+                                "label": "SCO v. IBM Linux lawsuit",
+                                "content": {
+                                    "__an0": [
+                                        "''SCO vs IBM''"
+                                    ]
+                                }
+                            },
+                            "*",
+                            {
+                                "__type": "reference",
+                                "label": "War on Terrorism",
+                                "content": {}
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

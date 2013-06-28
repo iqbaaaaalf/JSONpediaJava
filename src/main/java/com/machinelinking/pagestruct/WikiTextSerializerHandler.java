@@ -7,6 +7,9 @@ import java.net.URL;
 import java.util.Stack;
 
 /**
+ * {@link WikiTextSerializerHandler} converting parser events to serialization events
+ * using a {@link Serializer}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {

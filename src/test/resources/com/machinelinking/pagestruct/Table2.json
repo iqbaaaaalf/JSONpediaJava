@@ -1,0 +1,1023 @@
+{
+    "__type": "page",
+    "url": "http://test/Table2",
+    "structure": [
+        {
+            "__type": "table",
+            "header": " class=\"wikitable\"\n",
+            "content": [
+                {
+                    "__type": "head_cell",
+                    "content": {
+                        "rowspan": [
+                            "2"
+                        ]
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "ANA type"
+                    }
+                },
+                {
+                    "__type": "head_cell",
+                    "content": {
+                        "rowspan": [
+                            "2"
+                        ]
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "Target antigen"
+                    }
+                },
+                {
+                    "__type": "head_cell",
+                    "content": {
+                        "colspan": [
+                            "7"
+                        ]
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Sensitivity and specificity",
+                            "content": {
+                                "__an0": [
+                                    "Sensitivity"
+                                ]
+                            }
+                        },
+                        "__an1": {
+                            "__type": "reference",
+                            "label": "Systemic lupus erythematosus",
+                            "content": {
+                                "__an0": [
+                                    "SLE"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "__type": "head_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Drug-induced lupus erythematosus",
+                            "content": {
+                                "__an0": [
+                                    "Drug-induced LE"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "__type": "head_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Systemic_sclerosis#Types",
+                            "content": {
+                                "__an0": [
+                                    "Diffuse systemic sclerosis"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "__type": "head_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "CREST syndrome",
+                            "content": {
+                                "__an0": [
+                                    "Limited systemic scleroderma"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "__type": "head_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Sjögren syndrome",
+                            "content": {}
+                        }
+                    }
+                },
+                {
+                    "__type": "head_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Inflammatory myopathy",
+                            "content": {}
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Mixed connective tissue disease",
+                            "content": {
+                                "__an0": [
+                                    "MCTD"
+                                ]
+                            }
+                        },
+                        "__an1": "All ANAs",
+                        "__an2": {
+                            "__type": "open_tag",
+                            "name": "br",
+                            "attributes": null
+                        },
+                        "__an3": {
+                            "__type": "open_tag",
+                            "name": "font",
+                            "attributes": [
+                                {
+                                    "size": "1"
+                                }
+                            ]
+                        },
+                        "__an4": "(by indirect",
+                        "__an5": {
+                            "__type": "reference",
+                            "label": "Immunofluorescence",
+                            "content": {
+                                "__an0": [
+                                    "IF"
+                                ]
+                            }
+                        },
+                        "__an6": ")"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "Various"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": ">95"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": ">95"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "70-90"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "70-90"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "50-80"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "40-60"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "95",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        },
+                        "__an2": {
+                            "__type": "reference",
+                            "label": "Anti-dsDNA",
+                            "content": {}
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "DNA"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "40-60"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        },
+                        "__an2": {
+                            "__type": "reference",
+                            "label": "Anti-Sm",
+                            "content": {}
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "Core proteins of",
+                        "__an1": {
+                            "__type": "reference",
+                            "label": "snRNP",
+                            "content": {}
+                        },
+                        "__an2": "s"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "20-30"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        },
+                        "__an2": {
+                            "__type": "reference",
+                            "label": "Anti-histone antibodies",
+                            "content": {
+                                "__an0": [
+                                    "Anti-histone"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Histone",
+                            "content": {}
+                        },
+                        "__an1": "s"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "50-70"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "90",
+                        "__an1": {
+                            "__type": "open_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        },
+                        "__an2": "Table 6-2 in:",
+                        "__an3": {
+                            "__type": "template",
+                            "name": "cite book",
+                            "content": {
+                                "author": [
+                                    "Elizabeth D Agabegi; Agabegi, Steven S."
+                                ],
+                                "title": [
+                                    "Step-Up to Medicine (Step-Up Series)"
+                                ],
+                                "publisher": [
+                                    "Lippincott Williams & Wilkins"
+                                ],
+                                "location": [
+                                    "Hagerstwon, MD"
+                                ],
+                                "year": [
+                                    "2008"
+                                ],
+                                "pages": null,
+                                "isbn": [
+                                    "0-7817-7153-6"
+                                ],
+                                "oclc": null,
+                                "doi": null,
+                                "accessdate": null
+                            }
+                        },
+                        "__an4": {
+                            "__type": "close_tag",
+                            "name": "ref"
+                        },
+                        "__an5": "- 95"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        },
+                        "__an2": {
+                            "__type": "reference",
+                            "label": "Anti Scl-70",
+                            "content": {}
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Type I topoisomerase",
+                            "content": {}
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "28-70"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "10-18"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        },
+                        "__an2": "Anti-centromere"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Centromere",
+                            "content": {
+                                "__an0": [
+                                    "Centromeric"
+                                ]
+                            }
+                        },
+                        "__an1": "proteins"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "22-26"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "90"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        },
+                        "__an2": {
+                            "__type": "reference",
+                            "label": "Anti-snRNP70",
+                            "content": {}
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "snRNP70",
+                            "content": {}
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "30",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "Kumar5-9"
+                                }
+                            ]
+                        },
+                        "__an2": "-40",
+                        "__an3": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "Kumar5-9"
+                                }
+                            ]
+                        },
+                        "__an4": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "15",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "10",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "15",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "90",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        },
+                        "__an2": {
+                            "__type": "reference",
+                            "label": "SS-A",
+                            "content": {}
+                        },
+                        "__an3": "(Ro)"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Ribonucleoprotein",
+                            "content": {
+                                "__an0": [
+                                    "RNP"
+                                ]
+                            }
+                        },
+                        "__an1": "s"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "30-50"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "70-95"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "10"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        },
+                        "__an2": {
+                            "__type": "reference",
+                            "label": "SS-B",
+                            "content": {}
+                        },
+                        "__an3": "(La)"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Ribonucleoprotein",
+                            "content": {
+                                "__an0": [
+                                    "RNP"
+                                ]
+                            }
+                        },
+                        "__an1": "s"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "10-15"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "60-90"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        },
+                        "__an2": {
+                            "__type": "reference",
+                            "label": "Jo-1",
+                            "content": {}
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "reference",
+                            "label": "Histidine-tRNA ligase",
+                            "content": {}
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "25"
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": "-",
+                        "__an1": {
+                            "__type": "inline_tag",
+                            "name": "ref",
+                            "attributes": [
+                                {
+                                    "name": "agabegi2ndtable6-2"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "colspan": [
+                            "9"
+                        ]
+                    }
+                },
+                {
+                    "__type": "body_cell",
+                    "content": {
+                        "__an0": {
+                            "__type": "open_tag",
+                            "name": "font",
+                            "attributes": [
+                                {
+                                    "size": "1"
+                                }
+                            ]
+                        },
+                        "-": [
+                            "less than 5% sensitivity\n\nUnless else specified in boxes, then ref is:",
+                            {
+                                "__type": "open_tag",
+                                "name": "ref",
+                                "attributes": [
+                                    {
+                                        "name": "Kumar5-9"
+                                    }
+                                ]
+                            },
+                            "Table 5-9 in:",
+                            {
+                                "__type": "template",
+                                "name": "cite book",
+                                "content": {
+                                    "author": [
+                                        "Mitchell, Richard Sheppard; Kumar, Vinay; Abbas, Abul K.; Fausto, Nelson"
+                                    ],
+                                    "title": [
+                                        "Robbins Basic Pathology"
+                                    ],
+                                    "publisher": [
+                                        "Saunders"
+                                    ],
+                                    "location": [
+                                        "Philadelphia"
+                                    ],
+                                    "year": [
+                                        "2007"
+                                    ],
+                                    "pages": null,
+                                    "isbn": [
+                                        "1-4160-2973-7"
+                                    ],
+                                    "oclc": null,
+                                    "doi": null
+                                }
+                            },
+                            "8th edition.",
+                            {
+                                "__type": "close_tag",
+                                "name": "ref"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

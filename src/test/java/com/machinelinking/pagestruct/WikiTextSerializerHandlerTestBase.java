@@ -15,6 +15,8 @@ import java.io.InputStreamReader;
 import java.net.URL;
 
 /**
+ * Base test case. for {@link WikiTextSerializerHandler}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextSerializerHandlerTestBase <T extends WikiTextSerializerHandler> {
@@ -30,7 +32,8 @@ public class WikiTextSerializerHandlerTestBase <T extends WikiTextSerializerHand
         return handler;
     }
 
-    protected void verifySerialization(String wikiPage, String expectedJSON) throws IOException, WikiTextParserException {
+    protected void verifySerialization(String wikiPage, String expectedJSON)
+    throws IOException, WikiTextParserException {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final Serializer serializer = new JSONSerializer(baos);
         try {
@@ -46,7 +49,7 @@ public class WikiTextSerializerHandlerTestBase <T extends WikiTextSerializerHand
                     new URL("http://test/" + wikiPage),
                     new BufferedReader(
                             new InputStreamReader(
-                                    this.getClass().getResourceAsStream(String.format("/%s.wikitext", wikiPage))
+                                    this.getClass().getResourceAsStream(String.format("%s.wikitext", wikiPage))
                             )
                     )
             );
@@ -57,10 +60,10 @@ public class WikiTextSerializerHandlerTestBase <T extends WikiTextSerializerHand
 
         final JsonNode actualJSONNode   = JSONUtils.parseJSON(actual);
         final JsonNode expectedJSONNode = JSONUtils.parseJSON(
-            this.getClass().getResourceAsStream(String.format("/%s.json", expectedJSON))
+            this.getClass().getResourceAsStream(String.format("%s.json", expectedJSON))
         );
 
-        Assert.assertEquals("Unexpected serialization.", expectedJSONNode, actualJSONNode);
+        Assert.assertEquals("Unexpected serialization.", expectedJSONNode.toString(), actualJSONNode.toString());
     }
 
     protected void verifySerialization(String wikiPage) throws IOException, WikiTextParserException {

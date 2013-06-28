@@ -7,6 +7,8 @@ import org.junit.Test;
 import java.io.IOException;
 
 /**
+ * Test case for {@link WikiTextSerializerHandler}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextSerializerHandlerTest extends WikiTextSerializerHandlerTestBase {
@@ -37,17 +39,17 @@ public class WikiTextSerializerHandlerTest extends WikiTextSerializerHandlerTest
 
     @Test
     public void testTableSerialization1() throws IOException, WikiTextParserException {
-        verifySerialization("serialization/Table1");
+        verifySerialization("Table1");
     }
 
     @Test
     public void testTableSerialization2() throws IOException, WikiTextParserException {
-        verifySerialization("serialization/Table2");
+        verifySerialization("Table2");
     }
 
     @Test
     public void testTableSerialization3() throws IOException, WikiTextParserException {
-        verifySerialization("serialization/Table3");
+        verifySerialization("Table3");
     }
 
     public static class TestWikiTextSerializerHandler extends WikiTextSerializerHandler {

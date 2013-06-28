@@ -3,6 +3,8 @@ package com.machinelinking.pagestruct;
 import com.machinelinking.serializer.Serializer;
 
 /**
+ * Factory for {@link WikiTextSerializerHandler}s.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextSerializerHandlerFactory {

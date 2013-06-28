@@ -6,6 +6,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
+ * Test case for {@link WikiTextHRDumperHandler}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextHRDumperHandlerTest {

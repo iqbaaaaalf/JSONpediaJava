@@ -8,6 +8,9 @@ import java.util.Arrays;
 import java.util.Stack;
 
 /**
+ * {@link WikiTextParserHandler} implementation Producing a textual
+ * representation of event messages for testing purposes.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextHRDumperHandler implements WikiTextParserHandler {
