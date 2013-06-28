@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Allows to multiply {@link WikiTextParserHandler}s messages.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class MultiWikiTextParserHandler implements WikiTextParserHandler {

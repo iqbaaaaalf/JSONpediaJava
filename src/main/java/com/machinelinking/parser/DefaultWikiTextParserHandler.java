@@ -3,6 +3,8 @@ package com.machinelinking.parser;
 import java.net.URL;
 
 /**
+ * Default empty {@link WikiTextParserHandler} implementation.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultWikiTextParserHandler implements WikiTextParserHandler {

@@ -6,6 +6,8 @@ import java.lang.reflect.Proxy;
 import java.util.Stack;
 
 /**
+ * {@link WikiTextParserHandler} able to validate the event stream.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class ValidatingWikiTextParserHandler {
@@ -48,7 +50,9 @@ public class ValidatingWikiTextParserHandler {
             final WikiTextParserHandler.Pop pop = method.getAnnotation(WikiTextParserHandler.Pop.class);
             if(pop != null) {
                 final NodeElement node = new NodeElement(pop.node(), getId(pop.id(), args));
-                if(stack.empty()) throw new IllegalStateException(getErrorName() + " Expected element in stack for node " + node);
+                if(stack.empty()) throw new IllegalStateException(
+                        getErrorName() + " Expected element in stack for node " + node
+                );
                 final NodeElement peek = stack.pop();
                 peek.checkMatch(node);
             }

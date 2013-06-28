@@ -7,6 +7,8 @@ import java.lang.annotation.Target;
 import java.net.URL;
 
 /**
+ * Interface of events produced by {@link WikiTextParser}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface WikiTextParserHandler extends TagHandler {

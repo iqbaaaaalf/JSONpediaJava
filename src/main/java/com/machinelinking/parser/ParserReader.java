@@ -3,6 +3,8 @@ package com.machinelinking.parser;
 import java.io.IOException;
 
 /**
+ * Defines the reader for a {@link WikiTextParser}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface ParserReader {

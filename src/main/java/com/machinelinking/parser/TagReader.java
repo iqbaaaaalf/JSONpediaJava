@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Stack;
 
 /**
+ * Utility class to manage <i>HTML</i> markup.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TagReader {

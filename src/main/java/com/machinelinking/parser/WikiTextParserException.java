@@ -1,6 +1,8 @@
 package com.machinelinking.parser;
 
 /**
+ * Any exception raised by {@link WikiTextParser}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextParserException extends Exception {

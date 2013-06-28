@@ -1,6 +1,7 @@
 package com.machinelinking.parser;
 
 import junit.framework.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -8,8 +9,11 @@ import java.io.IOException;
 import java.io.StringReader;
 
 /**
+ * Test case for {@link EntityExpansionReader}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
+@Ignore
 public class EntityExpansionReaderTest {
 
     @Test
@@ -69,7 +73,9 @@ public class EntityExpansionReaderTest {
 
     @Test
     public void testExpansionWithMarkReset() throws IOException {
-        final EntityExpansionReader expandableReader = new EntityExpansionReader( new BufferedReader(new StringReader("&#93;")) );
+        final EntityExpansionReader expandableReader = new EntityExpansionReader(
+                new BufferedReader(new StringReader("&#93;"))
+        );
         expandableReader.mark(1);
         char c;
         c = (char) expandableReader.read();
@@ -85,7 +91,9 @@ public class EntityExpansionReaderTest {
     }
 
     private void checkStringCharByChar(String in, String expected) throws IOException {
-        final EntityExpansionReader expandableReader = new EntityExpansionReader( new BufferedReader(new StringReader(in)) );
+        final EntityExpansionReader expandableReader = new EntityExpansionReader(
+                new BufferedReader(new StringReader(in))
+        );
         final char[] charByCharBuffer = new char[expected.length()];
         for(int i = 0; i < charByCharBuffer.length; i++) {
             charByCharBuffer[i] = (char) expandableReader.read();
@@ -97,7 +105,9 @@ public class EntityExpansionReaderTest {
     }
 
     private void checkStringWithBulkBuffer(String in, String expected) throws IOException {
-        final EntityExpansionReader expandableReader = new EntityExpansionReader( new BufferedReader(new StringReader(in)) );
+        final EntityExpansionReader expandableReader = new EntityExpansionReader(
+                new BufferedReader(new StringReader(in))
+        );
         final char[] bulkBuffer = new char[expected.length()];
         final int readChars     = expandableReader.read(bulkBuffer, 0, bulkBuffer.length);
         final String out = new String(bulkBuffer);

@@ -12,6 +12,8 @@ import java.io.InputStreamReader;
 import java.net.URL;
 
 /**
+ * Test case for {@link WikiTextParser}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextParserTest {
@@ -1057,7 +1059,8 @@ public class WikiTextParserTest {
         verifyParsing("Table2");
     }
 
-    private void parse(InputStreamReader reader, String expected, boolean validate) throws IOException, WikiTextParserException {
+    private void parse(InputStreamReader reader, String expected, boolean validate)
+    throws IOException, WikiTextParserException {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(validate);
         final WikiTextParser parser = new WikiTextParser(handler);
         final long begin = System.nanoTime();
@@ -1079,11 +1082,11 @@ public class WikiTextParserTest {
 
     private void verifyParsing(String page, boolean validate) throws IOException, WikiTextParserException {
         final InputStreamReader fullWikiPageReader = new InputStreamReader(
-                this.getClass().getResourceAsStream(String.format("/%s.wikitext", page))
+                this.getClass().getResourceAsStream(String.format("%s.wikitext", page))
         );
         parse(
                 fullWikiPageReader,
-                IOUtils.toString(this.getClass().getResourceAsStream(String.format("/%s.out", page))),
+                IOUtils.toString(this.getClass().getResourceAsStream(String.format("%s.out", page))),
                 validate
         );
     }

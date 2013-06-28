@@ -1,6 +1,8 @@
 package com.machinelinking.parser;
 
 /**
+ * Default implementation of {@link ParserLocation}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultParserLocation implements ParserLocation {

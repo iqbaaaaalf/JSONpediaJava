@@ -14,6 +14,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * Test case for {@link TagReader}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TagReaderTest {
@@ -50,7 +52,10 @@ public class TagReaderTest {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(false);
         final TagReader reader = new TagReader(handler);
         reader.readNode(new TestParserReader("<node attr1=v1 attr2=\"v2\" attr3=\"part1 part2\">"));
-        Assert.assertEquals("Open Tag: node attributes: [attr1 : 'v1', attr2 : 'v2', attr3 : 'part1 part2']\n", handler.getContent());
+        Assert.assertEquals(
+                "Open Tag: node attributes: [attr1 : 'v1', attr2 : 'v2', attr3 : 'part1 part2']\n",
+                handler.getContent()
+        );
         Assert.assertTrue(reader.isInsideNode());
     }
 

@@ -5,6 +5,8 @@ import java.io.InputStream;
 import java.net.URL;
 
 /**
+ * Defines the source for a <i>Wikitext</i> page.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DocumentSource {

@@ -1,6 +1,8 @@
 package com.machinelinking.parser;
 
 /**
+ * Set of <i>Wikipedia</i> related utility functions.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiPediaUtils {

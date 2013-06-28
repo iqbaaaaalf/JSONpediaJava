@@ -10,6 +10,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
+ * The <i>Wikitext</i> event parser. <b>This class needs a complete rewriting.</b>
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 // TODO HIGH: error detection is not working, see BrokenTemplate1 wikitext
