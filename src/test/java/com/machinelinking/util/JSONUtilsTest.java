@@ -9,6 +9,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 /**
+ * Test case for {@link JSONUtils}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class JSONUtilsTest {

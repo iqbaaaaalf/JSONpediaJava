@@ -4,6 +4,8 @@ import junit.framework.Assert;
 import org.junit.Test;
 
 /**
+ * Test case for {@link DefaultJsonPathBuilder}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultJsonPathBuilderTest {

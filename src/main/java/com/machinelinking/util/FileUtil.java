@@ -10,6 +10,8 @@ import java.io.InputStream;
 import java.util.zip.GZIPInputStream;
 
 /**
+ * File utility functions.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class FileUtil {

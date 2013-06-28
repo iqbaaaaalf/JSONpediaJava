@@ -21,6 +21,8 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
+ * <i>JSON</i> utility functions.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class JSONUtils {
