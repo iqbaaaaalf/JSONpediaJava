@@ -28,7 +28,7 @@ public class WikiEnricherTest {
     public void testEnrich1()
     throws IOException, SAXException, WikiTextParserException, InterruptedException, ExecutionException {
         verifyEnrich(
-                new URL("http://en.wikipedia.org/wiki/Albert_Einstein"), true, "/Page1.wikitext", "/Enrichment1.json"
+                new URL("http://en.wikipedia.org/wiki/Albert_Einstein"), true, "Page1.wikitext", "Page1.json"
         );
     }
 
@@ -36,7 +36,7 @@ public class WikiEnricherTest {
     public void testEnrich2()
     throws IOException, SAXException, WikiTextParserException, InterruptedException, ExecutionException {
         verifyEnrich(
-                new URL("http://en.wikipedia.org/wiki/London"), false, "/Enrichment2.wikitext", "/Enrichment2.json"
+                new URL("http://en.wikipedia.org/wiki/London"), false, "Page2.wikitext", "Page2.json"
         );
     }
 
