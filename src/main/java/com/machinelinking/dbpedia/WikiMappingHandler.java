@@ -3,6 +3,9 @@ package com.machinelinking.dbpedia;
 import com.machinelinking.parser.DefaultWikiTextParserHandler;
 
 /**
+ * Specific {@link com.machinelinking.parser.WikiTextParserHandler}
+ * to parse <i>Template Mapping</i>s from <i>DBpedia</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public abstract class WikiMappingHandler extends DefaultWikiTextParserHandler {

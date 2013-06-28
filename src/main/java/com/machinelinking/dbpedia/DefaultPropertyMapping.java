@@ -4,6 +4,8 @@ package com.machinelinking.dbpedia;
 import java.io.Serializable;
 
 /**
+ * Default implementation for {@link PropertyMapping}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultPropertyMapping implements PropertyMapping, Serializable {

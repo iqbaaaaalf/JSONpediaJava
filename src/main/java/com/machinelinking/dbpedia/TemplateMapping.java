@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * Defines a mapping between a <i>Wikipedia Template</i> and <i>DBpedia</i> ontology.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TemplateMapping implements Serializable {

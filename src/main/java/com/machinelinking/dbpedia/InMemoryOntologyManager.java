@@ -20,6 +20,8 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
+ * In memory hashmap implementation of {@link OntologyManager}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class InMemoryOntologyManager implements OntologyManager {

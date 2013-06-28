@@ -1,6 +1,8 @@
 package com.machinelinking.dbpedia;
 
 /**
+ * <i>Factory</i> for {@link OntologyManager}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class OntologyManagerFactory {
@@ -16,6 +18,12 @@ public class OntologyManagerFactory {
 
     private OntologyManagerFactory() {}
 
+    /**
+     * Creates a new instance.
+     *
+     * @return a new instance.
+     * @throws OntologyManagerException
+     */
     public OntologyManager createOntologyManager() throws OntologyManagerException {
         return new InMemoryOntologyManager();
     }
