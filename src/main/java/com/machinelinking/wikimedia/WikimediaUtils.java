@@ -5,6 +5,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 /**
+ * Functions to manage <i>Wikimedia</i>.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikimediaUtils {

@@ -3,6 +3,8 @@ package com.machinelinking.wikimedia;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
+ * A <i>Wikipage</i> processing queue implementing {@link WikiPageHandler}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class BufferedWikiPageHandler implements WikiPageHandler {

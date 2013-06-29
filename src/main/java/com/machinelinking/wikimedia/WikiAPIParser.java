@@ -11,6 +11,8 @@ import java.io.InputStream;
 import java.net.URL;
 
 /**
+ * A parser for the <i>Wikipage XML API</i> format.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiAPIParser extends DefaultHandler {

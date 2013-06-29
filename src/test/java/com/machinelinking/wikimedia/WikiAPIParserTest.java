@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.net.URL;
 
 /**
+ * Test case for {@link WikiAPIParser}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiAPIParserTest {
@@ -17,7 +19,6 @@ public class WikiAPIParserTest {
         final WikiPage page = WikiAPIParser.parseAPIResponse(
                 WikimediaUtils.entityToWikiTextURLAPI( new URL("http://en.wikipedia.org/Albert_Einstein") )
         );
-        System.out.println(page);
         Assert.assertNotNull(page);
         Assert.assertEquals("Albert Einstein", page.getTitle());
         Assert.assertEquals(736, page.getId());

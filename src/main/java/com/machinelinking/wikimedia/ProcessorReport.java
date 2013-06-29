@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.concurrent.ExecutionException;
 
 /**
+ * The report of a {@link PageProcessor}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class ProcessorReport {

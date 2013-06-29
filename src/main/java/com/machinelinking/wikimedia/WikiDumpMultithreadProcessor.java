@@ -13,6 +13,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /**
+ * A multi-thread executor for {@link PageProcessor}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {

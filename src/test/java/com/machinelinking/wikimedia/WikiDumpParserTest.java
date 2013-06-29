@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.util.zip.GZIPInputStream;
 
 /**
+ * Test case for {@link WikiDumpParser}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiDumpParserTest {

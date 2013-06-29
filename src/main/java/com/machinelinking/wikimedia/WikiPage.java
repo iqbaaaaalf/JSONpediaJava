@@ -1,6 +1,8 @@
 package com.machinelinking.wikimedia;
 
 /**
+ * Models a single <i>Wikipage</i>
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiPage {

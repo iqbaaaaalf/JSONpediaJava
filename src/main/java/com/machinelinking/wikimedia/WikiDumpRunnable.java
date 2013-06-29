@@ -1,6 +1,8 @@
 package com.machinelinking.wikimedia;
 
 /**
+ * {@link Runnable} implementation for {@link PageProcessor}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiDumpRunnable implements Runnable {
