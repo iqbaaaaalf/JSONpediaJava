@@ -184,21 +184,4 @@
         </pluginManagement>
     </build>
 
-    <repositories>
-        <repository>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>daily</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>daily</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </snapshots>
-            <id>osr-public-repositories</id>
-            <name>OSR Public Repositories</name>
-            <url>http://</url>
-        </repository>
-    </repositories>
 </project>
