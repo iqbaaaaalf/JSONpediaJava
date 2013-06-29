@@ -16,7 +16,7 @@ public class CSVExporterCLITest {
 
     @Test
     public void testRun() throws IOException {
-        final File in  = new File("src/test/resources/enwiki-latest-pages-articles-p1.xml.gz");
+        final File in  = new File("src/test/resources/dumps/enwiki-latest-pages-articles-p1.xml.gz");
         final File out = File.createTempFile("csv-exporter", ".csv");
         final int exitCode = new CSVExporterCLI().run(
                 String.format("--prefix http://en.wikipedia.org --in %s --out %s --threads 1",
