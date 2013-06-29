@@ -71,7 +71,7 @@ public class WikiEnricherFactory {
      *
      * @param flagsStr
      * @param defaultFlags
-     * @return
+     * @return a new configured instance.
      */
     public Flag[] toFlags(String flagsStr, Flag[] defaultFlags) {
         if(flagsStr == null || flagsStr.trim().length() == 0) return defaultFlags;
@@ -95,7 +95,7 @@ public class WikiEnricherFactory {
      * Creates a {@link WikiEnricher} based on the given list of {@link Flag}s.
      *
      * @param flags
-     * @return
+     * @return a new configured instance.
      */
     public WikiEnricher createFullyConfiguredInstance(Flag... flags) {
         final Set<Flag> flagsSet = new HashSet<>(Arrays.asList(flags));

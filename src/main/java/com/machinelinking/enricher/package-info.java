@@ -1,4 +1,6 @@
-/** Main facade package defining
+/**
+ * Main facade package defining
  * the {@link com.machinelinking.enricher.WikiEnricherFactory}
  * and {@link com.machinelinking.enricher.WikiEnricher} classes.
  */
+package com.machinelinking.enricher;

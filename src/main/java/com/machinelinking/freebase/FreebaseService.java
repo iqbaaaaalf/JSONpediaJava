@@ -34,7 +34,7 @@ public class FreebaseService {
      * Returns data for a given entity name.
      *
      * @param entityName
-     * @return
+     * @return the node representing the fetched entity.
      * @throws IOException
      */
     public JsonNode getEntityData(String entityName) throws IOException {

@@ -1,1 +1,2 @@
-/** Wikitext event parser package. */
+/** <i>Wikitext</i> event parser package. */
+package com.machinelinking.parser;

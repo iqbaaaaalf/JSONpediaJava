@@ -18,7 +18,7 @@ public interface CSVExporter {
      * @param pagePrefix
      * @param is
      * @param os
-     * @return
+     * @return the report related to the exporting activity.
      */
     CSVExporterReport export(URL pagePrefix, InputStream is, OutputStream os);
 

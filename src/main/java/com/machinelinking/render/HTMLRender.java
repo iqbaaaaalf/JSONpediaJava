@@ -19,7 +19,7 @@ public interface HTMLRender extends RootRender {
      * Deregisters a {@link NodeRender} for a specific type.
      *
      * @param type
-     * @return
+     * @return <code>true</code> if removal succeeded, <code>false</code> otherwise.
      */
     boolean removeNodeRender(String type);
 
@@ -35,7 +35,7 @@ public interface HTMLRender extends RootRender {
      * Deregisters a {@link KeyValueRender} for a given key.
      *
      * @param key
-     * @return
+     * @return <code>true</code> if removal succeeded, <code>false</code> otherwise.
      */
     boolean removeKeyValueRender(String key);
 
