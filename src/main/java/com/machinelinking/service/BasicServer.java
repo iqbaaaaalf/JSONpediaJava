@@ -3,24 +3,30 @@ package com.machinelinking.service;
 import com.sun.jersey.api.container.grizzly2.GrizzlyServerFactory;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.api.core.ResourceConfig;
+import org.glassfish.grizzly.http.server.CLStaticHttpHandler;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.grizzly.http.server.Request;
 import org.glassfish.grizzly.http.server.Response;
-import org.glassfish.grizzly.http.server.StaticHttpHandler;
 
 import javax.ws.rs.core.UriBuilder;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URI;
+import java.net.URL;
 
 /**
  * Basic Service implementation based on <i>Grizzly</i>.
  *
+ * See: http://mytecc.wordpress.com/2013/06/06/grizzly-2-3-3-serving-static-http-resources-from-jar-files/
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class BasicServer {
 
     public static final String DEFAULT_HOST = "127.0.0.1";
     public static final int   DEFAULT_PORT  = 9998;
+
+    private static final String RESOURCE_ROOT =
+            BasicServer.class.getPackage().getName().replace(".", "/") + "/frontend";
 
     private static final String CONTENT_TYPE = "Content-Type";
 
@@ -45,7 +51,8 @@ public class BasicServer {
         ResourceConfig rc = new PackagesResourceConfig(BasicServer.class.getPackage().getName());
         httpServer = GrizzlyServerFactory.createHttpServer(getBaseURI(), rc);
         httpServer.getServerConfiguration().addHttpHandler(
-                new StaticHttpHandler("./src/main/resources/com/machinelinking/service/frontend/"){
+                //TODO: not working with JAR: new CLStaticHttpHandler( new ResourceRedirectionClassLoader(this.getClass().getClassLoader())){
+                new CLStaticHttpHandler( this.getClass().getClassLoader() ){
                     @Override
                     protected boolean handle(String uri, Request req, Response res) throws Exception {
                         if(uri.endsWith(".html")) {
@@ -91,6 +98,22 @@ public class BasicServer {
             basicServer.wait();
         }
         basicServer.tearDown();
+    }
+
+    class ResourceRedirectionClassLoader extends ClassLoader {
+
+        ResourceRedirectionClassLoader(ClassLoader parent) {
+            super(parent);
+        }
+
+        @Override
+        public URL getResource(String name) {
+            try {
+                return new URL( String.format("%s%s/%s", super.getResource(""), RESOURCE_ROOT, name) );
+            } catch (MalformedURLException e) {
+                throw new IllegalStateException(e);
+            }
+        }
     }
 
 }
