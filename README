@@ -48,4 +48,17 @@ How to run MongoDB:
    bin/mongod --port 7654 --dbpath data/
 
 
+Run Service:
+
+    TODO: remove manual run.
+
+    Classpath generated with:
+
+    target$ echo $(find "lib" -name '*.jar' -print  | sed 's/:$//' | sed 's/ //' )
+
+    java -Djava.net.preferIPv4Stack=true \
+    -cp lib/activation-1.1.jar:lib/asm-3.1.jar:lib/commons-compress-1.0.jar:lib/commons-io-2.4.jar:lib/grizzly-core-2.3.3.jar:lib/grizzly-framework-2.3.3.jar:lib/grizzly-http-2.3.3.jar:lib/grizzly-http-ajp-2.3.3.jar:lib/grizzly-http-server-2.3.3.jar:lib/grizzly-http-server-core-2.3.3.jar:lib/grizzly-http-server-multipart-2.3.3.jar:lib/grizzly-http-servlet-2.3.3.jar:lib/grizzly-portunif-2.3.3.jar:lib/grizzly-rcm-2.3.3.jar:lib/jackson-core-asl-1.9.6.jar:lib/jackson-jaxrs-1.9.6.jar:lib/jackson-mapper-asl-1.9.6.jar:lib/jackson-xc-1.9.2.jar:lib/jaxb-api-2.2.2.jar:lib/jaxb-impl-2.2.3-1.jar:lib/jcommander-1.29.jar:lib/jersey-core-1.17.jar:lib/jersey-grizzly2-1.17.jar:lib/jersey-json-1.17.jar:lib/jersey-server-1.17.jar:lib/jersey-servlet-1.17.jar:lib/jettison-1.1.jar:lib/junit-4.7.jar:lib/mongo-java-driver-2.7.2.jar:lib/nekohtml-1.9.16.jar:lib/servlet-api-2.5.jar:lib/stax-api-1.0-2.jar:lib/xercesImpl-2.9.1.jar:lib/xml-apis-1.3.04.jar\
+    :jsonpedia-1.0-SNAPSHOT.jar com.machinelinking.service.BasicServer 0.0.0.0 9998
+
+
 
