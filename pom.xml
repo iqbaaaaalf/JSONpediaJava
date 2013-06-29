@@ -126,7 +126,7 @@
 
     <build>
         <plugins>
-            <!-- Create a JAR package with the ParserProfiler as main class -->
+            <!-- Creates a JAR package including all dependencies. -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -138,19 +138,7 @@
                 </configuration>
             </plugin>
 
-            <plugin>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>com.example.App</mainClass>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <addClasspath>true</addClasspath>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-
+            <!-- Generates the target/lib dir with all the dependencies. -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -167,21 +155,37 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- Configures the Java compiler. -->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${version.java}</source>
+                    <target>${version.java}</target>
+                </configuration>
+            </plugin>
+
+            <!-- Runs the BasicServer access point. -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <mainClass>com.machinelinking.service.BasicServer</mainClass>
+                    <systemProperties>
+                        <systemProperty>
+                            <key>java.net.preferIPv4Stack</key>
+                            <value>true</value>
+                        </systemProperty>
+                    </systemProperties>
+                    <arguments>
+                        <argument>0.0.0.0</argument>
+                        <argument>9998</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
         </plugins>
-
-        <pluginManagement>
-            <plugins>
-
-                <!-- Java Maven Compiler Plugin -->
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>${version.java}</source>
-                        <target>${version.java}</target>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
 
 </project>
