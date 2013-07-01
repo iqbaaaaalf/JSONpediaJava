@@ -79,8 +79,12 @@ public class WikiAPIParser extends DefaultHandler {
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if(PAGE_NODE.equalsIgnoreCase(qName)) {
             insidePage = true;
-            pageID    = Integer.parseInt(attributes.getValue(PAGE_ID_ATTR));
-            pageTitle = attributes.getValue(PAGE_TITLE_ATTR);
+            try {
+                pageID = Integer.parseInt(attributes.getValue(PAGE_ID_ATTR));
+                pageTitle = attributes.getValue(PAGE_TITLE_ATTR);
+            } catch (Exception e) {
+                throw new WikiAPIParserException("Invalid page metadata.");
+            }
         } else if(insidePage && REV_NODE.equalsIgnoreCase(qName)) {
             insideRev = true;
             handler.startWikiPage(pageID, pageTitle);
