@@ -81,6 +81,7 @@
             $('#get-submit').click(function () {
                 if($('#get-submit').hasClass('disabled')) return;
                 $('#get-form-result').html('');
+                dismissAlert();
                 $('#get-load-spinner').show();
                 $.get( buildGetRequest())
                   .success(function(data){
@@ -98,6 +99,7 @@
                            getSelectedPOSTOutFormat() + '/' +
                            encodeURIComponent($('#post-uri').val());
                 $('#post-form-result').html('');
+                dismissAlert();
                 $('#post-load-spinner').show();
                 $.post( request,
                         {
@@ -192,6 +194,10 @@
                             :
                             data
             );
+        }
+
+        function dismissAlert() {
+            $('#alert-message').html("");
         }
 
         function alert(msg) {
@@ -518,15 +524,19 @@ The following status codes can be returned:
     </tr>
     <tr>
         <th>400 Bad Request</th>
-        <td>Missing or malformed input parameter.</td>
+        <td>Invalid parameters.</td>
+    </tr>
+    <tr>
+        <th>403 Forbidden</th>
+        <td>Wikipedia not reachable.</td>
     </tr>
     <tr>
         <th>404 Not Found</th>
-        <td>Malformed request URI.</td>
+        <td>Wiki resource not defined.</td>
     </tr>
     <tr>
-        <th>502 Bad Gateway</th>
-        <td>Input document from a remote server could not be fetched or parsed.</td>
+        <th>500 Internal Error</th>
+        <td>Generic error occurred.</td>
     </tr>
     </tbody>
 </table>

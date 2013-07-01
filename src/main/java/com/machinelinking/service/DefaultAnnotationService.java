@@ -7,12 +7,15 @@ import com.machinelinking.enricher.WikiEnricherFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.JSONFilter;
 import com.machinelinking.parser.DocumentSource;
+import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
+import com.machinelinking.wikimedia.WikiAPIParserException;
 import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.xml.sax.SAXException;
 
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
@@ -27,6 +30,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.UnknownHostException;
+import java.util.concurrent.ExecutionException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -80,7 +85,13 @@ public class DefaultAnnotationService implements AnnotationService {
             final DocumentSource documentSource = new DocumentSource(toResourceURL(resource));
             return annotateDocumentSource(documentSource, processors, outFormat, filter);
         } catch (IllegalArgumentException iae) {
-            throw new InvalidEntityException(iae);
+            throw new InvalidRequestException(iae);
+        } catch (UnknownHostException uhe) {
+            throw new UnreachableWikipediaService(uhe);
+        } catch (WikiAPIParserException wape) {
+            throw new UnresolvableEntityException(wape);
+        } catch (Exception e) {
+            throw new InternalErrorException(e);
         }
     }
 
@@ -99,10 +110,16 @@ public class DefaultAnnotationService implements AnnotationService {
             @FormParam("filter")   String filter
     ) {
         try {
-        final DocumentSource documentSource = new DocumentSource(toResourceURL(resource), wikitext);
-        return annotateDocumentSource(documentSource, processors, outFormat, filter);
+            final DocumentSource documentSource = new DocumentSource(toResourceURL(resource), wikitext);
+            return annotateDocumentSource(documentSource, processors, outFormat, filter);
         } catch (IllegalArgumentException iae) {
-            throw new InvalidEntityException(iae);
+            throw new InvalidRequestException(iae);
+        } catch (UnknownHostException uhe) {
+            throw new UnreachableWikipediaService(uhe);
+        } catch (WikiAPIParserException wape) {
+            throw new UnresolvableEntityException(wape);
+        } catch (Exception e) {
+            throw new InternalErrorException(e);
         }
     }
 
@@ -133,7 +150,7 @@ public class DefaultAnnotationService implements AnnotationService {
             String flags,
             String outFormat,
             String filterExp
-    ) {
+    ) throws InterruptedException, SAXException, WikiTextParserException, ExecutionException, IOException {
         final OutputFormat format = checkOutFormat(outFormat);
         final WikiEnricher wikiEnricher = WikiEnricherFactory
                 .getInstance()
@@ -143,21 +160,18 @@ public class DefaultAnnotationService implements AnnotationService {
         try {
             filter = DefaultJSONFilterEngine.parseFilter(filterExp);
         } catch (Exception e) {
-            throw new RuntimeException("Error while parsing filter.", e);
+            throw new IllegalArgumentException("Error while parsing filter.", e);
         }
         try {
             baos.reset();
             jsonSerializer = new JSONSerializer( JSONUtils.createJSONGenerator(baos, FORMAT_JSON) );
         } catch (IOException ioe) {
-            throw new RuntimeException("Error while initializing serializer.", ioe);
+            throw new IllegalStateException("Error while initializing serializer.", ioe);
         }
-        try {
-            wikiEnricher.enrichEntity(documentSource, jsonSerializer);
-            final String json = baos.toString();
-            return toOutputFormat(json, format, filter);
-        } catch (Exception e) {
-            throw new RuntimeException("Error while serializing resource", e);
-        }
+
+        wikiEnricher.enrichEntity(documentSource, jsonSerializer);
+        final String json = baos.toString();
+        return toOutputFormat(json, format, filter);
     }
 
     private OutputFormat checkOutFormat(String outFormat) {
