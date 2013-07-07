@@ -80,6 +80,7 @@
         <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-grizzly2</artifactId>
+            <!--
             <exclusions>
                 <exclusion>
                     <groupId>org.glassfish.grizzly</groupId>
@@ -90,8 +91,10 @@
                     <artifactId>grizzly-http-server</artifactId>
                 </exclusion>
             </exclusions>
+            -->
             <version>1.17</version>
         </dependency>
+        <!--
         <dependency>
        		<groupId>org.glassfish.grizzly</groupId>
        		<artifactId>grizzly-http</artifactId>
@@ -112,6 +115,7 @@
        		<artifactId>grizzly-http-servlet</artifactId>
        		<version>2.3.3</version>
        	</dependency>
+       	-->
         <!-- END: Jersey 1.17 with Grizzly 2.3.3 -->
         <!-- END: REST API -->
 
@@ -130,8 +134,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <inherited>false</inherited>
                 <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <addExtensions>false</addExtensions>
+                            <mainClass>com.machinelinking.service.BasicServer</mainClass>
+                        </manifest>
+                    </archive>
                     <descriptors>
                         <descriptor>${basedir}/src/main/assembly/src.xml</descriptor>
                     </descriptors>

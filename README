@@ -50,8 +50,20 @@ How to run MongoDB:
 
 Run Service:
 
-   Use the exec-maven-plugin with exec:java goal:
+   Use the exec-maven-plugin with exec:java goal (will use the default host 'localhost' port '9998' params):
 
       $ mvn exec:java
+
+   Or build a self-contained JAR with:
+
+      $ mvn assembly:assembly
+
+   and run:
+
+      $ java -jar jsonpedia-x.y-SNAPSHOT-with-deps.jar <host> <port>
+
+
+
+
 
 
