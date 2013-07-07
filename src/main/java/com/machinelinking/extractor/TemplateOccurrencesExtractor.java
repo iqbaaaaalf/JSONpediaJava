@@ -29,7 +29,7 @@ public class TemplateOccurrencesExtractor extends Extractor {
     @Override
     public void flushContent(Serializer serializer) {
         serializer.openObject();
-        serializer.fieldValue("__type", "templates");
+        // serializer.fieldValue("__type", "templates");
         serializer.field("occurrences");
         serializer.openObject();
         for(Map.Entry<String,Integer> entry : templateOccurrences.entrySet()) {

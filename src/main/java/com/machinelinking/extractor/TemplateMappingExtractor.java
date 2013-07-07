@@ -91,7 +91,7 @@ public class TemplateMappingExtractor extends Extractor {
         Map<String,TemplateMapping> collectedMappings, Serializer serializer
     ) {
         serializer.openObject();
-        serializer.fieldValue("__type", "template-mapping");
+        // serializer.fieldValue("__type", "template-mapping");
         serializer.field("mapping-collection");
         serializer.openList();
         for(Map.Entry<String,TemplateMapping> entry : collectedMappings.entrySet()) {

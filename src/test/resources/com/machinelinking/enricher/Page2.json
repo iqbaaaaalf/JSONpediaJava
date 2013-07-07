@@ -29833,7 +29833,6 @@
         }
     ],
     "templates": {
-        "__type": "templates",
         "occurrences": {
             "Portal": 1,
             "London commuter belt": 1,
@@ -29899,7 +29898,6 @@
         }
     },
     "categories": {
-        "__type": "category",
         "content": [
             "Arthurian locations",
             "Articles including recorded pronunciations (UK English)",

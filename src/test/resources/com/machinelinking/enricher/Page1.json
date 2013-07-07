@@ -13774,7 +13774,6 @@
         }
     ],
     "templates": {
-        "__type": "templates",
         "occurrences": {
             "div col": 1,
             "Birth date": 1,
@@ -13830,7 +13829,6 @@
         }
     },
     "categories": {
-        "__type": "category",
         "content": [
             "1879 births",
             "1955 deaths",
@@ -13899,7 +13897,6 @@
         ]
     },
     "template-mapping": {
-        "__type": "template-mapping",
         "mapping-collection": [
             {
                 "__type": "mapping",
