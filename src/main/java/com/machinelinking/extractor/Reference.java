@@ -20,6 +20,7 @@ public class Reference implements Serializable {
 
     private URL label;
     private String description;
+    private short sectionIndex;
 
     public static URL labelToURL(URL document, String label) throws MalformedURLException {
         final int prefixIndex = label.indexOf(":");
@@ -51,9 +52,11 @@ public class Reference implements Serializable {
         return "";
     }
 
-    public Reference(URL document, String label, String description) throws MalformedURLException {
+    public Reference(URL document, String label, String description, short sectionIndex)
+    throws MalformedURLException {
         this.label = labelToURL(document, label);
         this.description = description;
+        this.sectionIndex = sectionIndex;
     }
 
     public URL getLabel() {
@@ -64,11 +67,17 @@ public class Reference implements Serializable {
         return description;
     }
 
+    public short getSectionIndex() {
+        return sectionIndex;
+    }
+
     @Override
     public void serialize(Serializer serializer) {
         serializer.openObject();
         serializer.fieldValue("label", label.toExternalForm());
         serializer.fieldValue("description", description);
+        serializer.fieldValue("section_idx", sectionIndex);
         serializer.closeObject();
     }
+
 }

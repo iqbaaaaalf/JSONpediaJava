@@ -14,10 +14,12 @@ public class Link implements Serializable {
 
     private URL link;
     private String description;
+    private short sectionIndex;
 
-    public Link(URL link, String description) {
+    public Link(URL link, String description, short sectionIndex) {
         this.link = link;
         this.description = description;
+        this.sectionIndex = sectionIndex;
     }
 
     public URL getLink() {
@@ -28,11 +30,17 @@ public class Link implements Serializable {
         return description;
     }
 
+    public short getSectionIndex() {
+        return sectionIndex;
+    }
+
     @Override
     public void serialize(Serializer serializer) {
         serializer.openObject();
         serializer.fieldValue("link", link.toExternalForm());
         serializer.fieldValue("description", description);
+        serializer.fieldValue("section_idx", sectionIndex);
         serializer.closeObject();
     }
+
 }

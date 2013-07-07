@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class ReferenceExtractor extends Extractor {
+public class ReferenceExtractor extends SectionAwareExtractor {
 
     private URL documentURL;
 
@@ -54,7 +54,7 @@ public class ReferenceExtractor extends Extractor {
     public void endReference(String label) {
         if(references == null) references = new ArrayList<>();
         try {
-            references.add(new Reference(documentURL, label, referenceContent.toString()));
+            references.add(new Reference(documentURL, label, referenceContent.toString(), super.getSectionIndex()));
         } catch (MalformedURLException murle) {
             throw new RuntimeException("Error while building reference.", murle);
         }

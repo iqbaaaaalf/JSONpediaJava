@@ -271,6 +271,8 @@ public class JSONSerializer implements Serializer {
                 final Class vClass = v.getClass();
                 if(Integer.class.equals(vClass)        || int.class.equals(vClass)) {
                     jsonGenerator.writeNumber((Integer) v);
+                } else if(Short.class.equals(vClass)   || short.class.equals(vClass)) {
+                    jsonGenerator.writeNumber((Short) v);
                 } else if(Long.class.equals(vClass)    || long.class.equals(vClass)) {
                     jsonGenerator.writeNumber((Long) v);
                 } else if(Float.class.equals(vClass)   || float.class.equals(vClass)) {

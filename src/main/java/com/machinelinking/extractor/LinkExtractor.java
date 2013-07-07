@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class LinkExtractor extends Extractor {
+public class LinkExtractor extends SectionAwareExtractor {
 
     private List<Link> links;
 
@@ -48,7 +48,7 @@ public class LinkExtractor extends Extractor {
     public void endLink(URL url) {
         if(this.url == null) throw new IllegalStateException();
         if(links == null) links = new ArrayList<>();
-        links.add(new Link(this.url, linkContent.toString()));
+        links.add(new Link(this.url, linkContent.toString(), super.getSectionIndex()));
     }
 
     @Override
