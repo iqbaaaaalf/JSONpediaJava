@@ -17,6 +17,10 @@ import java.util.Stack;
  */
 public class DefaultHTMLWriter implements HTMLWriter {
 
+    private static final String PACKAGE_RESOURCES = DefaultHTMLWriter.class.getPackage().getName().replace(".", "/");
+
+    private final Map<String,String> fileCache = new HashMap<>();
+
     private final Writer writer;
 
     private Stack<String> openTags = new Stack<>();
@@ -27,18 +31,16 @@ public class DefaultHTMLWriter implements HTMLWriter {
 
     @Override
     public void openDocument() throws IOException {
-        writer.append("<html>");
-        writer.append(loadResource("default-html-writer-header.html"));
-        writer.append("<body>");
-        writer.append("<script type=\"text/javascript\">");
-        writer.append(loadResource("default-html-writer-include.js"));
-        writer.append("</script>");
-        writer.append(loadResource("default-html-writer-body-open.html"));
+        writer.append(loadResource("page-open"));
+        writer.append(loadResource("header"));
+        writer.append(loadResource("body-open"));
+        writer.append(loadResource("body"));
     }
 
     @Override
     public void closeDocument() throws IOException {
-        writer.append( loadResource("default-html-writer-body-close.html"));
+        writer.append(loadResource("body-close"));
+        writer.append(loadResource("page-close"));
         if(!openTags.isEmpty()) throw new IllegalStateException();
     }
 
@@ -176,11 +178,16 @@ public class DefaultHTMLWriter implements HTMLWriter {
     }
 
     private String loadResource(String resource) throws IOException {
-        return IOUtils.toString(
+        String fileContent = fileCache.get(resource);
+        if(fileContent != null) return fileContent;
+
+        fileContent = IOUtils.toString(
                 this.getClass().getResourceAsStream(
-                        String.format("/com/machinelinking/render/%s", resource)
+                        String.format("/%s/default-html-writer-%s.html", PACKAGE_RESOURCES, resource)
                 )
         );
+        fileCache.put(resource, fileContent);
+        return fileContent;
     }
 
     private String escapeStringMarkup(String in) {
