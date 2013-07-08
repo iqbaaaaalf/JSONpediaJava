@@ -91,6 +91,7 @@ public class DefaultAnnotationService implements AnnotationService {
         } catch (WikiAPIParserException wape) {
             throw new UnresolvableEntityException(wape);
         } catch (Exception e) {
+            e.printStackTrace();
             throw new InternalErrorException(e);
         }
     }
