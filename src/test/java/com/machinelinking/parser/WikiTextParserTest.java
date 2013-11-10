@@ -129,7 +129,21 @@ public class WikiTextParserTest {
     }
 
     @Test
-    public void testParseReference() throws IOException, WikiTextParserException {
+    public void testParseReference1() throws IOException, WikiTextParserException {
+        parse(
+                "this is an internal link: [[Princeton]] ending here.",
+
+                "Begin Document\n" +
+                "Text: 'this is an internal link: '\n" +
+                "Begin Reference: Princeton\n" +
+                "End Reference: Princeton\n" +
+                "Text: ' ending here.'\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
+    public void testParseReference2() throws IOException, WikiTextParserException {
         parse(
                 "this is an internal link: [[Princeton, New Jersey|Princeton]] ending here.",
 
