@@ -12,7 +12,7 @@ import java.util.Map;
 public class TitleKeyValueRender implements KeyValueRender {
 
     private static final Map<String,String> TITLE_DIV_ATTR = new HashMap<String,String>(){{
-        put("style", "background-color: #8A5D37");
+        put("class", "title");
     }};
 
     @Override

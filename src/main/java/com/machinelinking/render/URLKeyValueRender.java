@@ -13,7 +13,7 @@ import java.util.Map;
 public class URLKeyValueRender implements KeyValueRender {
 
     private static final Map<String,String> URLKEY_DIV_ATTR = new HashMap<String,String>(){{
-        put("style", "background-color: #6F2C52");
+        put("class", "url");
     }};
 
     @Override

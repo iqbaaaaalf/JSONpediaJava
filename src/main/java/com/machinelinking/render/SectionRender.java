@@ -12,7 +12,7 @@ import java.util.Map;
 public class SectionRender implements NodeRender {
 
     private static final Map<String,String> SECTION_DIV_ATTR = new HashMap<String,String>(){{
-        put("style", "background-color: #DC5858");
+        put("class", "section");
     }};
 
     public static final String TITLE = "title";

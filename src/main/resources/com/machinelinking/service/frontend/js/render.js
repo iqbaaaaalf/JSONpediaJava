@@ -1,6 +1,6 @@
 $(function(){
     var jsonPathVisible      = false;
-    var defaultRenderVisible = true;
+    var defaultRenderVisible = false;
 
     function setJsonPathVisible(visible) {
         $('#toggle-jsonpath').attr('value', (visible ? 'Hide' : 'Show') + ' JSONPath');

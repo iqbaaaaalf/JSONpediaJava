@@ -1,3 +1,72 @@
 body {
     font-family: 'Aldrich', sans-serif;
 }
+
+.root {
+    background-color: white;
+}
+
+.type {
+    color: red;
+}
+
+.object {
+    border: 1px  solid; padding: 2px;
+}
+
+.list {
+    margin:2px; padding: 2px;
+}
+
+.table {
+    background-color: #84dc7c;
+}
+
+.default-render {
+    background-color: #8A5757;
+    display:none;
+}
+
+.main {
+    background-color: purple;
+}
+
+.section {
+    background-color: #DC5858;
+}
+
+.reference {
+    background-color: #c9acbd;
+}
+
+.link {
+    background-color: #c722c9;
+}
+
+.primitive {
+    background-color: #00CCFF;
+}
+
+.citation {
+    background-color: #b82825;
+}
+
+.cite-web {
+    background-color: #DC9358;
+}
+
+.freebase {
+    background-color: #f4ff11;
+    padding: 5px;
+}
+
+/* Based on key names. */
+
+.title {
+    background-color: #8A5D37;
+}
+
+.url {
+    background-color: #6F2C52
+}
+

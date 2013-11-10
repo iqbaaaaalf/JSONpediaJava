@@ -21,7 +21,7 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
 
     @Override
     public DefaultHTMLRender createRender() {
-        final DefaultHTMLRender render = new DefaultHTMLRender();
+        final DefaultHTMLRender render = new DefaultHTMLRender(true);
         render.addNodeRender("reference", new ReferenceNodeRender());
         render.addNodeRender("link"     , new LinkNodeRender());
         render.addNodeRender("section"  , new SectionRender());

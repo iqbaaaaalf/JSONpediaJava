@@ -22,7 +22,7 @@ public class LinkNodeRender implements NodeRender {
         final String description = node.get("content").asText().trim();
         writer.openTag("a", new HashMap<String, String>() {{
             put("href", url);
-            put("style", "background-color: #C95095");
+            put("class", "link");
         }});
         writer.text(description);
         writer.closeTag();

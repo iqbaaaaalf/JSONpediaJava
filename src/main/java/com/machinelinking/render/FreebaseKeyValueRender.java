@@ -12,7 +12,7 @@ import java.util.Map;
 public class FreebaseKeyValueRender implements KeyValueRender {
 
     private static final Map<String,String> TYPE_DIV_ATTR = new HashMap<String,String>(){{
-        put("style", "padding: 5px");
+        put("class", "freebase");
     }};
 
     @Override

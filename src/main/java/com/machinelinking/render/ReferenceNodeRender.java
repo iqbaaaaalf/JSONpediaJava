@@ -24,7 +24,7 @@ public class ReferenceNodeRender implements NodeRender {
     private static final String ALT_PREFIX = "alt=";
 
     private static final Map<String,String> REFERENCE_DIV_ATTR = new HashMap<String,String>(){{
-        put("style", "background-color: #C971AE");
+        put("class", "reference");
     }};
 
     @Override

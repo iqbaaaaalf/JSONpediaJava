@@ -14,7 +14,7 @@ import java.util.Map;
 public class BaseTextPrimitiveNodeRender implements PrimitiveNodeRender {
 
     private final Map<String,String> TEXT_SPAN_ATTR = new HashMap<String,String>(){{
-        put("style", "background-color: #00CCFF;");
+        put("class", "primitive");
     }};
 
     private final JsonPathBuilder targetFilter;

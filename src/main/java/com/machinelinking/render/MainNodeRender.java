@@ -15,7 +15,7 @@ public class MainNodeRender implements NodeRender {
     public static final String MAIN_TEMPLATE_NAME = "Main";
 
     private static final Map<String,String> MAIN_DIV_ATTR = new HashMap<String,String>(){{
-        put("style", "background-color: purple");
+        put("class", "main");
     }};
 
     @Override

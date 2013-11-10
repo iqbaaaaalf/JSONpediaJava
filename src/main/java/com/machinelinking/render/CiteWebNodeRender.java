@@ -16,7 +16,7 @@ public class CiteWebNodeRender implements NodeRender {
     public static final String CITE_WEB_TEMPLATE_NAME = "cite web";
 
     private static final Map<String,String> CITEWEB_DIV_ATTR = new HashMap<String,String>(){{
-        put("style", "background-color: #DC9358");
+        put("class", "cite-web");
     }};
 
     public static final String[] TEMPLATE_FIELDS = new String[] {
