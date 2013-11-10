@@ -1,5 +1,6 @@
 package com.machinelinking.enricher;
 
+import com.machinelinking.extractor.AbstractExtractor;
 import com.machinelinking.extractor.CategoryExtractor;
 import com.machinelinking.extractor.FreebaseExtractor;
 import com.machinelinking.extractor.IssueExtractor;
@@ -106,6 +107,7 @@ public class WikiEnricherFactory {
 
         // Extractors.
         if(flagsSet.contains(Extractors)) {
+            enricher.addExtractor(new AbstractExtractor());
             enricher.addExtractor(new SectionExtractor());
             enricher.addExtractor(new LinkExtractor());
             enricher.addExtractor(new ReferenceExtractor());

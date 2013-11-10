@@ -10186,6 +10186,7 @@
         }
     ],
     "issues": null,
+    "abstract": "\n\n\n\n\nAlbert Einstein (; ; 14 March 1879&nbsp;– 18 April 1955) was a German-born theoretical physicist who developed the theory of , effecting a revolution in . For this achievement, Einstein is often regarded as the father of ., Chapter 2, p. 41.\n While best known for his  formula  (which has been dubbed \"the world's most famous equation\")David Bodanis, E&nbsp;=&nbsp;mc2: A Biography of the World's Most Famous Equation (New York: Walker, 2000)., he received the 1921  \"for his services to theoretical physics, and especially for his discovery of the law of the \". The latter was pivotal in establishing quantum theory within physics.",
     "sections": [
         {
             "title": "Biography",
@@ -14037,7 +14038,7 @@
             "id": "/m/05snw"
         },
         "lang": "en",
-        "score": 802.716614
+        "score": 783.675415
     },
     "infobox-splitter": [
         {
