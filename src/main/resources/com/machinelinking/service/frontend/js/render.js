@@ -2,15 +2,6 @@ $(function(){
     var jsonPathVisible      = false;
     var defaultRenderVisible = false;
 
-    function setJsonPathVisible(visible) {
-        $('#toggle-jsonpath').attr('value', (visible ? 'Hide' : 'Show') + ' JSONPath');
-        if(visible) {
-            $('.jsonpath').show();
-        } else {
-            $('.jsonpath').hide();
-        }
-    }
-
     function setDefaultRenderVisible(visible) {
         $('#toggle-defaultrender').attr('value', (visible ? 'Hide' : 'Show') + ' Default Render');
         if (visible) {
@@ -20,12 +11,6 @@ $(function(){
         }
 
     }
-
-    setJsonPathVisible(jsonPathVisible);
-    $('#toggle-jsonpath').click(function(){
-        jsonPathVisible = !jsonPathVisible;
-        setJsonPathVisible(jsonPathVisible);
-    });
 
     setDefaultRenderVisible(defaultRenderVisible);
     $('#toggle-defaultrender').click(function(){
@@ -55,4 +40,8 @@ $(function(){
         });
         $('#search-report').text( modified.length + ' elements found.')
     });
+
+    // jsonpath tooltip.
+    $('div[title]').tooltip();
+    $('span[title]').tooltip();
 });

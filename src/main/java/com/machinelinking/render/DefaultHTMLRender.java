@@ -19,6 +19,10 @@ import java.util.Map;
  */
 public class DefaultHTMLRender implements HTMLRender {
 
+    private static final Map<String,String> CONTENT_STYLE = new HashMap<String,String>(){{
+        put("class", "content");
+    }};
+
     private static final Map<String,String> PRIMITIVE_NODE_STYLE = new HashMap<String,String>(){{
         put("class", "root");
     }};
@@ -162,7 +166,7 @@ public class DefaultHTMLRender implements HTMLRender {
             return;
         }
 
-        writer.openTag("div");
+        writer.openTag("div", CONTENT_STYLE);
         writer.openTag("span");
         writer.openTag("i");
         writer.text(key);
@@ -265,7 +269,7 @@ public class DefaultHTMLRender implements HTMLRender {
         final String type;
         if(typeNode == null) {
             type = null;
-            writer.openTag("span");
+            writer.openTag("span", new HashMap<String,String>(){{put("title", jsonPathBuilder.getJsonPath());}});
         } else {
             type = typeNode.asText();
             final String name;
@@ -273,6 +277,7 @@ public class DefaultHTMLRender implements HTMLRender {
             writer.openTag("div", new HashMap<String, String>(){{
                 put("itemtype", type);
                 put("name"    , name);
+                put("title", jsonPathBuilder.getJsonPath());
             }});
 
             writer.openTag("small", TYPE_LABEL_STYLE);
@@ -280,7 +285,7 @@ public class DefaultHTMLRender implements HTMLRender {
             writer.closeTag();
         }
 
-
+        /*
         writer.openTag("small", JSON_PATH_CLASS);
         writer.em();
         writer.text("(");
@@ -288,6 +293,7 @@ public class DefaultHTMLRender implements HTMLRender {
         writer.text(")");
         writer.closeTag();
         writer.closeTag();
+        */
 
         return type;
     }
