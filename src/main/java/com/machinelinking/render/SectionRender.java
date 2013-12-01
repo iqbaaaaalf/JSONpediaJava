@@ -11,6 +11,10 @@ import java.util.Map;
  */
 public class SectionRender implements NodeRender {
 
+    public static String toAnchorName(String title) {
+        return title.toLowerCase().replaceAll(" ", "_");
+    }
+
     private static final Map<String,String> SECTION_DIV_ATTR = new HashMap<String,String>(){{
         put("class", "section");
     }};
@@ -28,6 +32,7 @@ public class SectionRender implements NodeRender {
     throws IOException {
         final String title = node.get(TITLE).asText();
         int level = node.get(LEVEL).asInt() + 1;
+        writer.anchor(toAnchorName(title));
         writer.openTag("div", SECTION_DIV_ATTR);
         writer.heading(level, title);
         writer.closeTag();

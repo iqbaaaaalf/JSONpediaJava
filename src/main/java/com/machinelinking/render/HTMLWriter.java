@@ -22,6 +22,8 @@ public interface HTMLWriter {
 
     void heading(int level, String title) throws IOException;
 
+    void html(String content) throws IOException;
+
     void text(String txt) throws IOException;
 
     void openColorTag(String color) throws IOException;
@@ -29,6 +31,8 @@ public interface HTMLWriter {
     void key(String key) throws IOException;
 
     void anchor(String url, String text, boolean internal) throws IOException;
+
+    void anchor(String name) throws IOException;
 
     void image(String url, String text) throws IOException;
 

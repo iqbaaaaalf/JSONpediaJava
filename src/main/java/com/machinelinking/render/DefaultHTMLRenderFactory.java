@@ -26,9 +26,7 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         render.addKeyValueRender("freebase", new FreebaseKeyValueRender());
         render.addKeyValueRender("issues"  , new IssuesKeyValueRender());
         render.addKeyValueRender("abstract", new AbstractKeyValueRender());
-        // TODO: abstract
-        // TODO: sections
-        // TODO: sections
+        render.addKeyValueRender("sections", new SectionsKeyValueRender());
         // TODO: links
         // TODO: references
         // TODO: templates

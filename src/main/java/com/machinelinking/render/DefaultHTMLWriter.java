@@ -86,13 +86,20 @@ public class DefaultHTMLWriter implements HTMLWriter {
     }
 
     @Override
+    public void html(String content) throws IOException {
+        writer.append(content);
+    }
+
+    @Override
     public void text(String txt) throws IOException {
-        writer.append( escapeStringMarkup(txt) );
+        html(escapeStringMarkup(txt));
     }
 
     @Override
     public void openColorTag(final String color) throws IOException {
-        openTag("font", new HashMap<String, String>(){{ put("color", color); }});
+        openTag("font", new HashMap<String, String>() {{
+            put("color", color);
+        }});
     }
 
     @Override
@@ -106,6 +113,11 @@ public class DefaultHTMLWriter implements HTMLWriter {
             url = "/annotate/resource/html/" + URLEncoder.encode(url, "utf-8");
         }
         writer.append( String.format("<a href=\"%s\">%s</a>", url, text) );
+    }
+
+    @Override
+    public void anchor(String name) throws IOException {
+        writer.append(String.format("<a name=\"%s\"/>", name));
     }
 
     @Override
