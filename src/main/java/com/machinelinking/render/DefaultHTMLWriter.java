@@ -193,6 +193,11 @@ public class DefaultHTMLWriter implements HTMLWriter {
     }
 
     @Override
+    public void reference(String description, String lang, String label) throws IOException {
+        link(description, String.format("http://%s.wikpedia.org/wiki/%s", lang, label));
+    }
+
+    @Override
     public void flush() throws IOException {
         writer.flush();
     }

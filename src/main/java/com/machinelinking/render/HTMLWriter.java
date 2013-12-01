@@ -56,5 +56,7 @@ public interface HTMLWriter {
 
     void link(String description, String url) throws IOException;
 
+    void reference(String description, String lang, String label) throws IOException;
+
     void flush() throws IOException;
 }
