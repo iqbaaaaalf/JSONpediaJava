@@ -284,17 +284,6 @@ public class DefaultHTMLRender implements HTMLRender {
             writer.text(type);
             writer.closeTag();
         }
-
-        /*
-        writer.openTag("small", JSON_PATH_CLASS);
-        writer.em();
-        writer.text("(");
-        writer.text(jsonPathBuilder.getJsonPath());
-        writer.text(")");
-        writer.closeTag();
-        writer.closeTag();
-        */
-
         return type;
     }
 
