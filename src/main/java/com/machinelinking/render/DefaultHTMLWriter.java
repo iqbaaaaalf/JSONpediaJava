@@ -185,6 +185,14 @@ public class DefaultHTMLWriter implements HTMLWriter {
     }
 
     @Override
+    public void link(String description, String url) throws IOException {
+        writer.append(String.format(
+                "<a class=\"links-link\" target=\"_blank\" href=\"%s\">%s</a>",
+                url, description.replaceAll("[\"']", "")
+        ));
+    }
+
+    @Override
     public void flush() throws IOException {
         writer.flush();
     }

@@ -43,6 +43,10 @@ body {
     background-color: #c722c9;
 }
 
+.links-link {
+    margin: 5px;
+}
+
 .primitive {
     background-color: #00CCFF;
 }

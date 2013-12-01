@@ -54,6 +54,7 @@ public interface HTMLWriter {
 
     void em() throws IOException;
 
-    void flush() throws IOException;
+    void link(String description, String url) throws IOException;
 
+    void flush() throws IOException;
 }
