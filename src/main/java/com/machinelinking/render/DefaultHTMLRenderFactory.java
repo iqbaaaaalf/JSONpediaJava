@@ -22,6 +22,19 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
     @Override
     public DefaultHTMLRender createRender() {
         final DefaultHTMLRender render = new DefaultHTMLRender(true);
+        // Root level.
+        render.addKeyValueRender("freebase", new FreebaseKeyValueRender());
+        render.addKeyValueRender("issues"  , new IssuesKeyValueRender());
+        // TODO: abstract
+        // TODO: sections
+        // TODO: sections
+        // TODO: links
+        // TODO: references
+        // TODO: templates
+        // TODO: categories
+        // TODO: template-mapping
+
+        // Within wikitext-json.structure element.
         render.addNodeRender("reference", new ReferenceNodeRender());
         render.addNodeRender("link"     , new LinkNodeRender());
         render.addNodeRender("section"  , new SectionRender());
@@ -29,12 +42,10 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         render.addNodeRender("template" , new CitationNodeRender());
         render.addNodeRender("template" , new MainNodeRender());
         render.addNodeRender("table"    , new TableNodeRender());
-
         render.addKeyValueRender("url"        , new URLKeyValueRender());
         render.addKeyValueRender("archiveurl" , new URLKeyValueRender());
         render.addKeyValueRender("title"      , new TitleKeyValueRender());
         render.addKeyValueRender("content"    , new ContentKeyValueRender());
-        render.addKeyValueRender("freebase"   , new FreebaseKeyValueRender());
 
         render.addPrimitiveRender( new BaseTextPrimitiveNodeRender() );
         return render;
