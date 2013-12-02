@@ -18,19 +18,19 @@ public class Reference implements Serializable {
     public static final String IMG_PREFIX      = "File";
     public static final String CATEGORY_PREFIX = "Category";
 
-    private URL label;
+    private URL url;
     private String description;
     private short sectionIndex;
 
-    public static URL labelToURL(URL document, String label) throws MalformedURLException {
-        final int prefixIndex = label.indexOf(":");
-        final String urlLabel = label.replaceAll(" ", "_");
+    public static URL labelToURL(URL document, String url) throws MalformedURLException {
+        final int prefixIndex = url.indexOf(":");
+        final String urlLabel = url.replaceAll(" ", "_");
         if(prefixIndex == -1) {
             final String documentString = document.toExternalForm();
             final String documentPrefix = documentString.substring(0, documentString.lastIndexOf('/') + 1);
             return new URL(documentPrefix + urlLabel);
         } else {
-            final String prefix = label.substring(0, prefixIndex);
+            final String prefix = url.substring(0, prefixIndex);
             switch (prefix) {
                 case IMG_PREFIX:
                     return new URL(WikimediaUtils.getEntityPath(document.toExternalForm()) + urlLabel);
@@ -73,13 +73,13 @@ public class Reference implements Serializable {
 
     public Reference(URL document, String label, String description, short sectionIndex)
     throws MalformedURLException {
-        this.label = labelToURL(document, label);
+        this.url = labelToURL(document, label);
         this.description = description;
         this.sectionIndex = sectionIndex;
     }
 
-    public URL getLabel() {
-        return label;
+    public URL getUrl() {
+        return url;
     }
 
     public String getDescription() {
@@ -93,7 +93,7 @@ public class Reference implements Serializable {
     @Override
     public void serialize(Serializer serializer) {
         serializer.openObject();
-        serializer.fieldValue("url", label.toExternalForm());
+        serializer.fieldValue("url", url.toExternalForm());
         serializer.fieldValue("description", description);
         serializer.fieldValue("section_idx", sectionIndex);
         serializer.closeObject();
