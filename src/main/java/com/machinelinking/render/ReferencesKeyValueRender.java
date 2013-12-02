@@ -1,5 +1,6 @@
 package com.machinelinking.render;
 
+import com.machinelinking.extractor.Reference;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
@@ -19,8 +20,8 @@ public class ReferencesKeyValueRender implements KeyValueRender {
         writer.heading(1, "References");
         while(links.hasNext()) {
             link = links.next();
-            final String label = link.get("label").asText();
-            final String[] labelParts = getLinkLabel(label);
+            final String url = link.get("url").asText();
+            final String[] labelParts = Reference.urlToLabel(url);
             String description = link.get("description").asText();
             if(description.trim().length() == 0) {
                 description = labelParts[1].replaceAll("_", " ");
@@ -28,18 +29,6 @@ public class ReferencesKeyValueRender implements KeyValueRender {
             writer.reference(description, labelParts[0], labelParts[1]);
         }
         writer.closeTag();
-    }
-
-    private String[] getLinkLabel(String in) {
-        final String HTTP_PREFIX = "http://";
-        if(in.startsWith(HTTP_PREFIX)) {
-            return new String[] {
-                    in.substring(HTTP_PREFIX.length(), in.indexOf('.')),
-                    in.substring(in.lastIndexOf('/') + 1)
-            };
-        } else {
-            return in.split(":");
-        }
     }
 
 }
