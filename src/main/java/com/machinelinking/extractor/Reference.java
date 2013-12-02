@@ -26,7 +26,9 @@ public class Reference implements Serializable {
         final int prefixIndex = label.indexOf(":");
         final String urlLabel = label.replaceAll(" ", "_");
         if(prefixIndex == -1) {
-            return new URL( document.toExternalForm() + urlLabel);
+            final String documentString = document.toExternalForm();
+            final String documentPrefix = documentString.substring(0, documentString.lastIndexOf('/') + 1);
+            return new URL(documentPrefix + urlLabel);
         } else {
             final String prefix = label.substring(0, prefixIndex);
             switch (prefix) {
@@ -43,6 +45,23 @@ public class Reference implements Serializable {
                     );
             }
         }
+    }
+
+    // TODO: missing IMAGE and CATEGORY management.
+    public static String[] urlToLabel(String in) {
+        final String HTTP_PREFIX = "http://";
+        if(in.startsWith(HTTP_PREFIX)) {
+            return new String[] {
+                    in.substring(HTTP_PREFIX.length(), in.indexOf('.')),
+                    in.substring(in.lastIndexOf('/') + 1)
+            };
+        } else {
+            return in.split(":");
+        }
+    }
+
+    public static String toURLString(String lang, String label) {
+        return String.format("http://%s.wikipedia.org/wiki/%s", lang, label);
     }
 
     private static String safeSubstring(String str, int index) {
@@ -74,7 +93,7 @@ public class Reference implements Serializable {
     @Override
     public void serialize(Serializer serializer) {
         serializer.openObject();
-        serializer.fieldValue("label", label.toExternalForm());
+        serializer.fieldValue("url", label.toExternalForm());
         serializer.fieldValue("description", description);
         serializer.fieldValue("section_idx", sectionIndex);
         serializer.closeObject();
