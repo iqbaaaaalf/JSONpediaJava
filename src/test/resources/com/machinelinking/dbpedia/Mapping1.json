@@ -39,6 +39,9 @@
         "Name": {
             "name": "foaf:name"
         },
+        "SMILES": {
+            "name": "smiles"
+        },
         "ImageFile": {
             "name": "foaf:thumbnail"
         },
