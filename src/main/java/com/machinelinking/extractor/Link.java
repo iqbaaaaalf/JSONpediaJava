@@ -12,18 +12,18 @@ import java.net.URL;
  */
 public class Link implements Serializable {
 
-    private URL link;
+    private URL url;
     private String description;
     private short sectionIndex;
 
-    public Link(URL link, String description, short sectionIndex) {
-        this.link = link;
+    public Link(URL url, String description, short sectionIndex) {
+        this.url = url;
         this.description = description;
         this.sectionIndex = sectionIndex;
     }
 
-    public URL getLink() {
-        return link;
+    public URL getUrl() {
+        return url;
     }
 
     public String getDescription() {
@@ -37,7 +37,7 @@ public class Link implements Serializable {
     @Override
     public void serialize(Serializer serializer) {
         serializer.openObject();
-        serializer.fieldValue("link", link.toExternalForm());
+        serializer.fieldValue("url", url.toExternalForm());
         serializer.fieldValue("description", description);
         serializer.fieldValue("section_idx", sectionIndex);
         serializer.closeObject();

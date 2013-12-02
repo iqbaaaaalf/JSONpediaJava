@@ -23071,57 +23071,57 @@
     ],
     "links": [
         {
-            "link": "http://www.london.gov.uk/",
+            "url": "http://www.london.gov.uk/",
             "description": "london.gov.uk",
             "section_idx": -1
         },
         {
-            "link": "http://www.pbs.org/kqed/demonbarber/madding/thieftaker.html",
+            "url": "http://www.pbs.org/kqed/demonbarber/madding/thieftaker.html",
             "description": "Thief Taker, Constable, Police",
             "section_idx": 4
         },
         {
-            "link": "http://www.londonmet.ac.uk/library/o90402_3.pdf",
+            "url": "http://www.londonmet.ac.uk/library/o90402_3.pdf",
             "description": "About London Met",
             "section_idx": 30
         },
         {
-            "link": "http://www.timesonline.co.uk/tol/news/uk/article5409039.ece",
+            "url": "http://www.timesonline.co.uk/tol/news/uk/article5409039.ece",
             "description": "Richmond, in Surrey, is the most widely copied British place name worldwide",
             "section_idx": 39
         },
         {
-            "link": "http://www.britishpathe.com/workspace.php?id=2449&delete_record=75105/",
+            "url": "http://www.britishpathe.com/workspace.php?id=2449&delete_record=75105/",
             "description": "British Pathé",
             "section_idx": 44
         },
         {
-            "link": "http://www.british-history.ac.uk/place.aspx?region=1",
+            "url": "http://www.british-history.ac.uk/place.aspx?region=1",
             "description": "London",
             "section_idx": 44
         },
         {
-            "link": "http://www.visitlondon.com/",
+            "url": "http://www.visitlondon.com/",
             "description": "VisitLondon.com",
             "section_idx": 44
         },
         {
-            "link": "http://www.museumoflondon.org.uk/",
+            "url": "http://www.museumoflondon.org.uk/",
             "description": "Museum of London Group Portal&nbsp;– Home",
             "section_idx": 44
         },
         {
-            "link": "http://www.tfl.gov.uk/",
+            "url": "http://www.tfl.gov.uk/",
             "description": "Transport for London",
             "section_idx": 44
         },
         {
-            "link": "http://mapoflondon.uvic.ca/",
+            "url": "http://mapoflondon.uvic.ca/",
             "description": "Map of Early Modern London",
             "section_idx": 44
         },
         {
-            "link": "http://www.london.gov.uk/",
+            "url": "http://www.london.gov.uk/",
             "description": "London.gov.uk&nbsp;– Official site for the government of London by the Greater London Authority covering the Office of Mayor of London and the London Assembly",
             "section_idx": 44
         }

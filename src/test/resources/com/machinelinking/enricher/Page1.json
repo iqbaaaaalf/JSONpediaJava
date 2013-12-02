@@ -10387,182 +10387,182 @@
     ],
     "links": [
         {
-            "link": "http://books.google.com/books?id=jJl2JAqvoSAC&pg=PA41",
+            "url": "http://books.google.com/books?id=jJl2JAqvoSAC&pg=PA41",
             "description": "Chapter 2, p. 41",
             "section_idx": -1
         },
         {
-            "link": "http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf",
+            "url": "http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf",
             "description": "\"Scientific Background on the Nobel Prize in Physics 2011. The accelerating universe.\" (page 2)",
             "section_idx": -1
         },
         {
-            "link": "http://wordnetweb.princeton.edu/perl/webwn?s=Einstein",
+            "url": "http://wordnetweb.princeton.edu/perl/webwn?s=Einstein",
             "description": "WordNet for Einstein",
             "section_idx": -1
         },
         {
-            "link": "http://www.albert-einstein.org/.index11.html",
+            "url": "http://www.albert-einstein.org/.index11.html",
             "description": "",
             "section_idx": 1
         },
         {
-            "link": "http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf",
+            "url": "http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf",
             "description": "HarvardChem-Einstein-PDF",
             "section_idx": 1
         },
         {
-            "link": "http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf",
+            "url": "http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf",
             "description": "Einstein as a Student",
             "section_idx": 1
         },
         {
-            "link": "http://philoscience.unibe.ch/lehre/winter99/einstein/Stachel1966.pdf",
+            "url": "http://philoscience.unibe.ch/lehre/winter99/einstein/Stachel1966.pdf",
             "description": "philoscience.unibe.ch",
             "section_idx": 1
         },
         {
-            "link": "https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf",
+            "url": "https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf",
             "description": "",
             "section_idx": 1
         },
         {
-            "link": "http://books.google.com/books?id=5eWh2O_3OAQC&pg=PR19",
+            "url": "http://books.google.com/books?id=5eWh2O_3OAQC&pg=PR19",
             "description": "Timeline, p. xix",
             "section_idx": 4
         },
         {
-            "link": "http://books.google.com/books?id=3PN-NEfl_U0C&pg=PA218&dq=Einstein+Roosevelt&num=30&cd=4#v=onepage&q=Letter%20from%20Einstein%20Roosevelt&f=false",
+            "url": "http://books.google.com/books?id=3PN-NEfl_U0C&pg=PA218&dq=Einstein+Roosevelt&num=30&cd=4#v=onepage&q=Letter%20from%20Einstein%20Roosevelt&f=false",
             "description": "''Nuclear Weapons and Nonproliferation: a Reference Handbook''",
             "section_idx": 8
         },
         {
-            "link": "http://books.google.com/books?id=4d79VQdOfFUC&pg=PR10&dq=Einstein+on+Race+and+Racism+america's+worst+disease#v=onepage&q&f=false",
+            "url": "http://books.google.com/books?id=4d79VQdOfFUC&pg=PR10&dq=Einstein+on+Race+and+Racism+america's+worst+disease#v=onepage&q&f=false",
             "description": "Einstein on Race and Racism",
             "section_idx": 9
         },
         {
-            "link": "http://press.princeton.edu/titles/7921.html",
+            "url": "http://press.princeton.edu/titles/7921.html",
             "description": "The new quotable Einstein",
             "section_idx": 9
         },
         {
-            "link": "http://books.google.com/books?id=dLhVn-McDDgC&pg=PA226&dq=racism+americas+worst+disease+1946#v=onepage&q&f=false",
+            "url": "http://books.google.com/books?id=dLhVn-McDDgC&pg=PA226&dq=racism+americas+worst+disease+1946#v=onepage&q&f=false",
             "description": "Odyssey in Climate Modeling, Global Warming, and Advising Five Presidents",
             "section_idx": 9
         },
         {
-            "link": "http://books.google.com/books?id=zGzcV40b3IkC&pg=PA97&dq=E%3D+Einstein's+German+by+Fritz+Stern#v=onepage&q&f=false",
+            "url": "http://books.google.com/books?id=zGzcV40b3IkC&pg=PA97&dq=E%3D+Einstein's+German+by+Fritz+Stern#v=onepage&q&f=false",
             "description": "\"Einstein's Germany\"",
             "section_idx": 10
         },
         {
-            "link": "http://www.lorentz.leidenuniv.nl/history/Einstein_archive/",
+            "url": "http://www.lorentz.leidenuniv.nl/history/Einstein_archive/",
             "description": "Einstein archive at the Instituut-Lorentz",
             "section_idx": 11
         },
         {
-            "link": "http://www.osti.gov/accomplishments/nuggets/einstein/solidcolda.html",
+            "url": "http://www.osti.gov/accomplishments/nuggets/einstein/solidcolda.html",
             "description": "Celebrating Einstein \"Solid Cold\". U.S. DOE.",
             "section_idx": 17
         },
         {
-            "link": "http://www.pbs.org/wgbh/nova/einstein/genius/",
+            "url": "http://www.pbs.org/wgbh/nova/einstein/genius/",
             "description": "Einstein's Big Idea",
             "section_idx": 20
         },
         {
-            "link": "http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-lecture.html",
+            "url": "http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-lecture.html",
             "description": "Nobel lecture",
             "section_idx": 22
         },
         {
-            "link": "http://gtalumni.org/Publications/magazine/sum98/einsrefr.html",
+            "url": "http://gtalumni.org/Publications/magazine/sum98/einsrefr.html",
             "description": "Einstein's refrigerator",
             "section_idx": 36
         },
         {
-            "link": "http://www.newyorker.com/search/query?queryType=nonparsed&query=Einstein+&bylquery=Maloney&month1=01&day1=14&year1=1939&month2=01&day2=14&year2=1939&page=&sort=&submit.x=10&submit.y=5",
+            "url": "http://www.newyorker.com/search/query?queryType=nonparsed&query=Einstein+&bylquery=Maloney&month1=01&day1=14&year1=1939&month2=01&day2=14&year2=1939&page=&sort=&submit.x=10&submit.y=5",
             "description": "Disguise",
             "section_idx": 41
         },
         {
-            "link": "http://www.cindymctee.com/einsteins_dream.html",
+            "url": "http://www.cindymctee.com/einsteins_dream.html",
             "description": "",
             "section_idx": 41
         },
         {
-            "link": "http://www.einstein.caltech.edu/index.html",
+            "url": "http://www.einstein.caltech.edu/index.html",
             "description": "Einstein Papers Project",
             "section_idx": 43
         },
         {
-            "link": "http://press.princeton.edu/einstein/",
+            "url": "http://press.princeton.edu/einstein/",
             "description": "Einstein Page",
             "section_idx": 43
         },
         {
-            "link": "http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover",
+            "url": "http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover",
             "description": "The complete idiot's guide to understanding Einstein",
             "section_idx": 47
         },
         {
-            "link": "http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false",
+            "url": "http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false",
             "description": "On Albert Einstein by Robert Oppenheimer",
             "section_idx": 47
         },
         {
-            "link": "http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en",
+            "url": "http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en",
             "description": "Einstein's Scholar Google profile",
             "section_idx": 48
         },
         {
-            "link": "http://www.monthlyreview.org/598einstein.php",
+            "url": "http://www.monthlyreview.org/598einstein.php",
             "description": "Why Socialism?",
             "section_idx": 48
         },
         {
-            "link": "http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren",
+            "url": "http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren",
             "description": "Einstein's Personal Correspondence: Religion, Politics, The Holocaust, and Philosophy",
             "section_idx": 48
         },
         {
-            "link": "http://vault.fbi.gov/Albert%20Einstein",
+            "url": "http://vault.fbi.gov/Albert%20Einstein",
             "description": "FBI file on Albert Einstein",
             "section_idx": 48
         },
         {
-            "link": "http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html",
+            "url": "http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html",
             "description": "Nobelprize.org Biography:Albert Einstein",
             "section_idx": 48
         },
         {
-            "link": "http://www.life.com/image/first/in-gallery/41492/the-einstein-you-never-knew",
+            "url": "http://www.life.com/image/first/in-gallery/41492/the-einstein-you-never-knew",
             "description": "The Einstein You Never Knew",
             "section_idx": 48
         },
         {
-            "link": "http://www.history.com/topics/albert-einstein",
+            "url": "http://www.history.com/topics/albert-einstein",
             "description": "Albert Einstein",
             "section_idx": 48
         },
         {
-            "link": "http://www.pbs.org/wgbh/aso/databank/entries/bpeins.html",
+            "url": "http://www.pbs.org/wgbh/aso/databank/entries/bpeins.html",
             "description": "Science Odyssey People And Discoveries",
             "section_idx": 48
         },
         {
-            "link": "http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstein-oppenheimer-feynman-physics-in-the-20th-century-spring-2006/",
+            "url": "http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstein-oppenheimer-feynman-physics-in-the-20th-century-spring-2006/",
             "description": "MIT OpenCourseWare STS.042J/8.225J: Einstein, Oppenheimer, Feynman: Physics in the 20th century",
             "section_idx": 48
         },
         {
-            "link": "http://www.alberteinstein.info",
+            "url": "http://www.alberteinstein.info",
             "description": "Albert Einstein Archives Online (80,000+ Documents)",
             "section_idx": 48
         },
         {
-            "link": "http://www.msnbc.msn.com/id/46785542/ns/technology_and_science-science/",
+            "url": "http://www.msnbc.msn.com/id/46785542/ns/technology_and_science-science/",
             "description": "MSNBC - 03/19/2012",
             "section_idx": 48
         }

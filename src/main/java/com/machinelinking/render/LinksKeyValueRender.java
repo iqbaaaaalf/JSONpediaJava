@@ -21,7 +21,7 @@ public class LinksKeyValueRender implements KeyValueRender {
             link = links.next();
             writer.link(
                     link.get("description").asText(),
-                    link.get("link").asText()
+                    link.get("url").asText()
             );
         }
         writer.closeTag();
