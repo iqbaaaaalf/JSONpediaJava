@@ -51,8 +51,33 @@ public class WikimediaUtils {
         }
     }
 
+    public static URL toTemplateURL(String lang, String label) {
+        try {
+            return new URL(
+                    String.format("http://%s.wikipedia.org/wiki/Template:%s", lang, label.replaceAll(" ", "_"))
+            );
+        } catch (MalformedURLException murle) {
+            throw new IllegalArgumentException("Invalid arguments.", murle);
+        }
+    }
+
+    public static Parts urlToParts(URL url) {
+        final String lang = url.getHost().split("\\.")[0];
+        final String[] pathParts = url.getPath().split("/");
+        final String label = pathParts[pathParts.length - 1];
+        return new Parts(lang, label);
+    }
+
     private WikimediaUtils() {}
 
+    public static class Parts {
+        public final String lang;
+        public final String label;
 
+        Parts(String lang, String label) {
+            this.lang = lang;
+            this.label = label;
+        }
+    }
 
 }

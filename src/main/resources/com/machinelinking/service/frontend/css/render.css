@@ -47,6 +47,14 @@ body {
     margin: 5px;
 }
 
+.references-link {
+    margin: 5px;
+}
+
+.templates-link {
+    margin: 5px;
+}
+
 .primitive {
     background-color: #00CCFF;
 }
