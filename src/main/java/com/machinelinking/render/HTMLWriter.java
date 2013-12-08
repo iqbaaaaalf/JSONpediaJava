@@ -60,6 +60,8 @@ public interface HTMLWriter {
 
     void templateReference(String description, String lang, String label) throws IOException;
 
+    void category(String lang, String category) throws IOException;
+
     void span(String content) throws IOException;
 
     void flush() throws IOException;

@@ -1,12 +1,5 @@
 package com.machinelinking.render;
 
-import org.codehaus.jackson.JsonNode;
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.net.URL;
-
 /**
  * Default implementation of {@link HTMLRenderFactory}.
  *
@@ -32,7 +25,7 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         render.addKeyValueRender("links"   , new LinksKeyValueRender());
         render.addKeyValueRender("references", new ReferencesKeyValueRender());
         render.addKeyValueRender("templates", new TemplatesKeyValueRender());
-        // TODO: categories
+        render.addKeyValueRender("categories", new CategoriesKeyValueRender());
         // TODO: template-mapping
 
         // Within wikitext-json.structure element.

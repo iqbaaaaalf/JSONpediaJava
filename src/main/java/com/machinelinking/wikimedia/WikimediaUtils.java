@@ -61,6 +61,16 @@ public class WikimediaUtils {
         }
     }
 
+    public static URL toCategoryURL(String lang, String category) {
+        try {
+            return new URL(
+                    String.format("http://%s.wikipedia.org/wiki/Category:%s", lang, category.replaceAll(" ", "_"))
+            );
+        } catch (MalformedURLException murle) {
+            throw new IllegalArgumentException("Invalid arguments.", murle);
+        }
+    }
+
     public static Parts urlToParts(URL url) {
         final String lang = url.getHost().split("\\.")[0];
         final String[] pathParts = url.getPath().split("/");

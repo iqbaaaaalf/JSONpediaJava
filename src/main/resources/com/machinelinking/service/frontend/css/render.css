@@ -55,6 +55,10 @@ body {
     margin: 5px;
 }
 
+.categories-link {
+    margin: 5px;
+}
+
 .primitive {
     background-color: #00CCFF;
 }

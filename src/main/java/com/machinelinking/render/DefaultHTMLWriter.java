@@ -214,6 +214,15 @@ public class DefaultHTMLWriter implements HTMLWriter {
     }
 
     @Override
+    public void category(String lang, String category) throws IOException {
+        writer.append(String.format(
+                "<a class=\"categories-link\" target=\"_blank\" href=\"%s\">%s</a>",
+                WikimediaUtils.toCategoryURL(lang, category).toExternalForm(),
+                category
+        ));
+    }
+
+    @Override
     public void span(String content) throws IOException {
         openTag("span");
         text(content);
