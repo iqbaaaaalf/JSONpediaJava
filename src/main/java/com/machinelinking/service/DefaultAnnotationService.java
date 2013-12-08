@@ -172,7 +172,7 @@ public class DefaultAnnotationService implements AnnotationService {
 
         wikiEnricher.enrichEntity(documentSource, jsonSerializer);
         final String json = baos.toString();
-        return toOutputFormat(json, format, filter);
+        return toOutputFormat(documentSource.getDocumentURL(), json, format, filter);
     }
 
     private OutputFormat checkOutFormat(String outFormat) {
@@ -208,7 +208,7 @@ public class DefaultAnnotationService implements AnnotationService {
         );
     }
 
-    private Response toOutputFormat(String json, OutputFormat format, JSONFilter filter)
+    private Response toOutputFormat(URL documentURL, String json, OutputFormat format, JSONFilter filter)
     throws IOException {
         switch(format) {
             case json:
@@ -221,7 +221,7 @@ public class DefaultAnnotationService implements AnnotationService {
                 final JsonNode target   =
                         filter.isEmpty() ? rootNode : JSONUtils.parseJSON( printOutFilterResult(rootNode, filter) ); // TODO: avoid this!
                 return Response.ok(
-                        DefaultHTMLRenderFactory.getInstance().renderToHTML(target),
+                        DefaultHTMLRenderFactory.getInstance().createRender().renderToHTML(documentURL, target),
                         MediaType.TEXT_HTML + ";charset=UTF-8"
                 ).build();
             default:

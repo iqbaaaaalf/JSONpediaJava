@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
 /**
  * Test case for {@link DefaultHTMLRender}.
@@ -22,7 +23,8 @@ public class DefaultHTMLRenderTest {
                         "Enrichment1.json"
                 )
         );
-        final String html = DefaultHTMLRenderFactory.getInstance().renderToHTML(node);
+        final URL documentURL = new URL("http://en.wikipedia.org/page/Fake");
+        final String html = DefaultHTMLRenderFactory.getInstance().createRender().renderToHTML(documentURL, node);
         FileUtils.writeStringToFile( new File("./test-render.html"), html);
     }
 

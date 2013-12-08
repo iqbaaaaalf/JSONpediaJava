@@ -1,9 +1,5 @@
 package com.machinelinking.render;
 
-import org.codehaus.jackson.JsonNode;
-
-import java.io.IOException;
-
 /**
  * Factory for an {@link HTMLRender}.
  *
@@ -12,7 +8,5 @@ import java.io.IOException;
 public interface HTMLRenderFactory {
 
     HTMLRender createRender();
-
-    String renderToHTML(JsonNode rootNode) throws IOException;
 
 }

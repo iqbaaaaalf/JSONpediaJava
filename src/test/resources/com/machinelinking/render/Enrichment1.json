@@ -10186,6 +10186,7 @@
         }
     ],
     "issues": null,
+    "abstract": "\n\n\n\n\nAlbert Einstein (; ; 14 March 1879&nbsp;– 18 April 1955) was a German-born theoretical physicist who developed the theory of , effecting a revolution in . For this achievement, Einstein is often regarded as the father of ., Chapter 2, p. 41.\n While best known for his  formula  (which has been dubbed \"the world's most famous equation\")David Bodanis, E&nbsp;=&nbsp;mc2: A Biography of the World's Most Famous Equation (New York: Walker, 2000)., he received the 1921  \"for his services to theoretical physics, and especially for his discovery of the law of the \". The latter was pivotal in establishing quantum theory within physics.",
     "sections": [
         {
             "title": "Biography",
@@ -10386,2718 +10387,3394 @@
     ],
     "links": [
         {
-            "link": "http://books.google.com/books?id=jJl2JAqvoSAC&pg=PA41",
-            "description": "Chapter 2, p. 41"
+            "url": "http://books.google.com/books?id=jJl2JAqvoSAC&pg=PA41",
+            "description": "Chapter 2, p. 41",
+            "section_idx": -1
         },
         {
-            "link": "http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf",
-            "description": "\"Scientific Background on the Nobel Prize in Physics 2011. The accelerating universe.\" (page 2)"
+            "url": "http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf",
+            "description": "\"Scientific Background on the Nobel Prize in Physics 2011. The accelerating universe.\" (page 2)",
+            "section_idx": -1
         },
         {
-            "link": "http://wordnetweb.princeton.edu/perl/webwn?s=Einstein",
-            "description": "WordNet for Einstein"
+            "url": "http://wordnetweb.princeton.edu/perl/webwn?s=Einstein",
+            "description": "WordNet for Einstein",
+            "section_idx": -1
         },
         {
-            "link": "http://www.albert-einstein.org/.index11.html",
-            "description": ""
+            "url": "http://www.albert-einstein.org/.index11.html",
+            "description": "",
+            "section_idx": 1
         },
         {
-            "link": "http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf",
-            "description": "HarvardChem-Einstein-PDF"
+            "url": "http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf",
+            "description": "HarvardChem-Einstein-PDF",
+            "section_idx": 1
         },
         {
-            "link": "http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf",
-            "description": "Einstein as a Student"
+            "url": "http://www.chem.harvard.edu/herschbach/Einstein_Student.pdf",
+            "description": "Einstein as a Student",
+            "section_idx": 1
         },
         {
-            "link": "http://philoscience.unibe.ch/lehre/winter99/einstein/Stachel1966.pdf",
-            "description": "philoscience.unibe.ch"
+            "url": "http://philoscience.unibe.ch/lehre/winter99/einstein/Stachel1966.pdf",
+            "description": "philoscience.unibe.ch",
+            "section_idx": 1
         },
         {
-            "link": "https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf",
-            "description": ""
+            "url": "https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf",
+            "description": "",
+            "section_idx": 1
         },
         {
-            "link": "http://books.google.com/books?id=5eWh2O_3OAQC&pg=PR19",
-            "description": "Timeline, p. xix"
+            "url": "http://books.google.com/books?id=5eWh2O_3OAQC&pg=PR19",
+            "description": "Timeline, p. xix",
+            "section_idx": 4
         },
         {
-            "link": "http://books.google.com/books?id=3PN-NEfl_U0C&pg=PA218&dq=Einstein+Roosevelt&num=30&cd=4#v=onepage&q=Letter%20from%20Einstein%20Roosevelt&f=false",
-            "description": "''Nuclear Weapons and Nonproliferation: a Reference Handbook''"
+            "url": "http://books.google.com/books?id=3PN-NEfl_U0C&pg=PA218&dq=Einstein+Roosevelt&num=30&cd=4#v=onepage&q=Letter%20from%20Einstein%20Roosevelt&f=false",
+            "description": "''Nuclear Weapons and Nonproliferation: a Reference Handbook''",
+            "section_idx": 8
         },
         {
-            "link": "http://books.google.com/books?id=4d79VQdOfFUC&pg=PR10&dq=Einstein+on+Race+and+Racism+america's+worst+disease#v=onepage&q&f=false",
-            "description": "Einstein on Race and Racism"
+            "url": "http://books.google.com/books?id=4d79VQdOfFUC&pg=PR10&dq=Einstein+on+Race+and+Racism+america's+worst+disease#v=onepage&q&f=false",
+            "description": "Einstein on Race and Racism",
+            "section_idx": 9
         },
         {
-            "link": "http://press.princeton.edu/titles/7921.html",
-            "description": "The new quotable Einstein"
+            "url": "http://press.princeton.edu/titles/7921.html",
+            "description": "The new quotable Einstein",
+            "section_idx": 9
         },
         {
-            "link": "http://books.google.com/books?id=dLhVn-McDDgC&pg=PA226&dq=racism+americas+worst+disease+1946#v=onepage&q&f=false",
-            "description": "Odyssey in Climate Modeling, Global Warming, and Advising Five Presidents"
+            "url": "http://books.google.com/books?id=dLhVn-McDDgC&pg=PA226&dq=racism+americas+worst+disease+1946#v=onepage&q&f=false",
+            "description": "Odyssey in Climate Modeling, Global Warming, and Advising Five Presidents",
+            "section_idx": 9
         },
         {
-            "link": "http://books.google.com/books?id=zGzcV40b3IkC&pg=PA97&dq=E%3D+Einstein's+German+by+Fritz+Stern#v=onepage&q&f=false",
-            "description": "\"Einstein's Germany\""
+            "url": "http://books.google.com/books?id=zGzcV40b3IkC&pg=PA97&dq=E%3D+Einstein's+German+by+Fritz+Stern#v=onepage&q&f=false",
+            "description": "\"Einstein's Germany\"",
+            "section_idx": 10
         },
         {
-            "link": "http://www.lorentz.leidenuniv.nl/history/Einstein_archive/",
-            "description": "Einstein archive at the Instituut-Lorentz"
+            "url": "http://www.lorentz.leidenuniv.nl/history/Einstein_archive/",
+            "description": "Einstein archive at the Instituut-Lorentz",
+            "section_idx": 11
         },
         {
-            "link": "http://www.osti.gov/accomplishments/nuggets/einstein/solidcolda.html",
-            "description": "Celebrating Einstein \"Solid Cold\". U.S. DOE."
+            "url": "http://www.osti.gov/accomplishments/nuggets/einstein/solidcolda.html",
+            "description": "Celebrating Einstein \"Solid Cold\". U.S. DOE.",
+            "section_idx": 17
         },
         {
-            "link": "http://www.pbs.org/wgbh/nova/einstein/genius/",
-            "description": "Einstein's Big Idea"
+            "url": "http://www.pbs.org/wgbh/nova/einstein/genius/",
+            "description": "Einstein's Big Idea",
+            "section_idx": 20
         },
         {
-            "link": "http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-lecture.html",
-            "description": "Nobel lecture"
+            "url": "http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-lecture.html",
+            "description": "Nobel lecture",
+            "section_idx": 22
         },
         {
-            "link": "http://gtalumni.org/Publications/magazine/sum98/einsrefr.html",
-            "description": "Einstein's refrigerator"
+            "url": "http://gtalumni.org/Publications/magazine/sum98/einsrefr.html",
+            "description": "Einstein's refrigerator",
+            "section_idx": 36
         },
         {
-            "link": "http://www.newyorker.com/search/query?queryType=nonparsed&query=Einstein+&bylquery=Maloney&month1=01&day1=14&year1=1939&month2=01&day2=14&year2=1939&page=&sort=&submit.x=10&submit.y=5",
-            "description": "Disguise"
+            "url": "http://www.newyorker.com/search/query?queryType=nonparsed&query=Einstein+&bylquery=Maloney&month1=01&day1=14&year1=1939&month2=01&day2=14&year2=1939&page=&sort=&submit.x=10&submit.y=5",
+            "description": "Disguise",
+            "section_idx": 41
         },
         {
-            "link": "http://www.cindymctee.com/einsteins_dream.html",
-            "description": ""
+            "url": "http://www.cindymctee.com/einsteins_dream.html",
+            "description": "",
+            "section_idx": 41
         },
         {
-            "link": "http://www.einstein.caltech.edu/index.html",
-            "description": "Einstein Papers Project"
+            "url": "http://www.einstein.caltech.edu/index.html",
+            "description": "Einstein Papers Project",
+            "section_idx": 43
         },
         {
-            "link": "http://press.princeton.edu/einstein/",
-            "description": "Einstein Page"
+            "url": "http://press.princeton.edu/einstein/",
+            "description": "Einstein Page",
+            "section_idx": 43
         },
         {
-            "link": "http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover",
-            "description": "The complete idiot's guide to understanding Einstein"
+            "url": "http://books.google.com/books?id=875TTxildJ0C&dq=idiots+guide+to+einstein&printsec=frontcover",
+            "description": "The complete idiot's guide to understanding Einstein",
+            "section_idx": 47
         },
         {
-            "link": "http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false",
-            "description": "On Albert Einstein by Robert Oppenheimer"
+            "url": "http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstein/?pagination=false",
+            "description": "On Albert Einstein by Robert Oppenheimer",
+            "section_idx": 47
         },
         {
-            "link": "http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en",
-            "description": "Einstein's Scholar Google profile"
+            "url": "http://scholar.google.com.au/citations?user=qc6CJjYAAAAJ&hl=en",
+            "description": "Einstein's Scholar Google profile",
+            "section_idx": 48
         },
         {
-            "link": "http://www.monthlyreview.org/598einstein.php",
-            "description": "Why Socialism?"
+            "url": "http://www.monthlyreview.org/598einstein.php",
+            "description": "Why Socialism?",
+            "section_idx": 48
         },
         {
-            "link": "http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren",
-            "description": "Einstein's Personal Correspondence: Religion, Politics, The Holocaust, and Philosophy"
+            "url": "http://www.shapell.org/exhibitions.aspx?einstein-original-letters-in-aid-of-his-brethren",
+            "description": "Einstein's Personal Correspondence: Religion, Politics, The Holocaust, and Philosophy",
+            "section_idx": 48
         },
         {
-            "link": "http://vault.fbi.gov/Albert%20Einstein",
-            "description": "FBI file on Albert Einstein"
+            "url": "http://vault.fbi.gov/Albert%20Einstein",
+            "description": "FBI file on Albert Einstein",
+            "section_idx": 48
         },
         {
-            "link": "http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html",
-            "description": "Nobelprize.org Biography:Albert Einstein"
+            "url": "http://nobelprize.org/nobel_prizes/physics/laureates/1921/einstein-bio.html",
+            "description": "Nobelprize.org Biography:Albert Einstein",
+            "section_idx": 48
         },
         {
-            "link": "http://www.life.com/image/first/in-gallery/41492/the-einstein-you-never-knew",
-            "description": "The Einstein You Never Knew"
+            "url": "http://www.life.com/image/first/in-gallery/41492/the-einstein-you-never-knew",
+            "description": "The Einstein You Never Knew",
+            "section_idx": 48
         },
         {
-            "link": "http://www.history.com/topics/albert-einstein",
-            "description": "Albert Einstein"
+            "url": "http://www.history.com/topics/albert-einstein",
+            "description": "Albert Einstein",
+            "section_idx": 48
         },
         {
-            "link": "http://www.pbs.org/wgbh/aso/databank/entries/bpeins.html",
-            "description": "Science Odyssey People And Discoveries"
+            "url": "http://www.pbs.org/wgbh/aso/databank/entries/bpeins.html",
+            "description": "Science Odyssey People And Discoveries",
+            "section_idx": 48
         },
         {
-            "link": "http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstein-oppenheimer-feynman-physics-in-the-20th-century-spring-2006/",
-            "description": "MIT OpenCourseWare STS.042J/8.225J: Einstein, Oppenheimer, Feynman: Physics in the 20th century"
+            "url": "http://ocw.mit.edu/courses/science-technology-and-society/sts-042j-einstein-oppenheimer-feynman-physics-in-the-20th-century-spring-2006/",
+            "description": "MIT OpenCourseWare STS.042J/8.225J: Einstein, Oppenheimer, Feynman: Physics in the 20th century",
+            "section_idx": 48
         },
         {
-            "link": "http://www.alberteinstein.info",
-            "description": "Albert Einstein Archives Online (80,000+ Documents)"
+            "url": "http://www.alberteinstein.info",
+            "description": "Albert Einstein Archives Online (80,000+ Documents)",
+            "section_idx": 48
         },
         {
-            "link": "http://www.msnbc.msn.com/id/46785542/ns/technology_and_science-science/",
-            "description": "MSNBC - 03/19/2012"
+            "url": "http://www.msnbc.msn.com/id/46785542/ns/technology_and_science-science/",
+            "description": "MSNBC - 03/19/2012",
+            "section_idx": 48
         }
     ],
     "references": [
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUlm",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Ulm",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinKingdom_of_Württemberg",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Kingdom_of_Württemberg",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinGerman_Empire",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/German_Empire",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPrinceton,_New_Jersey",
-            "description": "Princeton"
+            "url": "http://en.wikipedia.org/wiki/Princeton,_New_Jersey",
+            "description": "Princeton",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMileva_Marić",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Mileva_Marić",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinElsa_Löwenthal",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Elsa_Löwenthal",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinKingdom_of_Württemberg",
-            "description": "Württemberg/Germany"
+            "url": "http://en.wikipedia.org/wiki/Kingdom_of_Württemberg",
+            "description": "Württemberg/Germany",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinStatelessness",
-            "description": "Stateless"
+            "url": "http://en.wikipedia.org/wiki/Statelessness",
+            "description": "Stateless",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSwitzerland",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Switzerland",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAustria–Hungary",
-            "description": "Austria"
+            "url": "http://en.wikipedia.org/wiki/Austria–Hungary",
+            "description": "Austria",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinGerman_Empire",
-            "description": "Germany"
+            "url": "http://en.wikipedia.org/wiki/German_Empire",
+            "description": "Germany",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPhysics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Physics",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPatent_Office",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Patent_Office",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBern",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Bern",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUniversity_of_Zurich",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/University_of_Zurich",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCharles_University_in_Prague",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Charles_University_in_Prague",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinETH_Zurich",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/ETH_Zurich",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPrussian_Academy_of_Sciences",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Prussian_Academy_of_Sciences",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinKaiser_Wilhelm_Institute",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Kaiser_Wilhelm_Institute",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLeiden_University",
-            "description": "University of Leiden"
+            "url": "http://en.wikipedia.org/wiki/Leiden_University",
+            "description": "University of Leiden",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinInstitute_for_Advanced_Study",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Institute_for_Advanced_Study",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinETH_Zurich",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/ETH_Zurich",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUniversity_of_Zurich",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/University_of_Zurich",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAlfred_Kleiner",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Alfred_Kleiner",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHeinrich_Friedrich_Weber",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Heinrich_Friedrich_Weber",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinErnst_G._Straus",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Ernst_G._Straus",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNathan_Rosen",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Nathan_Rosen",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLeo_Szilard",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Leo_Szilard",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinRaziuddin_Siddiqui",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Raziuddin_Siddiqui",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinGeneral_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/General_relativity",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinspecial_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/special_relativity",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPhotoelectric_effect",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Photoelectric_effect",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMass-energy_equivalence",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Mass-energy_equivalence",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBrownian_motion",
-            "description": "Theory of Brownian Motion"
+            "url": "http://en.wikipedia.org/wiki/Brownian_motion",
+            "description": "Theory of Brownian Motion",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEinstein_field_equations",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Einstein_field_equations",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBose–Einstein_statistics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Bose–Einstein_statistics",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinClassical_unified_field_theories",
-            "description": "Unified Field Theory"
+            "url": "http://en.wikipedia.org/wiki/Classical_unified_field_theories",
+            "description": "Unified Field Theory",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEPR_paradox",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/EPR_paradox",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNobel_Prize_in_Physics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Nobel_Prize_in_Physics",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMatteucci_Medal",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Matteucci_Medal",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCopley_Medal",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Copley_Medal",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMax_Planck_Medal",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Max_Planck_Medal",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://Time 100.wikipedia.org/wiki/_The_Most_Important_People_of_the_Century",
-            "description": "''Time'' Person of the Century"
+            "url": "http://Time 100.wikipedia.org/wiki/_The_Most_Important_People_of_the_Century",
+            "description": "''Time'' Person of the Century",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteintheoretical_physics",
-            "description": "theoretical physicist"
+            "url": "http://en.wikipedia.org/wiki/theoretical_physics",
+            "description": "theoretical physicist",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingeneral_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/general_relativity",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinphysics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/physics",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinmodern_physics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/modern_physics",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinmass–energy_equivalence",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/mass–energy_equivalence",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinList_of_Nobel_laureates_in_Physics",
-            "description": "1921"
+            "url": "http://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics",
+            "description": "1921",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNobel_Prize_in_Physics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Nobel_Prize_in_Physics",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinphotoelectric_effect",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/photoelectric_effect",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNobel_Foundation",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Nobel_Foundation",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinIntroduction_to_quantum_mechanics",
-            "description": "quantum theory"
+            "url": "http://en.wikipedia.org/wiki/Introduction_to_quantum_mechanics",
+            "description": "quantum theory",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNewtonian_mechanics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Newtonian_mechanics",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinclassical_mechanics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/classical_mechanics",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinelectromagnetic_field",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/electromagnetic_field",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinspecial_theory_of_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/special_theory_of_relativity",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingravitational_fields",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/gravitational_fields",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingeneral_theory_of_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/general_theory_of_relativity",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinstatistical_mechanics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/statistical_mechanics",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinquantum_mechanics",
-            "description": "quantum theory"
+            "url": "http://en.wikipedia.org/wiki/quantum_mechanics",
+            "description": "quantum theory",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinparticle",
-            "description": "particle theory"
+            "url": "http://en.wikipedia.org/wiki/particle",
+            "description": "particle theory",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBrownian_motion",
-            "description": "motion of molecules"
+            "url": "http://en.wikipedia.org/wiki/Brownian_motion",
+            "description": "motion of molecules",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinphoton",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/photon",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinuniverse",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/universe",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAdolf_Hitler",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Adolf_Hitler",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPrussian_Academy_of_Sciences",
-            "description": "Berlin Academy of Sciences"
+            "url": "http://en.wikipedia.org/wiki/Prussian_Academy_of_Sciences",
+            "description": "Berlin Academy of Sciences",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinFranklin_D._Roosevelt",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinManhattan_Project",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Manhattan_Project",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinnuclear_fission",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/nuclear_fission",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBertrand_Russell",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Bertrand_Russell",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinRussell–Einstein_Manifesto",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Russell–Einstein_Manifesto",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinInstitute_for_Advanced_Study",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Institute_for_Advanced_Study",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPrinceton,_New_Jersey",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Princeton,_New_Jersey",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinList_of_scientific_publications_by_Albert_Einstein",
-            "description": "more than 300 scientific papers"
+            "url": "http://en.wikipedia.org/wiki/List_of_scientific_publications_by_Albert_Einstein",
+            "description": "more than 300 scientific papers",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSigmund_Freud",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Sigmund_Freud",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinThe_Evolution_of_Physics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/The_Evolution_of_Physics",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLeopold_Infeld",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Leopold_Infeld",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingenius",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/genius",
+            "description": "",
+            "section_idx": 0
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Albert_Einstein_at_the_age_of_three_(1882).jpg",
-            "description": "alt=A young boy with short hair and a round face, wearing a white collar and large bow, with vest, coat, skirt and high boots. He is leaning against an ornate chair.|thumb|upright|Einstein at the age of three in 1882"
+            "url": "http://en.wikipedia.org/wiki/File:Albert_Einstein_at_the_age_of_three_(1882).jpg",
+            "description": "alt=A young boy with short hair and a round face, wearing a white collar and large bow, with vest, coat, skirt and high boots. He is leaning against an ornate chair.|thumb|upright|Einstein at the age of three in 1882",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Albert_Einstein_as_a_child.jpg",
-            "description": "alt=Studio photo of a boy seated in a relaxed posture and wearing a suit, posed in front of a backdrop of scenery.|thumb|upright|Albert Einstein in 1893 (age 14)"
+            "url": "http://en.wikipedia.org/wiki/File:Albert_Einstein_as_a_child.jpg",
+            "description": "alt=Studio photo of a boy seated in a relaxed posture and wearing a suit, posed in front of a backdrop of scenery.|thumb|upright|Albert Einstein in 1893 (age 14)",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Einstein-matura.jpg",
-            "description": "alt=Einstein's matriculation certificate at the age of 17. The heading reads \"The Education Committee of the Canton of Aargau.\" His scores were German 5, French 3, Italian 5, History 6, Geography 4, Algebra 6, Geometry 6, Descriptive Geometry 6, Physics 6, Chemistry 5, Natural History 5, Art Drawing 4, Technical Drawing 4. The scores are 6 = excellent, 5 = good, 4 = sufficient, 3 = poor, 2 = very poor, 1 = unusable.|thumb|upright|Einstein's matriculation certificate at the age of 17, showing his final grades from the Aargau Kantonsschule (on a scale of 1-6)."
+            "url": "http://en.wikipedia.org/wiki/File:Einstein-matura.jpg",
+            "description": "alt=Einstein's matriculation certificate at the age of 17. The heading reads \"The Education Committee of the Canton of Aargau.\" His scores were German 5, French 3, Italian 5, History 6, Geography 4, Algebra 6, Geometry 6, Descriptive Geometry 6, Physics 6, Chemistry 5, Natural History 5, Art Drawing 4, Technical Drawing 4. The scores are 6 = excellent, 5 = good, 4 = sufficient, 3 = poor, 2 = very poor, 1 = unusable.|thumb|upright|Einstein's matriculation certificate at the age of 17, showing his final grades from the Aargau Kantonsschule (on a scale of 1-6).",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUlm",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Ulm",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinKingdom_of_Württemberg",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Kingdom_of_Württemberg",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNobel_Foundation",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Nobel_Foundation",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHermann_Einstein",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Hermann_Einstein",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEinstein_family#Pauline_Koch",
-            "description": "Pauline Einstein (née Koch)"
+            "url": "http://en.wikipedia.org/wiki/Einstein_family#Pauline_Koch",
+            "description": "Pauline Einstein (née Koch)",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMunich",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Munich",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteindirect_current",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/direct_current",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCatholic_school",
-            "description": "Catholic elementary school"
+            "url": "http://en.wikipedia.org/wiki/Catholic_school",
+            "description": "Catholic elementary school",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLuitpold_Gymnasium",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Luitpold_Gymnasium",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinOpen_Court_Publishing_Company",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Open_Court_Publishing_Company",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMax_Talmey",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Max_Talmey",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPoland",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Poland",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCritique_of_Pure_Reason",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Critique_of_Pure_Reason",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEuclid's_Elements",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Euclid's_Elements",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinWar_of_Currents",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/War_of_Currents",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinalternating_current",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/alternating_current",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMilan",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Milan",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPavia",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Pavia",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinelectrical_engineering",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/electrical_engineering",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinrote_learning",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/rote_learning",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAether_theories",
-            "description": "Ether"
+            "url": "http://en.wikipedia.org/wiki/Aether_theories",
+            "description": "Ether",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinZurich",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Zurich",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinETH",
-            "description": "Eidgenössische Polytechnische Schule"
+            "url": "http://en.wikipedia.org/wiki/ETH",
+            "description": "Eidgenössische Polytechnische Schule",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAarau",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Aarau",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMaja_Einstein",
-            "description": "Maja"
+            "url": "http://en.wikipedia.org/wiki/Maja_Einstein",
+            "description": "Maja",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinGerman_citizenship",
-            "description": "citizenship in the German Kingdom of Württemberg"
+            "url": "http://en.wikipedia.org/wiki/German_citizenship",
+            "description": "citizenship in the German Kingdom of Württemberg",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinConscription_in_Germany",
-            "description": "military service"
+            "url": "http://en.wikipedia.org/wiki/Conscription_in_Germany",
+            "description": "military service",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMatura",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Matura",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinOlsberg,_Switzerland",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Olsberg,_Switzerland",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMileva_Marić",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Mileva_Marić",
+            "description": "",
+            "section_idx": 2
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMileva_Marić",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Mileva_Marić",
+            "description": "",
+            "section_idx": 3
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLieserl_Einstein",
-            "description": "Lieserl"
+            "url": "http://en.wikipedia.org/wiki/Lieserl_Einstein",
+            "description": "Lieserl",
+            "section_idx": 3
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNovi_Sad",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Novi_Sad",
+            "description": "",
+            "section_idx": 3
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHans_Albert_Einstein",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Hans_Albert_Einstein",
+            "description": "",
+            "section_idx": 3
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBern",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Bern",
+            "description": "",
+            "section_idx": 3
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEduard_Einstein",
-            "description": "Eduard"
+            "url": "http://en.wikipedia.org/wiki/Eduard_Einstein",
+            "description": "Eduard",
+            "section_idx": 3
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteincousin_marriage",
-            "description": "married"
+            "url": "http://en.wikipedia.org/wiki/cousin_marriage",
+            "description": "married",
+            "section_idx": 3
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinElsa_Einstein",
-            "description": "Elsa Löwenthal"
+            "url": "http://en.wikipedia.org/wiki/Elsa_Einstein",
+            "description": "Elsa Löwenthal",
+            "section_idx": 3
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMaurice_Solovine",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Maurice_Solovine",
+            "description": "",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Einstein-with-habicht-and-solovine.jpg",
-            "description": " and Einstein, who founded the Olympia Academy"
+            "url": "http://en.wikipedia.org/wiki/File:Einstein-with-habicht-and-solovine.jpg",
+            "description": " and Einstein, who founded the Olympia Academy",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEinsteinhaus",
-            "description": "Einstein's home"
+            "url": "http://en.wikipedia.org/wiki/Einsteinhaus",
+            "description": "Einstein's home",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:einsteinhaus4.jpg",
-            "description": "Einstein's home| in Bern"
+            "url": "http://en.wikipedia.org/wiki/File:einsteinhaus4.jpg",
+            "description": "Einstein's home| in Bern",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSwiss_Federal_Institute_of_Intellectual_Property",
-            "description": "Federal Office for Intellectual Property"
+            "url": "http://en.wikipedia.org/wiki/Swiss_Federal_Institute_of_Intellectual_Property",
+            "description": "Federal Office for Intellectual Property",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinpatent_examiner",
-            "description": "examiner"
+            "url": "http://en.wikipedia.org/wiki/patent_examiner",
+            "description": "examiner",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinpatent_application",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/patent_application",
+            "description": "",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinthought_experiment",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/thought_experiment",
+            "description": "",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinOlympia_Academy",
-            "description": "The Olympia Academy"
+            "url": "http://en.wikipedia.org/wiki/Olympia_Academy",
+            "description": "The Olympia Academy",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHenri_Poincaré",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Henri_Poincaré",
+            "description": "",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinErnst_Mach",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Ernst_Mach",
+            "description": "",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinDavid_Hume",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/David_Hume",
+            "description": "",
+            "section_idx": 4
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Albert_Einstein_(Nobel).png",
-            "description": "thumb|left|Einstein's official 1921 portrait after receiving the Nobel Prize in Physics."
+            "url": "http://en.wikipedia.org/wiki/File:Albert_Einstein_(Nobel).png",
+            "description": "thumb|left|Einstein's official 1921 portrait after receiving the Nobel Prize in Physics.",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinList_of_scientific_publications_by_Albert_Einstein#Journal_articles",
-            "description": "\"Folgerungen aus den Kapillarität Erscheinungen\""
+            "url": "http://en.wikipedia.org/wiki/List_of_scientific_publications_by_Albert_Einstein#Journal_articles",
+            "description": "\"Folgerungen aus den Kapillarität Erscheinungen\"",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAnnalen_der_Physik",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Annalen_der_Physik",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAlfred_Kleiner",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Alfred_Kleiner",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://Wikt.wikipedia.org/wiki/pro_forma",
-            "description": "pro-forma"
+            "url": "http://Wikt.wikipedia.org/wiki/pro_forma",
+            "description": "pro-forma",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUniversity_of_Zurich",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/University_of_Zurich",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinannus_mirabilis",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/annus_mirabilis",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAnnus_Mirabilis_papers",
-            "description": "four groundbreaking papers"
+            "url": "http://en.wikipedia.org/wiki/Annus_Mirabilis_papers",
+            "description": "four groundbreaking papers",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUniversity_of_Bern",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/University_of_Bern",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinDocent#Germany_and_Switzerland",
-            "description": "docent"
+            "url": "http://en.wikipedia.org/wiki/Docent#Germany_and_Switzerland",
+            "description": "docent",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCharles_University_in_Prague",
-            "description": "Karl-Ferdinand University in Prague"
+            "url": "http://en.wikipedia.org/wiki/Charles_University_in_Prague",
+            "description": "Karl-Ferdinand University in Prague",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinKaiser_Wilhelm_Society",
-            "description": "Kaiser Wilhelm Institute for Physics"
+            "url": "http://en.wikipedia.org/wiki/Kaiser_Wilhelm_Society",
+            "description": "Kaiser Wilhelm Institute for Physics",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinKaiser_Wilhelm_Institute_for_Physics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Kaiser_Wilhelm_Institute_for_Physics",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHumboldt_University_of_Berlin",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Humboldt_University_of_Berlin",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPrussian_Academy_of_Sciences",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Prussian_Academy_of_Sciences",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinGerman_Physical_Society",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/German_Physical_Society",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinArthur_Stanley_Eddington",
-            "description": "Arthur Eddington"
+            "url": "http://en.wikipedia.org/wiki/Arthur_Stanley_Eddington",
+            "description": "Arthur Eddington",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinsolar_eclipse_of_29_May_1919",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/solar_eclipse_of_29_May_1919",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinThe_Times",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/The_Times",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNobel_Prize_in_Physics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Nobel_Prize_in_Physics",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCopley_Medal",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Copley_Medal",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinRoyal_Society",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Royal_Society",
+            "description": "",
+            "section_idx": 5
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinJohn_Francis_Hylan",
-            "description": "the Mayor"
+            "url": "http://en.wikipedia.org/wiki/John_Francis_Hylan",
+            "description": "the Mayor",
+            "section_idx": 6
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinViscount_Haldane",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Viscount_Haldane",
+            "description": "",
+            "section_idx": 6
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSingapore",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Singapore",
+            "description": "",
+            "section_idx": 6
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCeylon",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Ceylon",
+            "description": "",
+            "section_idx": 6
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinTokyo_Imperial_Palace",
-            "description": "Imperial Palace"
+            "url": "http://en.wikipedia.org/wiki/Tokyo_Imperial_Palace",
+            "description": "Imperial Palace",
+            "section_idx": 6
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBritish_Mandate_for_Palestine",
-            "description": "Palestine"
+            "url": "http://en.wikipedia.org/wiki/British_Mandate_for_Palestine",
+            "description": "Palestine",
+            "section_idx": 6
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSir_Herbert_Samuel",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Sir_Herbert_Samuel",
+            "description": "",
+            "section_idx": 6
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLeon_Botstein",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Leon_Botstein",
+            "description": "",
+            "section_idx": 7
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Einstein_-_violin_-_1939.jpg",
-            "description": "thumb|Playing violin at home in Princeton, 1939"
+            "url": "http://en.wikipedia.org/wiki/File:Einstein_-_violin_-_1939.jpg",
+            "description": "thumb|Playing violin at home in Princeton, 1939",
+            "section_idx": 7
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMozart",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Mozart",
+            "description": "",
+            "section_idx": 7
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAarau",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Aarau",
+            "description": "",
+            "section_idx": 7
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBeethoven",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Beethoven",
+            "description": "",
+            "section_idx": 7
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinviolin_sonata",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/violin_sonata",
+            "description": "",
+            "section_idx": 7
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinchamber_music",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/chamber_music",
+            "description": "",
+            "section_idx": 7
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMax_Planck",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Max_Planck",
+            "description": "",
+            "section_idx": 7
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinJuilliard_Quartet",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Juilliard_Quartet",
+            "description": "",
+            "section_idx": 7
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Einstein-cartoon1.jpg",
-            "description": "thumb|left|Cartoon of Einstein, who has shed his \"Pacifism\" wings, standing next to a pillar labeled \"World Peace.\" He is rolling up his sleeves and holding a sword labeled \"Preparedness\" (circa 1933)."
+            "url": "http://en.wikipedia.org/wiki/File:Einstein-cartoon1.jpg",
+            "description": "thumb|left|Cartoon of Einstein, who has shed his \"Pacifism\" wings, standing next to a pillar labeled \"World Peace.\" He is rolling up his sleeves and holding a sword labeled \"Preparedness\" (circa 1933).",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNazi_Germany",
-            "description": "Nazis"
+            "url": "http://en.wikipedia.org/wiki/Nazi_Germany",
+            "description": "Nazis",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAdolf_Hitler",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Adolf_Hitler",
+            "description": "",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNazi_book_burnings",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Nazi_book_burnings",
+            "description": "",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinJoseph_Goebbels",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Joseph_Goebbels",
+            "description": "",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCalifornia_Institute_of_Technology",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/California_Institute_of_Technology",
+            "description": "",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinInstitute_for_Advanced_Study",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Institute_for_Advanced_Study",
+            "description": "",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPrinceton,_New_Jersey",
-            "description": "Princeton"
+            "url": "http://en.wikipedia.org/wiki/Princeton,_New_Jersey",
+            "description": "Princeton",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinJohn_von_Neumann",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/John_von_Neumann",
+            "description": "",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinKurt_Gödel",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Kurt_Gödel",
+            "description": "",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBruria_Kaufman",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Bruria_Kaufman",
+            "description": "",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinunified_field_theory",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/unified_field_theory",
+            "description": "",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinquantum_physics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/quantum_physics",
+            "description": "",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteintheoretical_physics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/theoretical_physics",
+            "description": "",
+            "section_idx": 8
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLeó_Szilárd",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Leó_Szilárd",
+            "description": "",
+            "section_idx": 9
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEdward_Teller",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Edward_Teller",
+            "description": "",
+            "section_idx": 9
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEugene_Wigner",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Eugene_Wigner",
+            "description": "",
+            "section_idx": 9
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinGerman_nuclear_energy_project",
-            "description": "race to build an atomic bomb"
+            "url": "http://en.wikipedia.org/wiki/German_nuclear_energy_project",
+            "description": "race to build an atomic bomb",
+            "section_idx": 9
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEinstein–Szilárd_letter",
-            "description": "a letter"
+            "url": "http://en.wikipedia.org/wiki/Einstein–Szilárd_letter",
+            "description": "a letter",
+            "section_idx": 9
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinFranklin_D._Roosevelt",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
+            "description": "",
+            "section_idx": 9
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinManhattan_Project",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Manhattan_Project",
+            "description": "",
+            "section_idx": 9
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLinus_Pauling",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Linus_Pauling",
+            "description": "",
+            "section_idx": 9
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Citizen-Einstein.jpg",
-            "description": "thumb|right|Accepting U.S. citizenship, 1940"
+            "url": "http://en.wikipedia.org/wiki/File:Citizen-Einstein.jpg",
+            "description": "thumb|right|Accepting U.S. citizenship, 1940",
+            "section_idx": 10
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinmeritocracy",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/meritocracy",
+            "description": "",
+            "section_idx": 10
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNational_Association_for_the_Advancement_of_Colored_People",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/National_Association_for_the_Advancement_of_Colored_People",
+            "description": "",
+            "section_idx": 10
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAfrican-American_Civil_Rights_Movement_(1896–1954)",
-            "description": "civil rights"
+            "url": "http://en.wikipedia.org/wiki/African-American_Civil_Rights_Movement_(1896–1954)",
+            "description": "civil rights",
+            "section_idx": 10
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinW._E._B._Du_Bois",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/W._E._B._Du_Bois",
+            "description": "",
+            "section_idx": 10
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Albert_Einstein_at_Princeton.jpg",
-            "description": "thumb|Einstein at his home in Princeton, 1949"
+            "url": "http://en.wikipedia.org/wiki/File:Albert_Einstein_at_Princeton.jpg",
+            "description": "thumb|Einstein at his home in Princeton, 1949",
+            "section_idx": 10
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinChaim_Weizmann",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Chaim_Weizmann",
+            "description": "",
+            "section_idx": 10
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinDavid_Ben-Gurion",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/David_Ben-Gurion",
+            "description": "",
+            "section_idx": 10
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPresident_of_Israel",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/President_of_Israel",
+            "description": "",
+            "section_idx": 10
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAbba_Eban",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Abba_Eban",
+            "description": "",
+            "section_idx": 10
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNew_York_World-Telegram",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/New_York_World-Telegram",
+            "description": "",
+            "section_idx": 11
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Death_headline.jpg",
-            "description": "'' announces Einstein's death on 18 April 1955."
+            "url": "http://en.wikipedia.org/wiki/File:Death_headline.jpg",
+            "description": "'' announces Einstein's death on 18 April 1955.",
+            "section_idx": 11
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinabdominal_aortic_aneurysm",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/abdominal_aortic_aneurysm",
+            "description": "",
+            "section_idx": 11
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNissen_fundoplication",
-            "description": "Dr. Rudolph Nissen"
+            "url": "http://en.wikipedia.org/wiki/Nissen_fundoplication",
+            "description": "Dr. Rudolph Nissen",
+            "section_idx": 11
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPrinceton_Hospital",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Princeton_Hospital",
+            "description": "",
+            "section_idx": 11
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinThomas_Stoltz_Harvey",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Thomas_Stoltz_Harvey",
+            "description": "",
+            "section_idx": 11
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAlbert_Einstein's_brain",
-            "description": "Einstein's brain"
+            "url": "http://en.wikipedia.org/wiki/Albert_Einstein's_brain",
+            "description": "Einstein's brain",
+            "section_idx": 11
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinneuroscience",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/neuroscience",
+            "description": "",
+            "section_idx": 11
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNational_Public_Radio",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/National_Public_Radio",
+            "description": "",
+            "section_idx": 11
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinRobert_Oppenheimer",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Robert_Oppenheimer",
+            "description": "",
+            "section_idx": 11
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Einstein_patentoffice.jpg",
-            "description": "alt=Head and shoulders shot of a young, moustached man with dark, curly hair wearing a plaid suit and vest, striped shirt, and a dark tie.|thumb|upright|Albert Einstein in 1904"
+            "url": "http://en.wikipedia.org/wiki/File:Einstein_patentoffice.jpg",
+            "description": "alt=Head and shoulders shot of a young, moustached man with dark, curly hair wearing a plaid suit and vest, striped shirt, and a dark tie.|thumb|upright|Albert Einstein in 1904",
+            "section_idx": 12
         },
         {
-            "label": "http://Image.wikipedia.org/wiki/Photoelectric_effect.svg",
-            "description": "thumb|upright|The photoelectric effect. Incoming photons on the left strike a metal plate (bottom), and eject electrons, depicted as flying off to the right."
+            "url": "http://Image.wikipedia.org/wiki/Photoelectric_effect.svg",
+            "description": "thumb|upright|The photoelectric effect. Incoming photons on the left strike a metal plate (bottom), and eject electrons, depicted as flying off to the right.",
+            "section_idx": 12
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEinstein_refrigerator",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Einstein_refrigerator",
+            "description": "",
+            "section_idx": 12
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAnnus_mirabilis",
-            "description": "Annus Mirabilis"
+            "url": "http://en.wikipedia.org/wiki/Annus_mirabilis",
+            "description": "Annus Mirabilis",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinphotoelectric_effect",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/photoelectric_effect",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinquantum_mechanics",
-            "description": "quantum theory"
+            "url": "http://en.wikipedia.org/wiki/quantum_mechanics",
+            "description": "quantum theory",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBrownian_motion",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Brownian_motion",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinspecial_theory_of_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/special_theory_of_relativity",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinE=mc2",
-            "description": "E =mc2"
+            "url": "http://en.wikipedia.org/wiki/E=mc2",
+            "description": "E =mc2",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAnnalen_der_Physik",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Annalen_der_Physik",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHistory_of_physics#Modern_physics",
-            "description": "modern physics"
+            "url": "http://en.wikipedia.org/wiki/History_of_physics#Modern_physics",
+            "description": "modern physics",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinspace",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/space",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinmatter",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/matter",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPhotoelectric_effect",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Photoelectric_effect",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinquantum",
-            "description": "quanta"
+            "url": "http://en.wikipedia.org/wiki/quantum",
+            "description": "quanta",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBrownian_motion",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Brownian_motion",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinatom",
-            "description": "atomic theory"
+            "url": "http://en.wikipedia.org/wiki/atom",
+            "description": "atomic theory",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinstatistical_physics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/statistical_physics",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSpecial_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Special_relativity",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinluminiferous_ether",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/luminiferous_ether",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMass–energy_equivalence",
-            "description": "Matter–energy equivalence"
+            "url": "http://en.wikipedia.org/wiki/Mass–energy_equivalence",
+            "description": "Matter–energy equivalence",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinrest_energy",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/rest_energy",
+            "description": "",
+            "section_idx": 13
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteincapillary_attraction",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/capillary_attraction",
+            "description": "",
+            "section_idx": 14
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinatom",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/atom",
+            "description": "",
+            "section_idx": 14
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBrownian_motion",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Brownian_motion",
+            "description": "",
+            "section_idx": 14
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinprinciple_of_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/principle_of_relativity",
+            "description": "",
+            "section_idx": 15
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHermann_Minkowski",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Hermann_Minkowski",
+            "description": "",
+            "section_idx": 15
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinprinciple_of_equivalence",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/principle_of_equivalence",
+            "description": "",
+            "section_idx": 15
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinadiabatic_invariant",
-            "description": "adiabatic invariance"
+            "url": "http://en.wikipedia.org/wiki/adiabatic_invariant",
+            "description": "adiabatic invariance",
+            "section_idx": 15
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMaxwell's_equations",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Maxwell's_equations",
+            "description": "",
+            "section_idx": 16
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinspeed_of_light",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/speed_of_light",
+            "description": "",
+            "section_idx": 16
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinspecial_theory_of_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/special_theory_of_relativity",
+            "description": "",
+            "section_idx": 16
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSpacetime",
-            "description": "time-space frame"
+            "url": "http://en.wikipedia.org/wiki/Spacetime",
+            "description": "time-space frame",
+            "section_idx": 16
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinTime_dilation",
-            "description": "slow down"
+            "url": "http://en.wikipedia.org/wiki/Time_dilation",
+            "description": "slow down",
+            "section_idx": 16
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLength_contraction",
-            "description": "contract"
+            "url": "http://en.wikipedia.org/wiki/Length_contraction",
+            "description": "contract",
+            "section_idx": 16
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinluminiferous_aether",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/luminiferous_aether",
+            "description": "",
+            "section_idx": 16
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinmass–energy_equivalence",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/mass–energy_equivalence",
+            "description": "",
+            "section_idx": 16
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinquantum",
-            "description": "quanta"
+            "url": "http://en.wikipedia.org/wiki/quantum",
+            "description": "quanta",
+            "section_idx": 17
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinRobert_Millikan",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Robert_Millikan",
+            "description": "",
+            "section_idx": 17
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinphotoelectric_effect",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/photoelectric_effect",
+            "description": "",
+            "section_idx": 17
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCompton_scattering",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Compton_scattering",
+            "description": "",
+            "section_idx": 17
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinphoton",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/photon",
+            "description": "",
+            "section_idx": 17
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPlanck's_constant",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Planck's_constant",
+            "description": "",
+            "section_idx": 17
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPeter_Debye",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Peter_Debye",
+            "description": "",
+            "section_idx": 18
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinOffice_of_Scientific_and_Technical_Information",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Office_of_Scientific_and_Technical_Information",
+            "description": "",
+            "section_idx": 18
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinErnest_Rutherford",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Ernest_Rutherford",
+            "description": "",
+            "section_idx": 19
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinperiodic_table_of_the_elements",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/periodic_table_of_the_elements",
+            "description": "",
+            "section_idx": 19
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinWilhelm_Wien",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Wilhelm_Wien",
+            "description": "",
+            "section_idx": 19
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinadiabatic_invariant",
-            "description": "adiabatic invariance"
+            "url": "http://en.wikipedia.org/wiki/adiabatic_invariant",
+            "description": "adiabatic invariance",
+            "section_idx": 19
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinblackbody_radiation",
-            "description": "blackbody curves"
+            "url": "http://en.wikipedia.org/wiki/blackbody_radiation",
+            "description": "blackbody curves",
+            "section_idx": 19
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinWien's_displacement_law",
-            "description": "simple shifting process"
+            "url": "http://en.wikipedia.org/wiki/Wien's_displacement_law",
+            "description": "simple shifting process",
+            "section_idx": 19
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinArnold_Sommerfeld",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Arnold_Sommerfeld",
+            "description": "",
+            "section_idx": 19
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinaction-angle_variables",
-            "description": "action variable"
+            "url": "http://en.wikipedia.org/wiki/action-angle_variables",
+            "description": "action variable",
+            "section_idx": 19
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSolvay_Conference",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Solvay_Conference",
+            "description": "",
+            "section_idx": 20
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Einstein_1911_Solvay.jpg",
-            "description": " in 1911"
+            "url": "http://en.wikipedia.org/wiki/File:Einstein_1911_Solvay.jpg",
+            "description": " in 1911",
+            "section_idx": 20
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinprivatdozent",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/privatdozent",
+            "description": "",
+            "section_idx": 20
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUniversity_of_Bern",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/University_of_Bern",
+            "description": "",
+            "section_idx": 20
         },
         {
-            "label": "http://s.wikipedia.org/wiki/The_Development_of_Our_Views_on_the_Composition_and_Essence_of_Radiation",
-            "description": "The Development of Our Views on the Composition and Essence of Radiation"
+            "url": "http://s.wikipedia.org/wiki/The_Development_of_Our_Views_on_the_Composition_and_Essence_of_Radiation",
+            "description": "The Development of Our Views on the Composition and Essence of Radiation",
+            "section_idx": 20
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinquantization_(physics)",
-            "description": "quantization"
+            "url": "http://en.wikipedia.org/wiki/quantization_(physics)",
+            "description": "quantization",
+            "section_idx": 20
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinmomentum",
-            "description": "momenta"
+            "url": "http://en.wikipedia.org/wiki/momentum",
+            "description": "momenta",
+            "section_idx": 20
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinpoint_particle",
-            "description": "point-like particles"
+            "url": "http://en.wikipedia.org/wiki/point_particle",
+            "description": "point-like particles",
+            "section_idx": 20
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinGilbert_N._Lewis",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Gilbert_N._Lewis",
+            "description": "",
+            "section_idx": 20
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinwave–particle_duality",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/wave–particle_duality",
+            "description": "",
+            "section_idx": 20
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinquantum_mechanics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/quantum_mechanics",
+            "description": "",
+            "section_idx": 20
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinRaleigh_scattering",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Raleigh_scattering",
+            "description": "",
+            "section_idx": 21
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPublic_Broadcasting_Service",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Public_Broadcasting_Service",
+            "description": "",
+            "section_idx": 21
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinOtto_Stern",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Otto_Stern",
+            "description": "",
+            "section_idx": 22
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinArthur_Stanley_Eddington",
-            "description": "Eddington"
+            "url": "http://en.wikipedia.org/wiki/Arthur_Stanley_Eddington",
+            "description": "Eddington",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinsolar_eclipse",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/solar_eclipse",
+            "description": "",
+            "section_idx": 23
         },
         {
-            "label": "http://Image.wikipedia.org/wiki/1919_eclipse_positive.jpg",
-            "description": "."
+            "url": "http://Image.wikipedia.org/wiki/1919_eclipse_positive.jpg",
+            "description": ".",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteintheory_of_gravitation",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/theory_of_gravitation",
+            "description": "",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingeneral_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/general_relativity",
+            "description": "",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinastrophysics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/astrophysics",
+            "description": "",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinblack_holes",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/black_holes",
+            "description": "",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingeneral_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/general_relativity",
+            "description": "",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinspecial_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/special_relativity",
+            "description": "",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinspecial_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/special_relativity",
+            "description": "",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinfree_fall",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/free_fall",
+            "description": "",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEquivalence_principle",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Equivalence_principle",
+            "description": "",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingravitational_time_dilation",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/gravitational_time_dilation",
+            "description": "",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinGravitational_lensing",
-            "description": "deflection of light"
+            "url": "http://en.wikipedia.org/wiki/Gravitational_lensing",
+            "description": "deflection of light",
+            "section_idx": 23
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingauge_invariance",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/gauge_invariance",
+            "description": "",
+            "section_idx": 24
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteincosmological_constant",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/cosmological_constant",
+            "description": "",
+            "section_idx": 25
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEinstein_static_universe",
-            "description": "eternal static sphere"
+            "url": "http://en.wikipedia.org/wiki/Einstein_static_universe",
+            "description": "eternal static sphere",
+            "section_idx": 25
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUniversity_of_Berlin",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/University_of_Berlin",
+            "description": "",
+            "section_idx": 25
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Albert_Einstein_photo_1920.jpg",
-            "description": "."
+            "url": "http://en.wikipedia.org/wiki/File:Albert_Einstein_photo_1920.jpg",
+            "description": ".",
+            "section_idx": 25
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMach's_principle",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Mach's_principle",
+            "description": "",
+            "section_idx": 25
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinframe_dragging",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/frame_dragging",
+            "description": "",
+            "section_idx": 25
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinGravitomagnetism",
-            "description": "gravitomagnetic fields"
+            "url": "http://en.wikipedia.org/wiki/Gravitomagnetism",
+            "description": "gravitomagnetic fields",
+            "section_idx": 25
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinstimulated_emission",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/stimulated_emission",
+            "description": "",
+            "section_idx": 26
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinmaser",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/maser",
+            "description": "",
+            "section_idx": 26
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinlaser",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/laser",
+            "description": "",
+            "section_idx": 26
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLouis_de_Broglie",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Louis_de_Broglie",
+            "description": "",
+            "section_idx": 26
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMatter_wave",
-            "description": "de Broglie waves"
+            "url": "http://en.wikipedia.org/wiki/Matter_wave",
+            "description": "de Broglie waves",
+            "section_idx": 26
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHamilton–Jacobi_equation",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Hamilton–Jacobi_equation",
+            "description": "",
+            "section_idx": 26
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinstatistical_mechanics",
-            "description": "statistical"
+            "url": "http://en.wikipedia.org/wiki/statistical_mechanics",
+            "description": "statistical",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSatyendra_Nath_Bose",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Satyendra_Nath_Bose",
+            "description": "",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinZeitschrift_für_Physik",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Zeitschrift_für_Physik",
+            "description": "",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBose–Einstein_condensate",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Bose–Einstein_condensate",
+            "description": "",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEric_Allin_Cornell",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Eric_Allin_Cornell",
+            "description": "",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCarl_Wieman",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Carl_Wieman",
+            "description": "",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinultracold_atom",
-            "description": "ultra-cooling"
+            "url": "http://en.wikipedia.org/wiki/ultracold_atom",
+            "description": "ultra-cooling",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNational_Institute_of_Standards_and_Technology",
-            "description": "NIST"
+            "url": "http://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology",
+            "description": "NIST",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinJILA",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/JILA",
+            "description": "",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUniversity_of_Colorado_at_Boulder",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/University_of_Colorado_at_Boulder",
+            "description": "",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBose–Einstein_statistics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Bose–Einstein_statistics",
+            "description": "",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinboson",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/boson",
+            "description": "",
+            "section_idx": 27
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNoether's_theorem",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Noether's_theorem",
+            "description": "",
+            "section_idx": 28
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLagrangian",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Lagrangian",
+            "description": "",
+            "section_idx": 28
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinTranslational_symmetry",
-            "description": "translation invariance"
+            "url": "http://en.wikipedia.org/wiki/Translational_symmetry",
+            "description": "translation invariance",
+            "section_idx": 28
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingeneral_covariance",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/general_covariance",
+            "description": "",
+            "section_idx": 28
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingauge_symmetry",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/gauge_symmetry",
+            "description": "",
+            "section_idx": 28
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLev_Landau",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Lev_Landau",
+            "description": "",
+            "section_idx": 28
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEvgeny_Lifshitz",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Evgeny_Lifshitz",
+            "description": "",
+            "section_idx": 28
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinErwin_Schrödinger",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Erwin_Schrödinger",
+            "description": "",
+            "section_idx": 28
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinunified_field_theory",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/unified_field_theory",
+            "description": "",
+            "section_idx": 29
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinScientific_American",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Scientific_American",
+            "description": "",
+            "section_idx": 29
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinstrong_nuclear_force",
-            "description": "strong"
+            "url": "http://en.wikipedia.org/wiki/strong_nuclear_force",
+            "description": "strong",
+            "section_idx": 29
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinweak_nuclear_force",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/weak_nuclear_force",
+            "description": "",
+            "section_idx": 29
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteintheory_of_everything",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/theory_of_everything",
+            "description": "",
+            "section_idx": 29
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinstring_theory",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/string_theory",
+            "description": "",
+            "section_idx": 29
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinwormhole",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/wormhole",
+            "description": "",
+            "section_idx": 30
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSchwarzschild_black_hole",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Schwarzschild_black_hole",
+            "description": "",
+            "section_idx": 30
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinTorsion_tensor",
-            "description": "torsion"
+            "url": "http://en.wikipedia.org/wiki/Torsion_tensor",
+            "description": "torsion",
+            "section_idx": 31
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEinstein_equations",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Einstein_equations",
+            "description": "",
+            "section_idx": 32
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingeodesic_equation",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/geodesic_equation",
+            "description": "",
+            "section_idx": 32
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinRoy_Kerr",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Roy_Kerr",
+            "description": "",
+            "section_idx": 32
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinforce",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/force",
+            "description": "",
+            "section_idx": 33
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinsuperconductivity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/superconductivity",
+            "description": "",
+            "section_idx": 33
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteingravitational_waves",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/gravitational_waves",
+            "description": "",
+            "section_idx": 33
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEinstein's_unsuccessful_investigations",
-            "description": "main article"
+            "url": "http://en.wikipedia.org/wiki/Einstein's_unsuccessful_investigations",
+            "description": "main article",
+            "section_idx": 33
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSolvay_Conference",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Solvay_Conference",
+            "description": "",
+            "section_idx": 34
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Solvay_conference_1927.jpg",
-            "description": " in Brussels, a gathering of the world's top physicists. Einstein in the center."
+            "url": "http://en.wikipedia.org/wiki/File:Solvay_conference_1927.jpg",
+            "description": " in Brussels, a gathering of the world's top physicists. Einstein in the center.",
+            "section_idx": 34
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLeopold_Infeld",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Leopold_Infeld",
+            "description": "",
+            "section_idx": 34
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNathan_Rosen",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Nathan_Rosen",
+            "description": "",
+            "section_idx": 34
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPeter_Bergmann",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Peter_Bergmann",
+            "description": "",
+            "section_idx": 34
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteintorsion_pendulum",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/torsion_pendulum",
+            "description": "",
+            "section_idx": 35
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBose–Einstein_condensate",
-            "description": "Bose–Einstein gas"
+            "url": "http://en.wikipedia.org/wiki/Bose–Einstein_condensate",
+            "description": "Bose–Einstein gas",
+            "section_idx": 36
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinsecond_quantization",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/second_quantization",
+            "description": "",
+            "section_idx": 36
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinthermodynamics",
-            "description": "thermodynamic"
+            "url": "http://en.wikipedia.org/wiki/thermodynamics",
+            "description": "thermodynamic",
+            "section_idx": 36
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinQuantum_chaos",
-            "description": "semiclassical"
+            "url": "http://en.wikipedia.org/wiki/Quantum_chaos",
+            "description": "semiclassical",
+            "section_idx": 36
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinideal_gas",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/ideal_gas",
+            "description": "",
+            "section_idx": 36
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLeó_Szilárd",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Leó_Szilárd",
+            "description": "",
+            "section_idx": 37
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinEinstein_refrigerator",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Einstein_refrigerator",
+            "description": "",
+            "section_idx": 37
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinabsorption_refrigerator",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/absorption_refrigerator",
+            "description": "",
+            "section_idx": 37
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLeó_Szilárd",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Leó_Szilárd",
+            "description": "",
+            "section_idx": 37
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinchain_reaction",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/chain_reaction",
+            "description": "",
+            "section_idx": 37
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinElectrolux",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Electrolux",
+            "description": "",
+            "section_idx": 37
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNiels_Bohr",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Niels_Bohr",
+            "description": "",
+            "section_idx": 38
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Niels_Bohr_Albert_Einstein_by_Ehrenfest.jpg",
-            "description": ", 1925"
+            "url": "http://en.wikipedia.org/wiki/File:Niels_Bohr_Albert_Einstein_by_Ehrenfest.jpg",
+            "description": ", 1925",
+            "section_idx": 38
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinquantum_mechanics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/quantum_mechanics",
+            "description": "",
+            "section_idx": 38
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNiels_Bohr",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Niels_Bohr",
+            "description": "",
+            "section_idx": 38
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinphilosophy_of_science",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/philosophy_of_science",
+            "description": "",
+            "section_idx": 38
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMarxists_Internet_Archive",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Marxists_Internet_Archive",
+            "description": "",
+            "section_idx": 38
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinlocal_realism",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/local_realism",
+            "description": "",
+            "section_idx": 39
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAspect_experiment",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Aspect_experiment",
+            "description": "",
+            "section_idx": 39
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBell's_theorem",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Bell's_theorem",
+            "description": "",
+            "section_idx": 39
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinElsa_Einstein",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Elsa_Einstein",
+            "description": "",
+            "section_idx": 40
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPresident_of_Israel",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/President_of_Israel",
+            "description": "",
+            "section_idx": 40
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinChaim_Weizmann",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Chaim_Weizmann",
+            "description": "",
+            "section_idx": 40
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinVera_Weizmann",
-            "description": "Dr. Vera Weizmann"
+            "url": "http://en.wikipedia.org/wiki/Vera_Weizmann",
+            "description": "Dr. Vera Weizmann",
+            "section_idx": 40
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMenahem_Ussishkin",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Menahem_Ussishkin",
+            "description": "",
+            "section_idx": 40
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNew_York_City",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/New_York_City",
+            "description": "",
+            "section_idx": 40
         },
         {
-            "label": "http://en.wikipedia.org/wiki/File:Einsteinwiezmann.PNG",
-            "description": " in 1921."
+            "url": "http://en.wikipedia.org/wiki/File:Einsteinwiezmann.PNG",
+            "description": " in 1921.",
+            "section_idx": 40
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAlbert_Einstein's_political_views",
-            "description": "see main article"
+            "url": "http://en.wikipedia.org/wiki/Albert_Einstein's_political_views",
+            "description": "see main article",
+            "section_idx": 40
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinJudaism",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Judaism",
+            "description": "",
+            "section_idx": 40
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSpinoza's_god",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Spinoza's_god",
+            "description": "",
+            "section_idx": 40
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinpersonal_god",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/personal_god",
+            "description": "",
+            "section_idx": 40
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinThe_Hebrew_University",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/The_Hebrew_University",
+            "description": "",
+            "section_idx": 41
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBBC",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/BBC",
+            "description": "",
+            "section_idx": 41
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBBC_News",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/BBC_News",
+            "description": "",
+            "section_idx": 41
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinpersonality_rights",
-            "description": "image"
+            "url": "http://en.wikipedia.org/wiki/personality_rights",
+            "description": "image",
+            "section_idx": 41
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCorbis",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Corbis",
+            "description": "",
+            "section_idx": 41
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinThe_Roger_Richman_Agency",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/The_Roger_Richman_Agency",
+            "description": "",
+            "section_idx": 41
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinCindy_McTee",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Cindy_McTee",
+            "description": "",
+            "section_idx": 42
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinmad_scientist",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/mad_scientist",
+            "description": "",
+            "section_idx": 42
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinabsent-minded_professor",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/absent-minded_professor",
+            "description": "",
+            "section_idx": 42
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinNobel_Prize_in_Physics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Nobel_Prize_in_Physics",
+            "description": "",
+            "section_idx": 43
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinList_of_scientific_publications_by_Albert_Einstein",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/List_of_scientific_publications_by_Albert_Einstein",
+            "description": "",
+            "section_idx": 44
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBaer's_law",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Baer's_law",
+            "description": "",
+            "section_idx": 44
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_Einsteinmeander",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/meander",
+            "description": "",
+            "section_idx": 44
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinJohn_Stachel",
-            "description": "Stachel, John"
+            "url": "http://en.wikipedia.org/wiki/John_Stachel",
+            "description": "Stachel, John",
+            "section_idx": 44
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPrinceton_University_Press",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Princeton_University_Press",
+            "description": "",
+            "section_idx": 44
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPrinceton_University_Press",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Princeton_University_Press",
+            "description": "",
+            "section_idx": 44
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinThe_Einstein_Theory_of_Relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/The_Einstein_Theory_of_Relativity",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinGerman_inventors_and_discoverers",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/German_inventors_and_discoverers",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHeinrich_Burkhardt",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Heinrich_Burkhardt",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHermann_Einstein",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Hermann_Einstein",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHistorical_Museum_of_Bern",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Historical_Museum_of_Bern",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinHistory_of_gravitational_theory",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/History_of_gravitational_theory",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinIntroduction_to_special_relativity",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Introduction_to_special_relativity",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinList_of_coupled_cousins",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/List_of_coupled_cousins",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinRelativity_priority_dispute",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Relativity_priority_dispute",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSticky_bead_argument",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Sticky_bead_argument",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinSummation_convention",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Summation_convention",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinList_of_Jewish_Nobel_laureates",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/List_of_Jewish_Nobel_laureates",
+            "description": "",
+            "section_idx": 45
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinAbraham_Pais",
-            "description": "Pais, Abraham"
+            "url": "http://en.wikipedia.org/wiki/Abraham_Pais",
+            "description": "Pais, Abraham",
+            "section_idx": 48
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinJ._Robert_Oppenheimer",
-            "description": "Oppenheimer"
+            "url": "http://en.wikipedia.org/wiki/J._Robert_Oppenheimer",
+            "description": "Oppenheimer",
+            "section_idx": 48
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinJ._Robert_Oppenheimer",
-            "description": "Oppenheimer"
+            "url": "http://en.wikipedia.org/wiki/J._Robert_Oppenheimer",
+            "description": "Oppenheimer",
+            "section_idx": 48
         },
         {
-            "label": "http://wikilivres.wikipedia.org/wiki/Albert_Einstein",
-            "description": "Works by Albert Einstein"
+            "url": "http://wikilivres.wikipedia.org/wiki/Albert_Einstein",
+            "description": "Works by Albert Einstein",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinMonthly_Review",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Monthly_Review",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinLife_magazine",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Life_magazine",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPhysicist",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Physicist",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUlm",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Ulm",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinBaden-Württemberg",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Baden-Württemberg",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinGerman_Empire",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/German_Empire",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinPrinceton,_New_Jersey",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Princeton,_New_Jersey",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Albert_EinsteinUSA",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/USA",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:1879_births",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:1879_births",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:1955_deaths",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:1955_deaths",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:19th-century_American_people",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:19th-century_American_people",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:19th-century_German_people",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:19th-century_German_people",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:19th-century_Jews",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:19th-century_Jews",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:19th-century_Swiss_people",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:19th-century_Swiss_people",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:20th-century_American_people",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:20th-century_American_people",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:20th-century_German_people",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:20th-century_German_people",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:20th-century_Swiss_people",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:20th-century_Swiss_people",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Academics_of_Charles_University_in_Prague",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Academics_of_Charles_University_in_Prague",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Albert_Einstein",
-            "description": " "
+            "url": "http://en.wikipedia.org/wiki/Category:Albert_Einstein",
+            "description": " ",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:American_humanitarians",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:American_humanitarians",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:American_inventors",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:American_inventors",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:American_pacifists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:American_pacifists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:American_people_of_Swiss-Jewish_descent",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:American_people_of_Swiss-Jewish_descent",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:American_people_of_German-Jewish_descent",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:American_people_of_German-Jewish_descent",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:American_physicists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:American_physicists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Cosmologists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Cosmologists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Deaths_from_abdominal_aortic_aneurysm",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Deaths_from_abdominal_aortic_aneurysm",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Deists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Deists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Einstein_family",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Einstein_family",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:ETH_Zurich_alumni",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:ETH_Zurich_alumni",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:ETH_Zurich_faculty",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:ETH_Zurich_faculty",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Fellows_of_the_Leopoldina",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Fellows_of_the_Leopoldina",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Foreign_Members_of_the_Royal_Society",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Foreign_Members_of_the_Royal_Society",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:German_humanitarians",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:German_humanitarians",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:German_emigrants_to_Switzerland",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:German_emigrants_to_Switzerland",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:German_inventors",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:German_inventors",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:German_Jews_who_emigrated_to_the_United_States_to_escape_Nazism",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:German_Jews_who_emigrated_to_the_United_States_to_escape_Nazism",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:German-language_philosophers",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:German-language_philosophers",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:German_Nobel_laureates",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:German_Nobel_laureates",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:German_pacifists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:German_pacifists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:German_philosophers",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:German_philosophers",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:German_physicists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:German_physicists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Institute_for_Advanced_Study_faculty",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Institute_for_Advanced_Study_faculty",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Jewish_agnostics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Jewish_agnostics",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Jewish_American_scientists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Jewish_American_scientists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Jewish_American_writers",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Jewish_American_writers",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Jewish_inventors",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Jewish_inventors",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Jewish_pacifists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Jewish_pacifists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Jewish_philosophers",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Jewish_philosophers",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Jewish_physicists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Jewish_physicists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Leiden_University_faculty",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Leiden_University_faculty",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Members_of_the_Prussian_Academy_of_Sciences",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Members_of_the_Prussian_Academy_of_Sciences",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Naturalized_citizens_of_the_United_States",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Naturalized_citizens_of_the_United_States",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Nobel_laureates_in_Physics",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Nobel_laureates_in_Physics",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Patent_examiners",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Patent_examiners",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:People_associated_with_the_University_of_Zurich",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:People_associated_with_the_University_of_Zurich",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:People_from_the_Kingdom_of_Württemberg",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:People_from_the_Kingdom_of_Württemberg",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:People_from_Ulm",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:People_from_Ulm",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Recipients_of_the_Gold_Medal_of_the_Royal_Astronomical_Society",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Recipients_of_the_Gold_Medal_of_the_Royal_Astronomical_Society",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Recipients_of_the_Pour_le_Mérite_(civil_class)",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Recipients_of_the_Pour_le_Mérite_(civil_class)",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Stateless_persons",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Stateless_persons",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Swiss_emigrants_to_the_United_States",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Swiss_emigrants_to_the_United_States",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Swiss_humanitarians",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Swiss_humanitarians",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Swiss_inventors",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Swiss_inventors",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Swiss_Jews",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Swiss_Jews",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Swiss_Nobel_laureates",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Swiss_Nobel_laureates",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Swiss_pacifists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Swiss_pacifists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Swiss_philosophers",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Swiss_philosophers",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Swiss_physicists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Swiss_physicists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:University_of_Zurich_alumni",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:University_of_Zurich_alumni",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:University_of_Zurich_faculty",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:University_of_Zurich_faculty",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://en.wikipedia.org/wiki/Category:Theoretical_physicists",
-            "description": ""
+            "url": "http://en.wikipedia.org/wiki/Category:Theoretical_physicists",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://af.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://af.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://als.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://als.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://am.wikipedia.org/wiki/አልበርት_አይንስታይን",
-            "description": ""
+            "url": "http://am.wikipedia.org/wiki/አልበርት_አይንስታይን",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ang.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ang.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ar.wikipedia.org/wiki/ألبرت_أينشتاين",
-            "description": ""
+            "url": "http://ar.wikipedia.org/wiki/ألبرت_أينشتاين",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://an.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://an.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://as.wikipedia.org/wiki/এলবাৰ্ট_আইনষ্টাইন",
-            "description": ""
+            "url": "http://as.wikipedia.org/wiki/এলবাৰ্ট_আইনষ্টাইন",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ast.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ast.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ay.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ay.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://az.wikipedia.org/wiki/Albert_Eynşteyn",
-            "description": ""
+            "url": "http://az.wikipedia.org/wiki/Albert_Eynşteyn",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://bm.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://bm.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://bn.wikipedia.org/wiki/আলবার্ট_আইনস্টাইন",
-            "description": ""
+            "url": "http://bn.wikipedia.org/wiki/আলবার্ট_আইনস্টাইন",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://zh-min-nan.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://zh-min-nan.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://map-bms.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://map-bms.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://be.wikipedia.org/wiki/Альберт_Эйнштэйн",
-            "description": ""
+            "url": "http://be.wikipedia.org/wiki/Альберт_Эйнштэйн",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://be-x-old.wikipedia.org/wiki/Альбэрт_Айнштайн",
-            "description": ""
+            "url": "http://be-x-old.wikipedia.org/wiki/Альбэрт_Айнштайн",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://bcl.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://bcl.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://bg.wikipedia.org/wiki/Алберт_Айнщайн",
-            "description": ""
+            "url": "http://bg.wikipedia.org/wiki/Алберт_Айнщайн",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://bs.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://bs.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://br.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://br.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ca.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ca.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://cv.wikipedia.org/wiki/Эйнштейн_Альберт",
-            "description": ""
+            "url": "http://cv.wikipedia.org/wiki/Эйнштейн_Альберт",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://cs.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://cs.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://cbk-zam.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://cbk-zam.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://co.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://co.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://cy.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://cy.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://da.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://da.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://de.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://de.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://nv.wikipedia.org/wiki/Hastiin_Albert_Einstein",
-            "description": ""
+            "url": "http://nv.wikipedia.org/wiki/Hastiin_Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://et.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://et.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://el.wikipedia.org/wiki/Άλμπερτ_Αϊνστάιν",
-            "description": ""
+            "url": "http://el.wikipedia.org/wiki/Άλμπερτ_Αϊνστάιν",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://es.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://es.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://eo.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://eo.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ext.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ext.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://eu.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://eu.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://fa.wikipedia.org/wiki/آلبرت_اینشتین",
-            "description": ""
+            "url": "http://fa.wikipedia.org/wiki/آلبرت_اینشتین",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://hif.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://hif.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://fr.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://fr.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://fy.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://fy.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ga.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ga.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://gd.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://gd.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://gl.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://gl.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://gan.wikipedia.org/wiki/愛因斯坦",
-            "description": ""
+            "url": "http://gan.wikipedia.org/wiki/愛因斯坦",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://gu.wikipedia.org/wiki/આલ્બર્ટ_આઇન્સ્ટાઇન",
-            "description": ""
+            "url": "http://gu.wikipedia.org/wiki/આલ્બર્ટ_આઇન્સ્ટાઇન",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ko.wikipedia.org/wiki/알베르트_아인슈타인",
-            "description": ""
+            "url": "http://ko.wikipedia.org/wiki/알베르트_아인슈타인",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://haw.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://haw.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://hy.wikipedia.org/wiki/Ալբերտ_Այնշտայն",
-            "description": ""
+            "url": "http://hy.wikipedia.org/wiki/Ալբերտ_Այնշտայն",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://hi.wikipedia.org/wiki/ऐल्बर्ट_आइनस्टाइन",
-            "description": ""
+            "url": "http://hi.wikipedia.org/wiki/ऐल्बर्ट_आइनस्टाइन",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://hr.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://hr.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://io.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://io.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ig.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ig.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ilo.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ilo.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://bpy.wikipedia.org/wiki/আলবার্ট_আইনস্টাইন",
-            "description": ""
+            "url": "http://bpy.wikipedia.org/wiki/আলবার্ট_আইনস্টাইন",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://id.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://id.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ia.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ia.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://os.wikipedia.org/wiki/Эйнштейн,_Альберт",
-            "description": ""
+            "url": "http://os.wikipedia.org/wiki/Эйнштейн,_Альберт",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://is.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://is.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://it.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://it.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://he.wikipedia.org/wiki/אלברט_איינשטיין",
-            "description": ""
+            "url": "http://he.wikipedia.org/wiki/אלברט_איינשטיין",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://jv.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://jv.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://kn.wikipedia.org/wiki/ಅಲ್ಬರ್ಟ್_ಐನ್‍ಸ್ಟೈನ್",
-            "description": ""
+            "url": "http://kn.wikipedia.org/wiki/ಅಲ್ಬರ್ಟ್_ಐನ್‍ಸ್ಟೈನ್",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://pam.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://pam.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ka.wikipedia.org/wiki/ალბერტ_აინშტაინი",
-            "description": ""
+            "url": "http://ka.wikipedia.org/wiki/ალბერტ_აინშტაინი",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://kk.wikipedia.org/wiki/Альберт_Эйнштейн",
-            "description": ""
+            "url": "http://kk.wikipedia.org/wiki/Альберт_Эйнштейн",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://sw.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://sw.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ht.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ht.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ku.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ku.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ky.wikipedia.org/wiki/Эйнштейн,_Алберт",
-            "description": ""
+            "url": "http://ky.wikipedia.org/wiki/Эйнштейн,_Алберт",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://lad.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://lad.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://la.wikipedia.org/wiki/Albertus_Einstein",
-            "description": ""
+            "url": "http://la.wikipedia.org/wiki/Albertus_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://lv.wikipedia.org/wiki/Alberts_Einšteins",
-            "description": ""
+            "url": "http://lv.wikipedia.org/wiki/Alberts_Einšteins",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://lb.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://lb.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://lt.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://lt.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://lij.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://lij.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://jbo.wikipedia.org/wiki/albert._ainctain",
-            "description": ""
+            "url": "http://jbo.wikipedia.org/wiki/albert._ainctain",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://lmo.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://lmo.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://hu.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://hu.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://mk.wikipedia.org/wiki/Алберт_Ајнштајн",
-            "description": ""
+            "url": "http://mk.wikipedia.org/wiki/Алберт_Ајнштајн",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://mg.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://mg.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ml.wikipedia.org/wiki/ആൽബർട്ട്_ഐൻസ്റ്റൈൻ",
-            "description": ""
+            "url": "http://ml.wikipedia.org/wiki/ആൽബർട്ട്_ഐൻസ്റ്റൈൻ",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://mr.wikipedia.org/wiki/अल्बर्ट_आइनस्टाइन",
-            "description": ""
+            "url": "http://mr.wikipedia.org/wiki/अल्बर्ट_आइनस्टाइन",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://arz.wikipedia.org/wiki/البرت_اينشتاين",
-            "description": ""
+            "url": "http://arz.wikipedia.org/wiki/البرت_اينشتاين",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://mzn.wikipedia.org/wiki/آلبرت_اینشتین",
-            "description": ""
+            "url": "http://mzn.wikipedia.org/wiki/آلبرت_اینشتین",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ms.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ms.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://mwl.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://mwl.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://mn.wikipedia.org/wiki/Альберт_Эйнштейн",
-            "description": ""
+            "url": "http://mn.wikipedia.org/wiki/Альберт_Эйнштейн",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://my.wikipedia.org/wiki/အဲလ်ဘတ်_အိုင်းစတိုင်း",
-            "description": ""
+            "url": "http://my.wikipedia.org/wiki/အဲလ်ဘတ်_အိုင်းစတိုင်း",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://nah.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://nah.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://nl.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://nl.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://nds-nl.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://nds-nl.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ne.wikipedia.org/wiki/अल्बर्ट_आइन्स्टाइन",
-            "description": ""
+            "url": "http://ne.wikipedia.org/wiki/अल्बर्ट_आइन्स्टाइन",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ja.wikipedia.org/wiki/アルベルト・アインシュタイン",
-            "description": ""
+            "url": "http://ja.wikipedia.org/wiki/アルベルト・アインシュタイン",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://no.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://no.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://nn.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://nn.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://nov.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://nov.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://oc.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://oc.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://or.wikipedia.org/wiki/ଆଲବର୍ଟ_ଆଇନଷ୍ଟାଇନ",
-            "description": ""
+            "url": "http://or.wikipedia.org/wiki/ଆଲବର୍ଟ_ଆଇନଷ୍ଟାଇନ",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://uz.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://uz.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://pa.wikipedia.org/wiki/ਐਲਬਰਟ_ਆਈਨਸਟਾਈਨ",
-            "description": ""
+            "url": "http://pa.wikipedia.org/wiki/ਐਲਬਰਟ_ਆਈਨਸਟਾਈਨ",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://pag.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://pag.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://pnb.wikipedia.org/wiki/ایلبرٹ_آئینسٹائن",
-            "description": ""
+            "url": "http://pnb.wikipedia.org/wiki/ایلبرٹ_آئینسٹائن",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ps.wikipedia.org/wiki/آلبرټ_آينشټاين",
-            "description": ""
+            "url": "http://ps.wikipedia.org/wiki/آلبرټ_آينشټاين",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://km.wikipedia.org/wiki/អាល់បឺត_អែងស្តែង",
-            "description": ""
+            "url": "http://km.wikipedia.org/wiki/អាល់បឺត_អែងស្តែង",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://pcd.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://pcd.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://pms.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://pms.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://tpi.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://tpi.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://nds.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://nds.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://pl.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://pl.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://pt.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://pt.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://kaa.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://kaa.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ksh.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ksh.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ro.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://ro.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://qu.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://qu.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://rue.wikipedia.org/wiki/Алберт_Айнштайн",
-            "description": ""
+            "url": "http://rue.wikipedia.org/wiki/Алберт_Айнштайн",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ru.wikipedia.org/wiki/Эйнштейн,_Альберт",
-            "description": ""
+            "url": "http://ru.wikipedia.org/wiki/Эйнштейн,_Альберт",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://sah.wikipedia.org/wiki/Альберт_Эйнштейн",
-            "description": ""
+            "url": "http://sah.wikipedia.org/wiki/Альберт_Эйнштейн",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://se.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://se.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://sc.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://sc.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://sco.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://sco.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://sq.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://sq.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://scn.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://scn.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://si.wikipedia.org/wiki/ඇල්බට්‍_අයින්ස්ටයින්",
-            "description": ""
+            "url": "http://si.wikipedia.org/wiki/ඇල්බට්‍_අයින්ස්ටයින්",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://simple.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://simple.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://sk.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://sk.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://sl.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://sl.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://szl.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://szl.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://so.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://so.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ckb.wikipedia.org/wiki/ئاڵبێرت_ئاینیشتاین",
-            "description": ""
+            "url": "http://ckb.wikipedia.org/wiki/ئاڵبێرت_ئاینیشتاین",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://sr.wikipedia.org/wiki/Алберт_Ајнштајн",
-            "description": ""
+            "url": "http://sr.wikipedia.org/wiki/Алберт_Ајнштајн",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://sh.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://sh.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://su.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://su.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://fi.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://fi.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://sv.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://sv.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://tl.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://tl.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ta.wikipedia.org/wiki/ஆல்பர்ட்_ஐன்ஸ்டைன்",
-            "description": ""
+            "url": "http://ta.wikipedia.org/wiki/ஆல்பர்ட்_ஐன்ஸ்டைன்",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://tt.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://tt.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://te.wikipedia.org/wiki/ఆల్బర్ట్_ఐన్‌స్టీన్",
-            "description": ""
+            "url": "http://te.wikipedia.org/wiki/ఆల్బర్ట్_ఐన్‌స్టీన్",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://th.wikipedia.org/wiki/อัลเบิร์ต_ไอน์สไตน์",
-            "description": ""
+            "url": "http://th.wikipedia.org/wiki/อัลเบิร์ต_ไอน์สไตน์",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://tr.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://tr.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://uk.wikipedia.org/wiki/Альберт_Ейнштейн",
-            "description": ""
+            "url": "http://uk.wikipedia.org/wiki/Альберт_Ейнштейн",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ur.wikipedia.org/wiki/البرٹ_آئنسٹائن",
-            "description": ""
+            "url": "http://ur.wikipedia.org/wiki/البرٹ_آئنسٹائن",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://ug.wikipedia.org/wiki/ئالبېرىت_ئېينىشتېين",
-            "description": ""
+            "url": "http://ug.wikipedia.org/wiki/ئالبېرىت_ئېينىشتېين",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://za.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://za.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://vec.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://vec.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://vep.wikipedia.org/wiki/Einštein_Al'bert",
-            "description": ""
+            "url": "http://vep.wikipedia.org/wiki/Einštein_Al'bert",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://vi.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://vi.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://vo.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://vo.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://fiu-vro.wikipedia.org/wiki/Einsteini_Albert",
-            "description": ""
+            "url": "http://fiu-vro.wikipedia.org/wiki/Einsteini_Albert",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://wa.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://wa.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://war.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://war.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://wo.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://wo.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://yi.wikipedia.org/wiki/אלבערט_איינשטיין",
-            "description": ""
+            "url": "http://yi.wikipedia.org/wiki/אלבערט_איינשטיין",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://yo.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://yo.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://zh-yue.wikipedia.org/wiki/愛因斯坦",
-            "description": ""
+            "url": "http://zh-yue.wikipedia.org/wiki/愛因斯坦",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://diq.wikipedia.org/wiki/Albert_Einstein",
-            "description": ""
+            "url": "http://diq.wikipedia.org/wiki/Albert_Einstein",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://bat-smg.wikipedia.org/wiki/Alberts_Einšteins",
-            "description": ""
+            "url": "http://bat-smg.wikipedia.org/wiki/Alberts_Einšteins",
+            "description": "",
+            "section_idx": 49
         },
         {
-            "label": "http://zh.wikipedia.org/wiki/阿尔伯特·爱因斯坦",
-            "description": ""
+            "url": "http://zh.wikipedia.org/wiki/阿尔伯特·爱因斯坦",
+            "description": "",
+            "section_idx": 49
         }
     ],
     "templates": {
-        "__type": "templates",
         "occurrences": {
             "div col": 1,
             "Birth date": 1,
@@ -13153,7 +13830,6 @@
         }
     },
     "categories": {
-        "__type": "category",
         "content": [
             "1879 births",
             "1955 deaths",
@@ -13222,7 +13898,6 @@
         ]
     },
     "template-mapping": {
-        "__type": "template-mapping",
         "mapping-collection": [
             {
                 "__type": "mapping",
@@ -13363,7 +14038,7 @@
             "id": "/m/05snw"
         },
         "lang": "en",
-        "score": 801.815491
+        "score": 877.596313
     },
     "infobox-splitter": [
         {

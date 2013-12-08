@@ -5,6 +5,7 @@ import org.codehaus.jackson.JsonNode;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.net.URL;
 
 /**
  * Default implementation of {@link HTMLRenderFactory}.
@@ -27,9 +28,10 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         render.addKeyValueRender("issues"  , new IssuesKeyValueRender());
         render.addKeyValueRender("abstract", new AbstractKeyValueRender());
         render.addKeyValueRender("sections", new SectionsKeyValueRender());
+        // TODO: use link and reference sections.
         render.addKeyValueRender("links"   , new LinksKeyValueRender());
         render.addKeyValueRender("references", new ReferencesKeyValueRender());
-        // TODO: templates
+        render.addKeyValueRender("templates", new TemplatesKeyValueRender());
         // TODO: categories
         // TODO: template-mapping
 
@@ -48,15 +50,6 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
 
         render.addPrimitiveRender( new BaseTextPrimitiveNodeRender() );
         return render;
-    }
-
-    @Override
-    public String renderToHTML(JsonNode rootNode) throws IOException {
-        final ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        final DefaultHTMLWriter writer = new DefaultHTMLWriter( new OutputStreamWriter(baos) );
-        final DefaultHTMLRender render = createRender();
-        render.processRoot(rootNode, writer);
-        return baos.toString();
     }
 
     private DefaultHTMLRenderFactory() {}

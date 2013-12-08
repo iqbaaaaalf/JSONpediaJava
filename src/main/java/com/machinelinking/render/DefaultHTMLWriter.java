@@ -1,6 +1,7 @@
 package com.machinelinking.render;
 
 import com.machinelinking.extractor.Reference;
+import com.machinelinking.wikimedia.WikimediaUtils;
 import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
@@ -189,13 +190,34 @@ public class DefaultHTMLWriter implements HTMLWriter {
     public void link(String description, String url) throws IOException {
         writer.append(String.format(
                 "<a class=\"links-link\" target=\"_blank\" href=\"%s\">%s</a>",
-                url, description.replaceAll("[\"']", "")
+                url,
+                description.replaceAll("[\"']", "")
         ));
     }
 
     @Override
     public void reference(String description, String lang, String label) throws IOException {
-        link(description, Reference.toURLString(lang, label));
+        writer.append(String.format(
+                "<a class=\"references-link\" target=\"_blank\" href=\"%s\">%s</a>",
+                Reference.toURLString(lang, label),
+                description.replaceAll("[\"']", "")
+        ));
+    }
+
+    @Override
+    public void templateReference(String description, String lang, String label) throws IOException {
+        writer.append(String.format(
+                "<a class=\"templates-link\" target=\"_blank\" href=\"%s\">%s</a>",
+                WikimediaUtils.toTemplateURL(lang, label).toExternalForm(),
+                description
+        ));
+    }
+
+    @Override
+    public void span(String content) throws IOException {
+        openTag("span");
+        text(content);
+        closeTag();
     }
 
     @Override

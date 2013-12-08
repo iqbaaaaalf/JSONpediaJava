@@ -5,7 +5,10 @@ import com.machinelinking.util.JSONUtils;
 import com.machinelinking.util.JsonPathBuilder;
 import org.codehaus.jackson.JsonNode;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -52,25 +55,15 @@ public class DefaultHTMLRender implements HTMLRender {
         put("class", String.format("%s %s", DEFAULT_RENDER_SELECTOR, "default-render") );
     }};
 
-    private final boolean alwaysRenderDefault;
-
     private final Map<String,List<NodeRender>> nodeRenders       = new HashMap<>();
     private final Map<String,KeyValueRender>   keyValueRenders   = new HashMap<>();
     private final List<PrimitiveNodeRender> primitiveNodeRenders = new ArrayList<>();
 
     private final JsonPathBuilder jsonPathBuilder = new DefaultJsonPathBuilder();
 
-    private final JsonContext context = new JsonContext() {
-        @Override
-        public String getJSONPath() {
-            return jsonPathBuilder.getJsonPath();
-        }
+    private final boolean alwaysRenderDefault;
 
-        @Override
-        public boolean subPathOf(JsonPathBuilder builder, boolean strict) {
-            return jsonPathBuilder.subPathOf(builder, strict);
-        }
-    };
+    private JsonContext context;
 
     public DefaultHTMLRender(boolean alwaysRenderDefault) {
         this.alwaysRenderDefault = alwaysRenderDefault;
@@ -179,7 +172,36 @@ public class DefaultHTMLRender implements HTMLRender {
         writer.closeTag();
     }
 
+    @Override
+    public String renderToHTML(URL documentURL, JsonNode rootNode) throws IOException {
+        final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        final DefaultHTMLWriter writer = new DefaultHTMLWriter( new OutputStreamWriter(baos) );
+        this.setContext(documentURL);
+        this.processRoot(rootNode, writer);
+        return baos.toString();
+    }
+
+    private void setContext(final URL documentURL) {
+         context = new JsonContext() {
+                @Override
+                public URL getDocumentURL() {
+                    return documentURL;
+                }
+
+                @Override
+                public String getJSONPath() {
+                    return jsonPathBuilder.getJsonPath();
+                }
+
+                @Override
+                public boolean subPathOf(JsonPathBuilder builder, boolean strict) {
+                    return jsonPathBuilder.subPathOf(builder, strict);
+                }
+         };
+    }
+
     private JsonContext getContext() {
+        if(context == null) throw new IllegalStateException();
         return context;
     }
 
