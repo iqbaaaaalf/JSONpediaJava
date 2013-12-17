@@ -8,6 +8,7 @@ import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.map.ObjectWriter;
 import org.codehaus.jackson.util.DefaultPrettyPrinter;
 
 import java.io.ByteArrayInputStream;
@@ -28,6 +29,15 @@ import java.util.Map;
 public class JSONUtils {
 
     private static final JsonFactory jsonFactory = new JsonFactory();
+
+    private static final ObjectWriter writer;
+    private static final ObjectWriter prettyWriter;
+
+    static {
+        ObjectMapper mapper = new ObjectMapper();
+        writer = mapper.writer();
+        prettyWriter = writer.withDefaultPrettyPrinter();
+    }
 
     public static JsonGenerator createJSONGenerator(Writer writer, boolean format) throws IOException {
         final JsonGenerator generator = jsonFactory.createJsonGenerator(writer);
@@ -75,6 +85,16 @@ public class JSONUtils {
         serializable.serialize(serializer);
         serializer.close();
         return baos.toString();
+    }
+
+    public static String serializeToJSON(JsonNode node, boolean format) {
+        if(node == null) return null;
+        try {
+            final ObjectWriter w = format ? prettyWriter : writer;
+            return w.writeValueAsString(node);
+        } catch (IOException ioe) {
+            throw new IllegalStateException("Unexpected serialization error.", ioe);
+        }
     }
 
     public static String asPrimitiveString(JsonNode node) {
