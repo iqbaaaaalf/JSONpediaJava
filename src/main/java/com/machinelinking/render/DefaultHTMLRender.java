@@ -176,12 +176,12 @@ public class DefaultHTMLRender implements HTMLRender {
     public String renderToHTML(URL documentURL, JsonNode rootNode) throws IOException {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final DefaultHTMLWriter writer = new DefaultHTMLWriter( new OutputStreamWriter(baos) );
-        this.setContext(documentURL);
+        this.setContext(rootNode, documentURL);
         this.processRoot(rootNode, writer);
         return baos.toString();
     }
 
-    private void setContext(final URL documentURL) {
+    private void setContext(final JsonNode root, final URL documentURL) {
          context = new JsonContext() {
                 @Override
                 public URL getDocumentURL() {
@@ -193,7 +193,12 @@ public class DefaultHTMLRender implements HTMLRender {
                     return jsonPathBuilder.getJsonPath();
                 }
 
-                @Override
+             @Override
+             public JsonNode getRoot() {
+                 return root;
+             }
+
+             @Override
                 public boolean subPathOf(JsonPathBuilder builder, boolean strict) {
                     return jsonPathBuilder.subPathOf(builder, strict);
                 }
