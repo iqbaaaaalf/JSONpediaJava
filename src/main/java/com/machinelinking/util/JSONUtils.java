@@ -88,7 +88,7 @@ public class JSONUtils {
     }
 
     public static String serializeToJSON(JsonNode node, boolean format) {
-        if(node == null) return null;
+        if(node == null || node.isNull()) return null;
         try {
             final ObjectWriter w = format ? prettyWriter : writer;
             return w.writeValueAsString(node);
