@@ -59,6 +59,10 @@ body {
     margin: 5px;
 }
 
+.mapping-value {
+    color: purple;
+}
+
 .primitive {
     background-color: #00CCFF;
 }

@@ -44,4 +44,12 @@ $(function(){
     // jsonpath tooltip.
     $('div[title]').tooltip();
     $('span[title]').tooltip();
+
+    // mappings accordion
+    $(function () {
+        $(".mapping-accordion").accordion({
+            collapsible: true,
+            active: false
+        });
+    });
 });

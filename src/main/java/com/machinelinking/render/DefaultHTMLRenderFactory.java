@@ -26,7 +26,7 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         render.addKeyValueRender("references", new ReferencesKeyValueRender());
         render.addKeyValueRender("templates", new TemplatesKeyValueRender());
         render.addKeyValueRender("categories", new CategoriesKeyValueRender());
-        // TODO: template-mapping
+        render.addKeyValueRender("template-mapping", new TemplatesMappingKeyValueRender());
 
         // Within wikitext-json.structure element.
         render.addNodeRender("reference", new ReferenceNodeRender());
