@@ -18,6 +18,11 @@
         .dropdown-list-button {
             font-size: 14px;
         }
+        .post-response-html {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
     </style>
 
     <script type="text/javascript" src="js/jquery-1.7.2-min.js"></script>
@@ -187,13 +192,12 @@
             $('#' + closeResultButtonId).click(function (e) {
                 $('#' + method + '-form-result').html('')
             });
-            $resultContainer.append(
-                    outFormat == 'json'
-                            ?
-                            hljs.highlight('json', JSON.stringify(data, null, 2)).value
-                            :
-                            data
-            );
+            if(outFormat == 'json') {
+                $resultContainer.append(hljs.highlight('json', JSON.stringify(data, null, 2)).value);
+            } else { // html
+                $resultContainer.append('<iframe class="post-response-html">');
+                $('.post-response-html').contents().find('body').append(data);
+            }
         }
 
         function dismissAlert() {
