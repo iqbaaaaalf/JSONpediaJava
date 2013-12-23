@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public interface HTMLWriter {
 
-    void openDocument() throws IOException;
+    void openDocument(String title) throws IOException;
 
     void closeDocument() throws IOException;
 

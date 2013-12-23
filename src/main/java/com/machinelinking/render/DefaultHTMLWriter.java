@@ -32,9 +32,9 @@ public class DefaultHTMLWriter implements HTMLWriter {
     }
 
     @Override
-    public void openDocument() throws IOException {
+    public void openDocument(String title) throws IOException {
         writer.append(loadResource("page-open"));
-        writer.append(loadResource("header"));
+        writer.append(expand("page-title", title, loadResource("header")));
         writer.append(loadResource("body-open"));
         writer.append(loadResource("body"));
     }
@@ -245,6 +245,10 @@ public class DefaultHTMLWriter implements HTMLWriter {
         );
         fileCache.put(resource, fileContent);
         return fileContent;
+    }
+
+    private String expand(String key, String value, String context) {
+        return context.replaceAll(String.format("\\$\\{%s\\}", key), value);
     }
 
     private String escapeStringMarkup(String in) {

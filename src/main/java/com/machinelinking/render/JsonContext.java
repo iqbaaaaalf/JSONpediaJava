@@ -14,6 +14,8 @@ public interface JsonContext {
 
     URL getDocumentURL();
 
+    String getDocumentTitle();
+
     String getJSONPath();
 
     JsonNode getRoot();

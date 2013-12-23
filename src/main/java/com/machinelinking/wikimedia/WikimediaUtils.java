@@ -24,6 +24,10 @@ public class WikimediaUtils {
         return entityURL.substring(entityNameBegin);
     }
 
+    public static String getEntityTitle(String entityURL) {
+        return getEntityName(entityURL).replaceAll("_", " ");
+    }
+
     public static String getEntityPath(String entityURL) {
         int lastSlash = entityURL.lastIndexOf("/");
         if(lastSlash == -1) throw new IllegalArgumentException("Cannot extract entity path from URL: " + entityURL);

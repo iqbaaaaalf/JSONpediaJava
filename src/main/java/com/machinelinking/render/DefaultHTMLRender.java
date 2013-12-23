@@ -3,6 +3,7 @@ package com.machinelinking.render;
 import com.machinelinking.util.DefaultJsonPathBuilder;
 import com.machinelinking.util.JSONUtils;
 import com.machinelinking.util.JsonPathBuilder;
+import com.machinelinking.wikimedia.WikimediaUtils;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.ByteArrayOutputStream;
@@ -71,7 +72,7 @@ public class DefaultHTMLRender implements HTMLRender {
 
     public void processRoot(JsonNode node, HTMLWriter writer) throws IOException {
         jsonPathBuilder.startPath();
-        writer.openDocument();
+        writer.openDocument(getContext().getDocumentTitle());
         render(getContext(), this, node, writer);
         writer.closeDocument();
         writer.flush();
@@ -183,15 +184,22 @@ public class DefaultHTMLRender implements HTMLRender {
 
     private void setContext(final JsonNode root, final URL documentURL) {
          context = new JsonContext() {
-                @Override
-                public URL getDocumentURL() {
-                    return documentURL;
-                }
+             final String documentTitle = WikimediaUtils.getEntityTitle(documentURL.toExternalForm());
 
-                @Override
-                public String getJSONPath() {
-                    return jsonPathBuilder.getJsonPath();
-                }
+             @Override
+             public URL getDocumentURL() {
+                 return documentURL;
+             }
+
+             @Override
+             public String getDocumentTitle() {
+                 return documentTitle;
+             }
+
+             @Override
+             public String getJSONPath() {
+                 return jsonPathBuilder.getJsonPath();
+             }
 
              @Override
              public JsonNode getRoot() {
@@ -199,9 +207,9 @@ public class DefaultHTMLRender implements HTMLRender {
              }
 
              @Override
-                public boolean subPathOf(JsonPathBuilder builder, boolean strict) {
-                    return jsonPathBuilder.subPathOf(builder, strict);
-                }
+             public boolean subPathOf(JsonPathBuilder builder, boolean strict) {
+                 return jsonPathBuilder.subPathOf(builder, strict);
+             }
          };
     }
 
