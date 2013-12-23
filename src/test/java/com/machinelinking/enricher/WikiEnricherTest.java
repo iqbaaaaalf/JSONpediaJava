@@ -71,7 +71,7 @@ public class WikiEnricherTest {
 
     private void resetConfidence(JsonNode node) {
         final ObjectNode onode = (ObjectNode) node.get("freebase");
-        if(onode != null) onode.put("relevance:score", 0);
+        if(onode != null) onode.put("score", 0);
     }
 
 }
