@@ -8,7 +8,6 @@ import java.nio.CharBuffer;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-// TODO: this class should be used to detect HTML entities within the TEXT. is not intended to be used by the entire parser.
 public class EntityExpansionReader extends Reader {
 
     private final short MAX_ENTITY_NUMERIC_SIZE = 6;
