@@ -1,7 +1,6 @@
 package com.machinelinking.parser;
 
 import junit.framework.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -13,7 +12,6 @@ import java.io.StringReader;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-@Ignore
 public class EntityExpansionReaderTest {
 
     @Test
@@ -37,25 +35,24 @@ public class EntityExpansionReaderTest {
     }
 
     @Test
-    public void testExpansionWithHex1() throws IOException {
+    public void testExpansionWithHex() throws IOException {
         checkString(">&#x7c;<", ">|<");
-    }
-
-    @Test
-    public void testExpansionWithHex2() throws IOException {
         checkString(">&#x70;<", ">p<");
     }
 
     @Test
     public void testMultiExpansion() throws IOException {
-        final String IN = "pre1>&#91;<post1 pre2>&91;<post2 pre3>&#91;&#x5D;<post3";
-        final String EXPECTED = IN.replaceAll("&#91;", "[").replaceAll("&#x5D;", "]");
+        final String IN = "pre1>&#91;<post1 pre2>&#91;<post2 pre3>&#91;&nbsp;&#x5D;<post3";
+        final String EXPECTED = IN
+                .replaceAll("&#91;" , "[")
+                .replaceAll("&#x5D;", "]")
+                .replaceAll("&nbsp;", " ");
         checkString(IN, EXPECTED);
     }
 
     @Test
-    public void testNamedEntityNoExpansion() throws IOException {
-        checkString(">&nbsp;<", ">&nbsp;<");
+    public void testNamedEntityExpansion() throws IOException {
+        checkString(">&nbsp;<", "> <");
     }
 
     @Test
@@ -68,6 +65,14 @@ public class EntityExpansionReaderTest {
         checkString(
                 "Samuel Augustus Ward &#91;hymnal&#93;:Print Material Full Description",
                 "Samuel Augustus Ward [hymnal]:Print Material Full Description"
+        );
+    }
+
+    @Test
+    public void testIgnoreMarkup() throws IOException {
+        checkString(
+                "A link [link value] a ref [[ref value]] a template {{template|x|y|z}} a table {|xx |- yy ! title |- zz|- kk|}",
+                "A link [link value] a ref [[ref value]] a template {{template|x|y|z}} a table {|xx |- yy ! title |- zz|- kk|}"
         );
     }
 
