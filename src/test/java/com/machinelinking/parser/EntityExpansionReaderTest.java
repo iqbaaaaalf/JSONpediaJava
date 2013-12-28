@@ -30,6 +30,11 @@ public class EntityExpansionReaderTest {
     }
 
     @Test
+    public void testStopExpandNonAlphaNumeric() throws IOException {
+        checkString("&#12_; &#12 ; &#12';", "&#12_; &#12 ; &#12';");
+    }
+
+    @Test
     public void testExpansionWithNumer() throws IOException {
         checkString(">&#1234;<", ">Ӓ<");
     }
@@ -61,7 +66,7 @@ public class EntityExpansionReaderTest {
     }
 
     @Test
-    public void testRealCase() throws IOException {
+    public void testReal() throws IOException {
         checkString(
                 "Samuel Augustus Ward &#91;hymnal&#93;:Print Material Full Description",
                 "Samuel Augustus Ward [hymnal]:Print Material Full Description"

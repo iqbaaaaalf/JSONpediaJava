@@ -64,6 +64,8 @@ public interface WikiTextParserHandler extends TagHandler {
 
     void parameter(String param);
 
+    void entity(String form, char value);
+
     void text(String content);
 
     void italicBold(int level);

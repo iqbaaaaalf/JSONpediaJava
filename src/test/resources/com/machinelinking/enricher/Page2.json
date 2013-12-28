@@ -2255,7 +2255,13 @@
                     "label": "London metropolitan area",
                     "content": {}
                 },
-                "is the largest in the EU with an estimated total population of between 12&nbsp;million",
+                "is the largest in the EU with an estimated total population of between 12",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -2296,7 +2302,13 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "and 14&nbsp;million.",
+                "and 14",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -3122,7 +3134,13 @@
                         ]
                     }
                 },
-                "in 43&nbsp;AD.",
+                "in 43",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "AD.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -3264,7 +3282,13 @@
                         ]
                     }
                 },
-                "over a mile (2&nbsp;km) upstream from the old Roman city, around what is now",
+                "over a mile (2",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "km) upstream from the old Roman city, around what is now",
                 {
                     "__type": "reference",
                     "label": "Royal Opera House",
@@ -3600,7 +3624,19 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "The function of the mesolithic structure is not known, but it covers at least 50m x 10m, and numerous 30&nbsp;cm posts are visible at low tides. Both structures are on South Bank, at a natural crossing point where the River Effra flows into the River Thames, and 4&nbsp;km upstream from the Roman City of London. The effort required to construct these structures implies trade, stability, and a community size of several hundred people at least.",
+                "The function of the mesolithic structure is not known, but it covers at least 50m x 10m, and numerous 30",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "cm posts are visible at low tides. Both structures are on South Bank, at a natural crossing point where the River Effra flows into the River Thames, and 4",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "km upstream from the Roman City of London. The effort required to construct these structures implies trade, stability, and a community size of several hundred people at least.",
                 {
                     "__type": "section",
                     "title": "Middle Ages",
@@ -5377,7 +5413,19 @@
                     "label": "1981 Brixton riot",
                     "content": {}
                 },
-                ". Greater London's population declined steadily in the decades after World War II, from an estimated peak of 8.6&nbsp;million in 1939 to around 6.8&nbsp;million in the 1980s. The principal ports for London moved downstream to",
+                ". Greater London's population declined steadily in the decades after World War II, from an estimated peak of 8.6",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million in 1939 to around 6.8",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million in the 1980s. The principal ports for London moved downstream to",
                 {
                     "__type": "reference",
                     "label": "Port of Felixstowe",
@@ -5829,7 +5877,13 @@
                     "label": "Metropolitan Police Authority",
                     "content": {}
                 },
-                ". The City of London has its own police force&nbsp;– the",
+                ". The City of London has its own police force",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "– the",
                 {
                     "__type": "reference",
                     "label": "City of London Police",
@@ -10565,7 +10619,13 @@
                         ]
                     }
                 },
-                "has a population of between 12 and 14&nbsp;million depending on the definition used.",
+                "has a population of between 12 and 14",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million depending on the definition used.",
                 {
                     "__type": "inline_tag",
                     "name": "ref",
@@ -10616,7 +10676,13 @@
                     "label": "Istanbul",
                     "content": {}
                 },
-                "is included). During the period 1991–2001 a net 726,000&nbsp;immigrants arrived in London.",
+                "is included). During the period 1991–2001 a net 726,000",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "immigrants arrived in London.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -11674,7 +11740,19 @@
                         ]
                     }
                 },
-                "The majority of Londoners&nbsp;– 58.2 per cent&nbsp;– identify themselves as Christians.",
+                "The majority of Londoners",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "– 58.2 per cent",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "– identify themselves as Christians.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -12631,7 +12709,13 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "(or $446&nbsp;billion in 2005); while the economy of the",
+                "(or $446",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "billion in 2005); while the economy of the",
                 {
                     "__type": "reference",
                     "label": "London metropolitan area",
@@ -12647,7 +12731,13 @@
                         ]
                     }
                 },
-                "—generates approximately 30 per cent of the UK's GDP (or an estimated $669&nbsp;billion in 2005).",
+                "—generates approximately 30 per cent of the UK's GDP (or an estimated $669",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "billion in 2005).",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -12799,7 +12889,13 @@
                     "label": "balance of payments",
                     "content": {}
                 },
-                ". Around 325,000 people were employed in financial services in London until mid-2007. London has over 480 overseas banks, more than any other city in the world. Currently, over 85% (3.2&nbsp;million) of the employed population of greater London works in the services industries. Due to its prominent global role, London's economy has been affected by the",
+                ". Around 325,000 people were employed in financial services in London until mid-2007. London has over 480 overseas banks, more than any other city in the world. Currently, over 85% (3.2",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million) of the employed population of greater London works in the services industries. Due to its prominent global role, London's economy has been affected by the",
                 {
                     "__type": "reference",
                     "label": "Late-2000s financial crisis",
@@ -13035,7 +13131,13 @@
                         ]
                     }
                 },
-                "are edited in London. London is a major retail centre and in 2010 had the highest non-food retail sales of any city in the world, with a total spend of around £64.2&nbsp;billion.",
+                "are edited in London. London is a major retail centre and in 2010 had the highest non-food retail sales of any city in the world, with a total spend of around £64.2",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "billion.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -13087,7 +13189,13 @@
                     "label": "Port of London",
                     "content": {}
                 },
-                "is the second-largest in the United Kingdom, handling 45&nbsp;million",
+                "is the second-largest in the United Kingdom, handling 45",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million",
                 {
                     "__type": "reference",
                     "label": "tonne",
@@ -13103,7 +13211,17 @@
                         }
                     ]
                 },
-                "London has five major business districts: the City, Westminster, Canary Wharf, Camden & Islington and Lambeth & Southwark. One way to get an idea of their relative importance is to look at relative amounts of office space: Greater London had 27&nbsp;million m",
+                "London has five major business districts: the City, Westminster, Canary Wharf, Camden",
+                "&",
+                "Islington and Lambeth",
+                "&",
+                "Southwark. One way to get an idea of their relative importance is to look at relative amounts of office space: Greater London had 27",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million m",
                 {
                     "__type": "open_tag",
                     "name": "sup",
@@ -13114,7 +13232,13 @@
                     "__type": "close_tag",
                     "name": "sup"
                 },
-                "of office space in 2001, and the City contains the most space, with 8&nbsp;million m",
+                "of office space in 2001, and the City contains the most space, with 8",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million m",
                 {
                     "__type": "open_tag",
                     "name": "sup",
@@ -13271,7 +13395,13 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "while annual expenditure by tourists is around £15&nbsp;billion.",
+                "while annual expenditure by tourists is around £15",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "billion.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -13311,7 +13441,13 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "London attracts over 14&nbsp;million international visitors per year, making it Europe's most visited city.",
+                "London attracts over 14",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million international visitors per year, making it Europe's most visited city.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -13346,7 +13482,13 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "London attracts 27&nbsp;million overnight-stay visitors every year.",
+                "London attracts 27",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million overnight-stay visitors every year.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -14403,7 +14545,13 @@
                         ]
                     }
                 },
-                "is one of the largest in the world, running 24 hours a day, with 8,000 buses, 700 bus routes, and over 6&nbsp;million passenger journeys made every weekday. In 2003, the network had an estimated 1.5 billion commuter trips per annum, more than the Underground.",
+                "is one of the largest in the world, running 24 hours a day, with 8,000 buses, 700 bus routes, and over 6",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million passenger journeys made every weekday. In 2003, the network had an estimated 1.5 billion commuter trips per annum, more than the Underground.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -14461,7 +14609,13 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "Around £850&nbsp;million is taken in revenue each year. London has the largest wheelchair accessible network in the world",
+                "Around £850",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million is taken in revenue each year. London has the largest wheelchair accessible network in the world",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -14618,7 +14772,13 @@
                     "label": "South London",
                     "content": {}
                 },
-                ". The network has 39 stops, three routes and carried 26.5&nbsp;million people in 2008. Since June 2008",
+                ". The network has 39 stops, three routes and carried 26.5",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million people in 2008. Since June 2008",
                 {
                     "__type": "reference",
                     "label": "Transport for London",
@@ -14779,7 +14939,18 @@
                     "label": "London Underground",
                     "content": {}
                 },
-                "&nbsp;— all of which is now commonly referred to as the Tube, though originally this designation referred only to the deep-level lines, as distinct from the sub-surface lines&nbsp;— is the oldest,",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "— all of which is now commonly referred to as the Tube, though originally this designation referred only to the deep-level lines, as distinct from the sub-surface lines",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "— is the oldest,",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -14936,7 +15107,13 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "Over three million journeys are made every day on the Underground network, over 1&nbsp;billion each year.",
+                "Over three million journeys are made every day on the Underground network, over 1",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "billion each year.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -14980,7 +15157,19 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "An investment programme is attempting to address congestion and reliability problems, including £7&nbsp;billion (€10&nbsp;billion) of improvements planned for the",
+                "An investment programme is attempting to address congestion and reliability problems, including £7",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "billion (€10",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "billion) of improvements planned for the",
                 {
                     "__type": "reference",
                     "label": "2012 Summer Olympics",
@@ -15084,7 +15273,13 @@
                     "label": "Greenwich",
                     "content": {}
                 },
-                ".\n\nThere is an extensive above-ground suburban railway network, particularly in South London, which has fewer Underground lines. London houses Britain's busiest station&nbsp;–",
+                ".\n\nThere is an extensive above-ground suburban railway network, particularly in South London, which has fewer Underground lines. London houses Britain's busiest station",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "–",
                 {
                     "__type": "reference",
                     "label": "Waterloo station",
@@ -15094,7 +15289,13 @@
                         ]
                     }
                 },
-                "with over 184&nbsp;million people using the interchange station complex (which includes",
+                "with over 184",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million people using the interchange station complex (which includes",
                 {
                     "__type": "reference",
                     "label": "London Waterloo East railway station",
@@ -15315,7 +15516,13 @@
                     "label": "Brussels",
                     "content": {}
                 },
-                ". Journey times to Paris and Brussels of two-and-a-quarter hours and one hour 50&nbsp;minutes respectively make London closer to continental Europe than the rest of Britain by virtue of the",
+                ". Journey times to Paris and Brussels of two-and-a-quarter hours and one hour 50",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "minutes respectively make London closer to continental Europe than the rest of Britain by virtue of the",
                 {
                     "__type": "reference",
                     "label": "High Speed 1",
@@ -15864,7 +16071,13 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "Over the course of several years, the average number of cars entering the centre of London on a weekday was reduced from 195,000 to 125,000 cars&nbsp;– this is a 35-percent reduction of vehicles driven per day.",
+                "Over the course of several years, the average number of cars entering the centre of London on a weekday was reduced from 195,000 to 125,000 cars",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "– this is a 35-percent reduction of vehicles driven per day.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -16194,7 +16407,13 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "It includes four large multi-faculty universities&nbsp;–",
+                "It includes four large multi-faculty universities",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "–",
                 {
                     "__type": "reference",
                     "label": "King's College London",
@@ -16226,7 +16445,12 @@
                         ]
                     }
                 },
-                "&nbsp;– and a number of smaller and more specialised institutions including",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "– and a number of smaller and more specialised institutions including",
                 {
                     "__type": "reference",
                     "label": "Birkbeck College",
@@ -16484,7 +16708,13 @@
                     "label": "University of Westminster",
                     "content": {}
                 },
-                ". In addition there are three international universities in London&nbsp;–",
+                ". In addition there are three international universities in London",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "–",
                 {
                     "__type": "reference",
                     "label": "Regent's College",
@@ -16531,7 +16761,12 @@
                         ]
                     }
                 },
-                "&nbsp;–",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "–",
                 {
                     "__type": "reference",
                     "label": "Barts and The London School of Medicine and Dentistry",
@@ -16571,13 +16806,24 @@
                     "label": "St George's, University of London",
                     "content": {}
                 },
-                "&nbsp;– and has a large number of affiliated teaching hospitals. It is also a major centre for biomedical research, and three of the UK's five",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "– and has a large number of affiliated teaching hospitals. It is also a major centre for biomedical research, and three of the UK's five",
                 {
                     "__type": "reference",
                     "label": "academic health science centre",
                     "content": {}
                 },
-                "s are based in the city&nbsp;–",
+                "s are based in the city",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "–",
                 {
                     "__type": "reference",
                     "label": "Imperial College Healthcare NHS Trust",
@@ -17747,7 +17993,13 @@
                     "label": "Canterbury",
                     "content": {}
                 },
-                "from London&nbsp;– specifically, from the",
+                "from London",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "– specifically, from the",
                 {
                     "__type": "reference",
                     "label": "The Tabard",
@@ -18169,7 +18421,13 @@
                     "label": "Bloomsbury",
                     "content": {}
                 },
-                ", in 1753. Originally containing antiquities, natural history specimens and the national library, the museum now has 7&nbsp;million artefacts from around the globe. In 1824 the",
+                ", in 1753. Originally containing antiquities, natural history specimens and the national library, the museum now has 7",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "million artefacts from around the globe. In 1824 the",
                 {
                     "__type": "reference",
                     "label": "National Gallery",
@@ -19584,7 +19842,13 @@
                     "label": "rugby league",
                     "content": {}
                 },
-                "clubs in London&nbsp;–",
+                "clubs in London",
+                {
+                    "__type": "entity",
+                    "form": "nbsp",
+                    "value": " "
+                },
+                "–",
                 {
                     "__type": "reference",
                     "label": "London Broncos",
@@ -22886,7 +23150,7 @@
         }
     ],
     "issues": null,
-    "abstract": "\n\n\n\n\n\nLondon  is the capital city of  and the , the largest  in the United Kingdom, and the largest urban zone in the  by most measures. Located on the , London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.  London's ancient core, the , largely retains its square-mile  boundaries. Since at least the 19th century, the name London has also referred to the metropolis developed around this core. The bulk of this  forms the London region  and the  administrative area,See also: . governed by the elected  and the .\n\n\nLondon is a leading , with strengths in the arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism and transport all contributing to its prominence. It is the world's leading  alongside  and has the fifth-largest metropolitan area GDP in the world, and the largest in Europe. London has been described as a world cultural capital. It is the world's most-visited city and has the world's largest city airport system measured by passenger traffic. London's 43 universities form the largest concentration of higher education in Europe. In 2012 London became the first city to host the modern  three times.\n\n\nLondon has a diverse range of peoples and cultures, and more than 300 languages are spoken within its boundaries. In March 2011, London had an official population of 8,174,100, making it the most populous municipality in the European Union, and accounting for 12.5% of the UK population. The  is the second-largest in the EU with a population of 8,278,251, while the  is the largest in the EU with an estimated total population of between 12&nbsp;million and 14&nbsp;million. London had the largest population of any city in the world from around 1831 to 1925.\n\n\nLondon contains four s: the ; Kew Gardens; the site comprising the , , and St Margaret's Church; and the historic settlement of  (in which the Royal Observatory marks the , 0° , and ). Other famous landmarks include , the , , , ,  and . London is home to numerous museums, galleries, libraries, sporting events and other cultural institutions, including the , , , , Wimbledon, and 40 West End theatres. The  is the oldest underground railway network in the world.\n\n\n\n\n\n\n\nthumbThe name ''London'' may derive from the \nThe etymology of ''London'' is uncertain. It is an ancient name and can be found in sources from the 2nd century. It is recorded c. 121 as , which points to  origin. The earliest attempted explanation, now disregarded, is attributed to  in . This had it that the name originated from a supposed King Lud, who had allegedly taken over the city and named it Kaerlud.",
+    "abstract": "\n\n\n\n\n\nLondon  is the capital city of  and the , the largest  in the United Kingdom, and the largest urban zone in the  by most measures. Located on the , London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.  London's ancient core, the , largely retains its square-mile  boundaries. Since at least the 19th century, the name London has also referred to the metropolis developed around this core. The bulk of this  forms the London region  and the  administrative area,See also: . governed by the elected  and the .\n\n\nLondon is a leading , with strengths in the arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism and transport all contributing to its prominence. It is the world's leading  alongside  and has the fifth-largest metropolitan area GDP in the world, and the largest in Europe. London has been described as a world cultural capital. It is the world's most-visited city and has the world's largest city airport system measured by passenger traffic. London's 43 universities form the largest concentration of higher education in Europe. In 2012 London became the first city to host the modern  three times.\n\n\nLondon has a diverse range of peoples and cultures, and more than 300 languages are spoken within its boundaries. In March 2011, London had an official population of 8,174,100, making it the most populous municipality in the European Union, and accounting for 12.5% of the UK population. The  is the second-largest in the EU with a population of 8,278,251, while the  is the largest in the EU with an estimated total population of between 12million and 14million. London had the largest population of any city in the world from around 1831 to 1925.\n\n\nLondon contains four s: the ; Kew Gardens; the site comprising the , , and St Margaret's Church; and the historic settlement of  (in which the Royal Observatory marks the , 0° , and ). Other famous landmarks include , the , , , ,  and . London is home to numerous museums, galleries, libraries, sporting events and other cultural institutions, including the , , , , Wimbledon, and 40 West End theatres. The  is the oldest underground railway network in the world.\n\n\n\n\n\n\n\nthumbThe name ''London'' may derive from the \nThe etymology of ''London'' is uncertain. It is an ancient name and can be found in sources from the 2nd century. It is recorded c. 121 as , which points to  origin. The earliest attempted explanation, now disregarded, is attributed to  in . This had it that the name originated from a supposed King Lud, who had allegedly taken over the city and named it Kaerlud.",
     "sections": [
         {
             "title": " History ",

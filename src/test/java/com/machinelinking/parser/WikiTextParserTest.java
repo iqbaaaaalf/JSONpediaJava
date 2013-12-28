@@ -1073,6 +1073,20 @@ public class WikiTextParserTest {
         verifyParsing("Table2");
     }
 
+    @Test
+    public void testParseEntity() throws IOException, WikiTextParserException {
+        parse(
+                "&lt;[http://link]&gt;",
+
+                "Begin Document\n" +
+                "Entity: '<' (lt)\n" +
+                "Begin Link: http://link\n" +
+                "End Link: http://link\n" +
+                "Entity: '>' (gt)\n" +
+                "End Document\n"
+        );
+    }
+
     private void parse(InputStreamReader reader, String expected, boolean validate)
     throws IOException, WikiTextParserException {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(validate);

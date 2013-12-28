@@ -375,7 +375,9 @@ End Reference: mathematical model
 Text: ' of the BRDF is used to translate a sample set of satellite reflectance measurements into estimates of '
 Begin Reference: directional-hemispherical reflectance
 End Reference: directional-hemispherical reflectance
-Text: ' and bi-hemispherical reflectance.  (e.&nbsp;g.,
+Text: ' and bi-hemispherical reflectance.  (e.'
+Entity: ' ' (nbsp)
+Text: 'g.,
 .'
 Inline Tag: ref attributes: [name : 'NASA']
 Text: ')
@@ -383,11 +385,19 @@ Text: ')
 The Earth's average surface temperature due to its albedo and the '
 Begin Reference: greenhouse effect
 End Reference: greenhouse effect
-Text: ' is currently about 15&nbsp;°C. For the frozen (more reflective) planet the average temperature is below −40&nbsp;°C'
+Text: ' is currently about 15'
+Entity: ' ' (nbsp)
+Text: '°C. For the frozen (more reflective) planet the average temperature is below −40'
+Entity: ' ' (nbsp)
+Text: '°C'
 Inline Tag: ref attributes: [name : 'washington']
-Text: ' (If only all continents being completely covered by glaciers - the mean temperature is about 0&nbsp;°C'
+Text: ' (If only all continents being completely covered by glaciers - the mean temperature is about 0'
+Entity: ' ' (nbsp)
+Text: '°C'
 Inline Tag: ref attributes: [name : 'clim-past']
-Text: '). The simulation for (more absorptive) aquaplanet shows the average temperature close to 27&nbsp;°C.'
+Text: '). The simulation for (more absorptive) aquaplanet shows the average temperature close to 27'
+Entity: ' ' (nbsp)
+Text: '°C.'
 Inline Tag: ref attributes: [name : 'Smith Robin']
 Text: '
 
@@ -881,7 +891,9 @@ Begin Reference: contrail
 End Reference: contrail
 Text: 's of heavy commercial airliner traffic.'
 Inline Tag: ref attributes: [name : 'uww']
-Text: ' A study following the burning of the Kuwaiti oil fields during Iraqi occupation showed that temperatures under the burning oil fires were as much as 10&nbsp;°C colder than temperatures several miles away under clear skies.'
+Text: ' A study following the burning of the Kuwaiti oil fields during Iraqi occupation showed that temperatures under the burning oil fires were as much as 10'
+Entity: ' ' (nbsp)
+Text: '°C colder than temperatures several miles away under clear skies.'
 Open Tag: ref attributes: [name : 'harvard']
 Begin Template: cite web
 k: url

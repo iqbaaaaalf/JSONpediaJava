@@ -376,7 +376,9 @@ Text: 'lang'
 k: null
 Text: 'Albert_Einstein_german.ogg'
 End Template: IPA-de
-Text: '; 14 March 1879&nbsp;– 18 April 1955) was a German'
+Text: '; 14 March 1879'
+Entity: ' ' (nbsp)
+Text: '– 18 April 1955) was a German'
 Comment Tag: [[MOS:BIO]]&nbsp;– Notability: Einstein was a German Nobel laureate.
 Text: '-born '
 Begin Reference: theoretical physics
@@ -450,7 +452,11 @@ Text: ' (which has been dubbed "the world's most famous equation")'
 Open Tag: ref attributes: []
 Text: 'David Bodanis, '
 ItalicBold: 2
-Text: 'E&nbsp;=&nbsp;mc'
+Text: 'E'
+Entity: ' ' (nbsp)
+Text: '='
+Entity: ' ' (nbsp)
+Text: 'mc'
 Open Tag: sup attributes: []
 Text: '2'
 Close Tag: sup
@@ -705,7 +711,9 @@ End Reference: Ulm
 Text: ', in the '
 Begin Reference: Kingdom of Württemberg
 End Reference: Kingdom of Württemberg
-Text: ' in the German Empire on 14&nbsp;March 1879.'
+Text: ' in the German Empire on 14'
+Entity: ' ' (nbsp)
+Text: 'March 1879.'
 Open Tag: ref attributes: [name : 'Bio']
 Begin Template: cite web 
 k: url
@@ -732,7 +740,9 @@ Begin Reference: Munich
 End Reference: Munich
 Text: ', where his father and his uncle founded '
 ItalicBold: 2
-Text: 'Elektrotechnische Fabrik J. Einstein & Cie'
+Text: 'Elektrotechnische Fabrik J. Einstein '
+Text: '& '
+Text: 'Cie'
 ItalicBold: 2
 Text: ', a company that manufactured electrical equipment based on '
 Begin Reference: direct current
@@ -1379,7 +1389,9 @@ Open Tag: ref attributes: [name : 'Kant']
 Text: 'Kant, Horst. "Albert Einstein and the '
 Begin Reference: Kaiser Wilhelm Institute for Physics
 End Reference: Kaiser Wilhelm Institute for Physics
-Text: ' in Berlin". in Renn, Jürgen. "Albert Einstein&nbsp;– Chief Engineer of the Universe: One Hundred Authors for Einstein." Ed. Renn, Jürgen. '
+Text: ' in Berlin". in Renn, Jürgen. "Albert Einstein'
+Entity: ' ' (nbsp)
+Text: '– Chief Engineer of the Universe: One Hundred Authors for Einstein." Ed. Renn, Jürgen. '
 ItalicBold: 2
 Text: 'Wiley-VCH'
 ItalicBold: 2
@@ -1455,7 +1467,11 @@ ItalicBold: 2
 Begin Reference: The Times
 End Reference: The Times
 ItalicBold: 2
-Text: ' printed a banner headline that read: "Revolution in Science&nbsp;– New Theory of the Universe&nbsp;– Newtonian Ideas Overthrown".'
+Text: ' printed a banner headline that read: "Revolution in Science'
+Entity: ' ' (nbsp)
+Text: '– New Theory of the Universe'
+Entity: ' ' (nbsp)
+Text: '– Newtonian Ideas Overthrown".'
 Open Tag: ref attributes: [name : 'Eddington']
 Begin Template: Citation
 k: last 
@@ -1536,7 +1552,9 @@ Text: 'Isaacson, Walter. '
 ItalicBold: 2
 Text: 'Einstein: His Life and Universe'
 ItalicBold: 2
-Text: ', Simon & Schuster (2007)'
+Text: ', Simon '
+Text: '& '
+Text: 'Schuster (2007)'
 Close Tag: ref
 Begin Template: rp
 k: null
@@ -1668,7 +1686,9 @@ Text: 'Isaacson, Walter. '
 ItalicBold: 2
 Text: 'Einstein: His Life and Universe'
 ItalicBold: 2
-Text: ', Simon & Schuster (2007) pp. 407–410'
+Text: ', Simon '
+Text: '& '
+Text: 'Schuster (2007) pp. 407–410'
 Close Tag: ref
 Text: ' Einstein also learned that his name was on a list of assassination targets, with a "$5,000 bounty on his head." One German magazine included him in a list of enemies of the German regime with the phrase, "not yet hanged".'
 Inline Tag: ref attributes: [name : 'Isaacson']
@@ -1824,7 +1844,11 @@ End Template: rp
 Text: ' In 1954, a year before his death, Einstein said to his old friend, '
 Begin Reference: Linus Pauling
 End Reference: Linus Pauling
-Text: ', "I made one great mistake in my life&nbsp;— when I signed the letter to President Roosevelt recommending that atom bombs be made; but there was some justification&nbsp;— the danger that the Germans would make them..."'
+Text: ', "I made one great mistake in my life'
+Entity: ' ' (nbsp)
+Text: '— when I signed the letter to President Roosevelt recommending that atom bombs be made; but there was some justification'
+Entity: ' ' (nbsp)
+Text: '— the danger that the Germans would make them..."'
 Open Tag: ref attributes: [name : 'regret']
 Text: 'Einstein: The Life and Times'
 ItalicBold: 2
@@ -2554,7 +2578,10 @@ End Reference: Length contraction
 Text: ' (in the direction of motion) when measured in the frame of the observer. This paper also argued that the idea of a '
 Begin Reference: luminiferous aether
 End Reference: luminiferous aether
-Text: '&nbsp;– one of the leading theoretical entities in physics at the time&nbsp;– was superfluous.'
+Entity: ' ' (nbsp)
+Text: '– one of the leading theoretical entities in physics at the time'
+Entity: ' ' (nbsp)
+Text: '– was superfluous.'
 Open Tag: ref attributes: []
 Begin Template: harv
 k: null
@@ -2574,7 +2601,9 @@ Text: ' Einstein produced '
 ItalicBold: 2
 Text: 'E'
 ItalicBold: 2
-Text: '&nbsp;=&nbsp;'
+Entity: ' ' (nbsp)
+Text: '='
+Entity: ' ' (nbsp)
 ItalicBold: 2
 Text: 'mc'
 ItalicBold: 2
@@ -2741,7 +2770,9 @@ k: null
 Text: 'Einstein solid'
 End Template: Main
 Text: '
-In 1907 Einstein proposed a model of matter where each atom in a lattice structure is an independent harmonic oscillator. In the Einstein model, each atom oscillates independently&nbsp;– a series of equally spaced quantized states for each oscillator. Einstein was aware that getting the frequency of the actual oscillations would be different, but he nevertheless proposed this theory because it was a particularly clear demonstration that quantum mechanics could solve the specific heat problem in classical mechanics. '
+In 1907 Einstein proposed a model of matter where each atom in a lattice structure is an independent harmonic oscillator. In the Einstein model, each atom oscillates independently'
+Entity: ' ' (nbsp)
+Text: '– a series of equally spaced quantized states for each oscillator. Einstein was aware that getting the frequency of the actual oscillations would be different, but he nevertheless proposed this theory because it was a particularly clear demonstration that quantum mechanics could solve the specific heat problem in classical mechanics. '
 Begin Reference: Peter Debye
 End Reference: Peter Debye
 Text: ' refined this model.'
@@ -3382,7 +3413,9 @@ k: null
 Text: 'Einstein–Infeld–Hoffmann equations'
 End Template: Main
 Text: '
-The theory of general relativity has a fundamental law &nbsp;– the '
+The theory of general relativity has a fundamental law '
+Entity: ' ' (nbsp)
+Text: '– the '
 Begin Reference: Einstein equations
 End Reference: Einstein equations
 Text: ' which describe how space curves, the '

@@ -1805,7 +1805,9 @@ Text: '. He was the first president from the Republican Party. Winning entirely 
 Open Tag: ref attributes: []
 Text: 'Mansch, p. 61.'
 Close Tag: ref
-Text: ' Lincoln received 1,866,452 votes, Douglas 1,376,957 votes, Breckinridge 849,781 votes, and Bell 588,789 votes. Turnout was 82.2&nbsp;percent, with Lincoln winning the free Northern states, as well as California and Oregon. Douglas won Missouri, and split New Jersey with Lincoln.'
+Text: ' Lincoln received 1,866,452 votes, Douglas 1,376,957 votes, Breckinridge 849,781 votes, and Bell 588,789 votes. Turnout was 82.2'
+Entity: ' ' (nbsp)
+Text: 'percent, with Lincoln winning the free Northern states, as well as California and Oregon. Douglas won Missouri, and split New Jersey with Lincoln.'
 Open Tag: ref attributes: []
 Text: 'Harris, p. 243.'
 Close Tag: ref
@@ -2861,7 +2863,9 @@ Text: 'Donald (1996), p. 531.'
 Close Tag: ref
 Text: ' the Democratic Party was deeply split, with some leaders and most soldiers openly for Lincoln. By contrast, the National Union Party was united and energized as Lincoln made emancipation the central issue, and state Republican parties stressed the perfidy of the Copperheads.'
 Open Tag: ref attributes: []
-Text: 'Randall & Current (1955), p. 307.'
+Text: 'Randall '
+Text: '& '
+Text: 'Current (1955), p. 307.'
 Close Tag: ref
 Text: ' Lincoln was re-elected in a landslide, carrying all but three states, and receiving 78 percent of the Union soldiers' vote.'
 Open Tag: ref attributes: []
@@ -3318,7 +3322,9 @@ Text: 'Donald (1996), pp. 594–597.'
 Close Tag: ref
 Text: '
 
-Lincoln's bodyguard, John Parker, left Ford's Theater during intermission to join Lincoln's coachman for drinks in the Star Saloon next door. The now unguarded President sat in his state box in the balcony. Seizing the opportunity, Booth crept up from behind and at about 10:13&nbsp;pm, aimed at the back of Lincoln's head and fired at point-blank range, mortally wounding the President. Major '
+Lincoln's bodyguard, John Parker, left Ford's Theater during intermission to join Lincoln's coachman for drinks in the Star Saloon next door. The now unguarded President sat in his state box in the balcony. Seizing the opportunity, Booth crept up from behind and at about 10:13'
+Entity: ' ' (nbsp)
+Text: 'pm, aimed at the back of Lincoln's head and fired at point-blank range, mortally wounding the President. Major '
 Begin Reference: Henry Rathbone
 End Reference: Henry Rathbone
 Text: ' momentarily grappled with Booth, but Booth stabbed him and escaped.'
@@ -3374,7 +3380,9 @@ End Reference: Charles Leale
 Text: ', assessed Lincoln's wound as mortal. The dying man was taken across the street to '
 Begin Reference: Petersen House
 End Reference: Petersen House
-Text: '. After being in a coma for nine hours, Lincoln died at 7:22&nbsp;am on April 15. Presbyterian minister '
+Text: '. After being in a coma for nine hours, Lincoln died at 7:22'
+Entity: ' ' (nbsp)
+Text: 'am on April 15. Presbyterian minister '
 Begin Reference: Phineas Densmore Gurley
 End Reference: Phineas Densmore Gurley
 Text: ', then present, was asked to offer a prayer, after which Secretary of War Stanton saluted and said, "Now he belongs to the ages."'
@@ -3383,7 +3391,9 @@ Text: 'Donald (1996), pp. 598–599, 686. Witnesses have provided other versions
 Close Tag: ref
 Text: '
 
-Lincoln's flag-enfolded body was then escorted in the rain to the White House by bareheaded Union officers, while the city's church bells rang. Vice President Johnson was sworn in as President at 10:00&nbsp;am the day after the assassination. Lincoln lay in state in the East Room, and then in the Capitol Rotunda from April 19 through April 21.  For three weeks, his funeral train brought the body to cities across the North for large-scale memorials attended by hundreds of thousands, as well as many people who gathered in informal trackside tributes with bands, bonfires and hymn singing.'
+Lincoln's flag-enfolded body was then escorted in the rain to the White House by bareheaded Union officers, while the city's church bells rang. Vice President Johnson was sworn in as President at 10:00'
+Entity: ' ' (nbsp)
+Text: 'am the day after the assassination. Lincoln lay in state in the East Room, and then in the Capitol Rotunda from April 19 through April 21.  For three weeks, his funeral train brought the body to cities across the North for large-scale memorials attended by hundreds of thousands, as well as many people who gathered in informal trackside tributes with bands, bonfires and hymn singing.'
 Open Tag: ref attributes: []
 Text: 'Trostel, pp. 31–58.'
 Close Tag: ref
@@ -3487,7 +3497,9 @@ Text: 'Densen, John V., Editor, '
 ItalicBold: 2
 Text: 'Reassessing The Presidency, The Rise of the Executive State and the Decline of Freedom'
 ItalicBold: 2
-Text: ' (Ludwig von Mises Institute, 2001), pgs. 1-32; Ridings, William H., & Stuard B. McIver, '
+Text: ' (Ludwig von Mises Institute, 2001), pgs. 1-32; Ridings, William H., '
+Text: '& '
+Text: 'Stuard B. McIver, '
 ItalicBold: 2
 Text: 'Rating The Presidents, A Ranking of U.S. Leaders, From the Great and Honorable to the Dishonest and Incompetent'
 ItalicBold: 2
@@ -3607,7 +3619,9 @@ Open Tag: ref attributes: []
 Text: 'Cashin, p. 61.'
 Close Tag: ref
 Open Tag: ref attributes: []
-Text: 'Kelley & Lewis, p. 228.'
+Text: 'Kelley '
+Text: '& '
+Text: 'Lewis, p. 228.'
 Close Tag: ref
 Text: '  Historian Barry Schwartz wrote in 2009 that Lincoln's image suffered "erosion, fading prestige, benign ridicule," in the late 20th century.'
 Open Tag: ref attributes: []
@@ -3988,7 +4002,9 @@ End Template: cite news
 Close Tag: ref
 Text: '
 
-Lincoln sites remain popular tourist attractions, but crowds have thinned. In the late 1960s, 650,000 people a year visited the home in Springfield, slipping to 393,000 in 2000–2003. Likewise visits to New Salem fell by half, probably because of the enormous draw of the new museum in Springfield. Visits to the Lincoln Memorial in Washington peaked at 4.3&nbsp;million in 1987 and have since declined. However crowds at Ford's Theatre in Washington have grown sharply.'
+Lincoln sites remain popular tourist attractions, but crowds have thinned. In the late 1960s, 650,000 people a year visited the home in Springfield, slipping to 393,000 in 2000–2003. Likewise visits to New Salem fell by half, probably because of the enormous draw of the new museum in Springfield. Visits to the Lincoln Memorial in Washington peaked at 4.3'
+Entity: ' ' (nbsp)
+Text: 'million in 1987 and have since declined. However crowds at Ford's Theatre in Washington have grown sharply.'
 Open Tag: ref attributes: []
 Text: 'Schwartz (2009), pp. 153–155.'
 Close Tag: ref

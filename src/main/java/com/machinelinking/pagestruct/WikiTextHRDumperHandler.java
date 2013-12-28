@@ -115,6 +115,11 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void entity(String form, char value) {
+        printOut(String.format("Entity: '%c' (%s)", value, form));
+    }
+
+    @Override
     public void endTemplate(String name) {
         printOut("End Template: " + name);
     }

@@ -98,6 +98,10 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void entity(String form, char value) {
+    }
+
+    @Override
     public void text(String content) {
     }
 

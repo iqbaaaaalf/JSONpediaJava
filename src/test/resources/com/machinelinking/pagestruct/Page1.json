@@ -769,7 +769,13 @@
                 ]
             }
         },
-        "; 14 March 1879&nbsp;– 18 April 1955) was a German",
+        "; 14 March 1879",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "– 18 April 1955) was a German",
         {
             "__type": "comment_tag",
             "comment": "[[MOS:BIO]]&nbsp;– Notability: Einstein was a German Nobel laureate."
@@ -905,7 +911,19 @@
         },
         "David Bodanis,",
         "<i>",
-        "E&nbsp;=&nbsp;mc",
+        "E",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "=",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "mc",
         {
             "__type": "open_tag",
             "name": "sup",
@@ -1391,7 +1409,13 @@
             "label": "Kingdom of Württemberg",
             "content": {}
         },
-        "in the German Empire on 14&nbsp;March 1879.",
+        "in the German Empire on 14",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "March 1879.",
         {
             "__type": "open_tag",
             "name": "ref",
@@ -1451,7 +1475,9 @@
         },
         ", where his father and his uncle founded",
         "<i>",
-        "Elektrotechnische Fabrik J. Einstein & Cie",
+        "Elektrotechnische Fabrik J. Einstein",
+        "&",
+        "Cie",
         "</i>",
         ", a company that manufactured electrical equipment based on",
         {
@@ -2665,7 +2691,13 @@
             "label": "Kaiser Wilhelm Institute for Physics",
             "content": {}
         },
-        "in Berlin\". in Renn, Jürgen. \"Albert Einstein&nbsp;– Chief Engineer of the Universe: One Hundred Authors for Einstein.\" Ed. Renn, Jürgen.",
+        "in Berlin\". in Renn, Jürgen. \"Albert Einstein",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "– Chief Engineer of the Universe: One Hundred Authors for Einstein.\" Ed. Renn, Jürgen.",
         "<i>",
         "Wiley-VCH",
         "</i>",
@@ -2782,7 +2814,19 @@
             "content": {}
         },
         "</i>",
-        "printed a banner headline that read: \"Revolution in Science&nbsp;– New Theory of the Universe&nbsp;– Newtonian Ideas Overthrown\".",
+        "printed a banner headline that read: \"Revolution in Science",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "– New Theory of the Universe",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "– Newtonian Ideas Overthrown\".",
         {
             "__type": "open_tag",
             "name": "ref",
@@ -2941,7 +2985,9 @@
         "<i>",
         "Einstein: His Life and Universe",
         "</i>",
-        ", Simon & Schuster (2007)",
+        ", Simon",
+        "&",
+        "Schuster (2007)",
         {
             "__type": "close_tag",
             "name": "ref"
@@ -3204,7 +3250,9 @@
         "<i>",
         "Einstein: His Life and Universe",
         "</i>",
-        ", Simon & Schuster (2007) pp. 407–410",
+        ", Simon",
+        "&",
+        "Schuster (2007) pp. 407–410",
         {
             "__type": "close_tag",
             "name": "ref"
@@ -3517,7 +3565,19 @@
             "label": "Linus Pauling",
             "content": {}
         },
-        ", \"I made one great mistake in my life&nbsp;— when I signed the letter to President Roosevelt recommending that atom bombs be made; but there was some justification&nbsp;— the danger that the Germans would make them...\"",
+        ", \"I made one great mistake in my life",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "— when I signed the letter to President Roosevelt recommending that atom bombs be made; but there was some justification",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "— the danger that the Germans would make them...\"",
         {
             "__type": "open_tag",
             "name": "ref",
@@ -4958,7 +5018,18 @@
             "label": "luminiferous aether",
             "content": {}
         },
-        "&nbsp;– one of the leading theoretical entities in physics at the time&nbsp;– was superfluous.",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "– one of the leading theoretical entities in physics at the time",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "– was superfluous.",
         {
             "__type": "open_tag",
             "name": "ref",
@@ -4992,7 +5063,17 @@
         "<i>",
         "E",
         "</i>",
-        "&nbsp;=&nbsp;",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "=",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
         "<i>",
         "mc",
         "</i>",
@@ -5270,7 +5351,13 @@
                 ]
             }
         },
-        "In 1907 Einstein proposed a model of matter where each atom in a lattice structure is an independent harmonic oscillator. In the Einstein model, each atom oscillates independently&nbsp;– a series of equally spaced quantized states for each oscillator. Einstein was aware that getting the frequency of the actual oscillations would be different, but he nevertheless proposed this theory because it was a particularly clear demonstration that quantum mechanics could solve the specific heat problem in classical mechanics.",
+        "In 1907 Einstein proposed a model of matter where each atom in a lattice structure is an independent harmonic oscillator. In the Einstein model, each atom oscillates independently",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "– a series of equally spaced quantized states for each oscillator. Einstein was aware that getting the frequency of the actual oscillations would be different, but he nevertheless proposed this theory because it was a particularly clear demonstration that quantum mechanics could solve the specific heat problem in classical mechanics.",
         {
             "__type": "reference",
             "label": "Peter Debye",
@@ -6381,7 +6468,13 @@
                 ]
             }
         },
-        "The theory of general relativity has a fundamental law &nbsp;– the",
+        "The theory of general relativity has a fundamental law",
+        {
+            "__type": "entity",
+            "form": "nbsp",
+            "value": " "
+        },
+        "– the",
         {
             "__type": "reference",
             "label": "Einstein equations",

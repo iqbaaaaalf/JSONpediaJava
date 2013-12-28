@@ -178,6 +178,13 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void entity(String form, char value) {
+        for(WikiTextParserHandler handler : handlers) {
+            handler.entity(form, value);
+        }
+    }
+
+    @Override
     public void text(String content) {
         for(WikiTextParserHandler handler : handlers) {
             handler.text(content);

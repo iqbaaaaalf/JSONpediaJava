@@ -92,7 +92,10 @@ public class WikiTextParser implements ParserReader {
                 consumeChars();
                 mark();
                 final String couple = readCouple();
-                if('<' == couple.charAt(0)) {
+                if('&' == couple.charAt(0)) {
+                    reset();
+                    EntityExpansionReader.readEntity(this, handler);
+                } else if('<' == couple.charAt(0)) {
                     reset();
                     tagReader.readNode(this);
                     mark();
@@ -249,6 +252,7 @@ public class WikiTextParser implements ParserReader {
                         c != '{' &&
                         c != '[' &&
                         c != '<' &&
+                        c != '&' &&
                         (c != '=' || col > 3) &&
                         (c != '*' || col > 1) &&
                         (c != '#' || col > 1)

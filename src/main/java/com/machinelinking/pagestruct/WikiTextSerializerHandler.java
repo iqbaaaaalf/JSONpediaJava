@@ -273,6 +273,15 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
+    public void entity(String form, char value) {
+        serializer.openObject();
+        serializer.fieldValue("__type", "entity");
+        serializer.fieldValue("form", form);
+        serializer.fieldValue("value", "" + value);
+        serializer.closeObject();
+    }
+
+    @Override
     public void italicBold(int level) {
         isItalicBoldOpen = !isItalicBoldOpen;
         final String tag = level > 2 ? "b" : "i";
