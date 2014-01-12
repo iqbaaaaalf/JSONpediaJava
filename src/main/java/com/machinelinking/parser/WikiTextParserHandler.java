@@ -66,6 +66,8 @@ public interface WikiTextParserHandler extends TagHandler {
 
     void entity(String form, char value);
 
+    void var(Var var);
+
     void text(String content);
 
     void italicBold(int level);
@@ -90,6 +92,35 @@ public interface WikiTextParserHandler extends TagHandler {
     @Retention(RetentionPolicy.RUNTIME)
     @Target(ElementType.METHOD)
     @interface ValidateStack {}
+
+    interface Value {
+    }
+
+    class Var implements Value {
+        public final String name;
+        public final Value defaultValue;
+        Var(String name, Value defaultValue) {
+            this.name = name;
+            this.defaultValue = defaultValue;
+        }
+
+        @Override
+        public String toString() {
+            return String.format("var: %s [%s]", name, defaultValue);
+        }
+    }
+
+    class Const implements Value {
+        final String constValue;
+        public Const(String constValue) {
+            this.constValue = constValue;
+        }
+
+        @Override
+        public String toString() {
+            return String.format("const: [%s]", constValue);
+        }
+    }
 
 }
 

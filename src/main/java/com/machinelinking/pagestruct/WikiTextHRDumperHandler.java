@@ -120,6 +120,11 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void var(Var v) {
+        printOut(String.format("var: %s [%s]", v.name, v.defaultValue));
+    }
+
+    @Override
     public void endTemplate(String name) {
         printOut("End Template: " + name);
     }

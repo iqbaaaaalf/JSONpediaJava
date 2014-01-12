@@ -102,6 +102,10 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void var(Var v) {
+    }
+
+    @Override
     public void text(String content) {
     }
 

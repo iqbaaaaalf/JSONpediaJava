@@ -3831,14 +3831,14 @@
                             "thumb"
                         ],
                         "__an1": [
-                            "right",
+                            "right"
+                        ],
+                        "__an2": [
                             {
                                 "__type": "reference",
                                 "label": "Westminster Abbey",
                                 "content": {}
-                            }
-                        ],
-                        "__an2": [
+                            },
                             "is a",
                             {
                                 "__type": "reference",
@@ -5051,14 +5051,14 @@
                     "name": "quote",
                     "content": {
                         "__an0": [
-                            "You find no man, at all intellectual, who is willing to leave London. No, Sir, when a man is tired of London, he is tired of life; for there is in London all that life can afford.",
+                            "You find no man, at all intellectual, who is willing to leave London. No, Sir, when a man is tired of London, he is tired of life; for there is in London all that life can afford."
+                        ],
+                        "__an1": [
                             {
                                 "__type": "reference",
                                 "label": "Samuel Johnson",
                                 "content": {}
-                            }
-                        ],
-                        "__an1": [
+                            },
                             ", 1777",
                             {
                                 "__type": "open_tag",
@@ -7343,14 +7343,14 @@
                     "label": "File:Primrose Hill Panorama, London - April 2011.jpg",
                     "content": {
                         "__an0": [
-                            "thumb",
+                            "thumb"
+                        ],
+                        "__an1": [
                             {
                                 "__type": "reference",
                                 "label": "Primrose Hill",
                                 "content": {}
-                            }
-                        ],
-                        "__an1": [
+                            },
                             "."
                         ]
                     }
@@ -9301,14 +9301,14 @@
                             "left"
                         ],
                         "__an2": [
-                            "upright",
+                            "upright"
+                        ],
+                        "__an3": [
                             {
                                 "__type": "reference",
                                 "label": "30 St Mary Axe",
                                 "content": {}
-                            }
-                        ],
-                        "__an3": [
+                            },
                             ", also known as the ''Gherkin'', towers over",
                             {
                                 "__type": "reference",
@@ -9715,14 +9715,14 @@
                             "right"
                         ],
                         "__an1": [
-                            "thumb",
+                            "thumb"
+                        ],
+                        "__an2": [
                             {
                                 "__type": "reference",
                                 "label": "Buckingham Palace",
                                 "content": {}
-                            }
-                        ],
-                        "__an2": [
+                            },
                             "is the official residence of the British monarch"
                         ],
                         "alt": null
@@ -11597,15 +11597,17 @@
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "__an0": {
-                                        "__type": "reference",
-                                        "label": "Irreligion",
-                                        "content": {
-                                            "__an0": [
-                                                "No religion"
-                                            ]
+                                    "__an0": [
+                                        {
+                                            "__type": "reference",
+                                            "label": "Irreligion",
+                                            "content": {
+                                                "__an0": [
+                                                    "No religion"
+                                                ]
+                                            }
                                         }
-                                    },
+                                    ],
                                     "__an1": [
                                         "violet"
                                     ],
@@ -11648,15 +11650,17 @@
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "__an0": {
-                                        "__type": "reference",
-                                        "label": "Hinduism",
-                                        "content": {
-                                            "__an0": [
-                                                "Hindu"
-                                            ]
+                                    "__an0": [
+                                        {
+                                            "__type": "reference",
+                                            "label": "Hinduism",
+                                            "content": {
+                                                "__an0": [
+                                                    "Hindu"
+                                                ]
+                                            }
                                         }
-                                    },
+                                    ],
                                     "__an1": [
                                         "Orange"
                                     ],
@@ -11684,15 +11688,17 @@
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "__an0": {
-                                        "__type": "reference",
-                                        "label": "Sikhism",
-                                        "content": {
-                                            "__an0": [
-                                                "Sikh"
-                                            ]
+                                    "__an0": [
+                                        {
+                                            "__type": "reference",
+                                            "label": "Sikhism",
+                                            "content": {
+                                                "__an0": [
+                                                    "Sikh"
+                                                ]
+                                            }
                                         }
-                                    },
+                                    ],
                                     "__an1": [
                                         "yellow"
                                     ],
@@ -11705,15 +11711,17 @@
                                 "__type": "template",
                                 "name": "bar percent",
                                 "content": {
-                                    "__an0": {
-                                        "__type": "reference",
-                                        "label": "Buddhism",
-                                        "content": {
-                                            "__an0": [
-                                                "Buddhist"
-                                            ]
+                                    "__an0": [
+                                        {
+                                            "__type": "reference",
+                                            "label": "Buddhism",
+                                            "content": {
+                                                "__an0": [
+                                                    "Buddhist"
+                                                ]
+                                            }
                                         }
-                                    },
+                                    ],
                                     "__an1": [
                                         "Gold"
                                     ],
@@ -12121,7 +12129,9 @@
                             "thumb"
                         ],
                         "__an1": [
-                            "right",
+                            "right"
+                        ],
+                        "__an2": [
                             {
                                 "__type": "reference",
                                 "label": "St Paul's Cathedral",
@@ -13033,14 +13043,14 @@
                             "thumb"
                         ],
                         "__an1": [
-                            "right",
+                            "right"
+                        ],
+                        "__an2": [
                             {
                                 "__type": "reference",
                                 "label": "Canary Wharf",
                                 "content": {}
-                            }
-                        ],
-                        "__an2": [
+                            },
                             "is a major business and financial centre and is home to some of the",
                             {
                                 "__type": "reference",
@@ -13503,30 +13513,32 @@
                     "__type": "template",
                     "name": "PDFlink",
                     "content": {
-                        "__an0": {
-                            "__type": "template",
-                            "name": "cite web",
-                            "content": {
-                                "url": [
-                                    "http://corporate.visitlondon.com/ems/downloads/8112london101.pdf"
-                                ],
-                                "format": [
-                                    "PDF"
-                                ],
-                                "title": [
-                                    "London 101: One Hundred and One Amazing Facts About London"
-                                ],
-                                "archiveurl": [
-                                    "http://web.archive.org/web/20070628053808/http://corporate.visitlondon.com/ems/downloads/8112london101.pdf"
-                                ],
-                                "archivedate": [
-                                    "28 June 2007"
-                                ],
-                                "ref": [
-                                    "harv"
-                                ]
+                        "__an0": [
+                            {
+                                "__type": "template",
+                                "name": "cite web",
+                                "content": {
+                                    "url": [
+                                        "http://corporate.visitlondon.com/ems/downloads/8112london101.pdf"
+                                    ],
+                                    "format": [
+                                        "PDF"
+                                    ],
+                                    "title": [
+                                        "London 101: One Hundred and One Amazing Facts About London"
+                                    ],
+                                    "archiveurl": [
+                                        "http://web.archive.org/web/20070628053808/http://corporate.visitlondon.com/ems/downloads/8112london101.pdf"
+                                    ],
+                                    "archivedate": [
+                                        "28 June 2007"
+                                    ],
+                                    "ref": [
+                                        "harv"
+                                    ]
+                                }
                             }
-                        },
+                        ],
                         "__an1": [
                             "1.15&nbsp;",
                             {
@@ -13927,7 +13939,9 @@
                     "label": "File:Heathrow T5.jpg",
                     "content": {
                         "__an0": [
-                            "thumb",
+                            "thumb"
+                        ],
+                        "__an1": [
                             {
                                 "__type": "reference",
                                 "label": "London Heathrow Airport",
@@ -13936,9 +13950,7 @@
                                         "Heathrow"
                                     ]
                                 }
-                            }
-                        ],
-                        "__an1": [
+                            },
                             "(",
                             {
                                 "__type": "reference",
@@ -16112,14 +16124,15 @@
                     "label": "File:University College London -quadrant-11Sept2006 (1).jpg",
                     "content": {
                         "__an0": [
-                            "thumb",
+                            "thumb"
+                        ],
+                        "__an1": [
                             {
                                 "__type": "reference",
                                 "label": "University College London",
                                 "content": {}
                             }
-                        ],
-                        "__an1": null
+                        ]
                     }
                 },
                 "London is a major centre of higher education teaching and research and its 43 universities form the largest concentration of higher education in Europe.",
@@ -17152,7 +17165,9 @@
                             "thumb"
                         ],
                         "__an1": [
-                            "right",
+                            "right"
+                        ],
+                        "__an2": [
                             {
                                 "__type": "reference",
                                 "label": "Piccadilly Circus",
@@ -17374,14 +17389,14 @@
                             "upright"
                         ],
                         "__an2": [
-                            "left",
+                            "left"
+                        ],
+                        "__an3": [
                             {
                                 "__type": "reference",
                                 "label": "Harrods",
                                 "content": {}
-                            }
-                        ],
-                        "__an3": [
+                            },
                             "in",
                             {
                                 "__type": "reference",
@@ -17836,14 +17851,14 @@
                     "label": "File:Keats House.jpg",
                     "content": {
                         "__an0": [
-                            "thumb",
+                            "thumb"
+                        ],
+                        "__an1": [
                             {
                                 "__type": "reference",
                                 "label": "Keats House",
                                 "content": {}
-                            }
-                        ],
-                        "__an1": [
+                            },
                             ", where",
                             {
                                 "__type": "reference",
@@ -18664,7 +18679,9 @@
                             "thumb"
                         ],
                         "__an1": [
-                            "right",
+                            "right"
+                        ],
+                        "__an2": [
                             {
                                 "__type": "reference",
                                 "label": "The O2 Arena (London)",
@@ -19265,14 +19282,14 @@
                             "thumb"
                         ],
                         "__an1": [
-                            "left",
+                            "left"
+                        ],
+                        "__an2": [
                             {
                                 "__type": "reference",
                                 "label": "Centre Court",
                                 "content": {}
-                            }
-                        ],
-                        "__an2": [
+                            },
                             "at the",
                             {
                                 "__type": "reference",
@@ -19815,14 +19832,14 @@
                             "thumb"
                         ],
                         "__an1": [
-                            "right",
+                            "right"
+                        ],
+                        "__an2": [
                             {
                                 "__type": "reference",
                                 "label": "Wembley Stadium",
                                 "content": {}
-                            }
-                        ],
-                        "__an2": [
+                            },
                             "viewed from",
                             {
                                 "__type": "reference",
@@ -25773,7 +25790,7 @@
         },
         {
             "url": "http://en.wikipedia.org/wiki/File:Buckingham_Palace,_London_-_April_2009.jpg",
-            "description": " is the official residence of the British monarch|alt=",
+            "description": " is the official residence of the British monarchalt=",
             "section_idx": 16
         },
         {

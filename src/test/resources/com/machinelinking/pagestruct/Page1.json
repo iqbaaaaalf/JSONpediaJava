@@ -135,12 +135,12 @@
                         "__type": "template",
                         "name": "nowrap",
                         "content": {
-                            "__an0": {
-                                "__type": "reference",
-                                "label": "Elsa Löwenthal",
-                                "content": {}
-                            },
-                            "__an1": [
+                            "__an0": [
+                                {
+                                    "__type": "reference",
+                                    "label": "Elsa Löwenthal",
+                                    "content": {}
+                                },
                                 ", née Einstein, (1919–1936)"
                             ]
                         }
@@ -2295,7 +2295,9 @@
                     "right"
                 ],
                 "__an2": [
-                    "upright",
+                    "upright"
+                ],
+                "__an3": [
                     {
                         "__type": "reference",
                         "label": "Einsteinhaus",
@@ -2304,9 +2306,7 @@
                                 "Einstein's home"
                             ]
                         }
-                    }
-                ],
-                "__an3": [
+                    },
                     "in Bern"
                 ]
             }
@@ -5768,7 +5768,9 @@
                     "thumb"
                 ],
                 "__an1": [
-                    "upright",
+                    "upright"
+                ],
+                "__an2": [
                     {
                         "__type": "reference",
                         "label": "Arthur Stanley Eddington",
@@ -5777,9 +5779,7 @@
                                 "Eddington"
                             ]
                         }
-                    }
-                ],
-                "__an2": [
+                    },
                     "’s photograph of a",
                     {
                         "__type": "reference",

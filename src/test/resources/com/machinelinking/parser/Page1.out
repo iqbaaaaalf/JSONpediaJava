@@ -82,9 +82,9 @@ End Reference: Mileva Marić
 Text: '&nbsp;(1903–1919)'
 Open Tag: br attributes: []
 Begin Template: nowrap
+k: null
 Begin Reference: Elsa Löwenthal
 End Reference: Elsa Löwenthal
-k: null
 Text: ', née Einstein, (1919–1936)'
 End Template: nowrap
 Text: '
@@ -1175,11 +1175,11 @@ k: null
 Text: 'right'
 k: null
 Text: 'upright'
+k: null
 Begin Reference: Einsteinhaus
 k: null
 Text: 'Einstein's home'
 End Reference: Einsteinhaus
-k: null
 Text: ' in Bern'
 End Reference: File:einsteinhaus4.jpg
 Text: '
@@ -3014,11 +3014,11 @@ k: null
 Text: 'thumb'
 k: null
 Text: 'upright'
+k: null
 Begin Reference: Arthur Stanley Eddington
 k: null
 Text: 'Eddington'
 End Reference: Arthur Stanley Eddington
-k: null
 Text: '’s photograph of a '
 Begin Reference: solar eclipse
 End Reference: solar eclipse

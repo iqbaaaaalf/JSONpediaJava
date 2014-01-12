@@ -184,6 +184,11 @@ public class WikiTextParser implements ParserReader {
         return c == read();
     }
 
+    private void assertCharOrFail(char c) throws IOException {
+        final char curr = read();
+        if(curr != c) throw new IllegalStateException(String.format("Expected: %s, found %s", c, curr));
+    }
+
     final char[] couple = new char[2];
     private String readCouple() throws IOException {
         couple[0] = read();
@@ -274,13 +279,17 @@ public class WikiTextParser implements ParserReader {
     }
 
     private final StringBuilder templateHeaderSB = new StringBuilder();
-    private String readTemplateHeader() throws IOException {
+    private TemplateHeader readTemplateHeader() throws IOException {
         clear(templateHeaderSB);
         char c;
+        WikiTextParserHandler.Var var = null;
         while(true) {
             mark();
             c = read();
-            if(c != '|' && c != '}') {
+            if (c == '{') {
+                reset();
+                var = readVariableOrTemplate(false);
+            } else if(c != '|' && c != '}') {
                 templateHeaderSB.append(c);
             } else {
                 if(c == '}')
@@ -288,7 +297,7 @@ public class WikiTextParser implements ParserReader {
                 break;
             }
         }
-        return templateHeaderSB.toString();
+        return new TemplateHeader(templateHeaderSB.toString(), var);
     }
 
     private final StringBuilder tableHeaderSB = new StringBuilder();
@@ -311,6 +320,89 @@ public class WikiTextParser implements ParserReader {
             }
         }
         return tableHeaderSB.toString();
+    }
+
+    private WikiTextParserHandler.Var readVariableContent() throws IOException {
+        char c;
+        String name = null;
+        final StringBuilder varSB = new StringBuilder();
+        WikiTextParserHandler.Value defaultValue = null;
+        while(true) {
+            mark();
+            c = read();
+            if(c == '}') {
+                if(name == null) name = varSB.toString();
+                reset();
+                break;
+            } else if(c == '|') {
+                name = varSB.toString();
+                defaultValue = readDefaultValue();
+            } else {
+                varSB.append(c);
+            }
+        }
+        return new WikiTextParserHandler.Var(
+                name, defaultValue
+        );
+    }
+
+    private final StringBuilder valueSB = new StringBuilder();
+    private WikiTextParserHandler.Value readDefaultValue() throws IOException {
+        char c;
+        mark();
+        c = read();
+        if (c == '{') { // default is var.
+            assertCharOrFail('{');
+            mark();
+            c = read();
+            WikiTextParserHandler.Var defaultValue = null;
+            if( c == '{') {
+                //assertCharOrFail('{');
+                defaultValue = readVariableContent();
+                assertCharOrFail('}');
+                assertCharOrFail('}');
+                assertCharOrFail('}');
+            } else {
+                reset();
+                readTemplate();
+            }
+            mark();
+            return defaultValue;
+        } else {
+            reset();
+            clear(valueSB);
+            while(true) {
+                mark();
+                c = read();
+                if(c == '}') {
+                    reset();
+                    break;
+                }
+                valueSB.append(c);
+            }
+            return new WikiTextParserHandler.Const(valueSB.toString());
+        }
+    }
+
+    private WikiTextParserHandler.Var readVariableOrTemplate(boolean alreadyAsserted) throws IOException {
+        if (!alreadyAsserted) {
+            assertCharOrFail('{');
+            assertCharOrFail('{');
+        }
+        mark();
+        char c = read();
+        WikiTextParserHandler.Var var = null;
+        if(c == '{') { // Var.
+            var = readVariableContent();
+            assertCharOrFail('}');
+            assertCharOrFail('}');
+            assertCharOrFail('}');
+        } else { // Template.
+            reset();
+            readTemplate();
+        }
+        mark();
+        return var;
     }
 
     private int readPropertyValue(String[] lookAhead, boolean resetSequence, boolean produceNullParamKey)
@@ -360,22 +452,24 @@ public class WikiTextParser implements ParserReader {
             if(c == '{') {
                 mark();
 
-                if(assertChar('{')) {
+                if(assertChar('{')) { // Nested template or variable.
                     mark();
-                    if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
+                    if (produceNullParamKey && !foundAssignment) {
                         foundAssignment = true;
                         handler.parameter(null);
                     }
                     flushText(sb);
-                    readTemplate();
+
+                    final WikiTextParserHandler.Var var = readVariableOrTemplate(true);
+                    if(var != null) handler.var(var);
                     continue;
                 } else {
                     reset();
                 }
 
-                if (assertChar('|')) {
+                if (assertChar('|')) { // Nested table.
                     mark();
-                    if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
+                    if (produceNullParamKey && !foundAssignment) {
                         foundAssignment = true;
                         handler.parameter(null);
                     }
@@ -391,7 +485,7 @@ public class WikiTextParser implements ParserReader {
                 mark();
                 if(assertChar('[')) {
                     mark();
-                    if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
+                    if (produceNullParamKey && !foundAssignment) {
                         foundAssignment = true;
                         handler.parameter(null);
                     }
@@ -400,7 +494,7 @@ public class WikiTextParser implements ParserReader {
                     continue;
                 } else {
                     reset();
-                    if (produceNullParamKey && !foundAssignment && sb.length() > 0) {
+                    if (produceNullParamKey && !foundAssignment) {
                         foundAssignment = true;
                         handler.parameter(null);
                     }
@@ -424,9 +518,10 @@ public class WikiTextParser implements ParserReader {
     }
 
     private void readTemplate() throws IOException {
-        final String templateHeader = readTemplateHeader();
-        if(templateHeader.length() == 0) return;
-        handler.beginTemplate(templateHeader);
+        final TemplateHeader templateHeader = readTemplateHeader();
+        if(templateHeader.directive.length() == 0) return;
+        handler.beginTemplate(templateHeader.directive);
+        if(templateHeader.var != null) handler.var(templateHeader.var);
 
         consumeSpaces();
         mark();
@@ -450,7 +545,7 @@ public class WikiTextParser implements ParserReader {
             if(assertChar('}')) {
                 if(assertChar('}')) {
                     mark();
-                    handler.endTemplate(templateHeader);
+                    handler.endTemplate(templateHeader.directive);
                 } else {
                     handler.parseWarning("Unexpected '}' while parsing template.", new DefaultParserLocation(this.row, this.col));
                     reset();
@@ -463,7 +558,7 @@ public class WikiTextParser implements ParserReader {
             reset();
             readTemplateProperties();
             mark();
-            handler.endTemplate(templateHeader);
+            handler.endTemplate(templateHeader.directive);
         }
     }
 
@@ -474,6 +569,10 @@ public class WikiTextParser implements ParserReader {
         while(true) {
             mark();
             c = read();
+            if(c == '{') {
+                reset();
+                readVariableOrTemplate(false);
+            }
             if(c != '|' && c != ']') {
                 referenceLabelSB.append(c);
             } else {
@@ -504,12 +603,17 @@ public class WikiTextParser implements ParserReader {
     }
 
     private final StringBuilder linkURLSB = new StringBuilder();
-    private String readLinkURL() throws IOException {
+    private LinkURL readLinkURL() throws IOException {
         clear(linkURLSB);
         char c;
         while(true) {
             mark();
             c = read();
+            if(c == '{') {
+                reset();
+                final WikiTextParserHandler.Var var = readVariableOrTemplate(false);
+                return var == null ? null : new VarLinkURL(var);
+            }
             if(c == LINK_DELIMITERS[0].charAt(0) || c == LINK_DELIMITERS[1].charAt(0)) {
                 reset();
                 break;
@@ -521,20 +625,30 @@ public class WikiTextParser implements ParserReader {
                 break;
             }
         }
-        return linkURLSB.toString();
+        return new StringLinkURL(linkURLSB.toString());
     }
 
     private void readLink() throws IOException {
-        final String urlString = readLinkURL();
-        final URL url;
-        try {
-            url = new URL(urlString);
-        } catch (MalformedURLException murle) {
-            handler.text( String.format("[%s", urlString) );
-            return;
+        final LinkURL linkURL = readLinkURL();
+        URL url = null;
+        if(linkURL != null) {
+            if(linkURL instanceof VarLinkURL) {
+                handler.beginLink(null);
+                handler.var(((VarLinkURL) linkURL).var);
+            } else if(linkURL instanceof StringLinkURL) {
+                final String urlString = ((StringLinkURL) linkURL).url;
+                try {
+                    url = new URL(urlString);
+                    handler.beginLink(url);
+                } catch (MalformedURLException murle) {
+                    handler.text(String.format("[%s", urlString));
+                    return;
+                }
+            }
+        } else {
+            handler.beginLink(null);
         }
 
-        handler.beginLink(url);
         int ahead;
         while(true) {
             ahead = readPropertyValue(LINK_DELIMITERS, true, true);
@@ -671,6 +785,31 @@ public class WikiTextParser implements ParserReader {
             }
         }
         return -1;
+    }
+
+    class TemplateHeader {
+        final String directive;
+        final WikiTextParserHandler.Var var;
+        TemplateHeader(String directive, WikiTextParserHandler.Var var) {
+            this.directive = directive;
+            this.var = var;
+        }
+    }
+
+    interface LinkURL {}
+
+    class StringLinkURL implements LinkURL {
+        final String url;
+        StringLinkURL(String url) {
+            this.url = url;
+        }
+    }
+
+    class VarLinkURL implements LinkURL {
+        final WikiTextParserHandler.Var var;
+        VarLinkURL(WikiTextParserHandler.Var var) {
+            this.var = var;
+        }
     }
 
 }

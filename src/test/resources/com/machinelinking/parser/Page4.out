@@ -681,10 +681,13 @@ Section [1] Marriage and children
 Text: '
 '
 Begin Template: Further2
+k: null
 Begin Reference: Lincoln family tree
 End Reference: Lincoln family tree
+k: null
 Begin Reference: Medical and mental health of Abraham Lincoln
 End Reference: Medical and mental health of Abraham Lincoln
+k: null
 Begin Reference: Sexuality of Abraham Lincoln
 End Reference: Sexuality of Abraham Lincoln
 End Template: Further2
@@ -1921,11 +1924,11 @@ Text: ' to the South, proclaiming once again that he had no intention, or inclin
 Begin Template: quote
 k: null
 Text: 'Apprehension seems to exist among the people of the Southern States that by the accession of a Republican Administration their property and their peace and personal security are to be endangered. There has never been any reasonable cause for such apprehension. Indeed, the most ample evidence to the contrary has all the while existed and been open to their inspection. It is found in nearly all the published speeches of him who now addresses you. I do but quote from one of those speeches when I declare that "I have no purpose, directly or indirectly, to interfere with the institution of slavery in the States where it exists. I believe I have no lawful right to do so, and I have no inclination to do so."'
+k: null
 Begin Reference: Lincoln's first inaugural address
 k: null
 Text: 'First inaugural address'
 End Reference: Lincoln's first inaugural address
-k: null
 Text: ', 4 March 1861'
 Open Tag: ref attributes: []
 Text: 'Sandburg (2002), p. 212.'

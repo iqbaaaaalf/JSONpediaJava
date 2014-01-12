@@ -47,8 +47,13 @@ public class AbstractExtractor extends Extractor {
     }
 
     @Override
+    public void var(Var v) {
+        // Empty.
+    }
+
+    @Override
     public void beginReference(String label) {
-        //processText(label);
+        // Empty.
     }
 
     @Override

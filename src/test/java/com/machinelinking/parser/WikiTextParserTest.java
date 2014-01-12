@@ -16,6 +16,7 @@ import java.net.URL;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
+//TODO: still missing support for comments within references: ex:  [[Category:Zoologists with author abbreviations<!-- -->|{{{author_abbreviation_zoo|{{{author_abbrev_zoo}}}}}}]]
 public class WikiTextParserTest {
 
     @Test
@@ -767,6 +768,86 @@ public class WikiTextParserTest {
     }
 
     @Test
+    public void testParseTemplateDefinition1() throws IOException, WikiTextParserException {
+        parse(
+                "{{Atemplate|prop1 = {{#directive:{{{var1|}}}|{{{var2}}}|prop2={{{var3}}}|{{var4}}}}}}",
+
+                "Begin Document\n" +
+                "Begin Template: Atemplate\n" +
+                "k: prop1 \n" +
+                "Begin Template: #directive:\n" +
+                "var: var1 [const: []]\n" +
+                "k: null\n" +
+                "var: var2 [null]\n" +
+                "k: prop2\n" +
+                "var: var3 [null]\n" +
+                "k: null\n" +
+                "Begin Template: var4\n" +
+                "End Template: var4\n" +
+                "End Template: #directive:\n" +
+                "End Template: Atemplate\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
+    public void testParseTemplateDefinition2() throws IOException, WikiTextParserException {
+        parse(
+                "{{Atemplate|prop1={{{var1|{{{defval1|}}}}}}}}" ,
+
+                "Begin Document\n" +
+                "Begin Template: Atemplate\n" +
+                "k: prop1\n" +
+                "var: var1 [var: defval1 [const: []]]\n" +
+                "End Template: Atemplate\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
+    public void testParseTemplateDefinition3() throws IOException, WikiTextParserException {
+        parse(
+                "{{#if:{{{thesis_title|}}}|{{#if:{{{thesis_url|}}}|[{{{thesis_url}}} ''{{{thesis_title}}}'']|''{{{thesis_title}}}''}}}} {{#if:{{{thesis_year|}}}|({{{thesis_year}}})}}",
+
+                "Begin Document\n" +
+                "Begin Template: #if:\n" +
+                "var: thesis_title [const: []]\n" +
+                "k: null\n" +
+                "Begin Template: #if:\n" +
+                "var: thesis_url [const: []]\n" +
+                "k: null\n" +
+                "Begin Link: null\n" +
+                "var: thesis_url [null]\n" +
+                "k: null\n" +
+                "Text: ' '''\n" +
+                "var: thesis_title [null]\n" +
+                "Text: ''''\n" +
+                "End Link: null\n" +
+                "k: null\n" +
+                "Text: ''''\n" +
+                "var: thesis_title [null]\n" +
+                "Text: ''''\n" +
+                "End Template: #if:\n" +
+                "End Template: #if:\n" +
+                "Text: ' '\n" +
+                "Begin Template: #if:\n" +
+                "var: thesis_year [const: []]\n" +
+                "k: null\n" +
+                "Text: '('\n" +
+                "var: thesis_year [null]\n" +
+                "Text: ')'\n" +
+                "End Template: #if:\n" +
+                "End Document\n"
+        );
+    }
+
+    //TODO: still missing expansion of var/templates within tag attributes.
+    @Test
+    public void testParseFullTemplateDefinition1() throws IOException, WikiTextParserException {
+        verifyParsing("Template1");
+    }
+
+    @Test
     public void testParseTable() throws IOException, WikiTextParserException {
         parse(
                 "{| class=wikitable\n" +
@@ -1035,6 +1116,15 @@ public class WikiTextParserTest {
                 "End Document\n",
 
                 false
+        );
+    }
+
+    @Test
+    public void testParseNoTemplate() throws IOException, WikiTextParserException {
+        parse(
+                "<ref>[http://www.harrassowitz-verlag.de/pcgi/a.cgi?ausgabe=index&T=1235007315045{haupt_harrassowitz=http://www.harrassowitz-verlag.de/title_3277.ahtml?T=1235007315045}]</ref>",
+
+                ""
         );
     }
 
