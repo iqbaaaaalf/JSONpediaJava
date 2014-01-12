@@ -35,4 +35,9 @@ public class WikiTextParserException extends Exception {
         return col;
     }
 
+    @Override
+    public String toString() {
+        return String.format("%s (row,col: %d,%d)", super.toString(), getRow(), getCol());
+    }
+
 }
