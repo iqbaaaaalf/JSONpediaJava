@@ -26,7 +26,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     public void flush() {
-        // Flushes intermediate structures if any.
+        serializer.flush();
     }
 
     @Override
