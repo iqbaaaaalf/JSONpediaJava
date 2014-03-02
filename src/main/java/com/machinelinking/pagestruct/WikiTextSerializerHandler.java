@@ -29,10 +29,15 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.flush();
     }
 
+    public void reset() {
+        isItalicBoldOpen = false;
+        clearStack();
+        pushElement(new DocumentElement());
+    }
+
     @Override
     public void beginDocument(URL document) {
-        isItalicBoldOpen = false;
-        pushElement(new DocumentElement());
+        reset();
         serializer.openObject();
         serializer.fieldValue("__type", "page");
         serializer.fieldValue("url"   , document.toExternalForm());
@@ -310,6 +315,10 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     protected String getTemplateId(String templateName) {
         return templateName.trim();
+    }
+
+    private void clearStack() {
+        documentStack.clear();
     }
 
     private void pushElement(Element de) {
