@@ -611,8 +611,13 @@ public class WikiTextParser implements ParserReader {
             c = read();
             if(c == '{') {
                 reset();
-                final WikiTextParserHandler.Var var = readVariableOrTemplate(false);
-                return var == null ? null : new VarLinkURL(var);
+                try {
+                    final WikiTextParserHandler.Var var = readVariableOrTemplate(false);
+                    return var == null ? null : new VarLinkURL(var);
+                } catch (IllegalStateException ise) {
+                    read();
+                    mark();
+                }
             }
             if(c == LINK_DELIMITERS[0].charAt(0) || c == LINK_DELIMITERS[1].charAt(0)) {
                 reset();

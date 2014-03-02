@@ -1120,11 +1120,16 @@ public class WikiTextParserTest {
     }
 
     @Test
-    public void testParseNoTemplate() throws IOException, WikiTextParserException {
+    public void testParseNoTemplateInLink() throws IOException, WikiTextParserException {
         parse(
                 "<ref>[http://www.harrassowitz-verlag.de/pcgi/a.cgi?ausgabe=index&T=1235007315045{haupt_harrassowitz=http://www.harrassowitz-verlag.de/title_3277.ahtml?T=1235007315045}]</ref>",
 
-                ""
+                "Begin Document\n" +
+                "Open Tag: ref attributes: []\n" +
+                "Begin Link: http://www.harrassowitz-verlag.de/pcgi/a.cgi?ausgabe=index&T=1235007315045{upt_harrassowitz=http://www.harrassowitz-verlag.de/title_3277.ahtml?T=1235007315045}\n" +
+                "End Link: http://www.harrassowitz-verlag.de/pcgi/a.cgi?ausgabe=index&T=1235007315045{upt_harrassowitz=http://www.harrassowitz-verlag.de/title_3277.ahtml?T=1235007315045}\n" +
+                "Close Tag: ref\n" +
+                "End Document\n"
         );
     }
 
