@@ -10,6 +10,7 @@ import java.net.URL;
 public abstract class SectionAwareExtractor extends Extractor {
 
     private short sectionIndex;
+    private String sectionTitle;
 
     protected SectionAwareExtractor(String name) {
         super(name);
@@ -19,6 +20,12 @@ public abstract class SectionAwareExtractor extends Extractor {
         return sectionIndex;
     }
 
+    public String getSectionTitle() { return sectionTitle; }
+
+    public boolean insideHeader() {
+        return getSectionIndex() == -1;
+    }
+
     @Override
     public void beginDocument(URL document) {
         sectionIndex = -1; // -1 == page header.
@@ -26,6 +33,7 @@ public abstract class SectionAwareExtractor extends Extractor {
 
     @Override
     public void section(String title, int level) {
+        sectionTitle = title;
         sectionIndex++;
     }
 
