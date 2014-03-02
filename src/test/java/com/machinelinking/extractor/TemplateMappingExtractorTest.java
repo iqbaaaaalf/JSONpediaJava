@@ -36,7 +36,6 @@ public class TemplateMappingExtractorTest {
         final JSONSerializer serializer = new JSONSerializer(baos);
         extractor.flushContent(serializer);
         serializer.flush();
-        System.out.println(baos);
         final JsonNode node = JSONUtils.parseJSON(baos.toString());
         Assert.assertTrue( node.get("mapping-collection").get(0).get("mapping").size() > 20 );
     }
