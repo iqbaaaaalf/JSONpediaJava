@@ -234,6 +234,8 @@ public class JSONSerializer implements Serializer {
             } else if( checkAndPop(WriterStatus.SpuriousField) ) {
                 internalWriteValue(value);
                 jsonGenerator.writeEndObject();
+            } else {
+                throw new IllegalStateException();
             }
         } catch (IOException ioe) {
             throw new RuntimeException(ioe);
