@@ -12,6 +12,7 @@ import java.util.Stack;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
+//TODO: add var serialization.
 public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     private final Serializer serializer;
