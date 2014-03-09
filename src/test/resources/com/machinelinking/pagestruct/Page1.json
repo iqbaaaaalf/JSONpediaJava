@@ -698,6 +698,9 @@
                 ]
             }
         },
+        {
+            "__type": "paragraph"
+        },
         "<b>",
         "Albert Einstein",
         "</b>",
@@ -1010,7 +1013,11 @@
                 ]
             }
         },
-        "within physics.\n\nNear the beginning of his career, Einstein thought that",
+        "within physics.",
+        {
+            "__type": "paragraph"
+        },
+        "Near the beginning of his career, Einstein thought that",
         {
             "__type": "reference",
             "label": "Newtonian mechanics",
@@ -1118,6 +1125,9 @@
             "__type": "close_tag",
             "name": "ref"
         },
+        {
+            "__type": "paragraph"
+        },
         "He was visiting the United States when",
         {
             "__type": "reference",
@@ -1217,7 +1227,11 @@
             "label": "Princeton, New Jersey",
             "content": {}
         },
-        ", until his death in 1955.\n\nEinstein published",
+        ", until his death in 1955.",
+        {
+            "__type": "paragraph"
+        },
+        "Einstein published",
         {
             "__type": "reference",
             "label": "List of scientific publications by Albert Einstein",
@@ -1334,6 +1348,9 @@
             "name": "ref"
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Biography",
             "level": 0
@@ -1396,6 +1413,9 @@
                     "Einstein's matriculation certificate at the age of 17, showing his final grades from the Aargau Kantonsschule (on a scale of 1-6)."
                 ]
             }
+        },
+        {
+            "__type": "paragraph"
         },
         "Albert Einstein was born in",
         {
@@ -1495,6 +1515,9 @@
                 }
             ]
         },
+        {
+            "__type": "paragraph"
+        },
         "The Einsteins were non-observant Jews. Albert attended a",
         {
             "__type": "reference",
@@ -1570,6 +1593,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         "His father once showed him a pocket compass; Einstein realized that there must be something causing the needle to move, despite the apparent \"empty space\".",
         {
@@ -1716,6 +1742,9 @@
                 ]
             }
         },
+        {
+            "__type": "paragraph"
+        },
         "In 1894, his father's company failed: direct current (DC) lost the",
         {
             "__type": "reference",
@@ -1835,6 +1864,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         "In late summer 1895, at the age of sixteen, Einstein sat the entrance examinations for the Swiss Federal Polytechnic in",
         {
@@ -1972,7 +2004,11 @@
             "label": "Olsberg, Switzerland",
             "content": {}
         },
-        "for a teaching post.\n\nEinstein's future wife,",
+        "for a teaching post.",
+        {
+            "__type": "paragraph"
+        },
+        "Einstein's future wife,",
         {
             "__type": "reference",
             "label": "Mileva Marić",
@@ -2118,6 +2154,9 @@
             "name": "ref"
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Marriages and children",
             "level": 1
@@ -2179,6 +2218,9 @@
             "__type": "close_tag",
             "name": "ref"
         },
+        {
+            "__type": "paragraph"
+        },
         "Einstein and Marić married in January 1903. In May 1904, the couple's first son,",
         {
             "__type": "reference",
@@ -2201,7 +2243,11 @@
                 ]
             }
         },
-        ", was born in Zurich in July 1910. In 1914, Einstein moved to Berlin, while his wife remained in Zurich with their sons. Marić and Einstein divorced on 14 February 1919, having lived apart for five years.\n\nEinstein",
+        ", was born in Zurich in July 1910. In 1914, Einstein moved to Berlin, while his wife remained in Zurich with their sons. Marić and Einstein divorced on 14 February 1919, having lived apart for five years.",
+        {
+            "__type": "paragraph"
+        },
+        "Einstein",
         {
             "__type": "reference",
             "label": "cousin marriage",
@@ -2251,6 +2297,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -2391,6 +2440,9 @@
             "__type": "close_tag",
             "name": "ref"
         },
+        {
+            "__type": "paragraph"
+        },
         "Much of his work at the patent office related to questions about transmission of electric signals and electrical-mechanical synchronization of time, two technical problems that show up conspicuously in the",
         {
             "__type": "reference",
@@ -2407,6 +2459,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         "With a few friends he met in Bern, Einstein started a small discussion group, self-mockingly named \"",
         {
@@ -2437,6 +2492,9 @@
             "content": {}
         },
         ", which influenced his scientific and philosophical outlook.",
+        {
+            "__type": "paragraph"
+        },
         {
             "__type": "section",
             "title": "Academic career",
@@ -2609,7 +2667,11 @@
                 ]
             }
         },
-        ", on the photoelectric effect, Brownian motion, special relativity, and the equivalence of matter and energy, which were to bring him to the notice of the academic world.\n\nBy 1908, he was recognized as a leading scientist, and he was appointed lecturer at the",
+        ", on the photoelectric effect, Brownian motion, special relativity, and the equivalence of matter and energy, which were to bring him to the notice of the academic world.",
+        {
+            "__type": "paragraph"
+        },
+        "By 1908, he was recognized as a leading scientist, and he was appointed lecturer at the",
         {
             "__type": "reference",
             "label": "University of Bern",
@@ -2790,6 +2852,9 @@
             "__type": "close_tag",
             "name": "ref"
         },
+        {
+            "__type": "paragraph"
+        },
         "During 1911, he had calculated that, based on his new theory of general relativity, light from another star would be bent by the Sun's gravity. That prediction was claimed confirmed by observations made by a British expedition led by Sir",
         {
             "__type": "reference",
@@ -2879,7 +2944,11 @@
             "__type": "close_tag",
             "name": "ref"
         },
-        "(Much later, questions were raised whether the measurements had been accurate enough to support Einstein's theory).\n\nIn 1921, Einstein was awarded the",
+        "(Much later, questions were raised whether the measurements had been accurate enough to support Einstein's theory).",
+        {
+            "__type": "paragraph"
+        },
+        "In 1921, Einstein was awarded the",
         {
             "__type": "reference",
             "label": "Nobel Prize in Physics",
@@ -2899,9 +2968,15 @@
         },
         "in 1925.",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Travels abroad",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         "Einstein visited New York City for the first time on 2 April 1921, where he received an official welcome by",
         {
@@ -2929,6 +3004,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         "In 1922, he traveled throughout Asia and later to Palestine, as part of a six-month excursion and speaking tour. His travels included",
         {
@@ -3001,6 +3079,9 @@
                 ]
             }
         },
+        {
+            "__type": "paragraph"
+        },
         "On his return voyage, he also visited",
         {
             "__type": "reference",
@@ -3018,6 +3099,9 @@
             "content": {}
         },
         ". During one reception given to him, the building was \"stormed by throngs who wanted to hear him\". In Einstein's talk to the audience, he expressed his happiness over the event:",
+        {
+            "__type": "paragraph"
+        },
         {
             "__type": "template",
             "name": "Block quote",
@@ -3047,6 +3131,9 @@
             }
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Love of music",
             "level": 1
@@ -3066,6 +3153,9 @@
                     "name": "Botstein"
                 }
             ]
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "reference",
@@ -3132,6 +3222,9 @@
                 }
             ]
         },
+        {
+            "__type": "paragraph"
+        },
         "Botstein notes that music assumed a pivotal and permanent role in Einstein's life from that period on. Although the idea of becoming a professional was not on his mind at any time, he did play",
         {
             "__type": "reference",
@@ -3159,6 +3252,9 @@
                     "name": "Botstein"
                 }
             ]
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -3267,6 +3363,9 @@
                 }
             ]
         },
+        {
+            "__type": "paragraph"
+        },
         "Einstein was undertaking his third two-month visiting professorship at the",
         {
             "__type": "reference",
@@ -3283,6 +3382,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         "He took up a position at the",
         {
@@ -3368,7 +3470,11 @@
             "label": "quantum physics",
             "content": {}
         },
-        ", both unsuccessfully.\n\nOther scientists also fled to America. Among them were Nobel laureates and professors of",
+        ", both unsuccessfully.",
+        {
+            "__type": "paragraph"
+        },
+        "Other scientists also fled to America. Among them were Nobel laureates and professors of",
         {
             "__type": "reference",
             "label": "theoretical physics",
@@ -3383,6 +3489,9 @@
                     "name": "Isaacson"
                 }
             ]
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -3511,7 +3620,11 @@
             "label": "Franklin D. Roosevelt",
             "content": {}
         },
-        "to alert him of the possibility. The letter also recommended that the U.S. government pay attention to and become directly involved in uranium research and associated chain reaction research.\n\nThe letter is believed to be \"arguably the key stimulus for the U.S. adoption of serious investigations into nuclear weapons on the eve of the U.S. entry into World War II\".",
+        "to alert him of the possibility. The letter also recommended that the U.S. government pay attention to and become directly involved in uranium research and associated chain reaction research.",
+        {
+            "__type": "paragraph"
+        },
+        "The letter is believed to be \"arguably the key stimulus for the U.S. adoption of serious investigations into nuclear weapons on the eve of the U.S. entry into World War II\".",
         {
             "__type": "open_tag",
             "name": "ref",
@@ -3538,7 +3651,11 @@
             "label": "Manhattan Project",
             "content": {}
         },
-        ". It became the only country to successfully develop an atomic bomb during World War II.\n\nFor Einstein, \"war was a disease . . .",
+        ". It became the only country to successfully develop an atomic bomb during World War II.",
+        {
+            "__type": "paragraph"
+        },
+        "For Einstein, \"war was a disease . . .",
         "[and",
         "] he called for resistance to war.\" But in 1933, after Hitler assumed full power in Germany, \"he renounced pacifism altogether . . . In fact, he urged the Western powers to prepare themselves against another German onslaught.\"",
         {
@@ -3595,6 +3712,9 @@
             "name": "ref"
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "U.S. citizenship",
             "level": 2
@@ -3613,6 +3733,9 @@
                     "Accepting U.S. citizenship, 1940"
                 ]
             }
+        },
+        {
+            "__type": "paragraph"
         },
         "Einstein became an American citizen in 1940. Not long after settling into his career at Princeton, he expressed his appreciation of the \"",
         {
@@ -3728,6 +3851,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "reference",
@@ -3884,6 +4010,9 @@
         {
             "__type": "close_tag",
             "name": "blockquote"
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -4044,7 +4173,11 @@
             "label": "Princeton Hospital",
             "content": {}
         },
-        "early the next morning at the age of 76, having continued to work until near the end.\n\nDuring the autopsy, the pathologist of Princeton Hospital,",
+        "early the next morning at the age of 76, having continued to work until near the end.",
+        {
+            "__type": "paragraph"
+        },
+        "During the autopsy, the pathologist of Princeton Hospital,",
         {
             "__type": "reference",
             "label": "Thomas Stoltz Harvey",
@@ -4168,6 +4301,9 @@
             "__type": "close_tag",
             "name": "ref"
         },
+        {
+            "__type": "paragraph"
+        },
         "In his lecture at Einstein's memorial, nuclear physicist",
         {
             "__type": "reference",
@@ -4202,6 +4338,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -4294,6 +4433,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -4409,6 +4551,9 @@
             "content": {}
         },
         ". The four papers are:",
+        {
+            "__type": "paragraph"
+        },
         {
             "__type": "table",
             "header": " class=wikitable\n",
@@ -4830,6 +4975,9 @@
             ]
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Thermodynamic fluctuations and statistical physics",
             "level": 1
@@ -4917,9 +5065,15 @@
             ]
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "General principles",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         "He articulated the",
         {
@@ -4951,9 +5105,15 @@
         },
         "of the quantum number.",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Theory of relativity and <math>E =mc ^2</math>",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -4982,7 +5142,11 @@
             "label": "special theory of relativity",
             "content": {}
         },
-        ".\n\nConsequences of this include the",
+        ".",
+        {
+            "__type": "paragraph"
+        },
+        "Consequences of this include the",
         {
             "__type": "reference",
             "label": "Spacetime",
@@ -5050,6 +5214,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         "In his paper on",
         "<i>",
@@ -5192,9 +5359,15 @@
             "name": "ref"
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Photons and energy quanta",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -5290,7 +5463,11 @@
             "label": "Compton scattering",
             "content": {}
         },
-        ".\n\nEinstein concluded that each wave of frequency",
+        ".",
+        {
+            "__type": "paragraph"
+        },
+        "Einstein concluded that each wave of frequency",
         "<i>",
         "f",
         "</i>",
@@ -5338,9 +5515,15 @@
             "name": "ref"
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Quantized atomic vibrations",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -5390,9 +5573,15 @@
             "name": "ref"
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Adiabatic principle and action-angle variables",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -5415,7 +5604,11 @@
             "label": "periodic table of the elements",
             "content": {}
         },
-        ".\n\nEinstein contributed to these developments by linking them with the 1898 arguments",
+        ".",
+        {
+            "__type": "paragraph"
+        },
+        "Einstein contributed to these developments by linking them with the 1898 arguments",
         {
             "__type": "reference",
             "label": "Wilhelm Wien",
@@ -5478,6 +5671,9 @@
             }
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Wave–particle duality",
             "level": 1
@@ -5505,6 +5701,9 @@
                     "in 1911"
                 ]
             }
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -5637,6 +5836,9 @@
         },
         ".",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Theory of critical opalescence",
             "level": 1
@@ -5692,9 +5894,15 @@
         },
         "Einstein quantitatively derived critical opalescence from a treatment of density fluctuations, and demonstrated how both the effect and Rayleigh scattering originate from the atomistic constitution of matter.",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Zero-point energy",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -5728,6 +5936,9 @@
             "content": {}
         },
         ", was based on the thermodynamics of a diatomic molecule which can split apart into two free atoms.",
+        {
+            "__type": "paragraph"
+        },
         {
             "__type": "section",
             "title": "General relativity and the Equivalence Principle",
@@ -5814,7 +6025,11 @@
             "label": "black holes",
             "content": {}
         },
-        ", regions of space where gravitational attraction is so strong that not even light can escape.\n\nAs Albert Einstein later said, the reason for the development of",
+        ", regions of space where gravitational attraction is so strong that not even light can escape.",
+        {
+            "__type": "paragraph"
+        },
+        "As Albert Einstein later said, the reason for the development of",
         {
             "__type": "reference",
             "label": "general relativity",
@@ -5883,6 +6098,9 @@
         },
         "by massive bodies were predicted.",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Hole argument and Entwurf theory",
             "level": 1
@@ -5902,7 +6120,11 @@
             "label": "gauge invariance",
             "content": {}
         },
-        "in the theory. He formulated an argument that led him to conclude that a general relativistic field theory is impossible. He gave up looking for fully generally covariant tensor equations, and searched for equations that would be invariant under general linear transformations only.\n\nIn June, 1913 the Entwurf (\"draft\") theory was the result of these investigations. As its name suggests, it was a sketch of a theory, with the equations of motion supplemented by additional gauge fixing conditions. Simultaneously less elegant and more difficult than general relativity, after more than two years of intensive work Einstein abandoned the theory in November, 1915 after realizing that the hole argument was mistaken.",
+        "in the theory. He formulated an argument that led him to conclude that a general relativistic field theory is impossible. He gave up looking for fully generally covariant tensor equations, and searched for equations that would be invariant under general linear transformations only.",
+        {
+            "__type": "paragraph"
+        },
+        "In June, 1913 the Entwurf (\"draft\") theory was the result of these investigations. As its name suggests, it was a sketch of a theory, with the equations of motion supplemented by additional gauge fixing conditions. Simultaneously less elegant and more difficult than general relativity, after more than two years of intensive work Einstein abandoned the theory in November, 1915 after realizing that the hole argument was mistaken.",
         {
             "__type": "open_tag",
             "name": "ref",
@@ -5916,6 +6138,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -5993,6 +6218,9 @@
                 ]
             }
         },
+        {
+            "__type": "paragraph"
+        },
         "Einstein believed a spherical static universe is philosophically preferred, because it would obey",
         {
             "__type": "reference",
@@ -6017,9 +6245,15 @@
         },
         ", but he knew that Mach's idea would not work if space goes on forever. In a closed universe, he believed that Mach's principle would hold. Mach's principle has generated much controversy over the years.",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Modern quantum theory",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -6098,9 +6332,15 @@
         },
         "of mechanics. This paper would inspire Schrödinger's work of 1926.",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Bose–Einstein statistics",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -6257,9 +6497,15 @@
             ]
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Energy momentum pseudotensor",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -6304,7 +6550,11 @@
             "label": "gauge symmetry",
             "content": {}
         },
-        ". The energy and momentum derived within general relativity by Noether's presecriptions do not make a real tensor for this reason.\n\nEinstein argued that this is true for fundamental reasons, because the gravitational field could be made to vanish by a choice of coordinates. He maintained that the non-covariant energy momentum pseudotensor was in fact the best description of the energy momentum distribution in a gravitational field. This approach has been echoed by",
+        ". The energy and momentum derived within general relativity by Noether's presecriptions do not make a real tensor for this reason.",
+        {
+            "__type": "paragraph"
+        },
+        "Einstein argued that this is true for fundamental reasons, because the gravitational field could be made to vanish by a choice of coordinates. He maintained that the non-covariant energy momentum pseudotensor was in fact the best description of the energy momentum distribution in a gravitational field. This approach has been echoed by",
         {
             "__type": "reference",
             "label": "Lev Landau",
@@ -6316,7 +6566,11 @@
             "label": "Evgeny Lifshitz",
             "content": {}
         },
-        ", and others, and has become standard.\n\nThe use of non-covariant objects like pseudotensors was heavily criticized in 1917 by",
+        ", and others, and has become standard.",
+        {
+            "__type": "paragraph"
+        },
+        "The use of non-covariant objects like pseudotensors was heavily criticized in 1917 by",
         {
             "__type": "reference",
             "label": "Erwin Schrödinger",
@@ -6324,9 +6578,15 @@
         },
         "and others.",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Unified field theory",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -6403,9 +6663,15 @@
         },
         ", where geometrical fields emerge in a unified quantum-mechanical setting.",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Wormholes",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -6428,11 +6694,21 @@
             "label": "Schwarzschild black hole",
             "content": {}
         },
-        "s to make a bridge between two patches.\n\nIf one end of a wormhole was positively charged, the other end would be negatively charged. These properties led Einstein to believe that pairs of particles and antiparticles could be described in this way.",
+        "s to make a bridge between two patches.",
+        {
+            "__type": "paragraph"
+        },
+        "If one end of a wormhole was positively charged, the other end would be negatively charged. These properties led Einstein to believe that pairs of particles and antiparticles could be described in this way.",
+        {
+            "__type": "paragraph"
+        },
         {
             "__type": "section",
             "title": "Einstein–Cartan theory",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -6455,9 +6731,15 @@
         },
         ". This modification was made by Einstein and Cartan in the 1920s.",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Equations of motion",
             "level": 1
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -6486,13 +6768,24 @@
             "label": "geodesic equation",
             "content": {}
         },
-        "which describes how particles move may be derived from the Einstein equations.\n\nSince the equations of general relativity are non-linear, a lump of energy made out of pure gravitational fields, like a black hole, would move on a trajectory which is determined by the Einstein equations themselves, not by a new law. So Einstein proposed that the path of a singular solution, like a black hole, would be determined to be a geodesic from general relativity itself.\n\nThis was established by Einstein, Infeld, and Hoffmann for pointlike objects without angular momentum, and by",
+        "which describes how particles move may be derived from the Einstein equations.",
+        {
+            "__type": "paragraph"
+        },
+        "Since the equations of general relativity are non-linear, a lump of energy made out of pure gravitational fields, like a black hole, would move on a trajectory which is determined by the Einstein equations themselves, not by a new law. So Einstein proposed that the path of a singular solution, like a black hole, would be determined to be a geodesic from general relativity itself.",
+        {
+            "__type": "paragraph"
+        },
+        "This was established by Einstein, Infeld, and Hoffmann for pointlike objects without angular momentum, and by",
         {
             "__type": "reference",
             "label": "Roy Kerr",
             "content": {}
         },
         "for spinning objects.",
+        {
+            "__type": "paragraph"
+        },
         {
             "__type": "section",
             "title": "Other investigations",
@@ -6536,6 +6829,9 @@
             }
         },
         "for details.",
+        {
+            "__type": "paragraph"
+        },
         {
             "__type": "section",
             "title": "Collaboration with other scientists",
@@ -6582,6 +6878,9 @@
         },
         "and others, Einstein also had some one-shot collaborations with various scientists.",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Einstein–de Haas experiment",
             "level": 2
@@ -6603,6 +6902,9 @@
         },
         ". They confirmed that this leads the bar to rotate, because the electron's angular momentum changes as the magnetization changes. This experiment needed to be sensitive, because the angular momentum associated with electrons is small, but it definitively established that electron motion of some kind is responsible for magnetization.",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Schrödinger gas model",
             "level": 2
@@ -6617,7 +6919,11 @@
                 ]
             }
         },
-        "by considering a box. Then to each possible quantum motion of a particle in a box associate an independent harmonic oscillator. Quantizing these oscillators, each level will have an integer occupation number, which will be the number of particles in it.\n\nThis formulation is a form of",
+        "by considering a box. Then to each possible quantum motion of a particle in a box associate an independent harmonic oscillator. Quantizing these oscillators, each level will have an integer occupation number, which will be the number of particles in it.",
+        {
+            "__type": "paragraph"
+        },
+        "This formulation is a form of",
         {
             "__type": "reference",
             "label": "second quantization",
@@ -6684,6 +6990,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -6812,6 +7121,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -6957,6 +7269,9 @@
             "name": "ref"
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Einstein–Podolsky–Rosen paradox",
             "level": 1
@@ -6970,13 +7285,21 @@
                 ]
             }
         },
-        "In 1935, Einstein returned to the question of quantum mechanics. He considered how a measurement on one of two entangled particles would affect the other. He noted, along with his collaborators, that by performing different measurements on the distant particle, either of position or momentum, different properties of the entangled partner could be discovered without disturbing it in any way.\n\nHe then used a hypothesis of",
+        "In 1935, Einstein returned to the question of quantum mechanics. He considered how a measurement on one of two entangled particles would affect the other. He noted, along with his collaborators, that by performing different measurements on the distant particle, either of position or momentum, different properties of the entangled partner could be discovered without disturbing it in any way.",
+        {
+            "__type": "paragraph"
+        },
+        "He then used a hypothesis of",
         {
             "__type": "reference",
             "label": "local realism",
             "content": {}
         },
-        "to conclude that the other particle had these properties already determined. The principle he proposed is that if it is possible to determine what the answer to a position or momentum measurement would be, without in any way disturbing the particle, then the particle actually has values of position or momentum.\n\nThis principle distilled the essence of Einstein's objection to quantum mechanics. As a physical principle, it was shown to be incorrect when the",
+        "to conclude that the other particle had these properties already determined. The principle he proposed is that if it is possible to determine what the answer to a position or momentum measurement would be, without in any way disturbing the particle, then the particle actually has values of position or momentum.",
+        {
+            "__type": "paragraph"
+        },
+        "This principle distilled the essence of Einstein's objection to quantum mechanics. As a physical principle, it was shown to be incorrect when the",
         {
             "__type": "reference",
             "label": "Aspect experiment",
@@ -6989,6 +7312,9 @@
             "content": {}
         },
         ", which had been promulgated in 1964.",
+        {
+            "__type": "paragraph"
+        },
         {
             "__type": "section",
             "title": "Political and religious views",
@@ -7060,6 +7386,9 @@
                 ]
             }
         },
+        {
+            "__type": "paragraph"
+        },
         "Albert Einstein's political views emerged publicly in the middle of the 20th century due to his fame and reputation for genius. Einstein offered to and was called on to give judgments and opinions on matters often unrelated to theoretical physics or mathematics (",
         {
             "__type": "reference",
@@ -7070,7 +7399,11 @@
                 ]
             }
         },
-        ").\n\nEinstein's views about religious belief have been collected from interviews and original writings. These views covered",
+        ").",
+        {
+            "__type": "paragraph"
+        },
+        "Einstein's views about religious belief have been collected from interviews and original writings. These views covered",
         {
             "__type": "reference",
             "label": "Judaism",
@@ -7089,6 +7422,9 @@
             "content": {}
         },
         ".",
+        {
+            "__type": "paragraph"
+        },
         {
             "__type": "section",
             "title": "Non-scientific legacy",
@@ -7175,6 +7511,9 @@
             "__type": "close_tag",
             "name": "ref"
         },
+        {
+            "__type": "paragraph"
+        },
         "Einstein bequeathed the royalties from use of his",
         {
             "__type": "reference",
@@ -7226,6 +7565,9 @@
             "name": "ref"
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "In popular culture",
             "level": 0
@@ -7258,6 +7600,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         "Einstein has been the subject of or inspiration for many novels, films, plays, and works of music.",
         {
@@ -7341,6 +7686,9 @@
             "name": "ref"
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Awards and honors",
             "level": 0
@@ -7361,6 +7709,9 @@
             "content": {}
         },
         ".",
+        {
+            "__type": "paragraph"
+        },
         {
             "__type": "section",
             "title": "Publications",
@@ -8279,6 +8630,9 @@
             "content": {}
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "See also",
             "level": 0
@@ -8489,6 +8843,9 @@
             ]
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "References",
             "level": 0
@@ -8501,6 +8858,9 @@
                     "30em"
                 ]
             }
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -8683,6 +9043,9 @@
             "__type": "template",
             "name": "refend",
             "content": {}
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -9006,6 +9369,9 @@
                     "75121530"
                 ]
             }
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -9398,6 +9764,9 @@
             "content": {}
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "template",
             "name": "Link GA",
             "content": {
@@ -9486,6 +9855,9 @@
                     "ur"
                 ]
             }
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "reference",

@@ -328,9 +328,7 @@ Text: 'Albert Einstein signature 1934.svg
 '
 End Template: Infobox scientist
 
-Text: '
-
-'
+Paragraph
 ItalicBold: 3
 Text: 'Albert Einstein'
 ItalicBold: 3
@@ -498,9 +496,9 @@ Begin Reference: Introduction to quantum mechanics
 k: null
 Text: 'quantum theory'
 End Reference: Introduction to quantum mechanics
-Text: ' within physics.
-
-Near the beginning of his career, Einstein thought that '
+Text: ' within physics.'
+Paragraph
+Text: 'Near the beginning of his career, Einstein thought that '
 Begin Reference: Newtonian mechanics
 End Reference: Newtonian mechanics
 Text: ' was no longer enough to reconcile the laws of '
@@ -550,9 +548,8 @@ Text: '"Scientific Background on the Nobel Prize in Physics 2011. The accelerati
 End Link: http://www.nobelprize.org/nobel_prizes/physics/laureates/2011/advanced-physicsprize2011.pdf
 Text: ' Nobelprize.org.'
 Close Tag: ref
-Text: '
-
-He was visiting the United States when '
+Paragraph
+Text: 'He was visiting the United States when '
 Begin Reference: Adolf Hitler
 End Reference: Adolf Hitler
 Text: ' came to power in 1933, and did not go back to Germany, where he had been a professor at the '
@@ -600,9 +597,9 @@ End Reference: Institute for Advanced Study
 Text: ' in '
 Begin Reference: Princeton, New Jersey
 End Reference: Princeton, New Jersey
-Text: ', until his death in 1955.
-
-Einstein published '
+Text: ', until his death in 1955.'
+Paragraph
+Text: 'Einstein published '
 Begin Reference: List of scientific publications by Albert Einstein
 k: null
 Text: 'more than 300 scientific papers'
@@ -660,9 +657,7 @@ Text: 'WordNet for Einstein'
 End Link: http://wordnetweb.princeton.edu/perl/webwn?s=Einstein
 Text: '.'
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [0] Biography
 Text: '
 '
@@ -703,9 +698,8 @@ Text: 'upright'
 k: null
 Text: 'Einstein's matriculation certificate at the age of 17, showing his final grades from the Aargau Kantonsschule (on a scale of 1-6).'
 End Reference: File:Einstein-matura.jpg
-Text: '
-
-Albert Einstein was born in '
+Paragraph
+Text: 'Albert Einstein was born in '
 Begin Reference: Ulm
 End Reference: Ulm
 Text: ', in the '
@@ -749,9 +743,8 @@ Begin Reference: direct current
 End Reference: direct current
 Text: '.'
 Inline Tag: ref attributes: [name : 'Bio']
-Text: '
-
-The Einsteins were non-observant Jews. Albert attended a '
+Paragraph
+Text: 'The Einsteins were non-observant Jews. Albert attended a '
 Begin Reference: Catholic school
 k: null
 Text: 'Catholic elementary school'
@@ -786,9 +779,8 @@ Text: 'Einstein's Alleged Handicaps: The Legend of the Dull-Witted Child Who Gre
 Begin Link: http://www.albert-einstein.org/.index11.html
 End Link: http://www.albert-einstein.org/.index11.html
 Close Tag: ref
-Text: '
-
-His father once showed him a pocket compass; Einstein realized that there must be something causing the needle to move, despite the apparent "empty space".'
+Paragraph
+Text: 'His father once showed him a pocket compass; Einstein realized that there must be something causing the needle to move, despite the apparent "empty space".'
 Open Tag: ref attributes: []
 Begin Template: Citation 
 k: first
@@ -855,9 +847,8 @@ Close Tag: ref
 k: group
 Text: 'fn'
 End Template: #tag:ref
-Text: '
-
-In 1894, his father's company failed: direct current (DC) lost the '
+Paragraph
+Text: 'In 1894, his father's company failed: direct current (DC) lost the '
 Begin Reference: War of Currents
 End Reference: War of Currents
 Text: ' to '
@@ -919,9 +910,8 @@ k: isbn
 Text: '9810249853'
 End Template: Citation 
 Close Tag: ref
-Text: '
-
-In late summer 1895, at the age of sixteen, Einstein sat the entrance examinations for the Swiss Federal Polytechnic in '
+Paragraph
+Text: 'In late summer 1895, at the age of sixteen, Einstein sat the entrance examinations for the Swiss Federal Polytechnic in '
 Begin Reference: Zurich
 End Reference: Zurich
 Text: ' (later the '
@@ -989,9 +979,9 @@ Close Tag: ref
 Text: ' and though still only seventeen he enrolled in the four year mathematics and physics teaching diploma program at the Zurich Polytechnic. Marie Winteler moved to '
 Begin Reference: Olsberg, Switzerland
 End Reference: Olsberg, Switzerland
-Text: ' for a teaching post.
-
-Einstein's future wife, '
+Text: ' for a teaching post.'
+Paragraph
+Text: 'Einstein's future wife, '
 Begin Reference: Mileva Marić
 End Reference: Mileva Marić
 Text: ', also enrolled at the Polytechnic that same year, the only woman among the six students in the mathematics and physics section of the teaching diploma course. Over the next few years, Einstein and Marić's friendship developed into romance, and they read books together on extra-curricular physics in which Einstein was taking an increasing interest. In 1900 Einstein was awarded the Zurich Polytechnic teaching diploma, but Marić failed the examination with a poor grade in the mathematics component, theory of functions.'
@@ -1073,9 +1063,7 @@ Text: ', 86 (316), March 2005, pp. 49–56. '
 Begin Link: https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf
 End Link: https://webspace.utexas.edu/aam829/1/m/Maric_files/EvidenceMaric.pdf
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] Marriages and children
 Text: '
 '
@@ -1107,9 +1095,8 @@ Text: ' Her full name is not known, and her fate is uncertain after 1903.'
 Open Tag: ref attributes: []
 Text: 'Albrecht Fölsing (1998). Albert Einstein: A Biography. Penguin Group. ISBN 0140237194; see section I, II,'
 Close Tag: ref
-Text: '
-
-Einstein and Marić married in January 1903. In May 1904, the couple's first son, '
+Paragraph
+Text: 'Einstein and Marić married in January 1903. In May 1904, the couple's first son, '
 Begin Reference: Hans Albert Einstein
 End Reference: Hans Albert Einstein
 Text: ', was born in '
@@ -1120,9 +1107,9 @@ Begin Reference: Eduard Einstein
 k: null
 Text: 'Eduard'
 End Reference: Eduard Einstein
-Text: ', was born in Zurich in July 1910. In 1914, Einstein moved to Berlin, while his wife remained in Zurich with their sons. Marić and Einstein divorced on 14 February 1919, having lived apart for five years.
-
-Einstein '
+Text: ', was born in Zurich in July 1910. In 1914, Einstein moved to Berlin, while his wife remained in Zurich with their sons. Marić and Einstein divorced on 14 February 1919, having lived apart for five years.'
+Paragraph
+Text: 'Einstein '
 Begin Reference: cousin marriage
 k: null
 Text: 'married'
@@ -1145,9 +1132,7 @@ k: p
 Text: '216'
 End Template: Harvnb
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] Patent office
 Text: '
 '
@@ -1223,18 +1208,16 @@ Text: 'Critical Inquiry'
 ItalicBold: 2
 Text: ' 26, no. 2 (Winter 2000): 355–389.'
 Close Tag: ref
-Text: '
-
-Much of his work at the patent office related to questions about transmission of electric signals and electrical-mechanical synchronization of time, two technical problems that show up conspicuously in the '
+Paragraph
+Text: 'Much of his work at the patent office related to questions about transmission of electric signals and electrical-mechanical synchronization of time, two technical problems that show up conspicuously in the '
 Begin Reference: thought experiment
 End Reference: thought experiment
 Text: 's that eventually led Einstein to his radical conclusions about the nature of light and the fundamental connection between space and time.'
 Open Tag: ref attributes: []
 Text: 'Gallison, Question of Time.'
 Close Tag: ref
-Text: '
-
-With a few friends he met in Bern, Einstein started a small discussion group, self-mockingly named "'
+Paragraph
+Text: 'With a few friends he met in Bern, Einstein started a small discussion group, self-mockingly named "'
 Begin Reference: Olympia Academy
 k: null
 Text: 'The Olympia Academy'
@@ -1248,9 +1231,8 @@ End Reference: Ernst Mach
 Text: ', and '
 Begin Reference: David Hume
 End Reference: David Hume
-Text: ', which influenced his scientific and philosophical outlook.
-
-'
+Text: ', which influenced his scientific and philosophical outlook.'
+Paragraph
 Section [1] Academic career
 Text: '
 '
@@ -1349,9 +1331,9 @@ Begin Reference: Annus Mirabilis papers
 k: null
 Text: 'four groundbreaking papers'
 End Reference: Annus Mirabilis papers
-Text: ', on the photoelectric effect, Brownian motion, special relativity, and the equivalence of matter and energy, which were to bring him to the notice of the academic world.
-
-By 1908, he was recognized as a leading scientist, and he was appointed lecturer at the '
+Text: ', on the photoelectric effect, Brownian motion, special relativity, and the equivalence of matter and energy, which were to bring him to the notice of the academic world.'
+Paragraph
+Text: 'By 1908, he was recognized as a leading scientist, and he was appointed lecturer at the '
 Begin Reference: University of Bern
 End Reference: University of Bern
 Text: '. The following year, he quit the patent office and the lectureship to take the position of physics '
@@ -1452,9 +1434,8 @@ Close Tag: ref
 Open Tag: ref attributes: []
 Text: 'Heilbron, 2000, p. 84.'
 Close Tag: ref
-Text: '
-
-During 1911, he had calculated that, based on his new theory of general relativity, light from another star would be bent by the Sun's gravity. That prediction was claimed confirmed by observations made by a British expedition led by Sir '
+Paragraph
+Text: 'During 1911, he had calculated that, based on his new theory of general relativity, light from another star would be bent by the Sun's gravity. That prediction was claimed confirmed by observations made by a British expedition led by Sir '
 Begin Reference: Arthur Stanley Eddington
 k: null
 Text: 'Arthur Eddington'
@@ -1498,9 +1479,9 @@ k: accessdate
 Text: '31 March 2007'
 End Template: Citation
 Close Tag: ref
-Text: ' (Much later, questions were raised whether the measurements had been accurate enough to support Einstein's theory).
-
-In 1921, Einstein was awarded the '
+Text: ' (Much later, questions were raised whether the measurements had been accurate enough to support Einstein's theory).'
+Paragraph
+Text: 'In 1921, Einstein was awarded the '
 Begin Reference: Nobel Prize in Physics
 End Reference: Nobel Prize in Physics
 Text: '  for his explanation of the photoelectric effect, as relativity was considered still somewhat controversial. He also received the '
@@ -1509,13 +1490,11 @@ End Reference: Copley Medal
 Text: ' from the '
 Begin Reference: Royal Society
 End Reference: Royal Society
-Text: ' in 1925.
-
-'
+Text: ' in 1925.'
+Paragraph
 Section [1] Travels abroad
-Text: '
-
-Einstein visited New York City for the first time on 2 April 1921, where he received an official welcome by '
+Paragraph
+Text: 'Einstein visited New York City for the first time on 2 April 1921, where he received an official welcome by '
 Begin Reference: John Francis Hylan
 k: null
 Text: 'the Mayor'
@@ -1527,9 +1506,8 @@ Text: ' in London, where he met several renowned scientific, intellectual and po
 Open Tag: ref attributes: []
 Text: 'Hoffman and Dukas (1972), pp. 145–148; Fölsing (1997), pp. 499–508.'
 Close Tag: ref
-Text: '
-
-In 1922, he traveled throughout Asia and later to Palestine, as part of a six-month excursion and speaking tour. His travels included '
+Paragraph
+Text: 'In 1922, he traveled throughout Asia and later to Palestine, as part of a six-month excursion and speaking tour. His travels included '
 Begin Reference: Singapore
 End Reference: Singapore
 Text: ', '
@@ -1560,9 +1538,8 @@ Begin Template: rp
 k: null
 Text: '308'
 End Template: rp
-Text: '
-
-On his return voyage, he also visited '
+Paragraph
+Text: 'On his return voyage, he also visited '
 Begin Reference: British Mandate for Palestine
 k: null
 Text: 'Palestine'
@@ -1570,9 +1547,8 @@ End Reference: British Mandate for Palestine
 Text: ' for 12 days in what would become his only visit to that region. "He was greeted with great British pomp, as if he were a head of state rather than a theoretical physicist", writes Isaacson. This included a cannon salute upon his arrival at the residence of the British high commissioner, '
 Begin Reference: Sir Herbert Samuel
 End Reference: Sir Herbert Samuel
-Text: '. During one reception given to him, the building was "stormed by throngs who wanted to hear him". In Einstein's talk to the audience, he expressed his happiness over the event:
-
-'
+Text: '. During one reception given to him, the building was "stormed by throngs who wanted to hear him". In Einstein's talk to the audience, he expressed his happiness over the event:'
+Paragraph
 Begin Template: Block quote
 k: null
 Text: 'I consider this the greatest day of my life. Before, I have always found something to regret in the Jewish soul, and that is the forgetfulness of its own people. Today, I have been made happy by the sight of the Jewish people learning to recognize themselves and to make themselves recognized as a force in the world.'
@@ -1583,9 +1559,7 @@ Text: '308'
 End Template: rp
 Text: '.'
 End Template: Block quote
-Text: '
-
-'
+Paragraph
 Section [1] Love of music
 Text: '
 Einstein developed an appreciation of music at an early age. His mother played the piano reasonably well and wanted her son to learn the violin, not only to instill in him a love of music but also to help him assimilate within German culture. According to conductor '
@@ -1593,9 +1567,7 @@ Begin Reference: Leon Botstein
 End Reference: Leon Botstein
 Text: ', Einstein is said to have begun playing when he was five, but didn't enjoy trying to learn it at that age.'
 Inline Tag: ref attributes: [name : 'Botstein']
-Text: '
-
-'
+Paragraph
 Begin Reference: File:Einstein - violin - 1939.jpg
 k: null
 Text: 'thumb'
@@ -1625,9 +1597,8 @@ Begin Reference: violin sonata
 End Reference: violin sonata
 Text: 's, the examiner stating afterward that his playing was "remarkable and revealing of 'great insight.'" What struck the examiner, writes Botstein, was that Einstein "displayed a deep love of the music, a quality that was and remains in short supply. Music possessed an unusual meaning for this student."'
 Inline Tag: ref attributes: [name : 'Botstein']
-Text: '
-
-Botstein notes that music assumed a pivotal and permanent role in Einstein's life from that period on. Although the idea of becoming a professional was not on his mind at any time, he did play '
+Paragraph
+Text: 'Botstein notes that music assumed a pivotal and permanent role in Einstein's life from that period on. Although the idea of becoming a professional was not on his mind at any time, he did play '
 Begin Reference: chamber music
 End Reference: chamber music
 Text: ' with others, and performed for private audiences and friends. Chamber music also became a regular part of his social life while living in Bern, Zurich, and Berlin, where he played with '
@@ -1638,9 +1609,7 @@ Begin Reference: Juilliard Quartet
 End Reference: Juilliard Quartet
 Text: ' visited him and he joined them playing his violin, although they slowed the tempo to accommodate his lesser abilities. However, notes Botstein, the quartet was "impressed by Einstein's level of coordination and intonation."'
 Inline Tag: ref attributes: [name : 'Botstein']
-Text: '
-
-'
+Paragraph
 Section [1] Emigration
 Text: '
 '
@@ -1692,18 +1661,16 @@ Text: 'Schuster (2007) pp. 407–410'
 Close Tag: ref
 Text: ' Einstein also learned that his name was on a list of assassination targets, with a "$5,000 bounty on his head." One German magazine included him in a list of enemies of the German regime with the phrase, "not yet hanged".'
 Inline Tag: ref attributes: [name : 'Isaacson']
-Text: '
-
-Einstein was undertaking his third two-month visiting professorship at the '
+Paragraph
+Text: 'Einstein was undertaking his third two-month visiting professorship at the '
 Begin Reference: California Institute of Technology
 End Reference: California Institute of Technology
 Text: ' when Hitler came to power in Germany. On his return to Europe in March 1933 he resided in Belgium for some months, before temporarily moving to England.'
 Open Tag: ref attributes: []
 Text: 'Hoffman, B. (1972), pp. 165–171; Fölsing, A. (1997), pp. 666–677.'
 Close Tag: ref
-Text: '
-
-He took up a position at the '
+Paragraph
+Text: 'He took up a position at the '
 Begin Reference: Institute for Advanced Study
 End Reference: Institute for Advanced Study
 Text: ' at '
@@ -1751,16 +1718,14 @@ End Reference: unified field theory
 Text: ' and to refute the accepted interpretation of '
 Begin Reference: quantum physics
 End Reference: quantum physics
-Text: ', both unsuccessfully.
-
-Other scientists also fled to America. Among them were Nobel laureates and professors of '
+Text: ', both unsuccessfully.'
+Paragraph
+Text: 'Other scientists also fled to America. Among them were Nobel laureates and professors of '
 Begin Reference: theoretical physics
 End Reference: theoretical physics
 Text: '. With so many other Jewish scientists now forced by circumstances to live in America, often working side by side, Einstein wrote to a friend, "For me the most beautiful thing is to be in contact with a few fine Jews—a few millennia of a civilized past do mean something after all." In another letter he writes, "In my whole life I have never felt so Jewish as now."'
 Inline Tag: ref attributes: [name : 'Isaacson']
-Text: '
-
-'
+Paragraph
 Section [2] World War II and the Manhattan Project
 Text: '
 In 1939, a group of Hungarian scientists that included emigre physicist '
@@ -1817,9 +1782,9 @@ End Reference: Einstein–Szilárd letter
 Text: ' with Szilárd to President '
 Begin Reference: Franklin D. Roosevelt
 End Reference: Franklin D. Roosevelt
-Text: ' to alert him of the possibility. The letter also recommended that the U.S. government pay attention to and become directly involved in uranium research and associated chain reaction research.
-
-The letter is believed to be "arguably the key stimulus for the U.S. adoption of serious investigations into nuclear weapons on the eve of the U.S. entry into World War II".'
+Text: ' to alert him of the possibility. The letter also recommended that the U.S. government pay attention to and become directly involved in uranium research and associated chain reaction research.'
+Paragraph
+Text: 'The letter is believed to be "arguably the key stimulus for the U.S. adoption of serious investigations into nuclear weapons on the eve of the U.S. entry into World War II".'
 Open Tag: ref attributes: []
 Text: 'Diehl, Sarah J.; Moltz, James Clay. '
 Begin Link: http://books.google.com/books?id=3PN-NEfl_U0C&pg=PA218&dq=Einstein+Roosevelt&num=30&cd=4#v=onepage&q=Letter%20from%20Einstein%20Roosevelt&f=false
@@ -1831,9 +1796,9 @@ Close Tag: ref
 Text: ' President Roosevelt could not take the risk of allowing Hitler to possess atomic bombs first. As a result of Einstein's letter and his meetings with Roosevelt, the U.S. entered the "race" to develop the bomb, drawing on its "immense material, financial, and scientific resources" to initiate the '
 Begin Reference: Manhattan Project
 End Reference: Manhattan Project
-Text: '. It became the only country to successfully develop an atomic bomb during World War II.
-
-For Einstein, "war was a disease . . . '
+Text: '. It became the only country to successfully develop an atomic bomb during World War II.'
+Paragraph
+Text: 'For Einstein, "war was a disease . . . '
 Text: '[and'
 Text: '] he called for resistance to war." But in 1933, after Hitler assumed full power in Germany, "he renounced pacifism altogether . . . In fact, he urged the Western powers to prepare themselves against another German onslaught."'
 Inline Tag: ref attributes: [name : 'Stern']
@@ -1854,9 +1819,7 @@ Text: 'Einstein: The Life and Times'
 ItalicBold: 2
 Text: ' by Ronald Clark. page 752'
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [2] U.S. citizenship
 Text: '
 '
@@ -1868,9 +1831,8 @@ Text: 'right'
 k: null
 Text: 'Accepting U.S. citizenship, 1940'
 End Reference: File:Citizen-Einstein.jpg
-Text: '
-
-Einstein became an American citizen in 1940. Not long after settling into his career at Princeton, he expressed his appreciation of the "'
+Paragraph
+Text: 'Einstein became an American citizen in 1940. Not long after settling into his career at Princeton, he expressed his appreciation of the "'
 Begin Reference: meritocracy
 End Reference: meritocracy
 Text: '" in American culture when compared to Europe. According to Isaacson, he recognized the "right of individuals to say and think what they pleased", without social barriers, and as result, the individual was "encouraged" to be more creative, a trait he valued from his own early education. Einstein writes:
@@ -1926,9 +1888,7 @@ Text: 'Odyssey in Climate Modeling, Global Warming, and Advising Five Presidents
 End Link: http://books.google.com/books?id=dLhVn-McDDgC&pg=PA226&dq=racism+americas+worst+disease+1946#v=onepage&q&f=false
 ItalicBold: 2
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Begin Reference: File:Albert Einstein at Princeton.jpg
 k: null
 Text: 'thumb'
@@ -1996,9 +1956,7 @@ Close Tag: ref
 Text: '
 '
 Close Tag: blockquote
-Text: '
-
-'
+Paragraph
 Section [1] Death
 Text: '
 '
@@ -2083,9 +2041,9 @@ Close Tag: ref
 Text: ' He died in '
 Begin Reference: Princeton Hospital
 End Reference: Princeton Hospital
-Text: ' early the next morning at the age of 76, having continued to work until near the end.
-
-During the autopsy, the pathologist of Princeton Hospital, '
+Text: ' early the next morning at the age of 76, having continued to work until near the end.'
+Paragraph
+Text: 'During the autopsy, the pathologist of Princeton Hospital, '
 Begin Reference: Thomas Stoltz Harvey
 End Reference: Thomas Stoltz Harvey
 Text: ', removed '
@@ -2145,9 +2103,8 @@ k: date
 Text: '19 April 1955 '
 End Template: Citation 
 Close Tag: ref
-Text: '
-
-In his lecture at Einstein's memorial, nuclear physicist '
+Paragraph
+Text: 'In his lecture at Einstein's memorial, nuclear physicist '
 Begin Reference: Robert Oppenheimer
 End Reference: Robert Oppenheimer
 Text: ' summarized his impression of him as a person: "He was almost wholly without sophistication and wholly without worldliness . . . There was always with him a wonderful purity at once childlike and profoundly stubborn."'
@@ -2163,9 +2120,7 @@ Text: 'E = Einstein: His Life, His Thought, and His Influence on Our Culture'
 ItalicBold: 2
 Text: ', Sterling Publishing (2006) pp. 97–118'
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [0] Scientific career
 Text: '
 '
@@ -2209,9 +2164,7 @@ Text: 'Instituut-Lorentz.'
 ItalicBold: 2
 Text: ' 2005. Retrieved on 21 November 2005.'
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] 1905 - Annus Mirabilis papers
 Text: '
 '
@@ -2271,9 +2224,8 @@ End Reference: space
 Text: ', time, and '
 Begin Reference: matter
 End Reference: matter
-Text: '. The four papers are:
-
-'
+Text: '. The four papers are:'
+Paragraph
 Begin Table
 Text: ' class=wikitable
 '
@@ -2472,9 +2424,7 @@ End Reference: rest energy
 Text: '", and the basis of nuclear energy.
 '
 End Table
-Text: '
-
-'
+Paragraph
 Section [1] Thermodynamic fluctuations and statistical physics
 Text: '
 '
@@ -2517,13 +2467,10 @@ Begin Reference: Brownian motion
 End Reference: Brownian motion
 Text: ', which showed that Brownian movement can be construed as firm evidence that molecules exist. His research in 1903 and 1904 was mainly concerned with the effect of finite atomic size on diffusion phenomena.'
 Inline Tag: ref attributes: [name : 'PubList']
-Text: '
-
-'
+Paragraph
 Section [1] General principles
-Text: '
-
-He articulated the '
+Paragraph
+Text: 'He articulated the '
 Begin Reference: principle of relativity
 End Reference: principle of relativity
 Text: '. This was understood by '
@@ -2537,13 +2484,10 @@ Begin Reference: adiabatic invariant
 k: null
 Text: 'adiabatic invariance'
 End Reference: adiabatic invariant
-Text: ' of the quantum number.
-
-'
+Text: ' of the quantum number.'
+Paragraph
 Section [1] Theory of relativity and <math>E =mc ^2</math>
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'History of special relativity'
@@ -2558,9 +2502,9 @@ End Reference: speed of light
 Text: '. This later became known as Einstein's '
 Begin Reference: special theory of relativity
 End Reference: special theory of relativity
-Text: '.
-
-Consequences of this include the '
+Text: '.'
+Paragraph
+Text: 'Consequences of this include the '
 Begin Reference: Spacetime
 k: null
 Text: 'time-space frame'
@@ -2590,9 +2534,8 @@ k: null
 Text: '1905d'
 End Template: harv
 Close Tag: ref
-Text: '
-
-In his paper on '
+Paragraph
+Text: 'In his paper on '
 ItalicBold: 2
 Begin Reference: mass–energy equivalence
 End Reference: mass–energy equivalence
@@ -2669,13 +2612,9 @@ k: isbn
 Text: '019853907X '
 End Template: Citation 
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] Photons and energy quanta
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Photon'
@@ -2728,9 +2667,9 @@ End Reference: photoelectric effect
 Text: ', and with the measurement of '
 Begin Reference: Compton scattering
 End Reference: Compton scattering
-Text: '.
-
-Einstein concluded that each wave of frequency '
+Text: '.'
+Paragraph
+Text: 'Einstein concluded that each wave of frequency '
 ItalicBold: 2
 Text: 'f'
 ItalicBold: 2
@@ -2758,13 +2697,9 @@ Text: '1905a'
 End Template: harv
 Text: '.'
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] Quantized atomic vibrations
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Einstein solid'
@@ -2786,13 +2721,9 @@ Begin Reference: Office of Scientific and Technical Information
 End Reference: Office of Scientific and Technical Information
 Text: ', 2011.'
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] Adiabatic principle and action-angle variables
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Old quantum theory'
@@ -2804,9 +2735,9 @@ End Reference: Ernest Rutherford
 Text: ' discovered the nucleus and proposed that electrons orbit like planets, Niels Bohr was able to show that the same quantum mechanical postulates introduced by Planck and developed by Einstein would explain the discrete motion of electrons in atoms, and the '
 Begin Reference: periodic table of the elements
 End Reference: periodic table of the elements
-Text: '.
-
-Einstein contributed to these developments by linking them with the 1898 arguments '
+Text: '.'
+Paragraph
+Text: 'Einstein contributed to these developments by linking them with the 1898 arguments '
 Begin Reference: Wilhelm Wien
 End Reference: Wilhelm Wien
 Text: ' had made. Wien had shown that the hypothesis of '
@@ -2837,9 +2768,7 @@ Begin Template: citation needed
 k: date
 Text: 'December 2010'
 End Template: citation needed
-Text: '
-
-'
+Paragraph
 Section [1] Wave–particle duality
 Text: '
 '
@@ -2856,9 +2785,7 @@ Begin Reference: Solvay Conference
 End Reference: Solvay Conference
 Text: ' in 1911'
 End Reference: File:Einstein 1911 Solvay.jpg
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Wave–particle duality'
@@ -2931,9 +2858,8 @@ End Reference: wave–particle duality
 Text: ' in '
 Begin Reference: quantum mechanics
 End Reference: quantum mechanics
-Text: '.
-
-'
+Text: '.'
+Paragraph
 Section [1] Theory of critical opalescence
 Text: '
 '
@@ -2960,13 +2886,10 @@ Text: '.'
 ItalicBold: 2
 Text: ' 2005. Retrieved on 25 February 2006.'
 Close Tag: ref
-Text: ' Einstein quantitatively derived critical opalescence from a treatment of density fluctuations, and demonstrated how both the effect and Rayleigh scattering originate from the atomistic constitution of matter.
-
-'
+Text: ' Einstein quantitatively derived critical opalescence from a treatment of density fluctuations, and demonstrated how both the effect and Rayleigh scattering originate from the atomistic constitution of matter.'
+Paragraph
 Section [1] Zero-point energy
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Zero-point energy'
@@ -2985,9 +2908,8 @@ ItalicBold: 2
 Text: ', to half the energy spacing between levels. This argument, which was made in 1913 in collaboration with '
 Begin Reference: Otto Stern
 End Reference: Otto Stern
-Text: ', was based on the thermodynamics of a diatomic molecule which can split apart into two free atoms.
-
-'
+Text: ', was based on the thermodynamics of a diatomic molecule which can split apart into two free atoms.'
+Paragraph
 Section [1] General relativity and the Equivalence Principle
 Text: '
 '
@@ -3037,9 +2959,9 @@ End Reference: astrophysics
 Text: '. It provides the foundation for the current understanding of '
 Begin Reference: black holes
 End Reference: black holes
-Text: ', regions of space where gravitational attraction is so strong that not even light can escape.
-
-As Albert Einstein later said, the reason for the development of '
+Text: ', regions of space where gravitational attraction is so strong that not even light can escape.'
+Paragraph
+Text: 'As Albert Einstein later said, the reason for the development of '
 Begin Reference: general relativity
 End Reference: general relativity
 Text: ' was that the preference of inertial motions within '
@@ -3071,9 +2993,8 @@ Begin Reference: Gravitational lensing
 k: null
 Text: 'deflection of light'
 End Reference: Gravitational lensing
-Text: ' by massive bodies were predicted.
-
-'
+Text: ' by massive bodies were predicted.'
+Paragraph
 Section [1] Hole argument and Entwurf theory
 Text: '
 '
@@ -3085,9 +3006,9 @@ Text: '
 While developing general relativity, Einstein became confused about the '
 Begin Reference: gauge invariance
 End Reference: gauge invariance
-Text: ' in the theory. He formulated an argument that led him to conclude that a general relativistic field theory is impossible. He gave up looking for fully generally covariant tensor equations, and searched for equations that would be invariant under general linear transformations only.
-
-In June, 1913 the Entwurf ("draft") theory was the result of these investigations. As its name suggests, it was a sketch of a theory, with the equations of motion supplemented by additional gauge fixing conditions. Simultaneously less elegant and more difficult than general relativity, after more than two years of intensive work Einstein abandoned the theory in November, 1915 after realizing that the hole argument was mistaken.'
+Text: ' in the theory. He formulated an argument that led him to conclude that a general relativistic field theory is impossible. He gave up looking for fully generally covariant tensor equations, and searched for equations that would be invariant under general linear transformations only.'
+Paragraph
+Text: 'In June, 1913 the Entwurf ("draft") theory was the result of these investigations. As its name suggests, it was a sketch of a theory, with the equations of motion supplemented by additional gauge fixing conditions. Simultaneously less elegant and more difficult than general relativity, after more than two years of intensive work Einstein abandoned the theory in November, 1915 after realizing that the hole argument was mistaken.'
 Open Tag: ref attributes: []
 Text: 'van Dongen, Jeroen (2010) '
 ItalicBold: 2
@@ -3095,9 +3016,7 @@ Text: 'Einstein's Unification'
 ItalicBold: 2
 Text: ' Cambridge University Press, p.23.'
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] Cosmology
 Text: '
 '
@@ -3138,9 +3057,8 @@ Begin Reference: University of Berlin
 End Reference: University of Berlin
 Text: '.'
 End Reference: File:Albert Einstein photo 1920.jpg
-Text: '
-
-Einstein believed a spherical static universe is philosophically preferred, because it would obey '
+Paragraph
+Text: 'Einstein believed a spherical static universe is philosophically preferred, because it would obey '
 Begin Reference: Mach's principle
 End Reference: Mach's principle
 Text: '. He had shown that general relativity incorporates Mach's principle to a certain extent in '
@@ -3151,13 +3069,10 @@ Begin Reference: Gravitomagnetism
 k: null
 Text: 'gravitomagnetic fields'
 End Reference: Gravitomagnetism
-Text: ', but he knew that Mach's idea would not work if space goes on forever. In a closed universe, he believed that Mach's principle would hold. Mach's principle has generated much controversy over the years.
-
-'
+Text: ', but he knew that Mach's idea would not work if space goes on forever. In a closed universe, he believed that Mach's principle would hold. Mach's principle has generated much controversy over the years.'
+Paragraph
 Section [1] Modern quantum theory
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Schrödinger equation'
@@ -3198,13 +3113,10 @@ End Reference: Matter wave
 Text: ', which Einstein suggested was the '
 Begin Reference: Hamilton–Jacobi equation
 End Reference: Hamilton–Jacobi equation
-Text: ' of mechanics. This paper would inspire Schrödinger's work of 1926.
-
-'
+Text: ' of mechanics. This paper would inspire Schrödinger's work of 1926.'
+Paragraph
 Section [1] Bose–Einstein statistics
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Bose–Einstein condensation'
@@ -3278,13 +3190,9 @@ Begin Reference: boson
 End Reference: boson
 Text: 's. Einstein's sketches for this project may be seen in the Einstein Archive in the library of the Leiden University.'
 Inline Tag: ref attributes: [name : 'Instituut-Lorentz']
-Text: '
-
-'
+Paragraph
 Section [1] Energy momentum pseudotensor
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Stress-energy-momentum pseudotensor'
@@ -3307,26 +3215,23 @@ End Reference: general covariance
 Text: ' makes translation invariance into something of a '
 Begin Reference: gauge symmetry
 End Reference: gauge symmetry
-Text: '. The energy and momentum derived within general relativity by Noether's presecriptions do not make a real tensor for this reason.
-
-Einstein argued that this is true for fundamental reasons, because the gravitational field could be made to vanish by a choice of coordinates. He maintained that the non-covariant energy momentum pseudotensor was in fact the best description of the energy momentum distribution in a gravitational field. This approach has been echoed by '
+Text: '. The energy and momentum derived within general relativity by Noether's presecriptions do not make a real tensor for this reason.'
+Paragraph
+Text: 'Einstein argued that this is true for fundamental reasons, because the gravitational field could be made to vanish by a choice of coordinates. He maintained that the non-covariant energy momentum pseudotensor was in fact the best description of the energy momentum distribution in a gravitational field. This approach has been echoed by '
 Begin Reference: Lev Landau
 End Reference: Lev Landau
 Text: ' and '
 Begin Reference: Evgeny Lifshitz
 End Reference: Evgeny Lifshitz
-Text: ', and others, and has become standard.
-
-The use of non-covariant objects like pseudotensors was heavily criticized in 1917 by '
+Text: ', and others, and has become standard.'
+Paragraph
+Text: 'The use of non-covariant objects like pseudotensors was heavily criticized in 1917 by '
 Begin Reference: Erwin Schrödinger
 End Reference: Erwin Schrödinger
-Text: ' and others.
-
-'
+Text: ' and others.'
+Paragraph
 Section [1] Unified field theory
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Classical unified field theories'
@@ -3364,13 +3269,10 @@ End Reference: theory of everything
 Text: ' and in particular '
 Begin Reference: string theory
 End Reference: string theory
-Text: ', where geometrical fields emerge in a unified quantum-mechanical setting.
-
-'
+Text: ', where geometrical fields emerge in a unified quantum-mechanical setting.'
+Paragraph
 Section [1] Wormholes
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Wormhole'
@@ -3382,15 +3284,12 @@ End Reference: wormhole
 Text: '. His motivation was to model elementary particles with charge as a solution of gravitational field equations, in line with the program outlined in the paper "Do Gravitational Fields play an Important Role in the Constitution of the Elementary Particles?". These solutions cut and pasted '
 Begin Reference: Schwarzschild black hole
 End Reference: Schwarzschild black hole
-Text: 's to make a bridge between two patches.
-
-If one end of a wormhole was positively charged, the other end would be negatively charged. These properties led Einstein to believe that pairs of particles and antiparticles could be described in this way.
-
-'
+Text: 's to make a bridge between two patches.'
+Paragraph
+Text: 'If one end of a wormhole was positively charged, the other end would be negatively charged. These properties led Einstein to believe that pairs of particles and antiparticles could be described in this way.'
+Paragraph
 Section [1] Einstein–Cartan theory
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Einstein–Cartan theory'
@@ -3401,13 +3300,10 @@ Begin Reference: Torsion tensor
 k: null
 Text: 'torsion'
 End Reference: Torsion tensor
-Text: '. This modification was made by Einstein and Cartan in the 1920s.
-
-'
+Text: '. This modification was made by Einstein and Cartan in the 1920s.'
+Paragraph
 Section [1] Equations of motion
-Text: '
-
-'
+Paragraph
 Begin Template: Main
 k: null
 Text: 'Einstein–Infeld–Hoffmann equations'
@@ -3421,16 +3317,15 @@ End Reference: Einstein equations
 Text: ' which describe how space curves, the '
 Begin Reference: geodesic equation
 End Reference: geodesic equation
-Text: ' which describes how particles move may be derived from the Einstein equations.
-
-Since the equations of general relativity are non-linear, a lump of energy made out of pure gravitational fields, like a black hole, would move on a trajectory which is determined by the Einstein equations themselves, not by a new law. So Einstein proposed that the path of a singular solution, like a black hole, would be determined to be a geodesic from general relativity itself.
-
-This was established by Einstein, Infeld, and Hoffmann for pointlike objects without angular momentum, and by '
+Text: ' which describes how particles move may be derived from the Einstein equations.'
+Paragraph
+Text: 'Since the equations of general relativity are non-linear, a lump of energy made out of pure gravitational fields, like a black hole, would move on a trajectory which is determined by the Einstein equations themselves, not by a new law. So Einstein proposed that the path of a singular solution, like a black hole, would be determined to be a geodesic from general relativity itself.'
+Paragraph
+Text: 'This was established by Einstein, Infeld, and Hoffmann for pointlike objects without angular momentum, and by '
 Begin Reference: Roy Kerr
 End Reference: Roy Kerr
-Text: ' for spinning objects.
-
-'
+Text: ' for spinning objects.'
+Paragraph
 Section [1] Other investigations
 Text: '
 '
@@ -3453,9 +3348,8 @@ Begin Reference: Einstein's unsuccessful investigations
 k: null
 Text: 'main article'
 End Reference: Einstein's unsuccessful investigations
-Text: ' for details.
-
-'
+Text: ' for details.'
+Paragraph
 Section [1] Collaboration with other scientists
 Text: '
 '
@@ -3480,9 +3374,8 @@ End Reference: Nathan Rosen
 Text: ', '
 Begin Reference: Peter Bergmann
 End Reference: Peter Bergmann
-Text: ' and others, Einstein also had some one-shot collaborations with various scientists.
-
-'
+Text: ' and others, Einstein also had some one-shot collaborations with various scientists.'
+Paragraph
 Section [2] Einstein–de Haas experiment
 Text: '
 '
@@ -3494,9 +3387,8 @@ Text: '
 Einstein and De Haas demonstrated that magnetization is due to the motion of electrons, nowadays known to be the spin. In order to show this, they reversed the magnetization in an iron bar suspended on a '
 Begin Reference: torsion pendulum
 End Reference: torsion pendulum
-Text: '. They confirmed that this leads the bar to rotate, because the electron's angular momentum changes as the magnetization changes. This experiment needed to be sensitive, because the angular momentum associated with electrons is small, but it definitively established that electron motion of some kind is responsible for magnetization.
-
-'
+Text: '. They confirmed that this leads the bar to rotate, because the electron's angular momentum changes as the magnetization changes. This experiment needed to be sensitive, because the angular momentum associated with electrons is small, but it definitively established that electron motion of some kind is responsible for magnetization.'
+Paragraph
 Section [2] Schrödinger gas model
 Text: '
 Einstein suggested to Erwin Schrödinger that he might be able to reproduce the statistics of a '
@@ -3504,9 +3396,9 @@ Begin Reference: Bose–Einstein condensate
 k: null
 Text: 'Bose–Einstein gas'
 End Reference: Bose–Einstein condensate
-Text: ' by considering a box. Then to each possible quantum motion of a particle in a box associate an independent harmonic oscillator. Quantizing these oscillators, each level will have an integer occupation number, which will be the number of particles in it.
-
-This formulation is a form of '
+Text: ' by considering a box. Then to each possible quantum motion of a particle in a box associate an independent harmonic oscillator. Quantizing these oscillators, each level will have an integer occupation number, which will be the number of particles in it.'
+Paragraph
+Text: 'This formulation is a form of '
 Begin Reference: second quantization
 End Reference: second quantization
 Text: ', but it predates modern quantum mechanics. Erwin Schrödinger applied this to derive the '
@@ -3541,9 +3433,7 @@ k: isbn
 Text: '0-521-43767-9'
 End Template: Citation 
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [2] Einstein refrigerator
 Text: '
 '
@@ -3609,9 +3499,7 @@ k: accessdate
 Text: '22 February 2011'
 End Template: Citation 
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] Bohr versus Einstein
 Text: '
 '
@@ -3681,9 +3569,7 @@ k: null
 Text: '1935'
 End Template: Harv
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] Einstein–Podolsky–Rosen paradox
 Text: '
 '
@@ -3692,22 +3578,21 @@ k: null
 Text: 'EPR paradox'
 End Template: Main
 Text: '
-In 1935, Einstein returned to the question of quantum mechanics. He considered how a measurement on one of two entangled particles would affect the other. He noted, along with his collaborators, that by performing different measurements on the distant particle, either of position or momentum, different properties of the entangled partner could be discovered without disturbing it in any way.
-
-He then used a hypothesis of '
+In 1935, Einstein returned to the question of quantum mechanics. He considered how a measurement on one of two entangled particles would affect the other. He noted, along with his collaborators, that by performing different measurements on the distant particle, either of position or momentum, different properties of the entangled partner could be discovered without disturbing it in any way.'
+Paragraph
+Text: 'He then used a hypothesis of '
 Begin Reference: local realism
 End Reference: local realism
-Text: ' to conclude that the other particle had these properties already determined. The principle he proposed is that if it is possible to determine what the answer to a position or momentum measurement would be, without in any way disturbing the particle, then the particle actually has values of position or momentum.
-
-This principle distilled the essence of Einstein's objection to quantum mechanics. As a physical principle, it was shown to be incorrect when the '
+Text: ' to conclude that the other particle had these properties already determined. The principle he proposed is that if it is possible to determine what the answer to a position or momentum measurement would be, without in any way disturbing the particle, then the particle actually has values of position or momentum.'
+Paragraph
+Text: 'This principle distilled the essence of Einstein's objection to quantum mechanics. As a physical principle, it was shown to be incorrect when the '
 Begin Reference: Aspect experiment
 End Reference: Aspect experiment
 Text: ' of 1982 confirmed '
 Begin Reference: Bell's theorem
 End Reference: Bell's theorem
-Text: ', which had been promulgated in 1964.
-
-'
+Text: ', which had been promulgated in 1964.'
+Paragraph
 Section [0] Political and religious views
 Text: '
 '
@@ -3747,16 +3632,15 @@ Begin Reference: New York City
 End Reference: New York City
 Text: ' in 1921.'
 End Reference: File:Einsteinwiezmann.PNG
-Text: '
-
-Albert Einstein's political views emerged publicly in the middle of the 20th century due to his fame and reputation for genius. Einstein offered to and was called on to give judgments and opinions on matters often unrelated to theoretical physics or mathematics ('
+Paragraph
+Text: 'Albert Einstein's political views emerged publicly in the middle of the 20th century due to his fame and reputation for genius. Einstein offered to and was called on to give judgments and opinions on matters often unrelated to theoretical physics or mathematics ('
 Begin Reference: Albert Einstein's political views
 k: null
 Text: 'see main article'
 End Reference: Albert Einstein's political views
-Text: ').
-
-Einstein's views about religious belief have been collected from interviews and original writings. These views covered '
+Text: ').'
+Paragraph
+Text: 'Einstein's views about religious belief have been collected from interviews and original writings. These views covered '
 Begin Reference: Judaism
 End Reference: Judaism
 Text: ', theological determinism, agnosticism, and humanism. He also wrote much about ethical culture, opting for '
@@ -3765,9 +3649,8 @@ End Reference: Spinoza's god
 Text: ' over belief in a '
 Begin Reference: personal god
 End Reference: personal god
-Text: '.
-
-'
+Text: '.'
+Paragraph
 Section [0] Non-scientific legacy
 Text: '
 While travelling, Einstein wrote daily to his wife Elsa and adopted stepdaughters Margot and Ilse. The letters were included in the papers bequeathed to '
@@ -3810,9 +3693,8 @@ k: date
 Text: '11 July 2006'
 End Template: Citation 
 Close Tag: ref
-Text: '
-
-Einstein bequeathed the royalties from use of his '
+Paragraph
+Text: 'Einstein bequeathed the royalties from use of his '
 Begin Reference: personality rights
 k: null
 Text: 'image'
@@ -3836,9 +3718,7 @@ k: accessdate
 Text: '8 August 2008'
 End Template: Citation
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [0] In popular culture
 Text: '
 '
@@ -3855,9 +3735,8 @@ k: null
 Text: 'Disguise'
 End Link: http://www.newyorker.com/search/query?queryType=nonparsed&query=Einstein+&bylquery=Maloney&month1=01&day1=14&year1=1939&month2=01&day2=14&year2=1939&page=&sort=&submit.x=10&submit.y=5
 Close Tag: ref
-Text: '
-
-Einstein has been the subject of or inspiration for many novels, films, plays, and works of music.'
+Paragraph
+Text: 'Einstein has been the subject of or inspiration for many novels, films, plays, and works of music.'
 Open Tag: ref attributes: []
 Begin Link: http://www.cindymctee.com/einsteins_dream.html
 End Link: http://www.cindymctee.com/einsteins_dream.html
@@ -3898,9 +3777,7 @@ k: accessdate
 Text: '25 February 2006 '
 End Template: Citation
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [0] Awards and honors
 Text: '
 '
@@ -3912,9 +3789,8 @@ Text: '
 Einstein received numerous awards and honors, including the '
 Begin Reference: Nobel Prize in Physics
 End Reference: Nobel Prize in Physics
-Text: '.
-
-'
+Text: '.'
+Paragraph
 Section [0] Publications
 Text: '
 : '
@@ -4624,9 +4500,7 @@ End Link: http://press.princeton.edu/einstein/
 End List
 Begin Template: refend
 End Template: refend
-Text: '
-
-'
+Paragraph
 Section [0] See also
 Text: '
 '
@@ -4714,9 +4588,7 @@ Section [0] Notes
 Text: '
 '
 Inline Tag: references attributes: [group : 'fn']
-Text: '
-
-'
+Paragraph
 Section [0] References
 Text: '
 '
@@ -4724,9 +4596,7 @@ Begin Template: Reflist
 k: colwidth
 Text: '30em'
 End Template: Reflist
-Text: '
-
-'
+Paragraph
 Section [0] Further reading
 Text: '
 '
@@ -4804,9 +4674,7 @@ End Link: http://www.nybooks.com/articles/archives/1966/mar/17/on-albert-einstei
 End List
 Begin Template: refend
 End Template: refend
-Text: '
-
-'
+Paragraph
 Section [0] External links
 Text: '
 '
@@ -4959,9 +4827,7 @@ Text: 'n/79/22889'
 k: VIAF
 Text: '75121530'
 End Template: Normdaten
-Text: '
-
-'
+Paragraph
 Begin Template: Persondata
 
 k: NAME 
@@ -5266,9 +5132,7 @@ Text: '
 '
 Begin Reference: Category:Theoretical physicists
 End Reference: Category:Theoretical physicists
-Text: '
-
-'
+Paragraph
 Begin Template: Link GA
 k: null
 Text: 'de'
@@ -5327,9 +5191,7 @@ Begin Template: Link FA
 k: null
 Text: 'ur'
 End Template: Link FA
-Text: '
-
-'
+Paragraph
 Begin Reference: af:Albert Einstein
 End Reference: af:Albert Einstein
 Text: '

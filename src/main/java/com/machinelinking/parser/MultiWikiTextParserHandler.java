@@ -45,6 +45,13 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void paragraph() {
+        for(WikiTextParserHandler handler : handlers) {
+            handler.paragraph();
+        }
+    }
+
+    @Override
     public void section(String title, int level) {
         for(WikiTextParserHandler handler : handlers) {
             handler.section(title, level);

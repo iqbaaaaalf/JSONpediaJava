@@ -47,6 +47,13 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
+    public void paragraph() {
+        serializer.openObject();
+        serializer.fieldValue("__type", "paragraph");
+        serializer.closeObject();
+    }
+
+    @Override
     public void section(String title, int level) {
         serializer.openObject();
         serializer.fieldValue("__type", "section");

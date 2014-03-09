@@ -106,6 +106,23 @@ public class WikiTextParserTest {
     }
 
     @Test
+    public void testParagraph() throws IOException, WikiTextParserException {
+        parse(
+                "This is a paragraph\n" +
+                "This is nothing\n" +
+                "\n" +
+                "This is another paragraph\n",
+
+                "Begin Document\n" +
+                "Text: 'This is a paragraph\nThis is nothing'\n" +
+                "Paragraph\n" +
+                "Text: 'This is another paragraph\n" +
+                "'\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
     public void testReadSection() throws IOException, WikiTextParserException {
         parse(
                 "\n" +

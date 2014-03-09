@@ -9,9 +9,7 @@ Text: 'thumb'
 k: null
 Text: 'Percentage of diffusely reflected sun light in relation to various surface conditions of the Earth'
 End Reference: File:Albedo-e hg.svg
-Text: '
-
-'
+Paragraph
 ItalicBold: 3
 Text: 'Albedo'
 ItalicBold: 3
@@ -59,9 +57,9 @@ Begin Reference: Dimensionless number
 k: null
 Text: 'dimensionless'
 End Reference: Dimensionless number
-Text: ' fraction, it may also be expressed as a percentage, and is measured on a scale from zero for no reflecting power of a perfectly black surface, to 1 for perfect reflection of a white surface.
-
-Albedo depends on the '
+Text: ' fraction, it may also be expressed as a percentage, and is measured on a scale from zero for no reflecting power of a perfectly black surface, to 1 for perfect reflection of a white surface.'
+Paragraph
+Text: 'Albedo depends on the '
 Begin Reference: frequency
 End Reference: frequency
 Text: ' of the radiation. When quoted unqualified, it usually refers to some appropriate average across the spectrum of '
@@ -73,9 +71,9 @@ End Reference: Lambertian
 Text: ' surfaces, which scatter radiation in all directions according to a cosine function, so their albedo does not depend on the incident distribution. In practice, a '
 Begin Reference: bidirectional reflectance distribution function
 End Reference: bidirectional reflectance distribution function
-Text: ' (BRDF) may be required to characterize the scattering properties of a surface accurately, although the albedo is a very useful first approximation.
-
-The albedo is an important concept in '
+Text: ' (BRDF) may be required to characterize the scattering properties of a surface accurately, although the albedo is a very useful first approximation.'
+Paragraph
+Text: 'The albedo is an important concept in '
 Begin Reference: climatology
 End Reference: climatology
 Text: ' and '
@@ -92,18 +90,16 @@ Text: ', is 30 to 35%, because of the covering by clouds, but varies widely loca
 Open Tag: ref attributes: []
 Text: 'Environmental Encyclopedia, 3rd ed., Thompson Gale, 2003, ISBN 0-7876-5486-8'
 Close Tag: ref
-Text: '
-
-The term was introduced into optics by '
+Paragraph
+Text: 'The term was introduced into optics by '
 Begin Reference: Johann Heinrich Lambert
 End Reference: Johann Heinrich Lambert
 Text: ' in his 1760 work '
 ItalicBold: 2
 Text: 'Photometria'
 ItalicBold: 2
-Text: '.
-
-'
+Text: '.'
+Paragraph
 Section [0] Terrestrial albedo
 Text: '
 '
@@ -326,19 +322,18 @@ Begin Reference: Earth
 End Reference: Earth
 Text: ' is about 0.3.'
 Inline Tag: ref attributes: [name : 'Goode']
-Text: ' This is far higher than for the ocean primarily because of the contribution of clouds.
-
-Human activities have changed the albedo (via forest clearance and farming, for example) of various areas around the globe. However, quantification of this effect on the global scale is difficult.
-
-The classic example of albedo effect is the snow-temperature '
+Text: ' This is far higher than for the ocean primarily because of the contribution of clouds.'
+Paragraph
+Text: 'Human activities have changed the albedo (via forest clearance and farming, for example) of various areas around the globe. However, quantification of this effect on the global scale is difficult.'
+Paragraph
+Text: 'The classic example of albedo effect is the snow-temperature '
 Begin Reference: feedback
 End Reference: feedback
 Text: '. If a snow-covered area warms and the snow melts, the albedo decreases, more sunlight is absorbed, and the temperature tends to increase. The converse is true: if snow forms, a cooling cycle happens. The intensity of the albedo effect depends on the size of the change in albedo and the amount of '
 Begin Reference: insolation
 End Reference: insolation
-Text: '; for this reason it can be potentially very large in the tropics.
-
-'
+Text: '; for this reason it can be potentially very large in the tropics.'
+Paragraph
 Begin Reference: File:Ceres 2003 2004 clear sky total sky albedo.png
 k: null
 Text: 'thumb'
@@ -380,9 +375,9 @@ Entity: ' ' (nbsp)
 Text: 'g.,
 .'
 Inline Tag: ref attributes: [name : 'NASA']
-Text: ')
-
-The Earth's average surface temperature due to its albedo and the '
+Text: ')'
+Paragraph
+Text: 'The Earth's average surface temperature due to its albedo and the '
 Begin Reference: greenhouse effect
 End Reference: greenhouse effect
 Text: ' is currently about 15'
@@ -399,9 +394,7 @@ Text: '). The simulation for (more absorptive) aquaplanet shows the average temp
 Entity: ' ' (nbsp)
 Text: '°C.'
 Inline Tag: ref attributes: [name : 'Smith Robin']
-Text: '
-
-'
+Paragraph
 Section [1] White-sky and black-sky albedo
 Text: '
 It has been shown that for many applications involving terrestrial albedo, the albedo at a particular solar '
@@ -425,21 +418,19 @@ Text: ' the proportion concerned being defined as the proportion of diffuse illu
 Open Tag: math attributes: []
 Text: '{D}'
 Close Tag: math
-Text: '.
-
-Albedo '
+Text: '.'
+Paragraph
+Text: 'Albedo '
 Open Tag: math attributes: []
 Text: '{\alpha}'
 Close Tag: math
-Text: ' can then be given as:
-
-:'
+Text: ' can then be given as:'
+Paragraph
+Text: ':'
 Open Tag: math attributes: []
 Text: '{\alpha}= (1-D) \bar \alpha(\theta_i) + D \bar{ \bar \alpha}.'
 Close Tag: math
-Text: '
-
-'
+Paragraph
 Begin Reference: Directional-hemispherical reflectance
 End Reference: Directional-hemispherical reflectance
 Text: ' is sometimes referred to as black-sky albedo and '
@@ -447,9 +438,7 @@ Begin Reference: bi-hemispherical reflectance
 End Reference: bi-hemispherical reflectance
 Text: ' as white sky albedo. These terms are important because they allow the albedo to be calculated for any given illumination conditions from a knowledge of the intrinsic properties of the surface.'
 Inline Tag: ref attributes: [name : 'BlueskyAlbedo']
-Text: '
-
-'
+Paragraph
 Section [0] Astronomical albedo
 Text: '
 The albedos of '
@@ -474,9 +463,8 @@ End Reference: regolith
 Text: ' properties, while unusually high radar albedo is indicative of high metallic content in '
 Begin Reference: asteroid
 End Reference: asteroid
-Text: 's.
-
-'
+Text: 's.'
+Paragraph
 Begin Reference: Enceladus (moon)
 k: null
 Text: 'Enceladus'
@@ -621,9 +609,9 @@ End Reference: space weathering
 Text: ' surface containing some '
 Begin Reference: organic compound
 End Reference: organic compound
-Text: 's.
-
-The overall albedo of the '
+Text: 's.'
+Paragraph
+Text: 'The overall albedo of the '
 Begin Reference: Moon
 End Reference: Moon
 Text: ' is around 0.12, but it is strongly directional and non-Lambertian, displaying also a strong opposition effect.'
@@ -631,17 +619,17 @@ Inline Tag: ref attributes: [name : 'medkeff']
 Text: ' While such reflectance properties are different from those of any terrestrial terrains, they are typical of the '
 Begin Reference: regolith
 End Reference: regolith
-Text: ' surfaces of airless solar system bodies.
-
-Two common albedos that are used in astronomy are the (V-band) '
+Text: ' surfaces of airless solar system bodies.'
+Paragraph
+Text: 'Two common albedos that are used in astronomy are the (V-band) '
 Begin Reference: geometric albedo
 End Reference: geometric albedo
 Text: ' (measuring brightness when illumination comes from directly behind the observer) and the '
 Begin Reference: Bond albedo
 End Reference: Bond albedo
-Text: ' (measuring total proportion of electromagnetic energy reflected). Their values can differ significantly, which is a common source of confusion.
-
-In detailed studies, the directional reflectance properties of astronomical bodies are often expressed in terms of the five '
+Text: ' (measuring total proportion of electromagnetic energy reflected). Their values can differ significantly, which is a common source of confusion.'
+Paragraph
+Text: 'In detailed studies, the directional reflectance properties of astronomical bodies are often expressed in terms of the five '
 Begin Reference: Hapke parameters
 End Reference: Hapke parameters
 Text: ' which semi-empirically describe the variation of albedo with '
@@ -655,9 +643,9 @@ End Reference: opposition effect
 Text: ' of '
 Begin Reference: regolith
 End Reference: regolith
-Text: ' surfaces.
-
-The correlation between astronomical (geometric) albedo, '
+Text: ' surfaces.'
+Paragraph
+Text: 'The correlation between astronomical (geometric) albedo, '
 Begin Reference: Absolute magnitude#Absolute magnitude for planets (H)
 k: null
 Text: 'absolute magnitude'
@@ -693,9 +681,9 @@ Text: '
 Open Tag: math attributes: []
 Text: 'A =\left ( \frac{1329\times10^{-H/5}}{D} \right ) ^2'
 Close Tag: math
-Text: ',
-
-where '
+Text: ','
+Paragraph
+Text: 'where '
 Open Tag: math attributes: []
 Text: 'A'
 Close Tag: math
@@ -707,9 +695,8 @@ Text: ' is the diameter in kilometres, and '
 ItalicBold: 2
 Text: 'H'
 ItalicBold: 2
-Text: ' is the absolute magnitude.
-
-'
+Text: ' is the absolute magnitude.'
+Paragraph
 Section [0] Examples of terrestrial albedo effects
 Text: '
 '
@@ -734,9 +721,7 @@ End Template: cite journal
 Close Tag: ref
 Text: '  The minima are found in the subtropical regions of the north and south hemispheres, beyond which albedo increases without respect to illumination.'
 Inline Tag: ref attributes: [name : 'Winston']
-Text: '
-
-'
+Paragraph
 Section [1] Small-scale effects
 Text: '
 Albedo works on a smaller scale, too. In sunlight, dark clothes absorb more heat and light-coloured clothes reflect it better, thus allowing some control over body temperature by exploiting the albedo effect of the colour of external clothing.'
@@ -753,9 +738,7 @@ k: accessdate
 Text: '2011-08-19'
 End Template: cite web
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] Trees
 Text: '
 Because trees tend to have a low albedo, removing forests would tend to increase albedo and thereby could produce localized climate cooling (ignoring the lost evaporative cooling effect of trees). '
@@ -769,9 +752,8 @@ Begin Reference: coniferous trees
 End Reference: coniferous trees
 Text: ' have a value of about 0.09 to 0.15.'
 Inline Tag: ref attributes: [name : 'mmutrees']
-Text: '
-
-Studies by the '
+Paragraph
+Text: 'Studies by the '
 Begin Reference: Hadley Centre
 End Reference: Hadley Centre
 Text: ' have investigated the relative (generally warming) effect of albedo change and (cooling) effect of '
@@ -779,9 +761,7 @@ Begin Reference: carbon sequestration
 End Reference: carbon sequestration
 Text: ' on planting forests. They found that new forests in tropical and midlatitude areas tended to cool; new forests in high latitudes (e.g. Siberia) were neutral or perhaps warming.'
 Inline Tag: ref attributes: [name : 'Betts']
-Text: '
-
-'
+Paragraph
 Section [1] Snow
 Text: '
 Snow albedos can be as high as 0.9; this, however, is for the ideal example: fresh deep snow over a featureless landscape. Over '
@@ -811,9 +791,7 @@ End Reference: National Geographic (magazine)
 ItalicBold: 2
 Text: ' June 2010, accessed July 8, 2010'
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] Water
 Text: '
 Water reflects light very differently from typical terrestrial materials. The reflectivity of a water surface is calculated using the '
@@ -852,18 +830,16 @@ Begin Reference: waviness
 End Reference: waviness
 Text: ' results in reduced reflectivity because of the steepness of the reflectivity-vs.-incident-angle curve and a locally increased average incident angle.'
 Inline Tag: ref attributes: [name : 'Fresnel']
-Text: '
-
-Although the reflectivity of water is very low at low and medium angles of incident light, it increases tremendously at high angles of incident light such as occur on the illuminated side of the Earth near the '
+Paragraph
+Text: 'Although the reflectivity of water is very low at low and medium angles of incident light, it increases tremendously at high angles of incident light such as occur on the illuminated side of the Earth near the '
 Begin Reference: terminator (solar)
 k: null
 Text: 'terminator'
 End Reference: terminator (solar)
-Text: ' (early morning, late afternoon and near the poles). However, as mentioned above, waviness causes an appreciable reduction. Since the light specularly reflected from water does not usually reach the viewer, water is usually considered to have a very low albedo in spite of its high reflectivity at high angles of incident light.
-
-Note that white caps on waves look white (and have high albedo) because the water is foamed up, so there are many superimposed bubble surfaces which reflect, adding up their reflectivities. Fresh ‘black’ ice exhibits Fresnel reflection.
-
-'
+Text: ' (early morning, late afternoon and near the poles). However, as mentioned above, waviness causes an appreciable reduction. Since the light specularly reflected from water does not usually reach the viewer, water is usually considered to have a very low albedo in spite of its high reflectivity at high angles of incident light.'
+Paragraph
+Text: 'Note that white caps on waves look white (and have high albedo) because the water is foamed up, so there are many superimposed bubble surfaces which reflect, adding up their reflectivities. Fresh ‘black’ ice exhibits Fresnel reflection.'
+Paragraph
 Section [1] Clouds
 Text: '
 '
@@ -884,9 +860,8 @@ k: accessdate
 Text: '2011-08-19'
 End Template: cite web
 Close Tag: ref
-Text: '
-
-Albedo and climate in some areas are affected by artificial clouds, such as those created by the '
+Paragraph
+Text: 'Albedo and climate in some areas are affected by artificial clouds, such as those created by the '
 Begin Reference: contrail
 End Reference: contrail
 Text: 's of heavy commercial airliner traffic.'
@@ -908,9 +883,7 @@ k: accessdate
 Text: '2011-08-19'
 End Template: cite web
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [1] Aerosol effects
 Text: '
 '
@@ -961,9 +934,7 @@ End Reference: cloud condensation nuclei
 Text: '. Increased nuclei concentrations lead to increased cloud droplet number concentrations, which in turn leads to increased cloud albedo, increased light scattering and radiative cooling (''first indirect effect''), but also leads to reduced precipitation efficiency and increased lifetime of the cloud (''second indirect effect'').'
 End List
 Close Tag: blockquote
-Text: '
-
-'
+Paragraph
 Section [1] Black carbon
 Text: '
 Another albedo-related effect on the climate is from black carbon particles. The size of this effect is difficult to quantify: the '
@@ -996,9 +967,7 @@ Text: '29 June 2011'
 Comment Tag: Added by DASHBot
 End Template: cite web
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [0] Other types of albedo
 Text: '
 '
@@ -1007,9 +976,8 @@ End Reference: Single scattering albedo
 Text: ' is used to define scattering of electromagnetic waves on small particles. It depends on properties of the material ('
 Begin Reference: refractive index
 End Reference: refractive index
-Text: '); the size of the particle or particles; and the wavelength of the incoming radiation.
-
-'
+Text: '); the size of the particle or particles; and the wavelength of the incoming radiation.'
+Paragraph
 Section [0] See also
 Text: '
 '
@@ -1043,9 +1011,7 @@ End Reference: Daisyworld
 End List
 Begin Template: div col end
 End Template: div col end
-Text: '
-
-'
+Paragraph
 Section [0] References
 Text: '
 '
@@ -1330,9 +1296,7 @@ Text: '
 
 '
 End Template: Reflist
-Text: '
-
-'
+Paragraph
 Section [0] External links
 Text: '
 '
@@ -1374,9 +1338,7 @@ End Link: http://jeff.medkeff.com/astro/lunar/obs_tech/albedo.htm
 End List
 Begin Template: Global warming
 End Template: Global warming
-Text: '
-
-'
+Paragraph
 Begin Reference: Category:Climate forcing
 End Reference: Category:Climate forcing
 Text: '
@@ -1399,9 +1361,7 @@ Text: '
 '
 Begin Reference: Category:Radiation
 End Reference: Category:Radiation
-Text: '
-
-'
+Paragraph
 Begin Reference: als:Albedo
 End Reference: als:Albedo
 Text: '

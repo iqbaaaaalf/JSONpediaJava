@@ -136,9 +136,7 @@ Text: '
 '
 End Template: Infobox person
 
-Text: '
-
-'
+Paragraph
 ItalicBold: 3
 Text: 'Sir Timothy John "Tim" Berners-Lee'
 ItalicBold: 3
@@ -217,9 +215,8 @@ Text: 'server'
 End Reference: Web server
 Text: ' via the Internet.'
 Inline Tag: ref attributes: [name : 'AFP']
-Text: '
-
-Berners-Lee is the director of the '
+Paragraph
+Text: 'Berners-Lee is the director of the '
 Begin Reference: World Wide Web Consortium
 End Reference: World Wide Web Consortium
 Text: ' (W3C), which oversees the Web's continued development. He is also the founder of the '
@@ -296,9 +293,8 @@ k: accessdate
 Text: '15 August 2010'
 End Template: cite web
 Close Tag: ref
-Text: '
-
-In 2004, Berners-Lee was '
+Paragraph
+Text: 'In 2004, Berners-Lee was '
 Begin Reference: Order of the British Empire
 k: null
 Text: 'knighted'
@@ -339,9 +335,7 @@ k: url
 Text: 'http://www8.nationalacademies.org/onpinews/newsitem.aspx?RecordID=04282009'
 End Template: cite press release
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [0] Early life
 Text: '
 Tim Berners-Lee was born in southwest London, England, on 8 June 1955, the son of '
@@ -363,9 +357,7 @@ Begin Reference: The Queen's College, Oxford
 End Reference: The Queen's College, Oxford
 Text: ', from 1973 to 1976, where he received a first-class degree in Physics.'
 Inline Tag: ref attributes: [name : 'W3Bio']
-Text: '
-
-'
+Paragraph
 Section [0] Career
 Text: '
 '
@@ -416,9 +408,8 @@ k: accessdate
 Text: '22 July 2010'
 End Template: cite web
 Close Tag: ref
-Text: '
-
-After leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.'
+Paragraph
+Text: 'After leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.'
 Open Tag: ref attributes: [name : 'faq']
 Begin Template: cite web
 k: title
@@ -444,9 +435,8 @@ Text: 'ing.'
 Inline Tag: ref attributes: [name : 'faq']
 Text: ' In 1984 he returned to CERN as a fellow.'
 Inline Tag: ref attributes: [name : 'linvinginternet']
-Text: '
-
-In 1989, CERN was the largest Internet node in Europe, and Berners-Lee saw an opportunity to join hypertext with the Internet: "I just had to take the hypertext idea and connect it to the '
+Paragraph
+Text: 'In 1989, CERN was the largest Internet node in Europe, and Berners-Lee saw an opportunity to join hypertext with the Internet: "I just had to take the hypertext idea and connect it to the '
 Begin Reference: Transmission Control Protocol
 End Reference: Transmission Control Protocol
 Text: ' and '
@@ -519,9 +509,8 @@ Begin Reference: Daemon (computer software)
 k: null
 Text: 'daemon'
 End Reference: Daemon (computer software)
-Text: ').
-
-'
+Text: ').'
+Paragraph
 Begin Template: quotation
 k: null
 Text: '" Mike Sendall buys a NeXT cube for evaluation, and gives it to Tim '
@@ -536,9 +525,8 @@ Text: ' Chapter 4: Birth of the Web'
 Close Tag: ref
 Text: ' '
 End Template: quotation
-Text: '
-
-The first '
+Paragraph
+Text: 'The first '
 Begin Reference: web site
 End Reference: web site
 Text: ' built was at CERN within the border of France'
@@ -612,9 +600,8 @@ k: accessdate
 Text: '25 May 2008'
 End Template: cite web
 Close Tag: ref
-Text: '
-
-In 1994, Berners-Lee founded the W3C at MIT. It comprised various companies that were willing to create standards and recommendations to improve the quality of the Web. Berners-Lee made his idea available freely, with no patent and no royalties due. The World Wide Web Consortium decided that its standards should be based on royalty-free technology, so that they could easily be adopted by anyone.'
+Paragraph
+Text: 'In 1994, Berners-Lee founded the W3C at MIT. It comprised various companies that were willing to create standards and recommendations to improve the quality of the Web. Berners-Lee made his idea available freely, with no patent and no royalties due. The World Wide Web Consortium decided that its standards should be based on royalty-free technology, so that they could easily be adopted by anyone.'
 Open Tag: ref attributes: []
 Begin Template: cite web
 k: title
@@ -629,9 +616,8 @@ k: accessdate
 Text: '25 May 2008'
 End Template: cite web
 Close Tag: ref
-Text: '
-
-In 2001, Berners-Lee became a patron of the East Dorset Heritage Trust, having previously lived in '
+Paragraph
+Text: 'In 2001, Berners-Lee became a patron of the East Dorset Heritage Trust, having previously lived in '
 Begin Reference: Colehill
 End Reference: Colehill
 Text: ' in '
@@ -651,9 +637,8 @@ Text: 'Icons of invention: the makers of the modern world from Gutenberg to Gate
 End Link: http://books.google.com/books?id=WKuG-VIwID8C&pg=PA611&dq=tim+berners+lee++-+east+dorset+heritage+trust&hl=en&ei=0cE9TtyhIcyo8QPQx_zgDA&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCoQ6AEwAA#v=onepage&q=tim%20berners%20lee%20%20-%20east%20dorset%20heritage%20trust&f=false
 Text: ' p.611. ABC-CLIO, 2009'
 Close Tag: ref
-Text: '
-
-In December 2004, he accepted a chair in Computer Science at the School of Electronics and Computer Science, '
+Paragraph
+Text: 'In December 2004, he accepted a chair in Computer Science at the School of Electronics and Computer Science, '
 Begin Reference: University of Southampton
 End Reference: University of Southampton
 Text: ', England, to work on his new project, the '
@@ -680,9 +665,7 @@ k: accessdate
 Text: '25 May 2008  '
 End Template: cite web
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [0]  Current work 
 Text: '
 '
@@ -745,9 +728,8 @@ k: accessdate
 Text: '3 April 2009  '
 End Template: cite news
 Close Tag: ref
-Text: '
-
-In November 2009, Berners-Lee launched the World Wide Web Foundation in order to "Advance the Web to empower humanity by launching transformative programs that build local capacity to leverage the Web as a medium for positive change."'
+Paragraph
+Text: 'In November 2009, Berners-Lee launched the World Wide Web Foundation in order to "Advance the Web to empower humanity by launching transformative programs that build local capacity to leverage the Web as a medium for positive change."'
 Open Tag: ref attributes: []
 Begin Link: http://www.webfoundation.org/about/faq/
 k: null
@@ -755,9 +737,8 @@ Text: 'FAQ—World Wide Web Foundation'
 End Link: http://www.webfoundation.org/about/faq/
 Text: ' Retrieved 18 January 2011'
 Close Tag: ref
-Text: '
-
-Berners-Lee is one of the pioneer voices in favour of '
+Paragraph
+Text: 'Berners-Lee is one of the pioneer voices in favour of '
 Begin Reference: Net Neutrality
 End Reference: Net Neutrality
 Text: ','
@@ -847,9 +828,8 @@ k: accessdate
 Text: '2011-12-21'
 End Template: cite web
 Close Tag: ref
-Text: '
-
-In a '
+Paragraph
+Text: 'In a '
 ItalicBold: 2
 Begin Reference: The Times
 k: null
@@ -871,9 +851,7 @@ k: accessdate
 Text: '14 October 2009'
 End Template: cite news
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [0] Recognition
 Text: '
 '
@@ -1513,9 +1491,7 @@ Text: '25 May 2008 '
 End Template: cite web
   
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Section [0]  See also 
 Text: '
 '
@@ -1635,9 +1611,7 @@ Begin Template: Reflist
 k: colwidth
 Text: '35em'
 End Template: Reflist
-Text: '
-
-'
+Paragraph
 Section [0]  Further reading 
 Text: '
 '
@@ -1682,9 +1656,7 @@ Text: '
 '
 Begin Template: Wikiquote
 End Template: Wikiquote
-Text: '
-
-'
+Paragraph
 Begin List
 List Item: Unordered 1
 Begin Template: Twitter
@@ -1770,9 +1742,7 @@ Text: '
 '
 Begin Template: Telecommunications
 End Template: Telecommunications
-Text: '
-
-'
+Paragraph
 Begin Template: Use dmy dates
 k: date
 Text: 'December 2011'
@@ -1783,9 +1753,7 @@ Begin Template: Use British English
 k: date
 Text: 'December 2011'
 End Template: Use British English
-Text: '
-
-'
+Paragraph
 Begin Template: Persondata <!-- Metadata: see [[Wikipedia:Persondata]]. -->
 
 k: NAME              
@@ -1907,9 +1875,7 @@ Text: '
 '
 Begin Reference: Category:Unitarian Universalists
 End Reference: Category:Unitarian Universalists
-Text: '
-
-'
+Paragraph
 Begin Reference: af:Tim Berners-Lee
 End Reference: af:Tim Berners-Lee
 Text: '

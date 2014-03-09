@@ -258,6 +258,9 @@
                 ]
             }
         },
+        {
+            "__type": "paragraph"
+        },
         "<b>",
         "Sir Timothy John \"Tim\" Berners-Lee",
         "</b>",
@@ -422,6 +425,9 @@
                 }
             ]
         },
+        {
+            "__type": "paragraph"
+        },
         "Berners-Lee is the director of the",
         {
             "__type": "reference",
@@ -582,6 +588,9 @@
             "__type": "close_tag",
             "name": "ref"
         },
+        {
+            "__type": "paragraph"
+        },
         "In 2004, Berners-Lee was",
         {
             "__type": "reference",
@@ -677,6 +686,9 @@
             "name": "ref"
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Early life",
             "level": 0
@@ -730,6 +742,9 @@
                     "name": "W3Bio"
                 }
             ]
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -832,6 +847,9 @@
             "__type": "close_tag",
             "name": "ref"
         },
+        {
+            "__type": "paragraph"
+        },
         "After leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.",
         {
             "__type": "open_tag",
@@ -896,6 +914,9 @@
                     "name": "linvinginternet"
                 }
             ]
+        },
+        {
+            "__type": "paragraph"
         },
         "In 1989, CERN was the largest Internet node in Europe, and Berners-Lee saw an opportunity to join hypertext with the Internet: \"I just had to take the hypertext idea and connect it to the",
         {
@@ -1048,6 +1069,9 @@
         },
         ").",
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "template",
             "name": "quotation",
             "content": {
@@ -1080,6 +1104,9 @@
                     }
                 ]
             }
+        },
+        {
+            "__type": "paragraph"
         },
         "The first",
         {
@@ -1242,6 +1269,9 @@
             "__type": "close_tag",
             "name": "ref"
         },
+        {
+            "__type": "paragraph"
+        },
         "In 1994, Berners-Lee founded the W3C at MIT. It comprised various companies that were willing to create standards and recommendations to improve the quality of the Web. Berners-Lee made his idea available freely, with no patent and no royalties due. The World Wide Web Consortium decided that its standards should be based on royalty-free technology, so that they could easily be adopted by anyone.",
         {
             "__type": "open_tag",
@@ -1272,6 +1302,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         "In 2001, Berners-Lee became a patron of the East Dorset Heritage Trust, having previously lived in",
         {
@@ -1315,6 +1348,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         "In December 2004, he accepted a chair in Computer Science at the School of Electronics and Computer Science,",
         {
@@ -1376,6 +1412,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -1498,6 +1537,9 @@
             "__type": "close_tag",
             "name": "ref"
         },
+        {
+            "__type": "paragraph"
+        },
         "In November 2009, Berners-Lee launched the World Wide Web Foundation in order to \"Advance the Web to empower humanity by launching transformative programs that build local capacity to leverage the Web as a medium for positive change.\"",
         {
             "__type": "open_tag",
@@ -1517,6 +1559,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         "Berners-Lee is one of the pioneer voices in favour of",
         {
@@ -1689,6 +1734,9 @@
             "__type": "close_tag",
             "name": "ref"
         },
+        {
+            "__type": "paragraph"
+        },
         "In a",
         "<i>",
         {
@@ -1731,6 +1779,9 @@
         {
             "__type": "close_tag",
             "name": "ref"
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "section",
@@ -3042,6 +3093,9 @@
             "name": "ref"
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "See also",
             "level": 0
@@ -3305,6 +3359,9 @@
             }
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "section",
             "title": "Further reading",
             "level": 0
@@ -3412,6 +3469,9 @@
             "__type": "template",
             "name": "Wikiquote",
             "content": {}
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "list",
@@ -3602,6 +3662,9 @@
             "content": {}
         },
         {
+            "__type": "paragraph"
+        },
+        {
             "__type": "template",
             "name": "Use dmy dates",
             "content": {
@@ -3618,6 +3681,9 @@
                     "December 2011"
                 ]
             }
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "template",
@@ -3768,6 +3834,9 @@
             "__type": "reference",
             "label": "Category:Unitarian Universalists",
             "content": {}
+        },
+        {
+            "__type": "paragraph"
         },
         {
             "__type": "reference",

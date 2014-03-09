@@ -14,6 +14,10 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void paragraph() {
+    }
+
+    @Override
     public void parseWarning(String msg, ParserLocation location) {
     }
 

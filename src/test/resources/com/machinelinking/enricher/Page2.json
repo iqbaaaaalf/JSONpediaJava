@@ -1523,6 +1523,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "comment_tag",
                     "comment": "Paragraph 2/4: Notable 'firsts' and strengths:"
                 },
@@ -2023,6 +2026,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "comment_tag",
                     "comment": "Paragraph 3/4: Population, people and demographics:"
                 },
@@ -2404,6 +2410,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "comment_tag",
                     "comment": "Paragraph 4/4: Places, landmarks and cultural institutions:"
                 },
@@ -2720,6 +2729,9 @@
                     }
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "History",
                     "level": 0
@@ -2732,6 +2744,9 @@
                             "History of London"
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -2909,6 +2924,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "From 1898 it was commonly accepted that the name was of",
                 {
                     "__type": "reference",
@@ -3049,7 +3067,11 @@
                         ]
                     }
                 },
-                "The possibility cannot be ruled out that the Welsh name was borrowed back in from English at a later date, and thus cannot be used as a basis from which to reconstruct the original name.\n\nUntil 1889 the name \"London\" officially only applied to the",
+                "The possibility cannot be ruled out that the Welsh name was borrowed back in from English at a later date, and thus cannot be used as a basis from which to reconstruct the original name.",
+                {
+                    "__type": "paragraph"
+                },
+                "Until 1889 the name \"London\" officially only applied to the",
                 {
                     "__type": "reference",
                     "label": "City of London",
@@ -3076,6 +3098,9 @@
                             "name": "mills_140"
                         }
                     ]
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -3345,6 +3370,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "It is likely that there was a harbour at the mouth of the",
                 {
                     "__type": "reference",
@@ -3514,6 +3542,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "Two recent discoveries indicate that London could be much older than previously thought. In 1999 the remains of a",
                 {
                     "__type": "reference",
@@ -3578,7 +3609,11 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
-                "This bridge either crossed the Thames, or went to a (lost) island in the river. Dendrology dated the timbers to 1500BC.\n\nIn 2010 the foundations of a large timber structure, dated to 4500BC, were found on the Thames foreshore, South of Vauxhall Bridge.",
+                "This bridge either crossed the Thames, or went to a (lost) island in the river. Dendrology dated the timbers to 1500BC.",
+                {
+                    "__type": "paragraph"
+                },
+                "In 2010 the foundations of a large timber structure, dated to 4500BC, were found on the Thames foreshore, South of Vauxhall Bridge.",
                 {
                     "__type": "open_tag",
                     "name": "ref",
@@ -3637,6 +3672,9 @@
                     "value": " "
                 },
                 "km upstream from the Roman City of London. The effort required to construct these structures implies trade, stability, and a community size of several hundred people at least.",
+                {
+                    "__type": "paragraph"
+                },
                 {
                     "__type": "section",
                     "title": "Middle Ages",
@@ -3764,7 +3802,11 @@
                     "label": "Wessex",
                     "content": {}
                 },
-                ".\n\nIn the 11th century King",
+                ".",
+                {
+                    "__type": "paragraph"
+                },
+                "In the 11th century King",
                 {
                     "__type": "reference",
                     "label": "Edward the Confessor",
@@ -3848,6 +3890,9 @@
                             "and one of London's oldest and most important buildings as seen in this painting (Canaletto, 1749)"
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "Following his victory in the",
                 {
@@ -4068,6 +4113,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "During the 12th century the institutions of central government, which had hitherto accompanied the royal court as it moved around the country, grew in size and sophistication and became increasingly fixed in one place. In most cases this was Westminster, although the royal treasury, having been moved from Winchester, came to rest in the Tower. While the",
                 {
                     "__type": "reference",
@@ -4139,6 +4187,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "Disaster struck during the",
                 {
@@ -4232,6 +4283,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -4434,6 +4488,9 @@
                         }
                     ]
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "In the 16th century",
                 {
                     "__type": "reference",
@@ -4614,6 +4671,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "The",
                 {
@@ -4872,7 +4932,11 @@
                     "label": "Port of London",
                     "content": {}
                 },
-                "expanded downstream.\n\nIn 1762",
+                "expanded downstream.",
+                {
+                    "__type": "paragraph"
+                },
+                "In 1762",
                 {
                     "__type": "reference",
                     "label": "George III of Great Britain",
@@ -5045,7 +5109,14 @@
                     "label": "Fleet Street",
                     "content": {}
                 },
-                "became the centre of the British press.\n\nAccording to Samuel Johnson:",
+                "became the centre of the British press.",
+                {
+                    "__type": "paragraph"
+                },
+                "According to Samuel Johnson:",
+                {
+                    "__type": "paragraph"
+                },
                 {
                     "__type": "template",
                     "name": "quote",
@@ -5099,6 +5170,9 @@
                             }
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -5283,7 +5357,11 @@
                         ]
                     }
                 },
-                ", at a time when the city had barely recovered from the war.\n\nIn 1951 the",
+                ", at a time when the city had barely recovered from the war.",
+                {
+                    "__type": "paragraph"
+                },
+                "In 1951 the",
                 {
                     "__type": "reference",
                     "label": "Festival of Britain",
@@ -5345,7 +5423,11 @@
                     "label": "Pakistan",
                     "content": {}
                 },
-                ", making London one of the most diverse cities in Europe.\n\nPrimarily starting in the mid-1960s, London became a centre for the worldwide",
+                ", making London one of the most diverse cities in Europe.",
+                {
+                    "__type": "paragraph"
+                },
+                "Primarily starting in the mid-1960s, London became a centre for the worldwide",
                 {
                     "__type": "reference",
                     "label": "youth culture",
@@ -5457,7 +5539,11 @@
                     "label": "Canary Wharf",
                     "content": {}
                 },
-                "development. This was borne out of London's ever-increasing role as a major international financial centre during the 1980s.\n\nThe",
+                "development. This was borne out of London's ever-increasing role as a major international financial centre during the 1980s.",
+                {
+                    "__type": "paragraph"
+                },
+                "The",
                 {
                     "__type": "reference",
                     "label": "Thames Barrier",
@@ -5566,6 +5652,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "London hosted the",
                 {
                     "__type": "reference",
@@ -5580,6 +5669,9 @@
                 },
                 "three times.",
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Government",
                     "level": 0
@@ -5588,6 +5680,9 @@
                     "__type": "template",
                     "name": "Politics of London",
                     "content": {}
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -5855,6 +5950,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "Policing in Greater London, with the exception of the",
                 {
                     "__type": "reference",
@@ -5985,6 +6083,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "The",
                 {
@@ -6235,6 +6336,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "National government",
                     "level": 1
@@ -6381,6 +6485,9 @@
                     "comment": " **Incomplete sentence** There are 74 Members of Parliament (MPs) from London, who correspond to local parliamentary [[List of Parliamentary constituencies in Greater London|constituencies]] in the national [[British House of Commons|Parliament]] by .<ref name=london_038>{{cite news|url=http://news.bbc.co.uk/1/hi/programmes/politics_show/4293078.stm|title=London: Ethnic vote |date=30 September 2005|publisher=BBC |accessdate=12 October 2008|first=Khevyn|last=Limbajee| archiveurl = http://www.webcitation.org/5yo0lawX5 | archivedate = 19 May 2011| deadurl=no}}</ref> Of these 74 MPs, 44 are from the [[Labour Party (UK)|Labour Party]], 21 are [[Conservative Party (UK)|Conservatives]], 8 are [[Liberal Democrats]] and one is from the [[Respect&amp;nbsp;– The Unity Coalition|RESPECT]] party."
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Geography",
                     "level": 0
@@ -6393,6 +6500,9 @@
                             "Geography of London"
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -6584,6 +6694,9 @@
                         ]
                     }
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "The London telephone area code (020) covers a larger area, similar in size to Greater London, although some outer districts are omitted and some places just outside are included. The area within the orbital",
                 {
                     "__type": "reference",
@@ -6681,6 +6794,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "Outward urban expansion is now prevented by the",
                 {
@@ -6967,6 +7083,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Status",
                     "level": 1
@@ -7201,6 +7320,9 @@
                         ]
                     }
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "Its position was formed through",
                 {
                     "__type": "reference",
@@ -7332,6 +7454,9 @@
                             "name": "region"
                         }
                     ]
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -7560,6 +7685,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "Since the",
                 {
                     "__type": "reference",
@@ -7697,6 +7825,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "In 1974, a decade of work began on the construction of the",
                 {
                     "__type": "reference",
@@ -7760,6 +7891,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -7913,7 +8047,11 @@
                         ]
                     }
                 },
-                ") in Northolt and the heaviest snow seen for almost two decades, a huge strain on London's transport infrastructure.\n\nSummers are generally warm and sometimes hot, the heat being boosted by the",
+                ") in Northolt and the heaviest snow seen for almost two decades, a huge strain on London's transport infrastructure.",
+                {
+                    "__type": "paragraph"
+                },
+                "Summers are generally warm and sometimes hot, the heat being boosted by the",
                 {
                     "__type": "reference",
                     "label": "urban heat island",
@@ -7976,7 +8114,11 @@
                         ]
                     }
                 },
-                ". Temperatures of 26 °C (80 °F) usually occur on a weekly basis from mid- June to late August.\n\nDuring the",
+                ". Temperatures of 26 °C (80 °F) usually occur on a weekly basis from mid- June to late August.",
+                {
+                    "__type": "paragraph"
+                },
+                "During the",
                 {
                     "__type": "reference",
                     "label": "2003 European heat wave",
@@ -8098,9 +8240,15 @@
                 },
                 ".",
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "template",
                     "name": "London weatherbox",
                     "content": {}
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -8115,6 +8263,9 @@
                             "List of districts of London"
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "table",
@@ -8816,7 +8967,11 @@
                         ]
                     }
                 },
-                ".\n\nSuch names have remained in use through tradition, each referring to a local area with its own distinctive character, but without current official boundaries. Since 1965 Greater London has been divided into 32",
+                ".",
+                {
+                    "__type": "paragraph"
+                },
+                "Such names have remained in use through tradition, each referring to a local area with its own distinctive character, but without current official boundaries. Since 1965 Greater London has been divided into 32",
                 {
                     "__type": "reference",
                     "label": "London borough",
@@ -8963,7 +9118,11 @@
                         ]
                     }
                 },
-                "to the east.\n\nThe",
+                "to the east.",
+                {
+                    "__type": "paragraph"
+                },
+                "The",
                 {
                     "__type": "reference",
                     "label": "West End of London",
@@ -9136,6 +9295,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "The",
                 {
                     "__type": "reference",
@@ -9257,6 +9419,9 @@
                             "name": "East End"
                         }
                     ]
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -9472,7 +9637,11 @@
                     "label": "Barbican Estate",
                     "content": {}
                 },
-                "form part of the varied architectural heritage.\n\nThe disused, but soon to be rejuvenated, 1939",
+                "form part of the varied architectural heritage.",
+                {
+                    "__type": "paragraph"
+                },
+                "The disused, but soon to be rejuvenated, 1939",
                 {
                     "__type": "reference",
                     "label": "Battersea Power Station",
@@ -9575,6 +9744,9 @@
                     }
                 },
                 ".",
+                {
+                    "__type": "paragraph"
+                },
                 {
                     "__type": "reference",
                     "label": "The Monument",
@@ -9708,6 +9880,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "reference",
                     "label": "File:Buckingham Palace, London - April 2009.jpg",
                     "content": {
@@ -9796,7 +9971,11 @@
                         ]
                     }
                 },
-                ".\n\nOther notable modern buildings include",
+                ".",
+                {
+                    "__type": "paragraph"
+                },
+                "Other notable modern buildings include",
                 {
                     "__type": "reference",
                     "label": "City Hall (London)",
@@ -9899,6 +10078,9 @@
                     }
                 },
                 ".",
+                {
+                    "__type": "paragraph"
+                },
                 {
                     "__type": "section",
                     "title": "Parks and gardens",
@@ -10114,6 +10296,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "Closer to central London are the smaller Royal Parks of",
                 {
@@ -10342,7 +10527,11 @@
                     "label": "Primrose Hill",
                     "content": {}
                 },
-                "to the north of Regent's Park is a popular spot to view the city skyline.\n\nSome more informal, semi-natural open spaces also exist, including the",
+                "to the north of Regent's Park is a popular spot to view the city skyline.",
+                {
+                    "__type": "paragraph"
+                },
+                "Some more informal, semi-natural open spaces also exist, including the",
                 {
                     "__type": "template",
                     "name": "convert",
@@ -10463,6 +10652,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Demography",
                     "level": 0
@@ -10567,6 +10759,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "However, London's continuous urban area extends beyond the borders of Greater London and was home to 8,278,251 people in 2001,",
                 {
@@ -10734,6 +10929,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "The region covers an area of",
                 {
@@ -10967,6 +11165,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Ethnic groups",
                     "level": 1
@@ -11162,6 +11363,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "Across London,",
                 {
                     "__type": "reference",
@@ -11344,7 +11548,11 @@
                         ]
                     }
                 },
-                ", London's foreign-born population is 2,650,000 (33 per cent), up from 1,630,000 in 1997.\n\nThe 2001 census showed that 27.1 per cent of",
+                ", London's foreign-born population is 2,650,000 (33 per cent), up from 1,630,000 in 1997.",
+                {
+                    "__type": "paragraph"
+                },
+                "The 2001 census showed that 27.1 per cent of",
                 {
                     "__type": "reference",
                     "label": "Greater London",
@@ -11535,6 +11743,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -11748,6 +11959,9 @@
                         ]
                     }
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "The majority of Londoners",
                 {
                     "__type": "entity",
@@ -11853,6 +12067,9 @@
                             "name": "Religion"
                         }
                     ]
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "London has traditionally been Christian, and has a",
                 {
@@ -11994,6 +12211,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "Important national and royal ceremonies are shared between St Paul's and Westminster Abbey.",
                 {
@@ -12139,6 +12359,9 @@
                             }
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "London is also home to sizeable Muslim,",
                 {
@@ -12459,6 +12682,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "The majority of",
                 {
                     "__type": "reference",
@@ -12614,6 +12840,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Economy",
                     "level": 0
@@ -12674,6 +12903,9 @@
                             }
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "London generates approximately 20 per cent of",
                 {
@@ -12887,6 +13119,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "London's largest industry is finance, and its",
                 {
                     "__type": "reference",
@@ -12979,7 +13214,11 @@
                     "label": "Lloyd's of London",
                     "content": {}
                 },
-                "insurance market.\n\nOver half of the UK's top 100 listed companies (the",
+                "insurance market.",
+                {
+                    "__type": "paragraph"
+                },
+                "Over half of the UK's top 100 listed companies (the",
                 {
                     "__type": "reference",
                     "label": "FTSE 100",
@@ -13064,6 +13303,9 @@
                         ],
                         "alt": null
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "Along with",
                 {
@@ -13221,6 +13463,9 @@
                         }
                     ]
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "London has five major business districts: the City, Westminster, Canary Wharf, Camden",
                 "&",
                 "Islington and Lambeth",
@@ -13322,6 +13567,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -13861,6 +14109,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "The lines that formed the London Underground, as well as trams and buses, became part of an integrated transport system in 1933 when the",
                 {
                     "__type": "reference",
@@ -13928,6 +14179,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -14256,6 +14510,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "Similar traffic, with the addition of some",
                 {
                     "__type": "reference",
@@ -14323,6 +14580,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "reference",
@@ -14504,6 +14764,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "reference",
                     "label": "London Southend Airport",
                     "content": {}
@@ -14521,6 +14784,9 @@
                     "content": {}
                 },
                 "currently have a base at the airport.",
+                {
+                    "__type": "paragraph"
+                },
                 {
                     "__type": "section",
                     "title": "Buses and trams",
@@ -14766,6 +15032,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "London has a modern tram network, known as",
                 {
                     "__type": "reference",
@@ -14838,6 +15107,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Cycling",
                     "level": 1
@@ -14855,9 +15127,15 @@
                 },
                 "scheme in July 2010 has been successful and generally well received.",
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Port",
                     "level": 1
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "From being the largest port in the world, the",
                 {
@@ -14913,6 +15191,9 @@
                     "content": {}
                 },
                 ", outside the boundary of Greater London.",
+                {
+                    "__type": "paragraph"
+                },
                 {
                     "__type": "section",
                     "title": "Rail",
@@ -15119,6 +15400,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "Over three million journeys are made every day on the Underground network, over 1",
                 {
                     "__type": "entity",
@@ -15285,7 +15569,11 @@
                     "label": "Greenwich",
                     "content": {}
                 },
-                ".\n\nThere is an extensive above-ground suburban railway network, particularly in South London, which has fewer Underground lines. London houses Britain's busiest station",
+                ".",
+                {
+                    "__type": "paragraph"
+                },
+                "There is an extensive above-ground suburban railway network, particularly in South London, which has fewer Underground lines. London houses Britain's busiest station",
                 {
                     "__type": "entity",
                     "form": "nbsp",
@@ -15500,6 +15788,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "Since 2007 high-speed",
                 {
                     "__type": "reference",
@@ -15642,6 +15933,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -15852,7 +16146,11 @@
                         ]
                     }
                 },
-                ".\n\nA plan for a comprehensive network of motorways throughout the city (the",
+                ".",
+                {
+                    "__type": "paragraph"
+                },
+                "A plan for a comprehensive network of motorways throughout the city (the",
                 {
                     "__type": "reference",
                     "label": "London Ringways",
@@ -16101,6 +16399,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Education",
                     "level": 0
@@ -16113,6 +16414,9 @@
                             "Education in London"
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -16195,6 +16499,9 @@
                             "name": "londonhigher"
                         }
                     ]
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "A number of world-leading education institutions are based in London. In the 2011",
                 "<i>",
@@ -16369,6 +16676,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "With 125,000 students, the federal",
                 {
@@ -16590,7 +16900,11 @@
                         ]
                     }
                 },
-                "procedures, and some award their own degrees.\n\nThere are a number of universities in London which are outside of the University of London system, including",
+                "procedures, and some award their own degrees.",
+                {
+                    "__type": "paragraph"
+                },
+                "There are a number of universities in London which are outside of the University of London system, including",
                 {
                     "__type": "reference",
                     "label": "Brunel University",
@@ -16746,6 +17060,9 @@
                     "content": {}
                 },
                 ".",
+                {
+                    "__type": "paragraph"
+                },
                 {
                     "__type": "reference",
                     "label": "File:Royal College of Music - April 2007.jpg",
@@ -16985,6 +17302,9 @@
                 },
                 ".",
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Primary and secondary education",
                     "level": 1
@@ -17041,6 +17361,9 @@
                 },
                 ".",
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Culture",
                     "level": 0
@@ -17053,6 +17376,9 @@
                             "Culture of London"
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -17139,6 +17465,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -17379,6 +17708,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "reference",
                     "label": "File:Harrods, London - June 2009.jpg",
                     "content": {
@@ -17589,7 +17921,11 @@
                     "label": "department store",
                     "content": {}
                 },
-                ", lies to the southwest.\n\nLondon is home to designers",
+                ", lies to the southwest.",
+                {
+                    "__type": "paragraph"
+                },
+                "London is home to designers",
                 {
                     "__type": "reference",
                     "label": "Vivienne Westwood",
@@ -17697,6 +18033,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "There is a variety of",
                 {
@@ -17819,6 +18158,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -17986,6 +18328,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "The pilgrims in",
                 {
                     "__type": "reference",
@@ -18135,7 +18480,11 @@
                     "label": "psychogeography",
                     "content": {}
                 },
-                ".\n\nLondon was the setting for the films",
+                ".",
+                {
+                    "__type": "paragraph"
+                },
+                "London was the setting for the films",
                 "<i>",
                 {
                     "__type": "reference",
@@ -18384,6 +18733,9 @@
                 "</i>",
                 ".",
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Museums and art galleries",
                     "level": 1
@@ -18513,6 +18865,9 @@
                     "content": {}
                 },
                 ".",
+                {
+                    "__type": "paragraph"
+                },
                 {
                     "__type": "section",
                     "title": "Music",
@@ -18671,6 +19026,9 @@
                     "content": {}
                 },
                 ".",
+                {
+                    "__type": "paragraph"
+                },
                 {
                     "__type": "reference",
                     "label": "File:The O2 Arena, entrance.jpg",
@@ -18978,6 +19336,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "London was instrumental in the development of",
                 {
                     "__type": "reference",
@@ -19260,6 +19621,9 @@
                     "content": {}
                 },
                 "was set up to support the rise of home-grown urban music both in London and the rest of the UK.",
+                {
+                    "__type": "paragraph"
+                },
                 {
                     "__type": "section",
                     "title": "Sports",
@@ -19550,6 +19914,9 @@
                     "__type": "close_tag",
                     "name": "ref"
                 },
+                {
+                    "__type": "paragraph"
+                },
                 "London's most popular sport is",
                 {
                     "__type": "reference",
@@ -19679,6 +20046,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "London also has four",
                 {
@@ -19825,6 +20195,9 @@
                 },
                 ".",
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "reference",
                     "label": "File:Wembley Stadium, illuminated.jpg",
                     "content": {
@@ -19852,6 +20225,9 @@
                             }
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "There are currently three professional",
                 {
@@ -19933,7 +20309,11 @@
                     "label": "Championship One",
                     "content": {}
                 },
-                "from 2013.\n\nFrom 1924, the original",
+                "from 2013.",
+                {
+                    "__type": "paragraph"
+                },
+                "From 1924, the original",
                 {
                     "__type": "reference",
                     "label": "Wembley Stadium (1923)",
@@ -20124,6 +20504,9 @@
                 {
                     "__type": "close_tag",
                     "name": "ref"
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "reference",
@@ -20475,6 +20858,9 @@
                     "name": "ref"
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "Twin cities",
                     "level": 0
@@ -20490,6 +20876,9 @@
                             "List of towns and cities twinned with London"
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 "There are 46 other places on six continents named after London.",
                 {
@@ -21636,6 +22025,9 @@
                     "content": {}
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "See also",
                     "level": 0
@@ -21681,6 +22073,9 @@
                     }
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "section",
                     "title": "References",
                     "level": 0
@@ -21693,6 +22088,9 @@
                             "30em"
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "section",
@@ -22023,6 +22421,9 @@
                     }
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "reference",
                     "label": "Category:London",
                     "content": {
@@ -22080,6 +22481,9 @@
                     "content": {}
                 },
                 {
+                    "__type": "paragraph"
+                },
+                {
                     "__type": "template",
                     "name": "Link FA",
                     "content": {
@@ -22132,6 +22536,9 @@
                             "no"
                         ]
                     }
+                },
+                {
+                    "__type": "paragraph"
                 },
                 {
                     "__type": "reference",
@@ -23167,7 +23574,7 @@
         }
     ],
     "issues": null,
-    "abstract": "\n\n\n\n\n\nLondon  is the capital city of  and the , the largest  in the United Kingdom, and the largest urban zone in the  by most measures. Located on the , London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.  London's ancient core, the , largely retains its square-mile  boundaries. Since at least the 19th century, the name London has also referred to the metropolis developed around this core. The bulk of this  forms the London region  and the  administrative area,See also: . governed by the elected  and the .\n\n\nLondon is a leading , with strengths in the arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism and transport all contributing to its prominence. It is the world's leading  alongside  and has the fifth-largest metropolitan area GDP in the world, and the largest in Europe. London has been described as a world cultural capital. It is the world's most-visited city and has the world's largest city airport system measured by passenger traffic. London's 43 universities form the largest concentration of higher education in Europe. In 2012 London became the first city to host the modern  three times.\n\n\nLondon has a diverse range of peoples and cultures, and more than 300 languages are spoken within its boundaries. In March 2011, London had an official population of 8,174,100, making it the most populous municipality in the European Union, and accounting for 12.5% of the UK population. The  is the second-largest in the EU with a population of 8,278,251, while the  is the largest in the EU with an estimated total population of between 12million and 14million. London had the largest population of any city in the world from around 1831 to 1925.\n\n\nLondon contains four s: the ; Kew Gardens; the site comprising the , , and St Margaret's Church; and the historic settlement of  (in which the Royal Observatory marks the , 0° , and ). Other famous landmarks include , the , , , ,  and . London is home to numerous museums, galleries, libraries, sporting events and other cultural institutions, including the , , , , Wimbledon, and 40 West End theatres. The  is the oldest underground railway network in the world.\n\n\n\n\n\n\n\nthumbThe name ''London'' may derive from the \nThe etymology of ''London'' is uncertain. It is an ancient name and can be found in sources from the 2nd century. It is recorded c. 121 as , which points to  origin. The earliest attempted explanation, now disregarded, is attributed to  in . This had it that the name originated from a supposed King Lud, who had allegedly taken over the city and named it Kaerlud.",
+    "abstract": "\n\n\n\n\n\nLondon  is the capital city of  and the , the largest  in the United Kingdom, and the largest urban zone in the  by most measures. Located on the , London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.  London's ancient core, the , largely retains its square-mile  boundaries. Since at least the 19th century, the name London has also referred to the metropolis developed around this core. The bulk of this  forms the London region  and the  administrative area,See also: . governed by the elected  and the .\nLondon is a leading , with strengths in the arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism and transport all contributing to its prominence. It is the world's leading  alongside  and has the fifth-largest metropolitan area GDP in the world, and the largest in Europe. London has been described as a world cultural capital. It is the world's most-visited city and has the world's largest city airport system measured by passenger traffic. London's 43 universities form the largest concentration of higher education in Europe. In 2012 London became the first city to host the modern  three times.\nLondon has a diverse range of peoples and cultures, and more than 300 languages are spoken within its boundaries. In March 2011, London had an official population of 8,174,100, making it the most populous municipality in the European Union, and accounting for 12.5% of the UK population. The  is the second-largest in the EU with a population of 8,278,251, while the  is the largest in the EU with an estimated total population of between 12million and 14million. London had the largest population of any city in the world from around 1831 to 1925.\nLondon contains four s: the ; Kew Gardens; the site comprising the , , and St Margaret's Church; and the historic settlement of  (in which the Royal Observatory marks the , 0° , and ). Other famous landmarks include , the , , , ,  and . London is home to numerous museums, galleries, libraries, sporting events and other cultural institutions, including the , , , , Wimbledon, and 40 West End theatres. The  is the oldest underground railway network in the world.\n\n\n\nthumbThe name ''London'' may derive from the \nThe etymology of ''London'' is uncertain. It is an ancient name and can be found in sources from the 2nd century. It is recorded c. 121 as , which points to  origin. The earliest attempted explanation, now disregarded, is attributed to  in . This had it that the name originated from a supposed King Lud, who had allegedly taken over the city and named it Kaerlud.From 1898 it was commonly accepted that the name was of Celtic origin and meant place belonging to a man called *Londinos; this explanation has since been rejected.  put forward an explanation in 1998 that it is derived from the pre-Celtic Old European *(p)lowonida, meaning 'river too wide to ford', and suggested that this was a name given to the part of the  which flows through London; from this, the settlement gained the Celtic form of its name, *Lowonidonjon; this requires quite a serious amendment however. The ultimate difficulty lies in reconciling the Latin form Londinium with the modern Welsh Llundain, which should demand a form *(h)lōndinion (as opposed to *londīnion), from earlier *loundiniom; however this has proved difficult to interpret. The possibility cannot be ruled out that the Welsh name was borrowed back in from English at a later date, and thus cannot be used as a basis from which to reconstruct the original name.Until 1889 the name \"London\" officially only applied to the  but since then it has also referred to the  and now .\nthumbIn 1300 the City was still confined within the Roman walls.\nAlthough there is evidence of scattered Brythonic settlements in the area, the first major settlement was founded by the Romans in 43AD. This lasted for just seventeen years and around 61, the  tribe led by Queen Boudica stormed it, burning it to the ground. The next, heavily planned incarnation of the city prospered and superseded  as the capital of the Roman province of  in 100. At its height during the 2nd century, Roman London had a population of around 60,000. By the 7th century, the  had created a new settlement called Lundenwic over a mile (2km) upstream from the old Roman city, around what is now Covent Garden.It is likely that there was a harbour at the mouth of the  for fishing and trading, and this trading grew, until the city was overcome by the s and forced to move east, back to the location of the Roman Londinium, in order to use its walls for protection. Viking attacks continued to increase, until 886 when  recaptured London and made peace with the Danish leader, . The original Saxon city of Lundenwic became Ealdwic (\"old city\"), a name surviving to the present day as , which is in the modern .Two recent discoveries indicate that London could be much older than previously thought. In 1999 the remains of a  bridge were found on the foreshore north of . This bridge either crossed the Thames, or went to a (lost) island in the river. Dendrology dated the timbers to 1500BC.In 2010 the foundations of a large timber structure, dated to 4500BC, were found on the Thames foreshore, South of Vauxhall Bridge. The function of the mesolithic structure is not known, but it covers at least 50m x 10m, and numerous 30cm posts are visible at low tides. Both structures are on South Bank, at a natural crossing point where the River Effra flows into the River Thames, and 4km upstream from the Roman City of London. The effort required to construct these structures implies trade, stability, and a community size of several hundred people at least.\nthumbleftuprightThe Lancastrian siege of London in 1471 is attacked by a Yorkist sally.\nWith the collapse of Roman rule in the early 5th century, London was effectively abandoned. However, from the 6th century an  settlement known as Lundenwic developed slightly to the west of the old Roman city, around what is now  and the Strand, rising to a likely population of 10–12,000. In the 9th century London was repeatedly attacked by , leading to a relocation of the city back to the location of Roman Londinium, in order to use its walls for protection. Following the unification of England in the 10th century London, already the country's largest city and most important trading centre, became increasingly important as a political centre, although it still faced competition from , the traditional centre of the kingdom of .In the 11th century King  re-founded and rebuilt  and , a short distance upstream from London became a favoured royal residence. From this point onward Westminster steadily supplanted the City of London itself as a venue for the business of national government.\nthumbright is a  and one of London's oldest and most important buildings as seen in this painting (Canaletto, 1749)Following his victory in the , William, Duke of Normandy, was crowned  in the newly finished Westminster Abbey on Christmas Day 1066. William constructed the , the first of the many Norman castles in England to be rebuilt in stone, in the southeastern corner of the city to intimidate the native inhabitants. In 1097, William II began the building of , close by the abbey of the same name. The hall became the basis of a new .During the 12th century the institutions of central government, which had hitherto accompanied the royal court as it moved around the country, grew in size and sophistication and became increasingly fixed in one place. In most cases this was Westminster, although the royal treasury, having been moved from Winchester, came to rest in the Tower. While the  developed into a true capital in governmental terms, its distinct neighbour, the City of London, remained England's largest city and principal commercial centre and flourished under its own unique administration, the Corporation of London. In 1100 its population was around 18,000; by 1300 it had grown to nearly 100,000.Disaster struck during the  in the mid-14th century, when London lost nearly a third of its population. London was the focus of the  in 1381.\nthumbThe  destroyed many parts of the city in 1666.\nrightthumbLondon in 1806\nDuring the  the Reformation produced a gradual shift to Protestantism, with much of London passing from church to private ownership., London I: The Cities of London and Westminster rev. edition,1962, Introduction p 48. The traffic in  cloths shipped undyed and undressed from London to the nearby shores of the , for use by well-to-do wearers chiefly in the interior of the continent. But the tentacles of English maritime enterprise hardly extended beyond the seas of north-west Europe. The commercial route to  and the  normally lay through  and over the ; any ship passing through the  to or from England were likely to be Italian or Ragusan. Upon the re-opening of the  to English shipping in January 1565 there at once ensued a strong outburst of commercial activity.The Queen's Merchants and the Revolt of the Netherlands: The End of the Antwerp Mart, Volume 2, pages 1 and 62-63, George Daniel Ramsay, Manchester University Press ND, 1986. ISBN 978-0-7190-1849-7 The Royal Exchange was founded.The life and times of Sir Thomas Gresham, founder of the Royal Exchange: including notices of many of his contemporaries. With illustrations, Volume 2, pages 80-81, John William Burgon, E. Wilson, 1839.  grew and monopoly trading companies such as the  were established, with trade expanding to the . London became the principal  port, with migrants arriving from England and abroad. The population rose from an estimated 50,000 in 1530 to about 225,000 in 1605.In the 16th century  and his contemporaries lived in London at a time of hostility to the development of the theatre. By the end of the Tudor period in 1603, London was still very compact. There was an assassination attempt on James I in Westminster, through the  on 5 November 1605. London was plagued by disease in the early 17th century, culminating in the Great Plague of 1665–1666, which killed up to 100,000 people, or a fifth of the population.The  broke out in 1666 in Pudding Lane in the city and quickly swept through the wooden buildings. Rebuilding took over ten years and was supervised by  as Surveyor of London.The curious life of Robert Hooke, the man who measured London by Lisa Jardine In 1708 's masterpiece,  was completed. During the  new districts such as  were formed in the west; and new bridges over the Thames encouraged development in . In the east, the  expanded downstream.In 1762 George III acquired Buckingham House and it was enlarged over the next 75 years. During the 18th century, London was dogged by crime and the  were established in 1750 as a professional police force.\"Thief Taker, Constable, Police\". Public Broadcasting Service (PBS). In total, more than 200 offences were punishable by death, and women and children were hanged for petty theft. Over 74 per cent of children born in London died before they were five. The  became a popular place to debate ideas, with growing  and the development of the  making news widely available; and  became the centre of the British press.According to Samuel Johnson:\nthumbrightA bombed out London street during  of World War II\nLondon was the world's largest city from about 1831 to 1925. London's overcrowded conditions led to  epidemics, claiming 14,000 lives in 1848, and 6,000 in 1866. Rising  led to the creation of the world's first local urban rail network. The  oversaw infrastructure expansion in the capital and some of the surrounding counties; it was abolished in 1889 when the  was created out of those areas of the counties surrounding the capital .  and other bombing by the German  during World War II killed over 30,000 Londoners and destroyed large tracts of housing and other buildings across London. Immediately after the war, the  were held at the original Wembley Stadium, at a time when the city had barely recovered from the war.In 1951 the  was held on the . The  of 1952 led to the , which ended the \"pea-souper\" fogs for which London had been notorious. From the 1940s onwards, London became home to a large number of immigrants, largely from Commonwealth countries such as , India,  and , making London one of the most diverse cities in Europe.Primarily starting in the mid-1960s, London became a centre for the worldwide , exemplified by the  subculture associated with the , Chelsea and . The role of trendsetter was revived during the punk era. In 1965 London's political boundaries were expanded to take into account the growth of the urban area and a new  was created. During  in Northern Ireland, London was subjected to bombing attacks by the . Racial inequality was highlighted by the . Greater London's population declined steadily in the decades after World War II, from an estimated peak of 8.6million in 1939 to around 6.8million in the 1980s. The principal ports for London moved downstream to Felixstowe and Tilbury, with the  area becoming a focus for regeneration as the  development. This was borne out of London's ever-increasing role as a major international financial centre during the 1980s.The  was completed in the 1980s to protect London against tidal surges from the . The Greater London Council was abolished in 1986, which left London as the only large metropolis in the world without a central administration. In 2000, London-wide government was restored, with the creation of the . To celebrate the start of the 21st century, the ,  and Millennium Bridge were constructed. On 7 July 2005, three  trains and a  were bombed in a series of terrorist attacks.London hosted the , making London the first city to stage the  three times.\n\n\nthumbleft140pxThe  is based in City Hall, SouthwarkLondon City Hall is the headquarters of the Greater London Authority (GLA) which comprises the Mayor of London and London Assembly. It is located on the River Thames in the London Borough of Southwark\nThe administration of London is formed of two tiers—a city-wide, strategic tier and a local tier. City-wide administration is coordinated by the  (GLA), while local administration is carried out by 33 smaller authorities. The GLA consists of two elected components; the , who has executive powers, and the , who scrutinise the mayor's decisions and can accept or reject his budget proposals each year.\nThe headquarters of the GLA is City Hall, ; the current mayor is . The mayor's statutory planning strategy is published as the , which was most recently revised in 2011. The local authorities are the councils of the 32 s and the . They are responsible for most local services, such as local planning, schools, social services, local roads and refuse collection. Certain functions, such as waste management, are provided through joint arrangements. In 2009–2010 the combined revenue expenditure by London councils and the GLA amounted to just over 22 billion ₤ (14.7 billion ₤ for the boroughs and 7.4 billion ₤ for the GLA)http://www.communities.gov.uk/documents/statistics/pdf/1911067.pdfPolicing in Greater London, with the exception of the , is provided by the Metropolitan Police Force, overseen by the . The City of London has its own police force– the . The  are responsible for police services on  and  services.The  is the statutory fire and rescue service for Greater London. It is run by the  and is the third-largest fire service in the world.  ambulance services are provided by the London Ambulance Service (LAS) NHS Trust, the largest free at the point of use emergency ambulance service in the world. The  charity operates in conjunction with the LAS where required.  and the  operate on the .\nLondon is the seat of the , which is located around the . Many government departments are located close to Parliament, particularly along , including the Prime Minister's residence at . The British Parliament is often referred to as the \"Mother of Parliaments\" (although this  was first applied to England itself by ) because it has been the model for most other s, and its Acts have created many other parliaments.\n\n is the top-level administrative subdivision covering London. The small, ancient  at its core once contained the whole settlement, but as the urban area grew the City Corporation resisted attempts to amalgamate it with its suburbs, causing \"London\" to be defined in a number ways for different purposes; and the situation was once open to legal debate. Forty per cent of Greater London is covered by the London post town, within which 'LONDON' forms part of postal addresses.\nthumbSatellite view of London\nthumbMap of The London telephone area code (020) covers a larger area, similar in size to Greater London, although some outer districts are omitted and some places just outside are included. The area within the orbital  is normally what is referred to as 'London'. and the Greater London boundary has been aligned to it in places.Outward urban expansion is now prevented by the ,  although the built-up area extends beyond the boundary in places, resulting in a separately defined . Beyond this is the vast . Greater London is split for some purposes into  and . The city is split by the River Thames into North and South, with an informal  area in its interior. The coordinates of the nominal centre of London, traditionally considered to be the original  at  near the junction of  and , are approximately .\nWithin London, both the  and the  have city status and both the City of London and the remainder of Greater London are the ceremonial counties. The current area of Greater London has incorporated areas that were once part of the historic counties of , , ,  and . London's status as the capital of England, and later the United Kingdom, has never been granted or confirmed officially—by  or in written form.Its position was formed through constitutional convention, making its status as de facto capital a part of the UK's unwritten constitution. The capital of England was moved to London from  as the  developed in the 12th and 13th centuries to become the permanent location of the royal court, and thus the political capital of the nation. More recently, Greater London has been defined as a region of England and in this context known as London.\nthumb.\nGreater London covers an area of , an area which had a population of 7,172,036 in 2001 and a population density of . A larger area, referred to as the London Metropolitan Region or the London Metropolitan Agglomeration covers an area of   has a population of 12,653,500 and a population density of .  Modern London stands on the Thames, its primary geographical feature, a navigable river which crosses the city from the south-west to the east. The  is a  surrounded by gently rolling hills including Parliament Hill, , and . The Thames was once a much broader, shallower river with extensive lands; at high tide, its shores reached five times their present width.Since the  the Thames has been extensively embanked, and many of its London tributaries now flow underground. The Thames is a tidal river, and London is vulnerable to flooding. The threat has increased over time due to a slow but continuous rise in high water level by the slow 'tilting' of Britain (up in the north and down in the south) caused by .In 1974, a decade of work began on the construction of the  across the Thames at  to deal with this threat. While the barrier is expected to function as designed until roughly 2070, concepts for its future enlargement or redesign are already being discussed.\n\nLondon has a temperate , similar to much of southern Britain. Despite its reputation as being a rainy city, London receives less precipitation in a year than Rome at , or  at . Winters are generally chilly to cold with frost usually occurring in the suburbs on average twice a week from November to March. Snow usually occurs about 4 or 5 times a year mostly from December to February. Snowfall during March and April is rare but does occur every 2–3 years. Winter temperatures seldom fall below  or rise above . During the winter of 2010, London experienced its lowest temperature on record () in Northolt and the heaviest snow seen for almost two decades, a huge strain on London's transport infrastructure.Summers are generally warm and sometimes hot, the heat being boosted by the  effect making the centre of London at times 5 °C (9 °F) warmer than the suburbs and outskirts. London's summer average is  . On average there are 7 days a year above  and 2 days a year above . Temperatures of 26 °C (80 °F) usually occur on a weekly basis from mid- June to late August.During the  there were 14 consecutive days above  and 2 consecutive days where temperatures soared up to , leading to hundreds of heat related deaths. Rain generally occurs on around 2 out of 10 summer days. Spring and Autumn are mixed seasons and can be pleasant. On 1 October 2011, the air temperature attained  and in April 2011 it reached . However in recent years both of these months have also had snowfall. Temperature extremes range from  to .\n\nLondon's vast urban area is often described using a set of district names, such as , ,  and . These are either informal designations, reflect the names of villages that have been absorbed by sprawl, or are superseded administrative units such as parishes or former boroughs.Such names have remained in use through tradition, each referring to a local area with its own distinctive character, but without current official boundaries. Since 1965 Greater London has been divided into 32 s in addition to the ancient City of London. The City of London is the main financial district and  has recently developed into a new financial and commercial hub, in the Docklands to the east.The West End is London's main entertainment and shopping district, attracting tourists. West London includes expensive residential areas where properties can sell for tens of millions of pounds. The average price for properties in Kensington and Chelsea is £894,000 with similar average outlay in most of .The East End is the area closest to the original , known for its high immigrant population, as well as for being one of the poorest areas in London. The surrounding East London area saw much of London's early industrial development; now, brownfield sites throughout the area are being redeveloped as part of the  including the  and , which is being developed into the Olympic Park for the 2012 Olympics and Paralympics.\n\nthumbrightThe Tower, with Tower Bridge built 800 years later on the River Thames.\nthumbleftupright, also known as the ''Gherkin'', towers over \nLondon's buildings are too diverse to be characterised by any particular  style, partly due to their varying ages. Many grand houses and public buildings, such as the , are constructed from . Some areas of the city, particularly those just west of the centre, are characterised by white  or whitewashed buildings. Few structures in central London pre-date the Great Fire of 1666, these being a few trace Roman remains, the  and a few scattered Tudor survivors in the City. Further out is, for example, the  , England's oldest surviving Tudor palace, built by Cardinal  c. 1515.\nWren's late 17th century churches and the financial institutions of the 18th and 19th centuries such as the Royal Exchange and the , to the early 20th century  and the 1960s  form part of the varied architectural heritage.The disused, but soon to be rejuvenated, 1939  by the river in the southwest is a local landmark, while some railway termini are excellent examples of , most notably St. Pancras and Paddington. The density of London varies, with high employment density in the central area, high residential densities in  and lower densities in the suburbs. in the City of London provides views of the surrounding area while commemorating the , which originated nearby.  and , at the north and south ends of Park Lane respectively, have royal connections, as do the  and  in .  is a nationally recognised monument in , one of the focal points of the city centre. Older buildings are mainly brick built, most commonly the yellow  or a warm orange-red variety, often decorated with carvings and white plaster mouldings.rightthumb is the official residence of the British monarch\nIn the dense areas, most of the concentration is achieved with medium- and high-rise buildings. London's skyscrapers such as , , the  and  are usually found in the two financial districts, the  and . High-rise development is restricted at certain sites if it would obstruct protected views of  and other historic buildings. Nevertheless there are a number of very tall skyscrapers to be found in central London (see ), including the 72-storey , the tallest building in Europe.Other notable modern buildings include City Hall in  with its distinctive oval shape, and the  in Somers Town/Kings Cross. What was formerly the , located by the Thames to the east of Canary Wharf, is now used as an entertainment venue called The O2 Arena.\n\nthumbleftAerial view of Hyde Park\nThe largest parks in the central area of London are the Royal Parks of Hyde Park, its neighbour  at the western edge of  and  on the northern edge. Regent's Park contains , the world's oldest scientific zoo, and is located near the tourist attraction of  Wax Museum.Closer to central London are the smaller Royal Parks of  and . Hyde Park in particular is popular for sports and sometimes hosts open-air concerts. A number of large parks lie outside the city centre, including the remaining Royal Parks of  to the south-east and  and  to the south-west, as well as  to the east.  to the north of Regent's Park is a popular spot to view the city skyline.Some more informal, semi-natural open spaces also exist, including the   of .  This incorporates , the former  and a popular location in the summer months where classical musical concerts are held by the lake, attracting thousands of people every weekend to enjoy the music, scenery and fireworks.\n\n>\n>\nWith increasing industrialisation, London's population grew rapidly throughout the 19th and early 20th centuries, and it was for some time in the late 19th and early 20th centuries the most populous city in the world until overtaken by New York in 1925. Its population peaked at 8,615,245 in 1939 immediately before the outbreak of the Second World War. There were an estimated 7,556,900 official residents in  .However, London's continuous urban area extends beyond the borders of Greater London and was home to 8,278,251 people in 2001, while its wider metropolitan area has a population of between 12 and 14million depending on the definition used. According to , London is the most populous city and metropolitan area of the European Union and the second most populous in Europe (or third if  is included). During the period 1991–2001 a net 726,000immigrants arrived in London.The region covers an area of . The population density is ,  more than ten times that of any other British region. In terms of population, London is the 25th largest city and the 18th largest metropolitan region in the world. It is also ranked 4th in the world in number of billionaires (United States Dollars) residing in the city. London ranks as one of the most expensive cities in the world, alongside Tokyo and Moscow.\n\nAccording to the , based on 2009 estimates, 69.7 per cent of the 7,753,600 inhabitants of London were White, with 59.5 per cent , 2.2 per cent White Irish and 8.0 per cent classified as . Some 13.2 per cent are of South Asian descent, with Indians making up 6.2 per cent of London's population, followed by Pakistanis and Bangladeshis at 2.8 per cent and 2.2 per cent respectively. 2.0 per cent are categorised as \"Other Asian\". 10.1 per cent of London's population are Black, with around 5.3 per cent being Black African, 4.0 per cent as Black Caribbean and 0.8 per cent as \"Other Black\". 3.5 per cent of Londoners are of mixed race; 1.8 per cent are Chinese; and 1.7 per cent belong to another ethnic group.Across London, Black and Asian children outnumber  children by about six to four in state schools. However, White children represent 62 per cent of London's 1,498,700 population aged 0 to 15 as of 2009 estimates from the Office for National Statistics, with 55.7 per cent of the population aged 0 to 15 being White British, 0.7 per cent being White Irish and 5.6 per cent being from other EU White backgrounds. In January 2005, a survey of London's ethnic and religious diversity claimed that there were more than 300 languages spoken and more than 50 non-indigenous communities which have a population of more than 10,000 in London. Figures from the  show that, , London's foreign-born population is 2,650,000 (33 per cent), up from 1,630,000 in 1997.The 2001 census showed that 27.1 per cent of 's population were born outside the UK. The table to the right shows the 20 most common foreign countries of birth of London residents in 2001, the date of the last published . A portion of the German-born population are likely to be British nationals born to parents serving in the  in Germany. Estimates produced by the  indicate that the five largest foreign-born groups living in London in the period July 2009 to June 2010 were those born in , Poland, the Republic of Ireland, Bangladesh and . Figure given is the central estimate. See the source for 95 per cent s.\n\nThe majority of Londoners– 58.2 per cent– identify themselves as Christians. This is followed by those of no religion (15.8 per cent), Muslims (8.5 per cent), Hindus (4.1 per cent), Jews (2.1 per cent), Sikhs (1.5 per cent), Buddhists (0.8 per cent) and other (0.2 per cent), though 8.7 per cent of people did not answer this question in the 2001 Census.London has traditionally been Christian, and has a large number of churches, particularly in the City of London. The well-known  in the City and  south of the river are Anglican administrative centres, while the , principal bishop of the  and worldwide , has his main residence at  in the .Important national and royal ceremonies are shared between St Paul's and Westminster Abbey. The Abbey is not to be confused with nearby , which is the largest Roman Catholic cathedral in . Despite the prevalence of Anglican churches, observance is very low within the Anglican denomination. Church attendance continues on a long, slow, steady decline, according to Church of England statistics.\nthumbrightLondon is also home to sizeable Muslim, , , and Jewish communities. Many Muslims live in Tower Hamlets and Newham; the most important Muslim edifice is  on the edge of . Following the oil boom, increasing numbers of wealthy ern Muslims have based themselves around  and  in west London. London is home to the largest mosque in western Europe, the  Mosque, of the .\nLondon's large Hindu community is found in the north-western boroughs of Harrow and Brent, the latter of which is home to one of Europe's largest s, .. London is also home to 42 Hindu temples. Sikh communities are located in East and West London, which is also home to the largest Sikh temple in the world outside India.The majority of  live in London, with significant Jewish communities in , , , ,  and  in .  has the largest membership of any single Orthodox synagogue in the whole of Europe, overtaking  synagogue (also in London) in 1998. The community set up the  in 2006 in response to the growing significance of devolved London Government.\n\nthumbleftThe  is one of the world's largest  alongside New York City.London generates approximately 20 per cent of the UK's GDP (or $446billion in 2005); while the economy of the —the largest in Europe—generates approximately 30 per cent of the UK's GDP (or an estimated $669billion in 2005). London is one of the pre-eminent financial centres of the world and vies with New York City as the most important location for international finance.London's largest industry is finance, and its s make it a large contributor to the UK's . Around 325,000 people were employed in financial services in London until mid-2007. London has over 480 overseas banks, more than any other city in the world. Currently, over 85% (3.2million) of the employed population of greater London works in the services industries. Due to its prominent global role, London's economy has been affected by the . The City of London estimates that 70,000 jobs in finance will be cut within a year. The  is home to the , , and  insurance market.Over half of the UK's top 100 listed companies (the ) and over 100 of Europe's 500 largest companies have their headquarters in central London. Over 70 per cent of the FTSE 100 are located within London's metropolitan area, and 75 per cent of  companies have offices in London. thumbright is a major business and financial centre and is home to some of the UK's tallest buildingsAlong with , media companies are concentrated in London and the media distribution industry is London's second most competitive sector. The  is a significant employer, while other broadcasters also have headquarters around the City. Many national newspapers are edited in London. London is a major retail centre and in 2010 had the highest non-food retail sales of any city in the world, with a total spend of around £64.2billion. The  is the second-largest in the United Kingdom, handling 45million s of cargo each year.London has five major business districts: the City, Westminster, Canary Wharf, Camden & Islington and Lambeth & Southwark. One way to get an idea of their relative importance is to look at relative amounts of office space: Greater London had 27million m2 of office space in 2001, and the City contains the most space, with 8million m2 of office space. London has some of the highest real estate prices in the world.\nthumbrightuprightThe  \nLondon is a popular centre for tourism, one of its prime industries, employing the equivalent of 350,000 full-time workers in 2003, while annual expenditure by tourists is around £15billion.\"\", Visit London. Retrieved on 3 June 2006. London attracts over 14million international visitors per year, making it Europe's most visited city. London attracts 27million overnight-stay visitors every year.\"\", Visit London. Retrieved on 3 June 2006. In 2009 the ten most-visited attractions in London were:\n      Science Museum    \n\n\nTransport is one of the four main areas of policy administered by the Mayor of London, however the mayor's financial control does not extend to the longer distance rail network that enters London. In 2007 he assumed responsibility for some local lines, which now form the  network, adding to the existing responsibility for the London Underground, trams and buses. The public transport network is administered by  (TfL) and is one of the most extensive in the world. Cycling is an increasingly popular way to get around London. The  lobbies for better provision.The lines that formed the London Underground, as well as trams and buses, became part of an integrated transport system in 1933 when the  (LPTB) or London Transport was created.  (TfL), is now the statutory corporation responsible for most aspects of the transport system in Greater London, and is run by a board and a commissioner appointed by the .\nthumbHeathrow (terminal 5 pictured) is the busiest airport in the world for international traffic. London is a major international air transport hub with the largest city airspace in the world. Eight airports use the word London in their name, but most traffic passes through six of these. , in Hillingdon, West London, is the busiest airport in the world for international traffic, and is the major hub of the nation's flag carrier, . In March 2008 its fifth terminal was opened. There were plans for a third runway and a sixth terminal however these were cancelled by the Coalition Government on 12 May 2010. In September 2011 a  system was opened at Heathrow to connect to a nearby car park.Similar traffic, with the addition of some low-cost  flights, is also handled at , located south of London in .Stansted Airport, situated north east of London in , is the main UK hub for  and Luton Airport to the north of London in , caters mostly for low-cost short-haul flights. , the smallest and most central airport, is focused on business travellers, with a mixture of full service short-haul scheduled flights and considerable  traffic., east of London in , is a smaller, regional airport that mainly caters for low-cost short-haul flights. It recently went through a large redevelopment project including a brand new terminal, extended runway and a new railway station offering fast links into the capital.  currently have a base at the airport.\nthumbrightThe red  is an iconic symbol of London\nLondon's bus network is one of the largest in the world, running 24 hours a day, with 8,000 buses, 700 bus routes, and over 6million passenger journeys made every weekday. In 2003, the network had an estimated 1.5 billion commuter trips per annum, more than the Underground. Around £850million is taken in revenue each year. London has the largest wheelchair accessible network in the world and, from the 3rd quarter of 2007, became more accessible to hearing and visually impaired passengers as audio-visual announcements were introduced. The distinctive red double-decker buses are internationally recognised, and are a trademark of London transport along with black cabs and the Tube.London has a modern tram network, known as , based in  in . The network has 39 stops, three routes and carried 26.5million people in 2008. Since June 2008  has completely owned Tramlink and plans to spend £54m by 2015 on maintenance, renewals, upgrades and capacity enhancements. Since April 2009 all trams have been refurbished.\n has enjoyed a renaissance since the turn of the Millennium. Cyclists enjoy a cheaper, and often quicker, way around town than those by public transport or car, and the launch of the  scheme in July 2010 has been successful and generally well received.From being the largest port in the world, the  is now only the second-largest in the United Kingdom, handling 45 million tonnes of cargo each year. Most of this actually passes through the , outside the boundary of Greater London.\nthumbrightThe  is the world's oldest and second-longest  system\nThe — all of which is now commonly referred to as the Tube, though originally this designation referred only to the deep-level lines, as distinct from the sub-surface lines— is the oldest, and second longest metro system in the world, dating from 1863. The system serves 270 stations and was formed from several private companies, including the world's first underground electric line, the .Over three million journeys are made every day on the Underground network, over 1billion each year. An investment programme is attempting to address congestion and reliability problems, including £7billion (€10billion) of improvements planned for the . London has been commended as the city with the best public transport. The , which opened in 1987, is a second, more local metro system using smaller and lighter tram-type vehicles which serve Docklands and .There is an extensive above-ground suburban railway network, particularly in South London, which has fewer Underground lines. London houses Britain's busiest station– Waterloo with over 184million people using the interchange station complex (which includes Waterloo East station) each year. The stations have services to South East and South West London, and also parts of South East and . Most rail lines terminate around the centre of London, running into eighteen terminal stations with the exception of the  trains connecting  in the north and  in the south via Luton and Gatwick airports.Since 2007 high-speed  trains link St. Pancras International with , Paris, and . Journey times to Paris and Brussels of two-and-a-quarter hours and one hour 50minutes respectively make London closer to continental Europe than the rest of Britain by virtue of the  rail link to the  while the first high speed domestic trains started in June 2009 linking  to London.\nthumbrightThe A102, near . This was one of the only routes proposed in the Ringways Plan within  to be built.\nAlthough the majority of journeys involving  are made by public transport, car travel is common in the suburbs. The inner ring road (around the city centre), the North and South Circular roads (in the suburbs), and the outer orbital motorway (the M25, outside the built-up area) encircle the city and are intersected by a number of busy radial routes—but very few motorways penetrate into . The M25 is the longest ring-road motorway in the world at  long. The A1 and M1 connect London to ,  and Newcastle.A plan for a comprehensive network of motorways throughout the city (the Ringways Plan) was prepared in the 1960s but was mostly cancelled in the early 1970s. In 2003, a congestion charge was introduced to reduce traffic volumes in the city centre. With a few exceptions, motorists are required to pay £10 per day to drive within a defined zone encompassing much of congested central London. Motorists who are residents of the defined zone can buy a vastly reduced season pass which is renewed monthly and is cheaper than a corresponding bus fare. London is notorious for its traffic congestion, with the M25 motorway the busiest stretch in the country. The average speed of a car in the rush hour is . London government initially anticipated the Congestion Charge Zone to increase daily peak period Underground and bus users by 20,000 people, reduce traffic by 10 to 15 percent, increase traffic speeds by 10 to 15 percent, and reduce queues by 20 to 30 percent.Santos, Georgina, Kenneth Button, and Roger G. Noll. \"London Congestion Charging/Comments.\" Brookings-Wharton Papers on Urban Affairs.15287084 (2008): 177,177–234.  Over the course of several years, the average number of cars entering the centre of London on a weekday was reduced from 195,000 to 125,000 cars– this is a 35-percent reduction of vehicles driven per day.Table 3 in Santos, Georgina, Kenneth Button, and Roger G. Noll. \"London Congestion Charging/Comments.\" Brookings-Wharton Papers on Urban Affairs.15287084 (2008): 177,177–234.\n\nthumb \nLondon is a major centre of higher education teaching and research and its 43 universities form the largest concentration of higher education in Europe. In 2008/09 it had a higher education student population of around 412,000 (approximately 17 per cent of the UK total), of whom around 287,000 were registered for undergraduate degrees and 118,000 were studying at postgraduate level. In 2008/09 there were around 97,150 international students in London, approximately 25 per cent of all international students in the UK.A number of world-leading education institutions are based in London. In the 2011   is ranked 6th, University College London (UCL) 7th and  27th in the world. The  has been described as the world's leading social science institution for both teaching and research. The  is considered one of the world's leading business schools and in 2010 its MBA programme was ranked best in the world by the .With 125,000 students, the federal  is the largest contact teaching university in Europe. It includes four large multi-faculty universities– , Queen Mary,  and UCL– and a number of smaller and more specialised institutions including Birkbeck, the , Goldsmiths, , the , the , the , the , the , the , the  and the . Members of the University of London have their own admissions procedures, and some award their own degrees.There are a number of universities in London which are outside of the University of London system, including , , , ,  (with over 34,000 students, the largest unitary university in London),About London Met London Metropolitan University, August 2008 , ,  (the largest university of art, design, fashion, communication and the performing arts in Europe), , the  and the . In addition there are three international universities in London– ,  and .thumbThe front façade of the \nLondon is home to five major medical schools–  (part of Queen Mary),  (the largest medical school in Europe), ,  and – and has a large number of affiliated teaching hospitals. It is also a major centre for biomedical research, and three of the UK's five s are based in the city– Imperial College Healthcare,  and  (the largest such centre in Europe). There are a number of business schools in London, including  (part of ), , ,  and the . London is also home to many specialist arts education institutions, including the , the , RADA, the , the  and .\nThe majority of primary and secondary schools in London are state schools and are controlled by the , although there are also a number of private schools in London, including old and famous schools such as the , Harrow, St Paul's School, ,  and .\n\nThe London accent long ago acquired the  label, and was similar to many accents of the . The accent of a 21st century 'Londoner' varies widely; what is becoming more and more common amongst the under 30s however is some fusion of Cockney, , and a whole array of 'ethnic' accents, in particular Caribbean, which form an accent labelled Multicultural London English (MLE).\n\nthumbright\nWithin the , the entertainment district of the West End has its focus around , where London and world film  are held, and , with its giant electronic advertisements. London's theatre district is here, as are many cinemas, bars, clubs and restaurants, including the city's Chinatown district (in ), and just to the east is Covent Garden, an area housing speciality shops. The United Kingdom's , , Royal Opera and  are based in London and perform at the , the ,  and the  as well as touring the country.thumbuprightleft in \n's  long Upper Street, extending northwards from the Angel, has more bars and restaurants than any other street in the United Kingdom. Europe's busiest shopping area is , a shopping street nearly  long, making it the longest shopping street in the United Kingdom. Oxford Street is home to vast numbers of retailers and , including the world-famous  flagship store. , home to the equally renowned  , lies to the southwest.London is home to designers , Galliano, , , and  among others; its renowned art and fashion schools make it an international centre of fashion alongside Paris,  and New York. London offers a great variety of cuisine as a result of its ethnically diverse population. Gastronomic centres include the i restaurants of  and the  restaurants of Chinatown.There is a variety of annual events, beginning with the relatively new , fireworks display at the , the world's second largest , the  is held during the late  each year. Traditional parades include November's , a centuries-old event celebrating the annual appointment of a new  with a procession along the streets of the City, and June's , a formal military pageant performed by regiments of the Commonwealth and British armies to celebrate the .\n\nthumb, where Keats wrote his ''''. The village of  has historically been a literary centre in London.\nLondon has been the setting for many works of literature. The literary centres of London have traditionally been hilly  and (since the early 20th century) . Writers closely associated with the city are the diarist , noted for his eyewitness account of the Great Fire, , whose representation of a foggy, snowy, grimy London of street sweepers and pickpockets has been a major influence on people's vision of early Victorian London, and , regarded as one of the foremost modernist literary figures of the 20th century.The pilgrims in 's late 14th-century Canterbury Tales set out for  from London– specifically, from the Tabard inn, .  spent a large part of his life living and working in London; his contemporary  was also based there, and some of his work—most notably his play ''The Alchemist''—was set in the city.  (1722) by  is a fictionalisation of the events of the 1665 Great Plague.  Later important depictions of London from the 19th and early 20th centuries are Dickens' novels, and 's  stories. Modern writers pervasively influenced by the city include , author of a \"biography\" of London, and , who writes in the genre of .London was the setting for the films Oliver Twist (1948), Peter Pan (1953),  (1955), The 101 Dalmatians (1961), Mary Poppins (1964),  (1966),  (1980), Secrets & Lies (1996), Notting Hill (1999),  (2005), V For Vendetta (2005) and  (2008). The television soap opera , first broadcast in 1985, is also set in the city. London has played a significant role in the film industry, and has major studios at Ealing and a s and  community centred in .  has its headquarters in London. The  is located in this city, where most of the programs is broadcast by the  including The Weakest Link, , and .\nthumbrightThe \nLondon is home to many museums, galleries, and other institutions, many of which are free of admission charges and are major s as well as playing a research role. The first of these to be established was the  in , in 1753. Originally containing antiquities, natural history specimens and the national library, the museum now has 7million artefacts from around the globe. In 1824 the  was founded to house the British national collection of Western paintings; this now occupies a prominent position in . In the latter half of the 19th century the locale of  was developed as \"\", a cultural and scientific quarter. Three major national museums are located there: the  (for the ), the  and the Science Museum. The national gallery of British art is at , originally established as an annexe of the National Gallery in 1897. The Tate Gallery, as it was formerly known, also became a major centre for modern art; in 2000 this collection moved to , a new gallery housed in the former .\nthumbleftThe  hosts concerts and musical events\nLondon is one of the major classical and popular music capitals of the world and is home to major music corporations, such as , as well as countless bands, musicians and industry professionals. The city is also home to many orchestras and concert halls, such as the  (principal base of the ),  () and the  (). London's two main opera houses are the  and the . The UK's largest  can be found at the Royal Albert Hall. Other significant instruments are found at the cathedrals and major churches. Several s are located within the city: , ,  and .thumbrightThe O2 Arena\nLondon has numerous venues for rock and pop concerts, including large arenas such as Earls Court,  and the O2 Arena, as well as many mid-sized venues, such as , the  and the . Several , including the , are held in London. The city is home to the first and original  and the  where  recorded many of their hits. In the 1970s and 1980s, musicians and groups like , , Queen, , , Ian Dury and the Blockheads, , , , , Madness, , , , , , , , Squeeze and Sade, took the world by storm, deriving their sound from the streets and rhythms vibrating through London.London was instrumental in the development of , with figures such as the , , and  all based in the city. More recent artists to emerge from the London music scene include , , , Bush, , , the , , Blur, , , , , Adele, , and . London is also a centre for urban music. In particular the genres , ,  and grime evolved in the city from the foreign genres of  and , alongside local . Black music station  was set up to support the rise of home-grown urban music both in London and the rest of the UK.\n\nthumbleft at the All England Club hosting a Wimbledon Championships match in 2010.\nLondon has hosted the Summer Olympics three times: in 1908, 1948, and 2012. London was chosen in July 2005 to host the 2012 Olympics and Paralympics, making it the first city to host the modern Games three times. London was also the host of the British Empire Games in 1934. London will host the .London's most popular sport is football and it has fourteen League football clubs, including six in the : Arsenal, Chelsea, Fulham, Queens Park Rangers, Tottenham Hotspur, and West Ham United.London also has four  teams in the Aviva Premiership (, Saracens, Wasps and Harlequins), although only the Harlequins play in London (all the other three now play outside Greater London, although Saracens still play within the M25). The other two professional rugby union teams in the city are second division clubs  and London Scottish, that play home matches in the city. The city has other very traditional rugby union clubs, famously , ,  and .thumbright viewed from Wembley WayThere are currently three professional  clubs in London–  who play in the European Super League at  and the Championship One side the  (based in , )  based in , north of London will play in the  from 2013.From 1924, the original Wembley Stadium was the home of the English national football team, and served as the venue for the  final as well as 's  final. The new  serves exactly the same purposes and has a capacity of 90,000.  in south-west London is the national  stadium, and has a capacity of 84,000 now that the new south stand has been completed. in London is served by two  grounds Lord's (home of Middlesex C.C.C.) in  and  (home of Surrey C.C.C.) in . Lord's has hosted four finals of the . One of London's best-known annual sports competitions is the Wimbledon Tennis Championships, held at the All England Club in the south-western suburb of Wimbledon. Other key events are the annual mass-participation  which sees some 35,000 runners attempt a  course around the city, and the Oxford and Cambridge Boat Race on the  between  and .\nThere are 46 other places on six continents named after London.Jack Malvern. Richmond, in Surrey, is the most widely copied British place name worldwide, Timesonline 29 December 2008. The original byline for the article in  of the same day was \"The 55 corners of foreign fields that will be for ever ... Richmond\" (page 9). Cites The Times Universal Atlas of the World. http://www.webcitation.org/5yoKJBWF8 As well as London's twinning, the s have twinnings with parts of other cities across the world. The  has twinning arrangements with:\n\n  , Colombia  , Bolivia  , Peru  , GermanySee Fact 2 by Big Ben photo.  , India  , South Africa   , Malaysia  , Kuwait  , Russia  , United States  , Norway  , Bangladesh  , China  , South Korea  , Iran\nThe following cities have a friendship agreement with London:\n\n  , Algeria  , Azerbaijan  , China  , Romania  , Argentina  , India  , Bangladesh  , Turkey  , United States  , India  , France  , Montenegro  , Italy  , Bulgaria  , Japan  , Croatia\n\n\n\n\n\n  \n\n\n British Pathé Digitalised archive containing hundreds of films of 20th century London London in ''British History Online'', with links to numerous authoritative online sources VisitLondon.com&nbsp;– Official London site Museum of London Group Portal&nbsp;– Home Transport for London (TfL)&nbsp;– city transport authority Map of Early Modern London Historical Map & Encyclopaedia of Shakespeare's London. Scholarly London.gov.uk&nbsp;– Official site for the government of London by the Greater London Authority covering the Office of Mayor of London and the London Assembly  \n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
     "sections": [
         {
             "title": " History ",

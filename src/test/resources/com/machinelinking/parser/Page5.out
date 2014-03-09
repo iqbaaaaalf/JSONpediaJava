@@ -159,9 +159,9 @@ End Reference: Katharine Lee Bates
 Text: ' and the music composed by church organist and choirmaster '
 Begin Reference: Samuel A. Ward
 End Reference: Samuel A. Ward
-Text: '.
-
-Bates originally wrote the words as a poem, '
+Text: '.'
+Paragraph
+Text: 'Bates originally wrote the words as a poem, '
 ItalicBold: 2
 Text: 'Pikes Peak'
 ItalicBold: 2
@@ -176,9 +176,9 @@ Text: ' in 1895. At that time, the poem was titled '
 ItalicBold: 2
 Text: 'America'
 ItalicBold: 2
-Text: ' for publication.
-
-Ward had originally written the music, '
+Text: ' for publication.'
+Paragraph
+Text: 'Ward had originally written the music, '
 ItalicBold: 2
 Text: 'Materna'
 ItalicBold: 2
@@ -191,9 +191,9 @@ Text: ' in 1882. Ward's music combined with the Bates poem was first published i
 ItalicBold: 2
 Text: 'America the Beautiful'
 ItalicBold: 2
-Text: '.
-
-The song is one of the most beloved and popular of the many American patriotic songs.'
+Text: '.'
+Paragraph
+Text: 'The song is one of the most beloved and popular of the many American patriotic songs.'
 Open Tag: ref attributes: []
 Begin Template: cite web
 k: url
@@ -221,9 +221,7 @@ Begin Template: citation needed
 k: date
 Text: 'March 2012'
 End Template: citation needed
-Text: '
-
-'
+Paragraph
 Section [0] History
 Text: '
 In 1893, at the age of thirty-three, Bates, an English professor at '
@@ -252,15 +250,15 @@ End Reference: Great Plains
 Text: ' from high atop Zebulon's '
 Begin Reference: Pikes Peak
 End Reference: Pikes Peak
-Text: '.
-
-On the pinnacle of that mountain, the words of the poem started to come to her, and she wrote them down upon returning to her hotel room at the original Antlers Hotel. The poem was initially published two years later in '
+Text: '.'
+Paragraph
+Text: 'On the pinnacle of that mountain, the words of the poem started to come to her, and she wrote them down upon returning to her hotel room at the original Antlers Hotel. The poem was initially published two years later in '
 ItalicBold: 2
 Text: 'The Congregationalist,'
 ItalicBold: 2
-Text: ' to commemorate the Fourth of July. It quickly caught the public's fancy. Amended versions were published in 1904 and 1913.
-
-Several existing pieces of music were adapted to the poem. A '
+Text: ' to commemorate the Fourth of July. It quickly caught the public's fancy. Amended versions were published in 1904 and 1913.'
+Paragraph
+Text: 'Several existing pieces of music were adapted to the poem. A '
 Begin Reference: hymn tune
 End Reference: hymn tune
 Text: ' composed by Samuel A. Ward was generally considered the best music as early as 1910 and is still the popular tune today. Just as Bates had been inspired to write her poem, Ward too was inspired to compose his tune. The tune came to him while he was on a ferryboat trip from '
@@ -303,130 +301,125 @@ Text: 'http://books.google.com/books?id=kKsA1Qi8BBgC&pg=PA19#v=onepage&f=false
 End Template: cite book
  
 Close Tag: ref
-Text: '
-
-Ward died in 1903, not knowing the national stature his music would attain, as the music was only first applied to the song in 1904. Bates was more fortunate, as the song's popularity was well established by her death in 1929.
-
-At various times in the more than 100 years that have elapsed since the song was written, particularly during the '
+Paragraph
+Text: 'Ward died in 1903, not knowing the national stature his music would attain, as the music was only first applied to the song in 1904. Bates was more fortunate, as the song's popularity was well established by her death in 1929.'
+Paragraph
+Text: 'At various times in the more than 100 years that have elapsed since the song was written, particularly during the '
 Begin Reference: John F. Kennedy
 End Reference: John F. Kennedy
 Text: ' administration, there have been efforts to give "America the Beautiful" legal status either as a national hymn, or as a national anthem equal to, or in place of, "'
 Begin Reference: The Star-Spangled Banner
 End Reference: The Star-Spangled Banner
-Text: '", but so far this has not succeeded. Proponents prefer "America the Beautiful" for various reasons, saying it is easier to sing, more melodic, and more adaptable to new orchestrations while still remaining as easily recognizable as "The Star-Spangled Banner." Some prefer "America the Beautiful" over "The Star-Spangled Banner" due to the latter's war-oriented imagery. Others prefer "The Star-Spangled Banner" for the same reason. While that national dichotomy has stymied any effort at changing the tradition of the national anthem, "America the Beautiful" continues to be held in high esteem by a large number of Americans.
-
-When '
+Text: '", but so far this has not succeeded. Proponents prefer "America the Beautiful" for various reasons, saying it is easier to sing, more melodic, and more adaptable to new orchestrations while still remaining as easily recognizable as "The Star-Spangled Banner." Some prefer "America the Beautiful" over "The Star-Spangled Banner" due to the latter's war-oriented imagery. Others prefer "The Star-Spangled Banner" for the same reason. While that national dichotomy has stymied any effort at changing the tradition of the national anthem, "America the Beautiful" continues to be held in high esteem by a large number of Americans.'
+Paragraph
+Text: 'When '
 Begin Reference: Richard Nixon
 End Reference: Richard Nixon
 Text: ' visited '
 Begin Reference: China
 End Reference: China
-Text: ' in 1972, this song was played as the welcome music.
-
-The song is often included in songbooks in a wide variety of '
+Text: ' in 1972, this song was played as the welcome music.'
+Paragraph
+Text: 'The song is often included in songbooks in a wide variety of '
 Begin Reference: religion
 k: null
 Text: 'religious'
 End Reference: religion
-Text: ' congregations in the United States.
-
-'
+Text: ' congregations in the United States.'
+Paragraph
 Section [0]  Lyrics 
 Text: '
 :O beautiful for spacious skies,
 :For amber waves of grain,
 :For purple mountain majesties
-:Above the fruited plain!
-
-:America! America!
+:Above the fruited plain!'
+Paragraph
+Text: ':America! America!
 :God shed His grace on thee,
 :And crown thy good with brotherhood
-:From sea to shining sea!
-
-:O beautiful for pilgrim feet
+:From sea to shining sea!'
+Paragraph
+Text: ':O beautiful for pilgrim feet
 :Whose stern impassion'd stress
 :A thoroughfare for freedom beat
-:Across the wilderness
-
-:America! America!
+:Across the wilderness'
+Paragraph
+Text: ':America! America!
 :God mend thine ev'ry flaw,
 :Confirm thy soul in self-control,
-:Thy liberty in law.
-
-:O beautiful for heroes prov'd
+:Thy liberty in law.'
+Paragraph
+Text: ':O beautiful for heroes prov'd
 :In liberating strife,
 :Who more than self their country lov'd,
-:And mercy more than life.
-
-:America! America!
+:And mercy more than life.'
+Paragraph
+Text: ':America! America!
 :May God thy gold refine
 :Till all success be nobleness,
-:And ev'ry gain divine.
-
-:O beautiful for patriot dream
+:And ev'ry gain divine.'
+Paragraph
+Text: ':O beautiful for patriot dream
 :That sees beyond the years
 :Thine alabaster cities gleam
-:Undimmed by human tears.
-
-:America! America!
+:Undimmed by human tears.'
+Paragraph
+Text: ':America! America!
 :God shed His grace on thee,
 :And crown thy good with brotherhood
-:From sea to shining sea.
-
-'
+:From sea to shining sea.'
+Paragraph
 Section [0]  Original poem (1893) 
 Text: '
 :'
 ItalicBold: 3
 Text: 'America. A Poem for July 4.'
 ItalicBold: 3
-Text: '
-
-:O beautiful for halcyon skies,
+Paragraph
+Text: ':O beautiful for halcyon skies,
 : For amber waves of grain,
 :For purple mountain majesties
 : Above the enameled plain!
 :America! America!
 : God shed His grace on thee,
 :Till souls wax fair as earth and air
-: And music-hearted sea!
-
-:O beautiful for pilgrim feet
+: And music-hearted sea!'
+Paragraph
+Text: ':O beautiful for pilgrim feet
 : Whose stern, impassioned stress
 :A thoroughfare for freedom beat
 : Across the wilderness!
 :America! America!
 :God shed His grace on thee
 : Till paths be wrought through wilds of thought
-:By pilgrim foot and knee!
-
-:O beautiful for glory-tale
+:By pilgrim foot and knee!'
+Paragraph
+Text: ':O beautiful for glory-tale
 : Of liberating strife,
 :When once or twice, for man's avail,
 : Men lavished precious life!
 :America! America!
 : God shed His grace on thee
 :Till selfish gain no longer stain,
-: The banner of the free!
-
-:O beautiful for patriot dream
+: The banner of the free!'
+Paragraph
+Text: ':O beautiful for patriot dream
 : That sees beyond the years
 :Thine alabaster cities gleam
 : Undimmed by human tears!
 :America! America!
 : God shed His grace on thee
 :Till nobler men keep once again
-: Thy whiter jubilee!
-
-'
+: Thy whiter jubilee!'
+Paragraph
 Section [0] Popular versions
 Text: '
 Possibly the most notable current version of "America the Beautiful" is the setting for band and symphonic orchestra by the late arranger/conductor/composer '
 Begin Reference: Carmen Dragon
 End Reference: Carmen Dragon
-Text: '.  Performed thousands of times in recent years, Mr. Dragon's arrangement has been played for state occasions such as the memorial services for Presidents Ford and Reagan and at tribute concerts for events such as the Oklahoma City bombing and 9/11.
-
-Three different renditions of the song have entered the '
+Text: '.  Performed thousands of times in recent years, Mr. Dragon's arrangement has been played for state occasions such as the memorial services for Presidents Ford and Reagan and at tribute concerts for events such as the Oklahoma City bombing and 9/11.'
+Paragraph
+Text: 'Three different renditions of the song have entered the '
 Begin Reference: Hot Country Songs
 End Reference: Hot Country Songs
 Text: ' charts. The first was by '
@@ -503,9 +496,8 @@ Text: ' reached number 58 in July 2001. The song re-entered the chart following 
 Open Tag: ref attributes: []
 Text: 'Whitburn, p. 24'
 Close Tag: ref
-Text: '
-
-Popularity of the song increased greatly following the '
+Paragraph
+Text: 'Popularity of the song increased greatly following the '
 Begin Reference: September 11 attacks
 k: null
 Text: 'September 11, 2001 attacks'
@@ -535,9 +527,7 @@ k: last
 Text: 'Zacharek'
 End Template: cite news 
 Close Tag: ref
-Text: '
-
-'
+Paragraph
 Begin Reference: Ray Charles
 End Reference: Ray Charles
 Text: ' is credited with the song's most well known rendition in current times (although '
@@ -570,9 +560,9 @@ ItalicBold: 2
 Begin Reference: Genius & Friends
 End Reference: Genius & Friends
 ItalicBold: 2
-Text: '.
-
-Symbolically, '
+Text: '.'
+Paragraph
+Text: 'Symbolically, '
 Begin Reference: Marian Anderson
 End Reference: Marian Anderson
 Text: ' (a noted opera singer of her day) sang a rendition of "America the Beautiful" on the steps of the '
@@ -581,43 +571,42 @@ End Reference: Lincoln Memorial
 Text: ' in 1939 after being refused use of Constitution Hall by the '
 Begin Reference: Daughters of the American Revolution
 End Reference: Daughters of the American Revolution
-Text: ' because of her skin color.
-
-In 2009, on her album '
+Text: ' because of her skin color.'
+Paragraph
+Text: 'In 2009, on her album '
 ItalicBold: 2
 Text: 'Running for the Drum'
 ItalicBold: 2
 Text: ', '
 Begin Reference: Buffy Sainte-Marie
 End Reference: Buffy Sainte-Marie
-Text: ' released a new version of "America the Beautiful".  Her version contained some new lyrics, as well as a small modification of the melody.  This version includes only two verses, the second of which is original.
-
-:O beautiful for vision clear,
+Text: ' released a new version of "America the Beautiful".  Her version contained some new lyrics, as well as a small modification of the melody.  This version includes only two verses, the second of which is original.'
+Paragraph
+Text: ':O beautiful for vision clear,
 :That sees beyond the years,
 :The nightime sky, our hopes that fly,
-:Undimmed by human tears.
-
-:America! America!
+:Undimmed by human tears.'
+Paragraph
+Text: ':America! America!
 :God shed His grace on thee,
 :'Til selfish gain no longer stain,
-:The banner of the free.
-
-:And crown thy good with brotherhood,
-:From sea to shining sea.
-
-Wellesley students honor Bates with a version at graduation, substituting
+:The banner of the free.'
+Paragraph
+Text: ':And crown thy good with brotherhood,
+:From sea to shining sea.'
+Paragraph
+Text: 'Wellesley students honor Bates with a version at graduation, substituting
 :And crown thy good with SISTERhood,
-:From sea to shining sea.
-
-In 2008 '
+:From sea to shining sea.'
+Paragraph
+Text: 'In 2008 '
 Begin Reference: Christina Aguilera
 End Reference: Christina Aguilera
 Text: ' covered this song for a '
 Begin Reference: Rock the Vote
 End Reference: Rock the Vote
-Text: ' commercial
-
-'
+Text: ' commercial'
+Paragraph
 Section [0] Idioms
 Text: '
 '
@@ -654,9 +643,8 @@ ItalicBold: 2
 Begin Reference: A Mari Usque Ad Mare
 End Reference: A Mari Usque Ad Mare
 ItalicBold: 2
-Text: ' ("From sea to sea.")
-
-'
+Text: ' ("From sea to sea.")'
+Paragraph
 Section [0] Books
 Text: '
 '
@@ -693,9 +681,8 @@ Text: '
 :America! America!
 :God shed His grace on thee,
 :'Til selfish gain no longer stain,
-:The banner of the free.
-
-'
+:The banner of the free.'
+Paragraph
 Begin List
 List Item: Unordered 1
 Text: 'Barbara Younger has written a children's book about the writing of the song: ''Purple Mountain Majesties: The Story of Katharine Lee Bates and "America the Beautiful"''. The book has illustrations by artist Stacey Schuett.'
@@ -712,9 +699,8 @@ Sherr, Lynn (2001). '
 ItalicBold: 2
 Text: 'America the Beautiful: The Stirring True Story Behind Our Nation's Favorite Song'
 ItalicBold: 2
-Text: '. PublicAffairs. ISBN 978-1-58648-085-1.
-
-'
+Text: '. PublicAffairs. ISBN 978-1-58648-085-1.'
+Paragraph
 Section [0] Sources/external links
 Text: '
 '
@@ -768,9 +754,7 @@ Text: '
 '
 Begin Template: Elvis Presley singles
 End Template: Elvis Presley singles
-Text: '
-
-'
+Paragraph
 Begin Template: DEFAULTSORT:America The Beautiful
 End Template: DEFAULTSORT:America The Beautiful
 Text: '
@@ -805,9 +789,7 @@ Text: '
 '
 Begin Reference: Category:Mormon Tabernacle Choir songs
 End Reference: Category:Mormon Tabernacle Choir songs
-Text: '
-
-'
+Paragraph
 Begin Reference: de:America the Beautiful
 End Reference: de:America the Beautiful
 Text: '

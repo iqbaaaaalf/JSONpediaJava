@@ -13,6 +13,7 @@ public class WikiTextParserFilteredHandler implements WikiTextParserHandler {
     private final WikiTextParserHandler decorated;
     private final FilteredHandlerCriteria criteriaHandler;
 
+    private int paragraphIndex = 0;
     private int sectionLevel = -1;
     private int nestingLevel = 0;
 
@@ -25,6 +26,13 @@ public class WikiTextParserFilteredHandler implements WikiTextParserHandler {
     public void beginDocument(URL document) {
         if(mustFilter()) return;
         decorated.beginDocument(document);
+    }
+
+    @Override
+    public void paragraph() {
+        paragraphIndex++;
+        if(mustFilter()) return;
+        decorated.paragraph();
     }
 
     @Override
@@ -197,6 +205,6 @@ public class WikiTextParserFilteredHandler implements WikiTextParserHandler {
     }
 
     private boolean mustFilter() {
-        return criteriaHandler.mustFilter(sectionLevel, nestingLevel);
+        return criteriaHandler.mustFilter(paragraphIndex, sectionLevel, nestingLevel);
     }
 }

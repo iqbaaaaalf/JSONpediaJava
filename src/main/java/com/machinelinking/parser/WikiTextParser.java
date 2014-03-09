@@ -92,7 +92,10 @@ public class WikiTextParser implements ParserReader {
                 consumeChars();
                 mark();
                 final String couple = readCouple();
-                if('&' == couple.charAt(0)) {
+                /*if("\n\n".equals(couple)) {
+                    //mark();
+                    handler.paragraph();
+                } else */if('&' == couple.charAt(0)) {
                     reset();
                     EntityExpansionReader.readEntity(this, handler);
                 } else if('<' == couple.charAt(0)) {
@@ -222,7 +225,7 @@ public class WikiTextParser implements ParserReader {
     }
 
     private final StringBuilder externalCharsSB = new StringBuilder();
-    private void consumeChars(boolean breakAtCR) throws IOException {
+    private void consumeChars() throws IOException {
         mark();
         clear(externalCharsSB);
         char c;
@@ -250,9 +253,21 @@ public class WikiTextParser implements ParserReader {
                             externalCharsSB.append('\'');
                         }
                     }
-                } else if(breakAtCR && c == '\n') {
-                    mark();
-                    break;
+                } else if(c == '\n') { // Handling paragraph.
+                        mark();
+                    try {
+                        c = read();
+                        if (c == '\n') {
+                            mark();
+                            flushText(externalCharsSB);
+                            handler.paragraph();
+                        } else {
+                            externalCharsSB.append('\n');
+                            reset();
+                        }
+                    } catch (EOFException eof) {
+                        externalCharsSB.append('\n');
+                    }
                 } else if (
                         c != '{' &&
                         c != '[' &&
@@ -272,10 +287,6 @@ public class WikiTextParser implements ParserReader {
         } finally {
             flushText(externalCharsSB);
         }
-    }
-
-    private void consumeChars() throws IOException {
-        consumeChars(false);
     }
 
     private final StringBuilder templateHeaderSB = new StringBuilder();

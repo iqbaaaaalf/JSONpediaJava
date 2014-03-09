@@ -20,6 +20,8 @@ public interface WikiTextParserHandler extends TagHandler {
 
     void beginDocument(URL document);
 
+    void paragraph();
+
     void section(String title, int level);
 
     void parseWarning(String msg, ParserLocation location);

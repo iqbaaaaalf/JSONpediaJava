@@ -46,6 +46,11 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     }
 
     @Override
+    public void paragraph() {
+        printOut("Paragraph");
+    }
+
+    @Override
     public void section(String title, int level) {
         printOut(String.format("Section [%d] %s", level, title));
     }
