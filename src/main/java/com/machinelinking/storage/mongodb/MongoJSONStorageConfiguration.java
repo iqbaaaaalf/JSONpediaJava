@@ -1,7 +1,9 @@
-package com.machinelinking.storage;
+package com.machinelinking.storage.mongodb;
+
+import com.machinelinking.storage.JSONStorageConfiguration;
 
 /**
- * Implementation of {@link JSONStorageConfiguration} for <i>MongoDB</i>.
+ * Implementation of {@link com.machinelinking.storage.JSONStorageConfiguration} for <i>MongoDB</i>.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */

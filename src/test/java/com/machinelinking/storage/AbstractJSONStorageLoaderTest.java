@@ -10,17 +10,20 @@ import org.xml.sax.SAXException;
 
 import java.io.IOException;
 import java.net.URL;
+import java.net.UnknownHostException;
 
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class DefaultJSONStorageLoaderTest {
+public abstract class AbstractJSONStorageLoaderTest {
 
     private static final Flag[] FLAGS = {
             WikiEnricherFactory.Extractors,
             WikiEnricherFactory.Splitters,
             WikiEnricherFactory.Validate
     };
+
+    protected abstract JSONStorage getJSONStorage() throws UnknownHostException;
 
     @Test
     public void testLoaderDump1() throws IOException, SAXException {
@@ -40,17 +43,15 @@ public class DefaultJSONStorageLoaderTest {
     @Ignore
     @Test
     public void testLoaderDump4() throws IOException, SAXException {
-        loadDump("file:///Users/hardest/Downloads/enwiki-latest-pages-articles7.xml-p000305002p000464996.bz2", 0);
+        loadDump("/downloads/enwiki-latest-pages-articles7.xml-p000305002p000464996.bz2", 0);
     }
 
     public void loadDump(String dump, int expectedIssues) throws IOException, SAXException {
-        MongoJSONStorage  jsonStorage = new MongoJSONStorage(
-                new MongoJSONStorageConfiguration("127.0.0.1", 7654, "jsonpedia")
-        );
+
         final DefaultJSONStorageLoader loader = new DefaultJSONStorageLoader(
                 WikiEnricherFactory.getInstance(),
                 FLAGS,
-                jsonStorage
+                getJSONStorage()
         );
 
         final StorageLoaderReport report = loader.load(

@@ -1,10 +1,12 @@
-package com.machinelinking.storage;
+package com.machinelinking.storage.mongodb;
 
+import com.machinelinking.storage.DBObjectDocument;
+import com.machinelinking.storage.JSONStorageConnection;
 import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
 
 /**
- * Implementation of {@link JSONStorageConnection} for <i>MongoDB</i>.
+ * Implementation of {@link com.machinelinking.storage.JSONStorageConnection} for <i>MongoDB</i>.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */

@@ -1,12 +1,15 @@
-package com.machinelinking.storage;
+package com.machinelinking.storage.mongodb;
 
+import com.machinelinking.storage.DBObjectDocument;
+import com.machinelinking.storage.JSONStorage;
+import com.machinelinking.storage.JSONStorageConnection;
 import com.mongodb.DB;
 import com.mongodb.Mongo;
 
 import java.net.UnknownHostException;
 
 /**
- * Implementation of {@link JSONStorage} based on <i>MongoDB</i>.
+ * Implementation of {@link com.machinelinking.storage.JSONStorage} based on <i>MongoDB</i>.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
