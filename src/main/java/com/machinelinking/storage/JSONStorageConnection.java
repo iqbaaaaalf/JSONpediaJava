@@ -15,5 +15,4 @@ public interface JSONStorageConnection<D extends Document> {
 
     long getDocumentsCount();
 
-    void addDocument(DBObjectDocument document);
 }
