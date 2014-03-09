@@ -47,6 +47,15 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
+    public void var(Var v) {
+        serializer.openObject();
+        serializer.fieldValue("__type", "var");
+        serializer.fieldValue("name"   , v.name);
+        serializer.fieldValue("default", v.defaultValue);
+        serializer.closeObject();
+    }
+
+    @Override
     public void paragraph() {
         serializer.openObject();
         serializer.fieldValue("__type", "paragraph");
