@@ -9,12 +9,13 @@ import java.util.concurrent.ArrayBlockingQueue;
  */
 public class BufferedWikiPageHandler implements WikiPageHandler {
 
-    public static final WikiPage EOQ = new WikiPage(0, null, null);
+    public static final WikiPage EOQ = new WikiPage(0, 0, null, null);
 
     private final StringBuilder sb = new StringBuilder();
     private final ArrayBlockingQueue<WikiPage> pages = new ArrayBlockingQueue<>(1024);
 
     private int     id;
+    private int     revId;
     private String  title;
     private boolean eoqAdded = false;
 
@@ -43,8 +44,9 @@ public class BufferedWikiPageHandler implements WikiPageHandler {
     }
 
     @Override
-    public void startWikiPage(int id, String title) {
+    public void startWikiPage(int id, int revisionId, String title) {
         this.id = id;
+        this.revId = revisionId;
         this.title = title;
     }
 
@@ -56,7 +58,7 @@ public class BufferedWikiPageHandler implements WikiPageHandler {
     @Override
     public void endWikiPage() {
         try {
-            pages.put(new WikiPage(this.id, this.title, sb.toString()));
+            pages.put(new WikiPage(this.id, this.revId, this.title, sb.toString()));
         } catch (InterruptedException ie) {
             throw new IllegalStateException("Something went wrong.", ie);
         }

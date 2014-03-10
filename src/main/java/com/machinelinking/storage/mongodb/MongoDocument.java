@@ -11,33 +11,50 @@ import com.mongodb.DBObject;
  */
 public class MongoDocument implements Document<DBObject> {
 
-    private final String id;
+    private final int id;
+    private final int version;
+    private final String name;
     private final DBObject document;
 
     public static MongoDocument unwrap(DBObject in) {
-        return new MongoDocument( (String) in.get("_id"), (DBObject) in.get("content") );
+        return new MongoDocument(
+                (String) in.get("_id"),
+                (Integer) in.get("id"),
+                (Integer) in.get("version"),
+                (DBObject) in.get("content")
+        );
     }
 
-    public MongoDocument(String id, DBObject document) {
-        if(id == null) throw new NullPointerException("id cannot be null.");
+    public MongoDocument(String name, Integer id,  Integer version, DBObject content) {
+        if(name == null) throw new NullPointerException("name cannot be null.");
+        this.name = name;
         this.id = id;
+        this.version = version;
 
         this.document = new BasicDBObject();
-        this.document.put("_id", id);
-        this.document.put("content", document);
-    }
-
-    public MongoDocument(String id) {
-        this(id, null);
+        this.document.put("_id", name);
+        this.document.put("id", id);
+        this.document.put("version", version);
+        this.document.put("content", content);
     }
 
     @Override
-    public String getId() {
+    public int getId() {
         return id;
     }
 
     @Override
-    public DBObject getDocument() {
+    public int getVersion() {
+        return version;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public DBObject getContent() {
         return document;
     }
 

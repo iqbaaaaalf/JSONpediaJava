@@ -7,18 +7,24 @@ package com.machinelinking.wikimedia;
  */
 public class WikiPage {
 
-    private final int    id;
+    private final int id;
+    private final int revId;
     private final String title;
     private final String content;
 
-    public WikiPage(int id, String title, String content) {
+    public WikiPage(int id, int revid, String title, String content) {
         this.id      = id;
+        this.revId = revid;
         this.title   = title;
         this.content = content;
     }
 
     public int getId() {
          return id;
+    }
+
+    public int getRevId() {
+         return revId;
     }
 
     public String getTitle() {

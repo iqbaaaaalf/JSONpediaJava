@@ -19,17 +19,17 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
 
     @Override
     public void addDocument(MongoDocument document) {
-        collection.insert( document.getDocument() );
+        collection.insert( document.getContent() );
     }
 
     @Override
     public void removeDocument(String docId) {
-        collection.remove( new MongoDocument(docId).getDocument() );
+        collection.remove( new MongoDocument(docId, null, null, null).getContent() );
     }
 
     @Override
     public MongoDocument getDocument(String docId) {
-        final DBObject found = collection.findOne( new MongoDocument(docId).getDocument()  );
+        final DBObject found = collection.findOne( new MongoDocument(docId, null, null, null).getContent()  );
         return MongoDocument.unwrap(found);
     }
 

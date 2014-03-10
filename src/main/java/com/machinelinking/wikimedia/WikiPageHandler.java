@@ -9,7 +9,7 @@ public interface WikiPageHandler {
 
     void startStream();
 
-    void startWikiPage(int pageId, String title);
+    void startWikiPage(int pageId, int revisionId, String title);
 
     void wikiPageContent(char[] buffer, int offset, int len);
 

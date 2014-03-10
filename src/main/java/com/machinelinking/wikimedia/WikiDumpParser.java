@@ -17,6 +17,7 @@ import java.io.InputStream;
 public class WikiDumpParser extends DefaultHandler {
 
     private static final String PAGE_NODE     = "page";
+    private static final String REVISION_NODE = "revision";
     private static final String ID_NODE       = "id";
     private static final String TITLE_NODE    = "title";
     private static final String REDIRECT_NODE = "redirect";
@@ -27,14 +28,16 @@ public class WikiDumpParser extends DefaultHandler {
 
     private WikiPageHandler handler;
 
-    private boolean insidePage    = false;
-    private boolean insideId      = false;
-    private boolean insideTitle   = false;
-    private boolean insideText    = false;
+    private boolean insidePage = false;
+    private boolean insideRevision = false;
+    private boolean insideId = false;
+    private boolean insideTitle = false;
+    private boolean insideText = false;
     private boolean foundRedirect = false;
 
     private StringBuilder textBuffer = new StringBuilder();
     private Integer pageId   = null;
+    private Integer pageRev  = null;
     private String pageTitle = null;
 
     public WikiDumpParser() {
@@ -66,6 +69,8 @@ public class WikiDumpParser extends DefaultHandler {
     throws SAXException {
         if(PAGE_NODE.equalsIgnoreCase(qName)) {
             insidePage = true;
+        } else if(insidePage && REVISION_NODE.equalsIgnoreCase(qName)) {
+            insideRevision = true;
         } else if(insidePage && ID_NODE.equalsIgnoreCase(qName)) {
             insideId = true;
             textBuffer.delete(0, textBuffer.length());
@@ -75,15 +80,17 @@ public class WikiDumpParser extends DefaultHandler {
             foundRedirect = true;
         } else if(insidePage && !foundRedirect && TEXT_NODE.equalsIgnoreCase(qName)) {
             insideText = true;
-            handler.startWikiPage(pageId, pageTitle);
+            handler.startWikiPage(pageId, pageRev, pageTitle);
         }
     }
 
     @Override
     public void characters(char[] ch, int start, int length) throws SAXException {
-        if (insideId || insideTitle) {
+        if (!foundRedirect && (insideId || insideTitle)) {
             textBuffer.append(ch, start, length);
-        } else if(!foundRedirect && insideText) {
+        } else if(foundRedirect) {
+            textBuffer.append(ch, start, length);
+        } else if(insideText) {
             handler.wikiPageContent(ch, start, length);
         }
     }
@@ -93,12 +100,17 @@ public class WikiDumpParser extends DefaultHandler {
         if (insidePage && !foundRedirect && TEXT_NODE.equalsIgnoreCase(qName)) {
             insideText = false;
             handler.endWikiPage();
-        } else if (insidePage && ID_NODE.equalsIgnoreCase(qName)) {
+        } else if (insidePage && !insideRevision && ID_NODE.equalsIgnoreCase(qName)) {
             pageId = Integer.parseInt(textBuffer.toString());
+            insideId = false;
+        } else if (insideRevision && ID_NODE.equalsIgnoreCase(qName)) {
+            pageRev = Integer.parseInt(textBuffer.toString());
             insideId = false;
         } else if (insidePage && TITLE_NODE.equalsIgnoreCase(qName)) {
             pageTitle = textBuffer.toString();
             insideTitle = false;
+        } else if (REVISION_NODE.equalsIgnoreCase(qName)) {
+            insideRevision = false;
         } else if (PAGE_NODE.equalsIgnoreCase(qName)) {
             insidePage = false;
             foundRedirect = false;

@@ -7,8 +7,12 @@ package com.machinelinking.storage;
  */
 public interface Document<T> {
 
-    String getId();
+    int getId();
 
-    T getDocument();
+    int getVersion();
+
+    String getName();
+
+    T getContent();
 
 }

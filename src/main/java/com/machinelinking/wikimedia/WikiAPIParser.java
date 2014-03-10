@@ -20,6 +20,7 @@ public class WikiAPIParser extends DefaultHandler {
     private static final String PAGE_NODE        = "page";
     private static final String REV_NODE         = "rev";
     private static final String PAGE_ID_ATTR     = "pageid";
+    private static final String PAGE_REV_ATTR    = "revid";
     private static final String PAGE_TITLE_ATTR  = "title";
 
     private final SAXParserFactory factory = SAXParserFactory.newInstance();
@@ -31,6 +32,7 @@ public class WikiAPIParser extends DefaultHandler {
     private boolean insideRev  = false;
 
     private int    pageID;
+    private int revId;
     private String pageTitle;
 
     public static WikiPage parseAPIResponse(URL wikiAPIURL) throws IOException, SAXException {
@@ -87,7 +89,8 @@ public class WikiAPIParser extends DefaultHandler {
             }
         } else if(insidePage && REV_NODE.equalsIgnoreCase(qName)) {
             insideRev = true;
-            handler.startWikiPage(pageID, pageTitle);
+            revId = Integer.parseInt(attributes.getValue(PAGE_REV_ATTR));
+            handler.startWikiPage(pageID, revId, pageTitle);
         }
     }
 

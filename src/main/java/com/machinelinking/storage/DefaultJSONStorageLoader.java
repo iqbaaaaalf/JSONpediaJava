@@ -147,7 +147,7 @@ implements JSONStorageLoader {
                         serializer
                 );
                 final DBObject dbNode = (DBObject) JSON.parse(baos.toString()); // TODO: avoid it.
-                connection.addDocument(new MongoDocument(page.getTitle(), dbNode));
+                connection.addDocument(new MongoDocument(page.getTitle(), page.getId(), page.getRevId(), dbNode));
             } catch (Exception e) {
                 errorPages++;
                 System.out.println(
