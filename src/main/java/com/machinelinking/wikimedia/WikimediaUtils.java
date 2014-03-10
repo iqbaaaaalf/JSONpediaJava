@@ -12,11 +12,11 @@ import java.net.URLEncoder;
 public class WikimediaUtils {
 
     private static final String WIKIPEDIA_GET_RESOURCE_WTEXT_CODE_API =
-            "/w/api.php?format=xml&action=query&titles=%s&prop=revisions&rvprop=content";
+            "/w/api.php?format=xml&action=query&titles=%s&prop=revisions&rvprop=ids|content";
 
     private static final String DBPEDIA_GET_MAPPING_WTEXT_CODE_API =
-            "http://mappings.dbpedia.org/api.php?action=query&prop=revisions&rvprop=content&format=xml" +
-            "&gapnamespace=204&gaplimit=10&titles=";
+            "http://mappings.dbpedia.org/api.php?action=query&prop=revisions&rvprop=ids|content&format=xml" +
+            "&titles=";
 
     public static String getEntityName(String entityURL) {
         final int entityNameBegin = entityURL.lastIndexOf('/') + 1;
