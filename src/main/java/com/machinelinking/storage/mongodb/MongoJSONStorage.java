@@ -1,6 +1,5 @@
 package com.machinelinking.storage.mongodb;
 
-import com.machinelinking.storage.DBObjectDocument;
 import com.machinelinking.storage.JSONStorage;
 import com.machinelinking.storage.JSONStorageConnection;
 import com.mongodb.DB;
@@ -13,7 +12,7 @@ import java.net.UnknownHostException;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class MongoJSONStorage implements JSONStorage<MongoJSONStorageConfiguration,DBObjectDocument> {
+public class MongoJSONStorage implements JSONStorage<MongoJSONStorageConfiguration,MongoDocument> {
 
     private final MongoJSONStorageConfiguration config;
     private final Mongo mongo;
@@ -31,7 +30,7 @@ public class MongoJSONStorage implements JSONStorage<MongoJSONStorageConfigurati
     }
 
     @Override
-    public JSONStorageConnection<DBObjectDocument> openConnection(String table) {
+    public JSONStorageConnection<MongoDocument> openConnection(String table) {
         return new MongoJSONStorageConnection(db.getCollection(table));
     }
 

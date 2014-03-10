@@ -1,6 +1,5 @@
 package com.machinelinking.storage.mongodb;
 
-import com.machinelinking.storage.DBObjectDocument;
 import com.machinelinking.storage.JSONStorageConnection;
 import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
@@ -10,7 +9,7 @@ import com.mongodb.DBObject;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class MongoJSONStorageConnection implements JSONStorageConnection<DBObjectDocument> {
+public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDocument> {
 
     private final DBCollection collection;
 
@@ -19,19 +18,19 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<DBObjec
     }
 
     @Override
-    public void addDocument(DBObjectDocument document) {
+    public void addDocument(MongoDocument document) {
         collection.insert( document.getDocument() );
     }
 
     @Override
     public void removeDocument(String docId) {
-        collection.remove( new DBObjectDocument(docId).getDocument() );
+        collection.remove( new MongoDocument(docId).getDocument() );
     }
 
     @Override
-    public DBObjectDocument getDocument(String docId) {
-        final DBObject found = collection.findOne( new DBObjectDocument(docId).getDocument()  );
-        return DBObjectDocument.unwrap(found);
+    public MongoDocument getDocument(String docId) {
+        final DBObject found = collection.findOne( new MongoDocument(docId).getDocument()  );
+        return MongoDocument.unwrap(found);
     }
 
     @Override

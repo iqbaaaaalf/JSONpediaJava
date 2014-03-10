@@ -8,6 +8,7 @@ import com.machinelinking.serializer.DataEncoder;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.MongoDBDataEncoder;
 import com.machinelinking.serializer.Serializer;
+import com.machinelinking.storage.mongodb.MongoDocument;
 import com.machinelinking.wikimedia.PageProcessor;
 import com.machinelinking.wikimedia.ProcessorReport;
 import com.machinelinking.wikimedia.WikiDumpMultiThreadProcessor;
@@ -146,7 +147,7 @@ implements JSONStorageLoader {
                         serializer
                 );
                 final DBObject dbNode = (DBObject) JSON.parse(baos.toString()); // TODO: avoid it.
-                connection.addDocument(new DBObjectDocument(page.getTitle(), dbNode));
+                connection.addDocument(new MongoDocument(page.getTitle(), dbNode));
             } catch (Exception e) {
                 errorPages++;
                 System.out.println(

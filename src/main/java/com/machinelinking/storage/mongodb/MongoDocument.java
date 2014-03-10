@@ -1,23 +1,24 @@
-package com.machinelinking.storage;
+package com.machinelinking.storage.mongodb;
 
+import com.machinelinking.storage.Document;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 
 /**
- * {@link Document} implementation for {@link DBObject}.
+ * {@link com.machinelinking.storage.Document} implementation for {@link DBObject}.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class DBObjectDocument implements Document<DBObject> {
+public class MongoDocument implements Document<DBObject> {
 
     private final String id;
     private final DBObject document;
 
-    public static DBObjectDocument unwrap(DBObject in) {
-        return new DBObjectDocument( (String) in.get("_id"), (DBObject) in.get("content") );
+    public static MongoDocument unwrap(DBObject in) {
+        return new MongoDocument( (String) in.get("_id"), (DBObject) in.get("content") );
     }
 
-    public DBObjectDocument(String id, DBObject document) {
+    public MongoDocument(String id, DBObject document) {
         if(id == null) throw new NullPointerException("id cannot be null.");
         this.id = id;
 
@@ -26,7 +27,7 @@ public class DBObjectDocument implements Document<DBObject> {
         this.document.put("content", document);
     }
 
-    public DBObjectDocument(String id) {
+    public MongoDocument(String id) {
         this(id, null);
     }
 
