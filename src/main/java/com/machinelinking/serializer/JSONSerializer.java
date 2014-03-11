@@ -14,7 +14,6 @@ import java.util.Stack;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-//TODO: remove print out but before check for possible errors.
 public class JSONSerializer implements Serializer {
 
     private static final String ANON_FIELD_PREFIX = "__an";
@@ -191,13 +190,11 @@ public class JSONSerializer implements Serializer {
                 stackPush(WriterStatus.Field);
             } else if(checkAndPop(WriterStatus.PreList)) {
                 stackPush(WriterStatus.List);
-                System.out.println("SPURIOUS A");
                 jsonGenerator.writeStartArray();
                 jsonGenerator.writeStartObject();
                 jsonGenerator.writeFieldName(finalName);
                 stackPush(WriterStatus.SpuriousField);
             } else if(check(WriterStatus.List)) {
-                System.out.println("SPURIOUS B");
                 jsonGenerator.writeStartObject();
                 jsonGenerator.writeFieldName(finalName);
                 stackPush(WriterStatus.SpuriousField);
@@ -208,7 +205,6 @@ public class JSONSerializer implements Serializer {
                 jsonGenerator.writeFieldName(finalName);
                 stackPush(WriterStatus.SpuriousField);
             }else { // Field
-                System.out.println("NESTED");
                 jsonGenerator.writeStartObject();
                 jsonGenerator.writeFieldName(finalName);
                 stackPush(WriterStatus.SpuriousField);
@@ -313,19 +309,12 @@ public class JSONSerializer implements Serializer {
     }
 
     private void closeUntil(WriterStatus target) {
-        if( target == null) {
-            System.out.println("CLOSE ALL {");
-        } else {
-            System.out.println("CLOSE UNTIL " + target + "{");
-        }
         WriterStatus status;
         while(! stack.isEmpty()) {
             status = stack.pop();
             status.close(jsonGenerator);
-            System.out.println("CLOSED: " + status);
             if(target != null && status == target) break;
         }
-        System.out.println("}");
     }
 
     public void close() {
