@@ -9,6 +9,7 @@ import java.net.URL;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
+// TODO: replace with TextExtractor
 public class AbstractExtractor extends Extractor {
 
     private final StringBuilder textBuffer = new StringBuilder();
