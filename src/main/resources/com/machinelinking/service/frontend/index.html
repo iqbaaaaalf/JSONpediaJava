@@ -134,6 +134,10 @@
                 window.prompt('CTRL + C to copy:', $('#get-query').html() );
             });
 
+            $('#filter-help').click(function(e){
+                document.location = "#filter-syntax";
+            });
+
             $('#get-query-open-external').click(function (e) {
                 window.open( buildGetRequest() );
             });
@@ -266,6 +270,7 @@ Download and install JSONpedia: visit the
         <label class="control-label">Filter:</label>
         <div class="controls">
             <input class="span11" id="get-filter" type="text" style="width:300px" placeholder="__type:link"/>
+            <i id="filter-help" class="icon-question-sign" rel="tooltip" data-original-title="Filter syntax"></i>
         </div>
     </div>
 
