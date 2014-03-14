@@ -24,7 +24,7 @@ public class DefaultJSONFilter implements JSONFilter {
     public boolean match(JsonNode node) {
         for(Map.Entry<String,String> criteria : criterias.entrySet()) {
             final JsonNode value = node.get(criteria.getKey());
-            if(value == null || ! value.asText().equals(criteria.getValue())) {
+            if(value == null || ! value.asText().matches(criteria.getValue())) {
                 return false;
             }
         }
