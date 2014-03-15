@@ -15,9 +15,9 @@ public class DefaultJSONFilter implements JSONFilter {
     private Map<String,String> criterias = new HashMap<>();
 
     @Override
-    public void addCriteria(String fieldName, String fieldValue) {
+    public void addCriteria(String fieldName, String fieldPattern) {
         if(criterias.containsKey(fieldName)) throw new IllegalArgumentException();
-        criterias.put(fieldName, fieldValue);
+        criterias.put(fieldName, fieldPattern);
     }
 
     @Override

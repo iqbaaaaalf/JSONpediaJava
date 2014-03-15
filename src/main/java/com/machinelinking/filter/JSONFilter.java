@@ -13,9 +13,9 @@ public interface JSONFilter {
      * Adds a filtering criteria based on exact matching.
      *
      * @param fieldName name of the field to match.
-     * @param fieldValue value of the field to match.
+     * @param fieldPattern the pattern to match for the field value.
      */
-    void addCriteria(String fieldName, String fieldValue);
+    void addCriteria(String fieldName, String fieldPattern);
 
     /**
      * @param node
