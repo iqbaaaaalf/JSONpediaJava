@@ -13,12 +13,12 @@ import java.util.List;
  */
 public class AttributeScanner {
 
-    public static final char DEFAULT_EMPTY_CHAR = ' ';
+    public static final char DEFAULT_SEPARATOR_CHAR = ' ';
     public static final char DEFAULT_ASSIGN_CHAR = '=';
     public static final char DEFAULT_VALUE_DELIMITER_CHAR = '"';
 
     public static Attribute[] scan(
-            final char EMPTY, final char ASSIGN, final char VALUE_DELIMITER, final String content
+            final char SEPARATOR, final char ASSIGN, final char VALUE_DELIMITER, final String content
     ) {
         final StringBuilder keyBuilder = new StringBuilder();
         final StringBuilder valueBuilder = new StringBuilder();
@@ -26,11 +26,11 @@ public class AttributeScanner {
         char c;
         for (int i = 0; i < content.length(); i++) {
             c = content.charAt(i);
-            if (EMPTY == c) {
+            if (SEPARATOR == c) {
                 // Empty.
             } else if (ASSIGN == c) {
                 valueBuilder.delete(0, valueBuilder.length());
-                i = scanValue(VALUE_DELIMITER, content, i + 1, valueBuilder);
+                i = scanValue(SEPARATOR, ASSIGN, VALUE_DELIMITER, content, i + 1, valueBuilder);
                 attributes.add(new Attribute(keyBuilder.toString(), valueBuilder.toString()));
                 keyBuilder.delete(0, keyBuilder.length());
             } else {
@@ -41,25 +41,29 @@ public class AttributeScanner {
     }
 
     public static Attribute[] scan(String content) {
-        return scan(DEFAULT_EMPTY_CHAR, DEFAULT_ASSIGN_CHAR, DEFAULT_VALUE_DELIMITER_CHAR, content);
+        return scan(DEFAULT_SEPARATOR_CHAR, DEFAULT_ASSIGN_CHAR, DEFAULT_VALUE_DELIMITER_CHAR, content);
     }
 
     // TODO: add escape support.
     protected static int scanValue(
-            final char VALUE_DELIMITER, final String content, final int index, final StringBuilder out
+            final char SEPARATOR, final char ASSIGN, final char VALUE_DELIMITER,
+            final String content, final int index, final StringBuilder out
     ) {
         boolean withinQuotes = false;
         char c;
         int i;
         for (i = index; i < content.length(); i++) {
             c = content.charAt(i);
+            if(ASSIGN == c) throw new IllegalArgumentException(
+                    String.format("Invalid char %c at position %d", ASSIGN, i)
+            );
             if (VALUE_DELIMITER == c) {
                 if (withinQuotes) {
                     break;
                 } else {
                     withinQuotes = true;
                 }
-            } else if (!withinQuotes && ' ' == c) {
+            } else if (!withinQuotes && SEPARATOR == c) {
                 if (out.length() > 0) {
                     return i;
                 }
@@ -71,7 +75,9 @@ public class AttributeScanner {
     }
 
     protected static int scanValue(final String content, final int index, final StringBuilder out) {
-        return scanValue(DEFAULT_VALUE_DELIMITER_CHAR, content, index, out);
+        return scanValue(
+                DEFAULT_SEPARATOR_CHAR, DEFAULT_ASSIGN_CHAR, DEFAULT_VALUE_DELIMITER_CHAR, content, index, out
+        );
     }
 
 }

@@ -70,7 +70,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
         final JsonNode node = performQuery(
                 buildPath(TARGET_RESOURCE)
                         .queryParam("procs", WikiEnricherFactory.Structure)
-                        .queryParam("filter", DefaultJSONFilterEngineTest.FILTER_EXP).build()
+                        .queryParam("filter", DefaultJSONFilterEngineTest.BASIC_FILTER_EXP).build()
         );
         Assert.assertEquals(
                 JSONUtils.parseJSON(

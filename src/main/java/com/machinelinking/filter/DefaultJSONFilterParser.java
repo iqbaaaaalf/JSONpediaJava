@@ -1,5 +1,8 @@
 package com.machinelinking.filter;
 
+import com.machinelinking.parser.Attribute;
+import com.machinelinking.parser.AttributeScanner;
+
 /**
  * Default {@link JSONFilterParser} implementation.
  *
@@ -7,19 +10,19 @@ package com.machinelinking.filter;
  */
 public class DefaultJSONFilterParser implements JSONFilterParser {
 
-    public static final String CONSTRAINT_SEPARATOR = ",";
-    public static final String FIELD_SEPARATOR      = ":";
+    public static final char CONSTRAINT_SEPARATOR  = ',';
+    public static final char FIELD_SEPARATOR       = ':';
+    public static final char FIELD_VALUE_DELIMITER = '"';
 
     @Override
     public void parse(String exp, JSONFilter filter) {
         if(exp == null || exp.trim().length() == 0) return;
-        final String[] criterias = exp.split(CONSTRAINT_SEPARATOR);
-        for(String criteria : criterias) {
-            final String[] keyVal = criteria.split(FIELD_SEPARATOR);
-            if(keyVal.length != 2) throw new IllegalArgumentException(
-                    String.format("Invalid constraint [%s]", criteria)
-            );
-            filter.addCriteria(keyVal[0], keyVal[1]);
+
+        final Attribute[] attributes = AttributeScanner.scan(
+                CONSTRAINT_SEPARATOR, FIELD_SEPARATOR, FIELD_VALUE_DELIMITER, exp
+        );
+        for(Attribute attribute : attributes) {
+            filter.addCriteria(attribute.name, attribute.value);
         }
     }
 }
