@@ -13,18 +13,24 @@ import java.util.List;
  */
 public class AttributeScanner {
 
-    public static Attribute[] scan(String content) {
+    public static final char DEFAULT_EMPTY_CHAR = ' ';
+    public static final char DEFAULT_ASSIGN_CHAR = '=';
+    public static final char DEFAULT_VALUE_DELIMITER_CHAR = '"';
+
+    public static Attribute[] scan(
+            final char EMPTY, final char ASSIGN, final char VALUE_DELIMITER, final String content
+    ) {
         final StringBuilder keyBuilder = new StringBuilder();
         final StringBuilder valueBuilder = new StringBuilder();
         final List<Attribute> attributes = new ArrayList<>();
         char c;
         for (int i = 0; i < content.length(); i++) {
             c = content.charAt(i);
-            if (' ' == c) {
+            if (EMPTY == c) {
                 // Empty.
-            } else if ('=' == c) {
+            } else if (ASSIGN == c) {
                 valueBuilder.delete(0, valueBuilder.length());
-                i = scanValue(content, i + 1, valueBuilder);
+                i = scanValue(VALUE_DELIMITER, content, i + 1, valueBuilder);
                 attributes.add(new Attribute(keyBuilder.toString(), valueBuilder.toString()));
                 keyBuilder.delete(0, keyBuilder.length());
             } else {
@@ -34,13 +40,20 @@ public class AttributeScanner {
         return attributes.toArray(new Attribute[attributes.size()]);
     }
 
-    protected static int scanValue(String content, int index, final StringBuilder out) {
+    public static Attribute[] scan(String content) {
+        return scan(DEFAULT_EMPTY_CHAR, DEFAULT_ASSIGN_CHAR, DEFAULT_VALUE_DELIMITER_CHAR, content);
+    }
+
+    // TODO: add escape support.
+    protected static int scanValue(
+            final char VALUE_DELIMITER, final String content, final int index, final StringBuilder out
+    ) {
         boolean withinQuotes = false;
         char c;
         int i;
         for (i = index; i < content.length(); i++) {
             c = content.charAt(i);
-            if ('"' == c) {
+            if (VALUE_DELIMITER == c) {
                 if (withinQuotes) {
                     break;
                 } else {
@@ -55,6 +68,10 @@ public class AttributeScanner {
             }
         }
         return i;
+    }
+
+    protected static int scanValue(final String content, final int index, final StringBuilder out) {
+        return scanValue(DEFAULT_VALUE_DELIMITER_CHAR, content, index, out);
     }
 
 }
