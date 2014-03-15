@@ -1,5 +1,6 @@
 package com.machinelinking.pagestruct;
 
+import com.machinelinking.parser.Attribute;
 import com.machinelinking.parser.ParserLocation;
 import com.machinelinking.parser.WikiTextParserHandler;
 

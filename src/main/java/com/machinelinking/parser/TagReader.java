@@ -1,7 +1,6 @@
 package com.machinelinking.parser;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -18,50 +17,6 @@ public class TagReader {
     private final WikiTextParserHandler handler;
 
     private final Stack<StackElement> tagStack = new Stack<>();
-
-    protected static int attributeValueScanner(String content, int index, final StringBuilder out) {
-        boolean withinQuotes = false;
-        char c;
-        int i;
-        for(i = index; i < content.length(); i++) {
-            c = content.charAt(i) ;
-            if('"' == c) {
-                if(withinQuotes) {
-                    break;
-                } else {
-                    withinQuotes = true;
-                }
-            } else if(!withinQuotes && ' ' == c) {
-                if(out.length() > 0) {
-                    return i;
-                }
-            } else {
-                out.append(c);
-            }
-        }
-        return i;
-    }
-
-    protected static TagHandler.Attribute[] attributeKeyValueScanner(String content) {
-        final StringBuilder keyBuilder = new StringBuilder();
-        final StringBuilder valueBuilder = new StringBuilder();
-        final List<WikiTextParserHandler.Attribute> attributes = new ArrayList<>();
-        char c;
-        for(int i = 0; i < content.length(); i++) {
-            c = content.charAt(i);
-            if(' ' == c) {
-                // Empty.
-            } else if('=' == c) {
-                valueBuilder.delete(0, valueBuilder.length());
-                i = attributeValueScanner(content, i + 1, valueBuilder);
-                attributes.add( new TagHandler.Attribute(keyBuilder.toString(), valueBuilder.toString()));
-                keyBuilder.delete(0, keyBuilder.length());
-            } else {
-                keyBuilder.append(c);
-            }
-        }
-        return attributes.toArray( new TagHandler.Attribute[attributes.size()]);
-    }
 
     public TagReader(WikiTextParserHandler handler) {
         this.handler = handler;
@@ -133,7 +88,7 @@ public class TagReader {
                             waitingTagName = false;
                         }
                         final String content = tagContent.toString();
-                        handler.inlineTag(tagName, attributeKeyValueScanner(content));
+                        handler.inlineTag(tagName, AttributeScanner.scan(content));
                     } else {
                         handler.parseWarning("Sequence error in tag", r.getLocation());
                     }
@@ -149,7 +104,7 @@ public class TagReader {
                 if(closeTag) {
                     popTag(tagName, r.getLocation());
                 } else {
-                    pushTag(tagName, attributeKeyValueScanner(content));
+                    pushTag(tagName, AttributeScanner.scan(content));
                 }
                 break;
             } else if(waitingTagName && ! Character.isJavaIdentifierPart(c)) {
@@ -179,7 +134,7 @@ public class TagReader {
         }
     }
 
-    protected void pushTag(String name, WikiTextParserHandler.Attribute[] attributes) {
+    protected void pushTag(String name, Attribute[] attributes) {
         tagStack.push( new StackElement(name, attributes) );
         handler.beginTag(name, attributes);
     }
@@ -230,9 +185,9 @@ public class TagReader {
 
     public class StackElement {
         private final String node;
-        private final TagHandler.Attribute[] attributes;
+        private final Attribute[] attributes;
 
-        StackElement(String node, WikiTextParserHandler.Attribute[] attributes) {
+        StackElement(String node, Attribute[] attributes) {
             this.node = node;
             this.attributes = attributes;
         }
@@ -241,7 +196,7 @@ public class TagReader {
             return node;
         }
 
-        public List<TagHandler.Attribute> getAttributes() {
+        public List<Attribute> getAttributes() {
             return Collections.unmodifiableList( Arrays.asList(attributes) );
         }
 

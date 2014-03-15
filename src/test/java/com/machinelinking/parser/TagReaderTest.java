@@ -10,7 +10,6 @@ import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -19,33 +18,6 @@ import java.util.List;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TagReaderTest {
-
-    @Test
-    public void testAttributeValueScanner() {
-        final StringBuilder value = new StringBuilder();
-
-        value.delete(0, value.length());
-        TagReader.attributeValueScanner("v1 post", 0, value);
-        Assert.assertEquals("v1",value.toString());
-
-        value.delete(0, value.length());
-        TagReader.attributeValueScanner("\"v1 v2\" post", 0, value);
-        Assert.assertEquals("v1 v2", value.toString());
-    }
-
-    @Test
-    public void testAttributeKeyValueScanner() {
-        TagHandler.Attribute[] attributes;
-
-        attributes = TagReader.attributeKeyValueScanner("k1 = v1");
-        Assert.assertEquals("[k1 : 'v1']", Arrays.asList(attributes).toString());
-
-        attributes = TagReader.attributeKeyValueScanner("k1 = \"v1a v1b\"");
-        Assert.assertEquals("[k1 : 'v1a v1b']", Arrays.asList(attributes).toString());
-
-        attributes = TagReader.attributeKeyValueScanner("k1=v1 k2 = v2 k3 = \"v3\" k4 = \"v4a v4b\"");
-        Assert.assertEquals("[k1 : 'v1', k2 : 'v2', k3 : 'v3', k4 : 'v4a v4b']", Arrays.asList(attributes).toString());
-    }
 
     @Test
     public void testReadOpenTag() throws IOException {
@@ -63,7 +35,7 @@ public class TagReaderTest {
     public void testReadCloseTag() throws IOException {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(false);
         final TagReader reader = new TagReader(handler);
-        reader.pushTag("node", new WikiTextParserHandler.Attribute[0]);
+        reader.pushTag("node", new Attribute[0]);
         reader.readNode(new TestParserReader("</node>"));
         Assert.assertEquals(
                 "Open Tag: node attributes: []\n" +
@@ -101,9 +73,9 @@ public class TagReaderTest {
     public void testNodeStack() {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler(false);
         final TagReader tagReader = new TagReader(handler);
-        tagReader.pushTag("br", new TagHandler.Attribute[0]);
-        tagReader.pushTag("ref", new TagHandler.Attribute[0]);
-        tagReader.pushTag("br", new TagHandler.Attribute[0]);
+        tagReader.pushTag("br", new Attribute[0]);
+        tagReader.pushTag("ref", new Attribute[0]);
+        tagReader.pushTag("br", new Attribute[0]);
         tagReader.popTag("ref", null);
 
         final List<TagReader.StackElement> stack = tagReader.getStack();
