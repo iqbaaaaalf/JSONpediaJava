@@ -2,6 +2,7 @@ package com.machinelinking.extractor;
 
 import com.machinelinking.pagestruct.WikiTextSerializerHandler;
 import com.machinelinking.pagestruct.WikiTextSerializerHandlerFactory;
+import com.machinelinking.parser.DefaultWikiTextParserHandler;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializer;
 
@@ -14,7 +15,7 @@ import java.net.URL;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class TextExtractor extends Extractor {
+public class TextHandler extends DefaultWikiTextParserHandler {
 
     private final StringWriter writer;
     private final WikiTextSerializerHandler decoratedHandler;
@@ -23,9 +24,7 @@ public class TextExtractor extends Extractor {
 
     private int nestedStructures = 0;
 
-    protected TextExtractor() {
-        super("text");
-
+    protected TextHandler() {
         writer = new StringWriter();
         final Serializer serializer;
         try {
@@ -37,16 +36,16 @@ public class TextExtractor extends Extractor {
         decoratedHandler.reset();
     }
 
-    @Override
-    public void flushContent(Serializer serializer) {
-        serializer.value(outputBuffer.toString());
-    }
-
-    @Override
     public void reset() {
         nestedStructures = 0;
         decoratedHandler.reset();
         outputBuffer.delete(0, outputBuffer.length());
+    }
+
+    public String flushContent() {
+        final String out = outputBuffer.toString();
+        reset();
+        return out;
     }
 
     @Override
