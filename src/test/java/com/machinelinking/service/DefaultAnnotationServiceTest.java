@@ -70,12 +70,11 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
         final JsonNode node = performQuery(
                 buildPath(TARGET_RESOURCE)
                         .queryParam("procs", WikiEnricherFactory.Structure)
-                        .queryParam("filter", DefaultJSONFilterEngineTest.BASIC_FILTER_EXP).build()
+                        .queryParam("filter", DefaultJSONFilterEngineTest.STRING_FILTER_EXP).build()
         );
         Assert.assertEquals(
                 JSONUtils.parseJSON(
-                        "{\"filter\":" +
-                                "\"__type=template\\nname=Death date and age\\n\"," +
+                        "{\"filter\":\"object_filter(__type=template,name=Death date and age,)>null\"," +
                                 "\"result\":[{\"__type\":\"template\",\"name\":\"Death date and age\"," +
                                 "\"content\":{\"df\":[\"yes\"],\"__an0\":[\"1955\"],\"__an1\":[\"4\"]," +
                                 "   \"__an2\":[\"18\"],\"__an3\":[\"1879\"],\"__an4\":[\"3\"],\"__an5\":[\"14\"]}}]}"

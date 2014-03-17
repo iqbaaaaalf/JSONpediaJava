@@ -7,6 +7,6 @@ package com.machinelinking.filter;
  */
 public interface JSONFilterParser {
 
-    void parse(String exp, JSONFilter filter);
+    JSONFilter parse(String exp, JSONFilterFactory factory);
 
 }

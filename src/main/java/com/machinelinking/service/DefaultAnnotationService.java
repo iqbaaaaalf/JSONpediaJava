@@ -188,7 +188,7 @@ public class DefaultAnnotationService implements AnnotationService {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final JsonGenerator generator = JSONUtils.createJSONGenerator(baos, FORMAT_JSON);
         generator.writeStartObject();
-        generator.writeObjectField("filter", filter.print());
+        generator.writeObjectField("filter", filter.humanReadable());
         generator.writeFieldName("result");
         generator.writeStartArray();
         final ObjectMapper mapper = new ObjectMapper();

@@ -1,7 +1,5 @@
 package com.machinelinking.filter;
 
-import org.codehaus.jackson.JsonNode;
-
 /**
  * Defines a filter applicable over a <i>JSON</i> object.
  *
@@ -10,24 +8,26 @@ import org.codehaus.jackson.JsonNode;
 public interface JSONFilter {
 
     /**
-     * Adds a filtering criteria based on exact matching.
-     *
-     * @param fieldName name of the field to match.
-     * @param fieldPattern the pattern to match for the field value.
-     */
-    void addCriteria(String fieldName, String fieldPattern);
-
-    /**
-     * @param node
-     * @return <code>true</code> if match is satisfied, <code>false</code> otherwise.
-     */
-    boolean match(JsonNode node);
-
-    /**
      * @return <code>true</code> if filter is empty, <code>false</code> otherwise.
      */
     boolean isEmpty();
 
-    String print();
+    /**
+     * Sets the nested filter if any.
+     *
+     * @param nested
+     */
+    void setNested(JSONFilter nested);
+
+    /**
+     *
+     * @return the nested filter if any or <code>null</code>.
+     */
+    JSONFilter getNested();
+
+    /**
+     * @return human readable version of filter.
+     */
+    String humanReadable();
 
 }

@@ -14,26 +14,36 @@ import java.io.IOException;
  */
 public class DefaultJSONFilterEngineTest {
 
-    public static final String BASIC_FILTER_EXP = "name:Death date and age,__type:template";
-    public static final String COMPLEX_FILTER_EXP = "url:\".*[\\s,\\d]?\\.html\",__type:link";
+    public static final String STRING_FILTER_EXP = "name:Death date and age,__type:template";
+    public static final String REGEX_FILTER_EXP  = "url:\".*[\\s,\\d]?\\.html\",__type:link";
+    public static final String NESTED_FILTER_EXP = "notable_students>__type:template,name:Plainlist>__type:reference";
 
     @Test
     public void testParseFilter1() throws IOException {
-        final JSONFilter r = DefaultJSONFilterEngine.parseFilter(BASIC_FILTER_EXP);
+        final JSONFilter r = DefaultJSONFilterEngine.parseFilter(STRING_FILTER_EXP);
         Assert.assertEquals(
-                "__type=template\n" +
-                "name=Death date and age\n",
-                r.print()
+                "object_filter(__type=template,name=Death date and age,)>null",
+                r.humanReadable()
         );
     }
 
     @Test
     public void testParseFilter2() throws IOException {
-        final JSONFilter r = DefaultJSONFilterEngine.parseFilter(COMPLEX_FILTER_EXP);
+        final JSONFilter r = DefaultJSONFilterEngine.parseFilter(REGEX_FILTER_EXP);
         Assert.assertEquals(
-                "__type=link\n" +
-                "url=.*[\\s,\\d]?\\.html\n",
-                r.print()
+                "object_filter(__type=link,url=.*[\\s,\\d]?\\.html,)>null",
+                r.humanReadable()
+        );
+    }
+
+    @Test
+    public void testParseFilter3() throws IOException {
+        final JSONFilter r = DefaultJSONFilterEngine.parseFilter(NESTED_FILTER_EXP);
+        Assert.assertEquals(
+                "key_filter(notable_students)>" +
+                "object_filter(__type=template,name=Plainlist,)>" +
+                "object_filter(__type=reference,)>null",
+                r.humanReadable()
         );
     }
 
@@ -44,7 +54,7 @@ public class DefaultJSONFilterEngineTest {
 
     @Test
     public void testFilterCriteria() throws IOException {
-        final JSONFilter filter = new DefaultJSONFilter();
+        final JSONObjectFilter filter = new DefaultJSONObjectFilter();
         filter.addCriteria("__type", "template");
         filter.addCriteria("name"  , "Death date and age");
         checkFilter(filter, 2);
@@ -52,31 +62,49 @@ public class DefaultJSONFilterEngineTest {
 
     @Test
     public void testFilterCriteriaRegex() throws IOException {
-        final JSONFilter filter = new DefaultJSONFilter();
+        final JSONObjectFilter filter = new DefaultJSONObjectFilter();
         filter.addCriteria("__type", "template");
         filter.addCriteria("name"  , "Death .{1,4} and age");
         checkFilter(filter, 2);
     }
 
     @Test
+    public void testFilterNestedCriteria() throws IOException {
+        final JSONKeyFilter notableStudentsFilter = new DefaultJSONKeyFilter();
+        notableStudentsFilter.setCriteria("notable_students");
+
+        final JSONObjectFilter plainListFilter = new DefaultJSONObjectFilter();
+        plainListFilter.addCriteria("__type", "template");
+        plainListFilter.addCriteria("name", "Plainlist");
+
+        final JSONObjectFilter typeFilter = new DefaultJSONObjectFilter();
+        typeFilter.addCriteria("__type", "reference");
+
+        notableStudentsFilter.setNested(plainListFilter);
+        plainListFilter.setNested(typeFilter);
+
+        checkFilter(notableStudentsFilter, 8); // Some duplicates because test data contain splitter replica.
+    }
+
+    @Test
     public void testFilter1() throws IOException {
-        final JSONFilter filter = new DefaultJSONFilter();
+        final JSONFilterFactory factory = new DefaultJSONFilterFactory();
         final JSONFilterParser parser = new DefaultJSONFilterParser();
-        parser.parse(BASIC_FILTER_EXP, filter);
+        final JSONFilter filter = parser.parse(STRING_FILTER_EXP, factory);
         checkFilter(filter, 2);
     }
 
     @Test
     public void testFilter2() throws IOException {
-        final JSONFilter filter = new DefaultJSONFilter();
+        final JSONFilterFactory factory = new DefaultJSONFilterFactory();
         final JSONFilterParser parser = new DefaultJSONFilterParser();
-        parser.parse(COMPLEX_FILTER_EXP, filter);
+        final JSONFilter filter = parser.parse(REGEX_FILTER_EXP, factory);
         checkFilter(filter, 9);
     }
 
     @Test
     public void testEngineApply() throws IOException {
-        final JsonNode[] r = DefaultJSONFilterEngine.applyFilter(loadJSON(), BASIC_FILTER_EXP);
+        final JsonNode[] r = DefaultJSONFilterEngine.applyFilter(loadJSON(), STRING_FILTER_EXP);
         Assert.assertEquals(2, r.length);
     }
 

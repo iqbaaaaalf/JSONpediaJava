@@ -10,9 +10,16 @@ import java.util.Map;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class DefaultJSONFilter implements JSONFilter {
+public class DefaultJSONObjectFilter implements JSONObjectFilter {
 
     private Map<String,String> criterias = new HashMap<>();
+
+    private JSONFilter nested;
+
+    public void setNested(JSONFilter nested) {
+        if(this.nested != null) throw new IllegalStateException("Nested filter already set.");
+        this.nested = nested;
+    }
 
     @Override
     public void addCriteria(String fieldName, String fieldPattern) {
@@ -24,11 +31,16 @@ public class DefaultJSONFilter implements JSONFilter {
     public boolean match(JsonNode node) {
         for(Map.Entry<String,String> criteria : criterias.entrySet()) {
             final JsonNode value = node.get(criteria.getKey());
-            if(value == null || ! value.asText().matches(criteria.getValue())) {
-                return false;
-            }
+            if(value == null) return false;
+            if(criteria.getValue() == null) continue;
+            if(!value.asText().matches(criteria.getValue())) return false;
         }
         return true;
+    }
+
+    @Override
+    public JSONFilter getNested() {
+        return nested;
     }
 
     @Override
@@ -37,12 +49,20 @@ public class DefaultJSONFilter implements JSONFilter {
     }
 
     @Override
-    public String print() {
+    public String humanReadable() {
         final StringBuilder sb = new StringBuilder();
+        sb.append("object_filter(");
         for(Map.Entry<String,String> criteria : criterias.entrySet()) {
-            sb.append(criteria.getKey()).append('=').append(criteria.getValue()).append('\n');
+            sb.append(criteria.getKey()).append('=').append(criteria.getValue()).append(',');
         }
+        sb.append(')');
+        sb.append('>').append(nested == null ? null : nested.humanReadable());
         return sb.toString();
+    }
+
+    @Override
+    public String toString() {
+        return humanReadable();
     }
 
 }
