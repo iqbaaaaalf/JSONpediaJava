@@ -49,6 +49,11 @@ public class TextHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
+    public void beginDocument(URL document) {
+        reset();
+    }
+
+    @Override
     public void section(String title, int level) {
         decoratedHandler.section(title, level);
     }

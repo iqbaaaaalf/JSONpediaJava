@@ -1,5 +1,7 @@
 package com.machinelinking.extractor;
 
+import com.machinelinking.parser.FilteredHandlerCriteria;
+import com.machinelinking.parser.WikiTextParserFilteredHandler;
 import com.machinelinking.serializer.Serializer;
 
 import java.net.URL;
@@ -9,81 +11,104 @@ import java.net.URL;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-// TODO: replace with TextExtractor
 public class AbstractExtractor extends Extractor {
 
-    private final StringBuilder textBuffer = new StringBuilder();
-
-    private int nesting;
-    private boolean completed;
+    private final TextHandler textHandler;
+    private final WikiTextParserFilteredHandler filteredHandler;
 
     public AbstractExtractor() {
         super("abstract");
-    }
 
-    @Override
-    public void beginDocument(URL document) {
-        nesting = 0;
-        completed = false;
-    }
-
-    @Override
-    public void beginTemplate(String name) {
-        nesting++;
-    }
-
-    @Override
-    public void beginTable() {
-        nesting++;
-    }
-
-    @Override
-    public void endTemplate(String name) {
-        nesting--;
-    }
-
-    @Override
-    public void endTable() {
-        nesting--;
-    }
-
-    @Override
-    public void var(Var v) {
-        // Empty.
-    }
-
-    @Override
-    public void beginReference(String label) {
-        // Empty.
-    }
-
-    @Override
-    public void text(String content) {
-        processText(content);
+        textHandler = new TextHandler();
+        filteredHandler = new WikiTextParserFilteredHandler(
+                textHandler,
+                new FilteredHandlerCriteria() {
+                    @Override
+                    public boolean mustFilter(int paragraphIndex, int sectionLevel, int nestingLevel) {
+                        return paragraphIndex == 0 || sectionLevel != -1;
+                    }
+                }
+        );
     }
 
     @Override
     public void flushContent(Serializer serializer) {
-        serializer.value(textBuffer.toString());
+       serializer.value(textHandler.flushContent());
     }
 
     @Override
     public void reset() {
-        textBuffer.delete(0, textBuffer.length());
+        textHandler.reset();
     }
 
-    private void processText(String content) {
-        if (completed) return;
-        if (nesting > 0) return;
-        String toAppend = content;
-        if (content.trim().length() > 2) {
-            int endIndex = content.indexOf("\n\n");
-            if(endIndex != -1) {
-                completed = true;
-                toAppend = content.substring(0, endIndex);
-            }
-        }
-        textBuffer.append(toAppend);
+    @Override
+    public void beginDocument(URL document) {
+        filteredHandler.beginDocument(document);
+    }
+
+    @Override
+    public void paragraph() {
+        filteredHandler.paragraph();
+    }
+
+    @Override
+    public void section(String title, int level) {
+        filteredHandler.section(title, level);
+    }
+
+    @Override
+    public void beginReference(String label) {
+        filteredHandler.beginReference(label);
+    }
+
+    @Override
+    public void endReference(String label) {
+        filteredHandler.endReference(label);
+    }
+
+    @Override
+    public void beginLink(URL url) {
+        filteredHandler.beginLink(url);
+    }
+
+    @Override
+    public void endLink(URL url) {
+        filteredHandler.endLink(url);
+    }
+
+    @Override
+    public void beginList() {
+        filteredHandler.beginList();
+    }
+
+    @Override
+    public void listItem(ListType t, int level) {
+        filteredHandler.listItem(t, level);
+    }
+
+    @Override
+    public void endList() {
+        filteredHandler.endList();
+    }
+
+    @Override
+    public void beginTemplate(String name) {
+        filteredHandler.beginTemplate(name);
+    }
+
+    @Override
+    public void endTemplate(String name) {
+        filteredHandler.endTemplate(name);
+    }
+
+    @Override
+    public void text(String content) {
+        filteredHandler.text(content);
+    }
+
+    @Override
+    public void endDocument() {
+        filteredHandler.endDocument();
     }
 
 }
