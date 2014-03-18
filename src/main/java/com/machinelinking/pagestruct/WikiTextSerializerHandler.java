@@ -64,11 +64,14 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void section(String title, int level) {
+        popUntilElement(DocumentElement.class);
+        pushElement(new Section(String.format("%s - %d", title, level)));
         serializer.openObject();
         serializer.fieldValue("__type", "section");
         serializer.fieldValue("title", title.trim());
         serializer.fieldValue("level", level);
-        serializer.closeObject();
+        serializer.field("content");
+        serializer.openObject();
     }
 
     @Override
@@ -324,6 +327,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void endDocument() {
+        popElement(Section.class, false);
         popElement(DocumentElement.class);
         serializer.closeList();
         serializer.closeObject();
@@ -342,9 +346,11 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         documentStack.push(de);
     }
 
-    private void popElement(Class<? extends Element> ce) {
-        final Element peek = documentStack.pop();
-        if(! peek.getClass().equals(ce)) {
+    private void popElement(Class<? extends Element> ce, boolean mustBePresent) {
+        final Element peek = documentStack.peek();
+        if (peek.getClass().equals(ce)) {
+            documentStack.pop();
+        } else if (mustBePresent) {
             throw new IllegalStateException(
                     String.format(
                             "Expected %s found %s",
@@ -355,13 +361,18 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         }
     }
 
+    private void popElement(Class<? extends Element> ce) {
+        popElement(ce, true);
+    }
+
     private void popUntilElement(Class<? extends Element> ce) {
         while(true) {
-            final Element peek = documentStack.pop();
-            peek.close(serializer);
+            final Element peek = documentStack.peek();
             if(peek.getClass().equals(ce)) {
                 break;
             }
+            documentStack.pop();
+            peek.close(serializer);
         }
     }
 
@@ -395,6 +406,17 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         @Override
         void close(Serializer s) {
             throw new UnsupportedOperationException();
+        }
+    }
+
+    class Section extends Element {
+        private Section(String name) {
+            super(name);
+        }
+        @Override
+        void close(Serializer s) {
+            s.closeObject();
+            s.closeObject();
         }
     }
 
