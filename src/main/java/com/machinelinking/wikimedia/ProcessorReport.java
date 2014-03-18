@@ -11,11 +11,17 @@ import java.util.concurrent.ExecutionException;
 public class ProcessorReport {
 
     private final long processedPages;
+    private final long pagesWithError;
     private final long elapsedTime;
     private final ExecutionException[] executionExceptions;
 
-    public ProcessorReport(long processedPages, long elapsedTime, ExecutionException[] executionExceptions) {
+    public ProcessorReport(
+            long processedPages, long pagesWithError,
+            long elapsedTime,
+            ExecutionException[] executionExceptions
+    ) {
         this.processedPages = processedPages;
+        this.pagesWithError = pagesWithError;
         this.elapsedTime = elapsedTime;
         this.executionExceptions = executionExceptions;
     }
@@ -23,6 +29,8 @@ public class ProcessorReport {
     public long getProcessedPages() {
         return processedPages;
     }
+
+    public long getPagesWithError() { return pagesWithError; }
 
     public long getElapsedTime() {
         return elapsedTime;
@@ -35,10 +43,12 @@ public class ProcessorReport {
     @Override
     public String toString() {
         return String.format(
-                "Processed pages: %d, elapsed time: %d (ms), exceptions: %s",
+                "Processed pages: %d, pages with errors: %d, elapsed time: %d (ms), exceptions: %s",
                 processedPages,
+                pagesWithError,
                 elapsedTime / 1000,
                 Arrays.asList(executionExceptions)
         );
     }
+
 }

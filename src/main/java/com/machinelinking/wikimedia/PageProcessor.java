@@ -9,4 +9,8 @@ public interface PageProcessor {
 
     void processPage(String pagePrefix, String threadId, WikiPage page);
 
+    long getProcessedPages();
+
+    long getErrorPages();
+
 }

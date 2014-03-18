@@ -33,11 +33,11 @@ public class DefaultJSONStorageLoader
 extends WikiDumpMultiThreadProcessor<DefaultJSONStorageLoader.EnrichmentProcessor>
 implements JSONStorageLoader {
 
+    private static final int LOG_THRESHOLD = 1000;
+
     private final WikiEnricherFactory wikiEnricherFactory;
     private final Flag[] flags;
     private final JSONStorage storage;
-
-    private long pagesWithError = 0;
 
     public DefaultJSONStorageLoader(WikiEnricherFactory factory, Flag[] flags, JSONStorage storage) {
         this.wikiEnricherFactory = factory;
@@ -58,7 +58,7 @@ implements JSONStorageLoader {
     @Override
     public StorageLoaderReport load(URL pagePrefix, InputStream is) throws IOException, SAXException {
         final ProcessorReport report = process(pagePrefix, is);
-        return new StorageLoaderReport(report.getProcessedPages(), pagesWithError, report.getElapsedTime());
+        return new StorageLoaderReport(report.getProcessedPages(), report.getPagesWithError(), report.getElapsedTime());
     }
 
     @Override
@@ -77,7 +77,6 @@ implements JSONStorageLoader {
 
     @Override
     public void finalizeProcessor(EnrichmentProcessor processor) {
-        pagesWithError += processor.getErrorPages();
         System.out.println(processor.printReport());
     }
 
@@ -87,11 +86,11 @@ implements JSONStorageLoader {
                 String.format(
                         "Total pages: %d, Pages with error: %d, Pages/msec: %f",
                         report.getProcessedPages(),
-                        pagesWithError,
+                        report.getPagesWithError(),
                         report.getProcessedPages() / (float) report.getElapsedTime()
                 )
         );
-        System.out.println("Unexpected exceptions: " + Arrays.asList(report.getExecutionExceptions()));
+        System.err.println("Unexpected exceptions: " + Arrays.asList(report.getExecutionExceptions()));
     }
 
     public static class EnrichmentProcessor implements PageProcessor {
@@ -103,7 +102,7 @@ implements JSONStorageLoader {
         private int partialCount = 0;
         private String threadId;
 
-        final DataEncoder dataEncoder = new MongoDBDataEncoder();
+        private final DataEncoder dataEncoder = new MongoDBDataEncoder();
 
         public EnrichmentProcessor(
                 WikiEnricher wikiEnricher, JSONStorageConnection connection
@@ -120,11 +119,11 @@ implements JSONStorageLoader {
             );
         }
 
-        protected int getProcessedPages() {
+        public long getProcessedPages() {
             return processedPages;
         }
 
-        protected int getErrorPages() {
+        public long getErrorPages() {
             return errorPages;
         }
 
@@ -150,24 +149,17 @@ implements JSONStorageLoader {
                 connection.addDocument(new MongoDocument(page.getTitle(), page.getId(), page.getRevId(), dbNode));
             } catch (Exception e) {
                 errorPages++;
-                System.out.println(
-                        String.format(
-                                "Error while processing page [%s], generated JSON: <%s>",
+                System.err.printf(
+                                "Error while processing page [%s], generated JSON:\n ++++\n%s\n++++\n\n\n",
                                 pageURL, baos.toString()
-                        )
                 );
-                System.out.println(
-                        "Page Content:" +
-                                "\n========================================\n" +
-                                page.getContent() +
-                                "\n========================================\n"
-                );
-                e.printStackTrace();
+                System.err.printf("Page Content:\n++++\n%s\n++++\n", page.getContent());
+                e.printStackTrace(System.err);
             } finally {
                 processedPages++;
                 partialCount++;
-                if (partialCount >= 100) {
-                    System.out.print(threadId);
+                if (partialCount >= LOG_THRESHOLD) {
+                    System.out.printf("%s +%d\n", threadId, LOG_THRESHOLD);
                     partialCount = 0;
                 }
             }

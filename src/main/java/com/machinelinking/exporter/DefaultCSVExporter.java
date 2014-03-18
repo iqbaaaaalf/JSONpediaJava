@@ -119,6 +119,9 @@ implements CSVExporter {
         private String template;
         private String property;
 
+        private long processedPages;
+        private long errorPages;
+
         @Override
         public void processPage(String pagePrefix, String threadId, WikiPage page) {
             this.pageId    = page.getId();
@@ -133,8 +136,21 @@ implements CSVExporter {
             try {
                 parser.parse( new DocumentSource(pageURL, page.getContent()));
             } catch (Exception e) {
+                errorPages++;
                 throw new RuntimeException("Error while parsing page " + pageURL, e);
+            } finally {
+                processedPages++;
             }
+        }
+
+        @Override
+        public long getProcessedPages() {
+            return processedPages;
+        }
+
+        @Override
+        public long getErrorPages() {
+            return errorPages;
         }
 
         @Override

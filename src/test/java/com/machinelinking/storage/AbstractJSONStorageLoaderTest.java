@@ -13,6 +13,8 @@ import java.net.URL;
 import java.net.UnknownHostException;
 
 /**
+ * Abstract loader test case.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public abstract class AbstractJSONStorageLoaderTest {

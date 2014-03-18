@@ -12,8 +12,6 @@ public class WikiDumpRunnable implements Runnable {
     private final BufferedWikiPageHandler bufferedHandler;
     private final PageProcessor processor;
 
-    private long processedPages;
-
     public WikiDumpRunnable(
             String threadId,
             String pagePrefix,
@@ -34,16 +32,11 @@ public class WikiDumpRunnable implements Runnable {
         return pagePrefix;
     }
 
-    public long getProcessedPages() {
-        return processedPages;
-    }
-
     @Override
     public void run() {
         WikiPage page;
         while ((page = bufferedHandler.getPage(true)) != BufferedWikiPageHandler.EOQ) {
             processor.processPage(pagePrefix, threadId, page);
-            processedPages++;
         }
     }
 

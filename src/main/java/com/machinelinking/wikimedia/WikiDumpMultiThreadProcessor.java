@@ -88,6 +88,7 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
         final long endTime;
         dumpParser.parse(bufferedHandler, is);
         long totalProcessedPages = 0;
+        long totalErrorPages = 0;
         try {
             for (Future future : futures) {
                 try {
@@ -107,13 +108,15 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
             System.out.println("Done.");
             endTime = System.currentTimeMillis();
             for (RunnableProcessor runnableProcessor : runnableProcessors) {
-                totalProcessedPages += runnableProcessor.runnable.getProcessedPages();
+                totalProcessedPages += runnableProcessor.processor.getProcessedPages();
+                totalErrorPages += runnableProcessor.processor.getErrorPages();
                 finalizeProcessor(runnableProcessor.processor);
             }
         }
         final long elapsedTime = endTime - startTime;
         final ProcessorReport report = new ProcessorReport(
                 totalProcessedPages,
+                totalErrorPages,
                 elapsedTime,
                 executionExceptions.toArray(new ExecutionException[executionExceptions.size()])
         );
