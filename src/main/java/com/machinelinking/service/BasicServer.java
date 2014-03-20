@@ -1,5 +1,9 @@
 package com.machinelinking.service;
 
+import com.beust.jcommander.JCommander;
+import com.beust.jcommander.Parameter;
+import com.beust.jcommander.ParameterException;
+import com.machinelinking.cli.CLIUtils;
 import com.sun.jersey.api.container.grizzly2.GrizzlyServerFactory;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.api.core.ResourceConfig;
@@ -21,8 +25,6 @@ import java.net.URL;
 import java.util.Enumeration;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
-
-// import org.glassfish.grizzly.http.server.CLStaticHttpHandler;
 
 /**
  * Basic Service implementation based on <i>Grizzly</i>.
@@ -48,25 +50,37 @@ public class BasicServer {
 
     private HttpServer httpServer;
 
-    public static void main(String[] args) throws IOException, InterruptedException {
-        if(args.length != 2) {
-            System.err.println("Usage $0 <host> <port>");
-            System.exit(1);
-        }
-
-        final BasicServer basicServer = new BasicServer(args[0], Integer.parseInt(args[1]));
-        basicServer.setUp();
-        System.out.println(
-            String.format(
-                    "Jersey app started with WADL available at %sapplication.wadl\n" +
+    public static void main(String[] args) {
+        final ParamsMapper mapper = new ParamsMapper();
+        final JCommander commander = new JCommander(mapper);
+        int exitCode = 0;
+        try {
+            commander.parse(args);
+            final BasicServer server = new BasicServer(mapper.host, mapper.port);
+            server.setUp();
+            System.out.println(
+                    String.format(
+                            "JSONpedia service started at port %d. WADL available at %sapplication.wadl\n" +
                             "Hit C^ to stop ...",
-                    basicServer.getBaseURI()
-            )
-        );
-        synchronized (basicServer) {
-            basicServer.wait();
+                            mapper.port,
+                            server.getBaseURI()
+                    )
+            );
+            synchronized (server) {
+                server.wait();
+            }
+            server.tearDown();
+        } catch (ParameterException pe) {
+            System.err.println(pe.getMessage());
+            commander.usage();
+            exitCode = 1;
+        } catch (Exception e) {
+            System.err.println("Error while running " + BasicServer.class.getName());
+            e.printStackTrace();
+            exitCode = 2;
+        } finally {
+            System.exit(exitCode);
         }
-        basicServer.tearDown();
     }
 
     public BasicServer(String host, int port) {
@@ -118,13 +132,14 @@ public class BasicServer {
     private String initFrontendResources() throws IOException {
         final URL container = this.getClass().getClassLoader().getResource(PACKAGE_ROOT);
         final String containerProtocol = container.getProtocol();
-        if ("file".equals(containerProtocol)) {
-            return SRC_RESOURCE_ROOT;
-        } else if("jar".equals(containerProtocol)) {
-            decompress(container.getFile().substring("file:".length()).split("!")[0], PACKAGE_ROOT, RESOURCES_ROOT);
-            return JAR_RESOURCE_ROOT;
-        } else {
-            throw new IllegalStateException("Invalid protocol for container: " + containerProtocol);
+        switch (containerProtocol) {
+            case "file":
+                return SRC_RESOURCE_ROOT;
+            case "jar":
+                decompress(container.getFile().substring("file:".length()).split("!")[0], PACKAGE_ROOT, RESOURCES_ROOT);
+                return JAR_RESOURCE_ROOT;
+            default:
+                throw new IllegalStateException("Invalid protocol for container: " + containerProtocol);
         }
     }
 
@@ -143,19 +158,35 @@ public class BasicServer {
                 file.mkdirs();
                 continue;
             }
-            InputStream is  = new BufferedInputStream(jar.getInputStream(entry));
-            OutputStream os = new BufferedOutputStream(new FileOutputStream(file));
             byte[] buffer = new byte[1024 * 4];
             int readBytes;
-            try {
+            try (
+                    final InputStream is = new BufferedInputStream(jar.getInputStream(entry));
+                    final OutputStream os = new BufferedOutputStream(new FileOutputStream(file))
+            ) {
                 while ((readBytes = is.read(buffer)) != -1) {
                     os.write(buffer, 0, readBytes);
                 }
-            } finally {
-                os.close();
-                is.close();
             }
         }
+    }
+
+    static class ParamsMapper {
+        @Parameter(
+                names = {"--host", "-h"},
+                description = "host name",
+                required = true,
+                validateValueWith = CLIUtils.ValidHost.class
+        )
+         String host = DEFAULT_HOST;
+
+        @Parameter(
+                names = {"--port", "-p"},
+                description = "port number",
+                required = true,
+                validateValueWith = CLIUtils.PortValidator.class
+        )
+         int port = DEFAULT_PORT;
     }
 
 }
