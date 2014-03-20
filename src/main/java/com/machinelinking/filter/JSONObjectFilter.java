@@ -18,9 +18,16 @@ public interface JSONObjectFilter extends JSONFilter {
     void addCriteria(String fieldName, String fieldPattern);
 
     /**
+     * Returns the field pattern set for a field name.
+     *
+     * @param fieldName name of a field.
+     * @return a regex.
+     */
+    String getCriteriaPattern(String fieldName);
+
+    /**
      * @param node
      * @return <code>true</code> if match is satisfied, <code>false</code> otherwise.
      */
     boolean match(JsonNode node);
-
 }

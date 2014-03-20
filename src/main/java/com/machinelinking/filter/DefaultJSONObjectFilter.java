@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class DefaultJSONObjectFilter implements JSONObjectFilter {
 
-    private Map<String,String> criterias = new HashMap<>();
+    private final Map<String,String> criterias = new HashMap<>();
 
     private JSONFilter nested;
 
@@ -25,6 +25,11 @@ public class DefaultJSONObjectFilter implements JSONObjectFilter {
     public void addCriteria(String fieldName, String fieldPattern) {
         if(criterias.containsKey(fieldName)) throw new IllegalArgumentException();
         criterias.put(fieldName, fieldPattern);
+    }
+
+    @Override
+    public String getCriteriaPattern(String fieldName) {
+        return criterias.get(fieldName);
     }
 
     @Override
@@ -58,6 +63,23 @@ public class DefaultJSONObjectFilter implements JSONObjectFilter {
         sb.append(')');
         sb.append('>').append(nested == null ? null : nested.humanReadable());
         return sb.toString();
+    }
+
+    @Override
+    public int hashCode() {
+        return 2 * criterias.hashCode() * 3 * (nested == null ? 1 : nested.hashCode());
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == this) return true;
+        if(obj == null) return false;
+        if(!(obj instanceof DefaultJSONObjectFilter)) return false;
+        final DefaultJSONObjectFilter other = (DefaultJSONObjectFilter) obj;
+        return
+            this.criterias.equals(other.criterias)
+                &&
+            (this.nested == null ? other.nested == null : this.nested.equals(other.nested));
     }
 
     @Override
