@@ -44,6 +44,17 @@ public class CLIUtils {
         }
     }
 
+    public static class ValidHost implements IValueValidator<String> {
+        public void validate(String name, String host)
+        throws ParameterException {
+            try {
+                new URL(String.format("http://%s/", host));
+            } catch (MalformedURLException murle) {
+                throw new ParameterException( String.format("Invalid host [%s]", host) );
+            }
+        }
+    }
+
     public static class ExistingFile implements IValueValidator<File> {
         public void validate(String name, File f)
         throws ParameterException {
