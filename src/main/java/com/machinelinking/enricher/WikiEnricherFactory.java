@@ -31,10 +31,14 @@ public class WikiEnricherFactory {
     public static final String FLAG_NEGATION  = "-";
 
     public static final Flag Extractors = new DefaultFlag("Extractors"      , "Enable all available data extractors");
-    public static final Flag Linkers    = new DefaultFlag("Linkers"         , "Enable linking of current entity to external resources(Freebase, DBpedia)");
+    public static final Flag Linkers    = new DefaultFlag("Linkers"         ,
+            "Enable linking of current entity to external resources(Freebase, DBpedia)"
+    );
     public static final Flag Splitters  = new DefaultFlag("Splitters"       , "Enable all available data splitters");
     public static final Flag Structure  = new DefaultFlag("Structure"       , "Produces the full WikiText DOM");
     public static final Flag Validate   = new DefaultFlag("Validate"        , "Validate the WikiText structure");
+
+    public static final Flag[] DEFAULT_FLAGS = new Flag[] {Extractors, Structure};
 
     private static WikiEnricherFactory instance;
 
@@ -90,6 +94,16 @@ public class WikiEnricherFactory {
             }
         }
         return flags.toArray( new Flag[flags.size()] );
+    }
+
+    /**
+     * Converts a flag string to a list of {@link Flag} having care of the default {#DEFAULT_FLAGS}.
+     *
+     * @param flagsStr
+     * @return a new configured instance.
+     */
+    public Flag[] toFlags(String flagsStr) {
+        return toFlags(flagsStr, DEFAULT_FLAGS);
     }
 
     /**
