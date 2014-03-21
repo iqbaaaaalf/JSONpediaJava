@@ -100,7 +100,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void beginLink(URL url) {
-        final String urlStr = url.toExternalForm();
+        final String urlStr = url == null ? null : url.toExternalForm();
         pushElement( new Link(urlStr) );
         serializer.openObject();
         serializer.fieldValue(TYPE_FIELD, "link");
