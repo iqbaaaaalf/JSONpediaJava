@@ -9,20 +9,25 @@ import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.MongoDBDataEncoder;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.storage.mongodb.MongoDocument;
+import com.machinelinking.util.FileUtil;
 import com.machinelinking.wikimedia.PageProcessor;
 import com.machinelinking.wikimedia.ProcessorReport;
 import com.machinelinking.wikimedia.WikiDumpMultiThreadProcessor;
 import com.machinelinking.wikimedia.WikiPage;
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;
+import org.apache.commons.io.FileUtils;
 import org.xml.sax.SAXException;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Arrays;
+import java.util.Properties;
 
 /**
  * Default implementation of {@link JSONStorageLoader}.
@@ -164,6 +169,95 @@ implements JSONStorageLoader {
                 }
             }
         }
+    }
+
+    public static void main(String[] args) {
+        if (args.length != 2) {
+            System.err.println("Usage: $0 <config-file> <dump>");
+            System.exit(1);
+        }
+
+        try {
+            final File configFile = check(args[0]);
+            final File dumpFile = check(args[1]);
+            final Properties properties = new Properties();
+            properties.load(FileUtils.openInputStream(configFile));
+
+            final Flag[] flags = WikiEnricherFactory.getInstance().toFlags(
+                    getPropertyOrFail(
+                            properties,
+                            "loader.flags",
+                            "valid flags: " + Arrays.toString(WikiEnricherFactory.getInstance().getDefinedFlags())
+                    )
+            );
+            final JSONStorageFactory jsonStorageFactory = loadJSONStorageFactory(
+                    getPropertyOrFail(
+                            properties,
+                            "loader.storage.factory",
+                            null
+                    )
+            );
+            final String jsonStorageConfig = getPropertyOrFail(
+                    properties,
+                    "loader.storage.config",
+                    null
+            );
+            final URL prefixURL = readURL(
+                    getPropertyOrFail(
+                            properties,
+                            "loader.prefix.url",
+                            "expected a valid URL prefix like: http://en.wikipedia.org/"
+                    ),
+                    "loader.prefix.url"
+            );
+
+            final JSONStorageConfiguration storageConfig = jsonStorageFactory.createConfiguration(jsonStorageConfig);
+            final JSONStorage storage = jsonStorageFactory.createStorage(storageConfig);
+            final DefaultJSONStorageLoader loader = new DefaultJSONStorageLoader(
+                    WikiEnricherFactory.getInstance(), flags, storage
+            );
+            final StorageLoaderReport report = loader.load(
+                    prefixURL,
+                    FileUtil.openDecompressedInputStream(dumpFile)
+            );
+            System.out.println(report);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.exit(2);
+        }
+    }
+
+    private static File check(String file) {
+        final File f = new File(file);
+        if(!f.exists()) throw new IllegalArgumentException(String.format("Invalid file: %s", f.getAbsolutePath()));
+        return f;
+    }
+
+    private static URL readURL(String url, String desc) {
+        try {
+            return new URL(url);
+        } catch (MalformedURLException murle) {
+            throw new IllegalStateException(String.format("Invalid URL specified for [%s]", desc), murle);
+        }
+    }
+
+    private static JSONStorageFactory loadJSONStorageFactory(String className) {
+        try {
+            return (JSONStorageFactory) DefaultJSONStorageLoader.class.getClassLoader()
+                    .loadClass(className).newInstance();
+        } catch (ClassNotFoundException cnfe) {
+            throw new IllegalArgumentException( String.format("Invalid class name: %s .", className) );
+        } catch (Exception e) {
+            throw new IllegalArgumentException( String.format("Error while loading class: %s .", className), e);
+        }
+    }
+
+    private static String getPropertyOrFail(Properties properties, String property, String errMsg) {
+        final String value = properties.getProperty(property);
+        if(value == null) throw new IllegalArgumentException(
+                String.format("Invalid properties file: must define property [%s] - %s.", property, errMsg)
+        );
+        return value;
     }
 
 }
