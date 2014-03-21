@@ -40,6 +40,8 @@ implements JSONStorageLoader {
 
     private static final int LOG_THRESHOLD = 1000;
 
+    private static final Object errorLogLock = new Object();
+
     private final WikiEnricherFactory wikiEnricherFactory;
     private final Flag[] flags;
     private final JSONStorage storage;
@@ -153,13 +155,23 @@ implements JSONStorageLoader {
                 final DBObject dbNode = (DBObject) JSON.parse(baos.toString()); // TODO: avoid it.
                 connection.addDocument(new MongoDocument(page.getTitle(), page.getId(), page.getRevId(), dbNode));
             } catch (Exception e) {
-                errorPages++;
-                System.err.printf(
-                                "Error while processing page [%s], generated JSON:\n ++++\n%s\n++++\n\n\n",
-                                pageURL, baos.toString()
-                );
-                System.err.printf("Page Content:\n++++\n%s\n++++\n", page.getContent());
-                e.printStackTrace(System.err);
+                synchronized (errorLogLock) {
+                    errorPages++;
+                    System.err.printf(">\n>\n>\n>\n");
+                    System.err.printf(
+                            "Error while processing page [%s], generated JSON:\n ++++\n%s\n++++\n",
+                            pageURL, baos.toString()
+                    );
+                    System.err.println("==== Begin Stack Trace =====");
+                    e.printStackTrace(System.err);
+                    System.err.println("==== End   Stack Trace =====");
+                    System.err.println();
+                    System.err.printf(
+                            "==== Page Content ====\n++++> %s\n%s\n++++< %s\n",
+                            page.getTitle(), page.getContent(), page.getTitle()
+                    );
+                    System.err.printf("<\n<\n<\n<\n");
+                }
             } finally {
                 processedPages++;
                 partialCount++;
