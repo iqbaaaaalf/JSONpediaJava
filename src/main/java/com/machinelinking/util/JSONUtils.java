@@ -1,5 +1,6 @@
 package com.machinelinking.util;
 
+import com.machinelinking.pagestruct.WikiTextSerializerHandler;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
@@ -134,6 +135,18 @@ public class JSONUtils {
         throw new IllegalArgumentException("Unsupported primitive type.");
     }
 
+    /**
+     * Converts in a human readable format the content of a JSON object represented as Map/Array object.
+     *
+     * @param node
+     * @return
+     */
+    public static String toHumanReadable(Object node) {
+        final StringBuilder sb = new StringBuilder();
+        toHumanReadable(node, sb);
+        return sb.toString();
+    }
+
     // BEGIN: convert JsonNode to Serializer events.
 
     private static void serializeArray(JsonNode node, Serializer serializer) {
@@ -213,17 +226,56 @@ public class JSONUtils {
 
     // END:   convert Map<String,?> to Serializer events.
 
+    // BEGIN: Map<String,?> toHumanReadable
+
+    protected static void toHumanReadable(Object[] a, StringBuilder sb) {
+        for (Object e : a) {
+            sb.append(" ");
+            toHumanReadable(e, sb);
+        }
+    }
+
+    private static void toHumanReadable(Map<String,?> m, StringBuilder sb) {
+        for (Map.Entry<String,?> e : m.entrySet()) {
+            if(WikiTextSerializerHandler.TYPE_FIELD.equals(e.getKey())) continue;
+            if(WikiTextSerializerHandler.CONTENT_FIELD.equals(e.getKey())) {
+                toHumanReadable(e.getValue(), sb);
+                continue;
+            }
+            if(e.getKey().startsWith(JSONSerializer.ANON_FIELD_PREFIX)) {
+                toHumanReadable(e.getValue(), sb);
+                continue;
+            }
+            sb.append(e.getKey());
+            toHumanReadable(e.getValue(), sb);
+        }
+    }
+
+    private static void toHumanReadable(Object node, StringBuilder sb) {
+        if (node.getClass().isArray()) {
+            toHumanReadable((Object[]) node, sb);
+        } else if (node instanceof Map) {
+            toHumanReadable((Map<String, ?>) node, sb);
+        } else if (node instanceof String || isPrimitive(node.getClass())) {
+            sb.append(node.toString());
+        } else {
+            throw new IllegalArgumentException("Invalid node: " + node.toString());
+        }
+    }
+
+    // END  : Map<String,?> toHumanReadable
+
     public static boolean isPrimitive(Class c) {
         if (c.isPrimitive()) return true;
         if (
-                   c == Byte.class
-                || c == Short.class
-                || c == Integer.class
-                || c == Long.class
-                || c == Float.class
-                || c == Double.class
-                || c == Boolean.class
-                || c == Character.class
+                c == Byte.class
+                    || c == Short.class
+                    || c == Integer.class
+                    || c == Long.class
+                    || c == Float.class
+                    || c == Double.class
+                    || c == Boolean.class
+                    || c == Character.class
         ) return true;
         return false;
     }
