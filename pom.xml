@@ -12,7 +12,14 @@
     </properties>
 
     <dependencies>
+        <!-- Logging -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
 
+        <!-- Jackson JSON -->
         <dependency>
         	<groupId>org.codehaus.jackson</groupId>
         	<artifactId>jackson-jaxrs</artifactId>
@@ -33,6 +40,13 @@
             <version>1.0</version>
         </dependency>
 
+        <!-- Jython -->
+        <dependency>
+            <groupId>org.python</groupId>
+            <artifactId>jython</artifactId>
+            <version>2.7-b1</version>
+        </dependency>
+
         <!-- JCommander CLI tool -->
         <dependency>
         	<groupId>com.beust</groupId>
@@ -44,7 +58,14 @@
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongo-java-driver</artifactId>
-            <version>2.7.2</version>
+            <version>2.9.3</version>
+        </dependency>
+
+        <!-- ElasticSearch -->
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>1.0.1</version>
         </dependency>
 
         <dependency>
