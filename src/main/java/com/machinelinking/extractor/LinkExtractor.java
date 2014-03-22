@@ -46,7 +46,8 @@ public class LinkExtractor extends SectionAwareExtractor {
 
     @Override
     public void endLink(URL url) {
-        if(this.url == null) throw new IllegalStateException();
+        // TODO: handle links exploded with templates, ex: [{{Allmusic|class=explore|id=style/d2693|pure_url=yes}} "Hair metal"]
+        if(this.url == null) return;
         if(links == null) links = new ArrayList<>();
         links.add(new Link(this.url, linkContent.toString(), super.getSectionIndex()));
     }
