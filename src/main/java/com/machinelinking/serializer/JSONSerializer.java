@@ -16,7 +16,7 @@ import java.util.Stack;
  */
 public class JSONSerializer implements Serializer {
 
-    private static final String ANON_FIELD_PREFIX = "__an";
+    public static final String ANON_FIELD_PREFIX = "__an";
 
     private enum WriterStatus {
         Object {
