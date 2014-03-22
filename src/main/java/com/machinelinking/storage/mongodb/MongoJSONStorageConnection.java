@@ -4,6 +4,9 @@ import com.machinelinking.storage.JSONStorageConnection;
 import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Implementation of {@link com.machinelinking.storage.JSONStorageConnection} for <i>MongoDB</i>.
  *
@@ -11,7 +14,11 @@ import com.mongodb.DBObject;
  */
 public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDocument> {
 
+    public static final int BUFFER_FLUSH_SIZE = 1024;
+
     private final DBCollection collection;
+
+    private final List<DBObject> buffer = new ArrayList<>();
 
     protected MongoJSONStorageConnection(DBCollection collection) {
         this.collection = collection;
@@ -19,7 +26,8 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
 
     @Override
     public void addDocument(MongoDocument document) {
-        collection.insert( document.getContent() );
+        buffer.add(document.getContent());
+        flushBuffer(false);
     }
 
     @Override
@@ -36,6 +44,18 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
     @Override
     public long getDocumentsCount() {
         return collection.count();
+    }
+
+    @Override
+    public void close() {
+        flushBuffer(true);
+    }
+
+    private void flushBuffer(boolean force) {
+        if(force || buffer.size() > BUFFER_FLUSH_SIZE) {
+            this.collection.insert(buffer);
+            buffer.clear();
+        }
     }
 
 }

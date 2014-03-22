@@ -85,6 +85,7 @@ implements JSONStorageLoader {
     @Override
     public void finalizeProcessor(EnrichmentProcessor processor) {
         System.out.println(processor.printReport());
+        processor.connection.close();
     }
 
     @Override
