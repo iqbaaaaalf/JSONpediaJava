@@ -67,6 +67,11 @@ public class JSONUtils {
         return node;
     }
 
+    public static Map<String,?> parseJSONAsMap(InputStream is) throws IOException {
+        final ObjectMapper mapper = createObjectMapper();
+        return (Map<String,?>) mapper.readValue(is, Map.class);
+    }
+
     public static JsonNode parseJSON(byte[] in) throws IOException {
         return parseJSON(new ByteArrayInputStream(in));
     }
@@ -75,7 +80,15 @@ public class JSONUtils {
         return parseJSON( in.getBytes() );
     }
 
+    public static Map<String,?> parseJSONAsMap(String in) throws IOException {
+        return parseJSONAsMap(new ByteArrayInputStream(in.getBytes()));
+    }
+
     public static void jacksonNodeToSerializer(JsonNode node, Serializer serializer) {
+        serializeNode(node, serializer);
+    }
+
+    public static void jsonMapArrayToSerializer(Object node, Serializer serializer) {
         serializeNode(node, serializer);
     }
 
@@ -97,6 +110,12 @@ public class JSONUtils {
         }
     }
 
+    /**
+     * Converts a node to primitive string value.
+     * 
+     * @param node
+     * @return
+     */
     public static String asPrimitiveString(JsonNode node) {
         if(node == null || node.isNull()) return null;
         if(node.isTextual() || node.isNumber()) {
@@ -114,6 +133,8 @@ public class JSONUtils {
         }
         throw new IllegalArgumentException("Unsupported primitive type.");
     }
+
+    // BEGIN: convert JsonNode to Serializer events.
 
     private static void serializeArray(JsonNode node, Serializer serializer) {
         serializer.openList();
@@ -153,6 +174,58 @@ public class JSONUtils {
         } else {
             throw new IllegalArgumentException();
         }
+    }
+
+    // END:   convert JsonNode to Serializer events.
+
+    // BEGIN: convert Map<String,?> to Serializer events.
+
+    private static void serializeArray(Object[] array, Serializer serializer) {
+           serializer.openList();
+           for(int i = 0; i < array.length; i++) {
+               serializeNode(array[i], serializer);
+           }
+           serializer.closeList();
+    }
+
+    private static void serializeObject(Map<String,?> map, Serializer serializer) {
+        serializer.openObject();
+        for (Map.Entry<String,?> entry : map.entrySet()) {
+            serializer.field(entry.getKey());
+            serializeNode(entry.getValue(), serializer);
+        }
+        serializer.closeObject();
+    }
+
+    private static void serializeNode(Object node, Serializer serializer) {
+        if(node.getClass().isArray()) {
+            serializeArray((Object[]) node, serializer);
+        } else if(node instanceof Map) {
+            serializeObject((Map<String, ?>) node, serializer);
+        } else if(node instanceof String) {
+            serializer.value( node.toString() );
+        } else if(isPrimitive(node.getClass())){
+            serializer.value(node);
+        } else {
+            throw new IllegalArgumentException("Invalid node: " + node.toString());
+        }
+    }
+
+    // END:   convert Map<String,?> to Serializer events.
+
+    public static boolean isPrimitive(Class c) {
+        if (c.isPrimitive()) return true;
+        if (
+                   c == Byte.class
+                || c == Short.class
+                || c == Integer.class
+                || c == Long.class
+                || c == Float.class
+                || c == Double.class
+                || c == Boolean.class
+                || c == Character.class
+        ) return true;
+        return false;
     }
 
     private JSONUtils() {}
