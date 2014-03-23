@@ -1,5 +1,6 @@
 package com.machinelinking.wikimedia;
 
+import org.apache.log4j.Logger;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
@@ -20,6 +21,8 @@ import java.util.concurrent.Future;
 public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
 
     public static final int MIN_NUM_OF_THREADS = 2;
+
+    private static final Logger logger = Logger.getLogger(WikiDumpMultiThreadProcessor.class);
 
     private final ExecutorService executorService = Executors.newCachedThreadPool();
 
@@ -61,7 +64,7 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
         if (threads <= 0) throw new IllegalArgumentException("Invalid number of threads: " + threads);
         this.pagePrefix = pagePrefix;
 
-        System.out.println("Processing with " + threads + " threads");
+        logger.info("Starting processing with " + threads + " threads");
 
         initProcess();
 
@@ -104,8 +107,7 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
         } catch (Exception e) {
             throw new RuntimeException("Error while waiting operation completion.", e);
         } finally {
-            System.out.println("Closing process...");
-            System.out.println("Done.");
+            logger.info("Process closed.");
             endTime = System.currentTimeMillis();
             for (RunnableProcessor runnableProcessor : runnableProcessors) {
                 totalProcessedPages += runnableProcessor.processor.getProcessedPages();
