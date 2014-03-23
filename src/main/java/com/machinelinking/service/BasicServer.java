@@ -7,6 +7,7 @@ import com.machinelinking.cli.CLIUtils;
 import com.sun.jersey.api.container.grizzly2.GrizzlyServerFactory;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.api.core.ResourceConfig;
+import org.apache.log4j.Logger;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.grizzly.http.server.Request;
 import org.glassfish.grizzly.http.server.Response;
@@ -34,6 +35,8 @@ import java.util.jar.JarFile;
  */
 public class BasicServer {
 
+    private static final Logger logger = Logger.getLogger(BasicServer.class);
+
     public static final String DEFAULT_HOST = "127.0.0.1";
     public static final int   DEFAULT_PORT  = 9998;
 
@@ -60,7 +63,8 @@ public class BasicServer {
             server.setUp();
             System.out.println(
                     String.format(
-                            "JSONpedia service started at port %d. WADL available at %sapplication.wadl\n" +
+                            "JSONpedia service started at port %d.\n" +
+                            "WADL descriptor at %sapplication.wadl\n" +
                             "Hit C^ to stop ...",
                             mapper.port,
                             server.getBaseURI()
@@ -96,7 +100,6 @@ public class BasicServer {
     }
 
     public void setUp() throws IOException {
-        System.out.println("Starting Grizzly Server...");
         ResourceConfig rc = new PackagesResourceConfig(BasicServer.class.getPackage().getName());
         httpServer = GrizzlyServerFactory.createHttpServer(getBaseURI(), rc);
         httpServer.getServerConfiguration().addHttpHandler(
@@ -122,7 +125,7 @@ public class BasicServer {
                 "/frontend/"
         );
         httpServer.start();
-
+        logger.info("Started Grizzly server: " + getBaseURI());
     }
 
     public void tearDown() {
