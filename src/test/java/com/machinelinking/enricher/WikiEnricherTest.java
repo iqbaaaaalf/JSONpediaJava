@@ -5,6 +5,7 @@ import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
+import org.apache.log4j.Logger;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.node.ObjectNode;
 import org.junit.Test;
@@ -23,6 +24,8 @@ import java.util.concurrent.ExecutionException;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiEnricherTest {
+
+    private static final Logger logger = Logger.getLogger(WikiEnricherTest.class);
 
     @Test
     public void testEnrich1()
@@ -59,7 +62,7 @@ public class WikiEnricherTest {
                 ),
                 serializer
         );
-        System.out.println("JSON Output: " + baos);
+        logger.debug("JSON Output: " + baos);
         final JsonNode expectedJSON = JSONUtils.parseJSON(
                 this.getClass().getResourceAsStream(jsonOutExpectedFile)
         );
