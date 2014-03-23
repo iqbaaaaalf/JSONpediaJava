@@ -6,6 +6,7 @@ import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
+import org.apache.log4j.Logger;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.BufferedReader;
@@ -20,6 +21,8 @@ import java.net.URL;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class WikiTextSerializerHandlerTestBase <T extends WikiTextSerializerHandler> {
+
+    private static final Logger logger = Logger.getLogger(WikiTextSerializerHandlerTestBase.class);
 
     private final Class<T> handlerClass;
     private T handler;
@@ -55,7 +58,7 @@ public class WikiTextSerializerHandlerTestBase <T extends WikiTextSerializerHand
             );
         } finally {
             actual = baos.toString();
-            System.out.println("BAOS: " + actual);
+            logger.debug("Serialization: " + actual);
         }
 
         final JsonNode actualJSONNode   = JSONUtils.parseJSON(actual);
