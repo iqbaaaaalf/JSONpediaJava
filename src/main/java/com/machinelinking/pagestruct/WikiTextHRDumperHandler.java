@@ -191,7 +191,6 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
             String[] sections = msg.split(" ");
             String action = sections[0];
             if (action.toLowerCase().equals("begin")) {
-                final String node = sections[1];
                 eventStack.push(msg);
             } else if (action.toLowerCase().equals("end")) {
                 final String expected = eventStack.pop();
@@ -203,9 +202,7 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
                 }
             }
         }
-
         outBuilder.append(msg).append('\n');
-        System.out.println(msg);
     }
 
 }
