@@ -3,6 +3,7 @@ package com.machinelinking.storage.mongodb;
 import com.machinelinking.storage.Document;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
+import com.mongodb.util.JSON;
 
 /**
  * {@link com.machinelinking.storage.Document} implementation for {@link DBObject}.
@@ -56,6 +57,11 @@ public class MongoDocument implements Document<DBObject> {
     @Override
     public DBObject getContent() {
         return document;
+    }
+
+    @Override
+    public String toJSON() {
+        return JSON.serialize(getContent());
     }
 
 }

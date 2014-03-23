@@ -15,4 +15,6 @@ public interface Document<T> {
 
     T getContent();
 
+    String toJSON();
+
 }
