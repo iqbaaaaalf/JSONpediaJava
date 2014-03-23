@@ -17,6 +17,7 @@ import com.machinelinking.wikimedia.WikiPage;
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.xml.sax.SAXException;
 
 import java.io.ByteArrayInputStream;
@@ -24,6 +25,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Arrays;
@@ -40,7 +43,7 @@ implements JSONStorageLoader {
 
     private static final int LOG_THRESHOLD = 1000;
 
-    private static final Object errorLogLock = new Object();
+    private static final Logger logger = Logger.getLogger(DefaultJSONStorageLoader.class);
 
     private final WikiEnricherFactory wikiEnricherFactory;
     private final Flag[] flags;
@@ -84,13 +87,13 @@ implements JSONStorageLoader {
 
     @Override
     public void finalizeProcessor(EnrichmentProcessor processor) {
-        System.out.println(processor.printReport());
+        logger.info(processor.printReport());
         processor.connection.close();
     }
 
     @Override
     public void finalizeProcess(ProcessorReport report) {
-        System.out.println(
+        logger.info(
                 String.format(
                         "Total pages: %d, Pages with error: %d, Pages/msec: %f",
                         report.getProcessedPages(),
@@ -98,7 +101,7 @@ implements JSONStorageLoader {
                         report.getProcessedPages() / (float) report.getElapsedTime()
                 )
         );
-        System.err.println("Unexpected exceptions: " + Arrays.asList(report.getExecutionExceptions()));
+        logger.error("Unexpected exceptions: " + Arrays.asList(report.getExecutionExceptions()));
     }
 
     public static class EnrichmentProcessor implements PageProcessor {
@@ -161,28 +164,34 @@ implements JSONStorageLoader {
                 );
                 */
             } catch (Exception e) {
-                synchronized (errorLogLock) {
-                    errorPages++;
-                    System.err.printf(">\n>\n>\n>\n");
-                    System.err.printf(
-                            "Error while processing page [%s], generated JSON:\n ++++\n%s\n++++\n",
-                            pageURL, baos.toString()
-                    );
-                    System.err.println("==== Begin Stack Trace =====");
-                    e.printStackTrace(System.err);
-                    System.err.println("==== End   Stack Trace =====");
-                    System.err.println();
-                    System.err.printf(
-                            "==== Page Content ====\n++++> %s\n%s\n++++< %s\n",
-                            page.getTitle(), page.getContent(), page.getTitle()
-                    );
-                    System.err.printf("<\n<\n<\n<\n");
+                errorPages++;
+                if (logger.isTraceEnabled()) {
+                    final StringBuilder sb = new StringBuilder();
+                    sb.append(">\n>\n>\n>\n");
+                    sb.append("Error while processing page [")
+                            .append(pageURL)
+                            .append("], generated JSON:\n ++++\n")
+                            .append(baos.toString())
+                            .append("\n++++\n");
+                    sb.append("==== Begin Stack Trace =====");
+                    final StringWriter sw = new StringWriter();
+                    e.printStackTrace(new PrintWriter(sw));
+                    sb.append(sw.toString());
+                    sb.append("==== End   Stack Trace =====");
+                    sb.append('\n');
+                    sb.append("==== Page Content ====\n++++> ").append(page.getTitle());
+                    sb.append(page.getContent());
+                    sb.append('\n');
+                    sb.append("++++< ").append(page.getTitle());
+                    sb.append('\n');
+                    sb.append("<\n<\n<\n<\n");
+                    logger.trace(sb.toString());
                 }
             } finally {
                 processedPages++;
                 partialCount++;
                 if (partialCount >= LOG_THRESHOLD) {
-                    System.out.printf("%s +%d\n", threadId, LOG_THRESHOLD);
+                    logger.debug(String.format("%s +%d\n", threadId, LOG_THRESHOLD));
                     partialCount = 0;
                 }
             }
