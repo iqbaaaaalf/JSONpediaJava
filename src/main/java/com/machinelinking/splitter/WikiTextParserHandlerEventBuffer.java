@@ -48,7 +48,6 @@ public class WikiTextParserHandlerEventBuffer {
                 invocation.apply(out);
             }
         } catch (Exception e) {
-            // TODO: add proper log.
             final StringBuilder errorSB = new StringBuilder();
             errorSB.append("Error while flushing buffer.\n");
             errorSB.append( e.getMessage() ).append('\n');
@@ -57,8 +56,10 @@ public class WikiTextParserHandlerEventBuffer {
             flush(dumper);
             errorSB.append( dumper.getContent() );
             errorSB.append("\n}============\n");
-            System.err.println( errorSB.toString() );
-            throw new RuntimeException("Error while flushing buffer into handler.", e);
+            throw new RuntimeException(
+                    "Error while flushing buffer into handler.\n" + errorSB.toString(),
+                    e
+            );
         }
         clear();
     }
