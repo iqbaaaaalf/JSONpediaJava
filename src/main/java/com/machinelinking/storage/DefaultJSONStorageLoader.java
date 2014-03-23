@@ -155,6 +155,11 @@ implements JSONStorageLoader {
                 );
                 final DBObject dbNode = (DBObject) JSON.parse(baos.toString()); // TODO: avoid it.
                 connection.addDocument(new MongoDocument(page.getTitle(), page.getId(), page.getRevId(), dbNode));
+                /*
+                System.out.println(
+                        new MongoDocument(page.getTitle(), page.getId(), page.getRevId(), dbNode).toJSON()
+                );
+                */
             } catch (Exception e) {
                 synchronized (errorLogLock) {
                     errorPages++;
