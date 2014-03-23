@@ -106,6 +106,34 @@ public class WikiTextParserTest {
     }
 
     @Test
+    public void testListError() throws IOException, WikiTextParserException {
+        parse(
+                "\n== Examples ==\n" +
+                "* The [[square root]] of [[two|2]] is algebraic over '''Q''' = ",
+
+                "Begin Document\n" +
+                "Text: '\n" +
+                "'\n" +
+                "Section [0]  Examples \n" +
+                "Text: '\n" +
+                "'\n" +
+                "Begin List\n" +
+                "List Item: Unordered 1\n" +
+                "Text: ' The '\n" +
+                "Begin Reference: square root\n" +
+                "End Reference: square root\n" +
+                "Text: ' of '\n" +
+                "Begin Reference: two\n" +
+                "k: null\n" +
+                "Text: '2'\n" +
+                "End Reference: two\n" +
+                // TODO: error!! "k:  is algebraic over '''Q''' \n" +
+                "End List\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
     public void testParagraph() throws IOException, WikiTextParserException {
         parse(
                 "This is a paragraph\n" +
