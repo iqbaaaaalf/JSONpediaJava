@@ -53,7 +53,11 @@ public class InfoboxSplitterTest {
         splitter.serialize(serializer);
         serializer.closeObject();
         serializer.flush();
-        System.out.println(baos);
+        Assert.assertEquals(
+            "{\"infobox-splitter\":[{\"__type\":\"template\",\"name\":\"tt1\"," +
+            "\"content\":{\"tt1-p1\":[\"text 1\",\"text 2\"]}}]}",
+            baos.toString()
+        );
     }
 
 }
