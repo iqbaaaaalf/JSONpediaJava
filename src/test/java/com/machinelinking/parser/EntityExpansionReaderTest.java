@@ -1,6 +1,7 @@
 package com.machinelinking.parser;
 
 import junit.framework.Assert;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -13,6 +14,8 @@ import java.io.StringReader;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class EntityExpansionReaderTest {
+
+    private static final Logger logger = Logger.getLogger(EntityExpansionReaderTest.class);
 
     @Test
     public void testNoExpansion() throws IOException {
@@ -109,8 +112,8 @@ public class EntityExpansionReaderTest {
             charByCharBuffer[i] = (char) expandableReader.read();
         }
         final String out = new String(charByCharBuffer);
-        System.out.printf("Expected: '%s'\n", expected);
-        System.out.printf("Out     : '%s'\n", out);
+        logger.debug(String.format("Expected: '%s'", expected));
+        logger.debug(String.format("Out     : '%s'", out));
         Assert.assertEquals(expected, out);
     }
 
@@ -121,8 +124,8 @@ public class EntityExpansionReaderTest {
         final char[] bulkBuffer = new char[expected.length()];
         final int readChars     = expandableReader.read(bulkBuffer, 0, bulkBuffer.length);
         final String out = new String(bulkBuffer);
-        System.out.printf("Expected: '%s'\n", expected);
-        System.out.printf("Out     : '%s'\n", out);
+        logger.debug(String.format("Expected: '%s'", expected));
+        logger.debug(String.format("Out     : '%s'", out));
         Assert.assertEquals(expected.length() == 0 ?  -1 : expected.length(), readChars);
         Assert.assertEquals(expected, out);
     }
