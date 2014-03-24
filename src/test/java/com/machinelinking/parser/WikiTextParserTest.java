@@ -3,6 +3,7 @@ package com.machinelinking.parser;
 import com.machinelinking.pagestruct.WikiTextHRDumperHandler;
 import junit.framework.Assert;
 import org.apache.commons.io.IOUtils;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -18,6 +19,8 @@ import java.net.URL;
  */
 //TODO: still missing support for comments within references: ex:  [[Category:Zoologists with author abbreviations<!-- -->|{{{author_abbreviation_zoo|{{{author_abbrev_zoo}}}}}}]]
 public class WikiTextParserTest {
+
+    private static final Logger logger = Logger.getLogger(WikiTextParserTest.class);
 
     @Test
     public void testApostrophesParsing() throws IOException, WikiTextParserException {
@@ -1234,7 +1237,7 @@ public class WikiTextParserTest {
         final long begin = System.nanoTime();
         parser.parse( new URL("http://test/url"), new BufferedReader(reader) );
         final long end   = System.nanoTime();
-        System.out.println( "Parse time (ns): " + (end - begin)  + " (ms): " + (end - begin) / (1000 * 1000));
+        logger.debug(String.format("Parse time (ns): " + (end - begin) + " (ms): " + (end - begin) / (1000 * 1000)));
         Assert.assertEquals(expected, handler.getContent());
         Assert.assertTrue(handler.isEventStackEmpty());
     }
