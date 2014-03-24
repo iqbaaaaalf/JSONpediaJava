@@ -24,7 +24,6 @@ public class JSONUtilsTest {
         final JSONSerializer serializer  = new JSONSerializer(baos);
         JSONUtils.jacksonNodeToSerializer(node, serializer);
         serializer.close();
-        System.out.println(baos.toString());
         Assert.assertEquals(node, JSONUtils.parseJSON(baos.toString()));
     }
 
