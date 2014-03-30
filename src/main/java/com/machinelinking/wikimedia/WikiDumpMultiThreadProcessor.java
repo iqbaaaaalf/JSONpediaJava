@@ -92,6 +92,7 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
         dumpParser.parse(bufferedHandler, is);
         long totalProcessedPages = 0;
         long totalErrorPages = 0;
+        final ProcessorReport report;
         try {
             for (Future future : futures) {
                 try {
@@ -104,7 +105,7 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
                     }
                 }
             }
-        } catch (Exception e) {
+        } catch (Throwable e) {
             throw new RuntimeException("Error while waiting operation completion.", e);
         } finally {
             logger.info("Process closed.");
@@ -114,15 +115,15 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
                 totalErrorPages += runnableProcessor.processor.getErrorPages();
                 finalizeProcessor(runnableProcessor.processor);
             }
+            final long elapsedTime = endTime - startTime;
+            report = new ProcessorReport(
+                    totalProcessedPages,
+                    totalErrorPages,
+                    elapsedTime,
+                    executionExceptions.toArray(new ExecutionException[executionExceptions.size()])
+            );
+            finalizeProcess(report);
         }
-        final long elapsedTime = endTime - startTime;
-        final ProcessorReport report = new ProcessorReport(
-                totalProcessedPages,
-                totalErrorPages,
-                elapsedTime,
-                executionExceptions.toArray(new ExecutionException[executionExceptions.size()])
-        );
-        finalizeProcess(report);
         return report;
     }
 
