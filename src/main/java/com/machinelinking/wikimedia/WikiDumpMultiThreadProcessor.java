@@ -12,6 +12,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 /**
  * A multi-thread executor for {@link PageProcessor}.
@@ -26,11 +27,13 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
 
     private final ExecutorService executorService = Executors.newCachedThreadPool();
 
-    private BufferedWikiPageHandler bufferedHandler;
-
     private boolean stopAtFirstError = true;
 
     private URL pagePrefix;
+
+    private long startTime;
+    private long totalProcessedPages = 0;
+    private long totalErrorPages = 0;
 
     public WikiDumpMultiThreadProcessor() {
     }
@@ -63,13 +66,15 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
         if(pagePrefix == null) throw new NullPointerException();
         if (threads <= 0) throw new IllegalArgumentException("Invalid number of threads: " + threads);
         this.pagePrefix = pagePrefix;
+        this.startTime = System.currentTimeMillis();
+        this.totalErrorPages = this.totalProcessedPages = 0;
 
         logger.info("Starting processing with " + threads + " threads");
 
         initProcess();
 
         WikiDumpParser dumpParser = new WikiDumpParser();
-        bufferedHandler = new BufferedWikiPageHandler();
+        final BufferedWikiPageHandler bufferedHandler = new BufferedWikiPageHandler();
 
         final List<Future> futures = new ArrayList<>();
         final List<RunnableProcessor> runnableProcessors = new ArrayList<>();
@@ -81,27 +86,21 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
                     bufferedHandler,
                     processor
             );
-            runnableProcessors.add( new RunnableProcessor(runnable, processor) );
             final Future future = executorService.submit(runnable);
+            runnableProcessors.add( new RunnableProcessor(runnable, processor) );
             futures.add(future);
         }
 
-        final List<ExecutionException> executionExceptions = new ArrayList<>();
-        final long startTime = System.currentTimeMillis();
-        final long endTime;
         dumpParser.parse(bufferedHandler, is);
-        long totalProcessedPages = 0;
-        long totalErrorPages = 0;
+
         final ProcessorReport report;
         try {
             for (Future future : futures) {
                 try {
-                    future.get();
+                    future.get(20, TimeUnit.SECONDS); //TODO: this must be not necessary. Investigate.
                 } catch (ExecutionException ee) {
                     if(stopAtFirstError) {
                         throw new RuntimeException("Error while executing thread.", ee);
-                    } else {
-                        executionExceptions.add(ee);
                     }
                 }
             }
@@ -109,19 +108,12 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
             throw new RuntimeException("Error while waiting operation completion.", e);
         } finally {
             logger.info("Process closed.");
-            endTime = System.currentTimeMillis();
             for (RunnableProcessor runnableProcessor : runnableProcessors) {
                 totalProcessedPages += runnableProcessor.processor.getProcessedPages();
                 totalErrorPages += runnableProcessor.processor.getErrorPages();
                 finalizeProcessor(runnableProcessor.processor);
             }
-            final long elapsedTime = endTime - startTime;
-            report = new ProcessorReport(
-                    totalProcessedPages,
-                    totalErrorPages,
-                    elapsedTime,
-                    executionExceptions.toArray(new ExecutionException[executionExceptions.size()])
-            );
+            report = createReport();
             finalizeProcess(report);
         }
         return report;
@@ -130,6 +122,15 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
     protected int getBestNumberOfThreads() {
         final int candidate = Runtime.getRuntime().availableProcessors();
         return candidate < MIN_NUM_OF_THREADS ? MIN_NUM_OF_THREADS : candidate;
+    }
+
+    protected ProcessorReport createReport() {
+        final long elapsedTime = System.currentTimeMillis() - startTime;
+        return new ProcessorReport(
+                totalProcessedPages,
+                totalErrorPages,
+                elapsedTime
+        );
     }
 
     class RunnableProcessor {
