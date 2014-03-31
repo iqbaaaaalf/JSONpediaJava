@@ -101,7 +101,6 @@ implements JSONStorageLoader {
                         report.getProcessedPages() / (float) report.getElapsedTime()
                 )
         );
-        logger.error("Unexpected exceptions: " + Arrays.asList(report.getExecutionExceptions()));
     }
 
     public static class EnrichmentProcessor implements PageProcessor {
@@ -238,16 +237,32 @@ implements JSONStorageLoader {
                     "loader.prefix.url"
             );
 
+            final DefaultJSONStorageLoader[] loader = new DefaultJSONStorageLoader[1];
+            final boolean[] finalReportProduced = new boolean[]{false};
+            Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    if(!finalReportProduced[0] && loader[0] != null) {
+                        System.err.println("Process interrupted. Partial loading report: " + loader[0].createReport());
+                    }
+                    System.err.println("Shutting down.");
+                }
+            }));
+
             final JSONStorageConfiguration storageConfig = jsonStorageFactory.createConfiguration(jsonStorageConfig);
-            final JSONStorage storage = jsonStorageFactory.createStorage(storageConfig);
-            final DefaultJSONStorageLoader loader = new DefaultJSONStorageLoader(
-                    WikiEnricherFactory.getInstance(), flags, storage
-            );
-            final StorageLoaderReport report = loader.load(
-                    prefixURL,
-                    FileUtil.openDecompressedInputStream(dumpFile)
-            );
-            System.out.println(report);
+            try (final JSONStorage storage = jsonStorageFactory.createStorage(storageConfig)) {
+                loader[0] = new DefaultJSONStorageLoader(
+                        WikiEnricherFactory.getInstance(), flags, storage
+                );
+
+                final StorageLoaderReport report = loader[0].load(
+                        prefixURL,
+                        FileUtil.openDecompressedInputStream(dumpFile)
+                );
+                System.err.println("Loading report: " + report);
+                finalReportProduced[0] = true;
+            }
+            System.exit(0);
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(2);
