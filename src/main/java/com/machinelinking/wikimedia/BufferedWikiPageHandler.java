@@ -19,11 +19,11 @@ public class BufferedWikiPageHandler implements WikiPageHandler {
     private String  title;
     private boolean eoqAdded = false;
 
-    public synchronized int size() {
+    public int size() {
         return pages.size() - (eoqAdded ? 1 : 0);
     }
 
-    public synchronized WikiPage getPage(boolean wait) {
+    public WikiPage getPage(boolean wait) {
         try {
             if(pages.peek() == EOQ) return EOQ;
             return wait ? pages.take() : pages.poll();
