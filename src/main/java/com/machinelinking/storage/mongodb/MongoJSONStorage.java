@@ -30,8 +30,8 @@ public class MongoJSONStorage implements JSONStorage<MongoJSONStorageConfigurati
     }
 
     @Override
-    public JSONStorageConnection<MongoDocument> openConnection(String table) {
-        return new MongoJSONStorageConnection(db.getCollection(table));
+    public JSONStorageConnection<MongoDocument> openConnection(String collection) {
+        return new MongoJSONStorageConnection(db.getCollection(collection));
     }
 
     public void close() {
