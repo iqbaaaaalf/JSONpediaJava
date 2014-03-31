@@ -11,7 +11,7 @@ public interface JSONStorage<C extends JSONStorageConfiguration, D extends Docum
 
     public C getConfiguration();
 
-    JSONStorageConnection<D> openConnection(String table);
+    JSONStorageConnection<D> openConnection(String collection);
 
     void close();
 
