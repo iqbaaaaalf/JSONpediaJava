@@ -201,19 +201,6 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.2.1</version>
-                <configuration>
-                    <mainClass>com.machinelinking.service.BasicServer</mainClass>
-                    <systemProperties>
-                        <systemProperty>
-                            <key>java.net.preferIPv4Stack</key>
-                            <value>true</value>
-                        </systemProperty>
-                    </systemProperties>
-                    <arguments>
-                        <argument>0.0.0.0</argument>
-                        <argument>9998</argument>
-                    </arguments>
-                </configuration>
             </plugin>
         </plugins>
     </build>
