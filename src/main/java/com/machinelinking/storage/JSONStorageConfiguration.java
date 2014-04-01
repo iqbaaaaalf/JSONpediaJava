@@ -7,4 +7,6 @@ package com.machinelinking.storage;
  */
 public interface JSONStorageConfiguration {
 
+    String getCollection();
+
 }

@@ -15,7 +15,7 @@ public class DefaultJSONStorageLoaderTest extends AbstractJSONStorageLoaderTest 
     @Override
     protected JSONStorage getJSONStorage() throws UnknownHostException {
         return new MongoJSONStorage(
-                new MongoJSONStorageConfiguration("127.0.0.1", 7654, "jsonpedia")
+                new MongoJSONStorageConfiguration("127.0.0.1", 7654, "jsonpedia-test", "en")
         );
     }
 

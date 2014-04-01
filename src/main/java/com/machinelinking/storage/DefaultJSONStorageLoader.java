@@ -78,7 +78,7 @@ implements JSONStorageLoader {
 
     @Override
     public EnrichmentProcessor initProcessor(int threadNumber) {
-        final JSONStorageConnection conn = storage.openConnection("pages" + threadNumber);
+        final JSONStorageConnection conn = storage.openConnection( storage.getConfiguration().getCollection() );
         return new EnrichmentProcessor(
                 wikiEnricherFactory.createFullyConfiguredInstance(flags),
                 conn

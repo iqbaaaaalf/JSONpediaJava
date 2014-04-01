@@ -12,11 +12,13 @@ public class MongoJSONStorageConfiguration implements JSONStorageConfiguration {
     private final String host;
     private final int    port;
     private final String db;
+    private final String collection;
 
-    public MongoJSONStorageConfiguration(String host, int port, String db) {
+    public MongoJSONStorageConfiguration(String host, int port, String db, String collection) {
         this.host = host;
         this.port = port;
         this.db = db;
+        this.collection = collection;
     }
 
     public String getHost() {
@@ -30,5 +32,7 @@ public class MongoJSONStorageConfiguration implements JSONStorageConfiguration {
     public String getDB() {
         return db;
     }
+
+    public String getCollection() { return collection; }
 
 }

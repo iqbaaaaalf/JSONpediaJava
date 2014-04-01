@@ -15,16 +15,18 @@ public class MongoJSONStorageFactory implements JSONStorageFactory {
     @Override
     public MongoJSONStorageConfiguration createConfiguration(String configURI) {
         final String[] sections = configURI.split(":");
-        if(sections.length != 3) throw new IllegalArgumentException("Invalid config URI: must be: <host>:<port>:<db>");
-        final String host = sections[0];
+        if(sections.length != 4)
+            throw new IllegalArgumentException("Invalid config URI: must be: <host>:<port>:<db>:<collection>");
+        final String host = checkValid(sections[0], "host");
         final int port;
         try {
             port = Integer.parseInt(sections[1]);
         } catch (NumberFormatException nfe) {
             throw new IllegalArgumentException("Invalid port, must be a number: " + sections[1]);
         }
-        final String db = sections[2];
-        return new MongoJSONStorageConfiguration(host, port, db);
+        final String db = checkValid(sections[2], "db");
+        final String collection = checkValid(sections[3], "collection");
+        return new MongoJSONStorageConfiguration(host, port, db, collection);
     }
 
     @Override
@@ -35,6 +37,13 @@ public class MongoJSONStorageFactory implements JSONStorageFactory {
         } catch (UnknownHostException uhe) {
             throw new IllegalArgumentException("Error while instantiating storage with configuration: " + config);
         }
+    }
+
+    private String checkValid(String in, String desc) {
+        if(in.trim().length() == 0) {
+            throw new IllegalArgumentException(String.format("Invalid value '%s' for %s", in, desc));
+        }
+        return in;
     }
 
 }
