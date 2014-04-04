@@ -8,14 +8,11 @@ import com.machinelinking.serializer.DataEncoder;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.MongoDBDataEncoder;
 import com.machinelinking.serializer.Serializer;
-import com.machinelinking.storage.mongodb.MongoDocument;
 import com.machinelinking.util.FileUtil;
 import com.machinelinking.wikimedia.PageProcessor;
 import com.machinelinking.wikimedia.ProcessorReport;
 import com.machinelinking.wikimedia.WikiDumpMultiThreadProcessor;
 import com.machinelinking.wikimedia.WikiPage;
-import com.mongodb.DBObject;
-import com.mongodb.util.JSON;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.xml.sax.SAXException;
@@ -155,14 +152,10 @@ implements JSONStorageLoader {
                         ),
                         serializer
                 );
-                final DBObject dbNode = (DBObject) JSON.parse(baos.toString()); // TODO: avoid it.
-                connection.addDocument(new MongoDocument(page.getTitle(), page.getId(), page.getRevId(), dbNode));
-                /*
-                System.out.println(
-                        new MongoDocument(page.getTitle(), page.getId(), page.getRevId(), dbNode).toJSON()
-                );
-                */
+                // TODO: avoid string to JSON conversion and back.
+                connection.addDocument(connection.createDocument(page, baos.toString()));
             } catch (Exception e) {
+                e.printStackTrace();
                 errorPages++;
                 if (logger.isTraceEnabled()) {
                     final StringBuilder sb = new StringBuilder();

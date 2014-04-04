@@ -19,23 +19,23 @@ public class MongoDocument implements Document<DBObject> {
 
     public static MongoDocument unwrap(DBObject in) {
         return new MongoDocument(
-                (String) in.get("_id"),
-                (Integer) in.get("id"),
+                (Integer) in.get("_id"),
                 (Integer) in.get("version"),
+                (String) in.get("name"),
                 (DBObject) in.get("content")
         );
     }
 
-    public MongoDocument(String name, Integer id,  Integer version, DBObject content) {
+    public MongoDocument(int id, Integer version, String name, DBObject content) {
         if(name == null) throw new NullPointerException("name cannot be null.");
         this.name = name;
         this.id = id;
         this.version = version;
 
         this.document = new BasicDBObject();
-        this.document.put("_id", name);
-        this.document.put("id", id);
+        this.document.put("_id", id);
         this.document.put("version", version);
+        this.document.put("name", name);
         this.document.put("content", content);
     }
 

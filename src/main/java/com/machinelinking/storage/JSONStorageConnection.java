@@ -1,5 +1,7 @@
 package com.machinelinking.storage;
 
+import com.machinelinking.wikimedia.WikiPage;
+
 import java.io.Closeable;
 
 /**
@@ -9,13 +11,15 @@ import java.io.Closeable;
  */
 public interface JSONStorageConnection<D extends Document> extends Closeable {
 
-    void addDocument(D document);
+    D createDocument(WikiPage page, String json) throws JSONStorageConnectionException;
 
-    void removeDocument(String docId);
+    void addDocument(D document) throws JSONStorageConnectionException;
 
-    D getDocument(String docId);
+    void removeDocument(int id) throws JSONStorageConnectionException;
 
-    long getDocumentsCount();
+    D getDocument(int id) throws JSONStorageConnectionException;
+
+    long getDocumentsCount() throws JSONStorageConnectionException;
 
     void close();
 

@@ -24,19 +24,18 @@ public class MongoJSONStorageTest {
     public void testLoad() throws IOException {
         final MongoJSONStorageFactory factory = new MongoJSONStorageFactory();
         final MongoJSONStorage storage = factory.createStorage(
-                factory.createConfiguration("localhost:7654:test_load")
+                factory.createConfiguration("localhost:7654:test_load:test_collection")
         );
 
         final DBObject dbNode = (DBObject) JSON.parse(
                 IOUtils.toString(this.getClass().getResourceAsStream("/com/machinelinking/enricher/Page1.json"))
         );
         long start = 0;
-        try (final MongoJSONStorageConnection connection =
-                     (MongoJSONStorageConnection) storage.openConnection("test_load_table")
+        try (final MongoJSONStorageConnection connection = storage.openConnection("test_load_table")
         ) {
             start = System.currentTimeMillis();
             for (int i = 0; i < 1000; i++) {
-                connection.addDocument(new MongoDocument("doc_" + i, i, i, dbNode));
+                connection.addDocument(new MongoDocument(i, i, "doc_" + i, dbNode));
             }
         } finally {
             logger.info("Elapsed time: " + (System.currentTimeMillis() - start));

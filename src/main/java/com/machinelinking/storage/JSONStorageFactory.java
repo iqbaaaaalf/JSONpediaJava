@@ -6,9 +6,11 @@ package com.machinelinking.storage;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public interface JSONStorageFactory<C extends JSONStorageConfiguration, S extends JSONStorage> {
+public interface JSONStorageFactory<C extends JSONStorageConfiguration, S extends JSONStorage, D extends Document> {
 
     C createConfiguration(String configURI);
+
+    S createStorage(C config, DocumentConverter<D> converter);
 
     S createStorage(C config);
 

@@ -1,7 +1,7 @@
 package com.machinelinking.storage.mongodb;
 
+import com.machinelinking.storage.DocumentConverter;
 import com.machinelinking.storage.JSONStorage;
-import com.machinelinking.storage.JSONStorageConnection;
 import com.mongodb.DB;
 import com.mongodb.Mongo;
 
@@ -17,11 +17,15 @@ public class MongoJSONStorage implements JSONStorage<MongoJSONStorageConfigurati
     private final MongoJSONStorageConfiguration config;
     private final Mongo mongo;
     private final DB db;
+    private final DocumentConverter<MongoDocument> converter;
 
-    public MongoJSONStorage(MongoJSONStorageConfiguration config) throws UnknownHostException {
+    public MongoJSONStorage(
+            MongoJSONStorageConfiguration config, DocumentConverter<MongoDocument> converter
+    ) throws UnknownHostException {
         this.config = config;
-        mongo       = new Mongo(config.getHost(), config.getPort());
-        db          = mongo.getDB( config.getDB() );
+        this.mongo  = new Mongo(config.getHost(), config.getPort());
+        this.db     = mongo.getDB( config.getDB() );
+        this.converter = converter;
     }
 
     @Override
@@ -30,8 +34,13 @@ public class MongoJSONStorage implements JSONStorage<MongoJSONStorageConfigurati
     }
 
     @Override
-    public JSONStorageConnection<MongoDocument> openConnection(String collection) {
-        return new MongoJSONStorageConnection(db.getCollection(collection));
+    public DocumentConverter<MongoDocument> getConverter() {
+        return converter;
+    }
+
+    @Override
+    public MongoJSONStorageConnection openConnection(String collection) {
+        return new MongoJSONStorageConnection(db.getCollection(collection), converter);
     }
 
     public void close() {
