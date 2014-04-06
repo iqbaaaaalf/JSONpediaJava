@@ -10,6 +10,7 @@ public class Criteria {
 
     public enum Operator{
         eq,
+        neq,
         gt,
         gte,
         lt,

@@ -51,6 +51,8 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
         switch (operator) {
             case eq:
                 return value;
+            case neq:
+                return new BasicDBObject("$neq", value);
             case gt:
                 return new BasicDBObject("$gt", value);
             case gte:
