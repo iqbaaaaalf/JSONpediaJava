@@ -1,9 +1,11 @@
 package com.machinelinking.storage.mongodb;
 
+import com.machinelinking.storage.Criteria;
 import com.machinelinking.storage.DocumentConverter;
 import com.machinelinking.storage.JSONStorageConnection;
 import com.machinelinking.storage.JSONStorageConnectionException;
 import com.machinelinking.wikimedia.WikiPage;
+import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;
@@ -16,7 +18,7 @@ import java.util.List;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDocument> {
+public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDocument, MongoSelector> {
 
     public static final int BUFFER_FLUSH_SIZE = 1024;
 
@@ -25,6 +27,42 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
     private final DocumentConverter<MongoDocument> converter;
 
     private final List<DBObject> buffer = new ArrayList<>();
+
+    protected static DBObject selectorToDBObjectSelector(MongoSelector selector) {
+        final DBObject obj = new BasicDBObject();
+        for(Criteria criteria : selector.getCriterias()) {
+            obj.put(criteria.field, toValue(criteria.operator, criteria.value));
+        }
+        return obj;
+    }
+
+    protected static DBObject selectorToDBObjectProjector(MongoSelector selector) {
+        final DBObject obj = new BasicDBObject();
+        for(Criteria criteria : selector.getCriterias()) {
+            obj.put(criteria.field, 1);
+        }
+        for(String projection : selector.getProjections()) {
+            obj.put(projection, 1);
+        }
+        return obj;
+    }
+
+    private static Object toValue(Criteria.Operator operator, Object value) {
+        switch (operator) {
+            case eq:
+                return value;
+            case gt:
+                return new BasicDBObject("$gt", value);
+            case gte:
+                return new BasicDBObject("$gte", value);
+            case lt:
+                return new BasicDBObject("$lt", value);
+            case lte:
+                return new BasicDBObject("$lte", value);
+            default:
+                throw new UnsupportedOperationException();
+        }
+    }
 
     protected MongoJSONStorageConnection(DBCollection collection, DocumentConverter<MongoDocument> converter) {
         this.collection = collection;
@@ -58,6 +96,20 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
     @Override
     public long getDocumentsCount() {
         return collection.count();
+    }
+
+    @Override
+    public MongoResultSet query(MongoSelector selector, int limit) {
+        return new MongoResultSet(
+                collection.find(
+                        selectorToDBObjectSelector(selector),
+                        selectorToDBObjectProjector(selector)
+                ).limit(limit));
+    }
+
+    @Override
+    public void flush() {
+        flushBuffer(true);
     }
 
     @Override

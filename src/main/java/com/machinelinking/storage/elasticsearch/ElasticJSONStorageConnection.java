@@ -3,8 +3,10 @@ package com.machinelinking.storage.elasticsearch;
 import com.machinelinking.storage.DocumentConverter;
 import com.machinelinking.storage.JSONStorageConnection;
 import com.machinelinking.storage.JSONStorageConnectionException;
+import com.machinelinking.storage.ResultSet;
 import com.machinelinking.util.JSONUtils;
 import com.machinelinking.wikimedia.WikiPage;
+import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.client.Client;
 
@@ -15,7 +17,7 @@ import java.io.IOException;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class ElasticJSONStorageConnection implements JSONStorageConnection<ElasticDocument> {
+public class ElasticJSONStorageConnection implements JSONStorageConnection<ElasticDocument, ElasticSelector> {
 
     private final Client client;
     private final String db;
@@ -74,8 +76,23 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
     }
 
     @Override
+    public ResultSet<ElasticDocument> query(ElasticSelector selector, int limit) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void flush() {
+        // Empty.
+    }
+
+    @Override
     public void close() {
         client.close();
+    }
+
+    protected void dropCollection() {
+        final DeleteIndexResponse response = client.admin().indices().prepareDelete(collection).execute().actionGet();
+        if(!response.isAcknowledged()) throw new IllegalStateException("Cannot delete index.");
     }
 
 }

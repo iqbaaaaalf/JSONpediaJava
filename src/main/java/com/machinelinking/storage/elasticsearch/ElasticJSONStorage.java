@@ -11,7 +11,8 @@ import org.elasticsearch.common.transport.InetSocketTransportAddress;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class ElasticJSONStorage implements JSONStorage<ElasticJSONStorageConfiguration, ElasticDocument> {
+public class ElasticJSONStorage
+    implements JSONStorage<ElasticJSONStorageConfiguration, ElasticDocument, ElasticSelector> {
 
     private final ElasticJSONStorageConfiguration configuration;
 
@@ -52,6 +53,12 @@ public class ElasticJSONStorage implements JSONStorage<ElasticJSONStorageConfigu
                 converter
         );
 
+    }
+
+    @Override
+    public void deleteCollection(String collection) {
+        final ElasticJSONStorageConnection connection = openConnection(collection);
+        connection.dropCollection();
     }
 
     @Override

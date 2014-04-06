@@ -12,7 +12,7 @@ import java.net.UnknownHostException;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class MongoJSONStorage implements JSONStorage<MongoJSONStorageConfiguration,MongoDocument> {
+public class MongoJSONStorage implements JSONStorage<MongoJSONStorageConfiguration,MongoDocument, MongoSelector> {
 
     private final MongoJSONStorageConfiguration config;
     private final Mongo mongo;
@@ -41,6 +41,11 @@ public class MongoJSONStorage implements JSONStorage<MongoJSONStorageConfigurati
     @Override
     public MongoJSONStorageConnection openConnection(String collection) {
         return new MongoJSONStorageConnection(db.getCollection(collection), converter);
+    }
+
+    @Override
+    public void deleteCollection(String collection) {
+        this.db.getCollection(collection).drop();
     }
 
     public void close() {

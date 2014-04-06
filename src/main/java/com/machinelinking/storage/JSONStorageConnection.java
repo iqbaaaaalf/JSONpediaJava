@@ -9,7 +9,7 @@ import java.io.Closeable;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public interface JSONStorageConnection<D extends Document> extends Closeable {
+public interface JSONStorageConnection<D extends Document, S extends Selector> extends Closeable {
 
     D createDocument(WikiPage page, String json) throws JSONStorageConnectionException;
 
@@ -20,6 +20,10 @@ public interface JSONStorageConnection<D extends Document> extends Closeable {
     D getDocument(int id) throws JSONStorageConnectionException;
 
     long getDocumentsCount() throws JSONStorageConnectionException;
+
+    ResultSet<D> query(S selector, int limit);
+
+    void flush();
 
     void close();
 
