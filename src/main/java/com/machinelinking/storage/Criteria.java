@@ -27,4 +27,8 @@ public class Criteria {
         this.value = value;
     }
 
+    @Override
+    public String toString() {
+        return String.format("%s %s %s", field, operator, value);
+    }
 }

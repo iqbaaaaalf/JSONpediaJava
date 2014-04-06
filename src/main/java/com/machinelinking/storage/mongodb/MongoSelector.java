@@ -34,4 +34,8 @@ public class MongoSelector implements Selector {
         return projections.toArray(new String[projections.size()]);
     }
 
+    @Override
+    public String toString() {
+        return String.format("criterias: %s, projections: %s", criterias.toString(), projections.toString());
+    }
 }
