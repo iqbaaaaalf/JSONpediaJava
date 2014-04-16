@@ -101,12 +101,17 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
     }
 
     @Override
-    public MongoResultSet query(MongoSelector selector, int limit) {
-        return new MongoResultSet(
-                collection.find(
-                        selectorToDBObjectSelector(selector),
-                        selectorToDBObjectProjector(selector)
-                ).limit(limit));
+    public MongoResultSet query(MongoSelector selector, int limit) throws JSONStorageConnectionException {
+        try {
+            return new MongoResultSet(
+                    collection.find(
+                            selectorToDBObjectSelector(selector),
+                            selectorToDBObjectProjector(selector)
+                    ).limit(limit)
+            );
+        } catch (Exception e) {
+            throw new JSONStorageConnectionException("Error while performing query.", e);
+        }
     }
 
     @Override

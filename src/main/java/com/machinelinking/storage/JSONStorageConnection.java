@@ -21,7 +21,7 @@ public interface JSONStorageConnection<D extends Document, S extends Selector> e
 
     long getDocumentsCount() throws JSONStorageConnectionException;
 
-    ResultSet<D> query(S selector, int limit);
+    ResultSet<D> query(S selector, int limit) throws JSONStorageConnectionException;
 
     void flush();
 
