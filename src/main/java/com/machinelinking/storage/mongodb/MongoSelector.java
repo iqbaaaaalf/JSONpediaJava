@@ -4,7 +4,10 @@ import com.machinelinking.storage.Criteria;
 import com.machinelinking.storage.Selector;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * {@link com.machinelinking.storage.Selector} implementation for <i>MongoDB</i>.
@@ -14,7 +17,7 @@ import java.util.List;
 public class MongoSelector implements Selector {
 
     private List<Criteria> criterias = new ArrayList<>();
-    private List<String> projections = new ArrayList<>();
+    private Set<String> projections = new HashSet<>(Arrays.asList(MongoDocument.FIELDS));
 
     @Override
     public void addCriteria(Criteria criteria) {
