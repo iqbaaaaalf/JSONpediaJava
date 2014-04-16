@@ -2,6 +2,7 @@ package com.machinelinking.storage.mongodb;
 
 import com.machinelinking.storage.Criteria;
 import com.machinelinking.storage.JSONStorageConnection;
+import com.machinelinking.storage.JSONStorageConnectionException;
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;
 import junit.framework.Assert;
@@ -29,7 +30,7 @@ public class MongoJSONStorageTest {
     }
 
     @Test
-    public void testQuery() throws IOException {
+    public void testQuery() throws IOException, JSONStorageConnectionException {
         loadAndCheck(10);
 
         final MongoJSONStorage storage = getStorage();
