@@ -33,8 +33,11 @@ public class ConfigurationManager {
         return value;
     }
 
+    public boolean isInitialized() {
+        return this.properties != null;
+    }
+
     private void checkInitProperties() {
         if(this.properties == null) throw new IllegalStateException("Properties have not yet initialized.");
     }
-
 }
