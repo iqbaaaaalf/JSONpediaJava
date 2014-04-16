@@ -82,7 +82,7 @@ public class MongoSelectorParser implements SelectorParser {
                                 "A valid operator (%s) must be specified within selector '%s'",
                                 Arrays.toString(SELECTOR_OPS), selector)
                 );
-            final String field = selector.substring(0, operator[0] - 1).trim();
+            final String field = selector.substring(0, operator[0]).trim();
             final String operatorStr = SELECTOR_OPS[operator[1]];
             final String value = selector.substring(operator[0] + operatorStr.length()).trim();
             mongoSelector.addCriteria( new Criteria(field, operatorStrToOperator(operatorStr), value));

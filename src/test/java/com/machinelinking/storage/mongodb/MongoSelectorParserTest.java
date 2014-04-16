@@ -19,8 +19,13 @@ public class MongoSelectorParserTest {
         );
         Assert.assertEquals(
                 "criterias: [version lte 0, _id gt 10, content.categories.content eq Cosmologists, content.sections.title eq Biography], " +
-                "projections: [_id, name, content]",
+                "projections: [content, _id, name, version]",
                 selector.toString()
+        );
+
+        Assert.assertEquals(
+                "criterias: [_id gt 1], projections: [content, _id, name, version]",
+                parser.parse("_id > 1 -> _id").toString()
         );
     }
 
