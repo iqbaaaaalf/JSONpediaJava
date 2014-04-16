@@ -7,13 +7,8 @@ import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
 import org.junit.Test;
 
-import javax.ws.rs.core.UriBuilder;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URLEncoder;
 
@@ -44,7 +39,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
 
     @Test
     public void testFlags() throws IOException, URISyntaxException {
-        final JsonNode node = performQuery("flags");
+        final JsonNode node = performQuery(buildPath(DefaultAnnotationService.class, "flags").build());
         Assert.assertEquals(
                 WikiEnricherFactory.getInstance().getDefinedFlags().length,
                 node.get("definedFlags").size()
@@ -53,13 +48,14 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
 
     @Test
     public void testAnnotate() throws IOException, URISyntaxException {
-        checkJSONResponse( performQuery(TARGET_RESOURCE) );
+        checkJSONResponse( performQuery(buildPath(DefaultAnnotationService.class, TARGET_RESOURCE).build()) );
     }
 
     @Test
     public void testAnnotateOnline() throws IOException, URISyntaxException {
         final JsonNode node = performQuery(
-                buildPath(TARGET_RESOURCE).queryParam("procs", WikiEnricherFactory.Linkers).build()
+                buildPath(DefaultAnnotationService.class, TARGET_RESOURCE)
+                    .queryParam("procs", WikiEnricherFactory.Linkers).build()
         );
         checkJSONResponse(node);
         Assert.assertNotNull(node.get("freebase"));
@@ -68,7 +64,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     @Test
     public void testAnnotateWithFilters() throws URISyntaxException, IOException {
         final JsonNode node = performQuery(
-                buildPath(TARGET_RESOURCE)
+                buildPath(DefaultAnnotationService.class, TARGET_RESOURCE)
                         .queryParam("procs", WikiEnricherFactory.Structure)
                         .queryParam("filter", DefaultJSONFilterEngineTest.STRING_FILTER_EXP).build()
         );
@@ -81,28 +77,6 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
                 ).toString(),
                 node.toString()
         );
-    }
-
-    private UriBuilder buildPath(String path) throws URISyntaxException {
-        return  UriBuilder.fromResource(DefaultAnnotationService.class)
-                .uri(new URI(String.format("http://%s", BasicServer.DEFAULT_HOST))).port(BasicServer.DEFAULT_PORT)
-                .path(path);
-    }
-
-    private JsonNode performQuery(String path) throws URISyntaxException, IOException {
-        final URI uri = buildPath(path).build();
-        return performQuery(uri);
-    }
-
-    private JsonNode performQuery(URI uri) throws IOException {
-        final InputStream is = uri.toURL().openStream();
-        final BufferedReader br = new BufferedReader( new InputStreamReader(is) );
-        final StringBuilder content = new StringBuilder();
-        String line;
-        while((line = br.readLine()) != null) {
-            content.append(line);
-        }
-        return JSONUtils.parseJSON(content.toString());
     }
 
     private void checkJSONResponse(JsonNode node) {

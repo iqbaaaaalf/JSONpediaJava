@@ -9,7 +9,7 @@ import javax.ws.rs.core.Response;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public interface AnnotationService {
+public interface AnnotationService extends Service {
 
     FlagSet flags();
 
