@@ -38,7 +38,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     }
 
     @Test
-    public void testFlags() throws IOException, URISyntaxException {
+    public void testFlags() throws IOException, URISyntaxException, ConnectionException {
         final JsonNode node = performQuery(buildPath(DefaultAnnotationService.class, "flags").build());
         Assert.assertEquals(
                 WikiEnricherFactory.getInstance().getDefinedFlags().length,
@@ -47,12 +47,12 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     }
 
     @Test
-    public void testAnnotate() throws IOException, URISyntaxException {
+    public void testAnnotate() throws IOException, URISyntaxException, ConnectionException {
         checkJSONResponse( performQuery(buildPath(DefaultAnnotationService.class, TARGET_RESOURCE).build()) );
     }
 
     @Test
-    public void testAnnotateOnline() throws IOException, URISyntaxException {
+    public void testAnnotateOnline() throws IOException, URISyntaxException, ConnectionException {
         final JsonNode node = performQuery(
                 buildPath(DefaultAnnotationService.class, TARGET_RESOURCE)
                     .queryParam("procs", WikiEnricherFactory.Linkers).build()
@@ -62,7 +62,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     }
 
     @Test
-    public void testAnnotateWithFilters() throws URISyntaxException, IOException {
+    public void testAnnotateWithFilters() throws URISyntaxException, IOException, ConnectionException {
         final JsonNode node = performQuery(
                 buildPath(DefaultAnnotationService.class, TARGET_RESOURCE)
                         .queryParam("procs", WikiEnricherFactory.Structure)
