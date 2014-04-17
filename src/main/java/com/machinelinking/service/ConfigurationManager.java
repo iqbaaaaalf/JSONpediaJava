@@ -1,5 +1,7 @@
 package com.machinelinking.service;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.Properties;
 
 /**
@@ -25,12 +27,26 @@ public class ConfigurationManager {
         this.properties = properties;
     }
 
-    public String getProperty(String name) {
+    public void initProperties(File file) {
+        final Properties p = new Properties();
+        try(FileInputStream fis = new FileInputStream(file)) {
+            p.load(fis);
+        } catch(Exception e) {
+            throw new IllegalStateException("Error while reading configuration file.", e);
+        }
+        initProperties(p);
+    }
+
+    public String getProperty(String name, String defaultValue) {
         checkInitProperties();
-        final String value = this.properties.getProperty(name);
+        final String value = this.properties.getProperty(name, defaultValue);
         if(value == null)
             throw new IllegalArgumentException(String.format("Cannot find value for property '%s'", name));
         return value;
+    }
+
+    public String getProperty(String name) {
+        return getProperty(name, null);
     }
 
     public boolean isInitialized() {
@@ -40,4 +56,5 @@ public class ConfigurationManager {
     private void checkInitProperties() {
         if(this.properties == null) throw new IllegalStateException("Properties have not yet initialized.");
     }
+
 }
