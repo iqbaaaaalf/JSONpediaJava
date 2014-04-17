@@ -2,6 +2,8 @@ package com.machinelinking.storage.mongodb;
 
 import com.machinelinking.storage.Criteria;
 import com.machinelinking.storage.Selector;
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,8 +39,47 @@ public class MongoSelector implements Selector {
         return projections.toArray(new String[projections.size()]);
     }
 
+    public DBObject toDBObjectSelection() {
+        final DBObject obj = new BasicDBObject();
+        for(Criteria criteria : this.getCriterias()) {
+            obj.put(criteria.field, toValue(criteria.operator, criteria.value));
+        }
+        return obj;
+    }
+
+    public DBObject toDBObjectProjection() {
+        final DBObject obj = new BasicDBObject();
+        for(Criteria criteria : this.getCriterias()) {
+            obj.put(criteria.field, 1);
+        }
+        for(String projection : this.getProjections()) {
+            obj.put(projection, 1);
+        }
+        return obj;
+    }
+
     @Override
     public String toString() {
         return String.format("criterias: %s, projections: %s", criterias.toString(), projections.toString());
     }
+
+    private Object toValue(Criteria.Operator operator, Object value) {
+        switch (operator) {
+            case eq:
+                return value;
+            case neq:
+                return new BasicDBObject("$neq", value);
+            case gt:
+                return new BasicDBObject("$gt", value);
+            case gte:
+                return new BasicDBObject("$gte", value);
+            case lt:
+                return new BasicDBObject("$lt", value);
+            case lte:
+                return new BasicDBObject("$lte", value);
+            default:
+                throw new UnsupportedOperationException();
+        }
+    }
+
 }

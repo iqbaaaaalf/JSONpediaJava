@@ -29,6 +29,8 @@ public class MongoSelectorParser implements SelectorParser {
             SELECTOR_OP_GT,
     };
 
+    public static final String INT_CLASSIFIER = "#";
+
     private static MongoSelectorParser instance;
 
     public static MongoSelectorParser getInstance() {
@@ -85,7 +87,7 @@ public class MongoSelectorParser implements SelectorParser {
             final String field = selector.substring(0, operator[0]).trim();
             final String operatorStr = SELECTOR_OPS[operator[1]];
             final String value = selector.substring(operator[0] + operatorStr.length()).trim();
-            mongoSelector.addCriteria( new Criteria(field, operatorStrToOperator(operatorStr), value));
+            mongoSelector.addCriteria( new Criteria(field, operatorStrToOperator(operatorStr), toTypedValue(value)));
         }
     }
 
@@ -106,6 +108,16 @@ public class MongoSelectorParser implements SelectorParser {
             if(index != -1) return new int[] {index, i};
         }
         return null;
+    }
+
+    private Object toTypedValue(String v) {
+        if (v.startsWith(INT_CLASSIFIER))
+            try {
+                return Integer.parseInt(v.substring(INT_CLASSIFIER.length()));
+            } catch (NumberFormatException nfe) {
+                throw new IllegalArgumentException(String.format("Value '%s' must be integer.", v));
+            }
+        return v;
     }
 
 }
