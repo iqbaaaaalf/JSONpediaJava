@@ -101,7 +101,9 @@ public class DefaultStorageService implements StorageService {
     private String toJSONOutput(MongoSelector selector, JSONFilter filter, MongoResultSet rs) {
         final ObjectNode output = JsonNodeFactory.instance.objectNode();
         final ArrayNode result = JsonNodeFactory.instance.arrayNode();
-        output.put("query", selector.toString());
+        output.put("query-explain", selector.toString());
+        output.put("mongo-selection", selector.toDBObjectSelection().toString());
+        output.put("mongo-projection", selector.toDBObjectProjection().toString());
         output.put("count", rs.getCount());
         output.put("result", result);
         MongoDocument nextMongo;
