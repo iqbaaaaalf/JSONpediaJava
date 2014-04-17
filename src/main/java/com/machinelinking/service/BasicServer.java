@@ -3,7 +3,6 @@ package com.machinelinking.service;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
-import com.machinelinking.cli.CLIUtils;
 import com.sun.jersey.api.container.grizzly2.GrizzlyServerFactory;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.api.core.ResourceConfig;
@@ -21,6 +20,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
 import java.util.Enumeration;
@@ -35,12 +35,15 @@ import java.util.jar.JarFile;
  */
 public class BasicServer {
 
-    private static final Logger logger = Logger.getLogger(BasicServer.class);
+    public static final String HOST_PARAM = "server.host";
+    public static final String PORT_PARAM = "server.port";
 
     public static final String DEFAULT_HOST = "127.0.0.1";
-    public static final int   DEFAULT_PORT  = 9998;
+    public static final Integer DEFAULT_PORT  = 9998;
 
     public static final String RESOURCES_ROOT = "./static_resources";
+
+    private static final Logger logger = Logger.getLogger(BasicServer.class);
 
     private static final String PACKAGE_ROOT = BasicServer.class.getPackage().getName().replace(".", "/");
 
@@ -59,14 +62,20 @@ public class BasicServer {
         int exitCode = 0;
         try {
             commander.parse(args);
-            final BasicServer server = new BasicServer(mapper.host, mapper.port);
+
+            final ConfigurationManager configurationManager = ConfigurationManager.getInstance();
+            configurationManager.initProperties(new File(mapper.configFile));
+            final String host = readHost(configurationManager.getProperty(HOST_PARAM, DEFAULT_HOST));
+            final int port = readPort(configurationManager.getProperty(PORT_PARAM, DEFAULT_PORT.toString()));
+
+            final BasicServer server = new BasicServer(host, port);
             server.setUp();
             System.out.println(
                     String.format(
                             "JSONpedia service started at port %d.\n" +
                             "WADL descriptor at %sapplication.wadl\n" +
                             "Hit C^ to stop ...",
-                            mapper.port,
+                            port,
                             server.getBaseURI()
                     )
             );
@@ -84,6 +93,23 @@ public class BasicServer {
             exitCode = 2;
         } finally {
             System.exit(exitCode);
+        }
+    }
+
+    private static String readHost(String host) {
+        try {
+            new URL(String.format("http://%s", host));
+        } catch (MalformedURLException murle) {
+            throw new IllegalArgumentException("Invalid host", murle);
+        }
+        return host;
+    }
+
+    private static int readPort(String port) {
+        try {
+            return Integer.parseInt(port);
+        } catch (NumberFormatException nfe) {
+            throw new IllegalArgumentException("Invalid port", nfe);
         }
     }
 
@@ -176,20 +202,11 @@ public class BasicServer {
 
     static class ParamsMapper {
         @Parameter(
-                names = {"--host", "-h"},
-                description = "host name",
-                required = true,
-                validateValueWith = CLIUtils.ValidHost.class
+                names = {"--conf", "-c"},
+                description = "configuration file",
+                required = true
         )
-         String host = DEFAULT_HOST;
-
-        @Parameter(
-                names = {"--port", "-p"},
-                description = "port number",
-                required = true,
-                validateValueWith = CLIUtils.PortValidator.class
-        )
-         int port = DEFAULT_PORT;
+        String configFile;
     }
 
 }
