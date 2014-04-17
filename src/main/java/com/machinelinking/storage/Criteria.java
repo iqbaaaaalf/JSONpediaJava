@@ -29,6 +29,11 @@ public class Criteria {
 
     @Override
     public String toString() {
-        return String.format("%s %s %s", field, operator, value);
+        return String.format("%s %s %s", field, operator, toValue(value));
     }
+
+    private String toValue(Object value) {
+        return value instanceof Integer ? value.toString() : String.format("'%s'", value.toString());
+    }
+
 }
