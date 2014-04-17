@@ -40,8 +40,8 @@ public class DefaultStorageServiceTest extends ServiceTestBase {
         );
 
         Assert.assertEquals(
-                "criterias: [name eq doc_1], projections: [content, _id, name, version]",
-                output.get("query").asText()
+                "criterias: [name eq 'doc_1'], projections: [content, _id, name, version]",
+                output.get("query-explain").asText()
         );
         Assert.assertEquals(1, output.get("count").asInt());
         Assert.assertNotNull(output.get("result"));
