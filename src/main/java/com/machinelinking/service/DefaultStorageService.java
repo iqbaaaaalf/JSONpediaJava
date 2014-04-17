@@ -12,6 +12,7 @@ import com.machinelinking.storage.mongodb.MongoSelector;
 import com.machinelinking.storage.mongodb.MongoSelectorParser;
 import com.machinelinking.storage.mongodb.MongoUtils;
 import com.machinelinking.util.JSONUtils;
+import org.apache.log4j.Logger;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.node.ArrayNode;
 import org.codehaus.jackson.node.JsonNodeFactory;
@@ -34,6 +35,8 @@ public class DefaultStorageService implements StorageService {
 
     public static final String STORAGE_SERVICE_CONNECTION_PROP = "storage.service.connection";
     public static final String STORAGE_SERVICE_QUERY_LIMIT_PROP = "storage.service.query.limit";
+
+    private static final Logger logger = Logger.getLogger(DefaultStorageService.class);
 
     private final MongoJSONStorageConnection connection;
     private final int QUERY_LIMIT;
@@ -71,6 +74,7 @@ public class DefaultStorageService implements StorageService {
         } catch (IllegalArgumentException iae) {
             throw new InvalidRequestException(iae);
         } catch (Exception e) {
+            logger.error("Error while performing request.", e);
             throw new InternalErrorException(e);
         }
     }
