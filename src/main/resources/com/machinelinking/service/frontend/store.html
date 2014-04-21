@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xml:lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>JSONpedia - Storage Query</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/frontend/img/favicon.ico">
+    <meta name="description" content="JSONpedia Storage Query Frontend">
+    <meta name="author" content="Michele Mostarda @micmos">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/highlight.default.css"/>
+    <style type="text/css">
+        body {
+          padding-top: 70px;
+          padding-bottom: 30px;
+        }
+
+        select {
+            width: 70px;
+        }
+        .label {
+            margin: 1px;
+        }
+        .dropdown-list-button {
+            font-size: 14px;
+        }
+        .fixedpos {
+            position:fixed;
+            height:40px;
+            line-height:40px;
+            vertical-align:middle;
+            top:40px;
+            left:0;
+            right:0;
+            padding-left:20px;
+        }
+    </style>
+
+    <script type="text/javascript" src="js/jquery-1.7.2-min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="application/javascript">
+        $(function ($) {
+            $("#filter-syntax-include").load("filter.html");
+
+            $.each($('.app-base-uri'), function() {
+                $(this).text(document.location.host);
+            });
+
+            $('#mongo-select-submit').addClass('disabled');
+
+            $('.mongo-selector-example').click(function(e) {
+                $('#mongo-select-selector').val($(e.target).text());
+                e.preventDefault();
+                updateGetRequest();
+                $('#mongo-select-submit').removeClass('disabled');
+            });
+            $('.mongo-filter-example').click(function(e) {
+                $('#mongo-select-filter').val($(e.target).text());
+                e.preventDefault();
+                updateGetRequest();
+                $('#mongo-select-submit').removeClass('disabled');
+            });
+
+            $('#mongo-select-selector').keyup(function() {
+                $submitButton = $('#mongo-select-submit');
+                if ($('#mongo-select-selector').val() != '') {
+                    $submitButton.removeClass('disabled');
+                } else {
+                    $submitButton.addClass('disabled');
+                }
+            });
+
+            $('#mongo-select-query-copy').click(function(){
+                window.prompt('CTRL + C to copy:', $('#mongo-select-query').html() );
+            });
+
+            $('#mongo-select-limit').keyup(function(){
+                if($('#mongo-select-limit').val() > 1000) {
+                    $('#mongo-select-limit').addClass('glyphicon glyphicon-warning-sign has-warning has-feedback form-control-feedback');
+                } else {
+                    $('#mongo-select-limit').removeClass('glyphicon glyphicon-warning-sign has-warning has-feedback form-control-feedback');
+                }
+            });
+
+            $('#mongo-select-form').live('click change keyup', function(e) {
+                updateGetRequest();
+            });
+
+            $('#mongo-select-submit').click(function(e){
+                window.open(buildGetRequest());
+            });
+
+            $('#mongo-select-reset').click(function(e){
+                e.preventDefault();
+                $('#mongo-select-form')[0].reset();
+                updateGetRequest();
+            });
+
+            $('#selector-help').click(function(e){
+                            document.location = "#selector-syntax";
+            });
+            $('#filter-help').click(function(e){
+                            document.location = "#filter-syntax";
+            });
+        });
+
+        function dismissAlert() {
+            $('#alert-message').html("");
+        }
+
+        function alert(msg) {
+            $('#alert-message').html(
+                '<div class="alert fade in fixedpos"><button type="button" class="close" data-dismiss="alert">&times;</button>'
+                        + msg +
+                '</div>'
+            );
+        }
+
+        function isNumeric(n) {
+          return !isNaN(parseFloat(n)) && isFinite(n);
+        }
+
+        function buildGetRequest() {
+            selector = $('#mongo-select-selector').val();
+            filter = $('#mongo-select-filter').val();
+            limit = $('#mongo-select-limit').val();
+            if(selector.trim().length == 0) throw new Error("Invalid selector");
+            if(limit != "" && !isNumeric(limit)) throw new Error("Invalid limit");
+            return '/storage/select?q=' +
+             encodeURIComponent(selector) +
+            (filter.trim().length == 0 ? '' : '&filter=' + encodeURIComponent(filter)) +
+            (limit.trim().length == 0 || limit == $('#mongo-select-limit').attr('placeholder') ? '' : '&limit=' + limit)
+        }
+
+        function updateGetRequest() {
+            try {
+                $('#mongo-select-query').html('http://' + document.location.host + buildGetRequest());
+                $('#mongo-select-submit').removeAttr('disabled');
+            } catch(e) {
+                console.log('EEE' + e)
+                $('#mongo-select-submit').attr('disabled','disabled');
+            }
+        }
+    </script>
+</head>
+
+<body role="document">
+
+<div id="alert-message"></div>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Live</a></li>
+            <li class="active"><a href="#">Store</a></li>
+            <li><a href="client.html">JQuery Client</a></li>
+            <li><a target="_blank" href="https://bitbucket.org/hardest/jsonpedia">Documentation</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="container theme-showcase" role="main">
+
+<header class="jumbotron">
+    <h1>JSONpedia Storage</h1>
+    <p>Query the latest Wikipedia dump processed with JSONpedia.</p>
+</header>
+
+<h2>MongoDB Query</h2>
+
+<form id="mongo-select-form" class="well form-horizontal">
+    <label>Specify a data selector and optionally a filter and a resultset limit</label>
+
+    <div class="form-group">
+        <label class="control-label col-md-1" for="mongo-select-selector">Selector</label>
+        <div class="col-md-6">
+            <div class="input-group">
+                <input class="form-control" id="mongo-select-selector" type="text"
+                       placeholder="[<FIELD> OP <VALUE>]+ -> [<FIELD>]+">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Selector samples <span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a class="mongo-selector-example dropdown-list-button" href="#">_id = #736 -&gt; title</a></li>
+                        <li><a class="mongo-selector-example dropdown-list-button" href="#">name = Albert Einstein -> content.sections</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <i id="selector-help" class="glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Selector syntax"></i>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-1" for="mongo-select-filter">Filter</label>
+        <div class="col-md-6">
+            <div class="input-group">
+                <input class="form-control" id="mongo-select-filter" type="text"
+                       placeholder="[<FIELD> : <VALUE re>]+">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Filter samples <span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a class="mongo-filter-example dropdown-list-button" href="#">__type : link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <i id="filter-help" class="glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Filter syntax"></i>
+    </div>
+
+    <div class="form-group">
+        <label for="mongo-select-limit" class="col-md-1 control-label">Limit</label>
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="mongo-select-limit" placeholder="1000">
+        </div>
+        <i id="limit-help" class="glyphicon glyphicon-question-sign col-md-1" rel="tooltip"
+           title="Result limit (Max: 1000)"></i>
+    </div>
+
+    <span class="row">
+        <span class="label label-info">Query</span>
+        <span id="mongo-select-query" class="label label-info"></span>
+        <i id="mongo-select-query-copy" class="glyphicon glyphicon-edit" rel="tooltip" title="Copy query"></i>
+    </span>
+
+    <div class="control-group">
+        <button id="mongo-select-submit" type="button" class="btn btn-primary">Query</button>
+        <button id="mongo-select-reset" type="reset" class="btn">Cancel</button>
+    </div>
+</form>
+
+<!--------- BEGIN API Reference --------->
+
+<h2>Quick API reference</h2>
+
+<h3>Examples</h3>
+<ul>
+    <li><code><a target="_blank" href="/store/select?q=title=title%20%3D%20Albert_Einstein"><span class="app-base-uri">http://...</span>/store/select?q=title=title%20%3D%20Albert_Einstein</a></code>
+    </li>
+</ul>
+
+<h3>GET API</h3>
+
+<p>HTTP GET requests can be sent to the URL:</p>
+<pre><span class="app-base-uri">http://.../</span>/store/select?q=<em>&lt;query&gt;</em>&filter=<em>&lt;filter&gt;</em>&limit=<em>
+    &lt;limit&gt;</em></pre>
+with the following parameters:
+
+<table class="table">
+    <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
+        <th>q</th>
+        <td>Selector to apply over stored data. See <a href="#selector-syntax">selector syntax</a>.</td>
+        <td><span class="label label-info">True</span></td>
+    </tr>
+    <tr>
+        <th>filter</th>
+        <td>Filter criteria to be applied to the result. See <a href="#filter-syntax">filter syntax</a>.</td>
+        <td><span class="label label-info">False</span></td>
+    </tr>
+    <tr>
+        <th>limit</th>
+        <td>Limit of returned results, max allowed value: <strong>1000</strong>.</td>
+        <td><span class="label label-info">False</span></td>
+    </tr>
+</table>
+
+<a name="supported-formats"></a>
+
+<h3>Output formats</h3>
+
+<p>Supported output format are:</p>
+
+<table class="table">
+    <tr>
+        <th>Output format</th>
+        <th>Media type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <th>JSON</th>
+        <td><code>application/json</code></td>
+        <td>Produces a <a href="http://json.org/" target="_blank">JSON</a> object which sections are described in
+            <a href="#mongo-output">Mongo select output format</a></td>
+    </tr>
+</table>
+
+<h3>Error reporting</h3>
+
+<p>
+    Processing errors are reported as HTTP status codes with short <code>text/plain</code> messages.
+    <br/>
+    The following status codes can be returned:
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Code</th>
+        <th>Reason</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>200 OK</th>
+        <td><span class="label label-success">Success.</span></td>
+    </tr>
+    <tr>
+        <th>400 Bad Request</th>
+        <td>Invalid parameters.</td>
+    </tr>
+    <tr>
+        <th>500 Internal Error</th>
+        <td>Generic error occurred.</td>
+    </tr>
+    </tbody>
+</table>
+<!--------- END API   Reference --------->
+
+<hr/>
+
+<!--------- BEGIN Selector Documentation --------->
+<a name="selector-syntax"></a>
+<h3>Selector Syntax</h3>
+<p>
+A JSONpedia <b>selector</b> is a query performed on a store containing JSONpedia documents.
+A selector is composed of a selection part where it is possible to define conditions over fields and
+a projection section where it is possible do define which parts of documents that satisfy selection
+must be returned.
+Examples of selections are:
+<pre>_id = 706 -> name</pre>
+where the document with id 706 is selected and its name (page title) is returned.
+<pre>version >= 10 -> content.categories</pre>
+where all documents with version major or equals to 10 are selected and for each one the content categories are returned.
+</p>
+<p>
+The full <b>selector syntax</b> is reported below.
+<pre>
+&lt;selector&gt;      ::= &lt;criteria-list&gt; "->" &lt;projection&gt; ;
+&lt;criteria-list&gt; ::= &lt;criteria&gt; | &lt;criteria&gt; "," &lt;criteria-list&gt; ;
+&lt;criteria&gt;      ::=  &lt;field&gt; &lt;operator&gt; &lt;value&gt;
+&lt;projection&gt;    ::= &lt;field&gt; | &lt;field&gt; "." &lt;projection&gt; ;
+&lt;operator&gt;      ::= '==' | '!=' | '<' | '>' | '<=' | '>=' ;
+&lt;field&gt;         ::= &lt;JSON-field-name&gt; ;
+&lt;value&gt;         ::= &lt;String&gt; | &lt;number&gt; ;
+&lt;number&gt;        ::= '#' &lt;Number&gt; ;
+</pre>
+</p>
+
+<!--------- END   Selector Documentation --------->
+
+<hr/>
+
+<!--------- BEGIN Filter Documentation --------->
+<a name="filter-syntax"></a>
+<div id="filter-syntax-include"></div>
+<!--------- END   Filter Documentation --------->
+
+<hr/>
+
+<!--------- BEGIN Mongo Output Documentation --------->
+<a name="mongo-output"></a>
+<h3>Mongo Select Output Format</h3>
+<p>
+The service returns an object with following fields:
+<ul>
+    <li><code>query-explain</code>: how the selection query has been interpreted.</li>
+    <li><code>mongo-selection</code>: how the selection query has been translated to a MongoDB selection criteria.</li>
+    <li><code>mongo-projection</code>: how the selection query has been translated to a MongoDB projection criteria.</li>
+    <li><code>count</code>: number of results.</li>
+    <li><code>result</code>: list of objects in result.</li>
+</ul>
+</p>
+<p>The output format is composed as described in the example below.</p>
+<pre class="well">
+{
+    query-explain: "criterias: [_id eq 736], projections: [content, title, _id, name, version]",
+    mongo-selection: "{ "_id" : 736}",
+    mongo-projection: "{ "_id" : 1 , "content" : 1 , "title" : 1 , "name" : 1 , "version" : 1}",
+    count: 1,
+    result: [
+        [
+            {
+                _id: 736,
+                version: 8494089,
+                name: "Albert Einstein",
+                content: { <span class="label label-warning">...</span> }
+            }
+        ]
+    ]
+}
+</pre>
+<!--------- END   Mongo Output Documentation --------->
+
+</div>
+
+<footer>
+    <div class="container-fluid" style="padding:50px">
+        <p><b>JSONpedia v1.1</b> | <a href="https://bitbucket.org/hardest/jsonpedia" target="_blank">Project homepage</a> |
+            Hosted by <a href="http://www.spaziodati.eu" target="_blank">SpazioDati</a> in collaboration with <a
+                    href="http://www.top-ix.org/" target="_blank">Top-IX</a>
+        </p>
+        Copyright &copy;2013 <a href="http://www.machinelinking.com">MachineLinking Srl</a>. All Rights Reserved.<br/>
+    </div>
+</footer>
+
+</body>
+</html>
