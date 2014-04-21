@@ -1,5 +1,7 @@
 body {
     font-family: 'Aldrich', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .root {
