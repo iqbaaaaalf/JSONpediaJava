@@ -1,7 +1,7 @@
 
 asyncTest("Annotation test", function() {
     expect(1);
-    c = new Client();
+    c = new JSONpedia();
     c.annotate('en:Albert_Einstein').extractors()
             .linkers().splitters().structure().validate()
             .json()

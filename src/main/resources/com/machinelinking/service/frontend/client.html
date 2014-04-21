@@ -23,9 +23,9 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/highlight.min.js"></script>
 
-    <script type="text/javascript" src="js/client.js"></script>
+    <script type="text/javascript" src="js/jsonpedia.js"></script>
     <script type="text/javascript" src="js/qunit-1.12.0.js"></script>
-    <script type="text/javascript" src="js/tests.js"></script>
+    <script type="text/javascript" src="js/jsonpedia-tests.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -58,14 +58,14 @@
 <pre>
 <code class="html">
 &lt;script type="text/javascript" src="js/jquery-1.7.2-min.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="<a href="js/client.js">js/client.js</a>"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="<a href="js/jsonpedia.js">js/jsonpedia.js</a>"&gt;&lt;/script&gt;
 </code>
 </pre>
 
 <h2>How to use it</h2>
 <pre>
 <code class="javascript">
-    c = new Client();
+    c = new JSONpedia();
     c.annotate('en:Albert_Einstein').extractors()
            .linkers().splitters().structure().validate()
            .json()
@@ -83,7 +83,7 @@
 
 <h2>Tests cases</h2>
 <p>
-The test cases are available <a href="js/tests.js">here</a>.
+The test cases are available <a href="js/jsonpedia-tests.js">here</a>.
 </p>
 
 <div id="qunit"></div>

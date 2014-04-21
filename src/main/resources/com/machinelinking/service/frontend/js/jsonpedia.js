@@ -1,5 +1,8 @@
+/*
+ * JSONpedia v1.1 jquery plugin.
+ */
 
-function Client() {
+function JSONpedia() {
     var _params;
     var _deferred = $.Deferred();
 
