@@ -6,10 +6,18 @@
 <head>
     <title>JSONpedia</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/frontend/img/favicon.ico">
+    <meta name="description" content="JSONpedia Storage Query Frontend">
+    <meta name="author" content="Michele Mostarda @micmos">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/highlight.default.css"/>
     <style type="text/css">
+        body {
+            padding-top: 70px;
+            padding-bottom: 30px;
+        }
         select {
             width: 70px;
         }
@@ -25,11 +33,12 @@
             border: none;
         }
         .fixedpos {
+            z-index: 100;
             position:fixed;
-            height:40px;
+            height:50px;
             line-height:40px;
             vertical-align:middle;
-            top:0;
+            top:50px;
             left:0;
             right:0;
             padding-left:20px;
@@ -48,11 +57,37 @@
             $('#app-path').text(document.location.pathname);
             $('#app-host').text(document.location.host);
 
-            $('.uri-button').click(function(e){
-                $('#get-uri').val( $(e.target).html() );
+            $('.get-uri-example').click(function(e){
+                $('#get-uri').val( $(e.target).text() );
                 $('#get-submit').removeClass('disabled');
                 e.preventDefault();
                 updateGetRequest();
+            });
+
+            $('.get-filter-example').click(function(e){
+                $('#get-filter').val( $(e.target).text() );
+                $('#get-submit').removeClass('disabled');
+                e.preventDefault();
+                updateGetRequest();
+            });
+
+            $('.post-filter-example').click(function(e){
+                $('#post-filter').val( $(e.target).text() );
+                $('#post-submit').removeClass('disabled');
+                e.preventDefault();
+            });
+
+            $('.get-format').click(function(e) {
+                $('#get-format').val($(e.target).text());
+                $('#get-submit').removeClass('disabled');
+                e.preventDefault();
+                updateGetRequest();
+            });
+
+            $('.post-format').click(function(e) {
+                $('#post-format').val($(e.target).text());
+                $('#post-submit').removeClass('disabled');
+                e.preventDefault();
             });
 
             $('.wt-sample-button').click(function(e){
@@ -98,14 +133,14 @@
                 if($('#get-submit').hasClass('disabled')) return;
                 $('#get-form-result').html('');
                 dismissAlert();
-                $('#get-load-spinner').show();
+                $('#get-submit').button('loading');
                 $.get( buildGetRequest())
                   .success(function(data){
                     processResponse('get', getSelectedGETOutFormat(), data);
                 }).error(function (xhr, ajaxOptions, thrownError) {
                     alert('Error while performing request: ' + xhr.status + ' ' + thrownError);
-                }).complete(function(e){
-                    $('#get-load-spinner').hide();
+                }).always(function(e){
+                    $('#get-submit').button('reset');
                 });
             });
 
@@ -116,7 +151,7 @@
                            encodeURIComponent($('#post-uri').val());
                 $('#post-form-result').html('');
                 dismissAlert();
-                $('#post-load-spinner').show();
+                $('#post-submit').button('loading');
                 $.post( request,
                         {
                           wikitext : $('#post-wikitext').val(),
@@ -127,8 +162,8 @@
                     processResponse('post', getSelectedPOSTOutFormat(), data);
                 }).error(function (xhr, ajaxOptions, thrownError) {
                     alert('Error while performing request: ' + xhr.status + ' ' + thrownError);
-                }).complete(function(){
-                    $('#post-load-spinner').hide();
+                }).always(function(){
+                    $('#post-submit').button('reset');
                 });
             });
 
@@ -144,8 +179,14 @@
                 window.prompt('CTRL + C to copy:', $('#get-query').html() );
             });
 
+            $('#uri-help').click(function(e){
+                document.location = "#uri-syntax";
+            });
             $('#filter-help').click(function(e){
                 document.location = "#filter-syntax";
+            });
+            $('#format-help').click(function(e){
+                document.location = "#supported-formats";
             });
 
             $('#get-query-open-external').click(function (e) {
@@ -154,11 +195,11 @@
         });
 
         function getSelectedGETOutFormat() {
-            return $('#get-format option:selected').attr('value');
+            return getSelectedFormat('get-format');
         }
 
         function getSelectedPOSTOutFormat() {
-            return $('#post-format option:selected').attr('value');
+            return getSelectedFormat('post-format');
         }
 
         function buildGetRequest() {
@@ -198,11 +239,23 @@
             return flags;
         }
 
+        function getSelectedFormat(container) {
+            value = null;
+            $('#' + container + ' .btn').each(function (i, e) {
+                $e = $(e);
+                if ($e.attr('class').indexOf('active') != -1) {
+                    value = $e.text();
+                }
+
+            });
+            return value;
+        }
+
         function processResponse(method, outFormat, data) {
             $resultContainer = $('#' + method + '-form-result');
             closeResultButtonId = 'delete-' + method + '-query-result';
             $resultContainer.append(
-                    '<div><i id="' + closeResultButtonId + '" class="icon-remove-circle" rel="tooltip" data-original-title="Close"></i></div>'
+                    '<div><i id="' + closeResultButtonId + '" class="glyphicon glyphicon-remove-circle" rel="tooltip" data-placement="right" data-original-title="Close result panel"></i></div>'
             );
             $('#' + closeResultButtonId).click(function (e) {
                 $('#' + method + '-form-result').html('')
@@ -221,22 +274,40 @@
 
         function alert(msg) {
             $('#alert-message').html(
-                '<div class="alert fade in fixedpos"><button type="button" class="close" data-dismiss="alert">&times;</button>'
+                '<div class="alert alert-danger fade in fixedpos"><button type="button" class="close" data-dismiss="alert">&times;</button>'
                         + msg +
                 '</div>'
             );
         }
     </script>
 </head>
-<body>
+
+<body role="document">
 
 <div id="alert-message"></div>
 
-<div class="container">
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Live</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="client.html">JQuery Client</a></li>
+            <li><a target="_blank" href="https://bitbucket.org/hardest/jsonpedia">Documentation</a></li>
+        </ul>
+    </div>
+</div>
 
-<h1>JSONpedia - Live Service Demo</h1>
+<div class="container theme-showcase" role="main">
 
-<p>Convert any <a href="http://en.wikipedia.org/wiki/Help:Wiki_markup" target="_blank">MediaWiki</a> document to <a href="http://www.json.org/" target="_blank">JSON</a>!</p>
+<header class="jumbotron">
+    <h1>JSONpedia Live Service Demo</h1>
+    <p>Query Wikipedia live pages.</p>
+    <p>Convert any <a href="http://en.wikipedia.org/wiki/Help:Wiki_markup" target="_blank">MediaWiki</a>
+     document to <a href="http://www.json.org/" target="_blank">JSON</a>!
+    </p>
+</header>
+
 <p>
 Download and install JSONpedia: visit the
 <a href="https://bitbucket.org/hardest/jsonpedia" target="_blank">Developers Site</a> and the
@@ -248,63 +319,97 @@ Download and install JSONpedia: visit the
 <h2>Convert a Resource</h2>
 
 <form id="get-form" class="well form-horizontal">
-    <label>Enter a MediaWiki resource ID or URI, an output format, a set of processors to be applied and optionally a filter:</label>
-    <div class="control-group">
-        <label class="control-label app-base-uri" for="get-format">http://...</label>
-        <div class="controls">/annotate/resource/
-            <select id="get-format">
-                <option value="json" selected="selected">json</option>
-                <option value="html">html</option>
-            </select>/
-            <span class="btn-group">
-                <span>
-                    <input id="get-uri" type="text" style="width:400px" value="en:Albert_Einstein" placeholder="http://en.wikipedia.org/Albert_Einstein OR en:Albert_Einstein"/>
-                    <button class="btn dropdown-toggle" data-toggle="dropdown">
-                        <span class="caret"></span>
-                    </button>
-                       <ul class="dropdown-menu">
-                           <li><a class="uri-button dropdown-list-button" href="#">en:Albert_Einstein</a></li>
-                           <li><a class="uri-button dropdown-list-button" href="#">en:Cetacea</a></li>
-                           <li><a class="uri-button dropdown-list-button" href="#">en:Carbon</a></li>
-                           <li><a class="uri-button dropdown-list-button" href="#">en:Italy</a></li>
-                           <li><a class="uri-button dropdown-list-button" href="#">en:London</a></li>
-                           <li><a class="uri-button dropdown-list-button" href="#">en:Philosophy</a></li>
-                           <li><a class="uri-button dropdown-list-button" href="#">en:Star_Wars</a></li>
-                       </ul>
-                </span>
-            </span>
+    <code>GET annotate/resource</code>
+    <p class="help-block">
+    Enter a MediaWiki resource ID or URI, an output format, a set of processors to be applied and optionally a filter.
+    </p>
+
+    <div class="form-group">
+        <label class="control-label col-md-1" for="get-uri">URI</label>
+        <div class="col-md-6">
+            <div class="input-group">
+                <input class="form-control" id="get-uri" type="text"
+                       value="en:Albert_Einstein"
+                       placeholder="http://en.wikipedia.org/Albert_Einstein OR en:Albert_Einstein">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    URI samples<span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a class="get-uri-example dropdown-list-button" href="#">en:Albert_Einstein</a></li>
+                        <li><a class="get-uri-example dropdown-list-button" href="#">en:Cetacea</a></li>
+                        <li><a class="get-uri-example dropdown-list-button" href="#">en:Carbon</a></li>
+                        <li><a class="get-uri-example dropdown-list-button" href="#">en:Italy</a></li>
+                        <li><a class="get-uri-example dropdown-list-button" href="#">en:London</a></li>
+                        <li><a class="get-uri-example dropdown-list-button" href="#">en:Philosophy</a></li>
+                        <li><a class="get-uri-example dropdown-list-button" href="#">en:Star_Wars</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <i id="uri-help" class="glyphicon glyphicon-question-sign" rel="tooltip" data-placement="right" title="URI help"></i>
     </div>
 
-    <div class="control-group">
-        <label class="control-label">Filter:</label>
-        <div class="controls">
-            <input class="span11" id="get-filter" type="text" style="width:300px" placeholder="__type:link"/>
-            <i id="filter-help" class="icon-question-sign" rel="tooltip" data-original-title="Filter syntax"></i>
+    <div class="form-group">
+        <label class="control-label col-md-1" for="get-filter">Filter</label>
+        <div class="col-md-6">
+            <div class="input-group">
+                <input class="form-control" id="get-filter" type="text"
+                       value="" placeholder="__type:link">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Filter samples<span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a class="get-filter-example dropdown-list-button" href="#">__type:link</a></li>
+                        <li><a class="get-filter-example dropdown-list-button" href="#">__type:reference</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <i id="filter-help" class="glyphicon glyphicon-question-sign" rel="tooltip" data-placement="right" title="Filter help"></i>
     </div>
 
-    <div class="control-group bs-docs-examples">
-        <a href="#processors-doc"><span class="label pull-left well">Processors:</span></a>
+    <div class="form-group">
+        <label class="control-label col-md-1" for="get-format">Format</label>
+        <div class="col-md-6">
+            <div id="get-format" class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn btn-default get-format active">json</button>
+                <button type="button" class="btn btn-default get-format">html</button>
+            </div>
+        </div>
+        <i id="format-help" class="glyphicon glyphicon-question-sign" rel="tooltip" data-placement="right" title="Format help"></i>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-1">
+            <a href="#processors-doc"><span class="label label-info">Processors</span></a>
+        </label>
+        <div class="col-md-6">
         <span id="get-flags" class="btn-group" data-toggle="buttons-checkbox"></span>
+        </div>
     </div>
 
-    <div>
-        <span class="label label-info">Query:</span>
-        <span id="get-query" class="label label-info"></span>
-        <i id="get-query-copy" class="icon-edit" rel="tooltip" data-original-title="Copy query"></i>
-        <i id="get-query-open-external" class="icon-circle-arrow-right" rel="tooltip" data-original-title="Open in a new window"></i>
+    <div class="form-group">
+        <label class="control-label col-md-1">
+            <span class="label label-info">Query</span>
+        </label>
+        <div class="col-md-10">
+            <span id="get-query" class="label label-info"></span>
+            <i id="get-query-copy" class="glyphicon glyphicon-edit" rel="tooltip" data-original-title="Copy query"></i>
+            <i id="get-query-open-external" class="glyphicon glyphicon-arrow-right" rel="tooltip" data-original-title="Open in a new window"></i>
+        </div>
     </div>
 
-    <div class="form-actions">
+    <div class="control-group">
         <button id="get-submit" type="button" class="btn btn-primary">Convert</button>
         <button type="reset" class="btn">Cancel</button>
-        <div style="float:right; display: none;" id="get-load-spinner"><img src="img/spinner.gif"></div>
     </div>
+
 </form>
 
 <div>
-    <span class="label label-info">Result:</span>
+    <p>
+    <span class="label label-info">Result</span>
+    </p>
     <pre id="get-form-result"></pre>
 </div>
 
@@ -313,46 +418,75 @@ Download and install JSONpedia: visit the
 <h2>Convert a WikiText</h2>
 
 <form class="well form-horizontal">
-    <label>Enter a MediaWiki resource ID or URI, a WikiText content, an output format, a set of processors to be applied and optionally a filter:</label>
-    <div class="control-group">
-        <label class="control-label app-base-uri" for="post-format">http://...</label>
-        <div class="controls">/annotate/resource/
-            <select id="post-format" name="format">
-                <option value="json" selected="selected">json</option>
-                <option value="html">html</option>
-            </select>/<input id="post-uri" type="text" style="width:400px" value="en:FakeDoc" placeholder="http://&lt;lang&gt;.wikipedia.org/wiki/&lt;Doc&gt; OR &lt;lang&gt;:&lt;Doc&gt;"/>
+    <code>POST annotate/resource</code>
+    <p class="help-block">
+        Enter a MediaWiki resource ID or URI, a WikiText content, an output format, a set of processors to be applied and optionally a filter.
+    </p>
+
+    <div class="form-group">
+        <label class="control-label col-md-1" for="post-uri">URI</label>
+        <div class="col-md-6">
+                <input class="form-control" id="post-uri" type="text"
+                       value="en:FakeDoc"
+                       placeholder="http://&lt;lang&gt;.wikipedia.org/wiki/&lt;Doc&gt; OR &lt;lang&gt;:&lt;Doc&gt;">
+        </div>
+        <i id="uri-help" class="glyphicon glyphicon-question-sign" rel="tooltip" data-placement="right" title="URI help"></i>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-1" for="post-filter">Filter</label>
+        <div class="col-md-6">
+            <div class="input-group">
+                <input class="form-control" id="post-filter" type="text"
+                       value="" placeholder="__type:link">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Filter samples<span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a class="post-filter-example dropdown-list-button" href="#">__type:link</a></li>
+                        <li><a class="post-filter-example dropdown-list-button" href="#">__type:reference</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <i id="filter-help" class="glyphicon glyphicon-question-sign" rel="tooltip" data-placement="right" title="Filter help"></i>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-1" for="post-format">Format</label>
+        <div class="col-md-6">
+            <div id="post-format" class="btn-group" data-toggle="buttons-radio">
+                <button type="button" class="btn btn-default post-format active">json</button>
+                <button type="button" class="btn btn-default post-format">html</button>
+            </div>
+        </div>
+        <i id="format-help" class="glyphicon glyphicon-question-sign" rel="tooltip" data-placement="right" title="Format help"></i>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-1">
+            <a href="#processors-doc"><span class="label label-info">Processors</span></a>
+        </label>
+        <div class="col-md-6">
+        <span id="post-flags" class="btn-group" data-toggle="buttons-checkbox"></span>
         </div>
     </div>
 
-    <div class="control-group">
-        <label class="control-label">Filter:</label>
-        <div class="controls">
-            <input  class="span11" id="post-filter" type="text" style="width:300px" value=""/>
-        </div>
-    </div>
-
-    <div class="control-group">
-        <a href="#processors-doc"><span class="label pull-left well">Processors:</span></a>
-        <div id="post-flags" class="btn-group" data-toggle="buttons-checkbox">
-        </div>
-    </div>
-
-    <div class="control-group">
-        <div class="btn-group pull-left">
-            <span>
-                <button class="btn dropdown-toggle" data-toggle="dropdown">
-                    Examples<span class="caret"></span>
-                </button>
-                   <ul class="dropdown-menu">
-                       <li><a class="wt-sample-button dropdown-list-button" href="#">Reference: [[Reference Description|Reference]].</a></li>
-                       <li><a class="wt-sample-button dropdown-list-button" href="#">Link: [http://path.to.lnk Description]</a></li>
-                       <li><a class="wt-sample-button dropdown-list-button" href="#">Template: {{Redirect|Einstein}}</a></li>
-                       <li><a class="wt-sample-button dropdown-list-button" href="#">Template Infobox: {{Infobox scientist
+    <div class="form-group">
+        <div class="input-group-btn col-md-1">
+            <button type="button" class="btn btn-default dropdown-toggle pull-left" data-toggle="dropdown">
+                Examples<span class="caret"></span>
+            </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a class="wt-sample-button dropdown-list-button" href="#">Reference: [[Reference Description|Reference]].</a></li>
+            <li><a class="wt-sample-button dropdown-list-button" href="#">Link: [http://path.to.lnk Description]</a></li>
+            <li><a class="wt-sample-button dropdown-list-button" href="#">Template: {{Redirect|Einstein}}</a></li>
+            <li><a class="wt-sample-button dropdown-list-button" href="#">Template Infobox: {{Infobox scientist
     | name        = Albert Einstein
     | image       = Einstein 1921 portrait2.jpg
     | caption     = Albert Einstein in 1921
 }}</a></li>
-                       <li><a class="wt-sample-button dropdown-list-button" href="#">Table: {| border="1" cellspacing="0" cellpadding="5" align="center"
+           <li><a class="wt-sample-button dropdown-list-button" href="#">Table: {| border="1" cellspacing="0" cellpadding="5" align="center"
     |-
     ! This
     ! is
@@ -360,44 +494,46 @@ Download and install JSONpedia: visit the
     | a
     | table
 |}</a></li>
-                   </ul>
-            </span>
-        </div>
-        <textarea id="post-wikitext" class="span11" rows="12">
-            {{Infobox scientist
-            | name = Albert Einstein
-            | image = Einstein 1921 portrait2.jpg
-            | caption = Albert Einstein in 1921
-            | birth_date = {{Birth date|df=yes|1879|3|14}}
-            | birth_place = [[Ulm]], [[Kingdom of Württemberg]], [[German Empire]]
-            | death_date = {{Death date and age|df=yes|1955|4|18|1879|3|14}}
-            | death_place = [[Princeton, New Jersey|Princeton]], New Jersey, United States
-            | spouse = [[Mileva Marić]]&nbsp;(1903–1919)<br>{{nowrap|[[Elsa Löwenthal]]&nbsp;(1919–1936)}}
-            | residence = Germany, Italy, Switzerland, Austria, Belgium, United Kingdom, United States
-            | citizenship = {{Plainlist|
-            * [[Kingdom of Württemberg|Württemberg/Germany]] (1879–1896)
-            * [[Statelessness|Stateless]] (1896–1901)
-            * [[Switzerland]] (1901–1955)
-            * [[Austria–Hungary|Austria]] (1911–1912)
-            * [[German Empire|Germany]] (1914–1933)
-            * United States (1940–1955)
-            }}
-            }}
+        </ul>
+       </div>
+    </div>
+
+    <div class="form-group col-md-12">
+        <textarea id="post-wikitext" class="form-control" rows="12">
+{{Infobox scientist
+    | name = Albert Einstein
+    | image = Einstein 1921 portrait2.jpg
+    | caption = Albert Einstein in 1921
+    | birth_date = {{Birth date|df=yes|1879|3|14}}
+    | birth_place = [[Ulm]], [[Kingdom of Württemberg]], [[German Empire]]
+    | death_date = {{Death date and age|df=yes|1955|4|18|1879|3|14}}
+    | death_place = [[Princeton, New Jersey|Princeton]], New Jersey, United States
+    | spouse = [[Mileva Marić]]&nbsp;(1903–1919)<br>{{nowrap|[[Elsa Löwenthal]]&nbsp;(1919–1936)}}
+    | residence = Germany, Italy, Switzerland, Austria, Belgium, United Kingdom, United States
+    | citizenship = {{Plainlist|
+        * [[Kingdom of Württemberg|Württemberg/Germany]] (1879–1896)
+        * [[Statelessness|Stateless]] (1896–1901)
+        * [[Switzerland]] (1901–1955)
+        * [[Austria–Hungary|Austria]] (1911–1912)
+        * [[German Empire|Germany]] (1914–1933)
+        * United States (1940–1955)
+      }}
+}}
         </textarea>
     </div>
 
-    <div class="form-actions">
+    <div class="control-group">
         <button id="post-submit" type="button" class="btn btn-primary">Convert</button>
         <button id="post-reset"  type="reset" class="btn">Cancel</button>
-        <div style="float:right; display: none;" id="post-load-spinner"><img src="img/spinner.gif"></div>
     </div>
 </form>
 
 <div>
-    <span class="label label-info">Result:</span>
+    <p>
+    <span class="label label-info">Result</span>
+    </p>
     <pre id="post-form-result"></pre>
 </div>
-
 
 <hr/>
 
@@ -429,6 +565,7 @@ Download and install JSONpedia: visit the
         <th>Required</th>
     </tr>
     <tr>
+        <a name="uri-syntax"></a>
         <th>uri</th>
         <td>full URL (or short identifier) of a Wikipedia input resource, es: <i>http://en.wikipedia.org/wiki/Albert_Einstein</i> or <i>en:Albert_Einstein</i></td>
         <td><span class="label label-info">True</span></td>
@@ -870,30 +1007,17 @@ For example the following string:
 disables the <i>Extractors</i> (otherwise active by default)and enables the <i>Linkers</i>.
 <!--------- END   Procs Documentation --------->
 
-<hr/>
-
-<!--------- BEGIN JS Client Documentation --------->
-<a name="js-client"></a>
-<h2>Javascript Client</h2>
-<b>JSONpedia</b> provides an easy to use Javascript client <a href="client.html">library</a>.
-
-<!--------- END   JS Client Documentation --------->
-
-<hr/>
-
-<p></p>
-
-<p><b>JSONpedia v1.1</b> | <a href="https://bitbucket.org/hardest/jsonpedia" target="_blank">Project homepage</a> |
-    Hosted by <a href="http://www.spaziodati.eu" target="_blank">SpazioDati</a> in collaboration with <a href="http://www.top-ix.org/" target="_blank">Top-IX</a>
-</p>
-
-
 </div>
 
-<footer class="footer">
+<footer>
     <div class="container-fluid" style="padding:50px">
+        <p><b>JSONpedia v1.1</b> | <a href="https://bitbucket.org/hardest/jsonpedia" target="_blank">Project homepage</a> |
+            Hosted by <a href="http://www.spaziodati.eu" target="_blank">SpazioDati</a> in collaboration with <a
+                    href="http://www.top-ix.org/" target="_blank">Top-IX</a>
+        </p>
         Copyright &copy;2013 <a href="http://www.machinelinking.com">MachineLinking Srl</a>. All Rights Reserved.<br/>
     </div>
 </footer>
+
 </body>
 </html>

@@ -1,12 +1,23 @@
-<!DOCTYPE html>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html>
 <head>
-    <meta charset="utf-8">
     <title>JSONpedia JS Client</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/frontend/img/favicon.ico">
+    <meta name="description" content="JSONpedia Storage Query Frontend">
+    <meta name="author" content="Michele Mostarda @micmos">
     <link rel="stylesheet" href="css/qunit-1.12.0.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/highlight.default.css"/>
+    <style type="text/css">
+            body {
+              padding-top: 70px;
+              padding-bottom: 30px;
+            }
+    </style>
 
     <script type="text/javascript" src="js/jquery-1.7.2-min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -22,11 +33,26 @@
         });
     </script>
 </head>
-<body>
+<body role="document">
 
-<h1>JSONpedia JS Client Usage</h1>
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Live</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li class="active"><a href="#">JQuery Client</a></li>
+            <li><a target="_blank" href="https://bitbucket.org/hardest/jsonpedia">Documentation</a></li>
+        </ul>
+    </div>
+</div>
 
-<div style="margin:20px"><a href="/frontend/index.html">&#8592; Back to index</a></div>
+<div class="container theme-showcase" role="main">
+
+<header class="jumbotron">
+    <h1>JSONpedia jQuery Client</h1>
+    <p>Access JSONpedia with Javascript</p>
+</header>
 
 <h2>How to include it</h2>
 <pre>
@@ -39,7 +65,6 @@
 <h2>How to use it</h2>
 <pre>
 <code class="javascript">
-
     c = new Client();
     c.annotate('en:Albert_Einstein').extractors()
            .linkers().splitters().structure().validate()
@@ -56,13 +81,25 @@
 </code>
 </pre>
 
-<h1>Tests cases</h1>
+<h2>Tests cases</h2>
 <p>
 The test cases are available <a href="js/tests.js">here</a>.
 </p>
 
 <div id="qunit"></div>
 <div id="qunit-fixture"></div>
+
+</div>
+
+<footer>
+    <div class="container-fluid" style="padding:50px">
+        <p><b>JSONpedia v1.1</b> | <a href="https://bitbucket.org/hardest/jsonpedia" target="_blank">Project homepage</a> |
+            Hosted by <a href="http://www.spaziodati.eu" target="_blank">SpazioDati</a> in collaboration with <a
+                    href="http://www.top-ix.org/" target="_blank">Top-IX</a>
+        </p>
+        Copyright &copy;2013 <a href="http://www.machinelinking.com">MachineLinking Srl</a>. All Rights Reserved.<br/>
+    </div>
+</footer>
 
 </body>
 </html>
