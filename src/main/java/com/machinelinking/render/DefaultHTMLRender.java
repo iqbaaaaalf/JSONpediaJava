@@ -156,6 +156,7 @@ public class DefaultHTMLRender implements HTMLRender {
     throws IOException {
         final KeyValueRender render = keyValueRenders.get(key);
         if(render != null) {
+            writer.anchor(key);
             render.render(context, rootRender, key, value, writer);
             return;
         }
