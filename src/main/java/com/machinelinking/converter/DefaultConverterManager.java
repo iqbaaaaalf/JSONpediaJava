@@ -1,7 +1,7 @@
 package com.machinelinking.converter;
 
 import com.machinelinking.filter.JSONObjectFilter;
-import com.machinelinking.pagestruct.WikiTextSerializerHandler;
+import com.machinelinking.pagestruct.PageStructConsts;
 import org.codehaus.jackson.JsonNode;
 
 import java.util.HashMap;
@@ -38,9 +38,9 @@ public class DefaultConverterManager implements ConverterManager {
 
     @Override
     public Converter getConverterForData(JsonNode data) {
-        final String type = data.get(WikiTextSerializerHandler.TYPE_FIELD).asText();
+        final String type = data.get(PageStructConsts.TYPE_FIELD).asText();
         if(type == null) throw new IllegalArgumentException(
-            String.format("data object must define a %s field", WikiTextSerializerHandler.TYPE_FIELD)
+            String.format("data object must define a %s field", PageStructConsts.TYPE_FIELD)
         );
         final Set<FilterToConverter> filtersToConverters = typeToFilters.get(type);
         if(filtersToConverters == null) return null;
@@ -53,12 +53,12 @@ public class DefaultConverterManager implements ConverterManager {
     }
 
     private String getFilterTypeOrFail(JSONObjectFilter filter) {
-        final String type = filter.getCriteriaPattern(WikiTextSerializerHandler.TYPE_FIELD);
+        final String type = filter.getCriteriaPattern(PageStructConsts.TYPE_FIELD);
         if(type == null)
             throw new IllegalArgumentException(
                     String.format(
                             "Invalid filter, must specify a %s match criteria",
-                            WikiTextSerializerHandler.TYPE_FIELD
+                            PageStructConsts.TYPE_FIELD
                     )
             );
         return type;

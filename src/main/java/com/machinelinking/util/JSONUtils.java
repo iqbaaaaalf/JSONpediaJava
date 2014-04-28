@@ -1,6 +1,6 @@
 package com.machinelinking.util;
 
-import com.machinelinking.pagestruct.WikiTextSerializerHandler;
+import com.machinelinking.pagestruct.PageStructConsts;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
@@ -147,6 +147,14 @@ public class JSONUtils {
         return sb.toString();
     }
 
+    public static JsonNode getFieldOrFail(String field, JsonNode parent, String errMessage) {
+        final JsonNode result = parent.get(field);
+        if(result == null) throw new IllegalArgumentException(
+                String.format("Cannot find field [%s] in node [%s]: %s", field, parent, errMessage)
+        );
+        return result;
+    }
+
     // BEGIN: convert JsonNode to Serializer events.
 
     private static void serializeArray(JsonNode node, Serializer serializer) {
@@ -237,8 +245,8 @@ public class JSONUtils {
 
     private static void toHumanReadable(Map<String,?> m, StringBuilder sb) {
         for (Map.Entry<String,?> e : m.entrySet()) {
-            if(WikiTextSerializerHandler.TYPE_FIELD.equals(e.getKey())) continue;
-            if(WikiTextSerializerHandler.CONTENT_FIELD.equals(e.getKey())) {
+            if(PageStructConsts.TYPE_FIELD.equals(e.getKey())) continue;
+            if(PageStructConsts.CONTENT_FIELD.equals(e.getKey())) {
                 toHumanReadable(e.getValue(), sb);
                 continue;
             }
