@@ -95,8 +95,7 @@ public interface WikiTextParserHandler extends TagHandler {
     @Target(ElementType.METHOD)
     @interface ValidateStack {}
 
-    interface Value {
-    }
+    interface Value {}
 
     class Var implements Value {
         public final String name;
@@ -113,7 +112,7 @@ public interface WikiTextParserHandler extends TagHandler {
     }
 
     class Const implements Value {
-        final String constValue;
+        public final String constValue;
         public Const(String constValue) {
             this.constValue = constValue;
         }
