@@ -54,7 +54,7 @@ public class AttributeScanner {
         int i;
         for (i = index; i < content.length(); i++) {
             c = content.charAt(i);
-            if(ASSIGN == c) throw new IllegalArgumentException(
+            if(!withinQuotes && ASSIGN == c) throw new IllegalArgumentException(
                     String.format("Invalid char %c at position %d", ASSIGN, i)
             );
             if (VALUE_DELIMITER == c) {

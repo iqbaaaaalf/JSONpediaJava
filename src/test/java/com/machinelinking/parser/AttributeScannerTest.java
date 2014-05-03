@@ -13,7 +13,7 @@ import java.util.Arrays;
 public class AttributeScannerTest {
 
     @Test
-    public void testAttributeValueScanner() {
+    public void testValue() {
         final StringBuilder value = new StringBuilder();
 
         value.delete(0, value.length());
@@ -26,7 +26,13 @@ public class AttributeScannerTest {
     }
 
     @Test
-    public void testAttributeKeyValueScanner() {
+    public void testValueWithAssign() {
+        final Attribute[] attributes = AttributeScanner.scan("name=\"Arrian 1976 loc=I, 23\"");
+        Assert.assertEquals("[name : 'Arrian 1976 loc=I, 23']", Arrays.asList(attributes).toString());
+    }
+
+    @Test
+    public void testKeyValue() {
         Attribute[] attributes;
 
         attributes = AttributeScanner.scan("k1 = v1");
