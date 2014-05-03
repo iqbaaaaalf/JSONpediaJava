@@ -109,10 +109,10 @@ public class WikiTextParserTest {
     }
 
     @Test
-    public void testListError() throws IOException, WikiTextParserException {
+    public void testListMustNotProduceKeys() throws IOException, WikiTextParserException {
         parse(
                 "\n== Examples ==\n" +
-                "* The [[square root]] of [[two|2]] is algebraic over '''Q''' = ",
+                "* The [[square root]] of [[two|2]] is algebraic over '''Q''' = \n",
 
                 "Begin Document\n" +
                 "Text: '\n" +
@@ -130,7 +130,7 @@ public class WikiTextParserTest {
                 "k: null\n" +
                 "Text: '2'\n" +
                 "End Reference: two\n" +
-                // TODO: error!! "k:  is algebraic over '''Q''' \n" +
+                "Text: ' is algebraic over '''Q''' = '\n" +
                 "End List\n" +
                 "End Document\n"
         );

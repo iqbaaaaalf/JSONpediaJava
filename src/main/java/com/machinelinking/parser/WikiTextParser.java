@@ -416,7 +416,7 @@ public class WikiTextParser implements ParserReader {
         return var;
     }
 
-    private int readPropertyValue(String[] lookAhead, boolean resetSequence, boolean produceNullParamKey)
+    private int readPropertyValue(String[] lookAhead, boolean resetSequence, boolean produceNullParamKey, boolean ignoreAssignment)
     throws IOException {
         final StringBuilder sb = new StringBuilder();
         char c;
@@ -435,7 +435,7 @@ public class WikiTextParser implements ParserReader {
 
             c = read();
 
-            if(!foundAssignment && c == '=') {
+            if(!ignoreAssignment && !foundAssignment && c == '=') {
                 foundAssignment = true;
                 handler.parameter(sb.toString());
                 clear(sb);
@@ -522,7 +522,7 @@ public class WikiTextParser implements ParserReader {
     private void readTemplateProperties() throws IOException {
         while(true) {
             consumeSpaces();
-            final int seq = readPropertyValue(TEMPLATE_CLOSURE, false, true);
+            final int seq = readPropertyValue(TEMPLATE_CLOSURE, false, true, false);
             mark();
             if(seq == 0) break;
         }
@@ -537,7 +537,7 @@ public class WikiTextParser implements ParserReader {
         consumeSpaces();
         mark();
         char c = read();
-        if(c == '*')  {
+        if(c == '*')  { // TODO: this should be moved in readPropertyValue.
             handler.beginList();
             while(true) {
                 consumeSpaces();
@@ -548,7 +548,7 @@ public class WikiTextParser implements ParserReader {
                 } else {
                    reset();
                 }
-                final int seq = readPropertyValue(TEMPLATE_LIST_DELIMITER, true, false);
+                final int seq = readPropertyValue(TEMPLATE_LIST_DELIMITER, true, false, true);
                 if(seq == 1) break;
             }
             handler.endList();
@@ -600,7 +600,7 @@ public class WikiTextParser implements ParserReader {
         int ahead;
         try {
             while (true) {
-                ahead = readPropertyValue(REFERENCE_DELIMITERS, false, true);
+                ahead = readPropertyValue(REFERENCE_DELIMITERS, false, true, false);
                 if (ahead == 0)
                     break;
                 if (ahead == 1 || ahead == 2) {
@@ -667,7 +667,7 @@ public class WikiTextParser implements ParserReader {
 
         int ahead;
         while(true) {
-            ahead = readPropertyValue(LINK_DELIMITERS, true, true);
+            ahead = readPropertyValue(LINK_DELIMITERS, true, true, false);
             if(ahead == 0) { // TODO: improve this solution.
                 read();
                 mark();
@@ -691,7 +691,7 @@ public class WikiTextParser implements ParserReader {
         tableCol++;
         consumeSpaces();
         while(true) {
-            ahead = readPropertyValue(TABLE_DELIMITERS, false, false);
+            ahead = readPropertyValue(TABLE_DELIMITERS, false, false, false);
             if(ahead == 0) {
                 mark();
                 handler.endTable();
@@ -759,7 +759,7 @@ public class WikiTextParser implements ParserReader {
                 int level = readSequence(type.getTrailingChar());
                 if(level == 0) break;
                 handler.listItem(type.getType(), level);
-                readPropertyValue(new String[]{"\n"}, false, false);
+                readPropertyValue(new String[]{"\n"}, false, false, true);
                 mark();
             }
         } finally {
