@@ -54,9 +54,9 @@ public class DefaultHTMLWriter implements HTMLWriter {
             for (Map.Entry<String, String> attribute : attributes.entrySet()) {
                 writer.append(' ');
                 writer.append(attribute.getKey());
-                writer.append("=\"");
-                writer.append(attribute.getValue());
-                writer.append('"');
+                final String value = attribute.getValue();
+                if(value != null)
+                writer.append("=\"").append(value).append('"');
             }
         }
         writer.append('>');
