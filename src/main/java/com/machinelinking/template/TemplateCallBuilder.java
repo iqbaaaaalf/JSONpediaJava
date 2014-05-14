@@ -1,6 +1,7 @@
 package com.machinelinking.template;
 
 import com.machinelinking.parser.DefaultWikiTextParserHandler;
+import com.machinelinking.parser.WikiTextParserHandler;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -11,6 +12,27 @@ import java.util.Stack;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TemplateCallBuilder extends DefaultWikiTextParserHandler {
+
+    public static WikiTextParserHandler createHandlerWithListener(final TemplateCallListener listener) {
+        final TemplateCallBuilder builder = new TemplateCallBuilder(){
+            private int nesting = 0;
+            @Override
+            public void beginTemplate(TemplateName name) {
+                nesting++;
+                super.beginTemplate(name);
+            }
+
+            @Override
+            public void endTemplate(TemplateName name) {
+                super.endTemplate(name);
+                nesting--;
+                if(nesting == 0) {
+                    listener.handle( getTemplateCall() );
+                }
+            }
+        };
+        return builder;
+    }
 
     class TemplateBuffers {
         private final List<DefaultTemplateCall.Fragment> nameBuffer = new ArrayList<>();
@@ -38,9 +60,23 @@ public class TemplateCallBuilder extends DefaultWikiTextParserHandler {
         final TemplateCall.Value result = new DefaultTemplateCall.DefaultValue(
                 resultBuffer.toArray(new DefaultTemplateCall.Fragment[resultBuffer.size()])
         );
+        reset();
+        return result;
+    }
+
+    public TemplateCall getTemplateCall() {
+        try {
+            return ((DefaultTemplateCall.TemplateFragment) resultBuffer.get(0)).call;
+        } catch (Exception e) {
+            throw new IllegalStateException();
+        } finally {
+            reset();
+        }
+    }
+
+    public void reset() {
         levels.clear();
         resultBuffer.clear();
-        return result;
     }
 
     @Override
