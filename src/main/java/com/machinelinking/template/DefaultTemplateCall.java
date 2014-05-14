@@ -1,7 +1,5 @@
 package com.machinelinking.template;
 
-import com.machinelinking.parser.WikiTextParserHandler;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,11 +8,11 @@ import java.util.Map;
  */
 public class  DefaultTemplateCall implements TemplateCall {
 
-    private final Value name;
+    private final Fragment name;
     private final Parameter[] parameters;
     private final Map<String,Parameter> parametersMap;
 
-    public DefaultTemplateCall(Value name, Parameter[] params) {
+    public DefaultTemplateCall(Fragment name, Parameter[] params) {
         this.name = name;
         this.parameters = params;
         this.parametersMap = new HashMap<>();
@@ -24,7 +22,7 @@ public class  DefaultTemplateCall implements TemplateCall {
     }
 
     @Override
-    public Value getName() {
+    public Fragment getName() {
         return name;
     }
 
@@ -39,14 +37,14 @@ public class  DefaultTemplateCall implements TemplateCall {
     }
 
     @Override
-    public Value getParameter(int index) {
+    public Fragment getParameter(int index) {
         if(index >= parameters.length) return null;
         return parameters[index].value;
     }
 
     @Override
     public String getProcessedParameter(int index, EvaluationContext context) throws TemplateProcessorException {
-        final Value v = getParameter(index);
+        final Fragment v = getParameter(index);
         return v == null ? null : v.evaluate(context);
     }
 
@@ -78,81 +76,5 @@ public class  DefaultTemplateCall implements TemplateCall {
     public String toString() {
         return String.format("%s [%s]", this.name, this.parametersMap.toString());
     }
-
-    interface Fragment extends Value {}
-
-    static class ConstFragment implements Fragment {
-        final String constValue;
-        ConstFragment(String constValue) {
-            this.constValue = constValue;
-        }
-        @Override
-        public String evaluate(EvaluationContext context) {
-            return constValue;
-        }
-        @Override
-        public String toString() {
-            return String.format("'%s'", constValue);
-        }
-    }
-
-    static class VariableFragment implements Fragment {
-        final WikiTextParserHandler.Var var;
-        VariableFragment(WikiTextParserHandler.Var var) {
-            this.var = var;
-        }
-        @Override
-        public String evaluate(EvaluationContext context) {
-            return context.getValue(var);
-        }
-        @Override
-        public String toString() {
-            return String.format("<%s>", var);
-        }
-    }
-
-    static class TemplateFragment implements Fragment {
-        final TemplateCall call;
-        TemplateFragment(TemplateCall call) {
-            this.call = call;
-        }
-        @Override
-        public String evaluate(EvaluationContext context) throws TemplateProcessorException {
-            return context.getValue(call);
-        }
-        @Override
-        public String toString() {
-            return String.format("(%s)", call);
-        }
-    }
-
-    static public class DefaultValue implements Value {
-        private Fragment[] fragments;
-
-        public DefaultValue(Fragment[] fragments) {
-            this.fragments = fragments;
-        }
-        @Override
-        public String evaluate(EvaluationContext context) throws TemplateProcessorException {
-            final StringBuilder builder = new StringBuilder();
-            for(Fragment fragment : fragments) {
-                builder.append(fragment.evaluate(context));
-            }
-            return builder.toString();
-        }
-
-        @Override
-        public String toString() {
-            final StringBuilder sb = new StringBuilder();
-            sb.append('[');
-            for(Fragment fragment : fragments) {
-                sb.append(fragment.toString());
-            }
-            sb.append(']');
-            return sb.toString();
-        }
-    }
-
-
 
 }

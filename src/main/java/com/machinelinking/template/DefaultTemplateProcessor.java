@@ -119,7 +119,7 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
     }
 
     @Override
-    public void process(EvaluationContext context, TemplateCall.Value value, HTMLWriter writer)
+    public void process(EvaluationContext context, Fragment value, HTMLWriter writer)
     throws TemplateProcessorException {
         try {
             writer.text(value.evaluate(context));

@@ -35,30 +35,30 @@ public class TemplateCallBuilder extends DefaultWikiTextParserHandler {
     }
 
     class TemplateBuffers {
-        private final List<DefaultTemplateCall.Fragment> nameBuffer = new ArrayList<>();
+        private final List<Fragment> nameBuffer = new ArrayList<>();
         private final List<String> paramNames = new ArrayList<>();
-        private final LinkedList<List<DefaultTemplateCall.Fragment>> paramValuesBuffer = new LinkedList<>();
+        private final LinkedList<List<Fragment>> paramValuesBuffer = new LinkedList<>();
 
         private void addParamBuffer(String paramName) {
             paramNames.add(paramName);
-            paramValuesBuffer.add(new ArrayList<DefaultTemplateCall.Fragment>());
+            paramValuesBuffer.add(new ArrayList<Fragment>());
         }
 
-        private void addParamFragment(DefaultTemplateCall.Fragment fragment) {
+        private void addParamFragment(Fragment fragment) {
             paramValuesBuffer.getLast().add(fragment);
         }
     }
 
     private final Stack<TemplateBuffers> levels = new Stack<>();
-    private final List<DefaultTemplateCall.Fragment> resultBuffer = new ArrayList<>();
+    private final List<Fragment> resultBuffer = new ArrayList<>();
 
     public TemplateCallBuilder() {}
 
-    public TemplateCall.Value getValue() {
+    public Fragment getValue() {
         if(resultBuffer.size() == 0)
             throw new IllegalStateException("No events processed.");
-        final TemplateCall.Value result = new DefaultTemplateCall.DefaultValue(
-                resultBuffer.toArray(new DefaultTemplateCall.Fragment[resultBuffer.size()])
+        final Fragment.CompositeFragment result = new Fragment.CompositeFragment(
+                resultBuffer.toArray(new Fragment[resultBuffer.size()])
         );
         reset();
         return result;
@@ -66,7 +66,7 @@ public class TemplateCallBuilder extends DefaultWikiTextParserHandler {
 
     public TemplateCall getTemplateCall() {
         try {
-            return ((DefaultTemplateCall.TemplateFragment) resultBuffer.get(0)).call;
+            return ((Fragment.TemplateFragment) resultBuffer.get(0)).call;
         } catch (Exception e) {
             throw new IllegalStateException();
         } finally {
@@ -84,9 +84,9 @@ public class TemplateCallBuilder extends DefaultWikiTextParserHandler {
         final TemplateBuffers te = pushTemplate();
         for(Value v : name.fragments) {
             if(v instanceof Var) {
-                te.nameBuffer.add(new DefaultTemplateCall.VariableFragment((Var)v));
+                te.nameBuffer.add(new Fragment.VariableFragment((Var)v));
             } else if(v instanceof Const) {
-                te.nameBuffer.add(new DefaultTemplateCall.ConstFragment(((Const)v).constValue));
+                te.nameBuffer.add(new Fragment.ConstFragment(((Const)v).constValue));
             } else {
                 throw new IllegalArgumentException();
             }
@@ -101,7 +101,7 @@ public class TemplateCallBuilder extends DefaultWikiTextParserHandler {
 
     @Override
     public void text(String content) {
-        final DefaultTemplateCall.Fragment fragment = new DefaultTemplateCall.ConstFragment(content);
+        final Fragment fragment = new Fragment.ConstFragment(content);
         final TemplateBuffers te = peekTemplate();
         if(te == null) {
             resultBuffer.add(fragment);
@@ -112,12 +112,12 @@ public class TemplateCallBuilder extends DefaultWikiTextParserHandler {
 
     @Override
     public void var(Var v) {
-        final DefaultTemplateCall.Fragment fragment = new DefaultTemplateCall.VariableFragment(v);
+        final Fragment fragment = new Fragment.VariableFragment(v);
         final TemplateBuffers te = peekTemplate();
         if(te == null) {
             resultBuffer.add(fragment);
         } else {
-            te.addParamFragment(new DefaultTemplateCall.VariableFragment(v));
+            te.addParamFragment(new Fragment.VariableFragment(v));
         }
     }
 
@@ -126,23 +126,23 @@ public class TemplateCallBuilder extends DefaultWikiTextParserHandler {
         final TemplateBuffers te = popTemplate();
         final List<TemplateCall.Parameter> parameters = new ArrayList<>();
         int i = 0;
-        for(List<DefaultTemplateCall.Fragment> paramValueBuffer : te.paramValuesBuffer) {
+        for(List<Fragment> paramValueBuffer : te.paramValuesBuffer) {
             parameters.add(
                     new TemplateCall.Parameter(
                             te.paramNames.get(i++),
-                            new DefaultTemplateCall.DefaultValue(
-                                    paramValueBuffer.toArray(new DefaultTemplateCall.Fragment[paramValueBuffer.size()])
+                            new Fragment.CompositeFragment(
+                                    paramValueBuffer.toArray(new Fragment[paramValueBuffer.size()])
                             )
                     )
             );
         }
         final TemplateCall templateCall = new DefaultTemplateCall(
-                new DefaultTemplateCall.DefaultValue(
-                        te.nameBuffer.toArray(new DefaultTemplateCall.Fragment[te.nameBuffer.size()])
+                new Fragment.CompositeFragment(
+                        te.nameBuffer.toArray(new Fragment[te.nameBuffer.size()])
                 ),
                 parameters.toArray(new TemplateCall.Parameter[parameters.size()])
         );
-        final DefaultTemplateCall.Fragment fragment = new DefaultTemplateCall.TemplateFragment(templateCall);
+        final Fragment fragment = new Fragment.TemplateFragment(templateCall);
         final TemplateBuffers parent = peekTemplate();
         if(parent == null) {
             resultBuffer.add(fragment);

@@ -7,24 +7,25 @@ import java.util.Map;
  */
 public interface TemplateCall {
 
-    Value getName();
+    Fragment getName();
 
     String[] getParameters();
 
     Parameter getParameter(String param);
 
-    Value getParameter(int index);
+    Fragment getParameter(int index);
 
     String getProcessedParameter(int index, EvaluationContext context) throws TemplateProcessorException;
 
     int getParametersCount();
 
-    Map<String,String> getParameters(int fromIndex, EvaluationContext context, boolean nullKeys) throws TemplateProcessorException;
+    Map<String,String> getParameters(int fromIndex, EvaluationContext context, boolean nullKeys)
+    throws TemplateProcessorException;
 
     public class Parameter {
         public final String name;
-        public final Value value;
-        public Parameter(String name, Value value) {
+        public final Fragment value;
+        public Parameter(String name, Fragment value) {
             this.name = name;
             this.value = value;
         }
@@ -32,10 +33,6 @@ public interface TemplateCall {
         public String toString() {
             return String.format("%s:%s", name, value);
         }
-    }
-
-    public interface Value {
-        String evaluate(EvaluationContext context) throws TemplateProcessorException;
     }
 
 }
