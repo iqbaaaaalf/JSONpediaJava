@@ -204,7 +204,8 @@ public class WikiTextParserFilteredHandler implements WikiTextParserHandler {
         decorated.commentTag(comment);
     }
 
-    private boolean mustFilter() {
+    protected boolean mustFilter() {
         return criteriaHandler.mustFilter(paragraphIndex, sectionLevel, nestingLevel);
     }
+
 }
