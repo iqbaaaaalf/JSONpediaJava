@@ -4,6 +4,7 @@ import com.machinelinking.render.HTMLWriter;
 
 import java.io.IOException;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -95,6 +96,9 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
             "Category talk"
     ));
 
+    private final List<TemplateCallHandler> handlers = new ArrayList<>();
+
+    public DefaultTemplateProcessor() {}
 
     public void process(EvaluationContext context, TemplateCall call, HTMLWriter writer)
     throws TemplateProcessorException {
@@ -110,11 +114,17 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
             } else if (processFormatting(name, nameParts, context, call, writer)) {
             } else if (processPath(name, nameParts, context, call, writer)) {
             } else if (processConditionalExp(name, nameParts, context, call, writer)) {
+            } else if (processHandlers(context, call, writer)) {
             } else {
-                throw new TemplateProcessorException("Unknown template.");
+                throw new TemplateProcessorException(
+                        "Cannot find handler for template call.",
+                        new Fragment.TemplateFragment(call)
+                );
             }
         } catch (Exception e) {
-            throw new TemplateProcessorException("Error while processing template.", e);
+            throw new TemplateProcessorException(
+                    "Error while processing template call.", e, new Fragment.TemplateFragment(call)
+            );
         }
     }
 
@@ -124,8 +134,18 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
         try {
             writer.text(value.evaluate(context));
         } catch (IOException ioe) {
-            throw new TemplateProcessorException("Error while evaluating value " + value, ioe);
+            throw new TemplateProcessorException("Error while evaluating fragment.", ioe, value);
         }
+    }
+
+    @Override
+    public void addTemplateCallHandler(TemplateCallHandler handler) {
+        handlers.add(handler);
+    }
+
+    @Override
+    public void removeTemplateCallHandler(TemplateCallHandler handler) {
+        handlers.remove(handler);
     }
 
     private boolean processVariable(String candidate, HTMLWriter writer) throws IOException {
@@ -309,6 +329,14 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
                 writer.text(matchedCase.value.evaluate(context));
             }
             return true;
+        }
+        return false;
+    }
+
+    private boolean processHandlers(EvaluationContext context, TemplateCall call, HTMLWriter writer) {
+        for(TemplateCallHandler handler : handlers) {
+            if(handler.process(context, call, writer))
+                return true;
         }
         return false;
     }

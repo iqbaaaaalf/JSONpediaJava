@@ -5,12 +5,20 @@ package com.machinelinking.template;
  */
 public class TemplateProcessorException extends Exception {
 
-    public TemplateProcessorException(String message) {
+    private final Fragment fragment;
+
+    public TemplateProcessorException(String message, Fragment fragment) {
         super(message);
+        this.fragment = fragment;
     }
 
-    public TemplateProcessorException(String message, Throwable cause) {
+    public TemplateProcessorException(String message, Throwable cause, Fragment fragment) {
         super(message, cause);
+        this.fragment = fragment;
+    }
+
+    public Fragment getFragment() {
+        return fragment;
     }
 
 }
