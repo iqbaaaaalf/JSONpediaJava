@@ -103,14 +103,14 @@ public class WikiTextParserFilteredHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void beginTemplate(String name) {
+    public void beginTemplate(TemplateName name) {
         nestingLevel++;
         if(mustFilter()) return;
         decorated.beginTemplate(name);
     }
 
     @Override
-    public void endTemplate(String name) {
+    public void endTemplate(TemplateName name) {
         nestingLevel--;
         if(mustFilter()) return;
         decorated.endTemplate(name);

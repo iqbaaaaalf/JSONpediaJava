@@ -49,10 +49,10 @@ public interface WikiTextParserHandler extends TagHandler {
     void endList();
 
     @Push(node="template", id=0)
-    void beginTemplate(String name);
+    void beginTemplate(TemplateName name);
 
     @Pop(node="template", id=0)
-    void endTemplate(String name);
+    void endTemplate(TemplateName name);
 
     @Push(node="table")
     void beginTable();
@@ -95,12 +95,15 @@ public interface WikiTextParserHandler extends TagHandler {
     @Target(ElementType.METHOD)
     @interface ValidateStack {}
 
-    interface Value {}
+    interface Value {
+        String serialize();
+    }
 
     class Var implements Value {
         public final String name;
         public final Value defaultValue;
         Var(String name, Value defaultValue) {
+            if(name == null) throw new IllegalArgumentException();
             this.name = name;
             this.defaultValue = defaultValue;
         }
@@ -109,17 +112,51 @@ public interface WikiTextParserHandler extends TagHandler {
         public String toString() {
             return String.format("var: %s [%s]", name, defaultValue);
         }
+
+        @Override
+        public String serialize() {
+            return String.format("<%s:%s>", name, defaultValue == null ? "" : defaultValue.serialize());
+        }
     }
 
     class Const implements Value {
         public final String constValue;
         public Const(String constValue) {
+            if(constValue == null) throw new IllegalArgumentException();
             this.constValue = constValue;
         }
 
         @Override
         public String toString() {
             return String.format("const: [%s]", constValue);
+        }
+
+        @Override
+        public String serialize() {
+            return constValue;
+        }
+    }
+
+    class TemplateName {
+        public final Value[] fragments;
+        public final String plain;
+
+        public TemplateName(Value[] fragments) {
+            this.fragments = fragments;
+            final StringBuilder sb = new StringBuilder();
+            for(Value fragment : fragments) {
+                sb.append(fragment.serialize());
+            }
+            plain = sb.toString();
+        }
+
+        public TemplateName(String singleFragment) {
+            this(new Value[]{new Const(singleFragment)});
+        }
+
+        @Override
+        public String toString() {
+            return super.toString();
         }
     }
 

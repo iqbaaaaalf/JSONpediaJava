@@ -28,11 +28,11 @@ public class WikiTextParserHandlerSplitterTest {
         final String REDIRECTION_NAME = "test-redirection";
         final WikiTextParserHandler proxy = splitter.getProxy();
         proxy.beginDocument( new URL("http://path/to/test") );
-        proxy.beginTemplate("t1");
+        proxy.beginTemplate(new WikiTextParserHandler.TemplateName("t1"));
         proxy.parameter("p1");
         proxy.text("text0");
         proxy.parameter("p2");
-        proxy.beginTemplate("tt1");
+        proxy.beginTemplate(new WikiTextParserHandler.TemplateName("tt1"));
 
         // Redirect from here.
         final WikiTextParserHandlerEventBuffer buffer = splitter.createRedirection(REDIRECTION_NAME);
@@ -43,14 +43,14 @@ public class WikiTextParserHandlerSplitterTest {
         proxy.text("text1");
         proxy.text("text2");
         proxy.text("text3");
-        proxy.endTemplate("tt1");
-        proxy.beginTemplate("tt2");
+        proxy.endTemplate(new WikiTextParserHandler.TemplateName("tt1"));
+        proxy.beginTemplate(new WikiTextParserHandler.TemplateName("tt2"));
         proxy.parameter("pp11");
         proxy.text("text pp11");
-        proxy.endTemplate("tt2");
+        proxy.endTemplate(new WikiTextParserHandler.TemplateName("tt2"));
         proxy.parameter("p3");
         proxy.text("text4");
-        proxy.endTemplate("t1");
+        proxy.endTemplate(new WikiTextParserHandler.TemplateName("t1"));
         proxy.endDocument();
 
         Assert.assertEquals(0, splitter.getActiveRedirections().size());

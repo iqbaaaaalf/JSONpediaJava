@@ -8,6 +8,8 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The <i>Wikitext</i> event parser. <b>This class needs a complete rewriting.</b>
@@ -210,6 +212,12 @@ public class WikiTextParser implements ParserReader {
         sb.delete(0, sb.length());
     }
 
+    private String flushAndClear(StringBuilder sb) {
+        final String content = sb.toString();
+        clear(sb);
+        return content;
+    }
+
     private void consumeSpaces() throws IOException {
         mark();
         char c;
@@ -293,13 +301,17 @@ public class WikiTextParser implements ParserReader {
     private TemplateHeader readTemplateHeader() throws IOException {
         clear(templateHeaderSB);
         char c;
-        WikiTextParserHandler.Var var = null;
+        WikiTextParserHandler.Var var;
+        final List<WikiTextParserHandler.Value> fragments = new ArrayList<>();
         while(true) {
             mark();
             c = read();
             if (c == '{') {
                 reset();
+                if(templateHeaderSB.length() > 0)
+                    fragments.add(new WikiTextParserHandler.Const(flushAndClear(templateHeaderSB)));
                 var = readVariableOrTemplate(false);
+                fragments.add(var);
             } else if(c != '|' && c != '}') {
                 templateHeaderSB.append(c);
             } else {
@@ -308,7 +320,8 @@ public class WikiTextParser implements ParserReader {
                 break;
             }
         }
-        return new TemplateHeader(templateHeaderSB.toString(), var);
+        fragments.add(new WikiTextParserHandler.Const(flushAndClear(templateHeaderSB)));
+        return new TemplateHeader(fragments.toArray(new WikiTextParserHandler.Value[fragments.size()]));
     }
 
     private final StringBuilder tableHeaderSB = new StringBuilder();
@@ -530,9 +543,11 @@ public class WikiTextParser implements ParserReader {
 
     private void readTemplate() throws IOException {
         final TemplateHeader templateHeader = readTemplateHeader();
-        if(templateHeader.directive.length() == 0) return;
-        handler.beginTemplate(templateHeader.directive);
-        if(templateHeader.var != null) handler.var(templateHeader.var);
+        //if(templateHeader.directive.length() == 0) return;
+        final WikiTextParserHandler.TemplateName templateName =
+                new WikiTextParserHandler.TemplateName(templateHeader.fragments);
+        handler.beginTemplate(templateName);
+        //if(templateHeader.var != null) handler.var(templateHeader.var);
 
         consumeSpaces();
         mark();
@@ -556,7 +571,7 @@ public class WikiTextParser implements ParserReader {
             if(assertChar('}')) {
                 if(assertChar('}')) {
                     mark();
-                    handler.endTemplate(templateHeader.directive);
+                    handler.endTemplate(templateName);
                 } else {
                     handler.parseWarning("Unexpected '}' while parsing template.", new DefaultParserLocation(this.row, this.col));
                     reset();
@@ -569,7 +584,7 @@ public class WikiTextParser implements ParserReader {
             reset();
             readTemplateProperties();
             mark();
-            handler.endTemplate(templateHeader.directive);
+            handler.endTemplate(templateName);
         }
     }
 
@@ -804,11 +819,9 @@ public class WikiTextParser implements ParserReader {
     }
 
     class TemplateHeader {
-        final String directive;
-        final WikiTextParserHandler.Var var;
-        TemplateHeader(String directive, WikiTextParserHandler.Var var) {
-            this.directive = directive;
-            this.var = var;
+        final WikiTextParserHandler.Value[] fragments;
+        TemplateHeader(final WikiTextParserHandler.Value[] fragments) {
+            this.fragments = fragments;
         }
     }
 

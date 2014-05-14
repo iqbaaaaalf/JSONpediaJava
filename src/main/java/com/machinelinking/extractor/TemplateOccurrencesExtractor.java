@@ -19,11 +19,11 @@ public class TemplateOccurrencesExtractor extends Extractor {
     }
 
     @Override
-    public void beginTemplate(String name) {
-        name = name.trim();
-        Integer count = templateOccurrences.get(name);
+    public void beginTemplate(TemplateName name) {
+        final String n = name.plain.trim();
+        Integer count = templateOccurrences.get(n);
         count = count == null ? 1 : count + 1;
-        templateOccurrences.put(name, count);
+        templateOccurrences.put(n, count);
     }
 
     @Override

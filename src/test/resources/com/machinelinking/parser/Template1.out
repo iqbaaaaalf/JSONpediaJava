@@ -8,14 +8,13 @@ k: aboveclass
 Text: 'fn
 '
 k: above      
-Begin Template: #if:
-var: name [const: []]
+Begin Template: #if:<name:>
 k: null
 var: name [null]
 k: null
 Begin Template: PAGENAME
 End Template: PAGENAME
-End Template: #if:
+End Template: #if:<name:>
 Text: '
 '
 k: abovestyle 
@@ -57,14 +56,13 @@ k: label1
 Text: 'Native name
 '
 k: data1      
-Begin Template: #if:
-var: native_name [const: []]
+Begin Template: #if:<native_name:>
 Open Tag: span attributes: [class : 'nickname', {{#if:{{{native_name_lang|}}}|lang : '{{{native_name_lang}}}', xml:lang : '{{{native_name_lang}}}']
 k: null
 var: native_name [null]
 Close Tag: span
 Text: ' '
-End Template: #if:
+End Template: #if:<native_name:>
 Text: '
 
 '
@@ -185,11 +183,9 @@ End Reference: Thesis
 Text: '
 '
 k: data30  
-Begin Template: #if:
-var: thesis_title [const: []]
+Begin Template: #if:<thesis_title:>
 k: null
-Begin Template: #if:
-var: thesis_url [const: []]
+Begin Template: #if:<thesis_url:>
 k: null
 Begin Link: null
 var: thesis_url [null]
@@ -202,16 +198,15 @@ k: null
 Text: ''''
 var: thesis_title [null]
 Text: ''''
-End Template: #if:
-End Template: #if:
+End Template: #if:<thesis_url:>
+End Template: #if:<thesis_title:>
 Text: ' '
-Begin Template: #if:
-var: thesis_year [const: []]
+Begin Template: #if:<thesis_year:>
 k: null
 Text: '('
 var: thesis_year [null]
 Text: ')'
-End Template: #if:
+End Template: #if:<thesis_year:>
 Text: '
 '
 k: label31 
@@ -225,15 +220,14 @@ Text: '
 
 '
 k: label32 
-Begin Template: #if:
+Begin Template: #if:<doctoral_advisor:>
              
-var: doctoral_advisor [const: []]
 k: null
 Text: 'Other&nbsp;academic advisors
              '
 k: null
 Text: 'Academic advisors '
-End Template: #if:
+End Template: #if:<doctoral_advisor:>
              
 Text: '
 '
@@ -251,15 +245,14 @@ Text: '
 
 '
 k: label34 
-Begin Template: #if:
+Begin Template: #if:<doctoral_students:>
              
-var: doctoral_students [const: []]
 k: null
 Text: 'Other&nbsp;notable students
              '
 k: null
 Text: 'Notable students '
-End Template: #if:
+End Template: #if:<doctoral_students:>
              
 Text: '
 '
@@ -341,9 +334,8 @@ var: children [const: []]
 Text: '
 '
 k: data54  
-Begin Template: #if:
+Begin Template: #if:<signature:>
              
-var: signature [const: []]
 k: null
 Text: ''''Signature''''
 Inline Tag: br attributes: []
@@ -365,17 +357,16 @@ var: name [null]
 Text: ''s signature'
 End Reference: File:{
 Text: ' '
-End Template: #if:
+End Template: #if:<signature:>
              
 Text: '
 
 '
 k: header65 
-Begin Template: #if:
-var: website [var: homepage [var: URL [const: []]]]
+Begin Template: #if:<website:<homepage:<URL:>>>
 k: null
 Text: 'Website'
-End Template: #if:
+End Template: #if:<website:<homepage:<URL:>>>
 Text: '
 '
 k: data66   
@@ -384,9 +375,8 @@ Text: '
 
 '
 k: data67  
-Begin Template: #if:
+Begin Template: #if:<footnotes:>
              
-var: footnotes [const: []]
 Open Tag: div attributes: [style : 'padding-top:0.25em; text-align:left; font-style:90%;']
 Comment Tag: 
                     
@@ -396,7 +386,7 @@ Inline Tag: br attributes: []
 var: footnotes [null]
 Close Tag: div
 Text: ' '
-End Template: #if:
+End Template: #if:<footnotes:>
              
 Text: '
 '
@@ -405,9 +395,8 @@ End Template: Infobox
 Comment Tag: 
 
 
-Begin Template: #if:
+Begin Template: #if:<author_abbreviation_zoo:<author_abbrev_zoo:>>
      
-var: author_abbreviation_zoo [var: author_abbrev_zoo [const: []]]
 k: null
 Begin Reference: Category:Zoologists with author abbreviations<!--
          -->
@@ -417,14 +406,13 @@ End Reference: Category:Zoologists with author abbreviations<!--
          -->
 Comment Tag: 
 
-End Template: #if:
+End Template: #if:<author_abbreviation_zoo:<author_abbrev_zoo:>>
      
-Begin Template: #if:
-var: pronunciation [const: []]
+Begin Template: #if:<pronunciation:>
 k: null
 Begin Reference: Category:Biography template using pronunciation
 End Reference: Category:Biography template using pronunciation
-End Template: #if:
+End Template: #if:<pronunciation:>
 Open Tag: noinclude attributes: []
 Text: '
 '

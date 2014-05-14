@@ -38,13 +38,13 @@ public abstract class WikiMappingHandler extends DefaultWikiTextParserHandler {
     public abstract void handle(TemplateMapping mapping);
 
     @Override
-    public void beginTemplate(String name) {
-        name = name.trim();
-        if(TEMPLATE_MAPPING_NAME.equalsIgnoreCase(name)) {
+    public void beginTemplate(TemplateName name) {
+        final String n = name.plain.trim();
+        if(TEMPLATE_MAPPING_NAME.equalsIgnoreCase(n)) {
             insideTemplateMapping = true;
             nextIsTemplateClass = false;
             if(mapping != null) throw new IllegalArgumentException("Unsupported conditional mapping.");
-        } else if(insideTemplateMapping && PROPERTY_MAPPING_NAME.equalsIgnoreCase(name.trim())) {
+        } else if(insideTemplateMapping && PROPERTY_MAPPING_NAME.equalsIgnoreCase(n.trim())) {
             insidePropertyMapping = true;
         }
     }
@@ -88,10 +88,11 @@ public abstract class WikiMappingHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void endTemplate(String name) {
-        if(insidePropertyMapping && PROPERTY_MAPPING_NAME.equalsIgnoreCase(name.trim())) {
+    public void endTemplate(TemplateName name) {
+        final String n = name.plain.trim();
+        if(insidePropertyMapping && PROPERTY_MAPPING_NAME.equalsIgnoreCase(n)) {
             insidePropertyMapping = false;
-        } else if(insideTemplateMapping && TEMPLATE_MAPPING_NAME.equalsIgnoreCase(name.trim())) {
+        } else if(insideTemplateMapping && TEMPLATE_MAPPING_NAME.equalsIgnoreCase(n)) {
             insideTemplateMapping = false;
             handle(mapping);
         }

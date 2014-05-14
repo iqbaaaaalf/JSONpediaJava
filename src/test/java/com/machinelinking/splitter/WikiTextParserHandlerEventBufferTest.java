@@ -27,12 +27,12 @@ public class WikiTextParserHandlerEventBufferTest {
     public void testBuffer() throws MalformedURLException {
         final WikiTextParserHandler handler = buffer.getProxy();
         handler.beginDocument( new URL("http://some.doc"));
-        handler.beginTemplate("T1");
+        handler.beginTemplate(new WikiTextParserHandler.TemplateName("T1"));
         handler.parameter("p1");
         handler.text("t1");
         handler.text("t2");
         handler.text("t4");
-        handler.endTemplate("T1");
+        handler.endTemplate(new WikiTextParserHandler.TemplateName("T1"));
         handler.endDocument();
 
         Assert.assertEquals(8, buffer.size());

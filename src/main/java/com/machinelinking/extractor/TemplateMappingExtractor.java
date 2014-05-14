@@ -35,9 +35,9 @@ public class TemplateMappingExtractor extends Extractor {
     }
 
     @Override
-    public void beginTemplate(String name) {
-        if(WikiPediaUtils.getInfoBoxName(name) != null) {
-            fetchMapping(name.trim());
+    public void beginTemplate(TemplateName name) {
+        if(WikiPediaUtils.getInfoBoxName(name.plain) != null) {
+            fetchMapping(name.plain.trim());
         }
     }
 

@@ -14,8 +14,8 @@ public class InfoboxSplitter extends Splitter {
     }
 
     @Override
-    public void beginTemplate(String name) {
-        if(WikiPediaUtils.getInfoBoxName(name) != null) {
+    public void beginTemplate(TemplateName name) {
+        if(WikiPediaUtils.getInfoBoxName(name.plain) != null) {
             super.split();
         }
     }

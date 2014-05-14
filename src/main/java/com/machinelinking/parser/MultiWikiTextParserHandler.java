@@ -108,14 +108,14 @@ public class MultiWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void beginTemplate(String name) {
+    public void beginTemplate(TemplateName name) {
         for(WikiTextParserHandler handler : handlers) {
             handler.beginTemplate(name);
         }
     }
 
     @Override
-    public void endTemplate(String name) {
+    public void endTemplate(TemplateName name) {
         for(WikiTextParserHandler handler : handlers) {
             handler.endTemplate(name);
         }
