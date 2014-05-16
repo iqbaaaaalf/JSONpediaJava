@@ -6,7 +6,10 @@ import com.machinelinking.storage.JSONStorageConnectionException;
 import com.machinelinking.wikimedia.WikiPage;
 import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
+import com.mongodb.MapReduceCommand;
+import com.mongodb.MapReduceOutput;
 import com.mongodb.util.JSON;
+import org.codehaus.jackson.JsonNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +19,7 @@ import java.util.List;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDocument, MongoSelector> {
+public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDocument, MongoSelector>, MapReduceSupport {
 
     public static final int BUFFER_FLUSH_SIZE = 1024;
 
@@ -89,6 +92,15 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
             this.collection.insert(buffer);
             buffer.clear();
         }
+    }
+
+    @Override
+    public JsonNode processMapReduce(String map, String reduce, DBObject query) {
+        final MapReduceOutput out = this.collection.mapReduce(
+                map, reduce, null, MapReduceCommand.OutputType.INLINE, query
+        );
+        final DBObject results = (DBObject) out.getCommandResult().get("results");
+        return MongoUtils.convertToJsonNode(results);
     }
 
 }
