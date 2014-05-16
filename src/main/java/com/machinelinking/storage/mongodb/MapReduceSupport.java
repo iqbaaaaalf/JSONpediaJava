@@ -10,6 +10,6 @@ import org.codehaus.jackson.JsonNode;
  */
 public interface MapReduceSupport {
 
-    JsonNode processMapReduce(String map, String reduce, DBObject query);
+    JsonNode processMapReduce(DBObject query, String map, String reduce, int limit);
 
 }

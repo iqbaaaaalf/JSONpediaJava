@@ -95,10 +95,12 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
     }
 
     @Override
-    public JsonNode processMapReduce(String map, String reduce, DBObject query) {
-        final MapReduceOutput out = this.collection.mapReduce(
-                map, reduce, null, MapReduceCommand.OutputType.INLINE, query
+    public JsonNode processMapReduce(DBObject query, String map, String reduce, int limit) {
+        final MapReduceCommand command = new MapReduceCommand(
+                this.collection, map, reduce, null, MapReduceCommand.OutputType.INLINE, query
         );
+        command.setLimit(limit);
+        final MapReduceOutput out = this.collection.mapReduce(command);
         final DBObject results = (DBObject) out.getCommandResult().get("results");
         return MongoUtils.convertToJsonNode(results);
     }

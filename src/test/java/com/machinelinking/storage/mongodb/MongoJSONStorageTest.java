@@ -24,7 +24,7 @@ public class MongoJSONStorageTest {
     private static String TEST_COLLECTION = "test_load_table";
 
     private static final String MAP_FUNC = "function() {  ocs = this.content.templates.occurrences; for(template in ocs) { emit(template, ocs[template]); } }";
-    private static final String RED_FUNCT = "function(key, values) { return Array.sum(values) }";
+    private static final String RED_FUNC = "function(key, values) { return Array.sum(values) }";
 
     private static Logger logger = Logger.getLogger(MongoJSONStorageTest.class);
 
@@ -59,7 +59,7 @@ public class MongoJSONStorageTest {
     public void testMapReduce() {
         final MongoJSONStorage storage = getStorage();
         final MongoJSONStorageConnection connection = storage.openConnection(TEST_COLLECTION);
-        final JsonNode result = connection.processMapReduce(MAP_FUNC, RED_FUNCT, new BasicDBObject());
+        final JsonNode result = connection.processMapReduce(new BasicDBObject(), MAP_FUNC, RED_FUNC, 0);
         Assert.assertTrue(result.isArray());
         Assert.assertTrue(result.size() > 50);
     }
