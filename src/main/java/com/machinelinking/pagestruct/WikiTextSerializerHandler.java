@@ -40,7 +40,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     public void beginDocument(URL document) {
         reset();
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "page");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_PAGE);
         serializer.fieldValue(PageStructConsts.URL_FIELD, document.toExternalForm());
         serializer.field("structure");
         serializer.openList();
@@ -49,7 +49,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     @Override
     public void var(Var v) {
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "var");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_VAR);
         serializer.fieldValue(PageStructConsts.NAME_FIELD, v.name);
         serializer.fieldValue("default", v.defaultValue);
         serializer.closeObject();
@@ -58,7 +58,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     @Override
     public void paragraph() {
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "paragraph");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_PARAGRAPH);
         serializer.closeObject();
     }
 
@@ -67,7 +67,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         popUntilElement(DocumentElement.class);
         pushElement(new Section(String.format("%s - %d", title, level)));
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "section");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_SECTION);
         serializer.fieldValue("title", title.trim());
         serializer.fieldValue(PageStructConsts.LEVEL_FIELD, level);
         serializer.field(PageStructConsts.CONTENT_FIELD);
@@ -78,7 +78,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     public void beginReference(String label) {
         pushElement( new Reference(label) );
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "reference");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_REFERENCE);
         serializer.fieldValue(PageStructConsts.LABEL_FIELD, label);
         serializer.field(PageStructConsts.CONTENT_FIELD);
         serializer.openObject();
@@ -101,7 +101,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         final String urlStr = url == null ? null : url.toExternalForm();
         pushElement( new Link(urlStr) );
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "link");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_LINK);
         serializer.fieldValue(PageStructConsts.URL_FIELD, urlStr);
         serializer.field(PageStructConsts.CONTENT_FIELD);
         serializer.openObject();
@@ -122,7 +122,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     @Override
     public void beginList() {
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "list");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_LIST);
         serializer.field(PageStructConsts.CONTENT_FIELD);
         serializer.openList();
     }
@@ -137,7 +137,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
         pushElement( new ListItem() );
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "list_item");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_LIST_ITEM);
         serializer.fieldValue(PageStructConsts.LEVEL_FIELD, level);
         serializer.fieldValue("item_type", t.name());
         serializer.field(PageStructConsts.CONTENT_FIELD);
@@ -162,7 +162,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         final String templateId = name.plain.trim();
         pushElement( new TemplateElement(templateId) );
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_TEMPLATE_FIELD);
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_TEMPLATE);
         serializer.fieldValue(PageStructConsts.NAME_FIELD, templateId);
         serializer.field(PageStructConsts.CONTENT_FIELD);
         serializer.openObject();
@@ -184,7 +184,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     @Override
     public void beginTable() {
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "table");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_TABLE);
         pushElement(new TableElement());
     }
 
@@ -208,7 +208,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
         pushElement(new TableCell());
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "head_cell");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_TABLE_HEAD_CELL);
         serializer.field(PageStructConsts.CONTENT_FIELD);
         serializer.openObject();
     }
@@ -228,7 +228,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 
         pushElement( new TableCell() );
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "body_cell");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_TABLE_BODY_CELL);
         serializer.field(PageStructConsts.CONTENT_FIELD);
         serializer.openObject();
     }
@@ -254,7 +254,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     @Override
     public void beginTag(String name, Attribute[] attributes) {
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "open_tag");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_OPEN_TAG);
         serializer.fieldValue(PageStructConsts.NAME_FIELD, name);
         serializeAttributes(attributes, serializer);
         serializer.closeObject();
@@ -263,7 +263,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     @Override
     public void endTag(String name) {
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "close_tag");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_CLOSE_TAG);
         serializer.fieldValue(PageStructConsts.NAME_FIELD, name);
         serializer.closeObject();
     }
@@ -271,7 +271,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     @Override
     public void inlineTag(String name, Attribute[] attributes) {
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "inline_tag");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_INLINE_TAG);
         serializer.fieldValue(PageStructConsts.NAME_FIELD, name);
         serializeAttributes(attributes, serializer);
         serializer.closeObject();
@@ -280,7 +280,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     @Override
     public void commentTag(String comment) {
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "comment_tag");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_COMMENT_TAG);
         serializer.fieldValue("comment", comment);
         serializer.closeObject();
     }
@@ -300,7 +300,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     @Override
     public void entity(String form, char value) {
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, "entity");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_ENTITY);
         serializer.fieldValue("form", form);
         serializer.fieldValue("value", "" + value);
         serializer.closeObject();
