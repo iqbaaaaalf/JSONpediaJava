@@ -38,6 +38,8 @@ public class DefaultStorageService implements StorageService {
 
     private static final Logger logger = Logger.getLogger(DefaultStorageService.class);
 
+    private static final MongoSelector EMPTY_SELECTOR = new MongoSelector();
+
     private final MongoJSONStorageConnection connection;
     private final int QUERY_LIMIT;
 
@@ -51,39 +53,93 @@ public class DefaultStorageService implements StorageService {
         connection = storage.openConnection(configuration.getCollection());
     }
 
-    @Path("/select")
+    @Path("/mongo/select")
     @GET
     @Produces({
             MediaType.APPLICATION_JSON + ";charset=UTF-8",
     })
     @Override
-    public Response queryStorage(
+    public Response queryMongoStorage(
             @QueryParam("q") String selector,
             @QueryParam("filter") String filter,
-            @QueryParam("limit") String limit)
-    {
+            @QueryParam("limit") String limit
+    ) {
         try {
-            final JSONFilter jsonFilter = DefaultJSONFilterEngine.parseFilter(filter);
+            selector = trimIfNotNull(selector);
+            filter = trimIfNotNull(filter);
+            assertParam(selector, "selector parameter must be specified");
+
             final MongoSelector mongoSelector = MongoSelectorParser.getInstance().parse(selector);
+            final JSONFilter jsonFilter = DefaultJSONFilterEngine.parseFilter(filter);
             try (final MongoResultSet rs = connection.query(mongoSelector, toMaxLimit(limit))) {
                 return Response.ok(
-                        toJSONOutput(mongoSelector, jsonFilter, rs),
+                        toMongoSelectJSONOutput(mongoSelector, jsonFilter, rs),
                         MediaType.APPLICATION_JSON + ";charset=UTF-8"
                 ).build();
             }
         } catch (IllegalArgumentException iae) {
             throw new InvalidRequestException(iae);
         } catch (Exception e) {
-            logger.error("Error while performing request.", e);
+            logger.error("Error while processing request.", e);
             throw new InternalErrorException(e);
         }
     }
 
-    private int toMaxLimit(String limitStr) {
-        if(limitStr == null) return QUERY_LIMIT;
+    @Path("/mongo/mapred")
+    @GET
+    @Produces({
+            MediaType.APPLICATION_JSON + ";charset=UTF-8",
+    })
+    @Override
+    public Response mapRedMongoStorage(
+            @QueryParam("criteria") String criteria,
+            @QueryParam("map")String map,
+            @QueryParam("reduce")String reduce,
+            @QueryParam("limit") String limit
+    ) {
         try {
-            final int limit = Integer.parseInt(limitStr);
-            return limit <= QUERY_LIMIT ? limit : QUERY_LIMIT;
+            criteria = trimIfNotNull(criteria);
+            map = trimIfNotNull(map);
+            reduce = trimIfNotNull(reduce);
+
+            assertParam(map, "map param must be specified");
+            assertParam(reduce, "reduce param must be specified");
+
+            final MongoSelector mongoSelector;
+            if(criteria == null || criteria.trim().length() == 0) {
+                mongoSelector = EMPTY_SELECTOR;
+            } else {
+                mongoSelector = MongoSelectorParser.getInstance().parse(criteria);
+            }
+
+            final JsonNode result = connection.processMapReduce(
+                    mongoSelector.toDBObjectSelection(), map, reduce, toMaxLimit(limit)
+            );
+            return Response.ok(
+                    toMongoMapRedJSONOutput(mongoSelector, result),
+                    MediaType.APPLICATION_JSON + ";charset=UTF-8"
+            ).build();
+        } catch (IllegalArgumentException iae) {
+            throw new InvalidRequestException(iae);
+        } catch (Exception e) {
+            logger.error("Error while processing request.", e);
+            throw new InternalErrorException(e);
+        }
+    }
+
+    private String trimIfNotNull(String in) {
+        return in == null ? null : in.trim();
+    }
+
+    private void assertParam(Object val, String errMsg) {
+        if(val == null) throw new IllegalArgumentException(errMsg);
+    }
+
+    private int toMaxLimit(String limit) {
+        if(limit == null || limit.length() == 0) return QUERY_LIMIT;
+        try {
+            final int l = Integer.parseInt(limit);
+            return l <= QUERY_LIMIT ? l : QUERY_LIMIT;
         } catch (NumberFormatException nfe) {
             throw new IllegalArgumentException(nfe);
         }
@@ -98,7 +154,7 @@ public class DefaultStorageService implements StorageService {
         return result;
     }
 
-    private String toJSONOutput(MongoSelector selector, JSONFilter filter, MongoResultSet rs) {
+    private String toMongoSelectJSONOutput(MongoSelector selector, JSONFilter filter, MongoResultSet rs) {
         final ObjectNode output = JsonNodeFactory.instance.objectNode();
         final ArrayNode result = JsonNodeFactory.instance.arrayNode();
         output.put("query-explain", selector.toString());
@@ -112,6 +168,15 @@ public class DefaultStorageService implements StorageService {
             nextJack = MongoUtils.convertToJsonNode(nextMongo.getContent());
             result.add(applyFilter(nextJack, filter));
         }
+        return JSONUtils.serializeToJSON(output, false);
+    }
+
+    private String toMongoMapRedJSONOutput(MongoSelector selector, JsonNode result) {
+        final ObjectNode output = JsonNodeFactory.instance.objectNode();
+        output.put("query-explain", selector.toString());
+        output.put("mongo-selection", selector.toDBObjectSelection().toString());
+        output.put("count", result.size());
+        output.put("result", result);
         return JSONUtils.serializeToJSON(output, false);
     }
 

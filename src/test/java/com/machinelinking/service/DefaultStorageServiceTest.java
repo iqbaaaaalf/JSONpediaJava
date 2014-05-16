@@ -16,6 +16,9 @@ import java.util.Properties;
  */
 public class DefaultStorageServiceTest extends ServiceTestBase {
 
+    private static final String MAP_FUNC = "function() {  ocs = this.content.templates.occurrences; for(template in ocs) { emit(template, ocs[template]); } }";
+    private static final String RED_FUNC = "function(key, values) { return Array.sum(values) }";
+
     @Before
     public void setUp() throws IOException {
         super.setUp();
@@ -31,11 +34,11 @@ public class DefaultStorageServiceTest extends ServiceTestBase {
     }
 
     @Test
-    public void testQueryStorage() throws URISyntaxException, IOException, ConnectionException {
+    public void testMongoSelect() throws URISyntaxException, IOException, ConnectionException {
         final JsonNode output = performQuery(
-            buildPath(DefaultStorageService.class, "select")
+            buildPath(DefaultStorageService.class, "mongo/select")
                     .queryParam("q", "name = doc_1 -> _id")
-                    .queryParam("limit", "10")
+                    .queryParam("limit", Integer.toString(10))
                     .build()
         );
 
@@ -49,23 +52,74 @@ public class DefaultStorageServiceTest extends ServiceTestBase {
     }
 
     @Test
-    public void testInvalidQueryParam() throws URISyntaxException, IOException {
+    public void testMongoSelectInvalidParams() throws URISyntaxException, IOException {
         performQueryAndCheckError(
                 400,
-                buildPath(DefaultStorageService.class, "select")
+                buildPath(DefaultStorageService.class, "mongo/select")
                         .queryParam("q", "bleah")
                         .queryParam("limit", "10")
+                        .build()
+        );
+
+        performQueryAndCheckError(
+                400,
+                buildPath(DefaultStorageService.class, "mongo/select")
+                        .queryParam("q", "name = doc_1 -> _id")
+                        .queryParam("limit", "x")
                         .build()
         );
     }
 
     @Test
-    public void testInvalidLimitParam() throws URISyntaxException, IOException {
+    public void testMongoMapRed() throws URISyntaxException, IOException, ConnectionException {
+        final JsonNode output = performQuery(
+            buildPath(DefaultStorageService.class, "mongo/mapred")
+                    .queryParam("criteria", "")
+                    .queryParam("map", MAP_FUNC)
+                    .queryParam("reduce", RED_FUNC)
+                    .queryParam("limit", Integer.toString(10))
+                    .build()
+        );
+
+        Assert.assertTrue(output.get("result").size() >= 1);
+    }
+
+    @Test
+    public void testMongoMapRedInvalidParams() throws URISyntaxException, IOException {
         performQueryAndCheckError(
                 400,
-                buildPath(DefaultStorageService.class, "select")
-                        .queryParam("q", "name = doc_1 -> _id")
+                buildPath(DefaultStorageService.class, "mongo/mapred")
+                        .queryParam("criteria", "X")
+                        .queryParam("map", MAP_FUNC)
+                        .queryParam("reduce", RED_FUNC)
+                        .build()
+        );
+
+        performQueryAndCheckError(
+                400,
+                buildPath(DefaultStorageService.class, "mongo/mapred")
+                        .queryParam("criteria", "")
+                        .queryParam("map", MAP_FUNC)
+                        .queryParam("reduce", RED_FUNC)
                         .queryParam("limit", "x")
+                        .build()
+        );
+
+        performQueryAndCheckError(
+                500,
+                buildPath(DefaultStorageService.class, "mongo/mapred")
+                        .queryParam("criteria", "")
+                        .queryParam("map", MAP_FUNC)
+                        .queryParam("reduce", "xxx")
+                        .build()
+        );
+
+        performQueryAndCheckError(
+                500,
+                buildPath(DefaultStorageService.class, "mongo/mapred")
+                        .queryParam("criteria", "")
+                        .queryParam("map", "xxx")
+                        .queryParam("reduce", RED_FUNC)
                         .build()
         );
     }
