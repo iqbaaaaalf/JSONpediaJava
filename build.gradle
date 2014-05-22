@@ -11,6 +11,7 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'application'
 apply plugin: 'shadow'
+apply plugin: 'maven'
 
 group = 'com.machinelinking'
 mainClassName = 'com.machinelinking.service.BasicServer'
