@@ -9,6 +9,8 @@ import javax.ws.rs.core.Response;
  */
 public interface StorageService extends Service {
 
-    Response queryStorage(String selector, String filter, String limit);
+    Response queryMongoStorage(String selector, String filter, String limit);
+
+    Response mapRedMongoStorage(String criteria, String map, String reduce, String limit);
 
 }

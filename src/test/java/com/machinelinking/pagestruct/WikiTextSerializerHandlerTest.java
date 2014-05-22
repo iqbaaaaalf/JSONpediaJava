@@ -58,10 +58,6 @@ public class WikiTextSerializerHandlerTest extends WikiTextSerializerHandlerTest
             super(serializer);
         }
 
-        @Override
-        public String getTemplateId(String templateName) {
-            return templateName.trim();
-        }
     }
 
 }

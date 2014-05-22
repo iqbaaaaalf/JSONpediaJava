@@ -92,12 +92,12 @@ public class AbstractExtractor extends Extractor {
     }
 
     @Override
-    public void beginTemplate(String name) {
+    public void beginTemplate(TemplateName name) {
         filteredHandler.beginTemplate(name);
     }
 
     @Override
-    public void endTemplate(String name) {
+    public void endTemplate(TemplateName name) {
         filteredHandler.endTemplate(name);
     }
 

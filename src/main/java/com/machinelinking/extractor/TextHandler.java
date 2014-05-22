@@ -100,13 +100,13 @@ public class TextHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void beginTemplate(String name) {
+    public void beginTemplate(TemplateName name) {
         nestedStructures++;
         decoratedHandler.beginTemplate(name);
     }
 
     @Override
-    public void endTemplate(String name) {
+    public void endTemplate(TemplateName name) {
         decoratedHandler.endTemplate(name);
         nestedStructures--;
     }

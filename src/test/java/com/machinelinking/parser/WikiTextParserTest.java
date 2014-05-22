@@ -823,8 +823,7 @@ public class WikiTextParserTest {
                 "Begin Document\n" +
                 "Begin Template: Atemplate\n" +
                 "k: prop1 \n" +
-                "Begin Template: #directive:\n" +
-                "var: var1 [const: []]\n" +
+                "Begin Template: #directive:<var1:>\n" +
                 "k: null\n" +
                 "var: var2 [null]\n" +
                 "k: prop2\n" +
@@ -832,7 +831,7 @@ public class WikiTextParserTest {
                 "k: null\n" +
                 "Begin Template: var4\n" +
                 "End Template: var4\n" +
-                "End Template: #directive:\n" +
+                "End Template: #directive:<var1:>\n" +
                 "End Template: Atemplate\n" +
                 "End Document\n"
         );
@@ -858,11 +857,9 @@ public class WikiTextParserTest {
                 "{{#if:{{{thesis_title|}}}|{{#if:{{{thesis_url|}}}|[{{{thesis_url}}} ''{{{thesis_title}}}'']|''{{{thesis_title}}}''}}}} {{#if:{{{thesis_year|}}}|({{{thesis_year}}})}}",
 
                 "Begin Document\n" +
-                "Begin Template: #if:\n" +
-                "var: thesis_title [const: []]\n" +
+                "Begin Template: #if:<thesis_title:>\n" +
                 "k: null\n" +
-                "Begin Template: #if:\n" +
-                "var: thesis_url [const: []]\n" +
+                "Begin Template: #if:<thesis_url:>\n" +
                 "k: null\n" +
                 "Begin Link: null\n" +
                 "var: thesis_url [null]\n" +
@@ -875,16 +872,15 @@ public class WikiTextParserTest {
                 "Text: ''''\n" +
                 "var: thesis_title [null]\n" +
                 "Text: ''''\n" +
-                "End Template: #if:\n" +
-                "End Template: #if:\n" +
+                "End Template: #if:<thesis_url:>\n" +
+                "End Template: #if:<thesis_title:>\n" +
                 "Text: ' '\n" +
-                "Begin Template: #if:\n" +
-                "var: thesis_year [const: []]\n" +
+                "Begin Template: #if:<thesis_year:>\n" +
                 "k: null\n" +
                 "Text: '('\n" +
                 "var: thesis_year [null]\n" +
                 "Text: ')'\n" +
-                "End Template: #if:\n" +
+                "End Template: #if:<thesis_year:>\n" +
                 "End Document\n"
         );
     }

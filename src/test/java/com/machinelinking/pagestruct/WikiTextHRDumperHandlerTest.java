@@ -1,5 +1,6 @@
 package com.machinelinking.pagestruct;
 
+import com.machinelinking.parser.WikiTextParserHandler;
 import org.junit.Test;
 
 import java.net.MalformedURLException;
@@ -19,7 +20,7 @@ public class WikiTextHRDumperHandlerTest {
         handler.beginTable();
         handler.beginList();
         handler.endList();
-        handler.endTemplate("t1");
+        handler.endTemplate(new WikiTextParserHandler.TemplateName("t1"));
         handler.endDocument();
     }
 

@@ -63,13 +63,16 @@ public class MongoSelectorParser implements SelectorParser {
     @Override
     public MongoSelector parse(String qry) {
         final String[] parts = qry.split(PROJECTION_OP);
-        if(parts.length != 2)
-            throw new IllegalArgumentException(String.format("Expected '<selectors> %s <projection>'", PROJECTION_OP));
+        if(parts.length != 1 && parts.length != 2)
+            throw new IllegalArgumentException(
+                    String.format("Expected '<criteria> | <criteria> %s <projection>'", PROJECTION_OP)
+            );
         final String selectors = parts[0];
-        final String projections = parts[1];
+        final String projections = parts.length == 1 ? null : parts[1];
         final MongoSelector mongoSelector = new MongoSelector();
         addCriterias(selectors, mongoSelector);
-        addProjections(projections, mongoSelector);
+        if(projections != null)
+            addProjections(projections, mongoSelector);
         return mongoSelector;
     }
 

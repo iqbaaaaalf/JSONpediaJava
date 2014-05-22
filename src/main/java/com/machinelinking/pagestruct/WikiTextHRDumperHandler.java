@@ -111,8 +111,8 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void beginTemplate(String name) {
-        printOut("Begin Template: " + name);
+    public void beginTemplate(TemplateName name) {
+        printOut("Begin Template: " + name.plain);
     }
 
     @Override
@@ -131,8 +131,8 @@ public class WikiTextHRDumperHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void endTemplate(String name) {
-        printOut("End Template: " + name);
+    public void endTemplate(TemplateName name) {
+        printOut("End Template: " + name.plain);
     }
 
     @Override

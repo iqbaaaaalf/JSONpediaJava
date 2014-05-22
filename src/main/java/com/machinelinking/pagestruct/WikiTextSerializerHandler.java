@@ -158,8 +158,8 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void beginTemplate(String name) {
-        final String templateId = getTemplateId(name);
+    public void beginTemplate(TemplateName name) {
+        final String templateId = name.plain.trim();
         pushElement( new TemplateElement(templateId) );
         serializer.openObject();
         serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_TEMPLATE_FIELD);
@@ -169,7 +169,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void endTemplate(String name) {
+    public void endTemplate(TemplateName name) {
         // Close last param if any.
         if (peekElement() instanceof ParameterElement) {
             popElement(ParameterElement.class);
@@ -332,10 +332,6 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.closeList();
         serializer.closeObject();
         serializer.flush();
-    }
-
-    protected String getTemplateId(String templateName) {
-        return templateName.trim();
     }
 
     private void clearStack() {

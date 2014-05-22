@@ -154,9 +154,9 @@ implements CSVExporter {
         }
 
         @Override
-        public void beginTemplate(String name) {
+        public void beginTemplate(TemplateName name) {
             insideTemplate = true;
-            template = cleanString(name.trim());
+            template = cleanString(name.plain.trim());
             templatesCount++;
             if(propertiesPerTemplate > maxPropertiesPerTemplate) {
                 maxPropertiesPerTemplate = propertiesPerTemplate;
@@ -192,7 +192,7 @@ implements CSVExporter {
         }
 
         @Override
-        public void endTemplate(String name) {
+        public void endTemplate(TemplateName name) {
             insideTemplate = false;
         }
 

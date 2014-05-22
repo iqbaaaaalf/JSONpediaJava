@@ -58,11 +58,11 @@ public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
     }
 
     @Override
-    public void beginTemplate(String name) {
+    public void beginTemplate(TemplateName name) {
     }
 
     @Override
-    public void endTemplate(String name) {
+    public void endTemplate(TemplateName name) {
     }
 
     @Override

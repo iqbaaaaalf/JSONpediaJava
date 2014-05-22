@@ -44,6 +44,8 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="application/javascript">
         $(function ($) {
+            LIMIT = 1000;
+
             $("#filter-syntax-include").load("filter.html");
 
             $.each($('.app-base-uri'), function() {
@@ -51,18 +53,33 @@
             });
 
             $('#mongo-select-submit').addClass('disabled');
+            $('#mongo-mapred-submit').addClass('disabled');
 
             $('.mongo-selector-example').click(function(e) {
                 $('#mongo-select-selector').val($(e.target).text());
                 e.preventDefault();
-                updateGetRequest();
-                $('#mongo-select-submit').removeClass('disabled');
+                updateMongoSelectQuery();
             });
             $('.mongo-filter-example').click(function(e) {
                 $('#mongo-select-filter').val($(e.target).text());
                 e.preventDefault();
-                updateGetRequest();
-                $('#mongo-select-submit').removeClass('disabled');
+                updateMongoSelectQuery();
+            });
+
+            $('.mongo-mapred-criteria-example').click(function (e) {
+                $('#mongo-mapred-criteria').val($(e.target).text());
+                e.preventDefault();
+                updateMongoMapRedQuery();
+            });
+            $('.mongo-mapred-map-example').click(function (e) {
+                $('#mongo-mapred-map').val($(e.target).text());
+                e.preventDefault();
+                updateMongoMapRedQuery();
+            });
+            $('.mongo-mapred-red-example').click(function (e) {
+                $('#mongo-mapred-red').val($(e.target).text());
+                e.preventDefault();
+                updateMongoMapRedQuery();
             });
 
             $('#mongo-select-selector').keyup(function() {
@@ -77,34 +94,59 @@
             $('#mongo-select-query-copy').click(function(){
                 window.prompt('CTRL + C to copy:', $('#mongo-select-query').html() );
             });
+            $('#mongo-mapred-query-copy').click(function(){
+                window.prompt('CTRL + C to copy:', $('#mongo-mapred-query').html() );
+            });
 
             $('#mongo-select-limit').keyup(function(){
-                if($('#mongo-select-limit').val() > 1000) {
+                if($('#mongo-select-limit').val() > LIMIT) {
                     $('#mongo-select-limit').addClass('glyphicon glyphicon-warning-sign has-warning has-feedback form-control-feedback');
                 } else {
                     $('#mongo-select-limit').removeClass('glyphicon glyphicon-warning-sign has-warning has-feedback form-control-feedback');
                 }
             });
 
+            $('#mongo-mapred-limit').keyup(function(){
+                if($('#mongo-mapred-limit').val() > LIMIT) {
+                    $('#mongo-mapred-limit').addClass('glyphicon glyphicon-warning-sign has-warning has-feedback form-control-feedback');
+                } else {
+                    $('#mongo-mapred-limit').removeClass('glyphicon glyphicon-warning-sign has-warning has-feedback form-control-feedback');
+                }
+            });
+
             $('#mongo-select-form').live('click change keyup', function(e) {
-                updateGetRequest();
+                updateMongoSelectQuery();
+            });
+            $('#mongo-mapred-form').live('click change keyup', function(e) {
+                updateMongoMapRedQuery();
             });
 
             $('#mongo-select-submit').click(function(e){
-                window.open(buildGetRequest());
+                window.open(buildMongoSelectQuery());
+            });
+            $('#mongo-mapred-submit').click(function(e){
+                window.open(buildMongoMapRedQuery());
             });
 
             $('#mongo-select-reset').click(function(e){
                 e.preventDefault();
                 $('#mongo-select-form')[0].reset();
-                updateGetRequest();
+                updateMongoSelectQuery();
+            });
+            $('#mongo-mapred-reset').click(function(e){
+                e.preventDefault();
+                $('#mongo-mapred-form')[0].reset();
+                updateMongoMapRedQuery();
             });
 
-            $('#selector-help').click(function(e){
+            $('.mongo-selector-help').click(function(e){
                             document.location = "#selector-syntax";
             });
             $('#filter-help').click(function(e){
                             document.location = "#filter-syntax";
+            });
+            $('.limit-help').click(function(e){
+                            document.location = "#limit-syntax";
             });
         });
 
@@ -124,25 +166,49 @@
           return !isNaN(parseFloat(n)) && isFinite(n);
         }
 
-        function buildGetRequest() {
+        function buildMongoSelectQuery() {
             selector = $('#mongo-select-selector').val();
             filter = $('#mongo-select-filter').val();
             limit = $('#mongo-select-limit').val();
             if(selector.trim().length == 0) throw new Error("Invalid selector");
             if(limit != "" && !isNumeric(limit)) throw new Error("Invalid limit");
-            return '/storage/select?q=' +
+            return '/storage/mongo/select?q=' +
              encodeURIComponent(selector) +
             (filter.trim().length == 0 ? '' : '&filter=' + encodeURIComponent(filter)) +
             (limit.trim().length == 0 || limit == $('#mongo-select-limit').attr('placeholder') ? '' : '&limit=' + limit)
         }
 
-        function updateGetRequest() {
+        function buildMongoMapRedQuery() {
+            criteria = $('#mongo-mapred-criteria').val();
+            _map = $('#mongo-mapred-map').val();
+            red = $('#mongo-mapred-red').val();
+            limit = $('#mongo-mapred-limit').val();
+            if(criteria.trim().length == 0) throw new Error("Invalid criteria");
+            if(limit != "" && !isNumeric(limit)) throw new Error("Invalid limit");
+            return '/storage/mongo/mapred?' +
+                'map=' + encodeURIComponent(_map) + '&' +
+                'reduce=' + encodeURIComponent(red) + '&' +
+                'criteria=' + encodeURIComponent(criteria) + '&' +
+                'limit=' + (limit.trim().length == 0 || limit == $('#mongo-mapred-limit').attr('placeholder') ? '' : '&limit=' + limit)
+        }
+
+        function updateMongoSelectQuery() {
             try {
-                $('#mongo-select-query').html('http://' + document.location.host + buildGetRequest());
-                $('#mongo-select-submit').removeAttr('disabled');
+                $('#mongo-select-query').html('http://' + document.location.host + buildMongoSelectQuery());
+                $('#mongo-select-submit').removeClass('disabled');
             } catch(e) {
-                console.log('EEE' + e)
-                $('#mongo-select-submit').attr('disabled','disabled');
+                console.log('Error: ' + e)
+                $('#mongo-select-submit').addClass('disabled');
+            }
+        }
+
+        function updateMongoMapRedQuery() {
+            try {
+                $('#mongo-mapred-query').html('http://' + document.location.host + buildMongoMapRedQuery());
+                $('#mongo-mapred-submit').removeClass('disabled');
+            } catch(e) {
+                console.log('Error: ' + e)
+                $('#mongo-select-submit').addClass('disabled');
             }
         }
     </script>
@@ -175,7 +241,10 @@
 <h2>MongoDB Query</h2>
 
 <form id="mongo-select-form" class="well form-horizontal">
-    <label>Specify a data selector and optionally a filter and a resultset limit</label>
+    <code>POST mongo/select</code>
+    <p class="help-block">
+        Specify a data selector and optionally a filter and a resultset limit
+    </p>
 
     <div class="form-group">
         <label class="control-label col-md-1" for="mongo-select-selector">Selector</label>
@@ -193,7 +262,7 @@
                 </div>
             </div>
         </div>
-        <i id="selector-help" class="glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Selector syntax"></i>
+        <i class="mongo-selector-help glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Selector syntax"></i>
     </div>
 
     <div class="form-group">
@@ -219,7 +288,7 @@
         <div class="col-md-6">
             <input type="text" class="form-control" id="mongo-select-limit" placeholder="1000">
         </div>
-        <i id="limit-help" class="glyphicon glyphicon-question-sign col-md-1" rel="tooltip"
+        <i class="limit-help glyphicon glyphicon-question-sign col-md-1" rel="tooltip"
            title="Result limit (Max: 1000)"></i>
     </div>
 
@@ -232,6 +301,90 @@
     <div class="control-group">
         <button id="mongo-select-submit" type="button" class="btn btn-primary">Query</button>
         <button id="mongo-select-reset" type="reset" class="btn">Cancel</button>
+    </div>
+</form>
+
+<h2>MongoDB Map/Reduce</h2>
+
+<form id="mongo-mapred-form" class="well form-horizontal">
+    <code>POST mongo/mapred</code>
+    <p class="help-block">
+        Specify a data criteria selector, a map/reduce functions and optionally a resultset limit
+    </p>
+
+    <div class="form-group">
+        <label class="control-label col-md-1" for="mongo-mapred-criteria">Criteria</label>
+        <div class="col-md-6">
+            <div class="input-group">
+                <input class="form-control" id="mongo-mapred-criteria" type="text"
+                       placeholder="[<FIELD> OP <VALUE>]+">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Criteria samples <span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a class="mongo-mapred-criteria-example dropdown-list-button" href="#">_id = #736</a></li>
+                        <li><a class="mongo-mapred-criteria-example dropdown-list-button" href="#">name = Albert Einstein</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <i class="mongo-selector-help glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Selector syntax"></i>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-1" for="mongo-mapred-map">Map function</label>
+        <div class="col-md-6">
+            <div class="input-group">
+                <input class="form-control" id="mongo-mapred-map" type="text"
+                       placeholder="function() { this... emit(key, val); }">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Map func samples <span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a class="mongo-mapred-map-example dropdown-list-button" href="#">function() {  ocs = this.content.templates.occurrences; for(template in ocs) { emit(template, ocs[template]); } }</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <i id="mapred-map-help" class="glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Map function help"></i>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-1" for="mongo-mapred-red">Reduce function</label>
+        <div class="col-md-6">
+            <div class="input-group">
+                <input class="form-control" id="mongo-mapred-red" type="text"
+                       placeholder="function(key, vals) { return ... }">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Red func samples <span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a class="mongo-mapred-red-example dropdown-list-button" href="#">function(key, values) { return Array.sum(values) }</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <i id="mapred-red-help" class="glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Reduce function help"></i>
+    </div>
+
+    <div class="form-group">
+        <label for="mongo-mapred-limit" class="col-md-1 control-label">Limit</label>
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="mongo-mapred-limit" placeholder="1000">
+        </div>
+        <i class="limit-help glyphicon glyphicon-question-sign col-md-1" rel="tooltip"
+           title="Result limit (Max: 1000)"></i>
+    </div>
+
+    <span class="row">
+        <span class="label label-info">Query</span>
+        <span id="mongo-mapred-query" class="label label-info"></span>
+        <i id="mongo-mapred-query-copy" class="glyphicon glyphicon-edit" rel="tooltip" title="Copy query"></i>
+    </span>
+
+    <div class="control-group">
+        <button id="mongo-mapred-submit" type="button" class="btn btn-primary">Run</button>
+        <button id="mongo-mapred-reset" type="reset" class="btn">Cancel</button>
     </div>
 </form>
 
@@ -345,9 +498,9 @@ where all documents with version major or equals to 10 are selected and for each
 <p>
 The full <b>selector syntax</b> is reported below.
 <pre>
-&lt;selector&gt;      ::= &lt;criteria-list&gt; "->" &lt;projection&gt; ;
-&lt;criteria-list&gt; ::= &lt;criteria&gt; | &lt;criteria&gt; "," &lt;criteria-list&gt; ;
-&lt;criteria&gt;      ::=  &lt;field&gt; &lt;operator&gt; &lt;value&gt;
+&lt;selector&gt;      ::= &lt;criteria&gt; "->" &lt;projection&gt; ;
+&lt;criteria&gt;      ::= &lt;node-criteria&gt; | &lt;node-criteria&gt; "," &lt;criteria&gt; ;
+&lt;node-criteria&gt; ::=  &lt;field&gt; &lt;operator&gt; &lt;value&gt;
 &lt;projection&gt;    ::= &lt;field&gt; | &lt;field&gt; "." &lt;projection&gt; ;
 &lt;operator&gt;      ::= '==' | '!=' | '<' | '>' | '<=' | '>=' ;
 &lt;field&gt;         ::= &lt;JSON-field-name&gt; ;
@@ -364,6 +517,16 @@ The full <b>selector syntax</b> is reported below.
 <a name="filter-syntax"></a>
 <div id="filter-syntax-include"></div>
 <!--------- END   Filter Documentation --------->
+
+<hr/>
+
+<a name="limit-syntax"></a>
+<h3>Request Limit</h3>
+<p>
+    Defines the limit in size of results. Integer value &gt;= <code>0</code>.
+    <br/>
+    <code>0</code> means no limit.
+</p>
 
 <hr/>
 

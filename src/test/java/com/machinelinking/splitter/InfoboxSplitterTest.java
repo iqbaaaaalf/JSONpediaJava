@@ -1,6 +1,7 @@
 package com.machinelinking.splitter;
 
 import com.machinelinking.parser.MultiWikiTextParserHandler;
+import com.machinelinking.parser.WikiTextParserHandler;
 import com.machinelinking.serializer.JSONSerializer;
 import junit.framework.Assert;
 import org.junit.Test;
@@ -29,17 +30,17 @@ public class InfoboxSplitterTest {
         multiHandler.add(splitter);
 
         multiHandler.beginDocument(new URL("http://test/doc"));
-        multiHandler.beginTemplate("t1");
+        multiHandler.beginTemplate(new WikiTextParserHandler.TemplateName("t1"));
         multiHandler.parameter("t1-p1");
-        multiHandler.beginTemplate("tt1");
+        multiHandler.beginTemplate(new WikiTextParserHandler.TemplateName("tt1"));
         splitter.split(); // < Split here
         multiHandler.parameter("tt1-p1");
         multiHandler.text("text 1");
         multiHandler.text("text 2");
-        multiHandler.endTemplate("tt1");
+        multiHandler.endTemplate(new WikiTextParserHandler.TemplateName("tt1"));
         multiHandler.parameter("t1-p2");
         multiHandler.text("text 3");
-        multiHandler.endTemplate("t1");
+        multiHandler.endTemplate(new WikiTextParserHandler.TemplateName("t1"));
         multiHandler.endDocument();
 
         Assert.assertEquals(0, splitterHandler.getActiveRedirections().size() );
