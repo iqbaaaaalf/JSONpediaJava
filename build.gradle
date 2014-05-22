@@ -6,25 +6,21 @@ buildscript {
         classpath 'com.github.jengelman.gradle.plugins:shadow:0.8'
     }
 }
+
 apply plugin: 'java'
-apply plugin: 'maven'
+apply plugin: 'idea'
+apply plugin: 'application'
 apply plugin: 'shadow'
 
 group = 'com.machinelinking'
+mainClassName = 'com.machinelinking.service.BasicServer'
 version = '1.0-SNAPSHOT'
-
-description = """Convert wikipedia templates to json"""
 
 sourceCompatibility = 1.7
 
 shadow {
     exclude 'META-INF/*.DSA'
     exclude 'META-INF/*.RSA'
-    jar {
-        manifest {
-            attributes 'Main-Class': 'com.machinelinking.service.BasicServer'
-        }
-    }
 }
 
 jar {
@@ -41,12 +37,12 @@ tasks.withType(Javadoc){
     options.encoding = 'UTF-8'
 }
 
-
 repositories {
-     maven { url "http://repo.maven.apache.org/maven2" }
+    mavenCentral()
 }
 
 dependencies {
+    // dependencies
     compile group: 'log4j', name: 'log4j', version:'1.2.17'
     compile group: 'org.codehaus.jackson', name: 'jackson-jaxrs', version:'1.9.6'
     compile group: 'commons-io', name: 'commons-io', version:'2.4'
@@ -61,5 +57,7 @@ dependencies {
     compile group: 'com.sun.jersey', name: 'jersey-servlet', version:'1.17'
     compile group: 'com.sun.jersey', name: 'jersey-json', version:'1.17'
     compile group: 'com.sun.jersey', name: 'jersey-grizzly2', version:'1.17'
+
+    // testing dependencies
     testCompile group: 'junit', name: 'junit', version:'4.7'
 }

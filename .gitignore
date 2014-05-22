@@ -8,3 +8,9 @@ test-render.html
 .DS_Store
 ontology.ser
 .idea
+gradle
+gradlew
+gradlew.bat
+.gradle
+build
+*.pyc
