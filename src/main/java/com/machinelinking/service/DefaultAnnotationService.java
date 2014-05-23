@@ -8,7 +8,9 @@ import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.JSONFilter;
 import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.parser.WikiTextParserException;
+import com.machinelinking.render.DefaultDocumentContext;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
+import com.machinelinking.render.DocumentContext;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
 import com.machinelinking.wikimedia.WikiAPIParserException;
@@ -220,8 +222,9 @@ public class DefaultAnnotationService implements AnnotationService {
                 final JsonNode rootNode = JSONUtils.parseJSON(json); // TODO: avoid this!
                 final JsonNode target   =
                         filter.isEmpty() ? rootNode : JSONUtils.parseJSON( printOutFilterResult(rootNode, filter) ); // TODO: avoid this!
+                final DocumentContext context = new DefaultDocumentContext(documentURL);
                 return Response.ok(
-                        DefaultHTMLRenderFactory.getInstance().createRender().renderToHTML(documentURL, target),
+                        DefaultHTMLRenderFactory.getInstance().createRender().renderDocument(context, target),
                         MediaType.TEXT_HTML + ";charset=UTF-8"
                 ).build();
             default:
