@@ -24,7 +24,6 @@ public class WikiTextParserFilteredHandler implements WikiTextParserHandler {
 
     @Override
     public void beginDocument(URL document) {
-        if(mustFilter()) return;
         decorated.beginDocument(document);
     }
 
@@ -174,7 +173,6 @@ public class WikiTextParserFilteredHandler implements WikiTextParserHandler {
 
     @Override
     public void endDocument() {
-        if(mustFilter()) return;
         decorated.endDocument();
     }
 
