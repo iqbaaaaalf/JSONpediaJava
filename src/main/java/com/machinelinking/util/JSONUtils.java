@@ -288,6 +288,15 @@ public class JSONUtils {
         return false;
     }
 
+    public static Iterable<Map.Entry<String,JsonNode>> toIterable(final Iterator<Map.Entry<String,JsonNode>> iter) {
+        return new Iterable<Map.Entry<String,JsonNode>>() {
+            @Override
+            public Iterator<Map.Entry<String,JsonNode>> iterator() {
+                return iter;
+            }
+        };
+    }
+
     private JSONUtils() {}
 
 }
