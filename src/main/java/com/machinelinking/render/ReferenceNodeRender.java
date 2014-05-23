@@ -23,7 +23,7 @@ public class ReferenceNodeRender implements NodeRender {
 
     private static final String ALT_PREFIX = "alt=";
 
-    private static final Map<String,String> REFERENCE_DIV_ATTR = new HashMap<String,String>(){{
+    private static final Map<String,String> REFERENCE_NODE_ATTR = new HashMap<String,String>(){{
         put("class", "reference");
     }};
 
@@ -56,7 +56,7 @@ public class ReferenceNodeRender implements NodeRender {
     }
 
     private void writeHTMLURL(String target, String label, HTMLWriter writer) throws IOException {
-         writer.openTag("div", REFERENCE_DIV_ATTR);
+         writer.openTag("span", REFERENCE_NODE_ATTR);
         if( isImage(target) ) {
             final String[] descSections = label.split("\\|");
             writer.key(descSections[descSections.length -1]);
