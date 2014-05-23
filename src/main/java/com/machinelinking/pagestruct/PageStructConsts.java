@@ -29,5 +29,8 @@ public interface PageStructConsts {
     static final String LABEL_FIELD = "label";
     static final String LEVEL_FIELD = "level";
     static final String CONTENT_FIELD = "content";
+    static final String DEFAULT_FIELD = "default";
+
+    static final String ANON_NAME_PREFIX = "__an";
 
 }

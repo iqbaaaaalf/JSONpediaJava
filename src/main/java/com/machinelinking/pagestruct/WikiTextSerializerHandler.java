@@ -51,7 +51,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.openObject();
         serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_VAR);
         serializer.fieldValue(PageStructConsts.NAME_FIELD, v.name);
-        serializer.fieldValue("default", v.defaultValue);
+        serializer.fieldValue(PageStructConsts.DEFAULT_FIELD, v.defaultValue);
         serializer.closeObject();
     }
 
@@ -163,7 +163,22 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         pushElement( new TemplateElement(templateId) );
         serializer.openObject();
         serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_TEMPLATE);
-        serializer.fieldValue(PageStructConsts.NAME_FIELD, templateId);
+        if(name.containsVar()) {
+            serializer.field(PageStructConsts.NAME_FIELD);
+            serializer.openList();
+            for (Value v : name.fragments) {
+                if (v instanceof Const) {
+                    serializer.value(((Const) v).constValue);
+                } else if(v instanceof Var) {
+                    var((Var) v);
+                } else {
+                    throw new IllegalStateException();
+                }
+            }
+            serializer.closeList();
+        } else {
+            serializer.fieldValue(PageStructConsts.NAME_FIELD, templateId);
+        }
         serializer.field(PageStructConsts.CONTENT_FIELD);
         serializer.openObject();
     }
