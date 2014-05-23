@@ -154,10 +154,13 @@ public interface WikiTextParserHandler extends TagHandler {
             this(new Value[]{new Const(singleFragment)});
         }
 
-        @Override
-        public String toString() {
-            return super.toString();
+        public boolean containsVar() {
+            for(Value v : fragments) {
+                if(v instanceof Var) return true;
+            }
+            return false;
         }
+
     }
 
 }
