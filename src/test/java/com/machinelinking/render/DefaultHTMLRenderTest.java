@@ -24,7 +24,8 @@ public class DefaultHTMLRenderTest {
                 )
         );
         final URL documentURL = new URL("http://en.wikipedia.org/page/Fake");
-        final String html = DefaultHTMLRenderFactory.getInstance().createRender().renderToHTML(documentURL, node);
+        final DocumentContext context = new DefaultDocumentContext(documentURL);
+        final String html = DefaultHTMLRenderFactory.getInstance().createRender().renderDocument(context, node);
         FileUtils.writeStringToFile( new File("./test-render.html"), html);
     }
 
