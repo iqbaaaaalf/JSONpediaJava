@@ -3,8 +3,14 @@ package com.machinelinking.extractor;
 import com.machinelinking.pagestruct.WikiTextSerializerHandler;
 import com.machinelinking.pagestruct.WikiTextSerializerHandlerFactory;
 import com.machinelinking.parser.DefaultWikiTextParserHandler;
+import com.machinelinking.render.DefaultDocumentContext;
+import com.machinelinking.render.DefaultHTMLRender;
+import com.machinelinking.render.DefaultHTMLRenderFactory;
+import com.machinelinking.render.DocumentContext;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializer;
+import com.machinelinking.util.JSONUtils;
+import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -22,6 +28,9 @@ public class TextHandler extends DefaultWikiTextParserHandler {
 
     private final StringBuilder outputBuffer = new StringBuilder();
 
+    private final DefaultHTMLRender render = DefaultHTMLRenderFactory.getInstance().createRender(false);
+
+    private URL documentURL;
     private int nestedStructures = 0;
 
     protected TextHandler() {
@@ -49,7 +58,8 @@ public class TextHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
-    public void beginDocument(URL document) {
+    public void beginDocument(URL documentURL) {
+        this.documentURL = documentURL;
         reset();
     }
 
@@ -121,13 +131,28 @@ public class TextHandler extends DefaultWikiTextParserHandler {
             decoratedHandler.reset();
             final StringBuffer buffer = writer.getBuffer();
             if(buffer.length() > 0) {
-                outputBuffer.append("<%");
-                outputBuffer.append(buffer);
+                expandBuffer(buffer.toString(), outputBuffer);
                 buffer.delete(0, buffer.length());
-                outputBuffer.append("%>");
             }
             outputBuffer.append(content);
         }
+    }
+
+    private void expandBuffer(String data, StringBuilder sb) {
+        try {
+            sb.append(expandStructure(data));
+        } catch (Exception e) {
+            e.printStackTrace();
+            sb.append("<%");
+            sb.append(data);
+            sb.append("%>");
+        }
+    }
+
+    private String expandStructure(String data) throws IOException {
+        final JsonNode node = JSONUtils.parseJSON(data);
+        final DocumentContext context = new DefaultDocumentContext(documentURL);
+        return render.renderFragment(context, node);
     }
 
 }
