@@ -3,8 +3,6 @@ package com.machinelinking.render;
 import com.machinelinking.util.JsonPathBuilder;
 import org.codehaus.jackson.JsonNode;
 
-import java.net.URL;
-
 /**
  * Maintains the current context of a {@link org.codehaus.jackson.JsonNode} visit.
  *
@@ -12,9 +10,13 @@ import java.net.URL;
  */
 public interface JsonContext {
 
-    URL getDocumentURL();
+    DocumentContext getDocumentContext();
 
     String getDocumentTitle();
+
+    String getLang();
+
+    String getDomain();
 
     String getJSONPath();
 

@@ -9,6 +9,8 @@ import org.codehaus.jackson.JsonNode;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -46,10 +48,6 @@ public class DefaultHTMLRender implements HTMLRender {
         put("class","list");
     }};
 
-    private static final Map<String,String> JSON_PATH_CLASS = new HashMap<String, String>(){{
-        put("class", JSON_PATH_SELECTOR);
-    }};
-
     private static final Map<String,String> DEFAULT_RENDER_DIV = new HashMap<String,String>(){{}};
 
     private static final Map<String,String> DEFAULT_RENDER_HIDDEN_DIV = new HashMap<String,String>(){{
@@ -73,9 +71,13 @@ public class DefaultHTMLRender implements HTMLRender {
     public void processRoot(JsonNode node, HTMLWriter writer) throws IOException {
         jsonPathBuilder.startPath();
         writer.openDocument(getContext().getDocumentTitle());
-        render(getContext(), this, node, writer);
+        processFragment(node, writer);
         writer.closeDocument();
         writer.flush();
+    }
+
+    public void processFragment(JsonNode node, HTMLWriter writer) throws IOException {
+        render(getContext(), this, node, writer);
     }
 
     @Override
@@ -137,18 +139,26 @@ public class DefaultHTMLRender implements HTMLRender {
         }
         final boolean renderFound = targetRender != null;
 
-        writeNodeMetadata(node, writer);
+        if(alwaysRenderDefault) writeNodeMetadata(node, writer);
 
         // Custom render.
         if(renderFound) {
-            targetRender.render(context, rootRender, node, writer);
+            try {
+                targetRender.render(context, rootRender, node, writer);
+            } catch (Exception e) {
+                writer.openColorTag("red");
+                final StringWriter stringWriter = new StringWriter();
+                e.printStackTrace(new PrintWriter(stringWriter));
+                writer.text(stringWriter.getBuffer().toString());
+                writer.closeTag();
+            }
         }
 
         if(alwaysRenderDefault || !renderFound) {
             renderDefault(!renderFound, context, rootRender, node, writer);
         }
 
-        writer.closeTag();
+        if(alwaysRenderDefault) writer.closeTag();
     }
 
     @Override
@@ -175,26 +185,49 @@ public class DefaultHTMLRender implements HTMLRender {
     }
 
     @Override
-    public String renderToHTML(URL documentURL, JsonNode rootNode) throws IOException {
+    public String renderDocument(DocumentContext context, JsonNode rootNode) throws IOException {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final DefaultHTMLWriter writer = new DefaultHTMLWriter( new OutputStreamWriter(baos) );
-        this.setContext(rootNode, documentURL);
+        this.setContext(rootNode, context);
         this.processRoot(rootNode, writer);
+        writer.flush();
         return baos.toString();
     }
 
-    private void setContext(final JsonNode root, final URL documentURL) {
+    public String renderFragment(DocumentContext context, JsonNode rootNode) throws IOException {
+        final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        final DefaultHTMLWriter writer = new DefaultHTMLWriter(new OutputStreamWriter(baos));
+        this.setContext(rootNode, context);
+        this.processFragment(rootNode, writer);
+        writer.flush();
+        return baos.toString();
+    }
+
+    private void setContext(final JsonNode root, final DocumentContext documentContext) {
          context = new JsonContext() {
+             final URL documentURL = documentContext.getDocumentURL();
              final String documentTitle = WikimediaUtils.getEntityTitle(documentURL.toExternalForm());
+             final String lang = documentURL.getHost().split("\\.")[0];
+             final String domain = documentURL.getHost();
 
              @Override
-             public URL getDocumentURL() {
-                 return documentURL;
+             public DocumentContext getDocumentContext() {
+                 return documentContext;
              }
 
              @Override
              public String getDocumentTitle() {
                  return documentTitle;
+             }
+
+             @Override
+             public String getLang() {
+                 return lang;
+             }
+
+             @Override
+             public String getDomain() {
+                 return domain;
              }
 
              @Override
@@ -255,7 +288,7 @@ public class DefaultHTMLRender implements HTMLRender {
     }
 
     private void renderList(RootRender rootRender, JsonNode list, boolean isDefault, HTMLWriter writer)
-      throws IOException {
+    throws IOException {
         final int size = list.size();
         if(size == 1) {
             jsonPathBuilder.enterArray();

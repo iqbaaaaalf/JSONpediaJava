@@ -3,7 +3,6 @@ package com.machinelinking.render;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
-import java.net.URL;
 
 /**
  * Defines a <i>JSON</i> to <i>HTML</i> renderer.
@@ -59,14 +58,24 @@ public interface HTMLRender extends RootRender {
     void removePrimitiveRender(PrimitiveNodeRender render);
 
     /**
-     * Renders a document as an HTML string.
+     * Renders a JSON node as a document.
      *
-     * @param toDocumentURL
+     * @param context
      * @param rootNode
      * @return
      * @throws IOException
      */
 
-    String renderToHTML(URL toDocumentURL, JsonNode rootNode) throws IOException;
+    String renderDocument(DocumentContext context, JsonNode rootNode) throws IOException;
+
+    /**
+     * Renders a JSON node as a fragment (without header and footer).
+     *
+     * @param context
+     * @param node
+     * @return
+     * @throws IOException
+     */
+    String renderFragment(DocumentContext context, JsonNode node) throws IOException;
 
 }

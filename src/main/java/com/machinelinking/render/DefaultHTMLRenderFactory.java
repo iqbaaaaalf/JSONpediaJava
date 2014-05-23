@@ -1,5 +1,7 @@
 package com.machinelinking.render;
 
+import com.machinelinking.template.TemplateNodeRender;
+
 /**
  * Default implementation of {@link HTMLRenderFactory}.
  *
@@ -13,9 +15,8 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         return instance;
     }
 
-    @Override
-    public DefaultHTMLRender createRender() {
-        final DefaultHTMLRender render = new DefaultHTMLRender(true);
+    public DefaultHTMLRender createRender(boolean alwaysRenderDefault) {
+        final DefaultHTMLRender render = new DefaultHTMLRender(alwaysRenderDefault);
         // Root level.
         render.addKeyValueRender("freebase", new FreebaseKeyValueRender());
         render.addKeyValueRender("issues"  , new IssuesKeyValueRender());
@@ -32,6 +33,7 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         render.addNodeRender("reference", new ReferenceNodeRender());
         render.addNodeRender("link"     , new LinkNodeRender());
         render.addNodeRender("section"  , new SectionRender());
+        render.addNodeRender("template" , new TemplateNodeRender()); //TODO: avoid dependency with template package
         render.addNodeRender("template" , new CiteWebNodeRender());
         render.addNodeRender("template" , new CitationNodeRender());
         render.addNodeRender("template" , new MainNodeRender());
@@ -43,6 +45,11 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
 
         render.addPrimitiveRender( new BaseTextPrimitiveNodeRender() );
         return render;
+    }
+
+    @Override
+    public DefaultHTMLRender createRender() {
+        return createRender(true);
     }
 
     private DefaultHTMLRenderFactory() {}

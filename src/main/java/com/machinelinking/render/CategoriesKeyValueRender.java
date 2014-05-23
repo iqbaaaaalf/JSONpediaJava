@@ -17,7 +17,7 @@ public class CategoriesKeyValueRender implements KeyValueRender {
         final Iterator<JsonNode> categories = value.get("content").getElements();
         writer.openTag("div");
         writer.heading(1, "Categories");
-        final String lang = WikimediaUtils.urlToParts(context.getDocumentURL()).lang;
+        final String lang = WikimediaUtils.urlToParts(context.getDocumentContext().getDocumentURL()).lang;
         while(categories.hasNext()) {
             writer.category(lang, categories.next().asText());
         }

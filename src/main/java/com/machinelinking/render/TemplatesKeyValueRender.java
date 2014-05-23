@@ -35,7 +35,7 @@ public class TemplatesKeyValueRender implements KeyValueRender {
 
         writer.openTag("div");
         writer.heading(1, "Templates");
-        final String lang = WikimediaUtils.urlToParts(context.getDocumentURL()).lang;
+        final String lang = WikimediaUtils.urlToParts(context.getDocumentContext().getDocumentURL()).lang;
         for(TemplateOccurrence templateOccurrence : templateOccurrences) {
             writer.templateReference(
                     String.format("%s (%d)", templateOccurrence.templateName, templateOccurrence.occurrences),
