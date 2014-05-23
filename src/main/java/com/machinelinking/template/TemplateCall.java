@@ -1,31 +1,28 @@
 package com.machinelinking.template;
 
-import java.util.Map;
+import org.codehaus.jackson.JsonNode;
 
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface TemplateCall {
 
-    Fragment getName();
+    JsonNode getName();
 
-    String[] getParameters();
+    Parameter[] getParameters();
 
-    Parameter getParameter(String param);
+    String[] getParameterNames();
 
-    Fragment getParameter(int index);
+    JsonNode getParameter(String param);
 
-    String getProcessedParameter(int index, EvaluationContext context) throws TemplateProcessorException;
+    JsonNode getParameter(int index);
 
     int getParametersCount();
 
-    Map<String,String> getParameters(int fromIndex, EvaluationContext context, boolean nullKeys)
-    throws TemplateProcessorException;
-
     public class Parameter {
         public final String name;
-        public final Fragment value;
-        public Parameter(String name, Fragment value) {
+        public final JsonNode value;
+        public Parameter(String name, JsonNode value) {
             this.name = name;
             this.value = value;
         }

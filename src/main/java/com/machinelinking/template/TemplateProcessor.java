@@ -10,9 +10,6 @@ public interface TemplateProcessor {
     public void process(EvaluationContext context, TemplateCall call, HTMLWriter writer)
     throws TemplateProcessorException;
 
-    public void process(EvaluationContext context, Fragment value, HTMLWriter writer)
-    throws TemplateProcessorException;
-
     void addTemplateCallHandler(TemplateCallHandler handler);
 
     void removeTemplateCallHandler(TemplateCallHandler handler);

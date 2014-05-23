@@ -1,6 +1,7 @@
 package com.machinelinking.template;
 
 import com.machinelinking.render.HTMLWriter;
+import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -21,6 +22,9 @@ import java.util.TreeSet;
  */
 public class DefaultTemplateProcessor implements TemplateProcessor {
 
+    /**
+     * From http://en.wikipedia.org/wiki/Help:Magic_words
+     */
     public static  final Set<String> VARIABLES = Collections.unmodifiableSortedSet(new TreeSet<>(Arrays.asList(
             "ARTICLEPAGENAME",
             "ARTICLESPACE",
@@ -33,7 +37,7 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
             "SUBPAGENAME",
             "TALKPAGENAME",
             "TALKSPACE",
-            "FULLPAGENAMEE ",
+            "FULLPAGENAMEE",
             "NAMESPACEE",
             "SITENAME",
             "SERVER",
@@ -103,7 +107,7 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
     public void process(EvaluationContext context, TemplateCall call, HTMLWriter writer)
     throws TemplateProcessorException {
         try {
-            final String name = call.getName().evaluate(context);
+            final String name = context.evaluate(call.getName());
             final int splitIndex = name.indexOf(':');
             final String[] nameParts = splitIndex == -1 ?
                     new String[]{name}
@@ -116,25 +120,10 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
             } else if (processConditionalExp(name, nameParts, context, call, writer)) {
             } else if (processHandlers(context, call, writer)) {
             } else {
-                throw new TemplateProcessorException(
-                        "Cannot find handler for template call.",
-                        new Fragment.TemplateFragment(call)
-                );
+                throw new TemplateProcessorException("Cannot find handler for template call.", call);
             }
         } catch (Exception e) {
-            throw new TemplateProcessorException(
-                    "Error while processing template call.", e, new Fragment.TemplateFragment(call)
-            );
-        }
-    }
-
-    @Override
-    public void process(EvaluationContext context, Fragment value, HTMLWriter writer)
-    throws TemplateProcessorException {
-        try {
-            writer.text(value.evaluate(context));
-        } catch (IOException ioe) {
-            throw new TemplateProcessorException("Error while evaluating fragment.", ioe, value);
+            throw new TemplateProcessorException("Error while processing template call.", e, call);
         }
     }
 
@@ -197,38 +186,38 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
             return true;
         }
         if (name.startsWith("padleft:")) {
-            final int pad = Integer.parseInt(call.getProcessedParameter(0, context)) - nameParts[1].length();
+            final int pad = Integer.parseInt(context.evaluate(call.getParameter(0))) - nameParts[1].length();
             writer.text(nameParts[1]);
             for(int i = 0; i < pad; i++) writer.text("0");
             return true;
         }
         if (name.startsWith("padright:")) {
-            final int pad = Integer.parseInt(call.getProcessedParameter(0, context)) - nameParts[1].length();
+            final int pad = Integer.parseInt(context.evaluate(call.getParameter(0))) - nameParts[1].length();
             for(int i = 0; i < pad; i++) writer.text("0");
             writer.text(nameParts[1]);
             return true;
         }
         if (name.startsWith("plural:")) {
             final int count = Integer.parseInt(nameParts[1]);
-            writer.text( call.getParameter(count == 1 ? 0 : 1).evaluate(context) );
+            writer.text( context.evaluate(call.getParameter(count == 1 ? 0 : 1)) );
             return true;
         }
         if (name.startsWith("#time:")) {
-            writer.text( call.getParameter(0).evaluate(context) );
+            writer.text( context.evaluate(call.getParameter(0)) );
             return true;
         }
         if (name.startsWith("gender:")) {
             writer.text(String.format(
                     "%s/%s/%s",
-                    call.getParameter(0).evaluate(context),
-                    call.getParameter(1).evaluate(context),
-                    call.getParameter(2).evaluate(context)
+                    context.evaluate(call.getParameter(0)),
+                    context.evaluate(call.getParameter(1)),
+                    context.evaluate(call.getParameter(2))
             ));
             return true;
         }
         if (name.startsWith("#tag:")) {
-            writer.openTag(nameParts[1], call.getParameters(1, context, false));
-            writer.text(call.getParameter(0).evaluate(context));
+            writer.openTag(nameParts[1], context.evaluate(call.getParameters(), 1));
+            writer.text(context.evaluate(call.getParameter(0)));
             writer.closeTag();
             return true;
         }
@@ -240,18 +229,18 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
     ) throws IOException, TemplateProcessorException {
         if (nameParts.length != 2) return false;
         if (name.startsWith("localurl:")) {
-            final String query = call.getProcessedParameter(0, context);
+            final String query = context.evaluate(call.getParameter(0));
             writer.text(String.format("/w/index.php?title=%s&%s", nameParts[1], query == null ? "" : query));
             return true;
         }
         if (name.startsWith("fullurl:")) {
-            final String query = call.getProcessedParameter(0, context);
+            final String query = context.evaluate(call.getParameter(0));
             writer.text(getURL(null, null, nameParts[1], query));
             return true;
         }
         if (name.startsWith("canonicalurl:")) {
-            final String query = call.getProcessedParameter(0, context);
-            writer.text(getURL("http:", context.getDomain(), nameParts[1], query));
+            final String query = context.evaluate(call.getParameter(0));
+            writer.text(getURL("http:", context.getJsonContext().getDomain(), nameParts[1], query));
             return true;
         }
         if (name.startsWith("filepath:")) {
@@ -259,7 +248,7 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
             return true;
         }
         if (name.startsWith("urlencode:")) {
-            final String format = call.getProcessedParameter(0, context);
+            final String format = context.evaluate(call.getParameter(0));
             switch (format) {
                 case "WIKI":
                     writer.text(URLEncoder.encode(nameParts[1], "UTF-8"));
@@ -302,13 +291,13 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
         }
         if (name.startsWith("#if:")) {
             final String testString = nameParts.length == 1 ? "" : nameParts[1];
-            writer.text(call.getProcessedParameter(testString.length() > 0 ? 0 : 1, context));
+            writer.text(context.evaluate(call.getParameter(testString.length() > 0 ? 0 : 1)));
             return true;
         }
         if (name.startsWith("#ifeq:")) {
             final String testString1 = nameParts[1];
-            final String testString2 = call.getProcessedParameter(0, context);
-            writer.text(call.getProcessedParameter(testString1.equals(testString2) ? 1 : 2, context));
+            final String testString2 = context.evaluate(call.getParameter(0));
+            writer.text(context.evaluate(call.getParameter(testString1.equals(testString2) ? 1 : 2)));
             return true;
         }
         if (name.startsWith("#iferror:")) {
@@ -322,11 +311,11 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
         }
         if (name.startsWith("#switch:")) {
             final String testString = nameParts[1];
-            final DefaultTemplateCall.Parameter matchedCase = call.getParameter(testString);
+            final JsonNode matchedCase = call.getParameter(testString);
             if(matchedCase == null) {
-                writer.text(call.getProcessedParameter(call.getParametersCount() - 1, context));
+                writer.text(context.evaluate(call.getParameter(call.getParametersCount() - 1)));
             } else {
-                writer.text(matchedCase.value.evaluate(context));
+                writer.text(context.evaluate(matchedCase));
             }
             return true;
         }

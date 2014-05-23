@@ -1,20 +1,20 @@
 package com.machinelinking.template;
 
+import com.machinelinking.pagestruct.WikiTextSerializerHandlerFactory;
 import com.machinelinking.parser.WikiTextParser;
 import com.machinelinking.parser.WikiTextParserException;
-import com.machinelinking.render.DefaultHTMLWriter;
-import com.machinelinking.render.HTMLWriter;
+import com.machinelinking.render.DefaultDocumentContext;
+import com.machinelinking.render.DefaultHTMLRenderFactory;
+import com.machinelinking.render.DocumentContext;
+import com.machinelinking.serializer.JSONSerializer;
+import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
-import org.junit.Before;
+import org.codehaus.jackson.JsonNode;
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.StringReader;
 import java.net.URL;
 import java.util.Collections;
 import java.util.HashMap;
@@ -22,19 +22,12 @@ import java.util.Map;
 
 public class DefaultTemplateProcessorTest {
 
-    private TemplateProcessor processor;
-
-    @Before
-    public void setUp() {
-        processor = new DefaultTemplateProcessor();
-    }
-
     @Test
     public void testProcessVariable() throws Exception {
         for(String var : DefaultTemplateProcessor.VARIABLES) {
             Assert.assertEquals(
-                    processWikitext(String.format("{{%s}}", var)),
-                    String.format("(variable %s)", var)
+                    String.format("(variable %s)", var),
+                    processWikitext(String.format("{{%s}}", var))
             );
         }
     }
@@ -43,8 +36,8 @@ public class DefaultTemplateProcessorTest {
     public void testProcessMetadata() throws Exception {
         for(String var : DefaultTemplateProcessor.METADATA) {
             Assert.assertEquals(
-                    processWikitext(String.format("{{%s}}", var)),
-                    String.format("(metadata %s)", var)
+                    String.format("(metadata %s)", var),
+                    processWikitext(String.format("{{%s}}", var))
             );
         }
     }
@@ -101,7 +94,7 @@ public class DefaultTemplateProcessorTest {
         );
         checkProcess(
                 "{{#tag:t|content|k1=v1|k2=v2|k3}}",
-                "&lt;t k3 k1=\"v1\" k2=\"v2\"&gtcontent&lt;/t&gt"
+                "<t k3 k1=\"v1\" k2=\"v2\">content</t>"
         );
     }
 
@@ -275,20 +268,18 @@ public class DefaultTemplateProcessorTest {
 
     private String processWikitext(String wikiText, Map<String,String> contextMap)
     throws IOException, WikiTextParserException, TemplateProcessorException {
-        final TemplateCallBuilder builder = new TemplateCallBuilder();
-        final WikiTextParser parser = new WikiTextParser(builder);
-        parser.parse(new URL("http://en.wikipedia.org/page/Test"), new BufferedReader(
-                new InputStreamReader(new ByteArrayInputStream(wikiText.getBytes())))
+        final URL documentURL = new URL("http://en.wikipedia.org/page/Test");
+        final ByteArrayOutputStream jsonBuffer = new ByteArrayOutputStream();
+        final JSONSerializer serializer = new JSONSerializer(jsonBuffer);
+        final WikiTextParser parser = new WikiTextParser(
+                WikiTextSerializerHandlerFactory.getInstance().createSerializerHandler(serializer)
         );
+        parser.parse(documentURL, new StringReader(wikiText));
+        final JsonNode root = JSONUtils.parseJSON(jsonBuffer.toString()); // TODO: optimize
+        final JsonNode fragment = root.get("structure").get(0);
 
-        final EvaluationContext context = new EvaluationContext(
-                processor, "en", "en.wikipedia.org", contextMap
-        );
-        final ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        final HTMLWriter writer = new DefaultHTMLWriter(new BufferedWriter(new OutputStreamWriter(baos)));
-        processor.process(context, builder.getValue(), writer);
-        writer.flush();
-        return baos.toString();
+        final DocumentContext context = new DefaultDocumentContext(documentURL, contextMap);
+        return DefaultHTMLRenderFactory.getInstance().createRender(false).renderFragment(context, fragment);
     }
 
     private String processWikitext(String wikiText)
