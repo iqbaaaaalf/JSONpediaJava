@@ -1,5 +1,6 @@
 package com.machinelinking.render;
 
+import com.machinelinking.pagestruct.PageStructConsts;
 import com.machinelinking.util.DefaultJsonPathBuilder;
 import com.machinelinking.util.JSONUtils;
 import com.machinelinking.util.JsonPathBuilder;
@@ -122,7 +123,7 @@ public class DefaultHTMLRender implements HTMLRender {
     @Override
     public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
         if(node == null) return;
-        final JsonNode type = node.get(TemplateConstants.TYPE_ATTR);
+        final JsonNode type = node.get(PageStructConsts.TYPE_FIELD);
         NodeRender targetRender = null;
         if (type != null) {
             final List<NodeRender> rendersPerType = nodeRenders.get(type.asText());
@@ -272,7 +273,7 @@ public class DefaultHTMLRender implements HTMLRender {
         Map.Entry<String,JsonNode> entry;
         while(iter.hasNext()) {
             entry = iter.next();
-            if(TemplateConstants.TYPE_ATTR.equals(entry.getKey())) continue;
+            if(PageStructConsts.TYPE_FIELD.equals(entry.getKey())) continue;
             writer.openTag("div", OBJECT_NODE_ATTRS);
             jsonPathBuilder.field(entry.getKey());
             render(getContext(), rootRender, entry.getKey().trim(), entry.getValue(), writer);
@@ -330,7 +331,7 @@ public class DefaultHTMLRender implements HTMLRender {
 
     // TODO: should write any metadata available
     private String writeNodeMetadata(JsonNode node, HTMLWriter writer) throws IOException {
-        final JsonNode typeNode = node.get(TemplateConstants.TYPE_ATTR);
+        final JsonNode typeNode = node.get(PageStructConsts.TYPE_FIELD);
         final String type;
         if(typeNode == null) {
             type = null;
