@@ -122,6 +122,11 @@ public class TextHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
+    public void parameter(String param) {
+        decoratedHandler.parameter(param);
+    }
+
+    @Override
     public void text(String content) {
         if(nestedStructures < 0) throw new AssertionError("Invalid value, must be >= 0");
         if(nestedStructures > 0) {
