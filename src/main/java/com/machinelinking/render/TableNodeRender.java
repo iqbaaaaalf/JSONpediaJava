@@ -1,5 +1,6 @@
 package com.machinelinking.render;
 
+import com.machinelinking.pagestruct.PageStructConsts;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
@@ -25,7 +26,7 @@ public class TableNodeRender implements NodeRender {
     @Override
     public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
     throws IOException {
-        final JsonNode content = node.get(TemplateConstants.TEMPLATE_CONTENT);
+        final JsonNode content = node.get(PageStructConsts.CONTENT_FIELD);
         writer.openTable("Table", TABLE_ATTR);
 
         writer.openTableRow();
@@ -44,7 +45,7 @@ public class TableNodeRender implements NodeRender {
             cell = content.get(i);
             if( isBodyCell(cell) ) {
                 writer.openTableRow();
-                final JsonNode rowContent = cell.get(TemplateConstants.TEMPLATE_CONTENT);
+                final JsonNode rowContent = cell.get(PageStructConsts.CONTENT_FIELD);
                 for(int j = 0; j < rowContent.size(); j++) {
                     writer.openTableCol();
                     rootRender.render(context, rootRender, rowContent.get(j), writer);
@@ -67,7 +68,7 @@ public class TableNodeRender implements NodeRender {
     }
 
     private boolean checkCellType(JsonNode node, String t) {
-        final JsonNode type = node.get(TemplateConstants.TYPE_ATTR);
+        final JsonNode type = node.get(PageStructConsts.TYPE_FIELD);
         return type != null && t.equals(type.asText());
     }
 

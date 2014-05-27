@@ -20,7 +20,7 @@ import java.util.TreeSet;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class DefaultTemplateProcessor implements TemplateProcessor {
+class DefaultTemplateProcessor implements TemplateProcessor {
 
     /**
      * From http://en.wikipedia.org/wiki/Help:Magic_words
@@ -322,7 +322,8 @@ public class DefaultTemplateProcessor implements TemplateProcessor {
         return false;
     }
 
-    private boolean processHandlers(EvaluationContext context, TemplateCall call, HTMLWriter writer) {
+    private boolean processHandlers(EvaluationContext context, TemplateCall call, HTMLWriter writer)
+    throws TemplateCallHandlerException {
         for(TemplateCallHandler handler : handlers) {
             if(handler.process(context, call, writer))
                 return true;

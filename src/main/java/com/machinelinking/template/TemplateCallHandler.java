@@ -8,6 +8,6 @@ import com.machinelinking.render.HTMLWriter;
  */
 public interface TemplateCallHandler {
 
-    boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer);
+    boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer) throws TemplateCallHandlerException;
 
 }

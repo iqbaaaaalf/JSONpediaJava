@@ -34,9 +34,6 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         render.addNodeRender("link"     , new LinkNodeRender());
         render.addNodeRender("section"  , new SectionRender());
         render.addNodeRender("template" , new TemplateNodeRender()); //TODO: avoid dependency with template package
-        render.addNodeRender("template" , new CiteWebNodeRender());
-        render.addNodeRender("template" , new CitationNodeRender());
-        render.addNodeRender("template" , new MainNodeRender());
         render.addNodeRender("table"    , new TableNodeRender());
         render.addKeyValueRender("url"        , new URLKeyValueRender());
         render.addKeyValueRender("archiveurl" , new URLKeyValueRender());

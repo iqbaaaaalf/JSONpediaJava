@@ -11,7 +11,15 @@ import org.codehaus.jackson.JsonNode;
  */
 public class TemplateNodeRender implements NodeRender {
 
-    private final TemplateProcessor processor = new DefaultTemplateProcessor();
+    private final TemplateProcessor processor;
+
+    public TemplateNodeRender(TemplateProcessor processor) {
+        this.processor = processor;
+    }
+
+    public TemplateNodeRender() {
+        this( DefaultTemplateProcessorFactory.getInstance().createProcessor() );
+    }
 
     @Override
     public boolean acceptNode(JsonContext context, JsonNode node) {

@@ -28,11 +28,21 @@ public class TemplateCallBuilder {
         String paramName;
         for(Map.Entry<String,JsonNode> entry : JSONUtils.toIterable(content.getFields())) {
             paramName = entry.getKey().startsWith(PageStructConsts.ANON_NAME_PREFIX) ? null : entry.getKey();
-            parameters.add(new TemplateCall.Parameter(paramName, entry.getValue()));
+            parameters.add(new TemplateCall.Parameter(paramName, simplifySingleElemArray(entry.getValue())));
         }
         return new DefaultTemplateCall(
                 name,
                 parameters.toArray( new TemplateCall.Parameter[parameters.size()])
         );
     }
+
+    //TODO: remove when introduced serialization with single array elem avoidance.
+    private JsonNode simplifySingleElemArray(JsonNode e) {
+        if(e.isArray() && e.size() == 1) {
+            return e.get(0);
+        } else {
+            return e;
+        }
+    }
+
 }

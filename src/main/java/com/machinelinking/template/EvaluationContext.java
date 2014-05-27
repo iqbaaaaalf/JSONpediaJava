@@ -68,6 +68,10 @@ public class EvaluationContext {
         return result;
     }
 
+    public void evaluate(String field, JsonNode value, HTMLWriter writer) throws IOException {
+        rootRender.render(this.jsonContext, rootRender, field, value, writer);
+    }
+
     private void evaluate(ArrayNode array, StringBuilder sb) {
         for(JsonNode elem : array) {
             evaluate(elem, sb);
