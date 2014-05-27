@@ -51,7 +51,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.openObject();
         serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_VAR);
         serializer.fieldValue(PageStructConsts.NAME_FIELD, v.name);
-        serializer.fieldValue(PageStructConsts.DEFAULT_FIELD, v.defaultValue);
+        serializer.fieldValue(PageStructConsts.DEFAULT_FIELD, v.defaultValue == null ? null : v.defaultValue.serialize());
         serializer.closeObject();
     }
 
