@@ -67,14 +67,15 @@ public class WikiEnricherTest {
                 this.getClass().getResourceAsStream(jsonOutExpectedFile)
         );
         final JsonNode extractedJSON = JSONUtils.parseJSON(baos.toString());
-        resetConfidence(expectedJSON);
-        resetConfidence(extractedJSON);
+        removeVariableData(expectedJSON);
+        removeVariableData(extractedJSON);
         Assert.assertTrue( expectedJSON.equals(extractedJSON) );
     }
 
-    private void resetConfidence(JsonNode node) {
+    private void removeVariableData(JsonNode node) {
         final ObjectNode onode = (ObjectNode) node.get("freebase");
         if(onode != null) onode.put("score", 0);
+        ((ObjectNode) node).put("abstract", (String) null);
     }
 
 }
