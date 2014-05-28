@@ -250,7 +250,7 @@ public class JSONUtils {
                 toHumanReadable(e.getValue(), sb);
                 continue;
             }
-            if(e.getKey().startsWith(JSONSerializer.ANON_FIELD_PREFIX)) {
+            if(e.getKey().startsWith(PageStructConsts.ANON_NAME_PREFIX)) {
                 toHumanReadable(e.getValue(), sb);
                 continue;
             }
