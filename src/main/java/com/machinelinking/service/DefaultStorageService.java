@@ -24,6 +24,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.net.URLDecoder;
 
 /**
  * Default implementation of {@link com.machinelinking.service.StorageService}.
@@ -99,8 +100,8 @@ public class DefaultStorageService implements StorageService {
     ) {
         try {
             criteria = trimIfNotNull(criteria);
-            map = trimIfNotNull(map);
-            reduce = trimIfNotNull(reduce);
+            map = trimIfNotNull(URLDecoder.decode(map, "utf8"));
+            reduce = trimIfNotNull(URLDecoder.decode(reduce, "utf8"));
 
             assertParam(map, "map param must be specified");
             assertParam(reduce, "reduce param must be specified");

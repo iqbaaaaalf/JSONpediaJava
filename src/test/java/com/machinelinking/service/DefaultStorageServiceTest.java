@@ -6,7 +6,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
+import java.net.URLEncoder;
 import java.util.Properties;
 
 /**
@@ -16,8 +18,23 @@ import java.util.Properties;
  */
 public class DefaultStorageServiceTest extends ServiceTestBase {
 
-    private static final String MAP_FUNC = "function() {  ocs = this.content.templates.occurrences; for(template in ocs) { emit(template, ocs[template]); } }";
-    private static final String RED_FUNC = "function(key, values) { return Array.sum(values) }";
+    private static final String MAP_FUNC;
+    private static final String RED_FUNC;
+
+    static {
+        try {
+            MAP_FUNC = URLEncoder.encode(
+                    "function() {  ocs = this.content.templates.occurrences; for(template in ocs) { emit(template, ocs[template]); } }",
+                    "utf8"
+            );
+            RED_FUNC = URLEncoder.encode(
+                    "function(key, values) { return Array.sum(values) }",
+                    "utf8"
+            );
+        } catch (UnsupportedEncodingException uee) {
+            throw new IllegalStateException(uee);
+        }
+    }
 
     @Before
     public void setUp() throws IOException {
