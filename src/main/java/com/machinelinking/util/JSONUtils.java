@@ -11,6 +11,7 @@ import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.ObjectWriter;
 import org.codehaus.jackson.util.DefaultPrettyPrinter;
+import org.codehaus.jackson.util.TokenBuffer;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -42,13 +43,36 @@ public class JSONUtils {
 
     public static JsonGenerator createJSONGenerator(Writer writer, boolean format) throws IOException {
         final JsonGenerator generator = jsonFactory.createJsonGenerator(writer);
-        if(format)
-            generator.setPrettyPrinter( new DefaultPrettyPrinter() );
+        if(format) generator.setPrettyPrinter( new DefaultPrettyPrinter() );
         return generator;
     }
 
     public static JsonGenerator createJSONGenerator(OutputStream os, boolean format) throws IOException {
         return createJSONGenerator( new OutputStreamWriter(os), format );
+    }
+
+    public static TokenBuffer createJSONBuffer() {
+        return new TokenBuffer(createObjectMapper());
+    }
+
+    public static JsonNode bufferToJSONNode(TokenBuffer b) {
+        try {
+            return createObjectMapper().readTree(b.asParser());
+        } catch (IOException ioe) {
+            throw new IllegalStateException(ioe);
+        }
+    }
+
+    public static String bufferToJSONString(TokenBuffer b, boolean format) {
+        try {
+            final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            final JsonGenerator generator = createJSONGenerator(baos, format);
+            generator.setCodec(createObjectMapper());
+            generator.writeTree(b.asParser().readValueAsTree());
+            return baos.toString();
+        } catch (IOException ioe) {
+            throw new IllegalStateException(ioe);
+        }
     }
 
     public static ObjectMapper createObjectMapper() {
@@ -73,16 +97,21 @@ public class JSONUtils {
         return (Map<String,?>) mapper.readValue(is, Map.class);
     }
 
+    public static Map<String,?> parseJSONAsMap(TokenBuffer b) throws IOException {
+        final ObjectMapper mapper = createObjectMapper();
+        return (Map<String,?>) mapper.readValue(b.asParser(), Map.class);
+    }
+
+    public static Map<String,?> parseJSONAsMap(String in) throws IOException {
+        return parseJSONAsMap(new ByteArrayInputStream(in.getBytes()));
+    }
+
     public static JsonNode parseJSON(byte[] in) throws IOException {
         return parseJSON(new ByteArrayInputStream(in));
     }
 
     public static JsonNode parseJSON(String in) throws IOException {
         return parseJSON( in.getBytes() );
-    }
-
-    public static Map<String,?> parseJSONAsMap(String in) throws IOException {
-        return parseJSONAsMap(new ByteArrayInputStream(in.getBytes()));
     }
 
     public static void jacksonNodeToSerializer(JsonNode node, Serializer serializer) {

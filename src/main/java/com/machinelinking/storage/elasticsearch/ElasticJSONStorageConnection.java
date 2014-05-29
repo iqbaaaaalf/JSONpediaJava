@@ -6,6 +6,7 @@ import com.machinelinking.storage.JSONStorageConnectionException;
 import com.machinelinking.storage.ResultSet;
 import com.machinelinking.util.JSONUtils;
 import com.machinelinking.wikimedia.WikiPage;
+import org.codehaus.jackson.util.TokenBuffer;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.client.Client;
@@ -34,9 +35,9 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
     }
 
     @Override
-    public ElasticDocument createDocument(WikiPage page, String json) throws JSONStorageConnectionException {
+    public ElasticDocument createDocument(WikiPage page, TokenBuffer buffer) throws JSONStorageConnectionException {
         try {
-            return new ElasticDocument(page.getId(), page.getRevId(), page.getTitle(), JSONUtils.parseJSONAsMap(json));
+            return new ElasticDocument(page.getId(), page.getRevId(), page.getTitle(), JSONUtils.parseJSONAsMap(buffer));
         } catch (IOException ioe) {
             throw new JSONStorageConnectionException("Error while creating document.", ioe);
         }

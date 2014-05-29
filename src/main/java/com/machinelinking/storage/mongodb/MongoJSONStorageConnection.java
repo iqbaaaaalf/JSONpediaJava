@@ -3,6 +3,7 @@ package com.machinelinking.storage.mongodb;
 import com.machinelinking.storage.DocumentConverter;
 import com.machinelinking.storage.JSONStorageConnection;
 import com.machinelinking.storage.JSONStorageConnectionException;
+import com.machinelinking.util.JSONUtils;
 import com.machinelinking.wikimedia.WikiPage;
 import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
@@ -10,6 +11,7 @@ import com.mongodb.MapReduceCommand;
 import com.mongodb.MapReduceOutput;
 import com.mongodb.util.JSON;
 import org.codehaus.jackson.JsonNode;
+import org.codehaus.jackson.util.TokenBuffer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,8 +37,8 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
     }
 
     @Override
-    public MongoDocument createDocument(WikiPage page, String json) throws JSONStorageConnectionException {
-        final DBObject dbNode = (DBObject) JSON.parse(json);
+    public MongoDocument createDocument(WikiPage page, TokenBuffer buffer) throws JSONStorageConnectionException {
+        final DBObject dbNode = (DBObject) JSON.parse(JSONUtils.bufferToJSONString(buffer, false)); //TODO: improve this serialization
         return new MongoDocument(page.getId(), page.getRevId(), page.getTitle(), dbNode);
     }
 

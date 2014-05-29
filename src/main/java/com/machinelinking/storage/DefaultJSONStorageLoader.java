@@ -9,16 +9,17 @@ import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.MongoDBDataEncoder;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.util.FileUtil;
+import com.machinelinking.util.JSONUtils;
 import com.machinelinking.wikimedia.PageProcessor;
 import com.machinelinking.wikimedia.ProcessorReport;
 import com.machinelinking.wikimedia.WikiDumpMultiThreadProcessor;
 import com.machinelinking.wikimedia.WikiPage;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.codehaus.jackson.util.TokenBuffer;
 import org.xml.sax.SAXException;
 
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -104,7 +105,6 @@ implements JSONStorageLoader {
 
         private final WikiEnricher enricher;
         private final JSONStorageConnection connection;
-        private final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         private int processedPages = 0, errorPages = 0;
         private int partialCount = 0;
         private String threadId;
@@ -136,13 +136,13 @@ implements JSONStorageLoader {
 
         @Override
         public void processPage(String pagePrefix, String threadId, WikiPage page) {
-            baos.reset();
+            final TokenBuffer buffer = JSONUtils.createJSONBuffer();
             this.threadId = threadId;
             final String pageURL = pagePrefix + page.getTitle();
 
             final Serializer serializer;
             try {
-                serializer = new JSONSerializer(baos);
+                serializer = new JSONSerializer(buffer);
                 serializer.setDataEncoder(dataEncoder);
 
                 enricher.enrichEntity(
@@ -152,8 +152,7 @@ implements JSONStorageLoader {
                         ),
                         serializer
                 );
-                // TODO: avoid string to JSON conversion and back.
-                connection.addDocument(connection.createDocument(page, baos.toString()));
+                connection.addDocument(connection.createDocument(page, buffer));
             } catch (Exception e) {
                 e.printStackTrace();
                 errorPages++;
@@ -163,7 +162,7 @@ implements JSONStorageLoader {
                     sb.append("Error while processing page [")
                             .append(pageURL)
                             .append("], generated JSON:\n ++++\n")
-                            .append(baos.toString())
+                            .append(JSONUtils.bufferToJSONString(buffer, true))
                             .append("\n++++\n");
                     sb.append("==== Begin Stack Trace =====");
                     final StringWriter sw = new StringWriter();

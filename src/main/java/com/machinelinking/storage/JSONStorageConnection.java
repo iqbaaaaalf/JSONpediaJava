@@ -1,6 +1,7 @@
 package com.machinelinking.storage;
 
 import com.machinelinking.wikimedia.WikiPage;
+import org.codehaus.jackson.util.TokenBuffer;
 
 import java.io.Closeable;
 
@@ -11,7 +12,7 @@ import java.io.Closeable;
  */
 public interface JSONStorageConnection<D extends Document, S extends Selector> extends Closeable {
 
-    D createDocument(WikiPage page, String json) throws JSONStorageConnectionException;
+    D createDocument(WikiPage page, TokenBuffer buffer) throws JSONStorageConnectionException;
 
     void addDocument(D document) throws JSONStorageConnectionException;
 

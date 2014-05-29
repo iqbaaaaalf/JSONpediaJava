@@ -10,9 +10,9 @@ import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
+import org.codehaus.jackson.util.TokenBuffer;
 import org.junit.Test;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.StringReader;
 import java.net.URL;
@@ -269,13 +269,13 @@ public class DefaultTemplateProcessorTest {
     private String processWikitext(String wikiText, Map<String,String> contextMap)
     throws IOException, WikiTextParserException, TemplateProcessorException {
         final URL documentURL = new URL("http://en.wikipedia.org/page/Test");
-        final ByteArrayOutputStream jsonBuffer = new ByteArrayOutputStream();
-        final JSONSerializer serializer = new JSONSerializer(jsonBuffer);
+        final TokenBuffer buffer = JSONUtils.createJSONBuffer();
+        final JSONSerializer serializer = new JSONSerializer(buffer);
         final WikiTextParser parser = new WikiTextParser(
                 WikiTextSerializerHandlerFactory.getInstance().createSerializerHandler(serializer)
         );
         parser.parse(documentURL, new StringReader(wikiText));
-        final JsonNode root = JSONUtils.parseJSON(jsonBuffer.toString()); // TODO: optimize
+        final JsonNode root = JSONUtils.bufferToJSONNode(buffer);
         final JsonNode fragment = root.get("structure").get(0);
 
         final DocumentContext context = new DefaultDocumentContext(documentURL, contextMap);

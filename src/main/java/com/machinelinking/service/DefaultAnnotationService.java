@@ -14,9 +14,9 @@ import com.machinelinking.render.DocumentContext;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
 import com.machinelinking.wikimedia.WikiAPIParserException;
-import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.util.TokenBuffer;
 import org.xml.sax.SAXException;
 
 import javax.ws.rs.FormParam;
@@ -28,7 +28,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -59,8 +58,6 @@ public class DefaultAnnotationService implements AnnotationService {
     };
 
     private final Pattern resourcePattern = Pattern.compile("^([a-z\\-]+):([^/]+)$");
-
-    private final ByteArrayOutputStream baos = new ByteArrayOutputStream();
 
     @Path("/flags/")
     @GET
@@ -165,16 +162,16 @@ public class DefaultAnnotationService implements AnnotationService {
         } catch (Exception e) {
             throw new IllegalArgumentException("Error while parsing filter.", e);
         }
+
+        final TokenBuffer buffer = JSONUtils.createJSONBuffer();
         try {
-            baos.reset();
-            jsonSerializer = new JSONSerializer( JSONUtils.createJSONGenerator(baos, FORMAT_JSON) );
+            jsonSerializer = new JSONSerializer(buffer);
         } catch (IOException ioe) {
             throw new IllegalStateException("Error while initializing serializer.", ioe);
         }
 
         wikiEnricher.enrichEntity(documentSource, jsonSerializer);
-        final String json = baos.toString();
-        return toOutputFormat(documentSource.getDocumentURL(), json, format, filter);
+        return toOutputFormat(documentSource.getDocumentURL(), buffer, format, filter);
     }
 
     private OutputFormat checkOutFormat(String outFormat) {
@@ -185,43 +182,48 @@ public class DefaultAnnotationService implements AnnotationService {
         }
     }
 
-    private String printOutFilterResult(JsonNode json, JSONFilter filter) throws IOException {
+    private TokenBuffer printOutFilterResult(JsonNode json, JSONFilter filter) throws IOException {
         final JsonNode[] filteredNodes = DefaultJSONFilterEngine.applyFilter(json, filter);
-        final ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        final JsonGenerator generator = JSONUtils.createJSONGenerator(baos, FORMAT_JSON);
-        generator.writeStartObject();
-        generator.writeObjectField("filter", filter.humanReadable());
-        generator.writeFieldName("result");
-        generator.writeStartArray();
+        final TokenBuffer buffer = JSONUtils.createJSONBuffer();
+        buffer.writeStartObject();
+        buffer.writeObjectField("filter", filter.humanReadable());
+        buffer.writeFieldName("result");
+        buffer.writeStartArray();
         final ObjectMapper mapper = new ObjectMapper();
         for(JsonNode filteredNode : filteredNodes) {
-            mapper.writeTree(generator, filteredNode);
+            mapper.writeTree(buffer, filteredNode);
         }
-        generator.writeEndArray();
-        generator.writeEndObject();
-        generator.close();
-        return baos.toString();
+        buffer.writeEndArray();
+        buffer.writeEndObject();
+        buffer.close();
+        return buffer;
     }
 
-    private String printOutFilterResult(String json, JSONFilter filter) throws IOException {
+    private TokenBuffer printOutFilterResult(TokenBuffer buffer, JSONFilter filter) throws IOException {
         return printOutFilterResult(
-                JSONUtils.parseJSON(json), // TODO: avoid this!
+                JSONUtils.bufferToJSONNode(buffer),
                 filter
         );
     }
 
-    private Response toOutputFormat(URL documentURL, String json, OutputFormat format, JSONFilter filter)
+    private Response toOutputFormat(URL documentURL, TokenBuffer buffer, OutputFormat format, JSONFilter filter)
     throws IOException {
         switch(format) {
             case json:
                 return Response.ok(
-                        filter.isEmpty() ? json : printOutFilterResult(json, filter),
+                        JSONUtils.bufferToJSONString(
+                                filter.isEmpty() ?
+                                        buffer
+                                        :
+                                        printOutFilterResult(buffer, filter),
+                                FORMAT_JSON
+                        ),
                         MediaType.APPLICATION_JSON + ";charset=UTF-8"
                 ).build();
             case html:
-                final JsonNode rootNode = JSONUtils.parseJSON(json); // TODO: avoid this!
+                final JsonNode rootNode = JSONUtils.bufferToJSONNode(buffer);
                 final JsonNode target   =
-                        filter.isEmpty() ? rootNode : JSONUtils.parseJSON( printOutFilterResult(rootNode, filter) ); // TODO: avoid this!
+                        filter.isEmpty() ? rootNode : JSONUtils.bufferToJSONNode(printOutFilterResult(rootNode, filter));
                 final DocumentContext context = new DefaultDocumentContext(documentURL);
                 return Response.ok(
                         DefaultHTMLRenderFactory.getInstance().createRender().renderDocument(context, target),
