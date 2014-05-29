@@ -8,7 +8,7 @@ WORK_DIR = 'work'
 MVN_BIN = 'mvn'
 MVN_HEAP_SIZE = '8g'
 LOADER = 'com.machinelinking.storage.DefaultJSONStorageLoader'
-LOADER_CONFIG = 'storage-loader.default.properties'
+LOADER_CONFIG = 'default.properties'
 
 
 import urllib
@@ -85,7 +85,7 @@ def process_articles_dumps(config, n):
 
 if __name__ == '__main__':
     """
-    Example usage: bin/loader.py conf/storage-loader.default.properties 1
+    Example usage: bin/loader.py conf/default.properties 1
     """
     import sys
     if len(sys.argv) != 3:
