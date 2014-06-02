@@ -71,13 +71,10 @@
                 e.preventDefault();
                 updateMongoMapRedQuery();
             });
-            $('.mongo-mapred-map-example').click(function (e) {
-                $('#mongo-mapred-map').val($(e.target).text());
-                e.preventDefault();
-                updateMongoMapRedQuery();
-            });
-            $('.mongo-mapred-red-example').click(function (e) {
-                $('#mongo-mapred-red').val($(e.target).text());
+            $('.mongo-mapred-example').click(function (e) {
+                $a = $(e.target);
+                $('#mongo-mapred-map').val($a.attr('map'));
+                $('#mongo-mapred-red').val($a.attr('red'));
                 e.preventDefault();
                 updateMongoMapRedQuery();
             });
@@ -183,13 +180,13 @@
             _map = $('#mongo-mapred-map').val();
             red = $('#mongo-mapred-red').val();
             limit = $('#mongo-mapred-limit').val();
-            if(criteria.trim().length == 0) throw new Error("Invalid criteria");
+            //if(criteria.trim().length == 0) throw new Error("Invalid criteria");
             if(limit != "" && !isNumeric(limit)) throw new Error("Invalid limit");
             return '/storage/mongo/mapred?' +
                 'map=' + encodeURIComponent(_map) + '&' +
                 'reduce=' + encodeURIComponent(red) + '&' +
                 'criteria=' + encodeURIComponent(criteria) + '&' +
-                'limit=' + (limit.trim().length == 0 || limit == $('#mongo-mapred-limit').attr('placeholder') ? '' : '&limit=' + limit)
+                (limit.trim().length == 0 || limit == $('#mongo-mapred-limit').attr('placeholder') ? '' : '&limit=' + limit)
         }
 
         function updateMongoSelectQuery() {
@@ -332,19 +329,28 @@
     </div>
 
     <div class="form-group">
+        <label class="control-label col-md-1"></label>
+        <div class="col-md-6">
+            <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Map/reduce function samples <span class="caret"></span></button>
+                <ul class="dropdown-menu pull-left">
+                    <li><a
+                            class="mongo-mapred-example dropdown-list-button"
+                            href="#"
+                            map="function() { ocs = this.content.templates.occurrences; for(template in ocs) { emit(template, ocs[template]); } }"
+                            red="function(key, values) { return Array.sum(values) }"
+                        >Count template occurrences</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
         <label class="control-label col-md-1" for="mongo-mapred-map">Map function</label>
         <div class="col-md-6">
-            <div class="input-group">
-                <input class="form-control" id="mongo-mapred-map" type="text"
-                       placeholder="function() { this... emit(key, val); }">
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        Map func samples <span class="caret"></span></button>
-                    <ul class="dropdown-menu pull-right">
-                        <li><a class="mongo-mapred-map-example dropdown-list-button" href="#">function() {  ocs = this.content.templates.occurrences; for(template in ocs) { emit(template, ocs[template]); } }</a></li>
-                    </ul>
-                </div>
-            </div>
+            <input class="form-control" id="mongo-mapred-map" type="text" placeholder="function() { this... emit(key, val); }">
         </div>
         <i id="mapred-map-help" class="glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Map function help"></i>
     </div>
@@ -352,17 +358,7 @@
     <div class="form-group">
         <label class="control-label col-md-1" for="mongo-mapred-red">Reduce function</label>
         <div class="col-md-6">
-            <div class="input-group">
-                <input class="form-control" id="mongo-mapred-red" type="text"
-                       placeholder="function(key, vals) { return ... }">
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        Red func samples <span class="caret"></span></button>
-                    <ul class="dropdown-menu pull-right">
-                        <li><a class="mongo-mapred-red-example dropdown-list-button" href="#">function(key, values) { return Array.sum(values) }</a></li>
-                    </ul>
-                </div>
-            </div>
+            <input class="form-control" id="mongo-mapred-red" type="text" placeholder="function(key, vals) { return ... }">
         </div>
         <i id="mapred-red-help" class="glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Reduce function help"></i>
     </div>
