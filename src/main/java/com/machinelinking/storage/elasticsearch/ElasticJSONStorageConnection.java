@@ -1,15 +1,20 @@
 package com.machinelinking.storage.elasticsearch;
 
+import com.machinelinking.storage.Criteria;
 import com.machinelinking.storage.DocumentConverter;
 import com.machinelinking.storage.JSONStorageConnection;
 import com.machinelinking.storage.JSONStorageConnectionException;
-import com.machinelinking.storage.ResultSet;
 import com.machinelinking.util.JSONUtils;
 import com.machinelinking.wikimedia.WikiPage;
 import org.codehaus.jackson.util.TokenBuffer;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
 import org.elasticsearch.action.get.GetResponse;
+import org.elasticsearch.action.search.SearchRequestBuilder;
+import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.action.search.SearchType;
 import org.elasticsearch.client.Client;
+import org.elasticsearch.index.query.BoolQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
 
 import java.io.IOException;
 
@@ -77,8 +82,22 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
     }
 
     @Override
-    public ResultSet<ElasticDocument> query(ElasticSelector selector, int limit) {
-        throw new UnsupportedOperationException();
+    public ElasticResultSet query(ElasticSelector selector, int limit) throws JSONStorageConnectionException {
+        try {
+            SearchRequestBuilder requestBuilder = client
+                    .prepareSearch()
+                    .setSearchType(SearchType.DFS_QUERY_THEN_FETCH);
+            BoolQueryBuilder queryBuilder = QueryBuilders.boolQuery();
+            for(Criteria criteria : selector.getCriterias()) {
+                queryBuilder.should(QueryBuilders.termQuery(criteria.field == null ? "" : criteria.field, criteria.value));
+            }
+            requestBuilder.setQuery(queryBuilder);
+            requestBuilder.setFrom(0).setSize(limit).setExplain(false);
+            final SearchResponse response = requestBuilder.execute().actionGet();
+            return new ElasticResultSet(requestBuilder.toString(), response);
+        } catch (Exception e) {
+            throw new JSONStorageConnectionException("Error while waiting for response.", e);
+        }
     }
 
     @Override

@@ -21,7 +21,8 @@ import java.io.IOException;
  */
 public class MongoJSONStorageTest {
 
-    private static String TEST_COLLECTION = "test_load_table";
+    public static String TEST_DB = "test_db";
+    public static String TEST_COLLECTION = "test_collection";
 
     private static final String MAP_FUNC = "function() {  ocs = this.content.templates.occurrences; for(template in ocs) { emit(template, ocs[template]); } }";
     private static final String RED_FUNC = "function(key, values) { return Array.sum(values) }";
@@ -90,7 +91,7 @@ public class MongoJSONStorageTest {
     private MongoJSONStorage getStorage() {
         final MongoJSONStorageFactory factory = new MongoJSONStorageFactory();
         return factory.createStorage(
-                factory.createConfiguration("localhost:7654:test_load:test_collection")
+                factory.createConfiguration(String.format("localhost:7654:%s:%s", TEST_DB, TEST_COLLECTION))
         );
     }
 

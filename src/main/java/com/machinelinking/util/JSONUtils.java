@@ -10,6 +10,7 @@ import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.ObjectWriter;
+import org.codehaus.jackson.node.JsonNodeFactory;
 import org.codehaus.jackson.util.DefaultPrettyPrinter;
 import org.codehaus.jackson.util.TokenBuffer;
 
@@ -36,9 +37,13 @@ public class JSONUtils {
     private static final ObjectWriter prettyWriter;
 
     static {
-        ObjectMapper mapper = new ObjectMapper();
+        ObjectMapper mapper = createObjectMapper();
         writer = mapper.writer();
         prettyWriter = writer.withDefaultPrettyPrinter();
+    }
+
+    public static JsonNodeFactory getJsonNodeFactory() {
+        return JsonNodeFactory.instance;
     }
 
     public static JsonGenerator createJSONGenerator(Writer writer, boolean format) throws IOException {
@@ -174,6 +179,10 @@ public class JSONUtils {
         final StringBuilder sb = new StringBuilder();
         toHumanReadable(node, sb);
         return sb.toString();
+    }
+
+    public static JsonNode toJsonNode(Map<String,?> map) {
+        return createObjectMapper().valueToTree(map);
     }
 
     public static JsonNode getFieldOrFail(String field, JsonNode parent, String errMessage) {

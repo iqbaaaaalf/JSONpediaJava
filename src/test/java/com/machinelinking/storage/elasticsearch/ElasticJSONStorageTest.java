@@ -16,13 +16,18 @@ import java.util.Map;
  */
 public class ElasticJSONStorageTest {
 
+    public static String TEST_DB = "test_db";
+    public static String TEST_COLLECTION = "test_collection";
+
     private Logger logger = Logger.getLogger(ElasticJSONStorageTest.class);
 
     @Test
     public void testLoad() throws IOException {
         final ElasticJSONStorageFactory factory = new ElasticJSONStorageFactory();
         final ElasticJSONStorage storage = factory.createStorage(
-                factory.createConfiguration("localhost:9300:test_load:test_collection")
+                factory.createConfiguration(
+                        String.format("localhost:9300:%s:%s", TEST_DB, TEST_COLLECTION)
+                )
         );
 
         final Map<String,?> data = JSONUtils.parseJSONAsMap(
@@ -31,7 +36,7 @@ public class ElasticJSONStorageTest {
         removeUnindexableFields(data);
 
         long start = 0;
-        try (final ElasticJSONStorageConnection connection = storage.openConnection("test_load_table")
+        try (final ElasticJSONStorageConnection connection = storage.openConnection(TEST_COLLECTION)
         ) {
             start = System.currentTimeMillis();
             for (int i = 0; i < 1000; i++) {

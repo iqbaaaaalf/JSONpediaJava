@@ -1,5 +1,7 @@
 package com.machinelinking.service;
 
+import com.machinelinking.storage.elasticsearch.ElasticJSONStorageTest;
+import com.machinelinking.storage.mongodb.MongoJSONStorageTest;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
 import org.junit.Before;
@@ -43,7 +45,15 @@ public class DefaultStorageServiceTest extends ServiceTestBase {
         if(!ConfigurationManager.getInstance().isInitialized()) {
             final Properties properties = new Properties();
             properties.put(
-                    DefaultStorageService.STORAGE_SERVICE_CONNECTION_PROP, "localhost:7654:test_load:test_load_table"
+                    DefaultStorageService.STORAGE_SERVICE_CONNECTION_MONGO_PROP,
+                    String.format("localhost:7654:%s:%s",
+                            MongoJSONStorageTest.TEST_DB, MongoJSONStorageTest.TEST_COLLECTION
+                    )
+            );
+            properties.put(
+                    DefaultStorageService.STORAGE_SERVICE_CONNECTION_ELASTIC_PROP,
+                    String.format("localhost:9300:%s:%s",
+                            ElasticJSONStorageTest.TEST_DB, ElasticJSONStorageTest.TEST_COLLECTION)
             );
             properties.put(DefaultStorageService.STORAGE_SERVICE_QUERY_LIMIT_PROP, Integer.toString(1000));
             ConfigurationManager.getInstance().initProperties(properties);
@@ -137,6 +147,34 @@ public class DefaultStorageServiceTest extends ServiceTestBase {
                         .queryParam("criteria", "")
                         .queryParam("map", "xxx")
                         .queryParam("reduce", RED_FUNC)
+                        .build()
+        );
+    }
+
+    @Test
+    public void testElasticSelect() throws URISyntaxException, IOException, ConnectionException {
+        final JsonNode output = performQuery(
+            buildPath(DefaultStorageService.class, "elastic/select")
+                    .queryParam("q", "_id:1 _id:735 albert")
+                    .queryParam("limit", Integer.toString(10))
+                    .build()
+        );
+
+        Assert.assertEquals(
+                "{\"from\":0,\"size\":10,\"query\":{\"bool\":{\"should\":[{\"term\":{\"_id\":\"1\"}},{\"term\":{\"_id\":\"735\"}},{\"term\":{\"\":\"albert\"}}]}},\"explain\":false}",
+                output.get("elastic-query").asText().replaceAll("\\s+", "")
+        );
+        Assert.assertEquals(4, output.get("count").asInt());
+        Assert.assertNotNull(output.get("result"));
+        Assert.assertTrue(output.get("result").size() >= 1);
+    }
+
+    @Test
+    public void testElasticSelectInvalidParams() throws URISyntaxException, IOException {
+        performQueryAndCheckError(
+                400,
+                buildPath(DefaultStorageService.class, "elastic/select")
+                        .queryParam("limit", "x")
                         .build()
         );
     }

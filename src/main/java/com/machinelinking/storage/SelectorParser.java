@@ -14,6 +14,6 @@ public interface SelectorParser {
      * @param qry
      * @return
      */
-    Selector parse(String qry);
+    Selector parse(String qry) throws SelectorParserException;
 
 }

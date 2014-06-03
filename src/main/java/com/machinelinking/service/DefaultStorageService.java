@@ -2,6 +2,14 @@ package com.machinelinking.service;
 
 import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.JSONFilter;
+import com.machinelinking.storage.elasticsearch.ElasticDocument;
+import com.machinelinking.storage.elasticsearch.ElasticJSONStorage;
+import com.machinelinking.storage.elasticsearch.ElasticJSONStorageConfiguration;
+import com.machinelinking.storage.elasticsearch.ElasticJSONStorageConnection;
+import com.machinelinking.storage.elasticsearch.ElasticJSONStorageFactory;
+import com.machinelinking.storage.elasticsearch.ElasticResultSet;
+import com.machinelinking.storage.elasticsearch.ElasticSelector;
+import com.machinelinking.storage.elasticsearch.ElasticSelectorParser;
 import com.machinelinking.storage.mongodb.MongoDocument;
 import com.machinelinking.storage.mongodb.MongoJSONStorage;
 import com.machinelinking.storage.mongodb.MongoJSONStorageConfiguration;
@@ -34,24 +42,40 @@ import java.net.URLDecoder;
 @Path("/storage")
 public class DefaultStorageService implements StorageService {
 
-    public static final String STORAGE_SERVICE_CONNECTION_PROP = "storage.service.connection";
+    public static final String STORAGE_SERVICE_CONNECTION_MONGO_PROP = "storage.service.connection.mongo";
+    public static final String STORAGE_SERVICE_CONNECTION_ELASTIC_PROP = "storage.service.connection.elastic";
     public static final String STORAGE_SERVICE_QUERY_LIMIT_PROP = "storage.service.query.limit";
 
     private static final Logger logger = Logger.getLogger(DefaultStorageService.class);
 
     private static final MongoSelector EMPTY_SELECTOR = new MongoSelector();
 
-    private final MongoJSONStorageConnection connection;
+    private final MongoJSONStorageConnection mongoConnection;
+    private final ElasticJSONStorageConnection elasticConnection;
+
     private final int QUERY_LIMIT;
 
     public DefaultStorageService() {
         final ConfigurationManager manager = ConfigurationManager.getInstance();
-        final String connString = manager.getProperty(STORAGE_SERVICE_CONNECTION_PROP);
         QUERY_LIMIT = Integer.parseInt(manager.getProperty(STORAGE_SERVICE_QUERY_LIMIT_PROP));
+        mongoConnection = initMongoConnection(manager);
+        elasticConnection = initElasticConnection(manager);
+    }
+
+    MongoJSONStorageConnection initMongoConnection(ConfigurationManager manager) {
+        final String connString = manager.getProperty(STORAGE_SERVICE_CONNECTION_MONGO_PROP);
         final MongoJSONStorageFactory factory = new MongoJSONStorageFactory();
         final MongoJSONStorageConfiguration configuration = factory.createConfiguration(connString);
         final MongoJSONStorage storage = factory.createStorage(configuration);
-        connection = storage.openConnection(configuration.getCollection());
+        return storage.openConnection(configuration.getCollection());
+    }
+
+    ElasticJSONStorageConnection initElasticConnection(ConfigurationManager manager) {
+        final String connString = manager.getProperty(STORAGE_SERVICE_CONNECTION_ELASTIC_PROP);
+        final ElasticJSONStorageFactory factory = new ElasticJSONStorageFactory();
+        final ElasticJSONStorageConfiguration configuration = factory.createConfiguration(connString);
+        final ElasticJSONStorage storage = factory.createStorage(configuration);
+        return storage.openConnection(configuration.getCollection());
     }
 
     @Path("/mongo/select")
@@ -72,7 +96,7 @@ public class DefaultStorageService implements StorageService {
 
             final MongoSelector mongoSelector = MongoSelectorParser.getInstance().parse(selector);
             final JSONFilter jsonFilter = DefaultJSONFilterEngine.parseFilter(filter);
-            try (final MongoResultSet rs = connection.query(mongoSelector, toMaxLimit(limit))) {
+            try (final MongoResultSet rs = mongoConnection.query(mongoSelector, toMaxLimit(limit))) {
                 return Response.ok(
                         toMongoSelectJSONOutput(mongoSelector, jsonFilter, rs),
                         MediaType.APPLICATION_JSON + ";charset=UTF-8"
@@ -113,13 +137,45 @@ public class DefaultStorageService implements StorageService {
                 mongoSelector = MongoSelectorParser.getInstance().parse(criteria);
             }
 
-            final JsonNode result = connection.processMapReduce(
+            final JsonNode result = mongoConnection.processMapReduce(
                     mongoSelector.toDBObjectSelection(), map, reduce, toMaxLimit(limit)
             );
             return Response.ok(
                     toMongoMapRedJSONOutput(mongoSelector, result),
                     MediaType.APPLICATION_JSON + ";charset=UTF-8"
             ).build();
+        } catch (IllegalArgumentException iae) {
+            throw new InvalidRequestException(iae);
+        } catch (Exception e) {
+            logger.error("Error while processing request.", e);
+            throw new InternalErrorException(e);
+        }
+    }
+
+    @Path("/elastic/select")
+    @GET
+    @Produces({
+            MediaType.APPLICATION_JSON + ";charset=UTF-8",
+    })
+    @Override
+    public Response queryElasticStorage(
+            @QueryParam("q") String selector,
+            @QueryParam("filter") String filter,
+            @QueryParam("limit") String limit
+    ) {
+        try {
+            selector = trimIfNotNull(selector);
+            filter = trimIfNotNull(filter);
+            assertParam(selector, "selector parameter must be specified");
+
+            final ElasticSelector elasticSelector = ElasticSelectorParser.getInstance().parse(selector);
+            final JSONFilter jsonFilter = DefaultJSONFilterEngine.parseFilter(filter);
+            try (final ElasticResultSet rs = elasticConnection.query(elasticSelector, toMaxLimit(limit))) {
+                return Response.ok(
+                        toElasticSelectJSONOutput(jsonFilter, rs),
+                        MediaType.APPLICATION_JSON + ";charset=UTF-8"
+                ).build();
+            }
         } catch (IllegalArgumentException iae) {
             throw new InvalidRequestException(iae);
         } catch (Exception e) {
@@ -156,8 +212,8 @@ public class DefaultStorageService implements StorageService {
     }
 
     private String toMongoSelectJSONOutput(MongoSelector selector, JSONFilter filter, MongoResultSet rs) {
-        final ObjectNode output = JsonNodeFactory.instance.objectNode();
-        final ArrayNode result = JsonNodeFactory.instance.arrayNode();
+        final ObjectNode output = JSONUtils.getJsonNodeFactory().objectNode();
+        final ArrayNode result = JSONUtils.getJsonNodeFactory().arrayNode();
         output.put("query-explain", selector.toString());
         output.put("mongo-selection", selector.toDBObjectSelection().toString());
         output.put("mongo-projection", selector.toDBObjectProjection().toString());
@@ -173,12 +229,28 @@ public class DefaultStorageService implements StorageService {
     }
 
     private String toMongoMapRedJSONOutput(MongoSelector selector, JsonNode result) {
-        final ObjectNode output = JsonNodeFactory.instance.objectNode();
+        final ObjectNode output = JSONUtils.getJsonNodeFactory().objectNode();
         output.put("query-explain", selector.toString());
         output.put("mongo-selection", selector.toDBObjectSelection().toString());
         output.put("count", result.size());
         output.put("result", result);
         return JSONUtils.serializeToJSON(output, false);
+    }
+
+    private Object toElasticSelectJSONOutput(JSONFilter filter, ElasticResultSet rs) {
+        final ObjectNode output = JSONUtils.getJsonNodeFactory().objectNode();
+        final ArrayNode result = JSONUtils.getJsonNodeFactory().arrayNode();
+        output.put("elastic-query", rs.getExplain());
+        output.put("count", rs.getCount());
+        output.put("result", result);
+        ElasticDocument nextElastic;
+        JsonNode nextJack;
+        while((nextElastic = rs.next()) != null) {
+            nextJack = JSONUtils.toJsonNode(nextElastic.getContent());
+            result.add(applyFilter(nextJack, filter));
+        }
+        return JSONUtils.serializeToJSON(output, false);
+
     }
 
 }

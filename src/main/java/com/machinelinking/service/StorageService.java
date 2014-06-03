@@ -13,4 +13,6 @@ public interface StorageService extends Service {
 
     Response mapRedMongoStorage(String criteria, String map, String reduce, String limit);
 
+    Response queryElasticStorage(String selector, String filter, String limit);
+
 }
