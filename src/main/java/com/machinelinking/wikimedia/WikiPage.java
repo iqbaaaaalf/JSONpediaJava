@@ -35,6 +35,10 @@ public class WikiPage {
         return content;
     }
 
+    public int getSize() {
+        return title.length() + content.length() + 2;
+    }
+
     @Override
     public String toString() {
         return String.format("id: %d title: %s\n\n content:%s\n", id, title, content);
