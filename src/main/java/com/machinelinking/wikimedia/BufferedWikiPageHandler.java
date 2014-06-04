@@ -1,6 +1,7 @@
 package com.machinelinking.wikimedia;
 
-import java.util.concurrent.ArrayBlockingQueue;
+import java.util.Stack;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * A <i>Wikipage</i> processing queue implementing {@link WikiPageHandler}.
@@ -9,33 +10,67 @@ import java.util.concurrent.ArrayBlockingQueue;
  */
 public class BufferedWikiPageHandler implements WikiPageHandler {
 
+    public static final int MAX_BUFFER_SIZE = 1024 * 1024; // 1MB
+
     public static final WikiPage EOQ = new WikiPage(0, 0, null, null);
 
     private final StringBuilder sb = new StringBuilder();
-    private final ArrayBlockingQueue<WikiPage> pages = new ArrayBlockingQueue<>(1024);
+    private final Stack<WikiPage> buffer = new Stack<>();
+
+    private AtomicBoolean closed = new AtomicBoolean(false);
+
+    private int bufferSize = 0;
 
     private int     id;
     private int     revId;
     private String  title;
-    private boolean eoqAdded = false;
 
-    public synchronized int size() {
-        return pages.size() - (eoqAdded ? 1 : 0);
+    public int size() {
+        synchronized (buffer) {
+            return buffer.size();
+        }
     }
 
-    public synchronized WikiPage getPage(boolean wait) {
-        try {
-            if(pages.peek() == EOQ) return EOQ;
-            return wait ? pages.take() : pages.poll();
-        } catch (InterruptedException ie) {
-            throw new RuntimeException(ie);
+    public int sizeChars() {
+        synchronized (buffer) {
+            return bufferSize;
+        }
+    }
+
+    public WikiPage getPage(boolean wait) {
+        synchronized (buffer) {
+            if (closed.get()) {
+                return EOQ;
+            }
+
+            WikiPage page;
+            while (true) {
+                page = take();
+                if (page == null) {
+                    if (wait) {
+                        try {
+                            buffer.wait();
+                        } catch (InterruptedException ie) {
+                            throw new RuntimeException("Error while waiting for buffer filling.", ie);
+                        }
+                    } else {
+                        return null;
+                    }
+                } else {
+                    buffer.notifyAll();
+                    return page;
+                }
+            }
         }
     }
 
     public void reset() {
         sb.delete(0, sb.length());
-        pages.clear();
-        eoqAdded = false;
+        synchronized (buffer) {
+            buffer.clear();
+            bufferSize = 0;
+            closed.set(false);
+        }
     }
 
     @Override
@@ -57,22 +92,35 @@ public class BufferedWikiPageHandler implements WikiPageHandler {
 
     @Override
     public void endWikiPage() {
-        try {
-            pages.put(new WikiPage(this.id, this.revId, this.title, sb.toString()));
-        } catch (InterruptedException ie) {
-            throw new IllegalStateException("Something went wrong.", ie);
-        }
+        final String content = sb.toString();
         sb.delete(0, sb.length());
+        synchronized (buffer) {
+            final WikiPage page = new WikiPage(this.id, this.revId, this.title, content);
+            buffer.push(page);
+            bufferSize += page.getSize();
+            buffer.notifyAll();
+            while (bufferSize >= MAX_BUFFER_SIZE) try {
+                buffer.notifyAll();
+                buffer.wait();
+            } catch (InterruptedException ie) {
+                throw new RuntimeException("Error while waiting for max size unlock.", ie);
+            }
+        }
     }
 
     @Override
     public void endStream() {
-        try {
-            pages.put(EOQ);
-        } catch (InterruptedException ie) {
-            throw new IllegalStateException("Error while closing queue.", ie);
+        closed.set(true);
+        synchronized (buffer) {
+            buffer.notifyAll();
         }
-        eoqAdded = true;
+    }
+
+    private WikiPage take() {
+        if(buffer.isEmpty()) return null;
+        final WikiPage page = buffer.pop();
+        bufferSize -= page.getSize();
+        return page;
     }
 
 }
