@@ -62,7 +62,7 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
         return process(pagePrefix, is, getBestNumberOfThreads());
     }
 
-    public ProcessorReport process(URL pagePrefix, InputStream is, int threads) throws IOException, SAXException {
+    public ProcessorReport process(URL pagePrefix, final InputStream is, int threads) throws IOException, SAXException {
         if(pagePrefix == null) throw new NullPointerException();
         if (threads <= 0) throw new IllegalArgumentException("Invalid number of threads: " + threads);
         this.pagePrefix = pagePrefix;
@@ -73,7 +73,7 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
 
         initProcess();
 
-        WikiDumpParser dumpParser = new WikiDumpParser();
+        final WikiDumpParser dumpParser = new WikiDumpParser();
         final BufferedWikiPageHandler bufferedHandler = new BufferedWikiPageHandler();
 
         final List<Future> futures = new ArrayList<>();
@@ -91,7 +91,22 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
             futures.add(future);
         }
 
-        dumpParser.parse(bufferedHandler, is);
+        final Thread parserThread = new Thread( new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    dumpParser.parse(bufferedHandler, is);
+                } catch (Exception e) {
+                    throw new RuntimeException("Error while processing parse stream.", e);
+                }
+            }
+        });
+        try {
+            parserThread.start();
+            parserThread.join();
+        } catch (InterruptedException ie) {
+            throw new RuntimeException("Interrupted parser thread.", ie);
+        }
 
         final ProcessorReport report;
         try {
