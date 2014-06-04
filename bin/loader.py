@@ -5,7 +5,7 @@ LATEST_DUMPS = 'http://dumps.wikimedia.org/enwiki/latest/'
 
 WORK_DIR = 'work'
 
-MVN_BIN = 'mvn'
+GRADLE_BIN = 'gradle'
 MVN_HEAP_SIZE = '8g'
 LOADER = 'com.machinelinking.storage.DefaultJSONStorageLoader'
 LOADER_CONFIG = 'default.properties'
@@ -55,8 +55,8 @@ def download_file(url, dir, file):
 
 
 def ingest_file(config, file):
-    cmd = "MAVEN_OPTS='-Xms%s -Xmx%s -Dlog4j.configuration=file:conf/log4j.properties' %s exec:java -Dexec.mainClass=%s -Dexec.args='%s %s' 2>&1 1> %s.log" \
-          % (MVN_HEAP_SIZE, MVN_HEAP_SIZE, MVN_BIN, LOADER, config, file, file)
+    cmd = "GRADLE_OPTS='-Xms%s -Xmx%s -Dlog4j.configuration=file:conf/log4j.properties' %s runLoader -Pconfig=%s -Pdump=%s 2>&1 1> %s.log" \
+          % (MVN_HEAP_SIZE, MVN_HEAP_SIZE, GRADLE_BIN, config, file, file)
     print 'Executing command:', cmd
     subprocess.check_call(cmd, shell=True)
 
