@@ -136,11 +136,18 @@
                             "__an0": {
                                 "__type": "list",
                                 "content": [
-                                    "Inventing the",
                                     {
-                                        "__type": "reference",
-                                        "label": "World Wide Web",
-                                        "content": {}
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            "Inventing the",
+                                            {
+                                                "__type": "reference",
+                                                "label": "World Wide Web",
+                                                "content": {}
+                                            }
+                                        ]
                                     },
                                     {
                                         "__type": "list_item",
@@ -177,9 +184,16 @@
                                 "__type": "list",
                                 "content": [
                                     {
-                                        "__type": "reference",
-                                        "label": "World Wide Web Consortium",
-                                        "content": {}
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "World Wide Web Consortium",
+                                                "content": {}
+                                            }
+                                        ]
                                     },
                                     {
                                         "__type": "list_item",
@@ -224,9 +238,16 @@
                                 "__type": "list",
                                 "content": [
                                     {
-                                        "__type": "reference",
-                                        "label": "Conway Berners-Lee",
-                                        "content": {}
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Conway Berners-Lee",
+                                                "content": {}
+                                            }
+                                        ]
                                     },
                                     {
                                         "__type": "list_item",

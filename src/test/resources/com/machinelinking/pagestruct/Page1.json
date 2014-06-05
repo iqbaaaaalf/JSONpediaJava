@@ -158,15 +158,22 @@
                                 "__type": "list",
                                 "content": [
                                     {
-                                        "__type": "reference",
-                                        "label": "Kingdom of Württemberg",
-                                        "content": {
-                                            "__an0": [
-                                                "Württemberg/Germany"
-                                            ]
-                                        }
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Kingdom of Württemberg",
+                                                "content": {
+                                                    "__an0": [
+                                                        "Württemberg/Germany"
+                                                    ]
+                                                }
+                                            },
+                                            "(1879–1896)"
+                                        ]
                                     },
-                                    "(1879–1896)",
                                     {
                                         "__type": "list_item",
                                         "level": 1,
@@ -262,19 +269,26 @@
                             "__an0": {
                                 "__type": "list",
                                 "content": [
-                                    "Swiss",
                                     {
-                                        "__type": "reference",
-                                        "label": "Patent Office",
-                                        "content": {}
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            "Swiss",
+                                            {
+                                                "__type": "reference",
+                                                "label": "Patent Office",
+                                                "content": {}
+                                            },
+                                            "(",
+                                            {
+                                                "__type": "reference",
+                                                "label": "Bern",
+                                                "content": {}
+                                            },
+                                            ")"
+                                        ]
                                     },
-                                    "(",
-                                    {
-                                        "__type": "reference",
-                                        "label": "Bern",
-                                        "content": {}
-                                    },
-                                    ")",
                                     {
                                         "__type": "list_item",
                                         "level": 1,
@@ -377,9 +391,16 @@
                                 "__type": "list",
                                 "content": [
                                     {
-                                        "__type": "reference",
-                                        "label": "ETH Zurich",
-                                        "content": {}
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "ETH Zurich",
+                                                "content": {}
+                                            }
+                                        ]
                                     },
                                     {
                                         "__type": "list_item",
@@ -421,9 +442,16 @@
                                 "__type": "list",
                                 "content": [
                                     {
-                                        "__type": "reference",
-                                        "label": "Ernst G. Straus",
-                                        "content": {}
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Ernst G. Straus",
+                                                "content": {}
+                                            }
+                                        ]
                                     },
                                     {
                                         "__type": "list_item",
@@ -511,15 +539,22 @@
                                 "__type": "list",
                                 "content": [
                                     {
-                                        "__type": "reference",
-                                        "label": "General relativity",
-                                        "content": {}
-                                    },
-                                    "and",
-                                    {
-                                        "__type": "reference",
-                                        "label": "special relativity",
-                                        "content": {}
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "General relativity",
+                                                "content": {}
+                                            },
+                                            "and",
+                                            {
+                                                "__type": "reference",
+                                                "label": "special relativity",
+                                                "content": {}
+                                            }
+                                        ]
                                     },
                                     {
                                         "__type": "list_item",
@@ -627,11 +662,18 @@
                                 "__type": "list",
                                 "content": [
                                     {
-                                        "__type": "reference",
-                                        "label": "Nobel Prize in Physics",
-                                        "content": {}
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Nobel Prize in Physics",
+                                                "content": {}
+                                            },
+                                            "(1921)"
+                                        ]
                                     },
-                                    "(1921)",
                                     {
                                         "__type": "list_item",
                                         "level": 1,

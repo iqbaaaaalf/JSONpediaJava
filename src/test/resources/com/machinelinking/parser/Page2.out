@@ -71,7 +71,8 @@ Text: '
 k: known_for   
 Begin Template: Plainlist
 Begin List
-Text: 'Inventing the '
+List Item: Unordered 1
+Text: ' Inventing the '
 Begin Reference: World Wide Web
 End Reference: World Wide Web
 List Item: Unordered 1
@@ -91,6 +92,8 @@ Text: '
 k: employer    
 Begin Template: Plainlist
 Begin List
+List Item: Unordered 1
+Text: ' '
 Begin Reference: World Wide Web Consortium
 End Reference: World Wide Web Consortium
 List Item: Unordered 1
@@ -117,6 +120,8 @@ Text: '
 k: parents     
 Begin Template: Plainlist
 Begin List
+List Item: Unordered 1
+Text: ' '
 Begin Reference: Conway Berners-Lee
 End Reference: Conway Berners-Lee
 List Item: Unordered 1

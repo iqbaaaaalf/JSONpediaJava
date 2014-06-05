@@ -622,7 +622,8 @@ public class WikiTextParserTest {
                 "k: citizenship \n" +
                 "Begin Template: Plainlist\n" +
                 "Begin List\n" +
-                "Text: 'Germany'\n" +
+                "List Item: Unordered 1\n" +
+                "Text: ' Germany'\n" +
                 "List Item: Unordered 1\n" +
                 "Text: ' '\n" +
                 "Begin Reference: Kingdom of Württemberg\n" +
@@ -1202,6 +1203,17 @@ public class WikiTextParserTest {
         verifyParsing("Page5", false);
     }
 
+    /**
+     * Introduced so check parser looping in lists included in template params.
+     *
+     * @throws IOException
+     * @throws WikiTextParserException
+     */
+    @Test
+    public void testParseComplete6() throws IOException, WikiTextParserException {
+        verifyParsing("Page6");
+    }
+
     @Test
     public void testParseTable1() throws IOException, WikiTextParserException {
         verifyParsing("Table1");
@@ -1222,6 +1234,44 @@ public class WikiTextParserTest {
                 "Begin Link: http://link\n" +
                 "End Link: http://link\n" +
                 "Entity: '>' (gt)\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
+    public void testParseListInTemplateValue() throws IOException, WikiTextParserException {
+        parse(
+                "{{LSJ|*sminqeu/s|Σμινθεύς|shortref}}",
+
+                "Begin Document\n" +
+                "Begin Template: LSJ\n" +
+                "Begin List\n" +
+                "List Item: Unordered 1\n" +
+                "Text: 'sminqeu/s'\n" +
+                "End List\n" +
+                "k: null\n" +
+                "Text: 'Σμινθεύς'\n" +
+                "k: null\n" +
+                "Text: 'shortref'\n" +
+                "End Template: LSJ\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
+    public void testParseListAsLastTemplateValue() throws IOException, WikiTextParserException {
+        parse(
+                "{{lang|grc|*Ἀπέλjων}}",
+
+                "Begin Document\n" +
+                "Begin Template: lang\n" +
+                "k: null\n" +
+                "Text: 'grc'\n" +
+                "Begin List\n" +
+                "List Item: Unordered 1\n" +
+                "Text: 'Ἀπέλjων'\n" +
+                "End List\n" +
+                "End Template: lang\n" +
                 "End Document\n"
         );
     }

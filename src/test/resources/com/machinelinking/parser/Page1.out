@@ -95,6 +95,8 @@ Text: 'Germany, Italy, Switzerland, Austria, Belgium, United Kingdom, United Sta
 k: citizenship 
 Begin Template: Plainlist
 Begin List
+List Item: Unordered 1
+Text: ' '
 Begin Reference: Kingdom of Württemberg
 k: null
 Text: 'Württemberg/Germany'
@@ -143,7 +145,8 @@ Text: '
 k: workplaces 
 Begin Template: Plainlist
 Begin List
-Text: 'Swiss '
+List Item: Unordered 1
+Text: ' Swiss '
 Begin Reference: Patent Office
 End Reference: Patent Office
 Text: ' ('
@@ -187,6 +190,8 @@ Text: '
 k: alma_mater 
 Begin Template: Plainlist
 Begin List
+List Item: Unordered 1
+Text: ' '
 Begin Reference: ETH Zurich
 End Reference: ETH Zurich
 List Item: Unordered 1
@@ -210,6 +215,8 @@ Text: '
 k: notable_students  
 Begin Template: Plainlist
 Begin List
+List Item: Unordered 1
+Text: ' '
 Begin Reference: Ernst G. Straus
 End Reference: Ernst G. Straus
 List Item: Unordered 1
@@ -250,6 +257,8 @@ Text: '
 k: known_for 
 Begin Template: Plainlist
 Begin List
+List Item: Unordered 1
+Text: ' '
 Begin Reference: General relativity
 End Reference: General relativity
 Text: ' and '
@@ -294,6 +303,8 @@ Text: '
 k: awards 
 Begin Template: Plainlist
 Begin List
+List Item: Unordered 1
+Text: ' '
 Begin Reference: Nobel Prize in Physics
 End Reference: Nobel Prize in Physics
 Text: ' (1921)'

@@ -703,100 +703,172 @@
                     "__type": "body_cell",
                     "content": {
                         "": [
-                            "==See also===\n\n*",
                             {
-                                "__type": "reference",
-                                "label": "U.S. presidential election, 2004",
-                                "content": {
-                                    "__an0": [
-                                        "U.S. Presidential Election"
-                                    ]
-                                }
+                                "__type": "list",
+                                "content": [
+                                    {
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "U.S. presidential election, 2004",
+                                                "content": {
+                                                    "__an0": [
+                                                        "U.S. Presidential Election"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "2003 occupation of Iraq timeline",
+                                                "content": {
+                                                    "__an0": [
+                                                        "Iraq timeline"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Timeline of the War in Afghanistan (September 2003)",
+                                                "content": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "2003 California recall",
+                                                "content": {
+                                                    "__an0": [
+                                                        "California recall"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Hutton Inquiry",
+                                                "content": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Politics of Liberia",
+                                                "content": {
+                                                    "__an0": [
+                                                        "''Liberian crisis''"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "North Korea nuclear weapons program",
+                                                "content": {
+                                                    "__an0": [
+                                                        "''North Korea crisis''"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Road map for peace",
+                                                "content": {}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "Same-sex marriage in Canada",
+                                                "content": {
+                                                    "__an0": [
+                                                        "Same-sex marriage"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "SCO v. IBM Linux lawsuit",
+                                                "content": {
+                                                    "__an0": [
+                                                        "''SCO vs IBM''"
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "__type": "list_item",
+                                        "level": 1,
+                                        "item_type": "Unordered",
+                                        "content": [
+                                            {
+                                                "__type": "reference",
+                                                "label": "War on Terrorism",
+                                                "content": {}
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
-                            "*",
-                            {
-                                "__type": "reference",
-                                "label": "2003 occupation of Iraq timeline",
-                                "content": {
-                                    "__an0": [
-                                        "Iraq timeline"
-                                    ]
-                                }
-                            },
-                            "*",
-                            {
-                                "__type": "reference",
-                                "label": "Timeline of the War in Afghanistan (September 2003)",
-                                "content": {}
-                            },
-                            "*",
-                            {
-                                "__type": "reference",
-                                "label": "2003 California recall",
-                                "content": {
-                                    "__an0": [
-                                        "California recall"
-                                    ]
-                                }
-                            },
-                            "*",
-                            {
-                                "__type": "reference",
-                                "label": "Hutton Inquiry",
-                                "content": {}
-                            },
-                            "*",
-                            {
-                                "__type": "reference",
-                                "label": "Politics of Liberia",
-                                "content": {
-                                    "__an0": [
-                                        "''Liberian crisis''"
-                                    ]
-                                }
-                            },
-                            "*",
-                            {
-                                "__type": "reference",
-                                "label": "North Korea nuclear weapons program",
-                                "content": {
-                                    "__an0": [
-                                        "''North Korea crisis''"
-                                    ]
-                                }
-                            },
-                            "*",
-                            {
-                                "__type": "reference",
-                                "label": "Road map for peace",
-                                "content": {}
-                            },
-                            "*",
-                            {
-                                "__type": "reference",
-                                "label": "Same-sex marriage in Canada",
-                                "content": {
-                                    "__an0": [
-                                        "Same-sex marriage"
-                                    ]
-                                }
-                            },
-                            "*",
-                            {
-                                "__type": "reference",
-                                "label": "SCO v. IBM Linux lawsuit",
-                                "content": {
-                                    "__an0": [
-                                        "''SCO vs IBM''"
-                                    ]
-                                }
-                            },
-                            "*",
-                            {
-                                "__type": "reference",
-                                "label": "War on Terrorism",
-                                "content": {}
-                            }
+                            "==See also==="
                         ]
                     }
                 }

@@ -17,6 +17,7 @@ import java.util.List;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 // TODO HIGH: error detection is not working, see BrokenTemplate1 wikitext
+// TODO: complete support for ordered lists
 public class WikiTextParser implements ParserReader {
 
     protected static final String MATH_NODE   = "math";
@@ -51,7 +52,7 @@ public class WikiTextParser implements ParserReader {
 
     private static final String[] TEMPLATE_CLOSURE = new String[]{"}}", "|"};
 
-    private static final String[] TEMPLATE_LIST_DELIMITER = new String[]{"\n", "}}", "|"};
+    private static final String[] TEMPLATE_LIST_DELIMITER = new String[]{"\n", "}}", "|", "]]", "]"};
 
     private static final String[] TABLE_DELIMITERS = new String[]{"|}", "|-", "!!" , "!", "||", "|"};
 
@@ -64,8 +65,6 @@ public class WikiTextParser implements ParserReader {
     private Reader r;
 
     private int row, markrow, col, markcol;
-
-    private char lastRead;
 
     private final TagReader tagReader;
 
@@ -158,7 +157,6 @@ public class WikiTextParser implements ParserReader {
         int intc = r.read();
         if(intc == -1) throw new EOFException();
         char c = (char) intc;
-        lastRead = c;
         if(c == '\n') {
             col = 0;
             row++;
@@ -311,7 +309,7 @@ public class WikiTextParser implements ParserReader {
                 if(templateHeaderSB.length() > 0)
                     fragments.add(new WikiTextParserHandler.Const(flushAndClear(templateHeaderSB)));
                 var = readVariableOrTemplate(false);
-                fragments.add(var);
+                if(var != null) fragments.add(var);
             } else if(c != '|' && c != '}') {
                 templateHeaderSB.append(c);
             } else {
@@ -429,7 +427,7 @@ public class WikiTextParser implements ParserReader {
         return var;
     }
 
-    private int readPropertyValue(String[] lookAhead, boolean resetSequence, boolean produceNullParamKey, boolean ignoreAssignment)
+    private int readPropertyValue(String[] lookAhead, boolean resetSequence, boolean produceNullParamKey, boolean ignoreAssignment, boolean listAllowed)
     throws IOException {
         final StringBuilder sb = new StringBuilder();
         char c;
@@ -528,6 +526,18 @@ public class WikiTextParser implements ParserReader {
                 }
             }
 
+            if(listAllowed && c == '*') {
+                reset();
+                readList(InternalListType.Unordered);
+                continue;
+            }
+
+//            if(listAllowed && c == '#') {
+//                reset();
+//                readList(InternalListType.Unordered);
+//                continue;
+//            }
+
             sb.append(c);
         }
     }
@@ -535,7 +545,7 @@ public class WikiTextParser implements ParserReader {
     private void readTemplateProperties() throws IOException {
         while(true) {
             consumeSpaces();
-            final int seq = readPropertyValue(TEMPLATE_CLOSURE, false, true, false);
+            final int seq = readPropertyValue(TEMPLATE_CLOSURE, false, true, false, true);
             mark();
             if(seq == 0) break;
         }
@@ -543,49 +553,18 @@ public class WikiTextParser implements ParserReader {
 
     private void readTemplate() throws IOException {
         final TemplateHeader templateHeader = readTemplateHeader();
-        //if(templateHeader.directive.length() == 0) return;
         final WikiTextParserHandler.TemplateName templateName =
                 new WikiTextParserHandler.TemplateName(templateHeader.fragments);
+
         handler.beginTemplate(templateName);
-        //if(templateHeader.var != null) handler.var(templateHeader.var);
 
         consumeSpaces();
         mark();
-        char c = read();
-        if(c == '*')  { // TODO: this should be moved in readPropertyValue.
-            handler.beginList();
-            while(true) {
-                consumeSpaces();
-                c = read();
-                if(c == '*') {
-                    mark();
-                    handler.listItem(WikiTextParserHandler.ListType.Unordered, 1); // TODO: no more levels inside template?
-                } else {
-                   reset();
-                }
-                final int seq = readPropertyValue(TEMPLATE_LIST_DELIMITER, true, false, true);
-                if(seq == 1) break;
-            }
-            handler.endList();
-            // TODO: remove this block.
-            if(assertChar('}')) {
-                if(assertChar('}')) {
-                    mark();
-                    handler.endTemplate(templateName);
-                } else {
-                    handler.parseWarning("Unexpected '}' while parsing template.", new DefaultParserLocation(this.row, this.col));
-                    reset();
-                }
-            } else {
-                mark();
-                handler.parseWarning("Expected template closure, found [" + lastRead + "]", new DefaultParserLocation(this.row, this.col));
-            }
-        } else {
-            reset();
-            readTemplateProperties();
-            mark();
-            handler.endTemplate(templateName);
-        }
+
+        readTemplateProperties();
+        mark();
+
+        handler.endTemplate(templateName);
     }
 
     private final StringBuilder referenceLabelSB = new StringBuilder();
@@ -615,10 +594,10 @@ public class WikiTextParser implements ParserReader {
         int ahead;
         try {
             while (true) {
-                ahead = readPropertyValue(REFERENCE_DELIMITERS, false, true, false);
+                ahead = readPropertyValue(REFERENCE_DELIMITERS, false, true, false, false);
                 if (ahead == 0)
                     break;
-                if (ahead == 1 || ahead == 2) {
+                if (ahead == 1 || ahead == 2) { // TODO: this should be: } else {
                     handler.parseWarning("Invalid closure for reference.", getLocation());
                     break;
                 }
@@ -682,7 +661,7 @@ public class WikiTextParser implements ParserReader {
 
         int ahead;
         while(true) {
-            ahead = readPropertyValue(LINK_DELIMITERS, true, true, false);
+            ahead = readPropertyValue(LINK_DELIMITERS, true, true, false, false);
             if(ahead == 0) { // TODO: improve this solution.
                 read();
                 mark();
@@ -706,7 +685,7 @@ public class WikiTextParser implements ParserReader {
         tableCol++;
         consumeSpaces();
         while(true) {
-            ahead = readPropertyValue(TABLE_DELIMITERS, false, false, false);
+            ahead = readPropertyValue(TABLE_DELIMITERS, false, false, false, true);
             if(ahead == 0) {
                 mark();
                 handler.endTable();
@@ -774,12 +753,15 @@ public class WikiTextParser implements ParserReader {
                 int level = readSequence(type.getTrailingChar());
                 if(level == 0) break;
                 handler.listItem(type.getType(), level);
-                readPropertyValue(new String[]{"\n"}, false, false, true);
-                mark();
+                final int delimiter = readPropertyValue(TEMPLATE_LIST_DELIMITER, true, false, true, true);
+                if(delimiter == 0) {
+                    read(); mark();
+                }
             }
-        } finally {
-            handler.endList();
+        } catch (EOFException e) {
+            // Pass
         }
+        handler.endList();
     }
 
     private int readSequence(char t) throws IOException {
