@@ -39,7 +39,7 @@ public class BufferedWikiPageHandler implements WikiPageHandler {
 
     public WikiPage getPage(boolean wait) {
         synchronized (buffer) {
-            if (closed.get()) {
+            if (buffer.isEmpty() && closed.get()) {
                 return EOQ;
             }
 
