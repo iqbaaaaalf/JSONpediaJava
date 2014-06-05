@@ -4,7 +4,6 @@ import com.machinelinking.enricher.Flag;
 import com.machinelinking.enricher.WikiEnricherFactory;
 import com.machinelinking.util.FileUtil;
 import junit.framework.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.xml.sax.SAXException;
 
@@ -40,12 +39,6 @@ public abstract class AbstractJSONStorageLoaderTest {
     @Test
     public void testLoaderDump3() throws IOException, SAXException {
         loadDump("/dumps/enwiki-latest-pages-articles-p3.xml.gz", 0);
-    }
-
-    @Ignore
-    @Test
-    public void testLoaderDump4() throws IOException, SAXException {
-        loadDump("/downloads/enwiki-latest-pages-articles7.xml-p000305002p000464996.bz2", 0);
     }
 
     public void loadDump(String dump, int expectedIssues) throws IOException, SAXException {
