@@ -30,7 +30,7 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
     private final String collection;
     private final DocumentConverter<ElasticDocument> converter;
 
-    public ElasticJSONStorageConnection(
+    protected ElasticJSONStorageConnection(
             Client client, String db, String collection, DocumentConverter<ElasticDocument> converter
     ) {
         this.client = client;
