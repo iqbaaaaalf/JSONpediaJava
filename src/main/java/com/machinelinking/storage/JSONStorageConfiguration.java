@@ -7,10 +7,6 @@ package com.machinelinking.storage;
  */
 public interface JSONStorageConfiguration {
 
-    String getHost();
-
-    int getPort();
-
     String getDB();
 
     String getCollection();

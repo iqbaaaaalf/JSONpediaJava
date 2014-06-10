@@ -29,10 +29,12 @@ public class MongoJSONStorageConfiguration implements JSONStorageConfiguration {
         return port;
     }
 
+    @Override
     public String getDB() {
         return db;
     }
 
+    @Override
     public String getCollection() { return collection; }
 
 }

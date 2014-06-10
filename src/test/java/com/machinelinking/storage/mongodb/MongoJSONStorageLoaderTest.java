@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class DefaultJSONStorageLoaderTest extends AbstractJSONStorageLoaderTest {
+public class MongoJSONStorageLoaderTest extends AbstractJSONStorageLoaderTest {
 
     @Override
     protected JSONStorage getJSONStorage() throws UnknownHostException {

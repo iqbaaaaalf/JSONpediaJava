@@ -28,7 +28,6 @@ public class ElasticJSONStorage
 
     @Override
     public ElasticJSONStorageConfiguration getConfiguration() {
-
         return configuration;
     }
 

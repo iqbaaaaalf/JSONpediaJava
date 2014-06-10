@@ -21,12 +21,10 @@ public class ElasticJSONStorageConfiguration implements JSONStorageConfiguration
         this.collection = collection;
     }
 
-    @Override
     public String getHost() {
         return host;
     }
 
-    @Override
     public int getPort() {
         return port;
     }

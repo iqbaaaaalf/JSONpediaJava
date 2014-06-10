@@ -3,7 +3,7 @@ package com.machinelinking.storage;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public abstract class AbstractJSONStorageFactory implements JSONStorageFactory {
+public abstract class AbstractJSONStorageFactory<C extends JSONStorageConfiguration, S extends JSONStorage, D extends Document> implements JSONStorageFactory<C,S, D> {
 
     protected Configuration parseConfigurationURI(String configURI) {
         final String[] sections = configURI.split(":");

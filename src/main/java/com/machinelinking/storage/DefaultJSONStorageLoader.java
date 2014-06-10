@@ -39,6 +39,11 @@ public class DefaultJSONStorageLoader
 extends WikiDumpMultiThreadProcessor<DefaultJSONStorageLoader.EnrichmentProcessor>
 implements JSONStorageLoader {
 
+    public static final String LOADER_STORAGE_FACTORY_PROP = "loader.storage.factory";
+    public static final String LOADER_STORAGE_CONFIG_PROP  = "loader.storage.config";
+    public static final String LOADER_PREFIX_URL_PROP      = "loader.prefix.url";
+    public static final String LOADER_FLAGS_PROP           = "loader.flags";
+
     private static final int LOG_THRESHOLD = 1000;
 
     private static final Logger logger = Logger.getLogger(DefaultJSONStorageLoader.class);
@@ -204,29 +209,29 @@ implements JSONStorageLoader {
             final Flag[] flags = WikiEnricherFactory.getInstance().toFlags(
                     getPropertyOrFail(
                             properties,
-                            "loader.flags",
+                            LOADER_FLAGS_PROP,
                             "valid flags: " + Arrays.toString(WikiEnricherFactory.getInstance().getDefinedFlags())
                     )
             );
-            final JSONStorageFactory jsonStorageFactory = loadJSONStorageFactory(
+            final JSONStorageFactory jsonStorageFactory = MultiJSONStorageFactory.loadJSONStorageFactory(
                     getPropertyOrFail(
                             properties,
-                            "loader.storage.factory",
+                            LOADER_STORAGE_FACTORY_PROP,
                             null
                     )
             );
             final String jsonStorageConfig = getPropertyOrFail(
                     properties,
-                    "loader.storage.config",
+                    LOADER_STORAGE_CONFIG_PROP,
                     null
             );
             final URL prefixURL = readURL(
                     getPropertyOrFail(
                             properties,
-                            "loader.prefix.url",
+                            LOADER_PREFIX_URL_PROP,
                             "expected a valid URL prefix like: http://en.wikipedia.org/"
                     ),
-                    "loader.prefix.url"
+                    LOADER_PREFIX_URL_PROP
             );
 
             final DefaultJSONStorageLoader[] loader = new DefaultJSONStorageLoader[1];
@@ -272,17 +277,6 @@ implements JSONStorageLoader {
             return new URL(url);
         } catch (MalformedURLException murle) {
             throw new IllegalStateException(String.format("Invalid URL specified for [%s]", desc), murle);
-        }
-    }
-
-    private static JSONStorageFactory loadJSONStorageFactory(String className) {
-        try {
-            return (JSONStorageFactory) DefaultJSONStorageLoader.class.getClassLoader()
-                    .loadClass(className).newInstance();
-        } catch (ClassNotFoundException cnfe) {
-            throw new IllegalArgumentException( String.format("Invalid class name: %s .", className) );
-        } catch (Exception e) {
-            throw new IllegalArgumentException( String.format("Error while loading class: %s .", className), e);
         }
     }
 

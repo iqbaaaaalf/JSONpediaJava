@@ -2,7 +2,6 @@ package com.machinelinking.storage.mongodb;
 
 import com.machinelinking.storage.AbstractJSONStorageFactory;
 import com.machinelinking.storage.DocumentConverter;
-import com.machinelinking.storage.JSONStorageConfiguration;
 
 import java.net.UnknownHostException;
 
@@ -11,7 +10,7 @@ import java.net.UnknownHostException;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class MongoJSONStorageFactory extends AbstractJSONStorageFactory {
+public class MongoJSONStorageFactory extends AbstractJSONStorageFactory<MongoJSONStorageConfiguration, MongoJSONStorage, MongoDocument> {
 
     @Override
     public MongoJSONStorageConfiguration createConfiguration(String configURI) {
@@ -21,18 +20,17 @@ public class MongoJSONStorageFactory extends AbstractJSONStorageFactory {
 
     @Override
     public MongoJSONStorage createStorage(
-            JSONStorageConfiguration config, DocumentConverter converter
+            MongoJSONStorageConfiguration config, DocumentConverter<MongoDocument> converter
     ) {
-        if(!(config instanceof MongoJSONStorageConfiguration)) throw new IllegalArgumentException();
         try {
-            return new MongoJSONStorage((MongoJSONStorageConfiguration)config, converter);
+            return new MongoJSONStorage(config, converter);
         } catch (UnknownHostException uhe) {
             throw new IllegalArgumentException("Error while instantiating storage with configuration: " + config);
         }
     }
 
     @Override
-    public MongoJSONStorage createStorage(JSONStorageConfiguration config) {
+    public MongoJSONStorage createStorage(MongoJSONStorageConfiguration config) {
         return createStorage(config, null);
     }
 
