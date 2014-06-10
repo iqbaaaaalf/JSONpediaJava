@@ -64,8 +64,9 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version:'4.7'
 }
 
-task(runLoader, dependsOn: 'jar', type: JavaExec) {
+task runLoader(dependsOn: 'jar', type: JavaExec) {
   main = 'com.machinelinking.storage.DefaultJSONStorageLoader'
   classpath = sourceSets.main.runtimeClasspath
-  args(config, dump)
+  if(project.hasProperty("config") && project.hasProperty("dump"))
+    args(config, dump)
 }
