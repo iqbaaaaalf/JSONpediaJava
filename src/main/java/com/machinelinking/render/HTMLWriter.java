@@ -36,6 +36,14 @@ public interface HTMLWriter {
 
     void image(String url, String text) throws IOException;
 
+    void openList() throws IOException;
+
+    void openListItem() throws IOException;
+
+    void closeListItem() throws IOException;
+
+    void closeList() throws IOException;
+
     void openTable(String title, Map<String,String> attributes) throws IOException;
 
     void openTableRow() throws IOException;
@@ -56,7 +64,7 @@ public interface HTMLWriter {
 
     void link(String description, String url) throws IOException;
 
-    void reference(String description, String lang, String label) throws IOException;
+    void reference(String description, String lang, String label, boolean internal) throws IOException;
 
     void templateReference(String description, String lang, String label) throws IOException;
 

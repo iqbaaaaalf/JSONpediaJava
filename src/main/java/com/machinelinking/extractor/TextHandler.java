@@ -9,6 +9,7 @@ import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.render.DocumentContext;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializer;
+import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonNode;
 
@@ -156,7 +157,7 @@ public class TextHandler extends DefaultWikiTextParserHandler {
 
     private String expandStructure(String data) throws IOException {
         final JsonNode node = JSONUtils.parseJSON(data);
-        final DocumentContext context = new DefaultDocumentContext(documentURL);
+        final DocumentContext context = new DefaultDocumentContext(RenderScope.TEXT_RENDERING, documentURL);
         return render.renderFragment(context, node);
     }
 

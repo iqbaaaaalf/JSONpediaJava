@@ -8,7 +8,9 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -100,7 +102,7 @@ class DefaultTemplateProcessor implements TemplateProcessor {
             "Category talk"
     ));
 
-    private final List<TemplateCallHandler> handlers = new ArrayList<>();
+    private final Map<String, List<TemplateCallHandler>> handlers = new HashMap<>();
 
     public DefaultTemplateProcessor() {}
 
@@ -128,13 +130,25 @@ class DefaultTemplateProcessor implements TemplateProcessor {
     }
 
     @Override
-    public void addTemplateCallHandler(TemplateCallHandler handler) {
-        handlers.add(handler);
+    public void addTemplateCallHandler(String scope, TemplateCallHandler handler) {
+        List<TemplateCallHandler> list = handlers.get(scope);
+        if(list == null) {
+            list = new ArrayList<>();
+            handlers.put(scope, list);
+        }
+        list.add(handler);
     }
 
     @Override
-    public void removeTemplateCallHandler(TemplateCallHandler handler) {
-        handlers.remove(handler);
+    public void removeTemplateCallHandler(String scope, TemplateCallHandler handler) {
+        List<TemplateCallHandler> list = handlers.get(scope);
+        if(list != null) list.remove(handler);
+    }
+
+    private List<TemplateCallHandler> getHandlers(String scope) {
+        final List<TemplateCallHandler> result = new ArrayList<>(handlers.get(null));
+        result.addAll( handlers.get(scope) );
+        return result;
     }
 
     private boolean processVariable(String candidate, HTMLWriter writer) throws IOException {
@@ -324,7 +338,7 @@ class DefaultTemplateProcessor implements TemplateProcessor {
 
     private boolean processHandlers(EvaluationContext context, TemplateCall call, HTMLWriter writer)
     throws TemplateCallHandlerException {
-        for(TemplateCallHandler handler : handlers) {
+        for(TemplateCallHandler handler : getHandlers(context.getJsonContext().getDocumentContext().getScope())) {
             if(handler.process(context, call, writer))
                 return true;
         }

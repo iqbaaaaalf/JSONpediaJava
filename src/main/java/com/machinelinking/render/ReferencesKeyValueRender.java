@@ -26,7 +26,7 @@ public class ReferencesKeyValueRender implements KeyValueRender {
             if(description.trim().length() == 0) {
                 description = labelParts[1].replaceAll("_", " ");
             }
-            writer.reference(description, labelParts[0], labelParts[1]);
+            writer.reference(description, labelParts[0], labelParts[1], true);
         }
         writer.closeTag();
     }

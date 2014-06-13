@@ -6,7 +6,6 @@ import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
 import java.io.Writer;
-import java.net.URLEncoder;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -112,19 +111,39 @@ public class DefaultHTMLWriter implements HTMLWriter {
     @Override
     public void anchor(String url, String text, boolean internal) throws IOException {
         if(internal) {
-            url = "/annotate/resource/html/" + URLEncoder.encode(url, "utf-8");
+            url = Reference.toInternalURLString(url);
         }
         writer.append( String.format("<a href=\"%s\">%s</a>", url, text) );
     }
 
     @Override
     public void anchor(String name) throws IOException {
-        writer.append(String.format("<a name=\"%s\"/>", name));
+        writer.append(String.format("<a name=\"%s\"></a>", name));
     }
 
     @Override
     public void image(String url, String text) throws IOException {
         writer.append( String.format("<a href=\"%s\"><img src=\"%s\"/ alt=\"%s\"/></a>", url, url, text) );
+    }
+
+    @Override
+    public void openList() throws IOException {
+        openTag("ul");
+    }
+
+    @Override
+    public void openListItem() throws IOException {
+        openTag("li");
+    }
+
+    @Override
+    public void closeListItem() throws IOException {
+        closeTag();
+    }
+
+    @Override
+    public void closeList() throws IOException {
+        closeTag();
     }
 
     @Override
@@ -196,10 +215,11 @@ public class DefaultHTMLWriter implements HTMLWriter {
     }
 
     @Override
-    public void reference(String description, String lang, String label) throws IOException {
+    public void reference(String description, String lang, String label, boolean internal) throws IOException {
         writer.append(String.format(
-                "<a class=\"references-link\" target=\"_blank\" href=\"%s\">%s</a>",
-                Reference.toURLString(lang, label),
+                "<a class=\"references-link\" %s href=\"%s\">%s</a>",
+                internal ? "" : "target=\"_blank\"",
+                internal ? Reference.toInternalURLString(lang, label) : Reference.toURLString(lang, label),
                 description.replaceAll("[\"']", "")
         ));
     }

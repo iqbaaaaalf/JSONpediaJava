@@ -12,6 +12,7 @@ import com.machinelinking.render.DefaultDocumentContext;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.render.DocumentContext;
 import com.machinelinking.serializer.JSONSerializer;
+import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
 import com.machinelinking.wikimedia.WikiAPIParserException;
 import org.codehaus.jackson.JsonNode;
@@ -224,7 +225,10 @@ public class DefaultAnnotationService implements AnnotationService {
                 final JsonNode rootNode = JSONUtils.bufferToJSONNode(buffer);
                 final JsonNode target   =
                         filter.isEmpty() ? rootNode : JSONUtils.bufferToJSONNode(printOutFilterResult(rootNode, filter));
-                final DocumentContext context = new DefaultDocumentContext(documentURL);
+                final DocumentContext context = new DefaultDocumentContext(
+                        RenderScope.FULL_RENDERING,
+                        documentURL
+                );
                 return Response.ok(
                         DefaultHTMLRenderFactory.getInstance().createRender().renderDocument(context, target),
                         MediaType.TEXT_HTML + ";charset=UTF-8"

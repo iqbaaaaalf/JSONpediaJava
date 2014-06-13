@@ -15,15 +15,16 @@ import java.util.Map;
  */
 public class Main implements TemplateCallHandler {
 
-    public static final String MAIN_TEMPLATE_NAME = "Main";
+    public static final String MAIN_TEMPLATE_NAME = "[Mm]ain";
 
     private static final Map<String,String> MAIN_DIV_ATTR = new HashMap<String,String>(){{
         put("class", "main");
     }};
 
     @Override
-    public boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer) throws TemplateCallHandlerException {
-        if(! MAIN_TEMPLATE_NAME.equals(call.getName().asText())) return false;
+    public boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer)
+    throws TemplateCallHandlerException {
+        if(! context.evaluate(call.getName()).matches(MAIN_TEMPLATE_NAME)) return false;
 
         try {
             writer.openTag("span", MAIN_DIV_ATTR);

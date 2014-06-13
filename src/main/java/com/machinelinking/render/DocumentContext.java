@@ -7,6 +7,8 @@ import java.net.URL;
  */
 public interface DocumentContext {
 
+    String getScope();
+
     URL getDocumentURL();
 
     String[] getVarNames();

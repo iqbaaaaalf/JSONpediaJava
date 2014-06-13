@@ -278,7 +278,9 @@ public class DefaultTemplateProcessorTest {
         final JsonNode root = JSONUtils.bufferToJSONNode(buffer);
         final JsonNode fragment = root.get("structure").get(0);
 
-        final DocumentContext context = new DefaultDocumentContext(documentURL, contextMap);
+        final DocumentContext context = new DefaultDocumentContext(
+                RenderScope.FULL_RENDERING, documentURL, contextMap
+        );
         return DefaultHTMLRenderFactory.getInstance().createRender(false).renderFragment(context, fragment);
     }
 

@@ -9,16 +9,23 @@ import java.util.Map;
  */
 public class DefaultDocumentContext implements DocumentContext {
 
+    private final String scope;
     private final URL documentURL;
     private final Map<String,String> vars;
 
-    public DefaultDocumentContext(URL documentURL, Map<String, String> vars) {
+    public DefaultDocumentContext(String scope, URL documentURL, Map<String, String> vars) {
+        this.scope = scope;
         this.documentURL = documentURL;
         this.vars = vars;
     }
 
-    public DefaultDocumentContext(URL documentURL) {
-        this(documentURL, Collections.<String, String>emptyMap());
+    public DefaultDocumentContext(String scope, URL documentURL) {
+        this(scope, documentURL, Collections.<String, String>emptyMap());
+    }
+
+    @Override
+    public String getScope() {
+        return scope;
     }
 
     @Override

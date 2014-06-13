@@ -1,5 +1,6 @@
 package com.machinelinking.extractor;
 
+import com.machinelinking.parser.Attribute;
 import com.machinelinking.parser.FilteredHandlerCriteria;
 import com.machinelinking.parser.WikiTextParserFilteredHandler;
 import com.machinelinking.serializer.Serializer;
@@ -25,7 +26,7 @@ public class AbstractExtractor extends Extractor {
                 new FilteredHandlerCriteria() {
                     @Override
                     public boolean mustFilter(int paragraphIndex, int sectionLevel, int nestingLevel) {
-                        return paragraphIndex == 0 || sectionLevel != -1;
+                        return paragraphIndex == -1 || sectionLevel != -1;
                     }
                 }
         );
@@ -67,6 +68,21 @@ public class AbstractExtractor extends Extractor {
     }
 
     @Override
+    public void beginTag(String name, Attribute[] attributes) {
+        filteredHandler.beginTag(name, attributes);
+    }
+
+    @Override
+    public void endTag(String name) {
+        filteredHandler.endTag(name);
+    }
+
+    @Override
+    public void inlineTag(String name, Attribute[] attributes) {
+        filteredHandler.inlineTag(name, attributes);
+    }
+
+    @Override
     public void beginLink(URL url) {
         filteredHandler.beginLink(url);
     }
@@ -79,6 +95,11 @@ public class AbstractExtractor extends Extractor {
     @Override
     public void beginList() {
         filteredHandler.beginList();
+    }
+
+    @Override
+    public void parameter(String param) {
+        filteredHandler.parameter(param);
     }
 
     @Override

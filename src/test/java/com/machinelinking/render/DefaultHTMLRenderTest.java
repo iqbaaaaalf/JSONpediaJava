@@ -1,5 +1,6 @@
 package com.machinelinking.render;
 
+import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
 import org.apache.commons.io.FileUtils;
 import org.codehaus.jackson.JsonNode;
@@ -24,7 +25,7 @@ public class DefaultHTMLRenderTest {
                 )
         );
         final URL documentURL = new URL("http://en.wikipedia.org/page/Fake");
-        final DocumentContext context = new DefaultDocumentContext(documentURL);
+        final DocumentContext context = new DefaultDocumentContext(RenderScope.FULL_RENDERING, documentURL);
         final String html = DefaultHTMLRenderFactory.getInstance().createRender().renderDocument(context, node);
         FileUtils.writeStringToFile( new File("./test-render.html"), html);
     }

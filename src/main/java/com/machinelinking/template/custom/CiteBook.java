@@ -16,26 +16,25 @@ import java.util.Map;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class CiteWeb implements TemplateCallHandler {
+public class CiteBook implements TemplateCallHandler {
 
-    public static final String CITE_WEB_TEMPLATE_NAME = "cite web";
+    public static final String CITE_BOOK_TEMPLATE_NAME = "[Cc]ite book";
 
-    private static final Map<String,String> CITEWEB_DIV_ATTR = new HashMap<String,String>(){{
-        put("class", "cite-web");
+    private static final Map<String,String> CITEBOOK_DIV_ATTR = new HashMap<String,String>(){{
+        put("class", "cite-book");
     }};
 
     public static final String[] TEMPLATE_FIELDS = new String[] {
-            "title", "publisher", "author", "last", "work", "archivedate", "accessdate", "url", "archiveurl",
+            "last", "first", "author", "date", "title", "url", "location", "publisher", "page", "isbn", "accessdate"
     };
 
     @Override
     public boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer)
     throws TemplateCallHandlerException {
-        if(! CITE_WEB_TEMPLATE_NAME.equals(call.getName().asText())) return false;
+        if(! call.getName().asText().matches(CITE_BOOK_TEMPLATE_NAME)) return false;
         try{
-            writer.text("<!---- BEGIN---->");
-            writer.openTag("span", CITEWEB_DIV_ATTR);
-            writer.openTable("Cite Web", null);
+            writer.openTag("span", CITEBOOK_DIV_ATTR);
+            writer.openTable("Cite Book", null);
             JsonNode value;
             for(String field: TEMPLATE_FIELDS) {
                 value = call.getParameter(field);
@@ -48,10 +47,9 @@ public class CiteWeb implements TemplateCallHandler {
             }
             writer.closeTable();
             writer.closeTag();
-            writer.text("<!---- END---->");
             return true;
         } catch (IOException ioe) {
-            throw new TemplateCallHandlerException("Error while invoking Cite Web", ioe);
+            throw new TemplateCallHandlerException("Error while invoking Cite Book", ioe);
         }
     }
 }
