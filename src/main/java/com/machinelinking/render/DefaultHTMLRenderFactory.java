@@ -32,6 +32,7 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         // Within wikitext-json.structure element.
         render.addNodeRender("reference", new ReferenceNodeRender());
         render.addNodeRender("link"     , new LinkNodeRender());
+        render.addNodeRender("list"     , new ListNodeRender());
         render.addNodeRender("section"  , new SectionRender());
         render.addNodeRender("template" , new TemplateNodeRender()); //TODO: avoid dependency with template package
         render.addNodeRender("table"    , new TableNodeRender());
