@@ -18,16 +18,15 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
     public DefaultHTMLRender createRender(boolean alwaysRenderDefault) {
         final DefaultHTMLRender render = new DefaultHTMLRender(alwaysRenderDefault);
         // Root level.
-        render.addKeyValueRender("freebase", new FreebaseKeyValueRender());
         render.addKeyValueRender("issues"  , new IssuesKeyValueRender());
         render.addKeyValueRender("abstract", new AbstractKeyValueRender());
         render.addKeyValueRender("sections", new SectionsKeyValueRender());
-        // TODO: use link and reference sections.
         render.addKeyValueRender("links"   , new LinksKeyValueRender());
         render.addKeyValueRender("references", new ReferencesKeyValueRender());
         render.addKeyValueRender("templates", new TemplatesKeyValueRender());
         render.addKeyValueRender("categories", new CategoriesKeyValueRender());
         render.addKeyValueRender("template-mapping", new TemplatesMappingKeyValueRender());
+        render.addKeyValueRender("freebase", new FreebaseKeyValueRender());
 
         // Within wikitext-json.structure element.
         render.addNodeRender("reference", new ReferenceNodeRender());
