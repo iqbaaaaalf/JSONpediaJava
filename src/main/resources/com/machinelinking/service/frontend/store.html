@@ -54,6 +54,7 @@
 
             $('#mongo-select-submit').addClass('disabled');
             $('#mongo-mapred-submit').addClass('disabled');
+            $('#elastic-select-submit').addClass('disabled');
 
             $('.mongo-selector-example').click(function(e) {
                 $('#mongo-select-selector').val($(e.target).text());
@@ -79,6 +80,17 @@
                 updateMongoMapRedQuery();
             });
 
+            $('.elastic-selector-example').click(function(e) {
+                $('#elastic-select-selector').val($(e.target).text());
+                e.preventDefault();
+                updateElasticSelectQuery();
+            });
+            $('.elastic-filter-example').click(function(e) {
+                $('#elastic-select-filter').val($(e.target).text());
+                e.preventDefault();
+                updateElasticSelectQuery();
+            });
+
             $('#mongo-select-selector').keyup(function() {
                 $submitButton = $('#mongo-select-submit');
                 if ($('#mongo-select-selector').val() != '') {
@@ -93,6 +105,9 @@
             });
             $('#mongo-mapred-query-copy').click(function(){
                 window.prompt('CTRL + C to copy:', $('#mongo-mapred-query').html() );
+            });
+            $('#elastic-select-query-copy').click(function(){
+                window.prompt('CTRL + C to copy:', $('#elastic-select-query').html() );
             });
 
             $('#mongo-select-limit').keyup(function(){
@@ -111,11 +126,22 @@
                 }
             });
 
+            $('#elastic-select-limit').keyup(function(){
+                if($('#elastic-select-limit').val() > LIMIT) {
+                    $('#elastic-select-limit').addClass('glyphicon glyphicon-warning-sign has-warning has-feedback form-control-feedback');
+                } else {
+                    $('#elastic-select-limit').removeClass('glyphicon glyphicon-warning-sign has-warning has-feedback form-control-feedback');
+                }
+            });
+
             $('#mongo-select-form').live('click change keyup', function(e) {
                 updateMongoSelectQuery();
             });
             $('#mongo-mapred-form').live('click change keyup', function(e) {
                 updateMongoMapRedQuery();
+            });
+            $('#elastic-select-form').live('click change keyup', function(e) {
+                updateElasticSelectQuery();
             });
 
             $('#mongo-select-submit').click(function(e){
@@ -123,6 +149,9 @@
             });
             $('#mongo-mapred-submit').click(function(e){
                 window.open(buildMongoMapRedQuery());
+            });
+            $('#elastic-select-submit').click(function(e){
+                window.open(buildElasticSelectQuery());
             });
 
             $('#mongo-select-reset').click(function(e){
@@ -135,11 +164,21 @@
                 $('#mongo-mapred-form')[0].reset();
                 updateMongoMapRedQuery();
             });
+            $('#elastic-select-reset').click(function(e){
+                e.preventDefault();
+                $('#elastic-select-form')[0].reset();
+                updateElasticSelectQuery();
+            });
 
             $('.mongo-selector-help').click(function(e){
                             document.location = "#selector-syntax";
             });
-            $('#filter-help').click(function(e){
+
+            $('.elastic-selector-help').click(function (e) {
+                document.location = "#elastic-selector-syntax";
+            });
+
+            $('.filter-help').click(function(e){
                             document.location = "#filter-syntax";
             });
             $('.limit-help').click(function(e){
@@ -189,6 +228,18 @@
                 (limit.trim().length == 0 || limit == $('#mongo-mapred-limit').attr('placeholder') ? '' : '&limit=' + limit)
         }
 
+        function buildElasticSelectQuery() {
+            selector = $('#elastic-select-selector').val();
+            filter = $('#elastic-select-filter').val();
+            limit = $('#elastic-select-limit').val();
+            if(selector.trim().length == 0) throw new Error("Invalid selector");
+            if(limit != "" && !isNumeric(limit)) throw new Error("Invalid limit");
+            return '/storage/elastic/select?q=' +
+             encodeURIComponent(selector) +
+            (filter.trim().length == 0 ? '' : '&filter=' + encodeURIComponent(filter)) +
+            (limit.trim().length == 0 || limit == $('#elastic-select-limit').attr('placeholder') ? '' : '&limit=' + limit)
+        }
+
         function updateMongoSelectQuery() {
             try {
                 $('#mongo-select-query').html('http://' + document.location.host + buildMongoSelectQuery());
@@ -206,6 +257,16 @@
             } catch(e) {
                 console.log('Error: ' + e)
                 $('#mongo-select-submit').addClass('disabled');
+            }
+        }
+
+        function updateElasticSelectQuery() {
+            try {
+                $('#elastic-select-query').html('http://' + document.location.host + buildElasticSelectQuery());
+                $('#elastic-select-submit').removeClass('disabled');
+            } catch(e) {
+                console.log('Error: ' + e)
+                $('#elastic-select-submit').addClass('disabled');
             }
         }
     </script>
@@ -238,7 +299,7 @@
 <h2>MongoDB Query</h2>
 
 <form id="mongo-select-form" class="well form-horizontal">
-    <code>POST mongo/select</code>
+    <code>GET mongo/select</code>
     <p class="help-block">
         Specify a data selector and optionally a filter and a resultset limit
     </p>
@@ -277,7 +338,7 @@
                 </div>
             </div>
         </div>
-        <i id="filter-help" class="glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Filter syntax"></i>
+        <i class="filter-help glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Filter syntax"></i>
     </div>
 
     <div class="form-group">
@@ -304,7 +365,7 @@
 <h2>MongoDB Map/Reduce</h2>
 
 <form id="mongo-mapred-form" class="well form-horizontal">
-    <code>POST mongo/mapred</code>
+    <code>GET mongo/mapred</code>
     <p class="help-block">
         Specify a data criteria selector, a map/reduce functions and optionally a resultset limit
     </p>
@@ -381,6 +442,74 @@
     <div class="control-group">
         <button id="mongo-mapred-submit" type="button" class="btn btn-primary">Run</button>
         <button id="mongo-mapred-reset" type="reset" class="btn">Cancel</button>
+    </div>
+</form>
+
+<!--------- BEGIN ElasticSearch Forms --------->
+
+<h2>Elasticsearch Query</h2>
+
+<form id="elastic-select-form" class="well form-horizontal">
+    <code>GET elastic/select</code>
+    <p class="help-block">
+        Specify a data selector and optionally a filter and a resultset limit
+    </p>
+
+    <div class="form-group">
+        <label class="control-label col-md-1" for="elastic-select-selector">Selector</label>
+        <div class="col-md-6">
+            <div class="input-group">
+                <input class="form-control" id="elastic-select-selector" type="text"
+                       placeholder="[[<FIELD>:]?<CRITERIA>]+">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Selector samples <span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a class="elastic-selector-example dropdown-list-button" href="#">Albert Einstein</a></li>
+                        <li><a class="elastic-selector-example dropdown-list-button" href="#">name:"Albert Einstein"</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <i class="elastic-selector-help glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Selector syntax"></i>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-1" for="elastic-select-filter">Filter</label>
+        <div class="col-md-6">
+            <div class="input-group">
+                <input class="form-control" id="elastic-select-filter" type="text"
+                       placeholder="[<FIELD> : <VALUE re>]+">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Filter samples <span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                        <li><a class="elastic-filter-example dropdown-list-button" href="#">__type : link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <i class="filter-help glyphicon glyphicon-question-sign col-md-1" rel="tooltip" title="Filter syntax"></i>
+    </div>
+
+    <div class="form-group">
+        <label for="elastic-select-limit" class="col-md-1 control-label">Limit</label>
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="elastic-select-limit" placeholder="1000">
+        </div>
+        <i class="limit-help glyphicon glyphicon-question-sign col-md-1" rel="tooltip"
+           title="Result limit (Max: 1000)"></i>
+    </div>
+
+    <span class="row">
+        <span class="label label-info">Query</span>
+        <span id="elastic-select-query" class="label label-info"></span>
+        <i id="elastic-select-query-copy" class="glyphicon glyphicon-edit" rel="tooltip" title="Copy query"></i>
+    </span>
+
+    <div class="control-group">
+        <button id="elastic-select-submit" type="button" class="btn btn-primary">Query</button>
+        <button id="elastic-select-reset" type="reset" class="btn">Cancel</button>
     </div>
 </form>
 
@@ -508,6 +637,19 @@ The full <b>selector syntax</b> is reported below.
 <!--------- END   Selector Documentation --------->
 
 <hr/>
+
+<!--------- BEGIN Elastic Selector Documentation --------->
+<a name="elastic-selector-syntax"></a>
+<h3>Elasticsearch Selector Syntax</h3>
+<p>
+The full <b>selector syntax</b> for Elasticsearch query is reported below.
+<pre>
+&lt;selector&gt; ::= &lt;criteria&gt; | &lt;field&gt; : &lt;criteria&gt; ;
+&lt;field&gt;    ::= &lt;JSON-field-name&gt; ;
+&lt;criteria&gt; ::= &lt;Query-String-Syntax&gt; ; (See <a href="http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax" target="_blank">full specification</a>)
+</pre>
+</p>
+<!--------- END   Elastic Selector Documentation --------->
 
 <!--------- BEGIN Filter Documentation --------->
 <a name="filter-syntax"></a>
