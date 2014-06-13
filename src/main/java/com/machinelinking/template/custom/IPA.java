@@ -17,7 +17,6 @@ public class IPA implements TemplateCallHandler {
 
     @Override
     public boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer) throws TemplateCallHandlerException {
-        System.out.println(context.evaluate(call.getName()));
         if(!context.evaluate(call.getName()).matches(TEMPLATE_PATTERN)) return false;
         try {
             writer.openTag("i");
