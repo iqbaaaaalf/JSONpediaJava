@@ -12,7 +12,8 @@ public class AbstractKeyValueRender implements KeyValueRender {
     @Override
     public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
     throws IOException {
-        writer.openTag("p");
+        writer.openTag("div");
+        writer.heading(1, "Abstract");
         writer.html(value.asText());
         writer.closeTag();
     }
