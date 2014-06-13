@@ -1,5 +1,5 @@
 {
-    "type": "enriched-entity",
+    "__type": "enriched-entity",
     "wikitext-json": [
         {
             "__type": "page",

@@ -92,7 +92,7 @@ public class WikiEnricher {
         try {
             serializer.openObject();
 
-            serializer.fieldValue("type", PageStructConsts.TYPE_ENRICHED_ENTITY);
+            serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_ENRICHED_ENTITY);
 
             // Write Document Serialization.
             writeDocumentSerialization(source, serializer);
