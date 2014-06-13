@@ -5,8 +5,10 @@ import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.wikimedia.WikimediaUtils;
 
+import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 
 /**
  * Defines a <i>Wikipedia reference</i>.
@@ -14,6 +16,8 @@ import java.net.URL;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class Reference implements Serializable {
+
+    public static final String ANNOTATE_HTML_PREFIX = "/annotate/resource/html/";
 
     public static final String IMG_PREFIX      = "File";
     public static final String CATEGORY_PREFIX = "Category";
@@ -62,6 +66,14 @@ public class Reference implements Serializable {
 
     public static String toURLString(String lang, String label) {
         return String.format("http://%s.wikipedia.org/wiki/%s", lang, label);
+    }
+
+    public static String toInternalURLString(String lang, String label) {
+        return String.format("%s%s:%s", ANNOTATE_HTML_PREFIX, lang, label);
+    }
+
+    public static String toInternalURLString(String url) throws UnsupportedEncodingException {
+        return ANNOTATE_HTML_PREFIX + URLEncoder.encode(url, "utf-8");
     }
 
     private static String safeSubstring(String str, int index) {
