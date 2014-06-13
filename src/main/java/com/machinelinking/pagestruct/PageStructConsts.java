@@ -6,6 +6,8 @@ package com.machinelinking.pagestruct;
 public interface PageStructConsts {
 
     static final String TYPE_FIELD = "__type";
+
+    static final String TYPE_ENRICHED_ENTITY = "enriched-entity";
     static final String TYPE_PAGE = "page";
     static final String TYPE_SECTION = "section";
     static final String TYPE_PARAGRAPH = "paragraph";
@@ -24,6 +26,7 @@ public interface PageStructConsts {
     static final String TYPE_COMMENT_TAG = "comment_tag";
     static final String TYPE_ENTITY = "entity";
 
+    static final String PAGE_STRUCT_FIELD = "wikitext-json";
     static final String NAME_FIELD = "name";
     static final String URL_FIELD = "url";
     static final String LABEL_FIELD = "label";

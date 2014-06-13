@@ -1,6 +1,7 @@
 package com.machinelinking.enricher;
 
 import com.machinelinking.extractor.Extractor;
+import com.machinelinking.pagestruct.PageStructConsts;
 import com.machinelinking.pagestruct.WikiTextSerializerHandler;
 import com.machinelinking.pagestruct.WikiTextSerializerHandlerFactory;
 import com.machinelinking.parser.DocumentSource;
@@ -91,7 +92,7 @@ public class WikiEnricher {
         try {
             serializer.openObject();
 
-            serializer.fieldValue("type", "enriched-entity");
+            serializer.fieldValue("type", PageStructConsts.TYPE_ENRICHED_ENTITY);
 
             // Write Document Serialization.
             writeDocumentSerialization(source, serializer);
@@ -147,7 +148,7 @@ public class WikiEnricher {
 
         final WikiTextParser wikiTextParser = new WikiTextParser( wrapWithValiadator("parser", multiHandler) );
         if(produceStructure) {
-             serializer.field("wikitext-json");
+             serializer.field(PageStructConsts.PAGE_STRUCT_FIELD);
              serializer.openList();
          }
         wikiTextParser.parse(

@@ -205,12 +205,13 @@ public class DefaultHTMLRender implements HTMLRender {
         ObjectNode newRoot = JSONUtils.getJsonNodeFactory().objectNode();
         Iterator<Map.Entry<String,JsonNode>> iter = root.getFields();
         Map.Entry<String,JsonNode> entry;
+        final String pageStructField = PageStructConsts.PAGE_STRUCT_FIELD;
         while(iter.hasNext()) {
             entry = iter.next();
-            if("wikitext-json".equals(entry.getKey())) continue;
+            if(pageStructField.equals(entry.getKey())) continue;
             newRoot.put(entry.getKey(), entry.getValue());
         }
-        newRoot.put("wikitext-json", root.get("wikitext-json"));
+        newRoot.put(pageStructField, root.get(pageStructField));
         return newRoot;
     }
 
