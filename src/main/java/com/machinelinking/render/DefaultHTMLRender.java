@@ -6,6 +6,7 @@ import com.machinelinking.util.JSONUtils;
 import com.machinelinking.util.JsonPathBuilder;
 import com.machinelinking.wikimedia.WikimediaUtils;
 import org.codehaus.jackson.JsonNode;
+import org.codehaus.jackson.node.ObjectNode;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -70,7 +71,7 @@ public class DefaultHTMLRender implements HTMLRender {
     public void processRoot(JsonNode node, HTMLWriter writer) throws IOException {
         jsonPathBuilder.startPath();
         writer.openDocument(getContext().getDocumentTitle());
-        processFragment(node, writer);
+        processFragment(reorderRoot(node), writer);
         writer.closeDocument();
         writer.flush();
     }
@@ -198,6 +199,19 @@ public class DefaultHTMLRender implements HTMLRender {
         this.processFragment(rootNode, writer);
         writer.flush();
         return baos.toString();
+    }
+
+    private JsonNode reorderRoot(JsonNode root) {
+        ObjectNode newRoot = JSONUtils.getJsonNodeFactory().objectNode();
+        Iterator<Map.Entry<String,JsonNode>> iter = root.getFields();
+        Map.Entry<String,JsonNode> entry;
+        while(iter.hasNext()) {
+            entry = iter.next();
+            if("wikitext-json".equals(entry.getKey())) continue;
+            newRoot.put(entry.getKey(), entry.getValue());
+        }
+        newRoot.put("wikitext-json", root.get("wikitext-json"));
+        return newRoot;
     }
 
     private void setContext(final JsonNode root, final DocumentContext documentContext) {
