@@ -38,7 +38,7 @@ public class TemplateMapping implements Serializable {
 
     public static TemplateMapping readMappingForTemplate(String mappingName)
     throws IOException, WikiTextParserException, SAXException {
-        final URL templateMappingURL = WikimediaUtils.templateToWikiMappingURLAPI(MAPPING_PREFIX + mappingName);
+        final URL templateMappingURL = DBpediaUtils.templateToWikiMappingAPIURL(MAPPING_PREFIX + mappingName);
         WikiPage wikiTextMapping;
         try {
             wikiTextMapping = WikiAPIParser.parseAPIResponse(templateMappingURL);

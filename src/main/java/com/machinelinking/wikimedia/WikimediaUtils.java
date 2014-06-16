@@ -2,7 +2,6 @@ package com.machinelinking.wikimedia;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLEncoder;
 
 /**
  * Functions to manage <i>Wikimedia</i>.
@@ -13,10 +12,6 @@ public class WikimediaUtils {
 
     private static final String WIKIPEDIA_GET_RESOURCE_WTEXT_CODE_API =
             "/w/api.php?format=xml&action=query&titles=%s&prop=revisions&rvprop=ids|content";
-
-    private static final String DBPEDIA_GET_MAPPING_WTEXT_CODE_API =
-            "http://mappings.dbpedia.org/api.php?action=query&prop=revisions&rvprop=ids|content&format=xml" +
-            "&titles=";
 
     public static String getEntityName(String entityURL) {
         final int entityNameBegin = entityURL.lastIndexOf('/') + 1;
@@ -43,14 +38,6 @@ public class WikimediaUtils {
                     String.format(WIKIPEDIA_GET_RESOURCE_WTEXT_CODE_API, getEntityName(entity.getPath()))
             );
         } catch (MalformedURLException murle) {
-            throw new IllegalStateException();
-        }
-    }
-
-    public static URL templateToWikiMappingURLAPI(String templateName) {
-        try {
-            return new URL(DBPEDIA_GET_MAPPING_WTEXT_CODE_API + URLEncoder.encode(templateName, "UTF-8"));
-        } catch (Exception e) {
             throw new IllegalStateException();
         }
     }
