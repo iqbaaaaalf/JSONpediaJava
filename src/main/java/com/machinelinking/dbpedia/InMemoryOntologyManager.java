@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.HashMap;
@@ -34,9 +33,11 @@ public class InMemoryOntologyManager implements OntologyManager {
 
     private static final String QUERY =
             "SELECT * WHERE {\n" +
-            "{?p a <http://www.w3.org/2002/07/owl#ObjectProperty>     . OPTIONAL {?p rdfs:domain ?domain; rdfs:range ?range} . ?p rdfs:label ?label}\n" +
+            "{?p a <http://www.w3.org/2002/07/owl#ObjectProperty>     . " +
+                    "OPTIONAL {?p rdfs:domain ?domain; rdfs:range ?range} . ?p rdfs:label ?label}\n" +
             "UNION\n" +
-            "{?p a <http://www.w3.org/2002/07/owl#FunctionalProperty> . OPTIONAL {?p rdfs:domain ?domain; rdfs:range ?range} . ?p rdfs:label ?label}\n" +
+            "{?p a <http://www.w3.org/2002/07/owl#FunctionalProperty> . " +
+                    "OPTIONAL {?p rdfs:domain ?domain; rdfs:range ?range} . ?p rdfs:label ?label}\n" +
             "FILTER langMatches( lang(?label), \"EN\" )\n" +
             "}";
 
@@ -52,8 +53,6 @@ public class InMemoryOntologyManager implements OntologyManager {
             final URL url = new URL(String.format(SERVICE, URLEncoder.encode(QUERY, "UTF-8")));
             final InputStream is = new BufferedInputStream( url.openStream() );
             result = JSONUtils.parseJSON(is);
-        } catch (MalformedURLException murle) {
-            throw new IllegalStateException(murle);
         } catch (IOException ioe) {
             throw new OntologyManagerException(ioe);
         }
@@ -95,18 +94,19 @@ public class InMemoryOntologyManager implements OntologyManager {
         return url;
     }
 
-    private static void saveOntologyIndex(Map<String, ? extends Property> ontology, File serializationFile) {
+    private static void saveOntologyIndex(Map<String, ? extends Property> ontology, File serializationFile)
+    throws OntologyManagerException {
         ObjectOutputStream oos;
         try {
             oos = new ObjectOutputStream( new BufferedOutputStream( new FileOutputStream(serializationFile)));
             oos.writeObject(ontology);
             oos.close();
         } catch (IOException ioe) {
-            throw new IllegalStateException(ioe);
+            throw new OntologyManagerException(ioe);
         }
     }
 
-    private static Map<String, Property> loadOntologyIndex(File serializationFile) {
+    private static Map<String, Property> loadOntologyIndex(File serializationFile) throws OntologyManagerException {
         ObjectInputStream ois;
         try {
             ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream(serializationFile)));
@@ -114,10 +114,8 @@ public class InMemoryOntologyManager implements OntologyManager {
                     (Map<String, Property>) ois.readObject();
             ois.close();
             return mapping;
-        } catch (IOException ioe) {
-            throw new IllegalStateException(ioe);
-        } catch (ClassNotFoundException cnfe) {
-            throw new IllegalStateException(cnfe);
+        } catch (IOException | ClassNotFoundException ioe) {
+            throw new OntologyManagerException(ioe);
         }
     }
 
