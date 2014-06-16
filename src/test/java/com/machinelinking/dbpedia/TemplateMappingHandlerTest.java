@@ -11,18 +11,18 @@ import java.io.InputStreamReader;
 import java.net.URL;
 
 /**
- * Test case for {@link WikiMappingHandler}.
+ * Test case for {@link TemplateMappingHandler}.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class WikiMappingHandlerTest {
+public class TemplateMappingHandlerTest {
 
     // http://mappings.dbpedia.org/index.php?title=Mapping:Infobox_scientist&action=edit
 
     @Test
     public void testMappingReading() throws IOException, WikiTextParserException {
         final TemplateMapping[] out = new TemplateMapping[1];
-        final WikiMappingHandler handler = new WikiMappingHandler("Mapping1") {
+        final TemplateMappingHandler handler = new TemplateMappingHandler("Mapping1") {
             @Override
             public void handle(TemplateMapping mapping) {
                 out[0] = mapping;

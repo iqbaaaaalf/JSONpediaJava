@@ -8,7 +8,7 @@ import com.machinelinking.parser.DefaultWikiTextParserHandler;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public abstract class WikiMappingHandler extends DefaultWikiTextParserHandler {
+public abstract class TemplateMappingHandler extends DefaultWikiTextParserHandler {
 
     public static final String TEMPLATE_MAPPING_NAME = "TemplateMapping";
     public static final String PROPERTY_MAPPING_NAME = "PropertyMapping";
@@ -31,7 +31,7 @@ public abstract class WikiMappingHandler extends DefaultWikiTextParserHandler {
 
     private TemplateMapping mapping;
 
-    protected WikiMappingHandler(String mappingName) {
+    protected TemplateMappingHandler(String mappingName) {
         this.mappingName = mappingName;
     }
 

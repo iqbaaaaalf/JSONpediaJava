@@ -49,7 +49,7 @@ public class TemplateMapping implements Serializable {
 
         if (wikiTextMapping != null) {
             final TemplateMapping[] out = new TemplateMapping[1];
-            final WikiMappingHandler handler = new WikiMappingHandler(mappingName) {
+            final TemplateMappingHandler handler = new TemplateMappingHandler(mappingName) {
                 @Override
                 public void handle(TemplateMapping mapping) {
                     out[0] = mapping;
