@@ -1,12 +1,12 @@
 package com.machinelinking.dbpedia;
 
+import com.machinelinking.pagestruct.PageStructConsts;
 import com.machinelinking.parser.WikiTextParser;
 import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.wikimedia.WikiAPIParser;
 import com.machinelinking.wikimedia.WikiPage;
-import com.machinelinking.wikimedia.WikimediaUtils;
 import org.xml.sax.SAXException;
 
 import java.io.ByteArrayInputStream;
@@ -92,7 +92,7 @@ public class TemplateMapping implements Serializable {
 
     public void serialize(Serializer serializer) {
         serializer.openObject();
-        serializer.fieldValue("__type", "mapping");
+        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_MAPPING);
         serializer.fieldValue("name", getMappingName());
         serializer.fieldValue("class", getMappingClass());
 

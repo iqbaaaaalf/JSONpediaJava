@@ -25,6 +25,7 @@ public interface PageStructConsts {
     static final String TYPE_INLINE_TAG = "inline_tag";
     static final String TYPE_COMMENT_TAG = "comment_tag";
     static final String TYPE_ENTITY = "entity";
+    static final String TYPE_MAPPING = "mapping";
 
     static final String PAGE_STRUCT_FIELD = "wikitext-json";
     static final String NAME_FIELD = "name";
