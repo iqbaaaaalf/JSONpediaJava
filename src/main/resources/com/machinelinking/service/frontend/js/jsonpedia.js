@@ -6,19 +6,42 @@ function JSONpedia() {
     var _params;
     var _deferred = $.Deferred();
 
-
     function perform(params) {
         if(params.performing) return;
         params.performing = true;
-        request = '/annotate/resource/' + params.out + '/' + params.entity + '?&procs=' + params.processors.join(',');
+        if('processors' in params) {
+            request = '/annotate/resource/' + params.out + '/' + params.entity + '?&procs=' + params.processors.join(',');
+        } else if('mongo' in params) {
+            call = params.mongo[0];
+            method = call[0];
+            if('select' == method) {
+                request = '/storage/mongo/select?q=' + encodeURIComponent(call[1]) +
+                        "&filter=" + encodeURIComponent(call[2]) +
+                        "&limit=" + call[3];
+            } else if('mapred' == method) {
+                request = '/storage/mongo/mapred?criteria=' + encodeURIComponent(call[1]) +
+                        "&map=" + encodeURIComponent(call[2]) +
+                        "&reduce=" + encodeURIComponent(call[3]) +
+                        "&limit=" + call[4];
+            } else throw new Error();
+        } else if('elastic' in params) {
+            call = params.elastic[0];
+            request = '/storage/elastic/select?q=' + encodeURIComponent(call[1]) +
+                        "&filter=" + encodeURIComponent(call[2]) +
+                        "&limit=" + call[3];
+        } else throw new Error();
         console.log('Performing request: ' + request);
         $.get(request)
                 .done(
-                    function(data){ _deferred.resolve(_params, data, null) }
-                )
+                function (data) {
+                    _deferred.resolve(_params, data, null)
+                }
+        )
                 .fail(
-                    function(xhr, status, error) {_deferred.resolve(_params, null, error + "[" + xhr.status + "]") }
-                );
+                function (xhr, status, error) {
+                    _deferred.resolve(_params, null, error + "[" + xhr.status + "]")
+                }
+        );
     }
 
     function handleReply(params, data, err) {
@@ -80,6 +103,38 @@ function JSONpedia() {
         return _methods;
     };
 
-    return { annotate : _annotate };
+    _mongo_methods = {
+        select: function(selector, filter, limit) {
+            _params.mongo.push(['select', selector, filter, limit]);
+            return _handlers;
+        },
+        mapred: function(criteria, map, reduce, limit) {
+            _params.mongo.push(['mapred', criteria, map, reduce, limit]);
+            return _handlers;
+        }
+    };
+
+    _mongo = function() {
+        _params = {mongo :[]};
+        return _mongo_methods;
+    };
+
+    _elastic_methods = {
+        select: function(selector, filter, limit) {
+            _params.elastic.push(['select', selector, filter, limit]);
+            return _handlers;
+        }
+    };
+
+    _elastic = function() {
+        _params = {elastic :[]};
+        return _elastic_methods;
+    };
+
+    return {
+        annotate: _annotate,
+        mongo: _mongo,
+        elastic: _elastic
+    };
 }
 
