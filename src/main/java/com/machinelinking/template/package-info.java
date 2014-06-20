@@ -1,5 +1,5 @@
 /**
- * Provides support for Wikimedia Template processing.
+ * Provides support for <i>Wikimedia Template</i> processing.
  *
  * @author Michele Mostarda (mostarda@fbk.eu) 
  */

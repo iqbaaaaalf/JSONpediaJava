@@ -1,2 +1,2 @@
-/** Defines classes to interact with <i>Google Freebase</i>. */
+/** <a href="https://www.freebase.com/">Google Freebase</a> APIs support. */
 package com.machinelinking.freebase;

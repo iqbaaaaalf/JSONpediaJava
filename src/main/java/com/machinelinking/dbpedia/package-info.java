@@ -1,2 +1,2 @@
-/** Defines classes to handle <i>DBpedia</i> ontologies. */
+/** <i>DBpedia</i> ontologies and mapping support. */
 package com.machinelinking.dbpedia;

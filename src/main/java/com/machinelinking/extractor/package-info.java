@@ -1,2 +1,3 @@
-/** This package defines the list of all defined {@link com.machinelinking.extractor.Extractor}s. */
+/** Core {@link com.machinelinking.extractor.Extractor}s.
+ * An {@link com.machinelinking.extractor.Extractor} allows to collect specific data from the page event stream. */
 package com.machinelinking.extractor;

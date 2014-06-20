@@ -1,5 +1,5 @@
 /**
- * This package contains classes responsible for converting {@link com.machinelinking.parser.WikiTextParserHandler}
- * events to {@link com.machinelinking.serializer.Serializer} events.
+ * Conversion of parser events ({@link com.machinelinking.parser.WikiTextParserHandler})
+ * to serialization events ({@link com.machinelinking.serializer.Serializer}).
  */
 package com.machinelinking.pagestruct;

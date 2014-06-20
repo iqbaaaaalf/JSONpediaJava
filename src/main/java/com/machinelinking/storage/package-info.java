@@ -1,2 +1,2 @@
-/** Provides classes to store <i>Wikitext</i> documents into a {@link com.machinelinking.storage.JSONStorage}. */
+/** Support for storing <i>Wikitext</i> JSON representations. */
 package com.machinelinking.storage;

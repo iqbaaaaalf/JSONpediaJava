@@ -1,2 +1,2 @@
-/** Provides serialization support. */
+/** JSON serialization support. */
 package com.machinelinking.serializer;

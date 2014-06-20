@@ -1,2 +1,2 @@
-/** Provides <i>JSON</i> filtering capabilities. */
+/** <i>JSON</i> filtering capabilities. */
 package com.machinelinking.filter;

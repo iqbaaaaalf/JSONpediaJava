@@ -1,2 +1,2 @@
-/** Provides the REST service implementation and the HTML frontend. */
+/** JSONpedia <i>REST</i> service and Web frontend. */
 package com.machinelinking.service;

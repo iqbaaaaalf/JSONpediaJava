@@ -1,2 +1,2 @@
-/**  Exporter CSV tool to process Wiki pages. */
+/** Wiki to CSV exporter tool. */
 package com.machinelinking.exporter;
