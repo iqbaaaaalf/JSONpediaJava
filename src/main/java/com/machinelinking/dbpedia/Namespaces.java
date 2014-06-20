@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Support for DBpedia Wikipedia namespaces.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class Namespaces {
