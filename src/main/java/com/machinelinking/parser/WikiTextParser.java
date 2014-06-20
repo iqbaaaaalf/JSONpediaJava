@@ -173,7 +173,7 @@ public class WikiTextParser implements ParserReader {
     }
 
     public void reset() throws IOException {
-        r.reset();
+        if(r != null) r.reset();
         row = markrow;
         col = markcol;
     }
