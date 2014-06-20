@@ -5,6 +5,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 /**
+ * <i>DBpedia APIs utility methods.</i>
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DBpediaUtils {
