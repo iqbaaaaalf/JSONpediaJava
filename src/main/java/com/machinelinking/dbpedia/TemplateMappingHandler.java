@@ -16,7 +16,7 @@ public abstract class TemplateMappingHandler extends DefaultWikiTextParserHandle
     public static final String TEMPLATE_PROPERTY_NAME = "templateProperty";
     public static final String ONTOLOGY_PROPERTY_NAME = "ontologyProperty";
 
-    private final String mappingName;
+    private String mappingName;
 
     private boolean insideTemplateMapping = false;
     private boolean insidePropertyMapping = false;
@@ -32,10 +32,23 @@ public abstract class TemplateMappingHandler extends DefaultWikiTextParserHandle
     private TemplateMapping mapping;
 
     protected TemplateMappingHandler(String mappingName) {
-        this.mappingName = mappingName;
+       reset(mappingName);
     }
 
     public abstract void handle(TemplateMapping mapping);
+
+    public void reset(String mappingName) {
+        this.mappingName = mappingName;
+        insideTemplateMapping = false;
+        insidePropertyMapping = false;
+        nextIsTemplateClass    = false;
+        nextIsTemplateProperty = false;
+        nextIsOntologyProperty = false;
+        templateProperty = null;
+        ontologyProperty = null;
+        clazz = null;
+        mapping = null;
+    }
 
     @Override
     public void beginTemplate(TemplateName name) {
@@ -51,7 +64,7 @@ public abstract class TemplateMappingHandler extends DefaultWikiTextParserHandle
 
     @Override
     public void parameter(String param) {
-        param = param.trim();
+        param = param == null ? null : param.trim();
         if (CLASS_PROPERTY_NAME.equals(param)) {
             nextIsTemplateClass = true;
         }
@@ -94,7 +107,7 @@ public abstract class TemplateMappingHandler extends DefaultWikiTextParserHandle
             insidePropertyMapping = false;
         } else if(insideTemplateMapping && TEMPLATE_MAPPING_NAME.equalsIgnoreCase(n)) {
             insideTemplateMapping = false;
-            handle(mapping);
+            if(mapping != null)handle(mapping);
         }
     }
 
