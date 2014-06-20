@@ -22,11 +22,11 @@ import java.util.Map;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class TemplateMapping implements Serializable {
+public class TemplateMapping implements Serializable, java.io.Serializable {
 
     public static final String MAPPING_PREFIX = "Mapping:";
 
-    private final OntologyManager ontologyManager;
+    private static volatile OntologyManager ontologyManager;
 
     private final String mappingName;
 
@@ -35,6 +35,14 @@ public class TemplateMapping implements Serializable {
     private final Map<String,Property> propertyNameToPropertyMapping;
 
     private List<String> issues;
+
+    static {
+        try {
+            ontologyManager = OntologyManagerFactory.getInstance().createOntologyManager();
+        } catch (OntologyManagerException ome) {
+            throw new RuntimeException("Error while initializing ontology manager.", ome);
+        }
+    }
 
     public static TemplateMapping readMappingForTemplate(String mappingName)
     throws IOException, WikiTextParserException, SAXException {
@@ -64,11 +72,6 @@ public class TemplateMapping implements Serializable {
     }
 
     public TemplateMapping(String mappingName, String mappingClass) {
-        try {
-            this.ontologyManager = OntologyManagerFactory.getInstance().createOntologyManager();
-        } catch (OntologyManagerException ome) {
-            throw new RuntimeException("Error while initializing ontology manager.", ome);
-        }
         this.mappingName = mappingName;
         this.mappingClass = mappingClass;
         this.propertyNameToPropertyMapping = new HashMap<>();
@@ -128,7 +131,10 @@ public class TemplateMapping implements Serializable {
     }
 
     protected void addMapping(String propertyName, String property) {
-        Property propertyMapping = ontologyManager.getProperty(property);
+        Property propertyMapping;
+        synchronized (ontologyManager) {
+            propertyMapping = ontologyManager.getProperty(property);
+        }
         if(propertyMapping == null) {
             propertyMapping = new DefaultProperty(property, null, null, null);
         }
