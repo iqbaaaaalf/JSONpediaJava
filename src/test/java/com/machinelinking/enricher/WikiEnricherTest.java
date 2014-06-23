@@ -13,6 +13,7 @@ import org.xml.sax.SAXException;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -43,7 +44,7 @@ public class WikiEnricherTest {
         );
     }
 
-    private void verifyEnrich(URL entity, boolean online, String wikiInFile, String jsonOutExpectedFile)
+    private void verifyEnrich(URL entity, boolean online, String wikiInResource, String jsonOutExpectedResource)
     throws IOException, WikiTextParserException, SAXException, ExecutionException, InterruptedException {
         final List<Flag> flags = new ArrayList<>();
         if(online) flags.add(WikiEnricherFactory.Linkers);
@@ -51,21 +52,23 @@ public class WikiEnricherTest {
         flags.add(WikiEnricherFactory.Extractors);
         flags.add(WikiEnricherFactory.Splitters);
         flags.add(WikiEnricherFactory.Structure);
+
+        final InputStream inInputStream = this.getClass().getResourceAsStream(wikiInResource);
+        if(inInputStream == null) throw new NullPointerException("Cannot find input resource");
+        final InputStream expectedInStream = this.getClass().getResourceAsStream(jsonOutExpectedResource);
+        if(expectedInStream == null) throw new NullPointerException("Cannot find expected resource.");
+
         final WikiEnricher enricher = WikiEnricherFactory
                 .getInstance().createFullyConfiguredInstance( flags.toArray( new Flag[flags.size()] ) );
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final JSONSerializer serializer = new JSONSerializer(baos);
         enricher.enrichEntity(
-                new DocumentSource(
-                    entity,
-                    this.getClass().getResourceAsStream(wikiInFile)
-                ),
+                new DocumentSource(entity, inInputStream),
                 serializer
         );
         logger.debug("JSON Output: " + baos);
-        final JsonNode expectedJSON = JSONUtils.parseJSON(
-                this.getClass().getResourceAsStream(jsonOutExpectedFile)
-        );
+
+        final JsonNode expectedJSON = JSONUtils.parseJSON(expectedInStream);
         final JsonNode extractedJSON = JSONUtils.parseJSON(baos.toString());
         removeVariableData(expectedJSON);
         removeVariableData(extractedJSON);
