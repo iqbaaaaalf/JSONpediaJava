@@ -1,6 +1,7 @@
 package com.machinelinking.extractor;
 
 import com.machinelinking.dbpedia.TemplateMapping;
+import com.machinelinking.dbpedia.TemplateMappingFactory;
 import com.machinelinking.parser.WikiPediaUtils;
 import com.machinelinking.serializer.Serializer;
 
@@ -63,7 +64,8 @@ public class TemplateMappingExtractor extends Extractor {
                     @Override
                     public void run() {
                         try {
-                            final TemplateMapping mapping = TemplateMapping.readMappingForTemplate(mappingName);
+                            final TemplateMapping mapping =
+                                    TemplateMappingFactory.getInstance().readMappingForTemplate(mappingName);
                             if(mapping != null) collectedMappings.put(mappingName, mapping);
                         } catch (Exception e) {
                             throw new RuntimeException("Error while fetching mapping " + mappingName, e);

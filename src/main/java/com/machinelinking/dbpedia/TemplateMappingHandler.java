@@ -93,7 +93,7 @@ public abstract class TemplateMappingHandler extends DefaultWikiTextParserHandle
         }
         if(templateProperty != null && ontologyProperty != null) {
             if(mapping == null) {
-                mapping = new TemplateMapping(mappingName, clazz);
+                mapping = TemplateMappingFactory.getInstance().createMapping(mappingName, clazz);
             }
             mapping.addMapping(templateProperty.trim(), ontologyProperty.trim());
             templateProperty = ontologyProperty = null;

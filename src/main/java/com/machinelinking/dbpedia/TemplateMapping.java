@@ -1,17 +1,9 @@
 package com.machinelinking.dbpedia;
 
 import com.machinelinking.pagestruct.PageStructConsts;
-import com.machinelinking.parser.WikiTextParser;
-import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
-import com.machinelinking.wikimedia.WikiAPIParser;
-import com.machinelinking.wikimedia.WikiPage;
-import org.xml.sax.SAXException;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,52 +16,12 @@ import java.util.Map;
  */
 public class TemplateMapping implements Serializable, java.io.Serializable {
 
-    public static final String MAPPING_PREFIX = "Mapping:";
-
-    private static volatile OntologyManager ontologyManager;
-
+    private transient OntologyManager ontologyManager;
     private final String mappingName;
-
     private final String mappingClass;
-
     private final Map<String,Property> propertyNameToPropertyMapping;
 
     private List<String> issues;
-
-    static {
-        try {
-            ontologyManager = OntologyManagerFactory.getInstance().createOntologyManager();
-        } catch (OntologyManagerException ome) {
-            throw new RuntimeException("Error while initializing ontology manager.", ome);
-        }
-    }
-
-    public static TemplateMapping readMappingForTemplate(String mappingName)
-    throws IOException, WikiTextParserException, SAXException {
-        final URL templateMappingURL = DBpediaUtils.templateToWikiMappingAPIURL(MAPPING_PREFIX + mappingName);
-        WikiPage wikiTextMapping;
-        try {
-            wikiTextMapping = WikiAPIParser.parseAPIResponse(templateMappingURL);
-        } catch (Exception e) {
-            wikiTextMapping = null;
-            e.printStackTrace();
-        }
-
-        if (wikiTextMapping != null) {
-            final TemplateMapping[] out = new TemplateMapping[1];
-            final TemplateMappingHandler handler = new TemplateMappingHandler(mappingName) {
-                @Override
-                public void handle(TemplateMapping mapping) {
-                    out[0] = mapping;
-                }
-            };
-            final WikiTextParser parser = new WikiTextParser(handler);
-            parser.parse(templateMappingURL, new ByteArrayInputStream(wikiTextMapping.getContent().getBytes()));
-            return out[0];
-        } else {
-            return null;
-        }
-    }
 
     public TemplateMapping(String mappingName, String mappingClass) {
         this.mappingName = mappingName;
@@ -149,6 +101,10 @@ public class TemplateMapping implements Serializable, java.io.Serializable {
                     propertyName, prev, propertyMapping
                 )
             );
+    }
+
+    public void setOntologyManager(OntologyManager om) {
+        this.ontologyManager = om;
     }
 
     private void reportIssue(String issue) {

@@ -10,17 +10,17 @@ import org.xml.sax.SAXException;
 import java.io.IOException;
 
 /**
- * Test case for {@link TemplateMapping} lookup.
+ * Test case for {@link com.machinelinking.dbpedia.TemplateMappingFactory} lookup.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class TemplateMappingTest {
+public class TemplateMappingFactoryTest {
 
-    private static final Logger logger = Logger.getLogger(TemplateMappingTest.class);
+    private static final Logger logger = Logger.getLogger(TemplateMappingFactoryTest.class);
 
     @Test
     public void testToJSON() throws IOException, WikiTextParserException, SAXException {
-        final TemplateMapping mapping = TemplateMapping.readMappingForTemplate("Chembox");
+        final TemplateMapping mapping = TemplateMappingFactory.getInstance().readMappingForTemplate("Chembox");
         final String json = JSONUtils.serializeToJSON(mapping);
         logger.debug(json);
         Assert.assertEquals(
@@ -31,7 +31,7 @@ public class TemplateMappingTest {
 
     @Test
     public void testReadMappingForTemplate() throws IOException, WikiTextParserException, SAXException {
-        final TemplateMapping mapping = TemplateMapping.readMappingForTemplate("Infobox scientist");
+        final TemplateMapping mapping = TemplateMappingFactory.getInstance().readMappingForTemplate("Infobox scientist");
         logger.debug(JSONUtils.serializeToJSON(mapping));
         Assert.assertEquals( 23, mapping.getMappingSize() );
     }
