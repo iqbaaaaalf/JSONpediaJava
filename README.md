@@ -21,17 +21,17 @@ gradle build -x tests
 When the compilation finishes the resulting binary can be found in ```build/libs```
 A self-contained jar can also be built by issuing 
 ```bash
-$ gradle shadowJar
+$ gradle fullCapsule
 ```
 
-The resulting jar will be in ```build/distributions``` with the name ```jsonpedia-{VERSION}-shadow.jar```.
+The resulting jar will also be in ```build/libs``` with the name ```jsonpedia-{VERSION}-full.jar```.
 
-Please note that building a shadowJar will not run any tests.
+Please note that building a capsule will not run any tests.
 
 ### Run CLI:
 
 ```bash
-$ java -cp build/distributions/jsonpedia-{VERSION}-shadow.jar com.machinelinking.exporter.CSVExporterCLI
+$ java -cp build/libs/jsonpedia-{VERSION}-full.jar com.machinelinking.exporter.CSVExporterCLI
 ```
 
 Running without arguments will produce this usage message:
@@ -47,7 +47,7 @@ Running without arguments will produce this usage message:
 ### CLI Usage examples
 
 ```bash
-$ java -cp build/distributions/jsonpedia-{VERSION}-shadow.jar \
+$ java -cp build/libs/jsonpedia-{VERSION}-full.jar \
   com.machinelinking.exporter.CSVExporterCLI \
   -p http://en.wikipedia.org/wiki -i src/test/resources/enwiki-latest-pages-articles-p3.xml.gz -o out.csv
 ```
@@ -63,7 +63,7 @@ templates: 1117, properties 4907, max properties/template: 52, avg properties/te
 ```
 $ echo "server.host = 127.0.0.1" > /tmp/conf.properties
 $ echo "server.port = 8080" > /tmp/conf.properties
-$ java -jar build/distributions/jsonpedia-{VERSION}-shadow.jar -c /tmp/conf.properties
+$ java -jar build/libs/jsonpedia-{VERSION}-full.jar -c /tmp/conf.properties
 ```
 
 You can now connect to ```http://127.0.0.1:8080/frontend/index.html``` in your browser and use the web interface!
