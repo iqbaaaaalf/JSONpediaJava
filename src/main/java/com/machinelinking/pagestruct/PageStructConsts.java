@@ -29,9 +29,11 @@ public interface PageStructConsts {
 
     static final String PAGE_STRUCT_FIELD = "wikitext-json";
     static final String NAME_FIELD = "name";
+    static final String TITLE_FIELD = "title";
     static final String URL_FIELD = "url";
     static final String LABEL_FIELD = "label";
     static final String LEVEL_FIELD = "level";
+    static final String ANCESTORS_FIELD = "ancestors";
     static final String CONTENT_FIELD = "content";
     static final String DEFAULT_FIELD = "default";
 

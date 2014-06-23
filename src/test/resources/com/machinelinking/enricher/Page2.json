@@ -23664,187 +23664,294 @@
         }
     ],
     "issues": null,
-    "abstract": "\nLondon is a leading <%{\"__type\":\"reference\",\"label\":\"global city\",\"content\":{}}%>, with strengths in the arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism and transport all contributing to its prominence.<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.mori-m-foundation.or.jp/english/research/project/6/pdf/GPCI2009_English.pdf\",\"__an1\":\"Global Power City Index 2009\",\"__an2\":\"14 December 2010\",\"__an3\":\"Institute for Urban Strategies&nbsp;– The Mori Memorial Foundation\"}}%> It is the world's leading <% {\"__type\":\"reference\",\"label\":\"financial centre\",\"content\":{}}%> alongside <% {\"__type\":\"reference\",\"label\":\"New York City\",\"content\":{}} {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.mastercard.com/us/company/en/insights/pdfs/2008/MCWW_WCoC-Report_2008.pdf\",\"__an1\":\"Worldwide Centres of Commerce Index 2008\",\"__an2\":\"Mastercard\"}} {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://zyen.com/PDF/GFCI%2010.pdf\",\"__an1\":\"Global Financial Centres 9\",\"__an2\":{\"__type\":\"reference\",\"label\":\"Z/Yen\",\"content\":{}},\"__an3\":\"2011\"}} {\"__type\":\"template\",\"name\":\"Cite news\",\"content\":{\"__an0\":\"http://www.forbes.com/2008/07/15/economic-growth-gdp-biz-cx_jz_0715powercities.html\",\"__an1\":\"\\\"World's Most Economically Powerful Cities\\\".\",\"__an2\":\"Forbes\",\"__an3\":\"15 July 2008\",\"__an4\":\"3 October 2010\",\"__an5\":\"http://www.webcitation.org/5yo0LhcwS\",\"__an6\":\"19 May 2011\",\"__an7\":\"no\"}}%> and has the <% {\"__type\":\"reference\",\"label\":\"List of cities by GDP\",\"content\":{\"__an0\":\"fifth-largest metropolitan area GDP in the world\"}}%>, and the largest in Europe.<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.ukmediacentre.pwc.com/Media-Library/Global-city-GDP-rankings-2008-2025-61a.aspx\",\"__an1\":\"Global city GDP rankings 2008–2025\",\"__an2\":\"PricewaterhouseCoopers\",\"__an3\":\"16 November 2010\",\"__an4\":\"http://www.webcitation.org/5yo0M2ast\",\"__an5\":\"19 May 2011\",\"__an6\":\"no\"}}%> London has been described as a world cultural capital.<% {\"__type\":\"template\",\"name\":\"cite news\",\"content\":{\"__an0\":\"http://www.independent.co.uk/travel/news-and-advice/london-capital-of-the-world-766661.html\",\"__an1\":\"London\",\"__an2\":\"The Independent\",\"__an3\":\"Simon\",\"__an4\":\"Calder\",\"__an5\":\"22 December 2007\",\"__an6\":\"London, capital of the world\"}} {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.thisislondon.co.uk/news/article-23389580-london-is-the-world-capital-of-the-21st-century-says-new-york.do\",\"__an1\":\"London is the world capital of the 21st century... says New York &#124; News\",\"__an2\":\"Evening Standard\",\"__an3\":\"London\",\"__an4\":\"10 February 2012\"}} {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www2.lse.ac.uk/newsAndMedia/news/archives/2008/culturecapital.aspx\",\"__an1\":\"London is world capital of culture says LSE expert&nbsp;– 2008&nbsp;– News archive&nbsp;– News&nbsp;– News and media&nbsp;– Home\",\"__an2\":\".lse.ac.uk\",\"__an3\":\"10 February 2012\"}} {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.london.gov.uk/get-involved/consultations/current-consultations/cultural-strategy\",\"__an1\":\"Cultural Strategy &#124; Greater London Authority\",\"__an2\":\"London.gov.uk\",\"__an3\":\"6 September 2010\",\"__an4\":\"10 February 2012\"}}%> It is the world's most-visited city<% {\"__type\":\"template\",\"name\":\"cite news\",\"content\":{\"__an0\":\"http://www.independent.co.uk/travel/news-and-advice/london-tops-ranking-of-destination-cities-2291794.html\",\"__an1\":\"London tops ranking of destination cities\",\"__an2\":\"12 June 2012\",\"__an3\":\"The Independent\",\"__an4\":\"1 June 2011\"}}%> and has the <% {\"__type\":\"reference\",\"label\":\"World's busiest city airport systems by passenger traffic\",\"content\":{\"__an0\":\"world's largest city airport system measured by passenger traffic\"}}%>.<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.centreforaviation.com/analysis/beijing-to-overtake-london-as-worlds-largest-aviation-hub-massive-new-airport-planned-58776\",\"__an1\":\"Beijing to overtake london as world's largest aviation hub. Massive new airport planned\",\"__an2\":\"12 June 2012\",\"__an3\":\"Centre for Aviation\"}}%> London's 43 universities form the largest concentration of higher education in Europe.<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.london.gov.uk/media/press_releases_mayoral/number-international-students-london-continues-grow\",\"__an1\":\"Number of international students in London continues to grow\",\"__an2\":\"27 August 2010\",\"__an3\":\"Greater London Authority\",\"__an4\":\"http://www.webcitation.org/5yo0OvJq8\",\"__an5\":\"19 May 2011\",\"__an6\":\"no\"}}%> In <% {\"__type\":\"reference\",\"label\":\"2012 Summer Olympics\",\"content\":{\"__an0\":\"2012\"}}%> London became the first city to host the modern <% {\"__type\":\"reference\",\"label\":\"Summer Olympic Games\",\"content\":{}}%> three times.<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.olympic.org/media?calendartab=1&articleid=52922\",\"__an1\":\"IOC elects London as the Host City of the Games of the XXX Olympiad in 2012\",\"__an2\":\"6 July 2005\",\"__an3\":{\"__type\":\"reference\",\"label\":\"International Olympic Committee\",\"content\":{}},\"__an4\":\"3 June 2006\"}}%>\nLondon has a diverse range of peoples and cultures, and more than 300 languages are spoken within its boundaries.<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.cilt.org.uk/faqs/langspoken.htm\",\"__an1\":\"Languages spoken in the UK population\",\"__an2\":\"CILT, the National Centre for Language\",\"__an3\":\"6 June 2008\",\"__an4\":\"http://www.webcitation.org/5yo0PFX8H\",\"__an5\":\"19 May 2011\",\"__an6\":\"no\"}}%> In March 2011, London had an official population of 8,174,100, making it the <% {\"__type\":\"reference\",\"label\":\"Largest cities of the European Union by population within city limits\",\"content\":{\"__an0\":\"most populous municipality in the European Union\"}}%>,<% {\"__type\":\"template\",\"name\":\"cite journal\",\"content\":{\"__an0\":\"http://www.statistics.gov.uk/downloads/theme_population/mid-2010-pop-ests-30-june-2011.zip\",\"__an1\":\"July 2010 Population estimates for UK, England and Wales, Scotland and Northern Ireland\",\"__an2\":\"Office for National Statistics\",\"__an3\":\"3 July 2011\"}} {\"__type\":\"template\",\"name\":\"dead link\",\"content\":{\"__an0\":\"February 2012\"}} {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.statistics.gov.uk/cci/nugget.asp?id=384\",\"__an1\":\"Largest EU City. Over 7&nbsp;million residents in 2001\",\"__an2\":\"Office for National Statistics\",\"__an3\":\"statistics.gov.uk\",\"__an4\":\"28 June 2008\",\"__an5\":\"http://www.webcitation.org/5Qd8V9JhM\",\"__an6\":\"26 July 2007\",\"__an7\":\"no\"}}%> and accounting for 12.5% of the UK population.<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"12:30\",\"__an1\":\"http://data.london.gov.uk/datastore/applications/focus-london-population-and-migration\",\"__an2\":\"Focus on London&nbsp;– Population and Migration &#124; London DataStore\",\"__an3\":\"Data.london.gov.uk\",\"__an4\":\"10 February 2012\"}}%> The <% {\"__type\":\"reference\",\"label\":\"Greater London Urban Area\",\"content\":{}}%> is the <% {\"__type\":\"reference\",\"label\":\"Largest urban areas of the European Union\",\"content\":{\"__an0\":\"second-largest in the EU\"}}%> with a population of 8,278,251,<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.statistics.gov.uk/statbase/ssdataset.asp?vlnk=8271&More=Y\",\"__an1\":\"KS01 Usual resident population: Census 2001, Key Statistics for urban areas\",\"__an2\":\"Office for National Statistics\",\"__an3\":\"6 June 2008\",\"__an4\":\"http://www.webcitation.org/5yo0QNPvs\",\"__an5\":\"19 May 2011\",\"__an6\":\"no\"}}%> while the <% {\"__type\":\"reference\",\"label\":\"London metropolitan area\",\"content\":{}}%> is the largest in the EU with an estimated total population of between 12million<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.citypopulation.de/world/Agglomerations.html\",\"__an1\":\"The Principal Agglomerations of the World\",\"__an2\":\"City Population\",\"__an3\":\"3 March 2009\",\"__an4\":\"http://www.webcitation.org/5rRuMtUmh\",\"__an5\":\"23 July 2010\",\"__an6\":\"no\"}}%> and 14million.<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.espon.eu/export/sites/default/Documents/Projects/ESPON2006Projects/StudiesScientificSupportProjects/UrbanFunctions/fr-1.4.3_April2007-final.pdf#page=119\",\"__an1\":\"British urban pattern: population data\",\"__an2\":\"22 February 2010\",\"__an3\":\"2007\",\"__an4\":\"March\",\"__an5\":\"PDF\",\"__an6\":\"ESPON project 1.4.3 Study on Urban Functions\",\"__an7\":{\"__type\":\"reference\",\"label\":\"European Spatial Planning Observation Network\",\"content\":{}},\"__an8\":\"119\"}}%> London had the largest population of any city in the world from around 1831 to 1925.<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.channel4.com/history/microsites/H/history/i-m/london4.html\",\"__an1\":\"London: The greatest city\",\"__an2\":\"Channel4.com\",\"__an3\":\"12 October 2008\",\"__an4\":\"harv\",\"__an5\":\"http://www.webcitation.org/5yo0g3KOn\",\"__an6\":\"19 May 2011\",\"__an7\":\"no\"}}%>\nLondon contains four <% {\"__type\":\"reference\",\"label\":\"World Heritage Site\",\"content\":{}}%>s: the <% {\"__type\":\"reference\",\"label\":\"Tower of London\",\"content\":{}}%>; <% {\"__type\":\"reference\",\"label\":\"Royal Botanic Gardens, Kew\",\"content\":{\"__an0\":\"Kew Gardens\"}}%>; the site comprising the <% {\"__type\":\"reference\",\"label\":\"Palace of Westminster\",\"content\":{}}%>, <% {\"__type\":\"reference\",\"label\":\"Westminster Abbey\",\"content\":{}}%>, and <% {\"__type\":\"reference\",\"label\":\"St Margaret's, Westminster\",\"content\":{\"__an0\":\"St Margaret's Church\"}}%>; and the historic settlement of <% {\"__type\":\"reference\",\"label\":\"Greenwich\",\"content\":{}}%> (in which the <% {\"__type\":\"reference\",\"label\":\"Royal Observatory, Greenwich\",\"content\":{\"__an0\":\"Royal Observatory\"}}%> marks the <% {\"__type\":\"reference\",\"label\":\"Prime Meridian\",\"content\":{}}%>, 0° <% {\"__type\":\"reference\",\"label\":\"longitude\",\"content\":{}}%>, and <% {\"__type\":\"reference\",\"label\":\"GMT\",\"content\":{}}%>).<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://whc.unesco.org/en/statesparties/gb\",\"__an1\":\"Lists: United Kingdom of Great Britain and Northern Ireland\",\"__an2\":{\"__type\":\"reference\",\"label\":\"UNESCO\",\"content\":{}},\"__an3\":\"26 November 2008\"}}%> Other famous landmarks include <% {\"__type\":\"reference\",\"label\":\"Buckingham Palace\",\"content\":{}}%>, the <% {\"__type\":\"reference\",\"label\":\"London Eye\",\"content\":{}}%>, <% {\"__type\":\"reference\",\"label\":\"Piccadilly Circus\",\"content\":{}}%>, <% {\"__type\":\"reference\",\"label\":\"St Paul's Cathedral\",\"content\":{}}%>, <% {\"__type\":\"reference\",\"label\":\"Tower Bridge\",\"content\":{}}%>, <% {\"__type\":\"reference\",\"label\":\"Trafalgar Square\",\"content\":{}}%> and <% {\"__type\":\"reference\",\"label\":\"Wembley Stadium\",\"content\":{}}%>. London is home to numerous museums, galleries, libraries, sporting events and other cultural institutions, including the <% {\"__type\":\"reference\",\"label\":\"British Museum\",\"content\":{}}%>, <% {\"__type\":\"reference\",\"label\":\"National Gallery\",\"content\":{}}%>, <% {\"__type\":\"reference\",\"label\":\"Tate Modern\",\"content\":{}}%>, <% {\"__type\":\"reference\",\"label\":\"British Library\",\"content\":{}}%>, <% {\"__type\":\"reference\",\"label\":\"The Championships, Wimbledon\",\"content\":{\"__an0\":\"Wimbledon\"}}%>, and 40 <% {\"__type\":\"reference\",\"label\":\"West End theatre\",\"content\":{\"__an0\":\"West End\"}}%> theatres.<% {\"__type\":\"template\",\"name\":\"Cite news\",\"content\":{\"__an0\":\"http://www.whatsonstage.com/index.php?pg=207&story=E8821201275286&title=West+End+Must+Innovate+to+Renovate%2C+Says+Report\",\"__an1\":\"West End Must Innovate to Renovate, Says Report\",\"__an2\":\"15 November 2010\",\"__an3\":\"What's On Stage\",\"__an4\":\"25 January 2008\",\"__an5\":\"http://www.webcitation.org/5yo0S4x3M\",\"__an6\":\"19 May 2011\",\"__an7\":\"no\"}}%> The <% {\"__type\":\"reference\",\"label\":\"London Underground\",\"content\":{}}%> is the oldest underground railway network in the world.<% {\"__type\":\"template\",\"name\":\"cite web\",\"content\":{\"__an0\":\"http://www.railwaygazette.com/news/single-view/view/10/shanghai-now-the-worlds-longest-metro.html\",\"__an1\":\"Shanghai now the world's longest metro\",\"__an2\":\"4 May 2010\",\"__an3\":{\"__type\":\"reference\",\"label\":\"Railway Gazette International\",\"content\":{}},\"__an4\":\"4 May 2010\",\"__an5\":\"http://www.webcitation.org/5yo0Tj3yO\",\"__an6\":\"19 May 2011\",\"__an7\":\"no\"}}%>\n",
+    "abstract": "\n\n\n\n\n\nLondon <i>[ˈlʌndən]</i> is the capital city of <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEngland\">England</a></span> and the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUnited+Kingdom\">United Kingdom</a></span>, the largest <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2Fmetropolitan+area\">metropolitan area</a></span> in the United Kingdom, and the largest urban zone in the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEuropean+Union\">European Union</a></span> by most measures.<ref group=\"note\">According to the&lt;span class=\"reference\"&gt&lt;a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEurostat\"&gtEurostat&lt;/a&gt&lt;/span&gt, London is the largest&lt;span class=\"reference\"&gt&lt;a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLarger+Urban+Zones\"&gtLarger Urban Zones&lt;/a&gt&lt;/span&gtwhich uses&lt;span class=\"reference\"&gt&lt;a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2Fconurbation\"&gtconurbation&lt;/a&gt&lt;/span&gts and areas of high population as its definition. A&lt;span class=\"reference\"&gt&lt;a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLargest+cities+of+the+European+Union+by+population+within+city+limits\"&gtLargest cities of the European Union by population within city limits&lt;/a&gt&lt;/span&gtwithin municipal boundaries places London first. However, the&lt;span class=\"reference\"&gt&lt;a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUniversity+of+Avignon\"&gtUniversity of Avignon&lt;/a&gt&lt;/span&gtin France claims that Paris is first and London second when including the whole urban area and&lt;span class=\"reference\"&gt&lt;a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2Fhinterland\"&gthinterland&lt;/a&gt&lt;/span&gt, that is the&lt;span class=\"reference\"&gt&lt;a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLargest+urban+areas+of+the+European+Union\"&gtLargest urban areas of the European Union&lt;/a&gt&lt;/span&gt.</ref> Located on the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRiver+Thames\">River Thames</a></span>, London has been a major settlement for two millennia, <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHistory+of+London\">History of London</a></span> going back to its founding by the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRoman+Empire\">Roman Empire</a></span>, who named it <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRoman+London\">Roman London</a></span>.  London's ancient core, the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCity+of+London\">City of London</a></span>, largely retains its square-mile <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2Fmediaeval\">mediaeval</a></span> boundaries. Since at least the 19th century, the name London has also referred to the metropolis developed around this core. The bulk of this <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2Fconurbation\">conurbation</a></span> forms the London <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRegions+of+England\">Regions of England</a></span>  and the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGreater+London\">Greater London</a></span> administrative area,See also: <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FIndependent+city%23National+capitals\">Independent city#National capitals</a></span>. governed by the elected <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMayor+of+London\">Mayor of London</a></span> and the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLondon+Assembly\">London Assembly</a></span>.\nLondon is a leading <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2Fglobal+city\">global city</a></span>, with strengths in the arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism and transport all contributing to its prominence. It is the world's leading <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2Ffinancial+centre\">financial centre</a></span> alongside <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNew+York+City\">New York City</a></span> and has the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FList+of+cities+by+GDP\">List of cities by GDP</a></span>, and the largest in Europe. London has been described as a world cultural capital. It is the world's most-visited city and has the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWorld%27s+busiest+city+airport+systems+by+passenger+traffic\">World's busiest city airport systems by passenger traffic</a></span>. London's 43 universities form the largest concentration of higher education in Europe. In <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2F2012+Summer+Olympics\">2012 Summer Olympics</a></span> London became the first city to host the modern <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSummer+Olympic+Games\">Summer Olympic Games</a></span> three times.\nLondon has a diverse range of peoples and cultures, and more than 300 languages are spoken within its boundaries. In March 2011, London had an official population of 8,174,100, making it the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLargest+cities+of+the+European+Union+by+population+within+city+limits\">Largest cities of the European Union by population within city limits</a></span>, and accounting for 12.5% of the UK population. The <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGreater+London+Urban+Area\">Greater London Urban Area</a></span> is the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLargest+urban+areas+of+the+European+Union\">Largest urban areas of the European Union</a></span> with a population of 8,278,251, while the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLondon+metropolitan+area\">London metropolitan area</a></span> is the largest in the EU with an estimated total population of between 12million and 14million. London had the largest population of any city in the world from around 1831 to 1925.\nLondon contains four <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWorld+Heritage+Site\">World Heritage Site</a></span>s: the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTower+of+London\">Tower of London</a></span>; <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRoyal+Botanic+Gardens%2C+Kew\">Royal Botanic Gardens, Kew</a></span>; the site comprising the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPalace+of+Westminster\">Palace of Westminster</a></span>, <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWestminster+Abbey\">Westminster Abbey</a></span>, and <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSt+Margaret%27s%2C+Westminster\">St Margaret's, Westminster</a></span>; and the historic settlement of <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGreenwich\">Greenwich</a></span> (in which the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRoyal+Observatory%2C+Greenwich\">Royal Observatory, Greenwich</a></span> marks the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPrime+Meridian\">Prime Meridian</a></span>, 0° <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2Flongitude\">longitude</a></span>, and <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGMT\">GMT</a></span>). Other famous landmarks include <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBuckingham+Palace\">Buckingham Palace</a></span>, the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLondon+Eye\">London Eye</a></span>, <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPiccadilly+Circus\">Piccadilly Circus</a></span>, <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSt+Paul%27s+Cathedral\">St Paul's Cathedral</a></span>, <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTower+Bridge\">Tower Bridge</a></span>, <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTrafalgar+Square\">Trafalgar Square</a></span> and <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWembley+Stadium\">Wembley Stadium</a></span>. London is home to numerous museums, galleries, libraries, sporting events and other cultural institutions, including the <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBritish+Museum\">British Museum</a></span>, <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNational+Gallery\">National Gallery</a></span>, <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTate+Modern\">Tate Modern</a></span>, <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBritish+Library\">British Library</a></span>, <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe+Championships%2C+Wimbledon\">The Championships, Wimbledon</a></span>, and 40 <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWest+End+theatre\">West End theatre</a></span> theatres. The <span class=\"reference\"><a href=\"/annotate/resource/html/http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLondon+Underground\">London Underground</a></span> is the oldest underground railway network in the world.\n",
     "sections": [
         {
             "title": " History ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " Toponymy ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                0
+            ]
         },
         {
             "title": " Prehistory and antiquity ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                0
+            ]
         },
         {
             "title": " Middle Ages ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                0
+            ]
         },
         {
             "title": " Early modern ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                0
+            ]
         },
         {
             "title": " Late modern and contemporary ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                0
+            ]
         },
         {
             "title": " Government ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " Local government ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                6
+            ]
         },
         {
             "title": " National government ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                6
+            ]
         },
         {
             "title": " Geography ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " Scope ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                9
+            ]
         },
         {
             "title": " Status ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                9
+            ]
         },
         {
             "title": " Topography ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                9
+            ]
         },
         {
             "title": " Climate ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                9
+            ]
         },
         {
             "title": " Districts ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                9
+            ]
         },
         {
             "title": " Architecture ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                9
+            ]
         },
         {
             "title": " Parks and gardens ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                9
+            ]
         },
         {
             "title": " Demography ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " Ethnic groups ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                17
+            ]
         },
         {
             "title": " Religion ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                17
+            ]
         },
         {
             "title": " Economy ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " Tourism ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                20
+            ]
         },
         {
             "title": " Transport ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " Air ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                22
+            ]
         },
         {
             "title": " Buses and trams ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                22
+            ]
         },
         {
             "title": " Cycling ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                22
+            ]
         },
         {
             "title": " Port ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                22
+            ]
         },
         {
             "title": " Rail ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                22
+            ]
         },
         {
             "title": " Roads ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                22
+            ]
         },
         {
             "title": " Education ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " Tertiary education ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                29
+            ]
         },
         {
             "title": " Primary and secondary education ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                29
+            ]
         },
         {
             "title": " Culture ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " Accent ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                32
+            ]
         },
         {
             "title": " Leisure and entertainment ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                32
+            ]
         },
         {
             "title": " Literature, film and television ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                32
+            ]
         },
         {
             "title": " Museums and art galleries ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                32
+            ]
         },
         {
             "title": " Music ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                32
+            ]
         },
         {
             "title": " Sports ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " Twin cities ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " See also ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " Notes ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " References ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         },
         {
             "title": " Bibliography ",
-            "level": 1
+            "level": 1,
+            "ancestors": [
+                42
+            ]
         },
         {
             "title": " External links ",
-            "level": 0
+            "level": 0,
+            "ancestors": null
         }
     ],
     "links": [
