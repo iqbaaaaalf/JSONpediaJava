@@ -15,7 +15,7 @@ class ElasticDocumentConverter implements DocumentConverter<ElasticDocument> {
     final Set<String> blocked = new HashSet<>();
 
     ElasticDocumentConverter() {
-        //blocked.add("wikitext-json");
+        blocked.add("wikitext-json");
         blocked.add("infobox-splitter");
         blocked.add("table-splitter");
     }
