@@ -17,9 +17,10 @@ import os
 import re
 import time
 import subprocess
+import traceback
 
 from lxml import html
-
+from subprocess import CalledProcessError
 
 def atoi(text):
     return int(text) if text.isdigit() else text
@@ -55,7 +56,7 @@ def download_file(url, dir, file):
 
 
 def ingest_file(config, file):
-    cmd = "GRADLE_OPTS='-Xms%s -Xmx%s -Dlog4j.configuration=file:conf/log4j.properties' %s runLoader -Pconfig=%s -Pdump=%s 2>&1 1> %s.log" \
+    cmd = "GRADLE_OPTS='-Xms%s -Xmx%s -Dlog4j.configuration=file:conf/log4j.properties' %s runLoader -Pconfig=%s -Pdump=%s 2>&1 > %s.log" \
           % (MVN_HEAP_SIZE, MVN_HEAP_SIZE, GRADLE_BIN, config, file, file)
     print 'Executing command:', cmd
     subprocess.check_call(cmd, shell=True)
@@ -76,9 +77,14 @@ def process_articles_dumps(config, n):
         print 'Download complete in %d sec.' % (dt2 - dt1)
         print 'Start ingestion ...'
         it1 = time.time()
-        ingest_file(config, article_file)
-        it2 = time.time()
-        print 'Ingestion complete in %d sec.' % (it2 - it1)
+        try:
+            ingest_file(config, article_file)
+        except CalledProcessError as e:
+            print 'Error while processing file:'
+            traceback.format_exception_only(type(e), e)
+        finally:
+            it2 = time.time()
+            print 'Ingestion completed in %d sec.' % (it2 - it1)
         os.remove(article_file)
         print 'File deleted.'
 
