@@ -21,7 +21,7 @@ import java.io.IOException;
  */
 public class MongoJSONStorageTest {
 
-    public static String TEST_DB = "test_db";
+    public static String TEST_DB = "jsonpedia_test_db";
     public static String TEST_COLLECTION = "test_collection";
 
     private static final String MAP_FUNC = "function() {  ocs = this.content.templates.occurrences; for(template in ocs) { emit(template, ocs[template]); } }";
