@@ -25,12 +25,12 @@ public class MultiJSONStorageConfiguration implements JSONStorageConfiguration, 
         return getSample().getCollection();
     }
 
-    private JSONStorageConfiguration getSample() {
-        return configurations[0];
-    }
-
     @Override
     public Iterator<JSONStorageConfiguration> iterator() {
         return Arrays.asList(configurations).iterator();
+    }
+
+    private JSONStorageConfiguration getSample() {
+        return configurations[0];
     }
 }
