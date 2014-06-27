@@ -28,17 +28,22 @@ public abstract class AbstractJSONStorageLoaderTest {
 
     @Test
     public void testLoaderDump1() throws IOException, SAXException {
-        loadDump("/dumps/enwiki-latest-pages-articles-p1.xml.gz", 0);
+        loadLatestPageArticles(1);
     }
 
     @Test
     public void testLoaderDump2() throws IOException, SAXException {
-        loadDump("/dumps/enwiki-latest-pages-articles-p2.xml.gz", 0);
+        loadLatestPageArticles(2);
     }
 
     @Test
     public void testLoaderDump3() throws IOException, SAXException {
-        loadDump("/dumps/enwiki-latest-pages-articles-p3.xml.gz", 0);
+        loadLatestPageArticles(3);
+    }
+
+
+    public void loadLatestPageArticles(int dump) throws IOException, SAXException {
+        loadDump(String.format("/dumps/enwiki-latest-pages-articles-p%d.xml.gz", dump), 0);
     }
 
     public void loadDump(String dump, int expectedIssues) throws IOException, SAXException {
