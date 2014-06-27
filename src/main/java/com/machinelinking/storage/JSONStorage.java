@@ -14,7 +14,15 @@ extends Closeable {
 
     DocumentConverter<D> getConverter();
 
+    boolean exists();
+
+    boolean exists(String collection);
+
+    JSONStorageConnection<D, S> openConnection();
+
     JSONStorageConnection<D, S> openConnection(String collection);
+
+    void deleteCollection();
 
     void deleteCollection(String collection);
 

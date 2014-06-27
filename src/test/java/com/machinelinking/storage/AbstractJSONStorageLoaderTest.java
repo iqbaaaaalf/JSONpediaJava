@@ -24,7 +24,17 @@ public abstract class AbstractJSONStorageLoaderTest {
             WikiEnricherFactory.Validate
     };
 
+    private boolean cleanupDone = false;
+
     protected abstract JSONStorage getJSONStorage() throws UnknownHostException;
+
+    public void performCleanupOnce() throws UnknownHostException {
+        if(!cleanupDone) {
+            getJSONStorage().deleteCollection();
+            Assert.assertFalse("Collection should not exist any longer.", getJSONStorage().exists());
+            cleanupDone = true;
+        }
+    }
 
     @Test
     public void testLoaderDump1() throws IOException, SAXException {
@@ -47,6 +57,7 @@ public abstract class AbstractJSONStorageLoaderTest {
     }
 
     public void loadDump(String dump, int expectedIssues) throws IOException, SAXException {
+        performCleanupOnce();
 
         final DefaultJSONStorageLoader loader = new DefaultJSONStorageLoader(
                 WikiEnricherFactory.getInstance(),

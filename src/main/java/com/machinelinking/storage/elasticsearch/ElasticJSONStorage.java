@@ -4,6 +4,7 @@ import com.machinelinking.storage.DocumentConverter;
 import com.machinelinking.storage.JSONStorage;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.elasticsearch.indices.IndexMissingException;
 
 
 /**
@@ -37,7 +38,25 @@ public class ElasticJSONStorage
     }
 
     @Override
-    public ElasticJSONStorageConnection openConnection(String table) {
+    public boolean exists() {
+        return exists(null);
+    }
+
+    @Override
+    public boolean exists(String collection) {
+        final String targetCollection = collection == null ? configuration.getCollection() : collection;
+        final ElasticJSONStorageConnection connection = openConnection(targetCollection);
+        return connection.existsCollection();
+    }
+
+    @Override
+    public ElasticJSONStorageConnection openConnection() {
+        return openConnection(null);
+    }
+
+    @Override
+    public ElasticJSONStorageConnection openConnection(String collection) {
+        final String targetCollection = collection == null ? configuration.getCollection() : collection;
         final TransportClient client = new TransportClient();
         client.addTransportAddress(
                 new InetSocketTransportAddress(
@@ -48,16 +67,26 @@ public class ElasticJSONStorage
         return new ElasticJSONStorageConnection(
                 client,
                 getConfiguration().getDB(),
-                getConfiguration().getCollection(),
+                targetCollection,
                 converter
         );
 
     }
 
     @Override
+    public void deleteCollection() {
+        deleteCollection(null);
+    }
+
+    @Override
     public void deleteCollection(String collection) {
-        final ElasticJSONStorageConnection connection = openConnection(collection);
-        connection.dropCollection();
+        final String targetCollection = collection == null ? configuration.getCollection() : collection;
+        final ElasticJSONStorageConnection connection = openConnection(targetCollection);
+        try {
+            connection.dropCollection();
+        } catch (IndexMissingException ime) {
+            // Pass.
+        }
     }
 
     @Override

@@ -39,6 +39,10 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
         this.converter = converter;
     }
 
+    public Client getClient() {
+        return client;
+    }
+
     @Override
     public ElasticDocument createDocument(WikiPage page, TokenBuffer buffer) throws JSONStorageConnectionException {
         try {
@@ -72,11 +76,12 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
 
     @Override
     public long getDocumentsCount() throws JSONStorageConnectionException {
+        final String index = getIndex(db, collection);
         try {
-            return client.prepareCount(db, collection).execute().get().getCount();
+            return client.prepareCount(index).execute().get().getCount();
         } catch (Exception e) {
             throw new JSONStorageConnectionException(
-                    String.format("Error while counting documents in db: %s collection: %s", db, collection)
+                    String.format("Error while counting documents in index [%s]", index)
             );
         }
     }
@@ -110,9 +115,21 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
         client.close();
     }
 
+    protected boolean existsCollection() {
+        final String index = getIndex(db, collection);
+        return client.admin().indices().prepareExists(index).execute().actionGet().isExists();
+    }
+
     protected void dropCollection() {
-        final DeleteIndexResponse response = client.admin().indices().prepareDelete(collection).execute().actionGet();
-        if(!response.isAcknowledged()) throw new IllegalStateException("Cannot delete index.");
+        final String index = getIndex(db, collection);
+        final DeleteIndexResponse response = client.admin().indices().prepareDelete(index).execute().actionGet();
+        if(!response.isAcknowledged())
+            throw new IllegalStateException(String.format("Cannot delete index [%s]", index));
+    }
+
+    private String getIndex(String db, String collection) {
+        //return String.format("%s-%s", db, collection);
+        return db;
     }
 
 }

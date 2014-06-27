@@ -34,18 +34,49 @@ public class MultiJSONStorage implements JSONStorage<MultiJSONStorageConfigurati
     }
 
     @Override
+    public boolean exists() {
+        return exists(null);
+    }
+
+    @Override
+    public boolean exists(String collection) {
+        final String targetConnection = collection == null ? configuration.getCollection() : collection;
+        boolean exist, notexist; exist = notexist = false;
+        for (JSONStorage storage : internalStorages) {
+            if(storage.exists(targetConnection))
+                exist = true;
+            else
+                notexist = true;
+        }
+        if(exist && notexist)throw new IllegalStateException();
+        return exist;
+    }
+
+    @Override
+    public JSONStorageConnection<MultiDocument, MultiSelector> openConnection() {
+        return openConnection(null);
+    }
+
+    @Override
     public MultiJSONStorageConnection openConnection(String collection) {
+        final String targetCollection = collection == null ? configuration.getCollection() : collection;
         final List<JSONStorageConnection> connections = new ArrayList<>();
         for(JSONStorage storage : internalStorages) {
-            connections.add(storage.openConnection(collection));
+            connections.add(storage.openConnection(targetCollection));
         }
         return new MultiJSONStorageConnection(connections.toArray(new JSONStorageConnection[connections.size()]));
     }
 
     @Override
+    public void deleteCollection() {
+        deleteCollection(null);
+    }
+
+    @Override
     public void deleteCollection(String collection) {
+        final String targetConnection = collection == null ? configuration.getCollection() : collection;
         for(JSONStorage storage : internalStorages) {
-            storage.deleteCollection(collection);
+            storage.deleteCollection(targetConnection);
         }
     }
 

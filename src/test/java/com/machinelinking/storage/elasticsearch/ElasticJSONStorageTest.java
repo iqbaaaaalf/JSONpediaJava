@@ -14,21 +14,13 @@ import java.util.Map;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class ElasticJSONStorageTest {
-
-    public static String TEST_DB = "test_db";
-    public static String TEST_COLLECTION = "test_collection";
+public class ElasticJSONStorageTest extends ElasticJSONStorageTestBase {
 
     private Logger logger = Logger.getLogger(ElasticJSONStorageTest.class);
 
     @Test
     public void testLoad() throws IOException {
-        final ElasticJSONStorageFactory factory = new ElasticJSONStorageFactory();
-        final ElasticJSONStorage storage = factory.createStorage(
-                factory.createConfiguration(
-                        String.format("localhost:9300:%s:%s", TEST_DB, TEST_COLLECTION)
-                )
-        );
+        final ElasticJSONStorage storage = super.createStorage();
 
         final Map<String,?> data = JSONUtils.parseJSONAsMap(
                 IOUtils.toString(this.getClass().getResourceAsStream("/com/machinelinking/enricher/Page1.json"))
