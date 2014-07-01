@@ -111,7 +111,6 @@ implements JSONStorageLoader {
         private final WikiEnricher enricher;
         private final JSONStorageConnection connection;
         private int processedPages = 0, errorPages = 0;
-        private int partialCount = 0;
         private String threadId;
 
         private final DataEncoder dataEncoder = new MongoDBDataEncoder();
@@ -185,10 +184,8 @@ implements JSONStorageLoader {
                 }
             } finally {
                 processedPages++;
-                partialCount++;
-                if (partialCount >= LOG_THRESHOLD) {
+                if ((processedPages % LOG_THRESHOLD) == 0) {
                     logger.info(String.format("Processed pages: %s +%d\n", threadId, LOG_THRESHOLD));
-                    partialCount = 0;
                 }
             }
         }
