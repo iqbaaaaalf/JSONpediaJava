@@ -12,7 +12,8 @@ group = 'com.machinelinking'
 version = '1.2-SNAPSHOT'
 
 serverClassName = 'com.machinelinking.service.BasicServer'
-storageClassName = 'com.machinelinking.storage.DefaultJSONStorageLoader'
+storageLoaderClassName = 'com.machinelinking.storage.DefaultJSONStorageLoader'
+storageLoaderJVMArgs = ["-Xmx4g", "-Xms4g", "-Dlog4j.configuration=file:conf/log4j.properties"]
 
 tasks.withType(Compile){
     options.encoding = encoding
@@ -54,7 +55,8 @@ dependencies {
 }
 
 task runLoader(dependsOn: 'jar', type: JavaExec) {
-  main = storageClassName
+  jvmArgs = storageLoaderJVMArgs
+  main = storageLoaderClassName
   classpath = sourceSets.main.runtimeClasspath
   if(project.hasProperty("config") && project.hasProperty("dump"))
     args(config, dump)

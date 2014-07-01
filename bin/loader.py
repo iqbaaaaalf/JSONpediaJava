@@ -6,7 +6,6 @@ LATEST_DUMPS = 'http://dumps.wikimedia.org/enwiki/latest/'
 WORK_DIR = 'work'
 
 GRADLE_BIN = 'gradle'
-MVN_HEAP_SIZE = '8g'
 LOADER = 'com.machinelinking.storage.DefaultJSONStorageLoader'
 LOADER_CONFIG = 'default.properties'
 
@@ -34,7 +33,10 @@ def get_latest_articles_list():
     dumps_page = urllib.urlopen(LATEST_DUMPS).read()
     dumps_page_dom = lxml.html.fromstring(dumps_page)
     download_links = [dump.get('href') for dump in dumps_page_dom.cssselect('td.n a')]
-    latest_download_links = [link for link in download_links if re.match('^enwiki-latest-pages-articles[0-9]+.xml-p[0-9]+p[0-9]+\.bz2$', link)]
+    latest_download_links = [
+        link for link in download_links
+        if re.match('^enwiki-latest-pages-articles[0-9]+.xml-p[0-9]+p[0-9]+\.bz2$', link)
+    ]
     latest_download_links.sort(key=natural_keys)
     return latest_download_links
 
@@ -56,8 +58,8 @@ def download_file(url, dir, file):
 
 
 def ingest_file(config, file):
-    cmd = "GRADLE_OPTS='-Xms%s -Xmx%s -Dlog4j.configuration=file:conf/log4j.properties' %s runLoader -Pconfig=%s -Pdump=%s 2>&1 > %s.log" \
-          % (MVN_HEAP_SIZE, MVN_HEAP_SIZE, GRADLE_BIN, config, file, file)
+    cmd = "%s runLoader -Pconfig=%s -Pdump=%s 2>&1 > %s.log" \
+          % (GRADLE_BIN, config, file, file)
     print 'Executing command:', cmd
     subprocess.check_call(cmd, shell=True)
 
