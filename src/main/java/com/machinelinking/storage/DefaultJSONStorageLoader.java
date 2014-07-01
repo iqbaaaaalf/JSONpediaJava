@@ -44,7 +44,7 @@ implements JSONStorageLoader {
     public static final String LOADER_PREFIX_URL_PROP      = "loader.prefix.url";
     public static final String LOADER_FLAGS_PROP           = "loader.flags";
 
-    private static final int LOG_THRESHOLD = 1000;
+    private static final int LOG_THRESHOLD = 100;
 
     private static final Logger logger = Logger.getLogger(DefaultJSONStorageLoader.class);
 
@@ -187,7 +187,7 @@ implements JSONStorageLoader {
                 processedPages++;
                 partialCount++;
                 if (partialCount >= LOG_THRESHOLD) {
-                    logger.debug(String.format("%s +%d\n", threadId, LOG_THRESHOLD));
+                    logger.info(String.format("Processed pages: %s +%d\n", threadId, LOG_THRESHOLD));
                     partialCount = 0;
                 }
             }
