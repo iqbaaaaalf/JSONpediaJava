@@ -88,12 +88,8 @@ public class JSONUtils {
         JsonParser jsonParser = jsonFactory.createJsonParser(is);
         jsonParser.setCodec( createObjectMapper() );
         final JsonNode node = jsonParser.readValueAsTree();
-        //try {
-            //if(is.available() > 0)
-                //throw new IllegalArgumentException("Invalid JSON closure.");
-        //} catch (IOException ioe) {
-            // Pass.
-        //}
+            if(is.available() > 0)
+                throw new IllegalArgumentException("Invalid JSON closure.");
         return node;
     }
 
