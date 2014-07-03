@@ -24,7 +24,7 @@ public abstract class AbstractJSONStorageLoaderTest {
             WikiEnricherFactory.Validate
     };
 
-    private boolean cleanupDone = false;
+    private static boolean cleanupDone = false;
 
     protected abstract JSONStorage getJSONStorage() throws UnknownHostException;
 
