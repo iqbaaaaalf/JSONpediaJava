@@ -95,6 +95,7 @@ public class JSONUtils {
 
     public static Map<String,?> parseJSONAsMap(InputStream is) throws IOException {
         final ObjectMapper mapper = createObjectMapper();
+        mapper.configure(JsonParser.Feature.ALLOW_COMMENTS, true);
         return (Map<String,?>) mapper.readValue(is, Map.class);
     }
 
