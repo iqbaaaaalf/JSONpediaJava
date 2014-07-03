@@ -103,7 +103,7 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
                     if (criteria.operator != Criteria.Operator.eq)
                         throw new IllegalArgumentException("Unsupported operators different from [eq]");
                     boolQueryBuilder.must(
-                            QueryBuilders.termQuery(criteria.field == null ? null : criteria.field, criteria.value));
+                            QueryBuilders.termQuery(criteria.field == null ? "" : criteria.field, criteria.value));
                 }
                 queryBuilder = boolQueryBuilder;
             }
