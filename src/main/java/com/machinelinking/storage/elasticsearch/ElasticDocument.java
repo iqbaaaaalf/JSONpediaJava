@@ -20,10 +20,10 @@ public class ElasticDocument implements Document<Map<String,Object>> {
 
     public static ElasticDocument unwrap(Map<String,?> in) {
         return new ElasticDocument(
-                (Integer) in.get("_id"),
-                (Integer) in.get("version"),
-                (String) in.get("name"),
-                (Map<String,?>) in.get("content")
+                (Integer) in.get(ID_FIELD),
+                (Integer) in.get(VERSION_FIELD),
+                (String) in.get(NAME_FIELD),
+                (Map<String,?>) in.get(CONTENT_FIELD)
         );
     }
 
@@ -32,10 +32,10 @@ public class ElasticDocument implements Document<Map<String,Object>> {
         this.version = version;
         this.name = name;
         this.document = new HashMap<>();
-        this.document.put("_id", id);
-        this.document.put("version", version);
-        this.document.put("name", name);
-        this.document.put("content", document);
+        this.document.put(ID_FIELD, id);
+        this.document.put(VERSION_FIELD, version);
+        this.document.put(NAME_FIELD, name);
+        this.document.put(CONTENT_FIELD, document);
     }
 
     @Override
