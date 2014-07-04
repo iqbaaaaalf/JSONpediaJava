@@ -28,6 +28,7 @@ public interface PageStructConsts {
     static final String TYPE_MAPPING = "mapping";
 
     static final String PAGE_STRUCT_FIELD = "wikitext-json";
+    static final String SECTIONS_FIELD = "sections";
     static final String NAME_FIELD = "name";
     static final String TITLE_FIELD = "title";
     static final String URL_FIELD = "url";

@@ -1,5 +1,6 @@
 package com.machinelinking.extractor;
 
+import com.machinelinking.pagestruct.PageStructConsts;
 import com.machinelinking.serializer.Serializer;
 
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ public class SectionExtractor extends Extractor {
     private Stack<Integer> s;
 
     public SectionExtractor() {
-        super("sections");
+        super(PageStructConsts.SECTIONS_FIELD);
     }
 
     @Override
