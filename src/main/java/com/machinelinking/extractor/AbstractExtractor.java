@@ -1,5 +1,6 @@
 package com.machinelinking.extractor;
 
+import com.machinelinking.pagestruct.PageStructConsts;
 import com.machinelinking.parser.Attribute;
 import com.machinelinking.parser.FilteredHandlerCriteria;
 import com.machinelinking.parser.WikiTextParserFilteredHandler;
@@ -18,7 +19,7 @@ public class AbstractExtractor extends Extractor {
     private final WikiTextParserFilteredHandler filteredHandler;
 
     public AbstractExtractor() {
-        super("abstract");
+        super(PageStructConsts.ABSTRACT_FIELD);
 
         textHandler = new TextHandler();
         filteredHandler = new WikiTextParserFilteredHandler(

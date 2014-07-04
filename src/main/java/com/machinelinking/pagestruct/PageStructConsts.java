@@ -28,7 +28,16 @@ public interface PageStructConsts {
     static final String TYPE_MAPPING = "mapping";
 
     static final String PAGE_STRUCT_FIELD = "wikitext-json";
+    static final String ISSUES_FIELD = "issues";
+    static final String ABSTRACT_FIELD = "abstract";
+    static final String CATEGORIES_FIELD = "categories";
     static final String SECTIONS_FIELD = "sections";
+    static final String REFERENCES_FIELD = "references";
+    static final String LINKS_FIELD = "links";
+    static final String FREEBASE_FIELD = "freebase";
+    static final String TEMPLATES_FIELD = "templates";
+    static final String TEMPLATE_MAPPING_FIELD = "template-mapping";
+
     static final String NAME_FIELD = "name";
     static final String TITLE_FIELD = "title";
     static final String URL_FIELD = "url";

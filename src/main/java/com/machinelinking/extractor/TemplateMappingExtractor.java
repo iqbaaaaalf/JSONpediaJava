@@ -2,6 +2,7 @@ package com.machinelinking.extractor;
 
 import com.machinelinking.dbpedia.TemplateMapping;
 import com.machinelinking.dbpedia.TemplateMappingFactory;
+import com.machinelinking.pagestruct.PageStructConsts;
 import com.machinelinking.parser.WikiPediaUtils;
 import com.machinelinking.serializer.Serializer;
 
@@ -27,7 +28,7 @@ public class TemplateMappingExtractor extends Extractor {
     private final Map<String,TemplateMapping> collectedMappings = new HashMap<>();
 
     public TemplateMappingExtractor() {
-        super("template-mapping");
+        super(PageStructConsts.TEMPLATE_MAPPING_FIELD);
     }
 
     public Map<String,TemplateMapping> getCollectedMappings() throws ExecutionException, InterruptedException {

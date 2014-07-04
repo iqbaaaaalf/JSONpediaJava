@@ -1,5 +1,6 @@
 package com.machinelinking.extractor;
 
+import com.machinelinking.pagestruct.PageStructConsts;
 import com.machinelinking.serializer.Serializer;
 
 import java.net.URL;
@@ -20,7 +21,7 @@ public class LinkExtractor extends SectionAwareExtractor {
     private boolean foundParam;
 
     public LinkExtractor() {
-        super("links");
+        super(PageStructConsts.LINKS_FIELD);
     }
 
     @Override

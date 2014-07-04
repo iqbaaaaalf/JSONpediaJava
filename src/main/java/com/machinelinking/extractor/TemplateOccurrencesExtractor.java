@@ -1,5 +1,6 @@
 package com.machinelinking.extractor;
 
+import com.machinelinking.pagestruct.PageStructConsts;
 import com.machinelinking.serializer.Serializer;
 
 import java.util.HashMap;
@@ -15,7 +16,7 @@ public class TemplateOccurrencesExtractor extends Extractor {
     private Map<String,Integer> templateOccurrences = new HashMap<>();
 
     public TemplateOccurrencesExtractor() {
-        super("templates");
+        super(PageStructConsts.TEMPLATES_FIELD);
     }
 
     @Override
