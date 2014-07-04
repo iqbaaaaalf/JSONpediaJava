@@ -25,10 +25,10 @@ public class MongoDocument implements Document<DBObject> {
 
     public static MongoDocument unwrap(DBObject in) {
         return new MongoDocument(
-                (Integer) in.get("_id"),
-                (Integer) in.get("version"),
-                (String) in.get("name"),
-                (DBObject) in.get("content")
+                (Integer) in.get(ID_FIELD),
+                (Integer) in.get(VERSION_FIELD),
+                (String) in.get(NAME_FIELD),
+                (DBObject) in.get(CONTENT_FIELD)
         );
     }
 
@@ -39,10 +39,10 @@ public class MongoDocument implements Document<DBObject> {
         this.version = version;
 
         this.document = new BasicDBObject();
-        this.document.put("_id", id);
-        this.document.put("version", version);
-        this.document.put("name", name);
-        this.document.put("content", content);
+        this.document.put(ID_FIELD, id);
+        this.document.put(VERSION_FIELD, version);
+        this.document.put(NAME_FIELD, name);
+        this.document.put(CONTENT_FIELD, content);
     }
 
     @Override
