@@ -155,16 +155,19 @@ public class DefaultStorageServiceTest extends ServiceTestBase {
     public void testElasticSelect() throws URISyntaxException, IOException, ConnectionException {
         final JsonNode output = performQuery(
             buildPath(DefaultStorageService.class, "elastic/select")
-                    .queryParam("q", "_id:1 _id:735 albert")
+                    .queryParam("q", "_id:735 abstract:Albert")
                     .queryParam("limit", Integer.toString(10))
                     .build()
         );
 
         Assert.assertEquals(
-                "{\"from\":0,\"size\":10,\"query\":{\"bool\":{\"should\":[{\"term\":{\"_id\":\"1\"}},{\"term\":{\"_id\":\"735\"}},{\"term\":{\"\":\"albert\"}}]}},\"explain\":false}",
+                "{\"from\":0,\"size\":10,\"query\":{\"bool\":{\"must\":[" +
+                        "{\"match\":{\"_id\":{\"query\":\"735\",\"type\":\"boolean\"}}}," +
+                        "{\"match\":{\"abstract\":{\"query\":\"Albert\",\"type\":\"boolean\"}}}]}}," +
+                        "\"explain\":false}",
                 output.get("elastic-query").asText().replaceAll("\\s+", "")
         );
-        Assert.assertEquals(4, output.get("count").asInt());
+        Assert.assertTrue(output.get("count").asInt() >= 1);
         Assert.assertNotNull(output.get("result"));
         Assert.assertTrue(output.get("result").size() >= 1);
     }
