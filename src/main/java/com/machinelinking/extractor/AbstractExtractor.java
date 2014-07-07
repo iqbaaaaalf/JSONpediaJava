@@ -99,11 +99,6 @@ public class AbstractExtractor extends Extractor {
     }
 
     @Override
-    public void parameter(String param) {
-        filteredHandler.parameter(param);
-    }
-
-    @Override
     public void listItem(ListType t, int level) {
         filteredHandler.listItem(t, level);
     }
@@ -121,6 +116,31 @@ public class AbstractExtractor extends Extractor {
     @Override
     public void endTemplate(TemplateName name) {
         filteredHandler.endTemplate(name);
+    }
+
+    @Override
+    public void beginTable() {
+        filteredHandler.beginTable();
+    }
+
+    @Override
+    public void headCell(int row, int col) {
+        filteredHandler.headCell(row, col);
+    }
+
+    @Override
+    public void bodyCell(int row, int col) {
+        filteredHandler.bodyCell(row, col);
+    }
+
+    @Override
+    public void endTable() {
+        filteredHandler.endTable();
+    }
+
+    @Override
+    public void parameter(String param) {
+        filteredHandler.parameter(param);
     }
 
     @Override

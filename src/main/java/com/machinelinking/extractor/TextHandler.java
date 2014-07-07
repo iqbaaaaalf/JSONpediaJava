@@ -11,6 +11,7 @@ import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
+import org.apache.log4j.Logger;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
@@ -23,6 +24,8 @@ import java.net.URL;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TextHandler extends DefaultWikiTextParserHandler {
+
+    private static final Logger logger = Logger.getLogger(TextHandler.class);
 
     private final StringWriter writer;
     private final WikiTextSerializerHandler decoratedHandler;
@@ -123,6 +126,28 @@ public class TextHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
+    public void beginTable() {
+        nestedStructures++;
+        decoratedHandler.beginTable();
+    }
+
+    @Override
+    public void headCell(int row, int col) {
+        decoratedHandler.headCell(row, col);
+    }
+
+    @Override
+    public void bodyCell(int row, int col) {
+        decoratedHandler.bodyCell(row, col);
+    }
+
+    @Override
+    public void endTable() {
+        decoratedHandler.endTable();
+        nestedStructures--;
+    }
+
+    @Override
     public void parameter(String param) {
         decoratedHandler.parameter(param);
     }
@@ -148,7 +173,7 @@ public class TextHandler extends DefaultWikiTextParserHandler {
         try {
             sb.append(expandStructure(data));
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error(String.format("An error occurred while expanding data:\n%s\n", data), e);
             sb.append("<%");
             sb.append(data);
             sb.append("%>");
@@ -156,9 +181,13 @@ public class TextHandler extends DefaultWikiTextParserHandler {
     }
 
     private String expandStructure(String data) throws IOException {
-        final JsonNode node = JSONUtils.parseJSON(data);
+        final JsonNode[] nodes = JSONUtils.parseJSONMulti(data);
         final DocumentContext context = new DefaultDocumentContext(RenderScope.TEXT_RENDERING, documentURL);
-        return render.renderFragment(context, node);
+        final StringBuilder sb = new StringBuilder();
+        for(JsonNode node : nodes) {
+            sb.append( render.renderFragment(context, node) );
+        }
+        return sb.toString();
     }
 
 }

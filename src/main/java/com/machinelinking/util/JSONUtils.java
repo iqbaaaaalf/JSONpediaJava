@@ -21,7 +21,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -84,13 +86,34 @@ public class JSONUtils {
         return new ObjectMapper();
     }
 
-    public static JsonNode parseJSON(InputStream is) throws IOException {
+    public static JsonNode parseJSON(InputStream is, boolean checkStreamEmpty) throws IOException {
         JsonParser jsonParser = jsonFactory.createJsonParser(is);
         jsonParser.setCodec( createObjectMapper() );
         final JsonNode node = jsonParser.readValueAsTree();
-            if(is.available() > 0)
-                throw new IllegalArgumentException("Invalid JSON closure.");
+            if(checkStreamEmpty && is.available() > 0)
+                throw new IllegalArgumentException("Invalid JSON stream, should be empty.");
         return node;
+    }
+
+    public static JsonNode parseJSON(InputStream is) throws IOException {
+        return parseJSON(is, true);
+    }
+
+    public static JsonNode parseJSON(byte[] in) throws IOException {
+        return parseJSON(new ByteArrayInputStream(in));
+    }
+
+    public static JsonNode parseJSON(String in) throws IOException {
+        return parseJSON( in.getBytes() );
+    }
+
+    public static final JsonNode[] parseJSONMulti(String in) throws IOException {
+        final ByteArrayInputStream bais = new ByteArrayInputStream(in.getBytes());
+        final List<JsonNode> result = new ArrayList<>();
+        while(bais.available() > 0) {
+            result.add(parseJSON(bais, false));
+        }
+        return result.toArray(new JsonNode[result.size()]);
     }
 
     public static Map<String,?> parseJSONAsMap(InputStream is) throws IOException {
@@ -106,14 +129,6 @@ public class JSONUtils {
 
     public static Map<String,?> parseJSONAsMap(String in) throws IOException {
         return parseJSONAsMap(new ByteArrayInputStream(in.getBytes()));
-    }
-
-    public static JsonNode parseJSON(byte[] in) throws IOException {
-        return parseJSON(new ByteArrayInputStream(in));
-    }
-
-    public static JsonNode parseJSON(String in) throws IOException {
-        return parseJSON( in.getBytes() );
     }
 
     public static void jacksonNodeToSerializer(JsonNode node, Serializer serializer) {
