@@ -1,0 +1,38 @@
+{
+    "settings": {
+        "index": {
+            "analysis": {
+                "analyzer": {
+                    "keyword_analyzer": {
+                        "tokenizer": "keyword",
+                        "filter": "lowercase"
+                    }
+                }
+            }
+        }
+    },
+    "mappings": {
+        /*
+        TYPE: {
+            "properties": {
+                FIELD: {
+                    "analyzer": "keyword_analyzer",
+                    "type": "string"
+                },
+            }
+        }
+        */
+    }
+}
+
+{en_section=\
+  {en_section=\
+  {content.section={analyzer=keyword_analyzer, type=string},
+   content.templates={analyzer=keyword_analyzer, type=string},
+   content.page={analyzer=keyword_analyzer, type=string},
+   content.content={analyzer=keyword_analyzer, type=string},
+   name={analyzer=keyword_analyzer, type=string},
+   content.links={analyzer=keyword_analyzer, type=string},
+   content.references={analyzer=keyword_analyzer, type=string},
+   content.categories={analyzer=keyword_analyzer, type=string},
+   version={analyzer=keyword_analyzer, type=string}}}}
