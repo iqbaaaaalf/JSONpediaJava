@@ -80,6 +80,11 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
     }
 
     @Override
+    public String query(String qry) throws JSONStorageConnectionException {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
     public void flush() {
         flushBuffer(true);
     }

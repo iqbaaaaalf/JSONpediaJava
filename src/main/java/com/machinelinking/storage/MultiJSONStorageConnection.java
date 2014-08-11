@@ -70,6 +70,11 @@ public class MultiJSONStorageConnection implements JSONStorageConnection<MultiDo
     }
 
     @Override
+    public String query(String qry) throws JSONStorageConnectionException {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
     public void flush() {
         for (JSONStorageConnection connection : connections) {
             connection.flush();

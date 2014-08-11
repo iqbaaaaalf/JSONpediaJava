@@ -2,6 +2,7 @@ package com.machinelinking.service;
 
 import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.JSONFilter;
+import com.machinelinking.storage.JSONStorageConnectionException;
 import com.machinelinking.storage.elasticsearch.ElasticDocument;
 import com.machinelinking.storage.elasticsearch.ElasticJSONStorage;
 import com.machinelinking.storage.elasticsearch.ElasticJSONStorageConfiguration;
@@ -184,6 +185,25 @@ public class DefaultStorageService implements StorageService {
         }
     }
 
+    @Path("/elastic/facet")
+    @GET
+    @Produces({
+            MediaType.APPLICATION_JSON + ";charset=UTF-8",
+    })
+    @Override
+    public Response queryElasticFacets(
+            @QueryParam("source") String source
+    ) {
+        try {
+            return Response.ok(
+                    elasticConnection.query(source),
+                    MediaType.APPLICATION_JSON + ";charset=UTF-8"
+            ).build();
+        } catch (JSONStorageConnectionException jsce) {
+            throw new InvalidRequestException(jsce);
+        }
+    }
+
     private String trimIfNotNull(String in) {
         return in == null ? null : in.trim();
     }
@@ -237,7 +257,7 @@ public class DefaultStorageService implements StorageService {
         return JSONUtils.serializeToJSON(output, false);
     }
 
-    private Object toElasticSelectJSONOutput(JSONFilter filter, ElasticResultSet rs) {
+    private String toElasticSelectJSONOutput(JSONFilter filter, ElasticResultSet rs) {
         final ObjectNode output = JSONUtils.getJsonNodeFactory().objectNode();
         final ArrayNode result = JSONUtils.getJsonNodeFactory().arrayNode();
         output.put("elastic-query", rs.getExplain());
@@ -250,7 +270,6 @@ public class DefaultStorageService implements StorageService {
             result.add(applyFilter(nextJack, filter));
         }
         return JSONUtils.serializeToJSON(output, false);
-
     }
 
 }

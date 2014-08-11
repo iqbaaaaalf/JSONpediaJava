@@ -24,6 +24,8 @@ public interface JSONStorageConnection<D extends Document, S extends Selector> e
 
     ResultSet<D> query(S selector, int limit) throws JSONStorageConnectionException;
 
+    String query(String qry) throws JSONStorageConnectionException;
+
     void flush();
 
     void close();

@@ -15,4 +15,6 @@ public interface StorageService extends Service {
 
     Response queryElasticStorage(String selector, String filter, String limit);
 
+    Response queryElasticFacets(String source);
+
 }

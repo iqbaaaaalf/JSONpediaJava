@@ -9,6 +9,7 @@ import com.machinelinking.wikimedia.WikiPage;
 import org.codehaus.jackson.util.TokenBuffer;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
 import org.elasticsearch.action.get.GetResponse;
+import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchType;
@@ -114,6 +115,17 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
         } catch (Exception e) {
             throw new JSONStorageConnectionException("Error while waiting for response.", e);
         }
+    }
+
+    @Override
+    public String query(String qry) throws JSONStorageConnectionException {
+        final String index = getIndex(db, collection);
+        final SearchRequestBuilder builder = new SearchRequestBuilder(client);
+        builder.setIndices(index);
+        builder.setSource(qry);
+        final SearchRequest request = builder.request();
+        final SearchResponse response = client.search(request).actionGet();
+        return response.toString();
     }
 
     @Override
