@@ -192,11 +192,12 @@ public class DefaultStorageService implements StorageService {
     })
     @Override
     public Response queryElasticFacets(
+            @QueryParam("callback") String callback,
             @QueryParam("source") String source
     ) {
         try {
             return Response.ok(
-                    elasticConnection.query(source),
+                    String.format("%s(%s);", callback, elasticConnection.query(source)),
                     MediaType.APPLICATION_JSON + ";charset=UTF-8"
             ).build();
         } catch (JSONStorageConnectionException jsce) {
