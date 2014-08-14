@@ -38,7 +38,7 @@ public class WikiEnricherFactory {
     public static final Flag Structure  = new DefaultFlag("Structure"       , "Produces the full WikiText DOM");
     public static final Flag Validate   = new DefaultFlag("Validate"        , "Validate the WikiText structure");
 
-    public static final Flag[] DEFAULT_FLAGS = new Flag[] {Extractors, Structure};
+    public static final Flag[] DEFAULT_FLAGS = new Flag[] {Extractors};
 
     private static WikiEnricherFactory instance;
 
