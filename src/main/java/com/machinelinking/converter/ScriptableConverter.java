@@ -14,7 +14,7 @@ import java.util.Map;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-class ScriptableConverter implements Converter {
+public class ScriptableConverter implements Converter {
 
     public static final String CONVERT_DATA_METHOD = "convert_data";
     public static final String CONVERT_READABLE_METHOD = "convert_hr";
