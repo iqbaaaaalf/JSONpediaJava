@@ -1225,6 +1225,11 @@ public class WikiTextParserTest {
     }
 
     @Test
+    public void testParseTable3() throws IOException, WikiTextParserException {
+        verifyParsing("Table3");
+    }
+
+    @Test
     public void testParseEntity() throws IOException, WikiTextParserException {
         parse(
                 "&lt;[http://link]&gt;",
