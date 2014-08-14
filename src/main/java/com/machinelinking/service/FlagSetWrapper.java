@@ -32,9 +32,9 @@ public class FlagSetWrapper implements FlagSet {
         for(int i = 0; i < flags.length; i++) {
             definedFlagSet[i] = new FlagWrapper(flags[i]);
         }
-        defaultFlagSet = new FlagWrapper[DefaultAnnotationService.DEFAULT_FLAGS.length];
-        for(int i = 0; i < DefaultAnnotationService.DEFAULT_FLAGS.length; i++) {
-            defaultFlagSet[i] = new FlagWrapper(DefaultAnnotationService.DEFAULT_FLAGS[i]);
+        defaultFlagSet = new FlagWrapper[WikiEnricherFactory.DEFAULT_FLAGS.length];
+        for(int i = 0; i < WikiEnricherFactory.DEFAULT_FLAGS.length; i++) {
+            defaultFlagSet[i] = new FlagWrapper(WikiEnricherFactory.DEFAULT_FLAGS[i]);
         }
     }
 
