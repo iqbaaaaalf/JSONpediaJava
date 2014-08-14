@@ -34,7 +34,7 @@ public class ScriptableConverterFactory {
         bindings.put("functions", functions);
     }
 
-    ScriptableConverter createConverter(String script) throws ScriptableFactoryException {
+    public ScriptableConverter createConverter(String script) throws ScriptableFactoryException {
         final ScriptEngine engine = engineManager.getEngineByName("python");
         engine.setBindings(bindings, ScriptContext.GLOBAL_SCOPE);
         try {
