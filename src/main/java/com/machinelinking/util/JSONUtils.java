@@ -1,5 +1,7 @@
 package com.machinelinking.util;
 
+import com.machinelinking.filter.DefaultJSONFilterEngine;
+import com.machinelinking.filter.JSONFilter;
 import com.machinelinking.pagestruct.PageStructConsts;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializable;
@@ -21,10 +23,14 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * <i>JSON</i> utility functions.
@@ -38,10 +44,35 @@ public class JSONUtils {
     private static final ObjectWriter writer;
     private static final ObjectWriter prettyWriter;
 
+    private static final String SPACE_REPLACER = "_";
+    private static final Pattern resourcePattern = Pattern.compile("^([a-z\\-]+):([^/]+)$");
+
     static {
         ObjectMapper mapper = createObjectMapper();
         writer = mapper.writer();
         prettyWriter = writer.withDefaultPrettyPrinter();
+    }
+
+    public static URL toResourceURL(String resource) {
+        final Matcher resourceMatcher = resourcePattern.matcher(resource);
+        final String resourceURL;
+        if(resourceMatcher.matches()) {
+            final String lang = resourceMatcher.group(1);
+            final String document = resourceMatcher
+                    .group(2)
+                    .replaceAll(" ", SPACE_REPLACER).replaceAll("%20", SPACE_REPLACER);
+            resourceURL = String.format("http://%s.wikipedia.org/wiki/%s", lang, document);
+        } else {
+            resourceURL = resource;
+        }
+        try {
+            return new URL(resourceURL);
+        } catch (MalformedURLException murle) {
+            throw new IllegalArgumentException(
+                    String.format("Invalid resource [%s], must be a valid URL.", resource),
+                    murle
+            );
+        }
     }
 
     public static JsonNodeFactory getJsonNodeFactory() {
@@ -80,6 +111,33 @@ public class JSONUtils {
         } catch (IOException ioe) {
             throw new IllegalStateException(ioe);
         }
+    }
+
+    public static TokenBuffer createResultFilteredObject(JsonNode json, JSONFilter filter) throws IOException {
+        final JsonNode[] filteredNodes = DefaultJSONFilterEngine.applyFilter(json, filter);
+        final TokenBuffer buffer = JSONUtils.createJSONBuffer();
+        buffer.writeStartObject();
+        buffer.writeObjectField("filter", filter.humanReadable());
+        buffer.writeFieldName("result");
+        buffer.writeStartArray();
+        final ObjectMapper mapper = new ObjectMapper();
+        for(JsonNode filteredNode : filteredNodes) {
+            mapper.writeTree(buffer, filteredNode);
+        }
+        buffer.writeEndArray();
+        buffer.writeEndObject();
+        buffer.close();
+        return buffer;
+    }
+
+    public static TokenBuffer createResultFilteredObject(TokenBuffer buffer, JSONFilter filter) throws IOException {
+        return filter.isEmpty() ?
+                buffer
+                :
+                createResultFilteredObject(
+                    JSONUtils.bufferToJSONNode(buffer),
+                    filter
+                );
     }
 
     public static ObjectMapper createObjectMapper() {
