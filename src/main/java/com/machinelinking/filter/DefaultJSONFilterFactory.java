@@ -7,7 +7,7 @@ package com.machinelinking.filter;
  */
 public class DefaultJSONFilterFactory implements JSONFilterFactory {
 
-    private static final JSONFilter EMPTY_FILTER = new JSONFilter() {
+    public static final JSONFilter EMPTY_FILTER = new JSONFilter() {
         @Override
         public boolean isEmpty() {
             return true;
