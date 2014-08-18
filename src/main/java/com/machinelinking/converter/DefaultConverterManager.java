@@ -2,10 +2,17 @@ package com.machinelinking.converter;
 
 import com.machinelinking.filter.JSONObjectFilter;
 import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.serializer.Serializer;
+import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonNode;
+import org.codehaus.jackson.node.ArrayNode;
+import org.codehaus.jackson.node.ObjectNode;
 
+import java.io.IOException;
+import java.io.Writer;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -38,10 +45,9 @@ public class DefaultConverterManager implements ConverterManager {
 
     @Override
     public Converter getConverterForData(JsonNode data) {
-        final String type = data.get(PageStructConsts.TYPE_FIELD).asText();
-        if(type == null) throw new IllegalArgumentException(
-            String.format("data object must define a %s field", PageStructConsts.TYPE_FIELD)
-        );
+        final JsonNode typeNode = data.get(PageStructConsts.TYPE_FIELD);
+        if(typeNode == null) return null;
+        final String type = typeNode.asText();
         final Set<FilterToConverter> filtersToConverters = typeToFilters.get(type);
         if(filtersToConverters == null) return null;
         for(FilterToConverter filterToConverter : filtersToConverters) {
@@ -50,6 +56,15 @@ public class DefaultConverterManager implements ConverterManager {
             }
         }
         return null;
+    }
+
+    @Override
+    public void process(JsonNode data, Serializer serializer, Writer writer) throws ConverterException {
+        try {
+            visit(data, serializer, writer);
+        } catch (Exception e) {
+            throw new ConverterException("Error while processing data.", e);
+        }
     }
 
     private String getFilterTypeOrFail(JSONObjectFilter filter) {
@@ -62,6 +77,35 @@ public class DefaultConverterManager implements ConverterManager {
                     )
             );
         return type;
+    }
+
+    private void visit(JsonNode node, Serializer serializer, Writer writer) throws IOException, ConverterException {
+        if(node.isObject()) {
+            visit((ObjectNode) node, serializer, writer);
+        } else if(node.isArray()) {
+            visit((ArrayNode) node, serializer, writer);
+        }
+    }
+
+    private void visit(ObjectNode obj, Serializer serializer, Writer writer) throws IOException, ConverterException {
+        final Converter converter = getConverterForData(obj);
+        if(converter != null) {
+            final Map<String,?> dataMap = JSONUtils.convertNodeToMap(obj);
+            converter.convertData(dataMap, serializer, writer);
+        }
+
+        final Iterator<Map.Entry<String,JsonNode>> iter = obj.getFields();
+        Map.Entry<String,JsonNode> entry;
+        while(iter.hasNext()) {
+            entry = iter.next();
+            visit(entry.getValue(), serializer, writer);
+        }
+    }
+
+    private void visit(ArrayNode arr, Serializer serializer, Writer writer) throws IOException, ConverterException {
+        for(int i = 0; i < arr.size(); i++) {
+            visit( arr.get(i), serializer, writer );
+        }
     }
 
     class FilterToConverter {
