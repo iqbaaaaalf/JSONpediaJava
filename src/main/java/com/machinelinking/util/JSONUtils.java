@@ -41,6 +41,7 @@ public class JSONUtils {
 
     private static final JsonFactory jsonFactory = new JsonFactory();
 
+    private static final ObjectMapper mapper;
     private static final ObjectWriter writer;
     private static final ObjectWriter prettyWriter;
 
@@ -48,7 +49,7 @@ public class JSONUtils {
     private static final Pattern resourcePattern = Pattern.compile("^([a-z\\-]+):([^/]+)$");
 
     static {
-        ObjectMapper mapper = createObjectMapper();
+        mapper = createObjectMapper();
         writer = mapper.writer();
         prettyWriter = writer.withDefaultPrettyPrinter();
     }
@@ -187,6 +188,10 @@ public class JSONUtils {
 
     public static Map<String,?> parseJSONAsMap(String in) throws IOException {
         return parseJSONAsMap(new ByteArrayInputStream(in.getBytes()));
+    }
+
+    public static Map<String, ?> convertNodeToMap(JsonNode n) throws IOException {
+        return mapper.readValue(n, Map.class);
     }
 
     public static void jacksonNodeToSerializer(JsonNode node, Serializer serializer) {
@@ -346,7 +351,7 @@ public class JSONUtils {
 
     // BEGIN: Map<String,?> toHumanReadable
 
-    protected static void toHumanReadable(Object[] a, StringBuilder sb) {
+    protected static void toHumanReadable(List a, StringBuilder sb) {
         for (Object e : a) {
             sb.append(" ");
             toHumanReadable(e, sb);
@@ -370,8 +375,10 @@ public class JSONUtils {
     }
 
     private static void toHumanReadable(Object node, StringBuilder sb) {
-        if (node.getClass().isArray()) {
-            toHumanReadable((Object[]) node, sb);
+        if(node == null) {
+            sb.append("null");
+        } else if (node instanceof List) {
+            toHumanReadable((List) node, sb);
         } else if (node instanceof Map) {
             toHumanReadable((Map<String, ?>) node, sb);
         } else if (node instanceof String || isPrimitive(node.getClass())) {
@@ -387,13 +394,13 @@ public class JSONUtils {
         if (c.isPrimitive()) return true;
         if (
                 c == Byte.class
-                    || c == Short.class
-                    || c == Integer.class
-                    || c == Long.class
-                    || c == Float.class
-                    || c == Double.class
-                    || c == Boolean.class
-                    || c == Character.class
+                || c == Short.class || c == short.class
+                || c == Integer.class || c == int.class
+                || c == Long.class || c == long.class
+                || c == Float.class || c == float.class
+                || c == Double.class || c == double.class
+                || c == Boolean.class || c == boolean.class
+                || c == Character.class || c == char.class
         ) return true;
         return false;
     }
