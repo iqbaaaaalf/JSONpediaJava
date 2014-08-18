@@ -10,7 +10,7 @@ such events propagate through the different Processors.
 Every processor store data specific data or modify the stream of events.
 The final composition of the output of every processor is returned as JSON output.
 
-  ![Processing pipeline](processing-pipeline.png "processing pipeline picture")
+  ![Processing pipeline](/hardest/jsonpedia/processing-pipeline.png "processing pipeline picture")
 
 ## Processors
 Processors can be categorized as:
