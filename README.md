@@ -115,4 +115,4 @@ Running without arguments will produce this usage message:
 
 # License
 
-[Creative Commons Attribution 4.0 International License Logo](https://i.creativecommons.org/l/by/4.0/88x31.png "Creative Commons Attribution 4.0 International License")
+![Creative Commons Attribution 4.0 International License Logo](https://i.creativecommons.org/l/by/4.0/88x31.png "Creative Commons Attribution 4.0 International License")
