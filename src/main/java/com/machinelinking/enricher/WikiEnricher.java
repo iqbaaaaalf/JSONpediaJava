@@ -45,6 +45,7 @@ import java.util.concurrent.ExecutionException;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
+// TODO: rename in Pipeline
 public class WikiEnricher {
 
     private final WikiAPIParser apiParser = new WikiAPIParser();
@@ -144,23 +145,25 @@ public class WikiEnricher {
                 WikiTextSerializerHandlerFactory.getInstance().createSerializerHandler(serializer);
         final MultiWikiTextParserHandler multiHandler = new MultiWikiTextParserHandler();
         if(produceStructure) {
-            multiHandler.add(serializerHandler); // TODO: ADD JUST ONCE!!
+            multiHandler.add(serializerHandler);
         }
         for(Extractor extractor : extractors) { // Adding specific extractors.
             extractor.reset();
-            multiHandler.add( wrapWithValiadator("validator-" + extractor.getName(), extractor) );
+            multiHandler.add( wrapWithValidator("validator-" + extractor.getName(), extractor) );
         }
 
         final WikiTextParserHandlerSplitter handlerSplitter = new WikiTextParserHandlerSplitter();
-        multiHandler.add( handlerSplitter.getProxy() );  //TODO: Very dangerous, the handlerSplitter must be notified before the Splitters
+        // NOTE: the handlerSplitter must be notified before the Splitters.
+        multiHandler.add( handlerSplitter.getProxy() );
         for(Splitter splitter : splitters) {
             splitter.reset();
             splitter.initHandlerSplitter(handlerSplitter);
-            multiHandler.add( wrapWithValiadator("splitter-" + splitter.getName(), splitter) );
+            multiHandler.add( wrapWithValidator("splitter-" + splitter.getName(), splitter) );
         }
 
-        final WikiTextParser wikiTextParser = new WikiTextParser( wrapWithValiadator("parser", multiHandler) );
+        final WikiTextParser wikiTextParser = new WikiTextParser( wrapWithValidator("parser", multiHandler) );
         if(produceStructure) {
+            //TODO: add page id and other metadata.
              serializer.field(PageStructConsts.PAGE_STRUCT_FIELD);
              serializer.openList();
          }
@@ -173,7 +176,7 @@ public class WikiEnricher {
         }
     }
 
-    private WikiTextParserHandler wrapWithValiadator(String name, WikiTextParserHandler h) {
+    private WikiTextParserHandler wrapWithValidator(String name, WikiTextParserHandler h) {
         if( isValidate() ) {
             return new ValidatingWikiTextParserHandler(name, h).getProxy();
         } else {
