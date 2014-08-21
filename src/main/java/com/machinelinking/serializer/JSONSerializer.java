@@ -13,6 +13,7 @@
 
 package com.machinelinking.serializer;
 
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonGenerator;
 
@@ -28,8 +29,6 @@ import java.util.Stack;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class JSONSerializer implements Serializer {
-
-    public static final String ANON_FIELD_PREFIX = "__an";
 
     private enum WriterStatus {
         Object {
@@ -353,7 +352,7 @@ public class JSONSerializer implements Serializer {
     private String getNextAnonField() {
         final int value = indexStack.pop();
         indexStack.push(value + 1);
-        return ANON_FIELD_PREFIX + value;
+        return Ontology.ANON_NAME_PREFIX + value;
     }
 
 }
