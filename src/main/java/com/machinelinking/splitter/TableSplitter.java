@@ -20,8 +20,10 @@ package com.machinelinking.splitter;
  */
 public class TableSplitter extends Splitter {
 
+    public static final String NAME = "table-splitter";
+
     public TableSplitter() {
-        super("table-splitter");
+        super(NAME);
     }
 
     @Override

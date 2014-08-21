@@ -22,8 +22,10 @@ import com.machinelinking.parser.WikiPediaUtils;
  */
 public class InfoboxSplitter extends Splitter {
 
+    public static final String NAME = "infobox-splitter";
+
     public InfoboxSplitter() {
-        super("infobox-splitter");
+        super(NAME);
     }
 
     @Override
