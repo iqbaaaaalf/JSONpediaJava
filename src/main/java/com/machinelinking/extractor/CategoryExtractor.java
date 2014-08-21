@@ -47,7 +47,6 @@ public class CategoryExtractor extends Extractor {
         final String[] sortedCategories = categories.toArray( new String[categories.size()] );
         Arrays.sort(sortedCategories);
         serializer.openObject();
-        // serializer.fieldValue("__type", "categories");
         serializer.field("content");
         serializer.openList();
         for(String category : sortedCategories) {
