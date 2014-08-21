@@ -174,7 +174,7 @@ public class WikiPipeline {
 
         final WikiTextParser wikiTextParser = new WikiTextParser( wrapWithValidator("parser", multiHandler) );
         if(produceStructure) {
-            serializer.field(Ontology.PAGE_STRUCT_FIELD);
+            serializer.field(Ontology.PAGE_DOM_FIELD);
             serializer.openList();
          }
         wikiTextParser.parse(
