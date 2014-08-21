@@ -52,9 +52,12 @@ public interface Ontology {
     static final String TEMPLATES_FIELD = "templates";
     static final String TEMPLATE_MAPPING_FIELD = "template-mapping";
 
+    static final String ID_FIELD = "id";
+    static final String REVID_FIELD = "revid";
     static final String NAME_FIELD = "name";
     static final String TITLE_FIELD = "title";
     static final String URL_FIELD = "url";
+    static final String SIZE_FIELD = "size";
     static final String LABEL_FIELD = "label";
     static final String LEVEL_FIELD = "level";
     static final String ANCESTORS_FIELD = "ancestors";

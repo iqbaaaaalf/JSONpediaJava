@@ -146,10 +146,10 @@ public class WikiPipeline {
 
         // Writing page metadata.
         if(wikiPage != null) {
-            serializer.fieldValue("id", wikiPage.getId());
-            serializer.fieldValue("revid", wikiPage.getRevId());
-            serializer.fieldValue("size", wikiPage.getSize());
-            serializer.fieldValue("title", wikiPage.getTitle());
+            serializer.fieldValue(Ontology.ID_FIELD, wikiPage.getId());
+            serializer.fieldValue(Ontology.REVID_FIELD, wikiPage.getRevId());
+            serializer.fieldValue(Ontology.SIZE_FIELD, wikiPage.getSize());
+            serializer.fieldValue(Ontology.TITLE_FIELD, wikiPage.getTitle());
         }
 
         final WikiTextSerializerHandler serializerHandler =
