@@ -11,7 +11,7 @@
  * If not, see <https://creativecommons.org/licenses/by/4.0/legalcode>.
  */
 
-package com.machinelinking.enricher;
+package com.machinelinking.pipeline;
 
 import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.parser.WikiTextParserException;
@@ -33,13 +33,13 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 /**
- * Test case for {@link WikiEnricher}.
+ * Test case for {@link WikiPipeline}.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class WikiEnricherTest {
+public class WikiPipelineTest {
 
-    private static final Logger logger = Logger.getLogger(WikiEnricherTest.class);
+    private static final Logger logger = Logger.getLogger(WikiPipelineTest.class);
 
     @Test
     public void testEnrich1()
@@ -60,18 +60,18 @@ public class WikiEnricherTest {
     private void verifyEnrich(URL entity, boolean online, String wikiInResource, String jsonOutExpectedResource)
     throws IOException, WikiTextParserException, SAXException, ExecutionException, InterruptedException {
         final List<Flag> flags = new ArrayList<>();
-        if(online) flags.add(WikiEnricherFactory.Linkers);
-        flags.add(WikiEnricherFactory.Validate);
-        flags.add(WikiEnricherFactory.Extractors);
-        flags.add(WikiEnricherFactory.Splitters);
-        flags.add(WikiEnricherFactory.Structure);
+        if(online) flags.add(WikiPipelineFactory.Linkers);
+        flags.add(WikiPipelineFactory.Validate);
+        flags.add(WikiPipelineFactory.Extractors);
+        flags.add(WikiPipelineFactory.Splitters);
+        flags.add(WikiPipelineFactory.Structure);
 
         final InputStream inInputStream = this.getClass().getResourceAsStream(wikiInResource);
         if(inInputStream == null) throw new NullPointerException("Cannot find input resource");
         final InputStream expectedInStream = this.getClass().getResourceAsStream(jsonOutExpectedResource);
         if(expectedInStream == null) throw new NullPointerException("Cannot find expected resource.");
 
-        final WikiEnricher enricher = WikiEnricherFactory
+        final WikiPipeline enricher = WikiPipelineFactory
                 .getInstance().createFullyConfiguredInstance( flags.toArray( new Flag[flags.size()] ) );
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final JSONSerializer serializer = new JSONSerializer(baos);

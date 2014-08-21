@@ -13,9 +13,9 @@
 
 package com.machinelinking.service;
 
-import com.machinelinking.enricher.FlagSet;
-import com.machinelinking.enricher.WikiEnricher;
-import com.machinelinking.enricher.WikiEnricherFactory;
+import com.machinelinking.pipeline.FlagSet;
+import com.machinelinking.pipeline.WikiPipeline;
+import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.JSONFilter;
 import com.machinelinking.parser.DocumentSource;
@@ -131,9 +131,9 @@ public class DefaultAnnotationService implements AnnotationService {
             String filterExp
     ) throws InterruptedException, SAXException, WikiTextParserException, ExecutionException, IOException {
         final OutputFormat format = checkOutFormat(outFormat);
-        final WikiEnricher wikiEnricher = WikiEnricherFactory
+        final WikiPipeline wikiEnricher = WikiPipelineFactory
                 .getInstance()
-                .createFullyConfiguredInstance(flags, WikiEnricherFactory.DEFAULT_FLAGS);
+                .createFullyConfiguredInstance(flags, WikiPipelineFactory.DEFAULT_FLAGS);
         final JSONSerializer jsonSerializer;
         final JSONFilter filter;
         try {

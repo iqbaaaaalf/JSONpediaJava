@@ -11,24 +11,23 @@
  * If not, see <https://creativecommons.org/licenses/by/4.0/legalcode>.
  */
 
-package com.machinelinking.enricher;
+package com.machinelinking.pipeline;
 
 /**
- * Defines a {@link WikiEnricherFactory} build {@link Flag} set.
+ * Defines an {@link WikiPipelineFactory} build flag.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-
-public interface FlagSet {
-
-    /**
-     * @return list of flags within this set.
-     */
-    Flag[] getDefinedFlags();
+public interface Flag {
 
     /**
-     * @return list of flags which are default in this set.
+     * @return the id of the flag.
      */
-    Flag[] getDefaultFlags();
+    String getId();
+
+    /**
+     * @return the human readable description of the flag.
+     */
+    String getDescription();
 
 }

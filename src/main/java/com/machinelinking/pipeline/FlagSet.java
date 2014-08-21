@@ -11,31 +11,24 @@
  * If not, see <https://creativecommons.org/licenses/by/4.0/legalcode>.
  */
 
-package com.machinelinking.enricher;
+package com.machinelinking.pipeline;
 
 /**
- * Default {@link FlagSet} implementation.
+ * Defines a {@link WikiPipelineFactory} build {@link Flag} set.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class DefaultFlagSet implements FlagSet {
 
-    private final Flag[] definedFlags;
-    private final Flag[] defaultFlags;
+public interface FlagSet {
 
-    public DefaultFlagSet(Flag[] definedFlags, Flag[] defaultFlags) {
-        this.definedFlags = definedFlags;
-        this.defaultFlags = defaultFlags;
-    }
+    /**
+     * @return list of flags within this set.
+     */
+    Flag[] getDefinedFlags();
 
-    @Override
-    public Flag[] getDefinedFlags() {
-        return definedFlags;
-    }
-
-    @Override
-    public Flag[] getDefaultFlags() {
-        return defaultFlags;
-    }
+    /**
+     * @return list of flags which are default in this set.
+     */
+    Flag[] getDefaultFlags();
 
 }

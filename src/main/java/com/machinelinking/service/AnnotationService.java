@@ -13,7 +13,7 @@
 
 package com.machinelinking.service;
 
-import com.machinelinking.enricher.FlagSet;
+import com.machinelinking.pipeline.FlagSet;
 
 import javax.ws.rs.core.Response;
 

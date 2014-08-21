@@ -11,7 +11,7 @@
  * If not, see <https://creativecommons.org/licenses/by/4.0/legalcode>.
  */
 
-package com.machinelinking.enricher;
+package com.machinelinking.pipeline;
 
 import com.machinelinking.extractor.AbstractExtractor;
 import com.machinelinking.extractor.CategoryExtractor;
@@ -34,11 +34,11 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Factory for {@link WikiEnricher} instances.
+ * Factory for {@link WikiPipeline} instances.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class WikiEnricherFactory {
+public class WikiPipelineFactory {
 
     public static final String FLAG_SEPARATOR = ",";
     public static final String FLAG_NEGATION  = "-";
@@ -53,10 +53,10 @@ public class WikiEnricherFactory {
 
     public static final Flag[] DEFAULT_FLAGS = new Flag[] {Extractors};
 
-    private static WikiEnricherFactory instance;
+    private static WikiPipelineFactory instance;
 
-    public static WikiEnricherFactory getInstance() {
-        if(instance == null) instance = new WikiEnricherFactory();
+    public static WikiPipelineFactory getInstance() {
+        if(instance == null) instance = new WikiPipelineFactory();
         return instance;
     }
 
@@ -64,7 +64,7 @@ public class WikiEnricherFactory {
     private final List<Flag>       flagList = new ArrayList<>();
     private final Flag[]           flags;
 
-    private WikiEnricherFactory() {
+    private WikiPipelineFactory() {
         registerFlag(Linkers);
         registerFlag(Validate);
         registerFlag(Extractors);
@@ -120,14 +120,14 @@ public class WikiEnricherFactory {
     }
 
     /**
-     * Creates a {@link WikiEnricher} based on the given list of {@link Flag}s.
+     * Creates a {@link WikiPipeline} based on the given list of {@link Flag}s.
      *
      * @param flags
      * @return a new configured instance.
      */
-    public WikiEnricher createFullyConfiguredInstance(Flag... flags) {
+    public WikiPipeline createFullyConfiguredInstance(Flag... flags) {
         final Set<Flag> flagsSet = new HashSet<>(Arrays.asList(flags));
-        final WikiEnricher enricher = new WikiEnricher();
+        final WikiPipeline enricher = new WikiPipeline();
 
         // Issue extractor is always active.
         enricher.addExtractor(new IssueExtractor());
@@ -158,7 +158,7 @@ public class WikiEnricherFactory {
         return enricher;
     }
 
-    public WikiEnricher createFullyConfiguredInstance(String flagsStr, Flag[] defaultFlags) {
+    public WikiPipeline createFullyConfiguredInstance(String flagsStr, Flag[] defaultFlags) {
         return createFullyConfiguredInstance( toFlags(flagsStr, defaultFlags) );
     }
 

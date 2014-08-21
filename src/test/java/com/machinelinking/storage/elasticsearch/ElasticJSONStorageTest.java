@@ -36,7 +36,7 @@ public class ElasticJSONStorageTest extends ElasticJSONStorageTestBase {
         final ElasticJSONStorage storage = super.createStorage();
 
         final Map<String,?> data = JSONUtils.parseJSONAsMap(
-                IOUtils.toString(this.getClass().getResourceAsStream("/com/machinelinking/enricher/Page1.json"))
+                IOUtils.toString(this.getClass().getResourceAsStream("/com/machinelinking/pipeline/Page1.json"))
         );
         removeUnindexableFields(data);
 

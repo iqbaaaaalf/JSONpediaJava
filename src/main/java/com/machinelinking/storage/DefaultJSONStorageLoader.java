@@ -13,9 +13,9 @@
 
 package com.machinelinking.storage;
 
-import com.machinelinking.enricher.Flag;
-import com.machinelinking.enricher.WikiEnricher;
-import com.machinelinking.enricher.WikiEnricherFactory;
+import com.machinelinking.pipeline.Flag;
+import com.machinelinking.pipeline.WikiPipeline;
+import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.serializer.DataEncoder;
 import com.machinelinking.serializer.JSONSerializer;
@@ -61,18 +61,18 @@ implements JSONStorageLoader {
 
     private static final Logger logger = Logger.getLogger(DefaultJSONStorageLoader.class);
 
-    private final WikiEnricherFactory wikiEnricherFactory;
+    private final WikiPipelineFactory wikiEnricherFactory;
     private final Flag[] flags;
     private final JSONStorage storage;
 
-    public DefaultJSONStorageLoader(WikiEnricherFactory factory, Flag[] flags, JSONStorage storage) {
+    public DefaultJSONStorageLoader(WikiPipelineFactory factory, Flag[] flags, JSONStorage storage) {
         this.wikiEnricherFactory = factory;
         this.flags               = flags;
         this.storage             = storage;
     }
 
     @Override
-    public WikiEnricherFactory getEnricherFactory() {
+    public WikiPipelineFactory getEnricherFactory() {
         return wikiEnricherFactory;
     }
 
@@ -121,7 +121,7 @@ implements JSONStorageLoader {
 
     public static class EnrichmentProcessor implements PageProcessor {
 
-        private final WikiEnricher enricher;
+        private final WikiPipeline enricher;
         private final JSONStorageConnection connection;
         private int processedPages = 0, errorPages = 0;
         private String threadId;
@@ -129,7 +129,7 @@ implements JSONStorageLoader {
         private final DataEncoder dataEncoder = new MongoDBDataEncoder();
 
         public EnrichmentProcessor(
-                WikiEnricher wikiEnricher, JSONStorageConnection connection
+                WikiPipeline wikiEnricher, JSONStorageConnection connection
         ) {
             super();
             this.enricher   = wikiEnricher;
@@ -216,11 +216,11 @@ implements JSONStorageLoader {
             final Properties properties = new Properties();
             properties.load(FileUtils.openInputStream(configFile));
 
-            final Flag[] flags = WikiEnricherFactory.getInstance().toFlags(
+            final Flag[] flags = WikiPipelineFactory.getInstance().toFlags(
                     getPropertyOrFail(
                             properties,
                             LOADER_FLAGS_PROP,
-                            "valid flags: " + Arrays.toString(WikiEnricherFactory.getInstance().getDefinedFlags())
+                            "valid flags: " + Arrays.toString(WikiPipelineFactory.getInstance().getDefinedFlags())
                     )
             );
             final JSONStorageFactory jsonStorageFactory = MultiJSONStorageFactory.loadJSONStorageFactory(
@@ -259,7 +259,7 @@ implements JSONStorageLoader {
             final JSONStorageConfiguration storageConfig = jsonStorageFactory.createConfiguration(jsonStorageConfig);
             try (final JSONStorage storage = jsonStorageFactory.createStorage(storageConfig)) {
                 loader[0] = new DefaultJSONStorageLoader(
-                        WikiEnricherFactory.getInstance(), flags, storage
+                        WikiPipelineFactory.getInstance(), flags, storage
                 );
 
                 final StorageLoaderReport report = loader[0].load(

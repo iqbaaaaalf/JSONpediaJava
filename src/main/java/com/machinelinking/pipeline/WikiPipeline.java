@@ -11,7 +11,7 @@
  * If not, see <https://creativecommons.org/licenses/by/4.0/legalcode>.
  */
 
-package com.machinelinking.enricher;
+package com.machinelinking.pipeline;
 
 import com.machinelinking.extractor.Extractor;
 import com.machinelinking.pagestruct.PageStructConsts;
@@ -46,8 +46,7 @@ import java.util.concurrent.ExecutionException;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-// TODO: rename in Pipeline
-public class WikiEnricher {
+public class WikiPipeline {
 
     private final WikiAPIParser apiParser = new WikiAPIParser();
 
@@ -60,7 +59,7 @@ public class WikiEnricher {
     private boolean validate         = false;
     private boolean produceStructure = true;
 
-    public WikiEnricher() {}
+    public WikiPipeline() {}
 
     public boolean isValidate() {
         return validate;

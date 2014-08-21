@@ -13,7 +13,7 @@
 
 package com.machinelinking.storage;
 
-import com.machinelinking.enricher.WikiEnricherFactory;
+import com.machinelinking.pipeline.WikiPipelineFactory;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
@@ -22,13 +22,13 @@ import java.net.URL;
 
 /**
  * Defines a processor to massive load a <i>Wikitext dump</i> stream into a {@link JSONStorage}
- * the {@link com.machinelinking.enricher.WikiEnricher} built by the specified {@link WikiEnricherFactory}.
+ * the {@link com.machinelinking.pipeline.WikiPipeline} built by the specified {@link com.machinelinking.pipeline.WikiPipelineFactory}.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface JSONStorageLoader {
 
-    WikiEnricherFactory getEnricherFactory();
+    WikiPipelineFactory getEnricherFactory();
 
     JSONStorage getStorage();
 

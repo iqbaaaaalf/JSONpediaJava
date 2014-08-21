@@ -13,7 +13,7 @@
 
 package com.machinelinking.service;
 
-import com.machinelinking.enricher.WikiEnricherFactory;
+import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngineTest;
 import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
@@ -54,7 +54,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     public void testFlags() throws IOException, URISyntaxException, ConnectionException {
         final JsonNode node = performQuery(buildPath(DefaultAnnotationService.class, "flags").build());
         Assert.assertEquals(
-                WikiEnricherFactory.getInstance().getDefinedFlags().length,
+                WikiPipelineFactory.getInstance().getDefinedFlags().length,
                 node.get("definedFlags").size()
         );
     }
@@ -68,7 +68,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     public void testAnnotateOnline() throws IOException, URISyntaxException, ConnectionException {
         final JsonNode node = performQuery(
                 buildPath(DefaultAnnotationService.class, TARGET_RESOURCE)
-                    .queryParam("procs", WikiEnricherFactory.Linkers).build()
+                    .queryParam("procs", WikiPipelineFactory.Linkers).build()
         );
         checkJSONResponse(node);
         Assert.assertNotNull(node.get("freebase"));
@@ -78,7 +78,7 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
     public void testAnnotateWithFilters() throws URISyntaxException, IOException, ConnectionException {
         final JsonNode node = performQuery(
                 buildPath(DefaultAnnotationService.class, TARGET_RESOURCE)
-                        .queryParam("procs", WikiEnricherFactory.Structure)
+                        .queryParam("procs", WikiPipelineFactory.Structure)
                         .queryParam("filter", DefaultJSONFilterEngineTest.STRING_FILTER_EXP).build()
         );
         Assert.assertEquals(

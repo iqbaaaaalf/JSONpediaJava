@@ -13,8 +13,8 @@
 
 package com.machinelinking.storage;
 
-import com.machinelinking.enricher.Flag;
-import com.machinelinking.enricher.WikiEnricherFactory;
+import com.machinelinking.pipeline.Flag;
+import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.util.FileUtil;
 import junit.framework.Assert;
 import org.junit.Test;
@@ -32,9 +32,9 @@ import java.net.UnknownHostException;
 public abstract class AbstractJSONStorageLoaderTest {
 
     private static final Flag[] FLAGS = {
-            WikiEnricherFactory.Extractors,
-            WikiEnricherFactory.Splitters,
-            WikiEnricherFactory.Validate
+            WikiPipelineFactory.Extractors,
+            WikiPipelineFactory.Splitters,
+            WikiPipelineFactory.Validate
     };
 
     private static boolean cleanupDone = false;
@@ -73,7 +73,7 @@ public abstract class AbstractJSONStorageLoaderTest {
         performCleanupOnce();
 
         final DefaultJSONStorageLoader loader = new DefaultJSONStorageLoader(
-                WikiEnricherFactory.getInstance(),
+                WikiPipelineFactory.getInstance(),
                 FLAGS,
                 getJSONStorage()
         );

@@ -13,7 +13,7 @@
 
 package com.machinelinking.service;
 
-import com.machinelinking.enricher.Flag;
+import com.machinelinking.pipeline.Flag;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

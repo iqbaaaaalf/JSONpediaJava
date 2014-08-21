@@ -82,7 +82,7 @@ public class MongoJSONStorageTest {
         final MongoJSONStorage storage = getStorage();
         storage.deleteCollection(TEST_COLLECTION);
         final DBObject dbNode = (DBObject) JSON.parse(
-                IOUtils.toString(this.getClass().getResourceAsStream("/com/machinelinking/enricher/Page1.json"))
+                IOUtils.toString(this.getClass().getResourceAsStream("/com/machinelinking/pipeline/Page1.json"))
         );
         long start = 0;
         long end   = 0;

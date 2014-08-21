@@ -13,8 +13,8 @@
 
 package com.machinelinking.main;
 
-import com.machinelinking.enricher.WikiEnricher;
-import com.machinelinking.enricher.WikiEnricherFactory;
+import com.machinelinking.pipeline.WikiPipeline;
+import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.DefaultJSONFilterFactory;
 import com.machinelinking.filter.JSONFilter;
@@ -59,8 +59,8 @@ public class JSONpedia {
             final URL documentURL = JSONUtils.toResourceURL(params.entity);
             final DocumentSource documentSource = params.text ==
                     null ? new DocumentSource(documentURL) : new DocumentSource(documentURL, params.text);
-            final WikiEnricher wikiEnricher = WikiEnricherFactory.getInstance()
-                    .createFullyConfiguredInstance(params.flags, WikiEnricherFactory.DEFAULT_FLAGS);
+            final WikiPipeline wikiEnricher = WikiPipelineFactory.getInstance()
+                    .createFullyConfiguredInstance(params.flags, WikiPipelineFactory.DEFAULT_FLAGS);
             final JSONSerializer jsonSerializer;
             final JSONFilter filter;
             try {
