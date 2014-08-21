@@ -27,9 +27,9 @@ import java.io.IOException;
  */
 public class DefaultJSONFilterEngineTest {
 
-    public static final String STRING_FILTER_EXP = "name:Death date and age,__type:template";
-    public static final String REGEX_FILTER_EXP  = "url:\".*[\\s,\\d]?\\.html\",__type:link";
-    public static final String NESTED_FILTER_EXP = "notable_students>__type:template,name:Plainlist>__type:reference";
+    public static final String STRING_FILTER_EXP = "name:Death date and age,@type:template";
+    public static final String REGEX_FILTER_EXP  = "url:\".*[\\s,\\d]?\\.html\",@type:link";
+    public static final String NESTED_FILTER_EXP = "notable_students>@type:template,name:Plainlist>@type:reference";
 
     @Test
     public void testParseFilter1() throws IOException {

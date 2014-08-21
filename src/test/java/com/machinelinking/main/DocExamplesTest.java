@@ -91,7 +91,7 @@ public class DocExamplesTest {
             }
         };
         converterManager.addConverter(
-                (JSONObjectFilter) DefaultJSONFilterEngine.parseFilter("__type:reference"),
+                (JSONObjectFilter) DefaultJSONFilterEngine.parseFilter("@type:reference"),
                 converter
         );
 
@@ -121,7 +121,7 @@ public class DocExamplesTest {
         final ScriptableConverter converter = ScriptableConverterFactory.getInstance().createConverter(script);
         final ConverterManager converterManager = new DefaultConverterManager();
         converterManager.addConverter(
-                (JSONObjectFilter) DefaultJSONFilterEngine.parseFilter("__type:reference"),
+                (JSONObjectFilter) DefaultJSONFilterEngine.parseFilter("@type:reference"),
                 converter
         );
 

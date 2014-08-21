@@ -68,7 +68,7 @@ public class InfoboxSplitterTest {
         serializer.closeObject();
         serializer.flush();
         Assert.assertEquals(
-            "{\"infobox-splitter\":[{\"__type\":\"template\",\"name\":\"tt1\"," +
+            "{\"infobox-splitter\":[{\"@type\":\"template\",\"name\":\"tt1\"," +
             "\"content\":{\"tt1-p1\":[\"text 1\",\"text 2\"]}}]}",
             baos.toString()
         );

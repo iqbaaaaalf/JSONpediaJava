@@ -55,7 +55,7 @@ public class JSONSerializerTest {
     public void testOpenObject2() {
         serializer.openObject();
         serializer.openObject();
-        verify("{ \"__an0\" : {} }");
+        verify("{ \"@an0\" : {} }");
     }
 
     @Test
@@ -114,7 +114,7 @@ public class JSONSerializerTest {
     public void testSpuriousValue() {
         serializer.openObject();
         serializer.value("v1");
-        verify("{ \"__an0\" : \"v1\" }");
+        verify("{ \"@an0\" : \"v1\" }");
     }
 
     @Test
@@ -122,7 +122,7 @@ public class JSONSerializerTest {
         serializer.openObject();
         serializer.value("v1");
         serializer.value("v2");
-        verify("{ \"__an0\" : \"v1\" , \"__an1\" : \"v2\" }");
+        verify("{ \"@an0\" : \"v1\" , \"@an1\" : \"v2\" }");
     }
 
     @Test

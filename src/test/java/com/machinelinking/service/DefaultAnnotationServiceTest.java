@@ -83,10 +83,10 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
         );
         Assert.assertEquals(
                 JSONUtils.parseJSON(
-                        "{\"filter\":\"object_filter(__type=template,name=Death date and age,)>null\"," +
-                                "\"result\":[{\"__type\":\"template\",\"name\":\"Death date and age\"," +
-                                "\"content\":{\"df\":[\"yes\"],\"__an0\":[\"1955\"],\"__an1\":[\"4\"]," +
-                                "   \"__an2\":[\"18\"],\"__an3\":[\"1879\"],\"__an4\":[\"3\"],\"__an5\":[\"14\"]}}]}"
+                        "{\"filter\":\"object_filter(@type=template,name=Death date and age,)>null\"," +
+                                "\"result\":[{\"@type\":\"template\",\"name\":\"Death date and age\"," +
+                                "\"content\":{\"df\":[\"yes\"],\"@an0\":[\"1955\"],\"@an1\":[\"4\"]," +
+                                "   \"@an2\":[\"18\"],\"@an3\":[\"1879\"],\"@an4\":[\"3\"],\"@an5\":[\"14\"]}}]}"
                 ).toString(),
                 node.toString()
         );

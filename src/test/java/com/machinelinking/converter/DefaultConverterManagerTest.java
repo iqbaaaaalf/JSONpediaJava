@@ -45,7 +45,7 @@ public class DefaultConverterManagerTest {
     public void testConverterAddRemove() throws ScriptableFactoryException, IOException {
         final JSONFilterFactory filterFactory = new DefaultJSONFilterFactory();
         final JSONFilterParser filterParser = new DefaultJSONFilterParser();
-        final JSONObjectFilter f1 = (JSONObjectFilter) filterParser.parse("__type:link,name:x", filterFactory);
+        final JSONObjectFilter f1 = (JSONObjectFilter) filterParser.parse("@type:link,name:x", filterFactory);
 
         final ConverterManager converterManager = new DefaultConverterManager();
         final Converter converter = new Converter() {
@@ -59,7 +59,7 @@ public class DefaultConverterManagerTest {
         Assert.assertFalse(converterManager.addConverter(f1, converter));
         Assert.assertEquals(converter,
             converterManager.getConverterForData(
-                JSONUtils.parseJSON("{\"__type\" : \"link\", \"name\" : \"x\", \"content\" : {} }")
+                JSONUtils.parseJSON("{\"@type\" : \"link\", \"name\" : \"x\", \"content\" : {} }")
             )
         );
     }
@@ -82,7 +82,7 @@ public class DefaultConverterManagerTest {
 
         final ConverterManager converterManager = new DefaultConverterManager();
         converterManager.addConverter(
-                (JSONObjectFilter) DefaultJSONFilterEngine.parseFilter("__type:reference"),
+                (JSONObjectFilter) DefaultJSONFilterEngine.parseFilter("@type:reference"),
                 converter
         );
 

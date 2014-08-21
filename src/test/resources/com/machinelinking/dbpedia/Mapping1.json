@@ -1,5 +1,5 @@
 {
-    "__type": "mapping",
+    "@type": "mapping",
     "name": "Chembox",
     "class": "ChemicalCompound",
     "mapping": {

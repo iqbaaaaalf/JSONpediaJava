@@ -1,9 +1,9 @@
 {
-    "__type": "page",
+    "@type": "page",
     "url": "http://test/Page2",
     "structure": [
         {
-            "__type": "template",
+            "@type": "template",
             "name": "pp-semi-blp",
             "content": {
                 "small": [
@@ -12,12 +12,12 @@
             }
         },
         {
-            "__type": "template",
+            "@type": "template",
             "name": "pp-move-indef",
             "content": {}
         },
         {
-            "__type": "template",
+            "@type": "template",
             "name": "Infobox person",
             "content": {
                 "honorific_prefix": null,
@@ -26,13 +26,13 @@
                 ],
                 "honorific_suffix": [
                     {
-                        "__type": "open_tag",
+                        "@type": "open_tag",
                         "name": "small",
                         "attributes": null
                     },
                     "OM, KBE, FRS, FREng, FRSA",
                     {
-                        "__type": "close_tag",
+                        "@type": "close_tag",
                         "name": "small"
                     }
                 ],
@@ -47,16 +47,16 @@
                 ],
                 "birth_date": [
                     {
-                        "__type": "template",
+                        "@type": "template",
                         "name": "birth date and age",
                         "content": {
-                            "__an0": [
+                            "@an0": [
                                 "1955"
                             ],
-                            "__an1": [
+                            "@an1": [
                                 "6"
                             ],
-                            "__an2": [
+                            "@an2": [
                                 "8"
                             ],
                             "df": [
@@ -65,7 +65,7 @@
                         }
                     },
                     {
-                        "__type": "open_tag",
+                        "@type": "open_tag",
                         "name": "ref",
                         "attributes": [
                             {
@@ -74,7 +74,7 @@
                         ]
                     },
                     {
-                        "__type": "template",
+                        "@type": "template",
                         "name": "cite web",
                         "content": {
                             "url": [
@@ -92,14 +92,14 @@
                         }
                     },
                     {
-                        "__type": "close_tag",
+                        "@type": "close_tag",
                         "name": "ref"
                     }
                 ],
                 "birth_place": [
                     "London, England",
                     {
-                        "__type": "inline_tag",
+                        "@type": "inline_tag",
                         "name": "ref",
                         "attributes": [
                             {
@@ -113,13 +113,13 @@
                 ],
                 "residence": [
                     {
-                        "__type": "reference",
+                        "@type": "reference",
                         "label": "Massachusetts",
                         "content": {}
                     },
                     ", U.S.",
                     {
-                        "__type": "inline_tag",
+                        "@type": "inline_tag",
                         "name": "ref",
                         "attributes": [
                             {
@@ -130,33 +130,33 @@
                 ],
                 "known_for": [
                     {
-                        "__type": "template",
+                        "@type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "__an0": {
-                                "__type": "list",
+                            "@an0": {
+                                "@type": "list",
                                 "content": [
                                     {
-                                        "__type": "list_item",
+                                        "@type": "list_item",
                                         "level": 1,
                                         "item_type": "Unordered",
                                         "content": [
                                             "Inventing the",
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "World Wide Web",
                                                 "content": {}
                                             }
                                         ]
                                     },
                                     {
-                                        "__type": "list_item",
+                                        "@type": "list_item",
                                         "level": 1,
                                         "item_type": "Unordered",
                                         "content": [
                                             "Holder of the 3Com Founders Chair at",
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "MIT",
                                                 "content": {}
                                             },
@@ -170,38 +170,38 @@
                 ],
                 "alma_mater": [
                     {
-                        "__type": "reference",
+                        "@type": "reference",
                         "label": "Queen's College, Oxford",
                         "content": {}
                     }
                 ],
                 "employer": [
                     {
-                        "__type": "template",
+                        "@type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "__an0": {
-                                "__type": "list",
+                            "@an0": {
+                                "@type": "list",
                                 "content": [
                                     {
-                                        "__type": "list_item",
+                                        "@type": "list_item",
                                         "level": 1,
                                         "item_type": "Unordered",
                                         "content": [
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "World Wide Web Consortium",
                                                 "content": {}
                                             }
                                         ]
                                     },
                                     {
-                                        "__type": "list_item",
+                                        "@type": "list_item",
                                         "level": 1,
                                         "item_type": "Unordered",
                                         "content": [
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "University of Southampton",
                                                 "content": {}
                                             }
@@ -214,7 +214,7 @@
                 ],
                 "occupation": [
                     {
-                        "__type": "reference",
+                        "@type": "reference",
                         "label": "Computer scientist",
                         "content": {}
                     }
@@ -224,38 +224,38 @@
                 ],
                 "religion": [
                     {
-                        "__type": "reference",
+                        "@type": "reference",
                         "label": "Unitarian Universalism",
                         "content": {}
                     }
                 ],
                 "parents": [
                     {
-                        "__type": "template",
+                        "@type": "template",
                         "name": "Plainlist",
                         "content": {
-                            "__an0": {
-                                "__type": "list",
+                            "@an0": {
+                                "@type": "list",
                                 "content": [
                                     {
-                                        "__type": "list_item",
+                                        "@type": "list_item",
                                         "level": 1,
                                         "item_type": "Unordered",
                                         "content": [
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "Conway Berners-Lee",
                                                 "content": {}
                                             }
                                         ]
                                     },
                                     {
-                                        "__type": "list_item",
+                                        "@type": "list_item",
                                         "level": 1,
                                         "item_type": "Unordered",
                                         "content": [
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "Mary Lee Woods",
                                                 "content": {}
                                             }
@@ -268,10 +268,10 @@
                 ],
                 "website": [
                     {
-                        "__type": "template",
+                        "@type": "template",
                         "name": "Url",
                         "content": {
-                            "__an0": [
+                            "@an0": [
                                 "http://www.w3.org/People/Berners-Lee/"
                             ]
                         }
@@ -280,62 +280,62 @@
             }
         },
         {
-            "__type": "paragraph"
+            "@type": "paragraph"
         },
         "<b>",
         "Sir Timothy John \"Tim\" Berners-Lee",
         "</b>",
         ",",
         {
-            "__type": "template",
+            "@type": "template",
             "name": "post-nominals",
             "content": {
                 "post-noms": [
                     {
-                        "__type": "reference",
+                        "@type": "reference",
                         "label": "Order of Merit",
                         "content": {
-                            "__an0": [
+                            "@an0": [
                                 "OM"
                             ]
                         }
                     },
                     ",",
                     {
-                        "__type": "reference",
+                        "@type": "reference",
                         "label": "Knight Commander of the Order of the British Empire",
                         "content": {
-                            "__an0": [
+                            "@an0": [
                                 "KBE"
                             ]
                         }
                     },
                     ",",
                     {
-                        "__type": "reference",
+                        "@type": "reference",
                         "label": "Royal Society",
                         "content": {
-                            "__an0": [
+                            "@an0": [
                                 "FRS"
                             ]
                         }
                     },
                     ",",
                     {
-                        "__type": "reference",
+                        "@type": "reference",
                         "label": "Royal Academy of Engineering",
                         "content": {
-                            "__an0": [
+                            "@an0": [
                                 "FREng"
                             ]
                         }
                     },
                     ",",
                     {
-                        "__type": "reference",
+                        "@type": "reference",
                         "label": "Royal Society of Arts",
                         "content": {
-                            "__an0": [
+                            "@an0": [
                                 "FRSA"
                             ]
                         }
@@ -345,7 +345,7 @@
         },
         "(born 8 June 1955",
         {
-            "__type": "inline_tag",
+            "@type": "inline_tag",
             "name": "ref",
             "attributes": [
                 {
@@ -359,34 +359,34 @@
         "</b>",
         "\", is an English",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "computer scientist",
             "content": {}
         },
         ",",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "Massachusetts Institute of Technology",
             "content": {
-                "__an0": [
+                "@an0": [
                     "MIT"
                 ]
             }
         },
         "professor and the inventor of the",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "World Wide Web",
             "content": {}
         },
         ". He made a proposal for an information management system in March 1989",
         {
-            "__type": "open_tag",
+            "@type": "open_tag",
             "name": "ref",
             "attributes": null
         },
         {
-            "__type": "template",
+            "@type": "template",
             "name": "cite web",
             "content": {
                 "url": [
@@ -405,40 +405,40 @@
             }
         },
         {
-            "__type": "close_tag",
+            "@type": "close_tag",
             "name": "ref"
         },
         "and on 25 December 1990, with the help of",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "Robert Cailliau",
             "content": {}
         },
         "and a young student at",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "CERN",
             "content": {}
         },
         ", he implemented the first successful communication between a",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "Hypertext Transfer Protocol",
             "content": {}
         },
         "(HTTP) client and",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "Web server",
             "content": {
-                "__an0": [
+                "@an0": [
                     "server"
                 ]
             }
         },
         "via the Internet.",
         {
-            "__type": "inline_tag",
+            "@type": "inline_tag",
             "name": "ref",
             "attributes": [
                 {
@@ -447,49 +447,49 @@
             ]
         },
         {
-            "__type": "paragraph"
+            "@type": "paragraph"
         },
         "Berners-Lee is the director of the",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "World Wide Web Consortium",
             "content": {}
         },
         "(W3C), which oversees the Web's continued development. He is also the founder of the",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "World Wide Web Foundation",
             "content": {}
         },
         ", and is a senior researcher and holder of the",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "3Com",
             "content": {}
         },
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "Professors in the United States#Special academic ranks (tenured)",
             "content": {
-                "__an0": [
+                "@an0": [
                     "Founders Chair"
                 ]
             }
         },
         "at the",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "MIT Computer Science and Artificial Intelligence Laboratory",
             "content": {}
         },
         "(CSAIL).",
         {
-            "__type": "open_tag",
+            "@type": "open_tag",
             "name": "ref",
             "attributes": null
         },
         {
-            "__type": "template",
+            "@type": "template",
             "name": "cite web",
             "content": {
                 "title": [
@@ -500,7 +500,7 @@
                 ],
                 "publisher": [
                     {
-                        "__type": "reference",
+                        "@type": "reference",
                         "label": "Massachusetts Institute of Technology",
                         "content": {}
                     }
@@ -511,17 +511,17 @@
             }
         },
         {
-            "__type": "close_tag",
+            "@type": "close_tag",
             "name": "ref"
         },
         "He is a director of The Web Science Research Initiative (WSRI),",
         {
-            "__type": "open_tag",
+            "@type": "open_tag",
             "name": "ref",
             "attributes": null
         },
         {
-            "__type": "template",
+            "@type": "template",
             "name": "cite web",
             "content": {
                 "url": [
@@ -545,23 +545,23 @@
             }
         },
         {
-            "__type": "close_tag",
+            "@type": "close_tag",
             "name": "ref"
         },
         "and a member of the advisory board of the",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "MIT Center for Collective Intelligence",
             "content": {}
         },
         ".",
         {
-            "__type": "open_tag",
+            "@type": "open_tag",
             "name": "ref",
             "attributes": null
         },
         {
-            "__type": "template",
+            "@type": "template",
             "name": "cite web",
             "content": {
                 "url": [
@@ -579,16 +579,16 @@
             }
         },
         {
-            "__type": "close_tag",
+            "@type": "close_tag",
             "name": "ref"
         },
         {
-            "__type": "open_tag",
+            "@type": "open_tag",
             "name": "ref",
             "attributes": null
         },
         {
-            "__type": "template",
+            "@type": "template",
             "name": "cite web",
             "content": {
                 "url": [
@@ -606,31 +606,31 @@
             }
         },
         {
-            "__type": "close_tag",
+            "@type": "close_tag",
             "name": "ref"
         },
         {
-            "__type": "paragraph"
+            "@type": "paragraph"
         },
         "In 2004, Berners-Lee was",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "Order of the British Empire",
             "content": {
-                "__an0": [
+                "@an0": [
                     "knighted"
                 ]
             }
         },
         "by Queen",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "Elizabeth II",
             "content": {}
         },
         "for his pioneering work.",
         {
-            "__type": "inline_tag",
+            "@type": "inline_tag",
             "name": "ref",
             "attributes": [
                 {
@@ -640,18 +640,18 @@
         },
         "In April 2009, he was elected a foreign associate of the",
         {
-            "__type": "reference",
+            "@type": "reference",
             "label": "United States National Academy of Sciences",
             "content": {}
         },
         ", based in Washington, D.C.",
         {
-            "__type": "open_tag",
+            "@type": "open_tag",
             "name": "ref",
             "attributes": null
         },
         {
-            "__type": "template",
+            "@type": "template",
             "name": "cite web",
             "content": {
                 "title": [
@@ -662,7 +662,7 @@
                 ],
                 "publisher": [
                     {
-                        "__type": "reference",
+                        "@type": "reference",
                         "label": "Dr. Dobb's Journal",
                         "content": {}
                     }
@@ -673,16 +673,16 @@
             }
         },
         {
-            "__type": "close_tag",
+            "@type": "close_tag",
             "name": "ref"
         },
         {
-            "__type": "open_tag",
+            "@type": "open_tag",
             "name": "ref",
             "attributes": null
         },
         {
-            "__type": "template",
+            "@type": "template",
             "name": "cite press release",
             "content": {
                 "accessdate": [
@@ -703,44 +703,44 @@
             }
         },
         {
-            "__type": "close_tag",
+            "@type": "close_tag",
             "name": "ref"
         },
         {
-            "__type": "paragraph"
+            "@type": "paragraph"
         },
         {
-            "__type": "section",
+            "@type": "section",
             "title": "Early life",
             "level": 0,
             "content": {
-                "__an0": "Tim Berners-Lee was born in southwest London, England, on 8 June 1955, the son of",
-                "__an1": {
-                    "__type": "reference",
+                "@an0": "Tim Berners-Lee was born in southwest London, England, on 8 June 1955, the son of",
+                "@an1": {
+                    "@type": "reference",
                     "label": "Conway Berners-Lee",
                     "content": {}
                 },
-                "__an2": "and",
-                "__an3": {
-                    "__type": "reference",
+                "@an2": "and",
+                "@an3": {
+                    "@type": "reference",
                     "label": "Mary Lee Woods",
                     "content": {}
                 },
-                "__an4": ".  His parents worked on the first commercially built computer, the",
-                "__an5": {
-                    "__type": "reference",
+                "@an4": ".  His parents worked on the first commercially built computer, the",
+                "@an5": {
+                    "@type": "reference",
                     "label": "Ferranti Mark 1",
                     "content": {}
                 },
-                "__an6": ".  One of four children, he attended Sheen Mount Primary School, and then went on to",
-                "__an7": {
-                    "__type": "reference",
+                "@an6": ".  One of four children, he attended Sheen Mount Primary School, and then went on to",
+                "@an7": {
+                    "@type": "reference",
                     "label": "Emanuel School",
                     "content": {}
                 },
-                "__an8": "in London, from 1969 to 1973.",
-                "__an9": {
-                    "__type": "inline_tag",
+                "@an8": "in London, from 1969 to 1973.",
+                "@an9": {
+                    "@type": "inline_tag",
                     "name": "ref",
                     "attributes": [
                         {
@@ -748,15 +748,15 @@
                         }
                     ]
                 },
-                "__an10": "He studied at",
-                "__an11": {
-                    "__type": "reference",
+                "@an10": "He studied at",
+                "@an11": {
+                    "@type": "reference",
                     "label": "The Queen's College, Oxford",
                     "content": {}
                 },
-                "__an12": ", from 1973 to 1976, where he received a first-class degree in Physics.",
-                "__an13": {
-                    "__type": "inline_tag",
+                "@an12": ", from 1973 to 1976, where he received a first-class degree in Physics.",
+                "@an13": {
+                    "@type": "inline_tag",
                     "name": "ref",
                     "attributes": [
                         {
@@ -764,45 +764,45 @@
                         }
                     ]
                 },
-                "__an14": {
-                    "__type": "paragraph"
+                "@an14": {
+                    "@type": "paragraph"
                 }
             }
         },
         {
-            "__type": "section",
+            "@type": "section",
             "title": "Career",
             "level": 0,
             "content": {
-                "__an0": {
-                    "__type": "reference",
+                "@an0": {
+                    "@type": "reference",
                     "label": "File:Tim Berners-Lee.jpg",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "thumb"
                         ],
-                        "__an1": [
+                        "@an1": [
                             "left"
                         ],
-                        "__an2": [
+                        "@an2": [
                             "Berners-Lee, 2005"
                         ]
                     }
                 },
-                "__an1": "While an independent contractor at CERN from June to December 1980, Berners-Lee proposed a project based on the concept of",
-                "__an2": {
-                    "__type": "reference",
+                "@an1": "While an independent contractor at CERN from June to December 1980, Berners-Lee proposed a project based on the concept of",
+                "@an2": {
+                    "@type": "reference",
                     "label": "hypertext",
                     "content": {}
                 },
-                "__an3": ", to facilitate sharing and updating information among researchers.",
-                "__an4": {
-                    "__type": "open_tag",
+                "@an3": ", to facilitate sharing and updating information among researchers.",
+                "@an4": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an5": {
-                    "__type": "template",
+                "@an5": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "title": [
@@ -825,19 +825,19 @@
                         ]
                     }
                 },
-                "__an6": {
-                    "__type": "close_tag",
+                "@an6": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an7": "While there, he built a prototype system named",
-                "__an8": {
-                    "__type": "reference",
+                "@an7": "While there, he built a prototype system named",
+                "@an8": {
+                    "@type": "reference",
                     "label": "ENQUIRE",
                     "content": {}
                 },
-                "__an9": ".",
-                "__an10": {
-                    "__type": "open_tag",
+                "@an9": ".",
+                "@an10": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": [
                         {
@@ -845,8 +845,8 @@
                         }
                     ]
                 },
-                "__an11": {
-                    "__type": "template",
+                "@an11": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "last": [
@@ -866,16 +866,16 @@
                         ]
                     }
                 },
-                "__an12": {
-                    "__type": "close_tag",
+                "@an12": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an13": {
-                    "__type": "paragraph"
+                "@an13": {
+                    "@type": "paragraph"
                 },
-                "__an14": "After leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.",
-                "__an15": {
-                    "__type": "open_tag",
+                "@an14": "After leaving CERN in 1980, he went to work at John Poole's Image Computer Systems, Ltd, in Bournemouth, England.",
+                "@an15": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": [
                         {
@@ -883,8 +883,8 @@
                         }
                     ]
                 },
-                "__an16": {
-                    "__type": "template",
+                "@an16": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "title": [
@@ -904,23 +904,23 @@
                         ]
                     }
                 },
-                "__an17": {
-                    "__type": "close_tag",
+                "@an17": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an18": "The project he worked on was a",
-                "__an19": "<i>",
-                "__an20": "real-time remote procedure call",
-                "__an21": "</i>",
-                "__an22": "which gave him experience in",
-                "__an23": {
-                    "__type": "reference",
+                "@an18": "The project he worked on was a",
+                "@an19": "<i>",
+                "@an20": "real-time remote procedure call",
+                "@an21": "</i>",
+                "@an22": "which gave him experience in",
+                "@an23": {
+                    "@type": "reference",
                     "label": "computer network",
                     "content": {}
                 },
-                "__an24": "ing.",
-                "__an25": {
-                    "__type": "inline_tag",
+                "@an24": "ing.",
+                "@an25": {
+                    "@type": "inline_tag",
                     "name": "ref",
                     "attributes": [
                         {
@@ -928,9 +928,9 @@
                         }
                     ]
                 },
-                "__an26": "In 1984 he returned to CERN as a fellow.",
-                "__an27": {
-                    "__type": "inline_tag",
+                "@an26": "In 1984 he returned to CERN as a fellow.",
+                "@an27": {
+                    "@type": "inline_tag",
                     "name": "ref",
                     "attributes": [
                         {
@@ -938,29 +938,29 @@
                         }
                     ]
                 },
-                "__an28": {
-                    "__type": "paragraph"
+                "@an28": {
+                    "@type": "paragraph"
                 },
-                "__an29": "In 1989, CERN was the largest Internet node in Europe, and Berners-Lee saw an opportunity to join hypertext with the Internet: \"I just had to take the hypertext idea and connect it to the",
-                "__an30": {
-                    "__type": "reference",
+                "@an29": "In 1989, CERN was the largest Internet node in Europe, and Berners-Lee saw an opportunity to join hypertext with the Internet: \"I just had to take the hypertext idea and connect it to the",
+                "@an30": {
+                    "@type": "reference",
                     "label": "Transmission Control Protocol",
                     "content": {}
                 },
-                "__an31": "and",
-                "__an32": {
-                    "__type": "reference",
+                "@an31": "and",
+                "@an32": {
+                    "@type": "reference",
                     "label": "domain name system",
                     "content": {}
                 },
-                "__an33": "ideas and—ta-da!—the World Wide Web.\"",
-                "__an34": {
-                    "__type": "open_tag",
+                "@an33": "ideas and—ta-da!—the World Wide Web.\"",
+                "@an34": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an35": {
-                    "__type": "template",
+                "@an35": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "author": [
@@ -980,18 +980,18 @@
                         ]
                     }
                 },
-                "__an36": {
-                    "__type": "close_tag",
+                "@an36": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an37": "“Creating the web was really an act of desperation, because the situation without it was very difficult when I was working at CERN later. Most of the technology involved in the web, like the hypertext, like the Internet, multifont text objects, had all been designed already. I just had to put them together. It was a step of generalising, going to a higher level of abstraction, thinking about all the documentation systems out there as being possibly part of a larger imaginary documentation system.”",
-                "__an38": {
-                    "__type": "open_tag",
+                "@an37": "“Creating the web was really an act of desperation, because the situation without it was very difficult when I was working at CERN later. Most of the technology involved in the web, like the hypertext, like the Internet, multifont text objects, had all been designed already. I just had to put them together. It was a step of generalising, going to a higher level of abstraction, thinking about all the documentation systems out there as being possibly part of a larger imaginary documentation system.”",
+                "@an38": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an39": {
-                    "__type": "template",
+                "@an39": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "url": [
@@ -1009,39 +1009,39 @@
                         ]
                     }
                 },
-                "__an40": {
-                    "__type": "close_tag",
+                "@an40": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an41": "He wrote his initial proposal in March 1989, and in 1990, with the help of",
-                "__an42": {
-                    "__type": "reference",
+                "@an41": "He wrote his initial proposal in March 1989, and in 1990, with the help of",
+                "@an42": {
+                    "@type": "reference",
                     "label": "Robert Cailliau",
                     "content": {}
                 },
-                "__an43": "(with whom he shared the 1995",
-                "__an44": {
-                    "__type": "reference",
+                "@an43": "(with whom he shared the 1995",
+                "@an44": {
+                    "@type": "reference",
                     "label": "Association for Computing Machinery",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "ACM"
                         ]
                     }
                 },
-                "__an45": {
-                    "__type": "reference",
+                "@an45": {
+                    "@type": "reference",
                     "label": "Software System Award",
                     "content": {}
                 },
-                "__an46": "), produced a revision which was accepted by his manager, Mike Sendall.",
-                "__an47": {
-                    "__type": "open_tag",
+                "@an46": "), produced a revision which was accepted by his manager, Mike Sendall.",
+                "@an47": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an48": {
-                    "__type": "template",
+                "@an48": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "title": [
@@ -1058,52 +1058,52 @@
                         ]
                     }
                 },
-                "__an49": {
-                    "__type": "close_tag",
+                "@an49": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an50": "He used similar ideas to those underlying the ENQUIRE system to create the World Wide Web, for which he designed and built the first Web browser. This also functioned as an editor (",
-                "__an51": {
-                    "__type": "reference",
+                "@an50": "He used similar ideas to those underlying the ENQUIRE system to create the World Wide Web, for which he designed and built the first Web browser. This also functioned as an editor (",
+                "@an51": {
+                    "@type": "reference",
                     "label": "WorldWideWeb",
                     "content": {}
                 },
-                "__an52": ", running on the",
-                "__an53": {
-                    "__type": "reference",
+                "@an52": ", running on the",
+                "@an53": {
+                    "@type": "reference",
                     "label": "NeXTSTEP",
                     "content": {}
                 },
-                "__an54": "operating system), and the first Web server,",
-                "__an55": {
-                    "__type": "reference",
+                "@an54": "operating system), and the first Web server,",
+                "@an55": {
+                    "@type": "reference",
                     "label": "CERN HTTPd",
                     "content": {}
                 },
-                "__an56": "(short for Hypertext Transfer Protocol",
-                "__an57": {
-                    "__type": "reference",
+                "@an56": "(short for Hypertext Transfer Protocol",
+                "@an57": {
+                    "@type": "reference",
                     "label": "Daemon (computer software)",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "daemon"
                         ]
                     }
                 },
-                "__an58": ").",
-                "__an59": {
-                    "__type": "paragraph"
+                "@an58": ").",
+                "@an59": {
+                    "@type": "paragraph"
                 },
-                "__an60": {
-                    "__type": "template",
+                "@an60": {
+                    "@type": "template",
                     "name": "quotation",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "\" Mike Sendall buys a NeXT cube for evaluation, and gives it to Tim",
                             "[Berners-Lee",
                             "]. Tim's prototype implementation on NeXTStep is made in the space of a few months, thanks to the qualities of the NeXTStep software development system. This prototype offers WYSIWYG browsing/authoring! Current Web browsers used in \"surfing the Internet\" are mere passive windows, depriving the user of the possibility to contribute. During some sessions in the CERN cafeteria, Tim and I try to find a catching name for the system. I was determined that the name should not yet again be taken from Greek mythology. Tim proposes \"World-Wide Web\". I like this very much, except that it is difficult to pronounce in French...\" by Robert Cailliau, 2 November 1995.",
                             {
-                                "__type": "open_tag",
+                                "@type": "open_tag",
                                 "name": "ref",
                                 "attributes": [
                                     {
@@ -1112,39 +1112,39 @@
                                 ]
                             },
                             {
-                                "__type": "link",
+                                "@type": "link",
                                 "url": "http://www.netvalley.com/cgi-bin/intval/net_history.pl?chapter=4",
                                 "content": {
-                                    "__an0": [
+                                    "@an0": [
                                         "Roads and Crossroads of Internet History"
                                     ]
                                 }
                             },
                             "Chapter 4: Birth of the Web",
                             {
-                                "__type": "close_tag",
+                                "@type": "close_tag",
                                 "name": "ref"
                             }
                         ]
                     }
                 },
-                "__an61": {
-                    "__type": "paragraph"
+                "@an61": {
+                    "@type": "paragraph"
                 },
-                "__an62": "The first",
-                "__an63": {
-                    "__type": "reference",
+                "@an62": "The first",
+                "@an63": {
+                    "@type": "reference",
                     "label": "web site",
                     "content": {}
                 },
-                "__an64": "built was at CERN within the border of France",
-                "__an65": {
-                    "__type": "open_tag",
+                "@an64": "built was at CERN within the border of France",
+                "@an65": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an66": {
-                    "__type": "template",
+                "@an66": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "title": [
@@ -1155,29 +1155,29 @@
                         ]
                     }
                 },
-                "__an67": {
-                    "__type": "close_tag",
+                "@an67": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an68": ", and was first put online on 6 August 1991:",
-                "__an69": {
-                    "__type": "open_tag",
+                "@an68": ", and was first put online on 6 August 1991:",
+                "@an69": {
+                    "@type": "open_tag",
                     "name": "blockquote",
                     "attributes": null
                 },
-                "__an70": "\"Info.cern.ch was the address of the world's first-ever web site and web server, running on a NeXT computer at CERN. The first web page address was http://info.cern.ch/hypertext/WWW/TheProject.html, which centred on information regarding the WWW project. Visitors could learn more about hypertext, technical details for creating their own webpage, and even an explanation on how to search the Web for information. There are no screenshots of this original page and, in any case, changes were made daily to the information available on the page as the WWW project developed. You may find a later copy (1992) on the World Wide Web Consortium website.\" -CERN",
-                "__an71": {
-                    "__type": "close_tag",
+                "@an70": "\"Info.cern.ch was the address of the world's first-ever web site and web server, running on a NeXT computer at CERN. The first web page address was http://info.cern.ch/hypertext/WWW/TheProject.html, which centred on information regarding the WWW project. Visitors could learn more about hypertext, technical details for creating their own webpage, and even an explanation on how to search the Web for information. There are no screenshots of this original page and, in any case, changes were made daily to the information available on the page as the WWW project developed. You may find a later copy (1992) on the World Wide Web Consortium website.\" -CERN",
+                "@an71": {
+                    "@type": "close_tag",
                     "name": "blockquote"
                 },
-                "__an72": "It provided an explanation of what the World Wide Web was, and how one could use a browser and set up a web server.",
-                "__an73": {
-                    "__type": "open_tag",
+                "@an72": "It provided an explanation of what the World Wide Web was, and how one could use a browser and set up a web server.",
+                "@an73": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an74": {
-                    "__type": "template",
+                "@an74": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "title": [
@@ -1194,17 +1194,17 @@
                         ]
                     }
                 },
-                "__an75": {
-                    "__type": "close_tag",
+                "@an75": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an76": {
-                    "__type": "open_tag",
+                "@an76": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an77": {
-                    "__type": "template",
+                "@an77": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "title": [
@@ -1221,17 +1221,17 @@
                         ]
                     }
                 },
-                "__an78": {
-                    "__type": "close_tag",
+                "@an78": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an79": {
-                    "__type": "open_tag",
+                "@an79": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an80": {
-                    "__type": "template",
+                "@an80": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "title": [
@@ -1251,17 +1251,17 @@
                         ]
                     }
                 },
-                "__an81": {
-                    "__type": "close_tag",
+                "@an81": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an82": {
-                    "__type": "open_tag",
+                "@an82": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an83": {
-                    "__type": "template",
+                "@an83": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "title": [
@@ -1272,7 +1272,7 @@
                         ],
                         "work": [
                             {
-                                "__type": "reference",
+                                "@type": "reference",
                                 "label": "Google Groups",
                                 "content": {}
                             }
@@ -1288,21 +1288,21 @@
                         ]
                     }
                 },
-                "__an84": {
-                    "__type": "close_tag",
+                "@an84": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an85": {
-                    "__type": "paragraph"
+                "@an85": {
+                    "@type": "paragraph"
                 },
-                "__an86": "In 1994, Berners-Lee founded the W3C at MIT. It comprised various companies that were willing to create standards and recommendations to improve the quality of the Web. Berners-Lee made his idea available freely, with no patent and no royalties due. The World Wide Web Consortium decided that its standards should be based on royalty-free technology, so that they could easily be adopted by anyone.",
-                "__an87": {
-                    "__type": "open_tag",
+                "@an86": "In 1994, Berners-Lee founded the W3C at MIT. It comprised various companies that were willing to create standards and recommendations to improve the quality of the Web. Berners-Lee made his idea available freely, with no patent and no royalties due. The World Wide Web Consortium decided that its standards should be based on royalty-free technology, so that they could easily be adopted by anyone.",
+                "@an87": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an88": {
-                    "__type": "template",
+                "@an88": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "title": [
@@ -1322,97 +1322,97 @@
                         ]
                     }
                 },
-                "__an89": {
-                    "__type": "close_tag",
+                "@an89": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an90": {
-                    "__type": "paragraph"
+                "@an90": {
+                    "@type": "paragraph"
                 },
-                "__an91": "In 2001, Berners-Lee became a patron of the East Dorset Heritage Trust, having previously lived in",
-                "__an92": {
-                    "__type": "reference",
+                "@an91": "In 2001, Berners-Lee became a patron of the East Dorset Heritage Trust, having previously lived in",
+                "@an92": {
+                    "@type": "reference",
                     "label": "Colehill",
                     "content": {}
                 },
-                "__an93": "in",
-                "__an94": {
-                    "__type": "reference",
+                "@an93": "in",
+                "@an94": {
+                    "@type": "reference",
                     "label": "Wimborne Minster",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "Wimborne"
                         ]
                     }
                 },
-                "__an95": ",",
-                "__an96": {
-                    "__type": "reference",
+                "@an95": ",",
+                "@an96": {
+                    "@type": "reference",
                     "label": "East Dorset",
                     "content": {}
                 },
-                "__an97": ", England.",
-                "__an98": {
-                    "__type": "open_tag",
+                "@an97": ", England.",
+                "@an98": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an99": "John W. Klooster (2009)",
-                "__an100": {
-                    "__type": "link",
+                "@an99": "John W. Klooster (2009)",
+                "@an100": {
+                    "@type": "link",
                     "url": "http://books.google.com/books?id=WKuG-VIwID8C&pg=PA611&dq=tim+berners+lee++-+east+dorset+heritage+trust&hl=en&ei=0cE9TtyhIcyo8QPQx_zgDA&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCoQ6AEwAA#v=onepage&q=tim%20berners%20lee%20%20-%20east%20dorset%20heritage%20trust&f=false",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "Icons of invention: the makers of the modern world from Gutenberg to Gates"
                         ]
                     }
                 },
-                "__an101": "p.611. ABC-CLIO, 2009",
-                "__an102": {
-                    "__type": "close_tag",
+                "@an101": "p.611. ABC-CLIO, 2009",
+                "@an102": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an103": {
-                    "__type": "paragraph"
+                "@an103": {
+                    "@type": "paragraph"
                 },
-                "__an104": "In December 2004, he accepted a chair in Computer Science at the School of Electronics and Computer Science,",
-                "__an105": {
-                    "__type": "reference",
+                "@an104": "In December 2004, he accepted a chair in Computer Science at the School of Electronics and Computer Science,",
+                "@an105": {
+                    "@type": "reference",
                     "label": "University of Southampton",
                     "content": {}
                 },
-                "__an106": ", England, to work on his new project, the",
-                "__an107": {
-                    "__type": "reference",
+                "@an106": ", England, to work on his new project, the",
+                "@an107": {
+                    "@type": "reference",
                     "label": "Semantic Web",
                     "content": {}
                 },
-                "__an108": ".",
-                "__an109": {
-                    "__type": "open_tag",
+                "@an108": ".",
+                "@an109": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an110": {
-                    "__type": "template",
+                "@an110": {
+                    "@type": "template",
                     "name": "cite doi",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "10.1038/scientificamerican0501-34"
                         ]
                     }
                 },
-                "__an111": {
-                    "__type": "close_tag",
+                "@an111": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an112": {
-                    "__type": "open_tag",
+                "@an112": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an113": {
-                    "__type": "template",
+                "@an113": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "title": [
@@ -1432,37 +1432,37 @@
                         ]
                     }
                 },
-                "__an114": {
-                    "__type": "close_tag",
+                "@an114": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an115": {
-                    "__type": "paragraph"
+                "@an115": {
+                    "@type": "paragraph"
                 }
             }
         },
         {
-            "__type": "section",
+            "@type": "section",
             "title": "Current work",
             "level": 0,
             "content": {
-                "__an0": {
-                    "__type": "reference",
+                "@an0": {
+                    "@type": "reference",
                     "label": "Image:timbernerslee.jpg",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "thumb"
                         ],
-                        "__an1": [
+                        "@an1": [
                             "right"
                         ],
-                        "__an2": [
+                        "@an2": [
                             "200px"
                         ],
-                        "__an3": [
+                        "@an3": [
                             "Tim Berners-Lee at the",
                             {
-                                "__type": "reference",
+                                "@type": "reference",
                                 "label": "Home Office",
                                 "content": {}
                             },
@@ -1470,20 +1470,20 @@
                         ]
                     }
                 },
-                "__an1": "In June 2009 then British Prime Minister",
-                "__an2": {
-                    "__type": "reference",
+                "@an1": "In June 2009 then British Prime Minister",
+                "@an2": {
+                    "@type": "reference",
                     "label": "Gordon Brown",
                     "content": {}
                 },
-                "__an3": "announced Berners-Lee would work with the UK Government to help make data more open and accessible on the Web, building on the work of the Power of Information Task Force.",
-                "__an4": {
-                    "__type": "open_tag",
+                "@an3": "announced Berners-Lee would work with the UK Government to help make data more open and accessible on the Web, building on the work of the Power of Information Task Force.",
+                "@an4": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an5": {
-                    "__type": "template",
+                "@an5": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "title": [
@@ -1503,42 +1503,42 @@
                         ]
                     }
                 },
-                "__an6": {
-                    "__type": "close_tag",
+                "@an6": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an7": "Berners-Lee and Professor",
-                "__an8": {
-                    "__type": "reference",
+                "@an7": "Berners-Lee and Professor",
+                "@an8": {
+                    "@type": "reference",
                     "label": "Nigel Shadbolt",
                     "content": {}
                 },
-                "__an9": "are the two key figures behind",
-                "__an10": {
-                    "__type": "reference",
+                "@an9": "are the two key figures behind",
+                "@an10": {
+                    "@type": "reference",
                     "label": "data.gov.uk",
                     "content": {}
                 },
-                "__an11": ", a",
-                "__an12": {
-                    "__type": "reference",
+                "@an11": ", a",
+                "@an12": {
+                    "@type": "reference",
                     "label": "UK Government",
                     "content": {}
                 },
-                "__an13": "project to open up almost all data acquired for official purposes for free re-use. Commenting on the opening up of",
-                "__an14": {
-                    "__type": "reference",
+                "@an13": "project to open up almost all data acquired for official purposes for free re-use. Commenting on the opening up of",
+                "@an14": {
+                    "@type": "reference",
                     "label": "Ordnance Survey",
                     "content": {}
                 },
-                "__an15": "data in April 2010 Berners-Lee said that: \"The changes signal a wider cultural change in Government based on an assumption that information should be in the public domain unless there is a good reason not to—not the other way around.\" He went on to say \"Greater openness, accountability and transparency in Government will give people greater choice and make it easier for individuals to get more directly involved in issues that matter to them.\"",
-                "__an16": {
-                    "__type": "open_tag",
+                "@an15": "data in April 2010 Berners-Lee said that: \"The changes signal a wider cultural change in Government based on an assumption that information should be in the public domain unless there is a good reason not to—not the other way around.\" He went on to say \"Greater openness, accountability and transparency in Government will give people greater choice and make it easier for individuals to get more directly involved in issues that matter to them.\"",
+                "@an16": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an17": {
-                    "__type": "template",
+                "@an17": {
+                    "@type": "template",
                     "name": "cite news",
                     "content": {
                         "title": [
@@ -1558,50 +1558,50 @@
                         ]
                     }
                 },
-                "__an18": {
-                    "__type": "close_tag",
+                "@an18": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an19": {
-                    "__type": "paragraph"
+                "@an19": {
+                    "@type": "paragraph"
                 },
-                "__an20": "In November 2009, Berners-Lee launched the World Wide Web Foundation in order to \"Advance the Web to empower humanity by launching transformative programs that build local capacity to leverage the Web as a medium for positive change.\"",
-                "__an21": {
-                    "__type": "open_tag",
+                "@an20": "In November 2009, Berners-Lee launched the World Wide Web Foundation in order to \"Advance the Web to empower humanity by launching transformative programs that build local capacity to leverage the Web as a medium for positive change.\"",
+                "@an21": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an22": {
-                    "__type": "link",
+                "@an22": {
+                    "@type": "link",
                     "url": "http://www.webfoundation.org/about/faq/",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "FAQ—World Wide Web Foundation"
                         ]
                     }
                 },
-                "__an23": "Retrieved 18 January 2011",
-                "__an24": {
-                    "__type": "close_tag",
+                "@an23": "Retrieved 18 January 2011",
+                "@an24": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an25": {
-                    "__type": "paragraph"
+                "@an25": {
+                    "@type": "paragraph"
                 },
-                "__an26": "Berners-Lee is one of the pioneer voices in favour of",
-                "__an27": {
-                    "__type": "reference",
+                "@an26": "Berners-Lee is one of the pioneer voices in favour of",
+                "@an27": {
+                    "@type": "reference",
                     "label": "Net Neutrality",
                     "content": {}
                 },
-                "__an28": ",",
-                "__an29": {
-                    "__type": "open_tag",
+                "@an28": ",",
+                "@an29": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an30": {
-                    "__type": "template",
+                "@an30": {
+                    "@type": "template",
                     "name": "cite news",
                     "content": {
                         "url": [
@@ -1630,24 +1630,24 @@
                         ]
                     }
                 },
-                "__an31": {
-                    "__type": "close_tag",
+                "@an31": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an32": "and has expressed the view that",
-                "__an33": {
-                    "__type": "reference",
+                "@an32": "and has expressed the view that",
+                "@an33": {
+                    "@type": "reference",
                     "label": "ISP",
                     "content": {}
                 },
-                "__an34": "s should supply \"connectivity with no strings attached,\" and should neither control nor monitor customers' browsing activities without their expressed consent.",
-                "__an35": {
-                    "__type": "open_tag",
+                "@an34": "s should supply \"connectivity with no strings attached,\" and should neither control nor monitor customers' browsing activities without their expressed consent.",
+                "@an35": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an36": {
-                    "__type": "template",
+                "@an36": {
+                    "@type": "template",
                     "name": "cite news",
                     "content": {
                         "url": [
@@ -1676,17 +1676,17 @@
                         ]
                     }
                 },
-                "__an37": {
-                    "__type": "close_tag",
+                "@an37": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an38": {
-                    "__type": "open_tag",
+                "@an38": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an39": {
-                    "__type": "template",
+                "@an39": {
+                    "@type": "template",
                     "name": "cite news",
                     "content": {
                         "url": [
@@ -1718,18 +1718,18 @@
                         ]
                     }
                 },
-                "__an40": {
-                    "__type": "close_tag",
+                "@an40": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an41": "He advocates the idea that net neutrality is a kind of human network right: \"Threats to the Internet, such as companies or governments that interfere with or snoop on Internet traffic, compromise basic human network rights.\"",
-                "__an42": {
-                    "__type": "open_tag",
+                "@an41": "He advocates the idea that net neutrality is a kind of human network right: \"Threats to the Internet, such as companies or governments that interfere with or snoop on Internet traffic, compromise basic human network rights.\"",
+                "@an42": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an43": {
-                    "__type": "template",
+                "@an43": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "last": [
@@ -1755,33 +1755,33 @@
                         ]
                     }
                 },
-                "__an44": {
-                    "__type": "close_tag",
+                "@an44": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an45": {
-                    "__type": "paragraph"
+                "@an45": {
+                    "@type": "paragraph"
                 },
-                "__an46": "In a",
-                "__an47": "<i>",
-                "__an48": {
-                    "__type": "reference",
+                "@an46": "In a",
+                "@an47": "<i>",
+                "@an48": {
+                    "@type": "reference",
                     "label": "The Times",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "Times"
                         ]
                     }
                 },
-                "__an49": "</i>",
-                "__an50": "article in October 2009, Berners-Lee admitted that the initial pair of slashes (\"//\") in a web address were actually \"unnecessary\". He told the newspaper that he could easily have designed URLs not to have the slashes. \"There you go, it seemed like a good idea at the time,\" he said in his lighthearted apology.",
-                "__an51": {
-                    "__type": "open_tag",
+                "@an49": "</i>",
+                "@an50": "article in October 2009, Berners-Lee admitted that the initial pair of slashes (\"//\") in a web address were actually \"unnecessary\". He told the newspaper that he could easily have designed URLs not to have the slashes. \"There you go, it seemed like a good idea at the time,\" he said in his lighthearted apology.",
+                "@an51": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an52": {
-                    "__type": "template",
+                "@an52": {
+                    "@type": "template",
                     "name": "cite news",
                     "content": {
                         "url": [
@@ -1801,34 +1801,34 @@
                         ]
                     }
                 },
-                "__an53": {
-                    "__type": "close_tag",
+                "@an53": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an54": {
-                    "__type": "paragraph"
+                "@an54": {
+                    "@type": "paragraph"
                 }
             }
         },
         {
-            "__type": "section",
+            "@type": "section",
             "title": "Recognition",
             "level": 0,
             "content": {
-                "__an0": {
-                    "__type": "reference",
+                "@an0": {
+                    "@type": "reference",
                     "label": "Image:First Web Server.jpg",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "thumb"
                         ],
-                        "__an1": [
+                        "@an1": [
                             "200px"
                         ],
-                        "__an2": [
+                        "@an2": [
                             "This",
                             {
-                                "__type": "reference",
+                                "@type": "reference",
                                 "label": "NeXT Computer",
                                 "content": {}
                             },
@@ -1836,28 +1836,28 @@
                         ]
                     }
                 },
-                "__an1": {
-                    "__type": "list",
+                "@an1": {
+                    "@type": "list",
                     "content": [
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In 1994 he became one of only six members of the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "World Wide Web Hall of Fame",
                                     "content": {}
                                 },
                                 ".",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite web",
                                     "content": {
                                         "title": [
@@ -1868,7 +1868,7 @@
                                         ],
                                         "publisher": [
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "Best of the Web Directory",
                                                 "content": {}
                                             }
@@ -1876,19 +1876,19 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In 1995 he won the Kilby Foundation's \"Young Innovator of the Year\" Award.",
                                 {
-                                    "__type": "inline_tag",
+                                    "@type": "inline_tag",
                                     "name": "ref",
                                     "attributes": [
                                         {
@@ -1899,25 +1899,25 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In 1995 he received also the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Software System Award",
                                     "content": {}
                                 },
                                 "from the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Association for Computing Machinery",
                                     "content": {}
                                 },
                                 "(ACM).",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": [
                                         {
@@ -1926,12 +1926,12 @@
                                     ]
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite web",
                                     "content": {
                                         "publisher": [
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "Association for Computing Machinery",
                                                 "content": {}
                                             }
@@ -1947,16 +1947,16 @@
                                         ],
                                         "accessdate": [
                                             {
-                                                "__type": "template",
+                                                "@type": "template",
                                                 "name": "Start date",
                                                 "content": {
-                                                    "__an0": [
+                                                    "@an0": [
                                                         "2011"
                                                     ],
-                                                    "__an1": [
+                                                    "@an1": [
                                                         "10"
                                                     ],
-                                                    "__an2": [
+                                                    "@an2": [
                                                         "25"
                                                     ],
                                                     "df": [
@@ -1968,30 +1968,30 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In 1998 he was awarded with an honorary doctorate from the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "University of Essex",
                                     "content": {}
                                 },
                                 ".",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite web",
                                     "content": {
                                         "title": [
@@ -2006,35 +2006,35 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In 1999, ''",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Time Magazine",
                                     "content": {}
                                 },
                                 "'' named Berners-Lee one of the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Time 100: The Most Important People of the Century",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "100 Most Important People of the 20th century"
                                         ]
                                     }
                                 },
                                 ".",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": [
                                         {
@@ -2043,7 +2043,7 @@
                                     ]
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite news",
                                     "content": {
                                         "title": [
@@ -2070,30 +2070,30 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In March 2000 he was awarded an honorary degree from",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "The Open University",
                                     "content": {}
                                 },
                                 "as Doctor of the University.",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite news",
                                     "content": {
                                         "title": [
@@ -2104,7 +2104,7 @@
                                         ],
                                         "work": [
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "BBC",
                                                 "content": {}
                                             },
@@ -2119,25 +2119,25 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In 2001, he was elected a Fellow of the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "American Academy of Arts and Sciences",
                                     "content": {}
                                 },
                                 ".",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": [
                                         {
@@ -2146,7 +2146,7 @@
                                     ]
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite web",
                                     "content": {
                                         "title": [
@@ -2164,30 +2164,30 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In 2003, he received the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Computer History Museum",
                                     "content": {}
                                 },
                                 "'s Fellow Award, for his seminal contributions to the development of the World Wide Web.",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite web",
                                     "content": {
                                         "url": [
@@ -2208,42 +2208,42 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "On 15 April 2004, he was named as the first recipient of Finland's",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Millennium Technology Prize",
                                     "content": {}
                                 },
                                 ", for inventing the World Wide Web. The cash prize, worth one million euros (about £892,000, or US$1.3&nbsp;million, as of Sept 2011), was awarded on 15 June, in",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Helsinki",
                                     "content": {}
                                 },
                                 ", Finland, by the President of the Republic of Finland,",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Tarja Halonen",
                                     "content": {}
                                 },
                                 ".",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite web",
                                     "content": {
                                         "title": [
@@ -2251,7 +2251,7 @@
                                         ],
                                         "publisher": [
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "Millennium Technology Prize",
                                                 "content": {}
                                             }
@@ -2271,39 +2271,39 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "He was appointed to the rank of",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Order of the British Empire",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "Knight Commander of the Most Excellent Order of the British Empire"
                                         ]
                                     }
                                 },
                                 "(the second-highest class within this Order that entails a knighthood) by",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Elizabeth II of the United Kingdom",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "Queen Elizabeth II"
                                         ]
                                     }
                                 },
                                 ", in the 2004 New Year's Honours List, and was formally invested on 16 July 2004.",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": [
                                         {
@@ -2312,7 +2312,7 @@
                                     ]
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite news",
                                     "content": {
                                         "title": [
@@ -2333,16 +2333,16 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 },
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite news",
                                     "content": {
                                         "title": [
@@ -2363,36 +2363,36 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "On 21 July 2004, he was presented with an honorary",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Doctor of Science",
                                     "content": {}
                                 },
                                 "degree from",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Lancaster University",
                                     "content": {}
                                 },
                                 ".",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite web",
                                     "content": {
                                         "title": [
@@ -2400,7 +2400,7 @@
                                         ],
                                         "publisher": [
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "Lancaster University",
                                                 "content": {}
                                             }
@@ -2414,30 +2414,30 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "On 27 January 2005, he was named Greatest Briton of 2004, both for his achievements and for displaying the key British characteristics of \"diffidence, determination, a sharp sense of humour and adaptability\", as put by",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "David Hempleman-Adams",
                                     "content": {}
                                 },
                                 ", a panel member.",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite news",
                                     "content": {
                                         "title": [
@@ -2461,22 +2461,22 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In 2007, Berners-Lee received the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Academy of Achievement",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "Academy of Achievement's Golden Plate Award"
                                         ]
                                     }
@@ -2485,34 +2485,34 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In 2007, he was ranked Joint First, alongside",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Albert Hofmann",
                                     "content": {}
                                 },
                                 ", in",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "The Daily Telegraph",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "''The Telegraph''"
                                         ]
                                     }
                                 },
                                 "'s list of 100 greatest living geniuses.",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite news",
                                     "content": {
                                         "author": [
@@ -2536,30 +2536,30 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "On 13 June 2007, he received the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Order of Merit",
                                     "content": {}
                                 },
                                 ", becoming one of only 24 living members entitled to hold the honour, and to use the post-nominals 'O.M.' after their name.",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite news",
                                     "content": {
                                         "accessdate": [
@@ -2580,31 +2580,31 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 },
                                 "(The Order of Merit is within the personal bestowal of The Queen, and does not require recommendation by ministers or the Prime Minister)"
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "He was awarded the 2008",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "IEEE/RSE Wolfson James Clerk Maxwell Award",
                                     "content": {}
                                 },
                                 ", for \"conceiving and further developing the World Wide Web\".",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite web",
                                     "content": {
                                         "url": [
@@ -2618,16 +2618,16 @@
                                         ],
                                         "accessdate": [
                                             {
-                                                "__type": "template",
+                                                "@type": "template",
                                                 "name": "Start date",
                                                 "content": {
-                                                    "__an0": [
+                                                    "@an0": [
                                                         "2011"
                                                     ],
-                                                    "__an1": [
+                                                    "@an1": [
                                                         "10"
                                                     ],
-                                                    "__an2": [
+                                                    "@an2": [
                                                         "4"
                                                     ],
                                                     "df": [
@@ -2639,36 +2639,36 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "On 2 December 2008, Berners-Lee was awarded an honorary doctorate from the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "University of Manchester",
                                     "content": {}
                                 },
                                 ". His parents worked on the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Manchester Mark 1",
                                     "content": {}
                                 },
                                 "in the 1940s and 50s.",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "Cite news",
                                     "content": {
                                         "title": [
@@ -2689,30 +2689,30 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "On 21 April 2009, he was awarded an honorary doctorate by the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Universidad Politécnica de Madrid",
                                     "content": {}
                                 },
                                 ".",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite web",
                                     "content": {
                                         "url": [
@@ -2727,19 +2727,19 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "On 28 April 2009, he was elected member of the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "United States National Academy of Sciences",
                                     "content": {}
                                 },
@@ -2747,56 +2747,56 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "On 8 June 2009, he received the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Webby Award",
                                     "content": {}
                                 },
                                 "for Lifetime Achievement, at the awards ceremony held in New York City.",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "link",
+                                    "@type": "link",
                                     "url": "http://www.webbyawards.com/press/press-release.php?id=187",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "Press Release: Sir Tim Berners Lee, Inventor of the World Wide Web, to receive Webby Lifetime Award At the 13th Annual Webby Awards"
                                         ]
                                     }
                                 },
                                 "''Webby Awards.com'' Retrieved 21 January 2011",
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In October 2009, he was awarded an honorary doctorate by the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Vrije Universiteit Amsterdam",
                                     "content": {}
                                 },
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite web",
                                     "content": {
                                         "language": [
@@ -2823,16 +2823,16 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 },
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite web",
                                     "content": {
                                         "language": [
@@ -2856,31 +2856,31 @@
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "On 30 March 2011, he was one of the first three recipients of the",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Mikhail Gorbachev",
                                     "content": {}
                                 },
                                 "award for \"The Man Who Changed the World\", at the inuagural awards ceremony held in London. The other recipients were",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Evans Wadongo",
                                     "content": {}
                                 },
                                 "for solar power development and anti-poverty work in Africa, and media mogul",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Ted Turner",
                                     "content": {}
                                 },
@@ -2888,81 +2888,81 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "On 26 May 2011, Berners-Lee was awarded with an honorary",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Doctor of Science",
                                     "content": {}
                                 },
                                 "degree from",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Harvard University",
                                     "content": {}
                                 },
                                 ".",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "link",
+                                    "@type": "link",
                                     "url": "http://news.harvard.edu/gazette/story/2011/05/harvard-to-award-nine-honorary-degrees/#berners-lee",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "Harvard awards 9 honorary degrees"
                                         ]
                                     }
                                 },
                                 "''news.harvard.edu'' Retrieved 11 June 2011",
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 "In 2011, he was inducted into",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "IEEE Intelligent Systems",
                                     "content": {}
                                 },
                                 "' AI's Hall of Fame for the \"significant contributions to the field of AI and intelligent systems\".",
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "Cite doi",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "10.1109.2FMIS.2011.64"
                                         ]
                                     }
                                 },
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 },
                                 {
-                                    "__type": "open_tag",
+                                    "@type": "open_tag",
                                     "name": "ref",
                                     "attributes": null
                                 },
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite news",
                                     "content": {
                                         "url": [
@@ -2973,26 +2973,26 @@
                                         ],
                                         "newspaper": [
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "DigitalJournal.com",
                                                 "content": {}
                                             }
                                         ],
                                         "date": [
                                             {
-                                                "__type": "template",
+                                                "@type": "template",
                                                 "name": "Start date",
                                                 "content": {
                                                     "df": [
                                                         "yes"
                                                     ],
-                                                    "__an0": [
+                                                    "@an0": [
                                                         "2011"
                                                     ],
-                                                    "__an1": [
+                                                    "@an1": [
                                                         "8"
                                                     ],
-                                                    "__an2": [
+                                                    "@an2": [
                                                         "24"
                                                     ]
                                                 }
@@ -3000,16 +3000,16 @@
                                         ],
                                         "accessdate": [
                                             {
-                                                "__type": "template",
+                                                "@type": "template",
                                                 "name": "Start date",
                                                 "content": {
-                                                    "__an0": [
+                                                    "@an0": [
                                                         "2011"
                                                     ],
-                                                    "__an1": [
+                                                    "@an1": [
                                                         "9"
                                                     ],
-                                                    "__an2": [
+                                                    "@an2": [
                                                         "18"
                                                     ],
                                                     "df": [
@@ -3022,19 +3022,19 @@
                                 },
                                 "Press release source: ''",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "PRWeb",
                                     "content": {}
                                 },
                                 "'' (",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Vocus",
                                     "content": {}
                                 },
                                 ").",
                                 {
-                                    "__type": "close_tag",
+                                    "@type": "close_tag",
                                     "name": "ref"
                                 }
                             ]
@@ -3044,17 +3044,17 @@
             }
         },
         {
-            "__type": "section",
+            "@type": "section",
             "title": "Personal life",
             "level": 0,
             "content": {
-                "__an0": {
-                    "__type": "template",
+                "@an0": {
+                    "@type": "template",
                     "name": "relevance",
                     "content": {}
                 },
-                "__an1": {
-                    "__type": "template",
+                "@an1": {
+                    "@type": "template",
                     "name": "Expand section",
                     "content": {
                         "date": [
@@ -3062,36 +3062,36 @@
                         ]
                     }
                 },
-                "__an2": "Berners-Lee had a religious upbringing, but left the",
-                "__an3": {
-                    "__type": "reference",
+                "@an2": "Berners-Lee had a religious upbringing, but left the",
+                "@an3": {
+                    "@type": "reference",
                     "label": "Church of England",
                     "content": {}
                 },
-                "__an4": "as a teenager, just after being",
-                "__an5": {
-                    "__type": "reference",
+                "@an4": "as a teenager, just after being",
+                "@an5": {
+                    "@type": "reference",
                     "label": "confirmed",
                     "content": {}
                 },
-                "__an6": "and \"told how essential it was to believe in all kinds of unbelievable things\". He and his family eventually joined a",
-                "__an7": {
-                    "__type": "reference",
+                "@an6": "and \"told how essential it was to believe in all kinds of unbelievable things\". He and his family eventually joined a",
+                "@an7": {
+                    "@type": "reference",
                     "label": "Unitarian Universalism",
                     "content": {
-                        "__an0": [
+                        "@an0": [
                             "Unitarian Universalist"
                         ]
                     }
                 },
-                "__an8": "church while they were living in Boston.",
-                "__an9": {
-                    "__type": "open_tag",
+                "@an8": "church while they were living in Boston.",
+                "@an9": {
+                    "@type": "open_tag",
                     "name": "ref",
                     "attributes": null
                 },
-                "__an10": {
-                    "__type": "template",
+                "@an10": {
+                    "@type": "template",
                     "name": "cite web",
                     "content": {
                         "last": [
@@ -3117,129 +3117,129 @@
                         ]
                     }
                 },
-                "__an11": {
-                    "__type": "close_tag",
+                "@an11": {
+                    "@type": "close_tag",
                     "name": "ref"
                 },
-                "__an12": {
-                    "__type": "paragraph"
+                "@an12": {
+                    "@type": "paragraph"
                 }
             }
         },
         {
-            "__type": "section",
+            "@type": "section",
             "title": "See also",
             "level": 0,
             "content": {
-                "__an0": {
-                    "__type": "list",
+                "@an0": {
+                    "@type": "list",
                     "content": [
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Eelco van Asperen",
                                     "content": {}
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "History of the World Wide Web",
                                     "content": {}
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Kevin Hughes (www)",
                                     "content": {}
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "libwww",
                                     "content": {}
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Mundaneum",
                                     "content": {}
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Network neutrality",
                                     "content": {}
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Paul Otlet",
                                     "content": {}
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Semantic Web",
                                     "content": {}
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Robert Taylor (computer scientist)",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "Bob Taylor"
                                         ]
                                     }
@@ -3247,12 +3247,12 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "Vannevar Bush",
                                     "content": {}
                                 }
@@ -3263,25 +3263,25 @@
             }
         },
         {
-            "__type": "section",
+            "@type": "section",
             "title": "Publications",
             "level": 0,
             "content": {
-                "__an0": {
-                    "__type": "list",
+                "@an0": {
+                    "@type": "list",
                     "content": [
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite book",
                                     "content": {
                                         "title": [
                                             {
-                                                "__type": "reference",
+                                                "@type": "reference",
                                                 "label": "Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web by its inventor",
                                                 "content": {}
                                             }
@@ -3312,15 +3312,15 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite doi",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "10.1038/scientificamerican1210-80"
                                         ]
                                     }
@@ -3328,15 +3328,15 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite pmid",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "21141362"
                                         ]
                                     }
@@ -3344,15 +3344,15 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite pmid",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "18847088"
                                         ]
                                     }
@@ -3360,15 +3360,15 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "cite pmid",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "16902115"
                                         ]
                                     }
@@ -3380,12 +3380,12 @@
             }
         },
         {
-            "__type": "section",
+            "@type": "section",
             "title": "Notes",
             "level": 0,
             "content": {
-                "__an0": {
-                    "__type": "template",
+                "@an0": {
+                    "@type": "template",
                     "name": "Reflist",
                     "content": {
                         "colwidth": [
@@ -3393,21 +3393,21 @@
                         ]
                     }
                 },
-                "__an1": {
-                    "__type": "paragraph"
+                "@an1": {
+                    "@type": "paragraph"
                 }
             }
         },
         {
-            "__type": "section",
+            "@type": "section",
             "title": "Further reading",
             "level": 0,
             "content": {
-                "__an0": {
-                    "__type": "list",
+                "@an0": {
+                    "@type": "list",
                     "content": [
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
@@ -3415,7 +3415,7 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
@@ -3423,7 +3423,7 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
@@ -3431,7 +3431,7 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
@@ -3439,15 +3439,15 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "link",
+                                    "@type": "link",
                                     "url": "http://computemagazine.com/man-who-invented-world-wide-web-gives-new-definition/",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "Tim Berners-Lee Gives the Web a New Definition"
                                         ]
                                     }
@@ -3455,35 +3455,35 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "link",
+                                    "@type": "link",
                                     "url": "http://news.bbc.co.uk/2/hi/technology/4132752.stm",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "BBC2 Newsnight &ndash; Transcript of video interview of Berners-Lee on the read/write Web"
                                         ]
                                     }
                                 },
                                 {
-                                    "__type": "comment_tag",
+                                    "@type": "comment_tag",
                                     "comment": "{{Dead link|url=http://web.archive.org/web/20080202115128/http://www.kayotix.com/tmp/newsfeeds/10.08.05/timbernerslee/|date=September 2008}} "
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "link",
+                                    "@type": "link",
                                     "url": "http://www.technologyreview.com/Infotech/13784/",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "Technology Review interview"
                                         ]
                                     }
@@ -3495,36 +3495,36 @@
             }
         },
         {
-            "__type": "section",
+            "@type": "section",
             "title": "External links",
             "level": 0,
             "content": {
-                "__an0": {
-                    "__type": "template",
+                "@an0": {
+                    "@type": "template",
                     "name": "commons category",
                     "content": {}
                 },
-                "__an1": {
-                    "__type": "template",
+                "@an1": {
+                    "@type": "template",
                     "name": "Wikiquote",
                     "content": {}
                 },
-                "__an2": {
-                    "__type": "paragraph"
+                "@an2": {
+                    "@type": "paragraph"
                 },
-                "__an3": {
-                    "__type": "list",
+                "@an3": {
+                    "@type": "list",
                     "content": [
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "Twitter",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "timberners_lee"
                                         ]
                                     }
@@ -3532,37 +3532,37 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "link",
+                                    "@type": "link",
                                     "url": "http://identi.ca/timbl",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "timbl"
                                         ]
                                     }
                                 },
                                 "on",
                                 {
-                                    "__type": "reference",
+                                    "@type": "reference",
                                     "label": "identi.ca",
                                     "content": {}
                                 }
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "TED",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "speakers/tim_berners_lee.html"
                                         ]
                                     }
@@ -3570,15 +3570,15 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "IMDb name",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "3805083"
                                         ]
                                     }
@@ -3586,15 +3586,15 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "Nndb",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "573/000023504"
                                         ]
                                     }
@@ -3602,15 +3602,15 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "template",
+                                    "@type": "template",
                                     "name": "Worldcat id",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "lccn-no99-10609"
                                         ]
                                     }
@@ -3618,15 +3618,15 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "link",
+                                    "@type": "link",
                                     "url": "http://www.w3.org/People/Berners-Lee/",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "Tim Berners-Lee"
                                         ]
                                     }
@@ -3635,15 +3635,15 @@
                             ]
                         },
                         {
-                            "__type": "list_item",
+                            "@type": "list_item",
                             "level": 1,
                             "item_type": "Unordered",
                             "content": [
                                 {
-                                    "__type": "link",
+                                    "@type": "link",
                                     "url": "http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html",
                                     "content": {
-                                        "__an0": [
+                                        "@an0": [
                                             "First World Wide Web page"
                                         ]
                                     }
@@ -3652,13 +3652,13 @@
                         }
                     ]
                 },
-                "__an4": {
-                    "__type": "template",
+                "@an4": {
+                    "@type": "template",
                     "name": "s-start",
                     "content": {}
                 },
-                "__an5": {
-                    "__type": "template",
+                "@an5": {
+                    "@type": "template",
                     "name": "succession box",
                     "content": {
                         "before": [
@@ -3666,14 +3666,14 @@
                         ],
                         "after": [
                             {
-                                "__type": "reference",
+                                "@type": "reference",
                                 "label": "Shuji Nakamura",
                                 "content": {}
                             }
                         ],
                         "title": [
                             {
-                                "__type": "reference",
+                                "@type": "reference",
                                 "label": "Millennium Technology Prize",
                                 "content": {}
                             },
@@ -3682,7 +3682,7 @@
                         "years": [
                             "2004 (for the",
                             {
-                                "__type": "reference",
+                                "@type": "reference",
                                 "label": "World Wide Web",
                                 "content": {}
                             },
@@ -3690,21 +3690,21 @@
                         ]
                     }
                 },
-                "__an6": {
-                    "__type": "template",
+                "@an6": {
+                    "@type": "template",
                     "name": "s-end",
                     "content": {}
                 },
-                "__an7": {
-                    "__type": "template",
+                "@an7": {
+                    "@type": "template",
                     "name": "Telecommunications",
                     "content": {}
                 },
-                "__an8": {
-                    "__type": "paragraph"
+                "@an8": {
+                    "@type": "paragraph"
                 },
-                "__an9": {
-                    "__type": "template",
+                "@an9": {
+                    "@type": "template",
                     "name": "Use dmy dates",
                     "content": {
                         "date": [
@@ -3712,8 +3712,8 @@
                         ]
                     }
                 },
-                "__an10": {
-                    "__type": "template",
+                "@an10": {
+                    "@type": "template",
                     "name": "Use British English",
                     "content": {
                         "date": [
@@ -3721,11 +3721,11 @@
                         ]
                     }
                 },
-                "__an11": {
-                    "__type": "paragraph"
+                "@an11": {
+                    "@type": "paragraph"
                 },
-                "__an12": {
-                    "__type": "template",
+                "@an12": {
+                    "@type": "template",
                     "name": "Persondata <!-- Metadata: see [[Wikipedia:Persondata]]. -->",
                     "content": {
                         "NAME": [
@@ -3739,611 +3739,611 @@
                         ]
                     }
                 },
-                "__an13": {
-                    "__type": "template",
+                "@an13": {
+                    "@type": "template",
                     "name": "DEFAULTSORT:Berners-Lee, Tim",
                     "content": {}
                 },
-                "__an14": {
-                    "__type": "reference",
+                "@an14": {
+                    "@type": "reference",
                     "label": "Category:Free software people",
                     "content": {}
                 },
-                "__an15": {
-                    "__type": "reference",
+                "@an15": {
+                    "@type": "reference",
                     "label": "Category:1955 births",
                     "content": {}
                 },
-                "__an16": {
-                    "__type": "reference",
+                "@an16": {
+                    "@type": "reference",
                     "label": "Category:Alumni of The Queen's College, Oxford",
                     "content": {}
                 },
-                "__an17": {
-                    "__type": "reference",
+                "@an17": {
+                    "@type": "reference",
                     "label": "Category:English computer scientists",
                     "content": {}
                 },
-                "__an18": {
-                    "__type": "reference",
+                "@an18": {
+                    "@type": "reference",
                     "label": "Category:English expatriates in the United States",
                     "content": {}
                 },
-                "__an19": {
-                    "__type": "reference",
+                "@an19": {
+                    "@type": "reference",
                     "label": "Category:English inventors",
                     "content": {}
                 },
-                "__an20": {
-                    "__type": "reference",
+                "@an20": {
+                    "@type": "reference",
                     "label": "Category:Fellows of the American Academy of Arts and Sciences",
                     "content": {}
                 },
-                "__an21": {
-                    "__type": "reference",
+                "@an21": {
+                    "@type": "reference",
                     "label": "Category:Fellows of the British Computer Society",
                     "content": {}
                 },
-                "__an22": {
-                    "__type": "reference",
+                "@an22": {
+                    "@type": "reference",
                     "label": "Category:Fellows of the Royal Society",
                     "content": {}
                 },
-                "__an23": {
-                    "__type": "reference",
+                "@an23": {
+                    "@type": "reference",
                     "label": "Category:Fellows of the Royal Academy of Engineering",
                     "content": {}
                 },
-                "__an24": {
-                    "__type": "reference",
+                "@an24": {
+                    "@type": "reference",
                     "label": "Category:Internet pioneers",
                     "content": {}
                 },
-                "__an25": {
-                    "__type": "reference",
+                "@an25": {
+                    "@type": "reference",
                     "label": "Category:Living people",
                     "content": {}
                 },
-                "__an26": {
-                    "__type": "reference",
+                "@an26": {
+                    "@type": "reference",
                     "label": "Category:Japan Prize laureates",
                     "content": {}
                 },
-                "__an27": {
-                    "__type": "reference",
+                "@an27": {
+                    "@type": "reference",
                     "label": "Category:Knights Commander of the Order of the British Empire",
                     "content": {}
                 },
-                "__an28": {
-                    "__type": "reference",
+                "@an28": {
+                    "@type": "reference",
                     "label": "Category:MacArthur Fellows",
                     "content": {}
                 },
-                "__an29": {
-                    "__type": "reference",
+                "@an29": {
+                    "@type": "reference",
                     "label": "Category:Members of the Order of Merit",
                     "content": {}
                 },
-                "__an30": {
-                    "__type": "reference",
+                "@an30": {
+                    "@type": "reference",
                     "label": "Category:Members of the United States National Academy of Engineering",
                     "content": {}
                 },
-                "__an31": {
-                    "__type": "reference",
+                "@an31": {
+                    "@type": "reference",
                     "label": "Category:People from London",
                     "content": {}
                 },
-                "__an32": {
-                    "__type": "reference",
+                "@an32": {
+                    "@type": "reference",
                     "label": "Category:People from Barnes, London",
                     "content": {}
                 },
-                "__an33": {
-                    "__type": "reference",
+                "@an33": {
+                    "@type": "reference",
                     "label": "Category:World Wide Web Consortium",
                     "content": {}
                 },
-                "__an34": {
-                    "__type": "reference",
+                "@an34": {
+                    "@type": "reference",
                     "label": "Category:Computer pioneers",
                     "content": {}
                 },
-                "__an35": {
-                    "__type": "reference",
+                "@an35": {
+                    "@type": "reference",
                     "label": "Category:Royal Medal winners",
                     "content": {}
                 },
-                "__an36": {
-                    "__type": "reference",
+                "@an36": {
+                    "@type": "reference",
                     "label": "Category:English Unitarians",
                     "content": {}
                 },
-                "__an37": {
-                    "__type": "reference",
+                "@an37": {
+                    "@type": "reference",
                     "label": "Category:HTTP",
                     "content": {}
                 },
-                "__an38": {
-                    "__type": "reference",
+                "@an38": {
+                    "@type": "reference",
                     "label": "Category:People educated at Emanuel School",
                     "content": {}
                 },
-                "__an39": {
-                    "__type": "reference",
+                "@an39": {
+                    "@type": "reference",
                     "label": "Category:Unitarian Universalists",
                     "content": {}
                 },
-                "__an40": {
-                    "__type": "paragraph"
+                "@an40": {
+                    "@type": "paragraph"
                 },
-                "__an41": {
-                    "__type": "reference",
+                "@an41": {
+                    "@type": "reference",
                     "label": "af:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an42": {
-                    "__type": "reference",
+                "@an42": {
+                    "@type": "reference",
                     "label": "als:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an43": {
-                    "__type": "reference",
+                "@an43": {
+                    "@type": "reference",
                     "label": "ar:تيم بيرنرز لي",
                     "content": {}
                 },
-                "__an44": {
-                    "__type": "reference",
+                "@an44": {
+                    "@type": "reference",
                     "label": "an:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an45": {
-                    "__type": "reference",
+                "@an45": {
+                    "@type": "reference",
                     "label": "az:Tim Berners-Li",
                     "content": {}
                 },
-                "__an46": {
-                    "__type": "reference",
+                "@an46": {
+                    "@type": "reference",
                     "label": "bn:টিম বার্নার্স-লি",
                     "content": {}
                 },
-                "__an47": {
-                    "__type": "reference",
+                "@an47": {
+                    "@type": "reference",
                     "label": "zh-min-nan:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an48": {
-                    "__type": "reference",
+                "@an48": {
+                    "@type": "reference",
                     "label": "be:Цім Бернерс-Лі",
                     "content": {}
                 },
-                "__an49": {
-                    "__type": "reference",
+                "@an49": {
+                    "@type": "reference",
                     "label": "be-x-old:Тым Бэрнэрз-Лі",
                     "content": {}
                 },
-                "__an50": {
-                    "__type": "reference",
+                "@an50": {
+                    "@type": "reference",
                     "label": "bs:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an51": {
-                    "__type": "reference",
+                "@an51": {
+                    "@type": "reference",
                     "label": "br:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an52": {
-                    "__type": "reference",
+                "@an52": {
+                    "@type": "reference",
                     "label": "bg:Тим Бърнърс-Лий",
                     "content": {}
                 },
-                "__an53": {
-                    "__type": "reference",
+                "@an53": {
+                    "@type": "reference",
                     "label": "ca:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an54": {
-                    "__type": "reference",
+                "@an54": {
+                    "@type": "reference",
                     "label": "cs:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an55": {
-                    "__type": "reference",
+                "@an55": {
+                    "@type": "reference",
                     "label": "cy:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an56": {
-                    "__type": "reference",
+                "@an56": {
+                    "@type": "reference",
                     "label": "da:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an57": {
-                    "__type": "reference",
+                "@an57": {
+                    "@type": "reference",
                     "label": "de:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an58": {
-                    "__type": "reference",
+                "@an58": {
+                    "@type": "reference",
                     "label": "et:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an59": {
-                    "__type": "reference",
+                "@an59": {
+                    "@type": "reference",
                     "label": "el:Τιμ Μπέρνερς Λι",
                     "content": {}
                 },
-                "__an60": {
-                    "__type": "reference",
+                "@an60": {
+                    "@type": "reference",
                     "label": "es:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an61": {
-                    "__type": "reference",
+                "@an61": {
+                    "@type": "reference",
                     "label": "eo:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an62": {
-                    "__type": "reference",
+                "@an62": {
+                    "@type": "reference",
                     "label": "eu:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an63": {
-                    "__type": "reference",
+                "@an63": {
+                    "@type": "reference",
                     "label": "fa:تیم برنرز لی",
                     "content": {}
                 },
-                "__an64": {
-                    "__type": "reference",
+                "@an64": {
+                    "@type": "reference",
                     "label": "hif:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an65": {
-                    "__type": "reference",
+                "@an65": {
+                    "@type": "reference",
                     "label": "fr:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an66": {
-                    "__type": "reference",
+                "@an66": {
+                    "@type": "reference",
                     "label": "fy:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an67": {
-                    "__type": "reference",
+                "@an67": {
+                    "@type": "reference",
                     "label": "ga:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an68": {
-                    "__type": "reference",
+                "@an68": {
+                    "@type": "reference",
                     "label": "gd:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an69": {
-                    "__type": "reference",
+                "@an69": {
+                    "@type": "reference",
                     "label": "gl:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an70": {
-                    "__type": "reference",
+                "@an70": {
+                    "@type": "reference",
                     "label": "ko:팀 버너스리",
                     "content": {}
                 },
-                "__an71": {
-                    "__type": "reference",
+                "@an71": {
+                    "@type": "reference",
                     "label": "hi:टिम बर्नर्स ली",
                     "content": {}
                 },
-                "__an72": {
-                    "__type": "reference",
+                "@an72": {
+                    "@type": "reference",
                     "label": "hr:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an73": {
-                    "__type": "reference",
+                "@an73": {
+                    "@type": "reference",
                     "label": "id:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an74": {
-                    "__type": "reference",
+                "@an74": {
+                    "@type": "reference",
                     "label": "is:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an75": {
-                    "__type": "reference",
+                "@an75": {
+                    "@type": "reference",
                     "label": "it:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an76": {
-                    "__type": "reference",
+                "@an76": {
+                    "@type": "reference",
                     "label": "he:טים ברנרס-לי",
                     "content": {}
                 },
-                "__an77": {
-                    "__type": "reference",
+                "@an77": {
+                    "@type": "reference",
                     "label": "jv:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an78": {
-                    "__type": "reference",
+                "@an78": {
+                    "@type": "reference",
                     "label": "kn:ಟಿಮ್ ಬರ್ನರ್ಸ್ ಲೀ",
                     "content": {}
                 },
-                "__an79": {
-                    "__type": "reference",
+                "@an79": {
+                    "@type": "reference",
                     "label": "ka:ტიმ ბერნერს-ლი",
                     "content": {}
                 },
-                "__an80": {
-                    "__type": "reference",
+                "@an80": {
+                    "@type": "reference",
                     "label": "kk:Тим Бернерс-Ли",
                     "content": {}
                 },
-                "__an81": {
-                    "__type": "reference",
+                "@an81": {
+                    "@type": "reference",
                     "label": "sw:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an82": {
-                    "__type": "reference",
+                "@an82": {
+                    "@type": "reference",
                     "label": "la:Timotheus Ioannes Berners-Lee",
                     "content": {}
                 },
-                "__an83": {
-                    "__type": "reference",
+                "@an83": {
+                    "@type": "reference",
                     "label": "lv:Tims Bērnerss-Lī",
                     "content": {}
                 },
-                "__an84": {
-                    "__type": "reference",
+                "@an84": {
+                    "@type": "reference",
                     "label": "lb:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an85": {
-                    "__type": "reference",
+                "@an85": {
+                    "@type": "reference",
                     "label": "lt:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an86": {
-                    "__type": "reference",
+                "@an86": {
+                    "@type": "reference",
                     "label": "li:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an87": {
-                    "__type": "reference",
+                "@an87": {
+                    "@type": "reference",
                     "label": "lmo:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an88": {
-                    "__type": "reference",
+                "@an88": {
+                    "@type": "reference",
                     "label": "hu:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an89": {
-                    "__type": "reference",
+                "@an89": {
+                    "@type": "reference",
                     "label": "mk:Тим Бернерс-Ли",
                     "content": {}
                 },
-                "__an90": {
-                    "__type": "reference",
+                "@an90": {
+                    "@type": "reference",
                     "label": "ml:ടിം ബർണേയ്സ് ലീ",
                     "content": {}
                 },
-                "__an91": {
-                    "__type": "reference",
+                "@an91": {
+                    "@type": "reference",
                     "label": "mt:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an92": {
-                    "__type": "reference",
+                "@an92": {
+                    "@type": "reference",
                     "label": "arz:تيم بيرنرز لى",
                     "content": {}
                 },
-                "__an93": {
-                    "__type": "reference",
+                "@an93": {
+                    "@type": "reference",
                     "label": "ms:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an94": {
-                    "__type": "reference",
+                "@an94": {
+                    "@type": "reference",
                     "label": "mn:Тим Бернерс-Ли",
                     "content": {}
                 },
-                "__an95": {
-                    "__type": "reference",
+                "@an95": {
+                    "@type": "reference",
                     "label": "nl:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an96": {
-                    "__type": "reference",
+                "@an96": {
+                    "@type": "reference",
                     "label": "new:टिम बर्नर्स ली",
                     "content": {}
                 },
-                "__an97": {
-                    "__type": "reference",
+                "@an97": {
+                    "@type": "reference",
                     "label": "ja:ティム・バーナーズ＝リー",
                     "content": {}
                 },
-                "__an98": {
-                    "__type": "reference",
+                "@an98": {
+                    "@type": "reference",
                     "label": "kk:Тим Бернерс-Ли",
                     "content": {}
                 },
-                "__an99": {
-                    "__type": "reference",
+                "@an99": {
+                    "@type": "reference",
                     "label": "no:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an100": {
-                    "__type": "reference",
+                "@an100": {
+                    "@type": "reference",
                     "label": "nn:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an101": {
-                    "__type": "reference",
+                "@an101": {
+                    "@type": "reference",
                     "label": "oc:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an102": {
-                    "__type": "reference",
+                "@an102": {
+                    "@type": "reference",
                     "label": "pnb:ٹم برنرز لی",
                     "content": {}
                 },
-                "__an103": {
-                    "__type": "reference",
+                "@an103": {
+                    "@type": "reference",
                     "label": "pl:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an104": {
-                    "__type": "reference",
+                "@an104": {
+                    "@type": "reference",
                     "label": "pt:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an105": {
-                    "__type": "reference",
+                "@an105": {
+                    "@type": "reference",
                     "label": "ksh:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an106": {
-                    "__type": "reference",
+                "@an106": {
+                    "@type": "reference",
                     "label": "ro:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an107": {
-                    "__type": "reference",
+                "@an107": {
+                    "@type": "reference",
                     "label": "rue:Тім Бернерс-Лі",
                     "content": {}
                 },
-                "__an108": {
-                    "__type": "reference",
+                "@an108": {
+                    "@type": "reference",
                     "label": "ru:Бернерс-Ли, Тим",
                     "content": {}
                 },
-                "__an109": {
-                    "__type": "reference",
+                "@an109": {
+                    "@type": "reference",
                     "label": "sah:Тим Бернерс-Ли",
                     "content": {}
                 },
-                "__an110": {
-                    "__type": "reference",
+                "@an110": {
+                    "@type": "reference",
                     "label": "sq:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an111": {
-                    "__type": "reference",
+                "@an111": {
+                    "@type": "reference",
                     "label": "scn:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an112": {
-                    "__type": "reference",
+                "@an112": {
+                    "@type": "reference",
                     "label": "simple:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an113": {
-                    "__type": "reference",
+                "@an113": {
+                    "@type": "reference",
                     "label": "sk:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an114": {
-                    "__type": "reference",
+                "@an114": {
+                    "@type": "reference",
                     "label": "sl:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an115": {
-                    "__type": "reference",
+                "@an115": {
+                    "@type": "reference",
                     "label": "sr:Тим Бернерс-Ли",
                     "content": {}
                 },
-                "__an116": {
-                    "__type": "reference",
+                "@an116": {
+                    "@type": "reference",
                     "label": "sh:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an117": {
-                    "__type": "reference",
+                "@an117": {
+                    "@type": "reference",
                     "label": "fi:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an118": {
-                    "__type": "reference",
+                "@an118": {
+                    "@type": "reference",
                     "label": "sv:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an119": {
-                    "__type": "reference",
+                "@an119": {
+                    "@type": "reference",
                     "label": "tl:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an120": {
-                    "__type": "reference",
+                "@an120": {
+                    "@type": "reference",
                     "label": "ta:டிம் பேர்னேர்ஸ்-லீ",
                     "content": {}
                 },
-                "__an121": {
-                    "__type": "reference",
+                "@an121": {
+                    "@type": "reference",
                     "label": "te:టిమ్ బెర్నర్స్ లీ",
                     "content": {}
                 },
-                "__an122": {
-                    "__type": "reference",
+                "@an122": {
+                    "@type": "reference",
                     "label": "th:ทิม เบอร์เนิร์ส-ลี",
                     "content": {}
                 },
-                "__an123": {
-                    "__type": "reference",
+                "@an123": {
+                    "@type": "reference",
                     "label": "tg:Тим Бернерс-Ли",
                     "content": {}
                 },
-                "__an124": {
-                    "__type": "reference",
+                "@an124": {
+                    "@type": "reference",
                     "label": "tr:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an125": {
-                    "__type": "reference",
+                "@an125": {
+                    "@type": "reference",
                     "label": "uk:Тім Бернерс-Лі",
                     "content": {}
                 },
-                "__an126": {
-                    "__type": "reference",
+                "@an126": {
+                    "@type": "reference",
                     "label": "za:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an127": {
-                    "__type": "reference",
+                "@an127": {
+                    "@type": "reference",
                     "label": "vec:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an128": {
-                    "__type": "reference",
+                "@an128": {
+                    "@type": "reference",
                     "label": "vi:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an129": {
-                    "__type": "reference",
+                "@an129": {
+                    "@type": "reference",
                     "label": "vo:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an130": {
-                    "__type": "reference",
+                "@an130": {
+                    "@type": "reference",
                     "label": "war:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an131": {
-                    "__type": "reference",
+                "@an131": {
+                    "@type": "reference",
                     "label": "yi:טים בערנערס-לי",
                     "content": {}
                 },
-                "__an132": {
-                    "__type": "reference",
+                "@an132": {
+                    "@type": "reference",
                     "label": "yo:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an133": {
-                    "__type": "reference",
+                "@an133": {
+                    "@type": "reference",
                     "label": "bat-smg:Tim Berners-Lee",
                     "content": {}
                 },
-                "__an134": {
-                    "__type": "reference",
+                "@an134": {
+                    "@type": "reference",
                     "label": "zh:蒂姆·伯纳斯-李",
                     "content": {}
                 }

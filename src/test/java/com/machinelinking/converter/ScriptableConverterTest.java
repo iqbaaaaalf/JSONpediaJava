@@ -42,8 +42,8 @@ public class ScriptableConverterTest {
         final Writer writer = new BufferedWriter(new OutputStreamWriter(writerBAOS));
         converter.convertData(
             JSONUtils.parseJSONAsMap(
-                "{\"__type\":\"reference\",\"label\":\"List of Nobel laureates in Physics\"," +
-                 "\"content\":{\"__an0\":\"1921\"}}"
+                "{\"@type\":\"reference\",\"label\":\"List of Nobel laureates in Physics\"," +
+                 "\"content\":{\"@an0\":\"1921\"}}"
             ),
             serializer,
             writer

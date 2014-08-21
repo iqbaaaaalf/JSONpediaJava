@@ -1,13 +1,13 @@
 {
-    "__type": "page",
+    "@type": "page",
     "url": "http://test/Table1",
     "structure": [
         {
-            "__type": "table",
+            "@type": "table",
             "header": " class=wikitable style=text-align:right\n",
             "content": [
                 {
-                    "__type": "head_cell",
+                    "@type": "head_cell",
                     "content": {
                         "align": [
                             "center"
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "align": [
                             "right"
@@ -23,13 +23,13 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "'''character'''"
+                        "@an0": "'''character'''"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "colspan": [
                             "2"
@@ -37,13 +37,13 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "A"
+                        "@an0": "A"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "colspan": [
                             "2"
@@ -51,16 +51,16 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "a",
+                        "@an0": "a",
                         "align": [
                             "center"
                         ]
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "align": [
                             "right"
@@ -68,13 +68,13 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "'''Unicode name'''"
+                        "@an0": "'''Unicode name'''"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "colspan": [
                             "2"
@@ -82,22 +82,22 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": {
-                            "__type": "open_tag",
+                        "@an0": {
+                            "@type": "open_tag",
                             "name": "small",
                             "attributes": null
                         },
-                        "__an1": "LATIN CAPITAL LETTER A",
-                        "__an2": {
-                            "__type": "close_tag",
+                        "@an1": "LATIN CAPITAL LETTER A",
+                        "@an2": {
+                            "@type": "close_tag",
                             "name": "small"
                         }
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "colspan": [
                             "2"
@@ -105,22 +105,22 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": {
-                            "__type": "open_tag",
+                        "@an0": {
+                            "@type": "open_tag",
                             "name": "small",
                             "attributes": null
                         },
-                        "__an1": "LATIN SMALL LETTER A",
-                        "__an2": {
-                            "__type": "close_tag",
+                        "@an1": "LATIN SMALL LETTER A",
+                        "@an2": {
+                            "@type": "close_tag",
                             "name": "small"
                         }
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "align": [
                             "left"
@@ -128,37 +128,37 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "'''character encoding'''"
+                        "@an0": "'''character encoding'''"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "decimal"
+                        "@an0": "decimal"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "hex"
+                        "@an0": "hex"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "decimal"
+                        "@an0": "decimal"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "hex"
+                        "@an0": "hex"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "align": [
                             "left"
@@ -166,41 +166,41 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": {
-                            "__type": "reference",
+                        "@an0": {
+                            "@type": "reference",
                             "label": "Unicode",
                             "content": {}
                         }
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "65"
+                        "@an0": "65"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "0041"
+                        "@an0": "0041"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "97"
+                        "@an0": "97"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "0061"
+                        "@an0": "0061"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "align": [
                             "left"
@@ -208,41 +208,41 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": {
-                            "__type": "reference",
+                        "@an0": {
+                            "@type": "reference",
                             "label": "UTF-8",
                             "content": {}
                         }
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "65"
+                        "@an0": "65"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "41"
+                        "@an0": "41"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "97"
+                        "@an0": "97"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "61"
+                        "@an0": "61"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "align": [
                             "left"
@@ -250,41 +250,41 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": {
-                            "__type": "reference",
+                        "@an0": {
+                            "@type": "reference",
                             "label": "Numeric character reference",
                             "content": {}
                         }
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "&amp;#65;"
+                        "@an0": "&amp;#65;"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "&amp;#x0041;"
+                        "@an0": "&amp;#x0041;"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "&amp;#97;"
+                        "@an0": "&amp;#97;"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "&amp;#x0061;"
+                        "@an0": "&amp;#x0061;"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "align": [
                             "left"
@@ -292,42 +292,42 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": {
-                            "__type": "reference",
+                        "@an0": {
+                            "@type": "reference",
                             "label": "EBCDIC",
                             "content": {}
                         },
-                        "__an1": "family"
+                        "@an1": "family"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "193"
+                        "@an0": "193"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "C1"
+                        "@an0": "C1"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "129"
+                        "@an0": "129"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "81"
+                        "@an0": "81"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
                         "align": [
                             "left"
@@ -335,48 +335,48 @@
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": {
-                            "__type": "reference",
+                        "@an0": {
+                            "@type": "reference",
                             "label": "ASCII",
                             "content": {}
                         },
-                        "__an1": {
-                            "__type": "open_tag",
+                        "@an1": {
+                            "@type": "open_tag",
                             "name": "sup",
                             "attributes": null
                         },
-                        "__an2": "1",
-                        "__an3": {
-                            "__type": "inline_tag",
+                        "@an2": "1",
+                        "@an3": {
+                            "@type": "inline_tag",
                             "name": "sup",
                             "attributes": null
                         }
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "65"
+                        "@an0": "65"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "41"
+                        "@an0": "41"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "97"
+                        "@an0": "97"
                     }
                 },
                 {
-                    "__type": "body_cell",
+                    "@type": "body_cell",
                     "content": {
-                        "__an0": "61"
+                        "@an0": "61"
                     }
                 }
             ]

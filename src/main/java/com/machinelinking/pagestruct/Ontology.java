@@ -18,7 +18,7 @@ package com.machinelinking.pagestruct;
  */
 public interface Ontology {
 
-    static final String TYPE_FIELD = "__type";
+    static final String TYPE_FIELD = "@type";
 
     static final String TYPE_ENRICHED_ENTITY = "entity";
     static final String TYPE_PAGE = "page";
@@ -60,10 +60,11 @@ public interface Ontology {
     static final String SIZE_FIELD = "size";
     static final String LABEL_FIELD = "label";
     static final String LEVEL_FIELD = "level";
+    static final String ITEM_TYPE_FIELD = "item_type";
     static final String ANCESTORS_FIELD = "ancestors";
     static final String CONTENT_FIELD = "content";
     static final String DEFAULT_FIELD = "default";
 
-    static final String ANON_NAME_PREFIX = "__an";
+    static final String ANON_NAME_PREFIX = "@an";
 
 }

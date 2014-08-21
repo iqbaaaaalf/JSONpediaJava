@@ -152,7 +152,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.openObject();
         serializer.fieldValue(Ontology.TYPE_FIELD, Ontology.TYPE_LIST_ITEM);
         serializer.fieldValue(Ontology.LEVEL_FIELD, level);
-        serializer.fieldValue("item_type", t.name());
+        serializer.fieldValue(Ontology.ITEM_TYPE_FIELD, t.name());
         serializer.field(Ontology.CONTENT_FIELD);
         serializer.openList();
     }
