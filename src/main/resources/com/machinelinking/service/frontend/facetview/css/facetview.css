@@ -88,3 +88,10 @@
     margin:0 5px 0 5px;
 }
 
+.navbar {
+    height: 50px;
+}
+.navbar-inner {
+    height: 50px;
+}
+
