@@ -55,7 +55,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         serializer.openObject();
         serializer.fieldValue(Ontology.TYPE_FIELD, Ontology.TYPE_PAGE);
         serializer.fieldValue(Ontology.URL_FIELD, document.toExternalForm());
-        serializer.field("structure");
+        serializer.field(Ontology.STRUCTURE_FIELD);
         serializer.openList();
     }
 
@@ -81,7 +81,7 @@ public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
         pushElement(new Section(String.format("%s - %d", title, level)));
         serializer.openObject();
         serializer.fieldValue(Ontology.TYPE_FIELD, Ontology.TYPE_SECTION);
-        serializer.fieldValue("title", title.trim());
+        serializer.fieldValue(Ontology.TITLE_FIELD, title.trim());
         serializer.fieldValue(Ontology.LEVEL_FIELD, level);
         serializer.field(Ontology.CONTENT_FIELD);
         serializer.openObject();

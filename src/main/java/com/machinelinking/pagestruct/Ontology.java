@@ -20,7 +20,7 @@ public interface Ontology {
 
     static final String TYPE_FIELD = "__type";
 
-    static final String TYPE_ENRICHED_ENTITY = "enriched-entity";
+    static final String TYPE_ENRICHED_ENTITY = "entity";
     static final String TYPE_PAGE = "page";
     static final String TYPE_SECTION = "section";
     static final String TYPE_PARAGRAPH = "paragraph";
@@ -40,7 +40,8 @@ public interface Ontology {
     static final String TYPE_ENTITY = "entity";
     static final String TYPE_MAPPING = "mapping";
 
-    static final String PAGE_STRUCT_FIELD = "wikitext-json";
+    static final String PAGE_DOM_FIELD = "wikitext-dom";
+    static final String STRUCTURE_FIELD = "structure";
     static final String ISSUES_FIELD = "issues";
     static final String ABSTRACT_FIELD = "abstract";
     static final String CATEGORIES_FIELD = "categories";

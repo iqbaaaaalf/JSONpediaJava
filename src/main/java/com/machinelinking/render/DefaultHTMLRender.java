@@ -218,7 +218,7 @@ public class DefaultHTMLRender implements HTMLRender {
         ObjectNode newRoot = JSONUtils.getJsonNodeFactory().objectNode();
         Iterator<Map.Entry<String,JsonNode>> iter = root.getFields();
         Map.Entry<String,JsonNode> entry;
-        final String pageStructField = Ontology.PAGE_STRUCT_FIELD;
+        final String pageStructField = Ontology.PAGE_DOM_FIELD;
         while(iter.hasNext()) {
             entry = iter.next();
             if(pageStructField.equals(entry.getKey())) continue;

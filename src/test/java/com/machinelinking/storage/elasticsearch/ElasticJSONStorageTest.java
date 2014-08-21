@@ -13,6 +13,9 @@
 
 package com.machinelinking.storage.elasticsearch;
 
+import com.machinelinking.pagestruct.Ontology;
+import com.machinelinking.splitter.InfoboxSplitter;
+import com.machinelinking.splitter.TableSplitter;
 import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
 import org.apache.commons.io.IOUtils;
@@ -53,9 +56,9 @@ public class ElasticJSONStorageTest extends ElasticJSONStorageTestBase {
     }
 
     private void removeUnindexableFields(Map<String, ?> data) {
-        Assert.assertNotNull(data.remove("wikitext-json"));
-        Assert.assertNotNull(data.remove("infobox-splitter"));
-        Assert.assertNotNull(data.remove("table-splitter"));
+        Assert.assertNotNull(data.remove(Ontology.PAGE_DOM_FIELD));
+        Assert.assertNotNull(data.remove(InfoboxSplitter.NAME));
+        Assert.assertNotNull(data.remove(TableSplitter.NAME));
         }
 
 }

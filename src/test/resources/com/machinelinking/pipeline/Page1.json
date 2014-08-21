@@ -1,6 +1,6 @@
 {
-    "__type": "enriched-entity",
-    "wikitext-json": [
+    "__type": "entity",
+    "wikitext-dom": [
         {
             "__type": "page",
             "url": "http://en.wikipedia.org/wiki/Albert_Einstein",
