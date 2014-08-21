@@ -44,7 +44,7 @@ public class WikiPipelineTest {
     @Test
     public void testEnrich1()
     throws IOException, SAXException, WikiTextParserException, InterruptedException, ExecutionException {
-        verifyEnrich(
+        verifyPipeline(
                 new URL("http://en.wikipedia.org/wiki/Albert_Einstein"), true, "Page1.wikitext", "Page1.json"
         );
     }
@@ -52,12 +52,12 @@ public class WikiPipelineTest {
     @Test
     public void testEnrich2()
     throws IOException, SAXException, WikiTextParserException, InterruptedException, ExecutionException {
-        verifyEnrich(
+        verifyPipeline(
                 new URL("http://en.wikipedia.org/wiki/London"), false, "Page2.wikitext", "Page2.json"
         );
     }
 
-    private void verifyEnrich(URL entity, boolean online, String wikiInResource, String jsonOutExpectedResource)
+    private void verifyPipeline(URL entity, boolean online, String wikiInResource, String jsonOutExpectedResource)
     throws IOException, WikiTextParserException, SAXException, ExecutionException, InterruptedException {
         final List<Flag> flags = new ArrayList<>();
         if(online) flags.add(WikiPipelineFactory.Linkers);
