@@ -28,6 +28,7 @@ import com.machinelinking.splitter.Splitter;
 import com.machinelinking.splitter.WikiTextParserHandlerSplitter;
 import com.machinelinking.wikimedia.BufferedWikiPageHandler;
 import com.machinelinking.wikimedia.WikiAPIParser;
+import com.machinelinking.wikimedia.WikiPage;
 import com.machinelinking.wikimedia.WikimediaUtils;
 import org.xml.sax.SAXException;
 
@@ -131,14 +132,25 @@ public class WikiEnricher {
     private void writeDocumentSerialization(DocumentSource source, Serializer serializer)
     throws IOException, SAXException, WikiTextParserException {
         final InputStream wikiTextInputStream;
+        final WikiPage wikiPage;
+        // TODO: this logic should be moved in DocumentSource. Introduce PageMetadata.
         if(source.getInputStream() != null) {
             wikiTextInputStream = source.getInputStream();
+            wikiPage = null;
         } else {
             final URL wikiAPIRequest = WikimediaUtils.entityToWikiTextURLAPI(source.getDocumentURL());
-            final InputStream wikiAPIInputStream = wikiAPIRequest.openStream();
             bufferedAPIHandler.reset();
-            apiParser.parse(bufferedAPIHandler, wikiAPIInputStream);
-            wikiTextInputStream = new ByteArrayInputStream(bufferedAPIHandler.getPage(true).getContent().getBytes());
+            apiParser.parse(bufferedAPIHandler, wikiAPIRequest.openStream());
+            wikiPage = bufferedAPIHandler.getPage(true);
+            wikiTextInputStream = new ByteArrayInputStream(wikiPage.getContent().getBytes());
+        }
+
+        // Writing page metadata.
+        if(wikiPage != null) {
+            serializer.fieldValue("id", wikiPage.getId());
+            serializer.fieldValue("revid", wikiPage.getRevId());
+            serializer.fieldValue("size", wikiPage.getSize());
+            serializer.fieldValue("title", wikiPage.getTitle());
         }
 
         final WikiTextSerializerHandler serializerHandler =
@@ -163,9 +175,8 @@ public class WikiEnricher {
 
         final WikiTextParser wikiTextParser = new WikiTextParser( wrapWithValidator("parser", multiHandler) );
         if(produceStructure) {
-            //TODO: add page id and other metadata.
-             serializer.field(PageStructConsts.PAGE_STRUCT_FIELD);
-             serializer.openList();
+            serializer.field(PageStructConsts.PAGE_STRUCT_FIELD);
+            serializer.openList();
          }
         wikiTextParser.parse(
                 source.getDocumentURL(),
