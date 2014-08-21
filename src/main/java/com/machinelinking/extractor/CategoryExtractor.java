@@ -13,7 +13,7 @@
 
 package com.machinelinking.extractor;
 
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.serializer.Serializer;
 
 import java.util.Arrays;
@@ -32,7 +32,7 @@ public class CategoryExtractor extends Extractor {
     private final Set<String> categories = new HashSet<>();
 
     public CategoryExtractor() {
-        super(PageStructConsts.CATEGORIES_FIELD);
+        super(Ontology.CATEGORIES_FIELD);
     }
 
     @Override

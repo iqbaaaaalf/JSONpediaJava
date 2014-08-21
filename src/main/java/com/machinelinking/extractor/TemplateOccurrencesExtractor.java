@@ -13,7 +13,7 @@
 
 package com.machinelinking.extractor;
 
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.serializer.Serializer;
 
 import java.util.HashMap;
@@ -29,7 +29,7 @@ public class TemplateOccurrencesExtractor extends Extractor {
     private Map<String,Integer> templateOccurrences = new HashMap<>();
 
     public TemplateOccurrencesExtractor() {
-        super(PageStructConsts.TEMPLATES_FIELD);
+        super(Ontology.TEMPLATES_FIELD);
     }
 
     @Override

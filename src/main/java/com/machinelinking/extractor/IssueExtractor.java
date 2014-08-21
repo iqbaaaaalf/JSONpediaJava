@@ -13,7 +13,7 @@
 
 package com.machinelinking.extractor;
 
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.parser.ParserLocation;
 import com.machinelinking.serializer.Serializer;
 
@@ -30,7 +30,7 @@ public class IssueExtractor extends Extractor {
     private List<Issue> issues = null;
 
     public IssueExtractor() {
-        super(PageStructConsts.ISSUES_FIELD);
+        super(Ontology.ISSUES_FIELD);
     }
 
     @Override

@@ -16,7 +16,7 @@ package com.machinelinking.pagestruct;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public interface PageStructConsts {
+public interface Ontology {
 
     static final String TYPE_FIELD = "__type";
 

@@ -13,7 +13,7 @@
 
 package com.machinelinking.template;
 
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.render.DefaultHTMLWriter;
 import com.machinelinking.render.HTMLWriter;
 import com.machinelinking.render.JsonContext;
@@ -92,10 +92,10 @@ public class EvaluationContext {
     }
 
     private void evaluate(ObjectNode obj, StringBuilder sb) {
-        final String type = obj.get(PageStructConsts.TYPE_FIELD).asText();
-        if(PageStructConsts.TYPE_VAR.equals(type)) {
-            final String name = obj.get(PageStructConsts.NAME_FIELD).asText();
-            final JsonNode defaultValue = obj.get(PageStructConsts.DEFAULT_FIELD);
+        final String type = obj.get(Ontology.TYPE_FIELD).asText();
+        if(Ontology.TYPE_VAR.equals(type)) {
+            final String name = obj.get(Ontology.NAME_FIELD).asText();
+            final JsonNode defaultValue = obj.get(Ontology.DEFAULT_FIELD);
             final String varValue = getVarValue(name);
             final String value = varValue != null ? varValue : evaluate(defaultValue);
             if(value != null) sb.append(value);

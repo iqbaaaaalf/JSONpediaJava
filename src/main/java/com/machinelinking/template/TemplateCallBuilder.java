@@ -13,7 +13,7 @@
 
 package com.machinelinking.template;
 
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonNode;
 
@@ -35,12 +35,12 @@ public class TemplateCallBuilder {
     private TemplateCallBuilder() {}
 
     public TemplateCall buildCall(JsonNode node) {
-        final JsonNode name = node.get(PageStructConsts.NAME_FIELD);
-        final JsonNode content = node.get(PageStructConsts.CONTENT_FIELD);
+        final JsonNode name = node.get(Ontology.NAME_FIELD);
+        final JsonNode content = node.get(Ontology.CONTENT_FIELD);
         final List<TemplateCall.Parameter> parameters = new ArrayList<>();
         String paramName;
         for(Map.Entry<String,JsonNode> entry : JSONUtils.toIterable(content.getFields())) {
-            paramName = entry.getKey().startsWith(PageStructConsts.ANON_NAME_PREFIX) ? null : entry.getKey();
+            paramName = entry.getKey().startsWith(Ontology.ANON_NAME_PREFIX) ? null : entry.getKey();
             parameters.add(new TemplateCall.Parameter(paramName, simplifySingleElemArray(entry.getValue())));
         }
         return new DefaultTemplateCall(

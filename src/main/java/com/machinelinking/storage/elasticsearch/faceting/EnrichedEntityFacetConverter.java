@@ -13,7 +13,7 @@
 
 package com.machinelinking.storage.elasticsearch.faceting;
 
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.storage.elasticsearch.ElasticDocument;
 
 import java.util.ArrayList;
@@ -32,8 +32,8 @@ public class EnrichedEntityFacetConverter implements FacetConverter {
     @Override
     public Iterable<ElasticDocument> convert(ElasticDocument in) {
         final List<ElasticDocument> result = new ArrayList<>();
-        final Map<String, Object> content = getAsMap(in.getContent(), PageStructConsts.CONTENT_FIELD);
-        final List sections = (List) content.get(PageStructConsts.SECTIONS_FIELD);
+        final Map<String, Object> content = getAsMap(in.getContent(), Ontology.CONTENT_FIELD);
+        final List sections = (List) content.get(Ontology.SECTIONS_FIELD);
         Map<String, Object> sectionMap;
         Map<String, Object> newDocument;
         int sectionIndex = 0;

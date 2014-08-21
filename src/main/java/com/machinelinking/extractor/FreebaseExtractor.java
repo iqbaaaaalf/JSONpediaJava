@@ -14,7 +14,7 @@
 package com.machinelinking.extractor;
 
 import com.machinelinking.freebase.FreebaseService;
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.util.JSONUtils;
 import com.machinelinking.wikimedia.WikimediaUtils;
@@ -36,7 +36,7 @@ public class FreebaseExtractor extends Extractor {
     private Future<JsonNode> entityFetching;
 
     public FreebaseExtractor() {
-        super(PageStructConsts.FREEBASE_FIELD);
+        super(Ontology.FREEBASE_FIELD);
     }
 
     @Override

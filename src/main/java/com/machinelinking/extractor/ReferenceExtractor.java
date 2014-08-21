@@ -13,7 +13,7 @@
 
 package com.machinelinking.extractor;
 
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.serializer.Serializer;
 
 import java.net.MalformedURLException;
@@ -36,7 +36,7 @@ public class ReferenceExtractor extends SectionAwareExtractor {
     private boolean foundParam;
 
     public ReferenceExtractor() {
-        super(PageStructConsts.REFERENCES_FIELD);
+        super(Ontology.REFERENCES_FIELD);
     }
 
     @Override

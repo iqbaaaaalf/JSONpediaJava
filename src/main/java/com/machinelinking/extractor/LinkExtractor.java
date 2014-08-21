@@ -13,7 +13,7 @@
 
 package com.machinelinking.extractor;
 
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.serializer.Serializer;
 
 import java.net.URL;
@@ -34,7 +34,7 @@ public class LinkExtractor extends SectionAwareExtractor {
     private boolean foundParam;
 
     public LinkExtractor() {
-        super(PageStructConsts.LINKS_FIELD);
+        super(Ontology.LINKS_FIELD);
     }
 
     @Override

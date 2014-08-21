@@ -14,7 +14,7 @@
 package com.machinelinking.pipeline;
 
 import com.machinelinking.extractor.Extractor;
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.pagestruct.WikiTextSerializerHandler;
 import com.machinelinking.pagestruct.WikiTextSerializerHandlerFactory;
 import com.machinelinking.parser.DocumentSource;
@@ -106,7 +106,7 @@ public class WikiPipeline {
         try {
             serializer.openObject();
 
-            serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_ENRICHED_ENTITY);
+            serializer.fieldValue(Ontology.TYPE_FIELD, Ontology.TYPE_ENRICHED_ENTITY);
 
             // Write Document Serialization.
             writeDocumentSerialization(source, serializer);
@@ -174,7 +174,7 @@ public class WikiPipeline {
 
         final WikiTextParser wikiTextParser = new WikiTextParser( wrapWithValidator("parser", multiHandler) );
         if(produceStructure) {
-            serializer.field(PageStructConsts.PAGE_STRUCT_FIELD);
+            serializer.field(Ontology.PAGE_STRUCT_FIELD);
             serializer.openList();
          }
         wikiTextParser.parse(

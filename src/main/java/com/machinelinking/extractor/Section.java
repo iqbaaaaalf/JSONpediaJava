@@ -13,7 +13,7 @@
 
 package com.machinelinking.extractor;
 
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
 
@@ -48,9 +48,9 @@ public class Section implements Serializable {
     @Override
     public void serialize(Serializer serializer) {
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TITLE_FIELD, title);
-        serializer.fieldValue(PageStructConsts.LEVEL_FIELD, level);
-        serializer.field(PageStructConsts.ANCESTORS_FIELD);
+        serializer.fieldValue(Ontology.TITLE_FIELD, title);
+        serializer.fieldValue(Ontology.LEVEL_FIELD, level);
+        serializer.field(Ontology.ANCESTORS_FIELD);
         serializer.openList();
         for(int i: ancestors){
             serializer.value(i);

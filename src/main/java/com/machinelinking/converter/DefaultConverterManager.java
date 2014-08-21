@@ -14,7 +14,7 @@
 package com.machinelinking.converter;
 
 import com.machinelinking.filter.JSONObjectFilter;
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonNode;
@@ -58,7 +58,7 @@ public class DefaultConverterManager implements ConverterManager {
 
     @Override
     public Converter getConverterForData(JsonNode data) {
-        final JsonNode typeNode = data.get(PageStructConsts.TYPE_FIELD);
+        final JsonNode typeNode = data.get(Ontology.TYPE_FIELD);
         if(typeNode == null) return null;
         final String type = typeNode.asText();
         final Set<FilterToConverter> filtersToConverters = typeToFilters.get(type);
@@ -81,12 +81,12 @@ public class DefaultConverterManager implements ConverterManager {
     }
 
     private String getFilterTypeOrFail(JSONObjectFilter filter) {
-        final String type = filter.getCriteriaPattern(PageStructConsts.TYPE_FIELD);
+        final String type = filter.getCriteriaPattern(Ontology.TYPE_FIELD);
         if(type == null)
             throw new IllegalArgumentException(
                     String.format(
                             "Invalid filter, must specify a %s match criteria",
-                            PageStructConsts.TYPE_FIELD
+                            Ontology.TYPE_FIELD
                     )
             );
         return type;

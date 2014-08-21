@@ -13,7 +13,7 @@
 
 package com.machinelinking.render;
 
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
@@ -39,7 +39,7 @@ public class TableNodeRender implements NodeRender {
     @Override
     public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
     throws IOException {
-        final JsonNode content = node.get(PageStructConsts.CONTENT_FIELD);
+        final JsonNode content = node.get(Ontology.CONTENT_FIELD);
         writer.openTable("Table", TABLE_ATTR);
 
         writer.openTableRow();
@@ -58,7 +58,7 @@ public class TableNodeRender implements NodeRender {
             cell = content.get(i);
             if( isBodyCell(cell) ) {
                 writer.openTableRow();
-                final JsonNode rowContent = cell.get(PageStructConsts.CONTENT_FIELD);
+                final JsonNode rowContent = cell.get(Ontology.CONTENT_FIELD);
                 for(int j = 0; j < rowContent.size(); j++) {
                     writer.openTableCol();
                     rootRender.render(context, rootRender, rowContent.get(j), writer);
@@ -81,7 +81,7 @@ public class TableNodeRender implements NodeRender {
     }
 
     private boolean checkCellType(JsonNode node, String t) {
-        final JsonNode type = node.get(PageStructConsts.TYPE_FIELD);
+        final JsonNode type = node.get(Ontology.TYPE_FIELD);
         return type != null && t.equals(type.asText());
     }
 

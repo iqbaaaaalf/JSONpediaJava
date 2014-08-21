@@ -15,7 +15,7 @@ package com.machinelinking.util;
 
 import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.JSONFilter;
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
@@ -373,12 +373,12 @@ public class JSONUtils {
 
     private static void toHumanReadable(Map<String,?> m, StringBuilder sb) {
         for (Map.Entry<String,?> e : m.entrySet()) {
-            if(PageStructConsts.TYPE_FIELD.equals(e.getKey())) continue;
-            if(PageStructConsts.CONTENT_FIELD.equals(e.getKey())) {
+            if(Ontology.TYPE_FIELD.equals(e.getKey())) continue;
+            if(Ontology.CONTENT_FIELD.equals(e.getKey())) {
                 toHumanReadable(e.getValue(), sb);
                 continue;
             }
-            if(e.getKey().startsWith(PageStructConsts.ANON_NAME_PREFIX)) {
+            if(e.getKey().startsWith(Ontology.ANON_NAME_PREFIX)) {
                 toHumanReadable(e.getValue(), sb);
                 continue;
             }

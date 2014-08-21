@@ -13,7 +13,7 @@
 
 package com.machinelinking.dbpedia;
 
-import com.machinelinking.pagestruct.PageStructConsts;
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
 
@@ -60,7 +60,7 @@ public class TemplateMapping implements Serializable, java.io.Serializable {
 
     public void serialize(Serializer serializer) {
         serializer.openObject();
-        serializer.fieldValue(PageStructConsts.TYPE_FIELD, PageStructConsts.TYPE_MAPPING);
+        serializer.fieldValue(Ontology.TYPE_FIELD, Ontology.TYPE_MAPPING);
         serializer.fieldValue("name", getMappingName());
         serializer.fieldValue("class", getMappingClass());
 
