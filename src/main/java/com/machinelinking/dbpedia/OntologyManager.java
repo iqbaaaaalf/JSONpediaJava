@@ -13,12 +13,28 @@
 
 package com.machinelinking.dbpedia;
 
+import java.util.Set;
+
 /**
  * Defines a manager for ontologies.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface OntologyManager {
+
+    /**
+     * Returns the number of stored properties.
+     *
+     * @return number of properties.
+     */
+    int getPropertiesCount();
+
+    /**
+     * Returns the set of property names.
+     *
+     * @return not <code>null</code> set of names.
+     */
+    Set<String> getPropertyNames();
 
     /**
      * Returns a {@link Property} for a given <i>property</i> name.
