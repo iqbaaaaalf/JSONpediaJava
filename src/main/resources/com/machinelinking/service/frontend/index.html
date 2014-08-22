@@ -528,17 +528,22 @@ Download and install JSONpedia: visit the
 
 <h3>Examples</h3>
 <ul>
-    <li><code><a target="_blank" href="/annotate/resource/json/en:Albert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/json/en:Albert_Einstein</a></code>
+    <li>Process page "Albert Einstein" from English Wikipedia and return result in JSON:<br/>
+        <code><a target="_blank" href="/annotate/resource/json/en:Albert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/json/en:Albert_Einstein</a></code>
     </li>
-    <li><code><a target="_blank" href="/annotate/resource/html/en:Albert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/html/en:Albert_Einstein</a></code>
+    <li>Process page "Albert Einstein" from English Wikipedia and return result in HTML:<br/>
+        <code><a target="_blank" href="/annotate/resource/html/en:Albert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/html/en:Albert_Einstein</a></code>
     </li>
-    <li><code><a target="_blank" href="/annotate/resource/json/en:Albedo"><span class="app-base-uri">http://...</span>/annotate/resource/json/en:Albedo</a></code>
+    <li>Process page "Albedo" from Italian Wikipedia and return result in JSON:<br/>
+        <code><a target="_blank" href="/annotate/resource/json/en:Albedo"><span class="app-base-uri">http://...</span>/annotate/resource/json/it:Albedo</a></code>
     </li>
-    <li><code><a target="_blank" href="/annotate/resource/html/en:Albedo"><span class="app-base-uri">http://...</span>/annotate/resource/html/en:Albedo</a></code>
+    <li>Process page "Albedo" from Italian Wikipedia and return result in HTML:<br/>
+        <code><a target="_blank" href="/annotate/resource/html/en:Albedo"><span class="app-base-uri">http://...</span>/annotate/resource/html/it:Albedo</a></code>
     </li>
 </ul>
 
-<h3>GET API</h3>
+<a name="get-api"></a>
+<h3><code>GET /annotate</code> API</h3>
 
 <p>HTTP GET requests can be sent to the URL:</p>
 <pre><span class="app-base-uri">http://.../</span>/annotate/<em>&lt;format&gt;</em>/<em>&lt;uri&gt;</em></pre> with the following parameters:
@@ -571,12 +576,14 @@ Download and install JSONpedia: visit the
         <td><span class="label label-info">False</span></td>
     </tr>
 </table>
-Such URL will return an HTTP <i>302</i> redirect to <code><span
-        class="app-base-uri">http://...</span>/annotate/<em>format</em>/resource</code>.<br/>
 
-<p>The response is the input resource converted to the desired output format.</p>
+<p>
+    The response is the input resource converted to the desired <a href="#supported-formats">output format</a>.
+    Processing errors are encoded in <a href="#error-codes">error codes</a> table.
+</p>
 
-<h3>POST API</h3>
+<a name="post-api"></a>
+<h3><code>POST /annotate</code> API</h3>
 
 <p>Large WikiText documents can be also sent by HTTP POSTing form data to:</p>
 
@@ -621,6 +628,11 @@ The following parameters are supported:
     </tr>
 </table>
 
+<p>
+    The response is the input resource converted to the desired <a href="#supported-formats">output format</a>.
+    Processing errors are encoded in <a href="#error-codes">error codes</a> table.
+</p>
+
 <a name="supported-formats"></a>
 <h3>Output formats</h3>
 
@@ -645,7 +657,8 @@ The following parameters are supported:
     </tr>
 </table>
 
-<h3>Error reporting</h3>
+<a name="error-codes"></a>
+<h3>Error codes</h3>
 
 <p>
 Processing errors are reported as HTTP status codes with short <code>text/plain</code> messages.
@@ -690,7 +703,7 @@ The following status codes can be returned:
 <h2>Processors Documentation</h2>
 
 <h3>Extractors</h3>
-<p>Extract specific parts of content from the WikiText document stream.</p>
+<p>Extract specific parts of content from the WikiText document events stream.</p>
 
 <h4>SectionExtractor</h4>
 <p>Extracts the list of sections defined within the document.</p>
@@ -732,7 +745,7 @@ The following status codes can be returned:
 <p>Extracts statistics on template occurrences into the document.</p>
 <pre class="well">
 "templates": {
-    "__type": "templates",
+    "@type": "templates",
     "occurrences": {
         "Birth date": 1,
         "Block quote": 1,
@@ -749,7 +762,7 @@ The following status codes can be returned:
 <p>Extracts the list of all declared categories into the document.</p>
 <pre class="well">
 "categories": {
-    "__type": "category",
+    "@type": "category",
     "content": [
         "1879 births",
         "1955 deaths",
@@ -773,7 +786,7 @@ The following status codes can be returned:
 <p>Extracts the RDF ontology mapping defined in <i>DBpedia.org</i> for every detected template into the document.</p>
 <pre class="well">
 "template-mapping": {
-     "type": "mapping-collection",
+     "@type": "mapping-collection",
      "mapping-collection": [
          {
              "__type": "template-mapping",
@@ -838,7 +851,7 @@ The following status codes can be returned:
 <pre class="well">
 "infobox-splitter": [
     {
-        "__type": "template",
+        "@type": "template",
         "name": "Infobox scientist",
         "content": {
             "name": [
@@ -883,7 +896,7 @@ The following status codes can be returned:
 <pre class="well">
 "table-splitter": [
      {
-         "__type": "table",
+         "@type": "table",
          "content": [
              "class=wikitable",
              <span class="label label-warning">...</span>
