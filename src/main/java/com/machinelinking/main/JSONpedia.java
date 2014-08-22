@@ -19,6 +19,7 @@ import com.machinelinking.dbpedia.OntologyManagerException;
 import com.machinelinking.dbpedia.TemplateMappingFactory;
 import com.machinelinking.dbpedia.TemplateMappingManager;
 import com.machinelinking.dbpedia.TemplateMappingManagerException;
+import com.machinelinking.freebase.FreebaseService;
 import com.machinelinking.pipeline.WikiPipeline;
 import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngine;
@@ -56,6 +57,10 @@ public class JSONpedia {
 
     private OntologyManager ontologyManager;
 
+    private TemplateMappingFactory templateMappingFactory;
+
+    private FreebaseService freebaseService;
+
     private JSONpedia() {}
 
     public OntologyManager getOntologyManager() throws OntologyManagerException {
@@ -66,7 +71,17 @@ public class JSONpedia {
     }
 
     public TemplateMappingManager getTemplateMappingManager(String lang) throws TemplateMappingManagerException {
-        return TemplateMappingFactory.getInstance().getTemplateMappingManager(lang);
+        if(templateMappingFactory == null) {
+            templateMappingFactory = TemplateMappingFactory.getInstance();
+        }
+        return templateMappingFactory.getTemplateMappingManager(lang);
+    }
+
+    public FreebaseService getFreebaseService() {
+        if(freebaseService == null) {
+            freebaseService = FreebaseService.getInstance();
+        }
+        return freebaseService;
     }
 
     public Output process(String entity) throws JSONpediaException {

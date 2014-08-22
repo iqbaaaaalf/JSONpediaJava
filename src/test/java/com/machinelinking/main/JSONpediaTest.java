@@ -18,10 +18,12 @@ import com.machinelinking.dbpedia.OntologyManagerException;
 import com.machinelinking.dbpedia.TemplateMapping;
 import com.machinelinking.dbpedia.TemplateMappingManager;
 import com.machinelinking.dbpedia.TemplateMappingManagerException;
+import com.machinelinking.freebase.FreebaseService;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.util.Map;
 
 /**
@@ -41,9 +43,16 @@ public class JSONpediaTest {
     public void testGetTemplateMappingManager() throws TemplateMappingManagerException {
         final TemplateMappingManager enTemplateMappingManager = JSONpedia.instance().getTemplateMappingManager("en");
         Assert.assertTrue( enTemplateMappingManager.getMappingNames().length > 100 );
-        final TemplateMapping aMapping = enTemplateMappingManager.getMapping( enTemplateMappingManager.getMappingNames()[0] );
+        final TemplateMapping aMapping = enTemplateMappingManager.getMapping(enTemplateMappingManager.getMappingNames()[0]);
         Assert.assertNotNull(aMapping);
         Assert.assertNotNull(aMapping.getMappingName());
+    }
+
+    @Test
+    public void testGetFreebaseService() throws TemplateMappingManagerException, IOException {
+        final FreebaseService freebaseService = JSONpedia.instance().getFreebaseService();
+        final JsonNode londonData = freebaseService.getEntityData("London");
+        Assert.assertNotNull(londonData);
     }
 
     @Test
