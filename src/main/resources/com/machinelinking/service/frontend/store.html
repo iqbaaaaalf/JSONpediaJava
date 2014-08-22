@@ -159,7 +159,7 @@
             });
 
             $('.mongo-selector-help').click(function(e){
-                            document.location = "#selector-syntax";
+                            document.location = "#mongo-selector-syntax";
             });
 
             $('.elastic-selector-help').click(function (e) {
@@ -528,7 +528,7 @@ with the following parameters:
     </tr>
     <tr>
         <th>q</th>
-        <td>Selector to apply over stored data. See <a href="#selector-syntax">selector syntax</a>.</td>
+        <td>Selector to apply over stored data. See <a href="#mongo-selector-syntax">selector syntax</a>.</td>
         <td><span class="label label-info">True</span></td>
     </tr>
     <tr>
@@ -597,21 +597,26 @@ with the following parameters:
 <hr/>
 
 <!--------- BEGIN Selector Documentation --------->
-<a name="selector-syntax"></a>
-<h3>Selector Syntax</h3>
+<a name="mongo-selector-syntax"></a>
+<h3>Mongo Selector Syntax</h3>
 <p>
-A JSONpedia <b>selector</b> is a query performed on a store containing JSONpedia documents.
-A selector is composed of a selection part where it is possible to define conditions over fields and
-a projection section where it is possible do define which parts of documents that satisfy selection
-must be returned.
-Examples of selections are:
-<pre>_id = 706 -> name</pre>
-where the document with id 706 is selected and its name (page title) is returned.
-<pre>version >= 10 -> content.categories</pre>
-where all documents with version major or equals to 10 are selected and for each one the content categories are returned.
+The <b>MongoDB selector</b> is an expression which describes a criteria to select JSONpedia documents stored into the configured MongoDB store.
+A selector is composed of a <i>selection part</i> where it is possible to define conditions over fields and
+a <i>projection part</i> where it is possible do define which part of the documents satisfying the selection must be returned.<br/>
+MongoDB selector has been introduced to avoid user to write queries using the JSON syntax imposed by MongoDB.
 </p>
 <p>
-The full <b>selector syntax</b> is reported below.
+
+<h4>Examples of selectors</h4>
+Select document with id 706 and return only the value of field "name".
+<pre>_id = 706 -> name</pre>
+Select all documents with version major or equals to 10 and for these return the value of field "categories" (which is a list).
+<pre>version >= 10 -> content.categories</pre>
+</p>
+
+<h4>Selector syntax</h4>
+<p>
+The full <b>MongoDB selector syntax</b> is reported below.
 <pre>
 &lt;selector&gt;      ::= &lt;criteria&gt; "->" &lt;projection&gt; ;
 &lt;criteria&gt;      ::= &lt;node-criteria&gt; | &lt;node-criteria&gt; "," &lt;criteria&gt; ;
@@ -632,7 +637,23 @@ The full <b>selector syntax</b> is reported below.
 <a name="elastic-selector-syntax"></a>
 <h3>Elasticsearch Selector Syntax</h3>
 <p>
-The full <b>selector syntax</b> for Elasticsearch query is reported below.
+The <b>Elasticsearch selector</b> is an expression which describes a criteria to select JSONpedia documents stored in Elasticsearch.
+A selector can be a <i>criteria</i> (in this case applies on every field) or a <i>criteria</i> applied on a <i>field</i>.
+The <i>criteria</i> must respect the query syntax defined by Elasticsearch (see reference below).<br/>
+Elasticsearch selector has been introduced to avoid user to write queries using the JSON syntax imposed by Elasticsearch.
+</p>
+
+<h4>Examples of selectors</h4>
+<p>
+Select all documents which field "name" matches with string "Albert Einstein".
+<pre>name:"Albert Einstein"</pre>
+Select all documents which field "name" matches with word "quick" or with word "brown".
+<pre>name:"(quick OR brown)"</pre>
+</p>
+
+<h4>Selector syntax</h4>
+<p>
+The full <b>Elasticsearch selector syntax</b> is reported below.
 <pre>
 &lt;selector&gt; ::= &lt;criteria&gt; | &lt;field&gt; : &lt;criteria&gt; ;
 &lt;field&gt;    ::= &lt;JSON-field-name&gt; ;
