@@ -13,6 +13,8 @@
 
 package com.machinelinking.main;
 
+import com.machinelinking.dbpedia.OntologyManager;
+import com.machinelinking.dbpedia.OntologyManagerException;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
 import org.junit.Test;
@@ -25,6 +27,12 @@ import java.util.Map;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class JSONpediaTest {
+
+    @Test
+    public void testGetOntologyManager() throws OntologyManagerException {
+        final OntologyManager ontologyManager = JSONpedia.instance().getOntologyManager();
+        Assert.assertNotNull( ontologyManager.getProperty("birthDate") );
+    }
 
     @Test
     public void testProcessEntityById() throws JSONpediaException {
