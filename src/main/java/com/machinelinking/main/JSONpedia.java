@@ -19,13 +19,13 @@ import com.machinelinking.dbpedia.OntologyManagerException;
 import com.machinelinking.dbpedia.TemplateMappingFactory;
 import com.machinelinking.dbpedia.TemplateMappingManager;
 import com.machinelinking.dbpedia.TemplateMappingManagerException;
-import com.machinelinking.freebase.FreebaseService;
-import com.machinelinking.pipeline.WikiPipeline;
-import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.DefaultJSONFilterFactory;
 import com.machinelinking.filter.JSONFilter;
+import com.machinelinking.freebase.FreebaseService;
 import com.machinelinking.parser.DocumentSource;
+import com.machinelinking.pipeline.WikiPipeline;
+import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.render.DefaultDocumentContext;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.render.DocumentContext;
@@ -82,6 +82,12 @@ public class JSONpedia {
             freebaseService = FreebaseService.getInstance();
         }
         return freebaseService;
+    }
+
+    public String render(String resource, JsonNode data) throws IOException {
+        final URL resourceURL = JSONUtils.toResourceURL(resource);
+        final DocumentContext context = new DefaultDocumentContext(RenderScope.FULL_RENDERING, resourceURL);
+        return DefaultHTMLRenderFactory.getInstance().createRender().renderDocument(context, data);
     }
 
     public Output process(String entity) throws JSONpediaException {

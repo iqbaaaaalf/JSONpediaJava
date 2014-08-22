@@ -19,6 +19,7 @@ import com.machinelinking.dbpedia.TemplateMapping;
 import com.machinelinking.dbpedia.TemplateMappingManager;
 import com.machinelinking.dbpedia.TemplateMappingManagerException;
 import com.machinelinking.freebase.FreebaseService;
+import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
 import org.junit.Test;
@@ -53,6 +54,17 @@ public class JSONpediaTest {
         final FreebaseService freebaseService = JSONpedia.instance().getFreebaseService();
         final JsonNode londonData = freebaseService.getEntityData("London");
         Assert.assertNotNull(londonData);
+    }
+
+    @Test
+    public void testRender() throws IOException {
+        final String html = JSONpedia.instance().render(
+                "en:Test",
+                JSONUtils.parseJSON(
+                        "{\"@type\" : \"link\", \"label\" : \"Hello!\",  \"url\" : \"http://path.to/somewhere/\"}"
+                )
+        );
+        Assert.assertNotNull(html);
     }
 
     @Test
