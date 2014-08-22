@@ -34,7 +34,7 @@
     <script type="application/javascript">
         $(function ($) {
             $.each($('.app-base-uri'), function () {
-                $(this).text(document.location.host);
+                $(this).text('http://' + document.location.host);
             });
 
             $('#app-path').text(document.location.pathname);
@@ -531,14 +531,11 @@ Download and install JSONpedia: visit the
     <li>Process page "Albert Einstein" from English Wikipedia and return result in JSON:<br/>
         <code><a target="_blank" href="/annotate/resource/json/en:Albert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/json/en:Albert_Einstein</a></code>
     </li>
-    <li>Process page "Albert Einstein" from English Wikipedia and return result in HTML:<br/>
-        <code><a target="_blank" href="/annotate/resource/html/en:Albert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/html/en:Albert_Einstein</a></code>
+    <li>Process page "Albert Einstein" from Italian Wikipedia and return result in HTML:<br/>
+        <code><a target="_blank" href="/annotate/resource/html/it:Albert_Einstein"><span class="app-base-uri">http://...</span>/annotate/resource/html/it:Albert_Einstein</a></code>
     </li>
-    <li>Process page "Albedo" from Italian Wikipedia and return result in JSON:<br/>
-        <code><a target="_blank" href="/annotate/resource/json/en:Albedo"><span class="app-base-uri">http://...</span>/annotate/resource/json/it:Albedo</a></code>
-    </li>
-    <li>Process page "Albedo" from Italian Wikipedia and return result in HTML:<br/>
-        <code><a target="_blank" href="/annotate/resource/html/en:Albedo"><span class="app-base-uri">http://...</span>/annotate/resource/html/it:Albedo</a></code>
+    <li>Process page "Test" specifying WikiText content and return result in JSON:<br/>
+        <code>curl --data "wikitext=Read the [[CURL]] documentation..." <span class="app-base-uri">http://...</span>/annotate/resource/json/en:CurlNotice</code>
     </li>
 </ul>
 
