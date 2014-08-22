@@ -36,6 +36,18 @@ public class InMemoryOntologyManagerTest {
     }
 
     @Test
+    public void testGetPropertiesCount() throws OntologyManagerException {
+        final InMemoryOntologyManager manager = new InMemoryOntologyManager();
+        Assert.assertTrue(manager.getPropertiesCount() > 24000);
+    }
+
+    @Test
+    public void testGetPropertyNames() throws OntologyManagerException {
+        final InMemoryOntologyManager manager = new InMemoryOntologyManager();
+        Assert.assertEquals(manager.getPropertiesCount(), manager.getPropertyNames().size());
+    }
+
+    @Test
     public void testGetMapping() throws OntologyManagerException {
         final InMemoryOntologyManager manager = new InMemoryOntologyManager();
         Assert.assertEquals(

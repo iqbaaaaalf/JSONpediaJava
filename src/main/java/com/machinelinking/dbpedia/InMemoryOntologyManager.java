@@ -28,8 +28,10 @@ import java.io.ObjectOutputStream;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * In memory hashmap implementation of {@link OntologyManager}.
@@ -142,6 +144,16 @@ public class InMemoryOntologyManager implements OntologyManager {
 
     public InMemoryOntologyManager() throws OntologyManagerException {
         this( initOntologyIndex() );
+    }
+
+    @Override
+    public int getPropertiesCount() {
+        return mapping.size();
+    }
+
+    @Override
+    public Set<String> getPropertyNames() {
+        return new HashSet<>( mapping.keySet() );
     }
 
     @Override
