@@ -16,6 +16,9 @@ package com.machinelinking.main;
 import com.machinelinking.dbpedia.InMemoryOntologyManager;
 import com.machinelinking.dbpedia.OntologyManager;
 import com.machinelinking.dbpedia.OntologyManagerException;
+import com.machinelinking.dbpedia.TemplateMappingFactory;
+import com.machinelinking.dbpedia.TemplateMappingManager;
+import com.machinelinking.dbpedia.TemplateMappingManagerException;
 import com.machinelinking.pipeline.WikiPipeline;
 import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngine;
@@ -60,6 +63,10 @@ public class JSONpedia {
             ontologyManager = new InMemoryOntologyManager();
         }
         return ontologyManager;
+    }
+
+    public TemplateMappingManager getTemplateMappingManager(String lang) throws TemplateMappingManagerException {
+        return TemplateMappingFactory.getInstance().getTemplateMappingManager(lang);
     }
 
     public Output process(String entity) throws JSONpediaException {

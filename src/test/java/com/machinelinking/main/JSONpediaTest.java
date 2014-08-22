@@ -15,6 +15,9 @@ package com.machinelinking.main;
 
 import com.machinelinking.dbpedia.OntologyManager;
 import com.machinelinking.dbpedia.OntologyManagerException;
+import com.machinelinking.dbpedia.TemplateMapping;
+import com.machinelinking.dbpedia.TemplateMappingManager;
+import com.machinelinking.dbpedia.TemplateMappingManagerException;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
 import org.junit.Test;
@@ -32,6 +35,15 @@ public class JSONpediaTest {
     public void testGetOntologyManager() throws OntologyManagerException {
         final OntologyManager ontologyManager = JSONpedia.instance().getOntologyManager();
         Assert.assertNotNull( ontologyManager.getProperty("birthDate") );
+    }
+
+    @Test
+    public void testGetTemplateMappingManager() throws TemplateMappingManagerException {
+        final TemplateMappingManager enTemplateMappingManager = JSONpedia.instance().getTemplateMappingManager("en");
+        Assert.assertTrue( enTemplateMappingManager.getMappingNames().length > 100 );
+        final TemplateMapping aMapping = enTemplateMappingManager.getMapping( enTemplateMappingManager.getMappingNames()[0] );
+        Assert.assertNotNull(aMapping);
+        Assert.assertNotNull(aMapping.getMappingName());
     }
 
     @Test
