@@ -27,6 +27,7 @@ public interface NodeRender {
 
     boolean acceptNode(JsonContext context, JsonNode node);
 
+    //TODO: should throw custom exception.
     void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
     throws IOException;
 
