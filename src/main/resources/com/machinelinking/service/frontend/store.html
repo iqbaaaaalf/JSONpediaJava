@@ -513,11 +513,12 @@
     </li>
 </ul>
 
-<h3>GET API</h3>
+<!-- GET /storage/mongo/select -->
+
+<h3><code>GET /storage/mongo/select</code> API</h3>
 
 <p>HTTP GET requests can be sent to the URL:</p>
-<pre><span class="app-base-uri">http://.../</span>/store/select?q=<em>&lt;query&gt;</em>&filter=<em>&lt;filter&gt;</em>&limit=<em>
-    &lt;limit&gt;</em></pre>
+<pre><span class="app-base-uri">http://.../</span>/storage/mongo/select?q=<em>&lt;query&gt;</em>&filter=<em>&lt;filter&gt;</em>&limit=<em>&lt;limit&gt;</em></pre>
 with the following parameters:
 
 <table class="table">
@@ -528,7 +529,7 @@ with the following parameters:
     </tr>
     <tr>
         <th>q</th>
-        <td>Selector to apply over stored data. See <a href="#mongo-selector-syntax">selector syntax</a>.</td>
+        <td>Selector to apply over stored data. See <a href="#mongo-selector-syntax">mongo selector syntax</a>.</td>
         <td><span class="label label-info">True</span></td>
     </tr>
     <tr>
@@ -543,8 +544,89 @@ with the following parameters:
     </tr>
 </table>
 
-<a name="supported-formats"></a>
+<p>
+    The response is the input resource converted to the desired <a href="#supported-formats">output format</a>.
+    Processing errors are encoded in <a href="#error-codes">error codes</a> table.
+</p>
 
+<!-- GET /storage/mongo/mapred -->
+
+<h3><code>GET /storage/mongo/mapred</code> API</h3>
+
+<p>HTTP GET requests can be sent to the URL:</p>
+<pre><span class="app-base-uri">http://.../</span>/storage/mongo/mapred?criteria=<em>&lt;criteria&gt;</em>&map=<em>&lt;map&gt;</em>&reduce=<em>&lt;reduce&gt;</em>&limit=<em>&lt;limit&gt;</em></pre>
+with the following parameters:
+
+<table class="table">
+    <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
+        <th>criteria</th>
+        <td>Selector to apply over stored data. See <a href="#mongo-selector-syntax">mongo selector syntax (criteria)</a>.</td>
+        <td><span class="label label-info">True</span></td>
+    </tr>
+    <tr>
+        <th>map</th>
+        <td>Javascript Map function. See <a href="http://docs.mongodb.org/manual/core/map-reduce/">MongoDB Map-Reduce manual</a>.</td>
+        <td><span class="label label-info">True</span></td>
+    </tr>
+    <tr>
+        <th>reduce</th>
+        <td>Javascript Reduce function. See <a href="http://docs.mongodb.org/manual/core/map-reduce/">MongoDB Map-Reduce manual</a>.</td>
+        <td><span class="label label-info">True</span></td>
+    </tr>
+    <tr>
+        <th>limit</th>
+        <td>Limit of returned results, max allowed value: <strong>1000</strong>.</td>
+        <td><span class="label label-info">False</span></td>
+    </tr>
+</table>
+
+<p>
+    The response is the input resource converted to the desired <a href="#supported-formats">output format</a>.
+    Processing errors are encoded in <a href="#error-codes">error codes</a> table.
+</p>
+
+<!-- GET /storage/elastic/select -->
+
+<h3><code>GET /storage/elastic/select</code> API</h3>
+
+<p>HTTP GET requests can be sent to the URL:</p>
+<pre><span class="app-base-uri">http://.../</span>/storage/elastic/select?criteria=<em>&lt;criteria&gt;</em>&map=<em>&lt;map&gt;</em>&reduce=<em>&lt;reduce&gt;</em>&limit=<em>&lt;limit&gt;</em></pre>
+with the following parameters:
+
+<table class="table">
+    <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        <th>Required</th>
+    </tr>
+    <tr>
+        <th>q</th>
+        <td>Selector to apply over stored data. See <a href="#elastic-selector-syntax">elastic selector syntax</a>.</td>
+        <td><span class="label label-info">True</span></td>
+    </tr>
+    <tr>
+        <th>filter</th>
+        <td>Filter criteria to be applied to the result. See <a href="#filter-syntax">filter syntax</a>.</td>
+        <td><span class="label label-info">False</span></td>
+    </tr>
+    <tr>
+        <th>limit</th>
+        <td>Limit of returned results, max allowed value: <strong>1000</strong>.</td>
+        <td><span class="label label-info">False</span></td>
+    </tr>
+</table>
+
+<p>
+    The response is the input resource converted to the desired <a href="#supported-formats">output format</a>.
+    Processing errors are encoded in <a href="#error-codes">error codes</a> table.
+</p>
+
+<a name="supported-formats"></a>
 <h3>Output formats</h3>
 
 <p>Supported output format are:</p>
@@ -563,7 +645,8 @@ with the following parameters:
     </tr>
 </table>
 
-<h3>Error reporting</h3>
+<a name="error-codes"></a>
+<h3>Error codes</h3>
 
 <p>
     Processing errors are reported as HTTP status codes with short <code>text/plain</code> messages.
