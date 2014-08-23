@@ -21,7 +21,8 @@ import java.util.Map;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class MultiJSONStorageFactory extends AbstractJSONStorageFactory<MultiJSONStorageConfiguration, MultiJSONStorage, MultiDocument> {
+public class MultiJSONStorageFactory
+        extends AbstractJSONStorageFactory<MultiJSONStorageConfiguration, MultiJSONStorage, MultiDocument> {
 
     private final Map<JSONStorageConfiguration, JSONStorageFactory> configurationToFactory = new HashMap<>();
 
@@ -36,14 +37,24 @@ public class MultiJSONStorageFactory extends AbstractJSONStorageFactory<MultiJSO
         }
     }
 
+    public JSONStorageConfiguration createSingleConfiguration(String configURI) {
+        String[] configParts = configURI.split("\\|");
+        if(configParts.length != 2)
+            throw new IllegalArgumentException("Expected <JSONStorageFactory.path>|<paramsURI>");
+        return instantiateConfiguration(configParts[0], configParts[1]);
+    }
+
+    public JSONStorage createSingleStorage(JSONStorageConfiguration configuration) {
+        final JSONStorageFactory factory = configurationToFactory.get(configuration);
+        return factory.createStorage(configuration);
+    }
+
     @Override
     public MultiJSONStorageConfiguration createConfiguration(String configURI) {
         final String[] storageConfigs = configURI.split(";");
         final List<JSONStorageConfiguration> configurations = new ArrayList<>();
         for(String storageConfig : storageConfigs) {
-            String[] configParts = storageConfig.split("\\|");
-            if(configParts.length != 2) throw new IllegalArgumentException();
-            configurations.add(instantiateConfiguration(configParts[0], configParts[1]));
+            configurations.add(createSingleConfiguration(storageConfig));
         }
         return new MultiJSONStorageConfiguration(
                 configurations.toArray(new JSONStorageConfiguration[configurations.size()])
@@ -56,8 +67,7 @@ public class MultiJSONStorageFactory extends AbstractJSONStorageFactory<MultiJSO
     ) {
         final List<JSONStorage> storages = new ArrayList<>();
         for(JSONStorageConfiguration config : multiConfig) {
-            final JSONStorageFactory factory = configurationToFactory.get(config);
-            storages.add( factory.createStorage(config) );
+            storages.add( createSingleStorage(config) );
         }
         return new MultiJSONStorage(multiConfig, converter, storages.toArray(new JSONStorage[storages.size()]));
     }
