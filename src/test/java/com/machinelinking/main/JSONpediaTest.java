@@ -27,6 +27,7 @@ import com.machinelinking.storage.elasticsearch.ElasticJSONStorage;
 import com.machinelinking.storage.mongodb.MongoJSONStorage;
 import com.machinelinking.util.FileUtil;
 import com.machinelinking.util.JSONUtils;
+import com.machinelinking.wikimedia.BufferedWikiPageHandler;
 import com.machinelinking.wikimedia.WikiPage;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
@@ -133,6 +134,17 @@ public class JSONpediaTest {
     public void testGetRawPage() throws JSONpediaException {
         final WikiPage page = JSONpedia.instance().getRawPage("en:Milan");
         Assert.assertNotNull(page);
+    }
+
+    @Test
+    public void testGetRawPagesBuffer() throws IOException, JSONpediaException {
+        final BufferedWikiPageHandler buffer = JSONpedia.instance().getRawPagesBuffer(
+                FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
+        );
+        WikiPage current;
+        while((current = buffer.getPage(true)) != BufferedWikiPageHandler.EOQ) {
+            Assert.assertNotNull(current.getContent());
+        }
     }
 
     @Test

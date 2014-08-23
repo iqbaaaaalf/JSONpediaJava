@@ -39,13 +39,16 @@ import com.machinelinking.storage.MultiJSONStorageConfiguration;
 import com.machinelinking.storage.MultiJSONStorageFactory;
 import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
+import com.machinelinking.wikimedia.BufferedWikiPageHandler;
 import com.machinelinking.wikimedia.WikiAPIParser;
+import com.machinelinking.wikimedia.WikiDumpParser;
 import com.machinelinking.wikimedia.WikiPage;
 import com.machinelinking.wikimedia.WikimediaUtils;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.util.TokenBuffer;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
 import java.util.Map;
@@ -163,6 +166,20 @@ public class JSONpedia {
         } catch (Exception e) {
             throw new JSONpediaException("Error while retrieving raw page.", e);
         }
+    }
+
+    public BufferedWikiPageHandler getRawPagesBuffer(InputStream in) throws JSONpediaException {
+        final WikiDumpParser dumpParser = new WikiDumpParser();
+        final BufferedWikiPageHandler bufferedHandler = new BufferedWikiPageHandler();
+        try {
+            dumpParser.parse(
+                    bufferedHandler,
+                    in
+            );
+        } catch (Exception e) {
+            throw new JSONpediaException("Error while parsing pages stream.", e);
+        }
+        return bufferedHandler;
     }
 
     public Output process(String entity) throws JSONpediaException {
