@@ -31,6 +31,9 @@ import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.render.DocumentContext;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.service.BasicServer;
+import com.machinelinking.storage.JSONStorage;
+import com.machinelinking.storage.JSONStorageConfiguration;
+import com.machinelinking.storage.MultiJSONStorageFactory;
 import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonNode;
@@ -63,6 +66,8 @@ public class JSONpedia {
     private FreebaseService freebaseService;
 
     private BasicServer basicServer;
+
+    private MultiJSONStorageFactory multiJSONStorageFactory;
 
     private JSONpedia() {}
 
@@ -122,6 +127,14 @@ public class JSONpedia {
             }
             basicServer = null;
         }
+    }
+
+    public JSONStorage getStorage(String configURI) {
+        if(multiJSONStorageFactory == null) {
+            multiJSONStorageFactory = new MultiJSONStorageFactory();
+        }
+        final JSONStorageConfiguration configuration =  multiJSONStorageFactory.createSingleConfiguration(configURI);
+        return multiJSONStorageFactory.createSingleStorage(configuration);
     }
 
     public Output process(String entity) throws JSONpediaException {

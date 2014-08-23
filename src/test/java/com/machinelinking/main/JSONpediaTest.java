@@ -19,6 +19,8 @@ import com.machinelinking.dbpedia.TemplateMapping;
 import com.machinelinking.dbpedia.TemplateMappingManager;
 import com.machinelinking.dbpedia.TemplateMappingManagerException;
 import com.machinelinking.freebase.FreebaseService;
+import com.machinelinking.storage.elasticsearch.ElasticJSONStorage;
+import com.machinelinking.storage.mongodb.MongoJSONStorage;
 import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
@@ -73,6 +75,19 @@ public class JSONpediaTest {
         JSONpedia.instance().startServer("localhost", 9998);
         new URL("http://localhost:9998/annotate/flags").openConnection().connect();
         JSONpedia.instance().stopServer();
+    }
+
+    @Test
+    public void testGetStorage() {
+        final MongoJSONStorage mongoJSONStorage = (MongoJSONStorage) JSONpedia.instance().getStorage(
+                "com.machinelinking.storage.mongodb.MongoJSONStorageFactory|localhost:7654:jsonpedia:en"
+        );
+        Assert.assertNotNull(mongoJSONStorage);
+
+        final ElasticJSONStorage elastictJSONStorage = (ElasticJSONStorage) JSONpedia.instance().getStorage(
+                "com.machinelinking.storage.elasticsearch.ElasticJSONStorageFactory|localhost:7654:jsonpedia:en"
+        );
+        Assert.assertNotNull(elastictJSONStorage);
     }
 
     @Test
