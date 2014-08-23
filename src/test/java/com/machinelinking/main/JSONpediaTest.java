@@ -19,12 +19,18 @@ import com.machinelinking.dbpedia.TemplateMapping;
 import com.machinelinking.dbpedia.TemplateMappingManager;
 import com.machinelinking.dbpedia.TemplateMappingManagerException;
 import com.machinelinking.freebase.FreebaseService;
+import com.machinelinking.storage.JSONStorageLoader;
+import com.machinelinking.storage.MultiJSONStorage;
+import com.machinelinking.storage.MultiJSONStorageLoaderTest;
+import com.machinelinking.storage.StorageLoaderReport;
 import com.machinelinking.storage.elasticsearch.ElasticJSONStorage;
 import com.machinelinking.storage.mongodb.MongoJSONStorage;
+import com.machinelinking.util.FileUtil;
 import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
 import org.junit.Test;
+import org.xml.sax.SAXException;
 
 import java.io.IOException;
 import java.net.URL;
@@ -79,15 +85,47 @@ public class JSONpediaTest {
 
     @Test
     public void testGetStorage() {
-        final MongoJSONStorage mongoJSONStorage = (MongoJSONStorage) JSONpedia.instance().getStorage(
-                "com.machinelinking.storage.mongodb.MongoJSONStorageFactory|localhost:7654:jsonpedia:en"
-        );
+        final MongoJSONStorage mongoJSONStorage = (MongoJSONStorage) JSONpedia.instance()
+                .getStorage(MultiJSONStorageLoaderTest.MONGO_TEST_CONN_URI);
         Assert.assertNotNull(mongoJSONStorage);
 
-        final ElasticJSONStorage elastictJSONStorage = (ElasticJSONStorage) JSONpedia.instance().getStorage(
-                "com.machinelinking.storage.elasticsearch.ElasticJSONStorageFactory|localhost:7654:jsonpedia:en"
-        );
+        final ElasticJSONStorage elastictJSONStorage = (ElasticJSONStorage) JSONpedia.instance()
+                .getStorage(MultiJSONStorageLoaderTest.ELASTIC_TEST_CONN_URI);
         Assert.assertNotNull(elastictJSONStorage);
+
+        final MultiJSONStorage multiJSONStorage = (MultiJSONStorage) JSONpedia.instance().getStorage(
+                MultiJSONStorageLoaderTest.CONFIG_URI
+        );
+        Assert.assertNotNull(multiJSONStorage);
+    }
+
+    @Test
+    public void testGetStorageLoader() throws IOException, SAXException {
+        final String flags = "Extractors";
+        final JSONStorageLoader mongoLoader =
+                JSONpedia.instance().getStorageLoader(MultiJSONStorageLoaderTest.MONGO_TEST_CONN_URI, flags);
+        final StorageLoaderReport report = mongoLoader.load(
+                new URL("http://a.wiki/prefix/1"),
+                FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
+        );
+        Assert.assertNotNull(report);
+
+        final JSONStorageLoader elasticLoader =
+                JSONpedia.instance().getStorageLoader(MultiJSONStorageLoaderTest.ELASTIC_TEST_CONN_URI, flags);
+        final StorageLoaderReport elasticReport = elasticLoader.load(
+                new URL("http://a.wiki/prefix/2"),
+                FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
+        );
+        Assert.assertNotNull(elasticReport);
+
+        final JSONStorageLoader multiLoader = JSONpedia.instance().getStorageLoader(
+                MultiJSONStorageLoaderTest.CONFIG_URI, "Structure"
+        );
+        final StorageLoaderReport multiReport = multiLoader.load(
+                new URL("http://a.wiki/prefix/3"),
+                FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
+        );
+        Assert.assertNotNull(multiReport);
     }
 
     @Test

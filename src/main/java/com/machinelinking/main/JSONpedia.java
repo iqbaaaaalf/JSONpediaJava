@@ -31,8 +31,11 @@ import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.render.DocumentContext;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.service.BasicServer;
+import com.machinelinking.storage.DefaultJSONStorageLoader;
 import com.machinelinking.storage.JSONStorage;
-import com.machinelinking.storage.JSONStorageConfiguration;
+import com.machinelinking.storage.JSONStorageLoader;
+import com.machinelinking.storage.MultiJSONStorage;
+import com.machinelinking.storage.MultiJSONStorageConfiguration;
 import com.machinelinking.storage.MultiJSONStorageFactory;
 import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
@@ -41,6 +44,7 @@ import org.codehaus.jackson.util.TokenBuffer;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -133,8 +137,19 @@ public class JSONpedia {
         if(multiJSONStorageFactory == null) {
             multiJSONStorageFactory = new MultiJSONStorageFactory();
         }
-        final JSONStorageConfiguration configuration =  multiJSONStorageFactory.createSingleConfiguration(configURI);
-        return multiJSONStorageFactory.createSingleStorage(configuration);
+        final MultiJSONStorageConfiguration configuration =  multiJSONStorageFactory.createConfiguration(configURI);
+        final MultiJSONStorage storage = multiJSONStorageFactory.createStorage(configuration);
+        final List<JSONStorage> internalStorages = storage.getInternalStorages();
+        return internalStorages.size() == 1 ? internalStorages.get(0) : storage;
+    }
+
+    public JSONStorageLoader getStorageLoader(String configURI, String flags) {
+        final JSONStorage storage = getStorage(configURI);
+        return new DefaultJSONStorageLoader(
+                WikiPipelineFactory.getInstance(),
+                WikiPipelineFactory.getInstance().toFlags(flags),
+                storage
+        );
     }
 
     public Output process(String entity) throws JSONpediaException {
