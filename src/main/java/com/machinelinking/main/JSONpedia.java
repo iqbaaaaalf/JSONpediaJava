@@ -39,6 +39,9 @@ import com.machinelinking.storage.MultiJSONStorageConfiguration;
 import com.machinelinking.storage.MultiJSONStorageFactory;
 import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
+import com.machinelinking.wikimedia.WikiAPIParser;
+import com.machinelinking.wikimedia.WikiPage;
+import com.machinelinking.wikimedia.WikimediaUtils;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.util.TokenBuffer;
 
@@ -150,6 +153,16 @@ public class JSONpedia {
                 WikiPipelineFactory.getInstance().toFlags(flags),
                 storage
         );
+    }
+
+    public WikiPage getRawPage(String entity) throws JSONpediaException {
+        try {
+            return WikiAPIParser.parseAPIResponse(
+                    WikimediaUtils.entityToWikiTextURLAPI(JSONUtils.toResourceURL(entity))
+            );
+        } catch (Exception e) {
+            throw new JSONpediaException("Error while retrieving raw page.", e);
+        }
     }
 
     public Output process(String entity) throws JSONpediaException {

@@ -27,6 +27,7 @@ import com.machinelinking.storage.elasticsearch.ElasticJSONStorage;
 import com.machinelinking.storage.mongodb.MongoJSONStorage;
 import com.machinelinking.util.FileUtil;
 import com.machinelinking.util.JSONUtils;
+import com.machinelinking.wikimedia.WikiPage;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
 import org.junit.Test;
@@ -126,6 +127,12 @@ public class JSONpediaTest {
                 FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
         );
         Assert.assertNotNull(multiReport);
+    }
+
+    @Test
+    public void testGetRawPage() throws JSONpediaException {
+        final WikiPage page = JSONpedia.instance().getRawPage("en:Milan");
+        Assert.assertNotNull(page);
     }
 
     @Test
