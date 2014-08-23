@@ -25,10 +25,13 @@ import java.net.UnknownHostException;
  */
 public class MongoJSONStorageLoaderTest extends AbstractJSONStorageLoaderTest {
 
+    public static final String TEST_STORAGE_DB = "jsonpedia-test";
+    public static final String TEST_STORAGE_COLLECTION = "en";
+
     @Override
     protected JSONStorage getJSONStorage() throws UnknownHostException {
         return new MongoJSONStorage(
-                new MongoJSONStorageConfiguration("localhost", 7654, "jsonpedia-test", "en"),
+                new MongoJSONStorageConfiguration("localhost", 7654, TEST_STORAGE_DB, TEST_STORAGE_COLLECTION),
                 null
         );
     }
