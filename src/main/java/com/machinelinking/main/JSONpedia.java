@@ -30,6 +30,7 @@ import com.machinelinking.render.DefaultDocumentContext;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.render.DocumentContext;
 import com.machinelinking.serializer.JSONSerializer;
+import com.machinelinking.service.BasicServer;
 import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonNode;
@@ -61,6 +62,8 @@ public class JSONpedia {
 
     private FreebaseService freebaseService;
 
+    private BasicServer basicServer;
+
     private JSONpedia() {}
 
     public OntologyManager getOntologyManager() throws OntologyManagerException {
@@ -84,10 +87,41 @@ public class JSONpedia {
         return freebaseService;
     }
 
-    public String render(String resource, JsonNode data) throws IOException {
+    public String render(String resource, JsonNode data) throws JSONpediaException {
         final URL resourceURL = JSONUtils.toResourceURL(resource);
         final DocumentContext context = new DefaultDocumentContext(RenderScope.FULL_RENDERING, resourceURL);
-        return DefaultHTMLRenderFactory.getInstance().createRender().renderDocument(context, data);
+        try {
+            return DefaultHTMLRenderFactory.getInstance().createRender().renderDocument(context, data);
+        } catch (IOException ioe) {
+            throw new JSONpediaException("Error while rendering node.", ioe);
+        }
+    }
+
+    public void startServer(String host, int port) throws JSONpediaException {
+        if(basicServer == null) {
+            BasicServer bs = new BasicServer(host, port);
+            try {
+                bs.setUp();
+            } catch (IOException ioe) {
+                throw new JSONpediaException("Error while running server.", ioe);
+            }
+            basicServer = bs;
+        } else {
+            throw new IllegalStateException("Server already running.");
+        }
+    }
+
+    public void stopServer() {
+        if(basicServer == null) {
+            throw new IllegalStateException("No server found.");
+        } else {
+            try {
+                basicServer.tearDown();
+            } catch (Exception e) {
+                // Pass.
+            }
+            basicServer = null;
+        }
     }
 
     public Output process(String entity) throws JSONpediaException {

@@ -25,6 +25,7 @@ import org.codehaus.jackson.JsonNode;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.Map;
 
 /**
@@ -57,7 +58,7 @@ public class JSONpediaTest {
     }
 
     @Test
-    public void testRender() throws IOException {
+    public void testRender() throws JSONpediaException, IOException {
         final String html = JSONpedia.instance().render(
                 "en:Test",
                 JSONUtils.parseJSON(
@@ -65,6 +66,13 @@ public class JSONpediaTest {
                 )
         );
         Assert.assertNotNull(html);
+    }
+
+    @Test
+    public void testRunServer() throws JSONpediaException, IOException {
+        JSONpedia.instance().startServer("localhost", 9998);
+        new URL("http://localhost:9998/annotate/flags").openConnection().connect();
+        JSONpedia.instance().stopServer();
     }
 
     @Test
