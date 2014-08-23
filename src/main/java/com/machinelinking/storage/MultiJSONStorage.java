@@ -14,6 +14,7 @@
 package com.machinelinking.storage;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -34,6 +35,10 @@ public class MultiJSONStorage implements JSONStorage<MultiJSONStorageConfigurati
         this.configuration = configuration;
         this.converter = converter;
         this.internalStorages = internalStorages;
+    }
+
+    public List<JSONStorage> getInternalStorages() {
+        return new ArrayList<>(Arrays.asList(internalStorages));
     }
 
     @Override
