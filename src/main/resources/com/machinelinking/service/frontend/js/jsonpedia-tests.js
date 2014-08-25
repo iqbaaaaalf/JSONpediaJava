@@ -14,7 +14,7 @@
 
 asyncTest("annotate", function() {
     expect(1);
-    c = new JSONpedia();
+    var c = new JSONpedia();
     c.annotate('en:Albert_Einstein').extractors()
             .linkers().splitters().structure().validate()
             .json()
@@ -34,8 +34,8 @@ asyncTest("annotate", function() {
 
 asyncTest("mongo select", function() {
     expect(1);
-    c = new JSONpedia();
-    c.mongo().select('_id = #736 -> title', '__type : link', 1)
+    var c = new JSONpedia();
+    c.mongo().select('_id = #736 -> title', '@type : link', 1)
             .done(
                 function (data) {
                     ok(true, 'Loaded data: ' + data);
@@ -52,7 +52,7 @@ asyncTest("mongo select", function() {
 
 asyncTest("mongo mapred", function() {
     expect(1);
-    c = new JSONpedia();
+    var c = new JSONpedia();
     c.mongo().mapred(
             '_id = #736',
             'function() { ocs = this.content.templates.occurrences; for(template in ocs) { emit(template, ocs[template]); } }',
@@ -74,8 +74,8 @@ asyncTest("mongo mapred", function() {
 
 asyncTest("elastic select", function() {
     expect(1);
-    c = new JSONpedia();
-    c.elastic().select('Albert Einstein', '__type : link', 1)
+    var c = new JSONpedia();
+    c.elastic().select('Albert Einstein', '@type : link', 1)
             .done(
                 function (data) {
                     ok(true, 'Loaded data: ' + data);
