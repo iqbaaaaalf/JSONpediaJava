@@ -280,16 +280,14 @@ ItalicBold: 2
 Text: ' example'
 End Document
 ```
-### Create JSONfilter from String
+
+### Define a JSON filter and apply it
+
 ```java
-final JSONFilter filter = DefaultJSONFilterEngine.parseFilter("__type:link>__type:reference");
-System.out.println( filter.humanReadable() );
-```
-
-Will produce:
-
-```bash
-object_filter(__type=link,)>object_filter(__type=reference,)>null
+JSONFilter filter = DefaultJSONFilterEngine.parseFilter("__type:link>__type:reference");
+System.out.println( filter.humanReadable() );  // object_filter(__type=link,)>object_filter(__type=reference,)>null
+JSONFilterEngine engine = new DefaultJSONFilterEngine();
+JsonNode[] result = engine.filter(node, filter);
 ```
 
 ### Applying a Converter
