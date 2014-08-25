@@ -25,6 +25,7 @@ import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonParser;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.ObjectWriter;
+import org.codehaus.jackson.node.ArrayNode;
 import org.codehaus.jackson.node.JsonNodeFactory;
 import org.codehaus.jackson.util.DefaultPrettyPrinter;
 import org.codehaus.jackson.util.TokenBuffer;
@@ -231,6 +232,34 @@ public class JSONUtils {
         } catch (IOException ioe) {
             throw new IllegalStateException("Unexpected serialization error.", ioe);
         }
+    }
+
+    /**
+     * Returns the declared type of a node.
+     *
+     * @param n input node.
+     * @return <code>null</code> if the type is undeclared.
+     */
+    public static String getType(JsonNode n) {
+        final JsonNode nodeType = n.get(Ontology.TYPE_FIELD);
+        return nodeType == null ? null : nodeType.asText();
+    }
+
+    /**
+     * if given an <code>ArrayNode</code> scans it and removes any node declaring to be a
+     * {@link com.machinelinking.pagestruct.Ontology#TYPE_COMMENT_TAG}.
+     *
+     * @param fragments
+     * @return
+     */
+    public static JsonNode stripComments(JsonNode fragments) {
+        if(!fragments.isArray()) return fragments;
+        final ArrayNode result = getJsonNodeFactory().arrayNode();
+        for(JsonNode fragment : fragments) {
+            if( Ontology.TYPE_COMMENT_TAG.equals(getType(fragment))) continue;
+            result.add(fragment);
+        }
+        return result;
     }
 
     /**
