@@ -35,7 +35,7 @@ public class DefaultJSONFilterEngineTest {
     public void testParseFilter1() throws IOException {
         final JSONFilter r = DefaultJSONFilterEngine.parseFilter(STRING_FILTER_EXP);
         Assert.assertEquals(
-                "object_filter(__type=template,name=Death date and age,)>null",
+                "object_filter(@type=template,name=Death date and age,)>null",
                 r.humanReadable()
         );
     }
@@ -44,7 +44,7 @@ public class DefaultJSONFilterEngineTest {
     public void testParseFilter2() throws IOException {
         final JSONFilter r = DefaultJSONFilterEngine.parseFilter(REGEX_FILTER_EXP);
         Assert.assertEquals(
-                "object_filter(__type=link,url=.*[\\s,\\d]?\\.html,)>null",
+                "object_filter(@type=link,url=.*[\\s,\\d]?\\.html,)>null",
                 r.humanReadable()
         );
     }
@@ -54,8 +54,8 @@ public class DefaultJSONFilterEngineTest {
         final JSONFilter r = DefaultJSONFilterEngine.parseFilter(NESTED_FILTER_EXP);
         Assert.assertEquals(
                 "key_filter(notable_students)>" +
-                "object_filter(__type=template,name=Plainlist,)>" +
-                "object_filter(__type=reference,)>null",
+                "object_filter(@type=template,name=Plainlist,)>" +
+                "object_filter(@type=reference,)>null",
                 r.humanReadable()
         );
     }
@@ -68,7 +68,7 @@ public class DefaultJSONFilterEngineTest {
     @Test
     public void testFilterCriteria() throws IOException {
         final JSONObjectFilter filter = new DefaultJSONObjectFilter();
-        filter.addCriteria("__type", "template");
+        filter.addCriteria("@type", "template");
         filter.addCriteria("name"  , "Death date and age");
         checkFilter(filter, 2);
     }
@@ -76,7 +76,7 @@ public class DefaultJSONFilterEngineTest {
     @Test
     public void testFilterCriteriaRegex() throws IOException {
         final JSONObjectFilter filter = new DefaultJSONObjectFilter();
-        filter.addCriteria("__type", "template");
+        filter.addCriteria("@type", "template");
         filter.addCriteria("name"  , "Death .{1,4} and age");
         checkFilter(filter, 2);
     }
@@ -87,11 +87,11 @@ public class DefaultJSONFilterEngineTest {
         notableStudentsFilter.setCriteria("notable_students");
 
         final JSONObjectFilter plainListFilter = new DefaultJSONObjectFilter();
-        plainListFilter.addCriteria("__type", "template");
+        plainListFilter.addCriteria("@type", "template");
         plainListFilter.addCriteria("name", "Plainlist");
 
         final JSONObjectFilter typeFilter = new DefaultJSONObjectFilter();
-        typeFilter.addCriteria("__type", "reference");
+        typeFilter.addCriteria("@type", "reference");
 
         notableStudentsFilter.setNested(plainListFilter);
         plainListFilter.setNested(typeFilter);
