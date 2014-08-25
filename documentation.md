@@ -118,7 +118,148 @@ JsonNode root = JSONpedia.instance()
                     .json();
 ```
 
+### Get the Ontology Manager
+
+Retrieve the underlying OntologyManager, which caches the DBpedia ontology.
+
+```java
+OntologyManager ontologyManager = JSONpedia.instance().getOntologyManager();
+System.out.println( ontologyManager.getProperty("birthDate") );
+```
+
+### Get the Template Mapping Manager
+
+Retrieve the underlying Template Mapping Manager, which caches all the template mappings defined 
+for a given language in DBpedia.
+
+```java
+TemplateMappingManager enTemplateMappingManager = JSONpedia.instance().getTemplateMappingManager("en"); 
+TemplateMapping aMapping = enTemplateMappingManager.getMapping(enTemplateMappingManager.getMappingNames()[0]);
+System.out.println( aMapping.getMappingName() );
+```
+### Get Freebase Service
+
+Retrieve the underlying Freebase API service client, 
+which allows to retrieve entity IDs corresponding to Wikipedia Pages.
+
+```java
+FreebaseService freebaseService = JSONpedia.instance().getFreebaseService();
+JsonNode londonData = freebaseService.getEntityData("London");
+```
+
+### Render Data
+
+Obtain the custom render and use it over arbitrary JSON.
+
+```java
+String html = JSONpedia.instance().render(
+    "en:Test",
+    JSONUtils.parseJSON(
+        "{\"@type\" : \"link\", \"label\" : \"Hello!\",  \"url\" : \"http://path.to/somewhere/\"}"
+    );
+System.out.println(html);
+```
+
+### Run Web App
+
+Run the JSONpedia Web App and REST service.
+
+```java
+JSONpedia.instance().startServer("localhost", 9998);
+System.in.read();
+JSONpedia.instance().stopServer();
+```
+
+### Use the JSONStorage(s)
+
+This section provides code snippets about interacting with the JSONStorage implementations.
+
+#### Get the MongoDB Storage
+
+Retrieve the MongoDB JSONStorage by passing a connection URI.
+
+```java
+MongoJSONStorage mongoJSONStorage = (MongoJSONStorage) JSONpedia.instance()
+                .getStorage("com.machinelinking.storage.mongodb.MongoJSONStorageFactory|localhost:7654:my_db:my_collection");
+```
+
+#### Get the Elasticsearch Storage
+
+Retrieve the Elasticsearch JSONStorage by passing a connection URI.
+
+```java
+ElasticJSONStorage elastictJSONStorage = (ElasticJSONStorage) JSONpedia.instance()
+                .getStorage("com.machinelinking.storage.elasticsearch.ElasticJSONStorageFactory|localhost:9300:my_db:my_collection");
+```
+
+#### Get the Multi Storage
+
+The multi storage is a wrapper which include more JSONStorage(s) together.
+
+```java
+MultiJSONStorage multiJSONStorage = (MultiJSONStorage) JSONpedia.instance().getStorage(
+    "com.machinelinking.storage.mongodb.MongoJSONStorageFactory|localhost:7654:my_db:my_collection;com.machinelinking.storage.elasticsearch.ElasticJSONStorageFactory|localhost:9300:my_db:my_collection"
+);
+```
+
+#### Get the StorageLoader
+
+A storage loader is responsible for parsing a Wikipedia dump, convert it to JSON and store it into a configured JSONStorage.
+
+Load data in MongoDB.
+
+```java
+String flags = "Extractors,Structure"; // Extractors to be applied during the WikiText processing.
+JSONStorageLoader mongoLoader =
+                JSONpedia.instance().getStorageLoader(
+                "com.machinelinking.storage.mongodb.MongoJSONStorageFactory|localhost:7654:my_db:my_collection", 
+                flags
+);
+StorageLoaderReport report = mongoLoader.load( 
+                new URL("http://en.wikipedia.org/page/"),
+                FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
+);
+System.out.println(report);
+```
+
+Load data in a multi loader.
+
+```java
+JSONStorageLoader multiLoader = JSONpedia.instance().getStorageLoader(
+                "com.machinelinking.storage.mongodb.MongoJSONStorageFactory|localhost:7654:my_db:my_collection;com.machinelinking.storage.elasticsearch.ElasticJSONStorageFactory|localhost:9300:my_db:my_collection", 
+                "Extractors,Structure"
+);
+StorageLoaderReport multiReport = multiLoader.load(
+                new URL("http://en.wikipedia.org/page/"),
+                FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
+);
+System.out.println(report);
+```
+#### Get raw page
+
+Obtain the raw WikiText page content and metadata directly from the WikiMedia API.
+
+```java
+WikiPage page = JSONpedia.instance().getRawPage("en:Milan");
+System.out.println(page);
+```
+#### Get raw pages buffer
+
+Obtain the raw WikiText pages from a WikiMedia dump.
+
+```java
+BufferedWikiPageHandler buffer = JSONpedia.instance().getRawPagesBuffer(
+        FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
+);
+WikiPage current;
+while((current = buffer.getPage(true)) != BufferedWikiPageHandler.EOQ) {
+        System.out.println( current.getContent() );
+}
+```
+
 ## Low level API code samples
+
+This section covers 
 
 ### Parse WikiText and handle events
 
@@ -152,6 +293,7 @@ object_filter(__type=link,)>object_filter(__type=reference,)>null
 ```
 
 ### Applying a Converter
+
 ```java
 ConverterManager converterManager = new DefaultConverterManager();
 // Define a Converter which extract the content field of the matching objects and writes out it in upper case.
@@ -190,6 +332,7 @@ System.out.println( writerBuffer.toString()) );
 ```
 
 ### Applying a ScriptableConverter
+
 ```java
 // Defines the Python script to generate the scriptable converter.
 String script =
@@ -223,23 +366,3 @@ writer.close();
 System.out.println( serializerBuffer.toString()) );
 System.out.println( writerBuffer.toString()) );
 ```
-
-### Handle Parsing events
-
-TODO
-
-### Write custom extractor
-
-TODO
-
-### Write custom template handler
-
-TODO
-
-### Query MongoDB
-
-TODO
-
-### Query ElasticSearch
-
-TODO
