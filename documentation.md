@@ -114,7 +114,7 @@ and return the Jackson JsonNode representation.
 JsonNode root = JSONpedia.instance()
                     .process("en:Albert Einstein")
                     .flags("Linkers,Validate,Structure")
-                    .filter("__type:reference")
+                    .filter("@type:reference")
                     .json();
 ```
 
@@ -310,7 +310,7 @@ Converter converter = new Converter() {
 
 // Register the converter to the manager to match objects of type reference. 
 converterManager.addConverter(
-        (JSONObjectFilter) DefaultJSONFilterEngine.parseFilter("__type:reference"),
+        (JSONObjectFilter) DefaultJSONFilterEngine.parseFilter("@type:reference"),
         converter
 );
 
@@ -346,7 +346,7 @@ ScriptableConverter converter = ScriptableConverterFactory.getInstance().createC
 ConverterManager converterManager = new DefaultConverterManager();
 // Sets the converter to apply to objects of type reference.
 converterManager.addConverter(
-        (JSONObjectFilter) DefaultJSONFilterEngine.parseFilter("__type:reference"),
+        (JSONObjectFilter) DefaultJSONFilterEngine.parseFilter("@type:reference"),
         converter
 );
 
