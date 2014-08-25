@@ -1,3 +1,12 @@
+# 2 Minutes Tutorial
+
+```java
+JSONpedia jsonpedia = JSONpedia.instance();
+JsonNode root = jsonpedia.process("en:London").flags("Structure").json();
+JsonNode[] sections = jsonpedia.applyFilter("@type:section", root);
+String html = jsonpedia.render("en:London", sections[0]);
+```
+       
 # JSONpedia README
 
 JSONpedia is a library, a REST service and a CLI tool meant to parse, elaborate and convert WikiText documents to JSON,
@@ -30,7 +39,8 @@ An online version can be found at [jsonpedia.org](http://jsonpedia.org).
 - CLI interface
 
 ## Documentation
-See [documentation](/hardest/jsonpedia/src/19e316066249c126f4e8e067321eaafcea566721/documentation.md) for further references.
+
+See [documentation](/hardest/jsonpedia/src/1ca5e9bd35ec79e3ba4581e1a67fce94a2884c98/documentation.md) for further references.
 
 ## Requirements
 - Gradle 1.12
