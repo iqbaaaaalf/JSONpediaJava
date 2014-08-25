@@ -118,6 +118,13 @@ JsonNode root = JSONpedia.instance()
                     .json();
 ```
 
+Apply filter over already existing data.
+
+```java
+JsonNode data = // Some source.
+JsonNode[] sections = JSONpedia.instance().applyFilter("@type:section", data);
+```
+
 ### Get the Ontology Manager
 
 Retrieve the underlying OntologyManager, which caches the DBpedia ontology.
