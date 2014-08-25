@@ -46,11 +46,13 @@ import com.machinelinking.wikimedia.WikiDumpParser;
 import com.machinelinking.wikimedia.WikiPage;
 import com.machinelinking.wikimedia.WikimediaUtils;
 import org.codehaus.jackson.JsonNode;
+import org.codehaus.jackson.node.ArrayNode;
 import org.codehaus.jackson.util.TokenBuffer;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -111,6 +113,12 @@ public class JSONpedia {
         } catch (IOException ioe) {
             throw new JSONpediaException("Error while rendering node.", ioe);
         }
+    }
+
+    public String render(String resource, JsonNode[] data) throws JSONpediaException {
+        final ArrayNode arrayNode = JSONUtils.getJsonNodeFactory().arrayNode();
+        arrayNode.addAll(Arrays.asList(data));
+        return render(resource, arrayNode);
     }
 
     public void startServer(String host, int port) throws JSONpediaException {
