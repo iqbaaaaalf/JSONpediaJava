@@ -22,6 +22,7 @@ import com.machinelinking.converter.ScriptableConverterFactory;
 import com.machinelinking.converter.ScriptableFactoryException;
 import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.JSONFilter;
+import com.machinelinking.filter.JSONFilterEngine;
 import com.machinelinking.filter.JSONObjectFilter;
 import com.machinelinking.pagestruct.WikiTextHRDumperHandler;
 import com.machinelinking.parser.DocumentSource;
@@ -71,9 +72,13 @@ public class DocExamplesTest {
     }
 
     @Test
-    public void testParseFilterExpressionSnippet() {
-        final JSONFilter filter = DefaultJSONFilterEngine.parseFilter("__type:link>__type:reference");
-        Assert.assertEquals("object_filter(__type=link,)>object_filter(__type=reference,)>null", filter.humanReadable());
+    public void testParseFilterAndApply() throws JSONpediaException {
+        final JSONFilter filter = DefaultJSONFilterEngine.parseFilter("@type:section>@type:reference");
+        Assert.assertEquals("object_filter(@type=section,)>object_filter(@type=reference,)>null", filter.humanReadable());
+        JSONFilterEngine engine = new DefaultJSONFilterEngine();
+        final JsonNode london = JSONpedia.instance().process("en:London").flags("Structure").json();
+        JsonNode[] result = engine.filter(london, filter);
+        Assert.assertTrue(result.length > 10);
     }
 
     @Test

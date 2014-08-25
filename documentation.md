@@ -284,10 +284,11 @@ End Document
 ### Define a JSON filter and apply it
 
 ```java
-JSONFilter filter = DefaultJSONFilterEngine.parseFilter("__type:link>__type:reference");
-System.out.println( filter.humanReadable() );  // object_filter(__type=link,)>object_filter(__type=reference,)>null
+final JSONFilter filter = DefaultJSONFilterEngine.parseFilter("@type:section>@type:reference");
+System.out.println( filter.humanReadable() ); // object_filter(@type=section,)>object_filter(@type=reference,)>null
 JSONFilterEngine engine = new DefaultJSONFilterEngine();
-JsonNode[] result = engine.filter(node, filter);
+JsonNode london = JSONpedia.instance().process("en:London").flags("Structure").json();
+JsonNode[] result = engine.filter(london, filter);
 ```
 
 ### Applying a Converter
