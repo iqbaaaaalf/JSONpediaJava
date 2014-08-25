@@ -52,7 +52,7 @@ An online version can be found at [jsonpedia.org](http://jsonpedia.org).
 
 ## Documentation
 
-See [documentation](/hardest/jsonpedia/src/1ca5e9bd35ec79e3ba4581e1a67fce94a2884c98/documentation.md) for further references.
+See [documentation](/hardest/jsonpedia/src/HEAD/documentation.md) for further references.
 
 ## Requirements
 - Gradle 1.12
