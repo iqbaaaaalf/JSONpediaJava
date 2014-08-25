@@ -1,14 +1,26 @@
-# 2 Minutes Tutorial
-
-```java
-JSONpedia jsonpedia = JSONpedia.instance();
-JsonNode root = jsonpedia.process("en:London").flags("Structure").json();
-JsonNode[] sections = jsonpedia.applyFilter("@type:section", root);
-String html = jsonpedia.render("en:London", sections[0]);
-```
-       
 # JSONpedia README
 
+# Quick Tutorial
+
+The code snippet below shows how to retrieve the JSON structure of the WikiText DOM of the http://en.wikipedia.org/wiki/London page.
+Then a filtering over sections and over references inside sections is performed, the fitered elements are rendered as HTML. 
+
+```java
+import com.machinelinking.main.JSONpedia;
+import org.codehaus.jackson.JsonNode;
+
+JSONpedia jsonpedia = JSONpedia.instance();
+JsonNode root = jsonpedia.process("en:London").flags("Structure").json();
+
+JsonNode[] sections = jsonpedia.applyFilter("@type:section", root);
+String firstSectionHTML = jsonpedia.render("en:London", sections[0]);
+
+JsonNode[] allReferencesInSections = jsonpedia.applyFilter("@type:section>@type:reference", root);
+String allReferencesHTML = jsonpedia.render("en:London", allReferencesInSections);
+```
+
+## What is JSONpedia?
+       
 JSONpedia is a library, a REST service and a CLI tool meant to parse, elaborate and convert WikiText documents to JSON,
 in order to facilitate the consumption of the huge availability of the MediaWiki semi-structured content.
 

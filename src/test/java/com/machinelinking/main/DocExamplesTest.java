@@ -51,6 +51,18 @@ import java.util.Map;
 public class DocExamplesTest {
 
     @Test
+    public void test2MinutesTutorialCodeSnippet() throws JSONpediaException {
+        JSONpedia jsonpedia = JSONpedia.instance();
+        JsonNode root = jsonpedia.process("en:London").flags("Structure").json();
+        JsonNode[] sections = jsonpedia.applyFilter("@type:section", root);
+        String firstSectionHTML = jsonpedia.render("en:London", sections[0]);
+        Assert.assertNotNull(firstSectionHTML);
+        JsonNode[] allReferencesInSections = jsonpedia.applyFilter("@type:section>@type:reference", root);
+        String allReferencesHTML = jsonpedia.render("en:London", allReferencesInSections);
+        Assert.assertNotNull(allReferencesHTML);
+    }
+
+    @Test
     public void testParseSnippet() throws IOException, WikiTextParserException {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler();
         WikiTextParser parser = new WikiTextParser(handler);
