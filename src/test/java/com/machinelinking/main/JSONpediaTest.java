@@ -148,6 +148,13 @@ public class JSONpediaTest {
     }
 
     @Test
+    public void testApplyFilter() throws JSONpediaException {
+        final JsonNode london = JSONpedia.instance().process("en:London").flags("Structure").json();
+        final JsonNode[] sections = JSONpedia.instance().applyFilter("@type:section", london);
+        Assert.assertTrue(sections.length > 10);
+    }
+
+    @Test
     public void testProcessEntityById() throws JSONpediaException {
         final JsonNode root = JSONpedia.instance().process("en:Albert Einstein").json();
         Assert.assertEquals(12, root.size());

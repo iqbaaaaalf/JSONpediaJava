@@ -22,6 +22,7 @@ import com.machinelinking.dbpedia.TemplateMappingManagerException;
 import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.DefaultJSONFilterFactory;
 import com.machinelinking.filter.JSONFilter;
+import com.machinelinking.filter.JSONFilterEngine;
 import com.machinelinking.freebase.FreebaseService;
 import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.pipeline.WikiPipeline;
@@ -180,6 +181,12 @@ public class JSONpedia {
             throw new JSONpediaException("Error while parsing pages stream.", e);
         }
         return bufferedHandler;
+    }
+
+    public JsonNode[] applyFilter(String filter, JsonNode node) {
+        final JSONFilter filterObj = DefaultJSONFilterEngine.parseFilter(filter);
+        final JSONFilterEngine engine = new DefaultJSONFilterEngine();
+        return engine.filter(node, filterObj);
     }
 
     public Output process(String entity) throws JSONpediaException {
