@@ -17,6 +17,8 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 
 /**
  * Base service exception definition.
@@ -49,6 +51,13 @@ public abstract class BaseServiceException extends WebApplicationException {
         @XmlElement
         public String getMessage() {
             return e.getMessage();
+        }
+
+        @XmlElement
+        public String getStrackTrace() {
+            final StringWriter stack = new StringWriter();
+            e.printStackTrace(new PrintWriter(stack));
+            return stack.toString();
         }
     }
 
