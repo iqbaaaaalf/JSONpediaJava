@@ -1,13 +1,47 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# JSONpedia - Convert any MediaWiki document to JSON.
+#
+# Written in 2014 by Michele Mostarda <mostarda@fbk.eu>.
+#
+# To the extent possible under law, the author has dedicated all copyright and related and
+# neighboring rights to this software to the public domain worldwide.
+# This software is distributed without any warranty.
+#
+# You should have received a copy of the CC BY Creative Commons Attribution 4.0 Internationa Public License.
+# If not, see <https://creativecommons.org/licenses/by/4.0/legalcode>.
+
+
+# == loader.py <config-file> <num-dumps> ==
+#
+# Example usage:
+#   Run the Storage Loader with default configuration over the first four article dumps of Wikipedia
+#     (
+#       http://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles1.xml-p000000010p000010000.bz2
+#       http://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles2.xml-p000010002p000024999.bz2
+#       http://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles3.xml-p000025001p000055000.bz2
+#       http://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles4.xml-p000055002p000104998.bz2
+#     )
+#
+#   $ loader.py conf/default.properties 4
+#
+# This script automates the process of downloading the latest Wikipedia article dumps and run over them the
+# specified LOADER passing to it the configuration specified as first argument.
+# Specifically the script does:
+# 1 - retrieve the list of download URLs for the latest Wikipedia dumps specified in LATEST_DUMPS page.
+# For every dump URL:
+#   2 - download dump i-th into the WORK_DIR
+#   3 - run LOADER with specified configuration over the downloaded dump producing a separate log
+#   4 - delete the dump
+#
+
 LATEST_DUMPS = 'http://dumps.wikimedia.org/enwiki/latest/'
 
 WORK_DIR = 'work'
 
 GRADLE_BIN = 'gradle'
 LOADER = 'com.machinelinking.storage.DefaultJSONStorageLoader'
-LOADER_CONFIG = 'default.properties'
 
 
 import urllib
@@ -97,7 +131,7 @@ if __name__ == '__main__':
     """
     import sys
     if len(sys.argv) != 3:
-        print 'Usage: $0 <config-file> <no-dumps>'
+        print 'Usage: $0 <config-file> <num-dumps>'
         sys.exit(1)
     process_articles_dumps(sys.argv[1], int(sys.argv[2]))
     sys.exit(0)
