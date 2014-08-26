@@ -95,13 +95,14 @@ You can now connect to ```http://127.0.0.1:8080/frontend/index.html``` in your b
 
 ## The StorageLoader tool
 
-The StorageLoader tool loads the data extracted from a specific wikimedia dump into the configured storages.
-In can be run massively using the 
+The _loader.py_ tool helps to process the latest online Wikipedia dumps and index them into the configured storages.
+Details about the usage of this script can be found in its header. 
 
 ```bash
 $ bin/loader.py
 ```
-wrapper script or by specifying a dump:
+
+To process a dump manually instead:
 
 ```bash
 $ java -cp build/libs/jsonpedia-{VERSION}-full.jar \
@@ -115,24 +116,6 @@ Closing process...
 Done.
 processor: Processed pages: 25, elapsed time: 0 (ms), exceptions: []
 templates: 1117, properties 4907, max properties/template: 52, avg properties/template: 4,393017
-```
-
-## The CSV exporter tool
-
-```bash
-$ java -cp build/libs/jsonpedia-{VERSION}-full.jar com.machinelinking.exporter.CSVExporterCLI
-```
-
-Running without arguments will produce this usage message:
-
-```bash
-   Usage: <main class> [options]
-     Options:
-     * --in, -i        Input file
-     * --out, -o       Output file
-     * --prefix, -p    Page prefix
-       --threads, -t   Number of threads
-                       Default: 0
 ```
 
 # License
