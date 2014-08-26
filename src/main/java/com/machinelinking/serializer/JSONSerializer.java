@@ -230,7 +230,8 @@ public class JSONSerializer implements Serializer {
     public void value(Object value) {
         try {
             if ( check(WriterStatus.Object) ) {
-                jsonGenerator.writeObjectField(getNextAnonField(), value);
+                jsonGenerator.writeFieldName(getNextAnonField());
+                internalWriteValue(value);
             } else if( checkAndPop(WriterStatus.PreList) ) {
                 stackPush(WriterStatus.List);
                 jsonGenerator.writeStartArray();
