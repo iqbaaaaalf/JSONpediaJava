@@ -32,7 +32,8 @@ public class URLKeyValueRender implements KeyValueRender {
     @Override
     public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
     throws IOException {
-        final String valueStr = JSONUtils.asPrimitiveString(value);
+        final JsonNode strippedCommentsValue = JSONUtils.stripComments(value);
+        final String valueStr = JSONUtils.asPrimitiveString(strippedCommentsValue);
         writer.openTag("div", URLKEY_DIV_ATTR);
         writer.key(key);
         writer.anchor(valueStr, valueStr, false);
