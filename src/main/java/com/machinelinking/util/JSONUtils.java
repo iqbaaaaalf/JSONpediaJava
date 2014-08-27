@@ -283,9 +283,7 @@ public class JSONUtils {
                 throw new IllegalArgumentException("Invalid array size");
             }
         }
-        // xxx TODO: INVESTIGATE
         throw new IllegalArgumentException("Unsupported primitive type.");
-        //return node.toString();
     }
 
     /**
