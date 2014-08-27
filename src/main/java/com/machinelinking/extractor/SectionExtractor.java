@@ -16,9 +16,11 @@ package com.machinelinking.extractor;
 import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.serializer.Serializer;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Deque;
 import java.util.List;
-import java.util.Stack;
 
 /**
  * Specific {@link Extractor} for <i>Wikipedia section</i>s.
@@ -28,7 +30,7 @@ import java.util.Stack;
 public class SectionExtractor extends Extractor {
 
     private List<Section> sections;
-    private Stack<Integer> s;
+    private Deque<Integer> stack;
 
     public SectionExtractor() {
         super(Ontology.SECTIONS_FIELD);
@@ -36,8 +38,8 @@ public class SectionExtractor extends Extractor {
 
     @Override
     public void section(String title, int level) {
-        if(sections == null) sections = new ArrayList<Section>();
-        if(s == null) s = new Stack<Integer>();
+        if(sections == null) sections = new ArrayList<>();
+        if(stack == null) stack = new ArrayDeque<>();
 
         // use a stack to keep the parents
         // if we have the following structure
@@ -46,12 +48,12 @@ public class SectionExtractor extends Extractor {
         // -- -- S3
         // S4
         // the stack will need to pop twice to jump from S3 to S4
-        while(s.size() > level){
-            s.pop();
+        while(stack.size() > level){
+            stack.pop();
         }
 
-        sections.add(new Section(title, s, level));
-        s.push(sections.size() -1); // for the next section, I'm the parent
+        sections.add(new Section(title, toIntArray(stack), level));
+        stack.push(sections.size() -1); // for the next section, I'm the parent
     }
 
     @Override
@@ -71,6 +73,17 @@ public class SectionExtractor extends Extractor {
     @Override
     public void reset() {
         if(sections != null) sections.clear();
-        if(s != null) s.clear();
+        if(stack != null) stack.clear();
     }
+
+    private int[] toIntArray(Deque<Integer> in) {
+        int[] out = new int[in.size()];
+        int index = 0;
+        for(int i : in) {
+            out[index++] = i;
+        }
+        Arrays.sort(out);
+        return out;
+    }
+
 }

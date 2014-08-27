@@ -17,9 +17,6 @@ import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Defines a <i>Wikipedia section</i>.
  *
@@ -27,14 +24,14 @@ import java.util.List;
  */
 public class Section implements Serializable {
 
-    private String title;
-    private int level;
-    private List<Integer> ancestors;
+    private final String title;
+    private final int level;
+    private final int[] ancestors;
 
-    public Section(String title, List<Integer> ancestors, int level) {
+    public Section(String title, int[] ancestors, int level) {
         this.title = title;
         this.level = level;
-        this.ancestors = new ArrayList<>(ancestors);
+        this.ancestors = ancestors;
     }
 
     public String getTitle() {
