@@ -65,20 +65,19 @@ public class DefaultElasticFacetConfiguration implements ElasticFacetManagerConf
         loadProperties(facetConfig);
     }
 
-    public void addProperty(String indexType, String field, PropertyType type, Analyzer analyzer) {
-        properties.add( new Property(indexType, field, type, analyzer) );
+    public void addProperty(String indexName, String field, PropertyType type, Analyzer analyzer) {
+        properties.add( new Property(indexName, field, type, analyzer) );
     }
 
-    public boolean removeProperty(String indexType, String field) {
-        Property target = null;
+    public boolean removeProperty(String indexName, String field) {
+        List<Property> targets = new ArrayList<>();
         for(Property property : properties) {
-            if(property.indexType.equals(indexType) && property.field.equals(field)) {
-                target = property;
-                break;
+            if(property.indexName.equals(indexName)) {
+                targets.add(property);
             }
         }
-        if(target != null)
-            return properties.remove(target);
+        if(!properties.isEmpty())
+            return properties.removeAll(targets);
         return false;
     }
 
@@ -102,18 +101,31 @@ public class DefaultElasticFacetConfiguration implements ElasticFacetManagerConf
         return limit;
     }
 
+    private void loadPropertyValue(String name, String value) {
+        String[] mapping = value.split(":");
+        final boolean missingAnalyzer = mapping.length == 2;
+        if (!missingAnalyzer && mapping.length != 3)
+            throw new IllegalArgumentException(String.format("Invalid mapping definition for line [%s]", value));
+        addProperty(
+                name,
+                mapping[0],
+                PropertyType.valueOf(mapping[1]),
+                missingAnalyzer ? Analyzer.not_analyzed : Analyzer.valueOf(mapping[2])
+        );
+    }
+
     private void loadProperties(Properties props) {
-        String key, value, type;
+        String key, value, name;
+        String[] declarations;
         for(Map.Entry<Object,Object> prop : props.entrySet()) {
             key = prop.getKey().toString();
             value = prop.getValue().toString();
             if(key.startsWith(MAPPING_PROPERTY_PREFIX)) {
-                int splitPoint = key.indexOf('.', MAPPING_PROPERTY_PREFIX.length()) + 1;
-                type = key.substring(splitPoint);
-                String[] mapping = value.split(":");
-                if(mapping.length != 3)
-                    throw new IllegalArgumentException(String.format("Invalid mapping definition for line [%s]", value));
-                addProperty(type, mapping[0], PropertyType.valueOf(mapping[1]), Analyzer.valueOf(mapping[2]));
+                name = key.substring(MAPPING_PROPERTY_PREFIX.length());
+                declarations = value.split("\\|");
+                for(String declaration : declarations) {
+                    loadPropertyValue(name, declaration);
+                }
             }
         }
     }
