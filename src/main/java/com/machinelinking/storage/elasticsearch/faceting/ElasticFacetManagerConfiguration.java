@@ -34,6 +34,12 @@ public interface ElasticFacetManagerConfiguration {
              public String toValue() {
                  return "string";
              }
+         },
+        _long {
+             @Override
+             public String toValue() {
+                 return "long";
+             }
          }
     }
 
@@ -44,10 +50,16 @@ public interface ElasticFacetManagerConfiguration {
                 throw new IllegalStateException();
             }
         },
-        keyword_analyzer {
+        custom_lowercase {
             @Override
             public String toValue() {
-                return "keyword_analyzer";
+                return "custom_lowercase";
+            }
+        },
+        custom_kstem {
+            @Override
+            public String toValue() {
+                return "custom_kstem";
             }
         }
     }
@@ -61,20 +73,25 @@ public interface ElasticFacetManagerConfiguration {
     Property[] getProperties();
 
     class Property {
-        public final String indexType;
+        public final String indexName;
         public final String field;
         public final PropertyType type;
         public final Analyzer analyzer;
 
-        public Property(String index_type, String field, PropertyType type, Analyzer analyzer) {
-            Objects.requireNonNull(index_type);
+        public Property(String indexName, String field, PropertyType type, Analyzer analyzer) {
+            Objects.requireNonNull(indexName);
             Objects.requireNonNull(field);
             Objects.requireNonNull(type);
             Objects.requireNonNull(analyzer);
-            this.indexType = index_type;
+            this.indexName = indexName;
             this.field = field;
             this.type = type;
             this.analyzer = analyzer;
+        }
+
+        @Override
+        public String toString() {
+            return String.format("%s: [%s] %s %s", indexName, field, type, analyzer);
         }
     }
 
