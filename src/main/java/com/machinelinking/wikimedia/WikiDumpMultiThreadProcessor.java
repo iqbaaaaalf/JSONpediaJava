@@ -147,18 +147,18 @@ public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
         return report;
     }
 
-    protected int getBestNumberOfThreads() {
-        final int candidate = Runtime.getRuntime().availableProcessors();
-        return candidate < MIN_NUM_OF_THREADS ? MIN_NUM_OF_THREADS : candidate;
-    }
-
-    protected ProcessorReport createReport() {
+    public ProcessorReport createReport() {
         final long elapsedTime = System.currentTimeMillis() - startTime;
         return new ProcessorReport(
                 totalProcessedPages,
                 totalErrorPages,
                 elapsedTime
         );
+    }
+
+    protected int getBestNumberOfThreads() {
+        final int candidate = Runtime.getRuntime().availableProcessors();
+        return candidate < MIN_NUM_OF_THREADS ? MIN_NUM_OF_THREADS : candidate;
     }
 
     class RunnableProcessor {
