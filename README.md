@@ -118,7 +118,7 @@ To process a single dump manually:
 
 ```bash
 $ java -cp build/libs/jsonpedia-{VERSION}-full.jar \
-  com.machinelinking.storage.DefaultJSONStorageLoader \
+  com.machinelinking.cli.loader \
   -p http://en.wikipedia.org/wiki -i src/test/resources/enwiki-latest-pages-articles-p3.xml.gz -o out.csv
 ```
 

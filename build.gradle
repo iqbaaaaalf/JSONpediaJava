@@ -25,7 +25,7 @@ group = 'com.machinelinking'
 version = '1.2-SNAPSHOT'
 
 serverClassName = 'com.machinelinking.service.BasicServer'
-storageLoaderClassName = 'com.machinelinking.storage.DefaultJSONStorageLoader'
+storageLoaderClassName = 'com.machinelinking.cli.loader'
 storageLoaderJVMArgs = ["-Xmx4g", "-Xms4g", "-Dlog4j.configuration=file:conf/log4j.properties"]
 
 tasks.withType(Compile){

@@ -27,13 +27,13 @@
 #   $ loader.py conf/default.properties 4
 #
 # This script automates the process of downloading the latest Wikipedia article dumps and run over them the
-# specified LOADER passing to it the configuration specified as first argument.
+# loader CLI configured in build.gradle (see runLoader), passing to it the configuration received as first argument.
 # Specifically the script does:
 # 1 - retrieve the list of download URLs for the latest Wikipedia dumps specified in LATEST_DUMPS page.
 # For every dump URL:
-#   2 - download dump i-th into the WORK_DIR
-#   3 - run LOADER with specified configuration over the downloaded dump producing a separate log
-#   4 - delete the dump
+#   2 - download dump i-th into the WORK_DIR;
+#   3 - run the Loader with specified configuration over the downloaded dump producing a separate log;
+#   4 - delete the dump.
 #
 
 LATEST_DUMPS = 'http://dumps.wikimedia.org/enwiki/latest/'
@@ -41,7 +41,7 @@ LATEST_DUMPS = 'http://dumps.wikimedia.org/enwiki/latest/'
 WORK_DIR = 'work'
 
 GRADLE_BIN = 'gradle'
-LOADER = 'com.machinelinking.storage.DefaultJSONStorageLoader'
+LOADER_GRADLE_CALL = 'runLoader'
 
 
 import urllib
@@ -92,8 +92,8 @@ def download_file(url, dir, file):
 
 
 def ingest_file(config, file):
-    cmd = "%s runLoader -Pconfig=%s -Pdump=%s 2>&1 > %s.log" \
-          % (GRADLE_BIN, config, file, file)
+    cmd = "%s %s -Pconfig=%s -Pdump=%s 2>&1 > %s.log" \
+          % (GRADLE_BIN, LOADER_GRADLE_CALL, config, file, file)
     print 'Executing command:', cmd
     subprocess.check_call(cmd, shell=True)
 
