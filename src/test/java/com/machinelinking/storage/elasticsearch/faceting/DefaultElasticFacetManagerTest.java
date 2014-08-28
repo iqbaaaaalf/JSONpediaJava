@@ -18,10 +18,12 @@ import com.machinelinking.storage.elasticsearch.ElasticJSONStorage;
 import com.machinelinking.storage.elasticsearch.ElasticJSONStorageLoaderTest;
 import com.machinelinking.storage.elasticsearch.ElasticJSONStorageTestBase;
 import com.machinelinking.storage.elasticsearch.ElasticSelector;
+import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
 import org.junit.Test;
 
 import java.io.File;
+import java.util.Map;
 
 /**
  * Test case for {@link com.machinelinking.storage.elasticsearch.faceting.ElasticFacetManager}.
@@ -37,6 +39,48 @@ public class DefaultElasticFacetManagerTest extends ElasticJSONStorageTestBase {
     public static final String FACET_TEST_COLLECTION = "en_section";
 
     @Test
+    public void testSetMappings() {
+        final ElasticFacetManagerConfiguration.Property[] p1 = new ElasticFacetManagerConfiguration.Property[] {
+                new ElasticFacetManagerConfiguration.Property(
+                        "i1",
+                        "f1",
+                        ElasticFacetManagerConfiguration.PropertyType.string,
+                        ElasticFacetManagerConfiguration.Analyzer.not_analyzed
+                )
+        };
+        final Map<String,?> c1 = DefaultElasticFacetManager.setMappings(p1);
+        Assert.assertEquals(
+                "{\"f1_index\":{\"properties\":{\"f1\":{\"index\":\"not_analyzed\",\"type\":\"string\"}}}}",
+                toJSONConfig(c1)
+        );
+
+        final ElasticFacetManagerConfiguration.Property[] p2 = new ElasticFacetManagerConfiguration.Property[] {
+                new ElasticFacetManagerConfiguration.Property(
+                        "i1",
+                        "f1",
+                        ElasticFacetManagerConfiguration.PropertyType.string,
+                        ElasticFacetManagerConfiguration.Analyzer.custom_lowercase
+                ),
+                new ElasticFacetManagerConfiguration.Property(
+                        "i1",
+                        "f1",
+                        ElasticFacetManagerConfiguration.PropertyType.string,
+                        ElasticFacetManagerConfiguration.Analyzer.custom_kstem
+                )
+        };
+        final Map<String,?> c2 = DefaultElasticFacetManager.setMappings(p2);
+        Assert.assertEquals(
+                "{\"f1_index\":" +
+                "{\"properties\":" +
+                "{\"f1\":" +
+                "{\"custom_kstem\":{\"analyzer\":\"custom_kstem\",\"type\":\"string\"}," +
+                "\"custom_lowercase\":{\"analyzer\":\"custom_lowercase\",\"type\":\"string\"}}," +
+                "\"type\":\"multi_type\"}}}",
+                toJSONConfig(c2)
+        );
+    }
+
+    @Test
     public void testIndexCreation() throws JSONStorageConnectionException {
         //TODO: missing explicit preconditions (population of TEST_STORAGE_DB)
         final ElasticJSONStorage fromStorage = super.createStorage(FROM_STORAGE_DB, FROM_STORAGE_COLLECTION);
@@ -48,12 +92,17 @@ public class DefaultElasticFacetManagerTest extends ElasticJSONStorageTestBase {
                 fromStorage,
                 facetStorage
         );
-
         final ElasticFacetManager manager = new DefaultElasticFacetManager(configuration);
         final ElasticSelector selector = new ElasticSelector();
+
         final FacetLoadingReport report = manager.loadFacets(selector, new EnrichedEntityFacetConverter());
+
         Assert.assertEquals(58, report.getProcessedDocs());
         Assert.assertEquals(1051, report.getGeneratedFacetDocs());
+    }
+
+    private String toJSONConfig(Map<String,?> config) {
+        return JSONUtils.toJsonNode((Map<String,?>) config.get("mappings")).toString();
     }
 
 }

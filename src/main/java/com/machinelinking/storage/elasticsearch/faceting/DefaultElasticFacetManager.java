@@ -44,6 +44,68 @@ public class DefaultElasticFacetManager implements ElasticFacetManager {
 
     private final ElasticFacetManagerConfiguration configuration;
 
+    public static Map<String,Object> toPropertyDefinition(final Property p) {
+        return new HashMap<String,Object>(){{
+            if(p.analyzer == Analyzer.not_analyzed) {
+                put("index", "not_analyzed");
+            } else {
+                put("analyzer", p.analyzer.toValue());
+            }
+            put("type", p.type.toValue());
+        }};
+    }
+
+    public static void setMappings(Property[] properties, Map<String,?> source) {
+        final Map<String,List<Property>> fieldToProps = aggregateByField(properties);
+        final Map<String,Object> mappings = (Map<String,Object>) source.get("mappings");
+        for(Map.Entry<String,List<Property>> fieldToPropsEntry : fieldToProps.entrySet()) {
+            final Map<String,Object> typeProperties = new HashMap<>();
+            final String field = fieldToPropsEntry.getKey();
+            final String indexName = String.format("%s_index", field);
+            mappings.put(indexName, typeProperties);
+            Map typeMapping = new HashMap();
+            typeProperties.put("properties", typeMapping);
+            final List<Property> currentProperties = fieldToPropsEntry.getValue();
+            if(currentProperties.size() == 1) { // Single property per index.
+                final Property property = currentProperties.get(0);
+                typeMapping.put(property.field, toPropertyDefinition(property));
+            } else { // Multi property
+                final Map<String,Object> multiField = new HashMap<>();
+                for(Property property : currentProperties) {
+                    multiField.put(property.analyzer.toValue(), toPropertyDefinition(property));
+                }
+                typeMapping.put(field, multiField);
+                typeMapping.put("type", "multi_type");
+            }
+        }
+    }
+
+    public static Map<String,Object> setMappings(Property[] properties) {
+        final Map<String, Object> sourceTemplate;
+        try {
+            sourceTemplate = (Map<String, Object>) JSONUtils.parseJSONAsMap(
+                    DefaultElasticFacetManager.class.getResourceAsStream(SOURCE_CONFIG_FILE)
+            );
+        } catch (IOException ioe) {
+            throw new IllegalStateException(ioe);
+        }
+        setMappings(properties, sourceTemplate);
+        return sourceTemplate;
+    }
+
+    private static Map<String,List<Property>> aggregateByField(Property[] properties) {
+        final Map<String,List<Property>> result = new HashMap<>();
+        for(Property property : properties) {
+            List<Property> l = result.get(property.field);
+            if(l == null) {
+                l = new ArrayList<>();
+                result.put(property.field, l);
+            }
+            l.add(property);
+        }
+        return result;
+    }
+
     public DefaultElasticFacetManager(ElasticFacetManagerConfiguration configuration) {
         this.configuration = configuration;
         initStorage(configuration);
@@ -88,18 +150,8 @@ public class DefaultElasticFacetManager implements ElasticFacetManager {
         final ElasticJSONStorageConnection connection = storage.openConnection();
         final Client client = connection.getClient();
 
-        final Map<String, Object> sourceTemplate;
-        try {
-            sourceTemplate = (Map<String, Object>) JSONUtils.parseJSONAsMap(
-                    this.getClass().getResourceAsStream(SOURCE_CONFIG_FILE)
-            );
-        } catch (IOException ioe) {
-            throw new IllegalStateException(ioe);
-        }
-        setMappings(
-                configuration.getProperties(),
-                sourceTemplate
-        );
+
+        final Map<String,Object> sourceTemplate = setMappings(configuration.getProperties());
 
         final CreateIndexResponse response =
                 client.admin().indices().prepareCreate(storage.getConfiguration().getDB())
@@ -108,41 +160,4 @@ public class DefaultElasticFacetManager implements ElasticFacetManager {
         if(!response.isAcknowledged()) throw new IllegalStateException();
     }
 
-    private Map<String,List<Property>> divideByType(Property[] properties) {
-        final Map<String,List<Property>> result = new HashMap<>();
-        for(Property property : properties) {
-            List<Property> l = result.get(property.indexType);
-            if(l == null) {
-                l = new ArrayList<>();
-                result.put(property.indexType, l);
-            }
-            l.add(property);
-        }
-        return result;
-    }
-
-    private Map<String,Object> toPropertyDefinition(final Property p) {
-        return new HashMap<String,Object>(){{
-            if(p.analyzer == Analyzer.not_analyzed) {
-                put("index", "not_analyzed");
-            } else {
-                put("analyzer", p.analyzer.toValue());
-            }
-            put("type", p.type.toValue());
-        }};
-    }
-
-    private void setMappings(Property[] properties, Map<String,?> source) {
-        final Map<String,List<Property>> typeToProps = divideByType(properties);
-        final Map<String,Object> mappings = (Map<String,Object>) source.get("mappings");
-        for(Map.Entry<String,List<Property>> typeToPropsEntry : typeToProps.entrySet()) {
-            final Map<String,Object> typeProperties = new HashMap<>();
-            mappings.put(typeToPropsEntry.getKey(), typeProperties);
-            Map typeMapping = new HashMap();
-            typeProperties.put("properties", typeMapping);
-            for (Property property : properties) {
-                typeMapping.put(property.field, toPropertyDefinition(property));
-            }
-        }
-    }
 }

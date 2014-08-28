@@ -3,9 +3,19 @@
         "index": {
             "analysis": {
                 "analyzer": {
-                    "keyword_analyzer": {
+                    "custom_lowercase": {
+                        "type": "custom",
                         "tokenizer": "keyword",
-                        "filter": "lowercase"
+                        "filter": [
+                            "lowercase"
+                        ]
+                    },
+                    "custom_kstem": {
+                        "type": "custom",
+                        "tokenizer": "standard",
+                        "filter": [
+                            "lowercase", "stop", "kstem"
+                        ]
                     }
                 }
             }
@@ -13,26 +23,34 @@
     },
     "mappings": {
         /*
-        TYPE: {
+
+        single field:
+
+        INDEX_NAME: {
             "properties": {
                 FIELD: {
-                    "analyzer": "keyword_analyzer",
+                    "analyzer": ANALYZER_ID,
                     "type": "string"
                 },
             }
         }
+
+        {"i1":{"properties":{"f1":{"index":"not_analyzed","type":"string"}}}}
+
+        or for multi field:
+
+        INDEX_NAME: {
+            "properties" : {
+                FIELD : {
+                    "type" : "multi_field",
+                    "fields" : {
+                        ANALYZER_1 : {"type" : TYPE, "analyzer" : "ANALYZER_1"},
+                        ANALYZER_2 : {"type" : TYPE, "analyzer" : "ANALYZER_2"}
+                    }
+                }
+            }
+        }
+
         */
     }
 }
-
-{en_section=\
-  {en_section=\
-  {content.section={analyzer=keyword_analyzer, type=string},
-   content.templates={analyzer=keyword_analyzer, type=string},
-   content.page={analyzer=keyword_analyzer, type=string},
-   content.content={analyzer=keyword_analyzer, type=string},
-   name={analyzer=keyword_analyzer, type=string},
-   content.links={analyzer=keyword_analyzer, type=string},
-   content.references={analyzer=keyword_analyzer, type=string},
-   content.categories={analyzer=keyword_analyzer, type=string},
-   version={analyzer=keyword_analyzer, type=string}}}}
