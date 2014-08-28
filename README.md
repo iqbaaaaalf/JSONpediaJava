@@ -93,16 +93,28 @@ $ java -cp build/libs/jsonpedia-{VERSION}-full.jar com.machinelinking.cli.server
 
 You can now connect to ```http://127.0.0.1:8080/frontend/index.html``` in your browser and use the web interface!
 
-## The StorageLoader tool
+## Run the Storage Loader
 
 The _loader.py_ tool helps to process the latest online Wikipedia dumps and index them into the configured storages.
-Details about the usage of this script can be found in its header. 
+Details about the usage of this script can be found in its header.
+
+To perform massing loading of first 10 Wikipedia dumps using the default configuration run: 
 
 ```bash
-$ bin/loader.py
+$ bin/loader.py conf/default.properties 10
 ```
 
-To process a dump manually instead:
+```bash
+Retrieved latest articles links: [ ... 'enwiki-latest-pages-articles27.xml-p029625017p043536594.bz2']
+Processing article 0 - link: enwiki-latest-pages-articles1.xml-p000000010p000010000.bz2 file: work/enwiki-latest-pages-articles1.xml-p000000010p000010000.bz2
+Start download ...
+Download complete in 12 sec.
+Start ingestion ...
+Ingestion completed in 63 sec.
+[...]
+```
+
+To process a single dump manually:
 
 ```bash
 $ java -cp build/libs/jsonpedia-{VERSION}-full.jar \
@@ -116,6 +128,19 @@ Closing process...
 Done.
 processor: Processed pages: 25, elapsed time: 0 (ms), exceptions: []
 templates: 1117, properties 4907, max properties/template: 52, avg properties/template: 4,393017
+```
+
+## Run the CSV Exporter
+
+The CSV Exporter CLI tool allows to convert Wikipedia dumps to tabular data generated from page parsing.
+
+To convert the gzipped dump in test resources using the page prefix of en Wikipedia with a mono thread processor run:
+
+```bash
+$ java -cp build/libs/jsonpedia-{VERSION}-full.jar com.machinelinking.cli.exporter \
+    --prefix http://en.wikipedia.org \
+    --in src/test/resources/dumps/enwiki-latest-pages-articles-p1.xml.gz \
+    --out out.csv --threads 1
 ```
 
 # License

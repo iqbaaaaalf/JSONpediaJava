@@ -11,22 +11,24 @@
  * If not, see <https://creativecommons.org/licenses/by/4.0/legalcode>.
  */
 
-package com.machinelinking.exporter;
+package com.machinelinking.cli;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
-import com.machinelinking.cli.CLIUtils;
+import com.machinelinking.exporter.CSVExporterReport;
+import com.machinelinking.exporter.DefaultCSVExporter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URL;
 
 /**
- * Commandline utility for {@link CSVExporter}.
+ * Commandline utility for {@link com.machinelinking.exporter.CSVExporter}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class CSVExporterCLI {
+public class exporter {
 
     @Parameter(
             names = {"--prefix", "-p"},
@@ -61,7 +63,7 @@ public class CSVExporterCLI {
     private int numOfThreads = 0; // Num of threads based on CPU cores.
 
     public static void main(String[] args) {
-        CSVExporterCLI cli = new CSVExporterCLI();
+        exporter cli = new exporter();
         System.exit( cli.run(args) );
     }
 
