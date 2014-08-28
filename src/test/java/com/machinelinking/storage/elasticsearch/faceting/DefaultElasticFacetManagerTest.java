@@ -83,8 +83,8 @@ public class DefaultElasticFacetManagerTest extends ElasticJSONStorageTestBase {
     @Test
     public void testIndexCreation() throws JSONStorageConnectionException {
         //TODO: missing explicit preconditions (population of TEST_STORAGE_DB)
-        final ElasticJSONStorage fromStorage = super.createStorage(FROM_STORAGE_DB, FROM_STORAGE_COLLECTION);
-        final ElasticJSONStorage facetStorage = super.createStorage(FACET_TEST_DB, FACET_TEST_COLLECTION);
+        final ElasticJSONStorage fromStorage = super.createStorage(TEST_PORT, FROM_STORAGE_DB, FROM_STORAGE_COLLECTION);
+        final ElasticJSONStorage facetStorage = super.createStorage(TEST_PORT, FACET_TEST_DB, FACET_TEST_COLLECTION);
         facetStorage.deleteCollection();
         final DefaultElasticFacetConfiguration configuration = new DefaultElasticFacetConfiguration(
                 new File("conf/faceting.properties"),
