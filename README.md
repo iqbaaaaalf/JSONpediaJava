@@ -88,7 +88,7 @@ Please note that building a capsule will not run any tests.
 ```bash
 $ echo "server.host = 127.0.0.1" > /tmp/conf.properties
 $ echo "server.port = 8080" > /tmp/conf.properties
-$ java -jar build/libs/jsonpedia-{VERSION}-full.jar -c /tmp/conf.properties
+$ java -cp build/libs/jsonpedia-{VERSION}-full.jar com.machinelinking.cli.server -c /tmp/conf.properties
 ```
 
 You can now connect to ```http://127.0.0.1:8080/frontend/index.html``` in your browser and use the web interface!

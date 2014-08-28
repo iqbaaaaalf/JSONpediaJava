@@ -13,9 +13,6 @@
 
 package com.machinelinking.service;
 
-import com.beust.jcommander.JCommander;
-import com.beust.jcommander.Parameter;
-import com.beust.jcommander.ParameterException;
 import com.sun.jersey.api.container.grizzly2.GrizzlyServerFactory;
 import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.api.core.ResourceConfig;
@@ -33,7 +30,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
 import java.util.Enumeration;
@@ -47,9 +43,6 @@ import java.util.jar.JarFile;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class BasicServer {
-
-    public static final String HOST_PARAM = "server.host";
-    public static final String PORT_PARAM = "server.port";
 
     public static final String DEFAULT_HOST = "127.0.0.1";
     public static final Integer DEFAULT_PORT  = 9998;
@@ -68,63 +61,6 @@ public class BasicServer {
     public final URI baseURI;
 
     private HttpServer httpServer;
-
-    public static void main(String[] args) {
-        final ParamsMapper mapper = new ParamsMapper();
-        final JCommander commander = new JCommander(mapper);
-        int exitCode = 0;
-        try {
-            commander.parse(args);
-
-            final ConfigurationManager configurationManager = ConfigurationManager.getInstance();
-            configurationManager.initProperties(new File(mapper.configFile));
-            final String host = readHost(configurationManager.getProperty(HOST_PARAM, DEFAULT_HOST));
-            final int port = readPort(configurationManager.getProperty(PORT_PARAM, DEFAULT_PORT.toString()));
-
-            final BasicServer server = new BasicServer(host, port);
-            server.setUp();
-            System.out.println(
-                    String.format(
-                            "JSONpedia service started at port %d.\n" +
-                            "WADL descriptor at %sapplication.wadl\n" +
-                            "Hit C^ to stop ...",
-                            port,
-                            server.getBaseURI()
-                    )
-            );
-            synchronized (server) {
-                server.wait();
-            }
-            server.tearDown();
-        } catch (ParameterException pe) {
-            System.err.println(pe.getMessage());
-            commander.usage();
-            exitCode = 1;
-        } catch (Exception e) {
-            System.err.println("Error while running " + BasicServer.class.getName());
-            e.printStackTrace();
-            exitCode = 2;
-        } finally {
-            System.exit(exitCode);
-        }
-    }
-
-    private static String readHost(String host) {
-        try {
-            new URL(String.format("http://%s", host));
-        } catch (MalformedURLException murle) {
-            throw new IllegalArgumentException("Invalid host", murle);
-        }
-        return host;
-    }
-
-    private static int readPort(String port) {
-        try {
-            return Integer.parseInt(port);
-        } catch (NumberFormatException nfe) {
-            throw new IllegalArgumentException("Invalid port", nfe);
-        }
-    }
 
     public BasicServer(String host, int port) {
         this.baseURI = UriBuilder.fromUri( String.format("http://%s/", host)).port(port).build();
@@ -211,15 +147,6 @@ public class BasicServer {
                 }
             }
         }
-    }
-
-    static class ParamsMapper {
-        @Parameter(
-                names = {"--conf", "-c"},
-                description = "configuration file",
-                required = true
-        )
-        String configFile;
     }
 
 }
