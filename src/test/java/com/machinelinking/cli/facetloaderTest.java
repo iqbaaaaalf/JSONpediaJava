@@ -30,7 +30,7 @@ public class facetloaderTest {
     public void testRun() throws IOException {
         final int exitCode = new facetloader().run(
                 String.format(
-                        "-s localhost:%d:%s:%s -d localhost:%d:%s:%s -l 100 -c conf/default.properties",
+                        "-s localhost:%d:%s:%s -d localhost:%d:%s:%s -l 100 -c conf/faceting.properties",
                         DefaultElasticFacetManagerTest.TEST_PORT,
                         DefaultElasticFacetManagerTest.FROM_STORAGE_DB,
                         DefaultElasticFacetManagerTest.FROM_STORAGE_COLLECTION,
