@@ -26,6 +26,7 @@ version = '1.2-SNAPSHOT'
 
 serverClassName = 'com.machinelinking.service.BasicServer'
 storageLoaderClassName = 'com.machinelinking.cli.loader'
+facetLoaderClassName = 'com.machinelinking.cli.facetloader'
 storageLoaderJVMArgs = ["-Xmx4g", "-Xms4g", "-Dlog4j.configuration=file:conf/log4j.properties"]
 
 tasks.withType(Compile){
@@ -73,6 +74,14 @@ task runLoader(dependsOn: 'jar', type: JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
   if(project.hasProperty("config") && project.hasProperty("dump"))
     args(config, dump)
+}
+
+task runFacetLoader(dependsOn: 'jar', type: JavaExec) {
+  jvmArgs = storageLoaderJVMArgs
+  main = facetLoaderClassName
+  classpath = sourceSets.main.runtimeClasspath
+  if(project.hasProperty("args_line"))
+    args(args_line.split())
 }
 
 task fullCapsule(type: Jar, dependsOn: jar) {

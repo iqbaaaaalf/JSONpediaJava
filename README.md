@@ -130,6 +130,27 @@ processor: Processed pages: 25, elapsed time: 0 (ms), exceptions: []
 templates: 1117, properties 4907, max properties/template: 52, avg properties/template: 4,393017
 ```
 
+## Run the Storage Facet Loader
+
+The _facet_loader.py_ tool helps to produce a facet index based on an existing index in Elasticsearch.
+Details about the usage of this script can be found in its header.
+
+Example: process all documents in db 'jsonpedia_test_load' collection 'en' following configuration specified in 
+'faceting.properties' and store the generated documents in db 'jsonpedia_test_facet' collection en.
+
+```bash
+$ bin/facet_loader.py -s localhost:9300:jsonpedia_test_load:en -d localhost:9300:jsonpedia_test_facet:en \
+        -l 100 -c conf/faceting.properties
+```
+
+```bash
+...
+Executing command: gradle runFacetLoader -Pargs_line='-s localhost:9300:jsonpedia_test_load:en -d localhost:9300:jsonpedia_test_facet:en -l 100 -c conf/faceting.properties'
+...
+Facet Loading Report:           
+Processed docs: 58, Generated facet docs: 1051
+```
+
 ## Run the CSV Exporter
 
 The CSV Exporter CLI tool allows to convert Wikipedia dumps to tabular data generated from page parsing.
