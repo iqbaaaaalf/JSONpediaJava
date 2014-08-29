@@ -33,8 +33,6 @@ public class InfoboxSplitterTest {
 
     @Test
     public void testSplitter() throws IOException {
-
-        // TODO: there should be a class incapsulating the logic of this code block used by WikiEnricher.
         final InfoboxSplitter splitter = new InfoboxSplitter();
         final WikiTextParserHandlerSplitter splitterHandler = new WikiTextParserHandlerSplitter();
         splitter.initHandlerSplitter(splitterHandler);
