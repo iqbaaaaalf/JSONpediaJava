@@ -37,4 +37,11 @@ public class FacetLoadingReport {
         return generatedFacetDocs;
     }
 
+    @Override
+    public String toString() {
+        return String.format(
+                "Facet Loading Report:\nProcessed docs: %d, Generated facet docs: %d",
+                processedDocs, generatedFacetDocs
+        );
+    }
 }
