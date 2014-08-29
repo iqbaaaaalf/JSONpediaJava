@@ -12,20 +12,19 @@
  */
 
 package com.machinelinking.render;
-
-import org.codehaus.jackson.JsonNode;
-
-
 /**
- * Defines the renderer for a {@link JsonNode}.
+ * Defines any error raised by a {@link com.machinelinking.render.NodeRender}.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public interface NodeRender {
+public class NodeRenderException extends Exception {
 
-    boolean acceptNode(JsonContext context, JsonNode node);
+    public NodeRenderException(Throwable cause) {
+        super(cause);
+    }
 
-    void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
-    throws NodeRenderException;
+    public NodeRenderException(String message, Throwable cause) {
+        super(message, cause);
+    }
 
 }

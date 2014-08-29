@@ -31,7 +31,7 @@ public class TemplatesKeyValueRender implements KeyValueRender {
 
     @Override
     public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
-    throws IOException {
+    throws NodeRenderException {
         final List<TemplateOccurrence> templateOccurrences = new ArrayList<>();
         final Iterator<Map.Entry<String,JsonNode>> templates = value.get("occurrences").getFields();
         Map.Entry<String,JsonNode> current;
@@ -46,17 +46,21 @@ public class TemplatesKeyValueRender implements KeyValueRender {
             }
         });
 
-        writer.openTag("div");
-        writer.heading(1, "Templates");
-        final String lang = WikimediaUtils.urlToParts(context.getDocumentContext().getDocumentURL()).lang;
-        for(TemplateOccurrence templateOccurrence : templateOccurrences) {
-            writer.templateReference(
-                    String.format("%s (%d)", templateOccurrence.templateName, templateOccurrence.occurrences),
-                    lang,
-                    templateOccurrence.templateName
-            );
+        try {
+            writer.openTag("div");
+            writer.heading(1, "Templates");
+            final String lang = WikimediaUtils.urlToParts(context.getDocumentContext().getDocumentURL()).lang;
+            for (TemplateOccurrence templateOccurrence : templateOccurrences) {
+                writer.templateReference(
+                        String.format("%s (%d)", templateOccurrence.templateName, templateOccurrence.occurrences),
+                        lang,
+                        templateOccurrence.templateName
+                );
+            }
+            writer.closeTag();
+        } catch (IOException ioe) {
+            throw new NodeRenderException("Error while writing templates data.", ioe);
         }
-        writer.closeTag();
     }
 
     class TemplateOccurrence {

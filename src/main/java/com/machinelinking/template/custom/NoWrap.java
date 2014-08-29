@@ -14,6 +14,7 @@
 package com.machinelinking.template.custom;
 
 import com.machinelinking.render.HTMLWriter;
+import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.template.EvaluationContext;
 import com.machinelinking.template.TemplateCall;
 import com.machinelinking.template.TemplateCallHandler;
@@ -31,14 +32,18 @@ public class NoWrap implements TemplateCallHandler {
     @Override
     public boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer)
     throws TemplateCallHandlerException {
-        if(!NOWRAP_TEMPLATE_NAME.equals(context.evaluate(call.getName()))) return false;
         try {
-            for (TemplateCall.Parameter p : call.getParameters()) {
-                writer.text(context.evaluate(p.value));
+            if (!NOWRAP_TEMPLATE_NAME.equals(context.evaluate(call.getName()))) return false;
+            try {
+                for (TemplateCall.Parameter p : call.getParameters()) {
+                    writer.text(context.evaluate(p.value));
+                }
+                return true;
+            } catch (IOException ioe) {
+                throw new TemplateCallHandlerException("Error while processing nowrap template", ioe);
             }
-            return true;
-        } catch (IOException ioe) {
-            throw new TemplateCallHandlerException("Error while processing nowrap template", ioe);
+        } catch (NodeRenderException nre) {
+            throw new TemplateCallHandlerException("Error while evauating context.", nre);
         }
     }
 }

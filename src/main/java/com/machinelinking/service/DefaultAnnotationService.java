@@ -23,6 +23,7 @@ import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.render.DefaultDocumentContext;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.render.DocumentContext;
+import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
@@ -129,7 +130,7 @@ public class DefaultAnnotationService implements AnnotationService {
             String flags,
             String outFormat,
             String filterExp
-    ) throws InterruptedException, SAXException, WikiTextParserException, ExecutionException, IOException {
+    ) throws InterruptedException, SAXException, WikiTextParserException, ExecutionException, IOException, NodeRenderException {
         final OutputFormat format = checkOutFormat(outFormat);
         final WikiPipeline wikiEnricher = WikiPipelineFactory
                 .getInstance()
@@ -162,7 +163,7 @@ public class DefaultAnnotationService implements AnnotationService {
     }
 
     private Response toOutputFormat(URL documentURL, TokenBuffer buffer, OutputFormat format, JSONFilter filter)
-    throws IOException {
+            throws IOException, NodeRenderException {
         switch(format) {
             case json:
                 return Response.ok(

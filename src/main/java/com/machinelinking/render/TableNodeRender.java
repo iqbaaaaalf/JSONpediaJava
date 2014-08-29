@@ -38,38 +38,41 @@ public class TableNodeRender implements NodeRender {
 
     @Override
     public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
-    throws IOException {
+    throws NodeRenderException {
         final JsonNode content = node.get(Ontology.CONTENT_FIELD);
-        writer.openTable("Table", TABLE_ATTR);
+        try {
+            writer.openTable("Table", TABLE_ATTR);
 
-        writer.openTableRow();
-        JsonNode cell;
-        for(int i = 0; i < content.size(); i++) {
-            cell = content.get(i);
-            if( isHeadCell(cell) ) {
-                writer.openTableCol();
-                rootRender.render(context, rootRender, cell, writer);
-                writer.closeTableCol();
-            }
-        }
-        writer.closeTableRow();
-
-        for(int i = 0; i < content.size(); i++) {
-            cell = content.get(i);
-            if( isBodyCell(cell) ) {
-                writer.openTableRow();
-                final JsonNode rowContent = cell.get(Ontology.CONTENT_FIELD);
-                for(int j = 0; j < rowContent.size(); j++) {
+            writer.openTableRow();
+            JsonNode cell;
+            for (int i = 0; i < content.size(); i++) {
+                cell = content.get(i);
+                if (isHeadCell(cell)) {
                     writer.openTableCol();
-                    rootRender.render(context, rootRender, rowContent.get(j), writer);
+                    rootRender.render(context, rootRender, cell, writer);
                     writer.closeTableCol();
                 }
-                writer.closeTableRow();
             }
+            writer.closeTableRow();
+
+            for (int i = 0; i < content.size(); i++) {
+                cell = content.get(i);
+                if (isBodyCell(cell)) {
+                    writer.openTableRow();
+                    final JsonNode rowContent = cell.get(Ontology.CONTENT_FIELD);
+                    for (int j = 0; j < rowContent.size(); j++) {
+                        writer.openTableCol();
+                        rootRender.render(context, rootRender, rowContent.get(j), writer);
+                        writer.closeTableCol();
+                    }
+                    writer.closeTableRow();
+                }
+            }
+
+            writer.closeTable();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
         }
-
-
-        writer.closeTable();
     }
 
     private boolean isHeadCell(JsonNode node) {

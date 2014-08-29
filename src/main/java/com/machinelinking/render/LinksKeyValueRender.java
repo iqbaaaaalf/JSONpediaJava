@@ -25,19 +25,23 @@ public class LinksKeyValueRender implements KeyValueRender {
 
     @Override
     public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
-    throws IOException {
+    throws NodeRenderException {
         final Iterator<JsonNode> links = value.iterator();
         JsonNode link;
-        writer.openTag("div");
-        writer.heading(1, "Links");
-        while(links.hasNext()) {
-            link = links.next();
-            writer.link(
-                    link.get("description").asText(),
-                    link.get("url").asText()
-            );
+        try {
+            writer.openTag("div");
+            writer.heading(1, "Links");
+            while (links.hasNext()) {
+                link = links.next();
+                writer.link(
+                        link.get("description").asText(),
+                        link.get("url").asText()
+                );
+            }
+            writer.closeTag();
+        } catch (IOException ioe) {
+            throw new NodeRenderException("Error while rendering links.", ioe);
         }
-        writer.closeTag();
     }
 
 }

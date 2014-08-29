@@ -27,17 +27,21 @@ public class TemplatesMappingKeyValueRender implements KeyValueRender {
 
     @Override
     public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
-    throws IOException {
+    throws NodeRenderException {
         final Iterator<JsonNode> mappingCollections = value.get("mapping-collection").getElements();
         JsonNode mappingCollection;
-        writer.openTag("div");
-        writer.heading(1, "Mapping Collections");
-        int mappingIndex = 0;
-        while(mappingCollections.hasNext()) {
-            mappingCollection = mappingCollections.next();
-            processMappingCollection(mappingIndex++, context.getRoot(), mappingCollection, writer);
+        try {
+            writer.openTag("div");
+            writer.heading(1, "Mapping Collections");
+            int mappingIndex = 0;
+            while (mappingCollections.hasNext()) {
+                mappingCollection = mappingCollections.next();
+                processMappingCollection(mappingIndex++, context.getRoot(), mappingCollection, writer);
+            }
+            writer.closeTag();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
         }
-        writer.closeTag();
     }
 
     private void processMappingCollection(int mappingIndex, JsonNode root, JsonNode mappingCollection, HTMLWriter writer)

@@ -14,6 +14,7 @@
 package com.machinelinking.template.custom;
 
 import com.machinelinking.render.HTMLWriter;
+import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.template.EvaluationContext;
 import com.machinelinking.template.TemplateCall;
 import com.machinelinking.template.TemplateCallHandler;
@@ -37,7 +38,11 @@ public class Main implements TemplateCallHandler {
     @Override
     public boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer)
     throws TemplateCallHandlerException {
-        if(! context.evaluate(call.getName()).matches(MAIN_TEMPLATE_NAME)) return false;
+        try {
+            if(! context.evaluate(call.getName()).matches(MAIN_TEMPLATE_NAME)) return false;
+        } catch (NodeRenderException nre) {
+            throw new TemplateCallHandlerException("Error while evaluating context.", nre);
+        }
 
         try {
             writer.openTag("span", MAIN_DIV_ATTR);

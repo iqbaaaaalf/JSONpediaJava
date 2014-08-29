@@ -30,6 +30,7 @@ import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.render.DefaultDocumentContext;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.render.DocumentContext;
+import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.service.BasicServer;
 import com.machinelinking.storage.DefaultJSONStorageLoader;
@@ -110,8 +111,8 @@ public class JSONpedia {
         final DocumentContext context = new DefaultDocumentContext(RenderScope.FULL_RENDERING, resourceURL);
         try {
             return DefaultHTMLRenderFactory.getInstance().createRender().renderDocument(context, data);
-        } catch (IOException ioe) {
-            throw new JSONpediaException("Error while rendering node.", ioe);
+        } catch (NodeRenderException nre) {
+            throw new JSONpediaException("Error while rendering node.", nre);
         }
     }
 

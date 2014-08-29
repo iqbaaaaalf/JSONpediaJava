@@ -30,15 +30,19 @@ public class LinkNodeRender implements NodeRender {
 
     @Override
     public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
-    throws IOException {
+    throws NodeRenderException {
         final String url = node.get("url").asText();
         final String description = node.get("content").asText().trim();
-        writer.openTag("a", new HashMap<String, String>() {{
-            put("href", url);
-            put("class", "link");
-        }});
-        writer.text(description);
-        writer.closeTag();
+        try {
+            writer.openTag("a", new HashMap<String, String>() {{
+                put("href", url);
+                put("class", "link");
+            }});
+            writer.text(description);
+            writer.closeTag();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
+        }
     }
 
 }

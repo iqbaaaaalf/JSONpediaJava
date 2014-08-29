@@ -42,13 +42,17 @@ public class SectionRender implements NodeRender {
 
     @Override
     public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
-    throws IOException {
+    throws NodeRenderException {
         final String title = node.get(TITLE).asText();
         int level = node.get(LEVEL).asInt() + 1;
-        writer.anchor(toAnchorName(title));
-        writer.openTag("div", SECTION_DIV_ATTR);
-        writer.heading(level, title);
-        writer.closeTag();
+        try {
+            writer.anchor(toAnchorName(title));
+            writer.openTag("div", SECTION_DIV_ATTR);
+            writer.heading(level, title);
+            writer.closeTag();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
+        }
     }
 
 }

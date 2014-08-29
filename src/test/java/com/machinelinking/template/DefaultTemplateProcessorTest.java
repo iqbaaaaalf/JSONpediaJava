@@ -19,6 +19,7 @@ import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.render.DefaultDocumentContext;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.render.DocumentContext;
+import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
 import junit.framework.Assert;
@@ -112,7 +113,8 @@ public class DefaultTemplateProcessorTest {
     }
 
     @Test
-    public void testProcessPath() throws WikiTextParserException, TemplateProcessorException, IOException {
+    public void testProcessPath()
+    throws WikiTextParserException, TemplateProcessorException, IOException, NodeRenderException {
         checkProcess(
                 "{{localurl:Test}}",
                 "/w/index.php?title=Test&"
@@ -170,7 +172,8 @@ public class DefaultTemplateProcessorTest {
     }
 
     @Test
-    public void testConditionalExpressions() throws WikiTextParserException, TemplateProcessorException, IOException {
+    public void testConditionalExpressions()
+    throws WikiTextParserException, TemplateProcessorException, IOException, NodeRenderException {
         checkProcess(
                 "{{#expr:1+2+3}}",
                 "1+2+3"
@@ -243,7 +246,7 @@ public class DefaultTemplateProcessorTest {
 
     @Test
     public void testConditionalWithTemplateNesting()
-    throws WikiTextParserException, TemplateProcessorException, IOException {
+    throws WikiTextParserException, TemplateProcessorException, IOException, NodeRenderException {
         checkProcess(
                  "{{lc:F{{{out}}}G}}",
                  "foutputg",
@@ -280,7 +283,7 @@ public class DefaultTemplateProcessorTest {
     }
 
     private String processWikitext(String wikiText, Map<String,String> contextMap)
-    throws IOException, WikiTextParserException, TemplateProcessorException {
+    throws IOException, WikiTextParserException, TemplateProcessorException, NodeRenderException {
         final URL documentURL = new URL("http://en.wikipedia.org/page/Test");
         final TokenBuffer buffer = JSONUtils.createJSONBuffer();
         final JSONSerializer serializer = new JSONSerializer(buffer);
@@ -298,12 +301,12 @@ public class DefaultTemplateProcessorTest {
     }
 
     private String processWikitext(String wikiText)
-    throws WikiTextParserException, TemplateProcessorException, IOException {
+    throws WikiTextParserException, TemplateProcessorException, IOException, NodeRenderException {
         return processWikitext(wikiText, Collections.<String,String>emptyMap());
     }
 
     private void checkProcess(String wikitext, String expected, String... args)
-    throws WikiTextParserException, TemplateProcessorException, IOException {
+    throws WikiTextParserException, TemplateProcessorException, IOException, NodeRenderException {
         final Map<String,String> context = new HashMap<>();
         for(int i = 0; i < args.length; i+=2) {
             context.put(args[i], args[i + 1]);

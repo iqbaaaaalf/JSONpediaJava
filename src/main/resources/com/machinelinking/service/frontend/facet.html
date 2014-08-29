@@ -30,7 +30,8 @@
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             $('.facet-view').facetview({
-                search_url: 'http://localhost:9200/_search',
+                //search_url: 'http://localhost:9200/_search',
+                search_url: 'http://localhost:9998/storage/elastic/facet',
                 search_index: 'jsonpedia_test_facet',
                 facets: [
                     {'field': 'content.page', 'display': 'page'},

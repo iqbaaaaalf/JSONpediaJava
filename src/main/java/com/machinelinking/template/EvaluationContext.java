@@ -17,6 +17,7 @@ import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.render.DefaultHTMLWriter;
 import com.machinelinking.render.HTMLWriter;
 import com.machinelinking.render.JsonContext;
+import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.render.RootRender;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.node.ArrayNode;
@@ -49,7 +50,7 @@ public class EvaluationContext {
         return jsonContext.getDocumentContext().getVar(name);
     }
 
-    public void evaluate(JsonNode node, StringBuilder sb) {
+    public void evaluate(JsonNode node, StringBuilder sb) throws NodeRenderException {
         if(node.isArray()) {
             evaluate((ArrayNode) node, sb);
         } else if(node.isObject()) {
@@ -59,14 +60,14 @@ public class EvaluationContext {
         }
     }
 
-    public String evaluate(JsonNode node) {
+    public String evaluate(JsonNode node) throws NodeRenderException {
         if(node == null || node.isNull()) return null;
         final StringBuilder sb = new StringBuilder();
         evaluate(node, sb);
         return sb.toString();
     }
 
-    public Map<String,String> evaluate(TemplateCall.Parameter[] parameters, int from) {
+    public Map<String,String> evaluate(TemplateCall.Parameter[] parameters, int from) throws NodeRenderException {
         final Map<String,String> result = new HashMap<>();
         String name, value;
         for (int i = from; i < parameters.length; i++) {
@@ -81,17 +82,17 @@ public class EvaluationContext {
         return result;
     }
 
-    public void evaluate(String field, JsonNode value, HTMLWriter writer) throws IOException {
+    public void evaluate(String field, JsonNode value, HTMLWriter writer) throws NodeRenderException {
         rootRender.render(this.jsonContext, rootRender, field, value, writer);
     }
 
-    private void evaluate(ArrayNode array, StringBuilder sb) {
+    private void evaluate(ArrayNode array, StringBuilder sb) throws NodeRenderException {
         for(JsonNode elem : array) {
             evaluate(elem, sb);
         }
     }
 
-    private void evaluate(ObjectNode obj, StringBuilder sb) {
+    private void evaluate(ObjectNode obj, StringBuilder sb) throws NodeRenderException {
         final String type = obj.get(Ontology.TYPE_FIELD).asText();
         if(Ontology.TYPE_VAR.equals(type)) {
             final String name = obj.get(Ontology.NAME_FIELD).asText();

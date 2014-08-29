@@ -30,9 +30,13 @@ public class TitleKeyValueRender implements KeyValueRender {
 
     @Override
     public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
-    throws IOException {
-        writer.openTag("strong", TITLE_DIV_ATTR);
-        rootRender.render(context, rootRender, value, writer);
-        writer.closeTag();
+    throws NodeRenderException {
+        try {
+            writer.openTag("strong", TITLE_DIV_ATTR);
+            rootRender.render(context, rootRender, value, writer);
+            writer.closeTag();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
+        }
     }
 }

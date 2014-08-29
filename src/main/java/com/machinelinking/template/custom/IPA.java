@@ -14,6 +14,7 @@
 package com.machinelinking.template.custom;
 
 import com.machinelinking.render.HTMLWriter;
+import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.template.EvaluationContext;
 import com.machinelinking.template.TemplateCall;
 import com.machinelinking.template.TemplateCallHandler;
@@ -29,9 +30,10 @@ public class IPA implements TemplateCallHandler {
     public static final String TEMPLATE_PATTERN = "IPA[c]?[-]?.{2,3}";
 
     @Override
-    public boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer) throws TemplateCallHandlerException {
-        if(!context.evaluate(call.getName()).matches(TEMPLATE_PATTERN)) return false;
+    public boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer)
+    throws TemplateCallHandlerException {
         try {
+            if(!context.evaluate(call.getName()).matches(TEMPLATE_PATTERN)) return false;
             writer.openTag("i");
             writer.text("[");
             String value;
@@ -42,8 +44,8 @@ public class IPA implements TemplateCallHandler {
             }
             writer.text("]");
             writer.closeTag();
-        } catch (IOException ioe) {
-            throw new TemplateCallHandlerException("Error while evaluating IPA", ioe);
+        } catch (NodeRenderException | IOException e) {
+            throw new TemplateCallHandlerException("Error while evaluating IPA", e);
         }
         return true;
     }

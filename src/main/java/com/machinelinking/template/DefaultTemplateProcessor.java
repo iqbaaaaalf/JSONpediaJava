@@ -14,6 +14,7 @@
 package com.machinelinking.template;
 
 import com.machinelinking.render.HTMLWriter;
+import com.machinelinking.render.NodeRenderException;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
@@ -184,7 +185,7 @@ class DefaultTemplateProcessor implements TemplateProcessor {
 
     private boolean processFormatting(
             String name, String[] nameParts, EvaluationContext context, TemplateCall call, HTMLWriter writer
-    ) throws IOException, TemplateProcessorException {
+    ) throws IOException, TemplateProcessorException, NodeRenderException {
         if (nameParts.length != 2) return false;
         if (name.startsWith("lc:")) {
             writer.text(nameParts[1].toLowerCase());
@@ -253,7 +254,7 @@ class DefaultTemplateProcessor implements TemplateProcessor {
 
     private boolean processPath(
             String name, String[] nameParts, EvaluationContext context, TemplateCall call, HTMLWriter writer
-    ) throws IOException, TemplateProcessorException {
+    ) throws IOException, TemplateProcessorException, NodeRenderException {
         if (nameParts.length != 2) return false;
         if (name.startsWith("localurl:")) {
             final String query = context.evaluate(call.getParameter(0));
@@ -311,7 +312,7 @@ class DefaultTemplateProcessor implements TemplateProcessor {
     // TODO: some magic words have been not implemented.
     private boolean processConditionalExp(
             String name, String[] nameParts, EvaluationContext context, TemplateCall call, HTMLWriter writer
-    ) throws IOException, TemplateProcessorException {
+    ) throws IOException, TemplateProcessorException, NodeRenderException {
         if (name.startsWith("#expr:")) {
             writer.text(nameParts[1]);
             return true;

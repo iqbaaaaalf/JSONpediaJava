@@ -24,11 +24,15 @@ public class AbstractKeyValueRender implements KeyValueRender {
 
     @Override
     public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
-    throws IOException {
-        writer.openTag("div");
-        writer.heading(1, "Abstract");
-        writer.html(value.asText());
-        writer.closeTag();
+    throws NodeRenderException {
+        try {
+            writer.openTag("div");
+            writer.heading(1, "Abstract");
+            writer.html(value.asText());
+            writer.closeTag();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
+        }
     }
 
 }

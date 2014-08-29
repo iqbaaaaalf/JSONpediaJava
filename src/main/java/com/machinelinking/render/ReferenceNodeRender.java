@@ -47,24 +47,28 @@ public class ReferenceNodeRender implements NodeRender {
 
     @Override
     public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
-    throws IOException {
+    throws NodeRenderException {
         final String label       = node.get("label").asText();
         final String description = node.get("content").asText().trim();
         final String[] labelSections = label.split(".");
-        if(labelSections.length == 2) {
-            writeHTMLURL(
-                    String.format("http://%s.wikipedia.org/wiki/%s", labelSections[0], labelSections[1]),
-                    description,
-                    writer
-            );
-        } else if(labelSections.length == 0) {
-            writeHTMLURL(
-                    String.format("http://en.wikipedia.org/wiki/%s", label),
-                    description.length() == 0 ? label : description,
-                    writer
-            );
-        } else {
-            throw new IllegalArgumentException("Invalid label: " + label);
+        try {
+            if (labelSections.length == 2) {
+                writeHTMLURL(
+                        String.format("http://%s.wikipedia.org/wiki/%s", labelSections[0], labelSections[1]),
+                        description,
+                        writer
+                );
+            } else if (labelSections.length == 0) {
+                writeHTMLURL(
+                        String.format("http://en.wikipedia.org/wiki/%s", label),
+                        description.length() == 0 ? label : description,
+                        writer
+                );
+            } else {
+                throw new IllegalArgumentException("Invalid label: " + label);
+            }
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
         }
     }
 

@@ -81,15 +81,19 @@ public class DefaultHTMLRender implements HTMLRender {
         this.alwaysRenderDefault = alwaysRenderDefault;
     }
 
-    public void processRoot(JsonNode node, HTMLWriter writer) throws IOException {
+    public void processRoot(JsonNode node, HTMLWriter writer) throws NodeRenderException {
         jsonPathBuilder.startPath();
-        writer.openDocument(getContext().getDocumentTitle());
-        processFragment(reorderRoot(node), writer);
-        writer.closeDocument();
-        writer.flush();
+        try {
+            writer.openDocument(getContext().getDocumentTitle());
+            processFragment(reorderRoot(node), writer);
+            writer.closeDocument();
+            writer.flush();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
+        }
     }
 
-    public void processFragment(JsonNode node, HTMLWriter writer) throws IOException {
+    public void processFragment(JsonNode node, HTMLWriter writer) throws NodeRenderException {
         render(getContext(), this, node, writer);
     }
 
@@ -135,7 +139,8 @@ public class DefaultHTMLRender implements HTMLRender {
     }
 
     @Override
-    public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
+    throws NodeRenderException {
         if(node == null) return;
         final JsonNode type = node.get(Ontology.TYPE_FIELD);
         NodeRender targetRender = null;
@@ -153,7 +158,11 @@ public class DefaultHTMLRender implements HTMLRender {
         boolean renderFound = targetRender != null;
 
         // Node metadata.
-        if(alwaysRenderDefault) writeNodeMetadata(node, writer);
+        if(alwaysRenderDefault) try {
+            writeNodeMetadata(node, writer);
+        } catch (IOException ioe) {
+            throw new NodeRenderException("Error while writing node metadata.", ioe);
+        }
 
         // Custom node rendering.
         if(renderFound) {
@@ -166,51 +175,71 @@ public class DefaultHTMLRender implements HTMLRender {
 
         // Default node rendering.
         if(alwaysRenderDefault || !renderFound) {
-            renderDefault(!renderFound, context, rootRender, node, writer);
+            try {
+                renderDefault(!renderFound, context, rootRender, node, writer);
+            } catch (IOException ioe) {
+                throw new NodeRenderException("Error while rendering default.", ioe);
+            }
         }
 
-        if(alwaysRenderDefault) writer.closeTag();
+        if(alwaysRenderDefault) try {
+            writer.closeTag();
+        } catch (IOException ioe) {
+            throw new NodeRenderException("Error while closing tag.", ioe);
+        }
     }
 
     @Override
     public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
-    throws IOException {
-        final KeyValueRender render = keyValueRenders.get(key);
-        if(render != null) {
-            writer.anchor(key);
-            render.render(context, rootRender, key, value, writer);
-            return;
-        }
+    throws NodeRenderException {
+        try {
+            final KeyValueRender render = keyValueRenders.get(key);
+            if (render != null) {
+                writer.anchor(key);
+                render.render(context, rootRender, key, value, writer);
+                return;
+            }
 
-        writer.openTag("div", CONTENT_STYLE);
-        writer.openTag("span");
-        writer.openTag("i");
-        writer.text(key);
-        writer.closeTag();
-        writer.text(":");
-        writer.closeTag();
-        writer.openTag("span");
-        render(context, rootRender, value, writer);
-        writer.closeTag();
-        writer.closeTag();
+            writer.openTag("div", CONTENT_STYLE);
+            writer.openTag("span");
+            writer.openTag("i");
+            writer.text(key);
+            writer.closeTag();
+            writer.text(":");
+            writer.closeTag();
+            writer.openTag("span");
+            render(context, rootRender, value, writer);
+            writer.closeTag();
+            writer.closeTag();
+        } catch (IOException ioe) {
+            throw new NodeRenderException("Error while processing rendering.", ioe);
+        }
     }
 
     @Override
-    public String renderDocument(DocumentContext context, JsonNode rootNode) throws IOException {
+    public String renderDocument(DocumentContext context, JsonNode rootNode) throws NodeRenderException {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final DefaultHTMLWriter writer = new DefaultHTMLWriter( new OutputStreamWriter(baos) );
         this.setContext(rootNode, context);
         this.processRoot(rootNode, writer);
-        writer.flush();
+        try {
+            writer.flush();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
+        }
         return baos.toString();
     }
 
-    public String renderFragment(DocumentContext context, JsonNode rootNode) throws IOException {
+    public String renderFragment(DocumentContext context, JsonNode rootNode) throws NodeRenderException {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final DefaultHTMLWriter writer = new DefaultHTMLWriter(new OutputStreamWriter(baos));
         this.setContext(rootNode, context);
         this.processFragment(rootNode, writer);
-        writer.flush();
+        try {
+            writer.flush();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
+        }
         return baos.toString();
     }
 
@@ -279,7 +308,7 @@ public class DefaultHTMLRender implements HTMLRender {
 
     private void renderDefault(
             boolean isDefault, JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer
-    ) throws IOException {
+    ) throws IOException, NodeRenderException {
                 // Begin Default Render.
         writer.openTag("span");
         if (node.isObject()) {
@@ -294,7 +323,7 @@ public class DefaultHTMLRender implements HTMLRender {
     }
 
     private void renderObject(RootRender rootRender, JsonNode obj, boolean isDefault, HTMLWriter writer)
-    throws IOException {
+    throws IOException, NodeRenderException {
         jsonPathBuilder.enterObject();
         writer.openTag("div", isDefault ? DEFAULT_RENDER_NODE_ATTRS : DEFAULT_RENDER_HIDDEN_NODE_ATTRS);
         final Iterator<Map.Entry<String,JsonNode>> iter = obj.getFields();
@@ -313,7 +342,7 @@ public class DefaultHTMLRender implements HTMLRender {
     }
 
     private void renderList(RootRender rootRender, JsonNode list, boolean isDefault, HTMLWriter writer)
-    throws IOException {
+    throws IOException, NodeRenderException {
         final int size = list.size();
         if(size == 1) {
             jsonPathBuilder.enterArray();

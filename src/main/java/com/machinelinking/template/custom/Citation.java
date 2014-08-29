@@ -14,6 +14,7 @@
 package com.machinelinking.template.custom;
 
 import com.machinelinking.render.HTMLWriter;
+import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.template.EvaluationContext;
 import com.machinelinking.template.TemplateCall;
 import com.machinelinking.template.TemplateCallHandler;
@@ -56,7 +57,8 @@ public class Citation implements TemplateCallHandler {
     };
 
     @Override
-    public boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer) throws TemplateCallHandlerException {
+    public boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer)
+    throws TemplateCallHandlerException {
         try {
             if (!CITATION_TEMPLATE_NAME.equals(call.getName().asText())) return false;
 
@@ -68,7 +70,11 @@ public class Citation implements TemplateCallHandler {
             for (String field : TEMPLATE_FIELDS) {
                 value = call.getParameter(field);
                 if (value == null) continue;
-                context.evaluate(field, value, writer);
+                try {
+                    context.evaluate(field, value, writer);
+                } catch (NodeRenderException nre) {
+                    throw new TemplateCallHandlerException("Error while evauating context.", nre);
+                }
             }
             writer.closeTag();
             return true;

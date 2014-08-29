@@ -14,6 +14,7 @@
 package com.machinelinking.template.custom;
 
 import com.machinelinking.render.HTMLWriter;
+import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.template.EvaluationContext;
 import com.machinelinking.template.TemplateCall;
 import com.machinelinking.template.TemplateCallHandler;
@@ -54,7 +55,11 @@ public class CiteBook implements TemplateCallHandler {
                 if(value == null) continue;
                 writer.openTag("tr");
                 writer.openTag("td");
-                context.evaluate(field, value, writer);
+                try {
+                    context.evaluate(field, value, writer);
+                } catch (NodeRenderException nre) {
+                    throw new TemplateCallHandlerException("Error while evauating context.", nre);
+                }
                 writer.closeTag();
                 writer.closeTag();
             }

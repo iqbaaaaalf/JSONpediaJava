@@ -31,13 +31,17 @@ public class URLKeyValueRender implements KeyValueRender {
 
     @Override
     public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
-    throws IOException {
+    throws NodeRenderException {
         final JsonNode strippedCommentsValue = JSONUtils.stripComments(value);
         final String valueStr = JSONUtils.asPrimitiveString(strippedCommentsValue);
-        writer.openTag("div", URLKEY_DIV_ATTR);
-        writer.key(key);
-        writer.anchor(valueStr, valueStr, false);
-        writer.closeTag();
+        try {
+            writer.openTag("div", URLKEY_DIV_ATTR);
+            writer.key(key);
+            writer.anchor(valueStr, valueStr, false);
+            writer.closeTag();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
+        }
     }
 
 }

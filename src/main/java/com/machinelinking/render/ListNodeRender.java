@@ -29,15 +29,20 @@ public class ListNodeRender implements NodeRender {
     }
 
     @Override
-    public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer) throws IOException {
+    public void render(JsonContext context, RootRender rootRender, JsonNode node, HTMLWriter writer)
+    throws NodeRenderException {
         final JsonNode content = node.get(Ontology.CONTENT_FIELD);
         if(content == null || content.isNull()) return;
-        writer.openList();
-        for(JsonNode item : content) {
-            writer.openListItem();
-            rootRender.render(context, rootRender, item.get(Ontology.CONTENT_FIELD), writer);
-            writer.closeListItem();
+        try {
+            writer.openList();
+            for (JsonNode item : content) {
+                writer.openListItem();
+                rootRender.render(context, rootRender, item.get(Ontology.CONTENT_FIELD), writer);
+                writer.closeListItem();
+            }
+            writer.closeList();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
         }
-        writer.closeList();
     }
 }

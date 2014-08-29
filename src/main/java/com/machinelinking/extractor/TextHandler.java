@@ -20,6 +20,7 @@ import com.machinelinking.render.DefaultDocumentContext;
 import com.machinelinking.render.DefaultHTMLRender;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.render.DocumentContext;
+import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.template.RenderScope;
@@ -193,7 +194,7 @@ public class TextHandler extends DefaultWikiTextParserHandler {
         }
     }
 
-    private String expandStructure(String data) throws IOException {
+    private String expandStructure(String data) throws IOException, NodeRenderException {
         final JsonNode[] nodes = JSONUtils.parseJSONMulti(data);
         final DocumentContext context = new DefaultDocumentContext(RenderScope.TEXT_RENDERING, documentURL);
         final StringBuilder sb = new StringBuilder();

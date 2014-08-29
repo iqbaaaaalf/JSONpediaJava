@@ -15,8 +15,6 @@ package com.machinelinking.render;
 
 import org.codehaus.jackson.JsonNode;
 
-import java.io.IOException;
-
 /**
  * Defines a <i>JSON</i> to <i>HTML</i> renderer.
  *
@@ -76,10 +74,10 @@ public interface HTMLRender extends RootRender {
      * @param context
      * @param rootNode
      * @return
-     * @throws IOException
+     * @throws NodeRenderException
      */
 
-    String renderDocument(DocumentContext context, JsonNode rootNode) throws IOException;
+    String renderDocument(DocumentContext context, JsonNode rootNode) throws NodeRenderException;
 
     /**
      * Renders a JSON node as a fragment (without header and footer).
@@ -87,8 +85,8 @@ public interface HTMLRender extends RootRender {
      * @param context
      * @param node
      * @return
-     * @throws IOException
+     * @throws NodeRenderException
      */
-    String renderFragment(DocumentContext context, JsonNode node) throws IOException;
+    String renderFragment(DocumentContext context, JsonNode node) throws NodeRenderException;
 
 }

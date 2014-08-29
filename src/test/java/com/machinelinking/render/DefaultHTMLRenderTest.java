@@ -31,7 +31,7 @@ import java.net.URL;
 public class DefaultHTMLRenderTest {
 
     @Test
-    public void testRender() throws IOException {
+    public void testRender() throws IOException, NodeRenderException {
         final JsonNode node = JSONUtils.parseJSON(
                 this.getClass().getResourceAsStream(
                         "Enrichment1.json"

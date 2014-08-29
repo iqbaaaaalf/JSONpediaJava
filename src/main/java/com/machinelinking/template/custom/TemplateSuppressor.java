@@ -14,6 +14,7 @@
 package com.machinelinking.template.custom;
 
 import com.machinelinking.render.HTMLWriter;
+import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.template.EvaluationContext;
 import com.machinelinking.template.TemplateCall;
 import com.machinelinking.template.TemplateCallHandler;
@@ -33,9 +34,14 @@ public class TemplateSuppressor implements TemplateCallHandler {
     @Override
     public boolean process(EvaluationContext context, TemplateCall call, HTMLWriter writer)
     throws TemplateCallHandlerException {
-        final String name = context.evaluate(call.getName());
-        for(String namePattern : namePatterns) {
-            if(name.matches(namePattern)) return true;
+        final String name;
+        try {
+            name = context.evaluate(call.getName());
+        } catch (NodeRenderException nre) {
+            throw new TemplateCallHandlerException("Error while evaluating context.", nre);
+        }
+        for (String namePattern : namePatterns) {
+            if (name.matches(namePattern)) return true;
         }
         return false;
     }

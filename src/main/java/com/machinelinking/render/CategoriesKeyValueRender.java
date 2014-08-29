@@ -26,15 +26,19 @@ public class CategoriesKeyValueRender implements KeyValueRender {
 
     @Override
     public void render(JsonContext context, RootRender rootRender, String key, JsonNode value, HTMLWriter writer)
-    throws IOException {
+    throws NodeRenderException {
         final Iterator<JsonNode> categories = value.get("content").getElements();
-        writer.openTag("div");
-        writer.heading(1, "Categories");
-        final String lang = WikimediaUtils.urlToParts(context.getDocumentContext().getDocumentURL()).lang;
-        while(categories.hasNext()) {
-            writer.category(lang, categories.next().asText());
+        try {
+            writer.openTag("div");
+            writer.heading(1, "Categories");
+            final String lang = WikimediaUtils.urlToParts(context.getDocumentContext().getDocumentURL()).lang;
+            while (categories.hasNext()) {
+                writer.category(lang, categories.next().asText());
+            }
+            writer.closeTag();
+        } catch (IOException ioe) {
+            throw new NodeRenderException(ioe);
         }
-        writer.closeTag();
     }
 
 }
