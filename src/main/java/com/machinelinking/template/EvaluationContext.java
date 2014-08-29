@@ -109,7 +109,7 @@ public class EvaluationContext {
                 writer.flush();
                 sb.append(baos.toString());
             } catch (IOException ioe) {
-                throw new RuntimeException(ioe); //TODO: improve exc management.
+                throw new NodeRenderException(ioe);
             }
         }
     }
