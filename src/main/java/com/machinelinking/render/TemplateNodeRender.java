@@ -11,12 +11,14 @@
  * If not, see <https://creativecommons.org/licenses/by/4.0/legalcode>.
  */
 
-package com.machinelinking.template;
+package com.machinelinking.render;
 
-import com.machinelinking.render.HTMLWriter;
-import com.machinelinking.render.JsonContext;
-import com.machinelinking.render.NodeRender;
-import com.machinelinking.render.RootRender;
+import com.machinelinking.template.DefaultTemplateProcessorFactory;
+import com.machinelinking.template.EvaluationContext;
+import com.machinelinking.template.TemplateCall;
+import com.machinelinking.template.TemplateCallBuilder;
+import com.machinelinking.template.TemplateProcessor;
+import com.machinelinking.template.TemplateProcessorException;
 import org.codehaus.jackson.JsonNode;
 
 /**

@@ -13,8 +13,6 @@
 
 package com.machinelinking.render;
 
-import com.machinelinking.template.TemplateNodeRender;
-
 /**
  * Default implementation of {@link HTMLRenderFactory}.
  *
@@ -46,7 +44,7 @@ public class DefaultHTMLRenderFactory implements HTMLRenderFactory {
         render.addNodeRender("link"     , new LinkNodeRender());
         render.addNodeRender("list"     , new ListNodeRender());
         render.addNodeRender("section"  , new SectionRender());
-        render.addNodeRender("template" , new TemplateNodeRender()); //TODO: avoid dependency with template package
+        render.addNodeRender("template" , new TemplateNodeRender());
         render.addNodeRender("table"    , new TableNodeRender());
         render.addKeyValueRender("url"        , new URLKeyValueRender());
         render.addKeyValueRender("archiveurl" , new URLKeyValueRender());
