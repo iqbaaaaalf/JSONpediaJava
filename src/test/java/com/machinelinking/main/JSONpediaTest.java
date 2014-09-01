@@ -197,7 +197,7 @@ public class JSONpediaTest {
     @Test
     public void testProcessEntityWithFilter() throws JSONpediaException {
         final JsonNode root = JSONpedia.instance()
-                .process("en:Albert Einstein").flags("Linkers,Validate,Structure").filter("__type:reference").json();
+                .process("en:Albert Einstein").flags("Linkers,Validate,Structure").filter("@type:reference").json();
         Assert.assertEquals(2, root.size());
     }
 
