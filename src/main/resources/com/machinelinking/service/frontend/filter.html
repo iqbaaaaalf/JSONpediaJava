@@ -21,16 +21,16 @@
 <pre>sections</pre>
 
 A more complex format is a list of <i>comma-separated</i> <b>key/value patterns</b> like:
-<pre>name:Death date and age,__type:template</pre>
+<pre>name:Death date and age,@type:template</pre>
 where <i>Key-i</i> is a string matching a JSON object key and <i>Value-i</i> is a regexp matching
 the value associated to such key. Any JSON object matching <strong>ALL</strong> these patterns will be returned.
 If patters contain special characters like <code>,</code> they can be escaped within quotes:
-<pre>url:".*[\s,\d]?\.html",__type:link</pre>
+<pre>url:".*[\s,\d]?\.html",@type:link</pre>
 
 Hierarchical patterns can be combined with the <code>&gt;</code> operator like
 (see live example on <a targe="_blank"
-                        href="/annotate/resource/json/en%3AAlbert_Einstein?filter=notable_students%3E__type:template,name:Plainlist%3E__type:reference&procs=Extractors,Structure">en:Albert_Einstein</a>):
-<pre>notable_students>__type:template,name:Plainlist>__type:reference</pre>
+                        href="/annotate/resource/json/en%3AAlbert_Einstein?filter=notable_students%3E@type:template,name:Plainlist%3E@type:reference&procs=Extractors,Structure">en:Albert_Einstein</a>):
+<pre>notable_students>@type:template,name:Plainlist>@type:reference</pre>
 
 The full <b>filter syntax</b> is reported below.
 <pre>
