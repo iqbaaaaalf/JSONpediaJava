@@ -99,9 +99,12 @@ task fullCapsule(type: Jar, dependsOn: jar) {
             'Min-Java-Version': '1.7.0',
     )
   }
-  filesMatching('*.html') {
-    filter(ReplaceTokens, tokens: ['version': version])
-  }
+}
+
+task fatJar(type: Jar) {
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
 }
 
 install.dependsOn fullCapsule
