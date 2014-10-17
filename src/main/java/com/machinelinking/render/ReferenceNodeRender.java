@@ -13,14 +13,43 @@
 
 package com.machinelinking.render;
 
+import com.machinelinking.extractor.Reference;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class ReferenceNodeRender implements NodeRender {
+
+    private static final String ALT_PREFIX = "alt=";
+
+    private static final Map<String,String> REFERENCE_NODE_ATTR = new HashMap<String,String>(){{
+        put("class", "reference");
+    }};
+
+    public static void writeReferenceHTML(String lang, String ref, String caption, HTMLWriter writer)
+    throws IOException {
+         writer.openTag("span", REFERENCE_NODE_ATTR);
+        if(Reference.isImage(ref) ) {
+            final String[] descSections = caption.split("\\|");
+            writer.key(descSections[descSections.length -1]);
+            String alt = "";
+            for(String descSection : descSections) {
+                if(descSection.startsWith(ALT_PREFIX)) {
+                    alt = descSection.substring(ALT_PREFIX.length());
+                    break;
+                }
+            }
+            writer.image(Reference.imageResourceToURL(ref), alt);
+        } else {
+            writer.reference(caption, lang, ref, true);
+        }
+        writer.closeTag();
+    }
 
     @Override
     public boolean acceptNode(JsonContext context, JsonNode node) {
@@ -32,23 +61,13 @@ public class ReferenceNodeRender implements NodeRender {
     throws NodeRenderException {
         final String label       = node.get("label").asText();
         final String description = node.get("content").asText().trim();
-        final String[] labelSections = label.split(".");
         try {
-            if (labelSections.length == 2) {
-                Reference.writeReferenceHTML(
-                        String.format("http://%s.wikipedia.org/wiki/%s", labelSections[0], labelSections[1]),
-                        description,
-                        writer
-                );
-            } else if (labelSections.length == 0) {
-                Reference.writeReferenceHTML(
-                        String.format("http://en.wikipedia.org/wiki/%s", label),
-                        description.length() == 0 ? label : description,
-                        writer
-                );
-            } else {
-                throw new IllegalArgumentException("Invalid label: " + label);
-            }
+            writeReferenceHTML(
+                    context.getLang(),
+                    label,
+                    description.length() == 0 ? label : description,
+                    writer
+            );
         } catch (IOException ioe) {
             throw new NodeRenderException(ioe);
         }
