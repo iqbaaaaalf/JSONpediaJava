@@ -16,12 +16,15 @@ package com.machinelinking.extractor;
 
 import com.machinelinking.serializer.Serializable;
 import com.machinelinking.serializer.Serializer;
+import com.machinelinking.util.StringUtils;
 import com.machinelinking.wikimedia.WikimediaUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * Defines a <i>Wikipedia reference</i>.
@@ -30,41 +33,107 @@ import java.net.URLEncoder;
  */
 public class Reference implements Serializable {
 
-    public static final String ANNOTATE_HTML_PREFIX = "/annotate/resource/html/";
+    public static final String[] IMAGE_EXT = new String[] {"jpg", "png"};
 
-    public static final String IMG_PREFIX      = "File";
-    public static final String CATEGORY_PREFIX = "Category";
+    private static final String IMAGE_PREFIX = "Image:";
+    private static final String FILE_PREFIX = "File:";
+    public static final String CATEGORY_PREFIX = "Category:";
+
+
+    public static final int DEFAULT_IMAGE_WIDTH = 110;
+
+    public static final String ANNOTATE_HTML_PREFIX = "/annotate/resource/html/";
 
     private URL url;
     private String description;
     private short sectionIndex;
 
-    public static URL labelToURL(URL document, String url) throws MalformedURLException {
-        final int prefixIndex = url.indexOf(":");
-        final String urlLabel = url.replaceAll(" ", "_");
+    /**
+     * Checks whether given URL describes an image.
+     *
+     * @param url
+     * @return
+     */
+    public static boolean isImage(String url) {
+        final String urlLower = url.toLowerCase();
+        for(String ext : IMAGE_EXT) {
+            if(urlLower.endsWith("." + ext)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static String getURLDeclaredLang(URL url) {
+        return url.getHost().split("\\.")[0];
+    }
+
+    public static boolean isLangPrefix(String prefix) {
+        return prefix.matches("[a-z]{2,3}(-[a-z]{1,3})?(-[a-z]{2,3})?");
+    }
+
+    public static String imageResourceToURL(String imgResource) {
+        final int fileStart = imgResource.lastIndexOf('/') + 1;
+        final String file = imgResource.substring(fileStart + FILE_PREFIX.length());
+        final MessageDigest messageDigest;
+        try {
+            messageDigest = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException nsae) {
+            throw new IllegalStateException(nsae);
+        }
+
+        final String filename = file.replaceAll(" ", "_");
+        messageDigest.update(filename.getBytes());
+        final String digest = StringUtils.md5bytesToHex(messageDigest.digest());
+        final String urlEncFile;
+        final String folder;
+        try {
+            urlEncFile = URLEncoder.encode(filename, "utf-8");
+            folder = String.format(
+                    "%c/%c%c/%s/%dpx-%s",
+                    digest.charAt(0),
+                    digest.charAt(0), digest.charAt(1),
+                    urlEncFile,
+                    DEFAULT_IMAGE_WIDTH,
+                    urlEncFile
+            );
+        } catch (UnsupportedEncodingException uee) {
+            throw new IllegalStateException(uee);
+        }
+
+        //final String location = folder.endsWith(".png") ? "en" : "commons";
+        // http://upload.wikimedia.org/wikipedia/commons/f/fb/Albert_Einstein_at_the_age_of_three_%281882%29.jpg
+        return String.format("http://upload.wikimedia.org/wikipedia/commons/thumb/%s", folder);
+    }
+
+    public static URL labelToURL(URL document, String label) throws MalformedURLException {
+        final String normalizedLabel = label.replaceAll(" ", "_");
+        final int prefixIndex = label.indexOf(":");
+        final String documentString = document.toExternalForm();
+        final String documentPrefix = documentString.substring(0, documentString.lastIndexOf('/') + 1);
         if(prefixIndex == -1) {
-            final String documentString = document.toExternalForm();
-            final String documentPrefix = documentString.substring(0, documentString.lastIndexOf('/') + 1);
-            return new URL(documentPrefix + urlLabel);
+            return new URL(documentPrefix + normalizedLabel);
         } else {
-            final String prefix = url.substring(0, prefixIndex);
+            final String prefix = label.substring(0, prefixIndex + 1);
             switch (prefix) {
-                case IMG_PREFIX:
-                    return new URL(WikimediaUtils.getEntityPath(document.toExternalForm()) + urlLabel);
+                case FILE_PREFIX:
+                case IMAGE_PREFIX:
                 case CATEGORY_PREFIX:
-                    return new URL(WikimediaUtils.getEntityPath(document.toExternalForm()) + urlLabel);
+                    return new URL(WikimediaUtils.getEntityPath(document.toExternalForm()) + normalizedLabel);
                 default:
-                    return new URL(
-                            String.format(
-                                    "http://%s.wikipedia.org/wiki/%s",
-                                    prefix, safeSubstring(urlLabel, prefixIndex + 1)
-                            )
-                    );
+                    if(prefixIndex == 0) { // es: ':United_Kingdom'
+                        return new URL(toURLString(getURLDeclaredLang(document), normalizedLabel.substring(1)));
+                    }
+                    final String labelPrefix = normalizedLabel.substring(0, prefixIndex);
+                    if(isLangPrefix(labelPrefix)) {
+                        return new URL(toURLString(labelPrefix, normalizedLabel.substring(prefixIndex+1)));
+                    } else {
+                        return new URL(toURLString(getURLDeclaredLang(document), normalizedLabel));
+                    }
             }
         }
     }
 
-    // TODO: missing IMAGE and CATEGORY management.
     public static String[] urlToLabel(String in) {
         final String HTTP_PREFIX = "http://";
         if(in.startsWith(HTTP_PREFIX)) {
@@ -87,13 +156,6 @@ public class Reference implements Serializable {
 
     public static String toInternalURLString(String url) throws UnsupportedEncodingException {
         return ANNOTATE_HTML_PREFIX + URLEncoder.encode(url, "utf-8");
-    }
-
-    private static String safeSubstring(String str, int index) {
-        if(index < str.length() - 1) {
-            return str.substring(index);
-        }
-        return "";
     }
 
     public Reference(URL document, String label, String description, short sectionIndex)
