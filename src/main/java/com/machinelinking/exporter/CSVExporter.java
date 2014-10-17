@@ -41,8 +41,9 @@ public interface CSVExporter {
      * @param is
      * @param os
      * @return the report related to the exporting activity.
+     * @throws IOException if any error occur while reading or writing.
      */
-    CSVExporterReport export(URL pagePrefix, InputStream is, OutputStream os);
+    CSVExporterReport export(URL pagePrefix, InputStream is, OutputStream os) throws IOException;
 
     /**
      * Exports a given Wiki page fetched from the specified input file <code>in</code>
@@ -52,6 +53,7 @@ public interface CSVExporter {
      * @param in
      * @param out
      * @return the report related to the exporting activity.
+     * @throws java.io.IOException if any error occur while reading or writing.
      */
     CSVExporterReport export(URL pagePrefix, File in, File out) throws IOException;
 

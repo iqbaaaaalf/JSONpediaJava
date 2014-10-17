@@ -20,6 +20,7 @@ import com.beust.jcommander.ParameterException;
 import com.machinelinking.exporter.CSVExporter;
 import com.machinelinking.exporter.CSVExporterReport;
 import com.machinelinking.exporter.TemplatePropertyCSVExporter;
+import com.machinelinking.exporter.TextCSVExporter;
 
 import java.io.File;
 import java.io.FileNotFoundException;

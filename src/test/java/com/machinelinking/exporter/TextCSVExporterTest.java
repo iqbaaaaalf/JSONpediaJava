@@ -23,25 +23,24 @@ import java.io.IOException;
 import java.net.URL;
 
 /**
- *  Test case for {@link TemplatePropertyCSVExporter}.
+ *  Test case for {@link com.machinelinking.exporter.TextCSVExporter}.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class TemplatePropertyCSVExporterTest {
+public class TextCSVExporterTest {
 
     @Test
     public void testExport() throws IOException {
-        final TemplatePropertyCSVExporter exporter = new TemplatePropertyCSVExporter();
+        final TextCSVExporter exporter = new TextCSVExporter();
         exporter.setThreads(1);
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
-        final CSVExporterReport report = exporter.export(
+        exporter.export(
                 new URL("http://en.wikipedia.org/"),
                 FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz"),
                 out
         );
 
-        Assert.assertEquals(1133, report.getTemplatesCount());
-        final String expected = IOUtils.toString( this.getClass().getResourceAsStream("template-prop-out.csv") );
+        final String expected = IOUtils.toString(this.getClass().getResourceAsStream("text-out.csv"));
         Assert.assertEquals(expected, out.toString());
     }
 
