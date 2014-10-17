@@ -85,7 +85,7 @@ task runFacetLoader(dependsOn: 'jar', type: JavaExec) {
 }
 
 task fullCapsule(type: Jar, dependsOn: jar) {
-  archiveName = "${project.name}-${project.version}-full.jar"
+  archiveName = "${project.name}-${project.version}-capsule.jar"
 
   from jar
   from { configurations.runtime }
@@ -102,9 +102,9 @@ task fullCapsule(type: Jar, dependsOn: jar) {
 }
 
 task fatJar(type: Jar) {
-    baseName = project.name + '-all'
+    baseName = project.name + '-full'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
 
-install.dependsOn fullCapsule
+install.dependsOn fatJar

@@ -76,10 +76,10 @@ gradle build -x tests
 When the compilation finishes the resulting binary can be found in ```build/libs```
 A self-contained jar can also be built by issuing 
 ```bash
-$ gradle fullCapsule
+$ gradle fatjar
 ```
 
-The resulting jar will also be in ```build/libs``` with the name ```jsonpedia-{VERSION}-full.jar```.
+The resulting jar will also be in ```build/libs``` with the name ```jsonpedia-full-{VERSION}.jar```.
 
 Please note that building a capsule will not run any tests.
 
@@ -88,7 +88,7 @@ Please note that building a capsule will not run any tests.
 ```bash
 $ echo "server.host = 127.0.0.1" > /tmp/conf.properties
 $ echo "server.port = 8080" > /tmp/conf.properties
-$ java -cp build/libs/jsonpedia-{VERSION}-full.jar com.machinelinking.cli.server -c /tmp/conf.properties
+$ java -cp build/libs/jsonpedia-full-{VERSION}.jar com.machinelinking.cli.server -c /tmp/conf.properties
 ```
 
 You can now connect to ```http://127.0.0.1:8080/frontend/index.html``` in your browser and use the web interface!
@@ -117,9 +117,8 @@ Ingestion completed in 63 sec.
 To process a single dump manually:
 
 ```bash
-$ java -cp build/libs/jsonpedia-{VERSION}-full.jar \
-  com.machinelinking.cli.loader \
-  -p http://en.wikipedia.org/wiki -i src/test/resources/enwiki-latest-pages-articles-p3.xml.gz -o out.csv
+$ java -cp build/libs/jsonpedia-full-{VERSION}.jar \
+  com.machinelinking.cli.loader conf/default.properties src/test/resources/enwiki-latest-pages-articles-p3.xml.gz
 ```
 
 ```bash
@@ -155,10 +154,10 @@ Processed docs: 58, Generated facet docs: 1051
 
 The CSV Exporter CLI tool allows to convert Wikipedia dumps to tabular data generated from page parsing.
 
-To convert the gzipped dump in test resources using the page prefix of en Wikipedia with a mono thread processor run:
+To convert the gzipped dump in test resources using the page prefix of en Wikipedia (with a single thread processor) run:
 
 ```bash
-$ java -cp build/libs/jsonpedia-{VERSION}-full.jar com.machinelinking.cli.exporter \
+$ java -cp build/libs/jsonpedia-full-{VERSION}.jar com.machinelinking.cli.exporter \
     --prefix http://en.wikipedia.org \
     --in src/test/resources/dumps/enwiki-latest-pages-articles-p1.xml.gz \
     --out out.csv --threads 1
