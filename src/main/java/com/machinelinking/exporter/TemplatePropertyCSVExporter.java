@@ -38,7 +38,8 @@ import java.net.URL;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class DefaultCSVExporter extends WikiDumpMultiThreadProcessor<DefaultCSVExporter.TemplatePropertyProcessor>
+public class TemplatePropertyCSVExporter
+extends WikiDumpMultiThreadProcessor<TemplatePropertyCSVExporter.TemplatePropertyProcessor>
 implements CSVExporter {
 
     public static final String ANON_PROPERTY_PREFIX = "_anon";
@@ -220,8 +221,8 @@ implements CSVExporter {
         private void print(String value) {
             writeLine(
                     String.format(
-                            "%s\t%d\t%s\t%s\t%s\n",
-                            pageTitle, pageId, template, property, value
+                            "%d\t%s\t%s\t%s\t%s\n",
+                            pageId, pageTitle, template, property, value
                     )
             );
         }

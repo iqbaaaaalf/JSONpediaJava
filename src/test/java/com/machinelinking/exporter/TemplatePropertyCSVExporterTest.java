@@ -23,15 +23,15 @@ import java.io.IOException;
 import java.net.URL;
 
 /**
- *  Test case for {@link DefaultCSVExporter}.
+ *  Test case for {@link TemplatePropertyCSVExporter}.
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class DefaultCSVExporterTest {
+public class TemplatePropertyCSVExporterTest {
 
     @Test
     public void testExport() throws IOException {
-        final DefaultCSVExporter exporter = new DefaultCSVExporter();
+        final TemplatePropertyCSVExporter exporter = new TemplatePropertyCSVExporter();
         exporter.setThreads(1);
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         final CSVExporterReport report = exporter.export(

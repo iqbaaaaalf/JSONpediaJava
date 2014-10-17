@@ -13,6 +13,8 @@
 
 package com.machinelinking.exporter;
 
+import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
@@ -25,6 +27,13 @@ import java.net.URL;
 public interface CSVExporter {
 
     /**
+     * Sets the number of concurrent threads processing exporter.
+     *
+     * @param count positive number of threads.
+     */
+    void setThreads(int count);
+
+    /**
      * Exports a given Wiki page fetched from the specified input stream <code>is</code>
      * to the specified output stream <code>os</code> as <i>CSV</i>.
      *
@@ -34,5 +43,16 @@ public interface CSVExporter {
      * @return the report related to the exporting activity.
      */
     CSVExporterReport export(URL pagePrefix, InputStream is, OutputStream os);
+
+    /**
+     * Exports a given Wiki page fetched from the specified input file <code>in</code>
+     * to the specified output file <code>out</code> as <i>CSV</i>.
+     *
+     * @param pagePrefix
+     * @param in
+     * @param out
+     * @return the report related to the exporting activity.
+     */
+    CSVExporterReport export(URL pagePrefix, File in, File out) throws IOException;
 
 }
