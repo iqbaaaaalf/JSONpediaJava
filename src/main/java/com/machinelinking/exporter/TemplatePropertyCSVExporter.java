@@ -21,6 +21,7 @@ import com.machinelinking.wikimedia.PageProcessor;
 import com.machinelinking.wikimedia.ProcessorReport;
 import com.machinelinking.wikimedia.WikiDumpMultiThreadProcessor;
 import com.machinelinking.wikimedia.WikiPage;
+import org.apache.log4j.Logger;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedWriter;
@@ -43,6 +44,8 @@ extends WikiDumpMultiThreadProcessor<TemplatePropertyCSVExporter.TemplatePropert
 implements CSVExporter {
 
     public static final String ANON_PROPERTY_PREFIX = "_anon";
+
+    private static final Logger logger = Logger.getLogger(TemplatePropertyCSVExporter.class);
 
     private BufferedWriter writer;
     private int threads = 0;
@@ -151,7 +154,7 @@ implements CSVExporter {
                 parser.parse( new DocumentSource(pageURL, page.getContent()));
             } catch (Exception e) {
                 errorPages++;
-                throw new RuntimeException("Error while parsing page " + pageURL, e);
+                logger.error("Error while parsing page " + pageURL, e);
             } finally {
                 processedPages++;
             }
