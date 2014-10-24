@@ -35,7 +35,7 @@ public class TextCSVExporterTest {
         exporter.setThreads(1);
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         exporter.export(
-                new URL("http://en.wikipedia.org/"),
+                new URL("http://it.wikipedia.org/"),
                 FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz"),
                 out
         );

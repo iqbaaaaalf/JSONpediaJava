@@ -21,6 +21,7 @@ import com.machinelinking.wikimedia.PageProcessor;
 import com.machinelinking.wikimedia.ProcessorReport;
 import com.machinelinking.wikimedia.WikiDumpMultiThreadProcessor;
 import com.machinelinking.wikimedia.WikiPage;
+import org.apache.log4j.Logger;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -33,14 +34,20 @@ import java.io.PrintWriter;
 import java.net.URL;
 
 /**
+ * Extracts raw text content from a Wikimedia dump.
+ *
  * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TextCSVExporter
 extends WikiDumpMultiThreadProcessor<TextCSVExporter.TextProcessor>
 implements CSVExporter {
 
+    private static final Logger logger = Logger.getLogger(TextCSVExporter.class);
+
     private PrintWriter writer;
     private int threads = 1;
+
+    private String pageTitle;
 
     @Override
     public void setThreads(int num) {
@@ -90,6 +97,19 @@ implements CSVExporter {
         writer.close();
     }
 
+    private void printOpenPage(String pageId) {
+        printText(String.format("<%s>", pageId));
+    }
+
+    private void printClosePage(String pageId) {
+        printText(String.format("</%s>\n", pageId));
+    }
+
+    private void printText(String txt) {
+        writer.write(txt);
+        writer.print(' ');
+    }
+
     class TextProcessor extends DefaultWikiTextParserHandler implements PageProcessor {
 
         private final WikiTextParser parser = new WikiTextParser(this);
@@ -97,13 +117,16 @@ implements CSVExporter {
         private long processedPages;
         private long errorPages;
 
+        private int insideStructure = 0;
+
         @Override
         public void processPage(String pagePrefix, String threadId, WikiPage page) {
+            pageTitle = page.getTitle();
             try {
                 parser.parse(new DocumentSource(new URL(pagePrefix), page.getContent()));
             } catch (Exception e) {
                 errorPages++;
-                throw new RuntimeException("Error while parsing page " + page.getTitle(), e);
+                logger.error("Error while parsing page " + page.getTitle(), e);
             } finally {
                 processedPages++;
             }
@@ -120,9 +143,29 @@ implements CSVExporter {
         }
 
         @Override
+        public void beginTemplate(TemplateName name) {
+            insideStructure++;
+        }
+
+        @Override
+        public void endTemplate(TemplateName name) {
+            insideStructure--;
+        }
+
+        @Override
+        public void beginDocument(URL document) {
+            printOpenPage(pageTitle);
+        }
+
+        @Override
+        public void endDocument() {
+            printClosePage(pageTitle);
+        }
+
+        @Override
         public void text(String content) {
-            writer.write(content);
-            writer.print(' ');
+            if(insideStructure == 0)
+                printText(content);
         }
     }
 
