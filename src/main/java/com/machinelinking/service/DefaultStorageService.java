@@ -59,6 +59,7 @@ public class DefaultStorageService implements StorageService {
     public static final String STORAGE_SERVICE_CONNECTION_MONGO_PROP = "storage.service.connection.mongo";
     public static final String STORAGE_SERVICE_CONNECTION_ELASTIC_PROP = "storage.service.connection.elastic";
     public static final String STORAGE_SERVICE_QUERY_LIMIT_PROP = "storage.service.query.limit";
+    public static final String STORAGE_SERVICE_ELASTIC_FACETING_DB_PROP = "storage.service.elastic.faceting.db";
 
     private static final Logger logger = Logger.getLogger(DefaultStorageService.class);
 
@@ -67,11 +68,14 @@ public class DefaultStorageService implements StorageService {
     private final MongoJSONStorageConnection mongoConnection;
     private final ElasticJSONStorageConnection elasticConnection;
 
+    private final String STORAGE_SERVICE_ELASTIC_FACETING_DB;
+
     private final int QUERY_LIMIT;
 
     public DefaultStorageService() {
         final ConfigurationManager manager = ConfigurationManager.getInstance();
         QUERY_LIMIT = Integer.parseInt(manager.getProperty(STORAGE_SERVICE_QUERY_LIMIT_PROP));
+        STORAGE_SERVICE_ELASTIC_FACETING_DB = manager.getProperty(STORAGE_SERVICE_ELASTIC_FACETING_DB_PROP);
         mongoConnection = initMongoConnection(manager);
         elasticConnection = initElasticConnection(manager);
     }
@@ -210,7 +214,11 @@ public class DefaultStorageService implements StorageService {
     ) {
         try {
             return Response.ok(
-                    String.format("%s(%s);", callback, elasticConnection.query(source)),
+                    String.format(
+                            "%s(%s);",
+                            callback,
+                            elasticConnection.facetQuery(STORAGE_SERVICE_ELASTIC_FACETING_DB, source)
+                    ),
                     MediaType.APPLICATION_JSON + ";charset=UTF-8"
             ).build();
         } catch (JSONStorageConnectionException jsce) {
