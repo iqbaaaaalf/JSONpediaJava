@@ -130,11 +130,9 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
         }
     }
 
-    @Override
-    public String query(String qry) throws JSONStorageConnectionException {
-        final String index = getIndex(db, collection);
+    public String facetQuery(String facetIndex, String qry) throws JSONStorageConnectionException {
         final SearchRequestBuilder builder = new SearchRequestBuilder(client);
-        builder.setIndices(index);
+        builder.setIndices(facetIndex);
         builder.setSource(qry);
         final SearchRequest request = builder.request();
         final SearchResponse response = client.search(request).actionGet();
