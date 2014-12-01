@@ -163,7 +163,7 @@ public class JSONUtils {
         JsonParser jsonParser = jsonFactory.createJsonParser(is);
         jsonParser.setCodec( createObjectMapper() );
         final JsonNode node = jsonParser.readValueAsTree();
-            if(checkStreamEmpty && is.available() > 0)
+            if(checkStreamEmpty && jsonParser.nextToken() != null)
                 throw new IllegalArgumentException("Invalid JSON stream, should be empty.");
         return node;
     }
@@ -182,9 +182,12 @@ public class JSONUtils {
 
     public static final JsonNode[] parseJSONMulti(String in) throws IOException {
         final ByteArrayInputStream bais = new ByteArrayInputStream(in.getBytes());
+        final JsonParser jsonParser = jsonFactory.createJsonParser(bais);
+        jsonParser.setCodec(createObjectMapper());
         final List<JsonNode> result = new ArrayList<>();
-        while(bais.available() > 0) {
-            result.add(parseJSON(bais, false));
+        while (true) {
+            result.add(jsonParser.readValueAsTree());
+            if(jsonParser.nextToken() == null) break;
         }
         return result.toArray(new JsonNode[result.size()]);
     }

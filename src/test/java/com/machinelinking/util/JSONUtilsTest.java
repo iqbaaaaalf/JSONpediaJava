@@ -16,6 +16,7 @@ package com.machinelinking.util;
 import com.machinelinking.serializer.JSONSerializer;
 import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
+import org.codehaus.jackson.JsonParseException;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -28,6 +29,23 @@ import java.util.HashMap;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class JSONUtilsTest {
+
+    @Test
+    public void testParseJSONMulti() throws IOException {
+         Assert.assertEquals(1, JSONUtils.parseJSONMulti("{}").length);
+         Assert.assertEquals(2, JSONUtils.parseJSONMulti("{}{}").length);
+         Assert.assertEquals(3, JSONUtils.parseJSONMulti("{}{}{}").length);
+    }
+
+    @Test(expected = JsonParseException.class)
+    public void testParseJSONMultiFail1() throws IOException {
+         Assert.assertEquals(1, JSONUtils.parseJSONMulti("{}{").length);
+    }
+
+    @Test(expected = JsonParseException.class)
+    public void testParseJSONMultiFail2() throws IOException {
+         Assert.assertEquals(1, JSONUtils.parseJSONMulti("{}x{}").length);
+    }
 
     @Test
     public void testJacksonNodeToSerializer() throws IOException {
