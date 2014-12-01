@@ -112,16 +112,16 @@ public class exporter {
 
     private CSVExporter createExporter(String exporter) {
         switch (exporter) {
-            case "templateproperty":
+            case FORMAT_TEMPLATE_PROP:
                 return new TemplatePropertyCSVExporter();
-            case "text":
+            case FORMAT_TEXT:
                 return new TextCSVExporter();
             default:
                 throw new IllegalArgumentException();
         }
     }
 
-    class FormatValidator implements IValueValidator<String> {
+    public static class FormatValidator implements IValueValidator<String> {
         @Override
         public void validate(String name, String value) throws ParameterException {
             for(String format: exporter.FORMATS) {
