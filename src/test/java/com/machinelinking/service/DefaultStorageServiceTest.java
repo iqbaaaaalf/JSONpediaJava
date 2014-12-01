@@ -69,6 +69,7 @@ public class DefaultStorageServiceTest extends ServiceTestBase {
                             ElasticJSONStorageTest.TEST_DB, ElasticJSONStorageTest.TEST_COLLECTION)
             );
             properties.put(DefaultStorageService.STORAGE_SERVICE_QUERY_LIMIT_PROP, Integer.toString(1000));
+            properties.put(DefaultStorageService.STORAGE_SERVICE_ELASTIC_FACETING_DB_PROP, "jsonpedia_test_facet");
             ConfigurationManager.getInstance().initProperties(properties);
         }
     }
