@@ -13,7 +13,6 @@
 
 package com.machinelinking.extractor;
 
-import com.machinelinking.parser.FilteredHandlerCriteria;
 import com.machinelinking.parser.WikiTextParser;
 import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.parser.WikiTextParserFilteredHandler;
@@ -35,24 +34,17 @@ public class TextHandlerTest {
     public void testAbstractTextExtraction() throws IOException, WikiTextParserException {
         final TextHandler textHandler = new TextHandler();
         final WikiTextParser parser = new WikiTextParser(
-                new WikiTextParserFilteredHandler(
-                        textHandler,
-                        new FilteredHandlerCriteria() {
-                            @Override
-                            public boolean mustFilter(int paragraphIndex, int sectionLevel, int nestingLevel) {
-                                return paragraphIndex == 0 || sectionLevel != -1;
-                            }
-                        }));
+                new WikiTextParserFilteredHandler(textHandler, AbstractFilteredHandlerCriteria.INSTANCE)
+        );
         parser.parse(
                 new URL("http://test/page1"),
                 this.getClass().getResourceAsStream("Page1.wikitext")
         );
 
-
         Assert.assertEquals(
                 "Invalid text extraction",
                 IOUtils.toString(this.getClass().getResourceAsStream("Page1-texthandler.txt")),
-                textHandler.flushContent()
+                textHandler.flushContent().trim()
         );
     }
 

@@ -15,6 +15,7 @@ package com.machinelinking.extractor;
 
 import com.machinelinking.pagestruct.WikiTextSerializerHandler;
 import com.machinelinking.pagestruct.WikiTextSerializerHandlerFactory;
+import com.machinelinking.parser.Attribute;
 import com.machinelinking.parser.DefaultWikiTextParserHandler;
 import com.machinelinking.render.DefaultDocumentContext;
 import com.machinelinking.render.DefaultHTMLRender;
@@ -48,7 +49,7 @@ public class TextHandler extends DefaultWikiTextParserHandler {
 
     private final DefaultHTMLRender render = DefaultHTMLRenderFactory.getInstance().createRender(false);
 
-    private URL documentURL;
+    private DocumentContext context;
     private int nestedStructures = 0;
 
     protected TextHandler() {
@@ -77,13 +78,13 @@ public class TextHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void beginDocument(URL documentURL) {
-        this.documentURL = documentURL;
+        this.context = new DefaultDocumentContext(RenderScope.TEXT_RENDERING, documentURL);
         reset();
     }
 
     @Override
     public void section(String title, int level) {
-        decoratedHandler.section(title, level);
+        //decoratedHandler.section(title, level);
     }
 
     @Override
@@ -183,6 +184,51 @@ public class TextHandler extends DefaultWikiTextParserHandler {
         }
     }
 
+    @Override
+    public void paragraph() {
+        decoratedHandler.paragraph();
+    }
+
+    @Override
+    public void beginTag(String name, Attribute[] attributes) {
+        // disabled // decoratedHandler.beginTag(name, attributes);
+    }
+
+    @Override
+    public void endTag(String name) {
+        // disabled // decoratedHandler.endTag(name);
+    }
+
+    @Override
+    public void inlineTag(String name, Attribute[] attributes) {
+        // disabled // decoratedHandler.inlineTag(name, attributes);
+    }
+
+    @Override
+    public void commentTag(String comment) {
+        // disabled // decoratedHandler.commentTag(comment);
+    }
+
+    @Override
+    public void entity(String form, char value) {
+        // disabled // decoratedHandler.entity(form, value);
+    }
+
+    @Override
+    public void var(Var v) {
+       // disabled // decoratedHandler.var(v);
+    }
+
+    @Override
+    public void italicBold(int level) {
+        //disabled// decoratedHandler.italicBold(level);
+    }
+
+    @Override
+    public void endDocument() {
+        decoratedHandler.endDocument();
+    }
+
     private void expandBuffer(String data, StringBuilder sb) {
         try {
             sb.append(expandStructure(data));
@@ -196,7 +242,6 @@ public class TextHandler extends DefaultWikiTextParserHandler {
 
     private String expandStructure(String data) throws IOException, NodeRenderException {
         final JsonNode[] nodes = JSONUtils.parseJSONMulti(data);
-        final DocumentContext context = new DefaultDocumentContext(RenderScope.TEXT_RENDERING, documentURL);
         final StringBuilder sb = new StringBuilder();
         for(JsonNode node : nodes) {
             sb.append( render.renderFragment(context, node) );
