@@ -46,6 +46,7 @@ public interface Ontology {
     static final String ABSTRACT_FIELD = "abstract";
     static final String CATEGORIES_FIELD = "categories";
     static final String SECTIONS_FIELD = "sections";
+    static final String SECTIONS_TEXT_FIELD = "sections_text";
     static final String REFERENCES_FIELD = "references";
     static final String LINKS_FIELD = "links";
     static final String FREEBASE_FIELD = "freebase";
