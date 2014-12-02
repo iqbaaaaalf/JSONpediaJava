@@ -23,11 +23,12 @@ public interface FilteredHandlerCriteria {
     /**
      * Defines whether  or not an event must be filtered on the basis of the current section and nesting levels.
      *
-     * @param paragraphIndex
-     * @param sectionLevel
-     * @param nestingLevel
+     * @param paragraphIndex index of the current paragraph (paragraphs are separated by <code>\n\n+</code>).
+     * @param sectionLevel index of current section. Until first section index is <code>-1</code>.
+     * @param nestingLevel index of event nesting inside other events.
+     * @param plainTextFound <code>true</code> if plain text at nesting level <code>0</code> has been found.
      * @return <code>true</true> if the event must be filtered, <code>false</code> otherwise.
      */
-    boolean mustFilter(int paragraphIndex, int sectionLevel, int nestingLevel);
+    boolean mustFilter(int paragraphIndex, int sectionLevel, int nestingLevel, boolean plainTextFound);
 
 }

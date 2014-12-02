@@ -29,6 +29,7 @@ public class WikiTextParserFilteredHandler implements WikiTextParserHandler {
     private int paragraphIndex = 0;
     private int sectionLevel = -1;
     private int nestingLevel = 0;
+    private boolean plainTextFound = false;
 
     public WikiTextParserFilteredHandler(WikiTextParserHandler decorated, FilteredHandlerCriteria criteriaHandler) {
         this.decorated = decorated;
@@ -174,6 +175,7 @@ public class WikiTextParserFilteredHandler implements WikiTextParserHandler {
 
     @Override
     public void text(String content) {
+        if(!plainTextFound && nestingLevel == 0) plainTextFound = true;
         if(mustFilter()) return;
         decorated.text(content);
     }
@@ -216,7 +218,7 @@ public class WikiTextParserFilteredHandler implements WikiTextParserHandler {
     }
 
     protected boolean mustFilter() {
-        return criteriaHandler.mustFilter(paragraphIndex, sectionLevel, nestingLevel);
+        return criteriaHandler.mustFilter(paragraphIndex, sectionLevel, nestingLevel, plainTextFound);
     }
 
 }
