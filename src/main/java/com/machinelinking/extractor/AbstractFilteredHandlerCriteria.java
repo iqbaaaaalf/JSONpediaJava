@@ -22,7 +22,13 @@ import com.machinelinking.parser.FilteredHandlerCriteria;
  */
 public class AbstractFilteredHandlerCriteria implements FilteredHandlerCriteria {
 
-    public static final AbstractFilteredHandlerCriteria INSTANCE = new AbstractFilteredHandlerCriteria();
+    public static final FilteredHandlerCriteria INSTANCE = new AbstractFilteredHandlerCriteria();
+    public static final FilteredHandlerCriteria NOT_ABSTRACT_INSTANCE = new FilteredHandlerCriteria() {
+        @Override
+        public boolean mustFilter(int paragraphIndex, int sectionLevel, int nestingLevel, boolean plainTextFound) {
+            return !INSTANCE.mustFilter(paragraphIndex, sectionLevel, nestingLevel, plainTextFound);
+        }
+    };
 
     @Override
     public boolean mustFilter(
