@@ -15,7 +15,6 @@ package com.machinelinking.extractor;
 
 import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.parser.Attribute;
-import com.machinelinking.parser.FilteredHandlerCriteria;
 import com.machinelinking.parser.WikiTextParserFilteredHandler;
 import com.machinelinking.serializer.Serializer;
 
@@ -37,12 +36,7 @@ public class AbstractExtractor extends Extractor {
         textHandler = new TextHandler();
         filteredHandler = new WikiTextParserFilteredHandler(
                 textHandler,
-                new FilteredHandlerCriteria() {
-                    @Override
-                    public boolean mustFilter(int paragraphIndex, int sectionLevel, int nestingLevel) {
-                        return paragraphIndex == -1 || sectionLevel != -1;
-                    }
-                }
+                AbstractFilteredHandlerCriteria.INSTANCE
         );
     }
 
