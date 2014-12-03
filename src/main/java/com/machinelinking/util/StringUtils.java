@@ -28,6 +28,24 @@ public class StringUtils {
         return sb.toString();
     }
 
+    public static String stripTags(String in) {
+        char c;
+        int insideTag = 0;
+        final StringBuilder out = new StringBuilder();
+        for(int i = 0; i < in.length(); i++) {
+            c = in.charAt(i);
+            if(c == '<') {
+                insideTag++;
+            } else if(c == '>') {
+                insideTag--;
+            }
+            else if(insideTag == 0) {
+                out.append(c);
+            }
+        }
+        return out.toString();
+    }
+
     private StringUtils() {}
 
 }
