@@ -24,27 +24,36 @@ import java.util.List;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class SectionsTextExtractor extends TextExtractor {
+public class SectionTextExtractor extends TextExtractor {
 
+    private final List<String> sectionsTitle = new ArrayList<>();
     private final List<String> sectionsText = new ArrayList<>();
 
-    public SectionsTextExtractor() {
+    private String lastSectionTitle;
+
+    public SectionTextExtractor() {
         super(Ontology.SECTIONS_TEXT_FIELD, AbstractFilteredHandlerCriteria.NOT_ABSTRACT_INSTANCE);
     }
 
     @Override
     public void flushContent(Serializer serializer) {
         serializer.openList();
-        for(int i = 1; i < sectionsText.size(); i++) {
-            serializer.value(sectionsText.get(i));
+        for(int i = 0; i < sectionsText.size(); i++) {
+            serializer.openObject();
+            serializer.fieldValue(Ontology.TITLE_FIELD ,sectionsTitle.get(i));
+            serializer.fieldValue(Ontology.CONTENT_FIELD ,sectionsText.get(i));
+            serializer.closeObject();
         }
         serializer.closeList();
+        sectionsTitle.clear();
         sectionsText.clear();
     }
 
     @Override
     public void section(String title, int level) {
-        sectionsText.add( super.flushText() );
+        sectionsTitle.add(lastSectionTitle);
+        sectionsText.add(super.flushText());
+        lastSectionTitle = title;
         super.section(title, level);
     }
 
