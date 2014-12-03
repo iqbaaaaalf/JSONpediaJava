@@ -26,6 +26,7 @@ import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
+import com.machinelinking.util.StringUtils;
 import org.apache.log4j.Logger;
 import org.codehaus.jackson.JsonNode;
 
@@ -73,7 +74,7 @@ public class TextHandler extends DefaultWikiTextParserHandler {
     public String flushContent() {
         final String out = outputBuffer.toString();
         reset();
-        return out;
+        return out.trim();
     }
 
     @Override
@@ -142,24 +143,24 @@ public class TextHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void beginTable() {
-        nestedStructures++;
-        decoratedHandler.beginTable();
+        // disabled // nestedStructures++;
+        // disabled // decoratedHandler.beginTable();
     }
 
     @Override
     public void headCell(int row, int col) {
-        decoratedHandler.headCell(row, col);
+        // disabled // decoratedHandler.headCell(row, col);
     }
 
     @Override
     public void bodyCell(int row, int col) {
-        decoratedHandler.bodyCell(row, col);
+        // disabled // decoratedHandler.bodyCell(row, col);
     }
 
     @Override
     public void endTable() {
-        decoratedHandler.endTable();
-        nestedStructures--;
+        // disabled // decoratedHandler.endTable();
+        // disabled // nestedStructures--;
     }
 
     @Override
@@ -246,7 +247,7 @@ public class TextHandler extends DefaultWikiTextParserHandler {
         for(JsonNode node : nodes) {
             sb.append( render.renderFragment(context, node) );
         }
-        return sb.toString();
+        return StringUtils.stripTags(sb.toString());
     }
 
 }
