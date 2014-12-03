@@ -106,11 +106,12 @@ public class JSONpediaTest {
         final String flags = "Extractors";
         final JSONStorageLoader mongoLoader =
                 JSONpedia.instance().getStorageLoader(MultiJSONStorageLoaderTest.MONGO_TEST_CONN_URI, flags);
-        final StorageLoaderReport report = mongoLoader.load(
+        final StorageLoaderReport mongoReport = mongoLoader.load(
                 new URL("http://a.wiki/prefix/1"),
                 FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
         );
-        Assert.assertNotNull(report);
+        Assert.assertNotNull(mongoReport);
+        Assert.assertEquals(0, mongoReport.getPageErrors());
 
         final JSONStorageLoader elasticLoader =
                 JSONpedia.instance().getStorageLoader(MultiJSONStorageLoaderTest.ELASTIC_TEST_CONN_URI, flags);
@@ -119,6 +120,7 @@ public class JSONpediaTest {
                 FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
         );
         Assert.assertNotNull(elasticReport);
+        Assert.assertEquals(0, elasticReport.getPageErrors());
 
         final JSONStorageLoader multiLoader = JSONpedia.instance().getStorageLoader(
                 MultiJSONStorageLoaderTest.CONFIG_URI, "Structure"
@@ -128,6 +130,7 @@ public class JSONpediaTest {
                 FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
         );
         Assert.assertNotNull(multiReport);
+        Assert.assertEquals(0, multiReport.getPageErrors());
     }
 
     @Test
