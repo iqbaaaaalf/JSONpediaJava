@@ -135,6 +135,7 @@ public class WikiPipelineFactory {
         // Extractors.
         if(flagsSet.contains(Extractors)) {
             enricher.addExtractor(new AbstractExtractor());
+            // TODO: ACTIVATE enricher.addExtractor(new SectionTextExtractor());
             enricher.addExtractor(new SectionExtractor());
             enricher.addExtractor(new LinkExtractor());
             enricher.addExtractor(new ReferenceExtractor());
