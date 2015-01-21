@@ -8,9 +8,13 @@
 .idea
 .gradle
 target
+work
+static_resources
 build
 atlassian-ide-plugin.xml
 test-render.html
 gradle
 gradlew
 gradlew.bat
+gradle-app.setting
+out.csv
