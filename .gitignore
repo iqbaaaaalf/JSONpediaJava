@@ -4,6 +4,10 @@
 *.jar
 *.ser
 *.pyc
+*.notes
+atlassian-ide-plugin.xml
+test-render.html
+out.csv
 .DS_Store
 .idea
 .gradle
@@ -11,10 +15,7 @@ target
 work
 static_resources
 build
-atlassian-ide-plugin.xml
-test-render.html
 gradle
 gradlew
 gradlew.bat
 gradle-app.setting
-out.csv

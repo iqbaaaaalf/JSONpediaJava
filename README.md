@@ -81,7 +81,7 @@ $ gradle fatjar
 
 The resulting jar will also be in ```build/libs``` with the name ```jsonpedia-full-{VERSION}.jar```.
 
-Please note that building a capsule will not run any tests.
+Please note that building a fat jar will not run any tests.
 
 ## Run the web interface
 
