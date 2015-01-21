@@ -72,10 +72,12 @@ public class DefaultElasticFacetManagerTest extends ElasticJSONStorageTestBase {
         Assert.assertEquals(
                 "{\"f1_index\":" +
                 "{\"properties\":" +
-                "{\"f1\":" +
-                "{\"custom_kstem\":{\"analyzer\":\"custom_kstem\",\"type\":\"string\"}," +
-                "\"custom_lowercase\":{\"analyzer\":\"custom_lowercase\",\"type\":\"string\"}}," +
-                "\"type\":\"multi_type\"}}}",
+                "{\"f1\":{" +
+                "\"type\":\"multi_field\"," +
+                "\"fields\":{" +
+                "\"custom_kstem\":{\"analyzer\":\"custom_kstem\",\"type\":\"string\"}," +
+                "\"custom_lowercase\":{\"analyzer\":\"custom_lowercase\",\"type\":\"string\"" +
+                "}}}}}}",
                 toJSONConfig(c2)
         );
     }

@@ -43,7 +43,9 @@ public class EnrichedEntityFacetConverter implements FacetConverter {
             newDocument = new HashMap<>();
             newDocument.put("page", in.getName());
             newDocument.put("section", toPath(sectionIndex, sections));
+            newDocument.put("section_stem", sectionMap.get("title"));
             newDocument.put("content", content.get("abstract"));
+            newDocument.put("content_stem", content.get("abstract"));
             newDocument.put("links", toDescriptionList(sectionIndex, (List) content.get("links")));
             newDocument.put("references", toDescriptionList(sectionIndex, (List) content.get("references")));
             newDocument.put("categories", ((Map) content.get("categories")).get("content"));

@@ -70,12 +70,14 @@ public class DefaultElasticFacetManager implements ElasticFacetManager {
                 final Property property = currentProperties.get(0);
                 typeMapping.put(property.field, toPropertyDefinition(property));
             } else { // Multi property
-                final Map<String,Object> multiField = new HashMap<>();
+                final Map<String,Object> multiProps = new HashMap<>();
                 for(Property property : currentProperties) {
-                    multiField.put(property.analyzer.toValue(), toPropertyDefinition(property));
+                    multiProps.put(property.analyzer.toValue(), toPropertyDefinition(property));
                 }
+                final Map<String,Object> multiField = new HashMap<>();
+                multiField.put("fields", multiProps);
+                multiField.put("type", "multi_field");
                 typeMapping.put(field, multiField);
-                typeMapping.put("type", "multi_type");
             }
         }
     }
