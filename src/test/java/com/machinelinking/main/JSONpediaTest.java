@@ -103,9 +103,11 @@ public class JSONpediaTest {
 
     @Test
     public void testGetStorageLoader() throws IOException, SAXException {
-        final String flags = "Extractors";
+        final String FLAGS = "Extractors";
+
+        // Mongo Storage Loader
         final JSONStorageLoader mongoLoader =
-                JSONpedia.instance().getStorageLoader(MultiJSONStorageLoaderTest.MONGO_TEST_CONN_URI, flags);
+                JSONpedia.instance().getStorageLoader(MultiJSONStorageLoaderTest.MONGO_TEST_CONN_URI, FLAGS);
         final StorageLoaderReport mongoReport = mongoLoader.load(
                 new URL("http://a.wiki/prefix/1"),
                 FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
@@ -113,8 +115,9 @@ public class JSONpediaTest {
         Assert.assertNotNull(mongoReport);
         Assert.assertEquals(0, mongoReport.getPageErrors());
 
+        // Elastic Storage Loader
         final JSONStorageLoader elasticLoader =
-                JSONpedia.instance().getStorageLoader(MultiJSONStorageLoaderTest.ELASTIC_TEST_CONN_URI, flags);
+                JSONpedia.instance().getStorageLoader(MultiJSONStorageLoaderTest.ELASTIC_TEST_CONN_URI, FLAGS);
         final StorageLoaderReport elasticReport = elasticLoader.load(
                 new URL("http://a.wiki/prefix/2"),
                 FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
@@ -122,8 +125,9 @@ public class JSONpediaTest {
         Assert.assertNotNull(elasticReport);
         Assert.assertEquals(0, elasticReport.getPageErrors());
 
+        // Composed Storage Loader
         final JSONStorageLoader multiLoader = JSONpedia.instance().getStorageLoader(
-                MultiJSONStorageLoaderTest.CONFIG_URI, "Structure"
+                MultiJSONStorageLoaderTest.CONFIG_URI, FLAGS
         );
         final StorageLoaderReport multiReport = multiLoader.load(
                 new URL("http://a.wiki/prefix/3"),
