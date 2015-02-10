@@ -13,6 +13,9 @@
 
 package com.machinelinking.storage.elasticsearch;
 
+import com.machinelinking.pagestruct.Ontology;
+import com.machinelinking.splitter.InfoboxSplitter;
+import com.machinelinking.splitter.TableSplitter;
 import com.machinelinking.storage.DocumentConverter;
 
 import java.util.HashMap;
@@ -28,10 +31,11 @@ class ElasticDocumentConverter implements DocumentConverter<ElasticDocument> {
     final Set<String> blocked = new HashSet<>();
 
     ElasticDocumentConverter() {
-        blocked.add("wikitext-json");
-        blocked.add("infobox-splitter");
-        blocked.add("table-splitter");
+        blocked.add(Ontology.PAGE_DOM_FIELD);
+        blocked.add(InfoboxSplitter.NAME);
+        blocked.add(TableSplitter.NAME);
     }
+
     @Override
     public ElasticDocument convert(ElasticDocument in) {
         final Map<String,Object> content = (Map<String,Object>) in.getContent().get("content");
