@@ -51,10 +51,20 @@ public class SectionTextExtractor extends TextExtractor {
 
     @Override
     public void section(String title, int level) {
+        flushSection(title);
+        super.section(title, level);
+    }
+
+    @Override
+    public void endDocument() {
+        flushSection(null);
+        super.endDocument();
+    }
+
+    private void flushSection(String title) {
         sectionsTitle.add(lastSectionTitle);
         sectionsText.add(super.flushText());
         lastSectionTitle = title;
-        super.section(title, level);
     }
 
 }
