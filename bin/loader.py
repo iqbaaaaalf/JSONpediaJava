@@ -13,7 +13,7 @@
 # If not, see <https://creativecommons.org/licenses/by/4.0/legalcode>.
 
 
-# == loader.py <config-file> <num-dumps> ==
+# == loader.py <config-file> [<from-index>:]<to-index> ==
 #
 # Example usage:
 #   Run the Storage Loader with default configuration over the first four article dumps of Wikipedia
@@ -24,7 +24,7 @@
 #       http://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles4.xml-p000055002p000104998.bz2
 #     )
 #
-#   $ loader.py conf/default.properties 4
+#   $ loader.py conf/default.properties 0:3
 #
 # This script automates the process of downloading the latest Wikipedia article dumps and run over them the
 # loader CLI configured in build.gradle (see runLoader), passing to it the configuration received as first argument.
@@ -66,12 +66,14 @@ def natural_keys(text):
 def get_latest_articles_list():
     dumps_page = urllib.urlopen(LATEST_DUMPS).read()
     dumps_page_dom = lxml.html.fromstring(dumps_page)
-    download_links = [dump.get('href') for dump in dumps_page_dom.cssselect('td.n a')]
+    download_links = [dump.get('href') for dump in dumps_page_dom.cssselect('pre a')]
     latest_download_links = [
         link for link in download_links
         if re.match('^enwiki-latest-pages-articles[0-9]+.xml-p[0-9]+p[0-9]+\.bz2$', link)
     ]
     latest_download_links.sort(key=natural_keys)
+    if len(latest_download_links) == 0:
+        raise Exception('Cannot find any link to download, something in page parsing went wrong')
     return latest_download_links
 
 
@@ -85,10 +87,18 @@ def download_file(url, dir, file):
             print 'Process dir [%s] created.' % dir
         except Exception:
             pass
+        dest = '%s/%s' % (dir, file)
+
+        if os.path.exists(dest) and os.path.isfile(dest):
+            print 'File %s already present' % dest
+            return
+
+        dest_tmp = dest + "_DOWNLOADING"
         try:
-            urllib.urlretrieve(url, '%s/%s' % (dir, file))
+            urllib.urlretrieve(url, dest_tmp)
         except Exception as e:
             raise Exception("Error while downloading url [%s] in file [%s]" % (url, file), e)
+        os.rename(dest_tmp, dest)
 
 
 def ingest_file(config, file):
@@ -98,10 +108,14 @@ def ingest_file(config, file):
     subprocess.check_call(cmd, shell=True)
 
 
-def process_articles_dumps(config, n):
+def process_articles_dumps(config, range):
+    if ':' in range:
+        (start, end) = map(lambda i: int(i), range.split(':'))
+    else:
+        (start,end) = (0, int(range))
     latest_articles_links = get_latest_articles_list()
     print 'Retrieved latest articles links:', latest_articles_links
-    for i in xrange(0, n):
+    for i in xrange(start, end+1):
         article_link = latest_articles_links[i]
         article_filename = get_filename(article_link)
         article_file = '%s/%s' % (WORK_DIR, article_filename)
@@ -121,7 +135,7 @@ def process_articles_dumps(config, n):
         finally:
             it2 = time.time()
             print 'Ingestion completed in %d sec.' % (it2 - it1)
-        os.remove(article_file)
+        # os.remove(article_file)
         print 'File deleted.'
 
 
@@ -131,7 +145,7 @@ if __name__ == '__main__':
     """
     import sys
     if len(sys.argv) != 3:
-        print 'Usage: $0 <config-file> <num-dumps>'
+        print 'Usage: $0 <config-file> [<from-index>:]<to-index>'
         sys.exit(1)
-    process_articles_dumps(sys.argv[1], int(sys.argv[2]))
+    process_articles_dumps(sys.argv[1], sys.argv[2])
     sys.exit(0)
