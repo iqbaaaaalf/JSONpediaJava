@@ -15,6 +15,7 @@ package com.machinelinking.extractor;
 
 import com.machinelinking.parser.Attribute;
 import com.machinelinking.parser.FilteredHandlerCriteria;
+import com.machinelinking.parser.ParserLocation;
 import com.machinelinking.parser.WikiTextParserFilteredHandler;
 
 import java.net.URL;
@@ -147,6 +148,36 @@ public abstract class TextExtractor extends Extractor {
     @Override
     public void text(String content) {
         filteredHandler.text(content);
+    }
+
+    @Override
+    public void parseWarning(String msg, ParserLocation location) {
+        filteredHandler.parseWarning(msg, location);
+    }
+
+    @Override
+    public void parseError(Exception e, ParserLocation location) {
+        filteredHandler.parseError(e, location);
+    }
+
+    @Override
+    public void commentTag(String comment) {
+        filteredHandler.commentTag(comment);
+    }
+
+    @Override
+    public void entity(String form, char value) {
+        filteredHandler.entity(form, value);
+    }
+
+    @Override
+    public void var(Var v) {
+        filteredHandler.var(v);
+    }
+
+    @Override
+    public void italicBold(int level) {
+        filteredHandler.italicBold(level);
     }
 
     @Override
