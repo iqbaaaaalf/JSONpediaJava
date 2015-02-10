@@ -271,6 +271,16 @@ public class JSONSerializer implements Serializer {
         }
     }
 
+    public void close() {
+        indexStack.clear();
+        closeUntil(null);
+        try {
+            jsonGenerator.flush();
+        } catch (IOException ioe) {
+            throw new RuntimeException(ioe);
+        }
+    }
+
     private void internalWriteValue(Object v) {
         try {
             if (v instanceof String) {
@@ -327,16 +337,6 @@ public class JSONSerializer implements Serializer {
             status = stack.pop();
             status.close(jsonGenerator);
             if(target != null && status == target) break;
-        }
-    }
-
-    public void close() {
-        indexStack.clear();
-        closeUntil(null);
-        try {
-            jsonGenerator.flush();
-        } catch (IOException ioe) {
-            throw new RuntimeException(ioe);
         }
     }
 
