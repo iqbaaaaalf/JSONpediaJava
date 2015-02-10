@@ -187,7 +187,10 @@ implements JSONStorageLoader {
             } finally {
                 processedPages++;
                 if ((processedPages % LOG_THRESHOLD) == 0) {
-                    logger.info(String.format("Processed pages: %s +%d\n", threadId, LOG_THRESHOLD));
+                    logger.info(String.format(
+                            "%s processed pages: %d (+%d) errors: %d\n",
+                            threadId, processedPages, LOG_THRESHOLD, errorPages
+                    ));
                 }
             }
         }
