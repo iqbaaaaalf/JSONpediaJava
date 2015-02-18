@@ -36,6 +36,19 @@ public class WikiTextParserTest {
     private static final Logger logger = Logger.getLogger(WikiTextParserTest.class);
 
     @Test
+    public void testComment() throws IOException, WikiTextParserException {
+        parse(
+                "X <!-- Y --> Z",
+
+                "Begin Document\n" +
+                "Text: 'X '\n" +
+                "Comment Tag:  Y \n" +
+                "Text: ' Z'\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
     public void testApostrophesParsing() throws IOException, WikiTextParserException {
         parse(
                 "''A Biography of the World's Most Famous Equation''",
