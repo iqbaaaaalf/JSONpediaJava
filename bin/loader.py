@@ -136,7 +136,7 @@ def process_articles_dumps(config, range):
             it2 = time.time()
             print 'Ingestion completed in %d sec.' % (it2 - it1)
         # os.remove(article_file)
-        print 'File deleted.'
+        # print 'File deleted.'
 
 
 if __name__ == '__main__':
