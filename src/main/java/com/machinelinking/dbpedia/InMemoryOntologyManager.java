@@ -14,6 +14,7 @@
 package com.machinelinking.dbpedia;
 
 import com.machinelinking.util.JSONUtils;
+import org.apache.log4j.Logger;
 import org.codehaus.jackson.JsonNode;
 
 import java.io.BufferedInputStream;
@@ -47,14 +48,16 @@ public class InMemoryOntologyManager implements OntologyManager {
     private static final String SERVICE = "http://dbpedia.org/sparql?query=%s&format=json";
 
     private static final String QUERY =
-            "SELECT * WHERE {\n" +
+            "SELECT DISTINCT * WHERE {\n" +
             "{?p a <http://www.w3.org/2002/07/owl#ObjectProperty>     . " +
                     "OPTIONAL {?p rdfs:domain ?domain; rdfs:range ?range} . ?p rdfs:label ?label}\n" +
             "UNION\n" +
-            "{?p a <http://www.w3.org/2002/07/owl#FunctionalProperty> . " +
+            "{?p a <http://www.w3.org/2002/07/owl#DatatypeProperty> . " +
                     "OPTIONAL {?p rdfs:domain ?domain; rdfs:range ?range} . ?p rdfs:label ?label}\n" +
             "FILTER langMatches( lang(?label), \"EN\" )\n" +
             "}";
+
+    private static final Logger logger = Logger.getLogger(InMemoryOntologyManager.class);
 
     private final Map<String, Property> mapping;
 
@@ -78,14 +81,19 @@ public class InMemoryOntologyManager implements OntologyManager {
         String domain;
         String range;
         Map<String, Property> ontology = new HashMap<>();
+        int total = 0;
+        int unique = 0;
         while(bindings.hasNext()) {
             current = bindings.next();
             property = normalizePrefix(current.get("p").get("value").asText());
             enLabel  = normalizePrefix(current.get("label").get("value").asText());
             domain   = normalizePrefix(JSONUtils.asPrimitiveString(optionallyGetFieldValue(current, "domain")));
             range    = normalizePrefix(JSONUtils.asPrimitiveString(optionallyGetFieldValue(current, "range")));
-            ontology.put(property, new DefaultProperty(property, enLabel, domain, range));
+            Property found = ontology.put(property, new DefaultProperty(property, enLabel, domain, range));
+            if(found == null) unique++;
+            total++;
         }
+        logger.info(String.format("Total properties: %d, unique values: %d", total, unique));
         saveOntologyIndex(ontology, serializationFile);
         return ontology;
     }
@@ -135,7 +143,7 @@ public class InMemoryOntologyManager implements OntologyManager {
     }
 
     private static File getSerializationFile() {
-        return new File("ontology.ser");
+        return new File("work/ontology.ser");
     }
 
     public InMemoryOntologyManager(Map<String, Property> mapping) throws OntologyManagerException {

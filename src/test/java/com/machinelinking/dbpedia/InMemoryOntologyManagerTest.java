@@ -25,10 +25,12 @@ import java.util.Map;
  */
 public class InMemoryOntologyManagerTest {
 
+    private static final int ESPECTED_PROPS_COUNT = 3400;
+
     @Test
     public void testInitialization() throws OntologyManagerException {
         Map<String,Property> propertyMappings = InMemoryOntologyManager.initOntologyIndex(false);
-        Assert.assertTrue(propertyMappings.size() > 24700);
+        Assert.assertTrue(propertyMappings.size() > ESPECTED_PROPS_COUNT);
         for(Map.Entry<String,Property> mapping : propertyMappings.entrySet()) {
             Assert.assertNotNull(mapping.getValue().getPropertyName());
             Assert.assertNotNull(mapping.getValue().getPropertyLabel());
@@ -38,7 +40,7 @@ public class InMemoryOntologyManagerTest {
     @Test
     public void testGetPropertiesCount() throws OntologyManagerException {
         final InMemoryOntologyManager manager = new InMemoryOntologyManager();
-        Assert.assertTrue(manager.getPropertiesCount() > 24000);
+        Assert.assertTrue(manager.getPropertiesCount() > ESPECTED_PROPS_COUNT);
     }
 
     @Test
