@@ -164,19 +164,19 @@ public class JSONpediaTest {
     @Test
     public void testProcessEntityById() throws JSONpediaException {
         final JsonNode root = JSONpedia.instance().process("en:Albert Einstein").json();
-        Assert.assertEquals(12, root.size());
+        Assert.assertEquals(13, root.size());
     }
 
     @Test
     public void testProcessEntityByURL() throws JSONpediaException {
         final JsonNode root = JSONpedia.instance().process("http://en.wikipedia.org/wiki/Albert_Einstein").json();
-        Assert.assertEquals(12, root.size());
+        Assert.assertEquals(13, root.size());
     }
 
     @Test
     public void testProcessEntityAsMap() throws JSONpediaException {
         final Map<String,?> root = JSONpedia.instance().process("en:Albert Einstein").map();
-        Assert.assertEquals(12, root.size());
+        Assert.assertEquals(13, root.size());
     }
 
     @Test
@@ -191,14 +191,14 @@ public class JSONpediaTest {
                 .process("en:Albert Einstein")
                 .text("A really ''short'' description of Albert Einstein")
                 .json();
-        Assert.assertEquals(8, root.size());
+        Assert.assertEquals(9, root.size());
     }
 
     @Test
     public void testProcessEntityWithFlags() throws JSONpediaException {
         final JsonNode root = JSONpedia.instance()
                 .process("en:Albert Einstein").flags("Linkers,Validate,Structure").json();
-        Assert.assertEquals(15, root.size());
+        Assert.assertEquals(16, root.size());
     }
 
     @Test

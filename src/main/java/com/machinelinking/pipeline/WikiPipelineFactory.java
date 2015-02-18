@@ -20,6 +20,7 @@ import com.machinelinking.extractor.IssueExtractor;
 import com.machinelinking.extractor.LinkExtractor;
 import com.machinelinking.extractor.ReferenceExtractor;
 import com.machinelinking.extractor.SectionExtractor;
+import com.machinelinking.extractor.SectionTextExtractor;
 import com.machinelinking.extractor.TemplateMappingExtractor;
 import com.machinelinking.extractor.TemplateOccurrencesExtractor;
 import com.machinelinking.splitter.InfoboxSplitter;
@@ -135,7 +136,7 @@ public class WikiPipelineFactory {
         // Extractors.
         if(flagsSet.contains(Extractors)) {
             enricher.addExtractor(new AbstractExtractor());
-            // TODO: ACTIVATE enricher.addExtractor(new SectionTextExtractor());
+            enricher.addExtractor(new SectionTextExtractor());
             enricher.addExtractor(new SectionExtractor());
             enricher.addExtractor(new LinkExtractor());
             enricher.addExtractor(new ReferenceExtractor());

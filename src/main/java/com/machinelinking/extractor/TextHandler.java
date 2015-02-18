@@ -17,6 +17,7 @@ import com.machinelinking.pagestruct.WikiTextSerializerHandler;
 import com.machinelinking.pagestruct.WikiTextSerializerHandlerFactory;
 import com.machinelinking.parser.Attribute;
 import com.machinelinking.parser.DefaultWikiTextParserHandler;
+import com.machinelinking.parser.ParserLocation;
 import com.machinelinking.render.DefaultDocumentContext;
 import com.machinelinking.render.DefaultHTMLRender;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
@@ -51,7 +52,7 @@ public class TextHandler extends DefaultWikiTextParserHandler {
     private final DefaultHTMLRender render = DefaultHTMLRenderFactory.getInstance().createRender(false);
 
     private DocumentContext context;
-    private int nestedStructures = 0;
+    private int nestedStructures;
 
     protected TextHandler() {
         writer = new StringWriter();
@@ -62,7 +63,8 @@ public class TextHandler extends DefaultWikiTextParserHandler {
             throw new IllegalStateException();
         }
         decoratedHandler = WikiTextSerializerHandlerFactory.getInstance().createSerializerHandler(serializer);
-        decoratedHandler.reset();
+        //decoratedHandler.reset();
+        //reset();
     }
 
     public void reset() {
@@ -81,6 +83,7 @@ public class TextHandler extends DefaultWikiTextParserHandler {
     public void beginDocument(URL documentURL) {
         this.context = new DefaultDocumentContext(RenderScope.TEXT_RENDERING, documentURL);
         reset();
+        // TODO: why this break everything? // decoratedHandler.beginDocument(documentURL);
     }
 
     @Override
@@ -120,7 +123,7 @@ public class TextHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void listItem(ListType t, int level) {
-        decoratedHandler.listItem(t, level);
+        //decoratedHandler.listItem(t, level);
     }
 
     @Override
@@ -143,24 +146,24 @@ public class TextHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void beginTable() {
-        // disabled // nestedStructures++;
-        // disabled // decoratedHandler.beginTable();
+        nestedStructures++;
+        decoratedHandler.beginTable();
     }
 
     @Override
     public void headCell(int row, int col) {
-        // disabled // decoratedHandler.headCell(row, col);
+        //decoratedHandler.headCell(row, col);
     }
 
     @Override
     public void bodyCell(int row, int col) {
-        // disabled // decoratedHandler.bodyCell(row, col);
+        //decoratedHandler.bodyCell(row, col);
     }
 
     @Override
     public void endTable() {
-        // disabled // decoratedHandler.endTable();
-        // disabled // nestedStructures--;
+        decoratedHandler.endTable();
+        nestedStructures--;
     }
 
     @Override
@@ -170,7 +173,7 @@ public class TextHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void text(String content) {
-        if(nestedStructures < 0) throw new AssertionError("Invalid value, must be >= 0");
+        if(nestedStructures < 0) throw new IllegalStateException("Invalid value, must be >= 0");
         if(nestedStructures > 0) {
             decoratedHandler.text(content);
         } else {
@@ -187,7 +190,7 @@ public class TextHandler extends DefaultWikiTextParserHandler {
 
     @Override
     public void paragraph() {
-        decoratedHandler.paragraph();
+        // disabled // decoratedHandler.paragraph();
     }
 
     @Override
@@ -226,6 +229,16 @@ public class TextHandler extends DefaultWikiTextParserHandler {
     }
 
     @Override
+    public void parseWarning(String msg, ParserLocation location) {
+        // empty.
+    }
+
+    @Override
+    public void parseError(Exception e, ParserLocation location) {
+        // empty.
+    }
+
+    @Override
     public void endDocument() {
         decoratedHandler.endDocument();
     }
@@ -241,8 +254,15 @@ public class TextHandler extends DefaultWikiTextParserHandler {
         }
     }
 
+    // TODO: there is a rare race condition causing generation of invalid JSON fragments in buffer. investigate.
+    private String cleanupData(String in) {
+        final int start = in.indexOf('{');
+        if(start == 0) return in;
+        return in.substring(start);
+    }
+
     private String expandStructure(String data) throws IOException, NodeRenderException {
-        final JsonNode[] nodes = JSONUtils.parseJSONMulti(data);
+        final JsonNode[] nodes = JSONUtils.parseJSONMulti(cleanupData(data));
         final StringBuilder sb = new StringBuilder();
         for(JsonNode node : nodes) {
             sb.append( render.renderFragment(context, node) );
