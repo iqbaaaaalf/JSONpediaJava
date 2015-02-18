@@ -10,67 +10,27 @@
  * You should have received a copy of the CC BY Creative Commons Attribution 4.0 Internationa Public License.
  * If not, see <https://creativecommons.org/licenses/by/4.0/legalcode>.
  */
-
-apply plugin: 'maven'
 apply plugin: 'java'
+apply plugin: 'maven'
 apply plugin: 'application'
 apply plugin: 'idea'
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.github.jengelman.gradle.plugins:shadow:0.8'
-    }
-}
-//apply plugin: 'shadow'
-
 sourceCompatibility = 1.7
-//encoding = 'UTF-8'
 
 group = 'com.machinelinking'
 version = '1.2-SNAPSHOT'
 
-storageLoaderClassName = 'com.machinelinking.cli.loader'
-facetLoaderClassName = 'com.machinelinking.cli.facetloader'
-storageLoaderJVMArgs = ["-Xmx4g", "-Xms4g", "-Dlog4j.configuration=file:conf/log4j.properties"]
-
-tasks.withType(Compile){
-    options.encoding = encoding
-}
-
-tasks.withType(Javadoc){
-    options.encoding = encoding
+configurations {
+    capsule
 }
 
 repositories {
     mavenCentral()
 }
 
-//jar {
-//  excludes {
-//              exclude 'META-INF/MANIFEST.MF'
-//              exclude 'META-INF/*.SF'
-//              exclude 'META-INF/*.DSA'
-//              exclude 'META-INF/*.RSA'
-//          }
-//}
-
-// TODO http://stackoverflow.com/questions/22342782/returning-a-string-as-json-response-when-run-as-a-jar-file-fails-with-500-status
-//shadow {
-//    destinationDir = 'build/distributions'
-//    classifier = '1.0'
-//
-//    //mergeServiceFiles()
-//    exclude(dependency('com.sun.jersey:jersey-json:1.18.1/META-INF'))
-//    exclude 'META-INF/*.SF'
-//    exclude 'META-INF/*.DSA'
-//    exclude 'META-INF/*.RSA'
-//}
-
 dependencies {
     // dependencies
+    capsule 'co.paralleluniverse:capsule:0.5.0'
     compile group: 'log4j', name: 'log4j', version:'1.2.17'
     compile group: 'org.codehaus.jackson', name: 'jackson-jaxrs', version:'1.9.6'
     compile group: 'commons-io', name: 'commons-io', version:'2.4'
@@ -91,23 +51,44 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version:'4.7'
 }
 
-task runLoader(dependsOn: jar, type: JavaExec) {
-  storageLoaderJVMArgs = ["-Xmx4g", "-Xms4g", "-Dlog4j.configuration=file:conf/log4j.properties"]
-  jvmArgs = storageLoaderJVMArgs
-  storageLoaderClassName = 'com.machinelinking.cli.loader'
-  main = storageLoaderClassName
+task runLoader(dependsOn: 'jar', type: JavaExec) {
+  jvmArgs = ["-Xmx8g", "-Xms8g", "-Dlog4j.configuration=file:conf/log4j.properties"]
+  main = 'com.machinelinking.cli.loader'
   classpath = sourceSets.main.runtimeClasspath
   if(project.hasProperty("config") && project.hasProperty("dump"))
     args(config, dump)
 }
 
-task runFacetLoader(dependsOn: jar, type: JavaExec) {
-  storageLoaderJVMArgs = ["-Xmx4g", "-Xms4g", "-Dlog4j.configuration=file:conf/log4j.properties"]
-  facetLoaderClassName = 'com.machinelinking.cli.facetloader'
-  jvmArgs = storageLoaderJVMArgs
-  main = facetLoaderClassName
+task runFacetLoader(dependsOn: 'jar', type: JavaExec) {
+  jvmArgs = ["-Xmx4g", "-Xms4g", "-Dlog4j.configuration=file:conf/log4j.properties"]
+  main = 'com.machinelinking.cli.facetloader'
   classpath = sourceSets.main.runtimeClasspath
   if(project.hasProperty("args_line"))
     args(args_line.split())
 }
 
+task fullCapsule(type: Jar, dependsOn: jar) {
+  archiveName = "${project.name}-${project.version}-capsule.jar"
+
+  from jar
+  from { configurations.runtime }
+
+  from(configurations.capsule.collect { zipTree(it) }) { include 'Capsule.class' }
+
+  manifest {
+    attributes(
+            'Main-Class': 'Capsule',
+            //'Application-Class': serverClassName,
+            'Application-Class': 'com.machinelinking.service.BasicServer',
+            'Min-Java-Version': '1.7.0',
+    )
+  }
+}
+
+task fatJar(type: Jar) {
+    baseName = project.name + '-full'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+install.dependsOn fatJar
