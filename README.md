@@ -21,34 +21,22 @@ String allReferencesHTML = jsonpedia.render("en:London", allReferencesInSections
 
 ## What is JSONpedia?
        
-JSONpedia is a library, a REST service and a CLI tool meant to parse, elaborate and convert WikiText documents to JSON,
-in order to facilitate the consumption of the huge availability of the MediaWiki semi-structured content.
+JSONpedia is a framework designed to simplify access at MediaWiki contents transforming everything into JSON. 
+Such framework provides a library, a REST service and CLI tools to parse, convert, enrich and store WikiText documents. 
+In order to facilitate the consumption of the huge availability of the MediaWiki semi-structured contents the converted JSON documents are stored both into ElasticSearch (providing advanced faceting support) and MongoDB (allowing distributed map/reduce tasks). 
+JSONpedia supplies capabilities for recursive template expansion and mapping to DBpedia. 
+This framework has been initially designed to extract linguistic resources from the Wikipedia dumps and to enable massive data scraping, the present intent of the project is to implement a general purpose infrastructure enabling Wikipedia multi language data consumption both for researchers and industry.
 
-It has been initially designed to extract linguistic resources from the Wikipedia dump and to perform massive data scraping. 
-
-This library provides:
- 
-- a set of classes and code samples (test cases) to build complex processing pipelines over WikiText parsing events; 
-- a REST service to convert MediaWiki content in realtime by passing a URI or WikiText;
-- a web frontend to play with the library functionalities;
-- a set of CLI tools to process the Wikipedia dump and store it into MongoDB and Elasticsearch, manipulate data and 
-  perform transformation in UNIX command pipeline style;
-- a REST service to query the MongoDB and Elasticsearch content;
-- and [**even more**](https://bitbucket.org/hardest/jsonpedia/issues) to come.
-
-An online version can be found at [jsonpedia.org](http://jsonpedia.org).
+The online demo version can be found at [jsonpedia.org](http://jsonpedia.org).
 
 ## Main features
-- WikiText event parser
-- Configurable event processing pipeline
-- WikiMedia template processing support
-- DBpedia template mapping integration
-- HTML rendering support
-- ElasticSearch storage support
-- MongoDB storage support
-- REST interface
-- Web frontend
-- CLI interface
+- Fast event based [WikiText](http://en.wikipedia.org/wiki/Wiki_markup) Parser
+- Support for [template](http://en.wikipedia.org/wiki/Wikipedia:Templates) expansion
+- Facilities and code samples (test cases) to build complex WikiText processing pipelines (filters, transformers, enrichers, validators and so on)
+- [REST](http://en.wikipedia.org/wiki/Representational_state_transfer) service to perform live MediaWiki pages conversion and advanced queries over both [Elasticsearch](http://www.elasticsearch.org/) and [MongoDB](http://www.mongodb.org/)
+- Web frontend to play with the main features
+- CLI tools to process MediaWiki dumps and store them into Elasticsearch and MongoDB, as well performing data processing using UNIX command pipelines
+- Multilingual.
 
 ## Documentation
 
