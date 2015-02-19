@@ -10707,19 +10707,26 @@
                             "name": "Table London top 21 birth countries",
                             "content": {}
                         },
-                        "@an2": ">",
+                        "@an2": {
+                            "@type": "comment_tag",
+                            "comment": "- Ref name=Pop2001 -"
+                        },
                         "@an3": {
                             "@type": "template",
                             "name": "Table of top five London countries of birth",
                             "content": {}
                         },
-                        "@an4": ">\nWith increasing industrialisation, London's population grew rapidly throughout the 19th and early 20th centuries, and it was for some time in the late 19th and early 20th centuries the most populous city in the world until overtaken by New York in 1925. Its population peaked at 8,615,245 in 1939 immediately before the outbreak of the Second World War. There were an estimated 7,556,900 official residents in",
-                        "@an5": {
+                        "@an4": {
+                            "@type": "comment_tag",
+                            "comment": "- ref name=Estimates -"
+                        },
+                        "@an5": "With increasing industrialisation, London's population grew rapidly throughout the 19th and early 20th centuries, and it was for some time in the late 19th and early 20th centuries the most populous city in the world until overtaken by New York in 1925. Its population peaked at 8,615,245 in 1939 immediately before the outbreak of the Second World War. There were an estimated 7,556,900 official residents in",
+                        "@an6": {
                             "@type": "reference",
                             "label": "Greater London",
                             "content": {}
                         },
-                        "@an6": {
+                        "@an7": {
                             "@type": "template",
                             "name": "as of",
                             "content": {
@@ -10737,8 +10744,8 @@
                                 ]
                             }
                         },
-                        "@an7": ".",
-                        "@an8": {
+                        "@an8": ".",
+                        "@an9": {
                             "@type": "open_tag",
                             "name": "ref",
                             "attributes": [
@@ -10747,7 +10754,7 @@
                                 }
                             ]
                         },
-                        "@an9": {
+                        "@an10": {
                             "@type": "template",
                             "name": "Cite journal",
                             "content": {
@@ -10790,15 +10797,15 @@
                                 ]
                             }
                         },
-                        "@an10": {
+                        "@an11": {
                             "@type": "close_tag",
                             "name": "ref"
                         },
-                        "@an11": {
+                        "@an12": {
                             "@type": "paragraph"
                         },
-                        "@an12": "However, London's continuous urban area extends beyond the borders of Greater London and was home to 8,278,251 people in 2001,",
-                        "@an13": {
+                        "@an13": "However, London's continuous urban area extends beyond the borders of Greater London and was home to 8,278,251 people in 2001,",
+                        "@an14": {
                             "@type": "open_tag",
                             "name": "ref",
                             "attributes": [
@@ -10807,7 +10814,7 @@
                                 }
                             ]
                         },
-                        "@an14": {
+                        "@an15": {
                             "@type": "template",
                             "name": "cite web",
                             "content": {
@@ -10834,12 +10841,12 @@
                                 ]
                             }
                         },
-                        "@an15": {
+                        "@an16": {
                             "@type": "close_tag",
                             "name": "ref"
                         },
-                        "@an16": "while its wider",
-                        "@an17": {
+                        "@an17": "while its wider",
+                        "@an18": {
                             "@type": "reference",
                             "label": "London metropolitan area",
                             "content": {
@@ -10848,14 +10855,14 @@
                                 ]
                             }
                         },
-                        "@an18": "has a population of between 12 and 14",
-                        "@an19": {
+                        "@an19": "has a population of between 12 and 14",
+                        "@an20": {
                             "@type": "entity",
                             "form": "nbsp",
                             "value": " "
                         },
-                        "@an20": "million depending on the definition used.",
-                        "@an21": {
+                        "@an21": "million depending on the definition used.",
+                        "@an22": {
                             "@type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -10864,7 +10871,7 @@
                                 }
                             ]
                         },
-                        "@an22": {
+                        "@an23": {
                             "@type": "inline_tag",
                             "name": "ref",
                             "attributes": [
@@ -10873,14 +10880,14 @@
                                 }
                             ]
                         },
-                        "@an23": "According to",
-                        "@an24": {
+                        "@an24": "According to",
+                        "@an25": {
                             "@type": "reference",
                             "label": "Eurostat",
                             "content": {}
                         },
-                        "@an25": ", London is the",
-                        "@an26": {
+                        "@an26": ", London is the",
+                        "@an27": {
                             "@type": "reference",
                             "label": "Largest cities and metropolitan areas in the European Union (Eurostat)",
                             "content": {
@@ -10889,8 +10896,8 @@
                                 ]
                             }
                         },
-                        "@an27": "and the second",
-                        "@an28": {
+                        "@an28": "and the second",
+                        "@an29": {
                             "@type": "reference",
                             "label": "List of metropolitan areas in Europe",
                             "content": {
@@ -10899,20 +10906,20 @@
                                 ]
                             }
                         },
-                        "@an29": "(or third if",
-                        "@an30": {
+                        "@an30": "(or third if",
+                        "@an31": {
                             "@type": "reference",
                             "label": "Istanbul",
                             "content": {}
                         },
-                        "@an31": "is included). During the period 1991–2001 a net 726,000",
-                        "@an32": {
+                        "@an32": "is included). During the period 1991–2001 a net 726,000",
+                        "@an33": {
                             "@type": "entity",
                             "form": "nbsp",
                             "value": " "
                         },
-                        "@an33": "immigrants arrived in London.",
-                        "@an34": {
+                        "@an34": "immigrants arrived in London.",
+                        "@an35": {
                             "@type": "open_tag",
                             "name": "ref",
                             "attributes": [
@@ -10921,7 +10928,7 @@
                                 }
                             ]
                         },
-                        "@an35": {
+                        "@an36": {
                             "@type": "template",
                             "name": "cite news",
                             "content": {
@@ -10960,15 +10967,15 @@
                                 ]
                             }
                         },
-                        "@an36": {
+                        "@an37": {
                             "@type": "close_tag",
                             "name": "ref"
                         },
-                        "@an37": {
+                        "@an38": {
                             "@type": "paragraph"
                         },
-                        "@an38": "The region covers an area of",
-                        "@an39": {
+                        "@an39": "The region covers an area of",
+                        "@an40": {
                             "@type": "template",
                             "name": "convert",
                             "content": {
@@ -10983,8 +10990,8 @@
                                 ]
                             }
                         },
-                        "@an40": ". The population density is",
-                        "@an41": {
+                        "@an41": ". The population density is",
+                        "@an42": {
                             "@type": "template",
                             "name": "convert",
                             "content": {
@@ -10999,13 +11006,13 @@
                                 ]
                             }
                         },
-                        "@an42": ",",
-                        "@an43": {
+                        "@an43": ",",
+                        "@an44": {
                             "@type": "open_tag",
                             "name": "ref",
                             "attributes": null
                         },
-                        "@an44": {
+                        "@an45": {
                             "@type": "template",
                             "name": "cite book",
                             "content": {
@@ -11023,7 +11030,7 @@
                                 ]
                             }
                         },
-                        "@an45": {
+                        "@an46": {
                             "@type": "template",
                             "name": "dead link",
                             "content": {
@@ -11032,12 +11039,12 @@
                                 ]
                             }
                         },
-                        "@an46": {
+                        "@an47": {
                             "@type": "close_tag",
                             "name": "ref"
                         },
-                        "@an47": "more than ten times that of any other",
-                        "@an48": {
+                        "@an48": "more than ten times that of any other",
+                        "@an49": {
                             "@type": "reference",
                             "label": "NUTS:UK",
                             "content": {
@@ -11046,8 +11053,8 @@
                                 ]
                             }
                         },
-                        "@an49": ".",
-                        "@an50": {
+                        "@an50": ".",
+                        "@an51": {
                             "@type": "open_tag",
                             "name": "ref",
                             "attributes": [
@@ -11056,7 +11063,7 @@
                                 }
                             ]
                         },
-                        "@an51": {
+                        "@an52": {
                             "@type": "template",
                             "name": "cite web",
                             "content": {
@@ -11077,7 +11084,7 @@
                                 ]
                             }
                         },
-                        "@an52": {
+                        "@an53": {
                             "@type": "template",
                             "name": "dead link",
                             "content": {
@@ -11086,12 +11093,12 @@
                                 ]
                             }
                         },
-                        "@an53": {
+                        "@an54": {
                             "@type": "close_tag",
                             "name": "ref"
                         },
-                        "@an54": "In terms of population, London is the 25th",
-                        "@an55": {
+                        "@an55": "In terms of population, London is the 25th",
+                        "@an56": {
                             "@type": "reference",
                             "label": "World's largest cities",
                             "content": {
@@ -11100,8 +11107,8 @@
                                 ]
                             }
                         },
-                        "@an56": "and the 18th",
-                        "@an57": {
+                        "@an57": "and the 18th",
+                        "@an58": {
                             "@type": "reference",
                             "label": "List of metropolitan areas by population",
                             "content": {
@@ -11110,8 +11117,8 @@
                                 ]
                             }
                         },
-                        "@an58": "region in the world. It is also ranked 4th in the world in number of billionaires (United States Dollars) residing in the city.",
-                        "@an59": {
+                        "@an59": "region in the world. It is also ranked 4th in the world in number of billionaires (United States Dollars) residing in the city.",
+                        "@an60": {
                             "@type": "open_tag",
                             "name": "ref",
                             "attributes": [
@@ -11120,7 +11127,7 @@
                                 }
                             ]
                         },
-                        "@an60": {
+                        "@an61": {
                             "@type": "template",
                             "name": "cite news",
                             "content": {
@@ -11150,12 +11157,12 @@
                                 ]
                             }
                         },
-                        "@an61": {
+                        "@an62": {
                             "@type": "close_tag",
                             "name": "ref"
                         },
-                        "@an62": "London ranks as one of the most expensive cities in the world, alongside Tokyo and Moscow.",
-                        "@an63": {
+                        "@an63": "London ranks as one of the most expensive cities in the world, alongside Tokyo and Moscow.",
+                        "@an64": {
                             "@type": "open_tag",
                             "name": "ref",
                             "attributes": [
@@ -11164,7 +11171,7 @@
                                 }
                             ]
                         },
-                        "@an64": {
+                        "@an65": {
                             "@type": "template",
                             "name": "cite news",
                             "content": {
@@ -11194,11 +11201,11 @@
                                 ]
                             }
                         },
-                        "@an65": {
+                        "@an66": {
                             "@type": "close_tag",
                             "name": "ref"
                         },
-                        "@an66": {
+                        "@an67": {
                             "@type": "paragraph"
                         }
                     }
@@ -15584,7 +15591,10 @@
                                     "London"
                                 ],
                                 "accessdate": [
-                                    ">"
+                                    {
+                                        "@type": "comment_tag",
+                                        "comment": "-2008-06-07-"
+                                    }
                                 ],
                                 "title": [
                                     "London voted best for transport"
@@ -23740,7 +23750,7 @@
         },
         {
             "title": " Demography ",
-            "content": "Main Article: null \n>\n>\nWith increasing industrialisation, London's population grew rapidly throughout the 19th and early 20th centuries, and it was for some time in the late 19th and early 20th centuries the most populous city in the world until overtaken by New York in 1925. Its population peaked at 8,615,245 in 1939 immediately before the outbreak of the Second World War. There were an estimated 7,556,900 official residents in Greater London .However, London's continuous urban area extends beyond the borders of Greater London and was home to 8,278,251 people in 2001, while its wider London metropolitan area has a population of between 12 and 14million depending on the definition used. According to Eurostat, London is the Largest cities and metropolitan areas in the European Union (Eurostat) and the second List of metropolitan areas in Europe (or third if Istanbul is included). During the period 1991–2001 a net 726,000immigrants arrived in London.The region covers an area of . The population density is ,  more than ten times that of any other NUTS:UK. In terms of population, London is the 25th Worlds largest cities and the 18th List of metropolitan areas by population region in the world. It is also ranked 4th in the world in number of billionaires (United States Dollars) residing in the city. London ranks as one of the most expensive cities in the world, alongside Tokyo and Moscow."
+            "content": "Main Article: null \n\n\nWith increasing industrialisation, London's population grew rapidly throughout the 19th and early 20th centuries, and it was for some time in the late 19th and early 20th centuries the most populous city in the world until overtaken by New York in 1925. Its population peaked at 8,615,245 in 1939 immediately before the outbreak of the Second World War. There were an estimated 7,556,900 official residents in Greater London .However, London's continuous urban area extends beyond the borders of Greater London and was home to 8,278,251 people in 2001, while its wider London metropolitan area has a population of between 12 and 14million depending on the definition used. According to Eurostat, London is the Largest cities and metropolitan areas in the European Union (Eurostat) and the second List of metropolitan areas in Europe (or third if Istanbul is included). During the period 1991–2001 a net 726,000immigrants arrived in London.The region covers an area of . The population density is ,  more than ten times that of any other NUTS:UK. In terms of population, London is the 25th Worlds largest cities and the 18th List of metropolitan areas by population region in the world. It is also ranked 4th in the world in number of billionaires (United States Dollars) residing in the city. London ranks as one of the most expensive cities in the world, alongside Tokyo and Moscow."
         },
         {
             "title": " Ethnic groups ",

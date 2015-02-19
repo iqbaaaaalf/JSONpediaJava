@@ -13,6 +13,7 @@
 
 package com.machinelinking.parser;
 
+import java.io.EOFException;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collections;
@@ -175,24 +176,33 @@ public class TagReader {
     final StringBuilder commentSB = new StringBuilder();
     private void readUntilCloseComment(ParserReader r) throws IOException {
         commentSB.delete(0, commentSB.length());
-        while(true) {
-            char c = r.read();
-            if(c == '-') {
-                char c1 = r.read();
-                if('-' == c1) {
-                    char c2 = r.read();
-                    if ('>' == c2) {
-                        handler.commentTag(commentSB.toString());
-                        commentSB.delete(0, commentSB.length());
+        int minusCount = 0;
+        try {
+            while (true) {
+                char c = r.read();
+                if (c == '-') {
+                    minusCount++;
+                } else if (c == '>') {
+                    if (minusCount >= 2) {
+                        for (int i = 0; i < minusCount - 2; i++) commentSB.append('-');
+                        break;
+                    } else {
+                        for (int i = 0; i < minusCount; i++) commentSB.append('-');
+                        minusCount = 0;
+                        commentSB.append(c);
                     }
-                    break;
                 } else {
+                    for (int i = 0; i < minusCount; i++) commentSB.append('-');
+                    minusCount = 0;
                     commentSB.append(c);
-                    commentSB.append(c1);
                 }
-            } else {
-                commentSB.append(c);
             }
+        } catch (EOFException e) {
+            r.mark();
+            handler.parseWarning("Invalid comment closure, found EOF.", r.getLocation());
+        } finally {
+            handler.commentTag(commentSB.toString());
+            commentSB.delete(0, commentSB.length());
         }
     }
 

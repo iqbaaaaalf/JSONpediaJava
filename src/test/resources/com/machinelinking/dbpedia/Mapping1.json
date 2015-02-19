@@ -4,55 +4,86 @@
     "class": "ChemicalCompound",
     "mapping": {
         "MeltingPt": {
-            "name": "meltingPoint"
+            "name": "meltingPoint",
+            "label": "melting point (K)"
         },
         "melting point C": {
-            "name": "meltingPoint"
+            "name": "meltingPoint",
+            "label": "melting point (K)"
         },
         "boiling point C": {
-            "name": "boilingPoint"
+            "name": "boilingPoint",
+            "label": "boiling point (K)",
+            "domain": "ChemicalSubstance",
+            "range": "xsd:double"
         },
         "InChI": {
-            "name": "inchi"
+            "name": "inchi",
+            "label": "The IUPAC International Chemical Identifier",
+            "domain": "ChemicalCompound",
+            "range": "xsd:string"
         },
         "Density": {
-            "name": "density"
+            "name": "density",
+            "label": "density (μ3)"
         },
         "melting point K": {
-            "name": "meltingPoint"
+            "name": "meltingPoint",
+            "label": "melting point (K)"
         },
         "boiling point K": {
-            "name": "boilingPoint"
+            "name": "boilingPoint",
+            "label": "boiling point (K)",
+            "domain": "ChemicalSubstance",
+            "range": "xsd:double"
         },
         "PubChem": {
-            "name": "pubchem"
+            "name": "pubchem",
+            "label": "PubChem"
         },
         "melting point F": {
-            "name": "meltingPoint"
+            "name": "meltingPoint",
+            "label": "melting point (K)"
         },
         "boiling point F": {
-            "name": "boilingPoint"
+            "name": "boilingPoint",
+            "label": "boiling point (K)",
+            "domain": "ChemicalSubstance",
+            "range": "xsd:double"
         },
         "UNII": {
-            "name": "fdaUniiCode"
+            "name": "fdaUniiCode",
+            "label": "FDA UNII code"
         },
         "Name": {
             "name": "foaf:name"
         },
         "SMILES": {
-            "name": "smiles"
+            "name": "smiles",
+            "label": "SMILES",
+            "domain": "ChemicalCompound",
+            "range": "xsd:string"
         },
         "ImageFile": {
             "name": "foaf:thumbnail"
         },
         "IUPACName": {
-            "name": "iupacName"
+            "name": "iupacName",
+            "label": "IUPAC name",
+            "domain": "Drug",
+            "range": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         },
         "BoilingPt": {
-            "name": "boilingPoint"
+            "name": "boilingPoint",
+            "label": "boiling point (K)",
+            "domain": "ChemicalSubstance",
+            "range": "xsd:double"
         },
         "CASNo": {
-            "name": "casNumber"
+            "name": "casNumber",
+            "label": "CAS number",
+            "domain": "ChemicalCompound",
+            "range": "xsd:string"
         }
     },
     "issues": null

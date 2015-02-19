@@ -17,6 +17,7 @@ import com.machinelinking.pagestruct.WikiTextHRDumperHandler;
 import junit.framework.Assert;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.BufferedReader;
@@ -36,7 +37,7 @@ public class WikiTextParserTest {
     private static final Logger logger = Logger.getLogger(WikiTextParserTest.class);
 
     @Test
-    public void testComment() throws IOException, WikiTextParserException {
+    public void testComment1() throws IOException, WikiTextParserException {
         parse(
                 "X <!-- Y --> Z",
 
@@ -45,6 +46,34 @@ public class WikiTextParserTest {
                 "Comment Tag:  Y \n" +
                 "Text: ' Z'\n" +
                 "End Document\n"
+        );
+    }
+
+    @Test
+    public void testComment2() throws IOException, WikiTextParserException {
+        parse(
+                "X <!--- Y ---> Z",
+
+                "Begin Document\n" +
+                "Text: 'X '\n" +
+                "Comment Tag: - Y -\n" +
+                "Text: ' Z'\n" +
+                "End Document\n"
+        );
+    }
+
+    @Test
+    public void testCommentNoClose() throws IOException, WikiTextParserException {
+        parse(
+                "X <!-- Y ->",
+
+                "Begin Document\n" +
+                "Text: 'X '\n" +
+                "Warning: Invalid comment closure, found EOF. (1, 12)\n" +
+                "Comment Tag:  Y ->\n" +
+                "End Document\n",
+
+                false
         );
     }
 
@@ -1250,6 +1279,8 @@ public class WikiTextParserTest {
         verifyParsing("Table2");
     }
 
+    //TODO: TBI
+    @Ignore("TBI")
     @Test
     public void testParseTable3() throws IOException, WikiTextParserException {
         verifyParsing("Table3");

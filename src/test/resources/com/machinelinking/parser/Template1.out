@@ -420,7 +420,8 @@ Begin Template: documentation
 End Template: documentation
 Text: '
 '
-Text: '>
+Comment Tag: -Please add metadata to the  section at the bottom of the /doc subpage-
+Text: '
 '
 Close Tag: noinclude
 Text: '

@@ -14857,7 +14857,10 @@
                         "range": "xsd:date"
                     },
                     "birth_name": {
-                        "name": "birthName"
+                        "name": "birthName",
+                        "label": "birth name",
+                        "domain": "Person",
+                        "range": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                     },
                     "citizenship": {
                         "name": "citizenship",
@@ -14919,7 +14922,9 @@
                     },
                     "residence": {
                         "name": "residence",
-                        "label": "residence"
+                        "label": "residence",
+                        "domain": "Person",
+                        "range": "Place"
                     },
                     "awards": {
                         "name": "award",
@@ -14972,7 +14977,7 @@
             "id": "/m/05snw"
         },
         "lang": "en",
-        "score": 790.569824
+        "score": 790.579468
     },
     "infobox-splitter": [
         {
