@@ -38,6 +38,20 @@ The online demo version can be found at [jsonpedia.org](http://jsonpedia.org).
 - CLI tools to process MediaWiki dumps and store them into Elasticsearch and MongoDB, as well performing data processing using UNIX command pipelines
 - Multilingual.
 
+## Full list of features
+- WikiText event parser with mashed support for WikiMarkup and XML
+- WikiMedia template processing support
+- Configurable event processing pipeline
+- DBpedia template mapping integration
+- HTML rendering support
+- Freebase enrichment
+- Elasticsearch storage support
+- MongoDB storage support
+- RESTful access to backend (live processing pipeline, Elasticsearch and MongoDB query)
+- Web frontend with Demo and documentation
+- Sample code to implement filters, transformers, enrichers, validators
+- UNIX CLI support
+- Full multilingual support
 ## Documentation
 
 See [documentation](/hardest/jsonpedia/src/HEAD/documentation.md) for further references.
