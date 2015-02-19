@@ -42,7 +42,7 @@ import java.util.regex.Pattern;
  */
 public class InMemoryTemplateMappingManager implements TemplateMappingManager {
 
-    public static final String MAPPING_FILE_PATTERN = "mappings-%s.ser";
+    public static final String MAPPING_FILE_PATTERN = "work/mappings-%s.ser";
 
     private static final Pattern MAPPING_RE = Pattern.compile("Mapping [a-z]{2,3}:.+");
     private static final Logger logger = Logger.getLogger(InMemoryTemplateMappingManager.class);
