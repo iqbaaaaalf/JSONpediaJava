@@ -69,7 +69,7 @@ test {
 }
 
 task runLoader(dependsOn: 'jar', type: JavaExec) {
-  jvmArgs = ["-Xmx8g", "-Xms8g", "-Dlog4j.configuration=file:conf/log4j.properties"]
+  jvmArgs = ["-Xms8g", "-Xmx8g", "-Xss256k",  "-Djava.awt.headless=true", "-XX:+UseParNewGC", "-XX:+UseConcMarkSweepGC",  "-XX:CMSInitiatingOccupancyFraction=75", "-XX:+UseCMSInitiatingOccupancyOnly", "-XX:+HeapDumpOnOutOfMemoryError", "-XX:+DisableExplicitGC", "-Dlog4j.configuration=file:conf/log4j.properties"]
   main = 'com.machinelinking.cli.loader'
   classpath = sourceSets.main.runtimeClasspath
   if(project.hasProperty("config") && project.hasProperty("dump"))
