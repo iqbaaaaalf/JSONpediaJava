@@ -32,7 +32,7 @@ public class EnrichedEntityFacetConverter implements FacetConverter {
     @Override
     public Iterable<ElasticDocument> convert(ElasticDocument in) {
         final List<ElasticDocument> result = new ArrayList<>();
-        final Map<String, Object> content = getAsMap(in.getContent(), Ontology.CONTENT_FIELD);
+        final Map<String, Object> content = in.getContent();
         final List sections = (List) content.get(Ontology.SECTIONS_FIELD);
         Map<String, Object> sectionMap;
         Map<String, Object> newDocument;

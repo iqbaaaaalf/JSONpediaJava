@@ -26,49 +26,53 @@ import java.util.Map;
  */
 public class ElasticDocument implements Document<Map<String,Object>> {
 
-    private final int id;
-    private final int version;
-    private final String name;
     private final Map<String,Object> document;
 
-    public static ElasticDocument unwrap(Map<String,?> in) {
-        return new ElasticDocument(
-                (Integer) in.get(ID_FIELD),
-                (Integer) in.get(VERSION_FIELD),
-                (String) in.get(NAME_FIELD),
-                (Map<String,?>) in.get(CONTENT_FIELD)
-        );
+    public static ElasticDocument unwrap(Map<String,Object> in) {
+        if(in == null) return null;
+        if(
+            in.containsKey(ID_FIELD) &&
+            in.containsKey(VERSION_FIELD) &&
+            in.containsKey(NAME_FIELD) &&
+            in.containsKey(CONTENT_FIELD)
+        ) return new ElasticDocument(in);
+        else throw new IllegalArgumentException();
     }
 
-    public ElasticDocument(int id, int version, String name, Map<String,?> document) {
-        this.id = id;
-        this.version = version;
-        this.name = name;
+    public ElasticDocument(int id, Integer version, String name, Map<String,?> content) {
         this.document = new HashMap<>();
         this.document.put(ID_FIELD, id);
-        this.document.put(VERSION_FIELD, version);
-        this.document.put(NAME_FIELD, name);
-        this.document.put(CONTENT_FIELD, document);
+        if(version != null) this.document.put(VERSION_FIELD, version);
+        if(name != null) this.document.put(NAME_FIELD, name);
+        if(content != null) this.document.put(CONTENT_FIELD, content);
+    }
+
+    private ElasticDocument(Map<String,Object> in) {
+        this.document = in;
+    }
+
+    public Map<String,Object> getInternal() {
+        return document;
     }
 
     @Override
     public int getId() {
-        return id;
+        return (int) document.get(ID_FIELD);
     }
 
     @Override
     public int getVersion() {
-        return version;
+        return (int) document.get(VERSION_FIELD);
     }
 
     @Override
     public String getName() {
-        return name;
+        return (String) document.get(NAME_FIELD);
     }
 
     @Override
     public Map<String,Object> getContent() {
-        return document;
+        return (Map<String,Object>) document.get(CONTENT_FIELD);
     }
 
     @Override

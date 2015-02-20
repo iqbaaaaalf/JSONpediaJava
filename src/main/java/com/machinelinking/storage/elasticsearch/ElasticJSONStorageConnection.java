@@ -72,7 +72,7 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
         final ElasticDocument document = converter == null ? in : converter.convert(in);
         client
             .prepareIndex(db, collection, Integer.toString(document.getId()))
-            .setSource(document.getContent())
+            .setSource(document.getInternal())
             .execute().actionGet();
     }
 
@@ -96,7 +96,7 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
             return client.prepareCount(index).execute().get().getCount();
         } catch (Exception e) {
             throw new JSONStorageConnectionException(
-                    String.format("Error while counting documents in index [%s]", index)
+                    String.format("Error while counting documents in index [%s]", index), e
             );
         }
     }

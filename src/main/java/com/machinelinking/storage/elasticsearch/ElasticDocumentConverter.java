@@ -38,7 +38,7 @@ class ElasticDocumentConverter implements DocumentConverter<ElasticDocument> {
 
     @Override
     public ElasticDocument convert(ElasticDocument in) {
-        final Map<String,Object> content = (Map<String,Object>) in.getContent().get("content");
+        final Map<String,Object> content = in.getContent();
         final Map<String, Object> out = new HashMap<>();
         for (Map.Entry<String, ?> entry : content.entrySet()) {
             if (blocked.contains(entry.getKey())) continue;
