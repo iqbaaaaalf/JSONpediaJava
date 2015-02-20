@@ -63,10 +63,11 @@ public class MongoJSONStorageTest {
         Assert.assertNull(connection.getDocument(id));
     }
 
-    // 10000 items: 46970 ms
+    // 10000 items with save(): 90s
+    // 10000 items with insert(): 80s
     @Test
     public void testLoad() throws IOException {
-        loadAndCheck(100);
+        loadAndCheck(10000);
     }
 
     @Test
