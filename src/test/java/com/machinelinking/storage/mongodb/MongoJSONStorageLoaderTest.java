@@ -15,6 +15,7 @@ package com.machinelinking.storage.mongodb;
 
 import com.machinelinking.storage.AbstractJSONStorageLoaderTest;
 import com.machinelinking.storage.JSONStorage;
+import org.testng.annotations.Test;
 
 import java.net.UnknownHostException;
 
@@ -23,6 +24,7 @@ import java.net.UnknownHostException;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
+@Test
 public class MongoJSONStorageLoaderTest extends AbstractJSONStorageLoaderTest {
 
     @Override

@@ -15,6 +15,7 @@ package com.machinelinking.storage.elasticsearch;
 
 import com.machinelinking.storage.AbstractJSONStorageLoaderTest;
 import com.machinelinking.storage.JSONStorage;
+import org.testng.annotations.Test;
 
 import java.net.UnknownHostException;
 
@@ -23,6 +24,7 @@ import java.net.UnknownHostException;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
+@Test
 public class ElasticJSONStorageLoaderTest extends AbstractJSONStorageLoaderTest {
 
     public static final int SERVICE_PORT = 9300;
