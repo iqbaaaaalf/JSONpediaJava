@@ -58,18 +58,18 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
     @Override
     public void addDocument(MongoDocument in) {
         final MongoDocument document = converter == null ? in : converter.convert(in);
-        buffer.add(document.getContent());
+        buffer.add(document.getInternal());
         flushBuffer(false);
     }
 
     @Override
     public void removeDocument(int id) {
-        collection.remove( new MongoDocument(id, null, null, null).getContent() );
+        collection.remove( new MongoDocument(id, null, null, null).getInternal() );
     }
 
     @Override
     public MongoDocument getDocument(int id) {
-        final DBObject found = collection.findOne( new MongoDocument(id, null, null, null).getContent() );
+        final DBObject found = collection.findOne( new MongoDocument(id, null, null, null).getInternal() );
         return MongoDocument.unwrap(found);
     }
 
@@ -104,7 +104,10 @@ public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDo
 
     private void flushBuffer(boolean force) {
         if(force || buffer.size() > BUFFER_FLUSH_SIZE) {
-            this.collection.insert(buffer);
+            //this.collection.insert(buffer);
+            for(DBObject doc : buffer) {
+                this.collection.save(doc);
+            }
             buffer.clear();
         }
     }

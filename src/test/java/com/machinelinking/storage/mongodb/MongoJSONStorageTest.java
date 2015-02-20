@@ -26,6 +26,7 @@ import org.codehaus.jackson.JsonNode;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.UUID;
 
 /**
  * Test case for {@link com.machinelinking.storage.mongodb.MongoJSONStorage}.
@@ -41,6 +42,26 @@ public class MongoJSONStorageTest {
     private static final String RED_FUNC = "function(key, values) { return Array.sum(values) }";
 
     private static Logger logger = Logger.getLogger(MongoJSONStorageTest.class);
+
+    @Test
+    public void testAddGetRemove() throws JSONStorageConnectionException {
+        final MongoJSONStorage storage = getStorage();
+        final MongoJSONStorageConnection connection = storage.openConnection(TEST_COLLECTION);
+
+        final int id = Integer.MAX_VALUE;
+        final String uuid = UUID.randomUUID().toString();
+        final String KEY = "rand_uuid";
+        final DBObject wData = new BasicDBObject(KEY, uuid);
+
+        connection.addDocument(new MongoDocument(id, 1, "test_rw", wData));
+        connection.flush();
+
+        final DBObject rData = connection.getDocument(id).getContent();
+        Assert.assertEquals(uuid, rData.get(KEY).toString());
+
+        connection.removeDocument(id);
+        Assert.assertNull(connection.getDocument(id));
+    }
 
     // 10000 items: 46970 ms
     @Test
@@ -88,6 +109,7 @@ public class MongoJSONStorageTest {
         long end   = 0;
         try (final MongoJSONStorageConnection connection = storage.openConnection(TEST_COLLECTION)
         ) {
+            Assert.assertEquals(0, connection.getDocumentsCount());
             start = System.currentTimeMillis();
             for (int i = 0; i < count; i++) {
                 connection.addDocument(new MongoDocument(i, i, "doc_" + i, dbNode));

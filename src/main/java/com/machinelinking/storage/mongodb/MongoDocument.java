@@ -25,14 +25,12 @@ import com.mongodb.util.JSON;
  */
 public class MongoDocument implements Document<DBObject> {
 
-    private final int id;
-    private final int version;
-    private final String name;
-    private final DBObject document;
+    private final DBObject dbObject;
 
     public static MongoDocument unwrap(DBObject in) {
-        return new MongoDocument(
-                (Integer) in.get(ID_FIELD),
+        return in == null ? null :
+            new MongoDocument(
+                (int) in.get(ID_FIELD),
                 (Integer) in.get(VERSION_FIELD),
                 (String) in.get(NAME_FIELD),
                 (DBObject) in.get(CONTENT_FIELD)
@@ -40,36 +38,39 @@ public class MongoDocument implements Document<DBObject> {
     }
 
     public MongoDocument(int id, Integer version, String name, DBObject content) {
-        if(name == null) throw new NullPointerException("name cannot be null.");
-        this.name = name;
-        this.id = id;
-        this.version = version;
+        this.dbObject = new BasicDBObject();
+        this.dbObject.put(ID_FIELD, id);
+        if(version != null) this.dbObject.put(VERSION_FIELD, version);
+        if(name != null) this.dbObject.put(NAME_FIELD, name);
+        if(content != null) this.dbObject.put(CONTENT_FIELD, content);
+    }
 
-        this.document = new BasicDBObject();
-        this.document.put(ID_FIELD, id);
-        this.document.put(VERSION_FIELD, version);
-        this.document.put(NAME_FIELD, name);
-        this.document.put(CONTENT_FIELD, content);
+    public MongoDocument(DBObject content) {
+        this.dbObject = content;
+    }
+
+    public DBObject getInternal() {
+        return this.dbObject;
     }
 
     @Override
     public int getId() {
-        return id;
+        return (int) dbObject.get(ID_FIELD);
     }
 
     @Override
     public int getVersion() {
-        return version;
+        return (int) dbObject.get(VERSION_FIELD);
     }
 
     @Override
     public String getName() {
-        return name;
+        return (String) dbObject.get(NAME_FIELD);
     }
 
     @Override
     public DBObject getContent() {
-        return document;
+        return (DBObject) dbObject.get(CONTENT_FIELD);
     }
 
     @Override
