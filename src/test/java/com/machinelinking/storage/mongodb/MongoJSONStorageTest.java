@@ -67,7 +67,7 @@ public class MongoJSONStorageTest {
     // 10000 items with insert(): 80s
     @Test
     public void testLoad() throws IOException {
-        loadAndCheck(10000);
+        loadAndCheck(10);
     }
 
     @Test
