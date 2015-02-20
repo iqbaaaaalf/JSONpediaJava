@@ -31,6 +31,9 @@ import java.net.UnknownHostException;
  */
 public abstract class AbstractJSONStorageLoaderTest {
 
+    public static final String TEST_STORAGE_DB = "jsonpedia_loader_test";
+    public static final String TEST_STORAGE_COLLECTION = "en";
+
     private static final Flag[] FLAGS = {
             WikiPipelineFactory.Extractors,
             WikiPipelineFactory.Splitters,

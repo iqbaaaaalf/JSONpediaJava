@@ -26,8 +26,6 @@ import java.net.UnknownHostException;
 public class ElasticJSONStorageLoaderTest extends AbstractJSONStorageLoaderTest {
 
     public static final int SERVICE_PORT = 9300;
-    public static final String TEST_STORAGE_DB = "jsonpedia_test_load";
-    public static final String TEST_STORAGE_COLLECTION = "en";
 
     @Override
     protected JSONStorage getJSONStorage() throws UnknownHostException {

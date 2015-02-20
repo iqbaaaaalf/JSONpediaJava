@@ -13,9 +13,6 @@
 
 package com.machinelinking.storage;
 
-import com.machinelinking.storage.elasticsearch.ElasticJSONStorageLoaderTest;
-import com.machinelinking.storage.mongodb.MongoJSONStorageLoaderTest;
-
 import java.net.UnknownHostException;
 
 /**
@@ -26,13 +23,13 @@ public class MultiJSONStorageLoaderTest extends AbstractJSONStorageLoaderTest {
     public static final String MONGO_TEST_CONN_URI =
             String.format(
                     "com.machinelinking.storage.mongodb.MongoJSONStorageFactory|localhost:7654:%s:%s",
-                    MongoJSONStorageLoaderTest.TEST_STORAGE_DB, MongoJSONStorageLoaderTest.TEST_STORAGE_COLLECTION
+                    AbstractJSONStorageLoaderTest.TEST_STORAGE_DB, AbstractJSONStorageLoaderTest.TEST_STORAGE_COLLECTION
             );
 
     public static final String ELASTIC_TEST_CONN_URI =
             String.format(
                     "com.machinelinking.storage.elasticsearch.ElasticJSONStorageFactory|localhost:9300:%s:%s",
-                    ElasticJSONStorageLoaderTest.TEST_STORAGE_DB, ElasticJSONStorageLoaderTest.TEST_STORAGE_COLLECTION
+                    AbstractJSONStorageLoaderTest.TEST_STORAGE_DB, AbstractJSONStorageLoaderTest.TEST_STORAGE_COLLECTION
             );
 
     public static final String CONFIG_URI = MONGO_TEST_CONN_URI + ";" + ELASTIC_TEST_CONN_URI;
