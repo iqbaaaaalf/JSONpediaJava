@@ -28,13 +28,14 @@ public class MongoDocument implements Document<DBObject> {
     private final DBObject dbObject;
 
     public static MongoDocument unwrap(DBObject in) {
-        return in == null ? null :
-            new MongoDocument(
-                (int) in.get(ID_FIELD),
-                (Integer) in.get(VERSION_FIELD),
-                (String) in.get(NAME_FIELD),
-                (DBObject) in.get(CONTENT_FIELD)
-        );
+        if(in == null) return null;
+        if(
+            in.containsField(ID_FIELD) &&
+            in.containsField(VERSION_FIELD) &&
+            in.containsField(NAME_FIELD) &&
+            in.containsField(CONTENT_FIELD)
+        ) return new MongoDocument(in);
+        else throw new IllegalArgumentException();
     }
 
     public MongoDocument(int id, Integer version, String name, DBObject content) {
@@ -45,7 +46,7 @@ public class MongoDocument implements Document<DBObject> {
         if(content != null) this.dbObject.put(CONTENT_FIELD, content);
     }
 
-    public MongoDocument(DBObject content) {
+    private MongoDocument(DBObject content) {
         this.dbObject = content;
     }
 
