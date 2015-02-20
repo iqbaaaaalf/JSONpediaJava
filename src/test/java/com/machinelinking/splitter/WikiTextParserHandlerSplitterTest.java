@@ -15,9 +15,9 @@ package com.machinelinking.splitter;
 
 import com.machinelinking.pagestruct.WikiTextHRDumperHandler;
 import com.machinelinking.parser.WikiTextParserHandler;
-import junit.framework.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -31,7 +31,7 @@ public class WikiTextParserHandlerSplitterTest {
 
     private WikiTextParserHandlerSplitter splitter;
 
-    @Before
+    @BeforeMethod
     public void setUp() {
         splitter = new WikiTextParserHandlerSplitter();
     }
@@ -49,8 +49,8 @@ public class WikiTextParserHandlerSplitterTest {
 
         // Redirect from here.
         final WikiTextParserHandlerEventBuffer buffer = splitter.createRedirection(REDIRECTION_NAME);
-        Assert.assertEquals(1, splitter.getActiveRedirections().size());
-        Assert.assertEquals(REDIRECTION_NAME, splitter.getActiveRedirections().get(0).id);
+        Assert.assertEquals(splitter.getActiveRedirections().size(), 1);
+        Assert.assertEquals(splitter.getActiveRedirections().get(0).id, REDIRECTION_NAME);
 
         proxy.parameter("pp1");
         proxy.text("text1");
@@ -66,21 +66,21 @@ public class WikiTextParserHandlerSplitterTest {
         proxy.endTemplate(new WikiTextParserHandler.TemplateName("t1"));
         proxy.endDocument();
 
-        Assert.assertEquals(0, splitter.getActiveRedirections().size());
-        Assert.assertEquals(1, splitter.getcompletedRedirections().size());
+        Assert.assertEquals(splitter.getActiveRedirections().size(), 0);
+        Assert.assertEquals(splitter.getcompletedRedirections().size(), 1);
         Assert.assertNotNull(splitter.getcompletedRedirections().get(REDIRECTION_NAME));
 
         final WikiTextHRDumperHandler out = new WikiTextHRDumperHandler();
         buffer.flush(out);
         Assert.assertEquals(
+            out.getContent(),
+
             "Begin Template: tt1\n" +
             "k: pp1\n" +
             "Text: 'text1'\n" +
             "Text: 'text2'\n" +
             "Text: 'text3'\n" +
-            "End Template: tt1\n",
-
-             out.getContent()
+            "End Template: tt1\n"
         );
     }
 

@@ -14,11 +14,11 @@
 package com.machinelinking.serializer;
 
 import com.machinelinking.util.JSONUtils;
-import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -33,13 +33,13 @@ public class JSONSerializerTest {
     private ByteArrayOutputStream baos;
     private Serializer serializer;
 
-    @Before
+    @BeforeMethod
     public void setUp() throws IOException {
         baos = new ByteArrayOutputStream();
         serializer = new JSONSerializer(baos);
     }
 
-    @After
+    @AfterMethod
     public void tearDown() {
         baos = null;
         serializer = null;
@@ -186,7 +186,7 @@ public class JSONSerializerTest {
         try {
             final JsonNode expectedNode = JSONUtils.parseJSON(expected);
             final JsonNode outNode = JSONUtils.parseJSON(out);
-            Assert.assertEquals(expectedNode, outNode);
+            Assert.assertEquals(outNode, expectedNode);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

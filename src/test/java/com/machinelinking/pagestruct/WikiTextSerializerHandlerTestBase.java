@@ -18,9 +18,9 @@ import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.util.JSONUtils;
-import junit.framework.Assert;
 import org.apache.log4j.Logger;
 import org.codehaus.jackson.JsonNode;
+import org.testng.Assert;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
@@ -79,7 +79,7 @@ public class WikiTextSerializerHandlerTestBase <T extends WikiTextSerializerHand
             this.getClass().getResourceAsStream(String.format("%s.json", expectedJSON))
         );
 
-        Assert.assertEquals("Unexpected serialization.", expectedJSONNode.toString(), actualJSONNode.toString());
+        Assert.assertEquals(actualJSONNode.toString(), expectedJSONNode.toString(), "Unexpected serialization.");
     }
 
     protected void verifySerialization(String wikiPage) throws IOException, WikiTextParserException {

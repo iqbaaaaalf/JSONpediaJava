@@ -13,8 +13,8 @@
 
 package com.machinelinking.storage.mongodb;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 /**
  * Test case for {@link com.machinelinking.storage.mongodb.MongoSelector}.
@@ -27,8 +27,9 @@ public class MongoSelectorParserTest {
     public void testParser() {
         final MongoSelectorParser parser = MongoSelectorParser.getInstance();
         Assert.assertEquals(
-                "criterias: [name eq 'Albert Einstein'], projections: [content, _id, name, content.categories, version]",
-                parser.parse("name = Albert Einstein -> content.categories").toString()
+                parser.parse("name = Albert Einstein -> content.categories").toString(),
+                "criterias: [name eq 'Albert Einstein'], projections: [content, _id, name, content.categories, version]"
+
         );
 
         final MongoSelector selector = parser.parse(
@@ -36,14 +37,14 @@ public class MongoSelectorParserTest {
                 "-> _id, name, content"
         );
         Assert.assertEquals(
+                selector.toString(),
                 "criterias: [version lte 0, _id gt 10, content.categories.content eq 'Cosmologists', content.sections.title eq 'Biography'], " +
-                "projections: [content, _id, name, version]",
-                selector.toString()
+                "projections: [content, _id, name, version]"
         );
 
         Assert.assertEquals(
-                "criterias: [_id gt 1], projections: [content, _id, name, version]",
-                parser.parse("_id > #1 -> _id").toString()
+                parser.parse("_id > #1 -> _id").toString(),
+                "criterias: [_id gt 1], projections: [content, _id, name, version]"
         );
     }
 

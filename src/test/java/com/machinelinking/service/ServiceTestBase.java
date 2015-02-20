@@ -14,10 +14,10 @@
 package com.machinelinking.service;
 
 import com.machinelinking.util.JSONUtils;
-import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
-import org.junit.After;
-import org.junit.Before;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import javax.ws.rs.core.UriBuilder;
 import java.io.BufferedReader;
@@ -35,12 +35,12 @@ public class ServiceTestBase {
 
     private final BasicServer server = new BasicServer();
 
-    @Before
+    @BeforeMethod
     public void setUp() throws IOException {
         server.setUp();
     }
 
-    @After
+    @AfterMethod
     public void tearDown() {
         server.tearDown();
     }
@@ -71,7 +71,7 @@ public class ServiceTestBase {
             performQuery(uri);
             Assert.fail("This test is expected to fail.");
         } catch (ConnectionException ce) {
-            Assert.assertEquals("Invalid connection exception.", responseCode, ce.errorCode);
+            Assert.assertEquals(ce.errorCode, responseCode, "Invalid connection exception.");
         }
     }
 

@@ -16,8 +16,8 @@ package com.machinelinking.splitter;
 import com.machinelinking.parser.MultiWikiTextParserHandler;
 import com.machinelinking.parser.WikiTextParserHandler;
 import com.machinelinking.serializer.JSONSerializer;
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -54,10 +54,10 @@ public class InfoboxSplitterTest {
         multiHandler.endTemplate(new WikiTextParserHandler.TemplateName("t1"));
         multiHandler.endDocument();
 
-        Assert.assertEquals(0, splitterHandler.getActiveRedirections().size() );
+        Assert.assertEquals(splitterHandler.getActiveRedirections().size(), 0);
         final Map<String,WikiTextParserHandlerSplitter.Redirect> redirections =
                 splitterHandler.getcompletedRedirections();
-        Assert.assertEquals(1, redirections.size());
+        Assert.assertEquals(redirections.size(), 1);
 
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final JSONSerializer serializer = new JSONSerializer(baos);
@@ -66,9 +66,9 @@ public class InfoboxSplitterTest {
         serializer.closeObject();
         serializer.flush();
         Assert.assertEquals(
+            baos.toString(),
             "{\"infobox-splitter\":[{\"@type\":\"template\",\"name\":\"tt1\"," +
-            "\"content\":{\"tt1-p1\":[\"text 1\",\"text 2\"]}}]}",
-            baos.toString()
+            "\"content\":{\"tt1-p1\":[\"text 1\",\"text 2\"]}}]}"
         );
     }
 

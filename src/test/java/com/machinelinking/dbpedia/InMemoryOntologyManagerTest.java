@@ -13,8 +13,8 @@
 
 package com.machinelinking.dbpedia;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.Map;
 
@@ -53,20 +53,20 @@ public class InMemoryOntologyManagerTest {
     public void testGetMapping() throws OntologyManagerException {
         final InMemoryOntologyManager manager = new InMemoryOntologyManager();
         Assert.assertEquals(
-                "{property=birthDate label='birth date' domain=Person range=xsd:date}",
-                manager.getProperty("birthDate").toString()
+                manager.getProperty("birthDate").toString(),
+                "{property=birthDate label='birth date' domain=Person range=xsd:date}"
         );
         Assert.assertEquals(
-                "{property=birthPlace label='birth place' domain=Person range=Place}",
-                manager.getProperty("birthPlace").toString()
+                manager.getProperty("birthPlace").toString(),
+                "{property=birthPlace label='birth place' domain=Person range=Place}"
         );
         Assert.assertEquals(
-                "{property=spouse label='spouse' domain=Person range=Person}",
-                manager.getProperty("spouse").toString()
+                manager.getProperty("spouse").toString(),
+                "{property=spouse label='spouse' domain=Person range=Person}"
         );
         Assert.assertEquals(
-                "{property=successor label='successor' domain=null range=null}",
-                manager.getProperty("successor").toString()
+                manager.getProperty("successor").toString(),
+                "{property=successor label='successor' domain=null range=null}"
         );
     }
 

@@ -13,8 +13,8 @@
 
 package com.machinelinking.dbpedia;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 /**
  * Test case for {@link com.machinelinking.dbpedia.InMemoryTemplateMappingManager}.
@@ -33,7 +33,7 @@ public class InMemoryTemplateMappingManagerTest {
 
     private void checkMappingManager(TemplateMappingManager manager, int expectedMappings) {
         Assert.assertTrue(manager.getMappingsCount() > expectedMappings);
-        Assert.assertEquals(manager.getMappingsCount(), manager.getMappingNames().length);
+        Assert.assertEquals(manager.getMappingNames().length, manager.getMappingsCount());
         for (String name : manager.getMappingNames()) {
             Assert.assertNotNull(manager.getMapping(name));
         }

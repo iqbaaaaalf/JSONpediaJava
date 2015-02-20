@@ -13,8 +13,8 @@
 
 package com.machinelinking.wikimedia;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
@@ -33,8 +33,8 @@ public class WikiAPIParserTest {
                 WikimediaUtils.entityToWikiTextURLAPI( new URL("http://en.wikipedia.org/Albert_Einstein") )
         );
         Assert.assertNotNull(page);
-        Assert.assertEquals("Albert Einstein", page.getTitle());
-        Assert.assertEquals(736, page.getId());
+        Assert.assertEquals(page.getTitle(), "Albert Einstein");
+        Assert.assertEquals(page.getId(), 736);
         Assert.assertTrue(page.getContent().trim().length() > 0);
     }
 

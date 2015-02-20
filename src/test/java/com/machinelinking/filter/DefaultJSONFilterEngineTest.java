@@ -15,8 +15,8 @@ package com.machinelinking.filter;
 
 import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonNode;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 
@@ -35,8 +35,8 @@ public class DefaultJSONFilterEngineTest {
     public void testParseFilter1() throws IOException {
         final JSONFilter r = DefaultJSONFilterEngine.parseFilter(STRING_FILTER_EXP);
         Assert.assertEquals(
-                "object_filter(@type=template,name=Death date and age,)>null",
-                r.humanReadable()
+                r.humanReadable(),
+                "object_filter(@type=template,name=Death date and age,)>null"
         );
     }
 
@@ -44,8 +44,8 @@ public class DefaultJSONFilterEngineTest {
     public void testParseFilter2() throws IOException {
         final JSONFilter r = DefaultJSONFilterEngine.parseFilter(REGEX_FILTER_EXP);
         Assert.assertEquals(
-                "object_filter(@type=link,url=.*[\\s,\\d]?\\.html,)>null",
-                r.humanReadable()
+                r.humanReadable(),
+                "object_filter(@type=link,url=.*[\\s,\\d]?\\.html,)>null"
         );
     }
 
@@ -53,14 +53,14 @@ public class DefaultJSONFilterEngineTest {
     public void testParseFilter3() throws IOException {
         final JSONFilter r = DefaultJSONFilterEngine.parseFilter(NESTED_FILTER_EXP);
         Assert.assertEquals(
+                r.humanReadable(),
                 "key_filter(notable_students)>" +
                 "object_filter(@type=template,name=Plainlist,)>" +
-                "object_filter(@type=reference,)>null",
-                r.humanReadable()
+                "object_filter(@type=reference,)>null"
         );
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expectedExceptions = IllegalArgumentException.class)
     public void testParseFilterFail() throws IOException {
         DefaultJSONFilterEngine.parseFilter("name::fake");
     }
@@ -118,7 +118,7 @@ public class DefaultJSONFilterEngineTest {
     @Test
     public void testEngineApply() throws IOException {
         final JsonNode[] r = DefaultJSONFilterEngine.applyFilter(loadJSON(), STRING_FILTER_EXP);
-        Assert.assertEquals(2, r.length);
+        Assert.assertEquals(r.length, 2);
     }
 
     private JsonNode loadJSON() throws IOException {
@@ -131,7 +131,7 @@ public class DefaultJSONFilterEngineTest {
         final JSONFilterEngine engine = new DefaultJSONFilterEngine();
         final JsonNode[] result = engine.filter(node, filter);
 
-        Assert.assertEquals(EXPECTED, result.length);
+        Assert.assertEquals(result.length, EXPECTED);
     }
 
 }

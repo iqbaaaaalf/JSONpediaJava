@@ -30,9 +30,9 @@ import com.machinelinking.parser.WikiTextParser;
 import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializer;
-import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.BufferedWriter;
 import java.io.ByteArrayOutputStream;
@@ -71,22 +71,22 @@ public class DocExamplesTest {
         );
 
         Assert.assertEquals(
+                handler.getContent(),
+
                 "Begin Document\n" +
                 "Text: 'This is a '\n" +
                 "ItalicBold: 2\n" +
                 "Text: 'WikiText'\n" +
                 "ItalicBold: 2\n" +
                 "Text: ' example'\n" +
-                "End Document\n",
-
-                handler.getContent()
+                "End Document\n"
         );
     }
 
     @Test
     public void testParseFilterAndApply() throws JSONpediaException {
         final JSONFilter filter = DefaultJSONFilterEngine.parseFilter("@type:section>@type:reference");
-        Assert.assertEquals("object_filter(@type=section,)>object_filter(@type=reference,)>null", filter.humanReadable());
+        Assert.assertEquals(filter.humanReadable(), "object_filter(@type=section,)>object_filter(@type=reference,)>null");
         JSONFilterEngine engine = new DefaultJSONFilterEngine();
         final JsonNode london = JSONpedia.instance().process("en:London").flags("Structure").json();
         JsonNode[] result = engine.filter(london, filter);

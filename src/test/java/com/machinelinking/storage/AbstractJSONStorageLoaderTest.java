@@ -16,8 +16,8 @@ package com.machinelinking.storage;
 import com.machinelinking.pipeline.Flag;
 import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.util.FileUtil;
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
@@ -44,7 +44,7 @@ public abstract class AbstractJSONStorageLoaderTest {
     public void performCleanupOnce() throws UnknownHostException {
         if(!cleanupDone) {
             getJSONStorage().deleteCollection();
-            Assert.assertFalse("Collection should not exist any longer.", getJSONStorage().exists());
+            Assert.assertFalse(getJSONStorage().exists(), "Collection should not exist any longer.");
             cleanupDone = true;
         }
     }
@@ -83,7 +83,7 @@ public abstract class AbstractJSONStorageLoaderTest {
                 FileUtil.openDecompressedInputStream(dump)
         );
 
-        Assert.assertEquals("Unexpected number of issues.", expectedIssues, report.getPageErrors());
+        Assert.assertEquals(report.getPageErrors(), expectedIssues, "Unexpected number of issues.");
     }
 
 }

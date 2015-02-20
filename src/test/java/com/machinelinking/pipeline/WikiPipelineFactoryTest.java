@@ -13,8 +13,8 @@
 
 package com.machinelinking.pipeline;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 
@@ -29,8 +29,8 @@ public class WikiPipelineFactoryTest {
     public void testToFlagsJustDefault() {
         final Flag[] DEFAULTS = new Flag[]{ WikiPipelineFactory.Structure, WikiPipelineFactory.Validate };
         Assert.assertEquals(
-                Arrays.asList(DEFAULTS),
-                Arrays.asList(WikiPipelineFactory.getInstance().toFlags("", DEFAULTS))
+                Arrays.asList(WikiPipelineFactory.getInstance().toFlags("", DEFAULTS)),
+                Arrays.asList(DEFAULTS)
         );
     }
 
@@ -38,10 +38,10 @@ public class WikiPipelineFactoryTest {
     public void testToFlagsOptionalAdded() {
         final Flag[] DEFAULTS = new Flag[]{ WikiPipelineFactory.Structure, WikiPipelineFactory.Validate };
         Assert.assertEquals(
-                Arrays.asList( new Flag[]{
+                Arrays.asList(WikiPipelineFactory.getInstance().toFlags("Linkers", DEFAULTS)),
+                Arrays.asList(
                         WikiPipelineFactory.Structure, WikiPipelineFactory.Validate, WikiPipelineFactory.Linkers
-                }),
-                Arrays.asList(WikiPipelineFactory.getInstance().toFlags("Linkers", DEFAULTS))
+                )
         );
     }
 
@@ -49,8 +49,8 @@ public class WikiPipelineFactoryTest {
     public void testToFlagsDefaultRemoved() {
         final Flag[] DEFAULTS = new Flag[]{ WikiPipelineFactory.Structure, WikiPipelineFactory.Validate };
         Assert.assertEquals(
-                Arrays.asList( new Flag[]{ WikiPipelineFactory.Structure }),
-                Arrays.asList(WikiPipelineFactory.getInstance().toFlags("-Validate", DEFAULTS))
+                Arrays.asList(WikiPipelineFactory.getInstance().toFlags("-Validate", DEFAULTS)),
+                Arrays.asList( new Flag[]{ WikiPipelineFactory.Structure })
         );
     }
 
@@ -58,8 +58,8 @@ public class WikiPipelineFactoryTest {
     public void testToFlagsOptionalAddedDefaultRemoved() {
         final Flag[] DEFAULTS = new Flag[]{ WikiPipelineFactory.Structure, WikiPipelineFactory.Validate };
         Assert.assertEquals(
-                Arrays.asList( new Flag[]{ WikiPipelineFactory.Validate, WikiPipelineFactory.Linkers } ),
-                Arrays.asList(WikiPipelineFactory.getInstance().toFlags("Linkers,-Structure", DEFAULTS))
+                Arrays.asList(WikiPipelineFactory.getInstance().toFlags("Linkers,-Structure", DEFAULTS)),
+                Arrays.asList(WikiPipelineFactory.Validate, WikiPipelineFactory.Linkers)
         );
     }
 

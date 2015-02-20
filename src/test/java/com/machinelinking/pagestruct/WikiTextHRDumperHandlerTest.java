@@ -14,7 +14,7 @@
 package com.machinelinking.pagestruct;
 
 import com.machinelinking.parser.WikiTextParserHandler;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -26,7 +26,7 @@ import java.net.URL;
  */
 public class WikiTextHRDumperHandlerTest {
 
-    @Test(expected = IllegalStateException.class)
+    @Test(expectedExceptions = IllegalStateException.class)
     public void testValidation() throws MalformedURLException {
         final WikiTextHRDumperHandler handler = new WikiTextHRDumperHandler();
         handler.beginDocument( new URL("http://path/to/resource") );

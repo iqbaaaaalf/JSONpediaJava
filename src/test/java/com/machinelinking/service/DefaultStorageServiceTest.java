@@ -15,10 +15,10 @@ package com.machinelinking.service;
 
 import com.machinelinking.storage.elasticsearch.ElasticJSONStorageTest;
 import com.machinelinking.storage.mongodb.MongoJSONStorageTest;
-import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -51,7 +51,7 @@ public class DefaultStorageServiceTest extends ServiceTestBase {
         }
     }
 
-    @Before
+    @BeforeMethod
     public void setUp() throws IOException {
         super.setUp();
 
@@ -84,10 +84,10 @@ public class DefaultStorageServiceTest extends ServiceTestBase {
         );
 
         Assert.assertEquals(
-                "criterias: [name eq 'doc_1'], projections: [content, _id, name, version]",
-                output.get("query-explain").asText()
+                output.get("query-explain").asText(),
+                "criterias: [name eq 'doc_1'], projections: [content, _id, name, version]"
         );
-        Assert.assertEquals(1, output.get("count").asInt());
+        Assert.assertEquals(output.get("count").asInt(), 1);
         Assert.assertNotNull(output.get("result"));
         Assert.assertTrue(output.get("result").size() >= 1);
     }
@@ -175,11 +175,11 @@ public class DefaultStorageServiceTest extends ServiceTestBase {
         );
 
         Assert.assertEquals(
+                output.get("elastic-query").asText().replaceAll("\\s+", ""),
                 "{\"from\":0,\"size\":10,\"query\":{\"bool\":{\"must\":[" +
                         "{\"match\":{\"_id\":{\"query\":\"735\",\"type\":\"boolean\"}}}," +
                         "{\"match\":{\"abstract\":{\"query\":\"Albert\",\"type\":\"boolean\"}}}]}}," +
-                        "\"explain\":false}",
-                output.get("elastic-query").asText().replaceAll("\\s+", "")
+                        "\"explain\":false}"
         );
         Assert.assertTrue(output.get("count").asInt() >= 1);
         Assert.assertNotNull(output.get("result"));

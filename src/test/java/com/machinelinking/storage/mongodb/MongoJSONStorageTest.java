@@ -19,11 +19,11 @@ import com.machinelinking.storage.JSONStorageConnectionException;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;
-import junit.framework.Assert;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
 import org.codehaus.jackson.JsonNode;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.UUID;
@@ -57,7 +57,7 @@ public class MongoJSONStorageTest {
         connection.flush();
 
         final DBObject rData = connection.getDocument(id).getContent();
-        Assert.assertEquals(uuid, rData.get(KEY).toString());
+        Assert.assertEquals(rData.get(KEY).toString(), uuid);
 
         connection.removeDocument(id);
         Assert.assertNull(connection.getDocument(id));
@@ -88,7 +88,7 @@ public class MongoJSONStorageTest {
         while((rs.next()) != null) {
             found++;
         }
-        Assert.assertEquals(1, found);
+        Assert.assertEquals(found, 1);
     }
 
     @Test
@@ -110,14 +110,14 @@ public class MongoJSONStorageTest {
         long end   = 0;
         try (final MongoJSONStorageConnection connection = storage.openConnection(TEST_COLLECTION)
         ) {
-            Assert.assertEquals(0, connection.getDocumentsCount());
+            Assert.assertEquals(connection.getDocumentsCount(), 0);
             start = System.currentTimeMillis();
             for (int i = 0; i < count; i++) {
                 connection.addDocument(new MongoDocument(i, i, "doc_" + i, dbNode));
             }
             end = System.currentTimeMillis();
             connection.flush();
-            Assert.assertEquals(count, connection.getDocumentsCount());
+            Assert.assertEquals(connection.getDocumentsCount(), count);
         } finally {
             if(end == 0) end = System.currentTimeMillis();
             logger.info("Elapsed time: " + (end - start));

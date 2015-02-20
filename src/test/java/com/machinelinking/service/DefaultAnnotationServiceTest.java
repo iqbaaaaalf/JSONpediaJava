@@ -13,12 +13,12 @@
 
 package com.machinelinking.service;
 
-import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngineTest;
+import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.util.JSONUtils;
-import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -82,26 +82,26 @@ public class DefaultAnnotationServiceTest extends ServiceTestBase {
                         .queryParam("filter", DefaultJSONFilterEngineTest.STRING_FILTER_EXP).build()
         );
         Assert.assertEquals(
+                node.toString(),
                 JSONUtils.parseJSON(
                         "{\"filter\":\"object_filter(@type=template,name=Death date and age,)>null\"," +
                                 "\"result\":[{\"@type\":\"template\",\"name\":\"Death date and age\"," +
                                 "\"content\":{\"df\":[\"yes\"],\"@an0\":[\"1955\"],\"@an1\":[\"4\"]," +
                                 "   \"@an2\":[\"18\"],\"@an3\":[\"1879\"],\"@an4\":[\"3\"],\"@an5\":[\"14\"]}}]}"
-                ).toString(),
-                node.toString()
+                ).toString()
         );
     }
 
     private void checkJSONResponse(JsonNode node) {
         for (String expectedNode : EXPECTED_ARRAY_NODES) {
             final JsonNode content = node.get(expectedNode);
-            Assert.assertNotNull("Cannot find object node: " + expectedNode, content);
-            Assert.assertTrue("Invalid content for " + expectedNode, content.isArray());
+            Assert.assertNotNull(content, "Cannot find object node: " + expectedNode);
+            Assert.assertTrue(content.isArray(), "Invalid content for " + expectedNode);
         }
         for (String expectedNode : EXPECTED_OBJECT_NODES) {
             final JsonNode content = node.get(expectedNode);
-            Assert.assertNotNull("Cannot find object node: " + expectedNode, content);
-            Assert.assertTrue("Invalid content for " + expectedNode, content.isObject());
+            Assert.assertNotNull(content, "Cannot find object node: " + expectedNode);
+            Assert.assertTrue(content.isObject(), "Invalid content for " + expectedNode);
         }
     }
 

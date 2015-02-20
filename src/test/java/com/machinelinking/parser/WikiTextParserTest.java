@@ -14,11 +14,10 @@
 package com.machinelinking.parser;
 
 import com.machinelinking.pagestruct.WikiTextHRDumperHandler;
-import junit.framework.Assert;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -1280,8 +1279,7 @@ public class WikiTextParserTest {
     }
 
     //TODO: TBI
-    @Ignore("TBI")
-    @Test
+    @Test(enabled = false)
     public void testParseTable3() throws IOException, WikiTextParserException {
         verifyParsing("Table3");
     }
@@ -1346,7 +1344,7 @@ public class WikiTextParserTest {
         parser.parse( new URL("http://test/url"), new BufferedReader(reader) );
         final long end   = System.nanoTime();
         logger.debug(String.format("Parse time (ns): " + (end - begin) + " (ms): " + (end - begin) / (1000 * 1000)));
-        Assert.assertEquals(expected, handler.getContent());
+        Assert.assertEquals(handler.getContent(), expected);
         Assert.assertTrue(handler.isEventStackEmpty());
     }
 

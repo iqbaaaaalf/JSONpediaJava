@@ -14,10 +14,10 @@
 package com.machinelinking.util;
 
 import com.machinelinking.serializer.JSONSerializer;
-import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.JsonParseException;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -32,19 +32,19 @@ public class JSONUtilsTest {
 
     @Test
     public void testParseJSONMulti() throws IOException {
-         Assert.assertEquals(1, JSONUtils.parseJSONMulti("{}").length);
-         Assert.assertEquals(2, JSONUtils.parseJSONMulti("{}{}").length);
-         Assert.assertEquals(3, JSONUtils.parseJSONMulti("{}{}{}").length);
+         Assert.assertEquals(JSONUtils.parseJSONMulti("{}").length, 1);
+         Assert.assertEquals(JSONUtils.parseJSONMulti("{}{}").length, 2);
+         Assert.assertEquals(JSONUtils.parseJSONMulti("{}{}{}").length, 3);
     }
 
-    @Test(expected = JsonParseException.class)
+    @Test(expectedExceptions = JsonParseException.class)
     public void testParseJSONMultiFail1() throws IOException {
-         Assert.assertEquals(1, JSONUtils.parseJSONMulti("{}{").length);
+         Assert.assertEquals(JSONUtils.parseJSONMulti("{}{").length, 1);
     }
 
-    @Test(expected = JsonParseException.class)
+    @Test(expectedExceptions = JsonParseException.class)
     public void testParseJSONMultiFail2() throws IOException {
-         Assert.assertEquals(1, JSONUtils.parseJSONMulti("{}x{}").length);
+         Assert.assertEquals(JSONUtils.parseJSONMulti("{}x{}").length, 1);
     }
 
     @Test
@@ -55,7 +55,7 @@ public class JSONUtilsTest {
         final JSONSerializer serializer  = new JSONSerializer(baos);
         JSONUtils.jacksonNodeToSerializer(node, serializer);
         serializer.close();
-        Assert.assertEquals(node, JSONUtils.parseJSON(baos.toString()));
+        Assert.assertEquals(JSONUtils.parseJSON(baos.toString()), node);
     }
 
     @Test
@@ -75,7 +75,7 @@ public class JSONUtilsTest {
         final JSONSerializer serializer = new JSONSerializer(baos);
         JSONUtils.jsonMapArrayToSerializer(in, serializer);
         serializer.close();
-        Assert.assertEquals(expected, baos.toString());
+        Assert.assertEquals(baos.toString(), expected);
     }
 
 }

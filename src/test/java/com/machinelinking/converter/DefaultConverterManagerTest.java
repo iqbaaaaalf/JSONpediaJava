@@ -25,8 +25,8 @@ import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.serializer.Serializer;
 import com.machinelinking.util.JSONUtils;
 import org.codehaus.jackson.JsonNode;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

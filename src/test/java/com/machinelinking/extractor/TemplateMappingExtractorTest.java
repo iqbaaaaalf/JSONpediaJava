@@ -18,9 +18,9 @@ import com.machinelinking.parser.WikiTextParser;
 import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
-import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

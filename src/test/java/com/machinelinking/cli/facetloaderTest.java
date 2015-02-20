@@ -14,8 +14,8 @@
 package com.machinelinking.cli;
 
 import com.machinelinking.storage.elasticsearch.faceting.DefaultElasticFacetManagerTest;
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 

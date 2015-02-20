@@ -15,9 +15,9 @@ package com.machinelinking.splitter;
 
 import com.machinelinking.pagestruct.WikiTextHRDumperHandler;
 import com.machinelinking.parser.WikiTextParserHandler;
-import junit.framework.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -31,7 +31,7 @@ public class WikiTextParserHandlerEventBufferTest {
 
     private WikiTextParserHandlerEventBuffer buffer;
 
-    @Before
+    @BeforeMethod
     public void setUp() {
         buffer = new WikiTextParserHandlerEventBuffer();
     }
@@ -48,10 +48,12 @@ public class WikiTextParserHandlerEventBufferTest {
         handler.endTemplate(new WikiTextParserHandler.TemplateName("T1"));
         handler.endDocument();
 
-        Assert.assertEquals(8, buffer.size());
+        Assert.assertEquals(buffer.size(), 8);
         final WikiTextHRDumperHandler serializer = new WikiTextHRDumperHandler();
         buffer.flush(serializer);
         Assert.assertEquals(
+                serializer.getContent(),
+
                 "Begin Document\n" +
                 "Begin Template: T1\n" +
                 "k: p1\n" +
@@ -59,9 +61,7 @@ public class WikiTextParserHandlerEventBufferTest {
                 "Text: 't2'\n" +
                 "Text: 't4'\n" +
                 "End Template: T1\n" +
-                "End Document\n",
-
-                serializer.getContent()
+                "End Document\n"
         );
     }
 

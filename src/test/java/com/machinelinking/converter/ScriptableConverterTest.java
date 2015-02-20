@@ -16,8 +16,8 @@ package com.machinelinking.converter;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
 import org.apache.commons.io.IOUtils;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.BufferedWriter;
 import java.io.ByteArrayOutputStream;
@@ -51,12 +51,12 @@ public class ScriptableConverterTest {
         serializer.close();
         writer.close();
         Assert.assertEquals(
-                "{\"link\":\"List of Nobel laureates in Physics 1921\"}",
-                serializerBAOS.toString()
-        );
+                serializerBAOS.toString(),
+                "{\"link\":\"List of Nobel laureates in Physics 1921\"}"
+                );
         Assert.assertEquals(
-                "<a href=\"List of Nobel laureates in Physics\">1921</a>",
-                writerBAOS.toString()
+                writerBAOS.toString(),
+                "<a href=\"List of Nobel laureates in Physics\">1921</a>"
         );
     }
 

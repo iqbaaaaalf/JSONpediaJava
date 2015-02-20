@@ -17,7 +17,7 @@ import com.machinelinking.template.RenderScope;
 import com.machinelinking.util.JSONUtils;
 import org.apache.commons.io.FileUtils;
 import org.codehaus.jackson.JsonNode;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;

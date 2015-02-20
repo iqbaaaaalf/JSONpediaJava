@@ -13,9 +13,9 @@
 
 package com.machinelinking.parser;
 
-import junit.framework.Assert;
 import org.apache.log4j.Logger;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -105,10 +105,10 @@ public class EntityExpansionReaderTest {
         expandableReader.mark(1);
         char c;
         c = (char) expandableReader.read();
-        Assert.assertEquals(']', c);
+        Assert.assertEquals(c, ']');
         expandableReader.reset();
         c = (char) expandableReader.read();
-        Assert.assertEquals(']', c);
+        Assert.assertEquals(c, ']');
     }
 
     private void checkString(String in, String expected) throws IOException {
@@ -127,7 +127,7 @@ public class EntityExpansionReaderTest {
         final String out = new String(charByCharBuffer);
         logger.debug(String.format("Expected: '%s'", expected));
         logger.debug(String.format("Out     : '%s'", out));
-        Assert.assertEquals(expected, out);
+        Assert.assertEquals(out, expected);
     }
 
     private void checkStringWithBulkBuffer(String in, String expected) throws IOException {
@@ -139,8 +139,8 @@ public class EntityExpansionReaderTest {
         final String out = new String(bulkBuffer);
         logger.debug(String.format("Expected: '%s'", expected));
         logger.debug(String.format("Out     : '%s'", out));
-        Assert.assertEquals(expected.length() == 0 ?  -1 : expected.length(), readChars);
-        Assert.assertEquals(expected, out);
+        Assert.assertEquals(readChars, expected.length() == 0 ?  -1 : expected.length());
+        Assert.assertEquals(out, expected);
     }
 
 }

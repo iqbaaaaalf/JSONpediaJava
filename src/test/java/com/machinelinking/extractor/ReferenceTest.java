@@ -13,8 +13,8 @@
 
 package com.machinelinking.extractor;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -35,59 +35,59 @@ public class ReferenceTest {
 
     @Test
     public void testGetURLDeclaredLang() throws MalformedURLException {
-        Assert.assertEquals("en", Reference.getURLDeclaredLang(new URL("http://en.wikipedia.org/")));
-        Assert.assertEquals("it", Reference.getURLDeclaredLang(new URL("http://it.wikipedia.org/")));
+        Assert.assertEquals(Reference.getURLDeclaredLang(new URL("http://en.wikipedia.org/")), "en");
+        Assert.assertEquals(Reference.getURLDeclaredLang(new URL("http://it.wikipedia.org/")), "it");
     }
 
     @Test
     public void testIsLangPrefix() throws MalformedURLException {
-        Assert.assertEquals(true, Reference.isLangPrefix("en"));
-        Assert.assertEquals(true, Reference.isLangPrefix("lmo"));
-        Assert.assertEquals(true, Reference.isLangPrefix("fiu-vro"));
-        Assert.assertEquals(true, Reference.isLangPrefix("zh-min-nan"));
-        Assert.assertEquals(false, Reference.isLangPrefix("Time"));
-        Assert.assertEquals(false, Reference.isLangPrefix("Zed"));
-        Assert.assertEquals(false, Reference.isLangPrefix("fiuvro"));
-        Assert.assertEquals(false, Reference.isLangPrefix("zhminnan"));
+        Assert.assertEquals(Reference.isLangPrefix("en"), true);
+        Assert.assertEquals(Reference.isLangPrefix("lmo"), true);
+        Assert.assertEquals(Reference.isLangPrefix("fiu-vro"), true);
+        Assert.assertEquals(Reference.isLangPrefix("zh-min-nan"), true);
+        Assert.assertEquals(Reference.isLangPrefix("Time"), false);
+        Assert.assertEquals(Reference.isLangPrefix("Zed"), false);
+        Assert.assertEquals(Reference.isLangPrefix("fiuvro"), false);
+        Assert.assertEquals(Reference.isLangPrefix("zhminnan"), false);
     }
 
 
     @Test
     public void testImageResourceToURL() {
         Assert.assertEquals(
-                "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Albert_Einstein_at_the_age_of_three_%281882%29.jpg/110px-Albert_Einstein_at_the_age_of_three_%281882%29.jpg",
-                Reference.imageResourceToURL("File:Albert Einstein at the age of three (1882).jpg")
+                Reference.imageResourceToURL("File:Albert Einstein at the age of three (1882).jpg"),
+                "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Albert_Einstein_at_the_age_of_three_%281882%29.jpg/110px-Albert_Einstein_at_the_age_of_three_%281882%29.jpg"
         );
         Assert.assertEquals(
-                "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/age%3A1919_eclipse_positive.jpg/110px-age%3A1919_eclipse_positive.jpg",
-                Reference.imageResourceToURL("en:Image:1919_eclipse_positive.jpg")
+                Reference.imageResourceToURL("en:Image:1919_eclipse_positive.jpg"),
+                "http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/age%3A1919_eclipse_positive.jpg/110px-age%3A1919_eclipse_positive.jpg"
         );
     }
 
     @Test
     public void testResourceToURL() throws MalformedURLException {
         Assert.assertEquals(
-                "http://en.wikipedia.org/wiki/Time_100:_The_Most_Important_People_of_the_Century",
-                Reference.labelToURL(new URL("http://en.wikipedia.org/"), "Time 100: The Most Important People of the Century").toString()
+                Reference.labelToURL(new URL("http://en.wikipedia.org/"), "Time 100: The Most Important People of the Century").toString(),
+                "http://en.wikipedia.org/wiki/Time_100:_The_Most_Important_People_of_the_Century"
+                );
+        Assert.assertEquals(
+                Reference.labelToURL(new URL("http://en.wikipedia.org/"), "lmo:Albert Einstein").toString(),
+                "http://lmo.wikipedia.org/wiki/Albert_Einstein"
         );
         Assert.assertEquals(
-                "http://lmo.wikipedia.org/wiki/Albert_Einstein",
-                Reference.labelToURL(new URL("http://en.wikipedia.org/"), "lmo:Albert Einstein").toString()
+                Reference.labelToURL(new URL("http://en.wikipedia.org/"), "be-x-old:Лёндан").toString(),
+                "http://be-x-old.wikipedia.org/wiki/Лёндан"
         );
         Assert.assertEquals(
-                "http://be-x-old.wikipedia.org/wiki/Лёндан",
-                Reference.labelToURL(new URL("http://en.wikipedia.org/"), "be-x-old:Лёндан").toString()
-        );
-        Assert.assertEquals(
-                "http://en.wikipedia.org/wiki/United_Kingdom",
-                Reference.labelToURL(new URL("http://en.wikipedia.org/"), ":United_Kingdom").toString()
+                Reference.labelToURL(new URL("http://en.wikipedia.org/"), ":United_Kingdom").toString(),
+                "http://en.wikipedia.org/wiki/United_Kingdom"
         );
     }
 
     @Test
     public void testURLtoLabel() {
-        Assert.assertArrayEquals(new String[]{"en", "Page"}, Reference.urlToLabel("http://en.wikipedia.org/wiki/Page"));
-        Assert.assertArrayEquals(new String[]{"it", "Page"}, Reference.urlToLabel("http://it.wikipedia.org/wiki/Page"));
+        Assert.assertEquals(Reference.urlToLabel("http://en.wikipedia.org/wiki/Page"), new String[]{"en", "Page"});
+        Assert.assertEquals(Reference.urlToLabel("http://it.wikipedia.org/wiki/Page"), new String[]{"it", "Page"});
     }
 
 }

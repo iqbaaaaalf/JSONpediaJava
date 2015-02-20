@@ -14,8 +14,8 @@
 package com.machinelinking.parser;
 
 import com.machinelinking.pagestruct.WikiTextHRDumperHandler;
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -38,9 +38,9 @@ public class TagReaderTest {
         final TagReader reader = new TagReader(handler);
         reader.readNode(new TestParserReader("<node attr1=v1 attr2=\"v2\" attr3=\"part1 part2\">"));
         Assert.assertEquals(
-                "Open Tag: node attributes: [attr1 : 'v1', attr2 : 'v2', attr3 : 'part1 part2']\n",
-                handler.getContent()
-        );
+                handler.getContent(),
+                "Open Tag: node attributes: [attr1 : 'v1', attr2 : 'v2', attr3 : 'part1 part2']\n"
+                );
         Assert.assertTrue(reader.isInsideNode());
     }
 
@@ -51,9 +51,9 @@ public class TagReaderTest {
         reader.pushTag("node", new Attribute[0]);
         reader.readNode(new TestParserReader("</node>"));
         Assert.assertEquals(
+                handler.getContent(),
                 "Open Tag: node attributes: []\n" +
-                "Close Tag: node\n",
-                handler.getContent()
+                "Close Tag: node\n"
         );
         Assert.assertFalse(reader.isInsideNode());
     }
@@ -64,9 +64,9 @@ public class TagReaderTest {
         final TagReader reader = new TagReader(handler);
         reader.readNode(new TestParserReader("<node a1=v1 a2=\"v2\"/>"));
         Assert.assertEquals(
-                "Inline Tag: node attributes: [a1 : 'v1', a2 : 'v2']\n",
-                handler.getContent()
-        );
+                handler.getContent(),
+                "Inline Tag: node attributes: [a1 : 'v1', a2 : 'v2']\n"
+                );
         Assert.assertFalse(reader.isInsideNode());
     }
 
@@ -76,8 +76,8 @@ public class TagReaderTest {
         final TagReader reader = new TagReader(handler);
         reader.readNode(new TestParserReader("<!-- ISO format (YYYY-MM-DD) -->"));
         Assert.assertEquals(
-                "Comment Tag:  ISO format (YYYY-MM-DD) \n",
-                handler.getContent()
+                handler.getContent(),
+                "Comment Tag:  ISO format (YYYY-MM-DD) \n"
         );
         Assert.assertFalse(reader.isInsideNode());
     }
@@ -92,7 +92,7 @@ public class TagReaderTest {
         tagReader.popTag("ref", null);
 
         final List<TagReader.StackElement> stack = tagReader.getStack();
-        Assert.assertEquals("[node: br attributes: []]", stack.toString());
+        Assert.assertEquals(stack.toString(), "[node: br attributes: []]");
     }
 
     @Test
@@ -101,8 +101,8 @@ public class TagReaderTest {
         final TagReader reader = new TagReader(handler);
         reader.readNode(new TestParserReader("<]]\n|-\n"));
         Assert.assertEquals(
-                "",
-                handler.getContent()
+                handler.getContent(),
+                ""
         );
     }
 

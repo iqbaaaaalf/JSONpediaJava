@@ -14,8 +14,8 @@
 package com.machinelinking.cli;
 
 import org.apache.commons.io.FileUtils;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;
@@ -37,8 +37,8 @@ public class exporterTest {
                         .split(" ")
         );
 
-        Assert.assertEquals(0    , exitCode);
-        Assert.assertEquals(11761, FileUtils.readLines(out).size());
+        Assert.assertEquals(exitCode, 0);
+        Assert.assertEquals(FileUtils.readLines(out).size(), 11761);
     }
 
 }

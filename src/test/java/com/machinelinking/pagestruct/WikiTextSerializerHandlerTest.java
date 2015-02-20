@@ -15,7 +15,7 @@ package com.machinelinking.pagestruct;
 
 import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.serializer.Serializer;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 

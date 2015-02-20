@@ -15,10 +15,10 @@ package com.machinelinking.storage.elasticsearch;
 
 import com.machinelinking.storage.JSONStorageConnectionException;
 import com.machinelinking.util.JSONUtils;
-import junit.framework.Assert;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -49,7 +49,7 @@ public class ElasticJSONStorageTest extends ElasticJSONStorageTestBase {
         connection.flush();
 
         final Map<String,Object> rData = connection.getDocument(id).getContent();
-        Assert.assertEquals(uuid, rData.get(KEY).toString());
+        Assert.assertEquals(rData.get(KEY).toString(), uuid);
 
         connection.removeDocument(id);
         Assert.assertNull(connection.getDocument(id));
@@ -82,7 +82,7 @@ public class ElasticJSONStorageTest extends ElasticJSONStorageTestBase {
             }
 
             for (int i = 0; i < SIZE; i++) {
-                Assert.assertEquals("doc_" + i, connection.getDocument(i).getName());
+                Assert.assertEquals(connection.getDocument(i).getName(), "doc_" + i);
             }
             Assert.assertEquals(SIZE, connection.getDocumentsCount());
         } finally {

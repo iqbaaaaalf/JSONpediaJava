@@ -13,8 +13,8 @@
 
 package com.machinelinking.parser;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 
@@ -31,17 +31,17 @@ public class AttributeScannerTest {
 
         value.delete(0, value.length());
         AttributeScanner.scanValue("v1 post", 0, value);
-        Assert.assertEquals("v1", value.toString());
+        Assert.assertEquals(value.toString(), "v1");
 
         value.delete(0, value.length());
         AttributeScanner.scanValue("\"v1 v2\" post", 0, value);
-        Assert.assertEquals("v1 v2", value.toString());
+        Assert.assertEquals(value.toString(), "v1 v2");
     }
 
     @Test
     public void testValueWithAssign() {
         final Attribute[] attributes = AttributeScanner.scan("name=\"Arrian 1976 loc=I, 23\"");
-        Assert.assertEquals("[name : 'Arrian 1976 loc=I, 23']", Arrays.asList(attributes).toString());
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[name : 'Arrian 1976 loc=I, 23']");
     }
 
     @Test
@@ -49,13 +49,13 @@ public class AttributeScannerTest {
         Attribute[] attributes;
 
         attributes = AttributeScanner.scan("k1 = v1");
-        Assert.assertEquals("[k1 : 'v1']", Arrays.asList(attributes).toString());
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[k1 : 'v1']");
 
         attributes = AttributeScanner.scan("k1 = \"v1a v1b\"");
-        Assert.assertEquals("[k1 : 'v1a v1b']", Arrays.asList(attributes).toString());
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[k1 : 'v1a v1b']");
 
         attributes = AttributeScanner.scan("k1=v1 k2 = v2 k3 = \"v3\" k4 = \"v4a v4b\"");
-        Assert.assertEquals("[k1 : 'v1', k2 : 'v2', k3 : 'v3', k4 : 'v4a v4b']", Arrays.asList(attributes).toString());
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[k1 : 'v1', k2 : 'v2', k3 : 'v3', k4 : 'v4a v4b']");
     }
 
 }

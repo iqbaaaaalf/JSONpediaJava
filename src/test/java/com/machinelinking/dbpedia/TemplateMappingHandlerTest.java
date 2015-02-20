@@ -15,8 +15,8 @@ package com.machinelinking.dbpedia;
 
 import com.machinelinking.parser.WikiTextParser;
 import com.machinelinking.parser.WikiTextParserException;
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -51,9 +51,9 @@ public class TemplateMappingHandlerTest {
                 ))
         );
         final TemplateMapping templateMapping = out[0];
-        Assert.assertEquals("Mapping1", templateMapping.getMappingName());
-        Assert.assertEquals("Congressman", templateMapping.getMappingClass());
-        Assert.assertEquals(396, templateMapping.getMappingSize());
+        Assert.assertEquals(templateMapping.getMappingName(), "Mapping1");
+        Assert.assertEquals(templateMapping.getMappingClass(), "Congressman");
+        Assert.assertEquals(templateMapping.getMappingSize(), 396);
     }
 
 }

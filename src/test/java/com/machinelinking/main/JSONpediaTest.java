@@ -29,9 +29,9 @@ import com.machinelinking.util.FileUtil;
 import com.machinelinking.util.JSONUtils;
 import com.machinelinking.wikimedia.BufferedWikiPageHandler;
 import com.machinelinking.wikimedia.WikiPage;
-import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
@@ -113,7 +113,7 @@ public class JSONpediaTest {
                 FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
         );
         Assert.assertNotNull(mongoReport);
-        Assert.assertEquals(0, mongoReport.getPageErrors());
+        Assert.assertEquals(mongoReport.getPageErrors(), 0);
 
         // Elastic Storage Loader
         final JSONStorageLoader elasticLoader =
@@ -123,7 +123,7 @@ public class JSONpediaTest {
                 FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
         );
         Assert.assertNotNull(elasticReport);
-        Assert.assertEquals(0, elasticReport.getPageErrors());
+        Assert.assertEquals(elasticReport.getPageErrors(), 0);
 
         // Composed Storage Loader
         final JSONStorageLoader multiLoader = JSONpedia.instance().getStorageLoader(
@@ -134,7 +134,7 @@ public class JSONpediaTest {
                 FileUtil.openDecompressedInputStream("/dumps/enwiki-latest-pages-articles-p1.xml.gz")
         );
         Assert.assertNotNull(multiReport);
-        Assert.assertEquals(0, multiReport.getPageErrors());
+        Assert.assertEquals(multiReport.getPageErrors(), 0);
     }
 
     @Test
@@ -164,19 +164,19 @@ public class JSONpediaTest {
     @Test
     public void testProcessEntityById() throws JSONpediaException {
         final JsonNode root = JSONpedia.instance().process("en:Albert Einstein").json();
-        Assert.assertEquals(13, root.size());
+        Assert.assertEquals(root.size(), 13);
     }
 
     @Test
     public void testProcessEntityByURL() throws JSONpediaException {
         final JsonNode root = JSONpedia.instance().process("http://en.wikipedia.org/wiki/Albert_Einstein").json();
-        Assert.assertEquals(13, root.size());
+        Assert.assertEquals(root.size(), 13);
     }
 
     @Test
     public void testProcessEntityAsMap() throws JSONpediaException {
         final Map<String,?> root = JSONpedia.instance().process("en:Albert Einstein").map();
-        Assert.assertEquals(13, root.size());
+        Assert.assertEquals(root.size(), 13);
     }
 
     @Test
@@ -191,21 +191,21 @@ public class JSONpediaTest {
                 .process("en:Albert Einstein")
                 .text("A really ''short'' description of Albert Einstein")
                 .json();
-        Assert.assertEquals(9, root.size());
+        Assert.assertEquals(root.size(), 9);
     }
 
     @Test
     public void testProcessEntityWithFlags() throws JSONpediaException {
         final JsonNode root = JSONpedia.instance()
                 .process("en:Albert Einstein").flags("Linkers,Validate,Structure").json();
-        Assert.assertEquals(16, root.size());
+        Assert.assertEquals(root.size(), 16);
     }
 
     @Test
     public void testProcessEntityWithFilter() throws JSONpediaException {
         final JsonNode root = JSONpedia.instance()
                 .process("en:Albert Einstein").flags("Linkers,Validate,Structure").filter("@type:reference").json();
-        Assert.assertEquals(2, root.size());
+        Assert.assertEquals(root.size(), 2);
     }
 
 }

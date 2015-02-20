@@ -19,8 +19,8 @@ import com.machinelinking.storage.elasticsearch.ElasticJSONStorageLoaderTest;
 import com.machinelinking.storage.elasticsearch.ElasticJSONStorageTestBase;
 import com.machinelinking.storage.elasticsearch.ElasticSelector;
 import com.machinelinking.util.JSONUtils;
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.File;
 import java.util.Map;
@@ -50,8 +50,8 @@ public class DefaultElasticFacetManagerTest extends ElasticJSONStorageTestBase {
         };
         final Map<String,?> c1 = DefaultElasticFacetManager.setMappings(p1);
         Assert.assertEquals(
-                "{\"f1_index\":{\"properties\":{\"f1\":{\"index\":\"not_analyzed\",\"type\":\"string\"}}}}",
-                toJSONConfig(c1)
+                toJSONConfig(c1),
+                "{\"f1_index\":{\"properties\":{\"f1\":{\"index\":\"not_analyzed\",\"type\":\"string\"}}}}"
         );
 
         final ElasticFacetManagerConfiguration.Property[] p2 = new ElasticFacetManagerConfiguration.Property[] {
@@ -70,6 +70,7 @@ public class DefaultElasticFacetManagerTest extends ElasticJSONStorageTestBase {
         };
         final Map<String,?> c2 = DefaultElasticFacetManager.setMappings(p2);
         Assert.assertEquals(
+                toJSONConfig(c2),
                 "{\"f1_index\":" +
                 "{\"properties\":" +
                 "{\"f1\":{" +
@@ -77,8 +78,7 @@ public class DefaultElasticFacetManagerTest extends ElasticJSONStorageTestBase {
                 "\"fields\":{" +
                 "\"custom_kstem\":{\"analyzer\":\"custom_kstem\",\"type\":\"string\"}," +
                 "\"custom_lowercase\":{\"analyzer\":\"custom_lowercase\",\"type\":\"string\"" +
-                "}}}}}}",
-                toJSONConfig(c2)
+                "}}}}}}"
         );
     }
 
@@ -99,8 +99,8 @@ public class DefaultElasticFacetManagerTest extends ElasticJSONStorageTestBase {
 
         final FacetLoadingReport report = manager.loadFacets(selector, new EnrichedEntityFacetConverter());
 
-        Assert.assertEquals(58, report.getProcessedDocs());
-        Assert.assertEquals(1051, report.getGeneratedFacetDocs());
+        Assert.assertEquals(report.getProcessedDocs(), 58);
+        Assert.assertEquals(report.getGeneratedFacetDocs(), 1051);
     }
 
     private String toJSONConfig(Map<String,?> config) {

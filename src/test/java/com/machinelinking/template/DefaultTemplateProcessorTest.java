@@ -22,10 +22,10 @@ import com.machinelinking.render.DocumentContext;
 import com.machinelinking.render.NodeRenderException;
 import com.machinelinking.serializer.JSONSerializer;
 import com.machinelinking.util.JSONUtils;
-import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
 import org.codehaus.jackson.util.TokenBuffer;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -40,8 +40,8 @@ public class DefaultTemplateProcessorTest {
     public void testProcessVariable() throws Exception {
         for(String var : DefaultTemplateProcessor.VARIABLES) {
             Assert.assertEquals(
-                    String.format("(variable %s)", var),
-                    processWikitext(String.format("{{%s}}", var))
+                    processWikitext(String.format("{{%s}}", var)),
+                    String.format("(variable %s)", var)
             );
         }
     }
@@ -50,8 +50,8 @@ public class DefaultTemplateProcessorTest {
     public void testProcessMetadata() throws Exception {
         for(String var : DefaultTemplateProcessor.METADATA) {
             Assert.assertEquals(
-                    String.format("(metadata %s)", var),
-                    processWikitext(String.format("{{%s}}", var))
+                    processWikitext(String.format("{{%s}}", var)),
+                    String.format("(metadata %s)", var)
             );
         }
     }
@@ -311,7 +311,7 @@ public class DefaultTemplateProcessorTest {
         for(int i = 0; i < args.length; i+=2) {
             context.put(args[i], args[i + 1]);
         }
-        Assert.assertEquals(expected, processWikitext(wikitext, context));
+        Assert.assertEquals(processWikitext(wikitext, context), expected);
     }
 
 }

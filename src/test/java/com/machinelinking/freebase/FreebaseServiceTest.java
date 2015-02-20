@@ -13,9 +13,9 @@
 
 package com.machinelinking.freebase;
 
-import junit.framework.Assert;
 import org.codehaus.jackson.JsonNode;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 
@@ -28,7 +28,7 @@ public class FreebaseServiceTest {
     public void testEnrichment() throws IOException {
         final FreebaseService service = FreebaseService.getInstance();
         final JsonNode node = service.getEntityData("Albert Einstein");
-        Assert.assertNotNull(node);
+        org.testng.Assert.assertNotNull(node);
         Assert.assertTrue(node.has("mid"));
         Assert.assertTrue(node.has("id"));
         Assert.assertTrue(node.has("name"));

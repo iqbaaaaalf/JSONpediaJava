@@ -15,8 +15,8 @@ package com.machinelinking.exporter;
 
 import com.machinelinking.util.FileUtil;
 import org.apache.commons.io.IOUtils;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -40,9 +40,9 @@ public class TemplatePropertyCSVExporterTest {
                 out
         );
 
-        Assert.assertEquals(1133, report.getTemplatesCount());
+        Assert.assertEquals(report.getTemplatesCount(), 1133);
         final String expected = IOUtils.toString( this.getClass().getResourceAsStream("template-prop-out.csv") );
-        Assert.assertEquals(expected, out.toString());
+        Assert.assertEquals(out.toString(), expected);
     }
 
 }

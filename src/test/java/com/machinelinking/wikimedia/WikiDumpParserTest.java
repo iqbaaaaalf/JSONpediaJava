@@ -13,8 +13,8 @@
 
 package com.machinelinking.wikimedia;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
@@ -58,7 +58,7 @@ public class WikiDumpParserTest {
             Assert.assertTrue(page.getContent().trim().length() > 0);
             count++;
         }
-        Assert.assertEquals(expected, count);
+        Assert.assertEquals(count, expected);
     }
 
 }

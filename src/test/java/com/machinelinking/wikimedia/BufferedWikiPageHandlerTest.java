@@ -13,8 +13,8 @@
 
 package com.machinelinking.wikimedia;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.Random;
 
@@ -54,7 +54,7 @@ public class BufferedWikiPageHandlerTest {
         r2Thread.join();
         r3Thread.join();
         r4Thread.join();
-        Assert.assertEquals(COUNT, r1.getCounter() + r2.getCounter() + r3.getCounter() + r4.getCounter());
+        Assert.assertEquals(r1.getCounter() + r2.getCounter() + r3.getCounter() + r4.getCounter(), COUNT);
     }
 
     class PageWriter implements Runnable {

@@ -16,9 +16,9 @@ package com.machinelinking.extractor;
 import com.machinelinking.parser.WikiTextParser;
 import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.parser.WikiTextParserFilteredHandler;
-import junit.framework.Assert;
 import org.apache.commons.io.IOUtils;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.net.URL;
@@ -42,9 +42,9 @@ public class TextHandlerTest {
         );
 
         Assert.assertEquals(
-                "Invalid text extraction",
+                textHandler.flushContent().trim(),
                 IOUtils.toString(this.getClass().getResourceAsStream("Page1-texthandler.txt")),
-                textHandler.flushContent().trim()
+                "Invalid text extraction"
         );
     }
 

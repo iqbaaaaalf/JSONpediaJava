@@ -13,8 +13,8 @@
 
 package com.machinelinking.util;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 /**
  * Test case for {@link com.machinelinking.util.StringUtils}
@@ -25,11 +25,11 @@ public class StringUtilsTest {
 
     @Test
     public void testStripTags() {
-        Assert.assertEquals("a b c", StringUtils.stripTags("a b c"));
-        Assert.assertEquals("a  c", StringUtils.stripTags("a <b> c"));
-        Assert.assertEquals("a ", StringUtils.stripTags("a <b"));
-        Assert.assertEquals("a  c  e", StringUtils.stripTags("a <b x x x> c <d y y y> e"));
-        Assert.assertEquals("a  c ", StringUtils.stripTags("a <b x x<> x> c <d y y< y> e"));
+        Assert.assertEquals(StringUtils.stripTags("a b c"), "a b c");
+        Assert.assertEquals(StringUtils.stripTags("a <b> c"), "a  c");
+        Assert.assertEquals(StringUtils.stripTags("a <b"), "a ");
+        Assert.assertEquals(StringUtils.stripTags("a <b x x x> c <d y y y> e"), "a  c  e");
+        Assert.assertEquals(StringUtils.stripTags("a <b x x<> x> c <d y y< y> e"), "a  c ");
     }
 
 }

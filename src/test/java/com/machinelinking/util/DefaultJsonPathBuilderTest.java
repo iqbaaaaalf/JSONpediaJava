@@ -13,8 +13,8 @@
 
 package com.machinelinking.util;
 
-import junit.framework.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 /**
  * Test case for {@link DefaultJsonPathBuilder}.
@@ -28,28 +28,28 @@ public class DefaultJsonPathBuilderTest {
     @Test
     public void testPath() {
         jsonPathBuilder.enterObject();
-        Assert.assertEquals("$", jsonPathBuilder.getJsonPath());
+        Assert.assertEquals(jsonPathBuilder.getJsonPath(), "$");
         jsonPathBuilder.field("fieldA");
         jsonPathBuilder.enterArray();
-        Assert.assertEquals("$.fieldA[*]", jsonPathBuilder.getJsonPath());
+        Assert.assertEquals(jsonPathBuilder.getJsonPath(), "$.fieldA[*]");
         jsonPathBuilder.arrayElem();
-        Assert.assertEquals("$.fieldA[0]", jsonPathBuilder.getJsonPath());
+        Assert.assertEquals(jsonPathBuilder.getJsonPath(), "$.fieldA[0]");
         jsonPathBuilder.arrayElem();
-        Assert.assertEquals("$.fieldA[1]", jsonPathBuilder.getJsonPath());
+        Assert.assertEquals(jsonPathBuilder.getJsonPath(), "$.fieldA[1]");
         jsonPathBuilder.enterObject();
-        Assert.assertEquals("$.fieldA[1]", jsonPathBuilder.getJsonPath());
+        Assert.assertEquals(jsonPathBuilder.getJsonPath(), "$.fieldA[1]");
         jsonPathBuilder.field("fieldB");
-        Assert.assertEquals("$.fieldA[1].fieldB", jsonPathBuilder.getJsonPath());
+        Assert.assertEquals(jsonPathBuilder.getJsonPath(), "$.fieldA[1].fieldB");
         jsonPathBuilder.enterObject();
-        Assert.assertEquals("$.fieldA[1].fieldB", jsonPathBuilder.getJsonPath());
+        Assert.assertEquals(jsonPathBuilder.getJsonPath(), "$.fieldA[1].fieldB");
         jsonPathBuilder.field("fieldC");
-        Assert.assertEquals("$.fieldA[1].fieldB.fieldC", jsonPathBuilder.getJsonPath());
+        Assert.assertEquals(jsonPathBuilder.getJsonPath(), "$.fieldA[1].fieldB.fieldC");
         jsonPathBuilder.exitObject();
-        Assert.assertEquals("$.fieldA[1].fieldB", jsonPathBuilder.getJsonPath());
+        Assert.assertEquals(jsonPathBuilder.getJsonPath(), "$.fieldA[1].fieldB");
         jsonPathBuilder.exitObject();
-        Assert.assertEquals("$.fieldA[1]", jsonPathBuilder.getJsonPath());
+        Assert.assertEquals(jsonPathBuilder.getJsonPath(), "$.fieldA[1]");
         jsonPathBuilder.exitArray();
-        Assert.assertEquals("$.fieldA", jsonPathBuilder.getJsonPath());
+        Assert.assertEquals(jsonPathBuilder.getJsonPath(), "$.fieldA");
         jsonPathBuilder.exitObject();
     }
 
@@ -87,8 +87,8 @@ public class DefaultJsonPathBuilderTest {
         b3.field("f3");
 
         Assert.assertTrue(
-                String.format("Invalid match: %s doesn't contain %s", b2.getJsonPath(), b1.getJsonPath()),
-                b2.subPathOf(b1, false)
+                b2.subPathOf(b1, false),
+                String.format("Invalid match: %s doesn't contain %s", b2.getJsonPath(), b1.getJsonPath())
         );
 
         Assert.assertFalse(
@@ -96,8 +96,8 @@ public class DefaultJsonPathBuilderTest {
         );
 
         Assert.assertFalse(
-                String.format("Invalid match: %s should not contain %s", b1.getJsonPath(), b3.getJsonPath()),
-                b3.subPathOf(b1, true)
+                b3.subPathOf(b1, true),
+                String.format("Invalid match: %s should not contain %s", b1.getJsonPath(), b3.getJsonPath())
         );
 
     }

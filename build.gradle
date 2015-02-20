@@ -48,7 +48,7 @@ dependencies {
     compile group: 'com.sun.jersey', name: 'jersey-grizzly2', version:'1.18.1'
 
     // testing dependencies
-    testCompile group: 'junit', name: 'junit', version:'4.7'
+    testCompile group: 'org.testng', name: 'testng', version:'6.8.21'
 }
 
 task runLoader(dependsOn: 'jar', type: JavaExec) {
