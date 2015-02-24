@@ -728,10 +728,12 @@ Elasticsearch selector has been introduced to avoid user to write queries using 
 
 <h4>Examples of selectors</h4>
 <p>
-Select all documents which field "name" matches with string "Albert Einstein".
+Select all documents which field "name" contains string "Albert Einstein".
 <pre>name:"Albert Einstein"</pre>
-Select all documents which field "name" matches with word "quick" or with word "brown".
-<pre>name:"(quick OR brown)"</pre>
+Select all documents which field "name" contains word "quick" or word "brown".
+<pre>name:"quick OR brown"</pre>
+    Select all documents which field "name" contains word "quick" and word "brown".
+<pre>name:"quick AND brown"</pre>
 </p>
 
 <h4>Selector syntax</h4>
