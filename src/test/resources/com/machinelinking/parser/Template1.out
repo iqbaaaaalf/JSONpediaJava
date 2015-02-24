@@ -57,7 +57,7 @@ Text: 'Native name
 '
 k: data1      
 Begin Template: #if:<native_name:>
-Open Tag: span attributes: [class : 'nickname', {{#if:{{{native_name_lang|}}}|lang : '{{{native_name_lang}}}', xml:lang : '{{{native_name_lang}}}']
+Open Tag: span attributes: [class : 'nickname', {{#if:{{{native_name_lang|}}}|lang : '{{{native_name_lang}}}', xml:lang : '{{{native_name_lang}}}', null : '}}']
 k: null
 var: native_name [null]
 Close Tag: span
