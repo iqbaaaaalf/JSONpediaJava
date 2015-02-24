@@ -42,7 +42,7 @@ public class Criteria {
 
     @Override
     public String toString() {
-        return String.format("%s %s %s", field, operator, toValue(value));
+        return String.format("%s %s %s", field == null ? "_any" : field, operator, toValue(value));
     }
 
     private String toValue(Object value) {
