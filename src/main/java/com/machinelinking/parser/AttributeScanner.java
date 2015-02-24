@@ -19,8 +19,10 @@ import java.util.List;
 /**
  * Provides a tolerant scanner to read key value attributes like:
  * <ul>
- * <lu><code>key = value</code></li>
- * <lu><code>key = &quotes;value&quotes;</code></li>
+ * <lu><code>v1 &quotes;v 2&quotes; v3</code></li>
+ * <lu><code>k1 = v1</code></li>
+ * <lu><code>k1 = &quotes;v 1&quotes;</code></li>
+ * <lu><code>v1 k2 = v2 k3 = &quotes;v 3&quotes; v4</code></li>
  * </ul>
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
@@ -28,38 +30,73 @@ public class AttributeScanner {
 
     public static final char DEFAULT_SEPARATOR_CHAR = ' ';
     public static final char DEFAULT_ASSIGN_CHAR = '=';
-    public static final char DEFAULT_VALUE_DELIMITER_CHAR = '"';
+    public static final char DEFAULT_DELIMITER_CHAR = '"';
 
     public static Attribute[] scan(
-            final char SEPARATOR, final char ASSIGN, final char VALUE_DELIMITER, final String content
+            final char SEPARATOR, final char ASSIGN, final char DELIMITER, final String content
     ) {
-        final StringBuilder keyBuilder = new StringBuilder();
-        final StringBuilder valueBuilder = new StringBuilder();
+        final StringBuilder buffer = new StringBuilder();
         final List<Attribute> attributes = new ArrayList<>();
+        String lastBufferContent = null;
         char c;
         for (int i = 0; i < content.length(); i++) {
             c = content.charAt(i);
-            if (SEPARATOR == c) {
-                // Empty.
-            } else if (ASSIGN == c) {
-                valueBuilder.delete(0, valueBuilder.length());
-                i = scanValue(SEPARATOR, ASSIGN, VALUE_DELIMITER, content, i + 1, valueBuilder);
-                attributes.add(new Attribute(keyBuilder.toString(), valueBuilder.toString()));
-                keyBuilder.delete(0, keyBuilder.length());
+            if(c == SEPARATOR) {
+                if(buffer.length() > 0) {
+                    lastBufferContent = buffer.toString();
+                    clearBuffer(buffer);
+                }
+            } else if(c == DELIMITER) {
+                if(lastBufferContent != null) {
+                    attributes.add(new Attribute(null, lastBufferContent));
+                    lastBufferContent = null;
+                }
+                clearBuffer(buffer);
+                i = scanValue(SEPARATOR, DELIMITER, content, i, buffer);
+                if(buffer.length() > 0) {
+                    lastBufferContent = buffer.toString();
+                    buffer.delete(0, buffer.length());
+                }
+            } else if(c == ASSIGN) {
+                final String k;
+                if(lastBufferContent != null && buffer.length() > 0) {
+                    attributes.add(new Attribute(null, lastBufferContent));
+                    lastBufferContent = null;
+                    k = buffer.toString();
+                } else if(buffer.length() > 0) {
+                    k = buffer.toString();
+                } else if(lastBufferContent != null) {
+                    k = lastBufferContent;
+                    lastBufferContent = null;
+                } else {
+                    throw new IllegalStateException();
+                }
+
+                clearBuffer(buffer);
+                i = scanValue(SEPARATOR, DELIMITER, content, i + 1, buffer);
+                final String v = buffer.toString();
+                clearBuffer(buffer);
+                attributes.add(new Attribute(k, v));
             } else {
-                keyBuilder.append(c);
+                buffer.append(c);
             }
+        }
+        if(lastBufferContent != null) {
+            attributes.add(new Attribute(null, lastBufferContent));
+        }
+        if (buffer.length() > 0) {
+            attributes.add(new Attribute(null, buffer.toString()));
         }
         return attributes.toArray(new Attribute[attributes.size()]);
     }
 
     public static Attribute[] scan(String content) {
-        return scan(DEFAULT_SEPARATOR_CHAR, DEFAULT_ASSIGN_CHAR, DEFAULT_VALUE_DELIMITER_CHAR, content);
+        return scan(DEFAULT_SEPARATOR_CHAR, DEFAULT_ASSIGN_CHAR, DEFAULT_DELIMITER_CHAR, content);
     }
 
     // TODO: add escape support.
     protected static int scanValue(
-            final char SEPARATOR, final char ASSIGN, final char VALUE_DELIMITER,
+            final char SEPARATOR, final char VALUE_DELIMITER,
             final String content, final int index, final StringBuilder out
     ) {
         boolean withinQuotes = false;
@@ -67,9 +104,11 @@ public class AttributeScanner {
         int i;
         for (i = index; i < content.length(); i++) {
             c = content.charAt(i);
+            /*
             if(!withinQuotes && ASSIGN == c) throw new IllegalArgumentException(
                     String.format("Invalid char %c at position %d", ASSIGN, i)
             );
+            */
             if (VALUE_DELIMITER == c) {
                 if (withinQuotes) {
                     break;
@@ -89,8 +128,12 @@ public class AttributeScanner {
 
     protected static int scanValue(final String content, final int index, final StringBuilder out) {
         return scanValue(
-                DEFAULT_SEPARATOR_CHAR, DEFAULT_ASSIGN_CHAR, DEFAULT_VALUE_DELIMITER_CHAR, content, index, out
+                DEFAULT_SEPARATOR_CHAR, DEFAULT_DELIMITER_CHAR, content, index, out
         );
+    }
+
+    private static final void clearBuffer(StringBuilder sb) {
+        if(sb.length() > 0) sb.delete(0, sb.length());
     }
 
 }

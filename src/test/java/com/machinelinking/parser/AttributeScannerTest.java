@@ -26,7 +26,7 @@ import java.util.Arrays;
 public class AttributeScannerTest {
 
     @Test
-    public void testValue() {
+    public void testScanValue() {
         final StringBuilder value = new StringBuilder();
 
         value.delete(0, value.length());
@@ -39,23 +39,52 @@ public class AttributeScannerTest {
     }
 
     @Test
-    public void testValueWithAssign() {
-        final Attribute[] attributes = AttributeScanner.scan("name=\"Arrian 1976 loc=I, 23\"");
-        Assert.assertEquals(Arrays.asList(attributes).toString(), "[name : 'Arrian 1976 loc=I, 23']");
-    }
-
-    @Test
-    public void testKeyValue() {
+    public void testScan() {
         Attribute[] attributes;
+
+        attributes = AttributeScanner.scan("v1");
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[null : 'v1']");
+
+        attributes = AttributeScanner.scan("\"v1\"");
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[null : 'v1']");
+
+        attributes = AttributeScanner.scan("v1 v2");
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[null : 'v1', null : 'v2']");
+
+        attributes = AttributeScanner.scan("v1 \"v2\" v3");
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[null : 'v1', null : 'v2', null : 'v3']");
+
+        /*
+        attributes = AttributeScanner.scan("v1 \"v2\"  v3   \"v4\"");
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[null : 'v1', null : 'v2', null : 'v3']");
+        */
+
+        attributes = AttributeScanner.scan("k1=v1");
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[k1 : 'v1']");
 
         attributes = AttributeScanner.scan("k1 = v1");
         Assert.assertEquals(Arrays.asList(attributes).toString(), "[k1 : 'v1']");
+
+        attributes = AttributeScanner.scan("k1==v1");
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[k1 : '=v1']");
+
+        attributes = AttributeScanner.scan("k1 == v1");
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[k1 : '=', null : 'v1']");
+
+        attributes = AttributeScanner.scan("k1=v1 \"v2\"");
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[k1 : 'v1', null : 'v2']");
 
         attributes = AttributeScanner.scan("k1 = \"v1a v1b\"");
         Assert.assertEquals(Arrays.asList(attributes).toString(), "[k1 : 'v1a v1b']");
 
         attributes = AttributeScanner.scan("k1=v1 k2 = v2 k3 = \"v3\" k4 = \"v4a v4b\"");
         Assert.assertEquals(Arrays.asList(attributes).toString(), "[k1 : 'v1', k2 : 'v2', k3 : 'v3', k4 : 'v4a v4b']");
+    }
+
+    @Test
+    public void testScanValueWithAssignSymbol() {
+        final Attribute[] attributes = AttributeScanner.scan("name=\"Arrian 1976 loc=I, 23\"");
+        Assert.assertEquals(Arrays.asList(attributes).toString(), "[name : 'Arrian 1976 loc=I, 23']");
     }
 
 }
