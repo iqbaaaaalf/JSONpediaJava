@@ -60,11 +60,6 @@ public class DefaultJSONFilterEngineTest {
         );
     }
 
-    @Test(expectedExceptions = IllegalArgumentException.class)
-    public void testParseFilterFail() throws IOException {
-        DefaultJSONFilterEngine.parseFilter("name::fake");
-    }
-
     @Test
     public void testFilterCriteria() throws IOException {
         final JSONObjectFilter filter = new DefaultJSONObjectFilter();
