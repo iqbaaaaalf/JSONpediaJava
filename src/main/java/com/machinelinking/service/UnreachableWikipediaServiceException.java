@@ -19,9 +19,9 @@ import javax.ws.rs.core.Response;
 /**
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
-public class UnreachableWikipediaService extends BaseServiceException {
+public class UnreachableWikipediaServiceException extends BaseServiceException {
 
-    UnreachableWikipediaService(Exception e) {
+    UnreachableWikipediaServiceException(Exception e) {
         super(
                 Response
                         .status(Response.Status.FORBIDDEN)

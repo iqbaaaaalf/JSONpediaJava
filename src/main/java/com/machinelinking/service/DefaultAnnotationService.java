@@ -88,7 +88,7 @@ public class DefaultAnnotationService implements AnnotationService {
         } catch (IllegalArgumentException iae) {
             throw new InvalidRequestException(iae);
         } catch (UnknownHostException uhe) {
-            throw new UnreachableWikipediaService(uhe);
+            throw new UnreachableWikipediaServiceException(uhe);
         } catch (WikiAPIParserException wape) {
             throw new UnresolvableEntityException(wape);
         } catch (Exception e) {
@@ -117,7 +117,7 @@ public class DefaultAnnotationService implements AnnotationService {
         } catch (IllegalArgumentException iae) {
             throw new InvalidRequestException(iae);
         } catch (UnknownHostException uhe) {
-            throw new UnreachableWikipediaService(uhe);
+            throw new UnreachableWikipediaServiceException(uhe);
         } catch (WikiAPIParserException wape) {
             throw new UnresolvableEntityException(wape);
         } catch (Exception e) {
