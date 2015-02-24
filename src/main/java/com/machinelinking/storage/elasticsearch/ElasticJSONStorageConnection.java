@@ -13,7 +13,6 @@
 
 package com.machinelinking.storage.elasticsearch;
 
-import com.machinelinking.storage.Criteria;
 import com.machinelinking.storage.DocumentConverter;
 import com.machinelinking.storage.JSONStorageConnection;
 import com.machinelinking.storage.JSONStorageConnectionException;
@@ -27,9 +26,7 @@ import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchType;
 import org.elasticsearch.client.Client;
-import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
 
 import java.io.IOException;
 
@@ -105,23 +102,12 @@ public class ElasticJSONStorageConnection implements JSONStorageConnection<Elast
     public ElasticResultSet query(ElasticSelector selector, int limit) throws JSONStorageConnectionException {
         final String index = getIndex(db, collection);
         try {
-            SearchRequestBuilder requestBuilder = client
+            SearchRequestBuilder requestBuilder =
+                    client
                     .prepareSearch(index)
                     .setSearchType(SearchType.DFS_QUERY_THEN_FETCH);
-            final QueryBuilder queryBuilder;
-            if (selector.getCriterias().isEmpty()) {
-                queryBuilder = QueryBuilders.matchAllQuery();
-            } else {
-                BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
-                for (Criteria criteria : selector.getCriterias()) {
-                    if (criteria.operator != Criteria.Operator.eq)
-                        throw new IllegalArgumentException("Unsupported operators different from [eq]");
-                    boolQueryBuilder.must(
-                            QueryBuilders.matchQuery(criteria.field == null ? "" : criteria.field, criteria.value));
-                }
-                queryBuilder = boolQueryBuilder;
-            }
-            requestBuilder.setQuery(queryBuilder);
+            final QueryBuilder query = selector.buildQuery();
+            requestBuilder.setQuery(query);
             requestBuilder.setFrom(0).setSize(limit).setExplain(false);
             final SearchResponse response = requestBuilder.execute().actionGet();
             return new ElasticResultSet(requestBuilder.toString(), response);

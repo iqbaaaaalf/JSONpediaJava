@@ -15,6 +15,9 @@ package com.machinelinking.storage.elasticsearch;
 
 import com.machinelinking.storage.Criteria;
 import com.machinelinking.storage.Selector;
+import org.elasticsearch.index.query.BoolQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,8 +41,35 @@ public class ElasticSelector implements Selector {
         throw new UnsupportedOperationException();
     }
 
-    List<Criteria> getCriterias() {
-        return criterias;
+    //TODO: add full support for query string?
+    // http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax
+    public QueryBuilder buildQuery() {
+        final QueryBuilder queryBuilder;
+        if (criterias.isEmpty()) {
+            queryBuilder = QueryBuilders.matchAllQuery();
+        } else {
+            BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
+            for (Criteria criteria : criterias) {
+                if (criteria.operator != Criteria.Operator.eq)
+                    throw new IllegalArgumentException("Unsupported operators different from [eq]");
+                boolQueryBuilder.must(
+                        QueryBuilders.matchQuery(criteria.field == null ? "_all" : criteria.field, criteria.value)
+                );
+            }
+            queryBuilder = boolQueryBuilder;
+        }
+        return queryBuilder;
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder();
+        int i = 0;
+        for(Criteria criteria: criterias) {
+            sb.append(criteria);
+            if(i < criterias.size() - 2) sb.append(';');
+            i++;
+        }
+        return sb.toString();
+    }
 }
