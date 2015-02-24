@@ -13,6 +13,8 @@
 
 package com.machinelinking.storage.elasticsearch;
 
+import com.machinelinking.parser.Attribute;
+import com.machinelinking.parser.AttributeScanner;
 import com.machinelinking.storage.Criteria;
 import com.machinelinking.storage.SelectorParser;
 import com.machinelinking.storage.SelectorParserException;
@@ -22,8 +24,9 @@ import com.machinelinking.storage.SelectorParserException;
  */
 public class ElasticSelectorParser implements SelectorParser {
 
-    public static final String CRITERIA_SEPARATOR = "\\s+";
-    public static final String FIELD_VALUE_SEPARATOR = ":";
+    public static final char CRITERIA_SEPARATOR = ' ';
+    public static final char FIELD_VALUE_SEPARATOR = ':';
+    public static final char CRITERIA_DELIMITER = '"';
 
     private static ElasticSelectorParser instance;
 
@@ -37,17 +40,12 @@ public class ElasticSelectorParser implements SelectorParser {
 
     @Override
     public ElasticSelector parse(String qry) throws SelectorParserException {
+        final Attribute[] attributes = AttributeScanner.scan(
+                CRITERIA_SEPARATOR, FIELD_VALUE_SEPARATOR, CRITERIA_DELIMITER, qry
+        );
         final ElasticSelector selector = new ElasticSelector();
-        final String[] parts = qry.split(CRITERIA_SEPARATOR);
-        for(String part:parts) {
-            final String[] kv = part.split(FIELD_VALUE_SEPARATOR);
-            if(kv.length == 1) {
-                selector.addCriteria(new Criteria(null, Criteria.Operator.eq, kv[0]));
-            } else if(kv.length == 2) {
-                selector.addCriteria(new Criteria(kv[0], Criteria.Operator.eq, kv[1]));
-            } else {
-                throw new SelectorParserException("Invalid key/value criteria " + part);
-            }
+        for(Attribute attribute : attributes) {
+            selector.addCriteria(new Criteria(attribute.name, Criteria.Operator.eq, attribute.value));
         }
         return selector;
     }
