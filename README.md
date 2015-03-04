@@ -23,7 +23,9 @@ String allReferencesHTML = jsonpedia.render("en:London", allReferencesInSections
        
 JSONpedia is a framework designed to simplify access at MediaWiki contents transforming everything into JSON. 
 Such framework provides a library, a REST service and CLI tools to parse, convert, enrich and store WikiText documents. 
-In order to facilitate the consumption of the huge availability of the MediaWiki semi-structured contents the converted JSON documents are stored both into ElasticSearch (providing advanced faceting support) and MongoDB (allowing distributed map/reduce tasks). 
+In order to facilitate the consumption of the huge availability of the MediaWiki semi-structured contents, 
+the converted JSON documents are stored both into ElasticSearch (providing advanced faceting support) and 
+MongoDB (allowing distributed map/reduce tasks). 
 JSONpedia supplies capabilities for recursive template expansion and mapping to DBpedia. 
 This framework has been initially designed to extract linguistic resources from the Wikipedia dumps and to enable massive data scraping, the present intent of the project is to implement a general purpose infrastructure enabling Wikipedia multi language data consumption both for researchers and industry.
 
