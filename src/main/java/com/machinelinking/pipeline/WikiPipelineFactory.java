@@ -80,7 +80,7 @@ public class WikiPipelineFactory {
     }
 
     public Flag getFlagById(String id) {
-        final Flag found = flagsMap.get(id);
+        final Flag found = flagsMap.get(id.toLowerCase());
         if(found == null) throw new IllegalArgumentException( String.format("Cannot find flag [%s].", id) );
         return found;
     }
@@ -166,7 +166,7 @@ public class WikiPipelineFactory {
 
     private void registerFlag(Flag f) {
         flagList.add(f);
-        flagsMap.put(f.getId(), f);
+        flagsMap.put(f.getId().toLowerCase(), f);
     }
 
 }

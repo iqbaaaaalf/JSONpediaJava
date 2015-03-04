@@ -43,6 +43,14 @@ public class WikiPipelineFactoryTest {
                         WikiPipelineFactory.Structure, WikiPipelineFactory.Validate, WikiPipelineFactory.Linkers
                 )
         );
+
+        // Lowercase.
+        Assert.assertEquals(
+                Arrays.asList(WikiPipelineFactory.getInstance().toFlags("linkers", DEFAULTS)),
+                Arrays.asList(
+                        WikiPipelineFactory.Structure, WikiPipelineFactory.Validate, WikiPipelineFactory.Linkers
+                )
+        );
     }
 
     @Test
@@ -50,7 +58,13 @@ public class WikiPipelineFactoryTest {
         final Flag[] DEFAULTS = new Flag[]{ WikiPipelineFactory.Structure, WikiPipelineFactory.Validate };
         Assert.assertEquals(
                 Arrays.asList(WikiPipelineFactory.getInstance().toFlags("-Validate", DEFAULTS)),
-                Arrays.asList( new Flag[]{ WikiPipelineFactory.Structure })
+                Arrays.asList(WikiPipelineFactory.Structure)
+        );
+
+        // Lowercase.
+        Assert.assertEquals(
+                Arrays.asList(WikiPipelineFactory.getInstance().toFlags("-validate", DEFAULTS)),
+                Arrays.asList(WikiPipelineFactory.Structure)
         );
     }
 
