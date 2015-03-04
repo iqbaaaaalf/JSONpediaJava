@@ -141,6 +141,8 @@ public class WikiPipeline {
             bufferedAPIHandler.reset();
             apiParser.parse(bufferedAPIHandler, wikiAPIRequest.openStream());
             wikiPage = bufferedAPIHandler.getPage(true);
+            if(wikiPage == BufferedWikiPageHandler.EOQ)
+                throw new IOException(String.format("Error while parsing response body for request [%s]", wikiAPIRequest));
             wikiTextInputStream = new ByteArrayInputStream(wikiPage.getContent().getBytes());
         }
 
