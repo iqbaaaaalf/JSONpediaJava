@@ -17,6 +17,7 @@ import com.machinelinking.parser.WikiTextParser;
 import com.machinelinking.parser.WikiTextParserException;
 import com.machinelinking.wikimedia.WikiAPIParser;
 import com.machinelinking.wikimedia.WikiPage;
+import org.apache.log4j.Logger;
 import org.xml.sax.SAXException;
 
 import java.io.ByteArrayInputStream;
@@ -29,7 +30,10 @@ import java.net.URL;
  *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
+//TODO: factory is not using template cache currently. Need to be refactored.
 public class TemplateMappingFactory {
+
+    private static final Logger logger = Logger.getLogger(TemplateMappingFactory.class);
 
     private static final String MAPPING_PREFIX = "Mapping:";
     private static final OntologyManager ontologyManager;
@@ -64,7 +68,7 @@ public class TemplateMappingFactory {
             wikiTextMapping = WikiAPIParser.parseAPIResponse(templateMappingURL);
         } catch (Exception e) {
             wikiTextMapping = null;
-            e.printStackTrace();
+            logger.warn(String.format("An error occurred while retrieving mapping [%s]", mappingName), e);
         }
 
         if (wikiTextMapping != null) {
