@@ -98,7 +98,7 @@ public class WikiAPIParser extends DefaultHandler {
                 pageID = Integer.parseInt(attributes.getValue(PAGE_ID_ATTR));
                 pageTitle = attributes.getValue(PAGE_TITLE_ATTR);
             } catch (Exception e) {
-                throw new WikiAPIParserException("Invalid page metadata.");
+                throw new WikiAPIParserException("Invalid page metadata.", e);
             }
         } else if(insidePage && REV_NODE.equalsIgnoreCase(qName)) {
             insideRev = true;
