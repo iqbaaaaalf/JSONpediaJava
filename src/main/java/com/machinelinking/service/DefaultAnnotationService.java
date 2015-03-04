@@ -13,13 +13,13 @@
 
 package com.machinelinking.service;
 
-import com.machinelinking.pipeline.FlagSet;
-import com.machinelinking.pipeline.WikiPipeline;
-import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.filter.DefaultJSONFilterEngine;
 import com.machinelinking.filter.JSONFilter;
 import com.machinelinking.parser.DocumentSource;
 import com.machinelinking.parser.WikiTextParserException;
+import com.machinelinking.pipeline.FlagSet;
+import com.machinelinking.pipeline.WikiPipeline;
+import com.machinelinking.pipeline.WikiPipelineFactory;
 import com.machinelinking.render.DefaultDocumentContext;
 import com.machinelinking.render.DefaultHTMLRenderFactory;
 import com.machinelinking.render.DocumentContext;
@@ -52,7 +52,7 @@ import java.util.concurrent.ExecutionException;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 @Path("/annotate")
-public class DefaultAnnotationService implements AnnotationService {
+public class DefaultAnnotationService extends ServiceBase implements AnnotationService {
 
     public static final boolean FORMAT_JSON = false;
 
@@ -66,6 +66,7 @@ public class DefaultAnnotationService implements AnnotationService {
     @Produces({MediaType.APPLICATION_JSON})
     @Override
     public FlagSet flags() {
+        super.checkQuota();
         return FlagSetWrapper.getInstance();
     }
 
@@ -82,6 +83,7 @@ public class DefaultAnnotationService implements AnnotationService {
             @QueryParam("procs")   String processors,
             @QueryParam("filter")  String filter
     ) {
+        super.checkQuota();
         try {
             final DocumentSource documentSource = new DocumentSource(JSONUtils.toResourceURL(resource));
             return annotateDocumentSource(documentSource, processors, outFormat, filter);
@@ -111,6 +113,7 @@ public class DefaultAnnotationService implements AnnotationService {
             @FormParam("wikitext") String wikitext,
             @FormParam("filter")   String filter
     ) {
+        super.checkQuota();
         try {
             final DocumentSource documentSource = new DocumentSource(JSONUtils.toResourceURL(resource), wikitext);
             return annotateDocumentSource(documentSource, processors, outFormat, filter);

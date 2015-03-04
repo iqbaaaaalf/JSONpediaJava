@@ -54,7 +54,7 @@ import java.net.URLDecoder;
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 @Path("/storage")
-public class DefaultStorageService implements StorageService {
+public class DefaultStorageService extends ServiceBase implements StorageService {
 
     public static final String STORAGE_SERVICE_CONNECTION_MONGO_PROP = "storage.service.connection.mongo";
     public static final String STORAGE_SERVICE_CONNECTION_ELASTIC_PROP = "storage.service.connection.elastic";
@@ -107,6 +107,7 @@ public class DefaultStorageService implements StorageService {
             @QueryParam("filter") String filter,
             @QueryParam("limit") String limit
     ) {
+        super.checkQuota();
         try {
             selector = trimIfNotNull(selector);
             filter = trimIfNotNull(filter);
@@ -140,6 +141,7 @@ public class DefaultStorageService implements StorageService {
             @QueryParam("reduce")String reduce,
             @QueryParam("limit") String limit
     ) {
+        super.checkQuota();
         try {
             criteria = trimIfNotNull(criteria);
             map = trimIfNotNull(URLDecoder.decode(map, "utf8"));
@@ -181,6 +183,7 @@ public class DefaultStorageService implements StorageService {
             @QueryParam("filter") String filter,
             @QueryParam("limit") String limit
     ) {
+        super.checkQuota();
         try {
             selector = trimIfNotNull(selector);
             filter = trimIfNotNull(filter);
@@ -212,6 +215,7 @@ public class DefaultStorageService implements StorageService {
             @QueryParam("callback") String callback,
             @QueryParam("source") String source
     ) {
+        super.checkQuota();
         try {
             return Response.ok(
                     String.format(
