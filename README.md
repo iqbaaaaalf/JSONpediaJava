@@ -57,6 +57,7 @@ The online demo version can be found at [jsonpedia.org](http://jsonpedia.org).
 ## Documentation
 
 See [documentation](/hardest/jsonpedia/src/HEAD/documentation.md) for further references.
+See our Slideshare [presentation](http://www.slideshare.net/michele.mostarda/jsonpedia-intro).
 
 ## Requirements
 - Gradle 1.12
