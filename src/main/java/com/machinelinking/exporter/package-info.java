@@ -1,14 +1,17 @@
 /*
- * JSONpedia - Convert any MediaWiki document to JSON.
+ * Copyright 2012-2015 Michele Mostarda (me@michelemostarda.it)
  *
- * Written in 2014 by Michele Mostarda <mostarda@fbk.eu>.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
  *
- * To the extent possible under law, the author has dedicated all copyright and related and
- * neighboring rights to this software to the public domain worldwide.
- * This software is distributed without any warranty.
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
- * You should have received a copy of the CC BY Creative Commons Attribution 4.0 Internationa Public License.
- * If not, see <https://creativecommons.org/licenses/by/4.0/legalcode>.
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 /** Wiki to CSV exporter tool. */
