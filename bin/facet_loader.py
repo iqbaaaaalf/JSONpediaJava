@@ -18,14 +18,19 @@
 # Example usage:
 #   $ bin/facet_loader.py -s localhost:9300:jsonpedia_test_load:en -d localhost:9300:jsonpedia_test_facet:en -l 100 -c conf/faceting.properties
 
-import sys
 import subprocess
 
-GRADLE_BIN = 'gradle'
-FACETLOADER_GRADLE_CALL = 'runFacetLoader'
+MVN_BIN = 'mvn'
+MVN_HEAP_SIZE = '8g'
+LOADER = 'com.machinelinking.cli.facetloader'
 
 if __name__ == '__main__':
-    cmd = "%s %s -Pargs_line='%s'" \
-        % (GRADLE_BIN, FACETLOADER_GRADLE_CALL, ' '.join(sys.argv[1:]))
+    import sys
+    if len(sys.argv) != 9:
+        print 'Usage: $0 -s <source-URI> -d <destination-URI> -l <limit-num> -c <config-file>'
+        sys.exit(1)
+
+    cmd = "MAVEN_OPTS='-Xms%s -Xmx%s -Dlog4j.configuration=file:conf/log4j.properties' %s exec:java -Dexec.mainClass=%s -Dexec.args='%s'" \
+            % (MVN_HEAP_SIZE, MVN_HEAP_SIZE, MVN_BIN, LOADER, ' '.join(sys.argv[1:]))
     print 'Executing command:', cmd
     subprocess.check_call(cmd, shell=True)

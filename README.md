@@ -60,43 +60,36 @@ See [documentation](/hardest/jsonpedia/src/HEAD/documentation.md) for further re
 See our Slideshare [presentation](http://www.slideshare.net/michele.mostarda/jsonpedia-intro).
 
 ## Requirements
-- Gradle 1.12
+- Maven 3+
 - Optionally ElasticSearch 1.1
 - Optionally MongoDB 2.6
 
-## Compile and build JSONpedia
-JSONpedia can be compiled by issuing the following command:
+## Compile and package JSONpedia
+JSONpedia can be compiled and packaged by issuing the following command:
 
 ```bash
-$ gradle build  # this will run tests
+$ mvn package  # this will run tests
 ```
 
-Some of the tests might fail as they expect to find MongoDB and Elasticsearch installed.
+Some of the tests might fail as they expect to find MongoDB and Elasticsearch installed and running.
 
-To compile JSONpedia without running tests execute: 
-```
-gradle build -x tests
-```
-
-When the compilation finishes the resulting binary can be found in ```build/libs```
-A self-contained jar can also be built by issuing 
+To package JSONpedia without running tests execute:
 ```bash
-$ gradle fatjar
+mvn -DskipTests package
 ```
 
-The resulting jar will also be in ```build/libs``` with the name ```jsonpedia-full-{VERSION}.jar```.
-
-Please note that building a fat jar will not run any tests.
+When the compilation finishes the resulting fully contained JAR can be found in ```target/```
+with the name ```jsonpedia-{VERSION}.jar```.
 
 ## Run the web interface
 
 ```bash
 $ echo "server.host = 127.0.0.1" > /tmp/conf.properties
 $ echo "server.port = 8080" > /tmp/conf.properties
-$ java -cp build/libs/jsonpedia-full-{VERSION}.jar com.machinelinking.cli.server -c /tmp/conf.properties
+$ java -cp build/libs/jsonpedia-{VERSION}.jar com.machinelinking.cli.server -c /tmp/conf.properties
 ```
 
-You can now connect to ```http://127.0.0.1:8080/frontend/index.html``` in your browser and use the web interface!
+You can now connect to ```http://127.0.0.1:8080/frontend/index.html``` in your browser and use the web interface.
 
 ## Run the Storage Loader
 
@@ -108,21 +101,22 @@ To perform massing loading of first 10 Wikipedia dumps using the default configu
 ```bash
 $ bin/loader.py conf/default.properties 10
 ```
+You will see an output log similar to the following one:
 
 ```bash
 Retrieved latest articles links: [ ... 'enwiki-latest-pages-articles27.xml-p029625017p043536594.bz2']
 Processing article 0 - link: enwiki-latest-pages-articles1.xml-p000000010p000010000.bz2 file: work/enwiki-latest-pages-articles1.xml-p000000010p000010000.bz2
 Start download ...
-Download complete in 12 sec.
+Download complete in dd sec.
 Start ingestion ...
-Ingestion completed in 63 sec.
+Ingestion completed in dd sec.
 [...]
 ```
 
-To process a single dump manually:
+To process a single dump manually simply run:
 
 ```bash
-$ java -cp build/libs/jsonpedia-full-{VERSION}.jar \
+$ java -cp build/libs/jsonpedia-{VERSION}.jar \
   com.machinelinking.cli.loader conf/default.properties src/test/resources/enwiki-latest-pages-articles-p3.xml.gz
 ```
 
@@ -149,9 +143,12 @@ $ bin/facet_loader.py -s localhost:9300:jsonpedia_test_load:en -d localhost:9300
 
 ```bash
 ...
-Executing command: gradle runFacetLoader -Pargs_line='-s localhost:9300:jsonpedia_test_load:en -d localhost:9300:jsonpedia_test_facet:en -l 100 -c conf/faceting.properties'
+Executing command:
+MAVEN_OPTS='-Xms8g -Xmx8g -Dlog4j.configuration=file:conf/log4j.properties'
+mvn exec:java -Dexec.mainClass=com.machinelinking.cli.facetloader
+-Dexec.args='-s localhost:9300:jsonpedia_test_load:en -d localhost:9300:jsonpedia_test_facet:en -l 100 -c conf/faceting.properties'
 ...
-Facet Loading Report:           
+Facet Loading Report:
 Processed docs: 58, Generated facet docs: 1051
 ```
 
@@ -162,7 +159,7 @@ The CSV Exporter CLI tool allows to convert Wikipedia dumps to tabular data gene
 To convert the gzipped dump in test resources using the page prefix of en Wikipedia (with a single thread processor) run:
 
 ```bash
-$ java -cp build/libs/jsonpedia-full-{VERSION}.jar com.machinelinking.cli.exporter \
+$ java -cp build/libs/jsonpedia-{VERSION}.jar com.machinelinking.cli.exporter \
     --prefix http://en.wikipedia.org \
     --in src/test/resources/dumps/enwiki-latest-pages-articles-p1.xml.gz \
     --out out.csv --threads 1
