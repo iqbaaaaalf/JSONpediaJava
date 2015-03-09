@@ -37,7 +37,7 @@ public abstract class ServiceBase implements Service {
     static {
         try {
             throttling = Long.parseLong(
-                    ConfigurationManager.getInstance().getProperty(SERVICE_THROTTLING_PROPERTY)
+                    ConfigurationManager.getInstance().getProperty(SERVICE_THROTTLING_PROPERTY, "0")
             );
         }catch (NumberFormatException nfe) {
             throw new IllegalArgumentException(
