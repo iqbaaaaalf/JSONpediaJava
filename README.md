@@ -167,4 +167,7 @@ $ java -cp build/libs/jsonpedia-{VERSION}.jar com.machinelinking.cli.exporter \
 
 # License
 
+This software is copyright of Michele Mostarda (me@michelemostarda.it) and released under [Apache 2 License](http://www.apache.org/licenses/LICENSE-2.0).
+
+All the graphic material (diagrams, pictures and slides) is released under Creative Commons Attribution
 ![Creative Commons Attribution 4.0 International License Logo](https://i.creativecommons.org/l/by/4.0/88x31.png "Creative Commons Attribution 4.0 International License")
