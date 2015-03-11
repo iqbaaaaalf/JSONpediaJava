@@ -58,7 +58,8 @@ Please also see our Slideshare [presentation](http://www.slideshare.net/michele.
 - Full multilingual support
 ## Documentation
 
-See [documentation](/hardest/jsonpedia/src/HEAD/documentation.md) for further references.
+Please see [documentation](/hardest/jsonpedia/src/HEAD/documentation.md) for coding references.
+Please see [architecture](/hardest/jsonpedia/src/HEAD/architecture.md) for achitectural diagrams.
 
 ## Requirements
 - Maven 3+
