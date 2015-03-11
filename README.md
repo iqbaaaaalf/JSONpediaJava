@@ -58,8 +58,8 @@ Please also see our Slideshare [presentation](http://www.slideshare.net/michele.
 - Full multilingual support
 ## Documentation
 
-Please see [documentation](/hardest/jsonpedia/src/HEAD/documentation.md) for coding references.
-Please see [architecture](/hardest/jsonpedia/src/HEAD/architecture.md) for achitectural diagrams.
+Please see [documentation](/hardest/jsonpedia/src/HEAD/docs/documentation.md) for coding references
+and [architecture](/hardest/jsonpedia/src/HEAD/docs/architecture.md) for architectural diagrams.
 
 ## Requirements
 - Maven 3+
