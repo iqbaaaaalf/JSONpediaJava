@@ -31,6 +31,8 @@ This framework has been initially designed to extract linguistic resources from 
 
 The online demo version can be found at [jsonpedia.org](http://jsonpedia.org).
 
+Please also see our Slideshare [presentation](http://www.slideshare.net/michele.mostarda/jsonpedia-intro).
+
 ## Main features
 - Fast event based [WikiText](http://en.wikipedia.org/wiki/Wiki_markup) Parser
 - Support for [template](http://en.wikipedia.org/wiki/Wikipedia:Templates) expansion
@@ -57,7 +59,6 @@ The online demo version can be found at [jsonpedia.org](http://jsonpedia.org).
 ## Documentation
 
 See [documentation](/hardest/jsonpedia/src/HEAD/documentation.md) for further references.
-See our Slideshare [presentation](http://www.slideshare.net/michele.mostarda/jsonpedia-intro).
 
 ## Requirements
 - Maven 3+
