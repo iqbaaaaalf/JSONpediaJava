@@ -25,11 +25,11 @@ body {
 }
 
 .type {
-    color: red;
+    color: #801515;
 }
 
 .object {
-    border: 1px  solid; padding: 2px;
+    border: #3C3F41 1px solid; padding: 2px;
 }
 
 .list {
@@ -37,16 +37,16 @@ body {
 }
 
 .table {
-    background-color: #84dc7c;
+    background-color: #A5C663;
 }
 
 .default-render {
-    background-color: #8A5757;
+    background-color: #FFAAAA;
     display:none;
 }
 
 .main {
-    background-color: purple;
+    background-color: #550000;
 }
 
 .section {
@@ -54,11 +54,11 @@ body {
 }
 
 .reference {
-    background-color: #c9acbd;
+    background-color: #C9ACBD;
 }
 
 .link {
-    background-color: #c722c9;
+    background-color: #407F7F;
 }
 
 .links-link {
@@ -78,15 +78,15 @@ body {
 }
 
 .mapping-value {
-    color: purple;
+    color: #550000;
 }
 
 .primitive {
-    background-color: #00CCFF;
+    background-color: #669999;
 }
 
 .citation {
-    background-color: #b82825;
+    background-color: #801515;
 }
 
 .cite-web {
@@ -94,7 +94,7 @@ body {
 }
 
 .freebase {
-    background-color: #f4ff11;
+    background-color: #FAFF7E;
     padding: 5px;
 }
 
