@@ -19,6 +19,8 @@ package com.machinelinking.template;
 import com.machinelinking.render.HTMLWriter;
 
 /**
+ * Generic interface implemented to provide custom implementations of template calls.
+ *
  * @see com.machinelinking.template.TemplateProcessor
  * @author Michele Mostarda (mostarda@fbk.eu)
  */

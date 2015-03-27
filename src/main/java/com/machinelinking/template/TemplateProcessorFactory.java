@@ -17,6 +17,8 @@
 package com.machinelinking.template;
 
 /**
+ * Factory for template processors.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface TemplateProcessorFactory {

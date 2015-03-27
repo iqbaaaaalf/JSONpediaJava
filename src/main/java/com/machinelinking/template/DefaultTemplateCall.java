@@ -22,6 +22,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Default implementation for {@link TemplateCall}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class  DefaultTemplateCall implements TemplateCall {

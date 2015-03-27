@@ -19,6 +19,8 @@ package com.machinelinking.template;
 import com.machinelinking.render.HTMLWriter;
 
 /**
+ * Defines a processor for a template.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface TemplateProcessor {

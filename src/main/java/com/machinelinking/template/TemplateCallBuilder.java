@@ -25,6 +25,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * Builder for template call.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TemplateCallBuilder {

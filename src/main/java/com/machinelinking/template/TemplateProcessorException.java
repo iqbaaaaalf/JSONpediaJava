@@ -17,6 +17,8 @@
 package com.machinelinking.template;
 
 /**
+ * Exception raised by {@link TemplateProcessor}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TemplateProcessorException extends Exception {

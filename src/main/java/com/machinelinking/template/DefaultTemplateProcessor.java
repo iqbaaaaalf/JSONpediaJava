@@ -32,6 +32,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /**
+ * Default implementation of {@link TemplateProcessor}.
  * Wikimedia template processor based on documentation available at
  * <a href="http://en.wikipedia.org/wiki/Help:Template">Help:Template</a>
  * <a href="http://en.wikipedia.org/wiki/Help:Magic_words">Help:Magic_words</a>

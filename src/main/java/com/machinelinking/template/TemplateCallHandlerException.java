@@ -17,6 +17,8 @@
 package com.machinelinking.template;
 
 /**
+ * Exception raised while processing a {@link TemplateCall}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class TemplateCallHandlerException extends Exception {

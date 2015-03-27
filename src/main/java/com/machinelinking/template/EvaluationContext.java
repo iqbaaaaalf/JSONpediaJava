@@ -33,6 +33,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Defines the evaluation context for a {@link TemplateCall}.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class EvaluationContext {

@@ -19,6 +19,8 @@ package com.machinelinking.template;
 import org.codehaus.jackson.JsonNode;
 
 /**
+ * Models a template call.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface TemplateCall {
@@ -35,13 +37,15 @@ public interface TemplateCall {
 
     int getParametersCount();
 
-    public class Parameter {
+    class Parameter {
         public final String name;
         public final JsonNode value;
+
         public Parameter(String name, JsonNode value) {
             this.name = name;
             this.value = value;
         }
+
         @Override
         public String toString() {
             return String.format("%s:%s", name, value);

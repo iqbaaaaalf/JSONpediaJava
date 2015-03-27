@@ -25,6 +25,9 @@ import com.machinelinking.template.custom.NoWrap;
 import com.machinelinking.template.custom.TemplateSuppressor;
 
 /**
+ * Default implementation of {@link TemplateProcessorFactory}.
+ * Registers custom handlers for templates.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public class DefaultTemplateProcessorFactory implements TemplateProcessorFactory {

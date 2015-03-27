@@ -17,6 +17,8 @@
 package com.machinelinking.template;
 
 /**
+ * Defines the scope of the rendering.
+ *
  * @author Michele Mostarda (mostarda@fbk.eu)
  */
 public interface RenderScope {
@@ -24,11 +26,11 @@ public interface RenderScope {
     /**
      * Renders everything even with default rendering.
      */
-    static final String FULL_RENDERING = "full_rendering";
+    String FULL_RENDERING = "full_rendering";
 
     /**
      * Renders only with renders for text rendering.
      */
-    static final String TEXT_RENDERING = "text_rendering";
+    String TEXT_RENDERING = "text_rendering";
 
 }
