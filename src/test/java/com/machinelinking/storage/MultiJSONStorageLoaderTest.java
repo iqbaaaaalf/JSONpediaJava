@@ -19,7 +19,7 @@ package com.machinelinking.storage;
 import java.net.UnknownHostException;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MultiJSONStorageLoaderTest extends AbstractJSONStorageLoaderTest {
 

@@ -30,7 +30,7 @@ import java.util.Map;
 /**
  * Test case for {@link InfoboxSplitter}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class InfoboxSplitterTest {
 

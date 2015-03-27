@@ -24,7 +24,7 @@ import com.mongodb.util.JSON;
 /**
  * {@link com.machinelinking.storage.Document} implementation for {@link DBObject}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MongoDocument implements Document<DBObject> {
 

@@ -29,7 +29,7 @@ import java.io.InputStream;
 /**
  * A parser for the DBpedia Mappings Wikipage XML API response.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiMappingsDumpParser extends DefaultHandler {
 

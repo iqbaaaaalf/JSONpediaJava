@@ -54,7 +54,7 @@ import java.net.URLDecoder;
 /**
  * Default implementation of {@link com.machinelinking.service.StorageService}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 @Path("/storage")
 public class DefaultStorageService extends ServiceBase implements StorageService {

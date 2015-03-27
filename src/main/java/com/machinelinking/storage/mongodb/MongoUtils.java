@@ -28,7 +28,7 @@ import java.util.Map;
 /**
  * Utility class for Mongo data conversions.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MongoUtils {
 

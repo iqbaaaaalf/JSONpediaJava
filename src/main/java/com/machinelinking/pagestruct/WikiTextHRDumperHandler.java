@@ -28,7 +28,7 @@ import java.util.Stack;
  * {@link WikiTextParserHandler} implementation Producing a textual
  * representation of event messages for testing purposes.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiTextHRDumperHandler implements WikiTextParserHandler {
 

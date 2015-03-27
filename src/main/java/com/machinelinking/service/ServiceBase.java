@@ -27,7 +27,7 @@ import java.net.InetSocketAddress;
 /**
  * Base service class providing throttling functionalities.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public abstract class ServiceBase implements Service {
 

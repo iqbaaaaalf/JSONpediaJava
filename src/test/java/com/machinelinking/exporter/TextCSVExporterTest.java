@@ -28,7 +28,7 @@ import java.net.URL;
 /**
  *  Test case for {@link com.machinelinking.exporter.TextCSVExporter}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TextCSVExporterTest {
 

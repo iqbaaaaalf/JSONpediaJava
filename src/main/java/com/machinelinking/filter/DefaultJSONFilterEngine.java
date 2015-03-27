@@ -26,7 +26,7 @@ import java.util.Map;
 /**
  * Default {@link JSONFilterEngine} implementation.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultJSONFilterEngine implements JSONFilterEngine {
 

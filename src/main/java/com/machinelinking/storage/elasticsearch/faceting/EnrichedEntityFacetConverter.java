@@ -28,7 +28,7 @@ import java.util.Map;
  * Defines a {@link com.machinelinking.storage.elasticsearch.faceting.FacetConverter} which convert Page documents
  * to Section documents ready for faceting.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class EnrichedEntityFacetConverter implements FacetConverter {
 

@@ -22,7 +22,7 @@ import java.net.URL;
  * Provides a filter decorator on events directed to a {@link com.machinelinking.parser.WikiTextParserHandler} based on
  * a configurable {@link com.machinelinking.parser.FilteredHandlerCriteria}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiTextParserFilteredHandler implements WikiTextParserHandler {
 

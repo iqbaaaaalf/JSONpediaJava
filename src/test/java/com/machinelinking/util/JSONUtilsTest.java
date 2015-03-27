@@ -29,7 +29,7 @@ import java.util.HashMap;
 /**
  * Test case for {@link JSONUtils}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class JSONUtilsTest {
 

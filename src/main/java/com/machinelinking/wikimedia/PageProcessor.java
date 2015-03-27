@@ -19,7 +19,7 @@ package com.machinelinking.wikimedia;
 /**
  * Defines a processor for a <i>Wikipage</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface PageProcessor {
 

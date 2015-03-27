@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class LinkNodeRender implements NodeRender {
 

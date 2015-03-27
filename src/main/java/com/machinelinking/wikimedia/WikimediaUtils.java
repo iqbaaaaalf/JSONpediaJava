@@ -22,7 +22,7 @@ import java.net.URL;
 /**
  * Functions to manage <i>Wikimedia</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikimediaUtils {
 

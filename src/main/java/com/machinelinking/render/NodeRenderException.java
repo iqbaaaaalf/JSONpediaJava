@@ -18,7 +18,7 @@ package com.machinelinking.render;
 /**
  * Defines any error raised by a {@link com.machinelinking.render.NodeRender}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class NodeRenderException extends Exception {
 

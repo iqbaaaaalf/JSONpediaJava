@@ -19,7 +19,7 @@ package com.machinelinking.filter;
 /**
  * Parser to convert filter string syntax to {@link JSONFilter} objcts.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JSONFilterParser {
 

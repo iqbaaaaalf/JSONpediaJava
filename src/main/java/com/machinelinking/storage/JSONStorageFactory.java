@@ -20,7 +20,7 @@ package com.machinelinking.storage;
  * Defines the factory for a {@link com.machinelinking.storage.JSONStorageConfiguration}
  * and a {@link com.machinelinking.storage.JSONStorage}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JSONStorageFactory<C extends JSONStorageConfiguration, S extends JSONStorage, D extends Document> {
 

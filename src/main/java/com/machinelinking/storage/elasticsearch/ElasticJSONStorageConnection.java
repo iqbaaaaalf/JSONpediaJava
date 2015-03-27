@@ -36,7 +36,7 @@ import java.io.IOException;
 /**
  * {@link com.machinelinking.storage.JSONStorageConnection} implementation for <i>ElasticSearch</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ElasticJSONStorageConnection implements JSONStorageConnection<ElasticDocument, ElasticSelector> {
 

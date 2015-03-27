@@ -17,7 +17,7 @@
 package com.machinelinking.storage.elasticsearch;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public abstract class ElasticJSONStorageTestBase {
 

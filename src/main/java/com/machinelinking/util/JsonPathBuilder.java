@@ -19,7 +19,7 @@ package com.machinelinking.util;
 /**
  * Builder for generating a <i>JSON Path</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JsonPathBuilder {
 

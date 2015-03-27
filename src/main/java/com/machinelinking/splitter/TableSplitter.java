@@ -19,7 +19,7 @@ package com.machinelinking.splitter;
 /**
  * {@link Splitter} implementation for <i>table</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TableSplitter extends Splitter {
 

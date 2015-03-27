@@ -26,7 +26,7 @@ import java.io.StringWriter;
 /**
  * Base service exception definition.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public abstract class BaseServiceException extends WebApplicationException {
 

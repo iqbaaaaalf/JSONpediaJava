@@ -25,7 +25,7 @@ import java.io.IOException;
 /**
  * Test case for {@link com.machinelinking.cli.facetloader}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class facetloaderTest {
 

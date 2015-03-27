@@ -23,7 +23,7 @@ import java.util.Objects;
 /**
  * Configuration of {@link com.machinelinking.storage.elasticsearch.faceting.ElasticFacetManager}
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface ElasticFacetManagerConfiguration {
 

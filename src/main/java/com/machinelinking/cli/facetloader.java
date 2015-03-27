@@ -33,7 +33,7 @@ import java.io.File;
 /**
  * CLI interface to run the {@link com.machinelinking.storage.elasticsearch.faceting.DefaultElasticFacetManager}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class facetloader {
 

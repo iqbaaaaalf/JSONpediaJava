@@ -29,7 +29,7 @@ import java.util.Stack;
 /**
  * Serializes events to <i>JSON</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class JSONSerializer implements Serializer {
 

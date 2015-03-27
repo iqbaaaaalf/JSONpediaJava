@@ -24,7 +24,7 @@ import java.net.UnknownHostException;
 /**
  * Mongo implementation of {@link com.machinelinking.storage.JSONStorageFactory}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MongoJSONStorageFactory extends AbstractJSONStorageFactory<MongoJSONStorageConfiguration, MongoJSONStorage, MongoDocument> {
 

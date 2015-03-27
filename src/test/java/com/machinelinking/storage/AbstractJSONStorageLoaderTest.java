@@ -30,7 +30,7 @@ import java.net.UnknownHostException;
 /**
  * Abstract loader test case.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public abstract class AbstractJSONStorageLoaderTest {
 

@@ -25,7 +25,7 @@ import java.net.URL;
 /**
  * <i>CSV</i> data exporter.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface CSVExporter {
 

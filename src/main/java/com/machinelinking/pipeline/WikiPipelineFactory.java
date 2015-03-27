@@ -40,7 +40,7 @@ import java.util.Set;
 /**
  * Factory for {@link WikiPipeline} instances.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiPipelineFactory {
 

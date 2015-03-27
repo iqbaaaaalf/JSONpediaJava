@@ -21,7 +21,7 @@ import com.machinelinking.parser.WikiPediaUtils;
 /**
  * {@link Splitter} implementation for <i>infobox</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class InfoboxSplitter extends Splitter {
 

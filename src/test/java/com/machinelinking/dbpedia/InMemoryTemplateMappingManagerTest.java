@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
 /**
  * Test case for {@link com.machinelinking.dbpedia.InMemoryTemplateMappingManager}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class InMemoryTemplateMappingManagerTest {
 

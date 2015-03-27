@@ -22,7 +22,7 @@ import com.machinelinking.storage.elasticsearch.ElasticSelector;
 /**
  * Defines a Facet Manager for <i>Elastic Search</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface ElasticFacetManager {
 

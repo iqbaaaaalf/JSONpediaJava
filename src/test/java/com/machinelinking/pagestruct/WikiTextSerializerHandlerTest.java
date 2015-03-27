@@ -25,7 +25,7 @@ import java.io.IOException;
 /**
  * Test case for {@link WikiTextSerializerHandler}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiTextSerializerHandlerTest extends WikiTextSerializerHandlerTestBase {
 

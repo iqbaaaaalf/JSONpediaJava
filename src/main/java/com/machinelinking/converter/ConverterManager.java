@@ -26,7 +26,7 @@ import java.io.Writer;
  * Allows to register a set of converters for specific <b>JSON</b> data matching the given
  * {@link com.machinelinking.filter.JSONObjectFilter}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface ConverterManager {
 

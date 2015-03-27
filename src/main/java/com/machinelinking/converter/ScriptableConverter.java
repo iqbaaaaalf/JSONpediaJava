@@ -28,7 +28,7 @@ import java.util.Map;
 /**
  * Scriptable implementation of {@link com.machinelinking.converter.Converter}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ScriptableConverter implements Converter {
 

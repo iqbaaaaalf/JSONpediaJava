@@ -35,7 +35,7 @@ import java.util.Map;
 /**
  * Defines the evaluation context for a {@link TemplateCall}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class EvaluationContext {
 

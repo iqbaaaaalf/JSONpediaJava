@@ -26,7 +26,7 @@ import java.util.Stack;
 /**
  * Utility class to manage <i>HTML</i> markup.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TagReader {
 

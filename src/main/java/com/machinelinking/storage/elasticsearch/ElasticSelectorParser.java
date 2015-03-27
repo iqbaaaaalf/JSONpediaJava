@@ -23,7 +23,7 @@ import com.machinelinking.storage.SelectorParser;
 import com.machinelinking.storage.SelectorParserException;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ElasticSelectorParser implements SelectorParser {
 

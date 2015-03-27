@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * <i>Cite Web</i> template render.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class CiteBook implements TemplateCallHandler {
 

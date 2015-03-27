@@ -23,7 +23,7 @@ import javax.ws.rs.core.Response;
 /**
  * Defines an Annotation Service.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface AnnotationService extends Service {
 

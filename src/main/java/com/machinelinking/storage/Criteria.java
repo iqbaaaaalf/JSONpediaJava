@@ -20,7 +20,7 @@ package com.machinelinking.storage;
  * Defines a {@link com.machinelinking.storage.Selector} criteria.
  *
  * @see com.machinelinking.storage.Selector
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class Criteria {
 

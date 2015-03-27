@@ -22,7 +22,7 @@ import com.machinelinking.serializer.Serializer;
 /**
  * Extractor for page abstracts, does not expand templates.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class AbstractExtractor extends TextExtractor {
 

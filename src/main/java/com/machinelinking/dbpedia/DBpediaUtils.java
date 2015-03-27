@@ -23,7 +23,7 @@ import java.net.URLEncoder;
 /**
  * <i>DBpedia APIs utility methods.</i>
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DBpediaUtils {
 

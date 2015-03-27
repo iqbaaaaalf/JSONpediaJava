@@ -31,7 +31,7 @@ import java.net.URL;
  * Factory for {@link com.machinelinking.dbpedia.TemplateMappingManager}s
  * and {@link com.machinelinking.dbpedia.TemplateMapping}s.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 //TODO: factory is not using template cache currently. Need to be refactored.
 public class TemplateMappingFactory {

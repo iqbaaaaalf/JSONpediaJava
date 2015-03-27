@@ -22,7 +22,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * Annotation wrapper for {@link com.machinelinking.pipeline.Flag}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 @XmlRootElement(name = "quota-overflow")
 public class QuotaOverflowMessage {

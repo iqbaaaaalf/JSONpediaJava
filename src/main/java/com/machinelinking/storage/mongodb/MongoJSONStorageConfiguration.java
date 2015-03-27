@@ -21,7 +21,7 @@ import com.machinelinking.storage.JSONStorageConfiguration;
 /**
  * Implementation of {@link com.machinelinking.storage.JSONStorageConfiguration} for <i>MongoDB</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MongoJSONStorageConfiguration implements JSONStorageConfiguration {
 

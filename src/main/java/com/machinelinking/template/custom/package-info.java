@@ -17,6 +17,6 @@
 /**
  * Custom <b>en</b> <i>Wikimedia Template</i> handlers.
  *
- * @author Michele Mostarda (mostarda@fbk.eu) 
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 package com.machinelinking.template.custom;

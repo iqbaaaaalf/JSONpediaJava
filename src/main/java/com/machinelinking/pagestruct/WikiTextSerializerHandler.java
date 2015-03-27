@@ -27,7 +27,7 @@ import java.util.Stack;
  * {@link WikiTextSerializerHandler} converting parser events to serialization events
  * using a {@link Serializer}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiTextSerializerHandler extends DefaultWikiTextParserHandler {
 

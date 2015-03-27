@@ -38,7 +38,7 @@ import java.util.concurrent.ExecutionException;
 /**
  * Test case for {@link WikiPipeline}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiPipelineTest {
 

@@ -32,7 +32,7 @@ import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TemplateMappingExtractorTest {
 

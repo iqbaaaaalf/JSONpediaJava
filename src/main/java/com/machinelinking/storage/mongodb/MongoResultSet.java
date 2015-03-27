@@ -25,7 +25,7 @@ import java.io.Closeable;
 /**
  * {@link com.machinelinking.storage.ResultSet} implementation for <i>MongoDB</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MongoResultSet implements ResultSet<MongoDocument>, Closeable {
 

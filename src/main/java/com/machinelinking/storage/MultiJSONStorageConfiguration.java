@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MultiJSONStorageConfiguration implements JSONStorageConfiguration, Iterable<JSONStorageConfiguration> {
 

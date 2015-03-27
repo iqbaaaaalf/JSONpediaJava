@@ -22,7 +22,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 /**
  * A <i>Wikipage</i> processing queue implementing {@link WikiPageHandler}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class BufferedWikiPageHandler implements WikiPageHandler {
 

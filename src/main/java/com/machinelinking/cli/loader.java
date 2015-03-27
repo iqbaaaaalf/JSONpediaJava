@@ -36,7 +36,7 @@ import java.util.Properties;
 /**
  * CLI interface to run the {@link com.machinelinking.storage.DefaultJSONStorageLoader}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class loader {
 

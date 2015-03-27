@@ -37,7 +37,7 @@ import java.util.Map;
 /**
  * Default implementation of {@link HTMLRender}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultHTMLRender implements HTMLRender {
 

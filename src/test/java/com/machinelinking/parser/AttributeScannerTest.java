@@ -24,7 +24,7 @@ import java.util.Arrays;
 /**
  * Test case for {@link com.machinelinking.parser.AttributeScanner}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class AttributeScannerTest {
 

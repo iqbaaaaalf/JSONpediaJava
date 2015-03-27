@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.Iterator;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class LinksKeyValueRender implements KeyValueRender {
 

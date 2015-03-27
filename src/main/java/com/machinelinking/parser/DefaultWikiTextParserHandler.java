@@ -21,7 +21,7 @@ import java.net.URL;
 /**
  * Default empty {@link WikiTextParserHandler} implementation.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultWikiTextParserHandler implements WikiTextParserHandler {
 

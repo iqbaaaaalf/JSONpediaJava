@@ -27,7 +27,7 @@ import java.util.List;
 /**
  * Specific {@link Extractor} for <i>Wikipedia reference</i>s.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ReferenceExtractor extends SectionAwareExtractor {
 

@@ -38,7 +38,7 @@ import java.util.TreeSet;
  * <a href="http://en.wikipedia.org/wiki/Help:Magic_words">Help:Magic_words</a>
  * Test with <a href="http://en.wikipedia.org/w/index.php?title=Wikipedia:Sandbox&action=submit">Wikipedia:Sandbox</a>
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 class DefaultTemplateProcessor implements TemplateProcessor {
 

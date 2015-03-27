@@ -47,7 +47,7 @@ import java.util.concurrent.ExecutionException;
 /**
  * The <i>Wiki</i> processor facade.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiPipeline {
 

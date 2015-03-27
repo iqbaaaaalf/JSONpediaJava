@@ -19,7 +19,7 @@ package com.machinelinking.wikimedia;
 /**
  * Defines an issue while parsing the <i>Wiki API</i> data.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiAPIParserException extends RuntimeException {
 

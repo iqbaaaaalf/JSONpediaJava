@@ -21,7 +21,7 @@ import org.codehaus.jackson.JsonNode;
 /**
  * Defines a <i>JSON</i> to <i>HTML</i> renderer.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface HTMLRender extends RootRender {
 

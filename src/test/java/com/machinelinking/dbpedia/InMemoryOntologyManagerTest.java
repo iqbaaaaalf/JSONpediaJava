@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * Test case for {@link InMemoryOntologyManager}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class InMemoryOntologyManagerTest {
 

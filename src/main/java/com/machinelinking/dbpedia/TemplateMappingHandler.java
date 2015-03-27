@@ -22,7 +22,7 @@ import com.machinelinking.parser.DefaultWikiTextParserHandler;
  * Specific {@link com.machinelinking.parser.WikiTextParserHandler}
  * to parse <i>Template Mapping</i>s from <i>DBpedia</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public abstract class TemplateMappingHandler extends DefaultWikiTextParserHandler {
 

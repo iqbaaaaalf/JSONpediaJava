@@ -22,7 +22,7 @@ import com.machinelinking.serializer.Serializer;
 /**
  * Defines an extractor for a <i>Wikipedia</i> specific feature.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public abstract class Extractor extends DefaultWikiTextParserHandler {
 

@@ -19,7 +19,7 @@ package com.machinelinking.dbpedia;
 /**
  * Defines a manager to load collections of {@link com.machinelinking.dbpedia.TemplateMapping}s.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface TemplateMappingManager {
 

@@ -34,7 +34,7 @@ import java.util.UUID;
 /**
  * Test case for {@link com.machinelinking.storage.mongodb.MongoJSONStorage}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MongoJSONStorageTest {
 

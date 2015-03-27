@@ -19,7 +19,7 @@ package com.machinelinking.wikimedia;
 /**
  * The report of a {@link PageProcessor}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ProcessorReport {
 

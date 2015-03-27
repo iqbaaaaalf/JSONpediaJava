@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Defines a <i>Wikipedia table</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class Table {
 

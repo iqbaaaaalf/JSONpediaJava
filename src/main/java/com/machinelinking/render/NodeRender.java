@@ -22,7 +22,7 @@ import org.codehaus.jackson.JsonNode;
 /**
  * Defines the renderer for a {@link JsonNode}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface NodeRender {
 

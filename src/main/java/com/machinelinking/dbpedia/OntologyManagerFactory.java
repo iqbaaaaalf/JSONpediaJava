@@ -19,7 +19,7 @@ package com.machinelinking.dbpedia;
 /**
  * <i>Factory</i> for {@link OntologyManager}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class OntologyManagerFactory {
 

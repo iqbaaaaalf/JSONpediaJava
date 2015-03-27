@@ -20,7 +20,7 @@ package com.machinelinking.storage;
  * Defines the resultset of a {@link com.machinelinking.storage.Selector}.
  *
  * @see com.machinelinking.storage.Selector
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface ResultSet<D extends Document> {
 

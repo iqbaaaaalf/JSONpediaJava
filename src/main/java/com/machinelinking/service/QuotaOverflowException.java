@@ -23,7 +23,7 @@ import javax.ws.rs.core.Response;
  * Used to notify user that the service quota limit has been reached.
  *
  * @see com.machinelinking.service.ServiceBase
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class QuotaOverflowException extends BaseServiceException {
 

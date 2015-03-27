@@ -49,7 +49,7 @@ import java.util.Map;
 /**
  * This test case verifies the code snippets used in documentation.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DocExamplesTest {
 

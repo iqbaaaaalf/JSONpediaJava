@@ -32,7 +32,7 @@ import java.net.URL;
 /**
  * Commandline utility for {@link com.machinelinking.exporter.CSVExporter}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class exporter {
 

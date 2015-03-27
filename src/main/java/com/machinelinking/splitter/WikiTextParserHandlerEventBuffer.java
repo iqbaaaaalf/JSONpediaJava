@@ -32,7 +32,7 @@ import java.util.List;
 /**
  * Buffer able to store {@link WikiTextParserHandler} event streams.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiTextParserHandlerEventBuffer {
 

@@ -24,7 +24,7 @@ import java.util.Random;
 /**
  * Test case for {@link com.machinelinking.wikimedia.BufferedWikiPageHandler}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class BufferedWikiPageHandlerTest {
 

@@ -27,7 +27,7 @@ import java.net.URL;
 /**
  * Resources utility for <b>CLI</b> classes.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class CLIUtils {
 

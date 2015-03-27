@@ -23,7 +23,7 @@ import java.util.Properties;
 /**
  * Manages the service configuration.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ConfigurationManager {
 

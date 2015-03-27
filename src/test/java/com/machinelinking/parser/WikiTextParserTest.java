@@ -31,7 +31,7 @@ import java.net.URL;
 /**
  * Test case for {@link WikiTextParser}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 //TODO: still missing support for comments within references: ex:  [[Category:Zoologists with author abbreviations<!-- -->|{{{author_abbreviation_zoo|{{{author_abbrev_zoo}}}}}}]]
 public class WikiTextParserTest {

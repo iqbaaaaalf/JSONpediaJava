@@ -19,7 +19,7 @@ package com.machinelinking.main;
 /**
  * Describes any error raised by the {@link com.machinelinking.main.JSONpedia} facade.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class JSONpediaException extends Exception {
 

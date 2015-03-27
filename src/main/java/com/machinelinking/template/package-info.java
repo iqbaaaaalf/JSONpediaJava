@@ -17,6 +17,6 @@
 /**
  * Provides support for <i>Wikimedia Template</i> processing.
  *
- * @author Michele Mostarda (mostarda@fbk.eu) 
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 package com.machinelinking.template;

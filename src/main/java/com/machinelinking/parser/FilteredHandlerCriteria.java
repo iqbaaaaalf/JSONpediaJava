@@ -19,7 +19,7 @@ package com.machinelinking.parser;
 /**
  * Defines a criteria for {@link com.machinelinking.parser.WikiTextParserFilteredHandler}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface FilteredHandlerCriteria {
 

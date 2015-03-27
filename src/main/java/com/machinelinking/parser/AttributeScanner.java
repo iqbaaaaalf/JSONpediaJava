@@ -27,7 +27,7 @@ import java.util.List;
  * <lu><code>k1 = &quotes;v 1&quotes;</code></li>
  * <lu><code>v1 k2 = v2 k3 = &quotes;v 3&quotes; v4</code></li>
  * </ul>
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class AttributeScanner {
 

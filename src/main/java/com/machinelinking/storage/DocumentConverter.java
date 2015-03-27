@@ -17,7 +17,7 @@
 package com.machinelinking.storage;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface DocumentConverter<T extends Document> {
 

@@ -19,7 +19,7 @@ package com.machinelinking.storage;
 /**
  * Defines a <i>Wikitext</i> document.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface Document<T> {
 

@@ -21,7 +21,7 @@ import org.codehaus.jackson.JsonNode;
 /**
  * Models a template call.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface TemplateCall {
 

@@ -27,7 +27,7 @@ import java.util.Map;
 /**
  * In memory implementation for {@link com.machinelinking.service.Throttler}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class InMemoryThrottler implements Throttler {
 

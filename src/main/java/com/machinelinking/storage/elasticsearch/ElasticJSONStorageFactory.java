@@ -22,7 +22,7 @@ import com.machinelinking.storage.DocumentConverter;
 /**
  * {@link com.machinelinking.storage.JSONStorageFactory} implementation for <i>ElasticSearch</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ElasticJSONStorageFactory extends AbstractJSONStorageFactory<ElasticJSONStorageConfiguration, ElasticJSONStorage, ElasticDocument> {
 

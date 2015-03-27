@@ -16,6 +16,7 @@
 
 package com.machinelinking.template;
 
+import com.machinelinking.pagestruct.Ontology;
 import com.machinelinking.pagestruct.WikiTextSerializerHandlerFactory;
 import com.machinelinking.parser.WikiTextParser;
 import com.machinelinking.parser.WikiTextParserException;
@@ -295,7 +296,7 @@ public class DefaultTemplateProcessorTest {
         );
         parser.parse(documentURL, new StringReader(wikiText));
         final JsonNode root = JSONUtils.bufferToJSONNode(buffer);
-        final JsonNode fragment = root.get("structure").get(0);
+        final JsonNode fragment = root.get(Ontology.STRUCTURE_FIELD).get(0);
 
         final DocumentContext context = new DefaultDocumentContext(
                 RenderScope.FULL_RENDERING, documentURL, contextMap

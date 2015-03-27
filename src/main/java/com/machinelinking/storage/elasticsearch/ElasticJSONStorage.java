@@ -26,7 +26,7 @@ import org.elasticsearch.indices.IndexMissingException;
 /**
  * {@link com.machinelinking.storage.JSONStorage} implementation for <i>ElasticSearch</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ElasticJSONStorage
     implements JSONStorage<ElasticJSONStorageConfiguration, ElasticDocument, ElasticSelector> {

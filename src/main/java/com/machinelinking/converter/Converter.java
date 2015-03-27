@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * Defines a generic data converter.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface Converter {
 

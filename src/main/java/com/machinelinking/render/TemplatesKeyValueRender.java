@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TemplatesKeyValueRender implements KeyValueRender {
 

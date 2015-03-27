@@ -26,7 +26,7 @@ import java.util.Set;
 /**
  * {@link Extractor} for categories.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class CategoryExtractor extends Extractor {
 

@@ -26,7 +26,7 @@ import java.net.URL;
 /**
  * Abstract extractor for text extraction.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public abstract class TextExtractor extends Extractor {
 

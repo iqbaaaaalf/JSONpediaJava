@@ -21,7 +21,7 @@ import com.machinelinking.storage.JSONStorageConfiguration;
 /**
  * {@link com.machinelinking.storage.JSONStorageConfiguration} implementation for <i>ElasticSearch</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ElasticJSONStorageConfiguration implements JSONStorageConfiguration {
 

@@ -20,7 +20,7 @@ package com.machinelinking.storage;
  * Converts a selection query string to a selector object.
  *
  * @see com.machinelinking.storage.Selector
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface SelectorParser {
 

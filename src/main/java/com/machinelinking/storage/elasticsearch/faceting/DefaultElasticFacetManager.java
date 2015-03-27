@@ -39,7 +39,7 @@ import static com.machinelinking.storage.elasticsearch.faceting.ElasticFacetMana
 /**
  * Default implementation of {@link com.machinelinking.storage.elasticsearch.faceting.ElasticFacetManager}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultElasticFacetManager implements ElasticFacetManager {
 

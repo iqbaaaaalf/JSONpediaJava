@@ -19,7 +19,7 @@ package com.machinelinking.wikimedia;
 /**
  * Defines a <i>Wikipage</i> dump process handler.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface WikiPageHandler {
 

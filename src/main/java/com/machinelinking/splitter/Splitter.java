@@ -27,7 +27,7 @@ import java.util.List;
  * A {@link Splitter} allows to redirect specific {@link DefaultWikiTextParserHandler} events representing an object
  * toward different consumers. The redirection criteria is based on the visit depth.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public abstract class Splitter extends DefaultWikiTextParserHandler implements Serializable {
 

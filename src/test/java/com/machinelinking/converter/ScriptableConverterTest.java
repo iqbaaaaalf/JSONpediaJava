@@ -31,7 +31,7 @@ import java.io.Writer;
 /**
  * Test case for {@link com.machinelinking.converter.ScriptableConverter}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ScriptableConverterTest {
 

@@ -19,7 +19,7 @@ package com.machinelinking.parser;
 /**
  * Any key/value attribute parsed by {@link com.machinelinking.parser.AttributeScanner}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class Attribute {
 

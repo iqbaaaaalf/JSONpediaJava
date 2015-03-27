@@ -19,7 +19,7 @@ package com.machinelinking.filter;
 /**
  * Default implementation of {@link com.machinelinking.filter.JSONFilterFactory}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultJSONFilterFactory implements JSONFilterFactory {
 

@@ -21,7 +21,7 @@ import org.codehaus.jackson.JsonNode;
 /**
  * Defines a filter of an object satisfying a set of criteria.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JSONObjectFilter extends JSONFilter {
 

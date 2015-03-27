@@ -19,7 +19,7 @@ package com.machinelinking.storage;
 /**
  * Defines a <i>JSON</i> storage configuration.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JSONStorageConfiguration {
 

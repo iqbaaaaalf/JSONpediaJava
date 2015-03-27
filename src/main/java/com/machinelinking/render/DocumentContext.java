@@ -19,7 +19,7 @@ package com.machinelinking.render;
 import java.net.URL;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface DocumentContext {
 

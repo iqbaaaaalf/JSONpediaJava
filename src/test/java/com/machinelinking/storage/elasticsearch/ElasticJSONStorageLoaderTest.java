@@ -25,7 +25,7 @@ import java.net.UnknownHostException;
 /**
  * {@link com.machinelinking.storage.elasticsearch.ElasticJSONStorage} test.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 @Test
 public class ElasticJSONStorageLoaderTest extends AbstractJSONStorageLoaderTest {

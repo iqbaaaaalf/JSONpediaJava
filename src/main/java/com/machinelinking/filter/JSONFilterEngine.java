@@ -21,7 +21,7 @@ import org.codehaus.jackson.JsonNode;
 /**
  * Defines an engine able to apply {@link JSONFilter}s over {@link JsonNode}s.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JSONFilterEngine {
 

@@ -19,7 +19,7 @@ package com.machinelinking.render;
 /**
  * Root render interface.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface RootRender extends NodeRender, KeyValueRender {
 

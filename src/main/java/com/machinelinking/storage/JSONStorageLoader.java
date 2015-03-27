@@ -27,7 +27,7 @@ import java.net.URL;
  * Defines a processor to massive load a <i>Wikitext dump</i> stream into a {@link JSONStorage}
  * the {@link com.machinelinking.pipeline.WikiPipeline} built by the specified {@link com.machinelinking.pipeline.WikiPipelineFactory}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JSONStorageLoader {
 

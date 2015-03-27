@@ -40,7 +40,7 @@ import java.util.Set;
 /**
  * In memory hashmap implementation of {@link OntologyManager}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class InMemoryOntologyManager implements OntologyManager {
 

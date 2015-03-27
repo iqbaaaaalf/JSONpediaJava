@@ -29,7 +29,7 @@ import java.net.URL;
 /**
  * Runs the JSONpedia WebApp based on {@link com.machinelinking.service.BasicServer}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class server {
 

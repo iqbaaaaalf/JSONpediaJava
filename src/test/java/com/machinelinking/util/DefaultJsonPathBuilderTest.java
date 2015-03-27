@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
 /**
  * Test case for {@link DefaultJsonPathBuilder}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultJsonPathBuilderTest {
 

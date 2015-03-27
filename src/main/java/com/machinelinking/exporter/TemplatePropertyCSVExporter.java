@@ -40,7 +40,7 @@ import java.net.URL;
 /**
  * Default {@link CSVExporter} implementation.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TemplatePropertyCSVExporter
 extends WikiDumpMultiThreadProcessor<TemplatePropertyCSVExporter.TemplatePropertyProcessor>

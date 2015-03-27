@@ -23,7 +23,7 @@ import java.io.IOException;
 /**
  * Defines the renderer for a primitive {@link JsonNode} value.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface PrimitiveNodeRender {
 

@@ -29,7 +29,7 @@ import java.io.IOException;
 /**
  * Test case for {@link JSONSerializer}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class JSONSerializerTest {
 

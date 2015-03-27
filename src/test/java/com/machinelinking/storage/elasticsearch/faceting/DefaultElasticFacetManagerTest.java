@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * Test case for {@link com.machinelinking.storage.elasticsearch.faceting.ElasticFacetManager}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultElasticFacetManagerTest extends ElasticJSONStorageTestBase {
 

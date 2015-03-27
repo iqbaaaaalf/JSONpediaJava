@@ -19,7 +19,7 @@ package com.machinelinking.pipeline;
 /**
  * Default {@link FlagSet} implementation.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultFlagSet implements FlagSet {
 

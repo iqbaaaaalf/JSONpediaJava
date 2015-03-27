@@ -35,7 +35,7 @@ import java.util.List;
 /**
  * Implementation of {@link com.machinelinking.storage.JSONStorageConnection} for <i>MongoDB</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MongoJSONStorageConnection implements JSONStorageConnection<MongoDocument, MongoSelector>, MapReduceSupport {
 

@@ -19,7 +19,7 @@ package com.machinelinking.filter;
 /**
  * Define a filter for the value associated with a JSON object key.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JSONKeyFilter extends JSONFilter {
 

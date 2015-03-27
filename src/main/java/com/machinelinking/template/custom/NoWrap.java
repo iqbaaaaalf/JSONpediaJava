@@ -26,7 +26,7 @@ import com.machinelinking.template.TemplateCallHandlerException;
 import java.io.IOException;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class NoWrap implements TemplateCallHandler {
 

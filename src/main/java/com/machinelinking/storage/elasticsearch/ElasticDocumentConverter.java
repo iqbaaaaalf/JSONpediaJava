@@ -27,7 +27,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 class ElasticDocumentConverter implements DocumentConverter<ElasticDocument> {
 

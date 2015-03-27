@@ -28,7 +28,7 @@ import java.util.Map;
 /**
  * Defines a mapping between a <i>Wikipedia Template</i> and <i>DBpedia</i> ontology.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TemplateMapping implements Serializable, java.io.Serializable {
 

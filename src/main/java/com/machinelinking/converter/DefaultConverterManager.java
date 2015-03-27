@@ -35,7 +35,7 @@ import java.util.Set;
 /**
  * Default implementation for {@link com.machinelinking.converter.ConverterManager}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultConverterManager implements ConverterManager {
 

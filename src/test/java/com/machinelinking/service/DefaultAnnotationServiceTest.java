@@ -29,7 +29,7 @@ import java.net.URISyntaxException;
 import java.net.URLEncoder;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultAnnotationServiceTest extends ServiceTestBase {
 

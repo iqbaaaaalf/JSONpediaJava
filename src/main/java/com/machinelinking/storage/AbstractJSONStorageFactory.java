@@ -17,7 +17,7 @@
 package com.machinelinking.storage;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public abstract class AbstractJSONStorageFactory<C extends JSONStorageConfiguration, S extends JSONStorage, D extends Document> implements JSONStorageFactory<C,S, D> {
 

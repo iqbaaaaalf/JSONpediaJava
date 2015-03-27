@@ -19,7 +19,7 @@ package com.machinelinking.converter;
 /**
  * Defines any error raised by a {@link com.machinelinking.converter.Converter}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ConverterException extends Exception {
 

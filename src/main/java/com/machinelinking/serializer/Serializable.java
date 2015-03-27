@@ -19,7 +19,7 @@ package com.machinelinking.serializer;
 /**
  * Allows to serialize any object with the {@link Serializer}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface Serializable {
 

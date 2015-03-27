@@ -25,7 +25,7 @@ import java.util.Map;
 /**
  * Specific {@link Extractor} collecting occurrences of <i>Wikipedia Template</i>s.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TemplateOccurrencesExtractor extends Extractor {
 

@@ -26,7 +26,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * Annotation wrapper for {@link FlagWrapper}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 @XmlRootElement
 public class FlagSetWrapper implements FlagSet {

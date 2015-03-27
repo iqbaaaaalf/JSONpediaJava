@@ -19,7 +19,7 @@ package com.machinelinking.filter;
 /**
  * Defines a filter applicable over a <i>JSON</i> object.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JSONFilter {
 

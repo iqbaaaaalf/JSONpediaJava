@@ -27,7 +27,7 @@ import java.net.UnknownHostException;
 /**
  * Implementation of {@link com.machinelinking.storage.JSONStorage} based on <i>MongoDB</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MongoJSONStorage implements JSONStorage<MongoJSONStorageConfiguration,MongoDocument, MongoSelector> {
 

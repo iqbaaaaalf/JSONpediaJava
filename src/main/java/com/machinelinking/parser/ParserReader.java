@@ -21,7 +21,7 @@ import java.io.IOException;
 /**
  * Defines the reader for a {@link WikiTextParser}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface ParserReader {
 

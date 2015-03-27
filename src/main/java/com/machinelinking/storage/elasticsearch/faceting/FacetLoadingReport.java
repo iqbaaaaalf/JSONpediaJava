@@ -20,7 +20,7 @@ package com.machinelinking.storage.elasticsearch.faceting;
  * Report produced by {@link com.machinelinking.storage.elasticsearch.faceting.ElasticFacetManager
  * #loadFacets(com.machinelinking.storage.elasticsearch.ElasticSelector, FacetConverter)} method execution.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class FacetLoadingReport {
 

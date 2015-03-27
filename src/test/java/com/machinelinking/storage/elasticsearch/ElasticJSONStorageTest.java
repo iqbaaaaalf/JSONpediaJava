@@ -31,7 +31,7 @@ import java.util.UUID;
 /**
  * {@link com.machinelinking.storage.elasticsearch.ElasticJSONStorage} test for <i>ElasticSearch</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ElasticJSONStorageTest extends ElasticJSONStorageTestBase {
 

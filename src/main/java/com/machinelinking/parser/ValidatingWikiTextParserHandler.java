@@ -24,7 +24,7 @@ import java.util.Stack;
 /**
  * {@link WikiTextParserHandler} able to validate the event stream.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ValidatingWikiTextParserHandler {
 

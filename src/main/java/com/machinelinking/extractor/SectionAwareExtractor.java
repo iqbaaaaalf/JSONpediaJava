@@ -21,7 +21,7 @@ import java.net.URL;
 /**
  * Base {@link Extractor} to manage <i>Wikimedia Section</i>s.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public abstract class SectionAwareExtractor extends Extractor {
 

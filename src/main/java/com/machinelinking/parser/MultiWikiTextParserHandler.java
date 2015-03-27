@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * Allows to multiply {@link WikiTextParserHandler}s messages.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MultiWikiTextParserHandler implements WikiTextParserHandler {
 

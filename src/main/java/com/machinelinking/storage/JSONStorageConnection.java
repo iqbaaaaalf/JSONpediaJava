@@ -24,7 +24,7 @@ import java.io.Closeable;
 /**
  * Defines a <i>JSON</i> storage connection.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JSONStorageConnection<D extends Document, S extends Selector> extends Closeable {
 

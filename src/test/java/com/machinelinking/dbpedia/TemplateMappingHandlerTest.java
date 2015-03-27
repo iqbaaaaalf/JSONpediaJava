@@ -29,7 +29,7 @@ import java.net.URL;
 /**
  * Test case for {@link TemplateMappingHandler}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TemplateMappingHandlerTest {
 

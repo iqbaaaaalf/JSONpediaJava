@@ -19,7 +19,7 @@ package com.machinelinking.converter;
 /**
  * Defines any error raised by {@link com.machinelinking.converter.ScriptableConverterFactory}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ScriptableFactoryException extends Exception {
 

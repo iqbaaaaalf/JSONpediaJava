@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MultiJSONStorage implements JSONStorage<MultiJSONStorageConfiguration, MultiDocument, MultiSelector> {
 

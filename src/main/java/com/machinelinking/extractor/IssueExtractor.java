@@ -26,7 +26,7 @@ import java.util.List;
 /**
  * This {@link Extractor} collects issues during extraction.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class IssueExtractor extends Extractor {
 

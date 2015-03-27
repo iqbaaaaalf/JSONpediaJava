@@ -29,7 +29,7 @@ import java.util.Properties;
 /**
  * Default implementation of {@link ElasticFacetManagerConfiguration}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultElasticFacetConfiguration implements ElasticFacetManagerConfiguration {
 

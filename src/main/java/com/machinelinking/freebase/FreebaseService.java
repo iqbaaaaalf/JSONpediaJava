@@ -26,7 +26,7 @@ import java.net.URLEncoder;
 /**
  * Provides enrichment on the <i>Google Freebase</i> service.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class FreebaseService {
 

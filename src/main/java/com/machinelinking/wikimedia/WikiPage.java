@@ -19,7 +19,7 @@ package com.machinelinking.wikimedia;
 /**
  * Models a single <i>Wikipage</i>
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiPage {
 

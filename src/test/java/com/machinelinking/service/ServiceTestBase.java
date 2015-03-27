@@ -32,7 +32,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ServiceTestBase {
 

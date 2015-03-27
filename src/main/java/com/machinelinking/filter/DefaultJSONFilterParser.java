@@ -22,7 +22,7 @@ import com.machinelinking.parser.AttributeScanner;
 /**
  * Default {@link JSONFilterParser} implementation.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultJSONFilterParser implements JSONFilterParser {
 

@@ -22,7 +22,7 @@ import com.machinelinking.render.HTMLWriter;
  * Generic interface implemented to provide custom implementations of template calls.
  *
  * @see com.machinelinking.template.TemplateProcessor
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface TemplateCallHandler {
 

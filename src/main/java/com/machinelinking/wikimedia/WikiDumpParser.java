@@ -28,7 +28,7 @@ import java.io.InputStream;
 /**
  * A parser for the <i>Wikipage XML dump</i> format.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiDumpParser extends DefaultHandler {
 

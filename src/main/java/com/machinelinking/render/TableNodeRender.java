@@ -26,7 +26,7 @@ import java.util.Map;
 /**
  * {@link NodeRender} imeplementation for <i>Wikitext table</i>s.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TableNodeRender implements NodeRender {
 

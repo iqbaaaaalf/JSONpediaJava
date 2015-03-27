@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * Support for DBpedia Wikipedia namespaces.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class Namespaces {
 

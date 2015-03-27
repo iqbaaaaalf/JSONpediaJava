@@ -19,7 +19,7 @@ package com.machinelinking.filter;
 /**
  * Factory for {@link com.machinelinking.filter.JSONKeyFilter} and {@link com.machinelinking.filter.JSONObjectFilter}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JSONFilterFactory {
 

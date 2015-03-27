@@ -19,7 +19,7 @@ package com.machinelinking.parser;
 /**
  * Defines the location of the parser cursor.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface ParserLocation {
 

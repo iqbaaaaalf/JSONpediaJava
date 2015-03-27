@@ -33,7 +33,7 @@ import java.util.Stack;
  * Redirects all the received {@link WikiTextParserHandler}
  * events from a specified nesting level ahead to another {@link WikiTextParserHandler}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiTextParserHandlerSplitter {
 

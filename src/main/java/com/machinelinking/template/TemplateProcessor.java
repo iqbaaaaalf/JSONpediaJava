@@ -21,7 +21,7 @@ import com.machinelinking.render.HTMLWriter;
 /**
  * Defines a processor for a template.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface TemplateProcessor {
 

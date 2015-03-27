@@ -22,7 +22,7 @@ import org.codehaus.jackson.JsonNode;
 /**
  * Maintains the current context of a {@link org.codehaus.jackson.JsonNode} visit.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface JsonContext {
 

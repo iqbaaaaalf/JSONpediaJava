@@ -41,7 +41,7 @@ import java.net.URL;
 /**
  * Extracts the text content from the page, replaces any structured content with a special syntax containing JSON.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TextHandler extends DefaultWikiTextParserHandler {
 

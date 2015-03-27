@@ -20,7 +20,7 @@ package com.machinelinking.dbpedia;
  * Exception raised by {@link com.machinelinking.dbpedia.TemplateMappingManager}.
  *
  * @see com.machinelinking.dbpedia.TemplateMappingManager
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TemplateMappingManagerException extends Exception {
 

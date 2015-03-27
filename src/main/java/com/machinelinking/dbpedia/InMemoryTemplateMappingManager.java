@@ -41,7 +41,7 @@ import java.util.regex.Pattern;
 /**
  * Implementation of {@link com.machinelinking.dbpedia.TemplateMappingManager} keeping data in memory.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class InMemoryTemplateMappingManager implements TemplateMappingManager {
 

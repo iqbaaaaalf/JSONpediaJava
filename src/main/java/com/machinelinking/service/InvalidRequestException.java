@@ -22,7 +22,7 @@ import javax.ws.rs.core.Response;
 /**
  * Used to define an invalid request: an error occurred while parsing parameter.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class InvalidRequestException extends BaseServiceException {
 

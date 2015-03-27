@@ -21,7 +21,7 @@ import java.util.Set;
 /**
  * Defines a manager for ontologies.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface OntologyManager {
 

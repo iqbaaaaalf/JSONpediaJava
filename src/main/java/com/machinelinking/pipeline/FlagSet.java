@@ -19,7 +19,7 @@ package com.machinelinking.pipeline;
 /**
  * Defines a {@link WikiPipelineFactory} build {@link Flag} set.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 
 public interface FlagSet {

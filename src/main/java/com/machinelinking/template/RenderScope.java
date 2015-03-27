@@ -19,7 +19,7 @@ package com.machinelinking.template;
 /**
  * Defines the scope of the rendering.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface RenderScope {
 

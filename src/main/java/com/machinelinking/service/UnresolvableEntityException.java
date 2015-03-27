@@ -22,7 +22,7 @@ import javax.ws.rs.core.Response;
 /**
  * Used to define an unresolvable entity in <i>Wikipedia</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class UnresolvableEntityException extends BaseServiceException {
 

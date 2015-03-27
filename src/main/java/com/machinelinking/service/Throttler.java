@@ -19,7 +19,7 @@ package com.machinelinking.service;
 /**
  * Manages the throttling time for a generic {@link com.machinelinking.service.Service} access.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface Throttler {
 

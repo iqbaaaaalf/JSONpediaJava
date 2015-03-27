@@ -23,7 +23,7 @@ import com.machinelinking.serializer.Serializer;
 /**
  * Defines a <i>Wikipedia section</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class Section implements Serializable {
 

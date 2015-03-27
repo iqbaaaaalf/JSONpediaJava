@@ -19,7 +19,7 @@ package com.machinelinking.dbpedia;
 /**
  * Any exception rasised by the {@link OntologyManager}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class OntologyManagerException extends Exception {
 

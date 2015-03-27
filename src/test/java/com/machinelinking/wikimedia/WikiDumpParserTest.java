@@ -26,7 +26,7 @@ import java.util.zip.GZIPInputStream;
 /**
  * Test case for {@link WikiDumpParser}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiDumpParserTest {
 

@@ -23,7 +23,7 @@ import java.net.URL;
 /**
  * Defines the source for a <i>Wikitext</i> page.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DocumentSource {
 

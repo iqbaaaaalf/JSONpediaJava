@@ -25,7 +25,7 @@ import java.util.Map;
 /**
  * {@link com.machinelinking.storage.Document} implementation for <i>ElasticSearch</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ElasticDocument implements Document<Map<String,Object>> {
 

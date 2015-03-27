@@ -22,7 +22,7 @@ import javax.ws.rs.core.Response;
 /**
  * Used to define a unresolvable entities: the entity cannot be found or the service is unreachable.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class InternalErrorException extends BaseServiceException {
 

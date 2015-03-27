@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * Extractor for text of page sections.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class SectionTextExtractor extends TextExtractor {
 

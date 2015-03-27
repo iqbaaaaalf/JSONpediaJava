@@ -17,6 +17,6 @@
 /**
  * Main facade classes ot access library operations.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 package com.machinelinking.main;

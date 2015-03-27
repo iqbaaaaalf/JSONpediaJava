@@ -43,7 +43,7 @@ import java.util.jar.JarFile;
  * Basic Service implementation based on <i>Grizzly</i>.
  *
  * See: http://mytecc.wordpress.com/2013/06/06/grizzly-2-3-3-serving-static-http-resources-from-jar-files/
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class BasicServer {
 

@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * <i>Citation</i> template render.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class Citation implements TemplateCallHandler {
 

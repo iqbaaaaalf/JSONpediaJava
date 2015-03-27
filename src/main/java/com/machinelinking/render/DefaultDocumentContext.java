@@ -21,7 +21,7 @@ import java.util.Collections;
 import java.util.Map;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultDocumentContext implements DocumentContext {
 

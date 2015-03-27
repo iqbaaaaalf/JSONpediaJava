@@ -24,7 +24,7 @@ import com.machinelinking.template.TemplateCallHandler;
 import com.machinelinking.template.TemplateCallHandlerException;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TemplateSuppressor implements TemplateCallHandler {
 

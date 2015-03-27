@@ -27,7 +27,7 @@ import java.io.StringReader;
 /**
  * Test case for {@link EntityExpansionReader}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class EntityExpansionReaderTest {
 

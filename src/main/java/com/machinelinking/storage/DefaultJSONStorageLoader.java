@@ -43,7 +43,7 @@ import java.net.URL;
 /**
  * Default implementation of {@link JSONStorageLoader}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultJSONStorageLoader
 extends WikiDumpMultiThreadProcessor<DefaultJSONStorageLoader.EnrichmentProcessor>

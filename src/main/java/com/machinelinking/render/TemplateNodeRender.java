@@ -25,7 +25,7 @@ import com.machinelinking.template.TemplateProcessorException;
 import org.codehaus.jackson.JsonNode;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TemplateNodeRender implements NodeRender {
 

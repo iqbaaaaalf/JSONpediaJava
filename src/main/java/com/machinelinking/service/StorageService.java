@@ -21,7 +21,7 @@ import javax.ws.rs.core.Response;
 /**
  * Defines a service to access a data storage.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface StorageService extends Service {
 

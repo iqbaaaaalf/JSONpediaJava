@@ -24,7 +24,7 @@ import java.net.URL;
 /**
  * Defines a <i>Wikipedia link</i>s.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class Link implements Serializable {
 

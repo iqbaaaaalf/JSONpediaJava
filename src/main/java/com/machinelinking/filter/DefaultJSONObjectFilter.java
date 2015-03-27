@@ -24,7 +24,7 @@ import java.util.Map;
 /**
  * Default implementation for {@link JSONFilter}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultJSONObjectFilter implements JSONObjectFilter {
 

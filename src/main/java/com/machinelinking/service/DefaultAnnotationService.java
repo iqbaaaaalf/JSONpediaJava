@@ -52,7 +52,7 @@ import java.util.concurrent.ExecutionException;
 /**
  * Default implementation for {@link AnnotationService}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 @Path("/annotate")
 public class DefaultAnnotationService extends ServiceBase implements AnnotationService {

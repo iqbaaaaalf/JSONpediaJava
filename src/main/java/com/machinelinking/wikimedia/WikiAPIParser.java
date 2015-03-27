@@ -29,7 +29,7 @@ import java.net.URL;
 /**
  * A parser for the <i>Wikipage XML API</i> format.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class WikiAPIParser extends DefaultHandler {
 

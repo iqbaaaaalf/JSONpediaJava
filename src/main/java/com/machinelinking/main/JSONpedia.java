@@ -63,7 +63,7 @@ import java.util.Map;
 /**
  * Main library facade.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class JSONpedia {
 

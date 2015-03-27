@@ -22,7 +22,7 @@ import org.codehaus.jackson.JsonNode;
 /**
  * Introduces map/reduce support in MongoDB.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface MapReduceSupport {
 

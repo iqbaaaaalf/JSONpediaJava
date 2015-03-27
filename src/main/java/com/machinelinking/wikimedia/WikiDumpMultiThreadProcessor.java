@@ -33,7 +33,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * A multi-thread executor for {@link PageProcessor}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public abstract class WikiDumpMultiThreadProcessor <P extends PageProcessor> {
 

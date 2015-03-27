@@ -19,7 +19,7 @@ package com.machinelinking.parser;
 /**
  * Defines the <i>HTML</i> markup handler for the {@link WikiTextParser}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface TagHandler {
 

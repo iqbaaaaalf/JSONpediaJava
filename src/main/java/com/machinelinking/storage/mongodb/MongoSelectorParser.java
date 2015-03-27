@@ -22,7 +22,7 @@ import com.machinelinking.storage.SelectorParser;
 import java.util.Arrays;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MongoSelectorParser implements SelectorParser {
 

@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * Test case for {@link com.machinelinking.dbpedia.TemplateMappingFactory} lookup.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TemplateMappingFactoryTest {
 

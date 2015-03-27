@@ -24,7 +24,7 @@ import java.io.Closeable;
 import java.util.Iterator;
 
 /**
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ElasticResultSet implements ResultSet<ElasticDocument>, Closeable {
 

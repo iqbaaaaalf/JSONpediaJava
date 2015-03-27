@@ -40,7 +40,7 @@ import java.util.Map;
 /**
  * Test case for {@link com.machinelinking.converter.DefaultConverterManager}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultConverterManagerTest {
 

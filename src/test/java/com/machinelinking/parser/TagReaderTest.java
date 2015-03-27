@@ -31,7 +31,7 @@ import java.util.List;
 /**
  * Test case for {@link TagReader}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class TagReaderTest {
 

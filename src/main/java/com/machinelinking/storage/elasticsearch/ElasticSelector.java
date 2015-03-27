@@ -28,7 +28,7 @@ import java.util.List;
 /**
  * {@link com.machinelinking.storage.Selector} implementation for <i>ElasticSearch</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class ElasticSelector implements Selector {
 

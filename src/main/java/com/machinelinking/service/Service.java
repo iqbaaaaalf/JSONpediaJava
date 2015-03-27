@@ -19,7 +19,7 @@ package com.machinelinking.service;
 /**
  * Service marker interface.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface Service {
 }

@@ -30,7 +30,7 @@ import java.util.Set;
 /**
  * {@link com.machinelinking.storage.Selector} implementation for <i>MongoDB</i>.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class MongoSelector implements Selector {
 

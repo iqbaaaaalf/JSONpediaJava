@@ -21,7 +21,7 @@ import org.codehaus.jackson.JsonNode;
 /**
  * Defines the render for a <i>key/value</i> pair.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public interface KeyValueRender {
 

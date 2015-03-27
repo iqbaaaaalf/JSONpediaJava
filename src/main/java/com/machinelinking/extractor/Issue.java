@@ -23,7 +23,7 @@ import com.machinelinking.serializer.Serializer;
 /**
  * Defines any issue raised while processing extraction.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class Issue implements Serializable {
 

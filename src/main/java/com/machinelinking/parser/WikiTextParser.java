@@ -30,7 +30,7 @@ import java.util.List;
 /**
  * The <i>Wikitext</i> event parser. <b>This class needs a complete rewriting.</b>
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 // TODO HIGH: error detection is not working, see BrokenTemplate1 wikitext
 // TODO: complete support for ordered lists

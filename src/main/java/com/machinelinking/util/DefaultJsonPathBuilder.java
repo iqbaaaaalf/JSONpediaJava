@@ -22,7 +22,7 @@ import java.util.Stack;
 /**
  * Default implementation of {@link JsonPathBuilder}.
  *
- * @author Michele Mostarda (mostarda@fbk.eu)
+ * @author Michele Mostarda (me@michelemostarda.it)
  */
 public class DefaultJsonPathBuilder implements JsonPathBuilder {
 
