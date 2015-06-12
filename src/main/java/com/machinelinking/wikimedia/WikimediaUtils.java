@@ -48,7 +48,7 @@ public class WikimediaUtils {
     public static URL entityToWikiTextURLAPI(URL entity) {
         try {
             return new URL(
-                    "http",
+                    "https",
                     entity.getHost(),
                     entity.getPort(),
                     String.format(WIKIPEDIA_GET_RESOURCE_WTEXT_CODE_API, getEntityName(entity.getPath()))
