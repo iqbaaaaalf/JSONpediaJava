@@ -66,6 +66,7 @@ public class TemplatesMappingKeyValueRender implements KeyValueRender {
             final String label = asText(mapping.getValue().get("label"));
             final String domain = asText(mapping.getValue().get("domain"));
             final String range = asText(mapping.getValue().get("range"));
+            //TODO: add support for IntermediateNodeMapping
             final String value = getInfoboxProperty(infoboxContent, field);
             writer.openTag("div");
             writer.html(
