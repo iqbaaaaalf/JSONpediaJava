@@ -24,6 +24,7 @@ package com.machinelinking.dbpedia;
 public class OntologyManagerFactory {
 
     private static OntologyManagerFactory instance;
+    private static OntologyManager ontologyManager;
 
     public static OntologyManagerFactory getInstance() {
         if(instance == null) {
@@ -40,8 +41,11 @@ public class OntologyManagerFactory {
      * @return a new instance.
      * @throws OntologyManagerException
      */
-    public OntologyManager createOntologyManager() throws OntologyManagerException {
-        return new InMemoryOntologyManager();
+    public OntologyManager getOntologyManager() throws OntologyManagerException {
+        if(ontologyManager == null) {
+            ontologyManager = new InMemoryOntologyManager();
+        }
+        return ontologyManager;
     }
 
 }

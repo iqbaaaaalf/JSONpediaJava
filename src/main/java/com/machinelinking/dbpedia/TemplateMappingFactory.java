@@ -44,7 +44,7 @@ public class TemplateMappingFactory {
 
     static {
         try {
-            ontologyManager = OntologyManagerFactory.getInstance().createOntologyManager();
+            ontologyManager = OntologyManagerFactory.getInstance().getOntologyManager();
         } catch (OntologyManagerException ome) {
             throw new RuntimeException("Error while initializing ontology manager.", ome);
         }
