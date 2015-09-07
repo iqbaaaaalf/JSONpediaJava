@@ -88,10 +88,12 @@ public class BasicServer {
                     protected boolean handle(String uri, Request req, Response res) throws Exception {
                         if(uri.endsWith(".html")) {
                             res.setHeader(CONTENT_TYPE, "text/html; charset=utf-8");
+                            res.setHeader("Access-Control-Allow-Origin", "*");
                         } else if(uri.endsWith(".css")) {
                             res.setHeader(CONTENT_TYPE, "text/css");
                         } else if(uri.endsWith(".js")) {
                             res.setHeader(CONTENT_TYPE, "text/javascript");
+                            res.setHeader("Access-Control-Allow-Origin", "*");
                         } else if(uri.endsWith(".png")) {
                             res.setHeader(CONTENT_TYPE, "image/png");
                         } else if(uri.endsWith(".gif")) {
