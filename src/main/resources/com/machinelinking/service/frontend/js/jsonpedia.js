@@ -18,6 +18,8 @@
  * JSONpedia v1.1 jquery plugin.
  */
 
+SERVER = 'http://jsonpedia.org';
+
 function JSONpedia() {
     var _params;
     var _deferred = $.Deferred();
@@ -26,7 +28,7 @@ function JSONpedia() {
         if(params.performing) return;
         params.performing = true;
         if('processors' in params) {
-            request = '/annotate/resource/' + params.out + '/' + params.entity + '?&procs=' + params.processors.join(',');
+            request = SERVER + '/annotate/resource/' + params.out + '/' + params.entity + '?&procs=' + params.processors.join(',');
         } else if('mongo' in params) {
             call = params.mongo[0];
             method = call[0];
