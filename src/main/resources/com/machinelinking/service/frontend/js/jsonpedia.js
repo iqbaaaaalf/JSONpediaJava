@@ -18,13 +18,13 @@
  * JSONpedia v1.1 jquery plugin.
  */
 
-SERVER = 'http://jsonpedia.org';
-
 function JSONpedia() {
     var _params;
     var _deferred = $.Deferred();
 
     function perform(params) {
+        var SERVER = 'http://jsonpedia.org';
+
         if(params.performing) return;
         params.performing = true;
         if('processors' in params) {
@@ -33,18 +33,18 @@ function JSONpedia() {
             call = params.mongo[0];
             method = call[0];
             if('select' == method) {
-                request = '/storage/mongo/select?q=' + encodeURIComponent(call[1]) +
+                request = SERVER + '/storage/mongo/select?q=' + encodeURIComponent(call[1]) +
                         "&filter=" + encodeURIComponent(call[2]) +
                         "&limit=" + call[3];
             } else if('mapred' == method) {
-                request = '/storage/mongo/mapred?criteria=' + encodeURIComponent(call[1]) +
+                request = SERVER + '/storage/mongo/mapred?criteria=' + encodeURIComponent(call[1]) +
                         "&map=" + encodeURIComponent(call[2]) +
                         "&reduce=" + encodeURIComponent(call[3]) +
                         "&limit=" + call[4];
             } else throw new Error();
         } else if('elastic' in params) {
             call = params.elastic[0];
-            request = '/storage/elastic/select?q=' + encodeURIComponent(call[1]) +
+            request = SERVER + '/storage/elastic/select?q=' + encodeURIComponent(call[1]) +
                         "&filter=" + encodeURIComponent(call[2]) +
                         "&limit=" + call[3];
         } else throw new Error();
