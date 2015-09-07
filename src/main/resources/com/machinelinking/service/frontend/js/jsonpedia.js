@@ -23,7 +23,8 @@ function JSONpedia() {
     var _deferred = $.Deferred();
 
     function perform(params) {
-        var SERVER = 'http://jsonpedia.org';
+        var PORT = document.location.port;
+        var SERVER = 'http://' + document.location.hostname + (PORT.length > 0 ? ":" + PORT : "");
 
         if(params.performing) return;
         params.performing = true;
