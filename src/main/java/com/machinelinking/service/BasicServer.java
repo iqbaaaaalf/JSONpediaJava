@@ -80,28 +80,32 @@ public class BasicServer {
     public void setUp() throws IOException {
         ResourceConfig rc = new PackagesResourceConfig(BasicServer.class.getPackage().getName());
         httpServer = GrizzlyServerFactory.createHttpServer(getBaseURI(), rc);
-        httpServer.getServerConfiguration().addHttpHandler(
-                // Provided by Grizzly 2.3.3 that unfortunately doesn't manage correctly encoded URLs in GET requests.
-                // new CLStaticHttpHandler( this.getClass().getClassLoader() ){
-                new StaticHttpHandler( initFrontendResources() ) {
-                    @Override
-                    protected boolean handle(String uri, Request req, Response res) throws Exception {
-                        if(uri.endsWith(".html")) {
-                            res.setHeader(CONTENT_TYPE, "text/html; charset=utf-8");
-                            res.setHeader("Access-Control-Allow-Origin", "*");
-                        } else if(uri.endsWith(".css")) {
-                            res.setHeader(CONTENT_TYPE, "text/css");
-                        } else if(uri.endsWith(".js")) {
-                            res.setHeader(CONTENT_TYPE, "text/javascript");
-                            res.setHeader("Access-Control-Allow-Origin", "*");
-                        } else if(uri.endsWith(".png")) {
-                            res.setHeader(CONTENT_TYPE, "image/png");
-                        } else if(uri.endsWith(".gif")) {
-                            res.setHeader(CONTENT_TYPE, "image/gif");
-                        }
-                        return super.handle(uri, req, res);
+        final StaticHttpHandler handler =
+            // Provided by Grizzly 2.3.3 that unfortunately doesn't manage correctly encoded URLs in GET requests.
+            // new CLStaticHttpHandler( this.getClass().getClassLoader() ){
+            new StaticHttpHandler( initFrontendResources() ) {
+                @Override
+                protected boolean handle(String uri, Request req, Response res) throws Exception {
+                    if(uri.endsWith(".html")) {
+                        res.setHeader(CONTENT_TYPE, "text/html; charset=utf-8");
+                        res.setHeader("Access-Control-Allow-Origin", "*");
+                    } else if(uri.endsWith(".css")) {
+                        res.setHeader(CONTENT_TYPE, "text/css");
+                    } else if(uri.endsWith(".js")) {
+                        res.setHeader(CONTENT_TYPE, "text/javascript");
+                        res.setHeader("Access-Control-Allow-Origin", "*");
+                    } else if(uri.endsWith(".png")) {
+                        res.setHeader(CONTENT_TYPE, "image/png");
+                    } else if(uri.endsWith(".gif")) {
+                        res.setHeader(CONTENT_TYPE, "image/gif");
                     }
-                },
+                    return super.handle(uri, req, res);
+                }
+            };
+        // Disabled file cache to ensure setup of Access-Control-Allow-Origin in HTTP header.
+        handler.setFileCacheEnabled(false);
+        httpServer.getServerConfiguration().addHttpHandler(
+                handler,
                 "/frontend/"
         );
         httpServer.start();
