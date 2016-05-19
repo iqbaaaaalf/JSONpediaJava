@@ -81,7 +81,7 @@ public class EnrichedEntityFacetConverter implements FacetConverter {
         String description;
         for (Object link : links) {
             linkMap = (Map<String, Object>) link;
-            if (sectionIndex == linkMap.get("section_idx")) {
+            if (sectionIndex == (int)linkMap.get("section_idx")) {
                 description = linkMap.get("description").toString();
                 if (description != null && description.length() > 0)
                     result.add(description);
